@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Test authentication and authorization enforcement.
 
 ## Connections
-- [[TestAuth_1]] - `rationale_for` [EXTRACTED]
+- [[TestAuth]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

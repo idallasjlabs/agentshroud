@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "_make_token()"
+community: "ApprovalHardening"
 location: "L203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/ApprovalHardening
 ---
 
 # Test detection of repeat request patterns.
 
 ## Connections
-- [[.test_repeat_request_pattern_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_repeat_request_pattern_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_token
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

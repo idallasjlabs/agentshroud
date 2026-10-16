@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "LLMProxy"
+community: "FalcoAlertWatcher"
 location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/FalcoAlertWatcher
 ---
 
 # TestFalcoSummary
 
 ## Connections
-- [[.test_read_alerts_missing_dir()]] - `method` [EXTRACTED]
-- [[.test_summary_clean()_2]] - `method` [EXTRACTED]
-- [[.test_summary_top_rules()]] - `method` [EXTRACTED]
-- [[.test_summary_with_alerts()]] - `method` [EXTRACTED]
+- [[dot-test_read_alerts_missing_dir()]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()_3]] - `method` [EXTRACTED]
+- [[dot-test_summary_top_rules()]] - `method` [EXTRACTED]
+- [[dot-test_summary_with_alerts()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

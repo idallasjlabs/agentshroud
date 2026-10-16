@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "version_routes.py"
+community: "ToolResultSanitizer"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/ToolResultSanitizer
 ---
 
 # Test default configuration
 
 ## Connections
-- [[.test_default_config()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/version_routespy
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

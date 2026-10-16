@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "RateLimiter"
+community: "GatewayEmailService"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # SmtpLike
 
 ## Connections
-- [[.login()]] - `method` [EXTRACTED]
-- [[.sendmail()]] - `method` [EXTRACTED]
+- [[dot-login()]] - `method` [EXTRACTED]
+- [[dot-sendmail()]] - `method` [EXTRACTED]
 - [[Protocol]] - `inherits` [EXTRACTED]
 - [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - `rationale_for` [EXTRACTED]
 - [[email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "AgentTarget"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/AgentTarget
 ---
 
 # Test forwarding handles unexpected exceptions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_to_agent_unexpected_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

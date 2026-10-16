@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: ".process_tool_call()"
-location: "L280"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/process_tool_call
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Test Structure
 
 ## Connections
-- [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/process_tool_call
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

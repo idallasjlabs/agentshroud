@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L189"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # TestConcurrency
 
 ## Connections
-- [[.test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
-- [[.test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
-- [[.test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
-- [[.test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
-- [[.test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
+- [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `method` [EXTRACTED]
+- [[dot-test_context_guard_session_isolation_under_load()]] - `method` [EXTRACTED]
+- [[dot-test_drift_detector_concurrent_writes()]] - `method` [EXTRACTED]
+- [[dot-test_prompt_guard_concurrent_scans()]] - `method` [EXTRACTED]
+- [[dot-test_trust_manager_rapid_updates()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -31,15 +31,15 @@ tags:
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test thread safety and race conditions in security modules.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

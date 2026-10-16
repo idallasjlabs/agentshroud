@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "RBACConfig"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - community/RBACConfig
 ---
 
 # TeamsConfig
 
 ## Connections
-- [[.get_active_project_for_user()]] - `method` [EXTRACTED]
-- [[.get_all_member_ids()]] - `method` [EXTRACTED]
-- [[.get_group_admin_ids()]] - `method` [EXTRACTED]
-- [[.get_group_safe_response_prefix()]] - `method` [EXTRACTED]
-- [[.get_user_collab_mode()]] - `method` [EXTRACTED]
-- [[.get_user_groups()]] - `method` [EXTRACTED]
-- [[.get_user_projects()]] - `method` [EXTRACTED]
-- [[.is_group_admin()]] - `method` [EXTRACTED]
-- [[.model_post_init()_1]] - `method` [EXTRACTED]
-- [[.test_group_keyed_by_raw_chat_id()]] - `calls` [EXTRACTED]
+- [[dot-get_active_project_for_user()]] - `method` [EXTRACTED]
+- [[dot-get_all_member_ids()]] - `method` [EXTRACTED]
+- [[dot-get_group_admin_ids()]] - `method` [EXTRACTED]
+- [[dot-get_group_safe_response_prefix()]] - `method` [EXTRACTED]
+- [[dot-get_user_collab_mode()]] - `method` [EXTRACTED]
+- [[dot-get_user_groups()]] - `method` [EXTRACTED]
+- [[dot-get_user_projects()]] - `method` [EXTRACTED]
+- [[dot-is_group_admin()_2]] - `method` [EXTRACTED]
+- [[dot-model_post_init()]] - `method` [EXTRACTED]
+- [[dot-test_group_keyed_by_raw_chat_id()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Group]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
@@ -92,17 +92,17 @@ tags:
 - [[_apply_persisted_overrides()]] - `references` [EXTRACTED]
 - [[_make_rbac()]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
-- [[config.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[rbac()_4]] - `calls` [EXTRACTED]
-- [[rbac()_5]] - `calls` [EXTRACTED]
+- [[rbac()_2]] - `calls` [EXTRACTED]
+- [[rbac()_3]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `imports` [EXTRACTED]
+- [[teams()_3]] - `calls` [EXTRACTED]
 - [[teams()]] - `calls` [EXTRACTED]
 - [[teams()_2]] - `calls` [EXTRACTED]
-- [[teams()_3]] - `calls` [EXTRACTED]
-- [[teams()_4]] - `calls` [EXTRACTED]
+- [[teams()_1]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `references` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
@@ -113,4 +113,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/RBACConfig

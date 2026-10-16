@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "_make_token()"
+community: "ApprovalHardening"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/ApprovalHardening
 ---
 
 # Test that different requests are not affected by cooldown.
 
 ## Connections
-- [[.test_different_requests_not_in_cooldown()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_different_requests_not_in_cooldown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_token
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

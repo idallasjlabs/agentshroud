@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L576"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # TestExfiltrationDetection
 
 ## Connections
-- [[.test_dns_tunneling_detection()]] - `method` [EXTRACTED]
-- [[.test_egress_monitor_loaded()_1]] - `method` [EXTRACTED]
-- [[.test_env_guard_detects_data_access()]] - `method` [EXTRACTED]
-- [[.test_file_sandbox_staging_detection()]] - `method` [EXTRACTED]
-- [[.test_git_guard_detects_credential_patterns()]] - `method` [EXTRACTED]
+- [[dot-test_dns_tunneling_detection()]] - `method` [EXTRACTED]
+- [[dot-test_egress_monitor_loaded()]] - `method` [EXTRACTED]
+- [[dot-test_env_guard_detects_data_access()]] - `method` [EXTRACTED]
+- [[dot-test_file_sandbox_staging_detection()]] - `method` [EXTRACTED]
+- [[dot-test_git_guard_detects_credential_patterns()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -31,15 +31,15 @@ tags:
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test detection of data exfiltration patterns.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

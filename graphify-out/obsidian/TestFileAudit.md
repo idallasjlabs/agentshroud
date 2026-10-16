@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # TestFileAudit
 
 ## Connections
-- [[.test_audit_has_path()]] - `method` [EXTRACTED]
-- [[.test_read_logged()]] - `method` [EXTRACTED]
-- [[.test_temp_file_tracking()]] - `method` [EXTRACTED]
-- [[.test_write_logged()]] - `method` [EXTRACTED]
+- [[dot-test_audit_has_path()]] - `method` [EXTRACTED]
+- [[dot-test_read_logged()]] - `method` [EXTRACTED]
+- [[dot-test_temp_file_tracking()]] - `method` [EXTRACTED]
+- [[dot-test_write_logged()]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[PIIScanner]] - `uses` [INFERRED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

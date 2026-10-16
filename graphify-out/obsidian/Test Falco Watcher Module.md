@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/FalcoAlertWatcher
 ---
 
 # Test Falco Watcher Module
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FalcoAlertWatcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+community: "TestObservatoryMode"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/TestObservatoryMode
 ---
 
 # Test Observatory Mode configuration and endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestObservatoryMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/rationale #graphify/EXTRACTED #community/TestObservatoryMode

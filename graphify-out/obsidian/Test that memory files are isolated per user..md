@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "TestUserSessionManager"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/TestUserSessionManager
 ---
 
 # Test that memory files are isolated per user.
 
 ## Connections
-- [[.test_memory_file_isolation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_memory_file_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/TestUserSessionManager

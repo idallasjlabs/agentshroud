@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "dashboard_bridge.py"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/dashboard_bridgepy
 ---
 
 # StreamReader
@@ -16,4 +16,4 @@ tags:
 - [[_pipe()]] - `references` [EXTRACTED]
 - [[_read_request_headers()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

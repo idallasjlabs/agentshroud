@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents"
 location: "L584"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents
 ---
 
 # Step 6.1 — Discover PRs to Monitor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 6 — PR Review Handler]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents

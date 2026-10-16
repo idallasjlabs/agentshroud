@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "ModeRequest"
 location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/ModeRequest
 ---
 
 # TestOpenclawAliases
 
 ## Connections
-- [[.test_check_openclaw_updates_alias()]] - `method` [EXTRACTED]
-- [[.test_rollback_openclaw_alias()]] - `method` [EXTRACTED]
-- [[.test_upgrade_openclaw_alias()]] - `method` [EXTRACTED]
+- [[dot-test_check_openclaw_updates_alias()]] - `method` [EXTRACTED]
+- [[dot-test_rollback_openclaw_alias()]] - `method` [EXTRACTED]
+- [[dot-test_upgrade_openclaw_alias()]] - `method` [EXTRACTED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Path"
+community: "TestEgressApprovalQueue"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/TestEgressApprovalQueue
 ---
 
 # Test that denylist rules are persisted to disk.
 
 ## Connections
-- [[.test_denylist_persistence()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_denylist_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

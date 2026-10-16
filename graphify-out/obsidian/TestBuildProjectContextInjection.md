@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "StdioConnection"
+community: "telegram_proxy.py"
 location: "L145"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/StdioConnection
+  - graphify/EXTRACTED
+  - community/telegram_proxypy
 ---
 
 # TestBuildProjectContextInjection
 
 ## Connections
-- [[.test_contains_allowed_tools()]] - `method` [EXTRACTED]
-- [[.test_contains_group_and_project()]] - `method` [EXTRACTED]
+- [[dot-test_contains_allowed_tools()]] - `method` [EXTRACTED]
+- [[dot-test_contains_group_and_project()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
 - [[ProjectConfig]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

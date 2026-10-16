@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "BaseModel"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_108]] - `contains` [EXTRACTED]
-- [[README_113]] - `contains` [EXTRACTED]
-- [[Related Skills_117]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_118]] - `contains` [EXTRACTED]
+- [[Purpose_172]] - `contains` [EXTRACTED]
+- [[Related Skills_114]] - `contains` [EXTRACTED]
+- [[Usage_123]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-tiREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "asyncio"
+community: "PermissionLevel"
 location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/PermissionLevel
 ---
 
 # TestInferPermission
 
 ## Connections
-- [[.test_default_write()]] - `method` [EXTRACTED]
-- [[.test_explicit_config()]] - `method` [EXTRACTED]
-- [[.test_pattern_delete()]] - `method` [EXTRACTED]
-- [[.test_pattern_list()]] - `method` [EXTRACTED]
-- [[.test_pattern_read()]] - `method` [EXTRACTED]
-- [[.test_pattern_sensitive()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[dot-test_default_write()]] - `method` [EXTRACTED]
+- [[dot-test_explicit_config()]] - `method` [EXTRACTED]
+- [[dot-test_pattern_delete()]] - `method` [EXTRACTED]
+- [[dot-test_pattern_list()]] - `method` [EXTRACTED]
+- [[dot-test_pattern_read()]] - `method` [EXTRACTED]
+- [[dot-test_pattern_sensitive()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

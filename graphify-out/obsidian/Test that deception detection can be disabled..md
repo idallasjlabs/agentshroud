@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "TrustManager"
+community: "ApprovalHardening"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ApprovalHardening
 ---
 
 # Test that deception detection can be disabled.
 
 ## Connections
-- [[.test_deception_detection_disabled()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_deception_detection_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "SlackSocketClient"
+community: "ResourceGuard"
 location: "L190"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SlackSocketClient
+  - graphify/EXTRACTED
+  - community/ResourceGuard
 ---
 
 # TestExpiredUsageCleanup
 
 ## Connections
-- [[.test_cleanup_keeps_fresh_agents()]] - `method` [EXTRACTED]
-- [[.test_cleanup_removes_stale_agents()]] - `method` [EXTRACTED]
+- [[dot-test_cleanup_keeps_fresh_agents()]] - `method` [EXTRACTED]
+- [[dot-test_cleanup_removes_stale_agents()]] - `method` [EXTRACTED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

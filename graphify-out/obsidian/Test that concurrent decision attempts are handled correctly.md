@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalRequest"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalRequest
 ---
 
 # Test that concurrent decision attempts are handled correctly
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_concurrent_decisions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

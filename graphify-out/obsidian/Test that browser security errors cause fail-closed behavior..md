@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "ProxyAction"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ProxyAction
 ---
 
 # Test that browser security errors cause fail-closed behavior.
 
 ## Connections
-- [[.test_graceful_degradation_browser_security_error()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_graceful_degradation_browser_security_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

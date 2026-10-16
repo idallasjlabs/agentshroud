@@ -1,18 +1,18 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "Brand Identity"
+community: "Startup Flow Diagram"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brand_Identity
+  - community/Startup_Flow_Diagram
 ---
 
 # Startup Flow Diagram
 
 ## Connections
-- [[Related Notes_74]] - `contains` [EXTRACTED]
+- [[Related Notes_17]] - `contains` [EXTRACTED]
 - [[Startup Flow Diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brand_Identity
+#graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram

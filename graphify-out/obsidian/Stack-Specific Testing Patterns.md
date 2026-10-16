@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "AuditEvent"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Stack-Specific Testing Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Input Validation]] - `contains` [EXTRACTED]
 - [[Zabbix API  →  `unittest.mock`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

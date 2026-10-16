@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "DEVELOPER.md — Development Context for AgentShro"
+community: "ToolResultSanitizer"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShro
+  - community/ToolResultSanitizer
 ---
 
 # Test warn mode that marks but preserves external content.
 
 ## Connections
-- [[.test_warn_mode()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_warn_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShro
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

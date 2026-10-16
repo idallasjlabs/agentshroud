@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # Test that monitor mode warnings contain required information.
 
 ## Connections
-- [[.test_monitor_mode_warning_message_format()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_warning_message_format()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

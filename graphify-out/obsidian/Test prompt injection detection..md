@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "lifespan.py"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/lifespanpy
 ---
 
 # Test prompt injection detection.
 
 ## Connections
-- [[.test_prompt_injection_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_prompt_injection_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

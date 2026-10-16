@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "TestMultiTurnTracker"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/TestMultiTurnTracker
 ---
 
 # Test detection of repeated queries with different phrasing.
 
 ## Connections
-- [[.test_repeated_query_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_repeated_query_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

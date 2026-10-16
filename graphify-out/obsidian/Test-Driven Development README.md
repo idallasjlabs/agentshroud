@@ -1,26 +1,26 @@
 ---
 source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Test-Driven Development README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Test-Driven_Development_README
 ---
 
 # Test-Driven Development README
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-tddREADME]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_33]] - `contains` [EXTRACTED]
-- [[Purpose_70]] - `contains` [EXTRACTED]
-- [[README_33]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_36]] - `contains` [EXTRACTED]
-- [[Related Skills_76]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Purpose_101]] - `contains` [EXTRACTED]
+- [[Purpose_102]] - `contains` [EXTRACTED]
+- [[Related Skills_85]] - `contains` [EXTRACTED]
+- [[Related Skills_86]] - `contains` [EXTRACTED]
 - [[Test-Driven Development (TDD) Coach]] - `references` [EXTRACTED]
-- [[Usage_36]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
+- [[Usage_93]] - `contains` [EXTRACTED]
+- [[Usage_94]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Step-by-Step Installation"
+community: "Path"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Path
 ---
 
 # TestGetClamavSummary
 
 ## Connections
-- [[.test_clean_when_installed_but_no_report()_1]] - `method` [EXTRACTED]
-- [[.test_infected_report()]] - `method` [EXTRACTED]
-- [[.test_not_run_when_no_report()]] - `method` [EXTRACTED]
+- [[dot-test_clean_when_installed_but_no_report()]] - `method` [EXTRACTED]
+- [[dot-test_infected_report()]] - `method` [EXTRACTED]
+- [[dot-test_not_run_when_no_report()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/code #graphify/EXTRACTED #community/Path

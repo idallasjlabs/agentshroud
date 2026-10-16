@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "TestMultiTurnTracker"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/TestMultiTurnTracker
 ---
 
 # Test alert callback functionality.
 
 ## Connections
-- [[.test_alert_callbacks()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_alert_callbacks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Quick Reference Commands"
+community: "ResourceGuard"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/ResourceGuard
 ---
 
 # Test temp file count limiting.
 
 ## Connections
-- [[.test_check_resource_temp_files_limit()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_check_resource_temp_files_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

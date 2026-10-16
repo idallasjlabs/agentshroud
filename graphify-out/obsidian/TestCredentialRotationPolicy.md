@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "3. Security Controls"
+community: "test_key_rotation.py"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/3_Security_Controls
+  - community/test_key_rotationpy
 ---
 
 # TestCredentialRotationPolicy
 
 ## Connections
-- [[.test_default_policy_values()]] - `method` [EXTRACTED]
+- [[dot-test_default_policy_values()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[Test credential rotation policy configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/3_Security_Controls
+#graphify/code #graphify/INFERRED #community/test_key_rotationpy

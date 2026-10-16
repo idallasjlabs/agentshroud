@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "TestTelegramWebhook"
+community: "check_upstream_cves"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestTelegramWebhook
+  - community/check_upstream_cves
 ---
 
 # Stub urllib.request.urlopen to return a list of advisories.
 
 ## Connections
-- [[._patch_urllib()]] - `rationale_for` [EXTRACTED]
+- [[dot-_patch_urllib()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestTelegramWebhook
+#graphify/rationale #graphify/EXTRACTED #community/check_upstream_cves

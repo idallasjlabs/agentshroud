@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "ToolChainAnalyzer.analyze_tool_call"
+community: "Socrates — Dialogue Architect"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzeranalyze_tool_call
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_69]] - `contains` [EXTRACTED]
-- [[README_74]] - `contains` [EXTRACTED]
-- [[Related Skills_75]] - `contains` [EXTRACTED]
-- [[Usage_76]] - `contains` [EXTRACTED]
+- [[Purpose_29]] - `contains` [EXTRACTED]
+- [[Related Skills_22]] - `contains` [EXTRACTED]
+- [[Usage_25]] - `contains` [EXTRACTED]
+- [[hermesskillsi-socratesREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ToolChainAnalyzeranalyze_tool_call
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

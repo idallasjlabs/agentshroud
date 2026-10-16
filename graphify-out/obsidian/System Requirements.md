@@ -1,17 +1,17 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Prerequisites"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Prerequisites
 ---
 
 # System Requirements
 
 ## Connections
-- [[Prerequisites_3]] - `contains` [EXTRACTED]
+- [[Prerequisites_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Prerequisites

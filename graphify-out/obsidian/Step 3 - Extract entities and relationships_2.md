@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
+community: "What You Must Do When Invoked"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Complete_Feat
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Step 3 - Extract entities and relationships
@@ -17,4 +17,4 @@ tags:
 - [[Part C - Merge AST + semantic into final extraction_2]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

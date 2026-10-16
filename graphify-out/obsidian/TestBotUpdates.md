@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "ModeRequest"
 location: "L557"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/ModeRequest
 ---
 
 # TestBotUpdates
 
 ## Connections
-- [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - `method` [EXTRACTED]
-- [[.test_check_bot_updates_npm_missing_binary()]] - `method` [EXTRACTED]
-- [[.test_check_bot_updates_update_available()]] - `method` [EXTRACTED]
-- [[.test_rollback_bot()]] - `method` [EXTRACTED]
-- [[.test_upgrade_bot_failure_reports_error_step()]] - `method` [EXTRACTED]
-- [[.test_upgrade_bot_success()]] - `method` [EXTRACTED]
+- [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - `method` [EXTRACTED]
+- [[dot-test_check_bot_updates_npm_missing_binary()]] - `method` [EXTRACTED]
+- [[dot-test_check_bot_updates_update_available()]] - `method` [EXTRACTED]
+- [[dot-test_rollback_bot()]] - `method` [EXTRACTED]
+- [[dot-test_upgrade_bot_failure_reports_error_step()]] - `method` [EXTRACTED]
+- [[dot-test_upgrade_bot_success()]] - `method` [EXTRACTED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "ModeRequest"
+community: "test_config.py"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/test_configpy
 ---
 
 # Test that configuration has sensible defaults
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/test_configpy

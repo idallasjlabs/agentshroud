@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "InjectionSeverity"
+community: "test_main_endpoints.py"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/test_main_endpointspy
 ---
 
 # Test 404 handling for non-existent endpoints.
 
 ## Connections
-- [[.test_404_error()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_404_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy

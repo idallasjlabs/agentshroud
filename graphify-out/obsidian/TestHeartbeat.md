@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "TeamsConfig"
+community: "KillSwitchMonitor"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor
 ---
 
 # TestHeartbeat
 
 ## Connections
-- [[.test_failure_increments_and_alerts_at_threshold()]] - `method` [EXTRACTED]
-- [[.test_healthy_resets_miss_counter()]] - `method` [EXTRACTED]
-- [[.test_slow_when_response_exceeds_timeout()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[dot-test_failure_increments_and_alerts_at_threshold()]] - `method` [EXTRACTED]
+- [[dot-test_healthy_resets_miss_counter()]] - `method` [EXTRACTED]
+- [[dot-test_slow_when_response_exceeds_timeout()]] - `method` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

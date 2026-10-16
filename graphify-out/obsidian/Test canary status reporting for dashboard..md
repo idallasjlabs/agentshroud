@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestOutputCanary"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestOutputCanary
 ---
 
 # Test canary status reporting for dashboard.
 
 ## Connections
-- [[.test_status_reporting()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_status_reporting()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

@@ -1,19 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/README.md"
 type: "document"
-community: "discover_upstream_versions.py"
-location: "L286"
+community: "AgentShroud Docker Configuration"
+location: "L358"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Stop the Stack
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Graceful Shutdown]] - `contains` [EXTRACTED]
-- [[Nuclear Option (Reset Everything)]] - `contains` [EXTRACTED]
+- [[Usage_55]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

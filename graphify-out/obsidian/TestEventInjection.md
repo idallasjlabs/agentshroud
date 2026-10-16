@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "test_dashboard.py"
+community: "SessionError"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_dashboardpy
+  - community/SessionError
 ---
 
 # TestEventInjection
 
 ## Connections
-- [[.test_unknown_event_source_rejected()]] - `method` [EXTRACTED]
-- [[.test_unregistered_session_event_rejected()]] - `method` [EXTRACTED]
-- [[.test_valid_event_source_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_event_source_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_unregistered_session_event_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_valid_event_source_accepted()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_dashboardpy
+#graphify/code #graphify/INFERRED #community/SessionError

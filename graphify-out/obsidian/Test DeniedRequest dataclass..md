@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "TrustManager"
+community: "ApprovalHardening"
 location: "L450"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ApprovalHardening
 ---
 
 # Test DeniedRequest dataclass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDeniedRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

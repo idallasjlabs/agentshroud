@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "wazuh_client.py"
+community: "test_scanner_integration_coverage.py"
 location: "L736"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/test_scanner_integration_coveragepy
 ---
 
 # TestDataConfidentiality
 
 ## Connections
-- [[.test_baseline_only()_1]] - `method` [EXTRACTED]
-- [[.test_full_stack()_2]] - `method` [EXTRACTED]
+- [[dot-test_baseline_only()]] - `method` [EXTRACTED]
+- [[dot-test_full_stack()_1]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

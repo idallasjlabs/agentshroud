@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # Startup wrapper should default OpenClaw bind to loopback unless explicitly overr
 
 ## Connections
-- [[.test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

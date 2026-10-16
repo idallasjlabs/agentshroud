@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "FalcoAlertWatcher"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/FalcoAlertWatcher
 ---
 
 # Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FalcoAlertWatcher]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

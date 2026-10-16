@@ -1,17 +1,18 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Recommendation"
-location: "L3"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

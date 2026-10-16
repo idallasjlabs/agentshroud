@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "4. Environment Variables"
+community: "CredentialInfo"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/CredentialInfo
 ---
 
 # Test key rotation manager functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRotationManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo

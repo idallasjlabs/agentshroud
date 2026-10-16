@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Dependency Graph"
+community: "📋 Detailed Step-by-Step"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dependency_Graph
+  - community/_Detailed_Step-by-Step
 ---
 
 # Step 3: Verify Skill Ready
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Detailed Step-by-Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dependency_Graph
+#graphify/document #graphify/EXTRACTED #community/_Detailed_Step-by-Step

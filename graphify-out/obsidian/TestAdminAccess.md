@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L78"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - graphify/EXTRACTED
+  - community/Role
 ---
 
 # TestAdminAccess
 
 ## Connections
-- [[.test_admin_blocked_from_private_tool()]] - `method` [EXTRACTED]
-- [[.test_admin_can_use_admin_tool()]] - `method` [EXTRACTED]
-- [[.test_admin_can_use_collaborator_tool()]] - `method` [EXTRACTED]
-- [[.test_admin_denied_tools_contains_private()]] - `method` [EXTRACTED]
+- [[dot-test_admin_blocked_from_private_tool()]] - `method` [EXTRACTED]
+- [[dot-test_admin_can_use_admin_tool()]] - `method` [EXTRACTED]
+- [[dot-test_admin_can_use_collaborator_tool()]] - `method` [EXTRACTED]
+- [[dot-test_admin_denied_tools_contains_private()]] - `method` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/Role

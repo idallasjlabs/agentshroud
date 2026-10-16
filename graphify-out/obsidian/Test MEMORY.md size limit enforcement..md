@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "lifespan.py"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/lifespanpy
 ---
 
 # Test MEMORY.md size limit enforcement.
 
 ## Connections
-- [[.test_memory_md_size_limit()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_memory_md_size_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

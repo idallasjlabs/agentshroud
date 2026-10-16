@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "🟢 INFO (nice to have)"
-location: "L441"
+community: "TestGetSbom"
+location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/TestGetSbom
 ---
 
 # TestGetSbom
 
 ## Connections
-- [[.test_returns_latest_sbom()]] - `method` [EXTRACTED]
-- [[.test_returns_none_for_empty_dir()]] - `method` [EXTRACTED]
-- [[.test_returns_none_when_no_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[dot-test_invalid_json()]] - `method` [EXTRACTED]
+- [[dot-test_missing_dir()]] - `method` [EXTRACTED]
+- [[dot-test_no_files()]] - `method` [EXTRACTED]
+- [[dot-test_valid()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/code #graphify/EXTRACTED #community/TestGetSbom

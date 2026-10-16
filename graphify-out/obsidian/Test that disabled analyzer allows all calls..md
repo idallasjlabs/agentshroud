@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "ToolChainAnalyzer"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/ToolChainAnalyzer
 ---
 
 # Test that disabled analyzer allows all calls.
 
 ## Connections
-- [[.test_disabled_analyzer()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_disabled_analyzer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "sync-cve-registry.py"
+community: "TestPathIsolationManager"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/TestPathIsolationManager
 ---
 
 # Test basic result creation.
 
 ## Connections
-- [[.test_basic_result()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_basic_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

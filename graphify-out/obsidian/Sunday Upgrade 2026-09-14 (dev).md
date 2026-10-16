@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "start.sh"
+community: "Hermes Cron Dedupe (dev)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/startsh
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # Sunday Upgrade 2026-09-14 (dev)
@@ -16,4 +16,4 @@ tags:
 - [[Hermes Cron Dedupe (dev)]] - `references` [AMBIGUOUS]
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/startsh
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

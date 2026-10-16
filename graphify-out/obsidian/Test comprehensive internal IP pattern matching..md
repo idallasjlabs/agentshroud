@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "System Instructions: Credential Security (Ultra-"
+community: "TestMetadataGuard"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-
+  - community/TestMetadataGuard
 ---
 
 # Test comprehensive internal IP pattern matching.
 
 ## Connections
-- [[.test_internal_ip_patterns_comprehensive()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_internal_ip_patterns_comprehensive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-
+#graphify/rationale #graphify/EXTRACTED #community/TestMetadataGuard

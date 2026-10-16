@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "test_integration.py"
-location: "L28"
+community: "Gateway Container Startup Failures"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/Gateway_Container_Startup_Failures
 ---
 
 # Startup Errors
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Bot Container Startup Failures]] - `contains` [EXTRACTED]
+- [[Gateway Container Startup Failures]] - `contains` [EXTRACTED]
+- [[Related Notes_32]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_integrationpy
+#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures

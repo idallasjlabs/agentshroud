@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "SOC Command Center — Five Pillars"
-location: "L103"
+community: "TestIsFresh"
+location: "L562"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Command_Center__Five_Pillars
+  - community/TestIsFresh
 ---
 
 # TestIsFresh
 
 ## Connections
-- [[.test_empty_dir_returns_false()]] - `method` [EXTRACTED]
-- [[.test_fresh_file_returns_true()]] - `method` [EXTRACTED]
-- [[.test_old_file_returns_false()]] - `method` [EXTRACTED]
-- [[.test_stat_error_returns_false()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_returns_false_for_empty_dir()]] - `method` [EXTRACTED]
+- [[dot-test_returns_false_for_missing_dir()]] - `method` [EXTRACTED]
+- [[dot-test_returns_false_for_stale_file()]] - `method` [EXTRACTED]
+- [[dot-test_returns_true_for_fresh_file()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Command_Center__Five_Pillars
+#graphify/code #graphify/EXTRACTED #community/TestIsFresh

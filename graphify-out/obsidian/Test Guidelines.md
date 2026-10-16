@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "sanitizer.py"
+community: "Contributing to AgentShroud™"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/Contributing_to_AgentShroud
 ---
 
 # Test Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

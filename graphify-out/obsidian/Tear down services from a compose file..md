@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: "ContainerEngine"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/ContainerEngine
 ---
 
 # Tear down services from a compose file.
 
 ## Connections
-- [[.compose_down()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-compose_down()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

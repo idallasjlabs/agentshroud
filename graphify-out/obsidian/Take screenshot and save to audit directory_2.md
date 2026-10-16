@@ -12,6 +12,6 @@ tags:
 # Take screenshot and save to audit directory
 
 ## Connections
-- [[._take_screenshot()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_take_screenshot()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "TrustManager"
-location: "L22"
+community: "lifespan.py"
+location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/lifespanpy
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

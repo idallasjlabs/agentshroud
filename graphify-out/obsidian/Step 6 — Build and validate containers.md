@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "EgressFilter"
+community: "Mode A — Single task"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Mode_A__Single_task
 ---
 
 # Step 6 — Build and validate containers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

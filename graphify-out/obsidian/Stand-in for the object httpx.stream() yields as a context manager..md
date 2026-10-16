@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "rationale"
-community: "plan_remediation()"
+community: "FetchOutcome"
 location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/FetchOutcome
 ---
 
 # Stand-in for the object httpx.stream() yields as a context manager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeStreamResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/plan_remediation
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

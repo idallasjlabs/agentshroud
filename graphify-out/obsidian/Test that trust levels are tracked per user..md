@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "TestUserSessionManager"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/TestUserSessionManager
 ---
 
 # Test that trust levels are tracked per user.
 
 ## Connections
-- [[.test_trust_level_per_user()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_trust_level_per_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/TestUserSessionManager

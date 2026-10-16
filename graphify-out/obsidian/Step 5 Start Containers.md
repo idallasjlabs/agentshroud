@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "is_overloaded()"
+community: "First Time Setup"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/First_Time_Setup
 ---
 
 # Step 5: Start Containers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/is_overloaded
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

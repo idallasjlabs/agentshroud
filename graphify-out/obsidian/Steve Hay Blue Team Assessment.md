@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "concept"
-community: "Function Details"
+community: "agentshroud-ieee-paper.md"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Function_Details
+  - graphify/EXTRACTED
+  - community/agentshroud-ieee-papermd
 ---
 
 # Steve Hay Blue Team Assessment
@@ -14,4 +14,4 @@ tags:
 - [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - `conceptually_related_to` [INFERRED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Function_Details
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd

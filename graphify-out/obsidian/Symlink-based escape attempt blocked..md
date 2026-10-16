@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "AlertDispatcher"
 location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/AlertDispatcher
 ---
 
 # Symlink-based escape attempt blocked.
 
 ## Connections
-- [[.test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

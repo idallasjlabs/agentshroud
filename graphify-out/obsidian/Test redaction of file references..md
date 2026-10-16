@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "TestPromptProtection"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestPromptProtection
 ---
 
 # Test redaction of file references.
 
 ## Connections
-- [[.test_file_reference_redaction()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_file_reference_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

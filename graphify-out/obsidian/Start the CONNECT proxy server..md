@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "HTTPConnectProxy"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/HTTPConnectProxy
 ---
 
 # Start the CONNECT proxy server.
 
 ## Connections
-- [[.start()]] - `rationale_for` [EXTRACTED]
+- [[dot-start()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

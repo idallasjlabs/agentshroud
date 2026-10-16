@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 1324"
-location: "L335"
+community: "parse_clamscan_output"
+location: "L512"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1324
+  - community/parse_clamscan_output
 ---
 
-# TestClamavSummary
+# TestClamAVSummary
 
 ## Connections
-- [[dot-test_clean_when_installed_not_running()]] - `method` [EXTRACTED]
-- [[dot-test_not_run_when_not_installed()]] - `method` [EXTRACTED]
-- [[dot-test_running_report_mtime_timestamp()]] - `method` [EXTRACTED]
-- [[dot-test_running_without_report()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_summary_clean()_2]] - `method` [EXTRACTED]
+- [[dot-test_summary_error()_1]] - `method` [EXTRACTED]
+- [[dot-test_summary_infected()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1324
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

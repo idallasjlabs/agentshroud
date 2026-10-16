@@ -1,19 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "test_wire_llm_settings.js"
-location: "L434"
+community: "AgentShroud Phase Review — 2026-02-23"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # Summary
 
 ## Connections
-- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
-- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

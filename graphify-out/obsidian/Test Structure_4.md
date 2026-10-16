@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "TestMultiBotIsolation"
-location: "L280"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotIsolation
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Test Structure
 
 ## Connections
-- [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotIsolation
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

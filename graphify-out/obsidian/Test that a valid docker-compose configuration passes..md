@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "TestNetworkValidator"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/TestNetworkValidator
 ---
 
 # Test that a valid docker-compose configuration passes.
 
 ## Connections
-- [[.test_validate_docker_compose_config_valid_config_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_validate_docker_compose_config_valid_config_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/rationale #graphify/EXTRACTED #community/TestNetworkValidator

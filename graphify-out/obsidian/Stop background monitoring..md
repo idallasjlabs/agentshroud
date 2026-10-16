@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "ResourceGuard"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/ResourceGuard
 ---
 
 # Stop background monitoring.
 
 ## Connections
-- [[.stop_monitoring()]] - `rationale_for` [EXTRACTED]
+- [[dot-stop_monitoring()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "TestParanoidConfig"
+community: "StdioConnection"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestParanoidConfig
+  - community/StdioConnection
 ---
 
 # Start the MCP server process.
 
 ## Connections
-- [[.start()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-start()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestParanoidConfig
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

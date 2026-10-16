@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "ModuleStatsCollector"
+community: "TestMiddlewareSessionEnforcement"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # Test that middleware requires user identification.
 
 ## Connections
-- [[.test_middleware_user_identification()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_middleware_user_identification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

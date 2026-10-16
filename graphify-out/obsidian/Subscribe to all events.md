@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "make_event"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/make_event
 ---
 
 # Subscribe to all events
 
 ## Connections
-- [[.subscribe()]] - `rationale_for` [EXTRACTED]
+- [[dot-subscribe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/make_event

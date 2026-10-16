@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "remind_proposal_review.sh"
+community: "lifespan.py"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/remind_proposal_reviewsh
+  - community/lifespanpy
 ---
 
 # Test validation before writing to memory files.
 
 ## Connections
-- [[.test_memory_write_validation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_memory_write_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/remind_proposal_reviewsh
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "_make_token()"
+community: "ApprovalHardening"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/ApprovalHardening
 ---
 
 # Test detection of URL-encoded parameters.
 
 ## Connections
-- [[.test_parameter_obfuscation_detection_url()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_parameter_obfuscation_detection_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_token
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

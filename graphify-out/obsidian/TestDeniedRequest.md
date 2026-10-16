@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "TrustManager"
+community: "ApprovalHardening"
 location: "L449"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustManager
+  - community/ApprovalHardening
 ---
 
 # TestDeniedRequest
 
 ## Connections
-- [[.test_denied_request_creation()]] - `method` [EXTRACTED]
+- [[dot-test_denied_request_creation()]] - `method` [EXTRACTED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[DeceptionDetection]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[Test DeniedRequest dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustManager
+#graphify/code #graphify/INFERRED #community/ApprovalHardening

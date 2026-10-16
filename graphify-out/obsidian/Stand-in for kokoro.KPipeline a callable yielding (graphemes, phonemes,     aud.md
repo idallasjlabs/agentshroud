@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "test_voice_gateway.py"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_voice_gatewaypy
 ---
 
 # Stand-in for kokoro.KPipeline: a callable yielding (graphemes, phonemes,     aud
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fake_kokoro_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

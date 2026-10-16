@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "concept"
-community: "test_telegram_replay.py"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Strict Sequential 4-Query Search Protocol
@@ -24,4 +24,4 @@ tags:
 - [[Search-Snippets-Only Rule (web_extractfetchbrowse unconfigured)]] - `rationale_for` [EXTRACTED]
 - [[Zero-Hallucination Primary-Source Rule (30-day recency)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # System Audit Documentation
 
 ## Connections
-- [[Purpose_64]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_69]] - `contains` [EXTRACTED]
-- [[Related Skills_70]] - `contains` [EXTRACTED]
-- [[Usage_71]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sadREADME]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
+- [[Related Skills_100]] - `contains` [EXTRACTED]
+- [[Usage_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

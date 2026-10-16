@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Step-by-Step Installation"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Step-by-Step_Installation
 ---
 
 # Step 1: Clone the Repository
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

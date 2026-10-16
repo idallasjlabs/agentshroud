@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "TestSSRFDetection"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestSSRFDetection
 ---
 
 # TestMalformedURLs
 
 ## Connections
-- [[.test_empty_url()]] - `method` [EXTRACTED]
-- [[.test_no_scheme()]] - `method` [EXTRACTED]
-- [[.test_weird_scheme()]] - `method` [EXTRACTED]
+- [[dot-test_empty_url()]] - `method` [EXTRACTED]
+- [[dot-test_no_scheme()]] - `method` [EXTRACTED]
+- [[dot-test_weird_scheme()]] - `method` [EXTRACTED]
 - [[Edge cases and malformed URLs.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[URLAnalyzer_1]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

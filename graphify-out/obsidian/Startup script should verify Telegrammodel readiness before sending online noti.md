@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # Startup script should verify Telegram/model readiness before sending online noti
 
 ## Connections
-- [[.test_startup_notifications_wait_for_runtime_readiness()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_startup_notifications_wait_for_runtime_readiness()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

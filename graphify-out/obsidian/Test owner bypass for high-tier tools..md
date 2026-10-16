@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "switch_model.sh"
+community: "ApprovalQueueConfig"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/ApprovalQueueConfig
 ---
 
 # Test owner bypass for high-tier tools.
 
 ## Connections
-- [[.test_owner_bypass()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_bypass()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/switch_modelsh
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

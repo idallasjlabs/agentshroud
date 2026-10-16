@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Skill: UX Expert (UX)"
+community: "ToolResultSanitizer"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/ToolResultSanitizer
 ---
 
 # Test that code blocks with URLs are preserved.
 
 ## Connections
-- [[.test_code_blocks_preserved()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_code_blocks_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

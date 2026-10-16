@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "_seed_cron"
-location: "L146"
+community: "discover_upstream_versions.py"
+location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/discover_upstream_versionspy
 ---
 
 # Tag records for a Docker Hub repository, newest first.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[fetch_dockerhub_tags()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_seed_cron
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "TrustManager"
+community: "ApprovalHardening"
 location: "L424"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TrustManager
+  - graphify/EXTRACTED
+  - community/ApprovalHardening
 ---
 
 # TestDeceptionDetection
 
 ## Connections
-- [[.test_basic_detection()]] - `method` [EXTRACTED]
-- [[.test_default_detection()]] - `method` [EXTRACTED]
+- [[dot-test_basic_detection()]] - `method` [EXTRACTED]
+- [[dot-test_default_detection()]] - `method` [EXTRACTED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[DeceptionDetection]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[Test DeceptionDetection dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

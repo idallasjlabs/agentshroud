@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "wazuh_client.py"
+community: "test_scanner_integration_coverage.py"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/test_scanner_integration_coveragepy
 ---
 
 # TestAppStateHas
 
 ## Connections
-- [[.test_import_failure_returns_false()]] - `method` [EXTRACTED]
-- [[.test_true_and_false_against_real_app_state()]] - `method` [EXTRACTED]
+- [[dot-test_import_failure_returns_false()]] - `method` [EXTRACTED]
+- [[dot-test_true_and_false_against_real_app_state()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

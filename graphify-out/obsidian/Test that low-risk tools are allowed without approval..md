@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "switch_model.sh"
+community: "ApprovalQueueConfig"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/ApprovalQueueConfig
 ---
 
 # Test that low-risk tools are allowed without approval.
 
 ## Connections
-- [[.test_low_risk_tool_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_low_risk_tool_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/switch_modelsh
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

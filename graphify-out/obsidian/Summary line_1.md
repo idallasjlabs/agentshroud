@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06.md"
+source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "web_config.py"
+community: "AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin
 ---
 
 # Summary line
 
 ## Connections
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin

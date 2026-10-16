@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L786"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # TestOutboundFilterResultBinding
 
 ## Connections
-- [[.test_no_outbound_filter_does_not_unbind()]] - `method` [EXTRACTED]
-- [[.test_outbound_filter_still_escalates_fabricated_notice()]] - `method` [EXTRACTED]
+- [[dot-test_no_outbound_filter_does_not_unbind()]] - `method` [EXTRACTED]
+- [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
@@ -26,10 +26,10 @@ tags:
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/OutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "Security Module Inventory"
+community: "AgentShroud v0.9.0 — Human Interface Testing Guide"
 location: "L321"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/AgentShroud_v090__Human_Interface_Testing_Guide
 ---
 
 # Test: project_scoped mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Collaborator Experience Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Guide

@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L494"
+community: "get_trivy_summary"
+location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/get_trivy_summary
 ---
 
 # TestGetSbom
 
 ## Connections
-- [[.test_invalid_json()]] - `method` [EXTRACTED]
-- [[.test_missing_dir()]] - `method` [EXTRACTED]
-- [[.test_no_files()]] - `method` [EXTRACTED]
-- [[.test_valid()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_returns_latest_sbom()]] - `method` [EXTRACTED]
+- [[dot-test_returns_none_for_empty_dir()]] - `method` [EXTRACTED]
+- [[dot-test_returns_none_when_no_dir()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

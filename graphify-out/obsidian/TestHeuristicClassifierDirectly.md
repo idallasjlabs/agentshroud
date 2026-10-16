@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "BotConfig"
+community: "HeuristicClassifier"
 location: "L455"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/HeuristicClassifier
 ---
 
 # TestHeuristicClassifierDirectly
 
 ## Connections
-- [[.test_classifier_flags_payloads()]] - `method` [EXTRACTED]
-- [[HeuristicClassifier]] - `uses` [INFERRED]
+- [[dot-test_classifier_flags_payloads()]] - `method` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[HeuristicClassifier returns injection or uncertain on known bad payloads.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

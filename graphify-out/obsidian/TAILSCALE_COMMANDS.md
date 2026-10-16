@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "ledger row (id, timestamp, source, hashes, sanit"
+community: "Tailscale Remote Access Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/ledger_row_id_timestamp_source_hashes_sanit
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # TAILSCALE_COMMANDS.md
@@ -15,6 +15,6 @@ tags:
 - [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access (Pi)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
-- [[troubleshooting]] - `conceptually_related_to` [INFERRED]
+- [[troubleshooting_23]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/ledger_row_id_timestamp_source_hashes_sanit
+#graphify/document #graphify/INFERRED #community/Tailscale_Remote_Access_Setup

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "lifespan.py"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/lifespanpy
 ---
 
 # Test memory lifecycle management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemoryLifecycleManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

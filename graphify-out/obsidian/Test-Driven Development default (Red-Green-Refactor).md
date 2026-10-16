@@ -1,16 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Docker Socket Proxy Service"
+community: "Test-Driven Development default (Red-Green-Refactor)"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/Docker_Socket_Proxy_Service
+  - graphify/EXTRACTED
+  - community/Test-Driven_Development_default_Red-Green-Refactor
 ---
 
 # Test-Driven Development default (Red-Green-Refactor)
 
-## Connections
-- [[CI job test (pytest matrix, coverage 84%)]] - `conceptually_related_to` [INFERRED]
-
-#graphify/rationale #graphify/INFERRED #community/Docker_Socket_Proxy_Service
+#graphify/rationale #graphify/EXTRACTED #community/Test-Driven_Development_default_Red-Green-Refactor

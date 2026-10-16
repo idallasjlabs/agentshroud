@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "BaseModel"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # System Audit Documentation
 
 ## Connections
-- [[Purpose_101]] - `contains` [EXTRACTED]
-- [[README_106]] - `contains` [EXTRACTED]
-- [[Related Skills_110]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_111]] - `contains` [EXTRACTED]
+- [[Purpose_169]] - `contains` [EXTRACTED]
+- [[Related Skills_111]] - `contains` [EXTRACTED]
+- [[Usage_120]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-sadREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

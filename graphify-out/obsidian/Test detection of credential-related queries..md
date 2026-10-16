@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "TestMultiTurnTracker"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/TestMultiTurnTracker
 ---
 
 # Test detection of credential-related queries.
 
 ## Connections
-- [[.test_credential_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_credential_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

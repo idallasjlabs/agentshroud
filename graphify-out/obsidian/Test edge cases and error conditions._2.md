@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "GroupRoleResolver"
-location: "L443"
+community: "TestPromptProtection"
+location: "L275"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestPromptProtection
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[.test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

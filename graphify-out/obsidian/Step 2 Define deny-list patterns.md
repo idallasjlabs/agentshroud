@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "TestOpenAPIContract"
+community: "Implement gateway-level outbound information filtering module"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Step 2: Define deny-list patterns
 
 ## Connections
-- [[Remediation_7]] - `contains` [EXTRACTED]
+- [[Remediation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

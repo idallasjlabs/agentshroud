@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L724"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # TestInboundPIIOwnerExemption
 
 ## Connections
-- [[._redacting_pii()]] - `method` [EXTRACTED]
-- [[.test_non_owner_inbound_query_still_redacted()]] - `method` [EXTRACTED]
-- [[.test_owner_inbound_query_not_pii_redacted()]] - `method` [EXTRACTED]
+- [[dot-_redacting_pii()]] - `method` [EXTRACTED]
+- [[dot-test_non_owner_inbound_query_still_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_owner_inbound_query_not_pii_redacted()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
@@ -26,11 +26,11 @@ tags:
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/OutboundInfoFilter

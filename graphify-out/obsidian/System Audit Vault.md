@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "System Audit Vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/System_Audit_Vault
 ---
 
 # System Audit Vault
 
 ## Connections
 - [[Purpose_28]] - `contains` [EXTRACTED]
-- [[README_28]] - `contains` [EXTRACTED]
-- [[Related Skills_31]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_31]] - `contains` [EXTRACTED]
+- [[Related Skills_21]] - `contains` [EXTRACTED]
+- [[Usage_24]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-savREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault

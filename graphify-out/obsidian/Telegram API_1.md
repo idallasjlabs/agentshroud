@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "container-net-diag.sh"
+community: "Audit Ledger (SHA-256 hash only)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Telegram API
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (human gate)]] - `calls` [EXTRACTED]
 - [[HTTP CONNECT Proxy (domain allowlist)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

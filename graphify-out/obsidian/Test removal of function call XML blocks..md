@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "A2AProxyResult"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Test removal of function call XML blocks.
 
 ## Connections
-- [[.test_function_calls_xml_removal()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_function_calls_xml_removal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L627"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # TestDependencySecurity
 
 ## Connections
-- [[.test_no_pickle_in_security_modules()]] - `method` [EXTRACTED]
-- [[.test_no_shell_true_in_subprocess()]] - `method` [EXTRACTED]
-- [[.test_no_yaml_unsafe_load()]] - `method` [EXTRACTED]
-- [[.test_requirements_pinned()]] - `method` [EXTRACTED]
+- [[dot-test_no_pickle_in_security_modules()]] - `method` [EXTRACTED]
+- [[dot-test_no_shell_true_in_subprocess()]] - `method` [EXTRACTED]
+- [[dot-test_no_yaml_unsafe_load()]] - `method` [EXTRACTED]
+- [[dot-test_requirements_pinned()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -30,15 +30,15 @@ tags:
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test dependency and supply chain security.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

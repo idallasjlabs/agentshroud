@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "MockValidator"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/MockValidator
 ---
 
 # Test the complete rotation workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRotationWorkflow]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/rationale #graphify/EXTRACTED #community/MockValidator

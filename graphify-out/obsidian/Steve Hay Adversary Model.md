@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "concept"
-community: "DockerEngine"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Steve Hay Adversary Model
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DockerEngine
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "Security Verification Report"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Security_Verification_Report
 ---
 
 # Test 4: Check Remote Repository
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Verification Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report

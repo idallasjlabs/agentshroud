@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TestToolChainAnalyzer"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestToolChainAnalyzer
 ---
 
 # Test that credential access → outbound tools are blocked.
 
 ## Connections
-- [[.test_credential_to_outbound_blocking()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_credential_to_outbound_blocking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

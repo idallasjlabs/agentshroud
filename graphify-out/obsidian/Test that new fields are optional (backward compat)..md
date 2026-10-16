@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "start-agentshroud.sh"
+community: "create_auth_dependency"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/create_auth_dependency
 ---
 
 # Test that new fields are optional (backward compat).
 
 ## Connections
-- [[.test_status_response_optional_fields()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_status_response_optional_fields()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

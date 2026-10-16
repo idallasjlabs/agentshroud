@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "TestCollaboratorAccess"
+community: "test_main_endpoints.py"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorAccess
+  - community/test_main_endpointspy
 ---
 
 # Test listing pending approvals.
 
 ## Connections
-- [[.test_approval_queue_list()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_approval_queue_list()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorAccess
+#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy

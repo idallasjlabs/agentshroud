@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "_make_token()"
+community: "ApprovalHardening"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/ApprovalHardening
 ---
 
 # Test hardening initialization.
 
 ## Connections
-- [[.test_initialization()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_token
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

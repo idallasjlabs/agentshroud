@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L882"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # TestContainerSecurity
 
 ## Connections
-- [[.test_agent_isolation_module()]] - `method` [EXTRACTED]
-- [[.test_clamav_binary_not_found()]] - `method` [EXTRACTED]
-- [[.test_clamav_parse_clean()]] - `method` [EXTRACTED]
-- [[.test_clamav_parse_infected()]] - `method` [EXTRACTED]
-- [[.test_network_validator_init()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_clamav()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_falco()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_trivy()]] - `method` [EXTRACTED]
-- [[.test_security_toolchain_wazuh()]] - `method` [EXTRACTED]
-- [[.test_trivy_binary_not_found()]] - `method` [EXTRACTED]
+- [[dot-test_agent_isolation_module()]] - `method` [EXTRACTED]
+- [[dot-test_clamav_binary_not_found()]] - `method` [EXTRACTED]
+- [[dot-test_clamav_parse_clean()]] - `method` [EXTRACTED]
+- [[dot-test_clamav_parse_infected()]] - `method` [EXTRACTED]
+- [[dot-test_network_validator_init()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_clamav()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_falco()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_trivy()]] - `method` [EXTRACTED]
+- [[dot-test_security_toolchain_wazuh()]] - `method` [EXTRACTED]
+- [[dot-test_trivy_binary_not_found()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -40,11 +40,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
@@ -55,7 +55,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test container hardening and runtime security.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

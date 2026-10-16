@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "TeamsConfig"
-location: "L28"
+community: "ToolResultSanitizer"
+location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/ToolResultSanitizer
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

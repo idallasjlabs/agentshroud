@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "A2AProxyResult"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Test the performance-optimized function calls only filter.
 
 ## Connections
-- [[.test_quick_function_calls_filter()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_quick_function_calls_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-08-30.md"
 type: "document"
-community: "OutputSchemaEnforcer"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/check-vendor-compatsh
 ---
 
 # Sunday Upgrade Report 2026-08-30 (final)
@@ -16,4 +16,4 @@ tags:
 - [[Wazuh-Agent Sidecar Split (SIDECAR-GAP-001 resolution)]] - `references` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

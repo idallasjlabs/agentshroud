@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # Startup/shutdown notifications should use minimal, non-identifying text.
 
 ## Connections
-- [[.test_startup_notifications_use_minimal_message_format()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_startup_notifications_use_minimal_message_format()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

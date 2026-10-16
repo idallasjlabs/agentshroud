@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Implement per-user session isolation using Teleg"
+community: "Step-by-Step Deployment"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Teleg
+  - community/Step-by-Step_Deployment
 ---
 
 # Step-by-Step Deployment
@@ -24,4 +24,4 @@ tags:
 - [[Step 8 Service Startup]] - `contains` [EXTRACTED]
 - [[Step 9 Health Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

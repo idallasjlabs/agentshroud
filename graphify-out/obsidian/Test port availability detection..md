@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "rationale"
-community: "KeyVault"
+community: "PortManager"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/PortManager
 ---
 
 # Test port availability detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsPortAvailable]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

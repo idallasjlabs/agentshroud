@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # Test PIISanitizer accepts and stores mode parameter.
 
 ## Connections
-- [[.test_pii_sanitizer_mode_param()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_pii_sanitizer_mode_param()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: ".analyze_message"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/analyze_message
 ---
 
 # Strip potentially malicious markdown from tool results.      Removes:     - Mark
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strip_markdown_exfil()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/analyze_message

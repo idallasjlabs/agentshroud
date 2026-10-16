@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "_stub_client"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/_stub_client
 ---
 
 # TestLifecycleCommands
 
 ## Connections
-- [[.test_freeze_confirmation_required()]] - `method` [EXTRACTED]
-- [[.test_freeze_success()]] - `method` [EXTRACTED]
-- [[.test_restart_service_confirmation_required()]] - `method` [EXTRACTED]
-- [[.test_restart_service_success()]] - `method` [EXTRACTED]
-- [[.test_stop_service_confirmation_required()]] - `method` [EXTRACTED]
-- [[.test_stop_service_success()]] - `method` [EXTRACTED]
+- [[dot-test_freeze_confirmation_required()]] - `method` [EXTRACTED]
+- [[dot-test_freeze_success()]] - `method` [EXTRACTED]
+- [[dot-test_restart_service_confirmation_required()]] - `method` [EXTRACTED]
+- [[dot-test_restart_service_success()]] - `method` [EXTRACTED]
+- [[dot-test_stop_service_confirmation_required()]] - `method` [EXTRACTED]
+- [[dot-test_stop_service_success()]] - `method` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/_stub_client

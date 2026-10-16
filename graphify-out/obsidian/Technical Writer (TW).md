@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Technical_Writer_TW
 ---
 
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_35]] - `contains` [EXTRACTED]
-- [[README_35]] - `contains` [EXTRACTED]
-- [[Related Skills_38]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_38]] - `contains` [EXTRACTED]
+- [[Purpose_56]] - `contains` [EXTRACTED]
+- [[Related Skills_49]] - `contains` [EXTRACTED]
+- [[Usage_52]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-twREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

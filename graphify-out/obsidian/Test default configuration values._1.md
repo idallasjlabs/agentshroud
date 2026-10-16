@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "ConsentFramework"
-location: "L31"
+community: "TestPathIsolationManager"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/TestPathIsolationManager
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

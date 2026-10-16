@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "_req"
 location: "L352"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/_req
 ---
 
 # TestMemoryIntegrityRegistration
 
 ## Connections
-- [[.test_expected_write_registered()]] - `method` [EXTRACTED]
-- [[.test_no_path_match_no_registration()]] - `method` [EXTRACTED]
+- [[dot-test_expected_write_registered()]] - `method` [EXTRACTED]
+- [[dot-test_no_path_match_no_registration()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/code #graphify/INFERRED #community/_req

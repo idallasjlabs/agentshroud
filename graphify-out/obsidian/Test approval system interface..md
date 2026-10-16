@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TestToolChainAnalyzer"
 location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestToolChainAnalyzer
 ---
 
 # Test approval system interface.
 
 ## Connections
-- [[.test_approval_system()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_approval_system()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

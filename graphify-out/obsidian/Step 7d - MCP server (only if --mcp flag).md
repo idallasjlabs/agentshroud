@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/exports.md"
+source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "graphify reference: extra exports and benchmark"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Step 7d - MCP server (only if --mcp flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "jira_dev_ticket run()"
+community: "Mode A — Single task"
 location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/jira_dev_ticket_run
+  - community/Mode_A__Single_task
 ---
 
 # Step 3 — Write and edit code
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/jira_dev_ticket_run
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "_INJECTION_PATTERNS (prompt injection regex set)"
+community: "SlackSocketClient Reconnect Backoff Tests"
 location: "line 26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_INJECTION_PATTERNS_prompt_injection_regex_set
+  - community/SlackSocketClient_Reconnect_Backoff_Tests
 ---
 
 # SlackSocketClient Reconnect Backoff Tests
 
-#graphify/code #graphify/EXTRACTED #community/_INJECTION_PATTERNS_prompt_injection_regex_set
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient_Reconnect_Backoff_Tests

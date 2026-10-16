@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # Test that warnings are logged for all core modules in monitor mode.
 
 ## Connections
-- [[.test_monitor_mode_warnings_all_modules()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_warnings_all_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

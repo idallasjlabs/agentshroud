@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "AgentShroud Changelog"
-location: "L3"
+community: "v0.9.0 — Apple Messages Integration"
+location: "L391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/v090__Apple_Messages_Integration
 ---
 
 # Status
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration

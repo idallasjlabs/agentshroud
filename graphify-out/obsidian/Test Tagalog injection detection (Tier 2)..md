@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "TestApprovalHardening"
+community: "TestMultilingualInjection"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/TestMultilingualInjection
 ---
 
 # Test Tagalog injection detection (Tier 2).
 
 ## Connections
-- [[.test_tier2_tagalog_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tier2_tagalog_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

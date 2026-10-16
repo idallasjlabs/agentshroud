@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "ProxyAction"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ProxyAction
 ---
 
 # Test that security modules are properly integrated into web proxy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebProxySecurityIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # Test detection of 'ignore previous instructions' injection.
 
 ## Connections
-- [[.test_ignore_instructions_injection_high_severity()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_ignore_instructions_injection_high_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/InjectionAction

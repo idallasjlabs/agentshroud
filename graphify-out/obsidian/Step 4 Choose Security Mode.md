@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Step-by-Step Installation"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Step-by-Step_Installation
 ---
 
 # Step 4: Choose Security Mode
@@ -16,4 +16,4 @@ tags:
 - [[Sidecar Mode]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

@@ -1,17 +1,19 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "setup-https-proxy.js"
+community: "System Audit & Documentation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-https-proxyjs
+  - community/System_Audit__Documentation
 ---
 
 # System Audit & Documentation
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sadSKILL]] - `contains` [EXTRACTED]
 - [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - `contains` [EXTRACTED]
 - [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - `contains` [EXTRACTED]
 - [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - `contains` [EXTRACTED]
@@ -25,7 +27,5 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-https-proxyjs
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

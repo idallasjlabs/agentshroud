@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L83"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # TestInboundProcessing
 
 ## Connections
-- [[.test_trusted_peer_allowed()]] - `method` [EXTRACTED]
-- [[.test_unknown_peer_quarantined()]] - `method` [EXTRACTED]
-- [[.test_untrusted_peer_allowed_in_monitor()]] - `method` [EXTRACTED]
-- [[.test_untrusted_peer_denied()]] - `method` [EXTRACTED]
+- [[dot-test_trusted_peer_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_peer_quarantined()]] - `method` [EXTRACTED]
+- [[dot-test_untrusted_peer_allowed_in_monitor()]] - `method` [EXTRACTED]
+- [[dot-test_untrusted_peer_denied()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # Test detection of XML function call injection.
 
 ## Connections
-- [[.test_xml_function_injection_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_xml_function_injection_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/InjectionAction

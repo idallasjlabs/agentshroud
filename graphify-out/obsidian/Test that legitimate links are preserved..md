@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Skill: UX Expert (UX)"
+community: "ToolResultSanitizer"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/ToolResultSanitizer
 ---
 
 # Test that legitimate links are preserved.
 
 ## Connections
-- [[.test_legitimate_links_preserved()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_legitimate_links_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

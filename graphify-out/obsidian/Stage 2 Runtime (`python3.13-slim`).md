@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Dockerfile — Gateway"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Dockerfile__Gateway
 ---
 
 # Stage 2: Runtime (`python:3.13-slim`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Build Stages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

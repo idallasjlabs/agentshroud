@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/tests/test_triage_cve_mitigations.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L469"
+community: "main"
+location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/main
 ---
 
 # TestMain
 
 ## Connections
-- [[.test_apply_writes_registry_and_gap()]] - `method` [EXTRACTED]
-- [[.test_dry_run_writes_nothing()_1]] - `method` [EXTRACTED]
-- [[.test_gap_report_reflects_full_registry_not_just_this_runs_delta()]] - `method` [EXTRACTED]
-- [[.test_unknown_agent_errors()]] - `method` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
-- [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
+- [[dot-test_dry_run_default_command()]] - `method` [EXTRACTED]
+- [[dot-test_dry_run_touches_nothing()]] - `method` [EXTRACTED]
+- [[dot-test_main_all_pass_with_injected_runner()]] - `method` [EXTRACTED]
+- [[dot-test_main_default_hosts()]] - `method` [EXTRACTED]
+- [[dot-test_main_failure_nonzero_exit()]] - `method` [EXTRACTED]
+- [[dot-test_main_unreachable_nonzero_exit()]] - `method` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/main

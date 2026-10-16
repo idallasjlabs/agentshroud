@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "UserSessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/UserSessionManager
 ---
 
 # Test File Sandbox Message Gate Suite
@@ -14,4 +14,4 @@ tags:
 - [[MiddlewareManager]] - `references` [EXTRACTED]
 - [[UserSessionManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

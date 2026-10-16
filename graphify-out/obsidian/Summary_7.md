@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
+source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "SecureBrowser"
-location: "L132"
+community: "Development Workflow: Read-Only Filesystem Strategy"
+location: "L604"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/Development_Workflow_Read-Only_Filesystem_Strategy
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy

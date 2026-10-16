@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "sync-cve-registry.py"
+community: "TestPathIsolationManager"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/TestPathIsolationManager
 ---
 
 # Test paths that don't need rewriting.
 
 ## Connections
-- [[.test_path_rewriting_no_rewrite_needed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_path_rewriting_no_rewrite_needed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

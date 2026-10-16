@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/hermes-cron/sunday-upgrade-report.sh"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/sunday-upgrade-applysh
 ---
 
 # Sunday Upgrade Report Hermes-cron Delivery
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[sunday-upgrade.sh (remote-control launcher)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

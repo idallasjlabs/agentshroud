@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "TestMultiTurnTracker"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/TestMultiTurnTracker
 ---
 
 # Test that sessions get blocked at high scores.
 
 ## Connections
-- [[.test_session_blocking()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_session_blocking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker

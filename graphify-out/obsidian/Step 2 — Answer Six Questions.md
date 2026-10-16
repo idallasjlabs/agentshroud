@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Core Components"
+community: "Workflow: Survey → Draft → Inject → Confirm"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Components
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Step 2 — Answer Six Questions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Survey → Draft → Inject → Confirm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Components
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

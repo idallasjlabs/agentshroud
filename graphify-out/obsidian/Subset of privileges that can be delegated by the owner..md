@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "make_event()"
+community: "DelegationManager"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/make_event
+  - community/DelegationManager
 ---
 
 # Subset of privileges that can be delegated by the owner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DelegationPrivilege]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/make_event
+#graphify/rationale #graphify/EXTRACTED #community/DelegationManager

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "AgentTarget"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/AgentTarget
 ---
 
 # Stream sanitized content to an OpenAI-compatible agent, yielding text         de
 
 ## Connections
-- [[.forward_to_agent_stream()]] - `rationale_for` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

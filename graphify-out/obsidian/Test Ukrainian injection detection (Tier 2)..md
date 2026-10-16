@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "TestApprovalHardening"
+community: "TestMultilingualInjection"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/TestMultilingualInjection
 ---
 
 # Test Ukrainian injection detection (Tier 2).
 
 ## Connections
-- [[.test_tier2_ukrainian_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tier2_ukrainian_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

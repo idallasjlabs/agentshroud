@@ -1,37 +1,37 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "AlertDispatcher"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxy_failoverpy
+  - community/AlertDispatcher
 ---
 
 # TestFileSandbox
 
 ## Connections
-- [[.monitor_sandbox()]] - `method` [EXTRACTED]
-- [[.sandbox()]] - `method` [EXTRACTED]
-- [[.test_absolute_path_to_sensitive_blocked()]] - `method` [EXTRACTED]
-- [[.test_app_read_allowed()]] - `method` [EXTRACTED]
-- [[.test_basic_traversal_blocked()]] - `method` [EXTRACTED]
-- [[.test_double_encoded_traversal_blocked()]] - `method` [EXTRACTED]
-- [[.test_enforce_vs_monitor_contrast()]] - `method` [EXTRACTED]
-- [[.test_monitor_mode_allows_everything()_1]] - `method` [EXTRACTED]
-- [[.test_null_byte_injection_blocked()]] - `method` [EXTRACTED]
-- [[.test_proc_meminfo_allowed()]] - `method` [EXTRACTED]
-- [[.test_proc_self_environ_blocked()]] - `method` [EXTRACTED]
-- [[.test_staging_detection()]] - `method` [EXTRACTED]
-- [[.test_symlink_traversal_blocked()]] - `method` [EXTRACTED]
-- [[.test_tmp_read_allowed()_1]] - `method` [EXTRACTED]
-- [[.test_windows_traversal_blocked()]] - `method` [EXTRACTED]
-- [[.test_write_outside_allowed_blocked()]] - `method` [EXTRACTED]
-- [[.test_write_pii_detection()]] - `method` [EXTRACTED]
-- [[.test_write_to_app_data_allowed()]] - `method` [EXTRACTED]
-- [[.test_write_to_system_dir_blocked()]] - `method` [EXTRACTED]
-- [[.test_write_to_tmp_allowed()]] - `method` [EXTRACTED]
+- [[dot-monitor_sandbox()]] - `method` [EXTRACTED]
+- [[dot-sandbox()]] - `method` [EXTRACTED]
+- [[dot-test_absolute_path_to_sensitive_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_app_read_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_basic_traversal_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_double_encoded_traversal_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_enforce_vs_monitor_contrast()]] - `method` [EXTRACTED]
+- [[dot-test_monitor_mode_allows_everything()]] - `method` [EXTRACTED]
+- [[dot-test_null_byte_injection_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_proc_meminfo_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_proc_self_environ_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_staging_detection()]] - `method` [EXTRACTED]
+- [[dot-test_symlink_traversal_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_tmp_read_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_windows_traversal_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_write_outside_allowed_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_write_pii_detection()]] - `method` [EXTRACTED]
+- [[dot-test_write_to_app_data_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_write_to_system_dir_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_write_to_tmp_allowed()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -50,11 +50,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

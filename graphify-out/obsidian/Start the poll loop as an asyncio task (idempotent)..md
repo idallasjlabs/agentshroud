@@ -12,6 +12,6 @@ tags:
 # Start the poll loop as an asyncio task (idempotent).
 
 ## Connections
-- [[.start()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-start()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor

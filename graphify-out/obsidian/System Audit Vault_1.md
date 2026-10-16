@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "SubagentMonitor._log_event"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SubagentMonitor_log_event
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # System Audit Vault
 
 ## Connections
-- [[Purpose_65]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_70]] - `contains` [EXTRACTED]
-- [[Related Skills_71]] - `contains` [EXTRACTED]
-- [[Usage_72]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-savREADME]] - `contains` [EXTRACTED]
+- [[Purpose_129]] - `contains` [EXTRACTED]
+- [[Related Skills_101]] - `contains` [EXTRACTED]
+- [[Usage_109]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

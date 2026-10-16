@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "apply-patches.js (OpenClaw)"
+community: "AlertDispatcher"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apply-patchesjs_OpenClaw
+  - community/AlertDispatcher
 ---
 
 # Small amounts across multiple channels should be detected.
 
 ## Connections
-- [[.test_slow_drip_across_channels()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_slow_drip_across_channels()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs_OpenClaw
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

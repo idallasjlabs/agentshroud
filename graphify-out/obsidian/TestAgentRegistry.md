@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "AgentRegistry"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentRegistry
 ---
 
 # TestAgentRegistry
 
 ## Connections
-- [[.test_get_missing_returns_none()]] - `method` [EXTRACTED]
-- [[.test_list_agents()]] - `method` [EXTRACTED]
-- [[.test_register_and_get()]] - `method` [EXTRACTED]
-- [[.test_serialization_roundtrip()]] - `method` [EXTRACTED]
-- [[.test_unregister_missing_returns_none()]] - `method` [EXTRACTED]
-- [[.test_unregister_removes_agent()]] - `method` [EXTRACTED]
+- [[dot-test_get_missing_returns_none()_1]] - `method` [EXTRACTED]
+- [[dot-test_list_agents()]] - `method` [EXTRACTED]
+- [[dot-test_register_and_get()]] - `method` [EXTRACTED]
+- [[dot-test_serialization_roundtrip()]] - `method` [EXTRACTED]
+- [[dot-test_unregister_missing_returns_none()]] - `method` [EXTRACTED]
+- [[dot-test_unregister_removes_agent()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

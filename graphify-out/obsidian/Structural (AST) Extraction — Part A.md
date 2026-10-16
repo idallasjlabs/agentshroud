@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "AgentShroud v0.8.0 — Full Security & Functionali"
+community: "graphify Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionali
+  - community/graphify_Skill
 ---
 
 # Structural (AST) Extraction — Part A
@@ -15,4 +15,4 @@ tags:
 - [[graphify Extraction Subagent Prompt Spec]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali
+#graphify/concept #graphify/EXTRACTED #community/graphify_Skill

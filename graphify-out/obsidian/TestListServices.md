@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "main.rs"
+community: "ServiceManager"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/ServiceManager
 ---
 
 # TestListServices
 
 ## Connections
-- [[.list_services()]] - `calls` [EXTRACTED]
-- [[.test_internal_probe_failure_keeps_container_descriptors()]] - `method` [EXTRACTED]
-- [[.test_internal_services_status_mapping()]] - `method` [EXTRACTED]
+- [[dot-list_services()]] - `calls` [EXTRACTED]
+- [[dot-test_internal_probe_failure_keeps_container_descriptors()]] - `method` [EXTRACTED]
+- [[dot-test_internal_services_status_mapping()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "SECTION 1: COVER SHEET (Form PTO/SB/16)"
-location: "L80"
+community: "_t"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+  - community/_t
 ---
 
 # TestClassify
 
 ## Connections
-- [[.test_255_is_unreachable()]] - `method` [EXTRACTED]
-- [[.test_nonzero_is_fail()]] - `method` [EXTRACTED]
-- [[.test_zero_is_pass()]] - `method` [EXTRACTED]
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[test_multi_host_test.py]] - `contains` [EXTRACTED]
+- [[dot-test_classification_is_deterministic()]] - `method` [EXTRACTED]
+- [[dot-test_priority_rce_before_generic_injection()]] - `method` [EXTRACTED]
+- [[dot-test_representative_titles()]] - `method` [EXTRACTED]
+- [[dot-test_unmatched_is_unknown()]] - `method` [EXTRACTED]
+- [[classify()]] - `calls` [EXTRACTED]
+- [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+#graphify/code #graphify/EXTRACTED #community/_t

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "voice_task"
+community: "ResourceGuard"
 location: "L498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/ResourceGuard
 ---
 
 # Small context request passes VRAM headroom check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resource_guard_vram_headroom_check_allows_small_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/voice_task
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

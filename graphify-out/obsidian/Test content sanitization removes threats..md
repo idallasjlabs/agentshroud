@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "lifespan.py"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/lifespanpy
 ---
 
 # Test content sanitization removes threats.
 
 ## Connections
-- [[.test_content_sanitization()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_content_sanitization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

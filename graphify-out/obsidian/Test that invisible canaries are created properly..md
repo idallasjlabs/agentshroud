@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestOutputCanary"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestOutputCanary
 ---
 
 # Test that invisible canaries are created properly.
 
 ## Connections
-- [[.test_invisible_canary_creation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_invisible_canary_creation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

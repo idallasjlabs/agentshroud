@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # TestCleanContent
 
 ## Connections
-- [[.test_clean_tool_output_passes()]] - `method` [EXTRACTED]
-- [[.test_empty_content()]] - `method` [EXTRACTED]
-- [[.test_none_content()]] - `method` [EXTRACTED]
+- [[dot-test_clean_tool_output_passes()]] - `method` [EXTRACTED]
+- [[dot-test_empty_content()]] - `method` [EXTRACTED]
+- [[dot-test_none_content()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

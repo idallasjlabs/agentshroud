@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "test_hermes_cron_seed.py"
-location: "L74"
+community: "Implementation Status"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Implementation_Status
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

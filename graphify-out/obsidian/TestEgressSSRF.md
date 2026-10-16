@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressApprovalQueue"
+community: "TestEgressSSRF"
 location: "L842"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressApprovalQueue
+  - community/TestEgressSSRF
 ---
 
 # TestEgressSSRF
 
 ## Connections
-- [[.setup_method()_33]] - `method` [EXTRACTED]
-- [[.test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
-- [[.test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
-- [[.test_block_ipv4_private()]] - `method` [EXTRACTED]
-- [[.test_block_ipv6_link_local()]] - `method` [EXTRACTED]
-- [[.test_block_ipv6_loopback()]] - `method` [EXTRACTED]
-- [[.test_block_ipv6_ula()]] - `method` [EXTRACTED]
-- [[.test_block_link_local()]] - `method` [EXTRACTED]
-- [[.test_block_localhost_variants()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_27]] - `method` [EXTRACTED]
+- [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
+- [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
+- [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]
+- [[dot-test_block_ipv6_link_local()]] - `method` [EXTRACTED]
+- [[dot-test_block_ipv6_loopback()]] - `method` [EXTRACTED]
+- [[dot-test_block_ipv6_ula()]] - `method` [EXTRACTED]
+- [[dot-test_block_link_local()]] - `method` [EXTRACTED]
+- [[dot-test_block_localhost_variants()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -38,7 +38,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressApprovalQueue
+#graphify/code #graphify/INFERRED #community/TestEgressSSRF

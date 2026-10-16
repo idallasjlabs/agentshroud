@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "concept"
-community: "ledger row (id, timestamp, source, hashes, sanit"
+community: "Tailscale Remote Access Setup"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ledger_row_id_timestamp_source_hashes_sanit
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Tailscale Remote Access (Pi)
@@ -14,4 +14,4 @@ tags:
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit
+#graphify/concept #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "BlockingPipeline"
+community: "Socrates — Dialogue Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Socrates — Dialogue Architect
@@ -14,16 +14,16 @@ tags:
 ## Connections
 - [[Dialogue Techniques_2]] - `contains` [EXTRACTED]
 - [[ElevenLabs v3 Audio Tags_2]] - `contains` [EXTRACTED]
-- [[Input Requirements_28]] - `contains` [EXTRACTED]
+- [[Input Requirements_11]] - `contains` [EXTRACTED]
 - [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - `contains` [EXTRACTED]
-- [[Output Format_37]] - `contains` [EXTRACTED]
-- [[Persona_22]] - `contains` [EXTRACTED]
-- [[Quality Checklist_25]] - `contains` [EXTRACTED]
-- [[Role_105]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_181]] - `contains` [EXTRACTED]
+- [[Output Format_21]] - `contains` [EXTRACTED]
+- [[Persona_7]] - `contains` [EXTRACTED]
+- [[Quality Checklist_8]] - `contains` [EXTRACTED]
+- [[Role_59]] - `contains` [EXTRACTED]
 - [[Speaker Definitions_2]] - `contains` [EXTRACTED]
-- [[System Prompt_22]] - `contains` [EXTRACTED]
-- [[User Prompt Template_10]] - `contains` [EXTRACTED]
+- [[System Prompt_7]] - `contains` [EXTRACTED]
+- [[User Prompt Template_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-socratesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

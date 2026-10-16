@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "4. Environment Variables"
+community: "CredentialInfo"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/CredentialInfo
 ---
 
 # Test credential registration.
 
 ## Connections
-- [[.test_register_credential()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_register_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo

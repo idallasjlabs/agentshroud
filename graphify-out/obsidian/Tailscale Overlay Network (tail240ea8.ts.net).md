@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "ADR-006: Multi-Runtime Container Support"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Tailscale Overlay Network (tail240ea8.ts.net)
@@ -17,4 +17,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `shares_data_with` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/image #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

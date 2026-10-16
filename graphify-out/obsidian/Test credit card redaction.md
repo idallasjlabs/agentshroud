@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Skill: Technical Illustrator (TI)"
+community: "test_sanitizer.py"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/test_sanitizerpy
 ---
 
 # Test credit card redaction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_credit_card_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy

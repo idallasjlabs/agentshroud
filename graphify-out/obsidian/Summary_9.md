@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
+source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "SecureBrowser"
-location: "L228"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

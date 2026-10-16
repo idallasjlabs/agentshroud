@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher
 ---
 
 # Technical discussion mentioning 'system' shouldn't trigger.
 
 ## Connections
-- [[.test_clean_technical_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_clean_technical_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # TestListAvailableVersions
 
 ## Connections
-- [[.test_returns_versions()]] - `method` [EXTRACTED]
+- [[dot-test_returns_versions()]] - `method` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/upgrade

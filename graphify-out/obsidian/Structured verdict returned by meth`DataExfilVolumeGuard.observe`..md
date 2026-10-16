@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "AgentShroud Access Control Matrix"
+community: "DataExfilVolumeGuard"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/DataExfilVolumeGuard
 ---
 
 # Structured verdict returned by :meth:`DataExfilVolumeGuard.observe`.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VolumeVerdict]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard

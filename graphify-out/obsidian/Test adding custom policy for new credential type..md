@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "OpenClaw Bot Container"
+community: "KeyRotationConfig"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/KeyRotationConfig
 ---
 
 # Test adding custom policy for new credential type.
 
 ## Connections
-- [[.test_add_custom_policy()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_add_custom_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

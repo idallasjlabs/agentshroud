@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "ProxyAction"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ProxyAction
 ---
 
 # Test that browser security blocks high-risk URLs for browser user agents.
 
 ## Connections
-- [[.test_browser_security_blocks_high_risk_urls()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_browser_security_blocks_high_risk_urls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

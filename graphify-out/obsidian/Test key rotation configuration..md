@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "OpenClaw Bot Container"
+community: "KeyRotationConfig"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/KeyRotationConfig
 ---
 
 # Test key rotation configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRotationConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

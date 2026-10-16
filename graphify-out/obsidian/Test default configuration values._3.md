@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "run_targeted_tests.sh"
-location: "L36"
+community: "KillSwitchMonitor"
+location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run_targeted_testssh
+  - community/KillSwitchMonitor
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run_targeted_testssh
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

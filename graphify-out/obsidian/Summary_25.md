@@ -1,17 +1,18 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "_process_inbound()"
-location: "L3"
+community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
+- [[Test Results_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_inbound
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL

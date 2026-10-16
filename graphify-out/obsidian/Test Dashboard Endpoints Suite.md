@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "CredentialInjector"
+community: "AlertStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/AlertStore
 ---
 
 # Test Dashboard Endpoints Suite
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AlertStore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/AlertStore

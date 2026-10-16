@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "test_scorecard_scoring.py"
+community: "telegram_proxy.py"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/telegram_proxypy
 ---
 
 # TelegramAPIProxy.get_stats()
 
 ## Connections
-- [[Function Details_14]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

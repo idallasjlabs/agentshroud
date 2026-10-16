@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "CredentialInjector"
+community: "dashboard_endpoints.py"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/dashboard_endpointspy
 ---
 
 # TCP connect to port 22 to check if host is reachable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_host()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector
+#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy

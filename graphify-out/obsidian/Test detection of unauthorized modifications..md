@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "lifespan.py"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/lifespanpy
 ---
 
 # Test detection of unauthorized modifications.
 
 ## Connections
-- [[.test_tampering_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tampering_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "_mock_dir_with_fresh_files()"
+community: "Technical Specification"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_mock_dir_with_fresh_files
+  - community/Technical_Specification
 ---
 
 # Technical Specification
@@ -21,4 +21,4 @@ tags:
 - [[Script Parsing]] - `contains` [EXTRACTED]
 - [[Voice Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_fresh_files
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

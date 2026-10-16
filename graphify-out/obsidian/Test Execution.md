@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "TestFileSandbox"
+community: "pytest.ini"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/pytestini
 ---
 
 # Test Execution
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/pytestini

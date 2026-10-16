@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "heartbeat.sh"
+community: "Obsidian workspace.json (open-tab layout)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/heartbeatsh
+  - community/Obsidian_workspacejson_open-tab_layout
 ---
 
 # Startup Flow Diagram (vault note)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Obsidian workspace.json (open-tab layout)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/heartbeatsh
+#graphify/document #graphify/EXTRACTED #community/Obsidian_workspacejson_open-tab_layout

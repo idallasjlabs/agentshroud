@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "session-prompt-setup.sh"
+community: "Test Augmentation Specialist"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/session-prompt-setupsh
+  - community/Test_Augmentation_Specialist
 ---
 
 # Test Standards
@@ -17,4 +17,4 @@ tags:
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 - [[Test Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh
+#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # TestDowngrade
 
 ## Connections
-- [[.test_blocked_on_invalid()]] - `method` [EXTRACTED]
-- [[.test_dry_run()_1]] - `method` [EXTRACTED]
-- [[.test_successful_downgrade()]] - `method` [EXTRACTED]
+- [[dot-test_blocked_on_invalid()]] - `method` [EXTRACTED]
+- [[dot-test_dry_run()]] - `method` [EXTRACTED]
+- [[dot-test_successful_downgrade()]] - `method` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/upgrade

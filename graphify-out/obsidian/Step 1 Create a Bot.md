@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "iCloud Services"
+community: "Slack Channel Setup"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Slack_Channel_Setup
 ---
 
 # Step 1: Create a Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

@@ -12,9 +12,9 @@ tags:
 # TestLifecycle
 
 ## Connections
-- [[.test_start_creates_task()]] - `method` [EXTRACTED]
-- [[.test_stats_returns_counts()]] - `method` [EXTRACTED]
-- [[.test_stop_cancels_task()]] - `method` [EXTRACTED]
+- [[dot-test_start_creates_task()]] - `method` [EXTRACTED]
+- [[dot-test_stats_returns_counts()]] - `method` [EXTRACTED]
+- [[dot-test_stop_cancels_task()]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[Lifecycle start_periodic_updates()stop() task management.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "canary-deploy.sh"
+community: "SubagentMonitor._log_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canary-deploysh
+  - community/SubagentMonitor_log_event
 ---
 
 # SubagentMonitor._log_event
@@ -17,4 +17,4 @@ tags:
 - [[SubagentMonitor.kill_all]] - `calls` [EXTRACTED]
 - [[SubagentMonitor.register_spawn]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canary-deploysh
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor_log_event

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
+source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L90"
+community: "Google Services Setup - Calendar, Contacts, Keep"
+location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # Step 1: Create Google Cloud Project
 
 ## Connections
-- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - `contains` [EXTRACTED]
+- [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

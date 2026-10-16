@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "AgentShroud Consolidated Issues Report"
-location: "L118"
+community: "Hermes — Reference Verifier"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/Hermes__Reference_Verifier
 ---
 
 # System Prompt
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

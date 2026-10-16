@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "CVE Triage — Gaps & Development Plan (OpenClaw)"
+community: "Mode A — Single task"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CVE_Triage__Gaps__Development_Plan_OpenClaw
+  - community/Mode_A__Single_task
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CVE_Triage__Gaps__Development_Plan_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

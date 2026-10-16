@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "TestUserSessionManager"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/TestUserSessionManager
 ---
 
 # Test the UserSessionManager for per-user isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUserSessionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/TestUserSessionManager

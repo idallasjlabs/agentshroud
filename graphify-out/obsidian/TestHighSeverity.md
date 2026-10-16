@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # TestHighSeverity
 
 ## Connections
-- [[.test_ignore_previous_instructions()_1]] - `method` [EXTRACTED]
-- [[.test_new_instructions_override()_1]] - `method` [EXTRACTED]
-- [[.test_role_reassignment()_2]] - `method` [EXTRACTED]
-- [[.test_social_engineering_admin()]] - `method` [EXTRACTED]
-- [[.test_system_delimiter_injection()]] - `method` [EXTRACTED]
-- [[.test_xml_function_injection()]] - `method` [EXTRACTED]
+- [[dot-test_ignore_previous_instructions()_1]] - `method` [EXTRACTED]
+- [[dot-test_new_instructions_override()]] - `method` [EXTRACTED]
+- [[dot-test_role_reassignment()_1]] - `method` [EXTRACTED]
+- [[dot-test_social_engineering_admin()]] - `method` [EXTRACTED]
+- [[dot-test_system_delimiter_injection()]] - `method` [EXTRACTED]
+- [[dot-test_xml_function_injection()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

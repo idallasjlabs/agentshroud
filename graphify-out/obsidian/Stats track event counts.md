@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "make_event"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/make_event
 ---
 
 # Stats track event counts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/make_event

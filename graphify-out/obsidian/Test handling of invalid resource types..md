@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Quick Reference Commands"
+community: "ResourceGuard"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/ResourceGuard
 ---
 
 # Test handling of invalid resource types.
 
 ## Connections
-- [[.test_invalid_resource_type()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_invalid_resource_type()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

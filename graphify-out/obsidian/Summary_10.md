@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "main()"
-location: "L11"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
-- [[Test Results]] - `contains` [EXTRACTED]
+- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

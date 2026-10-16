@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TestToolChainAnalyzer"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestToolChainAnalyzer
 ---
 
 # Test alert callback functionality.
 
 ## Connections
-- [[.test_alert_callbacks()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_alert_callbacks()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "sync-cve-registry.py"
-location: "L24"
+community: "ApprovalHardening"
+location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/ApprovalHardening
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,32 +1,23 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-"
-location: "L16"
+community: "_req"
+location: "L485"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-
+  - graphify/INFERRED
+  - community/_req
 ---
 
 # TestMetadataGuard
 
 ## Connections
-- [[.setup_method()_12]] - `method` [EXTRACTED]
-- [[.test_all_unicode_control_chars_stripped()]] - `method` [EXTRACTED]
-- [[.test_check_for_exif_detects_magic_bytes()]] - `method` [EXTRACTED]
-- [[.test_check_oversized_headers_flags_large_headers()]] - `method` [EXTRACTED]
-- [[.test_check_oversized_headers_passes_normal_headers()]] - `method` [EXTRACTED]
-- [[.test_internal_ip_patterns_comprehensive()]] - `method` [EXTRACTED]
-- [[.test_sanitize_filename_normalizes_unicode()]] - `method` [EXTRACTED]
-- [[.test_sanitize_filename_strips_control_chars()]] - `method` [EXTRACTED]
-- [[.test_sanitize_headers_redacts_internal_ips()]] - `method` [EXTRACTED]
-- [[.test_sanitize_headers_strips_sensitive()]] - `method` [EXTRACTED]
-- [[.test_sanitize_headers_truncates_on_size_limit()]] - `method` [EXTRACTED]
-- [[.test_sanitize_image_metadata_preserves_non_exif()]] - `method` [EXTRACTED]
-- [[.test_sanitize_image_metadata_removes_exif()]] - `method` [EXTRACTED]
-- [[DocumentTag]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[test_metadata_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_headers_sanitized()]] - `method` [EXTRACTED]
+- [[dot-test_metadata_exception_non_blocking()]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-
+#graphify/code #graphify/INFERRED #community/_req

@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # TELEGRAM_GMAIL_SETUP.md
 
 ## Connections
 - [[OPENCLAW_SETUP]] - `conceptually_related_to` [EXTRACTED]
-- [[OpenClaw_1]] - `references` [EXTRACTED]
+- [[OpenClaw_2]] - `references` [EXTRACTED]
 - [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

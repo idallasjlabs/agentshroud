@@ -1,17 +1,17 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "document"
-community: "chatbot/main.py"
-location: "L1"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
