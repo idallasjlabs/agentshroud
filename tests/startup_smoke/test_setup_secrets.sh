@@ -99,8 +99,33 @@ check "SS6: normalize_secret uses awk to extract last non-empty line" \
 # Window bumped 50 -> 70 (2026-09-27 Sunday upgrade): cmd_extract has grown to
 # 67 lines as more secret types were added (podcastindex_api_secret, etc.);
 # the chmod 600 call itself never moved, only its offset within the function.
-check "SS7: cmd_extract sets chmod 600 on output files" \
-    "$(has_in_section "$SRC" '^cmd_extract()' 70 'chmod 600')"
+check "SS7: cmd_extract writes through write_secret_file (atomic, chmod 600)" \
+    "$([[ "$(has_in_section "$SRC" '^cmd_extract()' 70 'write_secret_file')" == true \
+        && "$(has_in_section "$SRC" '^write_secret_file()' 15 'chmod 600')" == true ]] && echo true || echo false)"
+
+# SS13/SS14: write_secret_file behaviour (2026-10-16: a killed extract left
+# 0-byte secret files on prod). Run the real helper, extracted from the script.
+_ws_block="$(sed -n '/^# BEGIN write-secret-file$/,/^# END write-secret-file$/p' "$SRC")"
+_ws_dir="$(mktemp -d)"
+_ws_result="$(
+    eval "$_ws_block"
+    write_secret_file "$_ws_dir/a.txt" "first-value" >/dev/null
+    _mode="$(stat -f '%Lp' "$_ws_dir/a.txt" 2>/dev/null || stat -c '%a' "$_ws_dir/a.txt")"
+    _leftover="$(ls "$_ws_dir" | grep -c 'XXXXXX\|a\.txt\.' || true)"
+    printf '%s|%s|%s' "$(cat "$_ws_dir/a.txt")" "$_mode" "$_leftover"
+)"
+check "SS13: write_secret_file writes the value, mode 600, no temp file left behind" \
+    "$([[ "$_ws_result" == "first-value|600|0" ]] && echo true || echo false)" \
+    "got '${_ws_result}'"
+_ws_result2="$(
+    eval "$_ws_block"
+    write_secret_file "$_ws_dir/a.txt" "" >/dev/null
+    cat "$_ws_dir/a.txt"
+)"
+check "SS14: write_secret_file never replaces a non-empty file with an empty value" \
+    "$([[ "$_ws_result2" == "first-value" ]] && echo true || echo false)" \
+    "file now holds '${_ws_result2}'"
+rm -rf "$_ws_dir"
 
 # SS8: AGENTSHROUD_SECRET_BACKEND env var override is respected
 check "SS8: AGENTSHROUD_SECRET_BACKEND env override wired" \

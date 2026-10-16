@@ -227,6 +227,29 @@ check "S14: run-standalone.sh (Hermes): image tag falls back to docker/versions.
     "$([[ -n "$_s14_block" && -n "$_s14_expected" && "$_s14_got" == "$_s14_expected" ]] && echo true || echo false)" \
     "expected '${_s14_expected}', got '${_s14_got}'"
 
+# S15: asb's _preserve_nonempty_secrets carries non-empty values from the
+# previous ephemeral secrets dir into the new one wherever the new copy is
+# missing or empty, and never overwrites a non-empty new value. Behavioral:
+# run the real function extracted from scripts/asb against two temp dirs.
+asb_sh="$REPO/scripts/asb"
+_s15_block="$(sed -n '/^# BEGIN preserve-nonempty-secrets$/,/^# END preserve-nonempty-secrets$/p' "$asb_sh")"
+_s15_prev="$(mktemp -d)"; _s15_new="$(mktemp -d)"
+printf 'old-url' > "$_s15_prev/hermes_healthchecks_url.txt"   # new copy is 0 bytes -> must be restored
+printf 'old-key' > "$_s15_prev/podcastindex_api_key.txt"      # new copy is missing  -> must be restored
+printf 'old-pat' > "$_s15_prev/github_pat.txt"                # new copy non-empty   -> must be kept
+: > "$_s15_new/hermes_healthchecks_url.txt"
+printf 'new-pat' > "$_s15_new/github_pat.txt"
+_s15_got="$(
+    eval "$_s15_block"
+    _preserve_nonempty_secrets "$_s15_prev" "$_s15_new" >/dev/null
+    printf '%s|%s|%s' "$(cat "$_s15_new/hermes_healthchecks_url.txt")" \
+        "$(cat "$_s15_new/podcastindex_api_key.txt" 2>/dev/null)" "$(cat "$_s15_new/github_pat.txt")"
+)"
+check "S15: asb _preserve_nonempty_secrets restores empty/missing values, keeps new non-empty ones" \
+    "$([[ -n "$_s15_block" && "$_s15_got" == "old-url|old-key|new-pat" ]] && echo true || echo false)" \
+    "expected 'old-url|old-key|new-pat', got '${_s15_got}'"
+rm -rf "$_s15_prev" "$_s15_new"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

@@ -98,10 +98,47 @@ _asb_banner() {
 # `asb down` and at the start of each `asb up`/`rebuild` to rotate secrets.
 # Each user ($HOME) keeps their own secrets dir — PROD and DEV stay isolated.
 # $HOME must be virtiofs-mounted in Colima (see ~/.colima/default/colima.yaml).
+# BEGIN preserve-nonempty-secrets
+# Copy every non-empty <name>.txt from $1 into $2 where $2's copy is missing
+# or empty. 2026-10-16 prod incident: setup_ephemeral_secrets used to `rm -rf`
+# the ephemeral dir and pre-create every file EMPTY before extract ran; the
+# extract then hung on the 1Password unlock and was killed, leaving
+# hermes_healthchecks_url/podcastindex_*/telegram_bot_token_{rpi,trillian}
+# as 0-byte files with the previous good values already deleted. The previous
+# dir is now kept as <dir>.prev until extract finishes, and any value the
+# backend could not supply is carried over from it instead of being zeroed.
+_preserve_nonempty_secrets() {
+  local src="$1" dst="$2" f name
+  [ -d "$src" ] || return 0
+  for f in "$src"/*.txt; do
+    [ -s "$f" ] || continue
+    name="$(basename "$f")"
+    if [ ! -s "$dst/$name" ]; then
+      # cat, not cp: immune to interactive `cp -i` aliases in a sourcing shell
+      cat "$f" > "$dst/$name"
+      chmod 600 "$dst/$name"
+      echo "  [preserved] ${name%.txt} — backend returned nothing; kept the previous non-empty value"
+    fi
+  done
+}
+# END preserve-nonempty-secrets
+
 setup_ephemeral_secrets() {
   local tmpdir="$HOME/.agentshroud/.asb-secrets"
-  # Wipe previous secrets before writing new ones (ensures rotation).
-  rm -rf "$tmpdir"
+  local prevdir="$tmpdir.prev"
+  # Rotation still happens (fresh dir every run), but the previous dir is
+  # kept as .prev until extract has finished so nothing is lost if the
+  # backend cannot supply a value or the run is interrupted. A leftover
+  # .prev means the previous run died before cleanup — fold its non-empty
+  # values back in first, so two consecutive killed runs cannot lose one.
+  if [ -d "$prevdir" ]; then
+    mkdir -p "$tmpdir"
+    _preserve_nonempty_secrets "$prevdir" "$tmpdir"
+    rm -rf "$prevdir"
+  fi
+  if [ -d "$tmpdir" ]; then
+    mv "$tmpdir" "$prevdir"
+  fi
   mkdir -p "$tmpdir"
 
   # ── Step 1: Create empty placeholders for ALL secrets referenced in the
@@ -234,6 +271,11 @@ YAML
   # will start successfully; unconfigured features log "not configured".
   AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract \
     || echo "  WARN: secret extraction incomplete — starting with available secrets only" >&2
+  # Whatever the backend could not supply (unlock hung, item unreadable,
+  # run interrupted) keeps its previous non-empty value; only then is the
+  # previous dir discarded. See _preserve_nonempty_secrets above.
+  _preserve_nonempty_secrets "$prevdir" "$tmpdir"
+  rm -rf "$prevdir"
 
   # If a host-specific token was populated by extract, use it; otherwise fall
   # back to production token (which may also be empty on a fresh machine).

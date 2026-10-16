@@ -251,6 +251,27 @@ normalize_secret() {
     awk 'NF {last=$0} END {print last}'
 }
 
+# BEGIN write-secret-file
+# Write a secret value to its file atomically (temp file in the same dir,
+# then rename) so an interrupted run never leaves a truncated or empty file
+# in place of a good one, and never replace a non-empty file with an empty
+# value. 2026-10-16 prod: a killed `extract` left 0-byte secret files behind.
+write_secret_file() {
+    local out="$1" value="$2" tmp
+    if [[ -z "$value" ]]; then
+        if [[ -s "$out" ]]; then
+            echo "  [preserved] $(basename "$out" .txt) — empty value would have overwritten a non-empty file"
+        fi
+        return 0
+    fi
+    tmp="$(mktemp "${out}.XXXXXX")"
+    printf '%s' "$value" > "$tmp"
+    chmod 600 "$tmp"
+    mv -f "$tmp" "$out"
+    chmod 600 "$out"
+}
+# END write-secret-file
+
 # ── Masked interactive reader ──────────────────────────────────────────────────
 read_secret_masked() {
     local prompt="$1" optional="${2:-}"
@@ -459,8 +480,7 @@ cmd_extract() {
             continue
         fi
         out="${SECRETS_DIR}/${name}.txt"
-        printf '%s' "$value" > "$out"
-        chmod 600 "$out"
+        write_secret_file "$out" "$value"
         echo "  [written] $out"
     done
 
@@ -526,8 +546,7 @@ cmd_interactive() {
             echo "  [skipped] $out"
             continue
         fi
-        printf '%s' "$value" > "$out"
-        chmod 600 "$out"
+        write_secret_file "$out" "$value"
         echo "  [ok] $out"
     done
 

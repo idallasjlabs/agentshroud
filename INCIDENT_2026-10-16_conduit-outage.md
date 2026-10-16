@@ -585,6 +585,34 @@ reports all three fixtures missing, the fixed one reports only `brave_api_key`).
 lazydocker leak recurred a third time (pid 45603, 325 sockets, `docker system df` >90 s);
 killed before the rebuild.
 
+### Prod secrets clobbered by a killed extract (prod 14:25 EDT, fixed on dev)
+Prod's `asb up hermes` hung ~9 min in `docker/setup-secrets.sh extract` (1Password unlock)
+and was killed. `scripts/asb`'s `setup_ephemeral_secrets` had already `rm -rf`'d
+`~/.agentshroud/.asb-secrets` and pre-created every secret file **empty** before extract
+ran, so everything the backend had not yet supplied stayed 0 bytes with the previous good
+values gone: `hermes_healthchecks_url`, `podcastindex_api_key/secret`,
+`telegram_bot_token_{rpi,trillian}`; the dashboard basic-auth files went missing too.
+Prod restored the dashboard creds from Hermes's config and the healthchecks URL came back
+through `run-standalone.sh`'s fallback to `docker/secrets/`; `podcastindex_*` are empty in
+both of prod's dirs and need the owner's 1Password unlock. (Prod first asked dev to copy its
+own secret files via `/Users/Shared`; withdrawn before anything was copied — dev's
+`hermes_healthchecks_url` is 0 bytes anyway.)
+
+Fix: `setup_ephemeral_secrets` now moves the previous dir to `.asb-secrets.prev`, runs
+extract, then `_preserve_nonempty_secrets` carries over any value the backend did not
+supply, and only then deletes `.prev`; a leftover `.prev` from an earlier killed run is
+folded in first. `docker/setup-secrets.sh` writes through a new `write_secret_file`
+(temp file + rename, mode 600, never replaces a non-empty file with an empty value) in
+both `extract` and `store`. Tests: S15 in `test_bot_boot_static.sh` (15/15), SS7 updated
++ SS13/SS14 in `test_setup_secrets.sh` (suite pass), plus a sandboxed end-to-end run of
+the real function with a stand-in extract that writes one value and exits 1: previous
+values kept (8 bytes each), fresh value taken, never-stored key still empty, `.prev`
+removed.
+
+Also from prod: Hermes was recreated on `agentshroud/hermes:1.7.0`, `tool_progress=off`
+for Telegram per the owner, and the `latest`-tag outage is what the `run-standalone.sh`
+versions.env fallback above fixes.
+
 ### Still open for Sunday (not changed today)
 - `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching
   gateway/scripts/docker). CLAUDE.md makes a refresh mandatory before a prod rebuild —
