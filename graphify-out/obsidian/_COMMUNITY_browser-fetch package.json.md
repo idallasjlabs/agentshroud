@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dockerQUICKSTART.md — 5-minute stack launch guide]] - document - docker/QUICKSTART.md
+- [[browser-fetch package.json]] - document - docker/config/hermes/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 

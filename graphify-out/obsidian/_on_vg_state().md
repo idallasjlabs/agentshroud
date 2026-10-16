@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "compute_scorecard()"
+community: "test_playback_state.c"
 location: "L409"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/compute_scorecard
+  - community/test_playback_statec
 ---
 
 # _on_vg_state()
@@ -19,4 +19,4 @@ tags:
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 - [[ws_vg_state_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/compute_scorecard
+#graphify/code #graphify/INFERRED #community/test_playback_statec

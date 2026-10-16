@@ -1,104 +1,83 @@
 ---
 type: community
-cohesion: 0.02
-members: 89
+cohesion: 0.05
+members: 68
 ---
 
 # test_security_toolchain.py
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 89 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 68 nodes
 
 ## Members
-- [[.__init__()_103]] - code - gateway/security/outbound_filter.py
-- [[._classify_response_risk()]] - code - gateway/security/outbound_filter.py
-- [[._compile_patterns()_1]] - code - gateway/security/outbound_filter.py
-- [[._is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
-- [[._time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
-- [[.filter_response()]] - code - gateway/security/outbound_filter.py
-- [[.get_stats()_17]] - code - gateway/security/outbound_filter.py
-- [[.setup_method()_17]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_admin_private_service_data_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_collaborator_name_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_common_tools_not_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_comprehensive_attack_scenarios()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_context_aware_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_credential_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_custom_patterns()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_edge_cases()_1]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_initialization_default()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_initialization_with_config()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_internal_url_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_mcp_tool_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_monitor_mode()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_multiple_categories()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_partial_xml_tool_tag_is_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_pattern_overlaps()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_performance()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_private_ip_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_security_architecture_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_stats()_1]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_tailnet_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_trust_level_overrides()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_workspace_internal_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
-- [[Admin-private service references should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Any_52]] - code - gateway/security/outbound_filter.py
-- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
-- [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
-- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
-- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
-- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
-- [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
-- [[FilterMatch]] - code - gateway/security/outbound_filter.py
-- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
-- [[InfoCategory]] - code - gateway/security/outbound_filter.py
-- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
-- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Set up test fixtures.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Split-fragment XML tags must still be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test adding custom filter patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test against realistic attack scenarios.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test context-aware user ID filtering.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test edge cases and boundary conditions.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with custom configuration.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with default configuration.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filter statistics.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test filtering with multiple information categories.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test handling of overlapping patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test response risk level classification.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test suite for the outbound information filter.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that Tailscale hostnames are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that Telegram user IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that common English words are not filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that credential paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that filtering performance is acceptable.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that internal URLs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that monitor mode logs but doesn't redact.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that private IP addresses are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that security module references are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that sensitive MCP tool names are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that tailnet IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that trust level overrides work correctly.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[TestIntegration]] - code - gateway/tests/test_outbound_filter.py
-- [[TestOutboundInfoFilter]] - code - gateway/tests/test_outbound_filter.py
-- [[Workspace runtime paths should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
-- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_all_clean()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_empty_summaries()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_error_status_gets_50()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_format_report_string()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_generate_report()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_get_fim_events()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_get_rootkit_events()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_grade_a()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_grade_b()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_grade_c()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_grade_d()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_grade_f()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_history_persistence()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_level_to_severity()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_mixed_severities()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_one_critical()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_empty()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_fim_event()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_rootkit_event()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_partial_tools()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_perfect_score()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_score_floor()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_clean()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_with_rootkit()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_25]] - code - gateway/security/health_report.py
+- [[Any_26]] - code - gateway/security/wazuh_client.py
+- [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - rationale - gateway/security/health_report.py
+- [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
+- [[Connection]] - code - gateway/security/health_report.py
+- [[Convert score to letter grade.      Args         score Numeric score (0-100).]] - rationale - gateway/security/health_report.py
+- [[Filter alerts to file integrity monitoring events only.      Args         alert]] - rationale - gateway/security/wazuh_client.py
+- [[Filter alerts to rootkit detection events only.      Args         alerts List]] - rationale - gateway/security/wazuh_client.py
+- [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
+- [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
+- [[Generate a summary dict suitable for the health report.      Args         alert]] - rationale - gateway/security/wazuh_client.py
+- [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
+- [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
+- [[Map Wazuh alert level to severity string.      Args         level Wazuh alert]] - rationale - gateway/security/wazuh_client.py
+- [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - rationale - gateway/security/wazuh_client.py
+- [[Path_18]] - code - gateway/security/health_report.py
+- [[Path_19]] - code - gateway/security/wazuh_client.py
+- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/wazuh_client.py
+- [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
+- [[TestHealthOverallScore]] - code - gateway/tests/test_security_toolchain.py
+- [[TestHealthReport]] - code - gateway/tests/test_security_toolchain.py
+- [[TestHealthScoring]] - code - gateway/tests/test_security_toolchain.py
+- [[TestWazuhParser]] - code - gateway/tests/test_security_toolchain.py
+- [[TestWazuhSummary_1]] - code - gateway/tests/test_security_toolchain.py
+- [[calculate_overall_score()]] - code - gateway/security/health_report.py
+- [[calculate_tool_score()]] - code - gateway/security/health_report.py
+- [[datetime]] - code - gateway/security/wazuh_client.py
+- [[format_report()]] - code - gateway/security/health_report.py
+- [[generate_report()]] - code - gateway/security/health_report.py
+- [[generate_summary()]] - code - gateway/security/wazuh_client.py
+- [[get_fim_events()]] - code - gateway/security/wazuh_client.py
+- [[get_rootkit_events()]] - code - gateway/security/wazuh_client.py
+- [[get_trend()]] - code - gateway/security/health_report.py
+- [[health_report.py]] - code - gateway/security/health_report.py
+- [[init_db()]] - code - gateway/security/health_report.py
+- [[level_to_severity()]] - code - gateway/security/wazuh_client.py
+- [[parse_alert()]] - code - gateway/security/wazuh_client.py
+- [[read_alerts()]] - code - gateway/security/wazuh_client.py
+- [[save_to_history()]] - code - gateway/security/health_report.py
+- [[score_to_grade()]] - code - gateway/security/health_report.py
+- [[test_security_toolchain.py]] - code - gateway/tests/test_security_toolchain.py
+- [[wazuh-ossec]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[wazuh_client.py]] - code - gateway/security/wazuh_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -108,24 +87,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_EncryptedStore]]
-- 2 edges to [[_COMMUNITY_falco_monitor.py]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_DockerEngine]]
-- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
-- 1 edge to [[_COMMUNITY_chatbotmain.py]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
-- 1 edge to [[_COMMUNITY_gateway.security.agent_cve_registry]]
+- 12 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 7 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 5 edges to [[_COMMUNITY_parse_trivy_output]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_Path_1]]
+- 2 edges to [[_COMMUNITY_get_falco_summary]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 2 edges to [[_COMMUNITY_run_trivy_scan]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_ProxyDashboard]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_get_trivy_summary]]
+- 1 edge to [[_COMMUNITY_TestStartupScannerKeying]]
+- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
+- 1 edge to [[_COMMUNITY_wazuh-ossec.conf]]
 
 ## Top bridge nodes
-- [[FR4 Data Confidentiality]] - degree 8, connects to 7 communities
-- [[outbound_filter.py]] - degree 9, connects to 6 communities
-- [[InfoCategory]] - degree 9, connects to 2 communities
-- [[.filter_response()]] - degree 6, connects to 2 communities
-- [[test_outbound_filter.py]] - degree 5, connects to 2 communities
+- [[test_security_toolchain.py]] - degree 42, connects to 8 communities
+- [[health_report.py]] - degree 18, connects to 7 communities
+- [[wazuh_client.py]] - degree 14, connects to 5 communities
+- [[generate_summary()]] - degree 13, connects to 5 communities
+- [[read_alerts()]] - degree 9, connects to 3 communities

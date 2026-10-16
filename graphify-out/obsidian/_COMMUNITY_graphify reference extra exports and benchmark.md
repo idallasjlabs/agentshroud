@@ -1,38 +1,44 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.07
+members: 29
 ---
 
 # graphify reference: extra exports and benchmark
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[1. Summary_2]] - document - reports/upgrade-2026-08-30.md
-- [[1. Summary_1]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[2. Environment mapping]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[2. Environment mapping_1]] - document - reports/upgrade-2026-08-30.md
-- [[3. Upgrade table]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[3. Upgrade table_1]] - document - reports/upgrade-2026-08-30.md
-- [[4. Security findings]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[4. Security findings_1]] - document - reports/upgrade-2026-08-30.md
-- [[5. Verification evidence]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[5. Verification evidence_1]] - document - reports/upgrade-2026-08-30.md
-- [[6. Breaking changes  manual follow-ups]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[6. Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-08-30.md
-- [[7. Rollback instructions]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[7. Rollback instructions_1]] - document - reports/upgrade-2026-08-30.md
-- [[8. Time spent]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[8. Time spent_1]] - document - reports/upgrade-2026-08-30.md
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30_1]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30_2]] - document - reports/upgrade-2026-08-30.md
-- [[Appendix first-pass abort evidence (0734–0826 ET, superseded)_1]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[Appendix first-pass abort evidence (0734–0826 ET, superseded)_2]] - document - reports/upgrade-2026-08-30.md
-- [[Run history_1]] - document - reports/upgrade-2026-08-30-20260830-2010.md
-- [[Run history_2]] - document - reports/upgrade-2026-08-30.md
-- [[upgrade-2026-08-30]] - document - reports/upgrade-2026-08-30.md
+- [[For --cluster-only]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[For --watch]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[For graphify add]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[For graphify explain]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[For graphify path]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[For git commit hook]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[Step 1 — Traversal]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[Step 6b - Wiki (only if --wiki flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[graphify reference add a URL and watch a folder]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[graphify reference commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[graphify reference extra exports and benchmark]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[graphify reference incremental update and cluster-only]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[graphify reference query, path, explain]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[graphify reference transcribe video and audio_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[hermesskillsgraphifyreferencesadd-watch]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[hermesskillsgraphifyreferencesexports]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[hermesskillsgraphifyreferenceshooks]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[hermesskillsgraphifyreferencesquery]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[hermesskillsgraphifyreferencestranscribe]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[hermesskillsgraphifyreferencesupdate]] - document - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,9 +46,3 @@ members: 23
 TABLE source_file, type FROM #community/graphify_reference_extra_exports_and_benchmark
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_auth.py]]
-
-## Top bridge nodes
-- [[upgrade-2026-08-30]] - degree 3, connects to 1 community

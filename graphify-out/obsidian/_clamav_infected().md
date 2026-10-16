@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "A2AMethod"
+community: "test_scanner_integration.py"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/test_scanner_integrationpy
 ---
 
 # _clamav_infected()
 
 ## Connections
-- [[.test_initial_when_infected()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[dot-test_initial_when_infected()]] - `calls` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

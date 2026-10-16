@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # TestWazuhSummary
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[4. Handling Alerts]] - document - docs/operations/runbook.md
-- [[Alert Severity Levels]] - document - docs/operations/runbook.md
-- [[Critical Alert Response]] - document - docs/operations/runbook.md
-- [[High Alert Response]] - document - docs/operations/runbook.md
+- [[dot-test_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_no_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_with_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestWazuhSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY__w]]
 
 ## Top bridge nodes
-- [[4. Handling Alerts]] - degree 4, connects to 1 community
+- [[TestWazuhSummary]] - degree 5, connects to 1 community
+- [[dot-test_installed_not_running()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "ssh-configuration.md"
+community: "_seed_cron"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/_seed_cron
 ---
 
 # _injectable_providers()
@@ -16,4 +16,4 @@ tags:
 - [[_seed_cron()]] - `references` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

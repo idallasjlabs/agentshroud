@@ -1,38 +1,25 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.20
+members: 10
 ---
 
 # iMessage Integration Status
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Next Steps]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[What This Means]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Function Details]]
-- 1 edge to [[_COMMUNITY__DummyTargetWriter]]
+- 1 edge to [[_COMMUNITY_How to Fix (5 Minutes)]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities
+- [[iMessage Integration Status]] - degree 8, connects to 1 community

@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # statusline.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_12]] - document - .agents/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[Claude Code Statusline Documentation]] - document - .claude/statusline.sh
+- [[statusline.sh]] - code - .claude/statusline.sh
+- [[statusline.sh script]] - code - .claude/statusline.sh
 
 ## Live Query (requires Dataview plugin)
 

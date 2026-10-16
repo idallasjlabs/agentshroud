@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: ".proxy_messages()"
+community: "SlackSocketClient"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SlackSocketClient
 ---
 
 # _get_wss_url returns the WSS URL from apps.connections.open.
 
 ## Connections
-- [[.test_get_wss_url_returns_url_on_success()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_wss_url_returns_url_on_success()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

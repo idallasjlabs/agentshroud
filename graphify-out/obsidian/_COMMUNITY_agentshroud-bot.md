@@ -1,31 +1,46 @@
 ---
 type: community
-cohesion: 0.19
-members: 16
+cohesion: 0.06
+members: 31
 ---
 
 # agentshroud-bot
 
-**Cohesion:** 0.19 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[.test_clean_when_installed_but_no_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_report_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_prefix_filter()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_generate_summary_output()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_most_recent_file()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_for_empty_directory()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_for_missing_directory()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_on_invalid_json()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_when_all_files_empty()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_skips_empty_files_returns_next_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[Load the most recent JSON report file from a directory.      Args         direc]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetTrivySummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestLoadLatestJson]] - code - gateway/tests/test_scanner_integration.py
-- [[_load_latest_json()]] - code - gateway/security/scanner_integration.py
-- [[get_trivy_summary()]] - code - gateway/security/scanner_integration.py
+- [[Config Location]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[DNS Resolution]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Docker Networks]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Extra Hosts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Health Check_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Key Environment Variables]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Key Intercepted Paths]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Logs_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Network_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Network Architecture]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[OpenClaw_1]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Purpose_139]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_50]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_51]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Related Notes_52]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Role in AgentShroud]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Secrets_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Security Hardening_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Summary_23]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Version Note]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Volumes_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[agentshroud-bot_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[agentshroud-bot]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[agentshroud-internal]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[agentshroud-isolated]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[networks_2]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[openclaw]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,19 +50,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 4 edges to [[_COMMUNITY_Canvas Skill]]
-- 4 edges to [[_COMMUNITY_A2AMethod]]
-- 3 edges to [[_COMMUNITY_Step-by-Step Installation]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_Docker Volumes]]
 
 ## Top bridge nodes
-- [[get_trivy_summary()]] - degree 16, connects to 8 communities
-- [[_load_latest_json()]] - degree 15, connects to 4 communities
-- [[TestLoadLatestJson]] - degree 8, connects to 1 community
-- [[TestGetTrivySummary]] - degree 4, connects to 1 community
-- [[.test_clean_when_installed_but_no_report()]] - degree 3, connects to 1 community
+- [[agentshroud-bot]] - degree 4, connects to 1 community
+- [[openclaw]] - degree 3, connects to 1 community

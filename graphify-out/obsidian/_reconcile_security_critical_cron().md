@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "What You Must Do When Invoked"
+community: "start-agentshroud.sh"
 location: "L760"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/start-agentshroudsh
 ---
 
 # _reconcile_security_critical_cron()
@@ -16,4 +16,4 @@ tags:
 - [[start-agentshroud.sh]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

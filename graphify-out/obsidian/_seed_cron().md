@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "ssh-configuration.md"
+community: "_seed_cron"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/_seed_cron
 ---
 
 # _seed_cron()
@@ -31,4 +31,4 @@ tags:
 - [[init-config.sh script]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

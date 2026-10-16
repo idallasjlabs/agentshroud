@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # TestSocketAndPidProbes
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[MemoryIntegrityMonitor Tamper Detection]] - code - gateway/security/memory_integrity.py
-- [[MemoryLifecycleManager PII Scan and Retention]] - code - gateway/security/memory_lifecycle.py
-- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_clamd_running_true_with_connectable_socket()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fluent_bit_running_false_without_pidfile()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fluent_bit_running_true_with_live_pid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSocketAndPidProbes]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,11 @@ members: 3
 TABLE source_file, type FROM #community/TestSocketAndPidProbes
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY__w]]
+
+## Top bridge nodes
+- [[TestSocketAndPidProbes]] - degree 4, connects to 1 community
+- [[dot-test_fluent_bit_running_true_with_live_pid()]] - degree 2, connects to 1 community

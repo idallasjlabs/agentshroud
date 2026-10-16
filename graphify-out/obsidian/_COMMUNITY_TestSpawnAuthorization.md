@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # TestSpawnAuthorization
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[CPU Throttling]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Disk IO]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Memory Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Network]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Performance Considerations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Temperature Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[dot-test_basic_spawn()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_depth_exceeded_allowed_in_monitor()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_depth_exceeded_denied()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_depth_penalty_reduces_trust()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_disabled_always_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_strict_inheritance_caps_trust()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestSpawnAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_forward.py]]
+- 4 edges to [[_COMMUNITY_SubagentGovernance]]
+- 2 edges to [[_COMMUNITY_GovernanceAction]]
 
 ## Top bridge nodes
-- [[Performance Considerations]] - degree 6, connects to 1 community
+- [[TestSpawnAuthorization]] - degree 12, connects to 2 communities

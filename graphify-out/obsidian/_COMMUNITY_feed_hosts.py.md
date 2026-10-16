@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CI lint job (blackisortflake8, version-pinned)]] - code - .github/workflows/ci.yml
+- [[feed_hosts.py]] - code - gateway/security/feed_hosts.py
 
 ## Live Query (requires Dataview plugin)
 

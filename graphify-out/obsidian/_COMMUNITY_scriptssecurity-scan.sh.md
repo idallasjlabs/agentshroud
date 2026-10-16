@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.57
+members: 7
 ---
 
 # scripts/security-scan.sh
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.57 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[BRANCH_PROTECTION]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[GitHub Branch Protection — `main`]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Local Enforcement (already active)]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Required Settings]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Required Status Checks]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Verification_1]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[error()]] - code - scripts/security-scan.sh
+- [[info()]] - code - scripts/security-scan.sh
+- [[require_tool()]] - code - scripts/security-scan.sh
+- [[scriptssecurity-scan.sh]] - code - scripts/security-scan.sh
+- [[security-scan.sh script]] - code - scripts/security-scan.sh
+- [[success()]] - code - scripts/security-scan.sh
+- [[warn()_2]] - code - scripts/security-scan.sh
 
 ## Live Query (requires Dataview plugin)
 

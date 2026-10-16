@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "RateLimiter"
+community: "forward.py"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/forwardpy
 ---
 
 # _process_inbound()
 
 ## Connections
-- [[ForwardRequest]] - `shares_data_with` [EXTRACTED]
-- [[ForwardRequest_2]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `references` [EXTRACTED]
+- [[ForwardRequest_3]] - `shares_data_with` [EXTRACTED]
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[MiddlewareManager.process_request()]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - `rationale_for` [EXTRACTED]
 - [[_InboundResult]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/forwardpy

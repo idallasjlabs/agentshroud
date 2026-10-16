@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # toggle-readonly.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator Skill]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
+- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
 
 ## Live Query (requires Dataview plugin)
 

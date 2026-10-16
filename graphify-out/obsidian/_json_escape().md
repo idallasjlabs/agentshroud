@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Operating Rules (Non-Negotiable)"
+community: "agentshroud-ssh-exec.sh"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable
+  - community/agentshroud-ssh-execsh
 ---
 
 # _json_escape()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-exec.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh

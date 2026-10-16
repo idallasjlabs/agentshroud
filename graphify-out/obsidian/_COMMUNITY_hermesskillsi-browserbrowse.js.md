@@ -1,20 +1,21 @@
 ---
 type: community
 cohesion: 0.40
-members: 5
+members: 6
 ---
 
 # hermes/skills/i-browser/browse.js
 
 **Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_14]] - document - .agents/skills/i-mac/README.md
-- [[README_14]] - document - .agents/skills/i-mac/README.md
-- [[Related Skills_14]] - document - .agents/skills/i-mac/README.md
-- [[Usage_16]] - document - .agents/skills/i-mac/README.md
-- [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
+- [[appendLog()]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[browserFetch()]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[fs]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[hermesskillsi-browserbrowse.js]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[path_6]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[{ chromium }]] - code - docker/config/hermes/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +23,3 @@ members: 5
 TABLE source_file, type FROM #community/hermes/skills/i-browser/browsejs
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-
-## Top bridge nodes
-- [[macOS System Administrator (MAC)]] - degree 5, connects to 1 community

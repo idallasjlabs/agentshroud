@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "_wrap_response()"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/lifespanpy
 ---
 
 # _build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

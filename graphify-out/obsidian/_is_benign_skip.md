@@ -1,17 +1,17 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "code"
-community: "pytest.ini"
+community: "TestClassify"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/TestClassify
 ---
 
 # _is_benign_skip
 
 ## Connections
 - [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - `references` [EXTRACTED]
-- [[classify()_1]] - `calls` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pytestini
+#graphify/code #graphify/EXTRACTED #community/TestClassify

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "asyncio"
+community: "test_llm_proxy_local_parity.py"
 location: "L566"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # _local_failover_base resolves correct backend for secondary model.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_secondary_failover_base_routes_correctly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

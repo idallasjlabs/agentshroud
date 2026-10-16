@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "soc.js"
+community: "LLMProxy"
 location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # _TrackingInjector
 
 ## Connections
-- [[.__init__()_170]] - `method` [EXTRACTED]
-- [[.inject_headers()]] - `method` [EXTRACTED]
+- [[dot-__init__()_189]] - `method` [EXTRACTED]
+- [[dot-inject_headers()]] - `method` [EXTRACTED]
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-devsecops SKILL (stub)]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[cli__init__.py]] - code - gateway/cli/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

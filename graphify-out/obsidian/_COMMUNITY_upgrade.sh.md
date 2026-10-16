@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # upgrade.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Incident Response Plan (stop, investigate, contain, recover)]] - document - docs/archive/SECURITY-ANALYSIS.md
-- [[Incident Response Runbook (stop, review, rotate, rebuild, report)]] - document - docs/archive/SECURITY.md
+- [[Trillian Host Compose Override]] - document - docker/docker-compose.agentshroud-bot.trillian.yml
+- [[upgrade.sh]] - code - docker/upgrade.sh
+- [[upgrade.sh script]] - code - docker/upgrade.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # devices.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[github-and-merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[devices.sh]] - code - docker/scripts/devices.sh
+- [[devices.sh script]] - code - docker/scripts/devices.sh
+- [[telegram.sh]] - code - docker/scripts/telegram.sh
+- [[telegram.sh script]] - code - docker/scripts/telegram.sh
 
 ## Live Query (requires Dataview plugin)
 

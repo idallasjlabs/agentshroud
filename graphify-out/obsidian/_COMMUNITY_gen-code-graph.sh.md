@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # gen-code-graph.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_26]] - document - .agents/skills/i-incident-response/SKILL.md
-- [[Skill incident-response]] - document - .agents/skills/i-incident-response/SKILL.md
+- [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - concept - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh]] - code - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh script]] - code - scripts/gen-code-graph.sh
 
 ## Live Query (requires Dataview plugin)
 

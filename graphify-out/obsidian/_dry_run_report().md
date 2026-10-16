@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
+community: "multi_host_test.py"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/multi_host_testpy
 ---
 
 # _dry_run_report()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Describe exactly what would run, without executing anything.]] - `rationale_for` [EXTRACTED]
 - [[build_ssh_argv()]] - `calls` [EXTRACTED]
-- [[main()_14]] - `calls` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

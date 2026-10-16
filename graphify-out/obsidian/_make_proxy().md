@@ -1,41 +1,28 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "asyncio"
-location: "L53"
+community: "PipelineAction"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/PipelineAction
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[LLMProxy]] - `calls` [EXTRACTED]
-- [[LLMProxy_2]] - `references` [EXTRACTED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
-- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
-- [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
-- [[test_get_local_model_reads_fieldflare_ref()]] - `calls` [EXTRACTED]
-- [[test_get_local_secondary_model_reads_env()]] - `calls` [EXTRACTED]
-- [[test_get_local_secondary_model_returns_none_when_unset()]] - `calls` [EXTRACTED]
-- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `calls` [EXTRACTED]
-- [[test_hermes_openai_path_local_model_routed_correctly()]] - `calls` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
-- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
-- [[test_local_mode_openai_tool_call_shape_passes_through()]] - `calls` [EXTRACTED]
-- [[test_local_oom_failover_disabled_does_not_retry()]] - `calls` [EXTRACTED]
-- [[test_local_oom_no_secondary_falls_through_to_503()]] - `calls` [EXTRACTED]
-- [[test_local_oom_triggers_secondary_failover()]] - `calls` [EXTRACTED]
-- [[test_local_p99_timeout_triggers_secondary_failover()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_anthropic_path()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_exception_returns_none()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_unknown_path_returns_none()]] - `calls` [EXTRACTED]
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `calls` [EXTRACTED]
-- [[test_model_ref_round_trip()]] - `calls` [EXTRACTED]
-- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `calls` [EXTRACTED]
-- [[test_stats_local_secondary_failover_succeeded_incremented()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_non_owner_drops_update_and_increments_stats()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_owner_message_allowed_through_with_sanitized_text()]] - `calls` [EXTRACTED]
+- [[dot-test_no_pipeline_falls_back_to_direct_sanitizer()]] - `calls` [EXTRACTED]
+- [[dot-test_outbound_blocked_replaces_text()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_exception_allows_owner_through()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_exception_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_process_outbound_called_for_send_message()]] - `calls` [EXTRACTED]
+- [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - `calls` [EXTRACTED]
+- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

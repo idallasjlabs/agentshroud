@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.15
+members: 15
 ---
 
 # mcp-proxy-wrapper.js
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Filing Reference_1]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Gateway mcpproxy and mcpresult endpoints]] - concept - docker/scripts/mcp-proxy-wrapper.js
+- [[command, ...commandArgs]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[auditResult()]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[child]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[dashDash]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[gatewayPost()]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[http_1]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[https_1]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[inboundRl]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[inspectCall()]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[mcp-proxy-wrapper.js]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[outboundRl]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[pendingCalls]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[readline]] - code - docker/scripts/mcp-proxy-wrapper.js
+- [[{ spawn }]] - code - docker/scripts/mcp-proxy-wrapper.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,12 +32,3 @@ members: 14
 TABLE source_file, type FROM #community/mcp-proxy-wrapperjs
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_VII. v0.8.0 Remediation]]
-- 1 edge to [[_COMMUNITY_`docsplanning` — Index]]
-- 1 edge to [[_COMMUNITY_TestRunUpstreamCveCheck]]
-- 1 edge to [[_COMMUNITY_🔴 CRITICAL — Not Wired (code exists, tests pass,]]
-
-## Top bridge nodes
-- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities

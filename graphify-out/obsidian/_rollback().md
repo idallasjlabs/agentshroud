@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "Recommendations for Production Deployment"
+community: "asb (AgentShroud Bot helper)"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Recommendations_for_Production_Deployment
+  - community/asb_AgentShroud_Bot_helper
 ---
 
 # _rollback()
@@ -16,4 +16,4 @@ tags:
 - [[update-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment
+#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper

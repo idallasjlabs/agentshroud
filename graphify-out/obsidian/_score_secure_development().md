@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "iCloud Data Manager (ICLOUD)"
+community: "_score_secure_development"
 location: "L1206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/_score_secure_development
 ---
 
 # _score_secure_development()
 
 ## Connections
-- [[.test_at_least_one()]] - `calls` [EXTRACTED]
-- [[.test_three_when_semgrep_and_precommit_present()]] - `calls` [EXTRACTED]
-- [[Path_17]] - `calls` [EXTRACTED]
+- [[dot-test_at_least_one()]] - `calls` [EXTRACTED]
+- [[dot-test_three_when_semgrep_and_precommit_present()]] - `calls` [EXTRACTED]
+- [[Path_57]] - `calls` [EXTRACTED]
 - [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/code #graphify/EXTRACTED #community/_score_secure_development

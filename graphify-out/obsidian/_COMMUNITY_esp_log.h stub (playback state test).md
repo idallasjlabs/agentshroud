@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 — blocking response.read() froze the gateway event loop]] - concept - gateway/tests/test_llm_proxy_failover.py
+- [[esp_log.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

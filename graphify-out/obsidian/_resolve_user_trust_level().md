@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "RateLimiter"
+community: "forward.py"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/forwardpy
 ---
 
 # _resolve_user_trust_level()
 
 ## Connections
-- [[AgentTarget_2]] - `references` [EXTRACTED]
-- [[ForwardRequest_2]] - `references` [EXTRACTED]
+- [[AgentTarget_1]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `references` [EXTRACTED]
 - [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - `rationale_for` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - `calls` [EXTRACTED]
 - [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/forwardpy

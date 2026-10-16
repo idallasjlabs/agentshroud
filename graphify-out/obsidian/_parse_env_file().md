@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentShroud: Enterprise Governance for Autonomou"
+community: "ForwardRequest"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomou
+  - community/ForwardRequest
 ---
 
 # _parse_env_file()
 
 ## Connections
-- [[.config()_2]] - `calls` [EXTRACTED]
-- [[.config()_1]] - `calls` [EXTRACTED]
-- [[.config()_3]] - `calls` [EXTRACTED]
+- [[dot-config()_2]] - `calls` [EXTRACTED]
+- [[dot-config()_3]] - `calls` [EXTRACTED]
+- [[dot-config()_4]] - `calls` [EXTRACTED]
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - `rationale_for` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_51]] - `references` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomou
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

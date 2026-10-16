@@ -1,27 +1,30 @@
 ---
 type: community
-cohesion: 0.23
-members: 12
+cohesion: 0.13
+members: 15
 ---
 
 # 🟢 INFO (nice to have)
 
-**Cohesion:** 0.23 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[.test_returns_latest_sbom()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_when_no_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_two_when_sbom_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_empty_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_no_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 3 Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSupplyChain]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_supply_chain()]] - code - gateway/security/scanner_integration.py
-- [[get_sbom()]] - code - gateway/security/scanner_integration.py
+- [[3. Round 2 Findings]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I1 Missing trailing newlines in route files]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I2 Duplicated constants between `main.py` and `routesforward.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I3 `managednsblocklist` reads pihole password inline]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I4 `AppState` class missing dynamically-set attributes]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I5 Inline import on hot path in LLM proxy]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W1 Duplicate `import time` in `dashboard.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W4 Tailscale image not pinned to SHA256 digest]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🔴 ERRORS (must fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟡 WARNINGS (should fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟢 INFO (nice to have)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,17 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_A2AMethod]]
-- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Canvas Skill]]
-- 1 edge to [[_COMMUNITY_agentshroud-bot]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_Step-by-Step Installation]]
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
 
 ## Top bridge nodes
-- [[get_sbom()]] - degree 9, connects to 4 communities
-- [[_score_supply_chain()]] - degree 9, connects to 4 communities
-- [[TestGetSbom]] - degree 4, connects to 1 community
-- [[TestScoreSupplyChain]] - degree 4, connects to 1 community
-- [[.test_returns_none_when_no_dir()]] - degree 3, connects to 1 community
+- [[3. Round 2 Findings]] - degree 4, connects to 1 community

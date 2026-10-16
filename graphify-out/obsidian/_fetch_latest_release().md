@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Query GitHub releases API. Returns {tag_name ..., html_url ...} or {error]] - `rationale_for` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

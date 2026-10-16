@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "code"
-community: "pytest.ini"
+community: "TestClassify"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/TestClassify
 ---
 
 # _is_benign_skip()
 
 ## Connections
-- [[Any_78]] - `references` [EXTRACTED]
-- [[classify()_1]] - `calls` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
 - [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pytestini
+#graphify/code #graphify/EXTRACTED #community/TestClassify

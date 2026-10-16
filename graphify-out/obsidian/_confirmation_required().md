@@ -21,10 +21,10 @@ tags:
 - [[rebuild_all_services()]] - `calls` [EXTRACTED]
 - [[restart_service()_1]] - `calls` [EXTRACTED]
 - [[rollback_gateway()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[stop_service()_1]] - `calls` [EXTRACTED]
 - [[update_service()]] - `calls` [EXTRACTED]
-- [[upgrade_bot()]] - `calls` [EXTRACTED]
+- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 

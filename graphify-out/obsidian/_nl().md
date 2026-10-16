@@ -2,7 +2,7 @@
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
 community: "triage-cve-mitigations.py"
-location: "L904"
+location: "L1000"
 tags:
   - graphify/code
   - graphify/EXTRACTED

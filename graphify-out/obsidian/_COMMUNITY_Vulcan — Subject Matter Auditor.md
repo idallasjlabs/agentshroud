@@ -1,19 +1,24 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.22
+members: 9
 ---
 
 # Vulcan — Subject Matter Auditor
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_deny_without_target_auto_selects_single_pending()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny with one pending request should deny that request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny without target, with 2+ pending collaborator         requests, is ge]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-agentsskillsi-vulcanSKILL]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Input Requirements_27]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Output Format_42]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Persona_21]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Quality Checklist_24]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Role_105]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[System Prompt_21]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[User Prompt Template_9]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Vulcan — Subject Matter Auditor_3]] - document - .agents/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +26,3 @@ members: 4
 TABLE source_file, type FROM #community/Vulcan__Subject_Matter_Auditor
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
-
-## Top bridge nodes
-- [[.test_owner_deny_without_target_auto_selects_single_pending()]] - degree 8, connects to 2 communities
-- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - degree 7, connects to 2 communities

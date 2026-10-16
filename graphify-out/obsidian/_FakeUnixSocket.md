@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "EgressAction"
+community: "ServiceManager"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/ServiceManager
 ---
 
 # _FakeUnixSocket
 
 ## Connections
-- [[.__init__()_189]] - `method` [EXTRACTED]
-- [[.close()_19]] - `method` [EXTRACTED]
-- [[.connect()_2]] - `method` [EXTRACTED]
-- [[.settimeout()]] - `method` [EXTRACTED]
+- [[dot-__init__()_180]] - `method` [EXTRACTED]
+- [[dot-close()_15]] - `method` [EXTRACTED]
+- [[dot-connect()_2]] - `method` [EXTRACTED]
+- [[dot-settimeout()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[Stand-in for socket.socket — records calls, never opens a real fd.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAction
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

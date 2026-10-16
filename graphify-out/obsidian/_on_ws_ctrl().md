@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "_t()"
+community: "app_main.c"
 location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/app_mainc
 ---
 
 # _on_ws_ctrl()
@@ -15,6 +15,6 @@ tags:
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[audio_set_volume()]] - `calls` [INFERRED]
 - [[ui_face_set_agent()]] - `calls` [INFERRED]
-- [[vt_remote_log()]] - `calls` [EXTRACTED]
+- [[vt_remote_log()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/app_mainc

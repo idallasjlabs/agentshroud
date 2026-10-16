@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Security Integration — Full Pipeline Tests]] - code - gateway/tests/test_security_integration.py
+- [[test_playback_statestubsesp_err.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

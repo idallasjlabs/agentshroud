@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # ToolChainAnalyzer.analyze_tool_call
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_69]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[README_74]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Related Skills_75]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect_1]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Usage_76]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[ToolChainAnalyzer._calculate_risk_score]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._cleanup_old_sessions]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._detect_chain_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._matches_source_pattern]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._trigger_alert]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer.analyze_tool_call]] - code - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

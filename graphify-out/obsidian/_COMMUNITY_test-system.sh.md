@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # test-system.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Create PR with Pre-Flight Audit (CRPR) Skill]] - document - .agents/skills/i-crpr/SKILL.md
+- [[test-system.sh]] - code - docker/scripts/test-system.sh
+- [[test-system.sh script]] - code - docker/scripts/test-system.sh
 
 ## Live Query (requires Dataview plugin)
 

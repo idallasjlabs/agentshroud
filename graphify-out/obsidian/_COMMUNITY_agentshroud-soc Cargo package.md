@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Chaos Engineering Skill_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[agentshroud-soc Cargo package]] - document - cli/Cargo.toml
 
 ## Live Query (requires Dataview plugin)
 

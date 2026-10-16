@@ -1,31 +1,23 @@
 ---
 type: community
-cohesion: 0.16
-members: 16
+cohesion: 0.25
+members: 8
 ---
 
 # TestInspectorEdgeCases
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.age_days()]] - code - gateway/security/key_rotation.py
-- [[.is_in_grace_period()]] - code - gateway/security/key_rotation.py
-- [[.test_age_calculation()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_grace_period_tracking()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_should_rotate()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_should_warn()]] - code - gateway/tests/test_key_rotation.py
-- [[Age of credential in days.]] - rationale - gateway/security/key_rotation.py
-- [[CredentialInfo]] - code - gateway/security/key_rotation.py
-- [[Information about a managed credential.]] - rationale - gateway/security/key_rotation.py
-- [[Test credential age calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential information tracking.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period status tracking.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation requirement calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test warning threshold calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestCredentialInfo]] - code - gateway/tests/test_key_rotation.py
-- [[Whether credential is currently in grace period.]] - rationale - gateway/security/key_rotation.py
+- [[dot-test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,17 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
-- 6 edges to [[_COMMUNITY_3. Security Controls]]
-- 4 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 4 edges to [[_COMMUNITY_test_key_rotation.py]]
-- 4 edges to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
-- 4 edges to [[_COMMUNITY_4. Environment Variables]]
-- 3 edges to [[_COMMUNITY_OpenClaw Bot Container]]
-- 2 edges to [[_COMMUNITY_TestOpProxyEndpoint]]
+- 6 edges to [[_COMMUNITY_MCPToolCall]]
+- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
+- 1 edge to [[_COMMUNITY_MCPToolResult]]
 
 ## Top bridge nodes
-- [[CredentialInfo]] - degree 35, connects to 8 communities
-- [[TestCredentialInfo]] - degree 12, connects to 5 communities
-- [[.test_should_rotate()]] - degree 4, connects to 1 community
-- [[.test_should_warn()]] - degree 4, connects to 1 community
+- [[TestInspectorEdgeCases]] - degree 21, connects to 5 communities

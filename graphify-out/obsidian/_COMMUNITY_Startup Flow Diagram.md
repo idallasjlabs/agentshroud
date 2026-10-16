@@ -1,18 +1,18 @@
 ---
 type: community
-cohesion: 1.00
+cohesion: 0.67
 members: 3
 ---
 
 # Startup Flow Diagram
 
-**Cohesion:** 1.00 - tightly connected
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[check()_5]] - code - tests/startup_smoke/test_bot_boot_live.sh
-- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
-- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[Related Notes_17]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 

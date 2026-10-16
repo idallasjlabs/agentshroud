@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.31
+members: 9
 ---
 
 # TestIsContainerRunning
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.31 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Apollo README]] - document - .agents/skills/i-apollo/README.md
-- [[Apollo — Audio Systems Producer_6]] - document - .agents/skills/i-apollo/SKILL.md
-- [[ElevenLabs Text-to-Dialogue API_1]] - concept - .agents/skills/i-apollo/SKILL.md
-- [[Input Requirements]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Output]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Quality Checklist]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Role_4]] - document - .agents/skills/i-apollo/SKILL.md
-- [[SKILL_3]] - document - .agents/skills/i-apollo/SKILL.md
+- [[dot-__init__()_10]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-_patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-read()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_container_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_socket_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stopped_container_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsContainerRunning]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_FakeResp]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__mock_dir_with_fresh_files()]]
-- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
 
 ## Top bridge nodes
-- [[Apollo — Audio Systems Producer_6]] - degree 9, connects to 2 communities
+- [[TestIsContainerRunning]] - degree 6, connects to 1 community
+- [[_FakeResp]] - degree 4, connects to 1 community

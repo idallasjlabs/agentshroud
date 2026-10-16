@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py]] - code - chatbot/__init__.py
+- [[approval_queue__init__.py]] - code - gateway/approval_queue/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

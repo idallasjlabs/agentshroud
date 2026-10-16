@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "What You Must Do When Invoked"
+community: "start-agentshroud.sh"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/start-agentshroudsh
 ---
 
 # _container_age_seconds()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

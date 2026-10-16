@@ -1,18 +1,19 @@
 ---
 type: community
 cohesion: 0.67
-members: 3
+members: 4
 ---
 
 # iCloud Services Skill
 
 **Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_full_attestation_chain()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_no_sbom_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAiModelSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[1Password item Apple ID - therealidallasj]] - concept - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[calendar.js (iCloud CalDAV script)]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[i-icloud README (ICLOUD Data Manager)]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[iCloud Services Skill]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +21,3 @@ members: 3
 TABLE source_file, type FROM #community/iCloud_Services_Skill
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
-- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
-
-## Top bridge nodes
-- [[TestAiModelSupplyChain]] - degree 3, connects to 1 community
-- [[.test_full_attestation_chain()]] - degree 2, connects to 1 community

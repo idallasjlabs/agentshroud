@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "ServiceManager"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/ServiceManager
 ---
 
 # _check_clamd()
@@ -17,4 +17,4 @@ tags:
 - [[services.py]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

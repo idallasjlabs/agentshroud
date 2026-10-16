@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_11]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Core Discipline Red → Green → Refactor_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Glue Job Logic  →  test transformations outside Spark_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Python  Boto3  AWS  →  `moto`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Role_70]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Rules_13]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[SKILL_120]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Skill Test-Driven Development (TDD)_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Stack-Specific Testing Patterns_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Step Function Input Validation_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Test Structure_3]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
-- [[Zabbix API  →  `unittest.mock`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[dot-agentsskillsi-session-promptSKILL]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Role_80]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Rules_20]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 2 — Answer Six Questions]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 4 — Write the File]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 5 — Inject into All Three LLMs]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 6 — Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Trigger_1]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/Workflow_Survey__Draft__Inject__Confirm
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY__make_tm()]]
-
-## Top bridge nodes
-- [[Skill Test-Driven Development (TDD)_1]] - degree 8, connects to 1 community

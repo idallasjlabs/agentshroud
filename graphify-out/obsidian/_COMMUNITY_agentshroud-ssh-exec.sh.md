@@ -1,31 +1,23 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+cohesion: 0.29
+members: 8
 ---
 
 # agentshroud-ssh-exec.sh
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
-- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
-- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
-- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
-- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
-- [[Favicon]] - document - branding/QUICK-REFERENCE.md
-- [[File Locations]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Files_1]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Usage Rules]] - document - branding/QUICK-REFERENCE.md
-- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
-- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
-- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
-- [[Typography]] - document - branding/QUICK-REFERENCE.md
-- [[Website Header]] - document - branding/QUICK-REFERENCE.md
-- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
-- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
+- [[Daily CVE Triage & Remediation Scan]] - document - docker/config/openclaw/cron/jobs.json
+- [[_fmt()]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[_json_escape()]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[_read_token_file()]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[agentshroud-ssh-exec.sh]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[agentshroud-ssh-exec.sh script]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[daily-checkin.sh]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[daily-checkin.sh script]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community
+- [[agentshroud-ssh-exec.sh]] - degree 6, connects to 1 community
+- [[Daily CVE Triage & Remediation Scan]] - degree 2, connects to 1 community

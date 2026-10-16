@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-internal Network (Edge tier)]] - code - docker/docker-compose.yml
+- [[Vulcan (i-vulcan skill, script approver)]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

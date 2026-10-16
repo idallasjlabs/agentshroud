@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "_t()"
+community: "voice_task"
 location: "L624"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_t
+  - community/voice_task
 ---
 
 # _deliver_utterance()
@@ -16,11 +16,11 @@ tags:
 - [[delivery_resume_offset()]] - `calls` [INFERRED]
 - [[delivery_track_sent_ok()]] - `calls` [INFERRED]
 - [[voice_task()]] - `calls` [EXTRACTED]
-- [[vt_remote_log()]] - `calls` [EXTRACTED]
+- [[vt_remote_log()_2]] - `calls` [EXTRACTED]
 - [[ws_client_connected()]] - `calls` [INFERRED]
 - [[ws_client_send_end()]] - `calls` [INFERRED]
 - [[ws_client_send_listen()]] - `calls` [INFERRED]
 - [[ws_client_send_listen_resume()]] - `calls` [INFERRED]
 - [[ws_client_send_pcm()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_t
+#graphify/code #graphify/INFERRED #community/voice_task

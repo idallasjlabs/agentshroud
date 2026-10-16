@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "EgressAction"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/ServiceManager
 ---
 
 # _check_openscap
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestCheckOpenscap]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAction
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

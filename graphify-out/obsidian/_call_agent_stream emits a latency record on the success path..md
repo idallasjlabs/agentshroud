@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "test_hermes_model_resolver.py"
+community: "test_voice_latency_guard.py"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # _call_agent_stream emits a latency record on the success path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_records_latency_on_success()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy

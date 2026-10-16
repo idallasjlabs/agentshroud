@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Layer 1 Bot Instructions (Primary Defense)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Layer 2 Gateway Blocking (Defense in Depth)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Layer 3 Audit Logging (Monitoring)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Security Implementation Verification]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 1 Telegram Access (Should Refuse + Block)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 2 Control UI Access (Should Refuse)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 3 Console Access (Should Display)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Test 4 Internal Use (Should Work)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Ultra-Conservative Policy Requirements]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[✅ Verification Tests]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🎯 Policy Compliance Check]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🎯 Summary]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🏗️ Architecture Overview]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[📊 Multi-Layer Defense]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[📋 Compliance Checklist]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[🔍 Container Status]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Container Properties]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Environment Variables_10]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Health Check_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Key Endpoints_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Logs_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Networks_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Ports]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_48]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Resource Limits]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Secrets_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Security Hardening_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_21]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Volumes_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[tmpfs Mounts]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/agentshroud-gateway
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Function Details]]
-- 1 edge to [[_COMMUNITY_AgentShroud Color Palette]]
-- 1 edge to [[_COMMUNITY_Network Topology]]
-
-## Top bridge nodes
-- [[Security Implementation Verification]] - degree 10, connects to 3 communities

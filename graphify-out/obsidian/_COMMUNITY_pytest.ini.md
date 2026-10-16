@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.36
+cohesion: 0.25
 members: 8
 ---
 
 # pytest.ini
 
-**Cohesion:** 0.36 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Any_78]] - code - scripts/soak_status.py
-- [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - concept - scripts/soak_status.py
-- [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - rationale - scripts/soak_status.py
-- [[_is_benign_skip]] - code - scripts/soak_status.py
-- [[_is_benign_skip()]] - code - scripts/soak_status.py
-- [[classify()_1]] - code - scripts/soak_status.py
-- [[main()_26]] - code - scripts/soak_status.py
-- [[soak_status.py]] - code - scripts/soak_status.py
+- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Coverage Requirements_4]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Purpose_192]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Related Notes_69]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Incident Response Playbook — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
 
 ## Top bridge nodes
-- [[classify()_1]] - degree 7, connects to 1 community
-- [[main()_26]] - degree 3, connects to 1 community
-- [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - degree 2, connects to 1 community
+- [[pytest.ini_1]] - degree 8, connects to 1 community

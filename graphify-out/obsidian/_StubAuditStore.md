@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_a2a_proxy.py"
 location: "L444"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_router_coveragepy
+  - community/test_a2a_proxypy
 ---
 
 # _StubAuditStore
 
 ## Connections
-- [[.__init__()_139]] - `method` [EXTRACTED]
-- [[.log_event()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_200]] - `method` [EXTRACTED]
+- [[dot-log_event()_2]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_router_coveragepy
+#graphify/code #graphify/INFERRED #community/test_a2a_proxypy

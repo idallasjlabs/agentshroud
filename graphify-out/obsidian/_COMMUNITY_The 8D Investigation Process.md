@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.06
 members: 32
 ---
 
 # The 8D Investigation Process
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the REST v3 add-comment URL against the cloud-id gateway.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Compose the human-readable weekly summary posted as the comment.      - commits]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Extract SCRUM-n keys mentioned in commit subjects.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch one secret field from the gateway op-proxy. Returns the value._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Jira Dev-Ticket Helper Module]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[POST and return (status_code, response_text). Raises urllib errors up.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return the HTTP Basic auth header value base64(emailtoken)._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Unauthenticated site-to-cloud-ID discovery URL._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_adf_paragraph()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_git_commits_last_week()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_post_json()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_basic_auth_header()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_payload()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_url()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_op_proxy_request()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_tenant_info_url()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[datetime]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[fetch_op_secret()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[resolve_cloud_id()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[run()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Agent Interaction Protocol_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Architecture Context_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Confidence Scoring_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Critical Rules_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D0 — Planning & Scoping_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D1 — Team & Expertise Identification_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D2 — Problem Description (Data Collection & Characterization)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D3 — Interim Containment Assessment_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D4 — Root Cause Analysis (Correlated Event Detection)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D5 — Permanent Corrective Action Definition_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D6 — Implementation Verification_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D7 — Systemic Prevention_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D8 — Documentation & Recognition_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Device Hierarchy_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Collaborate with the AWS Agent_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Interact with the Human Investigator_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Input Requirements_7]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Knowledge Base Schema_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Learning System (Continuous Improvement)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Overview_9]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Pattern Matching for New Incidents_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 1 Collect the Error Event Data_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 2 Collect ALL Data in the Time Window_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 3 Collect Alarms and Events_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 4 Build the IS  IS NOT Matrix_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 5 Establish Baseline_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[The 8D Investigation Process_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[What to Extract_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Why This Matters_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[XML Configuration File Parsing_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[hermesskillsi-eightdSKILL]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,16 +49,3 @@ members: 32
 TABLE source_file, type FROM #community/The_8D_Investigation_Process
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Function Details]]
-- 1 edge to [[_COMMUNITY_test_config_hot_reload.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-P]]
-
-## Top bridge nodes
-- [[run()_1]] - degree 11, connects to 2 communities
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - degree 3, connects to 2 communities
-- [[resolve_cloud_id()_1]] - degree 5, connects to 1 community
-- [[build_basic_auth_header()_1]] - degree 4, connects to 1 community
-- [[build_op_proxy_request()_1]] - degree 4, connects to 1 community

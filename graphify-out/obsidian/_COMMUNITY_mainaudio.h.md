@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_agent_cve_registry.py (integrity guard suite)]] - code - gateway/tests/test_agent_cve_registry.py
+- [[mainaudio.h]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

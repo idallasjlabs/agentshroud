@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_19]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Core Discipline Red → Green → Refactor_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Glue Job Logic  →  test transformations outside Spark_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Python  Boto3  AWS  →  `moto`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Role_106]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Rules_22]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[SKILL_183]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Skill Test-Driven Development (TDD)_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Stack-Specific Testing Patterns_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Step Function Input Validation_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Test Structure_5]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Zabbix API  →  `unittest.mock`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Config Keys Read_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Environment Variables Used_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Event Types Emitted by main.py]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[EventBus.emit(event)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Function Details_47]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Purpose_181]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Related_53]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[event_bus.py_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[make_event(event_type, summary, details, severity)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BaseModel]]
+- 1 edge to [[_COMMUNITY_make_event]]
 
 ## Top bridge nodes
-- [[Skill Test-Driven Development (TDD)_2]] - degree 8, connects to 1 community
+- [[event_bus.py_2]] - degree 11, connects to 1 community

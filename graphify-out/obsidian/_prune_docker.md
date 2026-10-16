@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
+community: "asb (AgentShroud Bot helper)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/asb_AgentShroud_Bot_helper
 ---
 
 # _prune_docker
@@ -15,4 +15,4 @@ tags:
 - [[_prune_superseded_images]] - `calls` [EXTRACTED]
 - [[asb (AgentShroud Bot helper)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper

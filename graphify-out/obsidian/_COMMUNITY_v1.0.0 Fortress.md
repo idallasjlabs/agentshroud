@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[v1.0.0 Fortress]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

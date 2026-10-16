@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # set-model.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Chaos Engineering Skill]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[set-model.sh]] - code - docker/scripts/set-model.sh
+- [[set-model.sh script]] - code - docker/scripts/set-model.sh
 
 ## Live Query (requires Dataview plugin)
 

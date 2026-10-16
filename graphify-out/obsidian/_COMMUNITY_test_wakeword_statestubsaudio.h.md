@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
+- [[test_wakeword_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

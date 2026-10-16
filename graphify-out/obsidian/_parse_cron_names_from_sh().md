@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Currently Unmitigable Residual Class"
+community: "test_hermes_cron_seed.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/test_hermes_cron_seedpy
 ---
 
 # _parse_cron_names_from_sh()
@@ -20,4 +20,4 @@ tags:
 - [[test_jira_weekly_review_job_present()]] - `calls` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

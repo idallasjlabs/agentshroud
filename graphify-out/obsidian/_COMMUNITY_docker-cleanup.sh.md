@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.46
+members: 8
 ---
 
 # docker-cleanup.sh
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.46 - moderately connected
+**Members:** 8 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller (SKILL)]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Atlas — Curriculum Architect (README)]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect (SKILL)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Bloom's Taxonomy]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[cheatsheet.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
-- [[curriculum.md Output Template]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[show_notes.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
+- [[cmd_buildkit()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_diagnose()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_nuclear()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_restart()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_safe_prune()]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh script]] - code - docker/scripts/docker-cleanup.sh
+- [[usage()]] - code - docker/scripts/docker-cleanup.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +25,3 @@ members: 7
 TABLE source_file, type FROM #community/docker-cleanupsh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
-- 1 edge to [[_COMMUNITY_3. AWS API MCP Authentication Reset]]
-
-## Top bridge nodes
-- [[Atlas — Curriculum Architect (SKILL)]] - degree 5, connects to 1 community
-- [[Bloom's Taxonomy]] - degree 2, connects to 1 community

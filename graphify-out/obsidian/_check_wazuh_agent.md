@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "EgressAction"
+community: "_patch_open"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/_patch_open
 ---
 
 # _check_wazuh_agent
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestCheckWazuhAgent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAction
+#graphify/code #graphify/EXTRACTED #community/_patch_open

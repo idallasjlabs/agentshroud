@@ -1,35 +1,36 @@
 ---
 type: community
-cohesion: 0.13
-members: 20
+cohesion: 0.16
+members: 21
 ---
 
 # start-agentshroud.sh
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 20 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[.test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
-- [[.test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
-- [[.test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
-- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/health.py
-- [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
-- [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
-- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
-- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - rationale - gateway/ingest_api/routes/health.py
-- [[Request_5]] - code - gateway/ingest_api/routes/health.py
-- [[StatusResponse]] - code - gateway/ingest_api/models.py
-- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
-- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
-- [[auth_dep()_4]] - code - gateway/ingest_api/routes/health.py
-- [[health.py]] - code - gateway/ingest_api/routes/health.py
-- [[health_check()_1]] - code - gateway/ingest_api/routes/health.py
-- [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
-- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
+- [[Pending OpenClaw migration repair (openclaw doctor --fix) before gateway start]] - code - docker/scripts/start-agentshroud.sh
+- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
+- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
+- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
+- [[_model_runtime_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_poll_openclaw_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_secret_file()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
+- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_bot_token()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_get_me_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send_photo()]] - code - docker/scripts/start-agentshroud.sh
+- [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +40,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 3 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_main.rs]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_REPORT STRUCTURE]]
-- 1 edge to [[_COMMUNITY_InjectionSeverity]]
+- 2 edges to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Falco Rules]]
+- 1 edge to [[_COMMUNITY_security-entrypoint.sh]]
+- 1 edge to [[_COMMUNITY__seed_cron]]
+- 1 edge to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
+- 1 edge to [[_COMMUNITY__is_op_reference_allowed]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
 
 ## Top bridge nodes
-- [[health.py]] - degree 11, connects to 5 communities
-- [[StatusResponse]] - degree 10, connects to 2 communities
-- [[auth_dep()_4]] - degree 4, connects to 1 community
+- [[start-agentshroud.sh]] - degree 29, connects to 8 communities

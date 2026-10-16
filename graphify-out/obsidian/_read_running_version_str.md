@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
+community: "colima-health-check.sh"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/CI/CD_Pipeline_Advisor_README
+  - graphify/EXTRACTED
+  - community/colima-health-checksh
 ---
 
 # _read_running_version_str
@@ -14,4 +14,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `semantically_similar_to` [INFERRED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

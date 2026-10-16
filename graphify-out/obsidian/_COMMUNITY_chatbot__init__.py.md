@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[chatbot__init__.py]] - code - chatbot/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

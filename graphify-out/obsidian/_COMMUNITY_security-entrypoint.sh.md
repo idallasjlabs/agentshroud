@@ -1,19 +1,22 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.43
+members: 7
 ---
 
 # security-entrypoint.sh
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.43 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Fullwidth + mentionpunctuation blocked command variants should still be quarant]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Zero-width + mentionpunctuation blocked command variants should still be quaran]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[120s freshclam timeout rationale (bounded failure over outage)]] - rationale - docker/scripts/security-entrypoint.sh
+- [[alert_critical()]] - code - docker/scripts/security-entrypoint.sh
+- [[gateway-start.sh]] - code - docker/scripts/gateway-start.sh
+- [[gateway-start.sh script]] - code - docker/scripts/gateway-start.sh
+- [[log()_3]] - code - docker/scripts/security-entrypoint.sh
+- [[security-entrypoint.sh]] - code - docker/scripts/security-entrypoint.sh
+- [[security-entrypoint.sh script]] - code - docker/scripts/security-entrypoint.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Falco Rules]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
+- 1 edge to [[_COMMUNITY_dockerscriptssecurity-scan.sh]]
 
 ## Top bridge nodes
-- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities
+- [[security-entrypoint.sh]] - degree 7, connects to 2 communities
+- [[gateway-start.sh]] - degree 3, connects to 1 community

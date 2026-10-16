@@ -1,22 +1,28 @@
 ---
 type: community
-cohesion: 0.57
-members: 7
+cohesion: 0.15
+members: 13
 ---
 
 # Usage
 
-**Cohesion:** 0.57 - moderately connected
-**Members:** 7 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[canary-deploy.sh]] - code - scripts/canary-deploy.sh
-- [[canary-deploy.sh script]] - code - scripts/canary-deploy.sh
-- [[deploy_ref()]] - code - scripts/canary-deploy.sh
-- [[die()]] - code - scripts/canary-deploy.sh
-- [[log()_6]] - code - scripts/canary-deploy.sh
-- [[run()_4]] - code - scripts/canary-deploy.sh
-- [[run_in_repo()]] - code - scripts/canary-deploy.sh
+- [[Add a comment to a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Archive a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Create a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Examples_1]] - document - skills/openclaw/trello/SKILL.md
+- [[List boards]] - document - skills/openclaw/trello/SKILL.md
+- [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
+- [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
+- [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
+- [[Notes_7]] - document - skills/openclaw/trello/SKILL.md
+- [[Setup_8]] - document - skills/openclaw/trello/SKILL.md
+- [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
+- [[Usage_127]] - document - skills/openclaw/trello/SKILL.md
+- [[trelloSKILL]] - document - skills/openclaw/trello/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +30,9 @@ members: 7
 TABLE source_file, type FROM #community/Usage
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
+
+## Top bridge nodes
+- [[trelloSKILL]] - degree 2, connects to 1 community

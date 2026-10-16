@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "soc.js"
+community: "LLMProxy"
 location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # _is_connect_error matches connection-level failures only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_is_connect_error_classification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/socjs
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

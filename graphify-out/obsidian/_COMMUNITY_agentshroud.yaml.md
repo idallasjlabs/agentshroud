@@ -1,41 +1,54 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.09
+members: 23
 ---
 
-# agentshroud.yaml
+# agentshroud.yaml.md
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[.test_cross_group_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_legacy_no_rbac_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_member_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_non_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_owner_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_unknown_group_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[A legitimate group member's write lands.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A member of group B cannot write into group A's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user who is NOT a member of the target group cannot poison its memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Back-compat with no RBAC context supplied, the namespace-isolation         call]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[TestGroupMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any group's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Writing to a group that does not exist in the RBAC config is denied.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Current Status_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[Debug Mode]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Description_10]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Description_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[Description_12]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[HTTP_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[LOG_LEVEL_1]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[LOG_LEVEL]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[Related Notes_64]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Related Notes_65]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[Related Notes_66]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[Set In_5]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[Usage_130]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Value_5]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[Values_3]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
+- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/agentshroudyaml
+TABLE source_file, type FROM #community/agentshroudyamlmd
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_agentshroud.yaml_1]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig]]
+- 1 edge to [[_COMMUNITY_AGENTSHROUD_MODE]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_SSH Config]]
 
 ## Top bridge nodes
-- [[TestGroupMemoryWriteACL]] - degree 11, connects to 4 communities
+- [[agentshroud.yaml_1]] - degree 8, connects to 5 communities
+- [[HTTP_PROXY]] - degree 4, connects to 2 communities

@@ -1,33 +1,35 @@
 ---
 type: community
-cohesion: 0.11
-members: 18
+cohesion: 0.18
+members: 20
 ---
 
 # check_upstream_cves
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[.test_default_collab_outbound_still_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_default_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_collaborator_passes_despite_middleware_block()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_outbound_not_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_per_user_mode_override_controls_outbound_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Middleware block must be bypassed for full_access collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-user mode override is respected by the outbound filter.          A collabora]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFullAccessMiddlewareBypass]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access bypass applies even when the message has no interrogative marker.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator must receive the general-access disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator outbound must pass through even when leakage filter wou]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborators must pass through middleware and secondary pipeline bl]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborator must receive the restricted-scope disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborators must still be blocked by the leakage filter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[project_scoped collaborators are still blocked when middleware blocks (non-multi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_patch_urllib()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_raises_on_network_error()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_empty_when_all_known()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_new_advisory_not_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_skips_advisory_whose_cve_is_already_tracked()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - rationale - gateway/security/daily_cve_report.py
+- [[Return the CVE-pipeline config for bot_id (raises KeyError if unknown).      A]] - rationale - gateway/security/agent_cve_registry.py
+- [[Return the resolved GitHub advisory repo slug for bot_id.      Honors the per-]] - rationale - gateway/security/agent_cve_registry.py
+- [[Stub urllib.request.urlopen to return a list of advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestCheckUpstreamCves]] - code - gateway/tests/test_daily_cve_report.py
+- [[_AGENT_CVE_SOURCES]] - code - gateway/security/agent_cve_registry.py
+- [[_AGENT_CVE_SOURCES (per-agent CVE pipeline config)]] - code - gateway/security/agent_cve_registry.py
+- [[_make_github_advisory()]] - code - gateway/tests/test_daily_cve_report.py
+- [[check_upstream_cves()]] - code - gateway/security/daily_cve_report.py
+- [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
+- [[get_agent_ghsa_repo()]] - code - gateway/security/agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,15 +39,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 4 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 1 edge to [[_COMMUNITY_test_a2a_proxy.py]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 9 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 5 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 4 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY__t]]
 
 ## Top bridge nodes
-- [[TestFullAccessMiddlewareBypass]] - degree 13, connects to 4 communities
-- [[.test_full_access_collaborator_passes_despite_middleware_block()]] - degree 6, connects to 2 communities
-- [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - degree 6, connects to 2 communities
-- [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - degree 6, connects to 2 communities
-- [[.test_default_collab_outbound_still_blocked_by_leakage_filter()]] - degree 4, connects to 1 community
+- [[get_agent_cve_source()]] - degree 9, connects to 3 communities
+- [[get_agent_ghsa_repo()]] - degree 8, connects to 3 communities
+- [[check_upstream_cves()]] - degree 14, connects to 2 communities
+- [[TestCheckUpstreamCves]] - degree 9, connects to 1 community
+- [[_make_github_advisory()]] - degree 6, connects to 1 community

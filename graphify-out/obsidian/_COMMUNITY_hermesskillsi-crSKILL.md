@@ -1,47 +1,56 @@
 ---
 type: community
-cohesion: 0.08
-members: 32
+cohesion: 0.06
+members: 41
 ---
 
 # hermes/skills/i-cr/SKILL.md
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 41 nodes
 
 ## Members
-- [[.__init__()_105]] - code - gateway/security/output_schema.py
-- [[._register_default_schema()]] - code - gateway/security/output_schema.py
-- [[.register_schema()]] - code - gateway/security/output_schema.py
-- [[.test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
-- [[.test_default_schema_used_when_unknown()]] - code - gateway/tests/test_output_schema.py
-- [[.test_large_base64_stripped()]] - code - gateway/tests/test_output_schema.py
-- [[.test_output_exceeding_max_length_trimmed()]] - code - gateway/tests/test_output_schema.py
-- [[.test_raw_file_path_stripped()]] - code - gateway/tests/test_output_schema.py
-- [[.test_raw_tool_payload_stripped()]] - code - gateway/tests/test_output_schema.py
-- [[.test_valid_output_passes()]] - code - gateway/tests/test_output_schema.py
-- [[.validate()_1]] - code - gateway/security/output_schema.py
-- [[A custom schema with a stricter max_length is applied correctly.]] - rationale - gateway/tests/test_output_schema.py
-- [[Absolute file paths should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
-- [[Base64 blobs  1 KB encoded (≈ 1370 chars) should be redacted.]] - rationale - gateway/tests/test_output_schema.py
-- [[Definition for a named output schema.]] - rationale - gateway/security/output_schema.py
-- [[JSON tool call payloads should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
-- [[Normal short text should pass without violations.]] - rationale - gateway/tests/test_output_schema.py
-- [[Output Schema Enforcer Tests (C25)]] - code - gateway/tests/test_output_schema.py
-- [[Output longer than 100 000 chars should be trimmed.]] - rationale - gateway/tests/test_output_schema.py
-- [[OutputSchemaEnforcer]] - code - gateway/security/output_schema.py
-- [[Register or replace a named schema.]] - rationale - gateway/security/output_schema.py
-- [[Register the built-in default schema.]] - rationale - gateway/security/output_schema.py
-- [[Result of validating output against a schema.]] - rationale - gateway/security/output_schema.py
-- [[SchemaRule]] - code - gateway/security/output_schema.py
-- [[SchemaValidationResult]] - code - gateway/security/output_schema.py
-- [[TestOutputSchemaEnforcer]] - code - gateway/tests/test_output_schema.py
-- [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
-- [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
-- [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
-- [[enforcer()_1]] - code - gateway/tests/test_output_schema.py
-- [[output_schema.py]] - code - gateway/security/output_schema.py
-- [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
+- [[API  Function Reference]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Anti-Patterns to Flag_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Architecture Decision Record (ADR)]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Changelog Entry_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Dependencies_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Document Structure_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Document-Type Patterns_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected output]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected ok]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected INFO Re-queued 3 jobs]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Formatting_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[If not → escalate to field team via ops-alerts]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_18]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Skill agile]] - document - docker/config/hermes/skills/i-agile/SKILL.md
+- [[Skill bdd]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[Skill cd]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[Skill ci]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[Skill gitops]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[Skill sdlc]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[Skill sre]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[Validation Checklist_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Voice & Tone_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[What Belongs Where_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Writing Style Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[hermesskillsi-agileSKILL]] - document - docker/config/hermes/skills/i-agile/SKILL.md
+- [[hermesskillsi-bddSKILL]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[hermesskillsi-cdSKILL]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[hermesskillsi-ciSKILL]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[hermesskillsi-crSKILL]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[hermesskillsi-gitopsSKILL]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[hermesskillsi-sdlcSKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[hermesskillsi-sreSKILL]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[hermesskillsi-twSKILL]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,7 +60,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 3 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]]
+- 1 edge to [[_COMMUNITY_Hermes — Reference Verifier_1]]
+- 1 edge to [[_COMMUNITY_Skill Code Review (CR)]]
+- 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA)_1]]
+- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection_1]]
+- 1 edge to [[_COMMUNITY_Technical Specification]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_2]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
+- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)_1]]
+- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)_1]]
+- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)_1]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_Mac App Discovery Skill]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist_1]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)_1]]
+- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
+- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)_1]]
+- 1 edge to [[_COMMUNITY_Skill Project Management (PM)_1]]
+- 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator_1]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist_1]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]]
+- 1 edge to [[_COMMUNITY_System Audit & Documentation_1]]
+- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)_1]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)_1]]
+- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI)_1]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)_1]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)_1]]
+- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor_1]]
 
 ## Top bridge nodes
-- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community
+- [[hermesskillsi-crSKILL]] - degree 47, connects to 30 communities

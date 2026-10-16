@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "system-requirements.md"
+community: "test_observatory_mode.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_observatory_modepy
 ---
 
 # _make_app()
 
 ## Connections
-- [[.test_revert_task_created_on_put()]] - `calls` [EXTRACTED]
-- [[FastAPI_2]] - `references` [EXTRACTED]
+- [[dot-test_revert_task_created_on_put()]] - `calls` [EXTRACTED]
+- [[FastAPI_4]] - `references` [EXTRACTED]
 - [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - `rationale_for` [EXTRACTED]
-- [[client()_11]] - `calls` [EXTRACTED]
+- [[client()_19]] - `calls` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

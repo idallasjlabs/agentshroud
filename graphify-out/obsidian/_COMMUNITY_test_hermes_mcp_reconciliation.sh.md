@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # test_hermes_mcp_reconciliation.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Branding Specialist README (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Branding Specialist SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[check()_6]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 
 ## Live Query (requires Dataview plugin)
 

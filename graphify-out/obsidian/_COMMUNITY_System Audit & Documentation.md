@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Executive Summary_7]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[dot-agentsskillsi-sadSKILL]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 13 — QUICK REFERENCE CARD]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 8 — DATA FLOW]] - document - .agents/skills/i-sad/SKILL.md
+- [[SECTION 9 — ERROR CATALOG]] - document - .agents/skills/i-sad/SKILL.md
+- [[System Audit & Documentation]] - document - .agents/skills/i-sad/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,8 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_description of what this does]]
-- 1 edge to [[_COMMUNITY_main.py]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 2 communities
+- [[System Audit & Documentation]] - degree 15, connects to 1 community

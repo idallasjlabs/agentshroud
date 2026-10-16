@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.18
 members: 19
 ---
 
 # TestLogSanitizer
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.18 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[1. Anthropic API Credits Exhausted]] - document - docs/project/REPORTED_ISSUES.md
-- [[10. Colima VM Internet Connectivity Loss]] - document - docs/project/REPORTED_ISSUES.md
-- [[11. Missing Test Coverage for Core Modules]] - document - docs/project/REPORTED_ISSUES.md
-- [[12. PII Redaction Issues]] - document - docs/project/REPORTED_ISSUES.md
-- [[13. Duplicate Imports & Verbose Pydantic Init]] - document - docs/project/REPORTED_ISSUES.md
-- [[14. Hardcoded Database Paths]] - document - docs/project/REPORTED_ISSUES.md
-- [[15. Debug Artifacts in Production Code]] - document - docs/project/REPORTED_ISSUES.md
-- [[16. Missing Newlines]] - document - docs/project/REPORTED_ISSUES.md
-- [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
-- [[2. iMessage Integration Permission Denied]] - document - docs/project/REPORTED_ISSUES.md
-- [[3. Unpinned Base Image in Dockerfile]] - document - docs/project/REPORTED_ISSUES.md
-- [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
-- [[AgentShroud Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
-- [[REPORTED_ISSUES]] - document - docs/project/REPORTED_ISSUES.md
-- [[📁 Infrastructure Limitations]] - document - docs/project/REPORTED_ISSUES.md
-- [[📝 General TODOs & Wishlist]] - document - docs/project/REPORTED_ISSUES.md
-- [[🔴 CRITICAL Operational Blockers]] - document - docs/project/REPORTED_ISSUES.md
-- [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
-- [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
+- [[dot-_filter_msg()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-setup_method()_22]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_aws_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_clean_message_unchanged()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_credit_card_redacted()_1]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_filter_always_returns_true()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_install_log_sanitizer_no_error()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_openai_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_password_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_secret_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_ssn_redacted()_1]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_telegram_bot_token_in_url_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_telegram_bot_token_shorter_id_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_token_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-test_user_path_redacted()]] - code - gateway/tests/test_log_sanitizer.py
+- [[Install the log sanitizer on all existing loggers.]] - rationale - gateway/security/log_sanitizer.py
+- [[TestLogSanitizer]] - code - gateway/tests/test_log_sanitizer.py
+- [[install_log_sanitizer()]] - code - gateway/security/log_sanitizer.py
+- [[test_log_sanitizer.py]] - code - gateway/tests/test_log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,8 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_xurl — Agent Skill Reference]]
-- 1 edge to [[_COMMUNITY_AgentShroud Typography Guidelines]]
+- 5 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
-- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 2 communities
+- [[TestLogSanitizer]] - degree 17, connects to 1 community
+- [[install_log_sanitizer()]] - degree 5, connects to 1 community
+- [[test_log_sanitizer.py]] - degree 3, connects to 1 community
+- [[dot-setup_method()_22]] - degree 2, connects to 1 community

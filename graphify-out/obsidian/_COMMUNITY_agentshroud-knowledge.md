@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[wakeword.h]] - code - firmware/voice-terminal/main/wakeword.h
+- [[agentshroud-knowledge]] - document - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

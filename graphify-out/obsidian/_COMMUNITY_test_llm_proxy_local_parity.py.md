@@ -1,102 +1,115 @@
 ---
 type: community
-cohesion: 0.05
-members: 87
+cohesion: 0.03
+members: 100
 ---
 
 # test_llm_proxy_local_parity.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 87 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 100 nodes
 
 ## Members
-- [[.__init__()_26]] - code - gateway/proxy/mcp_inspector.py
-- [[.__post_init__()]] - code - gateway/proxy/mcp_proxy.py
-- [[.set_event_bus()]] - code - gateway/proxy/mcp_proxy.py
-- [[.test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_disabled_server_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_egress_allows_non_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_egress_denied_blocks_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_execute_with_content_still_inspects()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_basic()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_defaults()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_http_transport()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_gateway_data_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_heavy_url_encoding_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_highest_threat_high()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_highest_threat_none()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_mixed_allowed_blocked_chain()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_passthrough_allows_everything()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_tool_violation_emits_event()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_processing_time_recorded()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_rate_limit_enforced()_2]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_read_only_agent_can_read()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_read_only_agent_denied_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_session_store_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_small_base64_ok()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_stats_blocked_counted()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_unknown_server_default_allow()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[FindingType]] - code - gateway/proxy/mcp_inspector.py
-- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Inspects MCP tool calls and responses for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[MCPInspector]] - code - gateway/proxy/mcp_inspector.py
-- [[MCPProxy]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxy.process_tool_call]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxy.process_tool_result]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPToolCall]] - code - gateway/proxy/mcp_proxy.py
-- [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Mix of allowed, blocked, and result entries all in one chain.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestExecuteResultInspectionBinding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestHashChainIntegration]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPassthroughMode]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPrivacyPolicyEvents]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProcessingTime]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyInterception]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyPermissions]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyRateLimiting]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyStats]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSuspiciousEncoding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestThreatLevelCalc]] - code - gateway/tests/test_mcp_proxy.py
-- [[Threat level classification.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[ThreatLevel]] - code - gateway/proxy/mcp_inspector.py
-- [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Wire optional event bus for privacysecurity telemetry.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[inspector()]] - code - gateway/tests/test_mcp_proxy.py
-- [[passthrough_proxy()]] - code - gateway/tests/test_mcp_proxy.py
-- [[proxy()_2]] - code - gateway/tests/test_mcp_proxy.py
-- [[strict_inspector()]] - code - gateway/tests/test_mcp_proxy.py
-- [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-block_credentials()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-sanitize()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls     through to]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Cloud mode Anthropic tool_use responses are unmodified (baseline parity).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Exception during secondary dispatch increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Fieldflare and other no-auth local backends are left untouched.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[For Ollama backend the colon is kept (Ollama expects it).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Full round-trip each model ref is normalized and dispatched to the correct back]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Hermes sends OpenAI-compat requests; local qwen3 model routes to LM Studio.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[If no secondary is configured and primary hits OOM, 503 is returned.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[If the model already uses dashes (LM Studio native ID), normalizing again is a n]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[In cloud mode, Hermes Claude model routes to Anthropic endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Non-coder Qwen3 models (e.g. the 14B base) keep the generic LM Studio     route]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[OOM (503 backend_unavailable from primary local) triggers secondary local failov]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Only the known stalemismatched alias is rewritten; anything else forwards as-is]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[OpenAI-format tool_calls response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Qwen3-Coder-30B-A3B (registered opt-in coding model, served via oMLX)     must w]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Returns a copy — never mutates the caller's headers dict in place.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Secondary failover for Anthropic-format (v1messages) path translates and retur]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Secondary model returning non-200 increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM     Studi]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Unknown path (not v1messages, not is_openai) returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[When AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=0, OOM passes through without retry.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_anthropic_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_anthropic_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_model strips the provider prefix for a Fieldflare ref, same     as it]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_secondary_model reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_secondary_model returns None if env var is unset.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom detects 'out of memory' in error message string.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom handles raw non-JSON bodies from some backends.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for cloud 429 quota errors (different failover path)]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for successful responses.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_local_failover_base resolves correct backend for secondary model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_make_proxy()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_openai_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_openai_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[deepseek-r1 is routed to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[failover_local_secondary_succeeded stat increments on successful secondary dispa]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[gemma-4-12b-it-4bit is NOT renamed — oMLX accepts it case-insensitively     (con]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX requires a bearer token, unlike LM Studiomlx_lmFieldflare.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic     'deepseek-r1' -]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX's gemma-4-12B-it-4bit must win over the generic 'gemma' LM Studio     route]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX's own v1models only recognizes the exact-cased, exact-suffixed ID     'De]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[ollama prefix is stripped during proxy_messages dispatch and normalization foll]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[ollamaqwen314b → qwen3-14b for LM Studio backend.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_deepseek_r1_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_model_reads_fieldflare_ref()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_secondary_model_reads_env()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_secondary_model_returns_none_when_unset()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_hermes_openai_path_local_model_routed_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_detects_backend_unavailable()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_detects_oom_in_error_message()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_handles_non_json_body()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_returns_false_for_200()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_returns_false_for_quota_429()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_llm_proxy_local_parity.py]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_does_not_mutate_input()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_no_auth_for_fieldflare()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_other_gemma_models_still_route_to_lmstudio()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_other_qwen3_models_still_route_to_lmstudio()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_failover_disabled_does_not_retry()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_no_secondary_falls_through_to_503()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_p99_timeout_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_anthropic_path()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_base_routes_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_exception_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_unknown_path_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_model_ref_round_trip()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_already_dashed_is_idempotent()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_mlxlm_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_ollama_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_stats_local_secondary_failover_succeeded_incremented()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_vram_headroom_error_is_not_resource_warning()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -106,32 +119,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 81 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 75 edges to [[_COMMUNITY_GitGuard]]
-- 35 edges to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
-- 30 edges to [[_COMMUNITY_brand-guidelines]]
-- 30 edges to [[_COMMUNITY_TestParanoidConfig]]
-- 23 edges to [[_COMMUNITY_asyncio]]
-- 14 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 13 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 6 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 6 edges to [[_COMMUNITY_v0.9.0 Sentinel — Data Isolation + SOC + Remed]]
-- 6 edges to [[_COMMUNITY_→ {site site1, test_mode True, output_p]]
-- 6 edges to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
-- 6 edges to [[_COMMUNITY_Steps]]
-- 5 edges to [[_COMMUNITY_switch_model.sh]]
-- 3 edges to [[_COMMUNITY_Operating Rules (Non-Negotiable)]]
-- 2 edges to [[_COMMUNITY_EncryptedStore]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
-- 2 edges to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_Safe Refactor Specialist]]
-- 1 edge to [[_COMMUNITY_TestScoreRuntimeProtection]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 12 edges to [[_COMMUNITY_ResourceGuard]]
+- 4 edges to [[_COMMUNITY_LLMProxy]]
 
 ## Top bridge nodes
-- [[MCPProxy]] - degree 89, connects to 18 communities
-- [[MCPToolCall]] - degree 102, connects to 15 communities
-- [[MCPInspector]] - degree 77, connects to 12 communities
-- [[test_mcp_proxy.py]] - degree 46, connects to 10 communities
-- [[ThreatLevel]] - degree 28, connects to 9 communities
+- [[test_llm_proxy_local_parity.py]] - degree 60, connects to 2 communities
+- [[_make_proxy()_2]] - degree 25, connects to 2 communities
+- [[_FakeSanitizer]] - degree 9, connects to 2 communities
+- [[test_vram_headroom_error_is_not_resource_warning()]] - degree 3, connects to 1 community

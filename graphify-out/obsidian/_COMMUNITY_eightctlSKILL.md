@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # eightctl/SKILL.md
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[ClawHub CLI]] - document - skills/openclaw/clawhub/SKILL.md
-- [[SKILL_202]] - document - skills/openclaw/clawhub/SKILL.md
+- [[eightctl]] - document - skills/openclaw/eightctl/SKILL.md
+- [[eightctl CLI]] - concept - skills/openclaw/eightctl/SKILL.md
+- [[eightctlSKILL]] - document - skills/openclaw/eightctl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

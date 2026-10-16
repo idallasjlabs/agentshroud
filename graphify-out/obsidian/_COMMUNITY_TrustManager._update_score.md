@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # TrustManager._update_score
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[i-daedalus README — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[i-daedalus SKILL — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[TrustManager._promotion_allowed]] - code - gateway/security/trust_manager.py
+- [[TrustManager._update_score]] - code - gateway/security/trust_manager.py
+- [[TrustManager.record_violation]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 

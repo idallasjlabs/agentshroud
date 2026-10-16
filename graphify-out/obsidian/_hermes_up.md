@@ -1,17 +1,17 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
+community: "asb (AgentShroud Bot helper)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/asb_AgentShroud_Bot_helper
 ---
 
 # _hermes_up
 
 ## Connections
 - [[asb (AgentShroud Bot helper)]] - `calls` [EXTRACTED]
-- [[run-standalone.sh]] - `calls` [EXTRACTED]
+- [[dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PostgreSQL SAVEPOINTROLLBACK test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Weekly Hermes Stability Report_1]] - document - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
 
 ## Live Query (requires Dataview plugin)
 

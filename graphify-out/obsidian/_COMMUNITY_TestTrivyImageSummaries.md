@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # TestTrivyImageSummaries
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
-- [[Restart Procedure]] - document - docs/operations/runbook.md
-- [[Starting the System]] - document - docs/operations/runbook.md
-- [[Stopping the System]] - document - docs/operations/runbook.md
+- [[dot-test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 3 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
 
 ## Top bridge nodes
-- [[1. Starting and Stopping AgentShroud]] - degree 4, connects to 1 community
+- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
+- [[dot-test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community
+- [[dot-test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[dot-test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community

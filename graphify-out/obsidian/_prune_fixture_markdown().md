@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "_wrap_response()"
+community: "CollaboratorActivityTracker"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/CollaboratorActivityTracker
 ---
 
 # _prune_fixture_markdown()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `references` [EXTRACTED]
 - [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - `rationale_for` [EXTRACTED]
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `references` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[test_prune_keeps_real_uid_markdown()]] - `calls` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

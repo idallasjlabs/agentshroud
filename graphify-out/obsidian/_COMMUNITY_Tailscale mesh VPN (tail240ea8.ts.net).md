@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Tailscale mesh VPN (tail240ea8.ts.net)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[1. True Distributed AI]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[2. Enhanced Security]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[3. Advanced Capabilities]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[4. Better Development Workflow]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Key Benefits]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Cryptographic Node Pairing Process]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Marvin (Mac Studio) — Primary devbuild server]] - concept - docs/TEAM.md
+- [[Pi (Raspberry Pi 4B) — Edgetest node]] - concept - docs/TEAM.md
+- [[Tailscale mesh VPN (tail240ea8.ts.net)]] - concept - docs/TEAM.md
+- [[Trillian (Mac Mini) — Secondary buildCI]] - concept - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +23,3 @@ members: 5
 TABLE source_file, type FROM #community/Tailscale_mesh_VPN_tail240ea8tsnet
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Multi-Agent Role Matrix]]
-
-## Top bridge nodes
-- [[Key Benefits]] - degree 5, connects to 1 community

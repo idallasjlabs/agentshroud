@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # TestProcScans
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Purpose_99]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[README_104]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Related Skills_108]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Usage_109]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[dot-test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BaseModel]]
+- 4 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
 
 ## Top bridge nodes
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - degree 5, connects to 1 community
+- [[TestProcScans]] - degree 6, connects to 1 community
+- [[dot-test_falco_running_detected()]] - degree 2, connects to 1 community
+- [[dot-test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
+- [[dot-test_wazuh_agent_absent()]] - degree 2, connects to 1 community
+- [[dot-test_wazuh_agent_detected()]] - degree 2, connects to 1 community

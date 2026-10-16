@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # TestAppleContainerEngine
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[ADR-008 Progressive Trust Level System]] - concept - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Approval DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[ApprovalRequest (data entity)]] - concept - docs/data/data-dictionary.md
-- [[RateLimitBucket (data entity)]] - concept - docs/data/data-dictionary.md
-- [[TrustLevel (data entity)]] - concept - docs/data/data-dictionary.md
-- [[agent_trust SQLite table]] - code - docs/data/schema-documentation.md
-- [[agentshroud.yaml (main config schema)]] - code - docs/data/schema-documentation.md
-- [[approval_requests SQLite table]] - code - docs/data/schema-documentation.md
+- [[dot-setup_method()_38]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
+- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_claude_via_openai_path.py]]
-- 1 edge to [[_COMMUNITY_test_cron_jobs_prompts.py]]
+- 3 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_PodmanEngine]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
 
 ## Top bridge nodes
-- [[ADR-008 Progressive Trust Level System]] - degree 3, connects to 1 community
-- [[Approval DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community
+- [[TestAppleContainerEngine]] - degree 14, connects to 4 communities
+- [[dot-setup_method()_38]] - degree 2, connects to 1 community

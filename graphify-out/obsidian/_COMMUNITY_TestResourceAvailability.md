@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # TestResourceAvailability
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Agent CVE Registry module (_AGENT_CVE_REGISTRIES etc.)]] - code - gateway/security/agent_cve_registry.py
-- [[Registry-integrity fix fabricated CVE ids replaced with synthetic ASH refs]] - rationale - gateway/security/agent_cve_registry.py
-- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated]] - code - gateway/tests/test_agent_cve_registry.py
+- [[dot-test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,12 @@ members: 3
 TABLE source_file, type FROM #community/TestResourceAvailability
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+
+## Top bridge nodes
+- [[TestResourceAvailability]] - degree 4, connects to 1 community
+- [[dot-test_full_compose()]] - degree 2, connects to 1 community
+- [[dot-test_unreadable_first_path_falls_through()]] - degree 2, connects to 1 community

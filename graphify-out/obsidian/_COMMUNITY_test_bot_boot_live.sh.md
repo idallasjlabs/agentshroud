@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # test_bot_boot_live.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[i-tdd README]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[check()_4]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
 
 ## Live Query (requires Dataview plugin)
 

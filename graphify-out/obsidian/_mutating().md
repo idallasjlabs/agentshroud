@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "DraftEntry"
-location: "L213"
+community: "sunday-upgrade-apply.sh"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/sunday-upgrade-applysh
 ---
 
 # _mutating()
@@ -19,4 +19,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[write_handoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

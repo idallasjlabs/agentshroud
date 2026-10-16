@@ -12,6 +12,6 @@ tags:
 # _file_hash()
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

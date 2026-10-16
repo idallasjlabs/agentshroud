@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "_seed_cron"
-location: "L152"
+community: "discover_upstream_versions.py"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/discover_upstream_versionspy
 ---
 
 # _digest_for_tag()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_21]] - `references` [EXTRACTED]
 - [[discover()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

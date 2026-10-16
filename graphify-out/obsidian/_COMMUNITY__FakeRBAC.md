@@ -1,25 +1,34 @@
 ---
 type: community
-cohesion: 0.24
-members: 10
+cohesion: 0.15
+members: 19
 ---
 
 # _FakeRBAC
 
-**Cohesion:** 0.24 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[CICD Pipeline Advisor (CICD)]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[CICD Pipeline Advisor (README)]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Purpose_6]] - document - .agents/skills/i-cicd/README.md
-- [[Purpose_43]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[README_6]] - document - .agents/skills/i-cicd/README.md
-- [[README_48]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Related Skills_6]] - document - .agents/skills/i-cicd/README.md
-- [[Related Skills_46]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Usage_8]] - document - .agents/skills/i-cicd/README.md
-- [[Usage_49]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[dot-__init__()_119]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-get_user_role()_2]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_build_record_defaults_to_normal_when_no_lockdown_state()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_build_record_does_not_crash_if_lockdown_missing()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_build_record_reports_real_lockdown_level()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_build_record_reports_suspended_level()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_list_contributors_populates_paused_per_user()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_load_paused_ids_defaults_to_empty_set_on_error()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_non_paused_user_reports_paused_false()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_paused_is_independent_of_lockdown_level()]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-test_paused_user_reports_paused_true()]] - code - gateway/tests/test_soc_contributors.py
+- [[Bug 2 contributors.py must call get_status(), not the nonexistent get_level().]] - rationale - gateway/tests/test_soc_contributors.py
+- [[Constraint check paused (owner-initiated) and lockdown_level         (auto-esca]] - rationale - gateway/tests/test_soc_contributors.py
+- [[TestLockdownLevelWiring]] - code - gateway/tests/test_soc_contributors.py
+- [[TestPausedFieldWiring]] - code - gateway/tests/test_soc_contributors.py
+- [[_FakeRBAC_2]] - code - gateway/tests/test_soc_contributors.py
+- [[_load_paused_ids must never crash record-building if the persisted         store]] - rationale - gateway/tests/test_soc_contributors.py
+- [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - rationale - gateway/tests/test_soc_contributors.py
+- [[test_soc_contributors.py]] - code - gateway/tests/test_soc_contributors.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +38,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_troubleshooting]]
+- 12 edges to [[_COMMUNITY_socrouter.py]]
+- 8 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 4 edges to [[_COMMUNITY_Role]]
 
 ## Top bridge nodes
-- [[CICD Pipeline Advisor (README)]] - degree 10, connects to 3 communities
+- [[_FakeRBAC_2]] - degree 14, connects to 3 communities
+- [[TestPausedFieldWiring]] - degree 10, connects to 3 communities
+- [[TestLockdownLevelWiring]] - degree 9, connects to 3 communities
+- [[test_soc_contributors.py]] - degree 6, connects to 3 communities
+- [[dot-test_paused_is_independent_of_lockdown_level()]] - degree 5, connects to 2 communities

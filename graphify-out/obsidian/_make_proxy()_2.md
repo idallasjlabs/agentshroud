@@ -1,52 +1,41 @@
 ---
-source_file: "gateway/tests/test_slack_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L16"
+community: "test_llm_proxy_local_parity.py"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[.test_attachments_scanned()]] - `calls` [EXTRACTED]
-- [[.test_blocks_scanned_even_when_text_present()]] - `calls` [EXTRACTED]
-- [[.test_chat_postmessage_content_scanned()]] - `calls` [EXTRACTED]
-- [[.test_chat_update_content_scanned()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_missing_url_passthrough()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_rewrites_url()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_skips_content_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_connections_open_slack_error_passthrough()]] - `calls` [EXTRACTED]
-- [[.test_consume_relay_token_one_time()]] - `calls` [EXTRACTED]
-- [[.test_consume_relay_token_unknown()]] - `calls` [EXTRACTED]
-- [[.test_each_reconnect_issues_unique_token()]] - `calls` [EXTRACTED]
-- [[.test_file_upload_initial_comment_scanned()]] - `calls` [EXTRACTED]
-- [[.test_get_stats_returns_counters()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_channel_empty_owner_uid_always_false()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_channel_matches_owner_uid()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_channel_no_match_for_other()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_token_returns_error()]] - `calls` [EXTRACTED]
-- [[.test_non_message_method_not_scanned()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_clean_message_passes()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_info_filter_redaction_blocks()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_pipeline_exception_fail_closed()]] - `calls` [EXTRACTED]
-- [[.test_non_owner_tailscale_hostname_blocked()]] - `calls` [EXTRACTED]
-- [[.test_outbound_blocked_returns_error()]] - `calls` [EXTRACTED]
-- [[.test_owner_channel_uses_full_trust()]] - `calls` [EXTRACTED]
-- [[.test_owner_pipeline_exception_fail_open()]] - `calls` [EXTRACTED]
-- [[.test_post_ephemeral_scanned()]] - `calls` [EXTRACTED]
-- [[.test_sanitized_text_replaces_original()]] - `calls` [EXTRACTED]
-- [[.test_structured_field_sanitization_blocks_delivery()]] - `calls` [EXTRACTED]
-- [[.test_system_notification_skips_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_text_sanitization_still_applied()]] - `calls` [EXTRACTED]
-- [[.test_urlencoded_body_parsed()]] - `calls` [EXTRACTED]
-- [[Create a SlackAPIProxy with test credentials and no real IO.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `references` [EXTRACTED]
-- [[test_slack_proxy.py]] - `contains` [EXTRACTED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
+- [[LLMProxy_1]] - `references` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
+- [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
+- [[test_get_local_model_reads_fieldflare_ref()]] - `calls` [EXTRACTED]
+- [[test_get_local_secondary_model_reads_env()]] - `calls` [EXTRACTED]
+- [[test_get_local_secondary_model_returns_none_when_unset()]] - `calls` [EXTRACTED]
+- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `calls` [EXTRACTED]
+- [[test_hermes_openai_path_local_model_routed_correctly()]] - `calls` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - `calls` [EXTRACTED]
+- [[test_local_oom_failover_disabled_does_not_retry()]] - `calls` [EXTRACTED]
+- [[test_local_oom_no_secondary_falls_through_to_503()]] - `calls` [EXTRACTED]
+- [[test_local_oom_triggers_secondary_failover()]] - `calls` [EXTRACTED]
+- [[test_local_p99_timeout_triggers_secondary_failover()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_anthropic_path()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_exception_returns_none()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_unknown_path_returns_none()]] - `calls` [EXTRACTED]
+- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `calls` [EXTRACTED]
+- [[test_model_ref_round_trip()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `calls` [EXTRACTED]
+- [[test_stats_local_secondary_failover_succeeded_incremented()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

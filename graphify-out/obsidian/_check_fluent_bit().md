@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "ServiceManager"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/ServiceManager
 ---
 
 # _check_fluent_bit()
@@ -16,4 +16,4 @@ tags:
 - [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `references` [EXTRACTED]
 - [[services.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

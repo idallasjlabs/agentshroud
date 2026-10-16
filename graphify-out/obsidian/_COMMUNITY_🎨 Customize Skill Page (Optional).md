@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # 🎨 Customize Skill Page (Optional)
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[A2APolicyEngine (gatewaysecuritya2a_policy.py)]] - concept - CHANGELOG.md
-- [[A2AProxy (gatewayproxya2a_proxy.py)]] - concept - CHANGELOG.md
-- [[v1.5.0 A2A Governance]] - document - CHANGELOG.md
+- [[Add Long Description]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Add Screenshots]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Add Security Badge]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎨 Customize Skill Page (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/_Customize_Skill_Page_Optional
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Publish SecureBrowser to ClawHub - Step-by-Step Guide]]
+
+## Top bridge nodes
+- [[🎨 Customize Skill Page (Optional)]] - degree 4, connects to 1 community

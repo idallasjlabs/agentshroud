@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[DAST Scan (Nuclei) Job]] - code - .github/workflows/ci.yml
+- [[Test Data Ledger]] - code - gateway/tests/test_ledger.py
 
 ## Live Query (requires Dataview plugin)
 

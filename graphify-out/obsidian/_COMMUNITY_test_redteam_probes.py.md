@@ -1,111 +1,65 @@
 ---
 type: community
-cohesion: 0.04
-members: 96
+cohesion: 0.05
+members: 50
 ---
 
 # test_redteam_probes.py
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 96 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 50 nodes
 
 ## Members
-- [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_default_bot_dockerfile_used()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_disconnect_stops_and_removes_bot()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_echoes_status_until_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_fallback_when_config_load_fails()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_fallback_when_default_bot_has_no_dockerfile()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_fallback_when_no_bots()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_first_bot_used_when_no_default_flag()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_freeze_reports_failure_when_pause_fails()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_engine_uses_runtime_config()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_combined_handles_partial_failure()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_invalid_token_raises_401()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_killswitch_action_default_unconfirmed()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_missing_token_closes_4001()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_missing_token_closes_4001()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rebuild_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_start_service_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_status_runtime_failure_degrades_gracefully()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_status_with_running_and_stopped_containers()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[HTTPAuthorizationCredentials_1]] - code - gateway/web/api.py
-- [[KillSwitchAction]] - code - gateway/web/api.py
-- [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
-- [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestGetEngineHelper]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[UpdateRequest]] - code - gateway/web/api.py
-- [[_container()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[client()_20]] - code - gateway/tests/test_web_api_coverage.py
-- [[require_auth()_1]] - code - gateway/web/api.py
-- [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
-- [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
+- [[Audit chain must detect tampering.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Build a SecurityPipeline with all guards wired up.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Combined prompt injection + role override must be caught.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[ContextGuard must detect context window poisoning (massive payload).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[EncodingDetector must detect base64 in outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[EncodingDetector must detect base64-encoded payloads on inbound.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Every pipeline operation must produce an audit chain entry.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Minimal approval queue mock that accepts items.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Non-owner collaborators must be blocked by prompt guard.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[One agent's session data must not leak to another.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1 Agent exec must go through approval queue or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1b delete_file action must go through approval or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1c admin_action must require approval or be trust-blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6 EgressFilter must block non-allowlisted domains.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6b EgressFilter must block direct IP exfiltration.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6c EgressFilter must block internalprivate IP ranges.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9 PII sanitizer must redact SSN on inbound messages.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9b PII sanitizer must redact SSN on outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9c PII sanitizer must redact credit card numbers.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9d PII sanitizer must redact email addresses on outbound.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must block classic 'ignore instructions' injection.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must block role-override injection.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must detect system prompt extraction attempts.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Trust level must not allow exec from conversation alone.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
+- [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
+- [[pipeline()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_admin_action_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_audit_chain_records_all_events()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_audit_chain_tamper_detection()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_combined_injection_techniques()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_context_poisoning_blocked()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_credit_card_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_internal_ip()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_ip_exfil()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_unknown_domain()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_email_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_encoding_detector_base64_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_encoding_detector_catches_base64_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_exec_delete_file_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_exec_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_non_owner_blocked_by_prompt_guard()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_extraction_attempt()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_injection_ignore_instructions()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_injection_role_override()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_redteam_probes.py]] - code - gateway/tests/test_redteam_probes.py
+- [[test_session_isolation()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_ssn_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_ssn_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_trust_escalation_blocked()]] - code - gateway/tests/test_redteam_probes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -115,27 +69,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_system-requirements]]
-- 11 edges to [[_COMMUNITY_api.py]]
-- 6 edges to [[_COMMUNITY__call_agent_stream()]]
-- 3 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 3 edges to [[_COMMUNITY_TestCredentialInjection]]
-- 2 edges to [[_COMMUNITY_main.rs]]
-- 2 edges to [[_COMMUNITY_plan_remediation()]]
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 2 edges to [[_COMMUNITY_Incident → Test Backfill Rule (R3 extension) ev]]
-- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_TestOpProxyEndpoint]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_CredentialInjector]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 14 edges to [[_COMMUNITY_PIIConfig]]
+- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[require_auth()_1]] - degree 16, connects to 11 communities
-- [[UpdateRequest]] - degree 29, connects to 6 communities
-- [[KillSwitchAction]] - degree 27, connects to 6 communities
-- [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
-- [[test_web_api_coverage.py]] - degree 30, connects to 3 communities
+- [[test_redteam_probes.py]] - degree 40, connects to 7 communities
+- [[_make_full_pipeline()]] - degree 20, connects to 6 communities
+- [[_make_approval_queue()]] - degree 4, connects to 1 community

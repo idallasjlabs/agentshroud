@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[ClawHub CLI]] - document - skills/openclaw/clawhub/SKILL.md
+- [[clawhubSKILL]] - document - skills/openclaw/clawhub/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/clawhub/SKILLmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_DataExfilVolumeGuard]]
-
-## Top bridge nodes
-- [[.test_config_from_env()]] - degree 2, connects to 1 community

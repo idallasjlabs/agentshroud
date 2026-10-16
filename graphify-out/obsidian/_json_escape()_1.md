@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-write-file.sh"
 type: "code"
-community: "test_canvas_proxy.py"
+community: "agentshroud-ssh-write-file.sh"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_canvas_proxypy
+  - community/agentshroud-ssh-write-filesh
 ---
 
 # _json_escape()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-write-file.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_canvas_proxypy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-write-filesh

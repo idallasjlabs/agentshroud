@@ -1,47 +1,39 @@
 ---
 type: community
-cohesion: 0.06
-members: 32
+cohesion: 0.14
+members: 24
 ---
 
 # app_main.c
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[Access Denied]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_19]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[SKILL_32]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[_build_ws_url()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_ws_ctrl()]] - code - firmware/voice-terminal/main/app_main.c
+- [[app_main()_1]] - code - firmware/voice-terminal/main/app_main.c
+- [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
+- [[audio.c]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_capture_frame()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_get_saved_volume()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_init()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_play()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_preinit()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_set_volume()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_volume_tick()]] - code - firmware/voice-terminal/main/audio.c
+- [[esp_err_t_5]] - code - firmware/voice-terminal/main/audio.c
+- [[esp_event_base_t_1]] - code - firmware/voice-terminal/main/app_main.c
+- [[lv_display_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_face_set_agent()]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_init()]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_state_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_agent_count()_2]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_remote_log()_2]] - code - firmware/voice-terminal/main/app_main.c
+- [[wifi_event_handler()]] - code - firmware/voice-terminal/main/app_main.c
+- [[wifi_init()]] - code - firmware/voice-terminal/main/app_main.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,9 +43,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
-- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
+- 9 edges to [[_COMMUNITY_voice_task]]
+- 6 edges to [[_COMMUNITY_test_playback_state.c]]
+- 5 edges to [[_COMMUNITY_wakeword.c]]
+- 1 edge to [[_COMMUNITY_ota_check]]
+- 1 edge to [[_COMMUNITY_test_ptt_state.c]]
 
 ## Top bridge nodes
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - degree 15, connects to 3 communities
+- [[app_main.c]] - degree 19, connects to 4 communities
+- [[app_main()_1]] - degree 13, connects to 3 communities
+- [[ui_face_set_agent()]] - degree 4, connects to 2 communities
+- [[vt_remote_log()_2]] - degree 5, connects to 1 community
+- [[_build_ws_url()]] - degree 3, connects to 1 community

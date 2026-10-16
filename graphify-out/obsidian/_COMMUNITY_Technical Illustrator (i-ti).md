@@ -1,25 +1,28 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 13
 ---
 
 # Technical Illustrator (i-ti)
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[author_1]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[description_3]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[keywords_1]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[license_2]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[main_1]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[name_3]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[package.json_2]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[scripts_2]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[test_2]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[version_4]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
+- [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Purpose_163]] - document - .agents/skills/i-ti/README.md
+- [[Purpose_164]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Related Skills_105]] - document - .agents/skills/i-ti/README.md
+- [[Related Skills_106]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
+- [[Usage_114]] - document - .agents/skills/i-ti/README.md
+- [[Usage_115]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +30,10 @@ members: 10
 TABLE source_file, type FROM #community/Technical_Illustrator_i-ti
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Technical Illustrator (i-ti)]] - degree 10, connects to 2 communities

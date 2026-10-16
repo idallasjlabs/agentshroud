@@ -1,21 +1,22 @@
 ---
 type: community
 cohesion: 0.33
-members: 6
+members: 7
 ---
 
 # gemini-review.py
 
 **Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[ToolChainAnalyzer._calculate_risk_score]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._cleanup_old_sessions]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._detect_chain_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._matches_source_pattern]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._trigger_alert]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer.analyze_tool_call]] - code - gateway/security/tool_chain_analyzer.py
+- [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
+- [[PATH_4]] - code - scripts/peer-review.sh
+- [[call_gemini()]] - code - scripts/gemini-review.py
+- [[gemini-review.py]] - code - scripts/gemini-review.py
+- [[main()_4]] - code - scripts/gemini-review.py
+- [[peer-review.sh]] - code - scripts/peer-review.sh
+- [[peer-review.sh script]] - code - scripts/peer-review.sh
 
 ## Live Query (requires Dataview plugin)
 

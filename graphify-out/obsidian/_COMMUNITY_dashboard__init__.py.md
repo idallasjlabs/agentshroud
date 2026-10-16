@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-kanban SKILL (stub)]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[dashboard__init__.py]] - code - gateway/dashboard/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

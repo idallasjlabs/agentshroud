@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # agentshroud-redteam/references/steve-hay-plan.md
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Build-config pinning — sdkconfig.defaults pins TCP_MSSstackWDTTCP buffers]] - rationale - CHANGELOG.md
+- [[agentshroud-redteamreferencessteve-hay-plan]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 

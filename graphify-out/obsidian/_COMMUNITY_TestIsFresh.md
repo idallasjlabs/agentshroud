@@ -1,19 +1,22 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.29
+members: 7
 ---
 
 # TestIsFresh
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[8D Root Cause Analysis README (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[8D Root Cause Analysis SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
-- [[Data Validation (DATA-VAL) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[dot-test_returns_false_for_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_for_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_for_stale_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_true_for_fresh_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_zero_failures_no_report_on_disk()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestIsFresh]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecurityEvent]]
+- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
+- 2 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 2 edges to [[_COMMUNITY__mock_dir_with_files]]
 
 ## Top bridge nodes
-- [[8D Root Cause Analysis SKILL (OpenClaw)]] - degree 3, connects to 1 community
+- [[TestIsFresh]] - degree 5, connects to 1 community
+- [[_mock_empty_dir()]] - degree 3, connects to 1 community
+- [[dot-test_returns_false_for_missing_dir()]] - degree 2, connects to 1 community
+- [[dot-test_returns_false_for_stale_file()]] - degree 2, connects to 1 community
+- [[dot-test_returns_true_for_fresh_file()]] - degree 2, connects to 1 community

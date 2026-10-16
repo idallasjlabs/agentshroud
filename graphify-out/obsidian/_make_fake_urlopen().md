@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "soc.js"
+community: "LLMProxy"
 location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # _make_fake_urlopen()
@@ -18,4 +18,4 @@ tags:
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,50 +1,54 @@
 ---
 type: community
 cohesion: 0.06
-members: 35
+members: 39
 ---
 
 # test_observatory_mode.py
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 35 nodes
+**Members:** 39 nodes
 
 ## Members
-- [[.test_allows_file_named_environ_elsewhere()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_allows_plain_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_allows_unrelated_file()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_base64_padding_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_cat_proc_environ_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_critical_leakage_yields_critical_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_empty_command_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_export_writes_valid_json_report()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_long_alphanumeric_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_many_medium_yields_medium_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_multiple_high_yields_high_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_named_var_with_short_value_uses_redacted_marker()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_no_activity_is_low_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_plain_word_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_credential_looking_value_for_unknown_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_named_credential_env_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_openai_key_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_short_value_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_summary_aggregates_by_severity_and_method()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_unparseable_text_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckCommandExecution]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckFileAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestLooksLikeCredential]] - code - gateway/tests/test_env_guard_class.py
-- [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
-- [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_2]] - code - gateway/tests/test_env_guard_class.py
-- [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_default_mode_is_enforce()_7]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[FastAPI_4]] - code - gateway/tests/test_observatory_mode.py
+- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
+- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[TestAutoRevert]] - code - gateway/tests/test_observatory_mode.py
+- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
+- [[client()_19]] - code - gateway/tests/test_observatory_mode.py
+- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[set_mode()_1]] - code - gateway/web/api.py
+- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,11 +58,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_lifespan.py]]
+- 13 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 12 edges to [[_COMMUNITY_ModeRequest]]
+- 6 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_load_config]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_TestObservatoryMode]]
+- 1 edge to [[_COMMUNITY_TestKillSwitchVerification]]
 
 ## Top bridge nodes
-- [[TestCheckCommandExecution]] - degree 9, connects to 1 community
-- [[test_env_guard_class.py]] - degree 8, connects to 1 community
-- [[TestScrubCommandOutput]] - degree 7, connects to 1 community
-- [[TestCheckFileAccess]] - degree 6, connects to 1 community
-- [[TestLooksLikeCredential]] - degree 6, connects to 1 community
+- [[test_observatory_mode.py]] - degree 19, connects to 6 communities
+- [[TestSetMode]] - degree 14, connects to 3 communities
+- [[TestGetMode]] - degree 9, connects to 3 communities
+- [[TestAutoRevert]] - degree 8, connects to 3 communities
+- [[TestObservatoryModeAPI]] - degree 8, connects to 3 communities

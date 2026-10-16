@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # System Audit Vault
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_clean_when_installed_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_without_binary_or_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_timestamp_falls_back_to_file_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestTrivySummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Purpose_28]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[Related Skills_21]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[System Audit Vault]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[Usage_24]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[hermesskillsi-savREADME]] - document - docker/config/hermes/skills/i-sav/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
-- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
 
 ## Top bridge nodes
-- [[TestTrivySummary]] - degree 4, connects to 1 community
-- [[.test_timestamp_falls_back_to_file_mtime()]] - degree 2, connects to 1 community
+- [[System Audit Vault]] - degree 5, connects to 1 community

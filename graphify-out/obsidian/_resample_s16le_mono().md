@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+community: "tts.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/ttspy
 ---
 
 # _resample_s16le_mono()
@@ -19,4 +19,4 @@ tags:
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/code #graphify/EXTRACTED #community/ttspy

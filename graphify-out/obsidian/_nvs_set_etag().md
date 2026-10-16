@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
+community: "ota_check"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/ota_check
 ---
 
 # _nvs_set_etag()
@@ -15,4 +15,4 @@ tags:
 - [[ota.c]] - `contains` [EXTRACTED]
 - [[ota_check()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/code #graphify/EXTRACTED #community/ota_check

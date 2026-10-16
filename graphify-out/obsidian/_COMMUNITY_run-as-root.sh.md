@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # run-as-root.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[extraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[browser-fetch skill.json (tool manifest)]] - code - skills/custom/browser-fetch/skill.json
+- [[run-as-root.sh]] - code - skills/custom/browser-fetch/run-as-root.sh
+- [[run-as-root.sh script]] - code - skills/custom/browser-fetch/run-as-root.sh
 
 ## Live Query (requires Dataview plugin)
 

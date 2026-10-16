@@ -1,38 +1,34 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.12
+members: 19
 ---
 
 # test_claude_via_openai_path.py
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
-- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
-- [[Database Schema_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details_50]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
-- [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Related_57]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
-- [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[trust_manager.py_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
+- [[If openai_to_gemini_request raises, the request must still be     forwarded (unm]] - rationale - gateway/tests/test_gemini_via_openai_path.py
+- [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
+- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
+- [[The combined path v1chatcompletions with model=gemini- must end     up POST]] - rationale - gateway/tests/test_gemini_via_openai_path.py
+- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[client()_7]] - code - gateway/tests/test_chat_completions_alias.py
+- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_gemini_via_openai_path.py]] - code - gateway/tests/test_gemini_via_openai_path.py
+- [[test_get_chat_completions_alias_also_routes()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - code - gateway/tests/test_gemini_via_openai_path.py
+- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_proxy_rewrites_gemini_via_openai_path()]] - code - gateway/tests/test_gemini_via_openai_path.py
+- [[test_root_v1_messages_still_works_unchanged()]] - code - gateway/tests/test_chat_completions_alias.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,11 +38,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
-- 1 edge to [[_COMMUNITY_container-net-diag.sh]]
-- 1 edge to [[_COMMUNITY_TestAppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up]]
-- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
+- 5 edges to [[_COMMUNITY_LLMProxy]]
+- 3 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 5 communities
+- [[test_claude_via_openai_path.py]] - degree 9, connects to 2 communities
+- [[test_gemini_via_openai_path.py]] - degree 5, connects to 2 communities
+- [[openai_to_anthropic_request()]] - degree 4, connects to 1 community
+- [[test_proxy_rewrites_claude_via_openai_path()]] - degree 3, connects to 1 community
+- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - degree 3, connects to 1 community

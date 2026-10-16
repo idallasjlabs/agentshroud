@@ -1,30 +1,37 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "main.rs"
-location: "L24"
+community: "_req"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/_req
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_181]] - `method` [EXTRACTED]
-- [[.get_user_role()_3]] - `method` [EXTRACTED]
-- [[.test_build_record_defaults_to_normal_when_no_lockdown_state()]] - `calls` [EXTRACTED]
-- [[.test_build_record_does_not_crash_if_lockdown_missing()]] - `calls` [EXTRACTED]
-- [[.test_build_record_reports_real_lockdown_level()]] - `calls` [EXTRACTED]
-- [[.test_build_record_reports_suspended_level()]] - `calls` [EXTRACTED]
-- [[.test_list_contributors_populates_paused_per_user()]] - `calls` [EXTRACTED]
-- [[.test_non_paused_user_reports_paused_false()]] - `calls` [EXTRACTED]
-- [[.test_paused_is_independent_of_lockdown_level()]] - `calls` [EXTRACTED]
-- [[.test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[test_soc_contributors.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_84]] - `method` [EXTRACTED]
+- [[dot-check_permission()_1]] - `method` [EXTRACTED]
+- [[dot-check_tool_permission()]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `method` [EXTRACTED]
+- [[dot-test_owner_bypass()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_exempt_when_critical_guard_failed()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_exception_fails_closed()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_pass_logs_role_and_allows()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_requires_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_permission_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_permission_requires_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_with_rbac_manager()]] - `calls` [EXTRACTED]
+- [[Deterministic stand-in for RBACManager.]] - `rationale_for` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/_req

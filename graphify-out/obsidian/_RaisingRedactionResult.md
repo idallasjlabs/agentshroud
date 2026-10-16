@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "SlackAPIProxy"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/SlackAPIProxy
 ---
 
 # _RaisingRedactionResult
 
 ## Connections
-- [[.__init__()_180]] - `method` [EXTRACTED]
-- [[.info_filter_redaction_count()]] - `method` [EXTRACTED]
-- [[.test_redaction_count_access_error_is_non_fatal()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_86]] - `method` [EXTRACTED]
+- [[dot-info_filter_redaction_count()]] - `method` [EXTRACTED]
+- [[dot-test_redaction_count_access_error_is_non_fatal()]] - `calls` [EXTRACTED]
 - [[Pipeline result whose redaction-count attribute raises on access.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

@@ -1,85 +1,118 @@
 ---
 type: community
-cohesion: 0.04
-members: 70
+cohesion: 0.03
+members: 103
 ---
 
 # ToolResultSanitizer
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 70 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 103 nodes
 
 ## Members
-- [[.__init__()_41]] - code - gateway/proxy/url_analyzer.py
-- [[.__init__()_42]] - code - gateway/proxy/web_content_scanner.py
-- [[._check_base64()]] - code - gateway/proxy/url_analyzer.py
-- [[._is_private_ip()]] - code - gateway/proxy/url_analyzer.py
-- [[._is_ssrf()]] - code - gateway/proxy/url_analyzer.py
-- [[._resolve_host()]] - code - gateway/proxy/url_analyzer.py
-- [[.analyze()]] - code - gateway/proxy/url_analyzer.py
-- [[.analyze_and_pin()]] - code - gateway/proxy/url_analyzer.py
-- [[.flagged()]] - code - gateway/proxy/url_analyzer.py
-- [[.get_stats()_10]] - code - gateway/proxy/web_proxy.py
-- [[.test_actual_base64()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_all_lowercase_not_base64()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_api_endpoint_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_base64_in_path_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_base64_in_query_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_credit_card_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_docs_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_email_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_empty_url()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_github_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_https_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_long_query_string_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_many_params_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_news_site_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_no_scheme()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_non_base64_chars()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_normal_query_not_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_phone_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_public_ip_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_short_base64_not_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_short_string_not_base64()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ssn_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_stackoverflow_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_weird_scheme()]] - code - gateway/tests/test_url_analyzer.py
-- [[.to_dict()_2]] - code - gateway/proxy/web_proxy.py
-- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
-- [[Any_23]] - code - gateway/proxy/web_proxy.py
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
-- [[Data exfiltration patterns in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Edge cases and malformed URLs.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Ensure normal browsing URLs pass through.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Get proxy statistics._1]] - rationale - gateway/proxy/web_proxy.py
-- [[Heuristic does this string look like base64-encoded data]] - rationale - gateway/proxy/url_analyzer.py
-- [[PII detection in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
-- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Short base64 strings are normal (e.g., API tokens in URLs).]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Test the _looks_like_base64 helper.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestBase64Heuristic]] - code - gateway/tests/test_url_analyzer.py
-- [[TestDataExfiltration]] - code - gateway/tests/test_url_analyzer.py
-- [[TestLegitimateURLsAllowed]] - code - gateway/tests/test_url_analyzer.py
-- [[TestMalformedURLs]] - code - gateway/tests/test_url_analyzer.py
-- [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
-- [[URLAnalysisResult]] - code - gateway/proxy/url_analyzer.py
-- [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
-- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
-- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
-- [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
-- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
-- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
-- [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
-- [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
-- [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-__init__()_172]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-__init__()_173]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_close_middleware_after()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-_extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_extract_scannable_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_get_sanitizer_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_log_redaction_audit()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_reconstruct_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_sanitize_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-_sanitize_regex()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-default_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-get_config_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-get_supported_tools()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-get_tool_config()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-mock_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-sanitize()_3]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-sanitizer()_3]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-set_config()]] - code - gateway/ingest_api/middleware.py
+- [[dot-test_default_config()_7]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_default_pii_config_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_email_content_scanning()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_empty_content_handling()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_extract_scannable_content_dict()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_extract_scannable_content_list()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_extract_scannable_content_string()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_icloud_contact_scanning()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_initialization()_4]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_middleware_set_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_middleware_set_config_disabled()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_middleware_set_config_missing()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_process_tool_result_no_sanitizer()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_process_tool_result_sanitizer_error()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_process_tool_result_success()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_sanitize_dict_with_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_sanitize_disabled()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_sanitize_string_with_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_tool_result_config_default_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_tool_specific_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_tool_specific_configuration()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-tool_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Any_72]] - code - gateway/security/tool_result_sanitizer.py
+- [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Detect and redact PII from content          Args             content Text to s]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Extract text content from various tool result formats for PII scanning]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get PII config for a specific tool, applying overrides if configured]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get list of tools with specific PII configurations]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get or create a PIISanitizer instance for the specified tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get the PII configuration for a specific tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Individual redaction record]] - rationale - gateway/ingest_api/models.py
+- [[Log PII redaction for audit trail without logging actual PII]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[PII configuration with per-tool overrides]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[RedactionDetail_1]] - code - gateway/ingest_api/models.py
+- [[RedactionResult_2]] - code - gateway/ingest_api/sanitizer.py
+- [[RedactionResult_3]] - code - gateway/ingest_api/models.py
+- [[Result of PII sanitization]] - rationale - gateway/ingest_api/models.py
+- [[Sanitize a tool result for PII before it reaches the agent          Args]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Set configuration and initialize tool result sanitizer]] - rationale - gateway/ingest_api/middleware.py
+- [[Test configuration loading and validation]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test content extraction from dictionary results]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test content extraction from string results]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test default configuration]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test handling of empty or whitespace-only content]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test integration with MiddlewareManager]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test middleware configuration setup]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test middleware configuration with disabled tool result PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test middleware configuration with missing tool_result_pii config]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test realistic tool result scenarios]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizer initialization]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizer when disabled]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizing dictionary content with PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizing string content with PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test scanning email content for sensitive data]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test scanning iCloud contact data for PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test successful tool result processing]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that different tools get different PII configurations]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test the ToolResultPIIConfig configuration class]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test the ToolResultSanitizer class]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test tool result processing when sanitizer not configured]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test tool result processing when sanitizer raises an exception]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test tool-specific configuration overrides]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[TestConfidenceFloor]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestConfigurationLoading]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestMiddlewareIntegration]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestRealWorldScenarios]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestToolResultPIIConfig]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_pii.py
+- [[Tool result PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Tool result PII sanitizer with per-tool configuration]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Tool result sanitizer instance for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[ToolResultPIIConfig]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
+- [[Track every MiddlewareManager instantiated in this class and         close its s]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[sanitizer.py_2]] - code - gateway/ingest_api/sanitizer.py
+- [[test_tool_result_pii.py]] - code - gateway/tests/test_tool_result_pii.py
+- [[tool_result_sanitizer.py]] - code - gateway/security/tool_result_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -89,18 +122,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_EncryptedStore]]
-- 10 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 6 edges to [[_COMMUNITY_FetchOutcome]]
-- 6 edges to [[_COMMUNITY_cls]]
-- 5 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_generate_branding_assets.py]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_URLAnalyzer]]
+- 40 edges to [[_COMMUNITY_PIIConfig]]
+- 34 edges to [[_COMMUNITY_MiddlewareManager]]
+- 10 edges to [[_COMMUNITY_DataLedger]]
+- 5 edges to [[_COMMUNITY_AsyncMock]]
+- 4 edges to [[_COMMUNITY_ingest_apimodels.py]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_load_config]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer_1]]
+- 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
 
 ## Top bridge nodes
-- [[URLAnalyzer]] - degree 28, connects to 6 communities
-- [[WebContentScanner]] - degree 20, connects to 6 communities
-- [[TestDataExfiltration]] - degree 11, connects to 2 communities
-- [[test_url_analyzer.py]] - degree 10, connects to 2 communities
-- [[Any_23]] - degree 6, connects to 2 communities
+- [[sanitizer.py_2]] - degree 13, connects to 8 communities
+- [[ToolResultSanitizer_1]] - degree 40, connects to 5 communities
+- [[RedactionResult_3]] - degree 27, connects to 4 communities
+- [[RedactionDetail_1]] - degree 20, connects to 4 communities
+- [[tool_result_sanitizer.py]] - degree 9, connects to 4 communities

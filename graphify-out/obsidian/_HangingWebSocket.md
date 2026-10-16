@@ -1,24 +1,29 @@
 ---
-source_file: "gateway/tests/test_approval_queue.py"
+source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L492"
+community: "ApprovalQueueConfig"
+location: "L478"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig
 ---
 
 # _HangingWebSocket
 
 ## Connections
-- [[.send_json()]] - `method` [EXTRACTED]
-- [[A WebSocket stand-in whose send_json never returns — models a dead     client (c]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[dot-send_json()]] - `method` [EXTRACTED]
+- [[A WebSocket stand-in whose send_json never returns.      Models a real-world dea]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[test_approval_queue.py]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `calls` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

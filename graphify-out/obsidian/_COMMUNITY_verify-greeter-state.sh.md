@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # verify-greeter-state.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[DevSecOps Skill]] - document - .agents/skills/i-devsecops/SKILL.md
+- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
+- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

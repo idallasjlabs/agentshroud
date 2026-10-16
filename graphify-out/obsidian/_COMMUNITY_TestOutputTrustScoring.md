@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # TestOutputTrustScoring
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[CLI Reference]] - document - skills/custom/securebrowser/README.md
-- [[Click]] - document - skills/custom/securebrowser/README.md
-- [[Extract]] - document - skills/custom/securebrowser/README.md
-- [[Fill Field]] - document - skills/custom/securebrowser/README.md
-- [[Navigate]] - document - skills/custom/securebrowser/README.md
-- [[Screenshot]] - document - skills/custom/securebrowser/README.md
+- [[dot-test_api_key_detected()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_clean_output_high_score()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_exfil_pattern_detected()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_injection_detected()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_low_agent_trust_penalty()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_pii_detected_lowers_score()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestOutputTrustScoring]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_What Does OpenClaw Actually Need to Write]]
+- 4 edges to [[_COMMUNITY_SubagentGovernance]]
+- 2 edges to [[_COMMUNITY_GovernanceAction]]
 
 ## Top bridge nodes
-- [[CLI Reference]] - degree 6, connects to 1 community
+- [[TestOutputTrustScoring]] - degree 12, connects to 2 communities

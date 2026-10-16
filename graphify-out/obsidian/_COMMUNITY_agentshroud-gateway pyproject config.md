@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # agentshroud-gateway pyproject config
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[extraction-spec_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[AgentShroud Gateway Package (__init__.py)]] - code - gateway/__init__.py
+- [[Gateway OpenAPI Spec]] - document - gateway/openapi.json
+- [[agentshroud-gateway pyproject config]] - code - gateway/pyproject.toml
 
 ## Live Query (requires Dataview plugin)
 

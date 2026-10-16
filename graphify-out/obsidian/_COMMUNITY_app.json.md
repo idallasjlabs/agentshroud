@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Stale Baseline Turns Rollback Into Unintended Revert]] - rationale - reports/upgrade-2026-09-14.md
+- [[app.json]] - code - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolACLEnforcer.check_tool_rate_limit]] - code - gateway/security/tool_acl.py
+- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - code - firmware/voice-terminal/CMakeLists.txt
 
 ## Live Query (requires Dataview plugin)
 

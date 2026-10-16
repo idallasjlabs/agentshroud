@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "graphify reference: extra exports and benchmark"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/sunday-upgrade-applysh
 ---
 
 # _build_one_service
@@ -14,4 +14,4 @@ tags:
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

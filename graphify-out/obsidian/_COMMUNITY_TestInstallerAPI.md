@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # TestInstallerAPI
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[4.1 Remove Obsolete CodeDocs]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.2 Update README]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.3 Create CHANGELOG]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.4 Tag v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.5 Deploy to Production]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[dot-client()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_install()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
+- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_sunday_run_scan_gate]]
+- 3 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_PodmanEngine]]
+- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
 
 ## Top bridge nodes
-- [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - degree 6, connects to 1 community
+- [[TestInstallerAPI]] - degree 11, connects to 4 communities

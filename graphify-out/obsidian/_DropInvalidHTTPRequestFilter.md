@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "ForwardRequest"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_telegram_proxy_outboundpy
+  - community/ForwardRequest
 ---
 
 # _DropInvalidHTTPRequestFilter
 
 ## Connections
-- [[.filter()]] - `method` [EXTRACTED]
-- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
+- [[dot-filter()_1]] - `method` [EXTRACTED]
+- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/INFERRED #community/ForwardRequest

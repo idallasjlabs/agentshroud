@@ -12,10 +12,10 @@ tags:
 # _intel_store()
 
 ## Connections
-- [[._path()]] - `calls` [INFERRED]
+- [[dot-_path()]] - `calls` [INFERRED]
 - [[IntelReportStore]] - `calls` [EXTRACTED]
 - [[Return an IntelReportStore pointed at the configured data directory.]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[get_competitive_intel()]] - `calls` [EXTRACTED]
 - [[get_competitive_intel_history()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]

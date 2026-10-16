@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.50
+members: 8
 ---
 
 # test-sunday-upgrade-scan.sh
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 8 nodes
 
 ## Members
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[check()_1]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[write_fake()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,10 @@ members: 7
 TABLE source_file, type FROM #community/test-sunday-upgrade-scansh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 1 edge to [[_COMMUNITY_smoke.sh Startup Smoke Runner]]
+
+## Top bridge nodes
+- [[test-sunday-upgrade-scan.sh]] - degree 10, connects to 2 communities

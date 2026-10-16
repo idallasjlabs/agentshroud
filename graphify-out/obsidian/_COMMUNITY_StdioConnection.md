@@ -1,89 +1,91 @@
 ---
 type: community
-cohesion: 0.05
-members: 74
+cohesion: 0.07
+members: 76
 ---
 
 # StdioConnection
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 74 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 76 nodes
 
 ## Members
-- [[._handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_groupinfo_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_groups_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_projects_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_rmfromgroup_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_setmode_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[._mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_admin_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[.get_active_project_for_user()]] - code - gateway/security/group_config.py
-- [[.get_user_projects()]] - code - gateway/security/group_config.py
-- [[.matches_topic()]] - code - gateway/security/group_config.py
-- [[.normalise_topics()]] - code - gateway/security/group_config.py
-- [[.test_addtogroup_success()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_already_member()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_collab_outside_scope_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_collab_unavailable_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_contains_allowed_tools()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_contains_group_and_project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_member_sees_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_member_sees_project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_groups_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_groups_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_permission()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_projects_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_projects_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_not_member()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_rmfromgroup_success()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_setmode_success_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_setmode_success_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_shows_admin()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_shows_projects()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_unknown_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[A project defines a scoped focus area for a team.]] - rationale - gateway/security/group_config.py
-- [[Build the system-prompt injection for project_scoped mode.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Handle addtogroup user_id group_id (owner only).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle groupinfo group_id.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle groups — list groups this user belongs to.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle projects — list accessible projects.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle rmfromgroup user_id group_id (owner or group admin).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Handle setmode group_iduser_id local_onlyproject_scopedfull_access (owne]] - rationale - gateway/proxy/telegram_proxy.py
-- [[ProjectConfig]] - code - gateway/security/group_config.py
-- [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
-- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
-- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
-- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic owner admin notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[TestBuildProjectContextInjection]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestConstantMessages]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestErrorFormatters]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatGroupInfo]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatGroupsList]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatProjectsList]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestMutationFormatters]] - code - gateway/tests/test_collaborator_responses.py
-- [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
-- [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
-- [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
-- [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_already_member()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_group_info()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_groups_list()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_no_permission()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_not_member()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_projects_list()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
-- [[project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
-- [[teams()]] - code - gateway/tests/test_collaborator_responses.py
-- [[telegram_proxy.py]] - code - gateway/proxy/telegram_proxy.py
-- [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-__init__()_45]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_46]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_47]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-get_item()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-get_or_create()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-is_running()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-remove()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-send_request()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-shutdown()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-start()_1]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-stop()_3]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-stop()_4]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-stop_all()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-submit_tool_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_denied_decision_blocks_with_item_status()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_denied_decision_with_missing_item_defaults_denied()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_egress_filter_allow_passes_through()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_emit_swallows_bus_errors()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_emits_event_to_bus()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_execution_redacts_admin_private_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_execution_with_none_content_skips_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_generic_exception()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_get_or_create_by_transport_and_caching()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_get_stats_after_allowed_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_get_stats_zero_and_after_calls()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_no_patterns_returns_unchanged()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_no_queue_allows_by_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_owner_bypasses_redaction()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_passthrough_process_tool_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_passthrough_with_execute()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_process_tool_call_blocks_on_denial()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_process_tool_result_handles_none_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_process_tool_result_redacts_private_data()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_redacts_nested_dict_list_tuple()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_sanitized_params_preferred_over_originals()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_server_error_response()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_server_error_response_without_message()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_shutdown_stops_all_connections()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_stop_all_clears_pool()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_successful_execution_with_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_sync_egress_filter_deny_blocks()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_timeout_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-wait_for_decision()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
+- [[Exception]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPProxyConfig]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Pool of connections to MCP servers.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestConnectionPool]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestPassthrough]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_config()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_proxy()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -93,33 +95,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_FileSandbox]]
-- 12 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 11 edges to [[_COMMUNITY_PermissionLevel]]
-- 8 edges to [[_COMMUNITY__make_stream_app_state()]]
-- 5 edges to [[_COMMUNITY_SCLClient]]
-- 3 edges to [[_COMMUNITY_SSHProxy]]
-- 2 edges to [[_COMMUNITY_TestPathIsolationManager]]
-- 1 edge to [[_COMMUNITY_main.rs]]
-- 1 edge to [[_COMMUNITY_test_a2a_proxy.py]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 1 edge to [[_COMMUNITY_chatbotmain.py]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_get_engine()]]
-- 1 edge to [[_COMMUNITY_test_credential_injector.py]]
-- 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_IntelReportStore]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ssh_config.py]]
-- 1 edge to [[_COMMUNITY_gateway service (prod, sole egress point, 75-mod]]
-- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
+- 83 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 49 edges to [[_COMMUNITY_MCPToolCall]]
+- 30 edges to [[_COMMUNITY_PermissionLevel]]
+- 25 edges to [[_COMMUNITY_MCPToolResult]]
+- 19 edges to [[_COMMUNITY_FakeProcess]]
+- 18 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 4 edges to [[_COMMUNITY_TestExtractEgressTargets]]
+- 3 edges to [[_COMMUNITY__make_filter]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_dot-process_tool_call]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 
 ## Top bridge nodes
-- [[telegram_proxy.py]] - degree 35, connects to 18 communities
-- [[collaborator_responses.py]] - degree 16, connects to 3 communities
-- [[slack_proxy.py]] - degree 4, connects to 3 communities
-- [[test_collaborator_responses.py]] - degree 23, connects to 2 communities
-- [[ProjectConfig]] - degree 18, connects to 2 communities
+- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 8 communities
+- [[HttpSseConnection]] - degree 35, connects to 7 communities
+- [[StdioConnection]] - degree 38, connects to 6 communities
+- [[ConnectionPool]] - degree 36, connects to 6 communities
+- [[FakeConn]] - degree 30, connects to 6 communities

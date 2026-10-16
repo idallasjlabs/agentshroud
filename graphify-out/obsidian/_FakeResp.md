@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "📱 Required Accounts & Services"
+community: "TestIsContainerRunning"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_Required_Accounts__Services
+  - community/TestIsContainerRunning
 ---
 
 # _FakeResp
 
 ## Connections
-- [[.__init__()_179]] - `method` [EXTRACTED]
-- [[._patch_http()]] - `calls` [EXTRACTED]
-- [[.read()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `method` [EXTRACTED]
+- [[dot-_patch_http()]] - `calls` [EXTRACTED]
+- [[dot-read()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_Required_Accounts__Services
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

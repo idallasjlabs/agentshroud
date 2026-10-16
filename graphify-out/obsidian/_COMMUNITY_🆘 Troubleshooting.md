@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # 🆘 Troubleshooting
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[SKILL_200]] - document - skills/openclaw/camsnap/SKILL.md
-- [[camsnap]] - document - skills/openclaw/camsnap/SKILL.md
-- [[camsnap CLI]] - concept - skills/openclaw/camsnap/SKILL.md
-- [[ffmpeg dependency]] - concept - skills/openclaw/camsnap/SKILL.md
+- [[Authentication required]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Permission denied]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Skill validation failed]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[clawhub command not found]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🆘 Troubleshooting]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,9 @@ members: 4
 TABLE source_file, type FROM #community/_Troubleshooting
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Publish SecureBrowser to ClawHub - Step-by-Step Guide]]
+
+## Top bridge nodes
+- [[🆘 Troubleshooting]] - degree 5, connects to 1 community

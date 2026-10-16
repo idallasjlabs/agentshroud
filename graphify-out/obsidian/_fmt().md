@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "Operating Rules (Non-Negotiable)"
+community: "agentshroud-ssh-exec.sh"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable
+  - community/agentshroud-ssh-execsh
 ---
 
 # _fmt()
@@ -15,4 +15,4 @@ tags:
 - [[daily-checkin.sh]] - `defines` [EXTRACTED]
 - [[daily-checkin.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh

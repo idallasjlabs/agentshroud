@@ -1,74 +1,80 @@
 ---
 type: community
-cohesion: 0.08
-members: 59
+cohesion: 0.04
+members: 65
 ---
 
 # WebProxy
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 59 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 65 nodes
 
 ## Members
-- [[Added]] - document - CHANGELOG.md
-- [[Added — Tranche 1 True Collaboration Architecture]] - document - CHANGELOG.md
-- [[Added — Tranche 2 Private Service Data Isolation]] - document - CHANGELOG.md
-- [[Added — Tranche 3 Security Tools (IEC 62443 Alignment)]] - document - CHANGELOG.md
-- [[Agent Routing (P0)]] - document - CHANGELOG.md
-- [[CHANGELOG]] - document - CHANGELOG.md
-- [[Changed]] - document - CHANGELOG.md
-- [[Changelog — AgentShroud™]] - document - CHANGELOG.md
-- [[Compliance]] - document - CHANGELOG.md
-- [[Container Security Scorecard — Baseline Scores]] - document - CHANGELOG.md
-- [[Deferred to post-v1.0.0]] - document - CHANGELOG.md
-- [[Fixed]] - document - CHANGELOG.md
-- [[Hardened]] - document - CHANGELOG.md
-- [[Known gaps (not yet closed)]] - document - CHANGELOG.md
-- [[Known issues]] - document - CHANGELOG.md
-- [[Migration Notes]] - document - CHANGELOG.md
-- [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
-- [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
-- [[Performance Baselines (arm64  macOS  Python 3.13)]] - document - CHANGELOG.md
-- [[Phase 1 Foundation]] - document - CHANGELOG.md
-- [[Phase 2 Gateway Layer]] - document - CHANGELOG.md
-- [[Phase 3A3B Security Hardening]] - document - CHANGELOG.md
-- [[Phase 4 SSH Capability]] - document - CHANGELOG.md
-- [[Phase 5 Dashboard]] - document - CHANGELOG.md
-- [[Phase 6 Tailscale & Documentation]] - document - CHANGELOG.md
-- [[Phase 7 Security Hardening]] - document - CHANGELOG.md
-- [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
-- [[Recommended Steps]] - document - CHANGELOG.md
-- [[Removed]] - document - CHANGELOG.md
-- [[Security_2]] - document - CHANGELOG.md
-- [[Summary_1]] - document - CHANGELOG.md
-- [[Testing]] - document - CHANGELOG.md
-- [[Tests]] - document - CHANGELOG.md
-- [[Tranche Status]] - document - CHANGELOG.md
-- [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
-- [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md
-- [[0.4.0 - 2026-02-19]] - document - CHANGELOG.md
-- [[0.5.0 - 2026-02-21]] - document - CHANGELOG.md
-- [[0.6.0 - 2026-02-23]] - document - CHANGELOG.md
-- [[0.7.0 - 2026-02-25]] - document - CHANGELOG.md
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - document - CHANGELOG.md
-- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - document - CHANGELOG.md
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - document - CHANGELOG.md
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - document - CHANGELOG.md
-- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - document - CHANGELOG.md
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - document - CHANGELOG.md
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - document - CHANGELOG.md
-- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - document - CHANGELOG.md
-- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
-- [[1.5.0 A2A Governance (2026-08-14)]] - document - CHANGELOG.md
-- [[1.5.1 A2A Governance (2026-08-22)]] - document - CHANGELOG.md
-- [[1.5.2 (2026-08-23)]] - document - CHANGELOG.md
-- [[1.5.3 (2026-08-23)]] - document - CHANGELOG.md
-- [[1.6.0 (2026-08-28)]] - document - CHANGELOG.md
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - document - CHANGELOG.md
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - document - CHANGELOG.md
-- [[v0.3.0 → v0.4.0]] - document - CHANGELOG.md
-- [[v0.4.0 → v0.5.0]] - document - CHANGELOG.md
+- [[dot-__init__()_187]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_17]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_18]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
+- [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-setUp()_2]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-write()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
+- [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
+- [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
+- [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
+- [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
+- [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
+- [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
+- [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[WebProxy]] - code - gateway/proxy/web_proxy.py
+- [[_DummyTargetWriter]] - code - gateway/tests/test_http_proxy.py
+- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
+- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
+- [[api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels]] - rationale - gateway/tests/test_http_proxy.py
+- [[http_proxy.py (HTTPConnectProxy)]] - code - gateway/proxy/http_proxy.py
+- [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_cached_after_first_lookup()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_known_ip()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_error()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_miss()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_none_peer()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
+- [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_system_bypass_domain_skips_policy_checks()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - code - gateway/tests/test_http_proxy.py
+- [[test_default_allowed_domains_non_empty()]] - code - gateway/tests/test_http_proxy.py
+- [[test_http_proxy.py]] - code - gateway/tests/test_http_proxy.py
+- [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
+- [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
+- [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
+- [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
+- [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -76,3 +82,22 @@ members: 59
 TABLE source_file, type FROM #community/WebProxy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 39 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 37 edges to [[_COMMUNITY_WebProxyConfig]]
+- 13 edges to [[_COMMUNITY_ProxyAction]]
+- 3 edges to [[_COMMUNITY__DummyTargetWriter]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_WebContentScanner]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_TestAuditChain]]
+- 2 edges to [[_COMMUNITY_dot-_process_connect]]
+- 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
+
+## Top bridge nodes
+- [[WebProxy]] - degree 72, connects to 9 communities
+- [[test_http_proxy.py]] - degree 39, connects to 3 communities
+- [[_MockWriter_1]] - degree 21, connects to 3 communities
+- [[_DummyTargetWriter]] - degree 8, connects to 3 communities
+- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 2 communities

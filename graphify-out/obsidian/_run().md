@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/tests/test_canary_deploy.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "OpenClaw Control UI Pairing Instructions"
-location: "L18"
+community: "discover_upstream_versions.py"
+location: "L198"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - graphify/INFERRED
+  - community/discover_upstream_versionspy
 ---
 
 # _run()
 
 ## Connections
-- [[.test_dry_run_allowed_for_any_user()]] - `calls` [EXTRACTED]
-- [[.test_dry_run_changes_nothing_and_previews_actions()]] - `calls` [EXTRACTED]
-- [[.test_dry_run_targets_green_ports_not_blue()]] - `calls` [EXTRACTED]
-- [[.test_refuses_when_not_green_user()]] - `calls` [EXTRACTED]
-- [[.test_tag_fetch_uses_force()]] - `calls` [EXTRACTED]
-- [[.test_unknown_arg_rejected()]] - `calls` [EXTRACTED]
-- [[test_canary_deploy.py]] - `contains` [EXTRACTED]
-- [[test_help_prints_usage()]] - `calls` [EXTRACTED]
+- [[_call_with_deadline()]] - `indirect_call` [INFERRED]
+- [[fn()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy

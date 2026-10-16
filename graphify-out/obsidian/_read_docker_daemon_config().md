@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "scanner_integration.py"
 location: "L1086"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/scanner_integrationpy
 ---
 
 # _read_docker_daemon_config()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
-- [[Path_17]] - `calls` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
+- [[Path_57]] - `calls` [EXTRACTED]
 - [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - `rationale_for` [EXTRACTED]
 - [[_score_docker_daemon_config()]] - `calls` [EXTRACTED]
 - [[_score_network_segmentation()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
