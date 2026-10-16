@@ -187,6 +187,28 @@ check "S12: init-config.sh (Hermes): seeds jira_dev_ticket.py into live workspac
     "$(grep -q 'jira_dev_ticket.py' "$hermes_init_sh" && echo true || echo false)" \
     "Live workspace never gets jira_dev_ticket.py seeded — i-hdev cannot create/update SCRUM tickets"
 
+# S13: start.sh (Hermes) expected-secrets banner accepts an env var in place
+# of a mounted file. run-standalone.sh passes feedbin_email/feedbin_password
+# as FEEDBIN_EMAIL/FEEDBIN_PASSWORD (its _feedbin_env_args), so before
+# 2026-10-16 every prod boot flagged both as "missing" forever. Behavioral:
+# extract the real loop from start.sh and run it with no /run/secrets files,
+# the two feedbin env vars set, and nothing else — feedbin_* must NOT be
+# reported missing, and a genuinely absent key still must be.
+hermes_start_sh="$REPO/docker/bots/hermes/start.sh"
+_s13_start="$(grep -n '^_hermes_missing_secrets=""$' "$hermes_start_sh" | head -1 | cut -d: -f1)"
+_s13_end="$(tail -n "+${_s13_start:-1}" "$hermes_start_sh" | grep -n '^done$' | head -1 | cut -d: -f1)"
+_s13_loop="$(sed -n "${_s13_start},$(( _s13_start + _s13_end - 1 ))p" "$hermes_start_sh")"
+_s13_missing="$(
+    _HERMES_EXPECTED_SECRETS="brave_api_key feedbin_email feedbin_password"  # pragma: allowlist secret -- names, not values
+    FEEDBIN_EMAIL="user@example.invalid" FEEDBIN_PASSWORD="x"  # pragma: allowlist secret -- test fixture
+    export FEEDBIN_EMAIL FEEDBIN_PASSWORD
+    eval "$_s13_loop" 2>/dev/null
+    printf '%s' "$_hermes_missing_secrets"
+)"
+check "S13: start.sh (Hermes): env-provided feedbin secrets are not reported missing" \
+    "$([[ -n "$_s13_loop" && "$_s13_missing" == "brave_api_key" ]] && echo true || echo false)" \
+    "expected missing list 'brave_api_key', got '${_s13_missing}'"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

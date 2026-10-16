@@ -264,10 +264,22 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
 _HERMES_EXPECTED_SECRETS="hermes_telegram_bot_token slack_bot_token_hermes slack_app_token_hermes brave_api_key anthropic_oauth_token openai_api_key hermes_api_key github_pat hermes_healthchecks_url gateway_password feedbin_email feedbin_password podcastindex_api_key podcastindex_api_secret"  # pragma: allowlist secret -- names of mounted secret files, not values
 _hermes_missing_secrets=""
 for _key in ${_HERMES_EXPECTED_SECRETS}; do
-    if [ ! -s "/run/secrets/${_key}" ]; then
-        echo "[hermes-startup] ERROR: configured secret '${_key}' has no mounted file at /run/secrets/${_key} — any skill that needs it will fail" >&2
-        _hermes_missing_secrets="${_hermes_missing_secrets}${_hermes_missing_secrets:+, }${_key}"
+    if [ -s "/run/secrets/${_key}" ]; then
+        continue
     fi
+    # run-standalone.sh deliberately passes feedbin_email/feedbin_password as
+    # FEEDBIN_EMAIL/FEEDBIN_PASSWORD env vars instead of mounted files (see its
+    # _feedbin_env_args — a -v mount of those two never works on that image
+    # path), and feedbin.py accepts either form. Before 2026-10-16 this loop
+    # only looked at /run/secrets, so every prod boot flagged both as missing
+    # although the skill had them. An env var of the same name, upper-cased,
+    # counts as present.
+    _env_name="$(printf '%s' "${_key}" | tr '[:lower:]' '[:upper:]')"
+    if [ -n "$(printenv "${_env_name}" 2>/dev/null || true)" ]; then
+        continue
+    fi
+    echo "[hermes-startup] ERROR: configured secret '${_key}' has no mounted file at /run/secrets/${_key} and no ${_env_name} env var — any skill that needs it will fail" >&2
+    _hermes_missing_secrets="${_hermes_missing_secrets}${_hermes_missing_secrets:+, }${_key}"
 done
 _HERMES_STARTUP_NOTE=""
 if [ -n "${_hermes_missing_secrets}" ]; then

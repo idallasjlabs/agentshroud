@@ -559,6 +559,32 @@ Hermes v0.22.2 bump must keep it loading. Dev has no copy of that plugin, so the
 run cannot exercise it; prod should check `/api/plugins/conduit_push/capabilities` right
 after Sunday's Hermes restart.
 
+### Late afternoon: cleanup directive, start.sh banner fix
+Owner directive 15:00 EDT: once Conduit voice works, dev and prod on the same main commit,
+every container in both environments rebuilt from it, and no branch other than `main`
+anywhere. Done so far from dev: `origin/chore/upgrade-2026-10-04-baseimages` deleted
+(10-04 digests older than main's 10-11/10-12 refresh, conflicted with main; patches kept
+in the dev session scratchpad, tip `568d3bc2b3`); dev's local copy of
+`fix/sunday-upgrade-head-guard` deleted. PR #490 (per-iteration HEAD re-assert in the
+Sunday build loop; merges clean, smoke test passes on current main) and the five
+Dependabot PRs (#491 #493 #499 #500 #501; the running gateway already satisfies all five
+floors) need the owner's own merge — the dev session's permission classifier refuses PR
+merges. Prod's inventory of its three local branches: `fix/hermes-cron-pause-alert-20261012`
+merged (deleted), `fix/docker-image-container-sprawl` (1 real commit, `a8e2a6bf91`) and
+`fix/scrum-174-scan-pipeline-sunday-upgrade` (5 commits, mostly re-implemented on main)
+pushed to origin for review and cherry-pick before deletion.
+
+`docker/bots/hermes/start.sh` expected-secrets banner: `feedbin_email`/`feedbin_password`
+were flagged missing on every prod boot because `run-standalone.sh` passes them as
+`FEEDBIN_EMAIL`/`FEEDBIN_PASSWORD` env vars (a file mount of those two never works on
+that image path) and the loop only checked `/run/secrets`. An upper-cased env var of the
+same name now counts as present. Behavioral check S13 added to
+`tests/startup_smoke/test_bot_boot_static.sh` (13/13 pass; the HEAD version of the loop
+reports all three fixtures missing, the fixed one reports only `brave_api_key`).
+
+lazydocker leak recurred a third time (pid 45603, 325 sockets, `docker system df` >90 s);
+killed before the rebuild.
+
 ### Still open for Sunday (not changed today)
 - `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching
   gateway/scripts/docker). CLAUDE.md makes a refresh mandatory before a prod rebuild —
