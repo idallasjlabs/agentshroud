@@ -15,10 +15,10 @@ tags:
 - [[ContextIntegrityScorer]] - `imports` [EXTRACTED]
 - [[ContextSegment]] - `imports` [EXTRACTED]
 - [[IntegrityScore]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestContextIntegrityScorer]] - `contains` [EXTRACTED]
 - [[_make_segment()]] - `contains` [EXTRACTED]
-- [[guard()]] - `contains` [EXTRACTED]
+- [[guard()_4]] - `contains` [EXTRACTED]
 - [[scorer()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

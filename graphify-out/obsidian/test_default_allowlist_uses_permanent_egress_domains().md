@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CitationVerifier]] - `calls` [EXTRACTED]
 - [[DraftEntry]] - `calls` [EXTRACTED]
-- [[_FakeFetcher_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `calls` [EXTRACTED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

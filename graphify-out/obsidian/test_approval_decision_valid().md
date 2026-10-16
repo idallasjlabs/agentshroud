@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "AgentTarget"
+community: "Request"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Request
 ---
 
 # test_approval_decision_valid()
 
 ## Connections
-- [[ApprovalDecision]] - `calls` [EXTRACTED]
+- [[ApprovalDecision_1]] - `calls` [EXTRACTED]
 - [[Test ApprovalDecision with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Request

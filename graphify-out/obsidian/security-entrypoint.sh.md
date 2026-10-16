@@ -17,7 +17,7 @@ tags:
 - [[alert_critical()]] - `references` [EXTRACTED]
 - [[dockerscriptssecurity-scan.sh]] - `semantically_similar_to` [INFERRED]
 - [[gateway-start.sh]] - `calls` [EXTRACTED]
-- [[log()_2]] - `defines` [EXTRACTED]
+- [[log()_1]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

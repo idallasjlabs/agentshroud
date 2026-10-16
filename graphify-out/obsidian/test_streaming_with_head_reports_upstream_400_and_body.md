@@ -13,9 +13,8 @@ tags:
 
 ## Connections
 - [[StreamHead]] - `uses` [INFERRED]
-- [[Streaming route masked upstream 4xx as 200 event stream]] - `cites` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

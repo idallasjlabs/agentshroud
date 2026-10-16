@@ -12,7 +12,7 @@ tags:
 # security-report.sh script
 
 ## Connections
-- [[log()_4]] - `calls` [EXTRACTED]
+- [[log()_3]] - `calls` [EXTRACTED]
 - [[security-report.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

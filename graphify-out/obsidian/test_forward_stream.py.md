@@ -12,9 +12,9 @@ tags:
 # test_forward_stream.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
+- [[AgentTarget_3]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
 - [[_BlockingPipeline]] - `contains` [EXTRACTED]
 - [[_PassthroughPipeline]] - `contains` [EXTRACTED]
 - [[_aiter()]] - `contains` [EXTRACTED]

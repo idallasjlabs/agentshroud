@@ -1,20 +1,27 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L145"
+community: "test_daily_cve_report.py"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_daily_cve_reportpy
 ---
 
 # save_report()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
-- [[Save a ClamAV report to the log directory.]] - `rationale_for` [EXTRACTED]
-- [[clamav_scanner.py]] - `contains` [EXTRACTED]
+- [[dot-test_custom_prefix()]] - `calls` [EXTRACTED]
+- [[dot-test_default_prefix()]] - `calls` [EXTRACTED]
+- [[dot-test_log_dir_created_if_missing()]] - `calls` [EXTRACTED]
+- [[dot-test_report_content_persisted()]] - `calls` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
+- [[Path_45]] - `references` [EXTRACTED]
+- [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - `rationale_for` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

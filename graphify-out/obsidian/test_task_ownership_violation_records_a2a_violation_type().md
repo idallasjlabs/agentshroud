@@ -12,9 +12,9 @@ tags:
 # test_task_ownership_violation_records_a2a_violation_type()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `references` [EXTRACTED]
+- [[TrustManager_2]] - `references` [EXTRACTED]
 - [[_StubForwarder_2]] - `calls` [EXTRACTED]
 - [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]

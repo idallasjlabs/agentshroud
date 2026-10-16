@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "_make_filter"
+community: "EgressFilterConfig"
 location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_filter
+  - community/EgressFilterConfig
 ---
 
 # test_grant_timed_approval_allows_domain()
@@ -16,4 +16,4 @@ tags:
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_filter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

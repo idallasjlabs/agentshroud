@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[Role_91]] - `references` [EXTRACTED]
+- [[Role_22]] - `references` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[client()_14]] - `contains` [EXTRACTED]
+- [[client()_10]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
 - [[test_dashboard_requires_auth()]] - `contains` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CitationVerifier]] - `imports` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `imports` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `imports` [EXTRACTED]
 - [[DraftEntry]] - `imports` [EXTRACTED]
 - [[FetchOutcome_1]] - `imports` [EXTRACTED]
 - [[IntelReportStore_1]] - `imports` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[TestMakeHttpxFetcher]] - `contains` [EXTRACTED]
 - [[TestVerifyEntry]] - `contains` [EXTRACTED]
 - [[TestVerifyReport]] - `contains` [EXTRACTED]
-- [[_FakeFetcher_1]] - `contains` [EXTRACTED]
+- [[_FakeFetcher]] - `contains` [EXTRACTED]
 - [[_FakeStreamResponse_1]] - `contains` [EXTRACTED]
 - [[citation_verifier module]] - `implements` [EXTRACTED]
 - [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - `references` [EXTRACTED]

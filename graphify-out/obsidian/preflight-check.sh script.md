@@ -12,7 +12,7 @@ tags:
 # preflight-check.sh script
 
 ## Connections
-- [[check()_12]] - `calls` [EXTRACTED]
+- [[check()_11]] - `calls` [EXTRACTED]
 - [[preflight-check.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyDashboard

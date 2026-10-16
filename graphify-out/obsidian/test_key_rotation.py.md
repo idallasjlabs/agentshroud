@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CredentialInfo]] - `imports` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `imports` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `imports` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]

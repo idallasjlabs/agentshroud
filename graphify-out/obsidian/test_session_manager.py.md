@@ -12,19 +12,19 @@ tags:
 # test_session_manager.py
 
 ## Connections
-- [[TestAccessControl_1]] - `contains` [EXTRACTED]
+- [[TestAccessControl]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
 - [[TestMultiBotIsolation]] - `contains` [EXTRACTED]
-- [[TestSerialization_1]] - `contains` [EXTRACTED]
+- [[TestSerialization]] - `contains` [EXTRACTED]
 - [[TestSessionContext]] - `contains` [EXTRACTED]
 - [[TestSessionIsolation]] - `contains` [EXTRACTED]
 - [[TestSystemPromptReanchoring]] - `contains` [EXTRACTED]
 - [[TestTrustLevel]] - `contains` [EXTRACTED]
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[mgr()_1]] - `contains` [EXTRACTED]
+- [[mgr()]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

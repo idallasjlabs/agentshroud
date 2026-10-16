@@ -2,16 +2,21 @@
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
 community: "port_manager.py"
-location: "L1"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/port_managerpy
 ---
 
-# port_manager.py.md
+# port_manager.py
 
 ## Connections
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[Default Ports]] - `contains` [EXTRACTED]
+- [[Environment Variables]] - `contains` [EXTRACTED]
+- [[Key Class `PortManager`]] - `contains` [EXTRACTED]
+- [[Purpose_6]] - `contains` [EXTRACTED]
+- [[Related Notes_8]] - `contains` [EXTRACTED]
+- [[port_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/port_managerpy

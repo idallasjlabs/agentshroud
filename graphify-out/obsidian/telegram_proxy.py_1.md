@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Configuration  Environment Variables_13]] - `contains` [EXTRACTED]
-- [[Function Details_25]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_27]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
 - [[Methods Filtered (Inbound)]] - `contains` [EXTRACTED]
 - [[Methods Filtered (Outbound)]] - `contains` [EXTRACTED]
-- [[Purpose_130]] - `contains` [EXTRACTED]
-- [[Related_31]] - `contains` [EXTRACTED]
-- [[Responsibilities_28]] - `contains` [EXTRACTED]
+- [[Purpose_147]] - `contains` [EXTRACTED]
+- [[Related_32]] - `contains` [EXTRACTED]
+- [[Responsibilities_30]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

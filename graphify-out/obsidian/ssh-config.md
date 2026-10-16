@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[SSH Config]] - `contains` [EXTRACTED]
-- [[agentshroud.yaml]] - `references` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SSH_Config

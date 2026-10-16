@@ -12,15 +12,15 @@ tags:
 # test_enhanced_approval.py
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `imports` [EXTRACTED]
-- [[MCPProxy_1]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
+- [[MCPProxy]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `contains` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `contains` [EXTRACTED]
-- [[TestPersistence_2]] - `contains` [EXTRACTED]
+- [[TestPersistence_1]] - `contains` [EXTRACTED]
 - [[TestToolRiskClassification]] - `contains` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[ToolRiskPolicy]] - `imports` [EXTRACTED]

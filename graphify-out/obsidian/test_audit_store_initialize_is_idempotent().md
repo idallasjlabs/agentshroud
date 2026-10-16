@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuditStore_1]] - `calls` [EXTRACTED]
 - [[AuditStore same idempotency contract as ApprovalStore.]] - `rationale_for` [EXTRACTED]
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

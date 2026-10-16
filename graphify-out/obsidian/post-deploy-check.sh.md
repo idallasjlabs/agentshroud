@@ -12,8 +12,7 @@ tags:
 # post-deploy-check.sh
 
 ## Connections
-- [[asb (AgentShroud Bot helper)]] - `calls` [EXTRACTED]
-- [[check()_6]] - `defines` [EXTRACTED]
+- [[check()_4]] - `defines` [EXTRACTED]
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[post-deploy-check.sh script]] - `contains` [EXTRACTED]
 - [[run_test()]] - `semantically_similar_to` [INFERRED]

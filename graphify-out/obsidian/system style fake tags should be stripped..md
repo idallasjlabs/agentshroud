@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "PIIConfig"
+community: "test_prompt_guard.py"
 location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_prompt_guardpy
 ---
 
 # </system> style fake tags should be stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_strips_fake_system_tags()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy

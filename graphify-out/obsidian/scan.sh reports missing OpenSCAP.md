@@ -12,6 +12,6 @@ tags:
 # scan.sh reports missing OpenSCAP
 
 ## Connections
-- [[Troubleshooting_27]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

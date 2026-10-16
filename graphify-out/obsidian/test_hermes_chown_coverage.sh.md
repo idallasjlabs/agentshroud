@@ -12,7 +12,7 @@ tags:
 # test_hermes_chown_coverage.sh
 
 ## Connections
-- [[check()_8]] - `defines` [EXTRACTED]
+- [[check()_5]] - `defines` [EXTRACTED]
 - [[smoke.sh]] - `references` [EXTRACTED]
 - [[test_hermes_chown_coverage.sh script]] - `contains` [EXTRACTED]
 - [[test_hermes_cron_html_email.sh]] - `semantically_similar_to` [INFERRED]

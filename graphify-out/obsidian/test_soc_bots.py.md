@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[Role_91]] - `imports` [EXTRACTED]
+- [[Role_22]] - `imports` [EXTRACTED]
 - [[SCLCaller_1]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[compute_bot_scorecard()]] - `imports` [EXTRACTED]
 - [[get_agent_cves()]] - `imports` [EXTRACTED]
 - [[get_collaborator_activity()]] - `imports` [EXTRACTED]
-- [[get_config()]] - `imports` [EXTRACTED]
+- [[get_config()_1]] - `imports` [EXTRACTED]
 - [[get_egress_history()]] - `imports` [EXTRACTED]
 - [[get_egress_log()]] - `imports` [EXTRACTED]
 - [[get_egress_pending()]] - `imports` [EXTRACTED]

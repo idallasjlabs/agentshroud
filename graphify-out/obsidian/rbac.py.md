@@ -12,18 +12,18 @@ tags:
 # rbac.py
 
 ## Connections
-- [[Action_2]] - `contains` [EXTRACTED]
+- [[Action_1]] - `contains` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - `references` [EXTRACTED]
 - [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - `references` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 - [[PermissionResult]] - `contains` [EXTRACTED]
 - [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[RBACManager_2]] - `contains` [EXTRACTED]
+- [[RBACManager_1]] - `contains` [EXTRACTED]
 - [[Resource_2]] - `contains` [EXTRACTED]
-- [[Role_91]] - `imports` [EXTRACTED]
-- [[ToolTier_2]] - `imports` [EXTRACTED]
+- [[Role_22]] - `imports` [EXTRACTED]
+- [[ToolTier]] - `imports` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[socauth.py]] - `imports_from` [EXTRACTED]

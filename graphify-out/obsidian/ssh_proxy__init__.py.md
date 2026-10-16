@@ -12,7 +12,7 @@ tags:
 # ssh_proxy/__init__.py
 
 ## Connections
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `re_exports` [EXTRACTED]
 

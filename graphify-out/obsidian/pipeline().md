@@ -15,7 +15,7 @@ tags:
 - [[CanaryTripwire]] - `calls` [EXTRACTED]
 - [[ContextGuard]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 

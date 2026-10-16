@@ -12,7 +12,7 @@ tags:
 # test_egress_allowed_domain()
 
 ## Connections
-- [[dot-process_outbound()_3]] - `calls` [EXTRACTED]
+- [[dot-process_outbound()]] - `calls` [EXTRACTED]
 - [[Verify allowed domains pass egress check.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

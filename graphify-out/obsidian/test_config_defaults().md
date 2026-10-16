@@ -12,7 +12,7 @@ tags:
 # test_config_defaults()
 
 ## Connections
-- [[GatewayConfig_4]] - `calls` [EXTRACTED]
+- [[GatewayConfig_3]] - `calls` [EXTRACTED]
 - [[Test that configuration has sensible defaults]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 

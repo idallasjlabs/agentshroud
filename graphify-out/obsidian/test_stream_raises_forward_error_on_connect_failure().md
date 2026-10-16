@@ -12,7 +12,7 @@ tags:
 # test_stream_raises_forward_error_on_connect_failure()
 
 ## Connections
-- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

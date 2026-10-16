@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[FilterMatch]] - `contains` [EXTRACTED]
-- [[FilterResult]] - `contains` [EXTRACTED]
+- [[FilterResult_1]] - `contains` [EXTRACTED]
 - [[InfoCategory]] - `contains` [EXTRACTED]
 - [[OutboundInfoFilter]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]

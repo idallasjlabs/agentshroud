@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestIntegration]] - `contains` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `contains` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `contains` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `contains` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]

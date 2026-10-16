@@ -12,7 +12,7 @@ tags:
 # test_cleanup_decided_removes_old_decided_items()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[cleanup_decided() should remove approvedrejected items older than threshold.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

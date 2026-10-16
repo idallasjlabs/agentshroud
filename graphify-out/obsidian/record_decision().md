@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "A2AMethod"
+community: "ModuleStatsCollector"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/ModuleStatsCollector
 ---
 
 # record_decision()
@@ -15,10 +15,10 @@ tags:
 - [[dot-_audit()_1]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool()_1]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_from_origin()]] - `calls` [EXTRACTED]
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_5]] - `calls` [EXTRACTED]
 - [[dot-evaluate()]] - `calls` [EXTRACTED]
 - [[dot-evaluate()_1]] - `calls` [EXTRACTED]
-- [[dot-record()_1]] - `calls` [EXTRACTED]
+- [[dot-record()]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_never_raises()]] - `calls` [EXTRACTED]
 - [[Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`]] - `rationale_for` [EXTRACTED]
@@ -27,10 +27,10 @@ tags:
 - [[a2a_policy.py]] - `imports` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[can_use_tool_from_origin]] - `calls` [EXTRACTED]
-- [[egress_filter.py_1]] - `imports` [EXTRACTED]
+- [[egress_filter.py]] - `imports` [EXTRACTED]
 - [[mcp_policy.py]] - `imports` [EXTRACTED]
 - [[module_stats.py]] - `contains` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

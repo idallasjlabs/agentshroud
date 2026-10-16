@@ -12,7 +12,7 @@ tags:
 # security-report-retention.sh script
 
 ## Connections
-- [[log()_5]] - `calls` [EXTRACTED]
+- [[log()_4]] - `calls` [EXTRACTED]
 - [[security-report-retention.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

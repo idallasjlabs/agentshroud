@@ -12,13 +12,13 @@ tags:
 # test_soc_realtime_coverage.py
 
 ## Connections
-- [[Action_2]] - `imports` [EXTRACTED]
+- [[Action_1]] - `imports` [EXTRACTED]
 - [[PermissionResult]] - `imports` [EXTRACTED]
 - [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_91]] - `imports` [EXTRACTED]
+- [[Role_22]] - `imports` [EXTRACTED]
 - [[SCLCaller_1]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # summarize()
 
 ## Connections
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
 - [[Compute resulting-status counts and gap themes from triage results. Args…]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
 - [[final_status()]] - `calls` [EXTRACTED]

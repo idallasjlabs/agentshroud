@@ -1,24 +1,19 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "pytest.ini"
-location: "L10"
+community: "All Dependencies.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/All_Dependenciesmd
 ---
 
-# pytest.ini
+# pytest.ini.md
 
 ## Connections
-- [[Contents]] - `contains` [EXTRACTED]
-- [[Coverage Requirements_4]] - `contains` [EXTRACTED]
-- [[Purpose_193]] - `contains` [EXTRACTED]
-- [[Related Notes_70]] - `contains` [EXTRACTED]
-- [[Test Execution]] - `contains` [EXTRACTED]
-- [[Test Locations]] - `contains` [EXTRACTED]
-- [[Why `tmppytest_cache`]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[ci-workflows]] - `references` [EXTRACTED]
 - [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "rbac_config.py"
+community: "telegram_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/telegram_proxypy
 ---
 
 # rbac_config.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[Group]] - `contains` [EXTRACTED]
 - [[GroupRegistry]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[RBACConfig_4]] - `contains` [EXTRACTED]
-- [[Role_91]] - `contains` [EXTRACTED]
+- [[Role_22]] - `contains` [EXTRACTED]
 - [[TeamsConfig_2]] - `imports` [EXTRACTED]
-- [[ToolTier_2]] - `contains` [EXTRACTED]
+- [[ToolTier]] - `contains` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `contains` [EXTRACTED]
 - [[_load_collab_store()]] - `contains` [EXTRACTED]
 - [[_load_persisted_groups()]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[socauth.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/rbac_configpy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

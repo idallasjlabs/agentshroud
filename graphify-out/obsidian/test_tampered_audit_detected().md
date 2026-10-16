@@ -12,7 +12,7 @@ tags:
 # test_tampered_audit_detected()
 
 ## Connections
-- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()]] - `calls` [EXTRACTED]
 - [[Insert messages, modify a hash — verify chain integrity check fails.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

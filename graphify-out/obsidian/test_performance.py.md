@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `contains` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[TestPromptGuardPerformance]] - `contains` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `contains` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `contains` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
 - [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 

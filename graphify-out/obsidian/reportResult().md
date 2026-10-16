@@ -15,6 +15,6 @@ tags:
 - [[background.js]] - `references` [EXTRACTED]
 - [[clipPage()]] - `calls` [EXTRACTED]
 - [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[notify()]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/backgroundjs

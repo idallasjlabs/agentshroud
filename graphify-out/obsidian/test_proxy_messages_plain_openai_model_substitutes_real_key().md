@@ -17,7 +17,7 @@ tags:
 - [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[_fake_forward()_20]] - `contains` [EXTRACTED]
 - [[_fake_forward()_21]] - `indirect_call` [INFERRED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[fake_open()]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 

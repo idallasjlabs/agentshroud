@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Secret Backend Cascade (macOS Keychain → 1Password CLI → homedir file)]] - `references` [EXTRACTED]
-- [[fail()_1]] - `defines` [EXTRACTED]
+- [[fail()]] - `defines` [EXTRACTED]
 - [[pass()]] - `defines` [EXTRACTED]
 - [[test-op-auth.sh script]] - `contains` [EXTRACTED]
 

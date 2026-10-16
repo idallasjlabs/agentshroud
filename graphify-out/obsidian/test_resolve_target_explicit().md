@@ -12,7 +12,7 @@ tags:
 # test_resolve_target_explicit()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest_3]] - `calls` [EXTRACTED]
 - [[Test routing with explicit route_to]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

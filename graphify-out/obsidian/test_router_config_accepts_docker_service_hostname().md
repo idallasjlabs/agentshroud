@@ -12,7 +12,7 @@ tags:
 # test_router_config_accepts_docker_service_hostname()
 
 ## Connections
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
 - [[RouterConfig should accept single-label Docker service hostnames.]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 

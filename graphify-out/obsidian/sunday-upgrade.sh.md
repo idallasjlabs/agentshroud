@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - `references` [EXTRACTED]
-- [[PATH_57]] - `defines` [EXTRACTED]
+- [[PATH_61]] - `defines` [EXTRACTED]
 - [[Same-day reinvocation verify-only, no rebuild]] - `conceptually_related_to` [EXTRACTED]
 - [[Shared working-tree collision between concurrent sessions]] - `conceptually_related_to` [EXTRACTED]
 - [[Sunday upgrade mission every component in dev and prod to latest stable, resolve every finding, dev first]] - `references` [EXTRACTED]

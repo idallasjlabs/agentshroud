@@ -12,7 +12,7 @@ tags:
 # preflight-check.sh
 
 ## Connections
-- [[check()_12]] - `defines` [EXTRACTED]
+- [[check()_11]] - `defines` [EXTRACTED]
 - [[infra-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[preflight-check.sh script]] - `contains` [EXTRACTED]
 - [[verify-proxy.sh]] - `semantically_similar_to` [INFERRED]

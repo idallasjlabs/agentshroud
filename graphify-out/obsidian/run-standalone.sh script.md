@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[cmd_down]] - `calls` [EXTRACTED]
 - [[cmd_logs]] - `calls` [EXTRACTED]
-- [[cmd_status]] - `calls` [EXTRACTED]
+- [[cmd_status_1]] - `calls` [EXTRACTED]
 - [[cmd_up]] - `calls` [EXTRACTED]
 - [[run-standalone.sh (Hermes docker run launcher)]] - `contains` [EXTRACTED]
 

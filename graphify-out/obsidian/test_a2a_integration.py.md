@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[A2APeerTestDouble]] - `contains` [EXTRACTED]
 - [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[A2AProxy_1]] - `imports` [EXTRACTED]
 - [[HermesA2AForwarder]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[_jsonrpc()_1]] - `contains` [EXTRACTED]
@@ -28,6 +28,6 @@ tags:
 - [[test_full_round_trip_allowed_request_reaches_the_peer()]] - `contains` [EXTRACTED]
 - [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `contains` [EXTRACTED]
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `contains` [EXTRACTED]
-- [[trust_manager()_1]] - `contains` [EXTRACTED]
+- [[trust_manager()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

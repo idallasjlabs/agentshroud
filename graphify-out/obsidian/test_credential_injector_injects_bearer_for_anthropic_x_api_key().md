@@ -17,7 +17,7 @@ tags:
 - [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[_TrackingInjector]] - `calls` [EXTRACTED]
 - [[_make_fake_urlopen()]] - `calls` [EXTRACTED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

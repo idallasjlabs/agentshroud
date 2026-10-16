@@ -12,7 +12,7 @@ tags:
 # test_proxy_without_trust_manager_does_not_raise()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[_StubForwarder_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]

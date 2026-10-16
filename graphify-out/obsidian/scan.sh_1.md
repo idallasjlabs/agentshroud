@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/scan.sh"
-type: "code"
-community: "FR3: System Integrity"
-location: "L1"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+type: "document"
+community: "Kill Switch"
+location: "L46"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/FR3_System_Integrity
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Kill_Switch
 ---
 
 # scan.sh
 
 ## Connections
-- [[dockerscriptssecurity-scan.sh]] - `semantically_similar_to` [INFERRED]
-- [[scan.sh script]] - `contains` [EXTRACTED]
-- [[security-scan.sh (unified scan dispatcher)]] - `semantically_similar_to` [INFERRED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

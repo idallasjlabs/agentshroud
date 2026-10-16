@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_fake_forward()_17]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 - [[ollama prefix is stripped during proxy_messages dispatch and normalization…]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `contains` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `contains` [EXTRACTED]
 - [[TestDashboardSecureCookie]] - `contains` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_17]] - `contains` [EXTRACTED]
+- [[client()_13]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy (telegram-api{path})]] - `imports` [EXTRACTED]

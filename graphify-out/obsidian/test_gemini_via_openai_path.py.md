@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "code"
-community: "test_claude_via_openai_path.py"
+community: "LLMProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/LLMProxy
 ---
 
 # test_gemini_via_openai_path.py
@@ -18,4 +18,4 @@ tags:
 - [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `contains` [EXTRACTED]
 - [[test_proxy_rewrites_gemini_via_openai_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

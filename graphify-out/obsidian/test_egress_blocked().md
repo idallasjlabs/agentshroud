@@ -12,7 +12,7 @@ tags:
 # test_egress_blocked()
 
 ## Connections
-- [[dot-process_outbound()_3]] - `calls` [EXTRACTED]
+- [[dot-process_outbound()]] - `calls` [EXTRACTED]
 - [[Configure egress filter to block a domain — verify denied.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

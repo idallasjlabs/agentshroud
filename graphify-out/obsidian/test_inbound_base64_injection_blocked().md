@@ -12,7 +12,7 @@ tags:
 # test_inbound_base64_injection_blocked()
 
 ## Connections
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 - [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 

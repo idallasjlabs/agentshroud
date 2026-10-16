@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[A2AProxy_1]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]

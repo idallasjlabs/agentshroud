@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
 - [[_TimeoutReader]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

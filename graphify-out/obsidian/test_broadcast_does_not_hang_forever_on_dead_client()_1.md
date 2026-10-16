@@ -12,10 +12,10 @@ tags:
 # test_broadcast_does_not_hang_forever_on_dead_client()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[_HangingWebSocket_1]] - `calls` [EXTRACTED]
 - [[broadcast() itself must bound its wait per-client, not just rely on     callers]] - `rationale_for` [EXTRACTED]

@@ -18,6 +18,6 @@ tags:
 - [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - `rationale_for` [EXTRACTED]
 - [[_intel_store()]] - `calls` [EXTRACTED]
 - [[_intel_verifier()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

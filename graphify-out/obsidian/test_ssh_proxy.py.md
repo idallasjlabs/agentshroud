@@ -14,14 +14,14 @@ tags:
 ## Connections
 - [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[TestExecute]] - `contains` [EXTRACTED]
 - [[TestInjectionNewline]] - `contains` [EXTRACTED]
 - [[TestIsAutoApproved]] - `contains` [EXTRACTED]
 - [[TestSSHDisabled]] - `contains` [EXTRACTED]
 - [[TestValidateCommand]] - `contains` [EXTRACTED]
-- [[proxy()_3]] - `contains` [EXTRACTED]
+- [[proxy()]] - `contains` [EXTRACTED]
 - [[ssh_config()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

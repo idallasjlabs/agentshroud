@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[alert_critical()]] - `calls` [EXTRACTED]
-- [[log()_2]] - `calls` [EXTRACTED]
+- [[log()_1]] - `calls` [EXTRACTED]
 - [[security-entrypoint.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

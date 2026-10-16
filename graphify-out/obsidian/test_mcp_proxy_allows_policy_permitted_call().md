@@ -15,7 +15,7 @@ tags:
 - [[A policy-permitted call passes the policy gate (inspectionpermission     layers]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 - [[_base_config()]] - `calls` [EXTRACTED]

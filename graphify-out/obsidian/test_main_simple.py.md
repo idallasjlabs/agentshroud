@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "AgentTarget"
+community: "Request"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Request
 ---
 
 # test_main_simple.py
 
 ## Connections
-- [[ApprovalDecision]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ApprovalDecision_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
 - [[limit_request_body()]] - `imports` [EXTRACTED]
 - [[log_requests()]] - `imports` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `contains` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Request

@@ -12,10 +12,10 @@ tags:
 # test_router_streaming.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
+- [[AgentTarget_3]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_mock_stream_response()]] - `contains` [EXTRACTED]
 - [[_sse_lines()]] - `contains` [EXTRACTED]
 - [[router()_2]] - `contains` [EXTRACTED]

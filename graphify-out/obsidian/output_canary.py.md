@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CanaryConfig]] - `contains` [EXTRACTED]
-- [[CanaryResult]] - `contains` [EXTRACTED]
+- [[CanaryResult_2]] - `contains` [EXTRACTED]
 - [[OutputCanary]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOutputCanary

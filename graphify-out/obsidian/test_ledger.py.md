@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[test_delete_entry()]] - `contains` [EXTRACTED]
 - [[test_delete_nonexistent()]] - `contains` [EXTRACTED]
 - [[test_get_entry()]] - `contains` [EXTRACTED]

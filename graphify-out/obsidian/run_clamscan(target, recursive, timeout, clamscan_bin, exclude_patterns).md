@@ -12,6 +12,6 @@ tags:
 # run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)
 
 ## Connections
-- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

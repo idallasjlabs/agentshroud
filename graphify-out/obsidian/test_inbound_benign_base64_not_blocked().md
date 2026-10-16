@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Ordinary base64 content with no injection indicators is forwarded.]] - `rationale_for` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxy

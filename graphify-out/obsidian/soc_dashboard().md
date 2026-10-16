@@ -12,7 +12,7 @@ tags:
 # soc_dashboard()
 
 ## Connections
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[Serve the unified SOC web dashboard.]] - `rationale_for` [EXTRACTED]
 - [[_minimal_dashboard_html()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

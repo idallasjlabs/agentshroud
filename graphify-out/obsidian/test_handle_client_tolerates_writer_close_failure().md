@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[StreamReader_2]] - `calls` [EXTRACTED]
+- [[StreamReader]] - `calls` [EXTRACTED]
 - [[_CloseRaisesWriter]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Items saved by one store instance are visible to another.]] - `rationale_for` [EXTRACTED]
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 

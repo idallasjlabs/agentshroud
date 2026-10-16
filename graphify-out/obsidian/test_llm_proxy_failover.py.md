@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
 - [[_call_proxy()]] - `contains` [EXTRACTED]
-- [[make_proxy()_1]] - `contains` [EXTRACTED]
+- [[make_proxy()]] - `contains` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_cooldown()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - `contains` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CollaboratorActivityTracker_1]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy]] - `imports` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `contains` [EXTRACTED]

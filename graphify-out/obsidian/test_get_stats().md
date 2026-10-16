@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L182"
+community: "make_event"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/make_event
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
+- [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/make_event

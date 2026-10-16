@@ -12,7 +12,7 @@ tags:
 # test_openai_target_returns_content_string()
 
 ## Connections
-- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[forward_to_agent extracts choices0.message.content and returns a string.]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 

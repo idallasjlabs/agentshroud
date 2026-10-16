@@ -15,7 +15,7 @@ tags:
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[_FakeToolACL]] - `calls` [EXTRACTED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[content_block_start with terminal_tool must be replaced with a text error block.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 

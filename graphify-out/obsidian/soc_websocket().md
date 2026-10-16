@@ -12,7 +12,7 @@ tags:
 # soc_websocket()
 
 ## Connections
-- [[WebSocket]] - `references` [EXTRACTED]
+- [[WebSocket_2]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # test_shortcut_rejects_unknown_content_type()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest_3]] - `calls` [EXTRACTED]
 - [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 

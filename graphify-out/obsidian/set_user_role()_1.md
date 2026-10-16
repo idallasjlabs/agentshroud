@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[RBACConfig_4]] - `calls` [EXTRACTED]
-- [[RBACManager_2]] - `calls` [EXTRACTED]
-- [[Role_91]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[Role_22]] - `calls` [EXTRACTED]
 - [[SCLCaller]] - `references` [EXTRACTED]
 - [[SetRoleRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

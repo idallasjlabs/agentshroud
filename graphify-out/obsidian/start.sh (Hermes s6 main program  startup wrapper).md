@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Crash backoff escalation (rolling 10-minute start window)]] - `implements` [EXTRACTED]
-- [[Dev Hermes polling prod's Hermes Telegram bot]] - `references` [EXTRACTED]
 - [[HERMES_HOME]] - `defines` [EXTRACTED]
 - [[HOME_1]] - `defines` [EXTRACTED]
 - [[Missing-secret visibility banner (expected secrets loop)]] - `implements` [EXTRACTED]

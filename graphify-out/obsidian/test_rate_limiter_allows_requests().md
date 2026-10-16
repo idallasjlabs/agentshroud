@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "create_auth_dependency"
+community: "RateLimiter"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/RateLimiter
 ---
 
 # test_rate_limiter_allows_requests()
@@ -16,4 +16,4 @@ tags:
 - [[Test rate limiter allows requests under limit]] - `rationale_for` [EXTRACTED]
 - [[test_auth.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

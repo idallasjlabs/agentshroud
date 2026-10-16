@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - `rationale_for` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 

@@ -22,6 +22,6 @@ tags:
 - [[TestProvisionGroupChannel]] - `contains` [EXTRACTED]
 - [[TestRedactionCountErrorSwallow]] - `contains` [EXTRACTED]
 - [[_RaisingRedactionResult]] - `contains` [EXTRACTED]
-- [[_make_proxy()_2]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

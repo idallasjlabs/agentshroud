@@ -12,7 +12,7 @@ tags:
 # passthrough_proxy()
 
 ## Connections
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

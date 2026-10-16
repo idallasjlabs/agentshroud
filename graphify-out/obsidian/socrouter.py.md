@@ -12,7 +12,7 @@ tags:
 # soc/router.py
 
 ## Connections
-- [[Action_2]] - `imports` [EXTRACTED]
+- [[Action_1]] - `imports` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `contains` [EXTRACTED]
 - [[AddGroupMemberRequest]] - `contains` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `contains` [EXTRACTED]
@@ -32,10 +32,10 @@ tags:
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[LoginRequest]] - `contains` [EXTRACTED]
 - [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[RBACManager_2]] - `imports` [EXTRACTED]
+- [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[RenameGroupRequest]] - `contains` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_91]] - `imports` [EXTRACTED]
+- [[Role_22]] - `imports` [EXTRACTED]
 - [[SCLCaller_1]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLInterface_1]] - `imports` [EXTRACTED]
@@ -86,7 +86,7 @@ tags:
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[get_collaborator_activity()]] - `contains` [EXTRACTED]
 - [[get_collector()]] - `imports` [EXTRACTED]
-- [[get_config()]] - `contains` [EXTRACTED]
+- [[get_config()_1]] - `contains` [EXTRACTED]
 - [[get_egress_history()]] - `contains` [EXTRACTED]
 - [[get_egress_log()]] - `contains` [EXTRACTED]
 - [[get_egress_pending()]] - `contains` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - `rationale_for` [EXTRACTED]
-- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

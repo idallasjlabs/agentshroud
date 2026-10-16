@@ -12,7 +12,7 @@ tags:
 # test-container-runtime.sh script
 
 ## Connections
-- [[check()_2]] - `calls` [EXTRACTED]
+- [[check()]] - `calls` [EXTRACTED]
 - [[make_fake_bin()]] - `calls` [EXTRACTED]
 - [[test-container-runtime.sh]] - `contains` [EXTRACTED]
 

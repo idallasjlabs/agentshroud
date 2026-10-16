@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "AgentTarget"
+community: "Request"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Request
 ---
 
 # test_forward_request_validation_empty_content()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest_3]] - `calls` [EXTRACTED]
 - [[Test ForwardRequest rejects empty content]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Request

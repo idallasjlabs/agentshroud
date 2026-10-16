@@ -12,7 +12,7 @@ tags:
 # test_health_check_uses_health_path()
 
 ## Connections
-- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[health_check builds URL from target.health_path.]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "run_trivy_scan"
+community: "test_daily_cve_report.py"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run_trivy_scan
+  - community/test_daily_cve_reportpy
 ---
 
 # scan_type='image' is passed correctly to the trivy binary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_run_image_scan_type()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run_trivy_scan
+#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

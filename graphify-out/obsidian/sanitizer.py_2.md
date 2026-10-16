@@ -1,29 +1,26 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
-type: "code"
-community: "ToolResultSanitizer"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+type: "document"
+community: "sanitizer.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/sanitizerpy
 ---
 
 # sanitizer.py
 
 ## Connections
-- [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `contains` [EXTRACTED]
-- [[RedactionDetail_1]] - `imports` [EXTRACTED]
-- [[RedactionResult_3]] - `imports` [EXTRACTED]
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
-- [[gatewayREADME]] - `references` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[verify.sh]] - `references` [EXTRACTED]
+- [[Config Keys Read_3]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_4]] - `contains` [EXTRACTED]
+- [[Function Details_14]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_3]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_16]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_4]] - `contains` [EXTRACTED]
+- [[Purpose_123]] - `contains` [EXTRACTED]
+- [[Related_20]] - `contains` [EXTRACTED]
+- [[Responsibilities_18]] - `contains` [EXTRACTED]
+- [[sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

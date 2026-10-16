@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "forward.py"
+community: "test_forward_stream.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/test_forward_streampy
 ---
 
 # test_resolve_trust_level_non_owner_user_id_does_not_upgrade()
@@ -17,4 +17,4 @@ tags:
 - [[_target()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

@@ -12,7 +12,7 @@ tags:
 # test_prompt_guard_encoded_check_uses_full_ruleset()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 

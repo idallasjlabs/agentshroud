@@ -12,10 +12,10 @@ tags:
 # test_router_openai_translation.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
+- [[AgentTarget_3]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_mock_response()]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `references` [EXTRACTED]
 - [[ingest_apimodels.py]] - `references` [EXTRACTED]

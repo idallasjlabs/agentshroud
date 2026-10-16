@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - `references` [EXTRACTED]
-- [[client()]] - `contains` [EXTRACTED]
+- [[client()_2]] - `contains` [EXTRACTED]
 - [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - `contains` [EXTRACTED]
 - [[test_chat_completions_alias_routes_to_v1_path()]] - `contains` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `semantically_similar_to` [INFERRED]

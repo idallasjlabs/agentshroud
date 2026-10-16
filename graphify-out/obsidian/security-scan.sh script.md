@@ -1,22 +1,22 @@
 ---
-source_file: "docker/scripts/security-scan.sh"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "docker/scripts/security-scan.sh"
+community: "scripts/security-scan.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/scripts/security-scansh
+  - community/scripts/security-scansh
 ---
 
 # security-scan.sh script
 
 ## Connections
-- [[dockerscriptssecurity-scan.sh]] - `contains` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
-- [[run_clamav()]] - `calls` [EXTRACTED]
-- [[run_oscap()]] - `calls` [EXTRACTED]
-- [[run_sbom()]] - `calls` [EXTRACTED]
-- [[run_trivy()]] - `calls` [EXTRACTED]
+- [[error()]] - `calls` [EXTRACTED]
+- [[info()]] - `calls` [EXTRACTED]
+- [[require_tool()]] - `calls` [EXTRACTED]
+- [[scriptssecurity-scan.sh]] - `contains` [EXTRACTED]
+- [[success()]] - `calls` [EXTRACTED]
+- [[warn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

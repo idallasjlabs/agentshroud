@@ -12,7 +12,7 @@ tags:
 # resolve_config_path()
 
 ## Connections
-- [[Path_21]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
 - [[Resolve the config file path using the same search order as load_config().]] - `rationale_for` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]

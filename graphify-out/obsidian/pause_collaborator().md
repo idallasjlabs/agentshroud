@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "rbac_config.py"
+community: "telegram_proxy.py"
 location: "L487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/telegram_proxypy
 ---
 
 # pause_collaborator()
@@ -22,4 +22,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/rbac_configpy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

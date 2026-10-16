@@ -1,27 +1,45 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "jira_weekly_review.py"
-location: "L281"
+community: "MiddlewareManager"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/MiddlewareManager
 ---
 
 # run()
 
 ## Connections
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - `rationale_for` [EXTRACTED]
-- [[_git_commits_last_week()]] - `calls` [EXTRACTED]
-- [[build_comment_payload()_2]] - `calls` [EXTRACTED]
-- [[build_weekly_summary()]] - `calls` [EXTRACTED]
-- [[extract_scrum_items()]] - `calls` [EXTRACTED]
-- [[fetch_op_secret()_2]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket run()]] - `semantically_similar_to` [INFERRED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[post_comment()]] - `calls` [EXTRACTED]
-- [[resolve_cloud_id()_2]] - `calls` [EXTRACTED]
-- [[test_jira_weekly_review.py]] - `calls` [EXTRACTED]
+- [[ApprovalHardening]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[Path_62]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[fail()_4]] - `calls` [EXTRACTED]
+- [[ok()]] - `calls` [EXTRACTED]
+- [[warn()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

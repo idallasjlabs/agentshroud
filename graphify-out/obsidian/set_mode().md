@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "test_observatory_mode.py"
+community: "ModeRequest"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/ModeRequest
 ---
 
 # set_mode()
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_second_put_cancels_previous_task()]] - `calls` [EXTRACTED]
 - [[ModeRequest]] - `references` [EXTRACTED]
 - [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -12,7 +12,7 @@ tags:
 # test_relay_idle_timeout_closes_writer()
 
 ## Connections
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

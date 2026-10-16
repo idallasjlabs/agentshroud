@@ -12,7 +12,7 @@ tags:
 # test_adversarial_task_ownership_hijack_attempt_over_real_http()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
 - [[_jsonrpc()_1]] - `calls` [EXTRACTED]

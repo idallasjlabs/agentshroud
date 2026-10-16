@@ -21,7 +21,7 @@ tags:
 - [[_plain_msg()]] - `contains` [EXTRACTED]
 - [[_tool_call_msg()]] - `contains` [EXTRACTED]
 - [[_tool_result_msg()]] - `contains` [EXTRACTED]
-- [[manager()_4]] - `contains` [EXTRACTED]
+- [[manager()_3]] - `contains` [EXTRACTED]
 - [[session_manager()_4]] - `contains` [EXTRACTED]
 - [[temp_workspace()_1]] - `contains` [EXTRACTED]
 

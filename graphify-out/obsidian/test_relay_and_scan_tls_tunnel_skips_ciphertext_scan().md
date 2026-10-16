@@ -15,8 +15,8 @@ tags:
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a     signat]] - `rationale_for` [EXTRACTED]
-- [[StreamReader_2]] - `calls` [EXTRACTED]
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[StreamReader]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
 - [[_capture_scans()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

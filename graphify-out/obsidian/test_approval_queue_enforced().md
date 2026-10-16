@@ -12,7 +12,7 @@ tags:
 # test_approval_queue_enforced()
 
 ## Connections
-- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()]] - `calls` [EXTRACTED]
 - [[Send command requiring approval — verify queued, not forwarded.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

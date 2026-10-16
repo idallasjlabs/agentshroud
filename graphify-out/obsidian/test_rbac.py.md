@@ -12,13 +12,13 @@ tags:
 # test_rbac.py
 
 ## Connections
-- [[Action_2]] - `imports` [EXTRACTED]
+- [[Action_1]] - `imports` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
 - [[RBACConfig_4]] - `tests` [EXTRACTED]
-- [[RBACManager_2]] - `tests` [EXTRACTED]
+- [[RBACManager_1]] - `tests` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_91]] - `imports` [EXTRACTED]
+- [[Role_22]] - `imports` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `contains` [EXTRACTED]
 - [[TestGroupRegistry]] - `contains` [EXTRACTED]
 - [[TestRBACConfig]] - `contains` [EXTRACTED]

@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "python-jose"
-location: "L9"
+community: "test_security.py"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/python-jose
+  - community/test_securitypy
 ---
 
-# python-jose
+# python-jose.md
 
 ## Connections
-- [[Auth Methods]] - `contains` [EXTRACTED]
-- [[Current Usage]] - `contains` [EXTRACTED]
-- [[Key Features]] - `contains` [EXTRACTED]
-- [[Purpose_6]] - `contains` [EXTRACTED]
-- [[Related Notes_9]] - `contains` [EXTRACTED]
-- [[Security Note]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[auth.py_1]] - `references` [INFERRED]
 - [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/python-jose
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

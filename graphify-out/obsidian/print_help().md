@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[chat_console.py]] - `contains` [EXTRACTED]
-- [[main()_31]] - `calls` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/chat_consolepy

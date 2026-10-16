@@ -15,6 +15,6 @@ tags:
 - [[fail()_5]] - `calls` [EXTRACTED]
 - [[ok()_1]] - `calls` [EXTRACTED]
 - [[tailscale-check.sh]] - `contains` [EXTRACTED]
-- [[warn()_4]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyDashboard

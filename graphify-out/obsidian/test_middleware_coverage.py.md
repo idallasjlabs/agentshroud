@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
 - [[MiddlewareResult]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[TestAnalyzeRequestForRBAC]] - `contains` [EXTRACTED]
 - [[TestBrowserSecurity]] - `contains` [EXTRACTED]
 - [[TestClose]] - `contains` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[_req()_1]] - `contains` [EXTRACTED]
 - [[_scan_result()]] - `contains` [EXTRACTED]
 - [[_tool_req()]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `references` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 - [[mm()]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `references` [EXTRACTED]
 - [[temp_workspace()]] - `contains` [EXTRACTED]

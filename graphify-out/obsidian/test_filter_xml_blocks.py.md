@@ -12,7 +12,7 @@ tags:
 # test_filter_xml_blocks.py
 
 ## Connections
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_collapses_excessive_newlines()]] - `contains` [EXTRACTED]

@@ -20,7 +20,7 @@ tags:
 - [[TestVerifyKillswitch]] - `contains` [EXTRACTED]
 - [[_fake_stats()]] - `contains` [EXTRACTED]
 - [[config()_1]] - `contains` [EXTRACTED]
-- [[dispatcher()_1]] - `contains` [EXTRACTED]
+- [[dispatcher()]] - `contains` [EXTRACTED]
 - [[killswitch_config.py (KillSwitchConfig)]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py (KillSwitchMonitor)]] - `implements` [EXTRACTED]
 

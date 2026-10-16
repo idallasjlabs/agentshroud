@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `contains` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `contains` [EXTRACTED]
 - [[TestConcurrentWrites]] - `contains` [EXTRACTED]

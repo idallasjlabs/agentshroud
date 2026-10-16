@@ -12,7 +12,7 @@ tags:
 # run_full()
 
 ## Connections
-- [[fail()_2]] - `calls` [EXTRACTED]
+- [[fail()_1]] - `calls` [EXTRACTED]
 - [[info()_1]] - `calls` [EXTRACTED]
 - [[pass()_1]] - `calls` [EXTRACTED]
 - [[run_bypass()]] - `calls` [EXTRACTED]

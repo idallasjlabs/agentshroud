@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_4]] - `imports` [EXTRACTED]
+- [[ScanResult_3]] - `imports` [EXTRACTED]
 - [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillsManifest]] - `imports` [EXTRACTED]
 - [[_build_tree()]] - `contains` [EXTRACTED]

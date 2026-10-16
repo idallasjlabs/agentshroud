@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_stress.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L30"
+community: "ReportStore"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ReportStore
 ---
 
 # store()
 
 ## Connections
-- [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[test_approval_stress.py]] - `contains` [EXTRACTED]
+- [[ReportStore]] - `calls` [EXTRACTED]
+- [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ReportStore

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "container-net-diag.sh"
+community: "colima-health-check.sh"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/colima-health-checksh
 ---
 
 # pass()
@@ -17,4 +17,4 @@ tags:
 - [[http_test()]] - `calls` [EXTRACTED]
 - [[tcp_test()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `imports` [EXTRACTED]
 - [[_alert()]] - `contains` [EXTRACTED]
-- [[dispatcher()]] - `contains` [EXTRACTED]
+- [[dispatcher()_1]] - `contains` [EXTRACTED]
 - [[test_all_attempts_fail_logs_warning_not_error()]] - `contains` [EXTRACTED]
 - [[test_backoff_called_between_attempts()]] - `contains` [EXTRACTED]
 - [[test_dispatch_persists_alert_even_if_notification_fails()]] - `contains` [EXTRACTED]

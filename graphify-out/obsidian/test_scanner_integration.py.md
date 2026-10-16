@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestAggregateResults_1]] - `contains` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `contains` [EXTRACTED]
+- [[TestComputeScorecard]] - `contains` [EXTRACTED]
 - [[TestGetClamavSummary]] - `contains` [EXTRACTED]
 - [[TestGetFalcoSummary]] - `contains` [EXTRACTED]
 - [[TestGetOpenscapSummary]] - `contains` [EXTRACTED]

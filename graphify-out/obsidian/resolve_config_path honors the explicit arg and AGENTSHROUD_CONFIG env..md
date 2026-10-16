@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "rationale"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolve_config_path_explicit_and_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -12,7 +12,7 @@ tags:
 # test_audit_chain_integrity()
 
 ## Connections
-- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()]] - `calls` [EXTRACTED]
 - [[Send 10 messages — verify all in ledger with valid SHA-256 chain.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

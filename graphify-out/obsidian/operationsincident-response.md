@@ -16,7 +16,7 @@ tags:
 - [[dot-agentsskillsi-productionREADME]] - `contains` [EXTRACTED]
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
 - [[Incident Response (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Purpose_63]] - `contains` [EXTRACTED]
+- [[Purpose_65]] - `contains` [EXTRACTED]
 - [[Related Skills_52]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 - [[Usage_56]] - `contains` [EXTRACTED]

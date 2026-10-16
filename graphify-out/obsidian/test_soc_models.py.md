@@ -12,13 +12,13 @@ tags:
 # test_soc_models.py
 
 ## Connections
-- [[ContributorRecord]] - `imports` [EXTRACTED]
+- [[ContributorRecord_1]] - `imports` [EXTRACTED]
 - [[EgressRequest]] - `imports` [EXTRACTED]
 - [[EgressStatus]] - `imports` [EXTRACTED]
 - [[HealthStatus_1]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
 - [[ResourceUsage_1]] - `imports` [EXTRACTED]
-- [[RiskLevel_4]] - `imports` [EXTRACTED]
+- [[RiskLevel_5]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]

@@ -16,7 +16,7 @@ tags:
 - [[dot-test_valid_token_authenticates()]] - `calls` [EXTRACTED]
 - [[HTTPAuthorizationCredentials]] - `references` [EXTRACTED]
 - [[Require valid Bearer token for all management endpoints.]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]

@@ -12,9 +12,9 @@ tags:
 # test_enforce_defaults.py
 
 ## Connections
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[SecurityConfig]] - `imports` [EXTRACTED]
+- [[SecurityConfig_4]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[TestEnforceDefaults]] - `contains` [EXTRACTED]
 - [[TestModuleEnforcement]] - `contains` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `references` [EXTRACTED]
-- [[fail()_2]] - `calls` [EXTRACTED]
+- [[fail()_1]] - `calls` [EXTRACTED]
 - [[info()_1]] - `calls` [EXTRACTED]
 - [[pass()_1]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `references` [EXTRACTED]

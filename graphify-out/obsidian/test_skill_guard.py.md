@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_4]] - `imports` [EXTRACTED]
+- [[ScanResult_3]] - `imports` [EXTRACTED]
 - [[Severity]] - `imports` [EXTRACTED]
 - [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillScanError]] - `imports` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[_write_tree()]] - `contains` [EXTRACTED]
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - `references` [EXTRACTED]
 - [[gatewayskillsscan.py (scan CLI)]] - `references` [EXTRACTED]
-- [[guard()_1]] - `contains` [EXTRACTED]
+- [[guard()]] - `contains` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]

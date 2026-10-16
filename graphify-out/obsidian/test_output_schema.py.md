@@ -15,6 +15,6 @@ tags:
 - [[OutputSchemaEnforcer]] - `imports` [EXTRACTED]
 - [[SchemaRule]] - `imports` [EXTRACTED]
 - [[TestOutputSchemaEnforcer]] - `contains` [EXTRACTED]
-- [[enforcer()]] - `contains` [EXTRACTED]
+- [[enforcer()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

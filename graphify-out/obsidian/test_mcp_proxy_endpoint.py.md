@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ProxyResult]] - `imports` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `contains` [EXTRACTED]
-- [[client()_15]] - `contains` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `conceptually_related_to` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `conceptually_related_to` [INFERRED]
 

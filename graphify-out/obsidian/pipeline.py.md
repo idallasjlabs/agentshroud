@@ -1,30 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
-type: "code"
-community: "AuditChain"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+type: "document"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/pipelinepy__Security_Pipeline
 ---
 
-# pipeline.py
+# pipeline.py.md
 
 ## Connections
-- [[AuditChain]] - `contains` [EXTRACTED]
-- [[AuditChainEntry]] - `contains` [EXTRACTED]
-- [[BotIncidentSeverity]] - `imports` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
-- [[FilterResult]] - `imports` [EXTRACTED]
-- [[InjectionAction]] - `imports` [EXTRACTED]
-- [[PipelineAction]] - `contains` [EXTRACTED]
-- [[PipelineResult_1]] - `contains` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_2]] - `contains` [EXTRACTED]
-- [[ViolationType]] - `imports` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `references` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
