@@ -23,7 +23,12 @@
 # Services exposed:
 #   :8080/      → Gateway API (port 8080)          https://<host>:8080/
 #   :18789/     → Control UI (port 18789)           https://<host>:18789/
-#   :9119/      → Hermes dashboard, via gateway      https://<host>:9119/
+#   :9119/      → Hermes dashboard (direct forwarder) https://<host>:9119/
+#                 2026-10-16: RESTORED to proxy 127.0.0.1:9119 (the gateway container's
+#                 published TCP forwarder to Hermes) — the owner's working config from
+#                 before 2026-10-08; the gateway-route variant below is what Funnel
+#                 /hermes uses. Owner directive: keep this exactly as it worked.
+#   /hermes     → Hermes dashboard via gateway        https://<host>/hermes (public Funnel, for Conduit iOS)
 #                 (proxies to gateway:8080/hermes-dashboard/, NOT directly to
 #                 Hermes port 9119 -- Hermes is on agentshroud-isolated
 #                 [internal:true] specifically so it can't be reached except
@@ -79,8 +84,8 @@ cmd_start() {
     echo "  → Control UI :${CONTROL_UI_PORT} → http://127.0.0.1:${CONTROL_UI_PORT}"
     tailscale serve --bg --https=${CONTROL_UI_PORT} http://127.0.0.1:${CONTROL_UI_PORT}
 
-    echo "  → Hermes dashboard :${HERMES_DASH_PORT} → gateway:${GATEWAY_PORT}/hermes-dashboard/ (NOT direct to Hermes — see header note)"
-    tailscale serve --bg --https=${HERMES_DASH_PORT} http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/
+    echo "  → Hermes dashboard :${HERMES_DASH_PORT} → http://127.0.0.1:${HERMES_DASH_PORT} (gateway TCP forwarder → Hermes; restored 2026-10-16, see header note)"
+    tailscale serve --bg --https=${HERMES_DASH_PORT} http://127.0.0.1:${HERMES_DASH_PORT}
 
     echo "  → Hermes OpenAI API :${HERMES_API_PORT} → http://127.0.0.1:${HERMES_API_PORT}"
     tailscale serve --bg --https=${HERMES_API_PORT} http://127.0.0.1:${HERMES_API_PORT}
@@ -94,6 +99,13 @@ cmd_start() {
     echo "  → ESP32 voice Funnel :443/voice → http://127.0.0.1:${VOICE_GATEWAY_PORT}/voice"
     tailscale funnel --bg --set-path=/voice "http://127.0.0.1:${VOICE_GATEWAY_PORT}/voice"
 
+    # 2026-10-16 (owner decision): Hermes dashboard also published via Funnel so the
+    # Hermes Conduit iOS app works from devices whose DNS resolves *.ts.net publicly
+    # (public DNS points at Funnel ingress, which only carries :443). Public internet
+    # exposure, protected by the dashboard password + the gateway's middleware.
+    echo "  → Hermes dashboard Funnel :443/hermes → http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/"
+    tailscale funnel --bg --set-path=/hermes "http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/"
+
     echo "  → Uptime monitor Funnel :443/health → http://127.0.0.1:${VOICE_GATEWAY_PORT}/health"
     tailscale funnel --bg --set-path=/health "http://127.0.0.1:${VOICE_GATEWAY_PORT}/health"
 
@@ -102,7 +114,8 @@ cmd_start() {
     HOSTNAME=$(tailscale status --self --json | python3 -c "import sys,json; print(json.load(sys.stdin)['Self']['DNSName'].rstrip('.'))" 2>/dev/null || echo "<your-tailscale-hostname>")  # python3 OK here: runs on host, not in conda env
     echo "  Gateway:         https://${HOSTNAME}:${GATEWAY_PORT}/"
     echo "  Control:         https://${HOSTNAME}:${CONTROL_UI_PORT}/"
-    echo "  Hermes dashboard:https://${HOSTNAME}:${HERMES_DASH_PORT}/"
+    echo "  Hermes dashboard:https://${HOSTNAME}:${HERMES_DASH_PORT}/  (tailnet)"
+    echo "  Hermes dashboard:https://${HOSTNAME}/hermes  (public Funnel — Conduit iOS)"
     echo "  Hermes API:      https://${HOSTNAME}:${HERMES_API_PORT}/v1"
     echo "  Voice Gateway:   wss://${HOSTNAME}:${VOICE_GATEWAY_PORT}/voice"
     echo "  ESP32 voice:     wss://${HOSTNAME}/voice  (public Funnel — TEMPORARY, see header note)"
