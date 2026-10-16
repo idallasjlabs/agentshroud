@@ -465,8 +465,18 @@ services:
     tmpfs:
       - /run
       - /tmp
+    # The stock image ships no healthcheck, so this was the one container that
+    # only ever showed "running" with no health state. /_ping is proxied
+    # through to dockerd, so a 200 here proves both HAProxy and the upstream
+    # socket are answering, not just that the process exists.
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:2375/_ping || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
 
-  # ── Bot ──────────────────────────────────────────────────────────────────────
+  # ── Bot──────────────────────────────────────────────────────────────────────
   # OpenClaw agent. Fully isolated — no direct internet, no host access.
   # All egress through gateway proxy. DNS: Docker internal only.
   openclaw:

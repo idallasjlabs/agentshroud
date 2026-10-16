@@ -142,7 +142,19 @@ Last commit on or before 2026-10-10: `5ed8d4596a` (2026-10-08 06:26 — nothing 
    Equivalent change was independently reported as already applied live by prod;
    this commit makes it the repo's actual state so a future rebuild doesn't silently
    revert it back to `mode=all` and reintroduce the failure.
-   **Status: done, committed.**
+   **Correction (07:07 EDT): this is NOT durable yet on any running container.**
+   `docker/bots/openclaw/Dockerfile:280` bakes the script into the image, so the running
+   OpenClaw containers (dev and prod) still execute the old `mode all` line on every boot
+   until the OpenClaw image is rebuilt. Confirmed on dev after a full clean recreate: init
+   logged `Sandbox config applied (mode=all ...)` and a real Telegram message failed with
+   the sandbox mount error. Live stopgap re-applied on dev with
+   `openclaw config set agents.defaults.sandbox.mode off` — OpenClaw hot-reloads it
+   (`[reload] config hot reload applied`), no restart needed, but it is lost on the next
+   container restart. The next image rebuild (the Sunday upgrade on 2026-10-18 rebuilds
+   every image from `main`) bakes the repo fix in. Until then: if OpenClaw restarts on
+   either host, re-run that `config set`.
+   **Status: committed in repo; live-applied on dev (and reported live-applied on prod);
+   durable only after the next image rebuild.**
 
 ## Why a blanket revert to Oct 10 was not done (for the record)
 
@@ -189,6 +201,59 @@ which is the purpose of this document.
   cron log, and a live Telegram send-test separately confirmed outbound delivery works in
   general, but no log evidence was ever found confirming that specific run's message actually
   reached Telegram (as opposed to just exiting 0). Not re-checked since.
+
+## Root cause of dev-side instability, found 06:53 EDT: lazydocker connection leak
+
+Dev's Colima VM showed `dockerd` at 418% CPU / 2.2 GB RSS / 68 min CPU time in a
+26-minute-old VM, `containerd` at 218%, with every container idle and zero daemon log
+warnings. `ss -x` inside the VM showed **565 established connections to docker.sock**;
+on the host, `lsof` showed 562 of them belonging to the single `ssh` process that is
+Colima's socket forward, and two long-running `lazydocker` instances (8.5 h and 2 h old).
+lazydocker holds a Docker event stream plus a per-container stats stream, and reconnects
+aggressively on error — every Colima bounce tonight made it reconnect and leak the old
+connections through the ssh forward. Killing the 8.5 h instance dropped dockerd to
+**0 connections and 8% CPU within six seconds**.
+
+This explains, on dev: the embedded-DNS "server misbehaving" failures (Wazuh manager →
+indexer, Wazuh agent → manager), pathologically slow `docker ps`, the health-check script
+repeatedly deciding "Docker is not responding" and bouncing Colima, and the host-level
+load spikes (dev's VM alone was ~6 cores). Prod's VM should be checked for the same
+pattern (`colima ssh -- sudo ss -x | grep -c docker.sock`; anything in the hundreds is
+the leak). Not a code bug in this repo; operational.
+
+## Dev bring-up failures 06:32-06:57 EDT: compose-version network hash + stale endpoints
+
+Three consecutive `scripts/asb up` runs on dev failed, each one layer deeper. Two
+independent causes stacked:
+
+1. **Compose version mismatch forces network recreation.** The live networks
+   (`agentshroud-bot_agentshroud-internal` / `-isolated`) carried
+   `com.docker.compose.version: 5.1.4` labels; the installed `docker-compose` is 5.6.0.
+   Their config-hash labels never match what 5.6.0 computes, so every `up` tries to
+   remove and recreate both networks. That removal is blocked by any running container
+   attached to them that compose doesn't manage in that invocation — on dev, the
+   voice-gateway (`--profile voice`) and the standalone Hermes container — so the sanctioned
+   `asb up` could not succeed without parking those first. Once recreated by 5.6.0 the
+   labels match and this stops happening.
+2. **Stale network-endpoint records after the Colima bounces.** Containers that lived
+   through tonight's VM restarts (gateway, OpenClaw, Wazuh manager/agent, socket proxy)
+   had config saying "attached to network X" while dockerd's live state did not — so
+   compose's disconnect-before-recreate step failed with
+   `container ... is not connected to the network ...` and aborted mid-run, leaving
+   whatever it had already stopped stopped. `docker network disconnect -f` clears the
+   record for a container you want to keep; `docker rm` of the stopped container is the
+   clean fix when compose is recreating it anyway (all persistent state is in named
+   volumes — `gateway-data`, `agentshroud-config`, etc. — none were removed).
+
+Fix applied: removed the stale stopped compose containers, force-detached Hermes and
+voice-gateway, ran `asb up` (recreates networks + stack with asb's secrets override —
+which selects `telegram_bot_token_marvin.txt`, the separate dev bot, for USER=agentshroud-bot),
+then started Hermes and voice-gateway back (they reattach by network name).
+
+**Prod should expect the same network-recreate behavior** on its next `asb up` if its
+networks also carry 5.1.4 labels and its compose binary is 5.6.0; with voice-gateway
+running it will fail the same way. Check: `docker network inspect <project>_agentshroud-internal
+--format '{{index .Labels "com.docker.compose.version"}}'` vs `docker-compose version --short`.
 
 ## What prod should document separately
 
