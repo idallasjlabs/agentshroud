@@ -11,6 +11,6 @@ tags:
 # MCPProxy.process_tool_result
 
 ## Connections
-- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPInspector_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPInspector

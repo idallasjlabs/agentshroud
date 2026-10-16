@@ -18,6 +18,6 @@ tags:
 - [[HTTP 502 — MCP Server Unreachable]] - `contains` [EXTRACTED]
 - [[MCP Proxy Errors]] - `contains` [EXTRACTED]
 - [[MCP Proxy Wrapper Issues (Bot Side)]] - `contains` [EXTRACTED]
-- [[Related Notes_43]] - `contains` [EXTRACTED]
+- [[Related Notes_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

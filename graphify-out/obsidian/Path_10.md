@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "._run_and_read"
-location: "L28"
+community: "hermes/skills/i-browser/browse.js"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/hermes/skills/i-browser/browsejs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[dot-_run_and_read()]] - `calls` [EXTRACTED]
-- [[dot-_run_and_read()_1]] - `calls` [EXTRACTED]
-- [[dot-_run_twice()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
-- [[_read_env()]] - `references` [EXTRACTED]
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

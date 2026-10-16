@@ -1,16 +1,17 @@
 ---
 source_file: "docker/config/openclaw/cron/jobs.json"
 type: "document"
-community: "apply-patches.js"
+community: "run-standalone.sh (Hermes docker run launcher)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/apply-patchesjs
+  - graphify/EXTRACTED
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # OpenClaw Cron Jobs Configuration
 
 ## Connections
+- [[S8 no raw sshagentshroud-bot@real Tailscale FQDN in baked bot config]] - `references` [EXTRACTED]
 - [[apply-patches.js]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/apply-patchesjs
+#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

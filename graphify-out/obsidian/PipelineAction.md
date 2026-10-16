@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # PipelineAction
@@ -17,8 +17,8 @@ tags:
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -53,8 +53,8 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
-- [[pipeline.py_1]] - `contains` [EXTRACTED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[pipeline.py]] - `contains` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PIIConfig
+#graphify/code #graphify/INFERRED #community/PipelineAction

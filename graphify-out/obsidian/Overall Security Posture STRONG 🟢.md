@@ -12,6 +12,6 @@ tags:
 # Overall Security Posture: **STRONG** 🟢
 
 ## Connections
-- [[Summary_13]] - `contains` [EXTRACTED]
+- [[Summary_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2

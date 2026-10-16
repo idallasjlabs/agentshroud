@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "MiddlewareManager"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/MiddlewareManager
 ---
 
 # Minimal RBAC stand-in with controllable check_permission results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

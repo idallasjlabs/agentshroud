@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L92"
+community: "AuditChain"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/AuditChain
 ---
 
 # Next Steps
 
 ## Connections
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/AuditChain

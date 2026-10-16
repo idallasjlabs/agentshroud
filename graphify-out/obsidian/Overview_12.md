@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "main.py"
-location: "L13"
+community: "AgentShroud Prerequisites"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/AgentShroud_Prerequisites
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

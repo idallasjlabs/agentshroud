@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/deploy.sh"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "deploy.sh"
-location: "L12"
+community: "ApprovalQueueConfig"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deploysh
+  - community/ApprovalQueueConfig
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[deploy.sh]] - `defines` [EXTRACTED]
+- [[dot-__init__()_45]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deploysh
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L205"
+community: "AgentTarget"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/AgentTarget
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[dot-__init__()_68]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()]] - `references` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_96]] - `contains` [EXTRACTED]
-- [[Related Skills_76]] - `contains` [EXTRACTED]
-- [[Usage_83]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[Purpose_131]] - `contains` [EXTRACTED]
+- [[Related Skills_99]] - `contains` [EXTRACTED]
+- [[Usage_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

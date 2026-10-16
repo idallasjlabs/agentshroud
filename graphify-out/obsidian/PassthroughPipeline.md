@@ -12,7 +12,7 @@ tags:
 # PassthroughPipeline
 
 ## Connections
-- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[dot-process_inbound()_5]] - `method` [EXTRACTED]
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]

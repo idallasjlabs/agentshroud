@@ -19,10 +19,10 @@ tags:
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyDecision]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[test_decision_records_soc_heatmap()]] - `references` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "8. Common Troubleshooting Scenarios"
+community: "AgentShroud Brand Guidelines"
 location: "L711"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Common_Troubleshooting_Scenarios
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Performance Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Common_Troubleshooting_Scenarios
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

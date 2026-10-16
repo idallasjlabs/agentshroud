@@ -1,18 +1,24 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "ApprovalQueueConfig"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/ApprovalQueueConfig
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_22]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-model_post_init()]] - `calls` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[_default_mtime()]] - `references` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
+- [[load_config()]] - `references` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # OutputCanary that always crashes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BrokenOutputCanary]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

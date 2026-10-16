@@ -12,6 +12,6 @@ tags:
 # Middleware (applied to all requests, outermost first)
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpy

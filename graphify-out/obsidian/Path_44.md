@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "export_bot"
-location: "L101"
+community: "test_cron_jobs_prompts.py"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/test_cron_jobs_promptspy
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

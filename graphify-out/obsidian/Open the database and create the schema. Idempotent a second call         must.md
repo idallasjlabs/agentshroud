@@ -12,6 +12,6 @@ tags:
 # Open the database and create the schema. Idempotent: a second call         must
 
 ## Connections
-- [[dot-initialize()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

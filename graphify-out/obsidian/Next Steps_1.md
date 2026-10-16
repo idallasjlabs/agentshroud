@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L366"
+community: "OpenClaw Workspace Usage Guide"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

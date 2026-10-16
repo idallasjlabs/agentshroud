@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L3"
+community: "Canvas Skill"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/Canvas_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

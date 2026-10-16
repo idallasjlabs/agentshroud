@@ -12,7 +12,7 @@ tags:
 # MultiAgentRouter
 
 ## Connections
-- [[dot-__init__()_183]] - `method` [EXTRACTED]
+- [[dot-__init__()_170]] - `method` [EXTRACTED]
 - [[dot-_build_forward_payload()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent()]] - `method` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[FastAPI]] - `uses` [INFERRED]
 - [[ForwardRequest_3]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
+- [[LogRecord]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - `rationale_for` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
@@ -47,7 +47,7 @@ tags:
 - [[ingest_apirouter.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
 - [[router()]] - `calls` [EXTRACTED]
 - [[router()_1]] - `calls` [EXTRACTED]
 - [[router()_2]] - `calls` [EXTRACTED]

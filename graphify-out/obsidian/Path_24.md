@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "SkillGuard"
-location: "L42"
+community: "test_dashboard.py"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SkillGuard
+  - graphify/EXTRACTED
+  - community/test_dashboardpy
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `calls` [EXTRACTED]
+- [[serve_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

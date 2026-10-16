@@ -12,15 +12,15 @@ tags:
 # MCPPolicyConfig
 
 ## Connections
-- [[dot-__init__()_128]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
-- [[dot-from_dict()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_117]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_3]] - `method` [EXTRACTED]
+- [[dot-from_dict()_3]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[Path_32]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]

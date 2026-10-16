@@ -1,24 +1,21 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "PII Pipeline Errors"
-location: "L9"
+community: "Error Index.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PII_Pipeline_Errors
+  - community/Error_Indexmd
 ---
 
-# PII Pipeline Errors
+# PII Pipeline Errors.md
 
 ## Connections
-- [[Excessive False Positives]] - `contains` [EXTRACTED]
-- [[PII Engine Not Initialized]] - `contains` [EXTRACTED]
-- [[PII Not Being Detected]] - `contains` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
 - [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
-- [[Redaction Breaking JSONStructured Data]] - `contains` [EXTRACTED]
-- [[Related Notes_5]] - `contains` [EXTRACTED]
-- [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
-- [[spaCy Model Issues]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks]] - `semantically_similar_to` [INFERRED]
+- [[presidio-analyzer]] - `references` [EXTRACTED]
+- [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
 community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L1"
@@ -12,10 +12,10 @@ tags:
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
-- [[Purpose_24]] - `contains` [EXTRACTED]
-- [[Related Skills_10]] - `contains` [EXTRACTED]
-- [[Usage_14]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
+- [[Related Skills_30]] - `contains` [EXTRACTED]
+- [[Usage_33]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

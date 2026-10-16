@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "concept"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # Large-write-then-network-activity staging/exfiltration pattern detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager

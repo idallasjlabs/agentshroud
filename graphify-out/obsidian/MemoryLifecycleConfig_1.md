@@ -12,7 +12,7 @@ tags:
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-__init__()_202]] - `references` [EXTRACTED]
+- [[dot-__init__()_205]] - `references` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

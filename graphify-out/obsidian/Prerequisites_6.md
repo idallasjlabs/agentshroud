@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "First Time Setup"
-location: "L11"
+community: "xurl — Agent Skill Reference"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Prerequisites
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

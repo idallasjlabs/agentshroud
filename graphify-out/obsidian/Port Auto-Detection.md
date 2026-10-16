@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "apply-patches.js"
 location: "L709"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/apply-patchesjs
 ---
 
 # Port Auto-Detection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

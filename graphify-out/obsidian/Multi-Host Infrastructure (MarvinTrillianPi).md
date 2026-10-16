@@ -11,7 +11,7 @@ tags:
 # Multi-Host Infrastructure (Marvin/Trillian/Pi)
 
 ## Connections
-- [[RUNBOOK_1]] - `references` [EXTRACTED]
+- [[RUNBOOK]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `conceptually_related_to` [INFERRED]
 
 #graphify/concept #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

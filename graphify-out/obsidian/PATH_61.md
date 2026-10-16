@@ -1,17 +1,19 @@
 ---
-source_file: "scripts/sunday-upgrade.sh"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "colima-health-check.sh"
-location: "L31"
+community: "CompetitiveIntelReport"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/CompetitiveIntelReport
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
+- [[dot-__init__()_193]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

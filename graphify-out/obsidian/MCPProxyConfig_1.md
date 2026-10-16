@@ -12,10 +12,10 @@ tags:
 # MCPProxyConfig
 
 ## Connections
-- [[dot-__init__()_43]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[dot-__init__()_70]] - `references` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/MCPPermissionManager

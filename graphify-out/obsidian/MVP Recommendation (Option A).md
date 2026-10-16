@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "rationale"
-community: "AgentShroud Security Value Proposition - Revised"
+community: "BotConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised
+  - community/BotConfig
 ---
 
 # MVP Recommendation (Option A)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

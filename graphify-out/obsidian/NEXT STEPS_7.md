@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Recovery Plan v0.4.0"
-location: "L507"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+location: "L608"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Recovery_Plan_v040
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
-# NEXT STEPS
+# Next Steps
 
 ## Connections
-- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
+- [[Decision Points]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Implementation Timeline]] - `contains` [EXTRACTED]
+- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

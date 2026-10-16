@@ -1,19 +1,21 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L55"
+community: "test_dashboard_endpoints.py"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/test_dashboard_endpointspy
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_132]] - `calls` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

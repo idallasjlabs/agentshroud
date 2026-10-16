@@ -12,6 +12,6 @@ tags:
 # Lifespan / Startup
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpy

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPInspector"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/MCPInspector
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[dot-__init__()_197]] - `references` [EXTRACTED]
-- [[InspectionResult_1]] - `uses` [INFERRED]
+- [[dot-__init__()_115]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/MCPInspector

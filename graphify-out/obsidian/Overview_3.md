@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L8"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

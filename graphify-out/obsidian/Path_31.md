@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L58"
+community: "KillSwitchMonitor"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - graphify/INFERRED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

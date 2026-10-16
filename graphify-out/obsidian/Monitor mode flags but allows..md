@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "SubagentMonitor"
+community: "TrustConfig"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/TrustConfig
 ---
 
 # Monitor mode flags but allows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_monitor_mode_allows_over_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

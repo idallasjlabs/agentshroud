@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "launch-instance.sh"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/launch-instancesh
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[dot-__init__()_54]] - `references` [EXTRACTED]
+- [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/launch-instancesh

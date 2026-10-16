@@ -1,20 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
-location: "L608"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[Decision Points]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Implementation Timeline]] - `contains` [EXTRACTED]
-- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

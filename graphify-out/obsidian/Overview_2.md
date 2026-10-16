@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "AgentShroud Audit Specification"
-location: "L3"
+community: "TestCrossBotTrustPivot"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/TestCrossBotTrustPivot
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/TestCrossBotTrustPivot

@@ -12,6 +12,6 @@ tags:
 # Main MCP proxy that intercepts tool calls and routes through security.      Tran
 
 ## Connections
-- [[MCPProxy]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "MCP Doctor (MCPM-DOCTOR)"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Doctor_MCPM-DOCTOR
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_52]] - `contains` [EXTRACTED]
-- [[Related Skills_38]] - `contains` [EXTRACTED]
-- [[Usage_42]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[Purpose_94]] - `contains` [EXTRACTED]
+- [[Related Skills_73]] - `contains` [EXTRACTED]
+- [[Usage_84]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

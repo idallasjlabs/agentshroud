@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
-location: "L3"
+community: "TestCrossBotTrustPivot"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/TestCrossBotTrustPivot
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/TestCrossBotTrustPivot

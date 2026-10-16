@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
 community: "PIIConfig"
-location: "L62"
+location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,9 +12,13 @@ tags:
 # PIISanitizer
 
 ## Connections
-- [[dot-_get_sanitizer_for_tool()]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[sanitizer()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PIIConfig

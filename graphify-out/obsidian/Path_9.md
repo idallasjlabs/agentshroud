@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/peer-review.sh"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L704"
+community: "gemini-review.py"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/gemini-reviewpy
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[main()_3]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[peer-review.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

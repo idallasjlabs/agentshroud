@@ -12,6 +12,6 @@ tags:
 # Lightweight container metadata returned by ps/inspect.
 
 ## Connections
-- [[ContainerInfo_3]] - `rationale_for` [EXTRACTED]
+- [[ContainerInfo]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy

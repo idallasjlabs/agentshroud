@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/macos.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
-location: "L3"
+community: "First Time Setup"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+  - community/First_Time_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
+- [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

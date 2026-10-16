@@ -1,17 +1,17 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
+community: "ModeRequest"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+  - community/ModeRequest
 ---
 
 # Primary: gVisor networking mode
 
 ## Connections
-- [[Root Cause_6]] - `contains` [EXTRACTED]
+- [[Root Cause_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

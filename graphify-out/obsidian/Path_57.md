@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "plan_remediation"
-location: "L89"
+community: "export-bot-conversations.py"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/export-bot-conversationspy
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

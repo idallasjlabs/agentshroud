@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPInspector_1]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPInspector

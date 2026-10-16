@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
-- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[Implementation Status_2]] - `contains` [EXTRACTED]
 - [[Implementation Strategy]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implementation_Status

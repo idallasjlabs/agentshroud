@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/deployment.md"
+source_file: "README.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
-location: "L5"
+community: "Quickstart"
+location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/Quickstart
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Quickstart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Quickstart

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_FakeRBAC"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_FakeRBAC
 ---
 
 # Platform
@@ -21,4 +21,4 @@ tags:
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

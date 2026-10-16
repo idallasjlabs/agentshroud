@@ -12,7 +12,7 @@ tags:
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_7]] - `method` [EXTRACTED]
+- [[dot-__init__()_6]] - `method` [EXTRACTED]
 - [[dot-_apply_filters()]] - `method` [EXTRACTED]
 - [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
@@ -50,7 +50,7 @@ tags:
 - [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py]] - `contains` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `uses` [INFERRED]
 - [[test_claude_via_openai_path.py]] - `imports` [EXTRACTED]

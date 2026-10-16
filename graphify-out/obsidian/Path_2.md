@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "test_apply_patches.js"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/test_apply_patchesjs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[dot-__init__()_32]] - `references` [EXTRACTED]
-- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
+- [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

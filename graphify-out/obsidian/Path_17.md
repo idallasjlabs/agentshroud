@@ -1,17 +1,22 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
-location: "L8"
+community: "SkillGuard"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - graphify/INFERRED
+  - community/SkillGuard
 ---
 
-# path
+# Path
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/code #graphify/INFERRED #community/SkillGuard

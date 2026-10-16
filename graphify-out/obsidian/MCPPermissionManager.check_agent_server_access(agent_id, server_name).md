@@ -12,6 +12,6 @@ tags:
 # MCPPermissionManager.check_agent_server_access(agent_id, server_name)
 
 ## Connections
-- [[Function Details_36]] - `contains` [EXTRACTED]
+- [[Function Details_35]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "MiddlewareManager"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/MiddlewareManager
 ---
 
 # Log warnings for any core modules running in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_monitor_mode_warnings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

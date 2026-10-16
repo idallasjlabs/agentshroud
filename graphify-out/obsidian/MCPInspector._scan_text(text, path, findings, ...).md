@@ -12,6 +12,6 @@ tags:
 # MCPInspector._scan_text(text, path, findings, ...)
 
 ## Connections
-- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

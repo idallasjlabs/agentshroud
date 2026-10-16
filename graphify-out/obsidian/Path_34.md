@@ -1,19 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "gen.py"
-location: "L22"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/archive_old_events
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

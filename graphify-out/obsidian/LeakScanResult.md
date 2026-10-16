@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # LeakScanResult
@@ -15,4 +15,4 @@ tags:
 - [[dot-scan_outbound()]] - `references` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

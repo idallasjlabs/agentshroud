@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "system-requirements.md"
+community: "telegram_proxy.py"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/system-requirementsmd
+  - community/telegram_proxypy
 ---
 
 # NFKC Normalization
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `conceptually_related_to` [AMBIGUOUS]
 - [[AgentShroud v0.8.0 Watchtower Release Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/AMBIGUOUS #community/system-requirementsmd
+#graphify/concept #graphify/AMBIGUOUS #community/telegram_proxypy

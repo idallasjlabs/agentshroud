@@ -12,7 +12,7 @@ tags:
 # Option 1: Gateway-Level Filtering (Recommended)
 
 ## Connections
-- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[Implementation Status_2]] - `contains` [EXTRACTED]
 - [[Implementation Strategy]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implementation_Status

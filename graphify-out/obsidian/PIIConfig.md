@@ -12,10 +12,10 @@ tags:
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_16]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_10]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]

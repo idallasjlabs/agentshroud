@@ -1,17 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "test_collaborator_tracker.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/test_collaborator_trackerpy
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
-- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[dot-__init__()_19]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Config Location]] - `contains` [EXTRACTED]
 - [[Key Intercepted Paths]] - `contains` [EXTRACTED]
-- [[Purpose_80]] - `contains` [EXTRACTED]
-- [[Related Notes_40]] - `contains` [EXTRACTED]
+- [[Purpose_115]] - `contains` [EXTRACTED]
+- [[Related Notes_49]] - `contains` [EXTRACTED]
 - [[Role in AgentShroud]] - `contains` [EXTRACTED]
 - [[Version Note]] - `contains` [EXTRACTED]
 - [[openclaw]] - `contains` [EXTRACTED]

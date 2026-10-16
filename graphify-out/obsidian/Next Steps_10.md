@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Tailscale Remote Access Setup"
-location: "L78"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tailscale_Remote_Access_Setup
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Next Steps
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPInspector"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/MCPInspector
 ---
 
 # MCPTransport
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
-- [[Any_80]] - `uses` [INFERRED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[Any_39]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
@@ -53,7 +53,7 @@ tags:
 - [[TestHttpSseConnection]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
@@ -69,11 +69,11 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `imports` [EXTRACTED]
+- [[mcp_config.py]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/MCPInspector

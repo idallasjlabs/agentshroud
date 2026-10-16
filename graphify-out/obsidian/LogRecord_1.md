@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L175"
+community: "TestOutboundInfoFilter"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/TestOutboundInfoFilter
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-emit()_1]] - `references` [EXTRACTED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

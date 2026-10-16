@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: ".__init__"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/__init__
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_39]] - `references` [EXTRACTED]
+- [[dot-__init__()_43]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/__init__
+#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

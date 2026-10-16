@@ -12,12 +12,12 @@ tags:
 # Presidio Analyzer
 
 ## Connections
-- [[Architecture]] - `contains` [EXTRACTED]
+- [[Architecture_1]] - `contains` [EXTRACTED]
 - [[Confidence Threshold]] - `contains` [EXTRACTED]
 - [[Configured Entities]] - `contains` [EXTRACTED]
 - [[NLP Backend]] - `contains` [EXTRACTED]
-- [[Purpose_2]] - `contains` [EXTRACTED]
-- [[Related Notes_4]] - `contains` [EXTRACTED]
+- [[Purpose_1]] - `contains` [EXTRACTED]
+- [[Related Notes_5]] - `contains` [EXTRACTED]
 - [[Where Used]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # PII detection and redaction configuration
 
 ## Connections
-- [[PIIConfig_1]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

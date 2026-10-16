@@ -12,7 +12,7 @@ tags:
 # OKE Channel — CPA Exam Context
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 - [[CPA Curriculum Frontmatter Addition_1]] - `contains` [EXTRACTED]
 - [[Coverage Types_1]] - `contains` [EXTRACTED]
 - [[Episode Closing_1]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "KeyVault"
+community: "AlertDispatcher"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AlertDispatcher
 ---
 
 # Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

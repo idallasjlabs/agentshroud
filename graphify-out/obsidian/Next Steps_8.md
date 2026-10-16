@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
+source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
-location: "L204"
+community: "AgentShroud Recovery Plan v0.4.0"
+location: "L507"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
-# Next Steps
+# NEXT STEPS
 
 ## Connections
-- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
+- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

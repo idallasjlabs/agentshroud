@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "First Time Setup"
-location: "L3"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

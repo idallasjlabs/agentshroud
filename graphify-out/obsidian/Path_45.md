@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "_build_image_targets"
-location: "L164"
+community: "test_security_toolchain.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

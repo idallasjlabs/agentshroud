@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L380"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[dot-__init__()_112]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

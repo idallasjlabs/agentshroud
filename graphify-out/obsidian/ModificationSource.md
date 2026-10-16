@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[dot-register_expected_write()]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]

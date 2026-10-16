@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L54"
+community: "gen.py"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/genpy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_136]] - `references` [EXTRACTED]
+- [[default_out_dir()]] - `references` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/genpy

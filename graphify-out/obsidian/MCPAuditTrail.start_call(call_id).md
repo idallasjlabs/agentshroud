@@ -12,6 +12,6 @@ tags:
 # MCPAuditTrail.start_call(call_id)
 
 ## Connections
-- [[Function Details_23]] - `contains` [EXTRACTED]
+- [[Function Details_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_auditpy

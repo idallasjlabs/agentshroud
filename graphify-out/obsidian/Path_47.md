@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_cron_jobs_prompts.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L40"
+community: "MiddlewareManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/MiddlewareManager
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[dot-__init__()_84]] - `references` [EXTRACTED]
+- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
+- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
+- [[dot-scan_file()_1]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

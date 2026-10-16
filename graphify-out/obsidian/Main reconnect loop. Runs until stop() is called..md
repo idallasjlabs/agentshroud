@@ -12,6 +12,6 @@ tags:
 # Main reconnect loop. Runs until stop() is called.
 
 ## Connections
-- [[dot-run()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

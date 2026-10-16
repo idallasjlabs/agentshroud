@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "UserSessionManager"
-location: "L89"
+community: "ApprovalQueueConfig"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/ApprovalQueueConfig
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_31]] - `calls` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

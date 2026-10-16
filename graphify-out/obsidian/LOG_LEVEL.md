@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
-- [[agentshroud.yaml_1]] - `references` [EXTRACTED]
+- [[agentshroud.yaml]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_filterpy

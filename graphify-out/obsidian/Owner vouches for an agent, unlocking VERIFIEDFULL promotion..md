@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # Owner vouches for an agent, unlocking VERIFIED/FULL promotion.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-vouch_for_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

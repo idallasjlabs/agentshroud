@@ -12,9 +12,9 @@ tags:
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_33]] - `contains` [EXTRACTED]
-- [[Related Skills_19]] - `contains` [EXTRACTED]
-- [[Usage_23]] - `contains` [EXTRACTED]
+- [[Purpose_23]] - `contains` [EXTRACTED]
+- [[Related Skills_12]] - `contains` [EXTRACTED]
+- [[Usage_15]] - `contains` [EXTRACTED]
 - [[hermesskillsi-oracleREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

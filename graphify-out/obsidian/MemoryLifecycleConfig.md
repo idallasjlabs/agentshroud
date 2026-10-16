@@ -12,14 +12,14 @@ tags:
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
-- [[Any_53]] - `uses` [INFERRED]
+- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
+- [[Any_49]] - `uses` [INFERRED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[Path_62]] - `uses` [INFERRED]
+- [[Path_63]] - `uses` [INFERRED]
 - [[RetentionAction]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]

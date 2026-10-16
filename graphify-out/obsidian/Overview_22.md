@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/slack/SKILL.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Actions"
-location: "L9"
+community: "Layer-by-Layer Breakdown"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Overview
 
 ## Connections
-- [[Slack Actions]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

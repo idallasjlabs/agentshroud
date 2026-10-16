@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L145"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/ConfigIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[save_report()]] - `references` [EXTRACTED]
+- [[dot-__init__()_91]] - `references` [EXTRACTED]
+- [[dot-_hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

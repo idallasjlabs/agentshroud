@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L11"
+community: "The 8D Investigation Process"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
 
 ## Connections
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

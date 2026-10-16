@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Browser-Fetch Skill for 1Password Share Links"
-location: "L9"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser-Fetch_Skill_for_1Password_Share_Links
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # Overview
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

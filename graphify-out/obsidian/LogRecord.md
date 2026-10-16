@@ -1,17 +1,26 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L63"
+community: "PIIConfig"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - graphify/INFERRED
+  - community/PIIConfig
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()]] - `references` [EXTRACTED]
+- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[EventBus]] - `uses` [INFERRED]
+- [[GroupRegistry]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/PIIConfig

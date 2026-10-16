@@ -12,7 +12,7 @@ tags:
 # MockEgressEvent
 
 ## Connections
-- [[dot-__init__()_37]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `method` [EXTRACTED]
 - [[EgressEvent]] - `shares_data_with` [AMBIGUOUS]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]

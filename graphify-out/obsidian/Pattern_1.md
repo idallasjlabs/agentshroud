@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L129"
+community: "MiddlewareManager"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/MiddlewareManager
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_score_signal()]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

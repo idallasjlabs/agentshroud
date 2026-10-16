@@ -15,7 +15,7 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mcpmREADME]] - `contains` [EXTRACTED]
 - [[Purpose_132]] - `contains` [EXTRACTED]
-- [[Related Skills_98]] - `contains` [EXTRACTED]
-- [[Usage_106]] - `contains` [EXTRACTED]
+- [[Related Skills_100]] - `contains` [EXTRACTED]
+- [[Usage_109]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

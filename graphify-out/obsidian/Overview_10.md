@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L9"
+community: "Common Queries"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Common_Queries
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

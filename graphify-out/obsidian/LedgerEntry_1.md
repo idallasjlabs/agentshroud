@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "DataLedger"
+community: "create_auth_dependency"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/create_auth_dependency
 ---
 
 # LedgerEntry
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-get_entry()]] - `references` [EXTRACTED]
 - [[dot-query()]] - `calls` [EXTRACTED]
-- [[dot-record()_1]] - `references` [EXTRACTED]
+- [[dot-record()]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

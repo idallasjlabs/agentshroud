@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "export_bot"
-location: "L96"
+community: "TestOAuthInjection"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/TestOAuthInjection
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

@@ -12,8 +12,8 @@ tags:
 # OwnerEmailRequest
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[email_send_owner()]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 

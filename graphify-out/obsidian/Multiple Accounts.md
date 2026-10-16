@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Common Operations"
-location: "L201"
+community: "Himalaya Configuration Reference"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Multiple Accounts
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Operations
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

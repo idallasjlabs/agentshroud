@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "archive_old_events"
-location: "L46"
+community: "AuditStore"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/AuditStore
 ---
 
 # Path
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[purge_low_value_events()]] - `references` [EXTRACTED]
+- [[dot-__init__()_121]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/AuditStore

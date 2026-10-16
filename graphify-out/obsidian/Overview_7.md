@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Common Queries"
-location: "L27"
+community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
 ---
 
 # Overview
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation

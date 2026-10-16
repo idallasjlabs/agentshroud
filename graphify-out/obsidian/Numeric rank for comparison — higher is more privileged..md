@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "RBACConfig"
+community: "GroupRoleResolver"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/GroupRoleResolver
 ---
 
 # Numeric rank for comparison — higher is more privileged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-rank()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

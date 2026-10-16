@@ -12,6 +12,6 @@ tags:
 # Live Reload
 
 ## Connections
-- [[Configuration_6]] - `contains` [EXTRACTED]
+- [[Configuration_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Canvas_Skill

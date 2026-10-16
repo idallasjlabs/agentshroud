@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "AuditChain"
+community: "TestOutboundInfoFilter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/TestOutboundInfoFilter
 ---
 
 # Outbound Information Filter Tests
@@ -14,4 +14,4 @@ tags:
 - [[OutboundInfoFilter]] - `references` [EXTRACTED]
 - [[PromptProtection]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

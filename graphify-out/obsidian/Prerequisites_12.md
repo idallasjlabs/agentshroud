@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/linux.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
-location: "L3"
+community: "Deployment Runbook — AgentShroud"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

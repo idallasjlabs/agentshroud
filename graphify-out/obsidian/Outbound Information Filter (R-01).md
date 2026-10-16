@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "agentshroud-ieee-paper.md"
+community: "WebProxyConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/WebProxyConfig
 ---
 
 # Outbound Information Filter (R-01)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig

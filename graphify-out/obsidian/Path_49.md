@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L66"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/FalcoAlertWatcher
 ---
 
 # Path
 
 ## Connections
-- [[_load_contributor_logs()]] - `references` [EXTRACTED]
-- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `calls` [EXTRACTED]
-- [[serve_dashboard()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_167]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

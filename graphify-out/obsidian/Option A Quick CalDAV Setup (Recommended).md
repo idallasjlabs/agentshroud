@@ -12,6 +12,6 @@ tags:
 # Option A: Quick CalDAV Setup (Recommended)
 
 ## Connections
-- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

@@ -12,6 +12,6 @@ tags:
 # MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)
 
 ## Connections
-- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

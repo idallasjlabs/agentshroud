@@ -22,7 +22,7 @@ tags:
 - [[dot-test_render_summary_empty()]] - `calls` [EXTRACTED]
 - [[dot-unreachable()]] - `method` [EXTRACTED]
 - [[Aggregated outcome across all hosts.]] - `rationale_for` [EXTRACTED]
-- [[Path_63]] - `uses` [INFERRED]
+- [[Path_64]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify_1]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]

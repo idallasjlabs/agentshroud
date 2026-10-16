@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L209"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

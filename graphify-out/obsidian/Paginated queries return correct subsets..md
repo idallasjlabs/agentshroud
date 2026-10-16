@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # Paginated queries return correct subsets.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_query_pagination()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataLedger
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

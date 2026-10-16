@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L10"
+community: "AgentShroud Deployment Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Overview
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

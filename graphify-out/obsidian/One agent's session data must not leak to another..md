@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # One agent's session data must not leak to another.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_session_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

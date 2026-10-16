@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # Manage progressive trust for agents.
 
 ## Connections
-- [[TrustManager]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

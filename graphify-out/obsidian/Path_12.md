@@ -1,17 +1,19 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "launch-instance.sh"
-location: "L14"
+community: "sync-cve-registry.py"
+location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/sync-cve-registrypy
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[main()_4]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `references` [EXTRACTED]
+- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

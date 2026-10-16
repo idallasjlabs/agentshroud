@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Purpose_178]] - `contains` [EXTRACTED]
 - [[Related Skills_117]] - `contains` [EXTRACTED]
-- [[Usage_126]] - `contains` [EXTRACTED]
+- [[Usage_127]] - `contains` [EXTRACTED]
 - [[openclawskillsi-oracleREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 
