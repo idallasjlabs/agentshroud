@@ -12,7 +12,7 @@ tags:
 # .test_activity_command_renders_entries()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOwnerActivityNotice]] - `method` [EXTRACTED]
 - [[When tracker has entries, activity renders them.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

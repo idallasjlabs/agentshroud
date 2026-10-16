@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "AuditChain"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/AuditChain
 ---
 
 # .register_trust_manager()
@@ -15,6 +15,6 @@ tags:
 - [[dot-build_full_mesh()]] - `calls` [EXTRACTED]
 - [[Attach a TrustManager instance to a bot name.]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustManager_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/AuditChain

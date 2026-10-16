@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestObservatoryMode"
+community: "KillSwitchMonitor"
 location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestObservatoryMode
+  - community/KillSwitchMonitor
 ---
 
 # .test_get_module_mode_pinned_modules()
@@ -15,4 +15,4 @@ tags:
 - [[Test that pinned modules always return enforce even in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

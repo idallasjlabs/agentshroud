@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "DataLedger"
-location: "L347"
+community: "EgressFilterConfig"
+location: "L644"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/EgressFilterConfig
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_47]] - `references` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - `rationale_for` [EXTRACTED]
+- [[dot-get_log()]] - `calls` [EXTRACTED]
+- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

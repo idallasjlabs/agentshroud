@@ -12,7 +12,7 @@ tags:
 # .sanitizer()
 
 ## Connections
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 - [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 

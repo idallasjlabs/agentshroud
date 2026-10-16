@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
 - [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "AuditChain"
-location: "L471"
+community: "make_event"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/make_event
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_14]] - `references` [EXTRACTED]
-- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/make_event

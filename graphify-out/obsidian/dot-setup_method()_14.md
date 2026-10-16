@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_multilingual_injection.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestMultilingualInjection"
-location: "L10"
+community: "MiddlewareManager"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TestMultilingualInjection]] - `method` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
+- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

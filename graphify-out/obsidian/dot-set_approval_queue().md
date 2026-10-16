@@ -12,7 +12,7 @@ tags:
 # .set_approval_queue()
 
 ## Connections
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 - [[Set interactive egress approval queue.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

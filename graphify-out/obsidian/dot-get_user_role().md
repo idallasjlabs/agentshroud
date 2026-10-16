@@ -19,7 +19,7 @@ tags:
 - [[dot-get_user_permissions_summary()]] - `calls` [EXTRACTED]
 - [[dot-set_user_role()]] - `calls` [EXTRACTED]
 - [[Get the role for a user.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 - [[Role_21]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

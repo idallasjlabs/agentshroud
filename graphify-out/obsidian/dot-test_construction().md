@@ -12,7 +12,7 @@ tags:
 # .test_construction()
 
 ## Connections
-- [[ContributorRecord]] - `calls` [EXTRACTED]
+- [[ContributorRecord_1]] - `calls` [EXTRACTED]
 - [[TestContributorRecord]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

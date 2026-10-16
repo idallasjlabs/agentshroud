@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # .scan_git_repository()
@@ -18,9 +18,9 @@ tags:
 - [[dot-_scan_pyproject_toml()]] - `calls` [EXTRACTED]
 - [[dot-_scan_setup_py()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_4]] - `calls` [EXTRACTED]
+- [[Path_8]] - `calls` [EXTRACTED]
 - [[Scan a git repository for malicious hooks and scripts.          Args]] - `rationale_for` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 - [[scan_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

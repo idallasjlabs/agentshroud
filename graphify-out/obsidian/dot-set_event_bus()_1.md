@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L200"
+community: "EgressFilterConfig"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/EgressFilterConfig
 ---
 
 # .set_event_bus()
 
 ## Connections
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Set optional event bus for approval telemetry.]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[Set optional event bus for real-time egress telemetry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

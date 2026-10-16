@@ -12,7 +12,7 @@ tags:
 # .test_activity_command_reports_tracker_unhealthy()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOwnerActivityNotice]] - `method` [EXTRACTED]
 - [[When tracker is None, activity returns honest error, not silent empty.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

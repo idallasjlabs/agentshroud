@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "AuditChain"
-location: "L632"
+community: "PIIConfig"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PIIConfig
 ---
 
 # .test_clean_response_passes_unchanged()
 
 ## Connections
-- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
+- [[TestE2E03OutboundPIIRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

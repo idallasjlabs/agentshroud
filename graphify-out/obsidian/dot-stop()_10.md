@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L97"
+community: "StdioConnection"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
-- [[dot-pause()_3]] - `calls` [EXTRACTED]
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[dot-stop_all()]] - `calls` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

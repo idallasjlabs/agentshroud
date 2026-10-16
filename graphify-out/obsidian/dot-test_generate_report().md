@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L424"
+community: "test_security_toolchain.py"
+location: "L795"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_security_toolchainpy
 ---
 
 # .test_generate_report()
 
 ## Connections
-- [[TestAuditQueries]] - `method` [EXTRACTED]
+- [[TestHealthReport]] - `method` [EXTRACTED]
+- [[generate_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

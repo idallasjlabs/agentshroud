@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBACConfig"
-location: "L84"
+community: "Action"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/Action
 ---
 
 # .is_member()
 
 ## Connections
-- [[dot-get_group_safe_response_prefix()]] - `calls` [EXTRACTED]
-- [[dot-get_user_groups()]] - `calls` [EXTRACTED]
-- [[GroupConfig]] - `method` [EXTRACTED]
+- [[GroupRegistry]] - `method` [EXTRACTED]
+- [[Return True if user_id is in the group.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/Action

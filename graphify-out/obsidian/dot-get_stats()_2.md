@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L286"
+community: "AuditChain"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AuditChain
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
-- [[any_3]] - `references` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AuditChain

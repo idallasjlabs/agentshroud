@@ -12,7 +12,7 @@ tags:
 # .test_disabled_server_blocked()
 
 ## Connections
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
 - [[MCPServerConfig_2]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]

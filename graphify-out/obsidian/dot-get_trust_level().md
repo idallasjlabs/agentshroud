@@ -16,6 +16,6 @@ tags:
 - [[dot-check_tool_parameters()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_permission()_2]] - `calls` [EXTRACTED]
 - [[Get trust level, defaulting to 1 (write) for unknown agents.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

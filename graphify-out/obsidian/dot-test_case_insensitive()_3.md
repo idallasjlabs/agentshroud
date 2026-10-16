@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
-location: "L568"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .test_case_insensitive()
 
 ## Connections
-- [[dot-_has_fabricated_match()]] - `calls` [EXTRACTED]
-- [[Pattern is case-insensitive.]] - `rationale_for` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

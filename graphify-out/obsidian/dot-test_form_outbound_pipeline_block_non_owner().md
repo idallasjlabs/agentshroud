@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BlockingPipeline]] - `calls` [INFERRED]
 - [[Pipeline-blocked form payloads to non-owners must be replaced with a safe notice]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

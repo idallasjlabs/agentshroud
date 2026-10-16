@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "AgentTarget"
-location: "L389"
+community: "ContainerEngine"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ContainerEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[AgentTarget]] - `references` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
-- [[Check health of one or all agent targets          Args             target Spec]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Return True if the runtime is available and responsive.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

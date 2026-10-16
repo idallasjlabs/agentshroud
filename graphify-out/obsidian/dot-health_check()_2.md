@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "PodmanEngine"
-location: "L201"
+community: "test_e2e_proxy.py"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/test_e2e_proxypy
 ---
 
 # .health_check()
 
 ## Connections
-- [[dot-_cmd()]] - `calls` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[dot-forward()_1]] - `calls` [EXTRACTED]
+- [[Check if the OpenClaw backend is healthy.]] - `rationale_for` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L143"
+community: "CronStateMonitor"
+location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CronStateMonitor
 ---
 
 # .stop()
 
 ## Connections
-- [[StdioConnection]] - `method` [EXTRACTED]
-- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

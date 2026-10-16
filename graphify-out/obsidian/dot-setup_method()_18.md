@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Action"
-location: "L128"
+community: "AgentRegistry"
+location: "L647"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_2]] - `calls` [EXTRACTED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
-- [[TestRBACManager]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `calls` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[TestAgentIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

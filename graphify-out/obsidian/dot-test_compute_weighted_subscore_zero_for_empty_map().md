@@ -12,7 +12,7 @@ tags:
 # .test_compute_weighted_subscore_zero_for_empty_map()
 
 ## Connections
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 

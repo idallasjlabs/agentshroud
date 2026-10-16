@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "ContainerEngine"
-location: "L157"
+community: "PodmanEngine"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/PodmanEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Return True if the runtime is available and responsive.]] - `rationale_for` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

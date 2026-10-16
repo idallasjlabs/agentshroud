@@ -12,8 +12,8 @@ tags:
 # .test_default_not_used_in_pipeline()
 
 ## Connections
-- [[dot-process_inbound()_2]] - `calls` [EXTRACTED]
-- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `calls` [EXTRACTED]
+- [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[Regression 'default' must never appear in agent_id when a named target is resol]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `method` [EXTRACTED]
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]

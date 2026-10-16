@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L229"
+community: "AuditStore"
+location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/AuditStore
 ---
 
 # .store()
 
 ## Connections
-- [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
-- [[TestIntelReportStore]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestToolPermission"
+community: "MCPPermissionManager"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolPermission
+  - community/MCPPermissionManager
 ---
 
 # .test_exec_denied_at_trust_1()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolPermission
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

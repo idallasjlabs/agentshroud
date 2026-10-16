@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "load_config"
-location: "L287"
+community: "RBACConfig"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/RBACConfig
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
-- [[Path_21]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
+- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

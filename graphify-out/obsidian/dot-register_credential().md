@@ -12,10 +12,10 @@ tags:
 # .register_credential()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Register a credential for rotation management.]] - `rationale_for` [EXTRACTED]
-- [[datetime_1]] - `references` [EXTRACTED]
+- [[datetime_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

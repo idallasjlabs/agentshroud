@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "RBACConfig"
-location: "L169"
+community: "ProgressiveLockdown"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ProgressiveLockdown
 ---
 
 # .is_owner()
 
 ## Connections
-- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `method` [EXTRACTED]
+- [[FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

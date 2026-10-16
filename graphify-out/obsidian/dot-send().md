@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L723"
+community: "GatewayEmailService"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/GatewayEmailService
 ---
 
 # .send()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[dot-build_message()]] - `calls` [EXTRACTED]
+- [[dot-login()]] - `calls` [EXTRACTED]
+- [[dot-sendmail()]] - `calls` [EXTRACTED]
+- [[GatewayEmailService_1]] - `method` [EXTRACTED]
+- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_trust()]] - `calls` [EXTRACTED]
 - [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

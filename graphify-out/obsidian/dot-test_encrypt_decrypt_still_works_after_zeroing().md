@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KeyVault"
 location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KeyVault
 ---
 
 # .test_encrypt_decrypt_still_works_after_zeroing()
@@ -16,4 +16,4 @@ tags:
 - [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - `rationale_for` [EXTRACTED]
 - [[TestSecureZero]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KeyVault

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2APolicyConfig_1]] - `calls` [EXTRACTED]
 - [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - `rationale_for` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

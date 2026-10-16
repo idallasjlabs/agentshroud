@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Initialize the store and restore pending items.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

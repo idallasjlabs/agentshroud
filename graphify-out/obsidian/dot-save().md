@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "ReportStore"
-location: "L83"
+community: "CompetitiveIntelReport"
+location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/CompetitiveIntelReport
 ---
 
 # .save()
 
 ## Connections
-- [[dot-_check_size()]] - `calls` [EXTRACTED]
-- [[dot-_persist()]] - `calls` [EXTRACTED]
-- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - `rationale_for` [EXTRACTED]
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Path_18]] - `references` [EXTRACTED]
+- [[Persist report to the store, linking it to the previous report.          Sets]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

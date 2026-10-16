@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ServiceManager"
+community: "test_soc_realtime_coverage.py"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .list_services()
@@ -21,4 +21,4 @@ tags:
 - [[_known_services()]] - `calls` [EXTRACTED]
 - [[dockerscriptssecurity-scan.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -12,7 +12,7 @@ tags:
 # .test_form_unknown_tool_call_quarantined()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[Unknown raw tool-call JSON in form bodies is quarantined for audit.          Tig]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

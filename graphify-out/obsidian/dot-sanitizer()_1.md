@@ -12,7 +12,7 @@ tags:
 # .sanitizer()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 

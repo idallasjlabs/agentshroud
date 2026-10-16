@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_round2_hardening.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "ResourceGuard"
-location: "L51"
+community: "MiddlewareManager"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/MiddlewareManager
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
+- [[TestEgressMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

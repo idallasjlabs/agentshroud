@@ -16,9 +16,9 @@ tags:
 - [[dot-get_tool_risk_tier()]] - `calls` [EXTRACTED]
 - [[dot-requires_approval()]] - `calls` [EXTRACTED]
 - [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
+- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Submit a tool call request for approval.          Args             tool_name T]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

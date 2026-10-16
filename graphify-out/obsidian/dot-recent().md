@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AlertStore]] - `method` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

@@ -12,7 +12,7 @@ tags:
 # .test_all_production_tool_overrides_meet_floor()
 
 ## Connections
-- [[GatewayConfig_4]] - `calls` [EXTRACTED]
+- [[GatewayConfig_3]] - `calls` [EXTRACTED]
 - [[TestConfidenceFloor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

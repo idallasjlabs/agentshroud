@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

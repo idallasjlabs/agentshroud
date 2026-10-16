@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "_FakeSanitizer"
+community: "test_llm_proxy_local_parity.py"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeSanitizer
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .sanitize()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -12,7 +12,7 @@ tags:
 # .test_dm_approval_routes_only_to_owner()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `method` [EXTRACTED]
 - [[When group_chat_id is None, only the owner receives a notification.]] - `rationale_for` [EXTRACTED]
 

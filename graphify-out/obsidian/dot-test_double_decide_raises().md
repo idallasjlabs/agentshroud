@@ -12,7 +12,7 @@ tags:
 # .test_double_decide_raises()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[Deciding on already-decided request raises ValueError.]] - `rationale_for` [EXTRACTED]
 - [[TestAutoExpire]] - `method` [EXTRACTED]
 

@@ -16,6 +16,6 @@ tags:
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[Register a new agent with initial trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[Any_29]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 - [[Get a summary of permissions for a user.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

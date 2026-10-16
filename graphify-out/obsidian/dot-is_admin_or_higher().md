@@ -12,7 +12,7 @@ tags:
 # .is_admin_or_higher()
 
 ## Connections
-- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
 - [[Check if user has admin privileges or higher.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_4]] - `method` [EXTRACTED]
 

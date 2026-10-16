@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L472"
+community: "AlertDispatcher"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/AlertDispatcher
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_56]] - `references` [EXTRACTED]
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

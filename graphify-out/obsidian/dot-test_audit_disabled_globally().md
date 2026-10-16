@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # .test_audit_disabled_globally()
@@ -15,4 +15,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestAuditAndAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L76"
+community: "SlackSocketClient"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/SlackSocketClient
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
+- [[dot-_connect_and_handle()]] - `calls` [EXTRACTED]
+- [[dot-_get_wss_url()]] - `calls` [EXTRACTED]
+- [[Main reconnect loop. Runs until stop() is called.]] - `rationale_for` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[compute_backoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

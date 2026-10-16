@@ -12,7 +12,7 @@ tags:
 # .test_allow_is_not_persisted_to_audit_store()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[FakeAuditStore_1]] - `calls` [EXTRACTED]
 - [[TestAuditStorePersistence]] - `method` [EXTRACTED]

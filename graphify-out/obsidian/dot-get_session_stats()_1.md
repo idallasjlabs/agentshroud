@@ -12,7 +12,7 @@ tags:
 # .get_session_stats()
 
 ## Connections
-- [[Any_49]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Get statistics for a session._1]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
 

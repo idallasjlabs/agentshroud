@@ -12,7 +12,7 @@ tags:
 # .test_get_pending_expires_stale()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[TestApprovalTimeout]] - `method` [EXTRACTED]
 - [[get_pending should expire stale items.]] - `rationale_for` [EXTRACTED]
 

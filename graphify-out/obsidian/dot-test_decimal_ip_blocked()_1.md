@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_url_analyzer.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L89"
+community: "WebProxyConfig"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/WebProxyConfig
 ---
 
 # .test_decimal_ip_blocked()
 
 ## Connections
-- [[2130706433 = 127.0.0.1 in decimal.]] - `rationale_for` [EXTRACTED]
-- [[TestSSRFDetection]] - `method` [EXTRACTED]
+- [[TestSSRFBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

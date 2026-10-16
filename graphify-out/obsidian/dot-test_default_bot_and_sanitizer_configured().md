@@ -12,7 +12,7 @@ tags:
 # .test_default_bot_and_sanitizer_configured()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[TestSetConfig]] - `method` [EXTRACTED]
 - [[_bot()]] - `calls` [EXTRACTED]
 

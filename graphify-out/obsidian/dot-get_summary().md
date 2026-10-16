@@ -12,7 +12,7 @@ tags:
 # .get_summary()
 
 ## Connections
-- [[dot-to_dict()_10]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_11]] - `calls` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `method` [EXTRACTED]
 - [[Get governance proxy summary.]] - `rationale_for` [EXTRACTED]
 

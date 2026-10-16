@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L199"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

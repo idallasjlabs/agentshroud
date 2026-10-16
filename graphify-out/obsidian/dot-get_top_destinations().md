@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
+community: "EgressFilterConfig"
 location: "L666"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/EgressFilterConfig
 ---
 
 # .get_top_destinations()
 
 ## Connections
-- [[dot-get_stats()_12]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_14]] - `calls` [EXTRACTED]
 - [[Counter]] - `calls` [INFERRED]
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 - [[Return top destination domains by volume.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

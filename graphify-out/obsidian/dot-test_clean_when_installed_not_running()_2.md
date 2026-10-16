@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L354"
+community: "TestClamavSummary"
+location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/TestClamavSummary
 ---
 
 # .test_clean_when_installed_not_running()
 
 ## Connections
-- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[TestClamavSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TestClamavSummary

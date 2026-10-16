@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_all_not_run_patches()]] - `calls` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[_clamav_clean()]] - `calls` [EXTRACTED]
 - [[_falco_clean()]] - `calls` [EXTRACTED]
 - [[_openscap_clean()]] - `calls` [EXTRACTED]

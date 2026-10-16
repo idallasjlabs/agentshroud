@@ -18,6 +18,6 @@ tags:
 - [[Add an action to the approval queue          Args             request Approval]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[ApprovalRequest]] - `references` [EXTRACTED]
+- [[ApprovalRequest_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/decide

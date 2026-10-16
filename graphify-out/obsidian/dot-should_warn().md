@@ -16,7 +16,7 @@ tags:
 - [[dot-get_credential_status()]] - `calls` [EXTRACTED]
 - [[dot-get_health_score()]] - `calls` [EXTRACTED]
 - [[CredentialInfo]] - `method` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `references` [EXTRACTED]
 - [[Whether credential age warrants a warning.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

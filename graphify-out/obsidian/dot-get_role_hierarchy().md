@@ -15,6 +15,6 @@ tags:
 - [[dot-can_user_manage_user()]] - `calls` [EXTRACTED]
 - [[dot-is_privilege_escalation()]] - `calls` [EXTRACTED]
 - [[Get role hierarchy levels (higher number = more privileges).]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

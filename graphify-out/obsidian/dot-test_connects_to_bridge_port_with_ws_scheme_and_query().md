@@ -16,7 +16,7 @@ tags:
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
 - [[Upstream URL must be ws (not http) at the bridge port, with the client's…]] - `rationale_for` [EXTRACTED]
 - [[_empty_aiter()]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 - [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

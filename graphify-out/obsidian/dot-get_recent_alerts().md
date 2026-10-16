@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-get_integrity_status()]] - `calls` [EXTRACTED]
-- [[Any_1]] - `references` [EXTRACTED]
+- [[Any_8]] - `references` [EXTRACTED]
 - [[Get alerts from the last N hours.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 

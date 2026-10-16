@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "make_event"
-location: "L95"
+community: "WebhookReceiver"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/WebhookReceiver
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_31]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-_extract_message()]] - `calls` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `calls` [EXTRACTED]
+- [[dot-_extract_user_id()]] - `calls` [EXTRACTED]
 - [[dot-_extract_username()]] - `calls` [EXTRACTED]
 - [[dot-_prepare_session_payload()]] - `calls` [EXTRACTED]
 - [[dot-_replace_message()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
 - [[Process an incoming webhook through the security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 

@@ -12,6 +12,6 @@ tags:
 # .report_id_not_empty()
 
 ## Connections
-- [[CompetitiveIntelReport_1]] - `method` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

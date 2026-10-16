@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - `rationale_for` [EXTRACTED]
 - [[Recommendation]] - `references` [EXTRACTED]
-- [[ScanResult_4]] - `method` [EXTRACTED]
+- [[ScanResult_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard

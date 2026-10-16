@@ -16,7 +16,7 @@ tags:
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[Record a security violation, significantly decreasing trust.          With a pro]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 - [[ViolationType_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

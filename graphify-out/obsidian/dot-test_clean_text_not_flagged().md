@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "UserSessionManager"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/UserSessionManager
 ---
 
 # .test_clean_text_not_flagged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

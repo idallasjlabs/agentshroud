@@ -12,7 +12,7 @@ tags:
 # .scan_command_injection()
 
 ## Connections
-- [[FilterResult_1]] - `references` [EXTRACTED]
+- [[FilterResult]] - `references` [EXTRACTED]
 - [[Scan outbound text for command  code injection patterns.          Does NOT modi]] - `rationale_for` [EXTRACTED]
 - [[XMLLeakFilter]] - `method` [EXTRACTED]
 

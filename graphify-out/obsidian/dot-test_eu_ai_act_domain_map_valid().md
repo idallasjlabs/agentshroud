@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[EU AI Act domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

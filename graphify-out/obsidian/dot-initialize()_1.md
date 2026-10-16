@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "DataLedger"
-location: "L84"
+community: "AuditStore"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/AuditStore
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
-- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Open the database, create the schema, and run column migrations.          Initia]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -12,7 +12,7 @@ tags:
 # .test_add_custom_policy()
 
 ## Connections
-- [[CredentialRotationPolicy]] - `calls` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `calls` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
 - [[Test adding custom policy for new credential type.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationConfig]] - `method` [EXTRACTED]

@@ -16,6 +16,6 @@ tags:
 - [[dot-get_tool_risk_tier()]] - `calls` [EXTRACTED]
 - [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
 - [[Check if a tool requires approval based on risk tier and policy.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

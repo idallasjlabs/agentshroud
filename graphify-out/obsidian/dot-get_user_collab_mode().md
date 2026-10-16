@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "RBACConfig"
+community: "GroupConfig"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/GroupConfig
 ---
 
 # .get_user_collab_mode()
@@ -16,4 +16,4 @@ tags:
 - [[Return the effective collab_mode for a user.          Resolution order]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "AuditChain"
-location: "L86"
+community: "CompetitiveIntelReport"
+location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/CompetitiveIntelReport
 ---
 
 # .test_different_content_different_hash()
 
 ## Connections
-- [[AuditChain]] - `calls` [EXTRACTED]
-- [[TestAuditChain]] - `method` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
+- [[TestIntelReportHashIntegrity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

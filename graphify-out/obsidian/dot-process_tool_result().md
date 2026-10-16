@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1394"
+community: ".process_tool_call"
+location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/process_tool_call
 ---
 
 # .process_tool_result()
 
 ## Connections
-- [[Any]] - `references` [EXTRACTED]
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Process tool result through PII sanitization before it reaches agent          Ar]] - `rationale_for` [EXTRACTED]
+- [[dot-_emit_privacy_event()]] - `calls` [EXTRACTED]
+- [[dot-_sanitize_admin_private_data()]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
+- [[MCPToolResult]] - `references` [EXTRACTED]
+- [[Process a tool result coming back (for cases where execution happens externally)]] - `rationale_for` [EXTRACTED]
+- [[ProxyResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/process_tool_call

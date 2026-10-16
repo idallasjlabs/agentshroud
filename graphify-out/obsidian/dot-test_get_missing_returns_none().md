@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "ReportStore"
+community: "AgentRegistry"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/AgentRegistry
 ---
 
 # .test_get_missing_returns_none()
 
 ## Connections
-- [[TestSaveAndGet]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `calls` [EXTRACTED]
+- [[TestAgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

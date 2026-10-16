@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2AProxyResult"
+community: "A2APolicyEngine"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/A2APolicyEngine
 ---
 
 # .resolve_peer_id()
@@ -16,4 +16,4 @@ tags:
 - [[A2AProxy_1]] - `method` [EXTRACTED]
 - [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

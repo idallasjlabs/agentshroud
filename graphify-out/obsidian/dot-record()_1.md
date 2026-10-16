@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L45"
+community: "DataLedger"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/DataLedger
 ---
 
 # .record()
 
 ## Connections
-- [[Decision_2]] - `references` [EXTRACTED]
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
-- [[Record one enforcement decision for ``module``.          Never raises an unknow]] - `rationale_for` [EXTRACTED]
-- [[record_decision()]] - `calls` [EXTRACTED]
+- [[dot-_hash_content()]] - `calls` [EXTRACTED]
+- [[Create a new ledger entry          Args             source Source identifier (]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerEntry_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/DataLedger

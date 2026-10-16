@@ -12,7 +12,7 @@ tags:
 # .test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

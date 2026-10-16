@@ -12,8 +12,8 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
-- [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
+- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

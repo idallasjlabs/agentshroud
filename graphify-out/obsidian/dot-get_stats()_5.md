@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L385"
+community: "RateLimitGuard"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/RateLimitGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_21]] - `references` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

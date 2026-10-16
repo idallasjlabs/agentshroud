@@ -12,7 +12,7 @@ tags:
 # .test_compute_weighted_subscore_full_score()
 
 ## Connections
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 

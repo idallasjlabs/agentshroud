@@ -12,7 +12,7 @@ tags:
 # .test_full_stack_with_review_evidence()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

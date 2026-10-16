@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "RBACConfig"
-location: "L101"
+community: "ApprovalQueueConfig"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[TeamsConfig_2]] - `method` [EXTRACTED]
-- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `method` [EXTRACTED]
+- [[Path_30]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

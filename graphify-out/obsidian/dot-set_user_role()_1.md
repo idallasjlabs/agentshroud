@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RBACConfig_4]] - `method` [EXTRACTED]
-- [[Role_91]] - `references` [EXTRACTED]
+- [[Role_22]] - `references` [EXTRACTED]
 - [[Set role for a user ID (owner-only operation).]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

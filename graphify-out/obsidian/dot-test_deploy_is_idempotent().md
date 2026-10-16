@@ -12,7 +12,7 @@ tags:
 # .test_deploy_is_idempotent()
 
 ## Connections
-- [[Path_54]] - `references` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 - [[TestDeployManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]

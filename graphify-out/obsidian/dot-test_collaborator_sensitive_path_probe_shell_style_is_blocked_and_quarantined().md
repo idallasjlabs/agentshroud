@@ -16,9 +16,9 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Sensitive path probes should be blockedquarantined for collaborators.]] - `rationale_for` [EXTRACTED]
 - [[Shell-style sensitive path probes (e.g., ls ~.ssh) should be blocked.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined

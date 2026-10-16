@@ -12,7 +12,7 @@ tags:
 # .reanchor_system_prompt()
 
 ## Connections
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_5]] - `references` [EXTRACTED]
 - [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 

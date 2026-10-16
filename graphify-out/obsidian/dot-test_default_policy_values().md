@@ -12,7 +12,7 @@ tags:
 # .test_default_policy_values()
 
 ## Connections
-- [[CredentialRotationPolicy]] - `calls` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `calls` [EXTRACTED]
 - [[Test default policy has reasonable values.]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialRotationPolicy]] - `method` [EXTRACTED]
 

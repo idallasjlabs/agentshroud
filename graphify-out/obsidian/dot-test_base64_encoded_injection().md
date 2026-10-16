@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "InjectionAction"
-location: "L81"
+community: "AgentRegistry"
+location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/AgentRegistry
 ---
 
 # .test_base64_encoded_injection()
 
 ## Connections
-- [[Test detection of base64 encoded injections.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

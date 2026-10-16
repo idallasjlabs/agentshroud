@@ -12,7 +12,7 @@ tags:
 # .test_build_excludes_manifest_json_itself()
 
 ## Connections
-- [[Path_54]] - `references` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 

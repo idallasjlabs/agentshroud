@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Scan all configured monitored files and directories.]] - `rationale_for` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "_is_op_reference_allowed"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/_is_op_reference_allowed
 ---
 
 # .test_disallowed_vault_returns_403()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

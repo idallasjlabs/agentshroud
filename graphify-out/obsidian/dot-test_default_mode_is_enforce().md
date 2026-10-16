@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TrustConfig"
-location: "L345"
+community: "SubagentMonitor"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/SubagentMonitor
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[ProgressiveTrustConfig_1]] - `calls` [EXTRACTED]
-- [[TestEnforcementMode]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - `rationale_for` [EXTRACTED]
+- [[TestSubagentMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

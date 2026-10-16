@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ForwardRequest"
-location: "L51"
+community: "test_soc_realtime_coverage.py"
+location: "L609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .subscribe()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
-- [[Subscribe to all events]] - `rationale_for` [EXTRACTED]
+- [[_FakeBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

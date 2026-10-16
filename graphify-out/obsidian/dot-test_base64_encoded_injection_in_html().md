@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "WebProxyConfig"
 location: "L484"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/WebProxyConfig
 ---
 
 # .test_base64_encoded_injection_in_html()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodedPayloads]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

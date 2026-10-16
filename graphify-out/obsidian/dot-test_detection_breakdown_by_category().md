@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[HeuristicClassifier]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[Report per-category detection rates for observability (not a gate).]] - `rationale_for` [EXTRACTED]
 - [[TestOverallDetectionRate]] - `method` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]

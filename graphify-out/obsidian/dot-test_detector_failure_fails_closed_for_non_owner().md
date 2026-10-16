@@ -12,7 +12,7 @@ tags:
 # .test_detector_failure_fails_closed_for_non_owner()
 
 ## Connections
-- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 

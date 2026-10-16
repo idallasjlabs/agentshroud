@@ -12,7 +12,7 @@ tags:
 # .monitor_environment_access()
 
 ## Connections
-- [[Any_9]] - `references` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Monitor an agent's environment access attempts.          Args             agent]] - `rationale_for` [EXTRACTED]
 

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_all_not_run_patches()]] - `calls` [EXTRACTED]
 - [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - `rationale_for` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

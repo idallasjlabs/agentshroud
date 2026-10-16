@@ -12,13 +12,13 @@ tags:
 # .request()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-get()_2]] - `calls` [EXTRACTED]
 - [[dot-post()_1]] - `calls` [EXTRACTED]
 - [[FakeTransport]] - `method` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
 - [[Method]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mainrs

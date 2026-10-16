@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L88"
+community: "test_cli_coverage.py"
+location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/test_cli_coveragepy
 ---
 
 # .send()
 
 ## Connections
-- [[dot-build_message()]] - `calls` [EXTRACTED]
-- [[dot-login()_1]] - `calls` [EXTRACTED]
-- [[dot-sendmail()_1]] - `calls` [EXTRACTED]
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - `rationale_for` [EXTRACTED]
+- [[_FakeWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

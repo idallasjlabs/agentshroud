@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # .matches_port()
@@ -16,4 +16,4 @@ tags:
 - [[Check if port is allowed.]] - `rationale_for` [EXTRACTED]
 - [[EgressPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAttempt
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

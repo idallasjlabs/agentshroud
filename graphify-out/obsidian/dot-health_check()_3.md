@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L145"
+community: "DockerEngine"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/DockerEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[dot-forward()_1]] - `calls` [EXTRACTED]
-- [[Check if the OpenClaw backend is healthy.]] - `rationale_for` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/DockerEngine
