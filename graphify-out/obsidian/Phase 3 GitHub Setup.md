@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (7)"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_7
 ---
 
 # Phase 3: GitHub Setup
@@ -18,4 +18,4 @@ tags:
 - [[Clone Repo on Pi]] - `contains` [EXTRACTED]
 - [[Repo Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7

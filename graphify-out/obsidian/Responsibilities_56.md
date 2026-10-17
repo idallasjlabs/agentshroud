@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "sidecar.py"
-location: "L15"
+community: "Audit Ledger (SHA-256 hash only) (2)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/Audit_Ledger_SHA-256_hash_only_2
 ---
 
 # Responsibilities
 
 ## Connections
-- [[sidecar.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sidecarpy
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only_2

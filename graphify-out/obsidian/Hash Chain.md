@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "telegram_proxy.py"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/system-requirementsmd
 ---
 
 # Hash Chain
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

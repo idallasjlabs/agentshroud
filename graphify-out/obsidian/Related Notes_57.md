@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "FalcoAlertWatcher"
+community: "OpenSCAP"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/OpenSCAP
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

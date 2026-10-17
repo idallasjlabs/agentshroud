@@ -12,14 +12,14 @@ tags:
 # LedgerEntry
 
 ## Connections
-- [[Any_69]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[Any_13]] - `uses` [INFERRED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[Single entry from the data ledger]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[ledger.py_1]] - `imports` [EXTRACTED]
+- [[ledger.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/create_auth_dependency

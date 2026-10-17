@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # Insert messages, modify a hash — verify chain integrity check fails.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tampered_audit_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # GitGuard
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_115]] - `method` [EXTRACTED]
 - [[dot-_analyze_file_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_file()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[dot-test_clean_hook_passes()]] - `calls` [EXTRACTED]
 - [[dot-test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
 - [[dot-test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_2]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `calls` [EXTRACTED]
 - [[dot-test_finding_has_file_path()]] - `calls` [EXTRACTED]
 - [[dot-test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
 - [[dot-test_git_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -40,16 +40,16 @@ tags:
 - [[dot-test_no_git_dir_returns_empty()]] - `calls` [EXTRACTED]
 - [[dot-test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_wget_flagged()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and analyze git hooks and package installation scripts.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -90,11 +90,11 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[scan_repository()]] - `references` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_git_guard.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

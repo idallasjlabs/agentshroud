@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L12"
+community: "MCP AWS Profile Configuration README"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

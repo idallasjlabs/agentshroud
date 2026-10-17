@@ -1,37 +1,23 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "A2APolicyEngine"
+location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - graphify/INFERRED
+  - community/A2APolicyEngine
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()]] - `references` [EXTRACTED]
-- [[cors_middleware()]] - `references` [EXTRACTED]
-- [[create_report()]] - `references` [EXTRACTED]
-- [[get_my_permissions()]] - `references` [EXTRACTED]
-- [[get_user_permissions()]] - `references` [EXTRACTED]
-- [[global_exception_handler()]] - `references` [EXTRACTED]
-- [[google_api_proxy]] - `references` [EXTRACTED]
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `references` [EXTRACTED]
-- [[limit_request_body()]] - `references` [EXTRACTED]
-- [[list_users_and_roles()]] - `references` [EXTRACTED]
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `references` [EXTRACTED]
-- [[llm_api_v1_prefix_alias]] - `references` [EXTRACTED]
-- [[llm_openai_chat_alias]] - `references` [EXTRACTED]
-- [[log_requests()]] - `references` [EXTRACTED]
-- [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
-- [[mcp_result_endpoint()]] - `references` [EXTRACTED]
-- [[ollama_api_proxy]] - `references` [EXTRACTED]
-- [[receive_security_alert()]] - `references` [EXTRACTED]
-- [[security_headers_middleware()]] - `references` [EXTRACTED]
-- [[set_user_role()]] - `references` [EXTRACTED]
-- [[slack_api_proxy()]] - `references` [EXTRACTED]
-- [[telegram_api_proxy (telegram-api{path})]] - `references` [EXTRACTED]
+- [[dot-_handle()_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

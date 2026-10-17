@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Kill Switch Procedure"
-location: "L141"
+community: "apply-patches.js (2)"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/apply-patchesjs_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs_2

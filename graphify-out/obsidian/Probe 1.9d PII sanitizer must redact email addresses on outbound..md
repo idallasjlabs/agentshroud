@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (4)"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_4
 ---
 
 # Probe 1.9d: PII sanitizer must redact email addresses on outbound.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_email_redacted_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4

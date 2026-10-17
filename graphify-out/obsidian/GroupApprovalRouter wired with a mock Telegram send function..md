@@ -12,6 +12,6 @@ tags:
 # GroupApprovalRouter wired with a mock Telegram send function.
 
 ## Connections
-- [[router()_3]] - `rationale_for` [EXTRACTED]
+- [[router()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (6)"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_6
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_84]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_82]] - `method` [EXTRACTED]
 - [[dot-_compute_file_hash()]] - `method` [EXTRACTED]
 - [[dot-_detect_modification_source()]] - `method` [EXTRACTED]
 - [[dot-_is_in_write_window()]] - `method` [EXTRACTED]
@@ -27,12 +27,12 @@ tags:
 - [[dot-register_expected_write()]] - `method` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `method` [EXTRACTED]
 - [[dot-scan_file()_1]] - `method` [EXTRACTED]
-- [[dot-setup_method()_17]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
 - [[dot-test_integrity_database_persistence()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[ModificationSource]] - `references` [EXTRACTED]
 - [[Monitors integrity of critical memory files.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

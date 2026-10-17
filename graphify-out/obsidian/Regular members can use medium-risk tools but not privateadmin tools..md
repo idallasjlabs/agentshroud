@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "RBACConfig (2)"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/RBACConfig_2
 ---
 
 # Regular members can use medium-risk tools but not private/admin tools.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemberGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

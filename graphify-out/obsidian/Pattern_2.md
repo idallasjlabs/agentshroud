@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L129"
+community: "AlertDispatcher (3)"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AlertDispatcher_3
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_score_signal()]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

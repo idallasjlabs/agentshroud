@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L6"
+community: "middleware.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/middlewarepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

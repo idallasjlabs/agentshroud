@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L66"
+community: "_build_image_targets"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/_build_image_targets
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

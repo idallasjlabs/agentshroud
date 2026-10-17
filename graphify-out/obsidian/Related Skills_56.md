@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Project Management (README)"
+community: "Production Safety Checklist (SKILL)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

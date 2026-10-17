@@ -1,17 +1,25 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "TestSSRFDetection"
-location: "L113"
+community: "Kill Switch"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Kill_Switch
 ---
 
 # Kill Switch
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[Features_2]] - `contains` [EXTRACTED]
+- [[Mode 1 freeze]] - `contains` [EXTRACTED]
+- [[Mode 2 shutdown]] - `contains` [EXTRACTED]
+- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
+- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
+- [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
-location: "L6"
+community: "env_guard.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/env_guardpy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[env_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

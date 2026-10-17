@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

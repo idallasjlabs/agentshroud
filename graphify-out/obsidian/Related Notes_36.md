@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L114"
+community: "pytest.ini"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/pytestini
 ---
 
 # Related Notes
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/pytestini

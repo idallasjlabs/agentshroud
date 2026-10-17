@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyDecision]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]

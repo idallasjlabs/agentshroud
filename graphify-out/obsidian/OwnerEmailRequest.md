@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "create_auth_dependency"
 location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # OwnerEmailRequest
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[email_send_owner()]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

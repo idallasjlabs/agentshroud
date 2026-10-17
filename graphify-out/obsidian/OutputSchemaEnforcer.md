@@ -12,10 +12,10 @@ tags:
 # OutputSchemaEnforcer
 
 ## Connections
-- [[dot-__init__()_96]] - `method` [EXTRACTED]
+- [[dot-__init__()_103]] - `method` [EXTRACTED]
 - [[dot-_register_default_schema()]] - `method` [EXTRACTED]
 - [[dot-register_schema()]] - `method` [EXTRACTED]
-- [[dot-validate()]] - `method` [EXTRACTED]
+- [[dot-validate()_2]] - `method` [EXTRACTED]
 - [[Output Schema Enforcer Tests (C25)]] - `references` [EXTRACTED]
 - [[SchemaRule]] - `references` [EXTRACTED]
 - [[SchemaValidationResult]] - `references` [EXTRACTED]

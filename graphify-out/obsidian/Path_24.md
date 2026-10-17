@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L66"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/ConfigIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[_load_contributor_logs()]] - `references` [EXTRACTED]
-- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `calls` [EXTRACTED]
-- [[serve_dashboard()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_98]] - `references` [EXTRACTED]
+- [[dot-_hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

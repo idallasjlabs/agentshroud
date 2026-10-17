@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[DNSQuery_1]] - `contains` [EXTRACTED]
+- [[DNSQuery]] - `contains` [EXTRACTED]
 - [[InspectionResult_1]] - `contains` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
+- [[URLAnalysisResult]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

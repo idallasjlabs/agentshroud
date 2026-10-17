@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "`SecurityPipeline`"
-location: "L117"
+community: "All Dependencies.md (2)"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/All_Dependenciesmd_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[Pydantic_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2

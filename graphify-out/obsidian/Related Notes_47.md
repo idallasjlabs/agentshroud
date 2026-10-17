@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
-location: "L42"
+community: "agentshroud-gateway"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/agentshroud-gateway
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

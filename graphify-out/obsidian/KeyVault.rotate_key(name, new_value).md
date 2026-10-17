@@ -12,6 +12,6 @@ tags:
 # KeyVault.rotate_key(name, new_value)
 
 ## Connections
-- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Function Details_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

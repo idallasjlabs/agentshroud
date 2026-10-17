@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "middleware.py"
-location: "L12"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

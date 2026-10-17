@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
+community: "Daedalus — Concept Illustrator (4)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/Daedalus__Concept_Illustrator_4
 ---
 
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_4

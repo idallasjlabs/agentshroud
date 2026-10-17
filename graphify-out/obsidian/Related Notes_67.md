@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "apply-patches.js"
-location: "L78"
+community: "TestSSRFDetection (4)"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/TestSSRFDetection_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_4

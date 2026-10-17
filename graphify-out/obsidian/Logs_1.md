@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/colima-docker-guide.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Colima & Docker Operations Guide — AgentShroud"
-location: "L137"
+community: "agentshroud-gateway"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/agentshroud-gateway
 ---
 
 # Logs
 
 ## Connections
-- [[5. Container Management]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

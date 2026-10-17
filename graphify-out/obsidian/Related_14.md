@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L105"
+community: "Function Details (4)"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/Function_Details_4
 ---
 
 # Related
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Function_Details_4

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "create_auth_dependency"
-location: "L137"
+community: "Kill Switch Procedure"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Kill_Switch_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

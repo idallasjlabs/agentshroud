@@ -12,7 +12,7 @@ tags:
 # QUICK_REFERENCE.md
 
 ## Connections
-- [[PREREQUISITES_15]] - `conceptually_related_to` [INFERRED]
+- [[PREREQUISITES_14]] - `conceptually_related_to` [INFERRED]
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 - [[RUNBOOK]] - `conceptually_related_to` [INFERRED]

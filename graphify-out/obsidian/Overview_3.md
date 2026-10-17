@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L3"
+community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
 ---
 
 # Overview
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation

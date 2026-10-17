@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L91"
+community: "dns_filter.py"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/dns_filterpy
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

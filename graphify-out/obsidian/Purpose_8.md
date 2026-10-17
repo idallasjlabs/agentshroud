@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "ClamAV"
-location: "L15"
+community: "UserSessionManager (6)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/UserSessionManager_6
 ---
 
 # Purpose
 
 ## Connections
-- [[Trivy_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6

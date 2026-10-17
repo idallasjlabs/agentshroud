@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AgentTarget"
+community: "AlertDispatcher (2)"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentTarget
+  - community/AlertDispatcher_2
 ---
 
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_21]] - `references` [EXTRACTED]
-- [[dot-__init__()_22]] - `references` [EXTRACTED]
-- [[dot-__init__()_23]] - `method` [EXTRACTED]
+- [[dot-__init__()_23]] - `references` [EXTRACTED]
+- [[dot-__init__()_69]] - `references` [EXTRACTED]
+- [[dot-__init__()_24]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
 - [[Per-agent API key scoping, redaction, leak detection, and rotation]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -60,7 +60,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[key_vault.py]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[vault()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

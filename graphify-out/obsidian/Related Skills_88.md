@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
-location: "L14"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (2)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2

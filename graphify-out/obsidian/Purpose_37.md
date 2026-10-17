@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD)"
+community: "Athena — Knowledge Distiller (5)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/Athena__Knowledge_Distiller_5
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_5

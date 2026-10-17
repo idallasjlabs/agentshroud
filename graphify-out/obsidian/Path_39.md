@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L55"
+community: "test_security_toolchain.py (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/test_security_toolchainpy_2
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

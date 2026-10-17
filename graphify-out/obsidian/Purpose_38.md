@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "macOS System Administrator (MAC)"
+community: "Atlas — Curriculum Architect (5)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC
+  - community/Atlas__Curriculum_Architect_5
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_5

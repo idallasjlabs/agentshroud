@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Common Queries"
-location: "L67"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # References
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

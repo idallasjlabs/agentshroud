@@ -12,6 +12,6 @@ tags:
 # Initialize the outbound information filter.          Args:             config: C
 
 ## Connections
-- [[dot-__init__()_93]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_197]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

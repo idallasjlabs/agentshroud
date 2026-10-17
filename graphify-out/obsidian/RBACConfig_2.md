@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_make_rbac()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
 - [[dot-test_default_config_initialization()]] - `calls` [EXTRACTED]
 - [[dot-test_get_users_by_role()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_and_collaborators_can_be_overridden_from_env()]] - `calls` [EXTRACTED]
@@ -27,8 +27,8 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

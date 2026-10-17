@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "InjectionAction"
+community: "MiddlewareManager (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/MiddlewareManager_2
 ---
 
 # Red Team Assessment Plan (Steve Hay Plan, Red Team copy)
 
 ## Connections
-- [[STPA-Sec Methodology_2]] - `references` [EXTRACTED]
+- [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2

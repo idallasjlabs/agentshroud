@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "create_auth_dependency"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # MiddlewareManager.process_request()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

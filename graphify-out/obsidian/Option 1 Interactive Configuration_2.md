@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
 ---
 
 # Option 1: Interactive Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configure New Profile_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3

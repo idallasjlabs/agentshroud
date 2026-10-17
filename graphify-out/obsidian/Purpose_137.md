@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "dns_filter.py"
-location: "L12"
+community: "ClamAV"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/ClamAV
 ---
 
 # Purpose
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/ClamAV

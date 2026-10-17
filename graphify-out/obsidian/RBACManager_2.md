@@ -12,7 +12,7 @@ tags:
 # RBACManager
 
 ## Connections
-- [[dot-__init__()_148]] - `references` [EXTRACTED]
+- [[dot-__init__()_163]] - `references` [EXTRACTED]
 - [[_get_rbac_manager()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

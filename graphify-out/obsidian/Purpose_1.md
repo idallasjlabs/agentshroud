@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Error Index.md"
+community: "FalcoAlertWatcher (3)"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/FalcoAlertWatcher_3
 ---
 
 # Purpose
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher_3

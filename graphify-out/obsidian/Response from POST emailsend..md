@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "test_forward_stream.py"
+community: "create_auth_dependency"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # Response from POST /email/send.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

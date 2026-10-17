@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
+community: "AgentShroud Blue Team Security Auditor (2)"
 location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/AgentShroud_Blue_Team_Security_Auditor_2
 ---
 
 # Phase 4: Configuration Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2

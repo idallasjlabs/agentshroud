@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "339"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # Report reports/upgrade-YYYY-MM-DD.md: 8 sections written to disk as each completes, unconditional
@@ -15,4 +15,4 @@ tags:
 - [[Outcome taxonomy UPGRADED  HELD BACK  BLOCKED  FAILED  PENDING APPROVAL]] - `rationale_for` [EXTRACTED]
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/rationale #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

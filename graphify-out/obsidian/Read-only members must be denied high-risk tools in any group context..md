@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "test_prompt_guard.py"
+community: "RBACConfig (2)"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/RBACConfig_2
 ---
 
 # Read-only members must be denied high-risk tools in any group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadOnlyMemberGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

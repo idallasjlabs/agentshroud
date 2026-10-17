@@ -1,26 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Mac App Discovery Skill"
-location: "L38"
+community: "export-bot-conversations.py (3)"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/export-bot-conversationspy_3
 ---
 
 # Path
 
 ## Connections
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[AuditStore]] - `uses` [INFERRED]
-- [[store()_1]] - `references` [EXTRACTED]
-- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
-- [[test_decide_persists()]] - `references` [EXTRACTED]
-- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `references` [EXTRACTED]
-- [[test_persist_and_reload()]] - `references` [EXTRACTED]
-- [[test_store_survives_restart()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_3

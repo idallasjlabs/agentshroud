@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
 ---
 
 # Proxy Layer
@@ -17,4 +17,4 @@ tags:
 - [[ssh_proxy (approved hosts only)]] - `shares_data_with` [EXTRACTED]
 - [[web_proxy.py (domain allowlist engine)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/image #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2

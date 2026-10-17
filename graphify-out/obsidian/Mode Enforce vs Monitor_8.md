@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "prompt_guard.py.md"
-location: "L97"
+community: "EgressFilter"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/EgressFilter
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

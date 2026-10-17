@@ -12,6 +12,6 @@ tags:
 # **Lower Value (Nice-to-Have)**
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_1]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

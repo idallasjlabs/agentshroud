@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "egress_filter.py"
-location: "L64"
+community: "Seccomp Profiles"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Seccomp_Profiles
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

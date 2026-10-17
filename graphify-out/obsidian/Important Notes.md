@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "AgentShroud Agentic OS (2)"
 location: "L457"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/AgentShroud_Agentic_OS_2
 ---
 
 # Important Notes
@@ -20,4 +20,4 @@ tags:
 - [[Power Supply]] - `contains` [EXTRACTED]
 - [[Security Hardening Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS_2

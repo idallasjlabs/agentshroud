@@ -12,6 +12,6 @@ tags:
 # Initialize approval queue          Args:             config: Approval queue conf
 
 ## Connections
-- [[dot-__init__()_43]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_42]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

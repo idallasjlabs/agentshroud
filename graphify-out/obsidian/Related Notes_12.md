@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L183"
+community: "UserSessionManager (6)"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/UserSessionManager_6
 ---
 
 # Related Notes
 
 ## Connections
-- [[Architecture Overview]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L10"
+community: "AgentShroud Prerequisites"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/AgentShroud_Prerequisites
 ---
 
 # Overview
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

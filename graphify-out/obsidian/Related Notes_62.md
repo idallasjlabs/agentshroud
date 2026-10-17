@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
-location: "L112"
+community: "TestFabricatedSecurityNotice (3)"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/TestFabricatedSecurityNotice_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3

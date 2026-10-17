@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # Get all flagged operations that indicate security violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_security_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

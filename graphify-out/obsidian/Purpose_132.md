@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L6"
+community: "apple_engine.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/apple_enginepy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

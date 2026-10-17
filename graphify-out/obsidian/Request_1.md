@@ -1,24 +1,37 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: ""
 type: "code"
-community: "test_forward_stream.py"
-location: "L126"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # Request
 
 ## Connections
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
-- [[auth_dep()_1]] - `references` [EXTRACTED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[auth_dep()]] - `references` [EXTRACTED]
+- [[cors_middleware()]] - `references` [EXTRACTED]
+- [[create_report()]] - `references` [EXTRACTED]
+- [[get_my_permissions()]] - `references` [EXTRACTED]
+- [[get_user_permissions()]] - `references` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[google_api_proxy]] - `references` [EXTRACTED]
+- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `references` [EXTRACTED]
+- [[limit_request_body()]] - `references` [EXTRACTED]
+- [[list_users_and_roles()]] - `references` [EXTRACTED]
+- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `references` [EXTRACTED]
+- [[llm_api_v1_prefix_alias]] - `references` [EXTRACTED]
+- [[llm_openai_chat_alias]] - `references` [EXTRACTED]
+- [[log_requests()]] - `references` [EXTRACTED]
+- [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
+- [[mcp_result_endpoint()]] - `references` [EXTRACTED]
+- [[ollama_api_proxy]] - `references` [EXTRACTED]
+- [[receive_security_alert()]] - `references` [EXTRACTED]
+- [[security_headers_middleware()]] - `references` [EXTRACTED]
+- [[set_user_role()]] - `references` [EXTRACTED]
+- [[slack_api_proxy()]] - `references` [EXTRACTED]
+- [[telegram_api_proxy (telegram-api{path})]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

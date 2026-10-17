@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "Project Management (README)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/Project_Management_README
 ---
 
 # Pull Request Generator (README)
@@ -14,4 +14,4 @@ tags:
 - [[Pull Request Generator (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

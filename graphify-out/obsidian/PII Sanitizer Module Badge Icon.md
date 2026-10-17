@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/pii-sanitizer-256x256.png"
 type: "image"
-community: "egress_filter.py"
+community: "egress_filter.py (3)"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/egress_filterpy
+  - community/egress_filterpy_3
 ---
 
 # PII Sanitizer Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[differential_pii_detector.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/egress_filterpy
+#graphify/image #graphify/AMBIGUOUS #community/egress_filterpy_3

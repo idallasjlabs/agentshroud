@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Seccomp Profiles"
-location: "L166"
+community: "Docker Volumes"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/Docker_Volumes
 ---
 
 # Related Notes
 
 ## Connections
-- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

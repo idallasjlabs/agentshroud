@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cron_jobs_prompts.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L40"
+community: "FalcoAlertWatcher (2)"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/FalcoAlertWatcher_2
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[dot-__init__()_152]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

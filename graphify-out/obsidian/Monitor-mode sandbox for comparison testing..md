@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "AlertDispatcher"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher
 ---
 
 # Monitor-mode sandbox for comparison testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-monitor_sandbox()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

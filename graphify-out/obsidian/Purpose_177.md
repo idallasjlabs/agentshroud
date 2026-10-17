@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "Oracle — Feedback Analyst (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/Oracle__Feedback_Analyst_2
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_2

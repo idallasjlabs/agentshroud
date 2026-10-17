@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "MCP Doctor (MCPM-DOCTOR)"
+community: "Code Review (CR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Doctor_MCPM-DOCTOR
+  - community/Code_Review_CR
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

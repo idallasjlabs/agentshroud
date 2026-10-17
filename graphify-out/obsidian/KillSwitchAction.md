@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[dot-test_killswitch_action_default_unconfirmed()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[SimpleNamespace_1]] - `uses` [INFERRED]
+- [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
-- [[TestConfig]] - `uses` [INFERRED]
+- [[TestConfig_1]] - `uses` [INFERRED]
 - [[TestDefaultBotDockerfile]] - `uses` [INFERRED]
 - [[TestGetEngineHelper]] - `uses` [INFERRED]
 - [[TestKillSwitch_1]] - `uses` [INFERRED]
@@ -37,7 +37,7 @@ tags:
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
 - [[api.py_2]] - `contains` [EXTRACTED]
-- [[killswitch()]] - `references` [EXTRACTED]
+- [[killswitch()_1]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ModeRequest

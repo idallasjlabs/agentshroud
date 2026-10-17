@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Pull Request Generator (PR)"
+community: "8D Root Cause Analysis (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Generator_PR
+  - community/8D_Root_Cause_Analysis_2
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis_2

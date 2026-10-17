@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "Git Workflow Guardian (GIT-GUARD)"
+community: "Atlas — Curriculum Architect (5)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/Atlas__Curriculum_Architect_5
 ---
 
 # Related Skills
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_5

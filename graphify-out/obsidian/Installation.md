@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "ClamAV"
-location: "L22"
+community: "TestOutboundInfoFilter (5)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/TestOutboundInfoFilter_5
 ---
 
 # Installation
 
 ## Connections
-- [[ClamAV_1]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Install Script]] - `contains` [EXTRACTED]
+- [[Windows]] - `contains` [EXTRACTED]
+- [[macOS  Linux]] - `contains` [EXTRACTED]
+- [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

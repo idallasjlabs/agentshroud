@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Branding Specialist (BS)"
+community: "Incident Response (INCIDENT)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branding_Specialist_BS
+  - community/Incident_Response_INCIDENT
 ---
 
 # Related Skills
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

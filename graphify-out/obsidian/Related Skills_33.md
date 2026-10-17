@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "Git Workflow Guardian (GIT-GUARD) (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/Git_Workflow_Guardian_GIT-GUARD_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD_2

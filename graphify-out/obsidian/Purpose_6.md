@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "installer.py"
+community: "gitleaks.toml"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/gitleakstoml
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

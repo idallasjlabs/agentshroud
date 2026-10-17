@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "validate_network_security"
-location: "L33"
+community: ".update"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/update
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[dot-__init__()_175]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/update

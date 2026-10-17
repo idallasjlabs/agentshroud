@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[1Password Integration_2]] - `contains` [EXTRACTED]
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Integration]] - `contains` [EXTRACTED]
 - [[Generic AI Agent Integration]] - `contains` [EXTRACTED]
 - [[MCP Server Integration_1]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD)"
+community: ".agents/skills/i-cr/SKILL.md (4)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/agents/skills/i-cr/SKILLmd_4
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_4

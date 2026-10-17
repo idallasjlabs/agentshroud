@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Purpose_73]] - `contains` [EXTRACTED]
-- [[Related Skills_59]] - `contains` [EXTRACTED]
-- [[Usage_63]] - `contains` [EXTRACTED]
+- [[Related Skills_61]] - `contains` [EXTRACTED]
+- [[Usage_69]] - `contains` [EXTRACTED]
 - [[hermesskillsi-pmREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

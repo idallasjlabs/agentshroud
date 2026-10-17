@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "ModeRequest"
+community: "test_prompt_guard.py"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ModeRequest
+  - community/test_prompt_guardpy
 ---
 
 # ModeRequest
@@ -22,17 +22,17 @@ tags:
 - [[dot-test_set_mode_clamps_high_revert()]] - `calls` [EXTRACTED]
 - [[dot-test_set_mode_enforce_revert_task_is_noop()]] - `calls` [EXTRACTED]
 - [[dot-test_set_mode_monitor_auto_reverts()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
-- [[SimpleNamespace_1]] - `uses` [INFERRED]
+- [[Path_27]] - `uses` [INFERRED]
+- [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
-- [[TestConfig]] - `uses` [INFERRED]
+- [[TestConfig_1]] - `uses` [INFERRED]
 - [[TestCriticalLogging]] - `uses` [INFERRED]
 - [[TestDefaultBotDockerfile]] - `uses` [INFERRED]
 - [[TestGetEngineHelper]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ModeRequest
+#graphify/code #graphify/INFERRED #community/test_prompt_guardpy

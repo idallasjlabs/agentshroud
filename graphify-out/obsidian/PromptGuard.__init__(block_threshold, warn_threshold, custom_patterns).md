@@ -12,6 +12,6 @@ tags:
 # PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)
 
 ## Connections
-- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Function Details_18]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

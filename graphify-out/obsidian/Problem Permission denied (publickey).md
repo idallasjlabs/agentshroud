@@ -12,6 +12,6 @@ tags:
 # Problem: "Permission denied (publickey)"
 
 ## Connections
-- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[Troubleshooting_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

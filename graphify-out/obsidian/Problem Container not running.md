@@ -12,6 +12,6 @@ tags:
 # Problem: "Container not running"
 
 ## Connections
-- [[Troubleshooting_8]] - `contains` [EXTRACTED]
+- [[Troubleshooting_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (3)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements
+  - community/Required__45_for_text__30_for_UI_elements_3
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Brand Audit Checklist_2]] - `contains` [EXTRACTED]
 - [[Deck  Slide Master Rules_2]] - `contains` [EXTRACTED]
-- [[Dependencies_18]] - `contains` [EXTRACTED]
+- [[Dependencies_17]] - `contains` [EXTRACTED]
 - [[Diagram Theme Block (Mermaid)_2]] - `contains` [EXTRACTED]
 - [[File & Directory Conventions_2]] - `contains` [EXTRACTED]
 - [[HTML  CSS Brand Variables_2]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[openclawskillsi-bsSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # MiddlewareResult
@@ -58,13 +58,13 @@ tags:
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[Result from middleware processing.]] - `rationale_for` [EXTRACTED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestBrowserSecurity]] - `uses` [INFERRED]
@@ -93,7 +93,7 @@ tags:
 - [[TestIsPathAllowedForUser]] - `uses` [INFERRED]
 - [[TestIsToolCallRequest]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityRegistration]] - `uses` [INFERRED]
-- [[TestMetadataGuard_1]] - `uses` [INFERRED]
+- [[TestMetadataGuard]] - `uses` [INFERRED]
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
 - [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
 - [[TestNoResponseGuarantee]] - `uses` [INFERRED]
@@ -111,17 +111,17 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
+- [[_FakeRBAC]] - `uses` [INFERRED]
 - [[middleware.py]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `references` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

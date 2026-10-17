@@ -12,6 +12,6 @@ tags:
 # Kill Switch (Emergency Stop)
 
 ## Connections
-- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

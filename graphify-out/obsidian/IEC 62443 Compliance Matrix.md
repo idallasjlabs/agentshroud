@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "concept"
-community: "BotConfig"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L443-521"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # IEC 62443 Compliance Matrix
@@ -17,4 +17,4 @@ tags:
 - [[Approval Queue Control]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/BotConfig
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

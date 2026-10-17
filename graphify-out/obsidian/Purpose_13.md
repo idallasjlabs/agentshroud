@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/README.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L6"
+community: "create_auth_dependency"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/create_auth_dependency
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

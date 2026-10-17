@@ -12,6 +12,6 @@ tags:
 # Network Inspector
 
 ## Connections
-- [[Features_1]] - `contains` [EXTRACTED]
+- [[Features_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L49"
+community: "SkillGuard (2)"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - graphify/INFERRED
+  - community/SkillGuard_2
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_91]] - `references` [EXTRACTED]
-- [[dot-_hash_file()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_11]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/SkillGuard_2

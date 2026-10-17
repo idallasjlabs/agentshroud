@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "FalcoAlertWatcher"
-location: "L16"
+community: "All Dependencies.md (2)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/All_Dependenciesmd_2
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Pydantic_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2

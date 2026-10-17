@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py"
+community: "main.py (2)"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/mainpy_2
 ---
 
 # Management Dashboard Router — `gateway/web/management.py` (prefix `/manage`)
 
 ## Connections
-- [[Endpoints]] - `contains` [EXTRACTED]
+- [[Endpoints_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/mainpy_2

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/ToolResultSanitizer

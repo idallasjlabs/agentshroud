@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L6"
+community: "auth.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/authpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/authpy

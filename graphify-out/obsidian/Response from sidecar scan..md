@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # Response from sidecar scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ScanResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

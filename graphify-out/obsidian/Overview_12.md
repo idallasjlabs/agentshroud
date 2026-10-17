@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L9"
+community: "Canvas Skill"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Canvas_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

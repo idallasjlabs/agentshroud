@@ -12,6 +12,6 @@ tags:
 # Required
 
 ## Connections
-- [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

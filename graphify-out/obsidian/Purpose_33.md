@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Code Review (CR)"
+community: "Incident Response (INCIDENT)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Code_Review_CR
+  - community/Incident_Response_INCIDENT
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

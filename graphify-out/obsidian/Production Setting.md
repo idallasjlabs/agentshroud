@@ -12,6 +12,6 @@ tags:
 # Production Setting
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentRegistry

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "ledger.py"
-location: "L107"
+community: "mcp_audit.py"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledgerpy
+  - community/mcp_auditpy
 ---
 
 # Related
 
 ## Connections
-- [[ledger.py]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledgerpy
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

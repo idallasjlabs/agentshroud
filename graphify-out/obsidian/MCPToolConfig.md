@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "PermissionLevel"
+community: "StdioConnection"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PermissionLevel
+  - community/StdioConnection
 ---
 
 # MCPToolConfig
 
 ## Connections
-- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
 - [[Configuration for a specific MCP tool.]] - `rationale_for` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -52,7 +52,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -63,13 +63,13 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[config()_1]] - `calls` [EXTRACTED]
-- [[config()_2]] - `calls` [EXTRACTED]
+- [[config()_4]] - `calls` [EXTRACTED]
+- [[config()_3]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
-- [[mcp_config.py]] - `contains` [EXTRACTED]
+- [[mcp_config.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PermissionLevel
+#graphify/code #graphify/INFERRED #community/StdioConnection

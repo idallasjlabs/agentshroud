@@ -12,6 +12,6 @@ tags:
 # Mode 1: freeze
 
 ## Connections
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

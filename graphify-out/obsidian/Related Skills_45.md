@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "ApprovalHardening"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

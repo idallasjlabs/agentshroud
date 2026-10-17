@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "Mac App Discovery Skill"
-location: "L137"
+community: "ApprovalQueueConfig"
+location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/ApprovalQueueConfig
 ---
 
 # Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_initialize_is_idempotent()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

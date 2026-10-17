@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
-location: "L6"
+community: "alert_dispatcher.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/alert_dispatcherpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

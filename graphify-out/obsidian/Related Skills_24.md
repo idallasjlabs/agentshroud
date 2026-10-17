@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "Athena — Knowledge Distiller (5)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/Athena__Knowledge_Distiller_5
 ---
 
 # Related Skills
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_5

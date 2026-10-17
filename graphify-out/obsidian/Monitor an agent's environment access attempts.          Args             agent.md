@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (4)"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_4
 ---
 
 # Monitor an agent's environment access attempts.          Args:             agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-monitor_environment_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_4

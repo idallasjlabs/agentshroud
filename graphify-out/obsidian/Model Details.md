@@ -12,9 +12,9 @@ tags:
 # Model Details
 
 ## Connections
-- [[AgentTarget_1]] - `contains` [EXTRACTED]
+- [[AgentTarget_3]] - `contains` [EXTRACTED]
 - [[EmailSendRequest_2]] - `contains` [EXTRACTED]
-- [[ForwardRequest_1]] - `contains` [EXTRACTED]
+- [[ForwardRequest_3]] - `contains` [EXTRACTED]
 - [[ForwardResponse_1]] - `contains` [EXTRACTED]
 - [[RedactionDetail_1]] - `contains` [EXTRACTED]
 - [[SSHExecRequest  SSHExecResponse]] - `contains` [EXTRACTED]

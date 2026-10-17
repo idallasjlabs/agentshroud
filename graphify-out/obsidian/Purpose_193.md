@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
-location: "L6"
+community: "Audit Ledger (SHA-256 hash only) (2)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/Audit_Ledger_SHA-256_hash_only_2
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only_2

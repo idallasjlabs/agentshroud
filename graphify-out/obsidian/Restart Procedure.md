@@ -1,26 +1,19 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "02-infrastructure.md"
-location: "L9"
+community: "Restart Procedure"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Restart_Procedure
 ---
 
-# Restart Procedure
+# Restart Procedure.md
 
 ## Connections
-- [[After Config Change]] - `contains` [EXTRACTED]
-- [[After Secret Rotation]] - `contains` [EXTRACTED]
-- [[Bot Only Restart]] - `contains` [EXTRACTED]
-- [[Full Stack Restart]] - `contains` [EXTRACTED]
-- [[Gateway Only Restart]] - `contains` [EXTRACTED]
-- [[Related Notes_7]] - `contains` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[First Time Setup]] - `references` [EXTRACTED]
 - [[Restart Procedure_2]] - `contains` [EXTRACTED]
-- [[Restart Verification]] - `contains` [EXTRACTED]
-- [[When to Restart]] - `contains` [EXTRACTED]
-- [[Zero-Downtime Restart (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

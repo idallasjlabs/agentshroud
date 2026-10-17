@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Error Index"
-location: "L116"
+community: "agentshroud-blueteam/SKILL.md (4)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Index
+  - community/agentshroud-blueteam/SKILLmd_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Index
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4

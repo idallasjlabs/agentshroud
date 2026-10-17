@@ -15,9 +15,9 @@ tags:
 - [[dot-_maybe_record_trust_violation()]] - `references` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_1]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_2]] - `references` [EXTRACTED]
-- [[dot-to_dict()_6]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
+- [[dot-to_dict()_15]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[TestOutboundPipelineWired]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PipelineAction

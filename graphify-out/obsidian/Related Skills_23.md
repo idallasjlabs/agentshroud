@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Data Validation (DATA-VAL)"
+community: "Apollo — Audio Systems Producer (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Validation_DATA-VAL
+  - community/Apollo__Audio_Systems_Producer_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer_2

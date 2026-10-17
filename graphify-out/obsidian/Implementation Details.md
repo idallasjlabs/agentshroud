@@ -12,6 +12,6 @@ tags:
 # Implementation Details
 
 ## Connections
-- [[Consequences_2]] - `contains` [EXTRACTED]
+- [[Consequences_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

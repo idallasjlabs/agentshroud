@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only)"
-location: "L15"
+community: "hermes/skills/i-bs/README.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

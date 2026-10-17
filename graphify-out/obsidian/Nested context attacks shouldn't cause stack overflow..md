@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # Nested context attacks shouldn't cause stack overflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_deeply_nested_context_attacks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

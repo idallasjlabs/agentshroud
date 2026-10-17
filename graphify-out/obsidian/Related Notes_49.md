@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L56"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

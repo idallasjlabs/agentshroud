@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "event_bus.py"
+community: "mcp_config.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/mcp_configpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

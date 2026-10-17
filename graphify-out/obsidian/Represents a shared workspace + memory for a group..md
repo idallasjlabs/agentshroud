@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # Represents a shared workspace + memory for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

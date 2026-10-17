@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/README.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (MC)"
+community: "AWS Cloud Management & FinOps"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_MC
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

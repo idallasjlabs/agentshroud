@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "MiddlewareManager"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/MiddlewareManager
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[dot-run()]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

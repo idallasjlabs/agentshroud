@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+community: "macOS System Administrator (MAC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

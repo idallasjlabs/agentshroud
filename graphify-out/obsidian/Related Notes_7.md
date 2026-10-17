@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "02-infrastructure.md"
-location: "L145"
+community: "Error Index.md (4)"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Error_Indexmd_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[Restart Procedure]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

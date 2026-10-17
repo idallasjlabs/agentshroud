@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L345"
+community: "alert_dispatcher.py"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/alert_dispatcherpy
 ---
 
 # Related
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier"
+community: "Hermes — Reference Verifier (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/Hermes__Reference_Verifier_2
 ---
 
 # Hermes — Reference Verifier
@@ -21,4 +21,4 @@ tags:
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-hermesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_2

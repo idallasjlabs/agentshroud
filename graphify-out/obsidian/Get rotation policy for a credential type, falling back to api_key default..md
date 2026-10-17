@@ -12,6 +12,6 @@ tags:
 # Get rotation policy for a credential type, falling back to api_key default.
 
 ## Connections
-- [[dot-get_policy()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_policy()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

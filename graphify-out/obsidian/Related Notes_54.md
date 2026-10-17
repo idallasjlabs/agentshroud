@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
 community: "`SecurityPipeline`"
-location: "L129"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Related Notes
 
 ## Connections
-- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecurityPipeline

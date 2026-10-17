@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
-location: "L120"
+community: "Restart Procedure"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requirementstxt
+  - community/Restart_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[All Dependencies_1]] - `contains` [EXTRACTED]
+- [[Container Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

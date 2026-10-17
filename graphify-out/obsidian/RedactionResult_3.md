@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "InjectionAction"
+community: "Phase 1 — Raw Collection (3)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/Phase_1__Raw_Collection_3
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-scan_response()_1]] - `references` [EXTRACTED]
+- [[dot-scan_response()_2]] - `references` [EXTRACTED]
 - [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3

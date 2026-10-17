@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Function Details"
+community: "Function Details (3)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_3
 ---
 
 # Purpose
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_3

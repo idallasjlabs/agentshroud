@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "egress_config.py"
+community: "egress_monitor.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/egress_monitorpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

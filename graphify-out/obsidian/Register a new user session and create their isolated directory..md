@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (3)"
 location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_3
 ---
 
 # Register a new user session and create their isolated directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

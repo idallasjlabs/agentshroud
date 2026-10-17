@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # Register a credential for rotation management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager_2

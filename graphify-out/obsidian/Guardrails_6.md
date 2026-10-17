@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
 community: "Mode A — Single task"
 location: "L478"
@@ -12,6 +12,6 @@ tags:
 # Guardrails
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

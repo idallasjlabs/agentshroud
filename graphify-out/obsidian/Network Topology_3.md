@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "`SecurityPipeline`"
-location: "L9"
+community: "agentshroud-blueteam/SKILL.md (4)"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/agentshroud-blueteam/SKILLmd_4
 ---
 
 # Network Topology
 
 ## Connections
-- [[Container Network Diagram]] - `contains` [EXTRACTED]
-- [[Hostname Resolution]] - `contains` [EXTRACTED]
-- [[Network Security Notes]] - `contains` [EXTRACTED]
-- [[Network Topology_2]] - `contains` [EXTRACTED]
-- [[Related Notes_55]] - `contains` [EXTRACTED]
-- [[Traffic Routing]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4

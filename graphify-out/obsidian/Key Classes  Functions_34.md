@@ -12,6 +12,6 @@ tags:
 # Key Classes / Functions
 
 ## Connections
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/falco_monitorpy

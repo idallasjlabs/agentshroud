@@ -12,7 +12,7 @@ tags:
 # MCPPolicyEngine
 
 ## Connections
-- [[dot-__init__()_117]] - `method` [EXTRACTED]
+- [[dot-__init__()_74]] - `method` [EXTRACTED]
 - [[dot-_decide()_1]] - `method` [EXTRACTED]
 - [[dot-_tier_for()_1]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `method` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
 - [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - `rationale_for` [EXTRACTED]
 - [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_16]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]

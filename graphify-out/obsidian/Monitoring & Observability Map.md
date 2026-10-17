@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "diagrams/README.md"
+community: "diagrams/README.md (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/diagrams/READMEmd_2
 ---
 
 # Monitoring & Observability Map
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[06-operations]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/diagrams/READMEmd_2

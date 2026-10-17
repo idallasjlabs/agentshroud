@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
-- [[OPENCLAW_SANDBOX_MODE_1]] - `references` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentRegistry

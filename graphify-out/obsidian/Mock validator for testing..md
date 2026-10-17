@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "UserSessionManager"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/UserSessionManager
 ---
 
 # Mock validator for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MockValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

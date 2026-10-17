@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

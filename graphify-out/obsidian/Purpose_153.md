@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "FalcoAlertWatcher"
-location: "L16"
+community: "All Dependencies.md (2)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/All_Dependenciesmd_2
 ---
 
 # Purpose
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2

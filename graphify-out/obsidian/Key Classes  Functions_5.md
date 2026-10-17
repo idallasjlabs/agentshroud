@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L27"
+community: "encrypted_store.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/encrypted_storepy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

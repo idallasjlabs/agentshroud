@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L6"
+community: "Function Details"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Function_Details

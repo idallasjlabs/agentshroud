@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-ieee-paper.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
-location: "L329"
+community: "Common Queries"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+  - community/Common_Queries
 ---
 
 # References
 
 ## Connections
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

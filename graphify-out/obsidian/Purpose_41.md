@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "MCP Doctor (MCPM-DOCTOR)"
+community: "Branding Specialist (BS)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Doctor_MCPM-DOCTOR
+  - community/Branding_Specialist_BS
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

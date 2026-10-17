@@ -12,6 +12,6 @@ tags:
 # OpenClaw Not Responding
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

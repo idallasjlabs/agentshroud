@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Security Review (SEC)"
-location: "L6"
+community: "All Dependencies.md (3)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/All_Dependenciesmd_3
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_3

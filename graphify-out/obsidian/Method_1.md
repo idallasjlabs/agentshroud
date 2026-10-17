@@ -12,8 +12,8 @@ tags:
 # Method
 
 ## Connections
+- [[dot-request()]] - `references` [EXTRACTED]
 - [[dot-request()_1]] - `references` [EXTRACTED]
-- [[dot-request()_2]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 

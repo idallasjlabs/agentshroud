@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # Inbound passes; outbound returns blocked=True with the original text intact.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockedOutboundPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2

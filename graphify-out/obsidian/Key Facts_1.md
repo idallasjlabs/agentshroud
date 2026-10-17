@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
-location: "L192"
+community: "context.md"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/contextmd
 ---
 
 # Key Facts
 
 ## Connections
-- [[Press Kit]] - `contains` [EXTRACTED]
+- [[context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/contextmd

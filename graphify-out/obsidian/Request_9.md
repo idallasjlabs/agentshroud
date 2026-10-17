@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L18"
+community: "_FakeRBAC"
+location: "L2717"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - graphify/INFERRED
+  - community/_FakeRBAC
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

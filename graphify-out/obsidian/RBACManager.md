@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L988"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # RBACManager
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
 - [[dot-get_rbac_manager()]] - `references` [EXTRACTED]
 - [[Action_2]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
@@ -47,7 +47,7 @@ tags:
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
@@ -55,11 +55,11 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

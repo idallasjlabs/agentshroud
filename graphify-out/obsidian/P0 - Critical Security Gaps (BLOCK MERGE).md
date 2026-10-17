@@ -12,6 +12,6 @@ tags:
 # P0 - Critical Security Gaps (BLOCK MERGE)
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_3]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

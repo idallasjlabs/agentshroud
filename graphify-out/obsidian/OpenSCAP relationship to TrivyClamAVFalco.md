@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "concept"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "Dockerfile — Bot (OpenClaw) (2)"
 location: "L51-58"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Dockerfile__Bot_OpenClaw_2
 ---
 
 # OpenSCAP relationship to Trivy/ClamAV/Falco
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenSCAP dependency note]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/concept #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "First Time Setup"
-location: "L161"
+community: "SSH Config"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/SSH_Config
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_1]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

@@ -12,6 +12,6 @@ tags:
 # Record one enforcement decision for ``module``.          Never raises: an unknow
 
 ## Connections
-- [[dot-record()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-record()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

@@ -12,6 +12,6 @@ tags:
 # PII Sanitizer
 
 ## Connections
-- [[Features_2]] - `contains` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Features

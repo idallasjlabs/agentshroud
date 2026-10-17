@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Error Index.md"
-location: "L78"
+community: "AgentRegistry"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/AgentRegistry
 ---
 
 # Related Notes
 
 ## Connections
-- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry

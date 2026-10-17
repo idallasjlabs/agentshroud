@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "AgentShroud Red Team Adversarial Tester (2)"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/AgentShroud_Red_Team_Adversarial_Tester_2
 ---
 
 # Infrastructure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2

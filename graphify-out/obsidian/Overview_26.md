@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/healthcheck/SKILL.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L8"
+community: "TestFabricatedSecurityNotice (3)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/TestFabricatedSecurityNotice_3
 ---
 
 # Overview
 
 ## Connections
-- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3

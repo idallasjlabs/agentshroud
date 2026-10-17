@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "._run_and_read"
-location: "L28"
+community: "ApprovalQueueConfig (5)"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # Path
 
 ## Connections
-- [[dot-_run_and_read()]] - `calls` [EXTRACTED]
-- [[dot-_run_and_read()_1]] - `calls` [EXTRACTED]
-- [[dot-_run_twice()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
-- [[_read_env()]] - `references` [EXTRACTED]
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[dot-model_post_init()]] - `calls` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[_default_mtime()]] - `references` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
+- [[load_config()]] - `references` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

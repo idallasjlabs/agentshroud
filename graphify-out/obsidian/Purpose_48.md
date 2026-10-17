@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+community: "macOS System Administrator (MAC) (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
+  - community/macOS_System_Administrator_MAC_2
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC_2

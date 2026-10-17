@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
+community: "Mode A — Single task (2)"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Mode_A__Single_task_2
 ---
 
 # Mode B — Comprehensive review sweep
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 — Work through directories one at a time_5]] - `contains` [EXTRACTED]
 - [[Step 3 — After the last directory (or a natural stopping point)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2

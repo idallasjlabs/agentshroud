@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
-- [[Purpose_54]] - `contains` [EXTRACTED]
-- [[Related Skills_43]] - `contains` [EXTRACTED]
-- [[Usage_46]] - `contains` [EXTRACTED]
+- [[Purpose_92]] - `contains` [EXTRACTED]
+- [[Related Skills_79]] - `contains` [EXTRACTED]
+- [[Usage_91]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "PIIConfig"
-location: "L64"
+community: "TestOutboundInfoFilter (3)"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PIIConfig
+  - graphify/EXTRACTED
+  - community/TestOutboundInfoFilter_3
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_3

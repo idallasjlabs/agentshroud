@@ -12,6 +12,6 @@ tags:
 # Process an inbound message through the full security pipeline.          Thin wra
 
 ## Connections
-- [[dot-process_inbound()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PipelineAction

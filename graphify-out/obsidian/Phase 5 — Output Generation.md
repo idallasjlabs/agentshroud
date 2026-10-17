@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill"
+community: "Mac App Discovery Skill (3)"
 location: "L287"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/Mac_App_Discovery_Skill_3
 ---
 
 # Phase 5 — Output Generation
@@ -16,4 +16,4 @@ tags:
 - [[B. `mac_app_catalog.md` — Human-readable catalog]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_3

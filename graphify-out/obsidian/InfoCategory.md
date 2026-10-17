@@ -12,12 +12,12 @@ tags:
 # InfoCategory
 
 ## Connections
-- [[dot-__init__()_93]] - `calls` [EXTRACTED]
+- [[dot-__init__()_197]] - `calls` [EXTRACTED]
 - [[dot-_is_allowed_for_trust()]] - `references` [EXTRACTED]
 - [[Categories of information that may need filtering.]] - `rationale_for` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `uses` [INFERRED]
-- [[TestIntegration]] - `uses` [INFERRED]
+- [[TestIntegration_1]] - `uses` [INFERRED]
 - [[TestOutboundInfoFilter]] - `uses` [INFERRED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "egress_filter.py"
-location: "L50"
+community: "pytest.ini"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/pytestini
 ---
 
 # Related Notes
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/pytestini

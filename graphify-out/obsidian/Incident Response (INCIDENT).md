@@ -12,9 +12,9 @@ tags:
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_24]] - `contains` [EXTRACTED]
-- [[Related Skills_13]] - `contains` [EXTRACTED]
-- [[Usage_16]] - `contains` [EXTRACTED]
+- [[Purpose_33]] - `contains` [EXTRACTED]
+- [[Related Skills_20]] - `contains` [EXTRACTED]
+- [[Usage_24]] - `contains` [EXTRACTED]
 - [[hermesskillsi-productionREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

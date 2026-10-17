@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L127"
+community: "ClamAV"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/ClamAV
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/ClamAV

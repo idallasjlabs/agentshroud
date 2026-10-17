@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (3)"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_3
 ---
 
 # Normal usage across channels should not trigger drip detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_normal_multi_channel_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

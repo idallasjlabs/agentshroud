@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "MCPPolicyEngine (2)"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine_2
 ---
 
 # Resolve the Dockerfile for the default bot from gateway config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_get_default_bot_dockerfile()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2

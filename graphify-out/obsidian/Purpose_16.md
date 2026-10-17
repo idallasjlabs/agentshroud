@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Hermes — Podcast Production Orchestrator"
+community: ".agents/skills/i-cr/SKILL.md (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Podcast_Production_Orchestrator
+  - community/agents/skills/i-cr/SKILLmd_2
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2

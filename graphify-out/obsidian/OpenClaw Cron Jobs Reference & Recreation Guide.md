@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "Report Delivery Format Instructions (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/Report_Delivery_Format_Instructions_2
 ---
 
 # OpenClaw Cron Jobs Reference & Recreation Guide
@@ -25,4 +25,4 @@ tags:
 - [[cve_prefetch.py (CVE fetch-and-diff)]] - `references` [EXTRACTED]
 - [[openclawcronJOBS-REFERENCE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "SSH Config"
-location: "L16"
+community: "sidecar.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/sidecarpy
 ---
 
 # Purpose
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

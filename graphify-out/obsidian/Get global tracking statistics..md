@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "MultiTurnTracker"
+community: "MultiTurnTracker (2)"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/MultiTurnTracker_2
 ---
 
 # Get global tracking statistics.
 
 ## Connections
-- [[dot-get_global_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker_2

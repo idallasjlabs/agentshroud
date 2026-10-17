@@ -17,7 +17,7 @@ tags:
 - [[dot-matches_topic()]] - `method` [EXTRACTED]
 - [[dot-normalise_topics()]] - `method` [EXTRACTED]
 - [[A project defines a scoped focus area for a team.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
 - [[TestConstantMessages]] - `uses` [INFERRED]
 - [[TestErrorFormatters]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[project()]] - `calls` [EXTRACTED]
-- [[teams()_2]] - `calls` [EXTRACTED]
+- [[teams()_3]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

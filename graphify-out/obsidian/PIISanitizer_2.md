@@ -1,29 +1,24 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L30"
+community: "ApprovalQueueConfig"
+location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/ApprovalQueueConfig
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncodingDetector]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
-- [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[sanitizer()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

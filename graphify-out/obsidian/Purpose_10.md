@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "browser-fetch.js"
-location: "L14"
+community: "Socrates — Dialogue Architect (5)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/Socrates__Dialogue_Architect_5
 ---
 
 # Purpose
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_5

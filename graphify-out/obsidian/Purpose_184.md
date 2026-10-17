@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "config.py"
-location: "L12"
+community: "SSH Config"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/SSH_Config
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

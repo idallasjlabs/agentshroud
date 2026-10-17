@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
 community: "openclaw/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[System Audit Vault_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

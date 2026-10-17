@@ -12,6 +12,6 @@ tags:
 # In-memory delegation manager (no disk I/O).
 
 ## Connections
-- [[mgr()_2]] - `rationale_for` [EXTRACTED]
+- [[mgr()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DelegationManager

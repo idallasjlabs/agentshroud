@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "Pydantic"
+community: "port_manager.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/port_managerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic
+#graphify/document #graphify/EXTRACTED #community/port_managerpy

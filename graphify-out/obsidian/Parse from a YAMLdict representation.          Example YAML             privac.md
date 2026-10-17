@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "RBACConfig"
+community: "RBACConfig (3)"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_3
 ---
 
 # Parse from a YAML/dict representation.          Example YAML:             privac
 
 ## Connections
-- [[dot-from_dict()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (2)"
 location: "L153"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # PrivateAccessAttempt
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-_record_private_access_attempt()]] - `calls` [EXTRACTED]
 - [[Audit signal for blocked admin-private tool access attempts.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager_2

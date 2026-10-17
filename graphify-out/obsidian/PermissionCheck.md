@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (2)"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # PermissionCheck
@@ -16,13 +16,13 @@ tags:
 - [[dot-check_all()]] - `references` [EXTRACTED]
 - [[dot-check_rate_limit()]] - `references` [EXTRACTED]
 - [[dot-check_tool_parameters()]] - `references` [EXTRACTED]
-- [[dot-check_tool_permission()]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[dot-check_tool_permission()_2]] - `references` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
-- [[mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

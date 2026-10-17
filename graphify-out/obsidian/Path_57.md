@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L101"
+community: "test_collaborator_tracker.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/test_collaborator_trackerpy
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[dot-__init__()_186]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "Technical Writer (TW)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/Technical_Writer_TW
 ---
 
 # Related Skills
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

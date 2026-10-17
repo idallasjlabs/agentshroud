@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "middleware.py"
-location: "L128"
+community: "version_routes.py"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/version_routespy
 ---
 
 # Related
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/version_routespy

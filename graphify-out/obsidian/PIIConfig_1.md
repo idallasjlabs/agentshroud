@@ -12,11 +12,11 @@ tags:
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_102]] - `references` [EXTRACTED]
+- [[dot-__init__()_30]] - `references` [EXTRACTED]
 - [[dot-get_config_for_tool()]] - `references` [EXTRACTED]
 - [[dot-get_tool_config()]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

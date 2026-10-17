@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L47"
+community: "FalcoAlertWatcher"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/FalcoAlertWatcher
 ---
 
 # Related Notes
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

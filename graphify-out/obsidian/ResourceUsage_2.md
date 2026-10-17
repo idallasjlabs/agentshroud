@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L148"
+community: "ResourceUsage"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/ResourceUsage
 ---
 
 # ResourceUsage
 
 ## Connections
-- [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-authorize_spawn()]] - `calls` [EXTRACTED]
+- [[dot-deregister()_1]] - `references` [EXTRACTED]
+- [[dot-get_usage()]] - `references` [EXTRACTED]
+- [[dot-runtime_seconds()]] - `method` [EXTRACTED]
+- [[dot-to_dict()_17]] - `method` [EXTRACTED]
+- [[Tracks cumulative resource consumption for a single subagent.]] - `rationale_for` [EXTRACTED]
+- [[subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/ResourceUsage

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "create_auth_dependency"
-location: "L44"
+community: "First Time Setup (2)"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/First_Time_Setup_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[Startup Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2

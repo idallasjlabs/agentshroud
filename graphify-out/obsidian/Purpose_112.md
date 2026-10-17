@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Function Details"
-location: "L12"
+community: "All Dependencies.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/All_Dependenciesmd
 ---
 
 # Purpose
 
 ## Connections
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

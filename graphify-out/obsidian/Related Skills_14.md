@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Browser — Secure Browser Automation (5)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Browser__Secure_Browser_Automation_5
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_5

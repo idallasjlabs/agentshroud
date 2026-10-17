@@ -1,27 +1,21 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L225"
+community: "MiddlewareManager (9)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/MiddlewareManager_9
 ---
 
 # Path
 
 ## Connections
-- [[dot-store()_2]] - `references` [EXTRACTED]
-- [[dot-store_dir()]] - `references` [EXTRACTED]
-- [[dot-test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
-- [[dot-test_load_all_skips_malformed_files()]] - `references` [EXTRACTED]
-- [[dot-test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `references` [EXTRACTED]
-- [[dot-test_store_creates_directory()]] - `references` [EXTRACTED]
-- [[dot-test_verify_chain_fails_for_tampered_entry()]] - `references` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[ReportIntegrityError]] - `uses` [INFERRED]
+- [[dot-__init__()_202]] - `references` [EXTRACTED]
+- [[dot-archive_file()]] - `references` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9

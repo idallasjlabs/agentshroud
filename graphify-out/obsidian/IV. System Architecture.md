@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (6)"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_6
 ---
 
 # IV. System Architecture
@@ -18,4 +18,4 @@ tags:
 - [[IV-C. Middleware Manager]] - `contains` [EXTRACTED]
 - [[IV-D. MCP Proxy Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_6

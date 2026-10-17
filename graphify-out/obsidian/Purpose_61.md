@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "Test-Driven Development (TDD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/Test-Driven_Development_TDD
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

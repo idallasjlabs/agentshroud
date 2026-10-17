@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # Remove decided (approved/rejected/expired) items older than max_age_seconds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-cleanup_decided()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2

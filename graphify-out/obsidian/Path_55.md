@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L60"
+community: "plan_remediation"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/plan_remediation
 ---
 
 # Path
 
 ## Connections
-- [[_docker_read_file()]] - `references` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Function Details"
-location: "L12"
+community: "All Dependencies.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/All_Dependenciesmd
 ---
 
 # Purpose
 
 ## Connections
-- [[health_report.py_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

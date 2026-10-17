@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "parse_clamscan_output"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/parse_clamscan_output
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_112]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

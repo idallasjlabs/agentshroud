@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L89"
+community: "api.py"
+location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/apipy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_132]] - `calls` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
+- [[dashboard()]] - `calls` [EXTRACTED]
+- [[dashboard_main()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
+- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/apipy

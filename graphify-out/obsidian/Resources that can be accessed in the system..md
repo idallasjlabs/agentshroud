@@ -12,6 +12,6 @@ tags:
 # Resources that can be accessed in the system.
 
 ## Connections
-- [[Resource_2]] - `rationale_for` [EXTRACTED]
+- [[Resource_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (CICD)"
+community: "Oracle — Feedback Analyst (4)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_CICD
+  - community/Oracle__Feedback_Analyst_4
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_4

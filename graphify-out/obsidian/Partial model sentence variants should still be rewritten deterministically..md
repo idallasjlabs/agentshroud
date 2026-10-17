@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (2)"
 location: "L962"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_2
 ---
 
 # Partial model sentence variants should still be rewritten deterministically.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_prefixed_model_sentence_is_rewritten_to_active_model_hint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2

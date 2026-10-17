@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (6)"
 location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_6
 ---
 
 # P4 Low Priority Incidents
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_6

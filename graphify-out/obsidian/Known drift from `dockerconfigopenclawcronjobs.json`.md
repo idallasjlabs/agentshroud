@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "Report Delivery Format Instructions (2)"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/Report_Delivery_Format_Instructions_2
 ---
 
 # Known drift from `docker/config/openclaw/cron/jobs.json`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions_2

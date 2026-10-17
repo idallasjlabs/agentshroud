@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L15"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

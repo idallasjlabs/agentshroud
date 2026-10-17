@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L73"
+community: "CrossBotTrustLedger"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - graphify/EXTRACTED
+  - community/CrossBotTrustLedger
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_120]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

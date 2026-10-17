@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "wazuh_client.py"
+community: "EgressFilter"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/EgressFilter
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

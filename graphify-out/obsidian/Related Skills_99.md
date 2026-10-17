@@ -1,8 +1,8 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
-location: "L14"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

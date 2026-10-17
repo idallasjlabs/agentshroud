@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_175]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
 - [[Related Skills_114]] - `contains` [EXTRACTED]
 - [[Usage_124]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/UPGRADE_LOG.md"
 type: "document"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "awslabs.aws-api-mcp-server configuration (--readonly)"
 location: "L91-118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/awslabsaws-api-mcp-server_configuration_--readonly
 ---
 
 # MCP server expansion (3 → 11) and --mcp flag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm-init.sh — project-level multi-tool config deployment]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/document #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly

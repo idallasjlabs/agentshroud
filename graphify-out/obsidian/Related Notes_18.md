@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "UserSessionManager"
-location: "L45"
+community: "create_auth_dependency"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/create_auth_dependency
 ---
 
 # Related Notes
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

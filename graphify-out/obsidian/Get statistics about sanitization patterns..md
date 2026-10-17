@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (3)"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_3
 ---
 
 # Get statistics about sanitization patterns.
 
 ## Connections
-- [[get_sanitizer_stats()]] - `rationale_for` [EXTRACTED]
+- [[get_sanitizer_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

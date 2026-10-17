@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "trivy_report.py"
-location: "L18"
+community: "event_bus.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/event_buspy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/event_buspy

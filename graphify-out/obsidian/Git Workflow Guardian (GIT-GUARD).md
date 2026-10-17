@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "Git Workflow Guardian (GIT-GUARD)"
+community: "hermes/skills/i-bs/README.md (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/hermes/skills/i-bs/READMEmd_4
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_36]] - `contains` [EXTRACTED]
-- [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-ggREADME]] - `contains` [EXTRACTED]
+- [[Purpose_29]] - `contains` [EXTRACTED]
+- [[Related Skills_16]] - `contains` [EXTRACTED]
+- [[Usage_20]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-ggREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_4

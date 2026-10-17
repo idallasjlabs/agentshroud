@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # RELEASE-PLAN.md
@@ -20,4 +20,4 @@ tags:
 - [[v1.3.0 — Platform Expansion]] - `references` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
-location: "L6"
+community: "drift_detector.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/drift_detectorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

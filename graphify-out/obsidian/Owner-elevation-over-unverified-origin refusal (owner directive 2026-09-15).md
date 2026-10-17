@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "GitHub Copilot CLI Setup Guide"
+community: "ModuleStatsCollector"
 location: "469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/ModuleStatsCollector
 ---
 
 # Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)
@@ -19,4 +19,4 @@ tags:
 - [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - `cites` [EXTRACTED]
 - [[can_use_tool_from_origin]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

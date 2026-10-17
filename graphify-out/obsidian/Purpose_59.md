@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "Security Review (SEC) (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/Security_Review_SEC_2
 ---
 
 # Purpose
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC_2

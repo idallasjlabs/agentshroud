@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L43"
+community: "ApprovalQueueConfig (5)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_5
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_45]] - `references` [EXTRACTED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

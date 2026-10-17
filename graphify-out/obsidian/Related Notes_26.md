@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Error Index.md"
-location: "L103"
+community: "AgentRegistry"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/AgentRegistry
 ---
 
 # Related Notes
 
 ## Connections
-- [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry

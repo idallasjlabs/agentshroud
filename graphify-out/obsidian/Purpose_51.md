@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Test-Driven Development (TDD)"
+community: "MCP Doctor (MCPM-DOCTOR) (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_TDD
+  - community/MCP_Doctor_MCPM-DOCTOR_2
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR_2

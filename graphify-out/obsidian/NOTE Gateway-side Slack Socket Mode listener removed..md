@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "AgentRegistry"
 location: "L1045"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/AgentRegistry
 ---
 
 # # NOTE: Gateway-side Slack Socket Mode listener removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

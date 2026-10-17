@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "FR3: System Integrity"
+community: "Quality Assurance (QA)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Quality_Assurance_QA
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

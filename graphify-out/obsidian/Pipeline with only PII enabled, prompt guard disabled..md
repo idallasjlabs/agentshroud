@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # Pipeline with only PII enabled, prompt guard disabled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_selective_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

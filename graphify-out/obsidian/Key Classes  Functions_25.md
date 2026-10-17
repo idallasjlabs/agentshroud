@@ -12,6 +12,6 @@ tags:
 # Key Classes / Functions
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

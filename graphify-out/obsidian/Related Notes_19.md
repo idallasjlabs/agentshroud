@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Startup Flow Diagram"
-location: "L83"
+community: "create_auth_dependency"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Flow_Diagram
+  - community/create_auth_dependency
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

@@ -1,12 +1,12 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
-location: "L40"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Positive Consequences
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

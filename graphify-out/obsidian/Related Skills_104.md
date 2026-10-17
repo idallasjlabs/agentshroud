@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L14"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (3)"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_3
 ---
 
 # MCPToolResult
@@ -30,20 +30,20 @@ tags:
 - [[dot-test_result_audit_logged()]] - `calls` [EXTRACTED]
 - [[dot-test_result_processing_time()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
@@ -83,11 +83,11 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager_3

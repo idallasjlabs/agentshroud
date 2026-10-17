@@ -21,7 +21,7 @@ tags:
 - [[FR 7 Resource Availability (RA)]] - `contains` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `contains` [EXTRACTED]
 - [[Overview_29]] - `contains` [EXTRACTED]
-- [[Summary_25]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 - [[iec-62443-matrix]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

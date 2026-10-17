@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Troubleshooting Common Issues"
-location: "L565"
+community: "AgentShroud Setup Guide"
+location: "L789"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_Common_Issues
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Port Already in Use
 
 ## Connections
-- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

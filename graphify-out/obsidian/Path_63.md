@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L75"
+community: "test_multi_host_test.py"
+location: "L324"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - graphify/INFERRED
+  - community/test_multi_host_testpy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_205]] - `references` [EXTRACTED]
-- [[dot-archive_file()]] - `references` [EXTRACTED]
-- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[_run_wrapper()]] - `references` [EXTRACTED]
+- [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/test_multi_host_testpy

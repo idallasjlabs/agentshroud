@@ -12,6 +12,6 @@ tags:
 # Recommendations
 
 ## Connections
-- [[Security Notes_1]] - `contains` [EXTRACTED]
+- [[Security Notes]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

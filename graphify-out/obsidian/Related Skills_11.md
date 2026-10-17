@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+community: ".agents/skills/i-cr/SKILL.md (5)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/agents/skills/i-cr/SKILLmd_5
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_5

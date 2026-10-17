@@ -15,9 +15,9 @@ tags:
 - [[PrivacyPolicy]] - `uses` [INFERRED]
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[ServicePrivacy]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
-- [[_make_rbac()_1]] - `references` [EXTRACTED]
+- [[_make_rbac()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/MiddlewareManager

@@ -12,6 +12,6 @@ tags:
 # Key Classes / Functions
 
 ## Connections
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

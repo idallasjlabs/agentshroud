@@ -12,7 +12,7 @@ tags:
 # PatternRule
 
 ## Connections
-- [[dot-__init__()_77]] - `references` [EXTRACTED]
+- [[dot-__init__()_49]] - `references` [EXTRACTED]
 - [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]

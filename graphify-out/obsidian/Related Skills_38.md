@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Security Review (SEC)"
+community: "MCP Doctor (MCPM-DOCTOR) (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/MCP_Doctor_MCPM-DOCTOR_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR_2

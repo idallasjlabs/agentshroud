@@ -15,7 +15,7 @@ tags:
 - [[dot-score_context()]] - `references` [EXTRACTED]
 - [[ContextIntegrityScorer]] - `shares_data_with` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[Rolling context integrity score for a session.]] - `rationale_for` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[TestContextIntegrityScorer]] - `uses` [INFERRED]

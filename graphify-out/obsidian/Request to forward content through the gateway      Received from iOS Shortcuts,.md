@@ -12,6 +12,6 @@ tags:
 # Request to forward content through the gateway      Received from iOS Shortcuts,
 
 ## Connections
-- [[ForwardRequest_3]] - `rationale_for` [EXTRACTED]
+- [[ForwardRequest_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget

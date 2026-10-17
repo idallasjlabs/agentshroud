@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "Code Review (CR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/Code_Review_CR
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L170"
+community: "A2APolicyEngine (4)"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/A2APolicyEngine_4
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
+- [[dot-_score_signal()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_4

@@ -12,7 +12,7 @@ tags:
 # PrerequisiteCheck
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
 - [[installer.py_2]] - `contains` [EXTRACTED]
 

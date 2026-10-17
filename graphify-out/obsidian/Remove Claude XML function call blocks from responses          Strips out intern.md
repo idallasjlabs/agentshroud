@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # Remove Claude XML function call blocks from responses          Strips out intern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-filter_xml_blocks()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

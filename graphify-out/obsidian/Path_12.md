@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L704"
+community: "test_security_toolchain.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[main()_4]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

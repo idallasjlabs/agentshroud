@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
+community: "hermes/skills/i-bs/README.md (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/hermes/skills/i-bs/READMEmd_3
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_3

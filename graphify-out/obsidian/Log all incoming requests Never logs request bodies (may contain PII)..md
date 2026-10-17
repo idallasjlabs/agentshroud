@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Request"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Request
 ---
 
 # Log all incoming requests Never logs request bodies (may contain PII).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[log_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Request

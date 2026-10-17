@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "api.py (2)"
 location: "L1105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # IntelDraftEntry
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[One unverified competitor claim + its candidate source URLs.]] - `rationale_for` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

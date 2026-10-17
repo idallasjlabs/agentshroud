@@ -12,9 +12,9 @@ tags:
 # MockThreatLevel
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `shares_data_with` [AMBIGUOUS]
+- [[ThreatLevel_1]] - `shares_data_with` [AMBIGUOUS]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]

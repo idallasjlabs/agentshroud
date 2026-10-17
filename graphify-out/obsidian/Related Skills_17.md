@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "iCloud Data Manager (ICLOUD) (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/iCloud_Data_Manager_ICLOUD_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD_2

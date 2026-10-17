@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "FY26 Cost Reduction Context"
+community: "AWS Cloud Management & FinOps Agent (4)"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FY26_Cost_Reduction_Context
+  - community/AWS_Cloud_Management__FinOps_Agent_4
 ---
 
 # Out-of-Scope Departments (Inventory & Tag Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_4

@@ -1,17 +1,27 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L55"
+community: "Implementation Status"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Implementation_Status
 ---
 
 # Implementation Status
 
 ## Connections
-- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Browser Extension]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[Decision_6]] - `contains` [EXTRACTED]
+- [[Option 1 Gateway-Level Filtering (Recommended)]] - `contains` [EXTRACTED]
+- [[Option 2 Approval Queue for Credential Ops]] - `contains` [EXTRACTED]
+- [[Option 3 Disable Credential Commands via Telegram]] - `contains` [EXTRACTED]
+- [[Option 4 Role-Based Access Control]] - `contains` [EXTRACTED]
+- [[Step 1 Update Gateway to Block Credentials in Telegram]] - `contains` [EXTRACTED]
+- [[Step 2 Add Command Restrictions]] - `contains` [EXTRACTED]
+- [[Step 3 Update agentshroud.yaml]] - `contains` [EXTRACTED]
+- [[Step 4 Test the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

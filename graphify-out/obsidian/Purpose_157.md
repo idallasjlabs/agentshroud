@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "create_auth_dependency"
-location: "L15"
+community: "mcp-proxy-wrapper.js (2)"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/mcp-proxy-wrapperjs_2
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2

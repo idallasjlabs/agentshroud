@@ -12,6 +12,6 @@ tags:
 # Key Classes / Functions
 
 ## Connections
-- [[sidecar.py_1]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sidecarpy

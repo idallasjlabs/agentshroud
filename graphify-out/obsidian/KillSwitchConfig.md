@@ -12,7 +12,7 @@ tags:
 # KillSwitchConfig
 
 ## Connections
-- [[dot-__init__()_113]] - `references` [EXTRACTED]
+- [[dot-__init__()_102]] - `references` [EXTRACTED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

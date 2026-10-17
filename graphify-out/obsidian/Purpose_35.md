@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "Socrates — Dialogue Architect (6)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/Socrates__Dialogue_Architect_6
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_6

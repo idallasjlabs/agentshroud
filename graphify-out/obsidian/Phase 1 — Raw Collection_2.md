@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
+community: "Phase 1 — Raw Collection (2)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Phase_1__Raw_Collection_2
 ---
 
 # Phase 1 — Raw Collection
@@ -24,4 +24,4 @@ tags:
 - [[9. Browser Extensions (optional but useful)_2]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection_2

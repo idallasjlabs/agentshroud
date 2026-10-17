@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "AgentShroud Red Team Adversarial Tester (4)"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/AgentShroud_Red_Team_Adversarial_Tester_4
 ---
 
 # Phase 3: Indirect Injection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Phases_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_4

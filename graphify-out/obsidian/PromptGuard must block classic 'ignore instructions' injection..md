@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (4)"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_4
 ---
 
 # PromptGuard must block classic 'ignore instructions' injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_injection_ignore_instructions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4

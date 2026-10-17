@@ -12,6 +12,6 @@ tags:
 # Ledger Health
 
 ## Connections
-- [[Health Checks_2]] - `contains` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Health_Checks

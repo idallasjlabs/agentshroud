@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "TestPathIsolationManager"
+community: "TestPathIsolationManager (2)"
 location: "L311"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TestPathIsolationManager_2
 ---
 
 # MCP-Specific
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Best Practices]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/document #graphify/EXTRACTED #community/TestPathIsolationManager_2

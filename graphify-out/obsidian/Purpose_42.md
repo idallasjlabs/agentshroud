@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "MCP Tools Usage (MCPM)"
+community: "CI/CD Pipeline Advisor (CICD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

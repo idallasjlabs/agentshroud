@@ -12,14 +12,14 @@ tags:
 # HTTPConnectProxy
 
 ## Connections
-- [[dot-__init__()_109]] - `method` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
 - [[dot-_agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[dot-_clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[dot-_handle_client()]] - `method` [EXTRACTED]
 - [[dot-_process_connect()]] - `method` [EXTRACTED]
 - [[dot-_relay()]] - `method` [EXTRACTED]
 - [[dot-_relay_and_scan()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_14]] - `method` [EXTRACTED]
+- [[dot-get_stats()_13]] - `method` [EXTRACTED]
 - [[dot-start()_2]] - `method` [EXTRACTED]
 - [[dot-stop()_11]] - `method` [EXTRACTED]
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]
@@ -43,7 +43,7 @@ tags:
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[canvas_proxy_app()]] - `conceptually_related_to` [INFERRED]
-- [[http_proxy.py]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "config.py"
+community: "auth.py (2)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/authpy_2
 ---
 
 # Responsibilities
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/authpy_2

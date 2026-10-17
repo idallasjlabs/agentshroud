@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "api.py"
-location: "L74"
+community: "FalcoAlertWatcher (3)"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/FalcoAlertWatcher_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher_3

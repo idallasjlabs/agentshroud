@@ -1,19 +1,18 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "AgentTarget"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "docker/bots/hermes/run-standalone.sh:8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # Hermes launched via docker run, not compose
 
 ## Connections
-- [[Compose version mismatch forces network recreation]] - `conceptually_related_to` [EXTRACTED]
 - [[Hermes deliberately absent from the dev compose override]] - `references` [EXTRACTED]
 - [[cmd_up()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

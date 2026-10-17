@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L192"
+community: "Layer-by-Layer Breakdown"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Related Notes
 
 ## Connections
-- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

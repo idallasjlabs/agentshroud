@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

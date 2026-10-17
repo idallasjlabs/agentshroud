@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Technical Writer (TW)"
+community: "Project Management (PM)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/Project_Management_PM
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

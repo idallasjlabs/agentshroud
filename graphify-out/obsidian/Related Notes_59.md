@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "OpenSCAP"
-location: "L64"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

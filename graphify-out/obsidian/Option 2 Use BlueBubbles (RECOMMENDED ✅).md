@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "AuditChain"
+community: "AuditChain (2)"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AuditChain_2
 ---
 
 # Option 2: Use BlueBubbles (RECOMMENDED ✅)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Solutions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditChain
+#graphify/document #graphify/EXTRACTED #community/AuditChain_2

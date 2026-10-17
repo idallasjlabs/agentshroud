@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "Data Validation (DATA-VAL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

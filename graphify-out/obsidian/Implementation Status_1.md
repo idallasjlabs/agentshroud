@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Features"
-location: "L118"
+community: "DOCKER-VPN-NETWORKING.md"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # Implementation Status
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

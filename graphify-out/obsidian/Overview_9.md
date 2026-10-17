@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "The 8D Investigation Process"
-location: "L16"
+community: "Layer-by-Layer Breakdown"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

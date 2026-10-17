@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "prompt_guard.py.md"
-location: "L12"
+community: "ClamAV"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/ClamAV
 ---
 
 # Purpose
 
 ## Connections
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/ClamAV

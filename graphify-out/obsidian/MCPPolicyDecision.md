@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[dot-_decide()_1]] - `references` [EXTRACTED]
-- [[dot-allowed()_1]] - `method` [EXTRACTED]
+- [[dot-allowed()]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `references` [EXTRACTED]
 - [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]

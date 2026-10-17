@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Error Index.md"
-location: "L97"
+community: "Layer-by-Layer Breakdown"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

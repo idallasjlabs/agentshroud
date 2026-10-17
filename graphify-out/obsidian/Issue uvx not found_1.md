@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (2)"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_2
 ---
 
 # Issue: "uvx not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_2

@@ -12,11 +12,11 @@ tags:
 # PassthroughPipeline
 
 ## Connections
-- [[dot-process_inbound()_6]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

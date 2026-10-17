@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Seccomp Profiles"
-location: "L84"
+community: "Crash Recovery"
+location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/Crash_Recovery
 ---
 
 # Related Notes
 
 ## Connections
-- [[Seccomp Profiles]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

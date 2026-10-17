@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "create_auth_dependency"
-location: "L23"
+community: "SecureBrowser Skill"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/SecureBrowser_Skill
 ---
 
 # Key Features
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

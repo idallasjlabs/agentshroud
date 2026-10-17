@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "1. Starting and Stopping AgentShroud"
+community: "AgentShroud Incident Response Plan"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Starting_and_Stopping_AgentShroud
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Restart Procedure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Starting and Stopping AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Starting_and_Stopping_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

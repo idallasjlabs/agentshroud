@@ -12,7 +12,7 @@ tags:
 # InstallConfig
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[installer.py_2]] - `contains` [EXTRACTED]
 - [[start_install()]] - `references` [EXTRACTED]
 

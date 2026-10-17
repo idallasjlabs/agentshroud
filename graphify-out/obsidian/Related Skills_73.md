@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

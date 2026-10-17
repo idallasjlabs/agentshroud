@@ -12,6 +12,6 @@ tags:
 # Initialize RBAC manager with configuration.
 
 ## Connections
-- [[dot-__init__()_78]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_158]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

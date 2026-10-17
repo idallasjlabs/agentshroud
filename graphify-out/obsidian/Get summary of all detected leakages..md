@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (4)"
 location: "L361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_4
 ---
 
 # Get summary of all detected leakages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_leakage_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_4

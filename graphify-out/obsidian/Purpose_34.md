@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "Data Validation (DATA-VAL)"
+community: "hermes/skills/i-bs/README.md (5)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Validation_DATA-VAL
+  - community/hermes/skills/i-bs/READMEmd_5
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5

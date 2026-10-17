@@ -16,11 +16,11 @@ tags:
 - [[Project Management (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Purpose_71]] - `contains` [EXTRACTED]
 - [[Purpose_73]] - `contains` [EXTRACTED]
-- [[Related Skills_57]] - `contains` [EXTRACTED]
 - [[Related Skills_59]] - `contains` [EXTRACTED]
+- [[Related Skills_61]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_61]] - `contains` [EXTRACTED]
-- [[Usage_63]] - `contains` [EXTRACTED]
+- [[Usage_67]] - `contains` [EXTRACTED]
+- [[Usage_69]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

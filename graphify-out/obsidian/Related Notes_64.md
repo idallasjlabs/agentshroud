@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "First Time Setup"
-location: "L183"
+community: "Health Checks"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Health_Checks
 ---
 
 # Related Notes
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

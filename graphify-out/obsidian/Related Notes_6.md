@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Error Index.md"
-location: "L104"
+community: "Error Index.md (3)"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Error_Indexmd_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3

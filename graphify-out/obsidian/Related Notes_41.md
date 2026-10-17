@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Docker Volumes"
-location: "L90"
+community: "All Dependencies.md"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

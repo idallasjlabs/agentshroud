@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Technical Writer (TW)"
+community: "MCP Tools Usage (MCPM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

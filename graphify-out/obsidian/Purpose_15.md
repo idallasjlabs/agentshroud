@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "Athena — Knowledge Distiller (4)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/Athena__Knowledge_Distiller_4
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_4

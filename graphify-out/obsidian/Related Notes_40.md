@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Docker Volumes"
-location: "L46"
+community: "All Dependencies.md"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

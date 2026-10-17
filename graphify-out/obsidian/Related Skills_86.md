@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L221"
+community: "Test-Driven Development README"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/Test-Driven_Development_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

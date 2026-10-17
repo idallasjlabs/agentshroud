@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
-location: "L14"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
+location: "L346"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
 ---
 
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3

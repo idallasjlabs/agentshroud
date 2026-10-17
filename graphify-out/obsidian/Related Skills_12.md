@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "hermes/skills/i-bs/README.md (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/hermes/skills/i-bs/READMEmd_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_2

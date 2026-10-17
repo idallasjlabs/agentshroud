@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L6"
+community: "encrypted_store.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/encrypted_storepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

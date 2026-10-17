@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "egress_filter.py"
-location: "L213"
+community: "Error Index.md"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

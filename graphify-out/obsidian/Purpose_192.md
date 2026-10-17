@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
 community: "CI/CD Pipeline Advisor (README)"
 location: "L6"
@@ -12,6 +12,7 @@ tags:
 # Purpose
 
 ## Connections
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

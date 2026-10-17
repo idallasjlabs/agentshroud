@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "AlertDispatcher (2)"
 location: "L584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher_2
 ---
 
 # Monitor mode flags but allows — verify difference from enforce.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_monitor_mode_allows_everything()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

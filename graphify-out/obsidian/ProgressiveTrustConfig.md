@@ -12,9 +12,9 @@ tags:
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-__init__()_183]] - `references` [EXTRACTED]
+- [[dot-__init__()_63]] - `references` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/TrustConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "TrustManager"
-location: "L28"
+community: "llm_proxy.py"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/llm_proxypy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

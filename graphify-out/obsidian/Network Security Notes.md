@@ -12,6 +12,6 @@ tags:
 # Network Security Notes
 
 ## Connections
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecurityPipeline

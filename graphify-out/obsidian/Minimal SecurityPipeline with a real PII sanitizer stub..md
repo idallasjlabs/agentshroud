@@ -12,6 +12,6 @@ tags:
 # Minimal SecurityPipeline with a real PII sanitizer stub.
 
 ## Connections
-- [[_make_pipeline()_4]] - `rationale_for` [EXTRACTED]
+- [[_make_pipeline()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditChain

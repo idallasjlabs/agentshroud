@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Related Skills
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

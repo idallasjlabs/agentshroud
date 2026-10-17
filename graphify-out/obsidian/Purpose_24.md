@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Incident Response (INCIDENT)"
+community: ".agents/skills/i-cr/SKILL.md (5)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_INCIDENT
+  - community/agents/skills/i-cr/SKILLmd_5
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_5

@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
 community: "Error Index.md"
-location: "L9"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,12 +12,6 @@ tags:
 # MCP Proxy Errors
 
 ## Connections
-- [[HTTP 400 — Unknown MCP Server]] - `contains` [EXTRACTED]
-- [[HTTP 403 — MCP Tool Permission Denied]] - `contains` [EXTRACTED]
-- [[HTTP 429 — MCP Rate Limit Exceeded]] - `contains` [EXTRACTED]
-- [[HTTP 502 — MCP Server Unreachable]] - `contains` [EXTRACTED]
-- [[MCP Proxy Errors]] - `contains` [EXTRACTED]
-- [[MCP Proxy Wrapper Issues (Bot Side)]] - `contains` [EXTRACTED]
-- [[Related Notes_6]] - `contains` [EXTRACTED]
+- [[Error Index]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD)"
+community: "8D Root Cause Analysis"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

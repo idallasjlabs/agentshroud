@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "main.py.md"
-location: "L114"
+community: "First Time Setup (3)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/First_Time_Setup_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
+- [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_3

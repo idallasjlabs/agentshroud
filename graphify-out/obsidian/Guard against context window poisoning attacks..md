@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # Guard against context window poisoning attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
 community: "LLMProxy"
-location: "L841"
+location: "L977"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

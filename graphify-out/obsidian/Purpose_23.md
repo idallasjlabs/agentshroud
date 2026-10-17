@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: ".agents/skills/i-cr/SKILL.md (4)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/agents/skills/i-cr/SKILLmd_4
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_4

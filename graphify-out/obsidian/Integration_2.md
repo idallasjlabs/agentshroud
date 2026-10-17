@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "FalcoAlertWatcher"
-location: "L56"
+community: "SecureBrowser Skill"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/SecureBrowser_Skill
 ---
 
 # Integration
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[With 1Password]] - `contains` [EXTRACTED]
+- [[With AgentShroud Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

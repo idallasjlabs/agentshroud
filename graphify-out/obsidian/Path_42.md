@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "CompetitiveIntelReport"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/CompetitiveIntelReport
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_156]] - `references` [EXTRACTED]
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[dot-__init__()_151]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

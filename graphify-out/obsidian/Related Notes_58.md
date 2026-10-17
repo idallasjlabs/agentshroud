@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "FalcoAlertWatcher"
-location: "L75"
+community: "mcp-proxy-wrapper.js (2)"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/mcp-proxy-wrapperjs_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2

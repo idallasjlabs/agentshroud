@@ -1,26 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "StdioConnection"
-location: "L95"
+community: "PermissionLevel"
+location: "L378"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/PermissionLevel
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[dot-__init__()_39]] - `references` [EXTRACTED]
-- [[dot-__init__()_40]] - `references` [EXTRACTED]
-- [[dot-get_or_create()]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-infer_permission_level()]] - `references` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/PermissionLevel

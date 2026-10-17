@@ -12,6 +12,6 @@ tags:
 # Mock validation that can be controlled.
 
 ## Connections
-- [[dot-validate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

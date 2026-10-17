@@ -12,6 +12,6 @@ tags:
 # Get summary statistics of egress attempts.
 
 ## Connections
-- [[dot-get_stats()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_17]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

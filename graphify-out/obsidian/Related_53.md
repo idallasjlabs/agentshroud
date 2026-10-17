@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "config.py"
-location: "L66"
+community: "main.py"
+location: "L464"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/mainpy
 ---
 
 # Related
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/mainpy

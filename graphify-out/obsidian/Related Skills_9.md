@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "macOS System Administrator (MAC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

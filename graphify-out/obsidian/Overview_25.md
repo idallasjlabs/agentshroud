@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
-location: "L3"
+community: "Use Cases"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Use_Cases
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

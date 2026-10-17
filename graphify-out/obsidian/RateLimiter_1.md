@@ -12,9 +12,9 @@ tags:
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_147]] - `calls` [EXTRACTED]
-- [[dot-__init__()_42]] - `method` [EXTRACTED]
-- [[dot-check()_6]] - `method` [EXTRACTED]
+- [[dot-__init__()_181]] - `calls` [EXTRACTED]
+- [[dot-__init__()_43]] - `method` [EXTRACTED]
+- [[dot-check()_2]] - `method` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
-- [[Any_80]] - `uses` [INFERRED]
+- [[Any_4]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[PassthroughPipeline]] - `uses` [INFERRED]
 - [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestCollaboratorPromptClassifiers]] - `uses` [INFERRED]

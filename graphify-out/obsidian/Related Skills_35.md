@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Production Safety Checklist (PROD-SAFETY)"
+community: "macOS System Administrator (MAC) (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_PROD-SAFETY
+  - community/macOS_System_Administrator_MAC_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC_2

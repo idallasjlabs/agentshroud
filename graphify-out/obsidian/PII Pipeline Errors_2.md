@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Error Index"
-location: "L54"
+community: "Error Index.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Index
+  - community/Error_Indexmd
 ---
 
-# PII Pipeline Errors
+# PII Pipeline Errors.md
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_2]] - `semantically_similar_to` [INFERRED]
+- [[presidio-analyzer]] - `references` [EXTRACTED]
+- [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Index
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,19 +1,17 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
-location: "L50"
+community: "main.rs (2)"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/mainrs_2
 ---
 
 # OutputFormat
 
 ## Connections
-- [[main.rs]] - `contains` [EXTRACTED]
-- [[print_output()]] - `references` [EXTRACTED]
-- [[render_output_lines()]] - `references` [EXTRACTED]
+- [[Cli]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/mainrs_2

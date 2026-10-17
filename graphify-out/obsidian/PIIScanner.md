@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # PIIScanner
 
 ## Connections
-- [[dot-__init__()_60]] - `calls` [EXTRACTED]
-- [[dot-scan()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_17]] - `calls` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
 - [[dot-test_api_key_pattern_detected()]] - `calls` [EXTRACTED]
 - [[dot-test_credit_card_detected()_1]] - `calls` [EXTRACTED]
 - [[dot-test_email_detected()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

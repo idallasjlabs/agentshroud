@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L10"
+community: "SSH Capability Architecture Document"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Overview
 
 ## Connections
-- [[Data Flow]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

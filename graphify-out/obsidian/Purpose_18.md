@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "macOS System Administrator (MAC)"
+community: ".agents/skills/i-cr/SKILL.md (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC
+  - community/agents/skills/i-cr/SKILLmd_3
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_3

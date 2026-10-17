@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "Project Management (README)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Project_Management_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

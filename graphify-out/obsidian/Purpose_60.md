@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-socrates/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "Socrates — Dialogue Architect (7)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/Socrates__Dialogue_Architect_7
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_7

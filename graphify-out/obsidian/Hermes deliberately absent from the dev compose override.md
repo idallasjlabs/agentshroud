@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "rationale"
-community: "AgentTarget"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "docker/docker-compose.agentshroud-bot.marvin.yml:71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # Hermes deliberately absent from the dev compose override
@@ -16,4 +16,4 @@ tags:
 - [[Hermes launched via docker run, not compose]] - `references` [EXTRACTED]
 - [[_hermes_up()]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

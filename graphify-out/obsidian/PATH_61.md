@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: ""
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L205"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/triage-cve-mitigationspy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_193]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

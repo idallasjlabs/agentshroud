@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "RBACConfig (2)"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/RBACConfig_2
 ---
 
 # Owner is allowed ALL tools in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_allowed_all_tools_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

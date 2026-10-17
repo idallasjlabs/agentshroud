@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L478"
+community: "AWS Cloud Management & FinOps Agent (2)"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/AWS_Cloud_Management__FinOps_Agent_2
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2

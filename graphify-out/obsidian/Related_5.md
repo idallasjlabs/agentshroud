@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "env_guard.py"
-location: "L106"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Related
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

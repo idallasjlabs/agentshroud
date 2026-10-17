@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "TestSSRFDetection"
-location: "L176"
+community: "main.py.md (2)"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/mainpymd_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/mainpymd_2

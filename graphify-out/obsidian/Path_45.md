@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L116"
+community: "Path (4)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Path_4
 ---
 
 # Path
 
 ## Connections
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/Path_4

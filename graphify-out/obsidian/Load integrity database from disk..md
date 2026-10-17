@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (6)"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_6
 ---
 
 # Load integrity database from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_integrity_database()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6

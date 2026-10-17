@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Function Details"
+community: "Function Details (2)"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_2
 ---
 
 # ResourceGuard.check_cpu_limit(agent_id) / check_memory_limit(agent_id) / check_disk_write_limit(agent_id)
 
 ## Connections
-- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_2

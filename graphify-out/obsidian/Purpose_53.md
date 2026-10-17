@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "Mnemosyne — Retention Engineer (4)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/Mnemosyne__Retention_Engineer_4
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_4

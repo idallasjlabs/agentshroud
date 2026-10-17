@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Test-Driven Development (TDD)"
+community: "Mnemosyne — Retention Engineer (4)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_TDD
+  - community/Mnemosyne__Retention_Engineer_4
 ---
 
 # Related Skills
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_4

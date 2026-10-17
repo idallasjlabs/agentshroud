@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L46"
+community: "egress_filter.py"
+location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/egress_filterpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[FastAPI_2]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

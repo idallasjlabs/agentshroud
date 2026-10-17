@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "egress_filter.py"
-location: "L34"
+community: "troubleshooting.md"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/troubleshootingmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[troubleshooting_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
