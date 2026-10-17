@@ -366,6 +366,86 @@ check "T8: persistent failure + gated -> hard failure, never a false pass" \
     "$([ "$rc8" -eq 20 ] && grep -q '"failed": 1' "$JSON8" && ! grep -q 'scan: PASS' "$OUT8" && echo true || echo false)" \
     "rc=$rc8 json=$(cat "$JSON8" 2>/dev/null) stdout=$(cat "$OUT8")"
 
+# ── T9: a run that scanned nothing must not publish PASS (§0.0) ─────────────
+# The exact 2026-10-11 dev handoff: status PASS, upgraded:false,
+# images_scanned:0, scans_failed:3. Dev only WARNS on scan failure, so the run
+# reached `write_handoff PASS` and prod read a green it had no basis for.
+# shellcheck disable=SC2016  # expands in the child shell, by design
+handoff_status() {
+    env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c \
+        '. "$1"; shift; sunday_handoff_status "$@"' _ "$LIB" "$@"
+}
+check "T9: 2026-10-11 shape (0 scanned, 3 failed) is not PASS" \
+    "$([ "$(handoff_status PASS 0 3)" = "SCAN_INCOMPLETE" ] && echo true || echo false)" \
+    "got=$(handoff_status PASS 0 3)"
+check "T9: some images scanned but one failed is not PASS" \
+    "$([ "$(handoff_status PASS 2 1)" = "SCAN_INCOMPLETE" ] && echo true || echo false)" \
+    "got=$(handoff_status PASS 2 1)"
+check "T9: no scan artefact at all (null counts) is not PASS" \
+    "$([ "$(handoff_status PASS null null)" = "SCAN_INCOMPLETE" ] && echo true || echo false)" \
+    "got=$(handoff_status PASS null null)"
+check "T9: a real scan (3 scanned, 0 failed) stays PASS" \
+    "$([ "$(handoff_status PASS 3 0)" = "PASS" ] && echo true || echo false)" \
+    "got=$(handoff_status PASS 3 0)"
+check "T9: a non-PASS status passes through unchanged" \
+    "$([ "$(handoff_status FAIL 0 3)" = "FAIL" ] && echo true || echo false)" \
+    "got=$(handoff_status FAIL 0 3)"
+
+# ── T10: prod accepts only TODAY's dev handoff, and only a PASS ─────────────
+# A dev-result file from an earlier Sunday (dev-result-2026-10-11.json sat in
+# the shared dir with status PASS) must never satisfy a later prod run.
+# shellcheck disable=SC2016  # expands in the child shell, by design
+dev_gate() {
+    env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c \
+        '. "$1"; shift; sunday_dev_handoff_gate "$@"' _ "$LIB" "$@"
+}
+H10="$TMPROOT/t10"; mkdir -p "$H10"
+T10_TODAY="2026-10-18"
+printf '{\n  "date": "2026-10-11",\n  "status": "PASS"\n}\n' > "$H10/dev-result-2026-10-11.json"
+set +e
+dev_gate "$H10" "$T10_TODAY" >/dev/null 2>&1; rc10a=$?
+set -e
+check "T10: only last week's PASS present -> prod is blocked" \
+    "$([ "$rc10a" -ne 0 ] && echo true || echo false)" "rc=$rc10a"
+
+printf '{\n  "date": "2026-10-11",\n  "status": "PASS"\n}\n' > "$H10/dev-result-${T10_TODAY}.json"
+set +e
+dev_gate "$H10" "$T10_TODAY" >/dev/null 2>&1; rc10b=$?
+set -e
+check "T10: today's filename but a stale date inside -> prod is blocked" \
+    "$([ "$rc10b" -ne 0 ] && echo true || echo false)" "rc=$rc10b"
+
+for st in FAIL NOTHING_UPGRADED SCAN_INCOMPLETE; do
+    printf '{\n  "date": "%s",\n  "status": "%s"\n}\n' "$T10_TODAY" "$st" > "$H10/dev-result-${T10_TODAY}.json"
+    set +e
+    dev_gate "$H10" "$T10_TODAY" >/dev/null 2>&1; rc10c=$?
+    set -e
+    check "T10: today's handoff with status ${st} -> prod is blocked" \
+        "$([ "$rc10c" -ne 0 ] && echo true || echo false)" "rc=$rc10c"
+done
+
+printf '{\n  "date": "%s",\n  "status": "PASS"\n}\n' "$T10_TODAY" > "$H10/dev-result-${T10_TODAY}.json"
+set +e
+dev_gate "$H10" "$T10_TODAY" >/dev/null 2>&1; rc10d=$?
+set -e
+check "T10: today's PASS handoff -> prod may proceed" \
+    "$([ "$rc10d" -eq 0 ] && echo true || echo false)" "rc=$rc10d"
+
+# ── T11: the apply script actually calls both gates ─────────────────────────
+# T9/T10 prove the functions; these prove the wiring. A positive --phase all
+# run needs a live stack and a soak (see the header), so the call sites are
+# checked statically: the status gate must sit before the final PASS write,
+# the dev gate inside phase_apply before the clean-build gate (pre-mutation),
+# and the EXIT trap must not overwrite a deliberate status with FAIL.
+main_tail="$(sed -n '/^_prune_build_cache$/,$p' "$APPLY_SH")"
+check "T11: main derives the handoff status from the scan before writing PASS" \
+    "$(printf '%s\n' "$main_tail" | grep -n 'sunday_handoff_status\|^write_handoff PASS' | head -1 | grep -q sunday_handoff_status && echo true || echo false)"
+apply_body="$(awk '/^phase_apply\(\) \{/,/Clean-build gate/' "$APPLY_SH")"
+check "T11: phase_apply runs sunday_dev_handoff_gate before any build" \
+    "$(printf '%s\n' "$apply_body" | grep -q 'sunday_dev_handoff_gate' && echo true || echo false)"
+check "T11: EXIT trap leaves a deliberately written handoff alone" \
+    "$(grep -E "^trap '.*HANDOFF_WRITTEN.*write_handoff FAIL" "$APPLY_SH" >/dev/null && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

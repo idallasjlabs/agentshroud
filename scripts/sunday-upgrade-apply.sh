@@ -47,7 +47,12 @@
 # Exit codes (the contract — callers depend on these):
 #   0   all requested phases passed
 #   10  preflight failed (environment not fit to run)
+#   15  prod only: no dev PASS handoff for TODAY (missing, stale-dated, or
+#       not PASS) — nothing was mutated
 #   20  scan gate failed (--max-critical exceeded)
+#   21  dev only: every phase passed but the scan proved nothing (no image
+#       scanned, or a scan errored). Handoff published as SCAN_INCOMPLETE,
+#       never PASS, so prod stays blocked.
 #   25  NOTHING WAS UPGRADED although a newer upstream release exists.
 #       The run was mechanically green but achieved nothing — see the no-op
 #       gate below. This is a job malfunction, not a healthy stack.
@@ -960,6 +965,16 @@ phase_apply() {
     return 0
   fi
 
+  # ── Dev-goes-first gate (prod) ─────────────────────────────────────────────
+  # Prod applies only what dev passed TODAY. This used to live only in the
+  # session prompt, so nothing mechanical stopped a prod apply from reading a
+  # previous Sunday's dev-result (dev-result-2026-10-11.json sat in the shared
+  # dir with status PASS). Exit 15 before anything is mutated.
+  if [ "$ENVIRONMENT" = "prod" ] && ! sunday_dev_handoff_gate "$HANDOFF_DIR" "$TODAY"; then
+    err "apply: BLOCKED — no dev PASS handoff for ${TODAY}; prod applies nothing dev has not passed today"
+    exit 15
+  fi
+
   # ── Clean-build gate ───────────────────────────────────────────────────────
   # `docker compose build` bakes the working tree into the image. If the build
   # context is dirty, an unattended Sunday run would ship whatever happened to be
@@ -1373,6 +1388,10 @@ write_handoff() {
     printf '}\n'
   } > "$out"
   chmod 664 "$out" 2>/dev/null || true
+  # Tell the EXIT trap a deliberate status is on disk, so a non-zero exit that
+  # follows (25, 21) does not overwrite NOTHING_UPGRADED/SCAN_INCOMPLETE with a
+  # generic FAIL.
+  HANDOFF_WRITTEN=1
   log "handoff: wrote $out (status=$status)"
 }
 
@@ -1389,7 +1408,7 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 # way it killed the test runner that evaluates this line (2026-09-24), and in a
 # real run it would have taken down whatever shared the group. Kill only a pid
 # we actually recorded.
-trap 'rc=$?; if [ -n "${LOCK_HEARTBEAT_PID:-}" ]; then kill "$LOCK_HEARTBEAT_PID" 2>/dev/null || true; fi; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; _release_apply_lock; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
+trap 'rc=$?; if [ -n "${LOCK_HEARTBEAT_PID:-}" ]; then kill "$LOCK_HEARTBEAT_PID" 2>/dev/null || true; fi; rm -f "$UPGRADE_LOCK" 2>/dev/null || true; _release_apply_lock; if [ $rc -ne 0 ] && [ "${HANDOFF_WRITTEN:-0}" != "1" ]; then write_handoff FAIL; fi' EXIT
 mkdir -p "$(dirname "$UPGRADE_LOCK")" 2>/dev/null || true
 printf '%s\n' "$$" > "$UPGRADE_LOCK" 2>/dev/null || true
 LOCK_HEARTBEAT_PID=""
@@ -1442,6 +1461,16 @@ fi
 # given back as part of the run rather than left for the next one to trip over.
 _prune_build_cache
 
+# Dev warns on scan failure rather than dying, so reaching this line does not
+# mean the scan proved anything. Publish PASS only when it did (§0.0).
+if [ "$ENVIRONMENT" = "dev" ] && [ "$PHASE" = "all" ]; then
+  handoff_status="$(sunday_handoff_status PASS "$(_scan_json_field scanned)" "$(_scan_json_field failed)")"
+  if [ "$handoff_status" != "PASS" ]; then
+    err "handoff: every phase passed but the scan proved nothing (images_scanned=$(_scan_json_field scanned), scans_failed=$(_scan_json_field failed)) — publishing ${handoff_status}, not PASS"
+    write_handoff "$handoff_status"
+    exit 21
+  fi
+fi
 write_handoff PASS
 log "=== sunday-upgrade-apply COMPLETE: all requested phases passed ==="
 log "artifacts: $ARTIFACT_DIR"

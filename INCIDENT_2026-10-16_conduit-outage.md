@@ -906,3 +906,88 @@ anon-rss 468 MB, total-vm 3.7 GB), not the main gateway process; restarts = 0, h
 re-accumulates about ten `openclaw-mcp-github-*` sidecars after each restart. Fix scope:
 size the OpenClaw cap to its measured steady RSS plus headroom on each host (dev stays
 below prod), and stop or reap the duplicate MCP sidecars.
+
+## 2026-10-17 afternoon: drift audit of both hosts, and the drift PR
+
+Owner's goal: dev and prod rebuilt from the same `main` commit, with no manual steps
+before Sunday's upgrade and Monday's 04:30 Daily Brief. Both hosts were at `aebc0dac6c`,
+clean, with only `main` locally and on origin and no open PRs. The audit found drift in
+what the schedulers run:
+
+- **Prod's Sunday job was loaded from a stale backup plist.** The loaded job came from
+  `com.agentshroud.sunday-upgrade-20260906-0645.plist`: same Label, no
+  `SUNDAY_UPGRADE_AUTON=1`, so Sunday's 06:00 run would have stalled on permission
+  prompts. Prod moved it and three other stale copies (two colima-autostart backups,
+  the pke `.bak`) to `~/Library/LaunchAgents-archive/`. It then installed the repo plist
+  (`cmp` identical) and bootstrapped it. `launchctl` now shows the canonical path with
+  AUTON=1 and HOME set.
+- **Dev's crontab was hand-typed.** The `*/5` and `@reboot` health check plus the Sunday
+  03:00 run and its 05/08/11/14 retries had no tracked installer.
+- **The repo colima plist had regressed to `/tmp` log paths.** Prod's job creates
+  `/tmp/colima-autostart.*` first as another user, so dev's job cannot spawn (found
+  2026-09-19). Dev's installed copy still had the per-account fix; prod's matched the
+  repo.
+- **Dev's 2026-10-11 Sunday handoff was a false green (CLAUDE.md §0.0).**
+  `dev-result-2026-10-11.json` read `status: PASS` with `upgraded: false`,
+  `images_scanned: 0` and `scans_failed: 3`. Dev only warns on scan failure, so the run
+  reached `write_handoff PASS`. Prod's check of that file was only in the session
+  prompt, and nothing stopped it accepting an old week's PASS.
+- **2026-10-11 lost every retry.**
+  - The 03:00 session was still on `chore/upgrade-2026-10-11` when the 05:00 fire ran
+    the branch guard before the "already running" check, so it failed with FATAL
+    "repo checkout is on branch ..., not main".
+  - The 08:00 session's watcher kills at 180 min plus a 20 s boot (11:00:40), so the
+    11:00 fire saw it alive and skipped.
+  - Each of the 03:00, 08:00 and 14:00 runs then timed out with no report.
+  - The checkout did return to `main` after each timeout, because that end-of-run step
+    already existed.
+- Stashes: prod archived its 14 to `~/.agentshroud/stash-archive-20261017/` and cleared
+  them. Dev archived its 16 to the same path (patches plus `SHAS.txt`). Clearing dev's
+  stashes, archiving `com.agentshroud.imsg-relay.plist` (not loaded, not in the repo) and
+  deleting three ignored `docker/*.bak` files were refused by dev's permission
+  classifier; they are left for the owner.
+- docker-socket-proxy: both hosts run `1f5038b54f06`. It is untagged because compose
+  pins it by digest. That digest is upstream's `latest` = `v0.5.0` (2026-07-27), the
+  newest release (Docker Hub tags API, checked 2026-10-17). Only `master`/`nightly` are
+  newer, so the pin is current.
+- Dev has no `openclaw-mcp-github-*` sidecars (no containers, no processes inside
+  OpenClaw). Prod's ~10 are prod-only. Dev OpenClaw sat at 3.24 of 3.5 GiB during the
+  audit.
+
+What the drift PR changes:
+
+1. **Result gate.**
+   - `sunday_handoff_status` in `scripts/lib/sunday-scan.sh` turns a PASS into
+     `SCAN_INCOMPLETE` when no image scanned or any scan failed.
+   - `sunday-upgrade-apply.sh` publishes that and exits **21**.
+   - The EXIT trap no longer overwrites a deliberately written
+     `SCAN_INCOMPLETE`/`NOTHING_UPGRADED` with `FAIL`.
+2. **Prod gate.** `sunday_dev_handoff_gate` requires `dev-result-<today>.json` whose own
+   `date` is today and whose status is PASS. `phase_apply` runs it on prod before
+   anything mutates (exit **15**).
+3. **Wrapper (`sunday-upgrade.sh`).**
+   - The session guard runs before the branch guard, so an overlapping fire skips
+     instead of failing FATAL.
+   - A session past its budget with no watcher is killed, and the checkout is returned
+     to `main` through the shared `_return_to_main`.
+   - `WATCH_TIMEOUT_MIN` 180 → 170, so a timed-out watcher finishes before the next
+     3-hourly fire.
+4. **colima plist.** Per-account `~/Library/Logs` paths. The no-sizing-flags note is kept.
+5. **`scripts/launchd/install.sh`.** Picks the role by `whoami`.
+   - Prod: installs both plists, archives same-Label stale copies, and reloads a job
+     only when its file changed or it is not loaded.
+   - Dev: places the colima plist and installs a managed crontab block that replaces
+     hand-typed copies of the same jobs.
+   - Idempotent; refuses other accounts.
+
+Additional Sunday items from the owner's 12:30 test (2026-10-17):
+
+- (a) **Hermes reply latency.** The Telegram session reached 43k tokens (240 messages)
+  and took 322 s on nemotron. Conduit on gemma had 19.7k tokens and took 537 s. Options:
+  auto-compress well before 43k, a smaller toolset for desktop/Conduit, prompt caching
+  in TurboFieldfare.
+- (b) **OpenClaw sends its `NO_REPLY` sentinel to Telegram as literal text** (11:38 and
+  12:53).
+- (c) **`[SCHEMA_REDACTED]` appeared in an OpenClaw reply.**
+- (d) **"Exec completed (code 0) :: Killed" ×3 in OpenClaw async exec.** Consistent with
+  the OpenClaw memcg cap item above.

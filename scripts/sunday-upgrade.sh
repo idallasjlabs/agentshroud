@@ -108,10 +108,82 @@ TODAY="$(date +%F)"
 LOG="$REPO/reports/upgrade-run-${TODAY}.log"
 REPORT_MD="$REPO/reports/upgrade-${TODAY}.md"
 HERMES_CONTAINER="agentshroud-hermes-v2"
-WATCH_TIMEOUT_MIN=180   # prompt's own budget is 90 min; hard stop at 3h
+# Prompt's own budget is 90 min. The hard stop must end the watcher (20s boot
+# + this + report staging) BEFORE the next 3-hourly retry fires: at 180 the
+# 08:00 run was killed at 11:00:40, so the 11:00 fire saw it still alive and
+# skipped (2026-10-11). 170 leaves ~9 minutes of margin.
+WATCH_TIMEOUT_MIN=170
+
+# _session_guard <session> <max_age_min> — prints none | running | reaped.
+# A live session younger than its budget is another fire's run in progress
+# (the 03:00 run is still going at the 05:00 fire): leave it alone. One older
+# than the budget has outlived the watcher that should have killed it, so it
+# is an orphan blocking every retry: kill it. An unreadable age is treated as
+# running — never kill a session blind.
+_session_guard() {
+  local s="$1" max_min="$2" created now
+  if ! tmux has-session -t "$s" 2>/dev/null; then
+    echo none
+    return 0
+  fi
+  created="$(tmux display-message -p -t "$s" '#{session_created}' 2>/dev/null || echo '')"
+  case "$created" in ''|*[!0-9]*) echo running; return 0 ;; esac
+  now="$(date +%s)"
+  if [ $(( (now - created) / 60 )) -lt "$max_min" ]; then
+    echo running
+    return 0
+  fi
+  tmux kill-session -t "$s" 2>/dev/null || true
+  if tmux has-session -t "$s" 2>/dev/null; then echo running; else echo reaped; fi
+}
+
+# ── Return the checkout to main ─────────────────────────────────────────────
+# The run works on chore/upgrade-<date>. It used to LEAVE the checkout there,
+# which hard-blocks every later run at the branch guard (exit 4) — on
+# 2026-09-21 the 03:00 and 05:00 fires both FATAL'd on the branch left behind
+# by the 2026-09-20 run. The job must not sabotage its own next invocation.
+#
+# Push first so the work is never stranded local-only, then switch back. Both
+# steps are skipped when the tree is dirty: a half-finished working tree is
+# the one case where switching branches loses work, and losing work is worse
+# than leaving the checkout somewhere inconvenient. Called at the end of every
+# run and after reaping an orphaned session, whose watcher never got here.
+_return_to_main() {
+  local branch leftover
+  branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+  [ -n "$branch" ] && [ "$branch" != "main" ] || return 0
+  leftover="$(git status --porcelain 2>/dev/null | grep -v 'graphify-out/' | grep -v '^??' || true)"
+  if [ -n "$leftover" ]; then
+    echo "[sunday-upgrade] WARN: staying on '${branch}' — uncommitted changes present." >&2
+    echo "[sunday-upgrade] WARN: the NEXT run will fail its branch guard until this is resolved." >&2
+    return 0
+  fi
+  if timeout 60 git push -u origin "$branch" >/dev/null 2>&1; then
+    echo "[sunday-upgrade] pushed '${branch}' (work preserved for review)."
+  else
+    echo "[sunday-upgrade] WARN: could not push '${branch}' — it exists only locally." >&2
+  fi
+  if git checkout main >/dev/null 2>&1; then
+    echo "[sunday-upgrade] checkout returned to main (next run's branch guard will pass)."
+  else
+    echo "[sunday-upgrade] WARN: could not return the checkout to main." >&2
+  fi
+}
 
 cd "$REPO"
 mkdir -p reports
+
+# Idempotency FIRST, before the branch guard: an overlapping fire must skip,
+# not FATAL on the live run's chore branch (2026-10-11 05:00). Guards against
+# a manual re-trigger the same day, or launchd re-firing after a delayed wake.
+case "$(_session_guard "$SESSION" $((WATCH_TIMEOUT_MIN + 10)))" in
+  running)
+    echo "[sunday-upgrade] tmux session ${SESSION} already running — skipping."
+    exit 0 ;;
+  reaped)
+    echo "[sunday-upgrade] WARN: tmux session ${SESSION} outlived its ${WATCH_TIMEOUT_MIN}m budget with no watcher — killed it." >&2
+    _return_to_main ;;
+esac
 
 # ── Branch/freshness preflight — the job must run against current main ──────
 # This script previously trusted whatever was checked out on the host, with no
@@ -255,14 +327,6 @@ else
   exit 4
 fi
 
-# Idempotency: don't stack a second session if today's already running or
-# already finished — guards against a manual re-trigger the same day, or
-# launchd re-firing after a delayed wake (2026-09-06: a stale prior week's
-# session name colliding was seen as "duplicate session" log noise).
-if tmux has-session -t "$SESSION" 2>/dev/null; then
-  echo "[sunday-upgrade] tmux session ${SESSION} already running — skipping."
-  exit 0
-fi
 # Skip only on a run that actually COMPLETED, tracked by an explicit sentinel.
 # Previously this tested `[ -s "$REPORT_MD" ]`, which meant any run that died
 # partway after writing even a stub report permanently blocked every retry for
@@ -391,35 +455,7 @@ else
   echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
 fi
 
-# ── Return the checkout to main ─────────────────────────────────────────────
-# The run works on chore/upgrade-<date>. It used to LEAVE the checkout there,
-# which hard-blocks every later run at the branch guard (exit 4) — on
-# 2026-09-21 the 03:00 and 05:00 fires both FATAL'd on the branch left behind
-# by the 2026-09-20 run. The job must not sabotage its own next invocation.
-#
-# Push first so the work is never stranded local-only, then switch back. Both
-# steps are skipped when the tree is dirty: a half-finished working tree is
-# the one case where switching branches loses work, and losing work is worse
-# than leaving the checkout somewhere inconvenient.
-_final_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
-if [ -n "$_final_branch" ] && [ "$_final_branch" != "main" ]; then
-  _leftover="$(git status --porcelain 2>/dev/null | grep -v 'graphify-out/' | grep -v '^??' || true)"
-  if [ -n "$_leftover" ]; then
-    echo "[sunday-upgrade] WARN: staying on '${_final_branch}' — uncommitted changes present." >&2
-    echo "[sunday-upgrade] WARN: the NEXT run will fail its branch guard until this is resolved." >&2
-  else
-    if timeout 60 git push -u origin "$_final_branch" >/dev/null 2>&1; then
-      echo "[sunday-upgrade] pushed '${_final_branch}' (work preserved for review)."
-    else
-      echo "[sunday-upgrade] WARN: could not push '${_final_branch}' — it exists only locally." >&2
-    fi
-    if git checkout main >/dev/null 2>&1; then
-      echo "[sunday-upgrade] checkout returned to main (next run's branch guard will pass)."
-    else
-      echo "[sunday-upgrade] WARN: could not return the checkout to main." >&2
-    fi
-  fi
-fi
+_return_to_main
 
 # Completion sentinel — ONLY on a run that genuinely finished. Writing it after
 # a timeout marked the day done while the agent was still working (2026-09-20:

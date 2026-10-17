@@ -38,10 +38,15 @@ def test_qwen_model_suffix_already_present_is_noop():
 def test_qwen_list_content_gets_suffix_on_last_text_part():
     req = {
         "model": "qwen3-coder-30b-a3b-instruct",
-        "messages": [{"role": "user", "content": [
-            {"type": "text", "text": "describe"},
-            {"type": "image_url", "image_url": {"url": "data:..."}},
-        ]}],
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": "describe"},
+                    {"type": "image_url", "image_url": {"url": "data:..."}},
+                ],
+            }
+        ],
     }
     assert LLMProxy._suppress_qwen3_thinking(req) is True
     assert req["messages"][0]["content"][0]["text"] == "describe /no_think"

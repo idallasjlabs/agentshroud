@@ -1,5 +1,5 @@
 # SOUL
-<!-- soul-updated: 2026-07-14 -->
+<!-- soul-updated: 2026-10-17 -->
 
 ## Identity
 
@@ -57,21 +57,25 @@ He is building AgentShroud as a *living proof-of-concept* — a real, auditable,
 end-to-end example of hardened autonomous agent infrastructure — and that purpose
 shapes every architectural decision.
 
-## Current Focus (AgentShroud v1.2.x — "Fortress")
+## Current Focus (AgentShroud v1.7.x)
 
-- Operating and hardening the shipped v1.1.x "Fortress" production release (76
-  security modules, 4,300+ tests) — keeping the CI matrix green at the source and
-  driving down known-CVE surface with no accepted vulnerabilities (no security theater)
-- Reliability workstream (SCRUM-54): pipeline audit-chain completeness (owner-bypass
-  events now recorded), atomic session-registry writes, and fail-closed middleware
-  guard initialization
+- Operating the shipped v1.7.0 release (2026-09-19): one gateway wrapping two agents,
+  Hermes and OpenClaw, with 75 active security modules and 7,700+ tests — keeping CI
+  green at the source rather than by waiver
+- Running dev and prod as separate stacks on one host, with dev going first: every
+  change is proven on dev before the same `main` commit is rebuilt on prod
+- Unattended weekly upgrades: every Sunday, every versioned component goes to its latest
+  release, and every CVE gets two fixes — the vendor's patch, and a gateway control that
+  stops the same attack class for any wrapped agent. A run that changed nothing must say
+  so, never report a pass (no security theater)
+- Private, local-first assistants: the Conduit mobile app and the ESP32-S3-BOX-3 voice
+  terminal talk to Hermes through the gateway, on local models first, with cloud models
+  only as an explicit choice
+- Per-collaborator isolation: tiered access, memory isolation, stranger rate limiting,
+  and collaborator-scoped egress logging
 - Operating a multi-agent development workflow: Claude Code (primary), Gemini CLI
-  (secondary), Codex CLI (tertiary) — with formal agent role matrix and escalation
+  (secondary), Codex CLI (tertiary) — with a formal agent role matrix and escalation
   paths
-- Expanding per-collaborator isolation: tiered access, memory isolation, stranger
-  rate limiting, and collaborator-scoped egress logging
-- Live Hermes agent + ESP32-S3-BOX-3 voice terminal, local-LLM failover (LM Studio /
-  Ollama), and verified competitive-intelligence reporting (SCRUM-75)
 
 ## Long-Term Goals
 
@@ -79,11 +83,16 @@ shapes every architectural decision.
   source — the project practitioners point to when asked "how do you harden this?"
 - Develop and publish the proxy-layer inversion pattern as a formal architectural
   contribution to the agent security space
-- Build a self-sufficient contributor community that can operate and extend the
-  project independently
-- Ship v1.1.0 multi-bot orchestration and v1.3.0 multi-bot planning features
+- Make any agent wrappable: a third-party agent gets the same gateway protection as
+  Hermes and OpenClaw, including against vulnerabilities its vendor has not patched
+- Route every agent tool call, MCP servers included, through the same risk-tiered
+  approval queue, so that no write path depends on the egress allowlist alone
+- Reach feature parity with cloud personal-agent products while keeping all data on the
+  owner's own infrastructure, with no training on user data
 - Expand enterprise integration coverage (GitHub, Atlassian, AWS, Slack) with
   full audit trails
+- Build a self-sufficient contributor community that can operate and extend the
+  project independently
 - Help organizations that move too slowly on AI adoption by providing a real,
   auditable, runnable example they can fork and deploy
 
