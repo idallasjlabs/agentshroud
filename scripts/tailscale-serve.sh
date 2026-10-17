@@ -38,6 +38,9 @@
 #                 bypassing that isolation boundary entirely -- found and
 #                 fixed after the owner asked "shouldn't I connect through
 #                 AgentShroud?" while setting up the Hermes Conduit iOS app.)
+#   /           → Hermes dashboard via gateway        https://<host>/ (public Funnel; Conduit's
+#                 WKWebView bridge fetches root-relative paths, so /hermes alone 404s on refresh.
+#                 2026-10-17. Longest-prefix match keeps /voice and /health intact.)
 #   :8642/      → Hermes OpenAI API (port 8642)     https://<host>:8642/v1
 #   :8765/      → Voice Gateway WS (port 8765)      wss://<host>:8765/voice (tailnet peers)
 #   /voice      → ESP32-S3-BOX-3 voice terminal     wss://<host>/voice (public Funnel)
@@ -105,6 +108,13 @@ cmd_start() {
     # exposure, protected by the dashboard password + the gateway's middleware.
     echo "  → Hermes dashboard Funnel :443/hermes → http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/"
     tailscale funnel --bg --set-path=/hermes "http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/"
+    # 2026-10-17: Conduit's dashboard bridge issues ROOT-relative fetches
+    # (fetch("/api/auth/ws-ticket") from a WKWebView), so a sub-path alone breaks
+    # every session refresh with a bare Funnel 404. Serve matches the longest
+    # prefix, so /voice and /health above still win; everything else is the
+    # dashboard. Conduit URL: https://<host> (no path). Same upstream as /hermes.
+    echo "  → Hermes dashboard Funnel :443/ → http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/"
+    tailscale funnel --bg --set-path=/ "http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/"
 
     echo "  → Uptime monitor Funnel :443/health → http://127.0.0.1:${VOICE_GATEWAY_PORT}/health"
     tailscale funnel --bg --set-path=/health "http://127.0.0.1:${VOICE_GATEWAY_PORT}/health"
