@@ -804,6 +804,90 @@ funnel` still needs the owner, as do the owner's Telegram and Conduit "Repair
 Connection" taps. Prod checkout back on `main` at 7da4817b31, tree clean; it will
 fast-forward to this docs-only commit.
 
+Prod's follow-up (~08:30 EDT 2026-10-17; prod fast-forwarded to d8cf08503a, docs-only
+verified, no rebuild):
+- Daily Brief: manual re-run of cron job `4cb4f63b00da` "Ran now: succeeded", outbox
+  `2026-10-17` READY. The host publisher then FAILED with `ModuleNotFoundError:
+  mistune` because `/opt/homebrew/bin/python3` was relinked to Python 3.15.0 on
+  2026-10-16 08:04 (brew upgrade by the admin account) while every pke dependency lives
+  under the python@3.14 user site. Re-run with `/opt/homebrew/opt/python@3.14/libexec/bin`
+  first on PATH: "published: episode_40 duration=1606s words=3055", pke commit 32d5828,
+  feed now carries Sat 17 Oct. LaunchAgent `com.pke.daily-brief-publish` pinned to the
+  python@3.14 interpreter + PATH (backup `.bak-20261017`), reloaded, next run 04:35.
+  Sunday item: a brew python relink silently breaks every unversioned-`python3` launchd
+  job on marvin — the upgrade report must check for it.
+- Conduit: reconnected on its own at 08:23 (green dot), "Hello" delivered. Hermes
+  replied with a real provider error from TurboFieldfare :8238 — `HTTP 400: tool
+  skill_manage schema at parameters.properties.operations.items: only a two-branch
+  nullable union is representable` (gateway log 12:23:25Z, POST
+  host.docker.internal:8238 → 400, surfaced as 400 thanks to 2741a62f5e). Gap in the
+  Fieldflare shim (`gateway/proxy/llm_proxy.py`
+  `LLMProxy._strip_fieldflare_unsupported_fields`): it strips
+  `parallel_tool_calls`/`tool_choice` but does not touch tool-parameter schemas with
+  >2-branch `anyOf`/`oneOf` unions. The Conduit session is pinned to
+  `gemma-4-26b-a4b-it`; owner told to switch that chat to nemotron meanwhile. Dev takes
+  the shim fix (TDD) — see below.
+- Telegram: the owner's 23:06 "Hello" to both bots got only error replies during the
+  blackout; fresh post-recovery taps not yet received.
+- Two more findings: (a) Hermes leaked model narration to Telegram this morning ("The
+  terminal display is having artifacts but the session is valid. Let me respond:") —
+  local-model prompting issue, AGENTS.md "answer only, never narrate" rule, not a cloud
+  switch. (b) Egress approval cards for `agent=hermes` (mcp.exa.ai:443 at 06:06 two days
+  running, salt.security:443 yesterday) are posted into the OPENCLAW bot's chat:
+  `telegram_egress_notify.py:_token_for` falls back to `self.bot_token` when
+  `per_bot_tokens` lacks the agent — check whether prod populates
+  `per_bot_tokens["hermes"]`; per the per-bot identity rule they must come from the
+  Hermes bot. The same card (id d1994ed2) rendered twice; the 07:06 `editMessageText`
+  got "message is not modified" — looks like a resend on edit failure. The daily 06:05
+  Hermes activity burst (feedbin, nousresearch, raw.githubusercontent, openrouter.ai)
+  triggers the exa request; `hermes mcp list` is empty, so mcp.exa.ai comes from a
+  built-in web-search path, job not yet identified.
+
+Fieldflare shim fix (dev, 2026-10-17, TDD): probed :8238 with the real `skill_manage`
+parameter schema exported from the Hermes container and with synthetic variants. The
+server's rules, verbatim from its 400 bodies: `anyOf`/`oneOf` must be "a two-branch
+nullable union" with "one exact null branch" (either order; both keywords accepted);
+`type` lists allow "only one concrete type plus null"; `allOf is not representable by
+the Gemma template`; nested unions inside object branches are checked too. New
+`LLMProxy._flatten_fieldflare_schema` (called from
+`_strip_fieldflare_unsupported_fields` for every `tools[].function.parameters` on the
+Fieldflare route only) rewrites in place: object-only unions are merged into one object
+(properties unioned, `action` enums unioned so the discriminator keeps every value,
+`required` reduced to the keys every branch required, `additionalProperties: false` kept
+only if every branch had it); scalar/mixed unions keep the first non-null branch; a null
+branch is re-attached as the accepted second branch; `type` lists collapse to the first
+concrete type plus null; `allOf` branches are merged into the node. Lossy by design:
+the model loses the per-action "which text slot" grammar (Hermes #112677's reason for
+the split), but the request is accepted instead of 400ing, and Hermes validates the op
+server-side anyway. Proof: the real six-branch skill_manage schema → 400
+`invalid_tool_schema` before, 200 after the shim (merged object: 10 properties, action
+enum create/patch/write_file/remove_file/delete, required name+action). Tests:
+`gateway/tests/test_llm_proxy_local_parity.py::test_fieldflare_shim_*` (9 new, RED
+first: 5 failed / 3 passed before the implementation; the ninth covers degenerate
+unions).
+
+Full toolset check: the dev Hermes registry exposes 89 tools, three of them with unions
+(`skill_manage` six-branch object union, `manage_connections` string-or-object items,
+`terminal.notify`). Unshimmed, the full set 400s on `manage_connections` ("union must
+contain one exact null branch"); shimmed, Fieldflare accepted the request but did not
+answer within 570 s, twice. Side effect, caused by dev: after both abandoned requests
+TurboFieldfare (prod account, pid 12810) stopped answering even a 2-token request from
+~09:10 EDT, at ~107% CPU — presumably still prefilling them serially. Dev did not touch
+the process; prod was told (tf-stop/tf-start on prod's side if still wedged). Conclusion:
+the shim removes the 400, but a full Hermes toolset on gemma-4-26b-a4b-it via
+Fieldflare is too slow to be usable; nemotron stays the right model for Conduit chats.
+Fieldflare recovered on its own, no restart: dev's poll got 200 at 09:22:40 EDT, and prod
+saw `/v1/models` 200 in 2 ms, a 2-token chat 200 in 1.2 s and pid 12810 at 0% CPU at
+09:23. Owner's local Gemma was wedged ≈10 min by dev's probes. Rule going forward: never
+send full-toolset requests to :8238 without a short client timeout and a small prompt.
+
+Conduit fix applied (owner, ~09:05 EDT): Funnel root path `/` →
+`127.0.0.1:8080/hermes-dashboard/`, alongside `/voice`, `/health` and `/hermes`. Prod's
+probes: GET root `/api/health` 200; unauthenticated POST root `/api/auth/ws-ticket` 401
+(bare 404 before — the "doesn't support this yet" trigger). Conduit's 09:09 session shows
+a clean bridge: config, sessions, conduit_push voice/tags and capabilities all 200. The
+only remaining error in that chat was the Gemma skill_manage 400 fixed above.
+
 Side finding for Sunday (not this outage): Hermes is pinned at 0.21.5 (24 Sep) while
 upstream has 0.21.6 (8 Oct), 0.21.7 (12 Oct), 0.22.0/0.22.1/0.22.2 (14–15 Oct). The
 2026-10-11 Sunday record (`/Users/Shared/agentshroud-sunday/dev-result-2026-10-11.json`)

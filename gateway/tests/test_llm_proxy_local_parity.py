@@ -1049,6 +1049,302 @@ def test_fieldflare_shim_is_noop_without_the_fields():
     assert req == before
 
 
+# Tool-parameter schema unions — 2026-10-17 (incident doc, prod finding).
+# Probed live against :8238: a `anyOf`/`oneOf` is accepted ONLY as exactly one
+# branch plus one exact {"type": "null"} branch (either order); a `type` list
+# only as one concrete type plus "null"; `allOf` is never accepted. Hermes's
+# skill_manage advertises a six-branch per-action object union, so every
+# Conduit turn on gemma-4-26b-a4b-it 400'd with "only a two-branch nullable
+# union is representable" once the request fields above were fixed.
+
+
+def _op(action, props, required=()):
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "name": {"type": "string"},
+            "action": {"type": "string", "enum": [action]},
+            **props,
+        },
+        "required": ["name", "action", *required],
+    }
+
+
+def _skill_manage_like_request():
+    items = {
+        "anyOf": [
+            _op("create", {"content": {"type": "string"}}, ("content",)),
+            _op(
+                "patch",
+                {"old_string": {"type": "string"}, "new_string": {"type": "string"}},
+                ("old_string", "new_string"),
+            ),
+            _op("patch", {"content": {"type": "string", "description": "rewrite"}}, ("content",)),
+            _op(
+                "write_file",
+                {"file_path": {"type": "string"}, "file_content": {"type": "string"}},
+                ("file_path", "file_content"),
+            ),
+            _op("delete", {"absorbed_into": {"type": "string"}}),
+        ]
+    }
+    return {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "skill_manage",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "operations": {
+                                "type": "array",
+                                "description": "Ordered ops",
+                                "items": items,
+                            }
+                        },
+                        "required": ["operations"],
+                    },
+                },
+            }
+        ],
+    }
+
+
+def test_fieldflare_shim_merges_multi_branch_object_union_into_one_object():
+    req = _skill_manage_like_request()
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    items = req["tools"][0]["function"]["parameters"]["properties"]["operations"]["items"]
+    assert "anyOf" not in items and "oneOf" not in items
+    assert items["type"] == "object"
+    assert items["additionalProperties"] is False
+    # Action enum is the union of every branch, de-duplicated, order kept.
+    assert items["properties"]["action"]["enum"] == ["create", "patch", "write_file", "delete"]
+    # Every branch's properties survive; first definition of a key wins.
+    assert set(items["properties"]) == {
+        "name",
+        "action",
+        "content",
+        "old_string",
+        "new_string",
+        "file_path",
+        "file_content",
+        "absorbed_into",
+    }
+    assert "description" not in items["properties"]["content"]
+    # Only the keys every branch required stay required.
+    assert items["required"] == ["name", "action"]
+    # The array node around it is untouched.
+    ops = req["tools"][0]["function"]["parameters"]["properties"]["operations"]
+    assert ops["type"] == "array" and ops["description"] == "Ordered ops"
+
+
+def test_fieldflare_shim_keeps_two_branch_nullable_union_unchanged():
+    for key in ("anyOf", "oneOf"):
+        for order in (0, 1):
+            branches = [
+                {"type": "object", "properties": {"a": {"type": "string"}}},
+                {"type": "null"},
+            ]
+            if order:
+                branches.reverse()
+            schema = {"type": "object", "properties": {"x": {key: branches}}}
+            req = {
+                "model": "gemma-4-26b-a4b-it",
+                "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+            }
+            before = json.loads(json.dumps(req))
+            assert LLMProxy._strip_fieldflare_unsupported_fields(req) is False
+            assert req == before
+
+
+def test_fieldflare_shim_keeps_null_branch_when_merging():
+    schema = {
+        "type": "object",
+        "properties": {
+            "x": {
+                "description": "keep me",
+                "anyOf": [
+                    _op("a", {"p": {"type": "string"}}),
+                    {"type": "null"},
+                    _op("b", {"q": {"type": "string"}}),
+                ],
+            }
+        },
+    }
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+    }
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    x = req["tools"][0]["function"]["parameters"]["properties"]["x"]
+    assert x["description"] == "keep me"
+    assert len(x["anyOf"]) == 2
+    merged, null = x["anyOf"]
+    assert null == {"type": "null"}
+    assert merged["properties"]["action"]["enum"] == ["a", "b"]
+    assert set(merged["properties"]) == {"name", "action", "p", "q"}
+
+
+def test_fieldflare_shim_keeps_first_branch_of_scalar_union():
+    schema = {
+        "type": "object",
+        "properties": {
+            "x": {"anyOf": [{"type": "string"}, {"type": "integer"}]},
+            "y": {"oneOf": [{"type": "string"}, {"type": "integer"}, {"type": "null"}]},
+        },
+    }
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+    }
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    props = req["tools"][0]["function"]["parameters"]["properties"]
+    assert props["x"] == {"type": "string"}
+    assert props["y"] == {"anyOf": [{"type": "string"}, {"type": "null"}]}
+
+
+def test_fieldflare_shim_collapses_type_list_to_one_concrete_type_plus_null():
+    schema = {
+        "type": "object",
+        "properties": {
+            "x": {"type": ["string", "integer", "null"]},
+            "y": {"type": ["string", "null"]},
+            "z": {"type": ["integer", "string"]},
+        },
+    }
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+    }
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    props = req["tools"][0]["function"]["parameters"]["properties"]
+    assert props["x"]["type"] == ["string", "null"]
+    assert props["y"]["type"] == ["string", "null"]
+    assert props["z"]["type"] == "integer"
+
+
+def test_fieldflare_shim_inlines_allof_and_recurses_into_nested_nodes():
+    schema = {
+        "type": "object",
+        "properties": {
+            "outer": {
+                "type": "object",
+                "properties": {
+                    "inner": {"anyOf": [{"type": "string"}, {"type": "integer"}, {"type": "null"}]},
+                    "both": {
+                        "allOf": [
+                            {
+                                "type": "object",
+                                "properties": {"a": {"type": "string"}},
+                                "required": ["a"],
+                            },
+                            {"type": "object", "properties": {"b": {"type": "string"}}},
+                        ]
+                    },
+                },
+            },
+            "list": {
+                "type": "array",
+                "items": {"anyOf": [{"type": "string"}, {"type": "integer"}]},
+            },
+        },
+    }
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+    }
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    props = req["tools"][0]["function"]["parameters"]["properties"]
+    assert props["outer"]["properties"]["inner"] == {
+        "anyOf": [{"type": "string"}, {"type": "null"}]
+    }
+    both = props["outer"]["properties"]["both"]
+    assert "allOf" not in both
+    assert (
+        both["type"] == "object"
+        and set(both["properties"]) == {"a", "b"}
+        and both["required"] == ["a"]
+    )
+    assert props["list"]["items"] == {"type": "string"}
+
+
+def test_fieldflare_shim_leaves_representable_tool_schemas_alone():
+    schema = {
+        "type": "object",
+        "properties": {
+            "s": {"type": "string", "enum": ["a", "b", "c"]},
+            "n": {"type": ["integer", "null"]},
+            "o": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": {"k": {"type": "boolean"}},
+            },
+            "arr": {"type": "array", "items": {"type": "string"}},
+        },
+        "required": ["s"],
+    }
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+    }
+    before = json.loads(json.dumps(req))
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is False
+    assert req == before
+
+
+def test_fieldflare_shim_tolerates_malformed_tool_entries():
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [
+            {"type": "function"},
+            {"type": "function", "function": {"name": "no_params"}},
+            {"type": "function", "function": {"name": "str_params", "parameters": "not a dict"}},
+            "garbage",
+        ],
+    }
+    before = json.loads(json.dumps(req))
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is False
+    assert req == before
+
+
+def test_fieldflare_shim_degenerate_unions():
+    """Single-branch unions unwrap, null-only unions are left alone, and a
+    union nested inside another union's branch is flattened on the way up."""
+    schema = {
+        "type": "object",
+        "properties": {
+            "one": {"anyOf": [{"type": "string"}]},
+            "one_plus_nulls": {"anyOf": [{"type": "null"}, {"type": "string"}, {"type": "null"}]},
+            "nulls_only": {"anyOf": [{"type": "null"}, {"type": "null"}]},
+            "nested": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "deep": {"anyOf": [{"type": "string"}, {"type": "integer"}]}
+                        },
+                    },
+                    {"type": "null"},
+                ]
+            },
+        },
+    }
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tools": [{"type": "function", "function": {"name": "t", "parameters": schema}}],
+    }
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    props = req["tools"][0]["function"]["parameters"]["properties"]
+    assert props["one"] == {"type": "string"}
+    assert props["one_plus_nulls"] == {"anyOf": [{"type": "string"}, {"type": "null"}]}
+    assert props["nulls_only"] == {"anyOf": [{"type": "null"}, {"type": "null"}]}
+    assert props["nested"]["anyOf"][0]["properties"]["deep"] == {"type": "string"}
+    assert props["nested"]["anyOf"][1] == {"type": "null"}
+
+
 @pytest.mark.asyncio
 async def test_fieldflare_route_strips_unsupported_fields_non_streaming(monkeypatch):
     """proxy_messages applies the shim only on the Fieldflare route, before forwarding."""
