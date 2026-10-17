@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L78"
+community: "AlertDispatcher"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ThresholdConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

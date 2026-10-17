@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "test_jira_dev_ticket.py"
-location: "L256"
+community: "MiddlewareManager (2)"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/MiddlewareManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

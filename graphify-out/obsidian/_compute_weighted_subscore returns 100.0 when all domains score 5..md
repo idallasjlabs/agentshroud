@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "AgentTarget (4)"
+community: "scanner_integration.py"
 location: "L972"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/scanner_integrationpy
 ---
 
 # _compute_weighted_subscore returns 100.0 when all domains score 5.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_compute_weighted_subscore_full_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

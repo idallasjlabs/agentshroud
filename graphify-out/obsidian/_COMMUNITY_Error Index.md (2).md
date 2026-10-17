@@ -1,24 +1,21 @@
 ---
 type: community
-members: 11
+members: 8
 ---
 
 # Error Index.md (2)
 
-**Members:** 11 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[1. Least Privilege]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Defense in Depth]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Explicit Over Implicit]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[4. Fail Secure]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Core Security Principles_4]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[P0 — Ship Blockers]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P1 — High Value]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[v0.8.0 Recommendations (Priority Order)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Related Notes_7]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Security Policies]]
-- 1 edge to [[_COMMUNITY_Security Implementation Verification]]
-- 1 edge to [[_COMMUNITY_Critical Findings]]
+- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
 
 ## Top bridge nodes
-- [[Core Security Principles_4]] - degree 5, connects to 1 community
-- [[v0.8.0 Recommendations (Priority Order)]] - degree 4, connects to 1 community
-- [[🎓 Key Principles]] - degree 4, connects to 1 community
+- [[SSH Proxy Errors]] - degree 2, connects to 1 community

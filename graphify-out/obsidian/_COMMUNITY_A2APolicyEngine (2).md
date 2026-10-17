@@ -1,16 +1,19 @@
 ---
 type: community
-members: 19
+members: 24
 ---
 
 # A2APolicyEngine (2)
 
-**Members:** 19 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[dot-setup_method()_24]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-is_injection()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-is_uncertain()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-setup_method()_25]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
@@ -22,7 +25,9 @@ members: 19
 - [[dot-test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
 - [[dot-test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
 - [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
 - [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
 - [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
 - [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
@@ -36,10 +41,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 3 edges to [[_COMMUNITY_A2APolicyEngine (4)]]
+- 6 edges to [[_COMMUNITY_HeuristicClassifier]]
+- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 
 ## Top bridge nodes
-- [[TestHeuristicClassifier]] - degree 19, connects to 2 communities
-- [[test_heuristic_classifier.py]] - degree 4, connects to 2 communities
-- [[dot-setup_method()_24]] - degree 2, connects to 1 community
+- [[ClassificationResult]] - degree 10, connects to 2 communities
+- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
+- [[test_heuristic_classifier.py]] - degree 4, connects to 1 community
+- [[dot-setup_method()_25]] - degree 2, connects to 1 community

@@ -8,16 +8,16 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[dot-__init__()_121]] - code - gateway/security/audit_store.py
+- [[dot-__init__()_124]] - code - gateway/security/audit_store.py
 - [[dot-_generate_event_id()]] - code - gateway/security/audit_store.py
 - [[dot-_get_latest_hash()]] - code - gateway/security/audit_store.py
 - [[dot-compute_content_hash()]] - code - gateway/security/audit_store.py
 - [[dot-compute_entry_hash()]] - code - gateway/security/audit_store.py
-- [[dot-log_event()]] - code - gateway/security/audit_store.py
+- [[dot-log_event()_1]] - code - gateway/security/audit_store.py
 - [[dot-test_content_hash()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_event_creation()]] - code - gateway/tests/test_audit_export.py
-- [[dot-to_dict()_6]] - code - gateway/security/audit_store.py
+- [[dot-to_dict()_9]] - code - gateway/security/audit_store.py
 - [[dot-verify_hash_chain()]] - code - gateway/security/audit_store.py
 - [[AuditEvent_1]] - code - gateway/security/audit_store.py
 - [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
@@ -47,10 +47,10 @@ SORT file.name ASC
 - 11 edges to [[_COMMUNITY_AuditStore]]
 - 6 edges to [[_COMMUNITY_AuditExporter]]
 - 4 edges to [[_COMMUNITY_AuditExporter (3)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_Restart Procedure (2)]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
 - 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 - 1 edge to [[_COMMUNITY_AuditExporter (2)]]
 
 ## Top bridge nodes
@@ -58,4 +58,4 @@ SORT file.name ASC
 - [[audit_export.py]] - degree 7, connects to 4 communities
 - [[audit_store.py]] - degree 6, connects to 4 communities
 - [[TestAuditEvent]] - degree 9, connects to 3 communities
-- [[dot-log_event()]] - degree 5, connects to 1 community
+- [[dot-log_event()_1]] - degree 5, connects to 1 community

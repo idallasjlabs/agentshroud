@@ -9,8 +9,8 @@ members: 4
 
 ## Members
 - [[API Documentation]] - document - docs/api/README.md
-- [[Current Status_4]] - document - docs/api/README.md
-- [[Planned Documents_3]] - document - docs/api/README.md
+- [[Current Status_2]] - document - docs/api/README.md
+- [[Planned Documents_2]] - document - docs/api/README.md
 - [[apiREADME]] - document - docs/api/README.md
 
 ## Live Query (requires Dataview plugin)

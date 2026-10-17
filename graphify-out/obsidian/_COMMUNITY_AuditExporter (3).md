@@ -8,8 +8,8 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[dot-__init__()_198]] - code - gateway/security/audit_export.py
-- [[dot-__init__()_199]] - code - gateway/security/audit_export.py
+- [[dot-__init__()_203]] - code - gateway/security/audit_export.py
+- [[dot-__init__()_204]] - code - gateway/security/audit_export.py
 - [[dot-_default_jsonld_context()]] - code - gateway/security/audit_export.py
 - [[dot-export_config()]] - code - gateway/tests/test_audit_export.py
 - [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
@@ -34,5 +34,5 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[AuditExportConfig_1]] - degree 13, connects to 4 communities
 - [[AuditStore_1]] - degree 3, connects to 2 communities
-- [[dot-__init__()_199]] - degree 3, connects to 1 community
+- [[dot-__init__()_204]] - degree 3, connects to 1 community
 - [[dot-export_config()]] - degree 3, connects to 1 community

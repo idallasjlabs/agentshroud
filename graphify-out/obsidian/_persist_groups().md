@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "telegram_proxy.py (3)"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/telegram_proxypy_3
 ---
 
 # _persist_groups()
@@ -19,6 +19,6 @@ tags:
 - [[Group]] - `references` [EXTRACTED]
 - [[Write only custom groups to disk (auto-groups are derived at runtime).]] - `rationale_for` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3

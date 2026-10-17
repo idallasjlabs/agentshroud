@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "CrossBotTrustLedger (2)"
+community: "TrustConfig"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_2
+  - community/TrustConfig
 ---
 
 # TestTrustManager
 
 ## Connections
-- [[dot-setup_method()_27]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_37]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_7]] - `method` [EXTRACTED]
 - [[dot-test_action_allowed_basic()]] - `method` [EXTRACTED]
 - [[dot-test_action_denied_high_trust()]] - `method` [EXTRACTED]
 - [[dot-test_action_unknown_agent()]] - `method` [EXTRACTED]
-- [[dot-test_failure_decreases_score()_1]] - `method` [EXTRACTED]
+- [[dot-test_failure_decreases_score()]] - `method` [EXTRACTED]
 - [[dot-test_get_trust()]] - `method` [EXTRACTED]
 - [[dot-test_get_trust_unknown()]] - `method` [EXTRACTED]
 - [[dot-test_history()]] - `method` [EXTRACTED]
 - [[dot-test_register_agent()]] - `method` [EXTRACTED]
-- [[dot-test_register_idempotent()_1]] - `method` [EXTRACTED]
+- [[dot-test_register_idempotent()]] - `method` [EXTRACTED]
 - [[dot-test_score_never_negative()]] - `method` [EXTRACTED]
 - [[dot-test_sqlite_persistence()]] - `method` [EXTRACTED]
-- [[dot-test_success_increases_score()_1]] - `method` [EXTRACTED]
+- [[dot-test_success_increases_score()]] - `method` [EXTRACTED]
 - [[dot-test_trust_escalation_attack()]] - `method` [EXTRACTED]
 - [[dot-test_trust_level_progression()]] - `method` [EXTRACTED]
 - [[dot-test_violation_large_decrease()]] - `method` [EXTRACTED]
@@ -44,8 +44,8 @@ tags:
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

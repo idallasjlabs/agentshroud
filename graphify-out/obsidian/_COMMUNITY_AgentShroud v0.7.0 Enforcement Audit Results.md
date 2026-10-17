@@ -1,11 +1,11 @@
 ---
 type: community
-members: 47
+members: 51
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
 
-**Members:** 47 nodes
+**Members:** 51 nodes
 
 ## Members
 - [[1. Security Module Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
@@ -15,6 +15,10 @@ members: 47
 - [[5. Integration Gap Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[5.1 New v0.7.0 Features Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[5.2 Pipeline Integration Verification]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8. Red Team Readiness Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8.1 Attack Surface Hardening]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8.2 Monitoring & Detection]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[8.3 Resilience Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 - [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
 - [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
@@ -38,8 +42,8 @@ members: 47
 - [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
 - [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Summary_1]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Summary_1]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Summary_2]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
 - [[Trust Manager  Progressive Trust System]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
 - [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
@@ -70,15 +74,14 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report (3)]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report (4)]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report (5)]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report (6)]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report (7)]]
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
 - 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
+- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
 - 1 edge to [[_COMMUNITY_Findings & Mitigations]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - degree 19, connects to 7 communities
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - degree 19, connects to 6 communities
 - [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 1 community
-- [[Egress Filter  SSRF Protection]] - degree 7, connects to 1 community
 - [[PII Sanitizer (Presidio + regex hybrid)]] - degree 7, connects to 1 community
+- [[Egress Filter  SSRF Protection]] - degree 7, connects to 1 community

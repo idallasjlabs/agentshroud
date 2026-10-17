@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_check_base64()]] - `calls` [EXTRACTED]
-- [[dot-analyze()_1]] - `calls` [EXTRACTED]
+- [[dot-analyze()]] - `calls` [EXTRACTED]
 - [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
 - [[A single finding from URL analysis.]] - `rationale_for` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

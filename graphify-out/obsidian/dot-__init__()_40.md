@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L22"
+community: "ServiceManager"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

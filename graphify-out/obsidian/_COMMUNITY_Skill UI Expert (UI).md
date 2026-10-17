@@ -30,7 +30,7 @@ members: 27
 - [[Navigation]] - document - .agents/skills/i-ui/SKILL.md
 - [[React  Next.js Component Architecture]] - document - .agents/skills/i-ui/SKILL.md
 - [[Responsive Layout System]] - document - .agents/skills/i-ui/SKILL.md
-- [[Role_27]] - document - .agents/skills/i-ui/SKILL.md
+- [[Role_31]] - document - .agents/skills/i-ui/SKILL.md
 - [[Rules_7]] - document - .agents/skills/i-ui/SKILL.md
 - [[Skill UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
 - [[UI Validation Checklist]] - document - .agents/skills/i-ui/SKILL.md

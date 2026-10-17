@@ -8,7 +8,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_47]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_57]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
@@ -20,11 +20,11 @@ members: 44
 - [[dot-_validate_url()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-click()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[dot-close()_2]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-close()_4]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-detect_captcha()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-extract()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-fill_field()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[dot-get_audit_log()_2]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-get_audit_log()_1]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-navigate()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[CLI interface for SecureBrowser]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Check if action requires approval          Security Approval queue integration]] - rationale - .agents/skills/i-browser/scripts/browse.py
@@ -43,15 +43,15 @@ members: 44
 - [[Raised when security policy is violated]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Return complete audit log]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Risk classification for browser actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[RiskLevel]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[RiskLevel_2]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[SecurityConfig_1]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityConfig]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[main()_4]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[main()_5]] - code - .agents/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,9 +62,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
 
 ## Top bridge nodes
 - [[SecurityError]] - degree 7, connects to 1 community
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
-- [[RiskLevel]] - degree 6, connects to 1 community
+- [[RiskLevel_2]] - degree 6, connects to 1 community

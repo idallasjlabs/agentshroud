@@ -11,8 +11,8 @@ members: 14
 - [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[_python()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_1]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_2]] - code - scripts/validate-skills-manifest.sh
+- [[_sha256()]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_1]] - code - scripts/validate-skills-manifest.sh
 - [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
 - [[check()_11]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_Path (2)]]
 
 ## Top bridge nodes
 - [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community

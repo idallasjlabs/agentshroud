@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "FetchOutcome"
-location: "L323"
+community: "_FakeHTTPResponse"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/_FakeHTTPResponse
 ---
 
 # .__enter__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse

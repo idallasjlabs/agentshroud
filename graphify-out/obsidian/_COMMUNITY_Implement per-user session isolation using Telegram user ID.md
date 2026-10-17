@@ -12,7 +12,7 @@ members: 16
 - [[Constraints_2]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Evidence_2]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Implement per-user session isolation using Telegram user ID]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Problem_4]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Problem_3]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Remediation_3]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Root Cause_3]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Severity_5]] - document - docs/planning/redteam/03-session-isolation.md

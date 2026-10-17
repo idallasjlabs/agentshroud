@@ -12,7 +12,6 @@ tags:
 # check_benchmark_regression.py
 
 ## Connections
-- [[CI benchmark regression job (macOS)]] - `references` [EXTRACTED]
-- [[main()_8]] - `contains` [EXTRACTED]
+- [[main()_6]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

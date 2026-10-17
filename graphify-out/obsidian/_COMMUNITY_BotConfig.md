@@ -8,7 +8,7 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[dot-_make_proxy()_4]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-_make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_bot_id_falls_back_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_bot_id_returns_contextvar_when_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_send_token_returns_contextvar_inside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
@@ -37,8 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 
 ## Top bridge nodes
-- [[TestMultiBotContextvarRouting]] - degree 14, connects to 2 communities
+- [[TestMultiBotContextvarRouting]] - degree 14, connects to 3 communities

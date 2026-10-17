@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L630"
+community: "test_collaborator_tracker.py (3)"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/test_collaborator_trackerpy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
+- [[Path_41]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

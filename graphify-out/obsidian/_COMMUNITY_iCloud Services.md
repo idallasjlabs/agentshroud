@@ -27,10 +27,10 @@ members: 27
 - [[Search Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Security_6]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_8]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Setup]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Troubleshooting_18]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Troubleshooting_16]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Update Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Update Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[hermesskillsi-icloudSKILL]] - document - docker/config/hermes/skills/i-icloud/SKILL.md

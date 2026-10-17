@@ -8,15 +8,15 @@ members: 43
 **Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_61]] - code - gateway/proxy/telegram_replay.py
+- [[dot-__init__()_70]] - code - gateway/proxy/telegram_replay.py
 - [[dot-_conn_ok()]] - code - gateway/proxy/telegram_replay.py
 - [[dot-_init_db()_1]] - code - gateway/proxy/telegram_replay.py
 - [[dot-cleanup_if_due()]] - code - gateway/proxy/telegram_replay.py
-- [[dot-close()_6]] - code - gateway/proxy/telegram_replay.py
+- [[dot-close()_8]] - code - gateway/proxy/telegram_replay.py
 - [[dot-mark_delivered()]] - code - gateway/proxy/telegram_replay.py
 - [[dot-pull_undelivered()]] - code - gateway/proxy/telegram_replay.py
 - [[dot-record_inbound()]] - code - gateway/proxy/telegram_replay.py
-- [[Any_23]] - code - gateway/proxy/telegram_replay.py
+- [[Any_26]] - code - gateway/proxy/telegram_replay.py
 - [[Close the SQLite connection (idempotent).]] - rationale - gateway/proxy/telegram_replay.py
 - [[Exception during cleanup execute must be swallowed.]] - rationale - gateway/tests/test_telegram_replay.py
 - [[Exception during execute in mark_delivered must be swallowed.]] - rationale - gateway/tests/test_telegram_replay.py

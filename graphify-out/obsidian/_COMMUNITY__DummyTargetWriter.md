@@ -8,10 +8,10 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[dot-__init__()_182]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_183]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_185]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_186]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-readline()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-write()_3]] - code - gateway/tests/test_http_proxy_coverage.py

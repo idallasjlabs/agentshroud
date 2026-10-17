@@ -1,30 +1,27 @@
 ---
 type: community
-members: 17
+members: 14
 ---
 
 # UserSessionManager (4)
 
-**Members:** 17 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[dot-test_first_attempt_keeps_default_resolver()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_forces_af_inet_inside_block_and_restores_after()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_hang_is_cut_by_deadline()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_restores_even_when_block_raises()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_retry_attempts_force_ipv4()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Force AF_INET for name resolution inside the block. Every Docker Hub failure…]] - rationale - scripts/discover_upstream_versions.py
-- [[TestGuardedFetch]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[TestIPv4Only]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[_getaddrinfo_v4()]] - code - scripts/discover_upstream_versions.py
-- [[_ipv4_only()]] - code - scripts/discover_upstream_versions.py
-- [[fetch()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[fetch()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[recorder()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[recorder()_2]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[recorder()_3]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[recorder()_4]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-manager()_2]] - code - gateway/tests/test_key_rotation.py
+- [[dot-sample_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +31,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_discover_upstream_versions.py]]
+- 4 edges to [[_COMMUNITY_UserSessionManager (3)_1]]
+- 3 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager (2)_1]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (5)]]
 
 ## Top bridge nodes
-- [[dot-test_retry_attempts_force_ipv4()]] - degree 6, connects to 1 community
-- [[_ipv4_only()]] - degree 6, connects to 1 community
-- [[dot-test_first_attempt_keeps_default_resolver()]] - degree 5, connects to 1 community
-- [[recorder()_3]] - degree 5, connects to 1 community
-- [[TestGuardedFetch]] - degree 4, connects to 1 community
+- [[TestKeyRotationManager]] - degree 15, connects to 6 communities
+- [[dot-manager()_2]] - degree 4, connects to 2 communities
+- [[dot-sample_credential()]] - degree 3, connects to 1 community
+- [[dot-test_get_health_score_all_healthy()]] - degree 3, connects to 1 community
+- [[dot-test_get_health_score_mixed_states()]] - degree 3, connects to 1 community

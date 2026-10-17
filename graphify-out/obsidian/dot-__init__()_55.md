@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "ProxyAction"
-location: "L39"
+community: "_FakeRBAC (2)"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/_FakeRBAC_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockURLResult]] - `method` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role_19]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_2

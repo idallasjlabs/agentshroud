@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.png"
 type: "image"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "AgentShroud Development Roadmap — 2026 Gantt Chart (3)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart_3
 ---
 
 # What Is Instrumented (bot /api/health, gateway /status and /ledger, MCP audit log, HTTP CONNECT proxy stats)
@@ -14,4 +14,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `references` [EXTRACTED]
 - [[Observability Map Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart_3

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "DockerEngine"
-location: "L24"
+community: "A2APolicyEngine (3)"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/A2APolicyEngine_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[A2APolicyConfig]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "EgressFilterConfig (2)"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/EgressFilterConfig_2
 ---
 
 # Verify webhook receiver blocks prompt injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_blocks_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

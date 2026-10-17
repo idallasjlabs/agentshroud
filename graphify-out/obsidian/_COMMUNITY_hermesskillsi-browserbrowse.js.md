@@ -10,7 +10,7 @@ members: 6
 ## Members
 - [[appendLog()]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[browserFetch()]] - code - docker/config/hermes/skills/i-browser/browse.js
-- [[fs_1]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[fs]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[hermesskillsi-browserbrowse.js]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[path_4]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[{ chromium }]] - code - docker/config/hermes/skills/i-browser/browse.js

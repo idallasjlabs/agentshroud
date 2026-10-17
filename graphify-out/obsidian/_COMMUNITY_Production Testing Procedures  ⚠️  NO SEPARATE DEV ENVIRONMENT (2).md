@@ -24,7 +24,7 @@ members: 20
 - [[Objective_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
 - [[Output Format_13]] - document - docker/config/hermes/skills/i-qa/SKILL.md
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Role_44]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Role_47]] - document - docker/config/hermes/skills/i-qa/SKILL.md
 - [[Skill Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
 - [[Testing Hierarchy_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
 - [[hermesskillsi-qaSKILL]] - document - docker/config/hermes/skills/i-qa/SKILL.md

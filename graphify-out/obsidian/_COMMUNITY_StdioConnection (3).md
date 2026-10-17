@@ -9,7 +9,7 @@ members: 4
 
 ## Members
 - [[dot-shutdown()]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-stop()_3]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-stop()_2]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-stop_all()]] - code - gateway/proxy/mcp_proxy.py
 - [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
 
@@ -27,4 +27,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[dot-stop_all()]] - degree 3, connects to 1 community
 - [[dot-shutdown()]] - degree 3, connects to 1 community
-- [[dot-stop()_3]] - degree 2, connects to 1 community
+- [[dot-stop()_2]] - degree 2, connects to 1 community

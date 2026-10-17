@@ -1,11 +1,11 @@
 ---
 type: community
-members: 14
+members: 13
 ---
 
 # 1. GitHub MCP Authentication Reset
 
-**Members:** 14 nodes
+**Members:** 13 nodes
 
 ## Members
 - [[1. GitHub MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
@@ -19,7 +19,6 @@ members: 14
 - [[Step 1 Generate New Personal Access Token]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Step 2 Update .env File]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Step 3 Verify Authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verify Authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[When Authentication Expires]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 
@@ -32,9 +31,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (3)]]
 - 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
 
 ## Top bridge nodes
-- [[Step 4 Restart Codex]] - degree 3, connects to 2 communities
+- [[1. GitHub MCP Authentication Reset]] - degree 5, connects to 1 community
 - [[Authentication Reset Procedures]] - degree 4, connects to 1 community

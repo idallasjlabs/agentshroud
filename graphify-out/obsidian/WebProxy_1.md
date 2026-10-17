@@ -12,7 +12,7 @@ tags:
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_100]] - `references` [EXTRACTED]
+- [[dot-__init__()_123]] - `references` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig_1]] - `uses` [INFERRED]
 

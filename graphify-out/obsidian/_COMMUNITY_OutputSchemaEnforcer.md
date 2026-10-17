@@ -8,7 +8,7 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[dot-__init__()_103]] - code - gateway/security/output_schema.py
+- [[dot-__init__()_107]] - code - gateway/security/output_schema.py
 - [[dot-_register_default_schema()]] - code - gateway/security/output_schema.py
 - [[dot-register_schema()]] - code - gateway/security/output_schema.py
 - [[dot-test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
@@ -18,7 +18,7 @@ members: 32
 - [[dot-test_raw_file_path_stripped()]] - code - gateway/tests/test_output_schema.py
 - [[dot-test_raw_tool_payload_stripped()]] - code - gateway/tests/test_output_schema.py
 - [[dot-test_valid_output_passes()]] - code - gateway/tests/test_output_schema.py
-- [[dot-validate()_2]] - code - gateway/security/output_schema.py
+- [[dot-validate()_1]] - code - gateway/security/output_schema.py
 - [[A custom schema with a stricter max_length is applied correctly.]] - rationale - gateway/tests/test_output_schema.py
 - [[Absolute file paths should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
 - [[Base64 blobs  1 KB encoded (≈ 1370 chars) should be redacted.]] - rationale - gateway/tests/test_output_schema.py
@@ -49,8 +49,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 
 ## Top bridge nodes
-- [[OutputSchemaEnforcer]] - degree 14, connects to 2 communities
+- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

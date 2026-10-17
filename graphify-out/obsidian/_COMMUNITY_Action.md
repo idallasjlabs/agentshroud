@@ -43,12 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (2)]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 30, connects to 3 communities
+- [[TestCollaboratorPersistence]] - degree 30, connects to 2 communities
 - [[dot-test_pause_does_not_remove_from_collaborator_role()]] - degree 4, connects to 1 community
 - [[dot-test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - degree 4, connects to 1 community
 - [[dot-test_removed_dynamic_collaborator_excluded_from_effective_set()]] - degree 3, connects to 1 community

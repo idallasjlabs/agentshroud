@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_76]] - `method` [EXTRACTED]
+- [[dot-__init__()_21]] - `method` [EXTRACTED]
 - [[dot-check_permission()]] - `method` [EXTRACTED]
 - [[dot-check_tool_permission()]] - `method` [EXTRACTED]
 - [[dot-get_user_role()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

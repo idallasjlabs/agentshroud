@@ -12,11 +12,11 @@ tags:
 # _BlockedOutboundPipeline
 
 ## Connections
-- [[dot-process_inbound()_3]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_7]] - `method` [EXTRACTED]
 - [[dot-process_outbound()_4]] - `method` [EXTRACTED]
 - [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
 - [[AgentTarget_2]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Inbound passes; outbound returns blocked=True with the original text intact.]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 

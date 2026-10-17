@@ -13,13 +13,13 @@ members: 22
 - [[3. Start the voice gateway]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[4. Enable Tailscale Funnel]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Adding a future agent_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Adding a future agent]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Architecture_8]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Installation_2]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Installation_3]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Prerequisites_7]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Security notes_3]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Prerequisites_6]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Security notes_6]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Troubleshooting_28]] - document - docs/integrations/voice-terminal-esp32-s3.md

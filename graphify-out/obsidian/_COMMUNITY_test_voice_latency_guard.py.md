@@ -20,7 +20,7 @@ members: 74
 - [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[Emit a structured per-turn latency record for a voice ``forward`` call.      Re]] - rationale - voice_gateway/server.py
 - [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[FastAPI_2]] - code - voice_gateway/server.py
+- [[FastAPI_4]] - code - voice_gateway/server.py
 - [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
@@ -36,7 +36,7 @@ members: 74
 - [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
-- [[WebSocket_7]] - code - voice_gateway/server.py
+- [[WebSocket_6]] - code - voice_gateway/server.py
 - [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[_State]] - code - voice_gateway/server.py
 - [[__main__.py]] - code - voice_gateway/__main__.py
@@ -96,8 +96,8 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_server.py]]
 - 3 edges to [[_COMMUNITY_server.py (2)]]
 - 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_stt.py]]
 - 1 edge to [[_COMMUNITY_tts.py]]
+- 1 edge to [[_COMMUNITY_stt.py]]
 
 ## Top bridge nodes
 - [[server.py]] - degree 29, connects to 5 communities

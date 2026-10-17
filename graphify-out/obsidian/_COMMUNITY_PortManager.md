@@ -8,7 +8,7 @@ members: 59
 **Members:** 59 nodes
 
 ## Members
-- [[dot-__init__()_192]] - code - gateway/tools/port_manager.py
+- [[dot-__init__()_27]] - code - gateway/tools/port_manager.py
 - [[dot-find_available_port()]] - code - gateway/tools/port_manager.py
 - [[dot-generate_compose_ports()]] - code - gateway/tools/port_manager.py
 - [[dot-has_conflicts()]] - code - gateway/tools/port_manager.py
@@ -16,7 +16,7 @@ members: 59
 - [[dot-is_port_available_udp()]] - code - gateway/tools/port_manager.py
 - [[dot-ports()]] - code - gateway/tools/port_manager.py
 - [[dot-resolve_ports()]] - code - gateway/tools/port_manager.py
-- [[dot-summary()_1]] - code - gateway/tools/port_manager.py
+- [[dot-summary()]] - code - gateway/tools/port_manager.py
 - [[dot-test_all_free_no_conflicts()]] - code - gateway/tests/test_port_manager.py
 - [[dot-test_basic_mapping()]] - code - gateway/tests/test_port_manager.py
 - [[dot-test_bound_port_is_not_available()]] - code - gateway/tests/test_port_manager.py

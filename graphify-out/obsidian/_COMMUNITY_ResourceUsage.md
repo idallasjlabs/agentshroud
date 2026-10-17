@@ -12,7 +12,7 @@ members: 10
 - [[dot-get_summary()_1]] - code - gateway/security/subagent_governance.py
 - [[dot-get_usage()]] - code - gateway/security/subagent_governance.py
 - [[dot-runtime_seconds()]] - code - gateway/security/subagent_governance.py
-- [[dot-to_dict()_17]] - code - gateway/security/subagent_governance.py
+- [[dot-to_dict()_16]] - code - gateway/security/subagent_governance.py
 - [[Get a summary of all subagent governance state for a session.]] - rationale - gateway/security/subagent_governance.py
 - [[Get current resource usage for a subagent.]] - rationale - gateway/security/subagent_governance.py
 - [[Remove a subagent from governance tracking. Returns final usage.]] - rationale - gateway/security/subagent_governance.py

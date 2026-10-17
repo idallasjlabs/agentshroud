@@ -17,7 +17,7 @@ tags:
 - [[dot-test_signer_failure_never_blocks()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_result_uses_wrap_tool_result()]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

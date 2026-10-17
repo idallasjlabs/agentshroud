@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L116"
+community: "AlertDispatcher"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

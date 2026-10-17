@@ -8,8 +8,8 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_66]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-__init__()_67]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_79]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_80]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-get_item()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-submit_tool_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -63,11 +63,11 @@ SORT file.name ASC
 - 14 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 13 edges to [[_COMMUNITY_MCPInspector]]
 - 8 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 7 edges to [[_COMMUNITY_MCPAuditTrail]]
 - 7 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 7 edges to [[_COMMUNITY_MCPAuditTrail]]
 - 6 edges to [[_COMMUNITY_PermissionLevel]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
 
 ## Top bridge nodes
 - [[FakeApprovalQueue]] - degree 27, connects to 8 communities

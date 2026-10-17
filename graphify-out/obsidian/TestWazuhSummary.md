@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L705"
+community: "TestPathIsolationManager"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/TestPathIsolationManager
 ---
 
 # TestWazuhSummary
 
 ## Connections
-- [[dot-test_summary_clean()_2]] - `method` [EXTRACTED]
-- [[dot-test_summary_with_rootkit()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
+- [[dot-test_installed_not_running()]] - `method` [EXTRACTED]
+- [[dot-test_not_installed()_4]] - `method` [EXTRACTED]
+- [[dot-test_running_no_alert_dir()]] - `method` [EXTRACTED]
+- [[dot-test_running_with_alert_dir()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -8,7 +8,7 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Daedalus — Concept Illustrator_4]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[Input Requirements_25]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[Output Format_40]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[Persona_19]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
@@ -31,4 +31,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Daedalus — Concept Illustrator_5]] - degree 8, connects to 1 community
+- [[Daedalus — Concept Illustrator_4]] - degree 8, connects to 1 community

@@ -60,7 +60,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_system-requirements.md (2)]]
 
 ## Top bridge nodes
 - [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

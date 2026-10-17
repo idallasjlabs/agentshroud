@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "main.rs"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/mainrs
 ---
 
 # Value
 
 ## Connections
-- [[dot-get()_2]] - `references` [EXTRACTED]
-- [[dot-get()_1]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
+- [[dot-get()_3]] - `references` [EXTRACTED]
 - [[dot-post()_2]] - `references` [EXTRACTED]
 - [[dot-post()_1]] - `references` [EXTRACTED]
 - [[dot-request()]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[print_output()]] - `references` [EXTRACTED]
 - [[render_output_lines()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/mainrs

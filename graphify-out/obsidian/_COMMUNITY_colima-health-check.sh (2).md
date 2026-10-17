@@ -17,7 +17,7 @@ members: 10
 - [[info()_2]] - code - docker/scripts/container-net-diag.sh
 - [[pass()_3]] - code - docker/scripts/container-net-diag.sh
 - [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
-- [[warn()_4]] - code - docker/scripts/container-net-diag.sh
+- [[warn()_5]] - code - docker/scripts/container-net-diag.sh
 
 ## Live Query (requires Dataview plugin)
 

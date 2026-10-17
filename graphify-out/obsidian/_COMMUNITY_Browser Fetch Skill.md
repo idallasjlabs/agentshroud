@@ -11,7 +11,7 @@ members: 6
 - [[Browser Fetch Skill]] - document - skills/custom/browser-fetch/SKILL.md
 - [[Features]] - document - skills/custom/browser-fetch/SKILL.md
 - [[Security_3]] - document - skills/custom/browser-fetch/SKILL.md
-- [[Usage_4]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Usage_5]] - document - skills/custom/browser-fetch/SKILL.md
 - [[Use Cases]] - document - skills/custom/browser-fetch/SKILL.md
 - [[browser-fetchSKILL]] - document - skills/custom/browser-fetch/SKILL.md
 

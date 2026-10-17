@@ -1,23 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
+source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
 type: "code"
-community: "AgentTarget (5)"
-location: "L34"
+community: "test_openclaw_photo.sh"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/test_openclaw_photosh
 ---
 
 # check()
 
 ## Connections
-- [[Colima VM default-route auto-heal (step 2)]] - `references` [EXTRACTED]
-- [[Container net-diag expected-failure baseline (step 5)]] - `references` [EXTRACTED]
-- [[DOCKER-USER iptables reapply + verify (step 3)]] - `references` [EXTRACTED]
-- [[check()_4]] - `semantically_similar_to` [INFERRED]
-- [[resolve_docker_host()]] - `references` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L225"
+community: "BlockingPipeline"
+location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/BlockingPipeline
 ---
 
 # Updates without text (e.g. photos) should skip the pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pipeline_not_called_without_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/BlockingPipeline

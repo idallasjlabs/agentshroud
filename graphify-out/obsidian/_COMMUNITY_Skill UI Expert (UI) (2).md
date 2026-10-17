@@ -29,7 +29,7 @@ members: 27
 - [[Navigation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[React  Next.js Component Architecture_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Responsive Layout System_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
-- [[Role_32]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Role_35]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Rules_9]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Skill UI Expert (UI)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[UI Validation Checklist_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md

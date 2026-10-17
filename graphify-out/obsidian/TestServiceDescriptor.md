@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "ServiceManager (2)"
+community: "ServiceManager"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_2
+  - community/ServiceManager
 ---
 
 # TestServiceDescriptor
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_with_resource_usage()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

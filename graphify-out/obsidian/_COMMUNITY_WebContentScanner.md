@@ -39,7 +39,7 @@ members: 55
 - [[Detect DTDentity constructs that drive XML parser memory-safety bugs. Flags…]] - rationale - gateway/proxy/web_content_scanner.py
 - [[Detect zero-width character sequences (steganographic attacks).]] - rationale - gateway/proxy/web_content_scanner.py
 - [[Entity declarations carry both XXE and billion-laughs.]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[Enum]] - code
+- [[Enum_1]] - code
 - [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
 - [[Gateway XML DTDentity control — CLAUDE.md 0.05 arm 2. CVE-2026-6653 is a use-…]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[HTML5's bare !DOCTYPE html has no internal subset and is harmless.]] - rationale - gateway/tests/test_xml_dtd_control.py
@@ -60,7 +60,7 @@ members: 55
 - [[URLAnalyzer]] - code
 - [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
 - [[WebProxyConfig]] - code
-- [[str]] - code
+- [[str_1]] - code
 - [[test_xml_dtd_control.py]] - code - gateway/tests/test_xml_dtd_control.py
 - [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
 
@@ -72,17 +72,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TestSSRFDetection]]
 - 2 edges to [[_COMMUNITY_ProxyAction]]
 - 2 edges to [[_COMMUNITY__t]]
 - 2 edges to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 2 edges to [[_COMMUNITY_TestSSRFDetection]]
+- 2 edges to [[_COMMUNITY_WebProxyConfig]]
 - 1 edge to [[_COMMUNITY_WebContentScanner (2)]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
 
 ## Top bridge nodes
 - [[WebContentScanner]] - degree 22, connects to 5 communities
-- [[web_content_scanner.py]] - degree 10, connects to 3 communities
+- [[web_content_scanner.py]] - degree 10, connects to 4 communities
 - [[dot-__init__()_1]] - degree 5, connects to 2 communities
 - [[test_xml_dtd_control.py]] - degree 7, connects to 1 community

@@ -18,6 +18,6 @@ tags:
 - [[cmd_restart()]] - `calls` [EXTRACTED]
 - [[cmd_safe_prune()]] - `calls` [EXTRACTED]
 - [[docker-cleanup.sh]] - `contains` [EXTRACTED]
-- [[usage()_1]] - `calls` [EXTRACTED]
+- [[usage()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/docker-cleanupsh

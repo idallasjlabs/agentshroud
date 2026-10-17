@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L404"
+community: "ResourceGuard"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
+- [[Path_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

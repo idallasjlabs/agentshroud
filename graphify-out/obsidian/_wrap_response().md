@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L62"
+community: "test_telegram_proxy_inbound.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # _wrap_response()
@@ -244,6 +244,9 @@ tags:
 - [[dot-test_unlock_persists_unpause_to_disk()]] - `calls` [EXTRACTED]
 - [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - `calls` [EXTRACTED]
 - [[dot-test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
+- [[fake_forward()]] - `calls` [EXTRACTED]
+- [[fake_forward()_1]] - `calls` [EXTRACTED]
+- [[fake_forward()_2]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

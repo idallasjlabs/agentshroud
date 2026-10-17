@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__aenter__()_3]] - `method` [EXTRACTED]
 - [[dot-__aexit__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_11]] - `method` [EXTRACTED]
 - [[dot-aiter_bytes()_1]] - `method` [EXTRACTED]
 - [[dot-aread()_1]] - `method` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `calls` [EXTRACTED]

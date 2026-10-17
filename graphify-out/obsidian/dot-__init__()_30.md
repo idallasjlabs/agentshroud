@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L28"
+community: "ApprovalQueueConfig"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_3]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

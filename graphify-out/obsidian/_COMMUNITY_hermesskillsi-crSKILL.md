@@ -23,7 +23,7 @@ members: 41
 - [[If not → escalate to field team via ops-alerts]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Role_19]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_20]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
@@ -60,13 +60,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements (2)]]
 - 1 edge to [[_COMMUNITY_Hermes — Reference Verifier (2)]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL) (2)]]
+- 1 edge to [[_COMMUNITY_10. Troubleshooting (2)]]
 - 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL.md (2)]]
 - 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA) (2)]]
 - 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection (2)]]
 - 1 edge to [[_COMMUNITY_Technical Specification]]
 - 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (3)]]
 - 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (2)]]
+- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
 - 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR) (2)]]
 - 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL) (2)]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (2)]]
@@ -74,7 +75,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Mac App Discovery Skill]]
 - 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (2)]]
 - 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR) (2)]]
-- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM) (2)]]
 - 1 edge to [[_COMMUNITY_Skill Project Management (PM) (2)]]
 - 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator (2)]]

@@ -1,84 +1,119 @@
 ---
 type: community
-members: 71
+members: 106
 ---
 
 # EgressFilterConfig (2)
 
-**Members:** 71 nodes
+**Members:** 106 nodes
 
 ## Members
-- [[dot-__init__()_166]] - code - gateway/proxy/sidecar.py
-- [[dot-__init__()_167]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-__init__()_168]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-forward()_3]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-get_stats()_16]] - code - gateway/proxy/sidecar.py
-- [[dot-process_inbound()_8]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-process_outbound()_6]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-scan()_3]] - code - gateway/proxy/sidecar.py
-- [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Any_69]] - code - gateway/proxy/sidecar.py
-- [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[If the outbound pipeline crashes, the bot response must be withheld.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Insert messages, modify a hash — verify chain integrity check fails.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Low-trust agent requests elevated action — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Request to scan a message.]] - rationale - gateway/proxy/sidecar.py
-- [[Response from sidecar scan.]] - rationale - gateway/proxy/sidecar.py
-- [[Scan a message through the security pipeline.]] - rationale - gateway/proxy/sidecar.py
-- [[ScanRequest_1]] - code - gateway/proxy/sidecar.py
-- [[ScanResponse]] - code - gateway/proxy/sidecar.py
-- [[SecurityPipeline (external, referenced)]] - code - gateway/proxy/pipeline.py
-- [[SecurityPipeline.process_inbound]] - code - gateway/proxy/pipeline.py
-- [[Send 10 messages — verify all in ledger with valid SHA-256 chain.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Send command requiring approval — verify queued, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Send message with SSN — verify it's redacted before forwarding.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Send prompt injection — verify blocked, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - rationale - gateway/proxy/sidecar.py
-- [[SidecarScanner]] - code - gateway/proxy/sidecar.py
-- [[Trigger freeze mode — verify pipeline blocks all traffic.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify allowed domains pass egress check.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify both inbound and outbound are in audit chain.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify clean messages pass through without blocking.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify forwarder mock works correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify multiple injection patterns are detected.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify pipeline statistics are tracked correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify processing time is tracked.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify sidecar scanner works.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify that direct connection to OpenClaw internal port fails.      In Docker pr]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
-- [[_StubForwarder_1]] - code - gateway/tests/test_e2e_proxy.py
-- [[pii_config()]] - code - gateway/tests/test_e2e_proxy.py
-- [[pipeline()_1]] - code - gateway/tests/test_e2e_proxy.py
-- [[prompt_guard()_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[sanitizer()_3]] - code - gateway/tests/test_e2e_proxy.py
-- [[sidecar.py]] - code - gateway/proxy/sidecar.py
-- [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_audit_chain_integrity()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_clean_message_passes()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_direct_bypass_blocked()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_e2e_proxy.py]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_egress_allowed_domain()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_egress_blocked()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_forwarder_mock()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_inbound_outbound_both_audited()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_kill_switch_freezes()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_mixed_pii_and_injection()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_multiple_prompt_patterns()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_outbound_pii_stripped()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_pii_stripped_inbound()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_pipeline_processing_time()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_pipeline_stats()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_prompt_injection_blocked()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_sidecar_scanner()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_tampered_audit_detected()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_trust_level_enforced()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_webhook_outbound_block_withheld()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
-- [[trust_manager()_4]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-__init__()_111]] - code - gateway/tests/test_egress_filter.py
+- [[dot-log_event()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_agent_specific_policy()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allow_is_not_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_cidr()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_connect_proxy_policy_allows_smtp_mail_me_587()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_default_policy_allows_imaps()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_default_policy_allows_smtp_submission()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_default_policy_allows_smtps()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_deny_is_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_egress_filter_blocks_mcp_exfil()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_egress_filter_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_full_url()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_host_port_format()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_localhost_hostname_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_log_filters_by_agent()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_log_records_attempts()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_log_size_limit()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_domain_exact()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_domain_wildcard()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_ip_cidr()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_ip_invalid()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_ip_single()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_port()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_port_empty_allows_all()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_non_email_port_still_denied_for_unlisted_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_port_not_allowed()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_private_ip_blocked_ssrf()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_stats_counts()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
+- [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
+- [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
+- [[ApprovalResult]] - code - gateway/security/egress_approval.py
+- [[CIDR in policy allowlist should match.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Egress filter should be available for MCP network calls.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Egress policy for an agent or global default.]] - rationale - gateway/security/egress_filter.py
+- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter]] - code - gateway/tests/test_egress_filter.py
+- [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter must NOT notify when domain is allowed.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter must call notifier when blocking an unknown domain.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter records attempts and provides stats.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressPolicy]] - code - gateway/security/egress_filter.py
+- [[EgressPolicy default allows port 465 (SMTPS).]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressPolicy default allows port 587 (SMTP submissionSTARTTLS).]] - rationale - gateway/tests/test_egress_filter.py
+- [[FakeAuditStore_1]] - code - gateway/tests/test_egress_filter.py
+- [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
+- [[Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW]] - rationale - gateway/tests/test_egress_filter.py
+- [[Per-agent policies override the default.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Port 465 on an un-allowlisted domain is still denied in enforce mode.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed     by the]] - rationale - gateway/tests/test_egress_filter.py
+- [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - rationale - gateway/tests/test_egress_filter.py
+- [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
+- [[TestAuditStorePersistence]] - code - gateway/tests/test_egress_filter.py
+- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
+- [[TestEgressPolicy]] - code - gateway/tests/test_egress_filter.py
+- [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
+- [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
+- [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
+- [[TestLogging]] - code - gateway/tests/test_egress_filter.py
+- [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
+- [[TestPerAgentPolicy]] - code - gateway/tests/test_egress_filter.py
+- [[TestSMTPIMAPPorts]] - code - gateway/tests/test_egress_filter.py
+- [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
+- [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Unit tests for EgressPolicy matching methods.]] - rationale - gateway/tests/test_egress_filter.py
+- [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
+- [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
+- [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
+- [[flush_notifications with no notifier set should not crash.]] - rationale - gateway/tests/test_egress_filter.py
+- [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
+- [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
+- [[http_connect_proxy policy allows CONNECT smtp.gmail.com465.]] - rationale - gateway/tests/test_egress_filter.py
+- [[test_egress_filter.py]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_flush_without_notifier()]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_no_notification_on_allow()]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_notifies_on_deny()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_allows_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_cleans_stale_entries()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_does_not_affect_other_domains()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_expired_falls_back_to_deny()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_invalid_iso_is_ignored()]] - code - gateway/tests/test_egress_filter.py
+- [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - rationale - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -88,20 +123,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 10 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 8 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 8 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 8 edges to [[_COMMUNITY_PipelineAction]]
-- 6 edges to [[_COMMUNITY_AuditChain]]
-- 4 edges to [[_COMMUNITY_ContextSegment]]
-- 4 edges to [[_COMMUNITY_TrustConfig]]
-- 4 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 46 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 46 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 24 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 6 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig (2)_1]]
+- 3 edges to [[_COMMUNITY_StdioConnection (2)]]
+- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (4)]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (2) (2)]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (3)]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_ContextSegment (2)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
 
 ## Top bridge nodes
-- [[test_e2e_proxy.py]] - degree 53, connects to 9 communities
-- [[_PassInboundPipeline]] - degree 23, connects to 9 communities
-- [[_StubForwarder_1]] - degree 22, connects to 9 communities
-- [[SidecarScanner]] - degree 13, connects to 2 communities
-- [[trust_manager()_4]] - degree 3, connects to 2 communities
+- [[EgressPolicy]] - degree 99, connects to 14 communities
+- [[ApprovalResult]] - degree 22, connects to 3 communities
+- [[TestEnforceMode]] - degree 16, connects to 3 communities
+- [[egress_filter()]] - degree 4, connects to 3 communities
+- [[_make_filter()]] - degree 33, connects to 2 communities

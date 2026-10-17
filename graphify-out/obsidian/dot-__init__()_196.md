@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "MCPPermissionManager (2)"
-location: "L183"
+community: "RBACConfig (2)"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/RBACConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

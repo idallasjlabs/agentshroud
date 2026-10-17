@@ -1,23 +1,28 @@
 ---
 type: community
-members: 10
+members: 15
 ---
 
 # AuditChain (2)
 
-**Members:** 10 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Next Steps_11]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[dot-test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
+- [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
+- [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_How to Fix (5 Minutes)]]
+- 5 edges to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[iMessage Integration Status]] - degree 8, connects to 1 community
+- [[TestEnvelopeSigner]] - degree 10, connects to 1 community
+- [[dot-test_different_keys_fail_verification()]] - degree 3, connects to 1 community
+- [[dot-test_different_signers_same_key_verify()]] - degree 3, connects to 1 community

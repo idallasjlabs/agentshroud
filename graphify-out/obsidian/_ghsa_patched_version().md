@@ -12,7 +12,7 @@ tags:
 # _ghsa_patched_version()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
 - [[Return the first patched version string across the advisory's vulns, else ''.]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

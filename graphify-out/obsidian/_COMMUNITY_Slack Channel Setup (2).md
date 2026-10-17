@@ -39,7 +39,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Slack Channel Setup]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_Enterprise Governance Proxy System (invention)]]
 
 ## Top bridge nodes

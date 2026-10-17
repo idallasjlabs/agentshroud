@@ -17,7 +17,7 @@ tags:
 - [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
 - [[check-vendor-compat.sh script]] - `calls` [EXTRACTED]
 - [[fail()_2]] - `calls` [EXTRACTED]
-- [[pass()_1]] - `calls` [EXTRACTED]
-- [[warn()_3]] - `calls` [EXTRACTED]
+- [[pass()_2]] - `calls` [EXTRACTED]
+- [[warn()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

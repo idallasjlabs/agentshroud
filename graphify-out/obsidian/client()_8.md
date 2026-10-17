@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_version_routes.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "TestVersionRoutes"
-location: "L28"
+community: "_is_op_reference_allowed"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/_is_op_reference_allowed
 ---
 
 # client()
 
 ## Connections
-- [[test_version_routes.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

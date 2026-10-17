@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_openclaw_photo.sh"
+source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
-location: "L10"
+community: "validate_network_security"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/validate_network_security
 ---
 
 # check()
 
 ## Connections
-- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
-- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
+- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
+- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/validate_network_security

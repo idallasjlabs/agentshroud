@@ -11,7 +11,7 @@ members: 16
 - [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Constraints_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Evidence_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Problem_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Problem_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Remediation_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Root Cause_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Severity_4]] - document - docs/planning/redteam/02-human-in-the-loop.md

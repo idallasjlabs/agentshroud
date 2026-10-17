@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_troubleshooting]]
+- 2 edges to [[_COMMUNITY_troubleshooting_1]]
 
 ## Top bridge nodes
 - [[Known Log Messages]] - degree 19, connects to 1 community

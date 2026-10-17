@@ -12,7 +12,7 @@ members: 32
 - [[Cost Optimization Priority]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Cross-Account & Future Proofing]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Decision Framework]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[Deliverables_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Deliverables_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[EBS Performance Analysis (Critical Pattern)]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Expertise]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[FY26 Cost Reduction Context_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
@@ -22,7 +22,7 @@ members: 32
 - [[Infrastructure You Must Know_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Operating Rules (Non-Negotiable)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Out-of-Scope Departments (Inventory & Tag Only)_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[Reports (`.reports`)]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Required Tags (All Resources)]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Resource Inventory CSV Schema]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Rightsizing Logic]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
@@ -33,8 +33,8 @@ members: 32
 - [[Rule 5 Safe Tagging_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Rule 6 Never Delete Automatically_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Savings Levers (Ranked by Impact)_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[Script Templates]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[Scripts (`.scripts`)]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Script Templates_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Tag Audit Process]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Tagging Standard]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Target 40% Full-Year Reduction on Global Services Resources_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md

@@ -32,9 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY__make_proxy]]
 - 2 edges to [[_COMMUNITY_AsyncMock (2)]]
 - 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 2 edges to [[_COMMUNITY__make_proxy]]
 
 ## Top bridge nodes
 - [[TestHandleEvent]] - degree 10, connects to 3 communities

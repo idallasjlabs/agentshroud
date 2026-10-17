@@ -1,15 +1,18 @@
 ---
 type: community
-members: 23
+members: 33
 ---
 
 # TestNetworkValidator
 
-**Members:** 23 nodes
+**Members:** 33 nodes
 
 ## Members
-- [[dot-setup_method()_22]] - code - gateway/tests/test_network_validator.py
+- [[dot-_validate_container_runtime_config()]] - code - gateway/security/network_validator.py
+- [[dot-detect_configuration_drift()]] - code - gateway/security/network_validator.py
+- [[dot-setup_method()_17]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_network_security_finding_structure()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
@@ -19,6 +22,11 @@ members: 23
 - [[dot-test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
+- [[dot-validate_runtime_configuration()]] - code - gateway/security/network_validator.py
+- [[A network security finding.]] - rationale - gateway/security/network_validator.py
+- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
+- [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
+- [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
@@ -30,6 +38,8 @@ members: 23
 - [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
 - [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
+- [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
+- [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
 - [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
 
 ## Live Query (requires Dataview plugin)
@@ -40,10 +50,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
+- 9 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
+- 6 edges to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_validate_network_security]]
 
 ## Top bridge nodes
-- [[TestNetworkValidator]] - degree 15, connects to 2 communities
-- [[test_network_validator.py]] - degree 3, connects to 2 communities
-- [[dot-setup_method()_22]] - degree 2, connects to 1 community
+- [[dot-validate_runtime_configuration()]] - degree 6, connects to 2 communities
+- [[dot-detect_configuration_drift()]] - degree 5, connects to 2 communities
+- [[NetworkSecurityFinding]] - degree 15, connects to 1 community
+- [[TestNetworkValidator]] - degree 15, connects to 1 community
+- [[dot-_validate_container_runtime_config()]] - degree 4, connects to 1 community

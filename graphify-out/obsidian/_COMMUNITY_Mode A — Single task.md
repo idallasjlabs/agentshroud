@@ -8,13 +8,13 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Guardrails_6]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Guardrails_5]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Invocation_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Jira ticket — every development batch gets one_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Mode A — Single task]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Mode B — Comprehensive review sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Reviewers and fixer available to you_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
-- [[Role_28]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Role_32]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Step 1 — One branch + worktree for the whole sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Step 1 — Sync and confirm clean state]] - document - docker/config/hermes/skills/i-hdev/SKILL.md

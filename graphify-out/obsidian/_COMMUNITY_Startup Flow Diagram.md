@@ -8,7 +8,7 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[Related Notes_21]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Related Notes_17]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 - [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 - [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 

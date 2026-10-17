@@ -21,7 +21,7 @@ members: 39
 - [[Colors_1]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[Communication Templates]] - document - BRAND.md
 - [[Communication Templates_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Directory Structure_1]] - document - branding/README.md
+- [[Directory Structure]] - document - branding/README.md
 - [[Do's]] - document - branding/README.md
 - [[Don'ts]] - document - branding/README.md
 - [[Elevator pitch_1]] - document - BRAND.md

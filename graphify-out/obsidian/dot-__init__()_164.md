@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L27"
+community: "StdioConnection"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[MCPServerConfig_2]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

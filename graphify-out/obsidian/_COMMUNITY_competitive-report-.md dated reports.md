@@ -15,14 +15,14 @@ members: 18
 - [[OpenClaw cron Competitive Landscape Update (Afternoon)]] - code - docker/bots/openclaw/config/cron/jobs.json
 - [[OpenClaw cron Daily Competitive Analysis Email (AM)]] - code - docker/bots/openclaw/config/cron/jobs.json
 - [[OpenClaw cron Daily Competitive Landscape Update (zero-hallucination sourcing rules)]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
+- [[_esc()_1]] - code - docker/bots/hermes/render_md_email.py
 - [[_inline()]] - code - docker/bots/hermes/render_md_email.py
 - [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
 - [[agentshroud-email-send.sh]] - code - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
 - [[competitive-analysis.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
 - [[competitive-report-.md dated reports]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
 - [[cron-operations skill]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[main()_20]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_21]] - code - docker/bots/hermes/render_md_email.py
 - [[render()]] - code - docker/bots/hermes/render_md_email.py
 - [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 - [[trend-log.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt

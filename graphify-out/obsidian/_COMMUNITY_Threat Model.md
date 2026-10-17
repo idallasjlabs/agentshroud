@@ -26,8 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
 - 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
+- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
 
 ## Top bridge nodes
 - [[Threat Model_28]] - degree 7, connects to 1 community

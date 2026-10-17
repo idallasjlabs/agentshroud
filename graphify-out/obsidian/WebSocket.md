@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "ApprovalQueueConfig (9)"
-location: "L350"
+community: "TestToolChainAnalyzer"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_9
+  - graphify/INFERRED
+  - community/TestToolChainAnalyzer
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()]] - `references` [EXTRACTED]
-- [[dot-disconnect()]] - `references` [EXTRACTED]
+- [[dot-__init__()_23]] - `references` [EXTRACTED]
+- [[Severity]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_9
+#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer

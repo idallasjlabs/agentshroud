@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "api.py (2)"
 location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # _resolve_bot_container()
@@ -20,6 +20,6 @@ tags:
 - [[check_bot_updates()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
-- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
+- [[upgrade_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

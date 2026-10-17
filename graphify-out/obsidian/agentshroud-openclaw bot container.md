@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "concept"
-community: "export-bot-conversations.py (2)"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_2
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # agentshroud-openclaw bot container
@@ -15,4 +15,4 @@ tags:
 - [[disaster-recovery-backup.sh]] - `references` [EXTRACTED]
 - [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/export-bot-conversationspy_2
+#graphify/concept #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

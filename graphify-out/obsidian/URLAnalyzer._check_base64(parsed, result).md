@@ -12,6 +12,6 @@ tags:
 # URLAnalyzer._check_base64(parsed, result)
 
 ## Connections
-- [[Function Details_36]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/url_analyzerpy

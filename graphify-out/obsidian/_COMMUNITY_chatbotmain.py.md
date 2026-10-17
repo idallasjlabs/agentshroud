@@ -65,7 +65,7 @@ members: 63
 - [[app()_1]] - code - chatbot/test_main.py
 - [[chat()]] - code - chatbot/main.py
 - [[chatbotmain.py]] - code - chatbot/main.py
-- [[client()_12]] - code - chatbot/test_main.py
+- [[client()_20]] - code - chatbot/test_main.py
 - [[health_check()_1]] - code - chatbot/main.py
 - [[lifespan()_1]] - code - chatbot/main.py
 - [[load_persona_files()]] - code - chatbot/main.py
@@ -81,7 +81,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY__FakeRBAC]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
 - [[ChatRequest]] - degree 3, connects to 1 community

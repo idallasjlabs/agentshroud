@@ -71,8 +71,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestIdentityAuth]]
 - 1 edge to [[_COMMUNITY_TestMandatoryGates]]
 - 1 edge to [[_COMMUNITY_TestSecretsManagement]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
 
 ## Top bridge nodes
 - [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities

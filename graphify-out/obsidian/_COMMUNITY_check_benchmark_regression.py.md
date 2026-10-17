@@ -1,16 +1,15 @@
 ---
 type: community
-members: 3
+members: 2
 ---
 
 # check_benchmark_regression.py
 
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[CI benchmark regression job (macOS)]] - code - .github/workflows/ci.yml
 - [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
-- [[main()_8]] - code - scripts/check_benchmark_regression.py
+- [[main()_6]] - code - scripts/check_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 

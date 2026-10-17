@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "InjectionAction (3)"
-location: "L24"
+community: "Browser Fetch Skill"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction_3
+  - community/Browser_Fetch_Skill
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction_3
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill

@@ -1,56 +1,50 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L55"
+community: "AlertDispatcher (2)"
+location: "L90"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - graphify/EXTRACTED
+  - community/AlertDispatcher_2
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `method` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `method` [EXTRACTED]
-- [[dot-_get_sanitizer_for_tool()]] - `method` [EXTRACTED]
-- [[dot-_log_redaction_audit()]] - `method` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `method` [EXTRACTED]
-- [[dot-get_supported_tools()]] - `method` [EXTRACTED]
-- [[dot-get_tool_config()]] - `method` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_3]] - `calls` [EXTRACTED]
-- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
-- [[dot-test_initialization()]] - `calls` [EXTRACTED]
-- [[dot-test_sanitize_disabled()]] - `calls` [EXTRACTED]
-- [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `conceptually_related_to` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector_1]] - `semantically_similar_to` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[dot-__init__()_179]] - `method` [EXTRACTED]
+- [[dot-_domain_matches_pattern()]] - `method` [EXTRACTED]
+- [[dot-_extract_code_blocks()]] - `method` [EXTRACTED]
+- [[dot-_is_domain_allowed()]] - `method` [EXTRACTED]
+- [[dot-_is_internal_link()]] - `method` [EXTRACTED]
+- [[dot-_restore_code_blocks()]] - `method` [EXTRACTED]
+- [[dot-_url_has_blocked_patterns()]] - `method` [EXTRACTED]
+- [[dot-sanitize()_4]] - `method` [EXTRACTED]
+- [[dot-sanitize_images()]] - `method` [EXTRACTED]
+- [[dot-sanitize_links()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_33]] - `calls` [EXTRACTED]
+- [[dot-test_performance_with_large_content()]] - `calls` [EXTRACTED]
+- [[dot-test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
+- [[dot-test_warn_mode()]] - `calls` [EXTRACTED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - `rationale_for` [EXTRACTED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestConfidenceFloor]] - `uses` [INFERRED]
-- [[TestConfigurationLoading]] - `uses` [INFERRED]
-- [[TestMiddlewareIntegration]] - `uses` [INFERRED]
-- [[TestRealWorldScenarios]] - `uses` [INFERRED]
-- [[TestToolResultPIIConfig]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[TestIntegration_1]] - `uses` [INFERRED]
 - [[TestToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[Tool result PII sanitizer with per-tool configuration]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `conceptually_related_to` [INFERRED]
 - [[ToolResultSanitizer]] - `semantically_similar_to` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[US_SSN regex tightened to exclude CVE IDs]] - `conceptually_related_to` [INFERRED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
-- [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[sanitize_tool_result()]] - `calls` [EXTRACTED]
+- [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
+- [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

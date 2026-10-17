@@ -12,7 +12,7 @@ tags:
 # _make_sanitizer()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[dot-test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[dot-test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]

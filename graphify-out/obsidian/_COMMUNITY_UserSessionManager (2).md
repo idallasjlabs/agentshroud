@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[dot-_append_audit_event()]] - code - gateway/approval_queue/queue.py
-- [[dot-_expire_stale()]] - code - gateway/approval_queue/queue.py
-- [[dot-_persist_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[dot-broadcast()_1]] - code - gateway/approval_queue/queue.py
-- [[dot-cleanup_decided()]] - code - gateway/approval_queue/queue.py
-- [[dot-decide()_1]] - code - gateway/approval_queue/queue.py
-- [[dot-get_item()_2]] - code - gateway/approval_queue/queue.py
-- [[dot-get_pending()_1]] - code - gateway/approval_queue/queue.py
-- [[dot-submit()_1]] - code - gateway/approval_queue/queue.py
-- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[Any_50]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueItem_4]] - code - gateway/approval_queue/queue.py
-- [[ApprovalRequest_3]] - code - gateway/approval_queue/queue.py
-- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
-- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
-- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
-- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
-- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
-- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
-- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
-- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
+- [[dot-__init__()_145]] - code - gateway/tests/test_key_rotation.py
+- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,12 +38,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_ServiceManager (3)]]
+- 6 edges to [[_COMMUNITY_UserSessionManager]]
+- 4 edges to [[_COMMUNITY_KeyRotationManager (2)_1]]
+- 4 edges to [[_COMMUNITY_KeyRotationManager]]
+- 4 edges to [[_COMMUNITY_UserSessionManager (3)_1]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (5)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (4)]]
 
 ## Top bridge nodes
-- [[dot-decide()_1]] - degree 7, connects to 2 communities
-- [[dot-submit()_1]] - degree 7, connects to 1 community
-- [[dot-_append_audit_event()]] - degree 6, connects to 1 community
-- [[dot-broadcast()_1]] - degree 6, connects to 1 community
-- [[dot-_expire_stale()]] - degree 6, connects to 1 community
+- [[MockValidator]] - degree 14, connects to 5 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
+- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[dot-test_register_validator()]] - degree 3, connects to 1 community

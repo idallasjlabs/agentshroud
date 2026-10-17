@@ -12,7 +12,7 @@ tags:
 # _send_state()
 
 ## Connections
-- [[WebSocket_7]] - `references` [EXTRACTED]
+- [[WebSocket_6]] - `references` [EXTRACTED]
 - [[_State]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]

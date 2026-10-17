@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…]] - `rationale_for` [EXTRACTED]
 - [[Host network filter blocking Homebrew PythonNode outbound]] - `conceptually_related_to` [EXTRACTED]
-- [[Inventory EVERYTHING MEANS EVERYTHING — a component missing from the table is a failed run]] - `references` [EXTRACTED]
+- [[Incident ConduitHermes instability 2026-10-16]] - `references` [EXTRACTED]
+- [[Sunday upgrade session prompt]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-27 0800 (verify-only)]] - `references` [EXTRACTED]
 - [[_call_with_deadline()]] - `contains` [EXTRACTED]
@@ -28,7 +29,7 @@ tags:
 - [[fetch_dockerhub_tags()]] - `contains` [EXTRACTED]
 - [[fetch_npm_versions()]] - `contains` [EXTRACTED]
 - [[is_stable()]] - `contains` [EXTRACTED]
-- [[main()]] - `contains` [EXTRACTED]
+- [[main()_1]] - `contains` [EXTRACTED]
 - [[pick_latest_hermes_tag()]] - `contains` [EXTRACTED]
 - [[pick_latest_stable()]] - `contains` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `imports_from` [EXTRACTED]

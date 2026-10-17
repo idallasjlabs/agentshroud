@@ -27,10 +27,10 @@ members: 26
 - [[Search Contacts_2]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Search Mail_2]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Search Notes_2]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Security_9]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Security_10]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Send Email_2]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Setup_2]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Troubleshooting_23]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Troubleshooting_21]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Update Contact_2]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Update Event_2]] - document - .agents/skills/i-icloud/SKILL.md
 - [[iCloud Services_2]] - document - .agents/skills/i-icloud/SKILL.md

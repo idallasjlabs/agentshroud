@@ -30,5 +30,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[test_chat_completions_alias.py]] - degree 7, connects to 1 community
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - degree 2, connects to 1 community
 - [[client()]] - degree 2, connects to 1 community
+- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - degree 2, connects to 1 community

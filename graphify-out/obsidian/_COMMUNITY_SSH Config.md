@@ -15,8 +15,8 @@ members: 12
 - [[Configuration_20]] - document - skills/custom/securebrowser/README.md
 - [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
 - [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_184]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_63]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_177]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Related Notes_61]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md

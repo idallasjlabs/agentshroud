@@ -16,10 +16,10 @@ members: 22
 - [[Outbound responses have credentials blocked for untrusted sources.]] - rationale - gateway/tests/test_security_integration.py
 - [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
 - [[When both PII sanitizer and prompt guard detect issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[approval_queue()]] - code - gateway/tests/test_security_integration.py
+- [[egress_filter()_1]] - code - gateway/tests/test_security_integration.py
 - [[encrypted_store()]] - code - gateway/tests/test_security_integration.py
 - [[prompt_guard()_1]] - code - gateway/tests/test_security_integration.py
-- [[sanitizer()_1]] - code - gateway/tests/test_security_integration.py
+- [[sanitizer()_3]] - code - gateway/tests/test_security_integration.py
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - code - gateway/tests/test_security_integration.py
 - [[test_encrypted_store_in_pipeline()]] - code - gateway/tests/test_security_integration.py
 - [[test_full_pipeline_clean_message()]] - code - gateway/tests/test_security_integration.py
@@ -39,19 +39,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 5 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 5 edges to [[_COMMUNITY_AlertDispatcher (2)]]
 - 5 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
 - 3 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
 - 2 edges to [[_COMMUNITY_ContextSegment]]
-- 2 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 
 ## Top bridge nodes
-- [[test_security_integration.py]] - degree 37, connects to 9 communities
-- [[approval_queue()]] - degree 3, connects to 2 communities
-- [[encrypted_store()]] - degree 2, connects to 1 community
+- [[test_security_integration.py]] - degree 37, connects to 11 communities
+- [[egress_filter()_1]] - degree 4, connects to 3 communities
 - [[prompt_guard()_1]] - degree 2, connects to 1 community
-- [[sanitizer()_1]] - degree 2, connects to 1 community
+- [[encrypted_store()]] - degree 2, connects to 1 community
+- [[sanitizer()_3]] - degree 2, connects to 1 community

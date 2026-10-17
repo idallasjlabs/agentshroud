@@ -37,8 +37,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_StdioConnection]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
 
 ## Top bridge nodes
 - [[TestMCPProxyEndpoint_1]] - degree 12, connects to 2 communities

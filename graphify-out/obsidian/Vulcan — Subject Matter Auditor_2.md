@@ -12,9 +12,9 @@ tags:
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Purpose_168]] - `contains` [EXTRACTED]
-- [[Related Skills_111]] - `contains` [EXTRACTED]
-- [[Usage_121]] - `contains` [EXTRACTED]
+- [[Purpose_190]] - `contains` [EXTRACTED]
+- [[Related Skills_117]] - `contains` [EXTRACTED]
+- [[Usage_130]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-vulcanREADME]] - `contains` [EXTRACTED]
 

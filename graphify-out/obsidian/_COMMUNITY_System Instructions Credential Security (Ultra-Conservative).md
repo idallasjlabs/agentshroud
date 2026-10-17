@@ -41,10 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
 - 1 edge to [[_COMMUNITY_Trademark Statements]]
 - 1 edge to [[_COMMUNITY_Credential Isolation — Gateway op-proxy (ACTIVE)]]
 - 1 edge to [[_COMMUNITY_Quick Reference Commands]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
 
 ## Top bridge nodes
 - [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 3 communities

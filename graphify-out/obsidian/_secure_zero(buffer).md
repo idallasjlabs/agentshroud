@@ -12,6 +12,6 @@ tags:
 # _secure_zero(buffer)
 
 ## Connections
-- [[Function Details_5]] - `contains` [EXTRACTED]
+- [[Function Details_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/encrypted_storepy

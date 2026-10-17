@@ -9,9 +9,9 @@ members: 6
 
 ## Members
 - [[backup_path()]] - code - .llm_settings/git-hooks/install.sh
+- [[git-hooksinstall.sh]] - code - .llm_settings/git-hooks/install.sh
 - [[hook_is_pre_commit()]] - code - .llm_settings/git-hooks/install.sh
-- [[install.sh]] - code - .llm_settings/git-hooks/install.sh
-- [[install.sh script]] - code - .llm_settings/git-hooks/install.sh
+- [[install.sh script_1]] - code - .llm_settings/git-hooks/install.sh
 - [[pre-commit-hook.sh]] - code - scripts/pre-commit-hook.sh
 - [[pre-commit-hook.sh script]] - code - scripts/pre-commit-hook.sh
 

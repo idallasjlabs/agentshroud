@@ -18,10 +18,10 @@ members: 22
 - [[Phase 3 MITIGATE (Rollback First!)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Post-Incident]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Post-Mortem Template]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Purpose_77]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Purpose_84]] - document - docker/config/openclaw/skills/i-production/README.md
 - [[RDS Rollback (Point-in-Time or Snapshot)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Related Skills_64]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Role_38]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Role_41]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[S3 Data Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Severity Matrix]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Skill Incident Response (INCIDENT)]] - document - docker/config/openclaw/skills/i-production/SKILL.md

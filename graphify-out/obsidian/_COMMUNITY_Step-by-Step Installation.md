@@ -12,7 +12,7 @@ members: 30
 - [[Dashboard Access]] - document - docs/setup/setup-guide.md
 - [[Default Configuration]] - document - docs/setup/setup-guide.md
 - [[Development (local testing)]] - document - docs/setup/setup-guide.md
-- [[Environment Variables_1]] - document - docs/setup/setup-guide.md
+- [[Environment Variables_2]] - document - docs/setup/setup-guide.md
 - [[Health Check]] - document - docs/setup/setup-guide.md
 - [[Mac Studio Example]] - document - docs/setup/setup-guide.md
 - [[Multi-Instance Setup]] - document - docs/setup/setup-guide.md

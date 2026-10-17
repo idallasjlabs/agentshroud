@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-record_violation()]] - `references` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/TrustConfig

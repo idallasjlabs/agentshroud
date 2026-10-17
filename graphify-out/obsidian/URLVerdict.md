@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TestSSRFDetection"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestToolChainAnalyzer
+  - community/TestSSRFDetection
 ---
 
 # URLVerdict
 
 ## Connections
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestBase64Heuristic]] - `uses` [INFERRED]
 - [[TestDataExfiltration_1]] - `uses` [INFERRED]
 - [[TestLegitimateURLsAllowed]] - `uses` [INFERRED]
 - [[TestMalformedURLs]] - `uses` [INFERRED]
 - [[TestPIIInURLs]] - `uses` [INFERRED]
 - [[TestSSRFDetection]] - `uses` [INFERRED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer
+#graphify/code #graphify/INFERRED #community/TestSSRFDetection

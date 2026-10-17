@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "PortManager"
-location: "L88"
+community: "AgentRegistry"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

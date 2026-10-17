@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ArgumentParser_1]] - `references` [EXTRACTED]
 - [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[run()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

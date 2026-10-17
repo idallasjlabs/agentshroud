@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L55"
+community: "AlertDispatcher (2)"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

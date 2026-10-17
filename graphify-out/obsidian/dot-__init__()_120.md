@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L38"
+community: "MiddlewareManager"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

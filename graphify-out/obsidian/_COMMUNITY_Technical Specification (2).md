@@ -9,7 +9,7 @@ members: 14
 
 ## Members
 - [[API Call Structure_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Apollo — Audio Systems Producer_4]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Apollo — Audio Systems Producer_3]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
 - [[Audio Quality Settings_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
 - [[Error Handling_8]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
 - [[Input Requirements_15]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
@@ -34,4 +34,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Apollo — Audio Systems Producer_4]] - degree 7, connects to 1 community
+- [[Apollo — Audio Systems Producer_3]] - degree 7, connects to 1 community

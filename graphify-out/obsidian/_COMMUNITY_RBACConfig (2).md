@@ -1,19 +1,17 @@
 ---
 type: community
-members: 218
+members: 97
 ---
 
 # RBACConfig (2)
 
-**Members:** 218 nodes
+**Members:** 97 nodes
 
 ## Members
-- [[dot-__init__()_190]] - code - gateway/security/group_rbac.py
-- [[dot-__init__()_191]] - code - gateway/security/tool_acl.py
+- [[dot-__init__()_137]] - code - gateway/security/tool_acl.py
 - [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
 - [[dot-_get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
 - [[dot-_get_role()]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_high_risk()]] - code - gateway/security/group_rbac.py
 - [[dot-can_use_tool()_1]] - code - gateway/security/tool_acl.py
 - [[dot-can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
 - [[dot-can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
@@ -22,29 +20,15 @@ members: 218
 - [[dot-effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
 - [[dot-effective_private()]] - code - gateway/security/tool_acl.py
 - [[dot-enforcer()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-get_all_member_ids()]] - code - gateway/security/group_config.py
-- [[dot-get_all_roles()]] - code - gateway/security/group_rbac.py
 - [[dot-get_allowed_tools()]] - code - gateway/security/tool_acl.py
 - [[dot-get_denial_counts()]] - code - gateway/security/tool_acl.py
 - [[dot-get_denied_tools()]] - code - gateway/security/tool_acl.py
-- [[dot-get_group_admin_ids()]] - code - gateway/security/group_config.py
-- [[dot-get_role()]] - code - gateway/security/group_rbac.py
-- [[dot-is_high_risk_tool()]] - code - gateway/security/group_rbac.py
-- [[dot-is_member_or_higher()]] - code - gateway/security/group_rbac.py
-- [[dot-is_owner()_5]] - code - gateway/security/group_rbac.py
-- [[dot-model_post_init()_1]] - code - gateway/security/group_config.py
-- [[dot-rank()]] - code - gateway/security/group_rbac.py
-- [[dot-remove_role()]] - code - gateway/security/group_rbac.py
-- [[dot-set_role()]] - code - gateway/security/group_rbac.py
 - [[dot-test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_can_use_high_risk_member()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_can_use_high_risk_owner()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_can_use_high_risk_readonly()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
@@ -54,32 +38,10 @@ members: 218
 - [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_get_all_roles_empty_for_unknown_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_get_all_roles_invalid_string_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_get_all_roles_returns_all_entries()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_get_role_invalid_string_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_is_high_risk_false_for_web_search()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_high_risk_true_for_email_sending()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_high_risk_true_for_external_api_calls()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_high_risk_true_for_file_deletion()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_high_risk_true_for_skill_installation()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_member_or_higher_false_for_readonly()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_member_or_higher_for_member()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_member_or_higher_for_owner()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_owner_false_for_member()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_is_owner_true()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_member_allowed_read_write_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_member_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_member_denied_gmail_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_member_denied_high_risk_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_member_denied_ssh_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_member_resolves_to_member_role()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_non_member_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_allowed_all_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
@@ -87,33 +49,15 @@ members: 218
 - [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_resolves_to_owner_role()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_owner_unrestricted_matches_dm_behavior()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_rank_member_middle()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_rank_owner_highest()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_rank_readonly_lowest()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_readonly_user_resolves_to_readonly_role()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_remove_role_falls_back_to_readonly()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_remove_role_noop_for_missing_user()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_set_role_creates_new_entry()]] - code - gateway/tests/test_group_rbac.py
-- [[dot-test_set_role_updates_existing_entry()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_unknown_group_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
@@ -123,7 +67,6 @@ members: 218
 - [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
 - [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
 - [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
-- [[An invalid role string in the map falls back to READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
 - [[Authorize a tool call, refusing owner elevation over an unverified origin.]] - rationale - gateway/security/tool_acl.py
 - [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
 - [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
@@ -133,68 +76,23 @@ members: 218
 - [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
 - [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
 - [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
-- [[GroupRole]] - code - gateway/security/group_rbac.py
-- [[GroupRoleResolver]] - code - gateway/security/group_rbac.py
-- [[GroupRoleResolver correctly maps Telegram user IDs to per-group roles.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
-- [[Numeric rank for comparison — higher is more privileged.]] - rationale - gateway/security/group_rbac.py
-- [[Owner group-context check must match standard can_use_tool result.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Owner is allowed ALL tools in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Owner must have unrestricted access even in group context.]] - rationale - gateway/tests/test_group_rbac.py
 - [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
-- [[Per-group roles for Telegram group workspace members.      Hierarchy (highest to]] - rationale - gateway/security/group_rbac.py
 - [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - rationale - gateway/security/tool_acl.py
-- [[RBACConfig_4]] - code - gateway/tests/test_tool_acl.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - rationale - gateway/security/tool_acl.py
 - [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Read-only user resolves to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
 - [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
-- [[Regular member (non-owner group role) is denied high-risk tools that require app]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member IS allowed readwrite in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member IS allowed web_search in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member denied gmail (private tool) even in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member denied ssh (private tool) in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member resolves to GroupRole.MEMBER.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular members can use medium-risk tools but not privateadmin tools.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Remove a user's role entry from a group (falls back to READ_ONLY).]] - rationale - gateway/security/group_rbac.py
-- [[Resolve per-group roles for Telegram group workspace members.      Args]] - rationale - gateway/security/group_rbac.py
-- [[Return True if the tool is classified as high-risk.          High-risk tools req]] - rationale - gateway/security/group_rbac.py
 - [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
-- [[Return True if this role is permitted to REQUEST high-risk tools.          OWNER]] - rationale - gateway/security/group_rbac.py
-- [[Return True if user_id is at least a member (member or owner).]] - rationale - gateway/security/group_rbac.py
-- [[Return True if user_id is the owner in group_chat_id.]] - rationale - gateway/security/group_rbac.py
-- [[Return all user→role mappings for a group.]] - rationale - gateway/security/group_rbac.py
-- [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
-- [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - rationale - gateway/security/group_config.py
 - [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
-- [[Return the GroupRole for user_id in group_chat_id.          Returns GroupRole.RE]] - rationale - gateway/security/group_rbac.py
 - [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
 - [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
-- [[Set or update the role for a user in a specific group.]] - rationale - gateway/security/group_rbac.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_tool_acl.py
-- [[TeamsConfig_2]] - code - gateway/security/group_config.py
-- [[Test GroupRole.rank, can_use_high_risk, and GroupRoleResolver helpers.]] - rationale - gateway/tests/test_group_rbac.py
 - [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
 - [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
 - [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
 - [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
 - [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
-- [[TestGroupRoleProperties]] - code - gateway/tests/test_group_rbac.py
-- [[TestGroupRoleResolver]] - code - gateway/tests/test_group_rbac.py
-- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
-- [[TestMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
 - [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
 - [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
 - [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestOwnerGroupContext]] - code - gateway/tests/test_group_rbac.py
-- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
 - [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
 - [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
 - [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
@@ -203,29 +101,10 @@ members: 218
 - [[ToolACLConfig]] - code - gateway/security/tool_acl.py
 - [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
 - [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
-- [[Unknown group_chat_id defaults to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
-- [[User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).]] - rationale - gateway/tests/test_group_rbac.py
-- [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
-- [[_make_rbac()_1]] - code - gateway/tests/test_tool_acl.py
-- [[acl_config()]] - code - gateway/tests/test_group_rbac.py
-- [[email_sending is recognized as a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
-- [[enforcer()_2]] - code - gateway/tests/test_group_rbac.py
-- [[enforcer()_3]] - code - gateway/tests/test_tool_acl.py
-- [[get_all_roles with an invalid role string falls back to READ_ONLY per entry.]] - rationale - gateway/tests/test_group_rbac.py
-- [[group_rbac.py]] - code - gateway/security/group_rbac.py
-- [[group_rbac.py (GroupRoleResolver)]] - code - gateway/security/group_rbac.py
-- [[group_role_resolver()]] - code - gateway/tests/test_group_rbac.py
-- [[owner_in_group resolves to GroupRole.OWNER.]] - rationale - gateway/tests/test_group_rbac.py
-- [[rbac()_5]] - code - gateway/tests/test_group_rbac.py
-- [[rbac()_6]] - code - gateway/tests/test_tool_acl.py
-- [[remove_role on a user not in map is a no-op (no exception).]] - rationale - gateway/tests/test_group_rbac.py
-- [[teams()_4]] - code - gateway/tests/test_group_rbac.py
+- [[enforcer()_1]] - code - gateway/tests/test_tool_acl.py
+- [[rbac()_2]] - code - gateway/tests/test_tool_acl.py
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
-- [[test_group_rbac.py]] - code - gateway/tests/test_group_rbac.py
 - [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
-- [[tool_acl.py]] - code - gateway/security/tool_acl.py
-- [[web_search is NOT a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -235,29 +114,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 49 edges to [[_COMMUNITY_MiddlewareManager]]
-- 33 edges to [[_COMMUNITY_RBACConfig]]
+- 41 edges to [[_COMMUNITY_MiddlewareManager]]
 - 19 edges to [[_COMMUNITY_TrustConfig]]
-- 17 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 9 edges to [[_COMMUNITY_GroupConfig]]
-- 9 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 6 edges to [[_COMMUNITY_RBACConfig (3)]]
-- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py (2)]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py (5)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 14 edges to [[_COMMUNITY_RBACConfig (2) (2)]]
+- 11 edges to [[_COMMUNITY_RBACConfig (3)]]
+- 8 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 2 edges to [[_COMMUNITY_RBACConfig (2) (3)]]
+- 2 edges to [[_COMMUNITY_RBACConfig (2) (4)]]
 - 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (3)]]
-- 1 edge to [[_COMMUNITY__FakeRBAC]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
 
 ## Top bridge nodes
-- [[TeamsConfig_2]] - degree 100, connects to 11 communities
-- [[ToolACLEnforcer]] - degree 77, connects to 6 communities
-- [[GroupRoleResolver]] - degree 36, connects to 3 communities
-- [[tool_acl.py]] - degree 9, connects to 3 communities
-- [[test_tool_acl.py]] - degree 23, connects to 2 communities
+- [[ToolACLEnforcer]] - degree 77, connects to 8 communities
+- [[ToolACLConfig]] - degree 38, connects to 4 communities
+- [[test_tool_acl.py]] - degree 23, connects to 3 communities
+- [[TestCVE2026_9367TerminalToolDenied]] - degree 14, connects to 2 communities
+- [[TestOriginAwareAuthorization]] - degree 14, connects to 2 communities

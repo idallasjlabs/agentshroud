@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/dashboard.html"
 type: "code"
-community: "TestSSRFDetection (2)"
+community: "EgressFilterConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/EgressFilterConfig
 ---
 
 # dashboard.html (Control Center Template)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

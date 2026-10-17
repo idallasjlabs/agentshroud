@@ -1,56 +1,67 @@
 ---
 type: community
-members: 43
+members: 54
 ---
 
 # ApprovalQueueConfig (4)
 
-**Members:** 43 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[dot-test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
-- [[dot-test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
-- [[dot-test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
-- [[dot-test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
-- [[dot-test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
-- [[dot-test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
-- [[dot-test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
-- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
-- [[ApprovalQueueItem_2]] - code - gateway/tests/test_approval_store.py
-- [[ApprovalQueueItem_1]] - code - gateway/ingest_api/models.py
-- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
-- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
-- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
-- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
-- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Path_10]] - code - gateway/tests/test_approval_store.py
-- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_approval_store.py
-- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
-- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
-- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
-- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
-- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
-- [[_make_item()]] - code - gateway/tests/test_approval_store.py
-- [[queue()]] - code - gateway/tests/test_approval_stress.py
-- [[store()_1]] - code - gateway/tests/test_approval_store.py
-- [[store()]] - code - gateway/tests/test_approval_stress.py
-- [[store.py]] - code - gateway/approval_queue/store.py
-- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
-- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
-- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
-- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
-- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
-- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
-- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
-- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
+- [[dot-test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_rejects_empty_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
+- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
+- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
+- [[Management WebSocket endpoints should use scoped tokens, not master auth.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_security_fixes.py
+- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
+- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
+- [[TestManagementWSTokenScoping]] - code - gateway/tests/test_security_fixes.py
+- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
+- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
+- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
+- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should reject empty token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should reject master auth token (R3-L4)]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
+- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
+- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - code - gateway/ingest_api/routes/dashboard.py
+- [[sync_client()]] - code - gateway/tests/test_security_fixes.py
+- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,19 +71,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 8 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 4 edges to [[_COMMUNITY_AuditStore]]
-- 3 edges to [[_COMMUNITY_create_auth_dependency]]
-- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 2 edges to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_Restart Procedure (2)]]
-- 1 edge to [[_COMMUNITY__FakeRBAC]]
+- 11 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 9 edges to [[_COMMUNITY_ApprovalQueueConfig (2)_1]]
+- 9 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 5 edges to [[_COMMUNITY_test_dashboard.py]]
+- 2 edges to [[_COMMUNITY_test_e2e_proxy.py (2)]]
+- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[ApprovalQueueItem_1]] - degree 30, connects to 5 communities
-- [[store.py]] - degree 7, connects to 5 communities
-- [[test_approval_stress.py]] - degree 11, connects to 3 communities
-- [[TestApprovalStorePersistence]] - degree 11, connects to 3 communities
-- [[TestConcurrentApprovalRequests]] - degree 9, connects to 3 communities
+- [[test_security_fixes.py]] - degree 18, connects to 6 communities
+- [[TestWebSocketHandshakeAuth]] - degree 12, connects to 4 communities
+- [[TestDashboardCookieAuth]] - degree 10, connects to 4 communities
+- [[TestManagementWSTokenScoping]] - degree 9, connects to 4 communities
+- [[TestTelegramProxyClientDisconnect]] - degree 6, connects to 4 communities

@@ -25,7 +25,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency (2)]]
 
 ## Top bridge nodes
 - [[TestOwnerEmailBypassesPii]] - degree 4, connects to 1 community

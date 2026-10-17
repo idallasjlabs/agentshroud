@@ -1,16 +1,19 @@
 ---
 type: community
-members: 116
+members: 119
 ---
 
 # KillSwitchMonitor
 
-**Members:** 116 nodes
+**Members:** 119 nodes
 
 ## Members
-- [[dot-__init__()_102]] - code - gateway/security/killswitch_monitor.py
+- [[dot-__init__()_100]] - code - gateway/proxy/mcp_audit.py
+- [[dot-__init__()_101]] - code - gateway/proxy/pipeline.py
+- [[dot-__init__()_102]] - code - gateway/security/alert_dispatcher.py
+- [[dot-__init__()_103]] - code - gateway/security/killswitch_monitor.py
 - [[dot-_check_request_rate()]] - code - gateway/security/killswitch_monitor.py
-- [[dot-_check_system_resources()_1]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_check_system_resources()]] - code - gateway/security/killswitch_monitor.py
 - [[dot-_check_token_usage()]] - code - gateway/security/killswitch_monitor.py
 - [[dot-_check_tool_call_rate()]] - code - gateway/security/killswitch_monitor.py
 - [[dot-_clean_old_metrics()]] - code - gateway/security/killswitch_monitor.py
@@ -28,14 +31,13 @@ members: 116
 - [[dot-_test_script_permissions()]] - code - gateway/security/killswitch_monitor.py
 - [[dot-_test_script_syntax()]] - code - gateway/security/killswitch_monitor.py
 - [[dot-anomaly_detection()]] - code - gateway/security/killswitch_monitor.py
-- [[dot-from_env()]] - code - gateway/security/killswitch_config.py
-- [[dot-get_status()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-get_status()_1]] - code - gateway/security/killswitch_monitor.py
 - [[dot-heartbeat_check()]] - code - gateway/security/killswitch_monitor.py
 - [[dot-test_all_pass_when_script_valid()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[dot-test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
 - [[dot-test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
 - [[dot-test_clean_old_metrics_drops_stale_entries()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[dot-test_default_config()_5]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_default_config()_2]] - code - gateway/tests/test_killswitch_monitor.py
 - [[dot-test_docker_unavailable_is_fail()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[dot-test_dry_run_exercises_enabled_modes()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[dot-test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
@@ -61,10 +63,10 @@ members: 116
 - [[dot-test_system_resource_memory_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[dot-test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
-- [[dot-to_dict()_4]] - code - gateway/security/killswitch_config.py
+- [[dot-to_dict()_8]] - code - gateway/security/killswitch_config.py
 - [[dot-verify_killswitch()]] - code - gateway/security/killswitch_monitor.py
-- [[Any_36]] - code - gateway/security/killswitch_config.py
-- [[Any_37]] - code - gateway/security/killswitch_monitor.py
+- [[Any_34]] - code - gateway/security/killswitch_config.py
+- [[Any_35]] - code - gateway/security/killswitch_monitor.py
 - [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[Check if request rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Check if system resource usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
@@ -82,11 +84,11 @@ members: 116
 - [[KillSwitchConfig]] - code - gateway/security/killswitch_monitor.py
 - [[KillSwitchConfig_1]] - code - gateway/security/killswitch_config.py
 - [[KillSwitchMonitor]] - code - gateway/security/killswitch_monitor.py
-- [[Load configuration from environment variables.]] - rationale - gateway/security/killswitch_config.py
 - [[Log heartbeat result to file.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Log verification result to file.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - rationale - gateway/security/killswitch_monitor.py
-- [[Path_27]] - code - gateway/tests/test_observatory_mode.py
+- [[Path_25]] - code - gateway/security/alert_dispatcher.py
+- [[Path_26]] - code - gateway/tests/test_observatory_mode.py
 - [[Remove metrics older than cutoff_time.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Send alert for anomaly detection.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Send alert for heartbeat failure.]] - rationale - gateway/security/killswitch_monitor.py
@@ -95,7 +97,7 @@ members: 116
 - [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[Test default configuration values._3]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._1]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[Test if Docker is available.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Test if the kill switch script exists.]] - rationale - gateway/security/killswitch_monitor.py
 - [[Test if the kill switch script has correct permissions.]] - rationale - gateway/security/killswitch_monitor.py
@@ -105,7 +107,7 @@ members: 116
 - [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
 - [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
-- [[TestAnomalyDetection]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestAnomalyDetection_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[TestHeartbeat]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[TestKillSwitchConfig]] - code - gateway/tests/test_killswitch_monitor.py
 - [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
@@ -114,7 +116,8 @@ members: 116
 - [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
 - [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
-- [[config()_2]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[config()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[deque]] - code - gateway/security/killswitch_monitor.py
 - [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
 - [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
@@ -133,21 +136,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_AlertDispatcher]]
-- 17 edges to [[_COMMUNITY_test_prompt_guard.py]]
-- 3 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 2 edges to [[_COMMUNITY_PipelineAction]]
+- 19 edges to [[_COMMUNITY_test_prompt_guard.py]]
+- 14 edges to [[_COMMUNITY_AlertDispatcher]]
+- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 3 edges to [[_COMMUNITY_AuditChain]]
 - 2 edges to [[_COMMUNITY_KillSwitchMonitor (3)]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor (5)]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
 - 1 edge to [[_COMMUNITY_Path (4)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 - 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
 
 ## Top bridge nodes
 - [[KillSwitchMonitor]] - degree 80, connects to 5 communities
-- [[KillSwitchConfig_1]] - degree 43, connects to 5 communities
+- [[KillSwitchConfig_1]] - degree 43, connects to 4 communities
 - [[killswitch_monitor.py]] - degree 8, connects to 3 communities
 - [[TestKillSwitchVerification]] - degree 13, connects to 2 communities
-- [[Path_27]] - degree 5, connects to 2 communities
+- [[deque]] - degree 8, connects to 2 communities

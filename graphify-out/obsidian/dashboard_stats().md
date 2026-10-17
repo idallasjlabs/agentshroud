@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[JSON stats for dashboard]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 

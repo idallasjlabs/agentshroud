@@ -12,6 +12,6 @@ tags:
 # default_popup
 
 ## Connections
-- [[action_1]] - `contains` [EXTRACTED]
+- [[action_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

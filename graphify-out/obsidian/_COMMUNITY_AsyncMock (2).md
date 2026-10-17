@@ -8,8 +8,8 @@ members: 35
 **Members:** 35 nodes
 
 ## Members
-- [[dot-__init__()_93]] - code - gateway/proxy/slack_proxy.py
-- [[dot-__init__()_94]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-__init__()_95]] - code - gateway/proxy/slack_proxy.py
+- [[dot-__init__()_96]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[dot-_call_slack_api()]] - code - gateway/proxy/slack_proxy.py
 - [[dot-_intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
 - [[dot-_is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
@@ -55,13 +55,14 @@ SORT file.name ASC
 - 13 edges to [[_COMMUNITY_AsyncMock]]
 - 7 edges to [[_COMMUNITY__make_proxy]]
 - 2 edges to [[_COMMUNITY_SlackSocketClient]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 2 edges to [[_COMMUNITY_TestHandleEvent]]
-- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
 
 ## Top bridge nodes
-- [[SlackAPIProxy]] - degree 37, connects to 6 communities
+- [[SlackAPIProxy]] - degree 37, connects to 7 communities
 - [[TestWebhookReceiverSlackExtraction]] - degree 8, connects to 2 communities
 - [[_RaisingRedactionResult]] - degree 6, connects to 1 community
 - [[dot-test_redaction_count_access_error_is_non_fatal()]] - degree 5, connects to 1 community

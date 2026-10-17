@@ -34,7 +34,7 @@ members: 34
 - [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Through AgentShroud Gateway (Port 8080)]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Through Control UI (Port 18789)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Troubleshooting_12]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Troubleshooting_8]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Using OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Via CLI]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[What Changed]] - document - docs/setup/OPENCLAW_SETUP.md

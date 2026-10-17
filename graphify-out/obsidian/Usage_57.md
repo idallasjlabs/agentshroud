@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "egress_filter.py"
-location: "L22"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[Click Element_1]] - `contains` [EXTRACTED]
+- [[Extract Data_1]] - `contains` [EXTRACTED]
+- [[Navigate to URL_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Take Screenshot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

@@ -12,7 +12,7 @@ tags:
 # _score_least_agency()
 
 ## Connections
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[Path_32]] - `calls` [EXTRACTED]
 - [[Score domain 25 Least Agency Enforcement (0-5). OWASP ASI-05, NIST AI Agent Sta]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

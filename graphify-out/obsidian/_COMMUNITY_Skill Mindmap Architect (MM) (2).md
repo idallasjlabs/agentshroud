@@ -27,7 +27,7 @@ members: 27
 - [[Markmap Source Format_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Outline Template_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Project Planning Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Role_30]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Role_33]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Rules_8]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Use Case Patterns_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md

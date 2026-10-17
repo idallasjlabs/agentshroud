@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "api.py"
-location: "L882"
+community: "create_auth_dependency (3)"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/apipy
+  - graphify/EXTRACTED
+  - community/create_auth_dependency_3
 ---
 
 # WebSocket
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3

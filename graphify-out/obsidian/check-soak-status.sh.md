@@ -13,7 +13,8 @@ tags:
 
 ## Connections
 - [[Soak status boot-proof is not work-proof]] - `rationale_for` [EXTRACTED]
-- [[Soak, not just boot check-soak-status.sh must report SOAKED on dev OpenClaw]] - `references` [EXTRACTED]
+- [[Soak, not just boot (check-soak-status.sh SOAKED)]] - `references` [EXTRACTED]
+- [[Sunday upgrade session prompt]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]

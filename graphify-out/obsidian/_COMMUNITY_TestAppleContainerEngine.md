@@ -8,7 +8,7 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[dot-setup_method()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-setup_method()_3]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_health_check()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
@@ -34,4 +34,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[TestAppleContainerEngine]] - degree 14, connects to 5 communities
-- [[dot-setup_method()_2]] - degree 2, connects to 1 community
+- [[dot-setup_method()_3]] - degree 2, connects to 1 community

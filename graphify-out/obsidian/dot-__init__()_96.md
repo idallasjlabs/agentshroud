@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L47"
+community: "AsyncMock (2)"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/AsyncMock_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `references` [EXTRACTED]
-- [[ApprovalStore_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_1]] - `references` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

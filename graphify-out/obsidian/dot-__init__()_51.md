@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "dashboard_endpoints.py (6)"
-location: "L142"
+community: "FetchOutcome"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_6
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_6
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

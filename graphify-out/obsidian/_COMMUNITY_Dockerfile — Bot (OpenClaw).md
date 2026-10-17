@@ -15,12 +15,12 @@ members: 13
 - [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 - [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 - [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Related Notes_59]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Related Notes_57]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 - [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 - [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Security Notes_6]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 - [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Summary_22]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Summary_24]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 
 ## Live Query (requires Dataview plugin)
 

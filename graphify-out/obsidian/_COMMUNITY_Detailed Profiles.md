@@ -14,7 +14,7 @@ members: 17
 - [[Falco — Runtime Security Monitoring]] - document - docs/security/security-supply-chain.md
 - [[FastAPI  Starlette  Uvicorn — Web Framework]] - document - docs/security/security-supply-chain.md
 - [[OpenSCAP — Compliance Scanning]] - document - docs/security/security-supply-chain.md
-- [[Overview_20]] - document - docs/security/security-supply-chain.md
+- [[Overview_22]] - document - docs/security/security-supply-chain.md
 - [[Podman]] - document - docs/security/security-supply-chain.md
 - [[Python 3.11 — Runtime]] - document - docs/security/security-supply-chain.md
 - [[Recommendations_1]] - document - docs/security/security-supply-chain.md
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 
 ## Top bridge nodes
 - [[Security Supply Chain Analysis]] - degree 5, connects to 1 community

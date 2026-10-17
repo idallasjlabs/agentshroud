@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (3)"
-location: "L55"
+community: "What You Must Do When Invoked"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_3
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
-- [[Click Element_3]] - `contains` [EXTRACTED]
-- [[Extract Data_3]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
-- [[Fill Form_2]] - `contains` [EXTRACTED]
-- [[Navigate to URL_3]] - `contains` [EXTRACTED]
-- [[Take Screenshot_3]] - `contains` [EXTRACTED]
+- [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

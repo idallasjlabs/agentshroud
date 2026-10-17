@@ -34,16 +34,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 3 edges to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_AgentTarget (4)]]
-- 1 edge to [[_COMMUNITY_Path (3)]]
+- 7 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_Path (3)]]
 - 1 edge to [[_COMMUNITY_get_trivy_summary]]
 
 ## Top bridge nodes
 - [[_load_latest_json()]] - degree 15, connects to 4 communities
-- [[get_openscap_summary()]] - degree 11, connects to 4 communities
+- [[get_openscap_summary()]] - degree 11, connects to 2 communities
 - [[TestLoadLatestJson_1]] - degree 8, connects to 1 community
 - [[TestGetOpenscapSummary]] - degree 5, connects to 1 community
 - [[dot-test_not_run_when_no_report()_1]] - degree 3, connects to 1 community

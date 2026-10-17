@@ -38,7 +38,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
-- 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
+- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
 
 ## Top bridge nodes
 - [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 1 community

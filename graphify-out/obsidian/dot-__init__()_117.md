@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L148"
+community: "test_jira_weekly_review.py"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/test_jira_weekly_reviewpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

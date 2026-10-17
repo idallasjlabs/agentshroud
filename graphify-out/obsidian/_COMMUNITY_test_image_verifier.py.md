@@ -37,7 +37,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 
 ## Top bridge nodes
 - [[verify_images()]] - degree 7, connects to 1 community

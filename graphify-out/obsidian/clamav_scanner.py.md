@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertDispatcher (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertDispatcher_2
 ---
 
 # clamav_scanner.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [INFERRED]
+- [[clamav_1]] - `references` [INFERRED]
 - [[drift_detector.py]] - `references` [EXTRACTED]
 - [[generate_summary()_1]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[update_virus_db()]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -39,7 +39,7 @@ members: 44
 - [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
 - [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
 - [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[TeamsConfig]] - code - gateway/tests/test_group_config.py
+- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
 - [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
 - [[TestCollabMode]] - code - gateway/tests/test_group_config.py
 - [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
@@ -50,7 +50,7 @@ members: 44
 - [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
 - [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
 - [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[teams()]] - code - gateway/tests/test_group_config.py
+- [[teams()_2]] - code - gateway/tests/test_group_config.py
 - [[test_group_config.py]] - code - gateway/tests/test_group_config.py
 
 ## Live Query (requires Dataview plugin)
@@ -62,12 +62,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 9 edges to [[_COMMUNITY_RBACConfig (2)]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py (5)]]
+- 9 edges to [[_COMMUNITY_RBACConfig (3)]]
+- 3 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
 
 ## Top bridge nodes
 - [[test_group_config.py]] - degree 11, connects to 3 communities
 - [[TestGroupSafeResponsePrefix]] - degree 10, connects to 2 communities
 - [[TestUserCollabModeOverride]] - degree 9, connects to 2 communities
-- [[TeamsConfig]] - degree 7, connects to 2 communities
+- [[TeamsConfig_1]] - degree 7, connects to 2 communities
 - [[TestMembershipQueries]] - degree 7, connects to 2 communities

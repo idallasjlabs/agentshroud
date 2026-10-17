@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L55"
+community: "test_dashboard_endpoints.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[Path_44]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

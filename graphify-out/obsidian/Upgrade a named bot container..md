@@ -12,6 +12,6 @@ tags:
 # Upgrade a named bot container.
 
 ## Connections
-- [[upgrade_bot()_1]] - `rationale_for` [EXTRACTED]
+- [[upgrade_bot()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/apipy

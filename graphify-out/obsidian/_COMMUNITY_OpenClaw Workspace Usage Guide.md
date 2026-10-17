@@ -11,7 +11,7 @@ members: 40
 - [[Advanced Direct Docker Commands]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Backup Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Backup and Restore]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Common Workflows]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Common Workflows_1]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Configuration_1]] - document - docs/architecture/WORKSPACE_DECISION.md
 - [[Create Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Current Setup (Kept)]] - document - docs/architecture/WORKSPACE_DECISION.md
@@ -29,8 +29,8 @@ members: 40
 - [[Quick Reference_2]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Recommended Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Restore Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Summary_6]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Troubleshooting_6]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Summary_7]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Troubleshooting_4]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Using the Helper Script]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Skills]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Telegram]] - document - docs/architecture/WORKSPACE_USAGE.md

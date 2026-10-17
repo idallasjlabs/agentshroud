@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L141"
+community: "StdioConnection"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager_2]] - `references` [EXTRACTED]
-- [[Role_66]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

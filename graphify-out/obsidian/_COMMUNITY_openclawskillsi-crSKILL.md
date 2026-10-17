@@ -11,27 +11,27 @@ members: 66
 - [[API  Function Reference_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Architecture Decision Record (ADR)_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Daedalus — Concept Illustrator_2]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 - [[Expected output_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Expected ok_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Expected INFO Re-queued 3 jobs_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Hermes — Podcast Production Orchestrator_2]] - document - docker/config/openclaw/skills/i-hermes/README.md
 - [[If not → escalate to field team via ops-alerts_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Purpose_162]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Purpose_163]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Purpose_164]] - document - docker/config/openclaw/skills/i-sad/README.md
-- [[Purpose_165]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Purpose_166]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Purpose_167]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Purpose_168]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Purpose_184]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Purpose_185]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Purpose_186]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Purpose_187]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Purpose_188]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Purpose_189]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Purpose_190]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Query the control DB_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Related Skills_105]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Related Skills_106]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Related Skills_107]] - document - docker/config/openclaw/skills/i-sad/README.md
-- [[Related Skills_108]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Related Skills_109]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Related Skills_110]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Related Skills_111]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Related Skills_111]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Related Skills_112]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Related Skills_113]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Related Skills_114]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Related Skills_115]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Related Skills_116]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Related Skills_117]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Runbook — Operational Decision Tree_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Skill bdd_2]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
 - [[Skill cd_1]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
@@ -45,14 +45,14 @@ members: 66
 - [[Skill sre_2]] - document - docker/config/openclaw/skills/i-sre/SKILL.md
 - [[System Audit Documentation_2]] - document - docker/config/openclaw/skills/i-sad/README.md
 - [[System Audit Vault_2]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Technical Illustrator (TI)]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Usage_115]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Usage_116]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Usage_117]] - document - docker/config/openclaw/skills/i-sad/README.md
-- [[Usage_118]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Usage_119]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Usage_120]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Usage_121]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Technical Illustrator (TI)_1]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Usage_124]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Usage_125]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Usage_126]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Usage_127]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Usage_128]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Usage_129]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Usage_130]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[INFO Extracted 1,204 records → s3my-bucketlanding..._2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[openclawskillsi-bddSKILL]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
@@ -136,14 +136,14 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
 - 1 edge to [[_COMMUNITY_Technical Specification (2)]]
 - 1 edge to [[_COMMUNITY_Output Sections (ALL required)]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (3)]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (3)]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (3)]]
 - 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator (3)]]
 - 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL) (3)]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (3)]]
 - 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)]]
 - 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator (3)]]
-- 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (3)]]
-- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (3)]]
 - 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor (3)]]
 
 ## Top bridge nodes

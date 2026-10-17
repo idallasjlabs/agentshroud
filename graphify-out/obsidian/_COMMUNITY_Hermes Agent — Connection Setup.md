@@ -23,8 +23,8 @@ members: 22
 - [[Network Access]] - document - docs/setup/HERMES_SETUP.md
 - [[Open WebUI]] - document - docs/setup/HERMES_SETUP.md
 - [[Outbound Path]] - document - docs/setup/HERMES_SETUP.md
-- [[Overview_15]] - document - docs/setup/HERMES_SETUP.md
-- [[Prerequisites_8]] - document - docs/setup/HERMES_SETUP.md
+- [[Overview_17]] - document - docs/setup/HERMES_SETUP.md
+- [[Prerequisites_7]] - document - docs/setup/HERMES_SETUP.md
 - [[Security Model_1]] - document - docs/setup/HERMES_SETUP.md
 - [[Starting the HCI Container]] - document - docs/setup/HERMES_SETUP.md
 - [[Table of Contents_1]] - document - docs/setup/HERMES_SETUP.md

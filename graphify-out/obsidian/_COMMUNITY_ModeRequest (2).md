@@ -13,7 +13,7 @@ members: 13
 - [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Problem_8]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Problem_7]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Root Cause_6]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md

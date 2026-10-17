@@ -12,7 +12,7 @@ members: 15
 - [[Constraints_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Problem_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Problem_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Root Cause_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Severity_7]] - document - docs/planning/redteam/04-separation-of-privilege.md

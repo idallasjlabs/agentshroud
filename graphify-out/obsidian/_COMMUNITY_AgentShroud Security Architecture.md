@@ -60,14 +60,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_system-requirements]]
+- 4 edges to [[_COMMUNITY_system-requirements]]
+- 3 edges to [[_COMMUNITY_system-requirements.md (2)]]
 - 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_Security Module Inventory]]
 - 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 32, connects to 7 communities
+- [[AgentShroud Security Architecture]] - degree 32, connects to 8 communities
 - [[DNS Filtering]] - degree 2, connects to 1 community

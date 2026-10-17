@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "DifferentialPIIDetector (2)"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/DifferentialPIIDetector_2
 ---
 
 # ToolResultPIIReport
@@ -18,4 +18,4 @@ tags:
 - [[Full scan result for a tool result or prompt.]] - `rationale_for` [EXTRACTED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector_2

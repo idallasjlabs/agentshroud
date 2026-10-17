@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L138"
+community: "UserSessionManager (2)"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/UserSessionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig_1]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

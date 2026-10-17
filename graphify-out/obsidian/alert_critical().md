@@ -12,7 +12,7 @@ tags:
 # alert_critical()
 
 ## Connections
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 - [[security-entrypoint.sh]] - `references` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
 

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L111"
+community: "KillSwitchMonitor"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

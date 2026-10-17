@@ -12,8 +12,8 @@ tags:
 # _PassInboundPipeline
 
 ## Connections
-- [[dot-__init__()_167]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_173]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `method` [EXTRACTED]
 - [[dot-process_outbound()_6]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
@@ -26,11 +26,11 @@ tags:
 - [[Pipeline stub inbound passes through; outbound behavior injectable.]] - `rationale_for` [EXTRACTED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
-- [[ScanRequest_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[ScanRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SidecarScanner]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]

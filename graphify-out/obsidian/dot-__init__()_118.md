@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L62"
+community: "MiddlewareManager"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

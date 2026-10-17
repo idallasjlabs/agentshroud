@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L148"
+community: "ApprovalQueueConfig (2)"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/ApprovalQueueConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine]] - `references` [EXTRACTED]
-- [[A2AProxy]] - `method` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
+- [[SSHConfig_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

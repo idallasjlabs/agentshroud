@@ -12,6 +12,6 @@ tags:
 # Workflow 5: Interactive Editing
 
 ## Connections
-- [[Common Workflows]] - `contains` [EXTRACTED]
+- [[Common Workflows_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Git Workflow Guardian (GIT-GUARD)"
-location: "L41"
+community: "test_a2a_proxy.py"
+location: "L449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

@@ -12,7 +12,7 @@ tags:
 # _handle_websocket()
 
 ## Connections
-- [[Any_61]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - `rationale_for` [EXTRACTED]
 - [[_check_basic_auth()]] - `calls` [EXTRACTED]
 - [[_check_token_auth()]] - `calls` [EXTRACTED]

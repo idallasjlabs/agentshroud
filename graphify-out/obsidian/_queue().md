@@ -12,10 +12,10 @@ tags:
 # _queue()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_disabled_approves_without_code()]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_enabled_invalid_code_denied()]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_enabled_missing_code_denied()]] - `calls` [EXTRACTED]

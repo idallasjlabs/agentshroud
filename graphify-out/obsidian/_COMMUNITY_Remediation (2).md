@@ -11,7 +11,7 @@ members: 16
 - [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Constraints_3]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Evidence_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Problem_5]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Problem_4]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Severity_6]] - document - docs/planning/redteam/05-credential-isolation.md

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "telegram_api_proxy (/telegram-api/{path}) (2)"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/telegram_api_proxy_/telegram-api/path_2
 ---
 
 # TestTelegramProxyRouteMultiBot
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_valid_openclaw_token_accepted()]] - `method` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_multibot.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "ToolResultSanitizer"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/telegram_proxypy_2
+  - community/ToolResultSanitizer
 ---
 
 # _DropInvalidHTTPRequestFilter
@@ -21,11 +21,11 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/telegram_proxypy_2
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

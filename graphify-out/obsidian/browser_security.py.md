@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ConsentFramework"
+community: "ConsentFramework (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ConsentFramework_2
 ---
 
 # browser_security.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `contains` [EXTRACTED]
 - [[CredentialEntryBlocked]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[PhishingURLDetected]] - `contains` [EXTRACTED]
 - [[SocialEngineeringDetected]] - `contains` [EXTRACTED]
 - [[ThreatAssessment]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[session_security.py]] - `references` [EXTRACTED]
 - [[test_browser_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

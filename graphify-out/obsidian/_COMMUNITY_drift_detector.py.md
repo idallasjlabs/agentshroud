@@ -17,12 +17,12 @@ members: 18
 - [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[DriftDetector.set_baseline(snapshot)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Environment Variables_6]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Function Details_4]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Function Details_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Key Classes  Functions_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Purpose_101]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Related_7]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Purpose_108]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Related_9]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Responsibilities_6]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[drift_detector.py_2]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[drift_detector.py_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md

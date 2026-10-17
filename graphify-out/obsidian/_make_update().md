@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L48"
+community: "FakeRBAC"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # _make_update()
@@ -227,6 +227,9 @@ tags:
 - [[dot-test_unlock_persists_unpause_to_disk()]] - `calls` [EXTRACTED]
 - [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - `calls` [EXTRACTED]
 - [[Build a minimal Telegram getUpdates-style update object.]] - `rationale_for` [EXTRACTED]
+- [[fake_forward()]] - `calls` [EXTRACTED]
+- [[fake_forward()_1]] - `calls` [EXTRACTED]
+- [[fake_forward()_2]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

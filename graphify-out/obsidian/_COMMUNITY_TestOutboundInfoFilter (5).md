@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Install Script]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Installation]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Installation_1]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Windows]] - document - .github/COPILOT_CLI_SETUP.md
 - [[macOS  Linux]] - document - .github/COPILOT_CLI_SETUP.md
 - [[npm (Cross-platform)]] - document - .github/COPILOT_CLI_SETUP.md
@@ -25,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[Installation]] - degree 5, connects to 1 community
+- [[Installation_1]] - degree 5, connects to 1 community

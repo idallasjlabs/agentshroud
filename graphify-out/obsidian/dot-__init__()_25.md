@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L61"
+community: "agentshroud-blueteam/SKILL.md (3)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
+- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

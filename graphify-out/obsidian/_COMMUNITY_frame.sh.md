@@ -13,7 +13,7 @@ members: 7
 - [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
 - [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
 - [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[usage()_4]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[usage()_3]] - code - skills/openclaw/video-frames/scripts/frame.sh
 - [[video-framesSKILL]] - document - skills/openclaw/video-frames/SKILL.md
 
 ## Live Query (requires Dataview plugin)

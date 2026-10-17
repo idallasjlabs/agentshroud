@@ -18,7 +18,7 @@ members: 12
 - [[License_4]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 - [[Requirements_1]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 - [[Thread safety]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Usage_130]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Usage_123]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 - [[lvgl_kawaii_faceREADME]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 
 ## Live Query (requires Dataview plugin)

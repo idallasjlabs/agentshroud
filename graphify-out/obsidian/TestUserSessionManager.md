@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "test_dashboard_endpoints.py"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/test_dashboard_endpointspy
 ---
 
 # TestUserSessionManager
 
 ## Connections
-- [[dot-session_manager()_1]] - `method` [EXTRACTED]
+- [[dot-session_manager()]] - `method` [EXTRACTED]
 - [[dot-temp_workspace()_2]] - `method` [EXTRACTED]
 - [[dot-test_conversation_history_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_memory_file_isolation()]] - `method` [EXTRACTED]
@@ -24,10 +24,10 @@ tags:
 - [[dot-test_session_prompt_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_trust_level_per_user()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
 - [[Test the UserSessionManager for per-user isolation.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

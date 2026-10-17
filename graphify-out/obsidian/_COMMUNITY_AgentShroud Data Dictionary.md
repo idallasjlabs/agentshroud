@@ -1,17 +1,14 @@
 ---
 type: community
-members: 19
+members: 14
 ---
 
 # AgentShroud Data Dictionary
 
-**Members:** 19 nodes
+**Members:** 14 nodes
 
 ## Members
 - [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
-- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[ApprovalRequest_5]] - document - docs/data/data-dictionary.md
 - [[AuditEntry]] - document - docs/data/data-dictionary.md
 - [[Core Audit Entities]] - document - docs/data/data-dictionary.md
 - [[DNSQuery]] - document - docs/data/data-dictionary.md
@@ -22,10 +19,8 @@ members: 19
 - [[RateLimitBucket]] - document - docs/data/data-dictionary.md
 - [[Relationship Diagram]] - document - docs/data/data-dictionary.md
 - [[Runtime State Entities]] - document - docs/data/data-dictionary.md
-- [[Security Management Entities]] - document - docs/data/data-dictionary.md
 - [[SessionState]] - document - docs/data/data-dictionary.md
-- [[TrustLevel_3]] - document - docs/data/data-dictionary.md
-- [[URLAnalysisResult]] - document - docs/data/data-dictionary.md
+- [[URLAnalysisResult_1]] - document - docs/data/data-dictionary.md
 - [[data-dictionary]] - document - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
@@ -41,6 +36,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_SecurityFinding]]
 
 ## Top bridge nodes
-- [[AgentShroud Data Dictionary]] - degree 9, connects to 1 community
+- [[AgentShroud Data Dictionary]] - degree 9, connects to 2 communities
 - [[Network Security Entities]] - degree 5, connects to 1 community
-- [[Approval Workflows]] - degree 3, connects to 1 community

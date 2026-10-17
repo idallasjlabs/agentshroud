@@ -13,7 +13,7 @@ members: 35
 - [[dot-compose_down()]] - code - gateway/runtime/engine.py
 - [[dot-compose_up()]] - code - gateway/runtime/engine.py
 - [[dot-exec()]] - code - gateway/runtime/engine.py
-- [[dot-health_check()]] - code - gateway/runtime/engine.py
+- [[dot-health_check()_1]] - code - gateway/runtime/engine.py
 - [[dot-inspect()]] - code - gateway/runtime/engine.py
 - [[dot-logs()]] - code - gateway/runtime/engine.py
 - [[dot-network_create()]] - code - gateway/runtime/engine.py
@@ -27,10 +27,10 @@ members: 35
 - [[dot-volume_create()]] - code - gateway/runtime/engine.py
 - [[dot-volume_rm()]] - code - gateway/runtime/engine.py
 - [[ABC]] - code
-- [[Any_27]] - code - gateway/runtime/engine.py
+- [[Any_30]] - code - gateway/runtime/engine.py
 - [[Bring up services from a compose file.]] - rationale - gateway/runtime/engine.py
 - [[Build an image. Returns the image idtag.]] - rationale - gateway/runtime/engine.py
-- [[CompletedProcess_4]] - code - gateway/runtime/engine.py
+- [[CompletedProcess_2]] - code - gateway/runtime/engine.py
 - [[ContainerEngine]] - code - gateway/runtime/engine.py
 - [[Execute a command inside a running container.]] - rationale - gateway/runtime/engine.py
 - [[Pull an image from a registry.]] - rationale - gateway/runtime/engine.py

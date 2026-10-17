@@ -12,7 +12,7 @@ tags:
 # _is_fresh()
 
 ## Connections
-- [[Path_50]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[Return True if the most recent report file was written within max_age_hours.]] - `rationale_for` [EXTRACTED]
 - [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]

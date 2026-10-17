@@ -26,7 +26,7 @@ members: 23
 - [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - rationale - .github/workflows/update-cve-page.yml
 - [[Reporting a Vulnerability]] - document - SECURITY.md
 - [[Response Timeline]] - document - SECURITY.md
-- [[Security Architecture_4]] - document - SECURITY.md
+- [[Security Architecture_3]] - document - SECURITY.md
 - [[Security Scanning]] - document - SECURITY.md
 - [[Supported Versions]] - document - SECURITY.md
 - [[Trademark_1]] - document - BRAND.md

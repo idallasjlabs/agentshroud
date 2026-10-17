@@ -30,10 +30,10 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 3 edges to [[_COMMUNITY_StdioConnection]]
 - 2 edges to [[_COMMUNITY_MCPInspector]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
 - 1 edge to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
 
 ## Top bridge nodes
 - [[TestAuditTrail_2]] - degree 23, connects to 7 communities

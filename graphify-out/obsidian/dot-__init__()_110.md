@@ -1,17 +1,17 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "migrate-cve-registry-ghsa.py"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

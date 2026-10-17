@@ -46,7 +46,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Update AgentShroud]]
-- 2 edges to [[_COMMUNITY_troubleshooting]]
+- 2 edges to [[_COMMUNITY_troubleshooting_1]]
 - 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
 - 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
 - 1 edge to [[_COMMUNITY_Tailscale Remote Access Setup]]

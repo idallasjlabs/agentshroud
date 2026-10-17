@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "StdioConnection"
-location: "L95"
+community: "AlertDispatcher (2) (2)"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/AlertDispatcher_2_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig_2]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

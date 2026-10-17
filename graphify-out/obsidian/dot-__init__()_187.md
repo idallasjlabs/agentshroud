@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "RBACConfig (3)"
-location: "L181"
+community: "TrustConfig"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

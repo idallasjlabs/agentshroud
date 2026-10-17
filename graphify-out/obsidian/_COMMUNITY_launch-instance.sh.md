@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[DOCKER_HOST]] - code - scripts/launch-instance.sh
-- [[PATH_8]] - code - scripts/launch-instance.sh
+- [[PATH_9]] - code - scripts/launch-instance.sh
 - [[find_port()]] - code - scripts/launch-instance.sh
 - [[launch-instance.sh]] - code - scripts/launch-instance.sh
 - [[launch-instance.sh script]] - code - scripts/launch-instance.sh

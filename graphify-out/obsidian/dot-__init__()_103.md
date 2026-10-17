@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L67"
+community: "KillSwitchMonitor"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

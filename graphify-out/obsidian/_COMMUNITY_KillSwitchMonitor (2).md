@@ -37,9 +37,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
+- 9 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
 
 ## Top bridge nodes
 - [[_secure_zero()]] - degree 9, connects to 2 communities

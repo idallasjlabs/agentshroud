@@ -9,14 +9,14 @@ members: 9
 
 ## Members
 - [[PATCHES_FILE]] - code - tests/startup_smoke/test_apply_patches.js
-- [[assert()]] - code - tests/startup_smoke/test_apply_patches.js
+- [[assert()_1]] - code - tests/startup_smoke/test_apply_patches.js
 - [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[fs]] - code - tests/startup_smoke/test_apply_patches.js
-- [[os]] - code - tests/startup_smoke/test_apply_patches.js
-- [[path_1]] - code - tests/startup_smoke/test_apply_patches.js
+- [[fs_6]] - code - tests/startup_smoke/test_apply_patches.js
+- [[os_1]] - code - tests/startup_smoke/test_apply_patches.js
+- [[path_64]] - code - tests/startup_smoke/test_apply_patches.js
 - [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
 - [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
-- [[{ spawnSync }]] - code - tests/startup_smoke/test_apply_patches.js
+- [[{ spawnSync }_1]] - code - tests/startup_smoke/test_apply_patches.js
 
 ## Live Query (requires Dataview plugin)
 

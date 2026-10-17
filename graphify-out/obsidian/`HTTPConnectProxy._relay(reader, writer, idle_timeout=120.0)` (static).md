@@ -12,6 +12,6 @@ tags:
 # `HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` *(static)*
 
 ## Connections
-- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Function Details_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/http_proxypy

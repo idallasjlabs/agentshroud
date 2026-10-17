@@ -1,112 +1,39 @@
 ---
 type: community
-members: 177
+members: 71
 ---
 
 # create_auth_dependency
 
-**Members:** 177 nodes
+**Members:** 71 nodes
 
 ## Members
-- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
-- [[dot-__init__()_44]] - code - gateway/ingest_api/ledger.py
-- [[dot-_hash_content()]] - code - gateway/ingest_api/ledger.py
-- [[dot-body_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-check()_2]] - code - gateway/ingest_api/auth.py
-- [[dot-get_entry()]] - code - gateway/ingest_api/ledger.py
-- [[dot-get_stats()_3]] - code - gateway/ingest_api/ledger.py
-- [[dot-path_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-query()]] - code - gateway/ingest_api/ledger.py
-- [[dot-record()]] - code - gateway/ingest_api/ledger.py
-- [[dot-subject_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[dot-test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-__init__()_184]] - code - gateway/ingest_api/auth.py
+- [[dot-check()_6]] - code - gateway/ingest_api/auth.py
 - [[dot-test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
 - [[dot-test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
 - [[dot-test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
-- [[dot-validate_base64()]] - code - gateway/ingest_api/models.py
-- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Any_13]] - code - gateway/ingest_api/ledger.py
-- [[ApprovalDecision_1]] - code - gateway/ingest_api/routes/approval.py
-- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
-- [[ApprovalRequest]] - code - gateway/ingest_api/routes/approval.py
-- [[Approve or reject a pending action      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Auth Methods]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Auth dependency that uses the app state config.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/health.py
-- [[AuthRequired_1]] - code - gateway/ingest_api/routes/approval.py
-- [[AuthRequired_3]] - code - gateway/ingest_api/routes/forward.py
-- [[AuthRequired_2]] - code - gateway/ingest_api/routes/health.py
-- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
-- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Args             max_requests Maximum requests allowed in the time window]] - rationale - gateway/ingest_api/auth.py
+- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/health.py
+- [[AuthRequired_3]] - code - gateway/ingest_api/routes/health.py
 - [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
-- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
 - [[Create authentication dependency callable      This is a synchronous wrapper tha]] - rationale - gateway/ingest_api/auth.py
-- [[Current Usage]] - document - docs/vault/05 - Dependencies/python-jose.md
 - [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
-- [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - rationale - gateway/ingest_api/routes/forward.py
-- [[EmailSendRequest_1]] - code - gateway/ingest_api/routes/forward.py
-- [[EmailSendRequest]] - code - gateway/ingest_api/models.py
-- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
-- [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Factory that returns authentication dependency for FastAPI      This allows us t]] - rationale - gateway/ingest_api/auth.py
-- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
-- [[ForwardRequest]] - code - gateway/ingest_api/routes/forward.py
-- [[ForwardResponse]] - code - gateway/ingest_api/models.py
 - [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[GatewayConfig]] - code - gateway/ingest_api/auth.py
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
+- [[GatewayConfig_4]] - code - gateway/ingest_api/auth.py
 - [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
-- [[Key Features_1]] - document - docs/vault/05 - Dependencies/python-jose.md
 - [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[LedgerConfig]] - code - gateway/ingest_api/ledger.py
-- [[LedgerEntry]] - code - gateway/ingest_api/models.py
-- [[LedgerEntry_1]] - code - gateway/ingest_api/ledger.py
-- [[LedgerQueryResponse]] - code - gateway/ingest_api/models.py
-- [[LedgerQueryResponse_1]] - code - gateway/ingest_api/ledger.py
-- [[List all pending approval requests      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
-- [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - rationale - gateway/ingest_api/routes/forward.py
-- [[MiddlewareManager.process_request()]] - code - gateway/ingest_api/middleware.py
 - [[Minimal health check endpoint — no authentication required.      Returns only ba]] - rationale - gateway/ingest_api/routes/health.py
-- [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
-- [[OwnerEmailRequest]] - code - gateway/ingest_api/routes/forward.py
-- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
-- [[Purpose_13]] - document - docs/vault/05 - Dependencies/python-jose.md
 - [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
-- [[Related Notes_18]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Related Notes_19]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
-- [[Request_2]] - code - gateway/ingest_api/routes/approval.py
-- [[Request_4]] - code - gateway/ingest_api/routes/forward.py
-- [[Request_3]] - code - gateway/ingest_api/routes/health.py
-- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
-- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
-- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
-- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
-- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
-- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
-- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
-- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
-- [[SSHExecRequest_1]] - code - gateway/ingest_api/models.py
-- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileRequest_1]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
-- [[Security Note]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Send an email to the owner without exposing the recipient address in the request]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
+- [[RateLimiter_1]] - code - gateway/ingest_api/auth.py
+- [[Related Notes_60]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Request_6]] - code - gateway/ingest_api/routes/health.py
+- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - rationale - gateway/ingest_api/auth.py
 - [[StatusResponse]] - code - gateway/ingest_api/models.py
-- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
-- [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Submit an action for human approval      Called by agents when attempting sensit]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Test auth dependency with invalid auth scheme]] - rationale - gateway/tests/test_auth.py
 - [[Test auth dependency with missing Authorization header]] - rationale - gateway/tests/test_auth.py
 - [[Test auth dependency with valid token]] - rationale - gateway/tests/test_auth.py
@@ -115,65 +42,34 @@ members: 177
 - [[Test rate limiter blocks requests over limit]] - rationale - gateway/tests/test_auth.py
 - [[Test rate limiter cleans up old requests]] - rationale - gateway/tests/test_auth.py
 - [[Test rate limiter tracks clients separately]] - rationale - gateway/tests/test_auth.py
+- [[Test rate limiting behavior]] - rationale - gateway/tests/test_security.py
 - [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that token verification uses constant-time comparison]] - rationale - gateway/tests/test_auth.py
 - [[Test token verification with valid token]] - rationale - gateway/tests/test_auth.py
 - [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
-- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
 - [[Verify authentication doesn't leak timing information]] - rationale - gateway/tests/test_security.py
 - [[Verify token comparison is constant-time]] - rationale - gateway/tests/test_security.py
 - [[Verify token using constant-time comparison      Uses hmac.compare_digest to pre]] - rationale - gateway/ingest_api/auth.py
-- [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
-- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
-- [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
-- [[approval.py]] - code - gateway/ingest_api/routes/approval.py
-- [[auth.py]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[auth_dep()_1]] - code - gateway/ingest_api/routes/approval.py
-- [[auth_dep()_3]] - code - gateway/ingest_api/routes/forward.py
-- [[auth_dep()_2]] - code - gateway/ingest_api/routes/health.py
-- [[bypass_auth()]] - code - gateway/tests/test_channel_ownership.py
-- [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
-- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
-- [[client()_4]] - code - gateway/tests/test_channel_ownership.py
-- [[client()_5]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[auth.py_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[auth_dep()_3]] - code - gateway/ingest_api/routes/health.py
 - [[create_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[decide_approval()]] - code - gateway/ingest_api/routes/approval.py
-- [[email_send()]] - code - gateway/ingest_api/routes/forward.py
-- [[email_send_owner()]] - code - gateway/ingest_api/routes/forward.py
-- [[event_bus.py]] - code - gateway/ingest_api/event_bus.py
-- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
-- [[forward_content()]] - code - gateway/ingest_api/routes/forward.py
-- [[forward_content_stream()]] - code - gateway/ingest_api/routes/forward.py
 - [[gatewayREADME]] - document - gateway/README.md
 - [[get_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[get_module_mode()]] - code - gateway/ingest_api/config.py
 - [[health.py]] - code - gateway/ingest_api/routes/health.py
 - [[health_check()]] - code - gateway/ingest_api/routes/health.py
 - [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
 - [[ingest_apiauth.py]] - code - gateway/ingest_api/auth.py
-- [[ingest_apiconfig.py]] - code - gateway/ingest_api/config.py
-- [[ingest_apimodels.py]] - code - gateway/ingest_api/models.py
-- [[ingest_apirouter.py]] - code - gateway/ingest_api/router.py
-- [[ledger.py]] - code - gateway/ingest_api/ledger.py
-- [[list_pending_approvals()]] - code - gateway/ingest_api/routes/approval.py
-- [[python-jose_1]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[python-jose]] - document - docs/vault/05 - Dependencies/python-jose.md
 - [[rate_limiter (module-level instance)]] - code - gateway/ingest_api/auth.py
-- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
-- [[state.py]] - code - gateway/ingest_api/state.py
-- [[submit_approval_request()]] - code - gateway/ingest_api/routes/approval.py
-- [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
 - [[test_auth.py]] - code - gateway/tests/test_auth.py
 - [[test_auth_dependency_invalid_scheme()]] - code - gateway/tests/test_auth.py
 - [[test_auth_dependency_invalid_token()]] - code - gateway/tests/test_auth.py
 - [[test_auth_dependency_missing_header()]] - code - gateway/tests/test_auth.py
 - [[test_auth_dependency_valid_token()]] - code - gateway/tests/test_auth.py
-- [[test_channel_ownership.py]] - code - gateway/tests/test_channel_ownership.py
 - [[test_constant_time_comparison()]] - code - gateway/tests/test_security.py
-- [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
 - [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
+- [[test_rate_limiter()]] - code - gateway/tests/test_security.py
 - [[test_rate_limiter_allows_requests()]] - code - gateway/tests/test_auth.py
 - [[test_rate_limiter_blocks_excess_requests()]] - code - gateway/tests/test_auth.py
 - [[test_rate_limiter_separate_clients()]] - code - gateway/tests/test_auth.py
@@ -182,8 +78,6 @@ members: 177
 - [[test_verify_token_constant_time()]] - code - gateway/tests/test_auth.py
 - [[test_verify_token_invalid()]] - code - gateway/tests/test_auth.py
 - [[test_verify_token_valid()]] - code - gateway/tests/test_auth.py
-- [[verify.sh]] - code - gateway/verify.sh
-- [[verify.sh script]] - code - gateway/verify.sh
 - [[verify_token()]] - code - gateway/ingest_api/auth.py
 
 ## Live Query (requires Dataview plugin)
@@ -194,69 +88,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 18 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 13 edges to [[_COMMUNITY__FakeRBAC]]
-- 13 edges to [[_COMMUNITY_test_dashboard.py]]
-- 11 edges to [[_COMMUNITY_AgentTarget (2)]]
-- 8 edges to [[_COMMUNITY_RateLimiter]]
-- 8 edges to [[_COMMUNITY_AgentRegistry]]
-- 8 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 7 edges to [[_COMMUNITY_AgentTarget]]
-- 6 edges to [[_COMMUNITY_AlertDispatcher]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 5 edges to [[_COMMUNITY_PipelineAction]]
-- 4 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 3 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 3 edges to [[_COMMUNITY_api.py]]
-- 3 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 3 edges to [[_COMMUNITY_make_event]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 3 edges to [[_COMMUNITY_GatewayEmailService]]
-- 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 2 edges to [[_COMMUNITY_Implementation Status]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_Request]]
-- 2 edges to [[_COMMUNITY_ContextSegment]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 2 edges to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_TestEmailSend]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
-- 1 edge to [[_COMMUNITY_Restart Procedure (2)]]
-- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
-- 1 edge to [[_COMMUNITY_AsyncMock (3)]]
-- 1 edge to [[_COMMUNITY_RBACConfig (2)]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (5)]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (2)]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
-- 1 edge to [[_COMMUNITY_test_prompt_guard.py]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
-- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 1 edge to [[_COMMUNITY__wrap_response]]
-- 1 edge to [[_COMMUNITY_get_engine]]
+- 9 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 5 edges to [[_COMMUNITY_AgentTarget (2)]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 3 edges to [[_COMMUNITY_create_auth_dependency (2)]]
+- 3 edges to [[_COMMUNITY_create_auth_dependency (3)]]
+- 3 edges to [[_COMMUNITY_test_dashboard.py]]
+- 2 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 1 edge to [[_COMMUNITY_All Dependencies]]
-- 1 edge to [[_COMMUNITY_auth.py]]
-- 1 edge to [[_COMMUNITY_main.py]]
-- 1 edge to [[_COMMUNITY_Error Index]]
-- 1 edge to [[_COMMUNITY_Features]]
+- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
 - 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
-- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
+- 1 edge to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_Features]]
+- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_get_engine]]
+- 1 edge to [[_COMMUNITY_main.py_1]]
 
 ## Top bridge nodes
-- [[state.py]] - degree 36, connects to 17 communities
-- [[ingest_apiconfig.py]] - degree 43, connects to 15 communities
-- [[forward.py]] - degree 37, connects to 12 communities
-- [[ingest_apimodels.py]] - degree 27, connects to 6 communities
-- [[get_module_mode()]] - degree 14, connects to 5 communities
+- [[gatewayREADME]] - degree 11, connects to 7 communities
+- [[RateLimiter_1]] - degree 18, connects to 6 communities
+- [[ingest_apiauth.py]] - degree 12, connects to 6 communities
+- [[auth.py_1]] - degree 10, connects to 5 communities
+- [[create_auth_dependency()]] - degree 18, connects to 3 communities

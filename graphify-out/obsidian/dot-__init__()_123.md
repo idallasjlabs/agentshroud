@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "AsyncMock"
-location: "L96"
+community: "WebProxyConfig"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/WebProxyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[FakeProcess]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[WebProxy_1]] - `references` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

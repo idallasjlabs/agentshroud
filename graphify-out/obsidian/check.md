@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_setup_secrets.sh"
 type: "code"
-community: "setup-secrets.sh (3)"
+community: "setup-secrets.sh (2)"
 location: "L31-L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_3
+  - community/setup-secretssh_2
 ---
 
 # check
@@ -17,4 +17,4 @@ tags:
 - [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
 - [[test_setup_secrets.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_3
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

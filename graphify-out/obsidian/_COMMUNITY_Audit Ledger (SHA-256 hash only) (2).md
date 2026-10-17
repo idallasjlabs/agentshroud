@@ -13,7 +13,7 @@ members: 10
 - [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Purpose_193]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Related Notes_70]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Related Notes_67]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Responsibilities_56]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 
 ## Top bridge nodes
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - degree 10, connects to 1 community

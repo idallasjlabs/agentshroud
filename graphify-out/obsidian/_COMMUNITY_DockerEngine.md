@@ -8,13 +8,13 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_126]] - code - gateway/runtime/docker_engine.py
+- [[dot-__init__()_132]] - code - gateway/runtime/docker_engine.py
 - [[dot-_cmd()_1]] - code - gateway/runtime/docker_engine.py
 - [[dot-build()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-compose_down()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-compose_up()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-exec()_2]] - code - gateway/runtime/docker_engine.py
-- [[dot-health_check()_3]] - code - gateway/runtime/docker_engine.py
+- [[dot-health_check()_4]] - code - gateway/runtime/docker_engine.py
 - [[dot-inspect()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-logs()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-network_create()_2]] - code - gateway/runtime/docker_engine.py
@@ -23,12 +23,12 @@ members: 24
 - [[dot-pull()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-push()_3]] - code - gateway/runtime/docker_engine.py
 - [[dot-rm()_2]] - code - gateway/runtime/docker_engine.py
-- [[dot-run()_3]] - code - gateway/runtime/docker_engine.py
+- [[dot-run()_5]] - code - gateway/runtime/docker_engine.py
 - [[dot-stop()_7]] - code - gateway/runtime/docker_engine.py
 - [[dot-unpause()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-volume_create()_2]] - code - gateway/runtime/docker_engine.py
 - [[dot-volume_rm()_2]] - code - gateway/runtime/docker_engine.py
-- [[Any_46]] - code - gateway/runtime/docker_engine.py
+- [[Any_48]] - code - gateway/runtime/docker_engine.py
 - [[Container engine backed by the Docker CLI.]] - rationale - gateway/runtime/docker_engine.py
 - [[ContainerEngine_1]] - code
 - [[DockerEngine]] - code - gateway/runtime/docker_engine.py
@@ -57,4 +57,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[DockerEngine]] - degree 43, connects to 11 communities
 - [[ContainerEngine_1]] - degree 3, connects to 2 communities
-- [[Any_46]] - degree 3, connects to 2 communities
+- [[Any_48]] - degree 3, connects to 2 communities

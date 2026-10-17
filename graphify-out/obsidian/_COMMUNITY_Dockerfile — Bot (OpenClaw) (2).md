@@ -27,5 +27,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_pytest.ini]]
 
 ## Top bridge nodes
-- [[Security Hardening]] - degree 2, connects to 1 community
 - [[OpenSCAP & IEC 62443 compliance validation]] - degree 2, connects to 1 community
+- [[Security Hardening]] - degree 2, connects to 1 community

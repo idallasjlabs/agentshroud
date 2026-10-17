@@ -16,7 +16,7 @@ members: 59
 - [[CHANGELOG]] - document - CHANGELOG.md
 - [[Changed]] - document - CHANGELOG.md
 - [[Changelog — AgentShroud™]] - document - CHANGELOG.md
-- [[Compliance_1]] - document - CHANGELOG.md
+- [[Compliance]] - document - CHANGELOG.md
 - [[Container Security Scorecard — Baseline Scores]] - document - CHANGELOG.md
 - [[Deferred to post-v1.0.0]] - document - CHANGELOG.md
 - [[Fixed]] - document - CHANGELOG.md
@@ -37,10 +37,10 @@ members: 59
 - [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
 - [[Recommended Steps]] - document - CHANGELOG.md
 - [[Removed]] - document - CHANGELOG.md
-- [[Security_12]] - document - CHANGELOG.md
-- [[Summary_25]] - document - CHANGELOG.md
-- [[Testing_1]] - document - CHANGELOG.md
-- [[Tests_3]] - document - CHANGELOG.md
+- [[Security_2]] - document - CHANGELOG.md
+- [[Summary]] - document - CHANGELOG.md
+- [[Testing]] - document - CHANGELOG.md
+- [[Tests]] - document - CHANGELOG.md
 - [[Tranche Status]] - document - CHANGELOG.md
 - [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
 - [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md

@@ -16,7 +16,7 @@ members: 35
 - [[dot-test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_printenv()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
@@ -34,14 +34,14 @@ members: 35
 - [[dot-test_scrubs_openai_key_pattern()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_short_value_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_summary_aggregates_by_severity_and_method()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_unparseable_text_is_allowed()_1]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_unparseable_text_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
 - [[TestCheckCommandExecution]] - code - gateway/tests/test_env_guard_class.py
 - [[TestCheckFileAccess]] - code - gateway/tests/test_env_guard_class.py
 - [[TestLooksLikeCredential]] - code - gateway/tests/test_env_guard_class.py
 - [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
 - [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
 - [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_3]] - code - gateway/tests/test_env_guard_class.py
+- [[guard()_2]] - code - gateway/tests/test_env_guard_class.py
 - [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
 
 ## Live Query (requires Dataview plugin)
@@ -52,7 +52,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher (2) (2)]]
 
 ## Top bridge nodes
 - [[TestCheckCommandExecution]] - degree 9, connects to 1 community

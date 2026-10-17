@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "UserSessionManager (6)"
-location: "L27"
+community: "All Dependencies.md"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager_6
+  - community/All_Dependenciesmd
 ---
 
 # Where Used
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

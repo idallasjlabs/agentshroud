@@ -8,13 +8,13 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_128]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-__init__()_136]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_api_url()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_async_send()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_send_request()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_token_for()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[dot-cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-cleanup_expired()_1]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
@@ -44,10 +44,9 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_test_egress_callback_stale.py]]
 - 3 edges to [[_COMMUNITY__is_stale_callback_error]]
 - 3 edges to [[_COMMUNITY_TestEgressTelegramNotify]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 
 ## Top bridge nodes
-- [[EgressTelegramNotifier]] - degree 25, connects to 5 communities
+- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
 - [[dot-answer_callback()]] - degree 4, connects to 1 community
 - [[dot-edit_decision_message()]] - degree 4, connects to 1 community

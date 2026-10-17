@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "apply-patches.js (3)"
+community: "apply-patches.js"
 location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apply-patchesjs_3
+  - community/apply-patchesjs
 ---
 
 # _resolveCollabToolConfig()
@@ -17,4 +17,4 @@ tags:
 - [[apply-patches.js]] - `references` [EXTRACTED]
 - [[apply-patches.js patch driver (openclaw.json)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_3
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

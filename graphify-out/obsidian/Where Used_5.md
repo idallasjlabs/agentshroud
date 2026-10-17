@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "All Dependencies.md (2)"
-location: "L22"
+community: "Error Index.md (4)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/Error_Indexmd_4
 ---
 
 # Where Used
 
 ## Connections
-- [[Pydantic_1]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

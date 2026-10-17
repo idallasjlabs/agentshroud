@@ -12,7 +12,7 @@ members: 7
 - [[alert_critical()]] - code - docker/scripts/security-entrypoint.sh
 - [[gateway-start.sh]] - code - docker/scripts/gateway-start.sh
 - [[gateway-start.sh script]] - code - docker/scripts/gateway-start.sh
-- [[log()_1]] - code - docker/scripts/security-entrypoint.sh
+- [[log()]] - code - docker/scripts/security-entrypoint.sh
 - [[security-entrypoint.sh]] - code - docker/scripts/security-entrypoint.sh
 - [[security-entrypoint.sh script]] - code - docker/scripts/security-entrypoint.sh
 

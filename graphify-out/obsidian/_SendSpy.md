@@ -12,8 +12,8 @@ tags:
 # _SendSpy
 
 ## Connections
-- [[dot-__call__()_6]] - `method` [EXTRACTED]
-- [[dot-__init__()_92]] - `method` [EXTRACTED]
+- [[dot-__call__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_94]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]

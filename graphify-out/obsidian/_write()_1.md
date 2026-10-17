@@ -1,25 +1,28 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L73"
+community: "ApprovalQueueConfig (5)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # _write()
 
 ## Connections
-- [[dot-test_configured_servers_are_allowlisted_by_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
-- [[dot-test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
-- [[dot-test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
-- [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[Path_16]] - `references` [EXTRACTED]
-- [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
+- [[Path_40]] - `references` [EXTRACTED]
+- [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
+- [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
+- [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
+- [[test_reload_applies_valid_change()]] - `calls` [EXTRACTED]
+- [[test_reload_missing_file_keeps_last_good()]] - `calls` [EXTRACTED]
+- [[test_reload_no_reloadable_field_changed()]] - `calls` [EXTRACTED]
+- [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
+- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
+- [[test_watcher_ignores_missing_file()]] - `calls` [EXTRACTED]
+- [[test_watcher_reloads_on_mtime_change()]] - `calls` [EXTRACTED]
+- [[test_watcher_stops_on_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

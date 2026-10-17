@@ -32,10 +32,10 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_PodmanEngine]]
 - 2 edges to [[_COMMUNITY_DockerEngine]]
 - 2 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_ContainerEngine]]
 - 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_ContainerEngine]]
 - 1 edge to [[_COMMUNITY_RuntimeConfig]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_test_runtime_engines.py (2)]]
 
 ## Top bridge nodes

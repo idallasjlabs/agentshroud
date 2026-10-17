@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L50"
+community: "ToolResultSanitizer"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

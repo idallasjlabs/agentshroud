@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L86"
+community: "AuditChain"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AuditChain

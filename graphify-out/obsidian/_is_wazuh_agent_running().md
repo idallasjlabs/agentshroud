@@ -12,7 +12,7 @@ tags:
 # _is_wazuh_agent_running()
 
 ## Connections
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[Path_32]] - `calls` [EXTRACTED]
 - [[Return True if wazuh-agentd is running as a local process inside this container.]] - `rationale_for` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

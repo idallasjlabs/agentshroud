@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L105"
+community: "EgressFilterConfig (2)"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `references` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

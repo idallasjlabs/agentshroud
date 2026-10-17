@@ -12,6 +12,6 @@ tags:
 # Tool security tiers for RBAC permissions.
 
 ## Connections
-- [[ToolTier_2]] - `rationale_for` [EXTRACTED]
+- [[ToolTier_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

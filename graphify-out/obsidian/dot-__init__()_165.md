@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L25"
+community: "HTTPConnectProxy"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

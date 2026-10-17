@@ -1,79 +1,164 @@
 ---
 type: community
-members: 66
+members: 151
 ---
 
 # test_llm_proxy_local_parity.py
 
-**Members:** 66 nodes
+**Members:** 151 nodes
 
 ## Members
-- [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Cloud mode Anthropic tool_use responses are unmodified (baseline parity).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Exception during secondary dispatch increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Full round-trip each model ref is normalized and dispatched to the correct…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Hermes sends OpenAI-compat requests; local qwen3 model routes to LM Studio.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[If no secondary is configured and primary hits OOM, 503 is returned.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[In cloud mode, Hermes Claude model routes to Anthropic endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[OOM (503 backend_unavailable from primary local) triggers secondary local…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[OpenAI-format tool_calls response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Secondary failover for Anthropic-format (v1messages) path translates and…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Secondary model returning non-200 increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[The shim must not leak onto backends that accept these fields (LM Studio).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Unknown path (not v1messages, not is_openai) returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[When AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=0, OOM passes through without retry.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_anthropic_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_7]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_8]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_9]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_10]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_11]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_12]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_13]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_14]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_15]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_16]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_17]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_18]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_19]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_20]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_21]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_22]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_fake_forward()_23]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_get_local_model strips the provider prefix for a Fieldflare ref, same as it…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for successful responses.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_make_proxy()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_openai_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[asyncio_3]] - code
-- [[deepseek-r1 is routed to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[failover_local_secondary_succeeded stat increments on successful secondary…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[ollama prefix is stripped during proxy_messages dispatch and normalization…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[parametrize]] - code
-- [[proxy_messages applies the shim only on the Fieldflare route, before forwarding.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_deepseek_r1_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_get_local_model_reads_fieldflare_ref()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_hermes_openai_path_local_model_routed_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_returns_false_for_200()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_mode_openai_tool_call_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_oom_failover_disabled_does_not_retry()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_oom_no_secondary_falls_through_to_503()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_oom_triggers_secondary_failover]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_p99_timeout_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_anthropic_path()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_exception_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_unknown_path_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_model_ref_round_trip()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_non_fieldflare_local_route_keeps_fields]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_stats_local_secondary_failover_succeeded_incremented()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_block_notice_sent_without_markdown_parse_mode()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_direct_file_query_returns_protect_file_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_env_secret_probe_returns_protect_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_healthcheck_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_help_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_hypothetical_execution_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_safe_info_query_gets_local_safe_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_secret_value_block_returns_protect_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_security_architecture_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_show_high_level_policy_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_start_uses_local_notice_and_does_not_forward()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_status_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_whoami_without_slash_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_forward_file_download_returns_raw_body_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_local_notice_dedupe_handles_missing_update_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_with_fullwidth_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_with_leading_whitespace_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_with_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_with_zero_width_char_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_with_zero_width_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_collabs_command_shows_named_roster()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_healthcheck_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_help_uses_local_notice_and_includes_revoke()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_revoke_command_cannot_revoke_owner()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_revoke_command_persists_pause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_revoke_command_requires_target_user_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_start_uses_local_notice_and_does_not_forward()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_status_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_whoami_with_bot_mention_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_plain_model_question_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_rate_limit_notice_mentions_configured_limit()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnose_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnose_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnose_with_zero_width_char_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnostic_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnostic_with_fullwidth_chars_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[revoke must persist through pause_collaborator() so the pause survives a…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Allowed collaborator local command should survive mentionpunctuation…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Approval workflow questions mentioning system commands should stay…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Block notices should be sent as plain text to avoid Telegram Markdown 400…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked env-secret probes should return deterministic Protect secret wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked file queries should return a deterministic Protect notice without…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked internal-network probes should return deterministic Protect egress…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked secret probes should return deterministic Protect secret wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Bot mention + punctuation should still route to local healthcheck handler.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator healthcheck should be handled by gateway, not model.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator help should be handled locally with safe scoped commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator start should be answered locally and never forwarded to model…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator status should be handled by gateway with protected status…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator command-policy questions should get informative guidance, not hard…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator conceptual questions should receive safe informative local…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator plain 'whoami' should be treated as local command.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator self-diagnostic punctuation variant should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Conceptual auth workflow questions should be answered safely (not hard-blocked).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Conceptual file-purpose questions should get safe info without file data access.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Conceptual security architecture questions should return informative safe…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Cross-user activity probes should return privacy-safe collaborator guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Fullwidth + mentionpunctuation healthcheck variants should still route locally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[High-level 'show' policy questions should be treated as conceptual safe-info…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Hypothetical execution policy questions should get safe info, not hard block.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Identity enumeration prompts should return privacy-safe guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Leading whitespacenewline should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Mentioned self-diagnose variant should still route to local diagnostics…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Minor punctuation obfuscation should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Non-slash healthcheck command with punctuation should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner collabs should show known collaborator labels and IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner healthcheck should be handled by gateway, not model.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner help should be handled locally and include admin approval commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner revoke must fail safely when target is owner id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner revoke without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner start should be handled locally with deterministic status message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner status should be handled by gateway with operational summary.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner whoami@bot should be normalized and handled locally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Plain language model question should be answered by gateway directly.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice must reflect configured collaborator limit.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice should retry without Markdown when parse-mode send fails.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Self-diagnose local handler should dedupe repeated delivery of same update_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Self-diagnostic local handler should dedupe repeated delivery of same update_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unicode fullwidth self-diagnostic command should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[When update_id is missing, dedupe should fall back to message_id identity.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[When update_id is missing, different message_id values should not dedupe self-…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width + mentionpunctuation healthcheck variants should still route…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width obfuscation should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width obfuscation should not bypass self-diagnose local handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_forward_file_download returns dict with _raw_body, _content_type, _status_code.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_send_telegram_text should honor Telegram retry_after when rate limited.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[asyncio]] - code
+- [[fake_sleep()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_12]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_13]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_14]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_15]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_16]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_17]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_18]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_22]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_23]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_24]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_25]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_26]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_27]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_28]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_29]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_30]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_31]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_32]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_33]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_34]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_35]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_36]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_37]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_38]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_39]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_40]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_41]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_42]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_43]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_44]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_45]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_46]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_47]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_48]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_49]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_50]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -83,17 +168,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
-- 5 edges to [[_COMMUNITY_LLMProxy]]
-- 3 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 2 edges to [[_COMMUNITY__FakeStreamResponse]]
-- 1 edge to [[_COMMUNITY__t]]
+- 301 edges to [[_COMMUNITY_FakeRBAC]]
+- 85 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
+- 20 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
+- 19 edges to [[_COMMUNITY_Owner approve should fail closed when target has no pending request.]]
+- 15 edges to [[_COMMUNITY_Collaborator URL web-access prompts should queue owner approval and return…]]
+- 8 edges to [[_COMMUNITY_full_access collaborators must pass through middleware and secondary pipeline…]]
+- 7 edges to [[_COMMUNITY_Tests for _forward_file_download() and proxy_request() binary path. Regression…]]
+- 7 edges to [[_COMMUNITY_Unknownunapproved users have stricter rate limits than collaborators. After…]]
+- 6 edges to [[_COMMUNITY_BlockingPipeline]]
+- 5 edges to [[_COMMUNITY_Unit tests for collaborator-facing prompt classification helpers.]]
+- 4 edges to [[_COMMUNITY_When update_id is missing, same message_id should dedupe self-diagnostic…]]
+- 3 edges to [[_COMMUNITY_Every collaborator message must produce a response — never a silent drop.]]
+- 3 edges to [[_COMMUNITY_proxy_request should increment inbound getUpdates stats when messages pass…]]
+- 3 edges to [[_COMMUNITY_Rate-limit notice path should key retry window by user_id, not chat_id.]]
+- 2 edges to [[_COMMUNITY_Collaborator approval-queue metadata probes should return safe guidance only.]]
+- 2 edges to [[_COMMUNITY_Collaborator blocked-tool policy question should be answered safely and…]]
+- 2 edges to [[_COMMUNITY_Collaborator toolcommand inventory probes should return safe local guidance.]]
+- 2 edges to [[_COMMUNITY_Owner pending should return deterministic snapshot of…]]
+- 1 edge to [[_COMMUNITY_Malformed callback payloads should not crash inbound processing.]]
+- 1 edge to [[_COMMUNITY__FakeStreamResponse]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)_1]]
 
 ## Top bridge nodes
-- [[_make_proxy()]] - degree 27, connects to 3 communities
-- [[asyncio_3]] - degree 23, connects to 3 communities
-- [[test_local_oom_triggers_secondary_failover]] - degree 9, connects to 3 communities
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - degree 8, connects to 3 communities
-- [[test_non_fieldflare_local_route_keeps_fields]] - degree 8, connects to 3 communities
+- [[asyncio]] - degree 290, connects to 22 communities
+- [[fake_urlopen()_20]] - degree 75, connects to 8 communities
+- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - degree 9, connects to 2 communities
+- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - degree 9, connects to 2 communities
+- [[dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - degree 9, connects to 2 communities

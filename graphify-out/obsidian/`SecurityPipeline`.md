@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
+community: "`SecurityPipeline`"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/SecurityPipeline
 ---
 
 # `SecurityPipeline`
@@ -19,9 +19,9 @@ tags:
 - [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
 - [[Module Count by Layer]] - `contains` [EXTRACTED]
 - [[Monitor Mode]] - `contains` [EXTRACTED]
-- [[Overview_10]] - `contains` [EXTRACTED]
+- [[Overview_8]] - `contains` [EXTRACTED]
 - [[Proxy Layer]] - `contains` [EXTRACTED]
-- [[Related Notes_29]] - `contains` [EXTRACTED]
+- [[Related Notes_36]] - `contains` [EXTRACTED]
 - [[Security Pipeline Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

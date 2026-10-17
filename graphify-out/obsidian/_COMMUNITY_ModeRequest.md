@@ -1,11 +1,11 @@
 ---
 type: community
-members: 95
+members: 96
 ---
 
 # ModeRequest
 
-**Members:** 95 nodes
+**Members:** 96 nodes
 
 ## Members
 - [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
@@ -32,7 +32,7 @@ members: 95
 - [[dot-test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_invalid_token_closes_4003()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_invalid_token_raises_401()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_killswitch_action_default_unconfirmed()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
@@ -78,7 +78,7 @@ members: 95
 - [[KillSwitchAction]] - code - gateway/web/api.py
 - [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[SimpleNamespace]] - code - gateway/tests/test_web_api_coverage.py
+- [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
@@ -91,7 +91,7 @@ members: 95
 - [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestStatus]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[UpdateRequest]] - code - gateway/web/api.py
@@ -100,9 +100,10 @@ members: 95
 - [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[client()_7]] - code - gateway/tests/test_web_api_coverage.py
+- [[client()_17]] - code - gateway/tests/test_web_api_coverage.py
 - [[require_auth()]] - code - gateway/web/api.py
 - [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
+- [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -113,25 +114,26 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 21 edges to [[_COMMUNITY_test_prompt_guard.py]]
-- 11 edges to [[_COMMUNITY_api.py]]
-- 6 edges to [[_COMMUNITY_api.py (2)]]
+- 10 edges to [[_COMMUNITY_api.py]]
+- 6 edges to [[_COMMUNITY_api.py (2)_1]]
+- 4 edges to [[_COMMUNITY_api.py (2)]]
 - 3 edges to [[_COMMUNITY_ModeRequest (3)]]
-- 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
-- 2 edges to [[_COMMUNITY_FetchOutcome]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY__FakeRBAC]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection (2)]]
+- 2 edges to [[_COMMUNITY_FetchOutcome]]
+- 2 edges to [[_COMMUNITY_Path (2)]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_Path]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
 - 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_dashboard_endpoints.py (2)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (5)]]
 
 ## Top bridge nodes
 - [[require_auth()]] - degree 16, connects to 11 communities
 - [[UpdateRequest]] - degree 29, connects to 6 communities
 - [[KillSwitchAction]] - degree 27, connects to 6 communities
-- [[test_web_api_coverage.py]] - degree 30, connects to 4 communities
-- [[HTTPAuthorizationCredentials]] - degree 4, connects to 2 communities
+- [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
+- [[test_web_api_coverage.py]] - degree 30, connects to 3 communities

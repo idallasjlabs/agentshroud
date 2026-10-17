@@ -39,7 +39,7 @@ members: 37
 - [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Troubleshooting_10]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Troubleshooting_7]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Usage Examples]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Verification Checklist]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md

@@ -8,7 +8,7 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-setup_method()_35]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-setup_method()_34]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_adblock_format()]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_adblock_format_invalid_chars()]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_blank_whitespace()]] - code - gateway/tests/test_dns_blocklist.py
@@ -35,4 +35,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[TestParseHostsLine]] - degree 15, connects to 1 community
-- [[dot-setup_method()_35]] - degree 2, connects to 1 community
+- [[dot-setup_method()_34]] - degree 2, connects to 1 community

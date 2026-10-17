@@ -8,11 +8,11 @@ members: 73
 **Members:** 73 nodes
 
 ## Members
-- [[dot-__init__()_162]] - code - gateway/tests/test_http_proxy.py
+- [[dot-__init__()_181]] - code - gateway/tests/test_http_proxy.py
 - [[dot-_audit()]] - code - gateway/proxy/web_proxy.py
 - [[dot-check_request()]] - code - gateway/proxy/web_proxy.py
-- [[dot-close()_17]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_18]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_15]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_16]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_1]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
 - [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
@@ -21,7 +21,7 @@ members: 73
 - [[dot-to_dict()]] - code - gateway/proxy/web_proxy.py
 - [[dot-write()_1]] - code - gateway/tests/test_http_proxy.py
 - [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
-- [[Any_66]] - code
+- [[Any_75]] - code
 - [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
 - [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
 - [[Check an outbound HTTP request before it's sent. This is the pre-flight check.…]] - rationale - gateway/proxy/web_proxy.py
@@ -91,15 +91,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 39 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 38 edges to [[_COMMUNITY_WebProxyConfig]]
+- 35 edges to [[_COMMUNITY_WebProxyConfig]]
 - 12 edges to [[_COMMUNITY_ProxyAction]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
 - 3 edges to [[_COMMUNITY__DummyTargetWriter]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
 - 2 edges to [[_COMMUNITY_WebContentScanner]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 2 edges to [[_COMMUNITY_WebProxyConfig (2)_1]]
+- 2 edges to [[_COMMUNITY_WebProxyConfig (3)]]
 - 2 edges to [[_COMMUNITY_dot-_process_connect]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig (3)]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig (3)_1]]
 
 ## Top bridge nodes
 - [[WebProxy]] - degree 72, connects to 10 communities

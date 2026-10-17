@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "RBACConfig (2)"
-location: "L214"
+community: "AgentRegistry"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `references` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

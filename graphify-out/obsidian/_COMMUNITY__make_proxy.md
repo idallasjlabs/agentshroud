@@ -58,7 +58,7 @@ members: 62
 - [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
 - [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
 - [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
-- [[_make_proxy()_4]] - code - gateway/tests/test_slack_proxy.py
+- [[_make_proxy()_1]] - code - gateway/tests/test_slack_proxy.py
 - [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
 - [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
 - [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
@@ -86,7 +86,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[test_slack_proxy.py]] - degree 10, connects to 3 communities
-- [[_make_proxy()_4]] - degree 36, connects to 2 communities
+- [[_make_proxy()_1]] - degree 36, connects to 2 communities
 - [[TestOwnerChannelFiltering]] - degree 14, connects to 2 communities
 - [[TestProxyOutbound]] - degree 12, connects to 2 communities
 - [[TestMultiFieldOutboundScanning]] - degree 10, connects to 2 communities

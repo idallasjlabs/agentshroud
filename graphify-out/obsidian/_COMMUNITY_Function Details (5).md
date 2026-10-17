@@ -9,11 +9,11 @@ members: 17
 
 ## Members
 - [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Function Details_11]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Purpose_109]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Related_15]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Responsibilities_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Function Details_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_116]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Related_17]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md

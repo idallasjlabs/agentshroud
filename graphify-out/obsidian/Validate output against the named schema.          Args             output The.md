@@ -12,6 +12,6 @@ tags:
 # Validate output against the named schema.          Args:             output: The
 
 ## Connections
-- [[dot-validate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer

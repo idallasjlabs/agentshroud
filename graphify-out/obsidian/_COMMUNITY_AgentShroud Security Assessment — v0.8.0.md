@@ -11,8 +11,8 @@ members: 16
 - [[AgentShroud Security Assessment — v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
 - [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
 - [[CRITICAL-2 No request body size limits on API models]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Critical Findings_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Executive Summary_12]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Critical Findings_2]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Executive Summary_13]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
 - [[HIGH-1 ML injection classifier is entirely a stub]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
 - [[HIGH-2 Approval queue Telegram notifications unimplemented]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
 - [[HIGH-3 Credential generation in key rotation is a placeholder]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md

@@ -12,7 +12,7 @@ tags:
 # TestSourceTagging
 
 ## Connections
-- [[dot-guard()_6]] - `method` [EXTRACTED]
+- [[dot-guard()_2]] - `method` [EXTRACTED]
 - [[dot-test_empty_provenance_for_unknown_session()]] - `method` [EXTRACTED]
 - [[dot-test_segment_hash_integrity()]] - `method` [EXTRACTED]
 - [[dot-test_segment_provenance_ordering()]] - `method` [EXTRACTED]

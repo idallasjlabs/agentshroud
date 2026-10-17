@@ -1,13 +1,21 @@
 ---
 type: community
-members: 23
+members: 32
 ---
 
 # PHASE_3A_3B_IMPLEMENTATION.md
 
-**Members:** 23 nodes
+**Members:** 32 nodes
 
 ## Members
+- [[3A.1 Re-enable seccomp profiles ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.2 Make OpenClaw container read-only ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.3 Remove NET_RAW capability ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.4 Add mDNSBonjour disable ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.5 Move gateway password to Docker secrets ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.6 Create verify-security.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.7 Create scan.sh (OpenSCAP) ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.8 Change DM policy to allowlist ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[3B.1 Create killswitch.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Created]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[DM Policy Allowlist Configuration]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
@@ -18,10 +26,11 @@ members: 23
 - [[Kill Switch (freeze  shutdown  disconnect)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Modified]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[NET_RAW Capability Removal]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Next Steps_4]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Next Steps_3]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[No Changes (Already Correct)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[PHASE_3A_3B_IMPLEMENTATION]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Phase 3A Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3A Security Completion (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Phase 3B.1 Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Phase 3B.1 Kill Switch (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Pre-Test Preparation]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
@@ -40,17 +49,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_diagramsREADME.md (2)]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION.md (2)]]
-- 1 edge to [[_COMMUNITY_02-infrastructure.md (3)]]
+- 2 edges to [[_COMMUNITY_diagramsREADME]]
+- 1 edge to [[_COMMUNITY_02-infrastructure]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
 - 1 edge to [[_COMMUNITY_Per-Agent Container Isolation Architecture]]
 - 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 
 ## Top bridge nodes
-- [[PHASE_3A_3B_IMPLEMENTATION]] - degree 14, connects to 2 communities
 - [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities
+- [[PHASE_3A_3B_IMPLEMENTATION]] - degree 14, connects to 1 community
 - [[DM Policy Allowlist Configuration]] - degree 2, connects to 1 community
 - [[Gateway Password Moved to Docker Secrets]] - degree 2, connects to 1 community
 - [[NET_RAW Capability Removal]] - degree 2, connects to 1 community

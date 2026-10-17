@@ -1,11 +1,11 @@
 ---
 type: community
-members: 15
+members: 17
 ---
 
 # egress_filter.py (3)
 
-**Members:** 15 nodes
+**Members:** 17 nodes
 
 ## Members
 - [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
@@ -19,8 +19,10 @@ members: 15
 - [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
 - [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
 - [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
+- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
 - [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
 - [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
+- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
 - [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
 - [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
 
@@ -32,21 +34,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig]]
 - 1 edge to [[_COMMUNITY_AuditEvent]]
 - 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_AgentRegistry (2)]]
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
-- 1 edge to [[_COMMUNITY_dashboard_endpoints.py (2)]]
 
 ## Top bridge nodes
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 6 communities
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 4 communities
+- [[Prompt Guard Module Badge Icon]] - degree 2, connects to 1 community
 - [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
 - [[Drift Detector Module Badge Icon]] - degree 2, connects to 1 community
 - [[Egress Filter Module Badge Icon]] - degree 2, connects to 1 community
-- [[HTTP Proxy Module Badge Icon]] - degree 2, connects to 1 community

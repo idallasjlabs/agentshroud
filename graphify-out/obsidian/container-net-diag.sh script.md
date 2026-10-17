@@ -20,6 +20,6 @@ tags:
 - [[info()_2]] - `calls` [EXTRACTED]
 - [[pass()_3]] - `calls` [EXTRACTED]
 - [[tcp_test()]] - `calls` [EXTRACTED]
-- [[warn()_4]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/colima-health-checksh_2

@@ -1,8 +1,8 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
+source_file: "tests/startup_smoke/test_openclaw_photo.sh"
 type: "code"
 community: "test_openclaw_photo.sh"
-location: "L12"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # check()
 
 ## Connections
-- [[test_hermes_cron_html_email.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_cron_html_email.sh script]] - `calls` [EXTRACTED]
+- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh

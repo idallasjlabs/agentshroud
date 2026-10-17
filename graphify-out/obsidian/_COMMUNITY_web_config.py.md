@@ -11,15 +11,15 @@ members: 12
 - [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Function Details_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Key Classes  Functions_52]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Purpose_188]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Purpose_181]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Related_56]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Responsibilities_53]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[web_config.py]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

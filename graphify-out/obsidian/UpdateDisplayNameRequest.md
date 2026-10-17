@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "_FakeRBAC"
+community: "soc/router.py"
 location: "L853"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # UpdateDisplayNameRequest
@@ -16,11 +16,11 @@ tags:
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[update_display_name()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/soc/routerpy

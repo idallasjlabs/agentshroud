@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L29"
+community: "SCLClient"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SCLClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
-- [[WebSocket_1]] - `references` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SCLClient

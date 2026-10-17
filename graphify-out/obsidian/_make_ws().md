@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_bearer_header_fallback()]] - `calls` [EXTRACTED]
 - [[dot-test_handler_exception_is_swallowed()]] - `calls` [EXTRACTED]
-- [[dot-test_invalid_token_closes_4003()_1]] - `calls` [EXTRACTED]
+- [[dot-test_invalid_token_closes_4003()]] - `calls` [EXTRACTED]
 - [[dot-test_raw_gateway_password_fallback()]] - `calls` [EXTRACTED]
 - [[dot-test_unauthorized_closes_4003()]] - `calls` [EXTRACTED]
 - [[dot-test_valid_ws_token_accepts()]] - `calls` [EXTRACTED]

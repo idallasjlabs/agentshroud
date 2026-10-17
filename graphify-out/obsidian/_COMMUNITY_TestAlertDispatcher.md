@@ -30,8 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
 
 ## Top bridge nodes
 - [[TestAlertDispatcher]] - degree 14, connects to 2 communities

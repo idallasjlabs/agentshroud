@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "EgressFilterConfig"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/EgressFilterConfig
 ---
 
 # domain_matches()
@@ -18,6 +18,6 @@ tags:
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Return True if domain matches any pattern (exact or ``.`` wildcard). Single…]] - `rationale_for` [EXTRACTED]
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

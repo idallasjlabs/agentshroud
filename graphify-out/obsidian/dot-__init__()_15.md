@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L114"
+community: "AlertDispatcher (2)"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

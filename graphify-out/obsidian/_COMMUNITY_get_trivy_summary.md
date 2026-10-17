@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 18
 ---
 
 # get_trivy_summary
 
-**Members:** 20 nodes
+**Members:** 18 nodes
 
 ## Members
 - [[dot-test_clean_when_installed_but_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
@@ -19,14 +19,12 @@ members: 20
 - [[dot-test_zero_when_no_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
 - [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - rationale - gateway/security/scanner_integration.py
 - [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 3 Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa]] - rationale - gateway/security/scanner_integration.py
 - [[TestGetSbom_1]] - code - gateway/tests/test_scanner_integration.py
 - [[TestGetTrivySummary]] - code - gateway/tests/test_scanner_integration.py
 - [[TestScoreSupplyChain]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
 - [[_score_supply_chain()]] - code - gateway/security/scanner_integration.py
-- [[get_sbom()_1]] - code - gateway/security/scanner_integration.py
+- [[get_sbom()]] - code - gateway/security/scanner_integration.py
 - [[get_trivy_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -37,19 +35,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 5 edges to [[_COMMUNITY_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY_AgentTarget (4)]]
+- 9 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 6 edges to [[_COMMUNITY_scanner_integration.py]]
 - 3 edges to [[_COMMUNITY_Path (3)]]
-- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 1 edge to [[_COMMUNITY__load_latest_json]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
 
 ## Top bridge nodes
-- [[get_trivy_summary()]] - degree 16, connects to 7 communities
-- [[get_sbom()_1]] - degree 9, connects to 4 communities
-- [[_score_supply_chain()]] - degree 9, connects to 3 communities
-- [[_score_ai_model_supply_chain()]] - degree 6, connects to 3 communities
+- [[get_trivy_summary()]] - degree 16, connects to 6 communities
+- [[get_sbom()]] - degree 9, connects to 3 communities
+- [[_score_supply_chain()]] - degree 9, connects to 2 communities
+- [[TestGetTrivySummary]] - degree 4, connects to 1 community
 - [[TestGetSbom_1]] - degree 4, connects to 1 community

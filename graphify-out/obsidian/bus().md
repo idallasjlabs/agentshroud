@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "make_event (2)"
+community: "test_soc_egress_endpoints.py"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event_2
+  - community/test_soc_egress_endpointspy
 ---
 
 # bus()
@@ -15,4 +15,4 @@ tags:
 - [[EventBus]] - `calls` [EXTRACTED]
 - [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

@@ -39,10 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud (2)]]
 - 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
-- 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
-- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud]]
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
+- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
 
 ## Top bridge nodes
 - [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 12, connects to 3 communities

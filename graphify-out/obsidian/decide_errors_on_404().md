@@ -12,7 +12,7 @@ tags:
 # decide_errors_on_404()
 
 ## Connections
-- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-new()_1]] - `calls` [EXTRACTED]
 - [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]

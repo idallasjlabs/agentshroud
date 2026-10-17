@@ -1,75 +1,70 @@
 ---
 type: community
-members: 62
+members: 57
 ---
 
 # RBACConfig (3)
 
-**Members:** 62 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[dot-__init__()_187]] - code - gateway/security/privacy_policy.py
-- [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
-- [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
-- [[dot-contains_private_data()]] - code - gateway/security/privacy_policy.py
-- [[dot-default()]] - code - gateway/security/privacy_policy.py
-- [[dot-filter_response()_1]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_9]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_10]] - code - gateway/security/privacy_policy.py
-- [[dot-is_service_allowed()]] - code - gateway/security/privacy_policy.py
-- [[dot-should_alert()]] - code - gateway/security/privacy_policy.py
-- [[dot-should_audit()]] - code - gateway/security/privacy_policy.py
-- [[dot-test_admin_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_audit_disabled_globally()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_clean_response_not_modified()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_allowed_shared_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_api_key_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_email_content_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_contains_private_data_clean_text()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_contains_private_data_detects_email()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_default_policy_marks_gmail_private()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_extra_pattern_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_extra_redact_patterns_loaded()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_adds_new_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_overrides_existing()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_unknown_privacy_defaults_to_private()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_group_member_allowed_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_invalid_extra_pattern_does_not_crash()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_non_group_member_blocked_from_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_owner_can_access_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_owner_response_not_filtered()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_alert_non_owner()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_audit_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_not_alert_owner()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_not_audit_unknown_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_unknown_service_allowed_by_default()]] - code - gateway/tests/test_privacy_policy.py
-- [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
-- [[Parse from a YAMLdict representation.          Example YAML             privac]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy Policy Enforcement Tests]] - code - gateway/tests/test_privacy_policy.py
-- [[Privacy classification for a service.]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
-- [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
-- [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
-- [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if user_id may access the named service.]] - rationale - gateway/security/privacy_policy.py
-- [[Return a default policy with all known private services locked down.]] - rationale - gateway/security/privacy_policy.py
-- [[ServicePolicy]] - code - gateway/security/privacy_policy.py
-- [[ServicePrivacy]] - code - gateway/security/privacy_policy.py
-- [[Strip admin-private content from a response before delivering to user.]] - rationale - gateway/security/privacy_policy.py
-- [[TestAuditAndAlert]] - code - gateway/tests/test_privacy_policy.py
-- [[TestPrivacyPolicyParsing]] - code - gateway/tests/test_privacy_policy.py
-- [[TestResponseFiltering]] - code - gateway/tests/test_privacy_policy.py
-- [[TestServiceAccessControl]] - code - gateway/tests/test_privacy_policy.py
-- [[_make_rbac()]] - code - gateway/tests/test_privacy_policy.py
-- [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
-- [[enforcer()_1]] - code - gateway/tests/test_privacy_policy.py
-- [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
-- [[rbac()_4]] - code - gateway/tests/test_privacy_policy.py
-- [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
+- [[dot-get_active_project_for_user()]] - code - gateway/security/group_config.py
+- [[dot-get_all_member_ids()]] - code - gateway/security/group_config.py
+- [[dot-get_group_admin_ids()]] - code - gateway/security/group_config.py
+- [[dot-get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
+- [[dot-get_user_collab_mode()]] - code - gateway/security/group_config.py
+- [[dot-get_user_groups()]] - code - gateway/security/group_config.py
+- [[dot-get_user_projects()]] - code - gateway/security/group_config.py
+- [[dot-is_admin()]] - code - gateway/security/group_config.py
+- [[dot-is_group_admin()]] - code - gateway/security/group_config.py
+- [[dot-is_member()]] - code - gateway/security/group_config.py
+- [[dot-model_post_init()]] - code - gateway/security/group_config.py
+- [[dot-test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
+- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
+- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
+- [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
+- [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - rationale - gateway/security/group_config.py
+- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
+- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
+- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
+- [[TeamsConfig]] - code - gateway/security/group_config.py
+- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
+- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
+- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
+- [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
+- [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
+- [[rbac()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[rbac()_1]] - code - gateway/tests/test_shared_memory.py
+- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
+- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
+- [[teams()_1]] - code - gateway/tests/test_group_isolation.py
+- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -79,16 +74,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_MiddlewareManager]]
-- 6 edges to [[_COMMUNITY_RBACConfig (2)]]
-- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 17 edges to [[_COMMUNITY_RBACConfig]]
+- 16 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 15 edges to [[_COMMUNITY_MiddlewareManager]]
+- 13 edges to [[_COMMUNITY_RBACConfig (2)_1]]
+- 11 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 9 edges to [[_COMMUNITY_GroupConfig]]
+- 7 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 7 edges to [[_COMMUNITY_RBACConfig (3)_1]]
+- 5 edges to [[_COMMUNITY_RBACConfig (2) (2)]]
+- 4 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_RBACConfig (2) (3)]]
+- 1 edge to [[_COMMUNITY_RBACConfig (2) (4)]]
+- 1 edge to [[_COMMUNITY_RBACConfig (5)]]
 
 ## Top bridge nodes
-- [[PrivacyPolicyEnforcer]] - degree 27, connects to 3 communities
-- [[TestResponseFiltering]] - degree 15, connects to 2 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
-- [[PrivacyPolicy]] - degree 13, connects to 2 communities
+- [[TeamsConfig]] - degree 100, connects to 15 communities
+- [[test_shared_memory.py]] - degree 13, connects to 3 communities
+- [[TestPrivateContentDetection]] - degree 13, connects to 3 communities
+- [[TestMergedMemory]] - degree 11, connects to 3 communities
+- [[TestGroupMemoryReadWrite]] - degree 8, connects to 3 communities

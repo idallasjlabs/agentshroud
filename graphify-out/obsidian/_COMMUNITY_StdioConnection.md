@@ -8,18 +8,18 @@ members: 83
 **Members:** 83 nodes
 
 ## Members
-- [[dot-__init__()_136]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-__init__()_137]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-__init__()_138]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_162]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_163]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_164]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-_fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-from_dict()_5]] - code - gateway/proxy/mcp_config.py
+- [[dot-from_dict()_7]] - code - gateway/proxy/mcp_config.py
 - [[dot-get_or_create()]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-is_running()]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-remove()]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-stop()_9]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-stop()_10]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-stop()_10]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-stop()_11]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
 - [[dot-test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -52,7 +52,7 @@ members: 83
 - [[dot-test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
 - [[dot-test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
 - [[dot-wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Any_52]] - code - gateway/proxy/mcp_config.py
+- [[Any_65]] - code - gateway/proxy/mcp_config.py
 - [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
 - [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
 - [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
@@ -61,10 +61,10 @@ members: 83
 - [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPProxy]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPProxyConfig_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_config.py
-- [[MCPServerConfig_2]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxyConfig_2]] - code - gateway/proxy/mcp_config.py
+- [[MCPProxyConfig_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[MCPServerConfig_1]] - code - gateway/proxy/mcp_config.py
+- [[MCPServerConfig_2]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
 - [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
@@ -85,8 +85,8 @@ members: 83
 - [[TestServerAccess]] - code - gateway/tests/test_mcp_permissions.py
 - [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
-- [[config()_4]] - code - gateway/tests/test_mcp_permissions.py
-- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[config()_2]] - code - gateway/tests/test_mcp_proxy.py
+- [[config()_3]] - code - gateway/tests/test_mcp_permissions.py
 - [[make_config()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
 - [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -112,17 +112,16 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_MCPPermissionManager (6)]]
 - 3 edges to [[_COMMUNITY_MCPPermissionManager (7)]]
 - 3 edges to [[_COMMUNITY_TestAuditTrail]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 2 edges to [[_COMMUNITY_StdioConnection (3)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py (2)]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 - 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
 
 ## Top bridge nodes
-- [[MCPProxyConfig_1]] - degree 88, connects to 15 communities
+- [[MCPProxyConfig_2]] - degree 88, connects to 14 communities
 - [[MCPServerConfig_1]] - degree 90, connects to 12 communities
 - [[MCPToolConfig]] - degree 59, connects to 11 communities
 - [[test_mcp_proxy_coverage.py]] - degree 34, connects to 7 communities

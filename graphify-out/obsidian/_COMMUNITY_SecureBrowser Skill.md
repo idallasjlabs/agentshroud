@@ -21,7 +21,7 @@ members: 29
 - [[Key Features_2]] - document - skills/custom/securebrowser/README.md
 - [[License_2]] - document - skills/custom/securebrowser/README.md
 - [[Limitations_3]] - document - skills/custom/securebrowser/README.md
-- [[Overview_8]] - document - skills/custom/securebrowser/README.md
+- [[Overview_6]] - document - skills/custom/securebrowser/README.md
 - [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
 - [[Quick Start_6]] - document - skills/custom/securebrowser/README.md
 - [[Risk Classification]] - document - skills/custom/securebrowser/README.md

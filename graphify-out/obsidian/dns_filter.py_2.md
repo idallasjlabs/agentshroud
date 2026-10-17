@@ -1,28 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
-type: "document"
-community: "dns_filter.py"
-location: "L10"
+source_file: "gateway/security/dns_filter.py"
+type: "code"
+community: "DNSFilterConfig"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/DNSFilterConfig
 ---
 
 # dns_filter.py
 
 ## Connections
-- [[Allowlist Behavior]] - `contains` [EXTRACTED]
-- [[Audit Log]] - `contains` [EXTRACTED]
-- [[Configuration (DNSFilterConfig)]] - `contains` [EXTRACTED]
-- [[Environment Variables_10]] - `contains` [EXTRACTED]
-- [[Function Details_17]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_19]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_6]] - `contains` [EXTRACTED]
-- [[Purpose_134]] - `contains` [EXTRACTED]
-- [[Related_22]] - `contains` [EXTRACTED]
-- [[Responsibilities_20]] - `contains` [EXTRACTED]
-- [[Threat Model_14]] - `contains` [EXTRACTED]
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[DNSFilter]] - `contains` [EXTRACTED]
+- [[DNSFilterConfig]] - `contains` [EXTRACTED]
+- [[DNSQuery_1]] - `contains` [EXTRACTED]
+- [[DNSVerdict]] - `contains` [EXTRACTED]
+- [[EntropyCalculator]] - `contains` [EXTRACTED]
+- [[TunnelingPattern]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
+- [[cve-mitigation-matrix]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

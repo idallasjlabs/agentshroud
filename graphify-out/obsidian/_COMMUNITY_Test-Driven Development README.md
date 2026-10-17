@@ -10,10 +10,10 @@ members: 18
 ## Members
 - [[dot-agentsskillsi-tddREADME]] - document - .agents/skills/i-tdd/README.md
 - [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
-- [[Purpose_98]] - document - .agents/skills/i-tdd/README.md
-- [[Purpose_99]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[Related Skills_85]] - document - .agents/skills/i-tdd/README.md
-- [[Related Skills_86]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Purpose_88]] - document - .agents/skills/i-tdd/README.md
+- [[Purpose_89]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Related Skills_68]] - document - .agents/skills/i-tdd/README.md
+- [[Related Skills_69]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[Technical Illustrator (TI)_2]] - document - .agents/skills/i-ti/SKILL.md
 - [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
 - [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
@@ -23,8 +23,8 @@ members: 18
 - [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
 - [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
 - [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
-- [[Usage_94]] - document - .agents/skills/i-tdd/README.md
-- [[Usage_95]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Usage_77]] - document - .agents/skills/i-tdd/README.md
+- [[Usage_78]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[hermesskillsi-tddREADME]] - document - docker/config/hermes/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)

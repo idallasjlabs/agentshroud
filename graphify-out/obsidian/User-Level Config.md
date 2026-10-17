@@ -12,6 +12,6 @@ tags:
 # User-Level Config
 
 ## Connections
-- [[Configuration Files_1]] - `contains` [EXTRACTED]
+- [[Configuration Files_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

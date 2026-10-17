@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py (2)"
+community: "dashboard_endpoints.py"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/dashboard_endpointspy
 ---
 
 # _tcp_check()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

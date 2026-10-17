@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response"
-location: "L8275"
+community: "test_telegram_proxy_inbound.py"
+location: "L8293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # Threshold notices must not repeat on subsequent blocks at the same level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collab_threshold_notices_fire_only_once_per_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

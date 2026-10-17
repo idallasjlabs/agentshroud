@@ -27,10 +27,10 @@ members: 26
 - [[Search Contacts_3]] - document - skills/custom/icloud/SKILL.md
 - [[Search Mail_3]] - document - skills/custom/icloud/SKILL.md
 - [[Search Notes_3]] - document - skills/custom/icloud/SKILL.md
-- [[Security_10]] - document - skills/custom/icloud/SKILL.md
+- [[Security_11]] - document - skills/custom/icloud/SKILL.md
 - [[Send Email_3]] - document - skills/custom/icloud/SKILL.md
 - [[Setup_3]] - document - skills/custom/icloud/SKILL.md
-- [[Troubleshooting_24]] - document - skills/custom/icloud/SKILL.md
+- [[Troubleshooting_22]] - document - skills/custom/icloud/SKILL.md
 - [[Update Contact_3]] - document - skills/custom/icloud/SKILL.md
 - [[Update Event_3]] - document - skills/custom/icloud/SKILL.md
 - [[iCloud Services_3]] - document - skills/custom/icloud/SKILL.md
@@ -43,7 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 
 ## Top bridge nodes
 - [[iCloud Services_3]] - degree 9, connects to 1 community

@@ -1,46 +1,35 @@
 ---
 type: community
-members: 78
+members: 67
 ---
 
 # A2APolicyEngine
 
-**Members:** 78 nodes
+**Members:** 67 nodes
 
 ## Members
-- [[dot-__init__()_146]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-__init__()_147]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-__init__()_148]] - code - gateway/security/a2a_policy.py
-- [[dot-__init__()_149]] - code - gateway/tests/test_a2a_integration.py
-- [[dot-__init__()_150]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_193]] - code - gateway/proxy/a2a_proxy.py
+- [[dot-__init__()_194]] - code - gateway/proxy/a2a_proxy.py
+- [[dot-__init__()_195]] - code - gateway/tests/test_a2a_integration.py
 - [[dot-_audit()_1]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-_decide()]] - code - gateway/security/a2a_policy.py
 - [[dot-_handle()_1]] - code - gateway/tests/test_a2a_integration.py
 - [[dot-_record_trust_violation()]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-_tier_for()]] - code - gateway/security/a2a_policy.py
-- [[dot-close()_15]] - code - gateway/proxy/a2a_proxy.py
+- [[dot-close()_20]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-extract_text_for_pii_scan()]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-forward()]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-forward()_1]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[dot-log_event()_1]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-forward()_3]] - code - gateway/proxy/a2a_proxy.py
+- [[dot-forward()_4]] - code - gateway/tests/test_a2a_trust_scoring.py
 - [[dot-parse_jsonrpc_request()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-process_agent_card_request()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-process_inbound_request()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-resolve_peer_id()]] - code - gateway/proxy/a2a_proxy.py
-- [[dot-test_bare_config_denies_every_peer()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
 - [[A plain default-deny (unknownunlisted peer) is a routing decision, not     evid]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[A2AMethod]] - code - gateway/security/a2a_policy.py
 - [[A2APeerTestDouble]] - code - gateway/tests/test_a2a_integration.py
-- [[A2APolicyConfig]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[A2APolicyEngine]] - code - gateway/proxy/a2a_proxy.py
-- [[A2APolicyEngine_1]] - code - gateway/security/a2a_policy.py
-- [[A2AProxy]] - code - gateway/proxy/a2a_proxy.py
+- [[A2APolicyEngine_1]] - code - gateway/proxy/a2a_proxy.py
+- [[A2APolicyEngine_2]] - code - gateway/security/a2a_policy.py
+- [[A2AProxy_1]] - code - gateway/proxy/a2a_proxy.py
 - [[A2AProxyResult]] - code - gateway/proxy/a2a_proxy.py
-- [[Any_55]] - code - gateway/proxy/a2a_proxy.py
-- [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - rationale - gateway/security/a2a_policy.py
+- [[Any_79]] - code - gateway/proxy/a2a_proxy.py
 - [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - rationale - gateway/security/a2a_policy.py
-- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - rationale - gateway/security/a2a_policy.py
 - [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - rationale - gateway/proxy/a2a_proxy.py
 - [[GET .well-knownagent-card.json — never policy-gated (the A2A         spec requ]] - rationale - gateway/proxy/a2a_proxy.py
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - concept - docs/security/threat-model.md
@@ -51,7 +40,7 @@ members: 78
 - [[ParsedA2ARequest]] - code - gateway/proxy/a2a_proxy.py
 - [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - rationale - gateway/proxy/a2a_proxy.py
 - [[Record a typed violation against the peer's trust score for the         two A2A-]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Request_7]] - code - gateway/tests/test_a2a_integration.py
+- [[Request_8]] - code - gateway/tests/test_a2a_integration.py
 - [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - rationale - gateway/proxy/a2a_proxy.py
 - [[Response_1]] - code - gateway/tests/test_a2a_integration.py
 - [[Result of proxying a single inbound A2A request.]] - rationale - gateway/proxy/a2a_proxy.py
@@ -61,10 +50,9 @@ members: 78
 - [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - concept - gateway/tests/test_a2a_integration.py
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - concept - gateway/tests/test_a2a_integration.py
-- [[_Event]] - code - gateway/tests/test_a2a_proxy.py
-- [[_StubForwarder]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[_jsonrpc()]] - code - gateway/tests/test_a2a_integration.py
-- [[_jsonrpc()_1]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[_StubForwarder_2]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[_jsonrpc()_1]] - code - gateway/tests/test_a2a_integration.py
+- [[_jsonrpc()_2]] - code - gateway/tests/test_a2a_trust_scoring.py
 - [[_redact_message_text()]] - code - gateway/proxy/a2a_proxy.py
 - [[a2a_proxy.py]] - code - gateway/proxy/a2a_proxy.py
 - [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - rationale - gateway/tests/test_a2a_integration.py
@@ -85,7 +73,8 @@ members: 78
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - code - gateway/tests/test_a2a_trust_scoring.py
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - code - gateway/tests/test_a2a_trust_scoring.py
 - [[trust_manager is an optional dependency — a proxy built without one     (e.g. be]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[trust_manager()_3]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[trust_manager()_4]] - code - gateway/tests/test_a2a_integration.py
+- [[trust_manager()_5]] - code - gateway/tests/test_a2a_trust_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -95,19 +84,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_test_a2a_proxy.py]]
-- 29 edges to [[_COMMUNITY_TrustConfig]]
-- 26 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 12 edges to [[_COMMUNITY_A2APolicyEngine (3)]]
-- 9 edges to [[_COMMUNITY_A2AMethod]]
+- 30 edges to [[_COMMUNITY_TrustConfig]]
+- 20 edges to [[_COMMUNITY_test_a2a_proxy.py]]
+- 18 edges to [[_COMMUNITY_A2APolicyEngine (3)]]
+- 14 edges to [[_COMMUNITY_A2AMethod]]
+- 12 edges to [[_COMMUNITY_test_a2a_policy.py]]
 - 2 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_TrustConfig (2)]]
 
 ## Top bridge nodes
-- [[A2APolicyEngine_1]] - degree 58, connects to 5 communities
-- [[A2AMethod]] - degree 29, connects to 5 communities
-- [[A2APolicyConfig]] - degree 27, connects to 4 communities
-- [[A2AProxy]] - degree 37, connects to 2 communities
-- [[A2AProxyResult]] - degree 15, connects to 2 communities
+- [[A2APolicyEngine_2]] - degree 58, connects to 5 communities
+- [[A2AProxy_1]] - degree 37, connects to 4 communities
+- [[A2AProxyResult]] - degree 15, connects to 4 communities
+- [[a2a_proxy.py]] - degree 10, connects to 3 communities
+- [[test_a2a_trust_scoring.py]] - degree 19, connects to 2 communities

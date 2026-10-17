@@ -1,16 +1,22 @@
 ---
 type: community
-members: 3
+members: 9
 ---
 
 # FR3: System Integrity (2)
 
-**Members:** 3 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[log()_5]] - code - docker/scripts/security-report-retention.sh
+- [[_stamp_read()]] - code - docker/scripts/security-scheduler.sh
+- [[_stamp_write()]] - code - docker/scripts/security-scheduler.sh
+- [[gateway-seccomp.json (Docker seccomp profile)]] - code - docker/seccomp/gateway-seccomp.json
+- [[log()_9]] - code - docker/scripts/security-report-retention.sh
+- [[log()_10]] - code - docker/scripts/security-scheduler.sh
 - [[security-report-retention.sh]] - code - docker/scripts/security-report-retention.sh
 - [[security-report-retention.sh script]] - code - docker/scripts/security-report-retention.sh
+- [[security-scheduler.sh]] - code - docker/scripts/security-scheduler.sh
+- [[security-scheduler.sh script]] - code - docker/scripts/security-scheduler.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
+- 3 edges to [[_COMMUNITY_FR3 System Integrity]]
 
 ## Top bridge nodes
-- [[security-report-retention.sh]] - degree 3, connects to 1 community
+- [[security-scheduler.sh]] - degree 9, connects to 1 community

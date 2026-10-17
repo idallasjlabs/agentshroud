@@ -45,7 +45,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_SecurityFinding]]
 - 2 edges to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06 (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30]]
+- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30 (2)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06]]
 - 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-20 (PROD run, full)]]

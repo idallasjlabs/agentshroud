@@ -8,11 +8,11 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_65]] - code - gateway/security/module_stats.py
-- [[dot-record()_1]] - code - gateway/security/module_stats.py
-- [[dot-reset()_1]] - code - gateway/security/module_stats.py
-- [[dot-setup_method()_7]] - code - gateway/tests/test_module_stats.py
-- [[dot-setup_method()_8]] - code - gateway/tests/test_module_stats.py
+- [[dot-__init__()_78]] - code - gateway/security/module_stats.py
+- [[dot-record()_2]] - code - gateway/security/module_stats.py
+- [[dot-reset()_2]] - code - gateway/security/module_stats.py
+- [[dot-setup_method()_9]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_10]] - code - gateway/tests/test_module_stats.py
 - [[dot-snapshot()]] - code - gateway/security/module_stats.py
 - [[dot-test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
@@ -59,20 +59,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 9 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 8 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 6 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
 - 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
 - 2 edges to [[_COMMUNITY_A2APolicyEngine]]
 - 2 edges to [[_COMMUNITY_A2AMethod]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
 - 1 edge to [[_COMMUNITY_ModuleStatsCollector (2)]]
 
 ## Top bridge nodes
-- [[record_decision()]] - degree 20, connects to 7 communities
-- [[test_module_stats.py]] - degree 18, connects to 2 communities
-- [[TestEnforcementWiring]] - degree 11, connects to 2 communities
-- [[TestEgressWiringEndToEnd]] - degree 10, connects to 2 communities
+- [[record_decision()]] - degree 20, connects to 8 communities
+- [[test_module_stats.py]] - degree 18, connects to 3 communities
+- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
+- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
 - [[get_collector()]] - degree 11, connects to 1 community

@@ -57,5 +57,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[ADR-006 Multi-Runtime Container Support]] - degree 19, connects to 1 community
-- [[Tailscale (encrypted overlay network)]] - degree 2, connects to 1 community
 - [[VPN Networking Fix (Cisco AnyConnect) runbook]] - degree 2, connects to 1 community
+- [[Tailscale (encrypted overlay network)]] - degree 2, connects to 1 community

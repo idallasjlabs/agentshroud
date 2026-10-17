@@ -8,14 +8,14 @@ members: 66
 **Members:** 66 nodes
 
 ## Members
-- [[dot-__init__()_176]] - code - gateway/security/delegation.py
+- [[dot-__init__()_198]] - code - gateway/security/delegation.py
 - [[dot-_load()]] - code - gateway/security/delegation.py
 - [[dot-_require_owner()]] - code - gateway/security/delegation.py
 - [[dot-_revoke_by_user_privilege()]] - code - gateway/security/delegation.py
 - [[dot-_save()]] - code - gateway/security/delegation.py
-- [[dot-cleanup_expired()_2]] - code - gateway/security/delegation.py
+- [[dot-cleanup_expired()_3]] - code - gateway/security/delegation.py
 - [[dot-delegate()]] - code - gateway/security/delegation.py
-- [[dot-from_dict()_8]] - code - gateway/security/delegation.py
+- [[dot-from_dict()_9]] - code - gateway/security/delegation.py
 - [[dot-get_active_delegations()]] - code - gateway/security/delegation.py
 - [[dot-get_delegations_for_user()]] - code - gateway/security/delegation.py
 - [[dot-is_active()]] - code - gateway/security/delegation.py
@@ -44,7 +44,7 @@ members: 66
 - [[dot-test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-to_dict()_13]] - code - gateway/security/delegation.py
+- [[dot-to_dict()_14]] - code - gateway/security/delegation.py
 - [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
 - [[Create a time-bounded delegation.          Args             owner_id Must matc]] - rationale - gateway/security/delegation.py
 - [[Delegation_1]] - code - gateway/security/delegation.py
@@ -72,7 +72,7 @@ members: 66
 - [[TestSerialization_2]] - code - gateway/tests/test_delegation.py
 - [[ValueError]] - code
 - [[delegation.py]] - code - gateway/security/delegation.py
-- [[mgr()_1]] - code - gateway/tests/test_delegation.py
+- [[mgr()_2]] - code - gateway/tests/test_delegation.py
 - [[test_delegation.py]] - code - gateway/tests/test_delegation.py
 
 ## Live Query (requires Dataview plugin)
@@ -83,26 +83,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 4 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_Path (2)]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
+- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
 - 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
 - 1 edge to [[_COMMUNITY_05-behavior]]
 
 ## Top bridge nodes
 - [[FR2 Use Control]] - degree 7, connects to 6 communities
 - [[DelegationPrivilege]] - degree 25, connects to 5 communities
-- [[DelegationManager_1]] - degree 26, connects to 3 communities
+- [[DelegationManager_1]] - degree 26, connects to 2 communities
 - [[delegation.py]] - degree 6, connects to 1 community
-- [[dot-from_dict()_8]] - degree 3, connects to 1 community
+- [[dot-from_dict()_9]] - degree 3, connects to 1 community

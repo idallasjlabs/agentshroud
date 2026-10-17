@@ -19,7 +19,7 @@ members: 27
 - [[dot-test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_valid_event_source_accepted()]] - code - gateway/tests/test_session_security.py
 - [[dot-validate_event()]] - code - gateway/security/session_security.py
-- [[Any_44]] - code - gateway/security/session_security.py
+- [[Any_45]] - code - gateway/security/session_security.py
 - [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - paper - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Each call generates a distinct nonce.]] - rationale - gateway/tests/test_session_security.py
 - [[EventInjectionError]] - code - gateway/security/session_security.py
@@ -46,16 +46,17 @@ SORT file.name ASC
 ## Connections to other communities
 - 21 edges to [[_COMMUNITY_SessionManager (2)]]
 - 6 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report (2)]]
-- 4 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 2 edges to [[_COMMUNITY_ConsentFramework]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 2 edges to [[_COMMUNITY_ConsentFramework (2)]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (2) (3)]]
+- 1 edge to [[_COMMUNITY_TrustConfig (2)]]
 - 1 edge to [[_COMMUNITY_TestInstructionNonce]]
 - 1 edge to [[_COMMUNITY_TestInstructionNonce (2)]]
 - 1 edge to [[_COMMUNITY_TestInstructionNonce (3)]]
 - 1 edge to [[_COMMUNITY_test_prompt_guard.py (2)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
 
 ## Top bridge nodes
-- [[session_security.py]] - degree 14, connects to 4 communities
+- [[session_security.py]] - degree 14, connects to 5 communities
 - [[TestInstructionNonce]] - degree 12, connects to 4 communities
 - [[SessionError]] - degree 16, connects to 3 communities
 - [[test_session_security.py]] - degree 10, connects to 3 communities

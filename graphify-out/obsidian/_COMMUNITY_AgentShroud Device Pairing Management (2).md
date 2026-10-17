@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[1. Regular Audits]] - document - docs/setup/DEVICE_PAIRING.md
-- [[2. Principle of Least Privilege]] - document - docs/setup/DEVICE_PAIRING.md
-- [[3. Monitor Remote IPs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[4. Document Your Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[5. Rotate on Compromise]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Best Practices]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Common Scenarios]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 1 New BrowserComputer]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 2 Safari Private Window]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 3 Multiple Computers]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 4 LostStolen Device]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 5 Clear All Devices (Nuclear Option)]] - document - docs/setup/DEVICE_PAIRING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,4 +26,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
 
 ## Top bridge nodes
-- [[Security Best Practices]] - degree 6, connects to 1 community
+- [[Common Scenarios]] - degree 6, connects to 1 community

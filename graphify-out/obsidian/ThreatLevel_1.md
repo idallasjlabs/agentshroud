@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ConsentFramework"
+community: "ConsentFramework (2)"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConsentFramework
+  - community/ConsentFramework_2
 ---
 
 # ThreatLevel
@@ -22,4 +22,4 @@ tags:
 - [[ThreatLevel]] - `semantically_similar_to` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework
+#graphify/code #graphify/INFERRED #community/ConsentFramework_2

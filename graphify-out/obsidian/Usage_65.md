@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
-- [[Click Element_2]] - `contains` [EXTRACTED]
-- [[Extract Data_2]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
-- [[Fill Form_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_2]] - `contains` [EXTRACTED]
-- [[Take Screenshot_2]] - `contains` [EXTRACTED]
+- [[Click Element_3]] - `contains` [EXTRACTED]
+- [[Extract Data_3]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
+- [[Fill Form_2]] - `contains` [EXTRACTED]
+- [[Navigate to URL_3]] - `contains` [EXTRACTED]
+- [[Take Screenshot_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2

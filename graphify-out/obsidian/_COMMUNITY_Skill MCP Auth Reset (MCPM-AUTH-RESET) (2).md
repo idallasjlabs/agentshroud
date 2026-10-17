@@ -17,7 +17,7 @@ members: 17
 - [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Related Skills_88]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_62]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Role_65]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Troubleshooting_32]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2) (2)]]
 
 ## Top bridge nodes
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - degree 9, connects to 1 community

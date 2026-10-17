@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/metadata_guard.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L39"
+community: "AlertDispatcher (2)"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[MetadataGuard]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: "src/interfaces/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect (5)"
-location: "L10"
+community: "Control Center"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_5
+  - community/Control_Center
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Control Center]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_5
+#graphify/document #graphify/EXTRACTED #community/Control_Center

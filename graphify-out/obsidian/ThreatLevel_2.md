@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-highest_threat()]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
@@ -37,7 +37,7 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[Threat level classification.]] - `rationale_for` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 

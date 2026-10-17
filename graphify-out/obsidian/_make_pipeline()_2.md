@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L231"
+community: "test_clamav_pipeline.py"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/test_clamav_pipelinepy
 ---
 
 # _make_pipeline()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
-- [[test_pipeline_blocks_and_downstream_not_reached()_1]] - `calls` [EXTRACTED]
-- [[test_pipeline_disabled_guard_passthrough()]] - `calls` [EXTRACTED]
-- [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
+- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
+- [[test_pipeline_clamav_clean_payload()]] - `calls` [EXTRACTED]
+- [[test_pipeline_clamav_error_fail_open()]] - `calls` [EXTRACTED]
+- [[test_pipeline_clamav_malware_blocked()]] - `calls` [EXTRACTED]
+- [[test_pipeline_clamav_not_configured()]] - `calls` [EXTRACTED]
+- [[test_pipeline_short_base64_not_scanned()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

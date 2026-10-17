@@ -1,17 +1,15 @@
 ---
 type: community
-members: 4
+members: 2
 ---
 
 # Gateway-Enforced Intel Verification (SCRUM-75)
 
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Anti-Security-Theater Principle]] - rationale - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
 - [[Competitive Intelligence Report Standard Prompt (Hermes)]] - document - docker/config/hermes/workspace/competitive-analysis.md
 - [[Gateway-Enforced Intel Verification (SCRUM-75)]] - concept - docker/config/hermes/workspace/competitive-analysis.md
-- [[SOUL.md — Isaiah Jefferson Persona]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
 
 ## Live Query (requires Dataview plugin)
 

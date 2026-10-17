@@ -11,7 +11,7 @@ members: 23
 - [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Best Practices_7]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Kill Switch]] - document - dashboard/README.md
@@ -41,11 +41,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
 - 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
 - 1 edge to [[_COMMUNITY_Git History Purge Plan]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
 
 ## Top bridge nodes
 - [[Kill Switch]] - degree 9, connects to 3 communities

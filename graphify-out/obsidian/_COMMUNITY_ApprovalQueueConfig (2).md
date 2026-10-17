@@ -1,30 +1,30 @@
 ---
 type: community
-members: 120
+members: 121
 ---
 
 # ApprovalQueueConfig (2)
 
-**Members:** 120 nodes
+**Members:** 121 nodes
 
 ## Members
-- [[dot-__init__()_96]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-__init__()_97]] - code - gateway/approval_queue/store.py
+- [[dot-__init__()_91]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-__init__()_92]] - code - gateway/approval_queue/store.py
 - [[dot-_notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-_schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-_timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-close()_8]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-close()_9]] - code - gateway/approval_queue/store.py
+- [[dot-close()_9]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_10]] - code - gateway/approval_queue/store.py
 - [[dot-connect()_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-decide()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-disconnect()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-disconnect()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-get_item()_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-get_pending()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-initialize()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-initialize()_1]] - code - gateway/approval_queue/store.py
+- [[dot-initialize()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-initialize()_2]] - code - gateway/approval_queue/store.py
 - [[dot-mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
 - [[dot-requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-send_json()]] - code - gateway/tests/test_enhanced_approval.py
@@ -41,18 +41,21 @@ members: 120
 - [[dot-test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
 - [[dot-test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
 - [[dot-test_wait_for_decision()]] - code - gateway/tests/test_enhanced_approval.py
 - [[dot-update_status()]] - code - gateway/approval_queue/store.py
 - [[dot-wait_for_decision()_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[A WebSocket stand-in whose send_json never returns.      Models a real-world dea]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
 - [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Any_30]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Any_29]] - code - gateway/approval_queue/enhanced_queue.py
 - [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
-- [[ApprovalQueueConfig_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalQueueConfig_2]] - code - gateway/ingest_api/config.py
-- [[ApprovalQueueItem_3]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalRequest_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueConfig]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueConfig_1]] - code - gateway/ingest_api/config.py
+- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem_2]] - code - gateway/ingest_api/models.py
+- [[ApprovalRequest_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[ApprovalStore]] - code - gateway/approval_queue/store.py
 - [[ApprovalStore_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - rationale - gateway/tests/test_mcp_policy.py
@@ -65,7 +68,6 @@ members: 120
 - [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[EnhancedApprovalQueue_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
 - [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
@@ -73,11 +75,11 @@ members: 120
 - [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Initialize enhanced approval queue.          Args             config Basic app]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
 - [[MCPProxy.check_approval_required]] - code - gateway/proxy/mcp_proxy.py
-- [[MFAGuard_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[MonkeyPatch]] - code - gateway/tests/test_mcp_policy.py
+- [[MFAGuard]] - code - gateway/approval_queue/enhanced_queue.py
 - [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
-- [[Path_23]] - code - gateway/approval_queue/store.py
+- [[Path_21]] - code - gateway/approval_queue/store.py
 - [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
@@ -115,11 +117,10 @@ members: 120
 - [[ToolRiskPolicy_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
 - [[Wait for an approval decision.          Returns             True if approved, F]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[WebSocket_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[WebSocket_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[_HangingWebSocket]] - code - gateway/tests/test_enhanced_approval.py
 - [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
 - [[broadcast() itself must bound its wait per-client, not just rely on     callers]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
 - [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
 - [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
@@ -137,33 +138,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 30 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 28 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 24 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 20 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 17 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 5 edges to [[_COMMUNITY_create_auth_dependency]]
-- 4 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 4 edges to [[_COMMUNITY_main.py]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 30 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 22 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 21 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 21 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 15 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 15 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 15 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 13 edges to [[_COMMUNITY_ApprovalQueueConfig (4)_1]]
+- 8 edges to [[_COMMUNITY_ApprovalQueueConfig (2)_1]]
+- 6 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 4 edges to [[_COMMUNITY_main.py_1]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
 - 3 edges to [[_COMMUNITY_TestSSRFDetection (6)]]
-- 3 edges to [[_COMMUNITY_AgentRegistry]]
-- 3 edges to [[_COMMUNITY__FakeRBAC]]
-- 3 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
 - 2 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 2 edges to [[_COMMUNITY_02-infrastructure.md (2)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
 - 1 edge to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_ServiceManager (3)]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_TestMCPResultEndpoint]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency (3)]]
 
 ## Top bridge nodes
-- [[ApprovalQueueConfig_2]] - degree 80, connects to 11 communities
-- [[EnhancedApprovalQueue_1]] - degree 59, connects to 10 communities
-- [[enhanced_queue.py]] - degree 15, connects to 8 communities
+- [[ApprovalQueueConfig_1]] - degree 80, connects to 11 communities
+- [[EnhancedApprovalQueue_1]] - degree 59, connects to 8 communities
 - [[ApprovalStore]] - degree 60, connects to 7 communities
-- [[ToolRiskConfig]] - degree 38, connects to 7 communities
+- [[ApprovalQueueItem_2]] - degree 30, connects to 7 communities
+- [[enhanced_queue.py]] - degree 15, connects to 7 communities

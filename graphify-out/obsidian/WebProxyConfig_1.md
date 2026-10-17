@@ -12,12 +12,12 @@ tags:
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_100]] - `calls` [EXTRACTED]
+- [[dot-__init__()_123]] - `calls` [EXTRACTED]
 - [[dot-allowlist_config()]] - `calls` [EXTRACTED]
 - [[dot-get_domain_settings()]] - `method` [EXTRACTED]
 - [[dot-is_domain_allowed()]] - `method` [EXTRACTED]
 - [[dot-is_domain_denied()]] - `method` [EXTRACTED]
-- [[dot-test_case_insensitive()_1]] - `calls` [EXTRACTED]
+- [[dot-test_case_insensitive()_3]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
 - [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
 - [[dot-test_default_mode_is_denylist()]] - `calls` [EXTRACTED]
@@ -31,14 +31,14 @@ tags:
 - [[dot-test_wildcard_matches_root_domain()]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_matches_subdomain()]] - `calls` [EXTRACTED]
 - [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[StreamReader_3]] - `uses` [INFERRED]
 - [[StreamReader]] - `uses` [INFERRED]
 - [[StreamWriter_2]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
@@ -67,7 +67,7 @@ tags:
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[config()_1]] - `calls` [EXTRACTED]
 - [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - `rationale_for` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
@@ -84,6 +84,6 @@ tags:
 - [[test_proxy_created_with_custom_web_proxy()]] - `calls` [EXTRACTED]
 - [[test_telegram_api_blocked_in_connect_proxy()]] - `calls` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

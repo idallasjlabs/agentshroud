@@ -12,7 +12,7 @@ members: 27
 - [[2. Verify You're Authorized]] - document - docs/user-guide.md
 - [[3. Start Chatting]] - document - docs/user-guide.md
 - [[AgentShroud User Guide]] - document - docs/user-guide.md
-- [[Commands_3]] - document - docs/user-guide.md
+- [[Commands_1]] - document - docs/user-guide.md
 - [[Dashboard Overview]] - document - docs/user-guide.md
 - [[FAQ]] - document - docs/user-guide.md
 - [[Getting Started]] - document - docs/user-guide.md

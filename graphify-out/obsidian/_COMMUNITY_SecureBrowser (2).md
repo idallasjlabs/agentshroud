@@ -8,7 +8,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_50]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_60]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -19,11 +19,11 @@ members: 44
 - [[dot-_take_screenshot()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_validate_url()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-click()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-close()_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-close()_5]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-detect_captcha()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-extract()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-fill_field()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-get_audit_log()_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-get_audit_log()_2]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-navigate()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[CLI interface for SecureBrowser_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Check if action requires approval          Security Approval queue integration_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -42,16 +42,16 @@ members: 44
 - [[Raised when security policy is violated_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Return complete audit log_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Risk classification for browser actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[RiskLevel_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[RiskLevel_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Secure browser automation with enterprise controls      Security guarantees_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[SecureBrowser_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Security configuration for browser automation_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecurityConfig_2]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecurityConfig_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[SecurityError_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Take screenshot and save to audit directory_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[hermesskillsi-browserscriptsbrowse.py]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[main()_5]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[main()_7]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,9 +62,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
 
 ## Top bridge nodes
 - [[SecurityError_1]] - degree 7, connects to 1 community
 - [[hermesskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
-- [[RiskLevel_1]] - degree 6, connects to 1 community
+- [[RiskLevel_3]] - degree 6, connects to 1 community

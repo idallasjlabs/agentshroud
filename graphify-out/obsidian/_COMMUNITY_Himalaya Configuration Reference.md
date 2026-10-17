@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 
 ## Top bridge nodes
 - [[Himalaya Configuration Reference]] - degree 10, connects to 1 community

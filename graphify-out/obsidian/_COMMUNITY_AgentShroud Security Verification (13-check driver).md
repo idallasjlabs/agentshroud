@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 
 ## Top bridge nodes
 - [[SecureClaw Security Review (SEC)]] - degree 3, connects to 1 community

@@ -12,6 +12,6 @@ tags:
 # Trust levels from untrusted to verified.
 
 ## Connections
-- [[TrustLevel]] - `rationale_for` [EXTRACTED]
+- [[TrustLevel_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TrustConfig

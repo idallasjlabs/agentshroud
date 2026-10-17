@@ -12,7 +12,7 @@ tags:
 # _score_image_signing_provenance()
 
 ## Connections
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[Path_32]] - `calls` [EXTRACTED]
 - [[Score domain 17 Image Signing & Provenance (0-5). NIST 800-190 §3.1.      0=no]] - `rationale_for` [EXTRACTED]
 - [[_is_containerized()]] - `calls` [EXTRACTED]
 - [[_security_scan_sh_text()]] - `calls` [EXTRACTED]

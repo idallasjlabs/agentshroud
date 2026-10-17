@@ -27,8 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 - 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
 - 1 edge to [[_COMMUNITY_Common Operations]]
 
 ## Top bridge nodes

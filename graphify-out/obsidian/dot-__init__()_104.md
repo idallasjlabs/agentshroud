@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

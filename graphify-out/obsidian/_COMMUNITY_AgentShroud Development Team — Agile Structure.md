@@ -19,7 +19,7 @@ members: 19
 - [[Development Workflow_1]] - document - docs/TEAM.md
 - [[Engineers (Backend, Frontend, Full-Stack)]] - document - docs/TEAM.md
 - [[Hardware]] - document - docs/TEAM.md
-- [[How It Works_2]] - document - docs/TEAM.md
+- [[How It Works_1]] - document - docs/TEAM.md
 - [[Key Principles]] - document - docs/TEAM.md
 - [[Product Owner]] - document - docs/TEAM.md
 - [[QA  Test Engineers — Embedded, Not a Separate Gate]] - document - docs/TEAM.md

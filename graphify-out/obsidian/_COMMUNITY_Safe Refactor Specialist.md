@@ -11,15 +11,15 @@ members: 22
 - [[Bad API Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
 - [[Bad Logic Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
 - [[Critical Rules_3]] - document - .github/agents/safe-refactor.agent.md
-- [[Definition of Done_1]] - document - .github/agents/safe-refactor.agent.md
+- [[Definition of Done_2]] - document - .github/agents/safe-refactor.agent.md
 - [[Example Refactorings]] - document - .github/agents/safe-refactor.agent.md
 - [[Forbidden Changes]] - document - .github/agents/safe-refactor.agent.md
 - [[Good Extract Helper]] - document - .github/agents/safe-refactor.agent.md
 - [[Good Variable Renaming]] - document - .github/agents/safe-refactor.agent.md
 - [[Refactoring Workflow]] - document - .github/agents/safe-refactor.agent.md
-- [[Remember_1]] - document - .github/agents/safe-refactor.agent.md
-- [[Repository Context_2]] - document - .github/agents/safe-refactor.agent.md
-- [[Role Definition_1]] - document - .github/agents/safe-refactor.agent.md
+- [[Remember_2]] - document - .github/agents/safe-refactor.agent.md
+- [[Repository Context_3]] - document - .github/agents/safe-refactor.agent.md
+- [[Role Definition_2]] - document - .github/agents/safe-refactor.agent.md
 - [[Safe Refactor Specialist]] - document - .github/agents/safe-refactor.agent.md
 - [[Safe Refactorings]] - document - .github/agents/safe-refactor.agent.md
 - [[Step 1 Verify Tests Pass]] - document - .github/agents/safe-refactor.agent.md
@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
+- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
 
 ## Top bridge nodes
 - [[Safe Refactor Specialist]] - degree 10, connects to 1 community

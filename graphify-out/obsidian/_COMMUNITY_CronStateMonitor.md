@@ -8,11 +8,11 @@ members: 56
 **Members:** 56 nodes
 
 ## Members
-- [[dot-__call__()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-__call__()_1]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_32]] - code - gateway/security/cron_state_monitor.py
-- [[dot-__init__()_33]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__call__()_2]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_33]] - code - gateway/security/cron_state_monitor.py
 - [[dot-__init__()_34]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_35]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-_dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_episode_id()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_evaluate()]] - code - gateway/security/cron_state_monitor.py
@@ -73,8 +73,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
 
 ## Top bridge nodes
 - [[CronStateMonitor]] - degree 36, connects to 2 communities

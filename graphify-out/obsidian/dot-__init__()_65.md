@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L41"
+community: "ConsentFramework"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ConsentFramework
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

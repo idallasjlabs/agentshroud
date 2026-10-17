@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: ".test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined"
-location: "L4383"
+community: "FakeRBAC"
+location: "L4401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined
+  - community/FakeRBAC
 ---
 
 # Unsafe URL scheme fetch requests should be blocked and quarantined.
 
 ## Connections
-- [[dot-test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

@@ -1,16 +1,41 @@
 ---
 type: community
-members: 66
+members: 125
 ---
 
 # TestEgressApprovalQueue
 
-**Members:** 66 nodes
+**Members:** 125 nodes
 
 ## Members
+- [[dot-__init__()_89]] - code - gateway/security/egress_approval.py
+- [[dot-_append_decision()]] - code - gateway/security/egress_approval.py
+- [[dot-_assess_risk()]] - code - gateway/security/egress_approval.py
+- [[dot-_check_existing_rule()]] - code - gateway/security/egress_approval.py
+- [[dot-_load_rules()]] - code - gateway/security/egress_approval.py
+- [[dot-_rule_to_dict()]] - code - gateway/security/egress_approval.py
+- [[dot-_save_rules()]] - code - gateway/security/egress_approval.py
+- [[dot-add_rule()]] - code - gateway/security/egress_approval.py
 - [[dot-approval_queue()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-approve()]] - code - gateway/security/egress_approval.py
+- [[dot-cleanup_expired()]] - code - gateway/security/egress_approval.py
+- [[dot-deny()]] - code - gateway/security/egress_approval.py
+- [[dot-from_dict()_3]] - code - gateway/security/egress_approval.py
+- [[dot-get_all_rules()]] - code - gateway/security/egress_approval.py
+- [[dot-get_decision_log()]] - code - gateway/security/egress_approval.py
+- [[dot-get_emergency_status()]] - code - gateway/security/egress_approval.py
+- [[dot-get_pending_requests()]] - code - gateway/security/egress_approval.py
+- [[dot-get_rules_for_user()]] - code - gateway/security/egress_approval.py
+- [[dot-log_external_decision()]] - code - gateway/security/egress_approval.py
+- [[dot-matches()]] - code - gateway/security/egress_approval.py
 - [[dot-mock_app_state()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-mock_auth()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-preload_permanent_rules()]] - code - gateway/security/egress_approval.py
+- [[dot-remove_rule()]] - code - gateway/security/egress_approval.py
+- [[dot-request_approval()]] - code - gateway/security/egress_approval.py
+- [[dot-revoke_decision()]] - code - gateway/security/egress_approval.py
+- [[dot-set_emergency_block_all()]] - code - gateway/security/egress_approval.py
+- [[dot-set_event_bus()]] - code - gateway/security/egress_approval.py
 - [[dot-temp_rules_file()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_add_egress_rule_endpoint()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_allowlist_persistence()]] - code - gateway/tests/test_egress_approval.py
@@ -18,7 +43,7 @@ members: 66
 - [[dot-test_approval_flow_permanent()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_approval_flow_session()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_approve_endpoint_logic()]] - code - gateway/tests/test_egress_approval.py
-- [[dot-test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_cleanup_expired_requests()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_denial_flow()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_deny_endpoint_logic()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_denylist_persistence()]] - code - gateway/tests/test_egress_approval.py
@@ -37,18 +62,50 @@ members: 66
 - [[dot-test_rule_management()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_session_rules_not_persisted()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_timeout_behavior()]] - code - gateway/tests/test_egress_approval.py
+- [[dot-to_dict()_7]] - code - gateway/security/egress_approval.py
+- [[Add or modify an egress rule.          Args             domain Target domain]] - rationale - gateway/security/egress_approval.py
+- [[Append an entry to the capped decision audit log (CC-40).]] - rationale - gateway/security/egress_approval.py
+- [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
+- [[ApprovalMode]] - code - gateway/security/egress_approval.py
+- [[Approve a pending egress request.          Args             request_id ID of r]] - rationale - gateway/security/egress_approval.py
+- [[Assess risk level for a domainport combination.          Returns             R]] - rationale - gateway/security/egress_approval.py
+- [[Check if domain matches an existing rule.]] - rationale - gateway/security/egress_approval.py
 - [[Create EgressApprovalQueue instance for testing.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Create temporary rules file for testing.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Decision log is capped at 500 entries.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Defines who an egress rule applies to.      kind values       all   — applies]] - rationale - gateway/security/egress_approval.py
+- [[Deny a pending egress request.          Args             request_id ID of requ]] - rationale - gateway/security/egress_approval.py
 - [[Different agent_ids for the same domain each produce their own log entry.]] - rationale - gateway/tests/test_egress_approval.py
+- [[EgressApprovalQueue]] - code - gateway/security/egress_approval.py
 - [[EgressRequest_1]] - code - gateway/security/egress_approval.py
+- [[EgressRule]] - code - gateway/security/egress_approval.py
+- [[EgressScope]] - code - gateway/security/egress_approval.py
 - [[Emergency block-all should deny all new approval requests.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Enabledisable emergency global egress deny.]] - rationale - gateway/security/egress_approval.py
+- [[Get all rules (permanent and session) with scope information.]] - rationale - gateway/security/egress_approval.py
+- [[Get emergency block-all state.]] - rationale - gateway/security/egress_approval.py
+- [[Get list of pending approval requests.]] - rationale - gateway/security/egress_approval.py
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - rationale - gateway/security/egress_approval.py
+- [[Load rules from persistent storage.]] - rationale - gateway/security/egress_approval.py
+- [[Log an automatic allowdeny from EgressFilter.check() (non-interactive).]] - rationale - gateway/security/egress_approval.py
 - [[Mock app_state with egress approval queue.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Mock authentication dependency.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Pre-approve known service domains at startup without interactive prompts.]] - rationale - gateway/security/egress_approval.py
+- [[Public risk assessment helper for managementAPI surfaces.]] - rationale - gateway/security/egress_approval.py
+- [[Remove an egress rule.          Args             domain Domain to remove rule]] - rationale - gateway/security/egress_approval.py
+- [[Remove expired session rules and timed-out requests.]] - rationale - gateway/security/egress_approval.py
 - [[Represents a pending egress approval request.]] - rationale - gateway/security/egress_approval.py
+- [[Represents an egress allowdeny rule.]] - rationale - gateway/security/egress_approval.py
+- [[Request approval for egress to a domainport.          Args             domain]] - rationale - gateway/security/egress_approval.py
+- [[Return True if this scope applies to the given user context.]] - rationale - gateway/security/egress_approval.py
+- [[Return all rules whose scope matches the given user context (synchronous, lock-f]] - rationale - gateway/security/egress_approval.py
+- [[Return recent approvaldenial decisions (CC-40).]] - rationale - gateway/security/egress_approval.py
+- [[Revoke an active rule associated with a decision log entry (CC-40).]] - rationale - gateway/security/egress_approval.py
 - [[Risk assessment levels for egress requests.]] - rationale - gateway/security/egress_approval.py
 - [[RiskLevel_6]] - code - gateway/security/egress_approval.py
+- [[Save rules to persistent storage.]] - rationale - gateway/security/egress_approval.py
 - [[Second call within 1 hour for the same (agent_id, domain) is suppressed.]] - rationale - gateway/tests/test_egress_approval.py
+- [[Set optional event bus for approval telemetry.]] - rationale - gateway/security/egress_approval.py
 - [[Test DELETE manageegressrules{domain} endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Test GET manageegresspending endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Test GET manageegressrules endpoint.]] - rationale - gateway/tests/test_egress_approval.py
@@ -72,6 +129,8 @@ members: 66
 - [[Test that session rules are not persisted to disk.]] - rationale - gateway/tests/test_egress_approval.py
 - [[TestEgressApprovalAPI]] - code - gateway/tests/test_egress_approval.py
 - [[TestEgressApprovalQueue]] - code - gateway/tests/test_egress_approval.py
+- [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - rationale - gateway/security/egress_approval.py
+- [[egress_approval.py]] - code - gateway/security/egress_approval.py
 - [[log_external_decision appends an entry to the decision log.]] - rationale - gateway/tests/test_egress_approval.py
 - [[test_egress_approval.py]] - code - gateway/tests/test_egress_approval.py
 
@@ -83,14 +142,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 6 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 4 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
+- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
 
 ## Top bridge nodes
-- [[TestEgressApprovalQueue]] - degree 29, connects to 2 communities
-- [[TestEgressApprovalAPI]] - degree 15, connects to 2 communities
-- [[RiskLevel_6]] - degree 7, connects to 2 communities
-- [[test_egress_approval.py]] - degree 7, connects to 2 communities
-- [[EgressRequest_1]] - degree 7, connects to 1 community
+- [[ApprovalMode]] - degree 20, connects to 6 communities
+- [[egress_approval.py]] - degree 11, connects to 5 communities
+- [[EgressApprovalQueue]] - degree 35, connects to 3 communities
+- [[dot-request_approval()]] - degree 7, connects to 2 communities
+- [[TestEgressApprovalQueue]] - degree 29, connects to 1 community

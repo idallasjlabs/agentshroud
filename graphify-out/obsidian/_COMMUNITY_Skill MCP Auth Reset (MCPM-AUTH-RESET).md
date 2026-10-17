@@ -17,7 +17,7 @@ members: 17
 - [[GitHub Bad credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[GitHub Docker image not found_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Related Skills_87]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_59]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Role_62]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Security Best Practices_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Troubleshooting_31]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md

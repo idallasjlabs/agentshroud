@@ -1,16 +1,18 @@
 ---
 type: community
-members: 15
+members: 17
 ---
 
 # test-sunday-upgrade-scan.sh
 
-**Members:** 15 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[check()_9]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[check()_10]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[check()_9]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[check()_10]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[dev_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[handoff_status()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
@@ -36,5 +38,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentTarget (5)]]
 
 ## Top bridge nodes
-- [[test-sunday-upgrade-scan.sh]] - degree 10, connects to 1 community
+- [[test-sunday-upgrade-scan.sh]] - degree 12, connects to 1 community
 - [[smoke.sh Startup Smoke Runner]] - degree 4, connects to 1 community

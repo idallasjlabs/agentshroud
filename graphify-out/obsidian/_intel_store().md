@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_path()]] - `calls` [INFERRED]
-- [[IntelReportStore_1]] - `calls` [EXTRACTED]
+- [[IntelReportStore]] - `calls` [EXTRACTED]
 - [[Return an IntelReportStore pointed at the configured data directory.]] - `rationale_for` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[get_competitive_intel()]] - `calls` [EXTRACTED]

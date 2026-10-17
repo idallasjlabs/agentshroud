@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "UserSessionManager (4)"
+community: "discover_upstream_versions.py"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/discover_upstream_versionspy
 ---
 
 # _ipv4_only()
@@ -19,4 +19,4 @@ tags:
 - [[_guarded_fetch()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

@@ -12,6 +12,6 @@ tags:
 # Verify a TOTP second factor for high-risk operations (fail-closed).      Args:
 
 ## Connections
-- [[MFAGuard_2]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

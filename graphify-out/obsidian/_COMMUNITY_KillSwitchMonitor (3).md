@@ -37,10 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_PipelineAction]]
+- 3 edges to [[_COMMUNITY_AuditChain]]
 - 2 edges to [[_COMMUNITY_test_prompt_guard.py]]
 - 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 
 ## Top bridge nodes
 - [[TestObservatoryMode]] - degree 15, connects to 3 communities

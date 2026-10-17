@@ -12,6 +12,6 @@ tags:
 # `HTTPConnectProxy._handle_client(reader, writer)`
 
 ## Connections
-- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Function Details_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/http_proxypy

@@ -1,20 +1,21 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Blue Team Security Auditor (SEC-DEFENSE)"
-location: "L204"
+community: "GitHub Copilot CLI Setup Guide (3)"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
+  - community/GitHub_Copilot_CLI_Setup_Guide_3
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
-- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_3

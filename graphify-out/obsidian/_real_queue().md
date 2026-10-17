@@ -12,7 +12,7 @@ tags:
 # _real_queue()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]

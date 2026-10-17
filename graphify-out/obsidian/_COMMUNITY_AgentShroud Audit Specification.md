@@ -31,7 +31,7 @@ members: 37
 - [[Hash Chain Structure]] - document - docs/security/audit-specification.md
 - [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
 - [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
-- [[Overview_2]] - document - docs/security/audit-specification.md
+- [[Overview]] - document - docs/security/audit-specification.md
 - [[Performance and Scalability]] - document - docs/security/audit-specification.md
 - [[Processing Activities Register]] - document - docs/security/audit-specification.md
 - [[Query API Specification]] - document - docs/security/audit-specification.md
@@ -54,7 +54,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_system-requirements.md (2)]]
 
 ## Top bridge nodes
 - [[AgentShroud Audit Specification]] - degree 8, connects to 1 community

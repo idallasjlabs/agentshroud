@@ -1,22 +1,18 @@
 ---
 type: community
-members: 109
+members: 69
 ---
 
 # AgentRegistry
 
-**Members:** 109 nodes
+**Members:** 69 nodes
 
 ## Members
-- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
-- [[dot-__init__()_108]] - code - gateway/security/agent_isolation.py
-- [[dot-__init__()_109]] - code - gateway/security/agent_isolation.py
-- [[dot-from_dict()_4]] - code - gateway/security/agent_isolation.py
-- [[dot-generate_compose()]] - code - gateway/security/agent_isolation.py
-- [[dot-get()_3]] - code - gateway/security/agent_isolation.py
-- [[dot-list_agents()]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_191]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_192]] - code - gateway/security/agent_isolation.py
+- [[dot-from_dict()_8]] - code - gateway/security/agent_isolation.py
 - [[dot-register()]] - code - gateway/security/agent_isolation.py
-- [[dot-setup_method()_18]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_38]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
@@ -24,7 +20,7 @@ members: 109
 - [[dot-test_container_config_defaults()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_fully_isolated_agents_pass()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_generate_compose()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_get_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_get_missing_returns_none()_1]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_group_agents_are_isolatable()]] - code - gateway/tests/test_group_isolation.py
 - [[dot-test_group_and_collab_identities_coexist()]] - code - gateway/tests/test_group_isolation.py
 - [[dot-test_list_agents()]] - code - gateway/tests/test_agent_isolation.py
@@ -53,70 +49,34 @@ members: 109
 - [[dot-test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-to_dict()_5]] - code - gateway/security/agent_isolation.py
+- [[dot-to_dict()_13]] - code - gateway/security/agent_isolation.py
 - [[dot-unregister()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_network_isolation()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
 - [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
 - [[AgentRegistry]] - code - gateway/security/agent_isolation.py
-- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - rationale - gateway/tests/test_group_isolation.py
 - [[ContainerConfig]] - code - gateway/tests/test_agent_isolation.py
 - [[ContainerConfig_1]] - code - gateway/security/agent_isolation.py
-- [[Description_7]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
-- [[Effect_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
-- [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
-- [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
 - [[Helper to create a ContainerConfig with sensible defaults.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
-- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
 - [[IsolationVerifier]] - code - gateway/security/agent_isolation.py
-- [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
-- [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Register a group-{chat_id} identity in AgentRegistry.]] - rationale - gateway/tests/test_group_isolation.py
 - [[Register a supergroup-type agent identity.]] - rationale - gateway/tests/test_group_isolation.py
 - [[Register an agent with its container configuration.]] - rationale - gateway/security/agent_isolation.py
 - [[Registry mapping agent IDs to container configurations.]] - rationale - gateway/security/agent_isolation.py
-- [[Related Notes_27]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Related Notes_26]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Remove an agent from the registry.]] - rationale - gateway/security/agent_isolation.py
-- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
 - [[Serialize registry to dict.]] - rationale - gateway/security/agent_isolation.py
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[TestAgentIsolation]] - code - gateway/tests/test_security_hardening.py
 - [[TestAgentRegistry]] - code - gateway/tests/test_agent_isolation.py
+- [[TestAgentRegistryGroupIdentity]] - code - gateway/tests/test_group_isolation.py
 - [[TestGenerateCompose]] - code - gateway/tests/test_agent_isolation.py
 - [[TestNetworkIsolation]] - code - gateway/tests/test_agent_isolation.py
 - [[TestSharedNothing]] - code - gateway/tests/test_agent_isolation.py
 - [[TestVolumeIsolation]] - code - gateway/tests/test_agent_isolation.py
 - [[Two group identities should each have distinct volumes.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Values_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Verify container isolation properties.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
-- [[_build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
 - [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
-- [[agent_isolation.py]] - code - gateway/security/agent_isolation.py
 - [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - rationale - gateway/tests/test_telegram_executor.py
-- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
 - [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
-- [[test_hermes_forwarder_drops_non_http()]] - code - gateway/tests/test_telegram_executor.py
-- [[test_lifespan_hermes_forwarder_has_http_peek()]] - code - gateway/tests/test_telegram_executor.py
-- [[test_lifespan_installs_64_worker_executor()]] - code - gateway/tests/test_telegram_executor.py
-- [[test_telegram_executor.py]] - code - gateway/tests/test_telegram_executor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -126,86 +86,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 26 edges to [[_COMMUNITY_AlertDispatcher]]
-- 15 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 13 edges to [[_COMMUNITY_RBACConfig]]
-- 8 edges to [[_COMMUNITY_create_auth_dependency]]
-- 7 edges to [[_COMMUNITY_ContextSegment]]
-- 7 edges to [[_COMMUNITY_TrustConfig]]
-- 6 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 4 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 4 edges to [[_COMMUNITY_PipelineAction]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py (2)]]
-- 3 edges to [[_COMMUNITY_AuditChain]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 3 edges to [[_COMMUNITY_KillSwitchMonitor (4)]]
-- 3 edges to [[_COMMUNITY_CrossBotTrustLedger (2)]]
-- 3 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 3 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
-- 2 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (5)]]
-- 2 edges to [[_COMMUNITY_RateLimitGuard]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (6)]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 2 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_dashboard_endpoints.py (2)]]
-- 2 edges to [[_COMMUNITY_RBACConfig (3)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 1 edge to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_CronStateMonitor]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
-- 1 edge to [[_COMMUNITY_ProxyAction]]
-- 1 edge to [[_COMMUNITY_DNSBlocklist]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher (2)]]
-- 1 edge to [[_COMMUNITY_get_trivy_summary]]
-- 1 edge to [[_COMMUNITY_test_image_verifier.py]]
-- 1 edge to [[_COMMUNITY_canvas_proxy_app]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_ReportStore]]
-- 1 edge to [[_COMMUNITY_StdioConnection]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 21 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 18 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 10 edges to [[_COMMUNITY_AgentRegistry (2)]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 8 edges to [[_COMMUNITY_RBACConfig]]
+- 6 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 6 edges to [[_COMMUNITY_TrustConfig]]
+- 4 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_ContextSegment (2)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_RBACConfig (3)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_EgressTelegramNotifier]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 1 edge to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_RBACConfig (2)]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
 
 ## Top bridge nodes
-- [[lifespan.py]] - degree 134, connects to 69 communities
-- [[TestAgentIsolation]] - degree 31, connects to 8 communities
-- [[AgentRegistry]] - degree 71, connects to 7 communities
-- [[ContainerConfig_1]] - degree 40, connects to 7 communities
-- [[IsolationVerifier]] - degree 50, connects to 6 communities
+- [[AgentRegistry]] - degree 71, connects to 10 communities
+- [[ContainerConfig_1]] - degree 40, connects to 8 communities
+- [[IsolationVerifier]] - degree 50, connects to 7 communities
+- [[TestAgentIsolation]] - degree 31, connects to 6 communities
+- [[TestAgentRegistryGroupIdentity]] - degree 12, connects to 4 communities

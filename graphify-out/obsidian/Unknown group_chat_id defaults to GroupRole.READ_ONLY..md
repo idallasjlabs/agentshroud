@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "RBACConfig (2) (3)"
 location: "L132"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig_2_3
 ---
 
 # Unknown group_chat_id defaults to GroupRole.READ_ONLY.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unknown_group_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2_3

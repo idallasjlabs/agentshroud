@@ -17,16 +17,16 @@ members: 32
 - [[Architecture Diagram_1]] - document - docker/QUICKSTART.md
 - [[Check File Permissions]] - document - docker/QUICKSTART.md
 - [[Check Status_1]] - document - docker/QUICKSTART.md
-- [[Container Won't Start]] - document - docker/QUICKSTART.md
+- [[Container Won't Start_1]] - document - docker/QUICKSTART.md
 - [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
 - [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
 - [[Graceful Shutdown]] - document - docker/QUICKSTART.md
 - [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
 - [[Launch the Stack]] - document - docker/QUICKSTART.md
-- [[Next Steps_3]] - document - docker/QUICKSTART.md
+- [[Next Steps_4]] - document - docker/QUICKSTART.md
 - [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
 - [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
-- [[Prerequisites_3]] - document - docker/QUICKSTART.md
+- [[Prerequisites_2]] - document - docker/QUICKSTART.md
 - [[QUICKSTART]] - document - docker/QUICKSTART.md
 - [[Security Validation]] - document - docker/QUICKSTART.md
 - [[Server-side setup]] - document - docker/QUICKSTART.md
@@ -36,7 +36,7 @@ members: 32
 - [[Stop the Stack_1]] - document - docker/QUICKSTART.md
 - [[Success Criteria]] - document - docker/QUICKSTART.md
 - [[Test the System]] - document - docker/QUICKSTART.md
-- [[Troubleshooting_13]] - document - docker/QUICKSTART.md
+- [[Troubleshooting_11]] - document - docker/QUICKSTART.md
 - [[Verify]] - document - docker/QUICKSTART.md
 - [[Verify Isolation]] - document - docker/QUICKSTART.md
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md

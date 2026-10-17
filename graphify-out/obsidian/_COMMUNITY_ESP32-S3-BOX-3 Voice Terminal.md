@@ -42,5 +42,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
 
 ## Top bridge nodes
-- [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community
 - [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community
+- [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community

@@ -16,7 +16,7 @@ tags:
 - [[RemediationPlan dataclass]] - `references` [EXTRACTED]
 - [[_run()_2]] - `calls` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_27]] - `calls` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
 - [[read_pin()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `references` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # _is_falco_running()
 
 ## Connections
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[Path_32]] - `calls` [EXTRACTED]
 - [[Return True if a non-zombie falco process is running inside this container.]] - `rationale_for` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

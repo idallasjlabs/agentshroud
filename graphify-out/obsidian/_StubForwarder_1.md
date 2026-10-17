@@ -12,8 +12,8 @@ tags:
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_168]] - `method` [EXTRACTED]
-- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_174]] - `method` [EXTRACTED]
+- [[dot-forward()_2]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
@@ -25,11 +25,11 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
-- [[ScanRequest_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[ScanRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SidecarScanner]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]

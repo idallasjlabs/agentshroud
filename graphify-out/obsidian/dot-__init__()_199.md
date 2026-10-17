@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "AuditExporter (3)"
-location: "L65"
+community: "soc/router.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter_3
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditExportConfig_1]] - `references` [EXTRACTED]
-- [[AuditExporter]] - `method` [EXTRACTED]
-- [[AuditStore_1]] - `references` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter_3
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

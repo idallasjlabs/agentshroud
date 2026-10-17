@@ -1,22 +1,24 @@
 ---
 type: community
-members: 9
+members: 11
 ---
 
 # UserSessionManager (5)
 
-**Members:** 9 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[dot-test_beta_rc_alpha_are_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_downstream_rebuild_counter_is_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_empty_is_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_plain_releases_are_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[2026.7.1-2' is a real published OpenClaw release, not a prerelease marker — the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Pre-release builds must never be shipped to production automatically.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[TestIsStable]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[True when ``version`` is a shippable release rather than a pre-release.]] - rationale - scripts/discover_upstream_versions.py
-- [[is_stable()]] - code - scripts/discover_upstream_versions.py
+- [[dot-test_default_policy_values()]] - code - gateway/tests/test_key_rotation.py
+- [[Test Gmail Credential Retrieval]] - code - gateway/tests/test_gmail_credential_retrieval.py
+- [[Test credential rotation policy configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test default policy has reasonable values.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the managecredentialsstatus endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestCredentialRotationPolicy]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_health_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_status_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_key_rotation.py]] - code - gateway/tests/test_key_rotation.py
+- [[test_rotate_credential_endpoint()]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +28,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_discover_upstream_versions.py]]
-- 1 edge to [[_COMMUNITY_pick_latest_stable]]
+- 6 edges to [[_COMMUNITY_UserSessionManager]]
+- 5 edges to [[_COMMUNITY_KeyRotationManager]]
+- 3 edges to [[_COMMUNITY_UserSessionManager (3)_1]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager (2)_1]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (4)]]
 
 ## Top bridge nodes
-- [[is_stable()]] - degree 7, connects to 2 communities
-- [[TestIsStable]] - degree 6, connects to 1 community
+- [[test_key_rotation.py]] - degree 18, connects to 7 communities
+- [[TestCredentialRotationPolicy]] - degree 9, connects to 4 communities
+- [[dot-test_default_policy_values()]] - degree 3, connects to 1 community

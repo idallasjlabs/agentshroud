@@ -12,8 +12,8 @@ members: 14
 - [[dot-__aenter__()_3]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-__aexit__()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-__aexit__()_3]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__init__()_8]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__init__()_9]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__init__()_10]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__init__()_11]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-stream()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
@@ -31,12 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
-- 2 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 3 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)_1]]
 - 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 - 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 
 ## Top bridge nodes
-- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - degree 8, connects to 4 communities
+- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - degree 8, connects to 5 communities
 - [[_FakeStreamClient]] - degree 7, connects to 1 community
 - [[_FakeStreamResponse]] - degree 7, connects to 1 community

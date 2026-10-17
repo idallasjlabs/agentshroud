@@ -27,10 +27,10 @@ members: 27
 - [[Search Contacts_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Search Mail_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Search Notes_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Security_8]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Security_9]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Send Email_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Setup_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Troubleshooting_19]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Troubleshooting_17]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Update Contact_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Update Event_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[iCloud Services_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md

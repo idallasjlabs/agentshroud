@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Create authentication dependency callable      This is a synchronous wrapper tha]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `references` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
-- [[auth.py]] - `references` [EXTRACTED]
-- [[auth_dep()_1]] - `calls` [EXTRACTED]
-- [[auth_dep()_4]] - `calls` [EXTRACTED]
-- [[auth_dep()_3]] - `calls` [EXTRACTED]
+- [[auth.py_1]] - `references` [EXTRACTED]
 - [[auth_dep()_2]] - `calls` [EXTRACTED]
+- [[auth_dep()_4]] - `calls` [EXTRACTED]
+- [[auth_dep()_1]] - `calls` [EXTRACTED]
+- [[auth_dep()_3]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `imports` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[get_auth_dependency()]] - `calls` [EXTRACTED]

@@ -14,9 +14,9 @@ members: 16
 - [[Key Intercepted Paths]] - document - docs/vault/05 - Dependencies/openclaw.md
 - [[Network Architecture]] - document - docs/vault/06 - Containers & Services/networks.md
 - [[OpenClaw_1]] - document - docs/vault/05 - Dependencies/openclaw.md
-- [[Purpose_113]] - document - docs/vault/05 - Dependencies/openclaw.md
-- [[Related Notes_45]] - document - docs/vault/05 - Dependencies/openclaw.md
-- [[Related Notes_46]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Purpose_118]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_50]] - document - docs/vault/06 - Containers & Services/networks.md
 - [[Role in AgentShroud]] - document - docs/vault/05 - Dependencies/openclaw.md
 - [[Version Note]] - document - docs/vault/05 - Dependencies/openclaw.md
 - [[agentshroud-bot]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
@@ -33,8 +33,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Docker Volumes]]
 - 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_Docker Volumes]]
 - 1 edge to [[_COMMUNITY_agentshroud-bot (2)]]
 
 ## Top bridge nodes

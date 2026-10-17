@@ -1,23 +1,24 @@
 ---
 type: community
-members: 98
+members: 100
 ---
 
 # AsyncMock
 
-**Members:** 98 nodes
+**Members:** 100 nodes
 
 ## Members
-- [[dot-__call__()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-__init__()_123]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-__init__()_124]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_passthrough_pii()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-__call__()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-__init__()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-__init__()_130]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-_passthrough_pii()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-mock_forwarder()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-mock_pipeline()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[dot-test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[dot-test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[dot-test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
 - [[dot-test_close_stops_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_close_swallows_stop_errors()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_dm_reply_recovers_inbound_via_conversations_history()]] - code - gateway/tests/test_slack_proxy_coverage.py
@@ -76,7 +77,8 @@ members: 98
 - [[Thread reply with no cached corr → conversations.replies lookup recovers]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[_make_proxy()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
+- [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
 - [[test_approvals_approve_and_deny()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -115,53 +117,50 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
 - 26 edges to [[_COMMUNITY__make_proxy]]
+- 26 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 21 edges to [[_COMMUNITY_AuditChain]]
 - 13 edges to [[_COMMUNITY_AsyncMock (2)]]
-- 12 edges to [[_COMMUNITY_AuditChain]]
 - 12 edges to [[_COMMUNITY_MiddlewareManager]]
+- 12 edges to [[_COMMUNITY_ToolResultSanitizer]]
 - 9 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 9 edges to [[_COMMUNITY_PipelineAction]]
 - 7 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
-- 6 edges to [[_COMMUNITY_ToolResultSanitizer]]
 - 6 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 4 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 4 edges to [[_COMMUNITY_DNSBlocklist]]
-- 4 edges to [[_COMMUNITY__wrap_response]]
+- 4 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
 - 4 edges to [[_COMMUNITY_chatbotmain.py]]
+- 4 edges to [[_COMMUNITY_DNSBlocklist]]
 - 4 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 4 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 3 edges to [[_COMMUNITY_TestEmailSend]]
+- 3 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
 - 3 edges to [[_COMMUNITY_AsyncMock (3)]]
-- 3 edges to [[_COMMUNITY_test_prompt_guard.py]]
 - 3 edges to [[_COMMUNITY_StdioConnection (2)]]
 - 3 edges to [[_COMMUNITY_SlackSocketClient]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (6)]]
-- 3 edges to [[_COMMUNITY__req]]
-- 3 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
-- 3 edges to [[_COMMUNITY_RBACConfig]]
-- 3 edges to [[_COMMUNITY_TestEmailSend]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 - 3 edges to [[_COMMUNITY__pcm_bytes]]
+- 3 edges to [[_COMMUNITY_test_prompt_guard.py]]
 - 2 edges to [[_COMMUNITY_AgentTarget (3)]]
-- 2 edges to [[_COMMUNITY_RateLimitGuard]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
-- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
 - 2 edges to [[_COMMUNITY_test_image_verifier.py]]
+- 2 edges to [[_COMMUNITY_RateLimitGuard]]
+- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
 - 2 edges to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
+- 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
 - 1 edge to [[_COMMUNITY_test_claude_via_openai_path.py]]
-- 1 edge to [[_COMMUNITY_test_v1_models_synthetic.py]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
-- 1 edge to [[_COMMUNITY_StdioConnection]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 - 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher (2)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
+- 1 edge to [[_COMMUNITY_test_v1_models_synthetic.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (4)]]
 
 ## Top bridge nodes
-- [[AsyncMock]] - degree 219, connects to 39 communities
-- [[TestProcessToolResult]] - degree 9, connects to 4 communities
+- [[AsyncMock]] - degree 216, connects to 34 communities
 - [[test_slack_proxy_coverage.py]] - degree 11, connects to 2 communities
-- [[_make_proxy()_1]] - degree 34, connects to 1 community
+- [[dot-test_client_disconnect_returns_499()]] - degree 4, connects to 2 communities
+- [[_make_proxy()_3]] - degree 34, connects to 1 community
 - [[TestOutboundTracking]] - degree 12, connects to 1 community

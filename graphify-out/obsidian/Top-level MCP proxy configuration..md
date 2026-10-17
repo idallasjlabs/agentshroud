@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (5)"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_5
 ---
 
 # Top-level MCP proxy configuration.
 
 ## Connections
-- [[MCPProxyConfig_1]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `rationale_for` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `rationale_for` [EXTRACTED]
+- [[SSHConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

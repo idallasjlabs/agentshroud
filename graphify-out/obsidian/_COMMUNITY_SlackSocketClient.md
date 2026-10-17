@@ -8,10 +8,10 @@ members: 41
 **Members:** 41 nodes
 
 ## Members
-- [[dot-__init__()_68]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-__init__()_81]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-run()]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-run()_1]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-stop()_4]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
 - [[dot-test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py

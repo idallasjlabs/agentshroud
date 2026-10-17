@@ -19,7 +19,7 @@ tags:
 - [[dot-test_lists_security_features()]] - `method` [EXTRACTED]
 - [[dot-test_version_table_present()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Verify SECURITY.md content.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 

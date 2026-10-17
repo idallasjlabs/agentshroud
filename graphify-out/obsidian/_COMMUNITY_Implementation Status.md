@@ -9,7 +9,7 @@ members: 23
 
 ## Members
 - [[Access Control (7)]] - document - docs/security/security-inventory.md
-- [[Audit Logging_4]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Audit Logging_3]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Behavior Examples]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[CREDENTIAL-SECURITY-POLICY]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
@@ -40,14 +40,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
 - 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 - 1 edge to [[_COMMUNITY_Security Modules (58)]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 3 communities
+- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
 - [[Implementation Status]] - degree 11, connects to 2 communities
 - [[Access Control (7)]] - degree 2, connects to 1 community

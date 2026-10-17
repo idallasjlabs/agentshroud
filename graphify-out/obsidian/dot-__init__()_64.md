@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "SCLClient"
-location: "L17"
+community: "ProxyAction"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

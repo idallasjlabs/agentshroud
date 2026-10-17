@@ -12,12 +12,12 @@ members: 10
 - [[fail()_5]] - code - scripts/tailscale-check.sh
 - [[infra-check.sh]] - code - scripts/infra-check.sh
 - [[infra-check.sh script]] - code - scripts/infra-check.sh
-- [[ok()_1]] - code - scripts/tailscale-check.sh
+- [[ok()_2]] - code - scripts/tailscale-check.sh
 - [[preflight-check.sh]] - code - scripts/preflight-check.sh
 - [[preflight-check.sh script]] - code - scripts/preflight-check.sh
 - [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
 - [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
-- [[warn()_5]] - code - scripts/tailscale-check.sh
+- [[warn()_6]] - code - scripts/tailscale-check.sh
 
 ## Live Query (requires Dataview plugin)
 

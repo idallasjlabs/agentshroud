@@ -19,7 +19,7 @@ tags:
 - [[dot-test_secure_zero_bytearray()]] - `calls` [EXTRACTED]
 - [[dot-test_secure_zero_empty()]] - `calls` [EXTRACTED]
 - [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - `rationale_for` [EXTRACTED]
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

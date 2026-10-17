@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-route_approval()]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_1]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `references` [EXTRACTED]
 - [[Build the owner DM notification text.]] - `rationale_for` [EXTRACTED]
 - [[GroupApprovalRouter]] - `method` [EXTRACTED]
 

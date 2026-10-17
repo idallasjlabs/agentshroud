@@ -1,11 +1,11 @@
 ---
 type: community
-members: 25
+members: 23
 ---
 
 # egress_filter.py (2)
 
-**Members:** 25 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
@@ -17,11 +17,9 @@ members: 25
 - [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
 - [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
 - [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-httpx]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
 - [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
 - [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
-- [[Summary_11]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Summary_14]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[assert-security-check rule (CWE-617)]] - rationale - .semgrep.yml
 - [[hardcoded-password rule (CWE-798)]] - rationale - .semgrep.yml
@@ -42,14 +40,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
+- 2 edges to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
 - 1 edge to [[_COMMUNITY_UserSessionManager]]
 - 1 edge to [[_COMMUNITY_FR3 System Integrity]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
-- [[AgentShroud Semgrep SAST Configuration]] - degree 23, connects to 3 communities
-- [[Rule agentshroud-ssrf-httpx]] - degree 2, connects to 1 community
-- [[Rule agentshroud-ssrf-requests]] - degree 2, connects to 1 community
+- [[AgentShroud Semgrep SAST Configuration]] - degree 23, connects to 4 communities
 - [[Rule agentshroud-subprocess-shell-true]] - degree 2, connects to 1 community

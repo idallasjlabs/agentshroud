@@ -12,8 +12,8 @@ tags:
 # _make_item()
 
 ## Connections
-- [[ApprovalQueueItem_1]] - `calls` [EXTRACTED]
-- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 - [[test_decide_persists()]] - `calls` [EXTRACTED]
 - [[test_expired_items_on_reload()]] - `calls` [EXTRACTED]

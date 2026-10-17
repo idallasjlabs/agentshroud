@@ -12,7 +12,7 @@ tags:
 # Usage
 
 ## Connections
-- [[Adding a future agent_1]] - `contains` [EXTRACTED]
+- [[Adding a future agent]] - `contains` [EXTRACTED]
 - [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
 - [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
 - [[Tap to talk]] - `contains` [EXTRACTED]

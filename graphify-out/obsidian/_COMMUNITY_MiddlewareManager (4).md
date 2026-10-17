@@ -1,11 +1,11 @@
 ---
 type: community
-members: 55
+members: 54
 ---
 
 # MiddlewareManager (4)
 
-**Members:** 55 nodes
+**Members:** 54 nodes
 
 ## Members
 - [[Audit chain must detect tampering.]] - rationale - gateway/tests/test_redteam_probes.py
@@ -33,7 +33,6 @@ members: 55
 - [[PromptGuard must block classic 'ignore instructions' injection.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[PromptGuard must block role-override injection.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[PromptGuard must detect system prompt extraction attempts.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[SecurityPipeline]] - code - gateway/tests/test_redteam_probes.py
 - [[Trust level must not allow exec from conversation alone.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
 - [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
@@ -72,19 +71,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 7 edges to [[_COMMUNITY_PipelineAction]]
-- 6 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 5 edges to [[_COMMUNITY_TrustConfig]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_ContextSegment]]
-- 3 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 8 edges to [[_COMMUNITY_TrustConfig]]
+- 4 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 2 edges to [[_COMMUNITY_PipelineAction (2)]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 
 ## Top bridge nodes
-- [[test_redteam_probes.py]] - degree 40, connects to 8 communities
-- [[SecurityPipeline]] - degree 14, connects to 7 communities
-- [[_make_full_pipeline()]] - degree 20, connects to 6 communities
+- [[test_redteam_probes.py]] - degree 40, connects to 10 communities
+- [[_make_full_pipeline()]] - degree 20, connects to 8 communities
 - [[_make_pii_sanitizer()]] - degree 6, connects to 2 communities
+- [[test_pipeline_fails_closed_without_pii()]] - degree 4, connects to 2 communities
 - [[_make_approval_queue()]] - degree 4, connects to 1 community

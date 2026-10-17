@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_7]] - `references` [EXTRACTED]
+- [[WebSocket_6]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 

@@ -35,9 +35,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 2 edges to [[_COMMUNITY_RBACConfig (4)]]
 
 ## Top bridge nodes
-- [[TestMultiBotIsolation]] - degree 17, connects to 1 community
+- [[TestMultiBotIsolation]] - degree 17, connects to 2 communities
 - [[dot-test_lazy_migration_copies_legacy_memory()]] - degree 3, connects to 1 community
 - [[dot-test_legacy_session_promoted_on_load()]] - degree 3, connects to 1 community

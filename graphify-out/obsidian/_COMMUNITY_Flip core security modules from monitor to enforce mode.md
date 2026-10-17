@@ -12,7 +12,7 @@ members: 14
 - [[Constraints_5]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Evidence_5]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Problem_7]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Problem_6]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Remediation_6]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Root Cause_5]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Severity_8]] - document - docs/planning/redteam/01-enforce-by-default.md
@@ -21,7 +21,7 @@ members: 14
 - [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Verification_11]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Verification_10]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 

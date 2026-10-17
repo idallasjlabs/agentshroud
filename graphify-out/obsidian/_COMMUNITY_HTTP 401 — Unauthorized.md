@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
 
 ## Top bridge nodes
 - [[Auth Errors_2]] - degree 4, connects to 1 community

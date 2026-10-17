@@ -1,33 +1,25 @@
 ---
 type: community
-members: 20
+members: 12
 ---
 
 # postmortem.md
 
-**Members:** 20 nodes
+**Members:** 12 nodes
 
 ## Members
 - [[Approval Required By]] - document - .github/ISSUE_TEMPLATE/gsd.md
 - [[Blast Radius]] - document - .github/ISSUE_TEMPLATE/gsd.md
 - [[CLAUDE]] - document - CLAUDE.md
 - [[COPILOT_CLI_SETUP]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Contributing Factors]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Effort]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Guidance for Claude Code (claude.aicode) when working in this repository.]] - document - CLAUDE.md
-- [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - document - CLAUDE.md
 - [[Outcome]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Problem_1]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Problem_8]] - document - .github/ISSUE_TEMPLATE/gsd.md
 - [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - rationale - .github/COPILOT_CLI_SETUP.md
-- [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[These instructions are authoritative. Follow them strictly.]] - document - CLAUDE.md
-- [[Timeline_1]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[gsd]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 1 edge to [[_COMMUNITY_postmortem.md (2)]]
 - 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]]
+- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[CLAUDE]] - degree 7, connects to 1 community
+- [[CLAUDE]] - degree 7, connects to 2 communities
 - [[COPILOT_CLI_SETUP]] - degree 2, connects to 1 community

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "test_dashboard.py"
+community: "create_auth_dependency (3)"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/create_auth_dependency_3
 ---
 
 # approval_websocket()
 
 ## Connections
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket_4]] - `references` [EXTRACTED]
 - [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - `rationale_for` [EXTRACTED]
 - [[_validate_ws_token()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3

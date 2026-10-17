@@ -21,7 +21,7 @@ members: 16
 - [[Privacy Features]] - document - browser-extension/README.md
 - [[Safari_1]] - document - browser-extension/README.md
 - [[Structure_1]] - document - browser-extension/README.md
-- [[Tests_2]] - document - browser-extension/README.md
+- [[Tests_3]] - document - browser-extension/README.md
 - [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
 - [[browser-extensionREADME]] - document - browser-extension/README.md
 

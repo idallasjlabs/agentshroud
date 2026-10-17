@@ -12,10 +12,10 @@ tags:
 # VulnClass
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[Fixed taxonomy of advisory vulnerability classes.]] - `rationale_for` [EXTRACTED]
 - [[classify()]] - `references` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

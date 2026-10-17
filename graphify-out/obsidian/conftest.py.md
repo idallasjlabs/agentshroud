@@ -12,17 +12,17 @@ tags:
 # conftest.py
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_2]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `contains` [EXTRACTED]
-- [[auth_headers()_3]] - `contains` [EXTRACTED]
+- [[auth_headers()_1]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
-- [[sanitizer()_2]] - `contains` [EXTRACTED]
+- [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_client()]] - `contains` [EXTRACTED]
 - [[test_config()]] - `contains` [EXTRACTED]
 - [[test_ledger()]] - `contains` [EXTRACTED]

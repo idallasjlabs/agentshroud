@@ -12,9 +12,9 @@ tags:
 # _PipelineCaptor
 
 ## Connections
-- [[dot-__init__()_40]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `method` [EXTRACTED]
 - [[dot-_run_forward()]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_1]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_4]] - `method` [EXTRACTED]
 - [[dot-process_outbound()_2]] - `method` [EXTRACTED]
 - [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
 - [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_forward_passes_user_id_in_metadata_to_process_inbound()]] - `calls` [EXTRACTED]
 - [[dot-test_non_owner_body_user_id_passes_through()]] - `calls` [EXTRACTED]
 - [[AgentTarget_2]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Minimal pipeline mock that records which agent_id it was called with.]] - `rationale_for` [EXTRACTED]
 - [[_make_mock_app_state()]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]

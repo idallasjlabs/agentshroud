@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
 community: "KillSwitchMonitor"
-location: "L37"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,8 @@ tags:
 # .__init__()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Path_25]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

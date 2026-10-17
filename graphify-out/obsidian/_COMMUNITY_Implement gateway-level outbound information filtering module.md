@@ -12,7 +12,7 @@ members: 17
 - [[Constraints]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Evidence]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Problem_2]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Problem_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Remediation_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Root Cause_1]] - document - docs/planning/redteam/06-outbound-info-filter.md

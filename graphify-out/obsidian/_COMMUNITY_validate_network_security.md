@@ -1,11 +1,11 @@
 ---
 type: community
-members: 14
+members: 17
 ---
 
 # validate_network_security
 
-**Members:** 14 nodes
+**Members:** 17 nodes
 
 ## Members
 - [[dot-test_clean_compose_yields_zero_critical()]] - code - gateway/tests/test_network_validator_gate.py
@@ -14,11 +14,14 @@ members: 14
 - [[dot-test_validator_knows_the_two_real_networks()]] - code - gateway/tests/test_network_validator_gate.py
 - [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
 - [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
-- [[Path_54]] - code - gateway/tests/test_network_validator_gate.py
+- [[Path_48]] - code - gateway/tests/test_network_validator_gate.py
 - [[TestExpectedNetworksAllowlist]] - code - gateway/tests/test_network_validator_gate.py
 - [[TestGateScope]] - code - gateway/tests/test_network_validator_gate.py
 - [[TestValidatorAPI]] - code - gateway/tests/test_network_validator_gate.py
+- [[check()_8]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
 - [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - rationale - gateway/tests/test_network_validator_gate.py
+- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
 - [[test_network_validator_gate.py]] - code - gateway/tests/test_network_validator_gate.py
 - [[tmp_compose()]] - code - gateway/tests/test_network_validator_gate.py
 - [[validate_network_security()]] - code - gateway/security/network_validator.py
@@ -33,12 +36,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_AlertDispatcher]]
 - 3 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
+- 1 edge to [[_COMMUNITY_TestNetworkValidator]]
 - 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
-- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
 
 ## Top bridge nodes
-- [[validate_network_security()]] - degree 10, connects to 4 communities
+- [[validate_network_security()]] - degree 10, connects to 3 communities
+- [[post-deploy-check.sh]] - degree 6, connects to 3 communities
 - [[test_network_validator_gate.py]] - degree 7, connects to 2 communities
 - [[TestGateScope]] - degree 5, connects to 1 community
 - [[TestExpectedNetworksAllowlist]] - degree 3, connects to 1 community
-- [[TestValidatorAPI]] - degree 3, connects to 1 community

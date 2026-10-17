@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L73"
+community: "RateLimitGuard"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/RateLimitGuard
 ---
 
 # .__call__()
 
 ## Connections
-- [[dot-_handle()]] - `calls` [EXTRACTED]
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_29]] - `references` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

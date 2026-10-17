@@ -26,17 +26,17 @@ members: 65
 - [[dot-test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[dot-test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[dot-test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
-- [[dot-to_dict()_14]] - code - scripts/auto_remediate_cves.py
+- [[dot-to_dict()_15]] - code - scripts/auto_remediate_cves.py
 - [[2026.7.1-2' is AgentShroud's own rebuild counter, not upstream semver.]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[Already-triaged entries are somebody's assessed verdict — a version         bump]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[An operator may cap how far forward an unattended job may jump.]] - rationale - gateway/tests/test_auto_remediate_cves.py
-- [[Any_75]] - code - scripts/auto_remediate_cves.py
+- [[Any_84]] - code - scripts/auto_remediate_cves.py
 - [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re]] - rationale - scripts/auto_remediate_cves.py
 - [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py
 - [[Minimal registry entry shaped like agent_cve_registry.py's dicts.]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[No upstream fix means no version bump can honestly clear it.]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - rationale - scripts/auto_remediate_cves.py
-- [[Path_55]] - code - scripts/auto_remediate_cves.py
+- [[Path_59]] - code - scripts/auto_remediate_cves.py
 - [[Read one ``KEY=value`` pin from a versions.env-style file.]] - rationale - scripts/auto_remediate_cves.py
 - [[Reading and rewriting dockerversions.env.]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[RemediationPlan dataclass]] - code - scripts/auto_remediate_cves.py
@@ -60,7 +60,7 @@ members: 65
 - [[auto_remediate_cves.py]] - code - scripts/auto_remediate_cves.py
 - [[fixed_in = pin means the vulnerable code is not present at all.          These]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[load_registry()_1]] - code - scripts/auto_remediate_cves.py
-- [[main()_27]] - code - scripts/auto_remediate_cves.py
+- [[main()_32]] - code - scripts/auto_remediate_cves.py
 - [[parse_version()_1]] - code - scripts/auto_remediate_cves.py
 - [[plan_remediation]] - code - scripts/auto_remediate_cves.py
 - [[plan_remediation()]] - code - scripts/auto_remediate_cves.py
@@ -84,10 +84,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY__t]]
 - 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 2 edges to [[_COMMUNITY_check-vendor-compat.sh]]
-- 1 edge to [[_COMMUNITY_discover_upstream_versions.py]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 2 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
+- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
+- 1 edge to [[_COMMUNITY_discover_upstream_versions.py]]
 
 ## Top bridge nodes
 - [[auto_remediate_cves.py]] - degree 15, connects to 4 communities

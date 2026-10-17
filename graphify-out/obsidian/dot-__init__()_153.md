@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L56"
+community: "AlertDispatcher"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
-- [[Any_59]] - `references` [EXTRACTED]
-- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

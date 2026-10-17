@@ -16,12 +16,12 @@ members: 20
 - [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 - [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Related Notes_36]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Related Notes_35]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Related Notes_41]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Related Notes_42]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 - [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md

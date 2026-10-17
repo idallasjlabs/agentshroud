@@ -2,7 +2,7 @@
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
 community: "sunday-upgrade-apply.sh"
-location: "L714"
+location: "L719"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "StdioConnection"
-location: "L69"
+community: "AlertDispatcher (2) (4)"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/AlertDispatcher_2_4
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig_1]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[KeyVaultConfig]] - `calls` [EXTRACTED]
+- [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

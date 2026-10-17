@@ -12,6 +12,6 @@ tags:
 # WebContentScanner._scan_prompt_injection(content, result)
 
 ## Connections
-- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Function Details_27]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

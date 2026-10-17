@@ -21,8 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
 - [[ConsistencyScore]] - degree 3, connects to 1 community

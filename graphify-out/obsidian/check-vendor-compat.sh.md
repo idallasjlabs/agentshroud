@@ -23,9 +23,9 @@ tags:
 - [[check_hermes()]] - `defines` [EXTRACTED]
 - [[check_openclaw()]] - `defines` [EXTRACTED]
 - [[fail()_2]] - `defines` [EXTRACTED]
-- [[pass()_1]] - `defines` [EXTRACTED]
+- [[pass()_2]] - `defines` [EXTRACTED]
 - [[security_review()]] - `semantically_similar_to` [INFERRED]
 - [[update-agentshroud.sh]] - `calls` [EXTRACTED]
-- [[warn()_3]] - `defines` [EXTRACTED]
+- [[warn()_2]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

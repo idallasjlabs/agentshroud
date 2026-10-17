@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L458"
+community: "FakeRBAC"
+location: "L5606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/FakeRBAC
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-_run_proxy()]] - `contains` [EXTRACTED]
+- [[dot-test_non_owner_activity_is_tracked_for_unknown_user()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

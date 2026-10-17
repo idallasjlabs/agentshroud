@@ -20,7 +20,7 @@ members: 18
 - [[Output Format_19]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Persona_5]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Quality Checklist_6]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Role_55]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Role_58]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Socrates Dialogue Architect README]] - document - .agents/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect_6]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Speaker Definitions]] - document - .agents/skills/i-socrates/SKILL.md

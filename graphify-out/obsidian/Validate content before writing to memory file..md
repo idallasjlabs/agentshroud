@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MiddlewareManager (9)"
+community: "MiddlewareManager (5)"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9
+  - community/MiddlewareManager_5
 ---
 
 # Validate content before writing to memory file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-validate_memory_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_9
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

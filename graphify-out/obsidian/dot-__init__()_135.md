@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "ConsentFramework"
-location: "L71"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

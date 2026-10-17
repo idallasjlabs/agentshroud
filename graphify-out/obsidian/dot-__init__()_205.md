@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "api.py (2)"
-location: "L941"
+community: "RBACConfig (3)"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/RBACConfig_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

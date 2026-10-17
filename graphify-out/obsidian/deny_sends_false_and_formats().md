@@ -12,7 +12,7 @@ tags:
 # deny_sends_false_and_formats()
 
 ## Connections
-- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-new()_1]] - `calls` [EXTRACTED]
 - [[dot-ok()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]

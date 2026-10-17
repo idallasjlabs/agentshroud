@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L54"
+community: "_DummyTargetWriter"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/_DummyTargetWriter
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Path_57]] - `references` [EXTRACTED]
+- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

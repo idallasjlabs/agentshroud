@@ -11,7 +11,7 @@ tags:
 # US_SSN regex tightened to exclude CVE IDs
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `conceptually_related_to` [INFERRED]
+- [[ToolResultSanitizer]] - `conceptually_related_to` [INFERRED]
 - [[test_cve_pattern_not_flagged_as_ssn()]] - `rationale_for` [EXTRACTED]
 - [[test_real_ssn_still_flagged()]] - `rationale_for` [EXTRACTED]
 

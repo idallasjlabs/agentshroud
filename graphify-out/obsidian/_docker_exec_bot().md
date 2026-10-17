@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Run a command inside the agentshroud-openclaw container via the Docker socket.]] - `rationale_for` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
-- [[upgrade_bot()]] - `calls` [EXTRACTED]
+- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

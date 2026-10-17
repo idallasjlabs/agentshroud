@@ -33,7 +33,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
 
 ## Top bridge nodes
 - [[TestWebSearchLog]] - degree 11, connects to 4 communities

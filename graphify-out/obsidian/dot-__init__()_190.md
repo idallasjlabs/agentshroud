@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "RBACConfig (2)"
-location: "L87"
+community: "AlertDispatcher (2) (4)"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/AlertDispatcher_2_4
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

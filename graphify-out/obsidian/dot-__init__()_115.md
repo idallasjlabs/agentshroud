@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "ResourceGuard"
-location: "L53"
+community: "_FakeUpstreamWS"
+location: "L718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_FakeUpstreamWS
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_31]] - `calls` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

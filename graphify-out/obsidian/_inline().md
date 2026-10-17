@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Apply inline Markdown spans to plain text (no recursive nesting).]] - `rationale_for` [EXTRACTED]
-- [[_esc()]] - `calls` [EXTRACTED]
+- [[_esc()_1]] - `calls` [EXTRACTED]
 - [[_render_table()]] - `calls` [EXTRACTED]
 - [[render()]] - `calls` [EXTRACTED]
 - [[render_md_email.py]] - `contains` [EXTRACTED]

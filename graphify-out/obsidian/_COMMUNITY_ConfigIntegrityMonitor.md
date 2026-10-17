@@ -8,11 +8,11 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_98]] - code - gateway/security/config_integrity.py
+- [[dot-__init__()_99]] - code - gateway/security/config_integrity.py
 - [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
 - [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
 - [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
-- [[dot-check()_4]] - code - gateway/security/config_integrity.py
+- [[dot-check()_3]] - code - gateway/security/config_integrity.py
 - [[dot-format_alert_text()]] - code - gateway/security/config_integrity.py
 - [[dot-reset_baseline()]] - code - gateway/security/config_integrity.py
 - [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
@@ -51,9 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 
 ## Top bridge nodes
-- [[ConfigIntegrityMonitor]] - degree 26, connects to 3 communities
+- [[ConfigIntegrityMonitor]] - degree 26, connects to 2 communities

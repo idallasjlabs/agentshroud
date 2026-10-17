@@ -12,9 +12,9 @@ tags:
 # _FakeStreamResponse
 
 ## Connections
-- [[dot-__enter__()]] - `method` [EXTRACTED]
-- [[dot-__exit__()]] - `method` [EXTRACTED]
-- [[dot-__init__()_36]] - `method` [EXTRACTED]
+- [[dot-__enter__()_1]] - `method` [EXTRACTED]
+- [[dot-__exit__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_50]] - `method` [EXTRACTED]
 - [[dot-iter_bytes()]] - `method` [EXTRACTED]
 - [[dot-test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
 - [[dot-test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[Stand-in for the object httpx.stream() yields as a context manager.]] - `rationale_for` [EXTRACTED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 

@@ -1,29 +1,30 @@
 ---
 type: community
-members: 73
+members: 75
 ---
 
 # test_mfa_guard.py
 
-**Members:** 73 nodes
+**Members:** 75 nodes
 
 ## Members
 - [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[dot-__init__()_156]] - code - gateway/security/mfa_guard.py
+- [[dot-__init__()_175]] - code - gateway/security/mfa_guard.py
 - [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
 - [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
 - [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
 - [[dot-is_required()]] - code - gateway/security/mfa_guard.py
-- [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
+- [[dot-verify()]] - code - gateway/security/mfa_guard.py
 - [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
 - [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
-- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
+- [[ApprovalQueue]] - code - gateway/tests/test_mfa_guard.py
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
 - [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
 - [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
-- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
+- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
+- [[MFAGuard_1]] - code - gateway/security/mfa_guard.py
 - [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
 - [[MFAResult]] - code - gateway/security/mfa_guard.py
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
@@ -37,6 +38,7 @@ members: 73
 - [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
 - [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
 - [[_truthy()]] - code - gateway/security/mfa_guard.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
 - [[now()]] - code - gateway/tests/test_mfa_guard.py
 - [[queue.py]] - code - gateway/approval_queue/queue.py
@@ -90,20 +92,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 3 edges to [[_COMMUNITY_create_auth_dependency]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 30 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 7 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 5 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 - 1 edge to [[_COMMUNITY_Path (4)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (3)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
 - 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
 
 ## Top bridge nodes
-- [[queue.py]] - degree 14, connects to 5 communities
+- [[queue.py]] - degree 14, connects to 6 communities
 - [[test_mfa_guard.py]] - degree 60, connects to 4 communities
-- [[MFAGuard_2]] - degree 48, connects to 3 communities
-- [[ApprovalQueue_1]] - degree 10, connects to 3 communities
-- [[_queue()]] - degree 11, connects to 2 communities
+- [[MFAGuard_1]] - degree 48, connects to 3 communities
+- [[EnhancedApprovalQueue_2]] - degree 11, connects to 3 communities
+- [[ApprovalQueue]] - degree 10, connects to 3 communities

@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "RBACConfig"
-location: "L95"
+community: "test_collaborator_greeter.py"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_collaborator_greeterpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

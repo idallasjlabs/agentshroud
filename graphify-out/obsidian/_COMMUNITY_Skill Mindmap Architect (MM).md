@@ -28,7 +28,7 @@ members: 27
 - [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
 - [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
 - [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
-- [[Role_26]] - document - .agents/skills/i-mm/SKILL.md
+- [[Role_30]] - document - .agents/skills/i-mm/SKILL.md
 - [[Rules_6]] - document - .agents/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
 - [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md

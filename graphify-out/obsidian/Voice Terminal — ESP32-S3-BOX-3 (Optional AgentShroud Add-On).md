@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[Architecture_8]] - `contains` [EXTRACTED]
-- [[Installation_2]] - `contains` [EXTRACTED]
-- [[Prerequisites_7]] - `contains` [EXTRACTED]
-- [[Security notes_3]] - `contains` [EXTRACTED]
+- [[Installation_3]] - `contains` [EXTRACTED]
+- [[Prerequisites_6]] - `contains` [EXTRACTED]
+- [[Security notes_6]] - `contains` [EXTRACTED]
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - `contains` [EXTRACTED]
 - [[Troubleshooting_28]] - `contains` [EXTRACTED]
 - [[Updating the firmware (OTA — the normal deploy path)]] - `contains` [EXTRACTED]

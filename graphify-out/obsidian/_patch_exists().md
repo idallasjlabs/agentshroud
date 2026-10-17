@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_engine_error_falls_back_to_socket()]] - `calls` [EXTRACTED]
 - [[dot-test_no_engine_no_socket()]] - `calls` [EXTRACTED]
+- [[dot-test_not_installed()]] - `calls` [EXTRACTED]
 - [[dot-test_not_installed()_1]] - `calls` [EXTRACTED]
 - [[dot-test_not_installed()_3]] - `calls` [EXTRACTED]
-- [[dot-test_not_installed()_4]] - `calls` [EXTRACTED]
 - [[dot-test_running_when_content_present()]] - `calls` [EXTRACTED]
 - [[dot-test_socket_fallback_empty_lines()]] - `calls` [EXTRACTED]
 - [[dot-test_stopped_when_content_missing()]] - `calls` [EXTRACTED]

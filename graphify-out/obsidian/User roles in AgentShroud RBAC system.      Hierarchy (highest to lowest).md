@@ -12,6 +12,6 @@ tags:
 # User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest):
 
 ## Connections
-- [[Role_65]] - `rationale_for` [EXTRACTED]
+- [[Role_28]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

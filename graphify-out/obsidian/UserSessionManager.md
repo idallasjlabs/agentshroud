@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "ToolResultSanitizer"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/ToolResultSanitizer
 ---
 
 # UserSessionManager
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
-- [[dot-__init__()_86]] - `calls` [EXTRACTED]
-- [[dot-__init__()_85]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `calls` [EXTRACTED]
+- [[dot-__init__()_149]] - `calls` [EXTRACTED]
+- [[dot-__init__()_20]] - `method` [EXTRACTED]
 - [[dot-_load_sessions()]] - `method` [EXTRACTED]
 - [[dot-_save_sessions()]] - `method` [EXTRACTED]
 - [[dot-_session_key()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-add_conversation_message()]] - `method` [EXTRACTED]
 - [[dot-can_user_access_group()]] - `method` [EXTRACTED]
 - [[dot-can_user_access_session()]] - `method` [EXTRACTED]
-- [[dot-cleanup_old_sessions()_1]] - `method` [EXTRACTED]
+- [[dot-cleanup_old_sessions()]] - `method` [EXTRACTED]
 - [[dot-get_merged_context()]] - `method` [EXTRACTED]
 - [[dot-get_or_create_group_session()]] - `method` [EXTRACTED]
 - [[dot-get_or_create_session()]] - `method` [EXTRACTED]
@@ -33,8 +33,8 @@ tags:
 - [[dot-list_sessions_for_user()]] - `method` [EXTRACTED]
 - [[dot-middleware_manager()]] - `calls` [EXTRACTED]
 - [[dot-reanchor_system_prompt()]] - `method` [EXTRACTED]
-- [[dot-session_manager()_1]] - `calls` [EXTRACTED]
 - [[dot-session_manager()]] - `calls` [EXTRACTED]
+- [[dot-session_manager()_1]] - `calls` [EXTRACTED]
 - [[dot-test_complete_user_isolation()]] - `calls` [EXTRACTED]
 - [[dot-test_lazy_migration_copies_legacy_memory()]] - `calls` [EXTRACTED]
 - [[dot-test_legacy_session_promoted_on_load()]] - `calls` [EXTRACTED]
@@ -43,20 +43,20 @@ tags:
 - [[dot-test_owner_admin_access()]] - `calls` [EXTRACTED]
 - [[dot-test_session_persistence()]] - `calls` [EXTRACTED]
 - [[dot-update_user_trust_level()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Any_33]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Any_58]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[FastAPI]] - `uses` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
+- [[LogRecord_1]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_19]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[Path_44]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[Test File Sandbox Message Gate Suite]] - `references` [EXTRACTED]
 - [[TestAccessControl]] - `uses` [INFERRED]
@@ -80,7 +80,7 @@ tags:
 - [[TestFileSandboxSkippedForPlainMessages]] - `uses` [INFERRED]
 - [[TestFileSandboxStep]] - `uses` [INFERRED]
 - [[TestFilterOutboundResponse]] - `uses` [INFERRED]
-- [[TestGitGuard_1]] - `uses` [INFERRED]
+- [[TestGitGuard]] - `uses` [INFERRED]
 - [[TestGroupMemoryInvisibleFromDM]] - `uses` [INFERRED]
 - [[TestGroupMemoryNamespaceIsolation]] - `uses` [INFERRED]
 - [[TestGroupMemoryReadWrite]] - `uses` [INFERRED]
@@ -98,7 +98,7 @@ tags:
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
 - [[TestMultiBotIsolation]] - `uses` [INFERRED]
-- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
+- [[TestMultiTurnTracker]] - `uses` [INFERRED]
 - [[TestNonMemberDenied]] - `uses` [INFERRED]
 - [[TestOwnerBypassContentPatternChecks]] - `uses` [INFERRED]
 - [[TestPathIsolationStep]] - `uses` [INFERRED]
@@ -113,7 +113,7 @@ tags:
 - [[TestSessionIsolationEndToEnd]] - `uses` [INFERRED]
 - [[TestSetConfig]] - `uses` [INFERRED]
 - [[TestSystemPromptReanchoring]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer]] - `uses` [INFERRED]
 - [[TestTopicScopedMemory]] - `uses` [INFERRED]
 - [[TestTrustLevel]] - `uses` [INFERRED]
 - [[TestUserMemoryWriteACL]] - `uses` [INFERRED]
@@ -121,20 +121,20 @@ tags:
 - [[TestUserSessionManager]] - `uses` [INFERRED]
 - [[TestWebhookReceiverIntegration]] - `uses` [INFERRED]
 - [[TestWriteFailurePath]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_FakeRBAC]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[mgr()]] - `calls` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
-- [[session_manager()_4]] - `calls` [EXTRACTED]
+- [[mgr()_1]] - `calls` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[session_manager()_1]] - `calls` [EXTRACTED]
-- [[session_manager()_3]] - `calls` [EXTRACTED]
 - [[session_manager()_2]] - `calls` [EXTRACTED]
+- [[session_manager()_4]] - `calls` [EXTRACTED]
+- [[session_manager()_3]] - `calls` [EXTRACTED]
 - [[session_manager.py]] - `contains` [EXTRACTED]
 - [[session_mgr()]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `imports` [EXTRACTED]
@@ -150,4 +150,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

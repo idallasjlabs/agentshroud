@@ -32,8 +32,8 @@ SORT file.name ASC
 - 7 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 3 edges to [[_COMMUNITY_MCPInspector]]
 - 2 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 1 edge to [[_COMMUNITY_test_dashboard.py]]
 
 ## Top bridge nodes
 - [[dot-process_tool_call()]] - degree 9, connects to 3 communities

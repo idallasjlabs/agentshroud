@@ -1,19 +1,22 @@
 ---
 type: community
-members: 73
+members: 79
 ---
 
 # test_daily_cve_report.py
 
-**Members:** 73 nodes
+**Members:** 79 nodes
 
 ## Members
 - [[dot-test_already_ingested_helper_swallows_read_error()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_ingest_records_even_when_disk_write_fails()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_no_alert_when_registry_current()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_no_telegram_send_when_no_token()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_retries_on_failed_send_before_giving_up()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_error_on_github_api_failure()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_checked_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_file_missing()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_file_missing()_1]] - code - gateway/tests/test_daily_cve_report.py
@@ -25,6 +28,7 @@ members: 73
 - [[dot-test_returns_true_when_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_true_when_sent_today()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_sends_alert_when_new_cves_found()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_sends_telegram_on_success()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_short_text_passes_through_unchanged()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_skips_ingest_when_marked_done_after_wake()]] - code - gateway/tests/test_daily_cve_report.py
@@ -63,6 +67,7 @@ members: 73
 - [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestRunAndSendCveReport]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestRunAndSendCveReportFailedDeliveryNotMarkedSent]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestRunUpstreamCveCheck]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestSendTelegramTruncation]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[_already_checked_upstream_today()]] - code - gateway/security/daily_cve_report.py
@@ -74,12 +79,13 @@ members: 73
 - [[_send_telegram()]] - code - gateway/security/daily_cve_report.py
 - [[cve_report_scheduler()]] - code - gateway/security/daily_cve_report.py
 - [[daily_cve_report.py]] - code - gateway/security/daily_cve_report.py
-- [[datetime_5]] - code - gateway/security/daily_cve_report.py
+- [[datetime_4]] - code - gateway/security/daily_cve_report.py
 - [[ghsa_ingest_scheduler()]] - code - gateway/security/daily_cve_report.py
 - [[run_and_send_cve_report()]] - code - gateway/security/daily_cve_report.py
 - [[run_upstream_cve_check()]] - code - gateway/security/daily_cve_report.py
 - [[run_upstream_cve_check_all_agents()]] - code - gateway/security/daily_cve_report.py
 - [[test_daily_cve_report.py]] - code - gateway/tests/test_daily_cve_report.py
+- [[trivy_report.py]] - code - gateway/security/trivy_report.py
 - [[upstream_cve_check_scheduler()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
@@ -91,23 +97,24 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_test_daily_cve_report.py (2)]]
-- 9 edges to [[_COMMUNITY_parse_trivy_output]]
-- 8 edges to [[_COMMUNITY_sync-cve-registry.py (2)]]
-- 6 edges to [[_COMMUNITY_check_upstream_cves]]
+- 9 edges to [[_COMMUNITY_check_upstream_cves]]
+- 7 edges to [[_COMMUNITY_parse_trivy_output (2)]]
+- 5 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
 - 5 edges to [[_COMMUNITY__build_image_targets]]
 - 5 edges to [[_COMMUNITY_format_upstream_cve_alert]]
-- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 4 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 4 edges to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
 - 1 edge to [[_COMMUNITY_TestRunningImageResolution]]
 - 1 edge to [[_COMMUNITY_TestTrivySkipDirs]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (8)]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 - 1 edge to [[_COMMUNITY_TestPerAgentUpstreamChecks]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_TestRunAndSendCveReportImageScans]]
 
 ## Top bridge nodes
-- [[test_daily_cve_report.py]] - degree 36, connects to 11 communities
-- [[daily_cve_report.py]] - degree 25, connects to 7 communities
-- [[run_and_send_cve_report()]] - degree 16, connects to 4 communities
-- [[run_upstream_cve_check()]] - degree 9, connects to 3 communities
+- [[test_daily_cve_report.py]] - degree 36, connects to 10 communities
+- [[daily_cve_report.py]] - degree 25, connects to 8 communities
+- [[run_and_send_cve_report()]] - degree 16, connects to 5 communities
+- [[trivy_report.py]] - degree 8, connects to 4 communities
 - [[Any_67]] - degree 6, connects to 3 communities

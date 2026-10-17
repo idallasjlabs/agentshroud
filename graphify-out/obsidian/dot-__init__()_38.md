@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "FetchOutcome"
-location: "L191"
+community: "ServiceManager"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

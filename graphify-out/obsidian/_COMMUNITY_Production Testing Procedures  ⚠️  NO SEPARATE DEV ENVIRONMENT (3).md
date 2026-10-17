@@ -24,7 +24,7 @@ members: 20
 - [[Objective_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 - [[Output Format_14]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Role_45]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Role_48]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 - [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 - [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 - [[openclawskillsi-qaSKILL]] - document - docker/config/openclaw/skills/i-qa/SKILL.md

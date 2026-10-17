@@ -12,10 +12,10 @@ tags:
 # ThreatLevel
 
 ## Connections
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
 - [[ThreatLevel_1]] - `semantically_similar_to` [INFERRED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

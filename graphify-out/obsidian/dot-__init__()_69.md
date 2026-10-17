@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AuditChain"
-location: "L166"
+community: "MCPInspector"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[MCPAuditTrail]] - `references` [EXTRACTED]
+- [[MCPInspector]] - `references` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

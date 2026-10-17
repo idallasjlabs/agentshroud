@@ -12,8 +12,8 @@ tags:
 # _print_findings()
 
 ## Connections
-- [[ScanResult_3]] - `references` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[ScanResult_1]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard_2

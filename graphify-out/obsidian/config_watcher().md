@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[Path_14]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[Path_39]] - `references` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

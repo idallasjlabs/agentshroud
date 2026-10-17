@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L176"
+community: "AlertDispatcher (2) (3)"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher_2_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_3

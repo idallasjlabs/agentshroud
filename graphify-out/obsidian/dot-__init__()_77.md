@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L51"
+community: "test_soc_router_coverage.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

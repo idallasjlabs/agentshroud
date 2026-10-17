@@ -16,7 +16,7 @@ tags:
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `conceptually_related_to` [INFERRED]
 - [[alert_if_critical()]] - `defines` [EXTRACTED]
-- [[log()_8]] - `defines` [EXTRACTED]
+- [[log()_7]] - `defines` [EXTRACTED]
 - [[pre-commit-hook.sh]] - `semantically_similar_to` [INFERRED]
 - [[run_clamav()]] - `defines` [EXTRACTED]
 - [[run_oscap()]] - `defines` [EXTRACTED]

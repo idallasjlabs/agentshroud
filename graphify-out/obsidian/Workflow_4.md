@@ -1,22 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Canvas Skill"
-location: "L86"
+community: "GSDE&G Skills Reference (2)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/GSDEG_Skills_Reference_2
 ---
 
 # Workflow
 
 ## Connections
-- [[1. Create HTML content]] - `contains` [EXTRACTED]
-- [[2. Find your canvas host URL]] - `contains` [EXTRACTED]
-- [[3. Find connected nodes]] - `contains` [EXTRACTED]
-- [[4. Present content]] - `contains` [EXTRACTED]
-- [[5. Navigate, snapshot, or hide]] - `contains` [EXTRACTED]
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Skills by Category]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2

@@ -39,7 +39,7 @@ members: 51
 - [[Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[SECURITY_2]] - document - SECURITY.md
+- [[SECURITY_4]] - document - SECURITY.md
 - [[TestContributingMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestLifespanWiresEveryPipelineModule]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
@@ -68,8 +68,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_AlertDispatcher]]
-- 8 edges to [[_COMMUNITY_PipelineAction]]
+- 10 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 8 edges to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 - 1 edge to [[_COMMUNITY_Contributing to AgentShroud™]]

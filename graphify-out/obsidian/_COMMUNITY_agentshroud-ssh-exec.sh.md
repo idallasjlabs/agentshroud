@@ -26,7 +26,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY_sync-cve-registry.py (2)]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
 
 ## Top bridge nodes
 - [[agentshroud-ssh-exec.sh]] - degree 6, connects to 1 community

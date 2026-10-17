@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "ProgressiveLockdown"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_18]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

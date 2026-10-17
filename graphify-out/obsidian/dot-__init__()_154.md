@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "UserSessionManager"
-location: "L30"
+community: "AlertDispatcher"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

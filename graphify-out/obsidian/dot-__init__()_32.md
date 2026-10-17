@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L69"
+community: "MCPPermissionManager (2)"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/MCPPermissionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPProxyConfig]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

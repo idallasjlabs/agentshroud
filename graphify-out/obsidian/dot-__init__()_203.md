@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "api.py (2)"
-location: "L126"
+community: "AuditExporter (3)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/AuditExporter_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/AuditExporter_3

@@ -21,15 +21,15 @@ members: 39
 - [[5. Never Extract Credentials]] - document - skills/custom/securebrowser/SKILL.md
 - [[Approval Integration]] - document - skills/custom/securebrowser/SKILL.md
 - [[Audit Logging]] - document - skills/custom/securebrowser/SKILL.md
-- [[Best Practices_2]] - document - skills/custom/securebrowser/SKILL.md
-- [[Click Element]] - document - skills/custom/securebrowser/SKILL.md
+- [[Best Practices_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Click Element_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[Core Security Principles]] - document - skills/custom/securebrowser/SKILL.md
 - [[Example Apple ID Creation (Semi-Automated)]] - document - skills/custom/securebrowser/SKILL.md
-- [[Extract Data]] - document - skills/custom/securebrowser/SKILL.md
+- [[Extract Data_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[Gateway Integration]] - document - skills/custom/securebrowser/SKILL.md
 - [[Integration with AgentShroud]] - document - skills/custom/securebrowser/SKILL.md
 - [[Limitations]] - document - skills/custom/securebrowser/SKILL.md
-- [[Navigate to URL]] - document - skills/custom/securebrowser/SKILL.md
+- [[Navigate to URL_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[Risk Levels]] - document - skills/custom/securebrowser/SKILL.md
 - [[SecureBrowser - Enterprise Secure Browser Automation]] - document - skills/custom/securebrowser/SKILL.md
 - [[SecureBrowser SKILL_2]] - document - skills/custom/securebrowser/SKILL.md
@@ -37,14 +37,14 @@ members: 39
 - [[Security Configuration]] - document - skills/custom/securebrowser/SKILL.md
 - [[Security Guarantees]] - document - skills/custom/securebrowser/SKILL.md
 - [[See Also]] - document - skills/custom/securebrowser/SKILL.md
-- [[Take Screenshot]] - document - skills/custom/securebrowser/SKILL.md
-- [[Troubleshooting_7]] - document - skills/custom/securebrowser/SKILL.md
-- [[Usage_55]] - document - skills/custom/securebrowser/SKILL.md
+- [[Take Screenshot_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_5]] - document - skills/custom/securebrowser/SKILL.md
+- [[Usage_57]] - document - skills/custom/securebrowser/SKILL.md
 - [[appendLog()_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browser-fetch.js_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browserFetch()_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[fs_3]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[path_13]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[path_18]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 - [[{ chromium }_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 

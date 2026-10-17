@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy (5)"
 location: "L2890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy_5
 ---
 
 # ._active_bot_id()
@@ -16,6 +16,6 @@ tags:
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[dot-_send_collaborator_safe_info_response()]] - `calls` [EXTRACTED]
 - [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_5

@@ -29,7 +29,7 @@ members: 24
 - [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary_10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary_11]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
 - [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "AsyncMock"
-location: "L8618"
+community: "AlertTelegramRelay"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AlertTelegramRelay
 ---
 
 # .__call__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

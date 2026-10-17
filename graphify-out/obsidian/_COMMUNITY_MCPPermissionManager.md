@@ -8,8 +8,8 @@ members: 75
 **Members:** 75 nodes
 
 ## Members
-- [[dot-__post_init__()_8]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-set_event_bus()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__post_init__()_7]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-set_event_bus()_2]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
@@ -80,7 +80,7 @@ members: 75
 - [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Wire optional event bus for privacysecurity telemetry.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[passthrough_proxy()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[proxy()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[proxy()_4]] - code - gateway/tests/test_mcp_proxy.py
 - [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - code - gateway/tests/test_mcp_policy.py
 
@@ -97,24 +97,23 @@ SORT file.name ASC
 - 34 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
 - 28 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
 - 27 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 17 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 16 edges to [[_COMMUNITY_PermissionLevel]]
+- 16 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 15 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 14 edges to [[_COMMUNITY_StdioConnection (2)]]
-- 14 edges to [[_COMMUNITY_MCPPolicyEngine]]
 - 7 edges to [[_COMMUNITY_MCPPermissionManager (5)]]
 - 5 edges to [[_COMMUNITY_MCPToolResult]]
 - 5 edges to [[_COMMUNITY_MCPPermissionManager (6)]]
 - 5 edges to [[_COMMUNITY_MCPPermissionManager (7)]]
 - 5 edges to [[_COMMUNITY_TestAuditTrail]]
 - 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 1 edge to [[_COMMUNITY_StdioConnection (3)]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[MCPProxy_1]] - degree 89, connects to 18 communities
+- [[MCPProxy_1]] - degree 89, connects to 17 communities
 - [[MCPToolCall_1]] - degree 100, connects to 13 communities
 - [[test_mcp_proxy.py]] - degree 46, connects to 10 communities
 - [[ThreatLevel_2]] - degree 28, connects to 9 communities

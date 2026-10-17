@@ -15,7 +15,7 @@ members: 21
 - [[5. Build and Start]] - document - docs/operations/raspberry-pi.md
 - [[6. Verify]] - document - docs/operations/raspberry-pi.md
 - [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
-- [[Container Won't Start_1]] - document - docs/operations/raspberry-pi.md
+- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
 - [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
 - [[Fresh Install]] - document - docs/operations/raspberry-pi.md
 - [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md
@@ -23,7 +23,7 @@ members: 21
 - [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
 - [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
 - [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
-- [[Prerequisites_9]] - document - docs/operations/raspberry-pi.md
+- [[Prerequisites_8]] - document - docs/operations/raspberry-pi.md
 - [[Slow Builds_1]] - document - docs/operations/raspberry-pi.md
 - [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
 - [[Troubleshooting_30]] - document - docs/operations/raspberry-pi.md

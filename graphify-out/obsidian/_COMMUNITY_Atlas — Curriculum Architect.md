@@ -20,7 +20,7 @@ members: 17
 - [[Output Format_22]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[Persona_8]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[Quality Checklist_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Role_61]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Role_64]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[System Prompt_8]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[User Prompt Template_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[User Prompt Template — OKE Channel]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md

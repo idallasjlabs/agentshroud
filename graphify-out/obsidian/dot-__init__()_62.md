@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "HeuristicClassifier (2)"
-location: "L95"
+community: "ProxyAction"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier_2
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

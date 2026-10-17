@@ -9,7 +9,7 @@ members: 16
 
 ## Members
 - [[dot-get_document_tag()]] - code - gateway/security/metadata_guard.py
-- [[dot-guard()_5]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-guard()_6]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-tag_document()]] - code - gateway/security/metadata_guard.py
 - [[dot-test_document_tag_creation()]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_document_tag_lookup_by_hash()]] - code - gateway/tests/test_metadata_guard.py
@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AlertDispatcher]]
+- 6 edges to [[_COMMUNITY_AlertDispatcher (2)]]
 - 2 edges to [[_COMMUNITY_TestMetadataGuard]]
 - 1 edge to [[_COMMUNITY_ContextSegment]]
 - 1 edge to [[_COMMUNITY_SessionManager]]

@@ -17,8 +17,8 @@ members: 33
 - [[dot-test_owner_body_not_redacted()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_passthrough_status_without_pipeline()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_pii_redacted_for_unknown_recipient()]] - code - gateway/tests/test_channel_ownership.py
+- [[dot-test_requires_auth()_1]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_requires_auth()_2]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_requires_auth()_3]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_response_has_status_field()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_response_has_timestamp()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_unknown_recipient_no_queue_returns_403()]] - code - gateway/tests/test_channel_ownership.py
@@ -29,7 +29,7 @@ members: 33
 - [[Approved response includes sanitized_body field.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Email to an allowed recipient returns 200 with status=approved.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Empty payload is handled gracefully (skipped, not error).]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Malformed body is handled defensively (empty dict fallback).]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Missing 'subject' or 'body' returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Missing 'to' field returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
@@ -51,7 +51,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_create_auth_dependency]]
+- 2 edges to [[_COMMUNITY_create_auth_dependency (2)]]
 
 ## Top bridge nodes
 - [[TestEmailSend]] - degree 11, connects to 1 community

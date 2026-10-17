@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 14
 ---
 
 # background.js
 
-**Members:** 20 nodes
+**Members:** 14 nodes
 
 ## Members
 - [[background.js]] - code - browser-extension/background.js
@@ -16,18 +16,12 @@ members: 20
 - [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
 - [[loadConfig()]] - code - browser-extension/background.js
 - [[notify()_1]] - code - browser-extension/background.js
-- [[options.js]] - code - browser-extension/options.js
 - [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
 - [[popup.js]] - code - browser-extension/popup.js
 - [[reportResult()]] - code - browser-extension/background.js
-- [[restore()]] - code - browser-extension/options.js
-- [[save()_1]] - code - browser-extension/options.js
-- [[savedEl]] - code - browser-extension/options.js
 - [[send()]] - code - browser-extension/popup.js
 - [[setStatus()]] - code - browser-extension/popup.js
 - [[statusEl]] - code - browser-extension/popup.js
-- [[tokenEl]] - code - browser-extension/options.js
-- [[urlEl]] - code - browser-extension/options.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,8 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_background.js (2)]]
 - 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
 
 ## Top bridge nodes
 - [[background.js]] - degree 11, connects to 2 communities
+- [[loadConfig()]] - degree 4, connects to 1 community

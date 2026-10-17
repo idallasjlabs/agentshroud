@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `references` [EXTRACTED]
-- [[ForwardRequest]] - `references` [EXTRACTED]
+- [[ForwardRequest_1]] - `references` [EXTRACTED]
 - [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - `rationale_for` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]

@@ -1,76 +1,90 @@
 ---
 type: community
-members: 63
+members: 77
 ---
 
 # test_llm_proxy_local_parity.py (2)
 
-**Members:** 63 nodes
+**Members:** 77 nodes
 
 ## Members
-- [[dot-_flatten_fieldflare_schema()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_is_local_oom()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_merge_object_schemas()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_strip_fieldflare_unsupported_fields()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-block_credentials()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[dot-sanitize()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[FIELDFLARE_API_BASE (TurboFieldfare 8238)]] - code - gateway/proxy/llm_proxy.py
-- [[Fieldflare representable tool-schema subset (two-branch nullable unions only)]] - rationale - gateway/proxy/llm_proxy.py
-- [[Fieldflare tool-schema flatten fix (skill_manage six-branch union 400)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Fieldflare unsupported-fields shim]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Remove OpenAI request fields TurboFieldfare rejects with HTTP 400, in place.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Return True if the response indicates a local-model OOM or backend_unavailable.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Rewrite a tool-parameter JSON schema into the subset Fieldflare's Gemma…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Single-branch unions unwrap, null-only unions are left alone, and a union…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Union several object schemas into one (see _flatten_fieldflare_schema).…]] - rationale - gateway/proxy/llm_proxy.py
-- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[VRAMHeadroomError must be a distinct exception, not a subclass of…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Workstream C — Full local-model parity for both bots. Tests that every cloud-…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Cloud mode Anthropic tool_use responses are unmodified (baseline parity).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Exception during secondary dispatch increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Full round-trip each model ref is normalized and dispatched to the correct…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Hermes sends OpenAI-compat requests; local qwen3 model routes to LM Studio.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[If no secondary is configured and primary hits OOM, 503 is returned.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[In cloud mode, Hermes Claude model routes to Anthropic endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[OOM (503 backend_unavailable from primary local) triggers secondary local…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[OpenAI-format tool_calls response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Secondary failover for Anthropic-format (v1messages) path translates and…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Secondary model returning non-200 increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[The shim must not leak onto backends that accept these fields (LM Studio).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Unknown path (not v1messages, not is_openai) returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[When AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=0, OOM passes through without retry.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_anthropic_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_anthropic_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_7]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_8]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_9]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_10]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_11]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_12]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_13]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_14]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_15]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_16]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_17]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_18]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_19]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_20]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_21]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_22]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_fake_forward()_23]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_fake_forward()_24]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_fake_forward()_25]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_model strips the provider prefix for a Fieldflare ref, same as it…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[_get_local_secondary_model reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[_get_local_secondary_model returns None if env var is unset.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom detects 'out of memory' in error message string.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom handles raw non-JSON bodies from some backends.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for cloud 429 quota errors (different failover…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_op()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for successful responses.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_make_proxy()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_openai_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_openai_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_skill_manage_like_request()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_collapses_type_list_to_one_concrete_type_plus_null()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_degenerate_unions()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_inlines_allof_and_recurses_into_nested_nodes()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_is_noop_without_the_fields()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_keeps_first_branch_of_scalar_union()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_keeps_null_branch_when_merging()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_keeps_two_branch_nullable_union_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_leaves_representable_tool_schemas_alone()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_merges_multi_branch_object_union_into_one_object()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_tolerates_malformed_tool_entries()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[deepseek-r1 is routed to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[failover_local_secondary_succeeded stat increments on successful secondary…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[ollama prefix is stripped during proxy_messages dispatch and normalization…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[parametrize]] - code
+- [[proxy_messages applies the shim only on the Fieldflare route, before forwarding.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_deepseek_r1_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_model_reads_fieldflare_ref()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[test_get_local_secondary_model_reads_env()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[test_get_local_secondary_model_returns_none_when_unset()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_detects_backend_unavailable()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_detects_oom_in_error_message()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_handles_non_json_body()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_returns_false_for_quota_429()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_llm_proxy_local_parity.py]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_vram_headroom_error_is_not_resource_warning()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_hermes_openai_path_local_model_routed_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_returns_false_for_200()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_failover_disabled_does_not_retry()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_no_secondary_falls_through_to_503()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_triggers_secondary_failover]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_p99_timeout_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_anthropic_path()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_exception_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_unknown_path_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_model_ref_round_trip()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_non_fieldflare_local_route_keeps_fields]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_stats_local_secondary_failover_succeeded_incremented()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,16 +94,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 44 edges to [[_COMMUNITY_LLMProxy]]
-- 32 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
-- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 3 edges to [[_COMMUNITY__FakeStreamResponse]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill (2)]]
+- 34 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)_1]]
+- 20 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 3 edges to [[_COMMUNITY_LLMProxy]]
+- 3 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY__FakeStreamResponse]]
+- 1 edge to [[_COMMUNITY__t]]
 
 ## Top bridge nodes
-- [[test_llm_proxy_local_parity.py]] - degree 79, connects to 5 communities
-- [[dot-_is_local_oom()]] - degree 9, connects to 2 communities
-- [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false]] - degree 4, connects to 2 communities
-- [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - degree 4, connects to 2 communities
-- [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto]] - degree 4, connects to 2 communities
+- [[test_local_oom_triggers_secondary_failover]] - degree 9, connects to 4 communities
+- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - degree 8, connects to 4 communities
+- [[test_non_fieldflare_local_route_keeps_fields]] - degree 8, connects to 4 communities
+- [[_make_proxy()]] - degree 27, connects to 2 communities
+- [[test_local_p99_timeout_triggers_secondary_failover()]] - degree 7, connects to 2 communities
