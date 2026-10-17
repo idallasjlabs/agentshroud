@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "api.py"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/apipy
 ---
 
 # test_bot_service_names_uses_resolved_container_name()
@@ -16,4 +16,4 @@ tags:
 - [[_bot_service_names() must use each bot's real container name, not a     hardcode]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/apipy

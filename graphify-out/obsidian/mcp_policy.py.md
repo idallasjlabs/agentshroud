@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "MCPPolicyEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/MCPPolicyEngine
 ---
 
 # mcp_policy.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[MCPPolicyAction]] - `contains` [EXTRACTED]
-- [[MCPPolicyConfig]] - `contains` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `contains` [EXTRACTED]
 - [[MCPPolicyDecision]] - `contains` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `contains` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[_norm()_1]] - `contains` [EXTRACTED]
 - [[mfa_guard.py]] - `references` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_mcp_policy.py]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

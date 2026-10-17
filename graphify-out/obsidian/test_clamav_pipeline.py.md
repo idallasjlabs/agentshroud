@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_2]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[_b64_payload()]] - `contains` [EXTRACTED]
 - [[_instant_wait_for()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()_3]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_2]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
 - [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]

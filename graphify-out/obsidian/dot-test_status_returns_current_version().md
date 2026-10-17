@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (4)"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_4
 ---
 
 # .test_status_returns_current_version()
@@ -15,4 +15,4 @@ tags:
 - [[GET status should return current version]] - `rationale_for` [EXTRACTED]
 - [[TestVersionConsistency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

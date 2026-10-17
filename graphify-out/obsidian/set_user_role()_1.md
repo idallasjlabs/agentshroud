@@ -12,10 +12,10 @@ tags:
 # set_user_role()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
 - [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[Role_65]] - `calls` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[Role_28]] - `calls` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[SetRoleRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

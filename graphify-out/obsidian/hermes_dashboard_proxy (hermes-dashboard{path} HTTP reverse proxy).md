@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L4866-L4927"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # hermes_dashboard_proxy (/hermes-dashboard/{path} HTTP reverse proxy)
@@ -26,4 +26,4 @@ tags:
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

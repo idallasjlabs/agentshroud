@@ -12,7 +12,7 @@ tags:
 # test_enhanced_approval.py
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
 - [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]

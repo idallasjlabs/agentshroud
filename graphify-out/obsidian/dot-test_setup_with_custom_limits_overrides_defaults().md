@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_2
 ---
 
 # .test_setup_with_custom_limits_overrides_defaults()
@@ -16,4 +16,4 @@ tags:
 - [[TestResourceGuardWiring]] - `method` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

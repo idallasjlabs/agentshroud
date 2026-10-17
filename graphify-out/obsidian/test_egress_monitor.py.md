@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2
 ---
 
 # test_egress_monitor.py
@@ -18,13 +18,13 @@ tags:
 - [[EgressMonitor]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
 - [[TestAlertGeneration]] - `contains` [EXTRACTED]
-- [[TestAnomalyDetection_1]] - `contains` [EXTRACTED]
+- [[TestAnomalyDetection]] - `contains` [EXTRACTED]
 - [[TestDailySummary]] - `contains` [EXTRACTED]
 - [[TestEgressMonitorConfig]] - `contains` [EXTRACTED]
 - [[TestEventRecording]] - `contains` [EXTRACTED]
 - [[TestSlowDripDetection]] - `contains` [EXTRACTED]
-- [[default_config()_4]] - `contains` [EXTRACTED]
-- [[monitor()_1]] - `contains` [EXTRACTED]
-- [[monitor_config()_2]] - `contains` [EXTRACTED]
+- [[default_config()]] - `contains` [EXTRACTED]
+- [[monitor()]] - `contains` [EXTRACTED]
+- [[monitor_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

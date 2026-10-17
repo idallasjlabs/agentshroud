@@ -12,7 +12,7 @@ tags:
 # test_hermes_mcp_reconciliation.sh
 
 ## Connections
-- [[check()_3]] - `defines` [EXTRACTED]
+- [[check()_2]] - `defines` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh

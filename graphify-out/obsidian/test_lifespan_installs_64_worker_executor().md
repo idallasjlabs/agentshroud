@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "code"
-community: "AgentRegistry"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # test_lifespan_installs_64_worker_executor()
@@ -15,4 +15,4 @@ tags:
 - [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_executor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

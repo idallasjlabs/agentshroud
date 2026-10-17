@@ -1,18 +1,18 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "AlertDispatcher"
-location: "L9"
+community: "scripts/security-scan.sh"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/scripts/security-scansh
 ---
 
 # warn()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
+- [[security-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

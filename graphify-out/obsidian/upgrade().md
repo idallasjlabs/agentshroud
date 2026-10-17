@@ -21,15 +21,15 @@ tags:
 - [[dot-test_successful_downgrade()]] - `calls` [EXTRACTED]
 - [[dot-test_successful_rollback()]] - `calls` [EXTRACTED]
 - [[dot-test_successful_upgrade()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
-- [[upgrade_bot()_1]] - `semantically_similar_to` [INFERRED]
+- [[upgrade_bot()]] - `semantically_similar_to` [INFERRED]
 - [[upgrade_version()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `imports` [EXTRACTED]
+- [[version_routes.py_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

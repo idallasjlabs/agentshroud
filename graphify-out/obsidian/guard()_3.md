@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_env_guard_class.py"
+source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "TestCheckCommandExecution"
-location: "L23"
+community: "ContextSegment"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/ContextSegment
 ---
 
 # guard()
 
 ## Connections
-- [[EnvironmentGuard]] - `calls` [EXTRACTED]
-- [[test_env_guard_class.py]] - `contains` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

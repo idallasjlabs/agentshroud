@@ -12,6 +12,7 @@ tags:
 # sunday-upgrade.sh script
 
 ## Connections
+- [[_return_to_main()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/colima-health-checksh

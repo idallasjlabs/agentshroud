@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py (5)"
+community: "telegram_proxy.py (3)"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_5
+  - community/telegram_proxypy_3
 ---
 
 # persist_group_collab_mode()
@@ -19,6 +19,6 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[set_group_mode()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_5
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3

@@ -17,9 +17,9 @@ tags:
 - [[Contact Operations_1]] - `contains` [EXTRACTED]
 - [[Mail Operations_1]] - `contains` [EXTRACTED]
 - [[Notes Operations_1]] - `contains` [EXTRACTED]
-- [[Security_8]] - `contains` [EXTRACTED]
+- [[Security_9]] - `contains` [EXTRACTED]
 - [[Setup_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 

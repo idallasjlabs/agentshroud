@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_2
 ---
 
 # setup_resource_guard()
@@ -22,4 +22,4 @@ tags:
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

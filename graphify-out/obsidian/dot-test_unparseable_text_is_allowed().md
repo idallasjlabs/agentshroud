@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_round2_hardening.py"
+source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L104"
+community: "TestCheckCommandExecution"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestCheckCommandExecution
 ---
 
 # .test_unparseable_text_is_allowed()
 
 ## Connections
-- [[EnvironmentGuard]] - `calls` [EXTRACTED]
-- [[TestEnvGuardFailOpen]] - `method` [EXTRACTED]
+- [[TestCheckCommandExecution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

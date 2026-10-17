@@ -15,6 +15,6 @@ tags:
 - [[background.js]] - `references` [EXTRACTED]
 - [[clipPage()]] - `calls` [EXTRACTED]
 - [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `semantically_similar_to` [INFERRED]
+- [[save()]] - `semantically_similar_to` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/backgroundjs

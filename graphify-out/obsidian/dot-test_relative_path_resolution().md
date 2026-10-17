@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # .test_relative_path_resolution()
@@ -15,4 +15,4 @@ tags:
 - [[Relative paths should be resolved properly.]] - `rationale_for` [EXTRACTED]
 - [[TestEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

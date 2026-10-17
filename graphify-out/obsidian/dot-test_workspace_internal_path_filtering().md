@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "TestOutboundInfoFilter"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_workspace_internal_path_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 - [[Workspace runtime paths should be redacted.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

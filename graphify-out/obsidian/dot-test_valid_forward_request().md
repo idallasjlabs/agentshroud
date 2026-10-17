@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # .test_valid_forward_request()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

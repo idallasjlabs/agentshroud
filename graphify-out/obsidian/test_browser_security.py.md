@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "ConsentFramework"
+community: "ConsentFramework (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ConsentFramework_2
 ---
 
 # test_browser_security.py
@@ -18,6 +18,6 @@ tags:
 - [[TestSocialEngineeringDetection]] - `contains` [EXTRACTED]
 - [[TestURLReputation]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[guard()_4]] - `contains` [EXTRACTED]
+- [[guard()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

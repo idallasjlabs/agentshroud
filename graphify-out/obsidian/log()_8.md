@@ -1,23 +1,18 @@
 ---
-source_file: "docker/scripts/security-scan.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "FR3: System Integrity"
-location: "L18"
+community: "colima-health-check.sh (3)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/colima-health-checksh_3
 ---
 
 # log()
 
 ## Connections
-- [[alert_if_critical()]] - `calls` [EXTRACTED]
-- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[run_clamav()]] - `calls` [EXTRACTED]
-- [[run_oscap()]] - `calls` [EXTRACTED]
-- [[run_sbom()]] - `calls` [EXTRACTED]
-- [[run_trivy()]] - `calls` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh_3

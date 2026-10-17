@@ -12,7 +12,7 @@ tags:
 # test_inbound_outbound_both_audited()
 
 ## Connections
-- [[dot-process_inbound()_8]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `calls` [EXTRACTED]
 - [[dot-process_outbound()_6]] - `calls` [EXTRACTED]
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[Verify both inbound and outbound are in audit chain.]] - `rationale_for` [EXTRACTED]

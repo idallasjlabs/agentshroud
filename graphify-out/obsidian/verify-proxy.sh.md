@@ -12,9 +12,9 @@ tags:
 # verify-proxy.sh
 
 ## Connections
-- [[fail()_3]] - `defines` [EXTRACTED]
-- [[info()_1]] - `defines` [EXTRACTED]
-- [[pass()_2]] - `defines` [EXTRACTED]
+- [[fail()]] - `defines` [EXTRACTED]
+- [[info()]] - `defines` [EXTRACTED]
+- [[pass()]] - `defines` [EXTRACTED]
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[run_bypass()]] - `defines` [EXTRACTED]
 - [[run_canary()]] - `defines` [EXTRACTED]

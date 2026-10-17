@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .test_warn_mode()
 
 ## Connections
 - [[Test warn mode that marks but preserves external content.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

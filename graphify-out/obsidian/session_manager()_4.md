@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "RBACConfig"
-location: "L43"
+community: "RBACConfig (2)"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_2
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

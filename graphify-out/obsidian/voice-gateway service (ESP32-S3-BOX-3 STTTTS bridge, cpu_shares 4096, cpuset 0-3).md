@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "LLMProxy (2)"
 location: "824"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/LLMProxy_2
 ---
 
 # voice-gateway service (ESP32-S3-BOX-3 STT/TTS bridge, cpu_shares 4096, cpuset 0-3)
@@ -17,4 +17,4 @@ tags:
 - [[Voice Interface (STTTTS, wake word)]] - `semantically_similar_to` [INFERRED]
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/code #graphify/INFERRED #community/LLMProxy_2

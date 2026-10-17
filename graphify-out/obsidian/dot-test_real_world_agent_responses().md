@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[Test with realistic agent response patterns.]] - `rationale_for` [EXTRACTED]
-- [[TestIntegration_1]] - `method` [EXTRACTED]
+- [[TestIntegration]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

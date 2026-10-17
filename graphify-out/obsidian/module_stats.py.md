@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Decision_1]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[ModuleStatsCollector]] - `contains` [EXTRACTED]
 - [[get_collector()]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `contains` [EXTRACTED]

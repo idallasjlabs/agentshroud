@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
-location: "L35"
+community: "KeyRotationManager (2)"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/KeyRotationManager_2
 ---
 
 # .validate()
 
 ## Connections
-- [[Mock validation that can be controlled.]] - `rationale_for` [EXTRACTED]
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[dot-_validate_credential()]] - `calls` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
+- [[CredentialValidator]] - `method` [EXTRACTED]
+- [[Validate a credential.          Returns             tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

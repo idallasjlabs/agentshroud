@@ -1,19 +1,23 @@
 ---
-source_file: "docker/bots/hermes/resolve_model.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2)"
-location: "L183"
+community: "plan_remediation"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2
+  - community/plan_remediation
 ---
 
 # main()
 
 ## Connections
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
-- [[_resolve_from_env()]] - `calls` [EXTRACTED]
-- [[resolve_model.py]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_15]] - `calls` [EXTRACTED]
+- [[_print_plan()]] - `calls` [EXTRACTED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
+- [[load_registry()_1]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

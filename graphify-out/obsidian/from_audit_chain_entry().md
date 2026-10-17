@@ -12,7 +12,7 @@ tags:
 # from_audit_chain_entry()
 
 ## Connections
-- [[Any_48]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields e]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]

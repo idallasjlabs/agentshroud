@@ -12,11 +12,11 @@ tags:
 # progressive_trust_config.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `contains` [EXTRACTED]
 - [[PromotionThreshold]] - `contains` [EXTRACTED]
-- [[TrustLevel]] - `contains` [EXTRACTED]
+- [[TrustLevel_1]] - `contains` [EXTRACTED]
 - [[ViolationType]] - `contains` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `contains` [EXTRACTED]
 - [[subagent_governance.py]] - `semantically_similar_to` [INFERRED]

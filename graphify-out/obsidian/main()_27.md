@@ -1,23 +1,21 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "plan_remediation"
-location: "L300"
+community: "export-bot-conversations.py"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/export-bot-conversationspy
 ---
 
 # main()
 
 ## Connections
-- [[dot-to_dict()_14]] - `calls` [EXTRACTED]
-- [[_print_plan()]] - `calls` [EXTRACTED]
-- [[apply_remediation()]] - `calls` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[load_registry()_1]] - `calls` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
-- [[read_pin()]] - `calls` [EXTRACTED]
+- [[Path_55]] - `calls` [EXTRACTED]
+- [[_parse_since()]] - `calls` [EXTRACTED]
+- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
+- [[export_hermes()]] - `calls` [EXTRACTED]
+- [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

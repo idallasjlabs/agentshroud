@@ -12,9 +12,9 @@ tags:
 # gather_advisories()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
 - [[Namespace_1]] - `references` [EXTRACTED]
-- [[Path_28]] - `calls` [EXTRACTED]
+- [[Path_29]] - `calls` [EXTRACTED]
 - [[Return per-agent advisory lists from snapshot or live GitHub.]] - `rationale_for` [EXTRACTED]
 - [[fetch_advisories()]] - `calls` [EXTRACTED]
 - [[load_snapshot()]] - `calls` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-load_all()_1]] - `calls` [EXTRACTED]
 - [[dot-verify_integrity()]] - `calls` [EXTRACTED]
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
 - [[Walk the entire report chain and verify hash linkage.          Returns]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

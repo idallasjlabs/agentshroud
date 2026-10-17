@@ -12,7 +12,7 @@ tags:
 # test_websocket_notifications()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
+community: "Audit Ledger (SHA-256 hash only)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # mcp_proxy.py (MCP tool call gate)
@@ -14,4 +14,4 @@ tags:
 - [[MCP Proxy]] - `conceptually_related_to` [EXTRACTED]
 - [[Proxy Layer_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+#graphify/image #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

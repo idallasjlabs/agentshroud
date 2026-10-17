@@ -12,7 +12,7 @@ tags:
 # test_expired_window_code_denies()
 
 ## Connections
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `calls` [EXTRACTED]
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 

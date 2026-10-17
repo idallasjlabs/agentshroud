@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "ContextSegment"
+community: "PipelineAction (2)"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/PipelineAction_2
 ---
 
 # test_prompt_guard_double_encoded_uses_full_ruleset()
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

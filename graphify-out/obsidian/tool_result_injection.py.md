@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[CVE-2026-22708 — AI Agent Container Escape via Prompt Injection]] - `references` [EXTRACTED]
 - [[CVE-2026-30741 — RCE via Request-Side Prompt Injection]] - `references` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[InjectionAction]] - `contains` [EXTRACTED]
 - [[InjectionResult]] - `contains` [EXTRACTED]
 - [[InjectionRule]] - `contains` [EXTRACTED]

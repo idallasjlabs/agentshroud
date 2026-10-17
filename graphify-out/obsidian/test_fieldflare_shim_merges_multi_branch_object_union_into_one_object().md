@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[dot-_strip_fieldflare_unsupported_fields()]] - `calls` [INFERRED]
-- [[Fieldflare tool-schema flatten fix (skill_manage six-branch union 400)]] - `references` [INFERRED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[_skill_manage_like_request()]] - `calls` [INFERRED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]

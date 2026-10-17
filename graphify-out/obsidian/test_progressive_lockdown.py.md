@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "ProgressiveLockdown (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/ProgressiveLockdown_2
 ---
 
 # test_progressive_lockdown.py
@@ -17,7 +17,7 @@ tags:
 - [[LockdownLevel]] - `imports` [EXTRACTED]
 - [[PassthroughPipeline_1]] - `contains` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
 - [[TestCollabLockdownNotifications]] - `contains` [EXTRACTED]
 - [[TestLockedCommand]] - `contains` [EXTRACTED]
 - [[TestProgressiveLockdownUnit]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[_make_update()_1]] - `contains` [EXTRACTED]
 - [[_wrap()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_4
 ---
 
 # test_key_vault.py
@@ -23,7 +23,7 @@ tags:
 - [[TestKeyScoping]] - `contains` [EXTRACTED]
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
-- [[config()]] - `contains` [EXTRACTED]
+- [[config()_4]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

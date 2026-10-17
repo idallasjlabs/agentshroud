@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[Configuration  Environment Variables_1]] - `contains` [EXTRACTED]
-- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 - [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_6]] - `contains` [EXTRACTED]
-- [[Purpose_103]] - `contains` [EXTRACTED]
-- [[Related_9]] - `contains` [EXTRACTED]
-- [[Responsibilities_7]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
+- [[Purpose_110]] - `contains` [EXTRACTED]
+- [[Related_11]] - `contains` [EXTRACTED]
+- [[Responsibilities_8]] - `contains` [EXTRACTED]
 - [[Threat Model_7]] - `contains` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # test_hermes_chown_coverage.sh script
 
 ## Connections
-- [[check()_6]] - `calls` [EXTRACTED]
+- [[check()_5]] - `calls` [EXTRACTED]
 - [[test_hermes_chown_coverage.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh

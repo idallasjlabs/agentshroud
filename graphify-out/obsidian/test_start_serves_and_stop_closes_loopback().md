@@ -12,7 +12,7 @@ tags:
 # test_start_serves_and_stop_closes_loopback()
 
 ## Connections
-- [[dot-close()_19]] - `calls` [EXTRACTED]
+- [[dot-close()_17]] - `calls` [EXTRACTED]
 - [[dot-drain()_3]] - `calls` [EXTRACTED]
 - [[dot-readline()_1]] - `calls` [EXTRACTED]
 - [[dot-write()_3]] - `calls` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # .test_running_with_alert_dir()
 
 ## Connections
-- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

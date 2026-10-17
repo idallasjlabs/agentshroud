@@ -12,7 +12,7 @@ tags:
 # .test_security_pipeline_set_global_mode_missing_components()
 
 ## Connections
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[Test set_global_mode handles missing components gracefully.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 

@@ -1,17 +1,25 @@
 ---
-source_file: "scripts/check_benchmark_regression.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "check_benchmark_regression.py"
-location: "L24"
+community: "SecureBrowser (3)"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_benchmark_regressionpy
+  - community/SecureBrowser_3
 ---
 
 # main()
 
 ## Connections
-- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
+- [[dot-_take_screenshot()_2]] - `calls` [EXTRACTED]
+- [[dot-click()_2]] - `calls` [EXTRACTED]
+- [[dot-close()_6]] - `calls` [EXTRACTED]
+- [[dot-extract()_2]] - `calls` [EXTRACTED]
+- [[dot-fill_field()_2]] - `calls` [EXTRACTED]
+- [[dot-navigate()_2]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `calls` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

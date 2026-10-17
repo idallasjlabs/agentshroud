@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[alert_if_critical()]] - `calls` [EXTRACTED]
 - [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[log()_8]] - `calls` [EXTRACTED]
+- [[log()_7]] - `calls` [EXTRACTED]
 - [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

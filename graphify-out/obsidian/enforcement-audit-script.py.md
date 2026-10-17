@@ -12,7 +12,7 @@ tags:
 # enforcement-audit-script.py
 
 ## Connections
-- [[Action_2]] - `imports` [EXTRACTED]
+- [[Action_1]] - `imports` [EXTRACTED]
 - [[ApprovalHardening]] - `imports` [EXTRACTED]
 - [[ApprovalHardeningConfig]] - `imports` [EXTRACTED]
 - [[AuditStore]] - `imports` [EXTRACTED]
@@ -31,20 +31,20 @@ tags:
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[PromptProtection]] - `imports` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_65]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_2]] - `imports` [EXTRACTED]
+- [[Role_28]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager_3]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
-- [[fail()]] - `contains` [EXTRACTED]
+- [[fail()_3]] - `contains` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
-- [[ok()]] - `contains` [EXTRACTED]
-- [[run()]] - `contains` [EXTRACTED]
-- [[warn()]] - `contains` [EXTRACTED]
+- [[ok()_1]] - `contains` [EXTRACTED]
+- [[run()_4]] - `contains` [EXTRACTED]
+- [[warn()_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

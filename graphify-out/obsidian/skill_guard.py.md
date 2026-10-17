@@ -12,11 +12,11 @@ tags:
 # skill_guard.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[Finding]] - `contains` [EXTRACTED]
 - [[Recommendation]] - `contains` [EXTRACTED]
-- [[ScanResult_4]] - `contains` [EXTRACTED]
-- [[Severity]] - `contains` [EXTRACTED]
+- [[ScanResult_3]] - `contains` [EXTRACTED]
+- [[Severity_1]] - `contains` [EXTRACTED]
 - [[SkillGuard_1]] - `contains` [EXTRACTED]
 - [[SkillScanError]] - `contains` [EXTRACTED]
 - [[_Rule]] - `contains` [EXTRACTED]

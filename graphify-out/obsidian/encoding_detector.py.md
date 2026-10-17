@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "PipelineAction"
+community: "PipelineAction (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/PipelineAction_2
 ---
 
 # encoding_detector.py
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[differential_pii_detector.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

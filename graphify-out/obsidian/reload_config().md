@@ -12,8 +12,8 @@ tags:
 # reload_config()
 
 ## Connections
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[Path_14]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[Path_39]] - `references` [EXTRACTED]
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - `rationale_for` [EXTRACTED]
 - [[apply_reloadable_config()]] - `calls` [EXTRACTED]
 - [[config_watcher()]] - `calls` [EXTRACTED]

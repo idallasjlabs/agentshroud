@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Low-trust agents should be blocked from high-risk actions.]] - `rationale_for` [EXTRACTED]
 - [[TestAuth]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_2]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimitGuard

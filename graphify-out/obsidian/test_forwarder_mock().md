@@ -12,7 +12,7 @@ tags:
 # test_forwarder_mock()
 
 ## Connections
-- [[dot-forward()_3]] - `calls` [EXTRACTED]
+- [[dot-forward()_2]] - `calls` [EXTRACTED]
 - [[Verify forwarder mock works correctly.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

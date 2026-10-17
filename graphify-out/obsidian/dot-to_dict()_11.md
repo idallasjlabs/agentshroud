@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Path"
-location: "L68"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/make_event
 ---
 
 # .to_dict()
 
 ## Connections
-- [[ManifestEntry]] - `method` [EXTRACTED]
+- [[dot-get_recent()]] - `calls` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/make_event

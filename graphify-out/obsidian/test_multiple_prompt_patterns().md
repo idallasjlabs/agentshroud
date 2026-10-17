@@ -12,7 +12,7 @@ tags:
 # test_multiple_prompt_patterns()
 
 ## Connections
-- [[dot-process_inbound()_8]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `calls` [EXTRACTED]
 - [[Verify multiple injection patterns are detected.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

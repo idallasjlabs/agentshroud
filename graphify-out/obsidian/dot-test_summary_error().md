@@ -12,6 +12,6 @@ tags:
 # .test_summary_error()
 
 ## Connections
-- [[TestTrivySummary]] - `method` [EXTRACTED]
+- [[TestTrivySummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

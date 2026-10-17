@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[AgentTarget_2]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
-- [[GatewayConfig_2]] - `imports` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[router()_2]] - `contains` [EXTRACTED]
 - [[router_config()]] - `contains` [EXTRACTED]
 - [[test_agent_target_custom_paths()]] - `contains` [EXTRACTED]

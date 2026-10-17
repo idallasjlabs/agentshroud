@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SlackAPIProxy]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
 - [[TestBodyParsing]] - `contains` [EXTRACTED]
 - [[TestCallSlackApi]] - `contains` [EXTRACTED]
 - [[TestInviteChannelMember]] - `contains` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[TestProvisionGroupChannel]] - `contains` [EXTRACTED]
 - [[TestRedactionCountErrorSwallow]] - `contains` [EXTRACTED]
 - [[_RaisingRedactionResult]] - `contains` [EXTRACTED]
-- [[_make_proxy()_1]] - `contains` [EXTRACTED]
+- [[_make_proxy()_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

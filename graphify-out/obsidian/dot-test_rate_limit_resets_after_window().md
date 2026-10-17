@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[SessionManager]] - `calls` [EXTRACTED]
-- [[TestRateLimiting_2]] - `method` [EXTRACTED]
+- [[TestRateLimiting_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SessionManager_2

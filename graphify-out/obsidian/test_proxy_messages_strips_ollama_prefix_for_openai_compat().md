@@ -16,7 +16,7 @@ tags:
 - [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[_fake_forward()_3]] - `contains` [EXTRACTED]
 - [[_fake_forward()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

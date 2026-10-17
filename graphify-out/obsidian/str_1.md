@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ProxyAction"
+community: "WebContentScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/WebContentScanner
 ---
 
 # str
 
 ## Connections
-- [[ProxyAction]] - `inherits` [EXTRACTED]
+- [[FindingSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L5421"
+community: "FakeRBAC"
+location: "L5439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # .test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()
@@ -14,10 +14,12 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[When update_id is missing, different message_id values should not dedupe togethe]] - `rationale_for` [EXTRACTED]
+- [[When update_id is missing, different message_id values should not dedupe…]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_urlopen()_75]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

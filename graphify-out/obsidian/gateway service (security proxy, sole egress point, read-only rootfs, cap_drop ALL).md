@@ -12,10 +12,8 @@ tags:
 # gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)
 
 ## Connections
-- [[CI DAST scan (Nuclei, workflow_dispatch, self-hosted)]] - `references` [EXTRACTED]
 - [[Compose secrets block (file fallbacks; asb extracts from credential backend at runtime)]] - `shares_data_with` [EXTRACTED]
 - [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - `rationale_for` [EXTRACTED]
-- [[Image signing & provenance job (cosign keyless + syft SBOM attest)]] - `references` [INFERRED]
 - [[Local model defaults nemotron-3.5-lightning-rapid anchor, qwen3-coder coding, deepseek-r1 reasoning]] - `rationale_for` [EXTRACTED]
 - [[Three-tier network segmentation (internal edge  isolated DMZ  dmz) — IEC 62443 FR5]] - `rationale_for` [EXTRACTED]
 - [[container macro (always-true placeholder inside the gateway)]] - `references` [EXTRACTED]

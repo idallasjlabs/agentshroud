@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ToolResultSanitizer (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ToolResultSanitizer_2
 ---
 
 # test_filter_xml_blocks.py
@@ -38,4 +38,4 @@ tags:
 - [[test_was_filtered_false_when_no_blocks()]] - `contains` [EXTRACTED]
 - [[test_was_filtered_true_when_block_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2

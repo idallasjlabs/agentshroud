@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[ProxyDashboard]] - `references` [EXTRACTED]
-- [[SecurityPipeline_2]] - `references` [EXTRACTED]
-- [[fail()_3]] - `calls` [EXTRACTED]
-- [[info()_1]] - `calls` [EXTRACTED]
-- [[pass()_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `references` [EXTRACTED]
+- [[fail()]] - `calls` [EXTRACTED]
+- [[info()]] - `calls` [EXTRACTED]
+- [[pass()]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `references` [EXTRACTED]
 - [[run_full()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]

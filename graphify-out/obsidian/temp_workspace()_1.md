@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "RBACConfig"
-location: "L36"
+community: "ToolResultSanitizer"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ToolResultSanitizer
 ---
 
 # temp_workspace()
 
 ## Connections
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

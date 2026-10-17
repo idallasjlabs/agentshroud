@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (9)"
+community: "TelegramAPIProxy (2)"
 location: "L2153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_9
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_9
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

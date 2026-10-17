@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "test_e2e_proxy.py (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_e2e_proxypy_2
 ---
 
 # test_e2e.py
 
 ## Connections
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[Role_65]] - `references` [EXTRACTED]
-- [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[client()_15]] - `contains` [EXTRACTED]
+- [[Role_28]] - `references` [EXTRACTED]
+- [[TrustLevel_2]] - `imports` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
-- [[test_dashboard_requires_auth()_1]] - `contains` [EXTRACTED]
+- [[test_dashboard_requires_auth()]] - `contains` [EXTRACTED]
 - [[test_dashboard_returns_html()]] - `contains` [EXTRACTED]
 - [[test_dashboard_stats_returns_json()]] - `contains` [EXTRACTED]
 - [[test_forward_pii_sanitized_and_ledger_entry()]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_ssh_submit_queues_approval()]] - `contains` [EXTRACTED]
 - [[test_status_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy_2

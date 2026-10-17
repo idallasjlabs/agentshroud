@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py (2)"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # install_log_handler()
@@ -18,4 +18,4 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

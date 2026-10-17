@@ -12,7 +12,7 @@ tags:
 # test_sidecar_scanner()
 
 ## Connections
-- [[ScanRequest_1]] - `calls` [EXTRACTED]
+- [[ScanRequest]] - `calls` [EXTRACTED]
 - [[SidecarScanner]] - `calls` [EXTRACTED]
 - [[Verify sidecar scanner works.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]

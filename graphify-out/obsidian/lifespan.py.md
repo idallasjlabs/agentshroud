@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "AgentRegistry"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # lifespan.py
@@ -53,13 +53,13 @@ tags:
 - [[KeyVaultConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[LLMProxy]] - `imports` [EXTRACTED]
-- [[MCPPolicyConfig]] - `imports` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `imports` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `imports` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `imports` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
@@ -72,17 +72,17 @@ tags:
 - [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[PromptProtection]] - `imports` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[RateLimitConfig]] - `imports` [EXTRACTED]
 - [[RateLimitGuard]] - `imports` [EXTRACTED]
 - [[ReportStore]] - `imports` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_2]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
-- [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustLevel_2]] - `imports` [EXTRACTED]
+- [[TrustManager_3]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig_1]] - `imports` [EXTRACTED]
@@ -103,8 +103,8 @@ tags:
 - [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[dns_blocklist.py]] - `imports_from` [EXTRACTED]
 - [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
-- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
-- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
+- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py]] - `imports_from` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
 - [[event_bus.py]] - `imports_from` [EXTRACTED]
 - [[falco_monitor.py]] - `imports_from` [EXTRACTED]
@@ -112,8 +112,8 @@ tags:
 - [[get_trivy_summary()]] - `imports` [EXTRACTED]
 - [[get_wazuh_summary()]] - `imports` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `imports` [EXTRACTED]
-- [[health_report.py]] - `imports_from` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[health_report.py_2]] - `imports_from` [EXTRACTED]
+- [[http_proxy.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
 - [[install_log_handler()]] - `imports` [EXTRACTED]
@@ -121,9 +121,9 @@ tags:
 - [[ledger.py]] - `imports_from` [EXTRACTED]
 - [[lifespan()]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
-- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
-- [[middleware.py]] - `imports_from` [EXTRACTED]
+- [[mcp_config.py]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[middleware.py_1]] - `imports_from` [EXTRACTED]
 - [[outbound_filter.py]] - `imports_from` [EXTRACTED]
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[prompt_guard.py]] - `imports_from` [EXTRACTED]
@@ -140,11 +140,11 @@ tags:
 - [[test_resource_guard_wiring.py]] - `references` [EXTRACTED]
 - [[test_telegram_executor.py]] - `imports_from` [EXTRACTED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
-- [[trust_manager.py]] - `imports_from` [EXTRACTED]
+- [[trust_manager.py_1]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `imports` [EXTRACTED]
 - [[verify_images()]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
-- [[web_config.py_2]] - `imports_from` [EXTRACTED]
+- [[wazuh_client.py_2]] - `imports_from` [EXTRACTED]
+- [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

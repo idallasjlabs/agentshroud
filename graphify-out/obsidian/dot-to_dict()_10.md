@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "A2AGovernanceProxy"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/A2AGovernanceProxy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_71]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[dot-get_summary()]] - `calls` [EXTRACTED]
+- [[A2APeer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "SecureBrowser Skill (2)"
+community: "SecureBrowser Skill (2) (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2
+  - community/SecureBrowser_Skill_2_2
 ---
 
 # tailscale-serve.sh script
@@ -18,4 +18,4 @@ tags:
 - [[cmd_stop]] - `calls` [EXTRACTED]
 - [[tailscale-serve.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_Skill_2
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_Skill_2_2

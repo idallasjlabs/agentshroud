@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "UserSessionManager (4)"
+community: "discover_upstream_versions.py"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/discover_upstream_versionspy
 ---
 
 # fetch()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_retry_attempts_force_ipv4()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

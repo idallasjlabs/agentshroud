@@ -15,12 +15,12 @@ tags:
 - [[dot-test_after_operations()]] - `calls` [EXTRACTED]
 - [[dot-test_dry_run()_1]] - `calls` [EXTRACTED]
 - [[dot-test_empty_history()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[List all version history entries.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
-- [[get_version_history()]] - `calls` [EXTRACTED]
+- [[get_version_history()_1]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
-- [[version_routes.py]] - `imports` [EXTRACTED]
+- [[version_routes.py_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

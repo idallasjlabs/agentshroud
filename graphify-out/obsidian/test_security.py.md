@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # test_security.py
 
 ## Connections
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[RateLimiter_1]] - `imports` [EXTRACTED]
 - [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - `references` [EXTRACTED]
 - [[test_constant_time_comparison()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_xss_attempt()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

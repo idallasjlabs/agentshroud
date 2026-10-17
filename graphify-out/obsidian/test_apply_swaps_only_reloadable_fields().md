@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_load()]] - `calls` [EXTRACTED]
-- [[_write()]] - `calls` [EXTRACTED]
+- [[_write()_1]] - `calls` [EXTRACTED]
 - [[apply_reloadable_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .test_returns_empty_list_when_dir_missing()
 
 ## Connections
-- [[Path_36]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
 

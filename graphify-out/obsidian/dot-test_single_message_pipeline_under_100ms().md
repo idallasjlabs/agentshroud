@@ -17,6 +17,6 @@ tags:
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[Single message through full pipeline in under 100ms.]] - `rationale_for` [EXTRACTED]
 - [[TestFullPipelineLatency]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

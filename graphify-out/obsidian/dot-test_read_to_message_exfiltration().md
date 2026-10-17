@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test detection of read → message exfiltration pattern.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

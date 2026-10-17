@@ -12,7 +12,7 @@ tags:
 # multi-host-test.sh
 
 ## Connections
-- [[main()_29]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 - [[multi-host-test.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/main_2

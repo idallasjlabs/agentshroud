@@ -1,17 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
-type: "document"
-community: "env_guard.py"
+source_file: "gateway/security/env_guard.py"
+type: "code"
+community: "AlertDispatcher (2) (2)"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/AlertDispatcher_2_2
 ---
 
-# env_guard.py.md
+# env_guard.py
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard]] - `contains` [EXTRACTED]
+- [[EnvironmentLeakage]] - `contains` [EXTRACTED]
+- [[agent_isolation.py]] - `references` [EXTRACTED]
+- [[check_command()]] - `contains` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
+- [[encrypted_store.py]] - `references` [EXTRACTED]
+- [[get_env_guard()]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `semantically_similar_to` [INFERRED]
+- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
+- [[scrub_output()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

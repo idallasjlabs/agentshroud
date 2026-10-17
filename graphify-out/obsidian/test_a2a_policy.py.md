@@ -16,7 +16,7 @@ tags:
 - [[A2APolicyAction]] - `imports` [EXTRACTED]
 - [[A2APolicyConfig]] - `imports` [EXTRACTED]
 - [[A2APolicyDecision]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `contains` [EXTRACTED]

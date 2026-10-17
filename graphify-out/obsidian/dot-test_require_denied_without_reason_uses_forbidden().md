@@ -12,8 +12,8 @@ tags:
 # .test_require_denied_without_reason_uses_forbidden()
 
 ## Connections
-- [[SCLCaller_2]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

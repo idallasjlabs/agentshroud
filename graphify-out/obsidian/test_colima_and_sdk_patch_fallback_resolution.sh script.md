@@ -17,7 +17,7 @@ tags:
 - [[_mk()]] - `calls` [EXTRACTED]
 - [[_render_build()]] - `calls` [EXTRACTED]
 - [[_wait_result()]] - `calls` [EXTRACTED]
-- [[check()_5]] - `calls` [EXTRACTED]
+- [[check()_4]] - `calls` [EXTRACTED]
 - [[hc_run()]] - `calls` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `contains` [EXTRACTED]
 

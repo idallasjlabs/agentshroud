@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # test_middleware_coverage.py
@@ -26,31 +26,31 @@ tags:
 - [[TestExtractUserId]] - `contains` [EXTRACTED]
 - [[TestFileSandboxStep]] - `contains` [EXTRACTED]
 - [[TestFilterOutboundResponse]] - `contains` [EXTRACTED]
-- [[TestGitGuard_1]] - `contains` [EXTRACTED]
+- [[TestGitGuard]] - `contains` [EXTRACTED]
 - [[TestInit]] - `contains` [EXTRACTED]
 - [[TestIsOwner]] - `contains` [EXTRACTED]
 - [[TestIsPathAllowedForUser]] - `contains` [EXTRACTED]
 - [[TestMemoryIntegrityRegistration]] - `contains` [EXTRACTED]
 - [[TestMetadataGuard]] - `contains` [EXTRACTED]
 - [[TestMiddlewareResult]] - `contains` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `contains` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `contains` [EXTRACTED]
 - [[TestPathIsolationStep]] - `contains` [EXTRACTED]
 - [[TestProcessRequestIdentity]] - `contains` [EXTRACTED]
 - [[TestProcessRequestRBAC]] - `contains` [EXTRACTED]
 - [[TestProcessToolResult]] - `contains` [EXTRACTED]
 - [[TestScanToolResult]] - `contains` [EXTRACTED]
 - [[TestSetConfig]] - `contains` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `contains` [EXTRACTED]
+- [[TestToolChainAnalyzer]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_bot()]] - `contains` [EXTRACTED]
 - [[_req()_1]] - `contains` [EXTRACTED]
 - [[_scan_result()]] - `contains` [EXTRACTED]
 - [[_tool_req()]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `references` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 - [[mm()]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `references` [EXTRACTED]
-- [[temp_workspace()]] - `contains` [EXTRACTED]
+- [[temp_workspace()_1]] - `contains` [EXTRACTED]
 - [[usm()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

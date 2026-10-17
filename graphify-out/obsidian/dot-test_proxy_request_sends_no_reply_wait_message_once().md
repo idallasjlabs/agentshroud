@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (8)"
+community: "TelegramAPIProxy (2)"
 location: "L2126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_8
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_proxy_request_sends_no_reply_wait_message_once()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_8
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

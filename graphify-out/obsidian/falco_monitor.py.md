@@ -18,7 +18,7 @@ tags:
 - [[configure_rules()]] - `contains` [EXTRACTED]
 - [[datetime]] - `imports_from` [EXTRACTED]
 - [[falco-rules]] - `references` [INFERRED]
-- [[generate_summary()_2]] - `contains` [EXTRACTED]
+- [[generate_summary()]] - `contains` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[parse_alert()]] - `contains` [EXTRACTED]
@@ -27,6 +27,6 @@ tags:
 - [[test_scanner_integration_coverage.py]] - `references` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
+- [[wazuh_client.py_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

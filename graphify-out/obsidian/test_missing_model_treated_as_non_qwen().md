@@ -1,19 +1,17 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_thinking_suppression.py"
 type: "code"
-community: "LLMProxy"
-location: "L83"
+community: "LLMProxy (2)"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/LLMProxy_2
 ---
 
 # test_missing_model_treated_as_non_qwen()
 
 ## Connections
-- [[dot-_suppress_qwen3_thinking()]] - `calls` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
-- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - `contains` [EXTRACTED]
+- [[test_llm_proxy_thinking_suppression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy_2

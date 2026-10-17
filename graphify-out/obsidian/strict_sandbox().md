@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (2)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_2
 ---
 
 # strict_sandbox()
 
 ## Connections
 - [[FileSandbox]] - `calls` [EXTRACTED]
-- [[Sandbox with separation of privilege enforcement.]] - `rationale_for` [EXTRACTED]
-- [[test_privilege_separation.py]] - `contains` [EXTRACTED]
+- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

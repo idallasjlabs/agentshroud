@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response"
-location: "L8459"
+community: "test_telegram_proxy_inbound.py"
+location: "L8477"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # /gi <uid> must grant immunity so the user bypasses lockdown suspension check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_grant_immunity_bypasses_suspension()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

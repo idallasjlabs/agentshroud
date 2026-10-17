@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/KillSwitchMonitor
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_recent()]] - `calls` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `method` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
+- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

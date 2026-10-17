@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L4689"
+community: "test_llm_proxy_local_parity.py"
+location: "L4707"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .test_plain_model_question_is_handled_locally()
@@ -15,9 +15,11 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Plain language model question should be answered by gateway directly.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_urlopen()_41]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

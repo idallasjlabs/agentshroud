@@ -12,15 +12,15 @@ tags:
 # router.py
 
 ## Connections
-- [[Config Keys Read_5]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_5]] - `contains` [EXTRACTED]
-- [[Function Details_34]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_5]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_36]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
-- [[Purpose_156]] - `contains` [EXTRACTED]
-- [[Related_39]] - `contains` [EXTRACTED]
-- [[Responsibilities_37]] - `contains` [EXTRACTED]
+- [[Config Keys Read_6]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
+- [[Function Details_35]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_37]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
+- [[Purpose_145]] - `contains` [EXTRACTED]
+- [[Related_41]] - `contains` [EXTRACTED]
+- [[Responsibilities_38]] - `contains` [EXTRACTED]
 - [[router.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/routerpy

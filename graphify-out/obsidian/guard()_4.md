@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_browser_security.py"
+source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ConsentFramework"
-location: "L26"
+community: "AlertDispatcher (2) (2)"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/AlertDispatcher_2_2
 ---
 
 # guard()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
-- [[test_browser_security.py]] - `contains` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

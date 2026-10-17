@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "main.rs"
 location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/mainrs
 ---
 
 # run_approvals_decide()
@@ -22,7 +22,7 @@ tags:
 - [[decide_errors_on_409_conflict()]] - `calls` [EXTRACTED]
 - [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
 - [[format_decision()]] - `calls` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/mainrs

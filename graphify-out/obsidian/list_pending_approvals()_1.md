@@ -12,7 +12,7 @@ tags:
 # list_pending_approvals()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 

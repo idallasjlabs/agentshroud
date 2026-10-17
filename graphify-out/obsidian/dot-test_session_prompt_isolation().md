@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "test_dashboard_endpoints.py"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/test_dashboard_endpointspy
 ---
 
 # .test_session_prompt_isolation()
@@ -15,4 +15,4 @@ tags:
 - [[Test that session prompts include isolation instructions.]] - `rationale_for` [EXTRACTED]
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

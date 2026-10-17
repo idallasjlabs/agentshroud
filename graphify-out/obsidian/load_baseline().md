@@ -12,7 +12,7 @@ tags:
 # load_baseline()
 
 ## Connections
-- [[dot-setup_method()_26]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_32]] - `calls` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression

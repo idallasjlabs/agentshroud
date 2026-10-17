@@ -12,10 +12,10 @@ tags:
 # privacy_policy.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[PrivacyPolicy]] - `contains` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `contains` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[ServicePolicy]] - `contains` [EXTRACTED]
 - [[ServicePrivacy]] - `contains` [EXTRACTED]
 

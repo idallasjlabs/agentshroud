@@ -12,6 +12,6 @@ tags:
 # requiresApproval
 
 ## Connections
-- [[security_11]] - `contains` [EXTRACTED]
+- [[security_12]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/skilljson

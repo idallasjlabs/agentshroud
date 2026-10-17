@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L52"
+community: "AlertDispatcher"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/AlertDispatcher
 ---
 
 # warn()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "DelegationManager"
-location: "L73"
+community: "AgentRegistry"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

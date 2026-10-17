@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ApprovalQueueConfig (10)"
+community: "TelegramAPIProxy (2)"
 location: "L2219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_10
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_10
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

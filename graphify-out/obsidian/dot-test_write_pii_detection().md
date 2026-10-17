@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (3)"
 location: "L567"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_3
 ---
 
 # .test_write_pii_detection()
@@ -15,4 +15,4 @@ tags:
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 - [[Writing PII should be flagged even to allowed paths.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestOutboundInfoFilter (9)"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_9
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # test_prompt_protection.py
@@ -17,4 +17,4 @@ tags:
 - [[prompt_protection()]] - `contains` [EXTRACTED]
 - [[sample_protected_content()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_9
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

@@ -12,7 +12,7 @@ tags:
 # .test_rebuild_success()
 
 ## Connections
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestRebuild]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 

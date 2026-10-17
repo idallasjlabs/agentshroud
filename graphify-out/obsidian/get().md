@@ -18,8 +18,8 @@ tags:
 - [[climain.py]] - `contains` [EXTRACTED]
 - [[freeze()]] - `calls` [EXTRACTED]
 - [[get_logs()_1]] - `calls` [EXTRACTED]
-- [[restart_service()_2]] - `calls` [EXTRACTED]
-- [[stop_service()_2]] - `calls` [EXTRACTED]
+- [[restart_service()_1]] - `calls` [EXTRACTED]
+- [[stop_service()_1]] - `calls` [EXTRACTED]
 - [[tail()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/cli/mainpy

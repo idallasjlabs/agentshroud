@@ -19,6 +19,6 @@ tags:
 - [[TestMonitorEnvironmentAccess]] - `contains` [EXTRACTED]
 - [[TestScrubCommandOutput]] - `contains` [EXTRACTED]
 - [[TestSummaryAndExport]] - `contains` [EXTRACTED]
-- [[guard()_3]] - `contains` [EXTRACTED]
+- [[guard()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

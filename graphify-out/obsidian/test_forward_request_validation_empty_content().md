@@ -12,7 +12,7 @@ tags:
 # test_forward_request_validation_empty_content()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[Test ForwardRequest rejects empty content]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 

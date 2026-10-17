@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "create_auth_dependency"
+community: "create_auth_dependency (2)"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/create_auth_dependency_2
 ---
 
 # email_send_owner()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[EmailSendRequest_1]] - `calls` [EXTRACTED]
 - [[OwnerEmailRequest]] - `references` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[Send an email to the owner without exposing the recipient address in the request]] - `rationale_for` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

@@ -12,7 +12,7 @@ tags:
 # ensure()
 
 ## Connections
-- [[Path_38]] - `references` [EXTRACTED]
+- [[Path_43]] - `references` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `calls` [EXTRACTED]
 - [[generate_favicons()]] - `calls` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[generate_social()]] - `calls` [EXTRACTED]
 - [[generate_svg_logos()]] - `calls` [EXTRACTED]
 - [[generate_variants()]] - `calls` [EXTRACTED]
-- [[save()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

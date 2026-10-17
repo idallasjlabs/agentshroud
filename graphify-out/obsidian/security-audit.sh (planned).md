@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "Atlas — Curriculum Architect (4)"
+community: "OpenClaw Management Scripts"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_4
+  - community/OpenClaw_Management_Scripts
 ---
 
 # security-audit.sh (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_4
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

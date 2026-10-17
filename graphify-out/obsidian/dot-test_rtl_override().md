@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ContextSegment"
+community: "ContextSegment (2)"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ContextSegment_2
 ---
 
 # .test_rtl_override()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ContextSegment_2

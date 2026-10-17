@@ -1,18 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_wire_llm_settings.js"
-location: "L57"
+community: "Unknown/unapproved users have stricter rate limits than collaborators. After…"
+location: "L7836"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/Unknown/unapproved_users_have_stricter_rate_limits_than_collaborators_After
 ---
 
 # read()
 
 ## Connections
-- [[readHermesMcpServers()]] - `calls` [EXTRACTED]
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_60]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/code #graphify/EXTRACTED #community/Unknown/unapproved_users_have_stricter_rate_limits_than_collaborators_After

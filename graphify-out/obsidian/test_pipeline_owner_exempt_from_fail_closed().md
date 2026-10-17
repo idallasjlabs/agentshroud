@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Owner messages should NOT be blocked when security module crashes (owner exempti]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[_BrokenSanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 

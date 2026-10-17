@@ -12,6 +12,6 @@ tags:
 # macOS / Linux
 
 ## Connections
-- [[Installation]] - `contains` [EXTRACTED]
+- [[Installation_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

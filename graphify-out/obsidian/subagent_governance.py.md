@@ -12,7 +12,7 @@ tags:
 # subagent_governance.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[GovernanceAction]] - `contains` [EXTRACTED]
 - [[GovernanceConfig]] - `contains` [EXTRACTED]
 - [[GovernanceEvent]] - `contains` [EXTRACTED]

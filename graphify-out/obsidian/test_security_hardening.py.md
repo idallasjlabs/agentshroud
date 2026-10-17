@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_3
 ---
 
 # test_security_hardening.py
@@ -38,9 +38,9 @@ tags:
 - [[TestTrustManagerHardened]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustLevel_2]] - `imports` [EXTRACTED]
+- [[TrustManager_3]] - `imports` [EXTRACTED]
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3

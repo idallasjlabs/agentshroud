@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CompetitiveIntelReport_2]] - `imports` [EXTRACTED]
 - [[CompetitorEntry_1]] - `imports` [EXTRACTED]
-- [[IntelReportStore_1]] - `imports` [EXTRACTED]
+- [[IntelReportStore]] - `imports` [EXTRACTED]
 - [[ReportIntegrityError]] - `imports` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `contains` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `contains` [EXTRACTED]

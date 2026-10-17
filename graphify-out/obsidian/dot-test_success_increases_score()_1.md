@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "CrossBotTrustLedger (2)"
-location: "L307"
+community: "TrustConfig"
+location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_2
+  - community/TrustConfig
 ---
 
 # .test_success_increases_score()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

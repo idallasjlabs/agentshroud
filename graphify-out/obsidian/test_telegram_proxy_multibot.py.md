@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[BotConfig]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `contains` [EXTRACTED]
 - [[TestTelegramBotConfigTokenSecretField]] - `contains` [EXTRACTED]
 - [[TestTelegramProxyRouteMultiBot]] - `contains` [EXTRACTED]
 - [[TestTelegramTokenRegistry]] - `contains` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy (telegram-api{path})]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports_from` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

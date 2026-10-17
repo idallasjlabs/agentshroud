@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_bot_id_augments_result_with_image_scan()]] - `calls` [EXTRACTED]
 - [[dot-test_no_bot_id_omits_bot_keys()]] - `calls` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns]] - `rationale_for` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]

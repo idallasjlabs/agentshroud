@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[appendLog()_1]] - `contains` [EXTRACTED]
 - [[browserFetch()_1]] - `contains` [EXTRACTED]
-- [[fs_2]] - `contains` [EXTRACTED]
+- [[fs_1]] - `contains` [EXTRACTED]
 - [[path_5]] - `contains` [EXTRACTED]
 - [[{ chromium }_1]] - `contains` [EXTRACTED]
 

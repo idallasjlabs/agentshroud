@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Contents]] - `contains` [EXTRACTED]
 - [[Coverage Requirements]] - `contains` [EXTRACTED]
-- [[Purpose_2]] - `contains` [EXTRACTED]
-- [[Related Notes_3]] - `contains` [EXTRACTED]
+- [[Purpose_1]] - `contains` [EXTRACTED]
+- [[Related Notes_1]] - `contains` [EXTRACTED]
 - [[Test Execution]] - `contains` [EXTRACTED]
 - [[Test Locations]] - `contains` [EXTRACTED]
 - [[Why `tmppytest_cache`]] - `contains` [EXTRACTED]

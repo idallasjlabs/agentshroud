@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Hermes Competitive Intelligence Email (AMPM)_1]] - `references` [EXTRACTED]
-- [[_esc()]] - `contains` [EXTRACTED]
+- [[_esc()_1]] - `contains` [EXTRACTED]
 - [[_inline()]] - `contains` [EXTRACTED]
 - [[_render_table()]] - `contains` [EXTRACTED]
-- [[main()_20]] - `contains` [EXTRACTED]
+- [[main()_21]] - `contains` [EXTRACTED]
 - [[render()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

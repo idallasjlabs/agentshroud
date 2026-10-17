@@ -12,8 +12,8 @@ tags:
 # .test_require_allowed_does_not_raise()
 
 ## Connections
-- [[SCLCaller_2]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

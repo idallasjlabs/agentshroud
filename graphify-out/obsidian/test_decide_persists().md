@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Deciding an item persists the new status.]] - `rationale_for` [EXTRACTED]
-- [[Path_10]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 

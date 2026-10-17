@@ -12,7 +12,7 @@ tags:
 # get_soc_correlation()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

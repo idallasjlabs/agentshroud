@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Integration_1]] - `contains` [EXTRACTED]
-- [[Purpose_6]] - `contains` [EXTRACTED]
-- [[Related Notes_9]] - `contains` [EXTRACTED]
+- [[Purpose_7]] - `contains` [EXTRACTED]
+- [[Related Notes_10]] - `contains` [EXTRACTED]
 - [[Usage_1]] - `contains` [EXTRACTED]
 - [[What It Checks]] - `contains` [EXTRACTED]
 - [[gitleaks.toml]] - `contains` [EXTRACTED]

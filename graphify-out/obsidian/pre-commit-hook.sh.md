@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dockerscriptssecurity-scan.sh]] - `semantically_similar_to` [INFERRED]
-- [[install.sh]] - `references` [EXTRACTED]
+- [[git-hooksinstall.sh]] - `references` [EXTRACTED]
 - [[pre-commit-hook.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

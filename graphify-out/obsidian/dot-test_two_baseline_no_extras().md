@@ -12,6 +12,6 @@ tags:
 # .test_two_baseline_no_extras()
 
 ## Connections
-- [[TestScoreSecretsManagement_1]] - `method` [EXTRACTED]
+- [[TestScoreSecretsManagement]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement

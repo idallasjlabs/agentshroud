@@ -12,11 +12,11 @@ tags:
 # openclaw/skills/i-browser/scripts/browse.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_2]] - `contains` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_4]] - `contains` [EXTRACTED]
 - [[SecureBrowser_2]] - `contains` [EXTRACTED]
-- [[SecurityConfig_3]] - `contains` [EXTRACTED]
+- [[SecurityConfig_2]] - `contains` [EXTRACTED]
 - [[SecurityError_2]] - `contains` [EXTRACTED]
-- [[main()_6]] - `contains` [EXTRACTED]
+- [[main()_8]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

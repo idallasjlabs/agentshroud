@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
+source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "openai-whisper-api/SKILL.md"
-location: "L4"
+community: "killswitch.sh"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/killswitchsh
 ---
 
 # usage()
 
 ## Connections
-- [[transcribe.sh]] - `defines` [EXTRACTED]
-- [[transcribe.sh script]] - `calls` [EXTRACTED]
+- [[killswitch.sh]] - `defines` [EXTRACTED]
+- [[killswitch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/killswitchsh

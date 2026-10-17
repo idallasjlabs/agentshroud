@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/browse.js"
+source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "hermes/skills/i-browser/browse.js"
+community: "openclaw/skills/i-browser/browse.js"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
 # fs
 
 ## Connections
-- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

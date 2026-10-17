@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

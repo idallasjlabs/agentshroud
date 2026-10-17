@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Attempting to create a pipeline with no PII sanitizer raises RuntimeError.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestE2E10FailClosed]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

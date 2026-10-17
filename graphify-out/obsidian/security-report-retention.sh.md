@@ -12,7 +12,7 @@ tags:
 # security-report-retention.sh
 
 ## Connections
-- [[log()_5]] - `defines` [EXTRACTED]
+- [[log()_9]] - `defines` [EXTRACTED]
 - [[security-report-retention.sh script]] - `contains` [EXTRACTED]
 - [[security-scheduler.sh]] - `calls` [EXTRACTED]
 

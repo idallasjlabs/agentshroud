@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_ledger.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L216"
+community: "ApprovalQueueConfig (4)"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_4
 ---
 
 # test_initialize_is_idempotent()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - `rationale_for` [EXTRACTED]
-- [[test_ledger.py]] - `contains` [EXTRACTED]
+- [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

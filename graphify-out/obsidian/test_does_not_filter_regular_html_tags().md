@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ToolResultSanitizer (2)"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ToolResultSanitizer_2
 ---
 
 # test_does_not_filter_regular_html_tags()
@@ -15,4 +15,4 @@ tags:
 - [[Regular HTML-like tags that are NOT in the block list are not removed.]] - `rationale_for` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2

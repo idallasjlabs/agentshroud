@@ -18,7 +18,7 @@ tags:
 - [[_FakeStreamClient]] - `calls` [INFERRED]
 - [[_FakeStreamResponse]] - `calls` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeStreamResponse

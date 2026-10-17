@@ -2,16 +2,26 @@
 source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
 community: "version_routes.py"
-location: "L1"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/version_routespy
 ---
 
-# version_routes.py.md
+# version_routes.py
 
 ## Connections
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[Config Keys Read_4]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_4]] - `contains` [EXTRACTED]
+- [[Function Details_15]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_17]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
+- [[Purpose_124]] - `contains` [EXTRACTED]
+- [[Related_21]] - `contains` [EXTRACTED]
+- [[Responsibilities_18]] - `contains` [EXTRACTED]
+- [[VersionRequest Fields]] - `contains` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/version_routespy

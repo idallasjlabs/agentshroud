@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
 - [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

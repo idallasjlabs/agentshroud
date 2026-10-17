@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "TestSSRFDetection (2)"
+community: "KeyRotationManager (2)"
 location: "L1001"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/KeyRotationManager_2
 ---
 
 # rotate_credential()
@@ -17,4 +17,4 @@ tags:
 - [[Trigger manual rotation for a specific credential (owner only).]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

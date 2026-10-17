@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "telegram_proxy.py (6)"
+community: "SSH Configuration Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_6
+  - community/SSH_Configuration_Guide
 ---
 
 # icloud/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[iCloud Services_3]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_6
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

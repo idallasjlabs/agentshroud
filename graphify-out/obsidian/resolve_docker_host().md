@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Auto-start a stopped Colima VM (step 1a)]] - `references` [EXTRACTED]
 - [[Dead docker.sock forward repair (step 1a-bis)]] - `references` [EXTRACTED]
-- [[check()_5]] - `references` [EXTRACTED]
+- [[check()_4]] - `references` [EXTRACTED]
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
 

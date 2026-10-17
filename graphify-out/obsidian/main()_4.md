@@ -1,25 +1,20 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "SecureBrowser"
-location: "L431"
+community: "sync-cve-registry.py"
+location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[dot-_take_screenshot()]] - `calls` [EXTRACTED]
-- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
-- [[dot-click()]] - `calls` [EXTRACTED]
-- [[dot-close()_2]] - `calls` [EXTRACTED]
-- [[dot-extract()]] - `calls` [EXTRACTED]
-- [[dot-fill_field()]] - `calls` [EXTRACTED]
-- [[dot-navigate()]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
+- [[Path_10]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

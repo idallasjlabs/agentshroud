@@ -12,7 +12,7 @@ tags:
 # test_submit_does_not_deadlock_on_hung_websocket_client()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]

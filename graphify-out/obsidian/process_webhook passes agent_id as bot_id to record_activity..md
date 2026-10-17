@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "test_collaborator_tracker.py (3)"
 location: "L349"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/test_collaborator_trackerpy_3
 ---
 
 # process_webhook passes agent_id as bot_id to record_activity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

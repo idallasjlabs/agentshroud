@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[PATCHES_FILE]] - `contains` [EXTRACTED]
-- [[assert()]] - `contains` [EXTRACTED]
+- [[assert()_1]] - `contains` [EXTRACTED]
 - [[baseConfig()]] - `contains` [EXTRACTED]
-- [[fs]] - `contains` [EXTRACTED]
-- [[os]] - `contains` [EXTRACTED]
-- [[path_1]] - `contains` [EXTRACTED]
+- [[fs_6]] - `contains` [EXTRACTED]
+- [[os_1]] - `contains` [EXTRACTED]
+- [[path_64]] - `contains` [EXTRACTED]
 - [[runPatches()]] - `contains` [EXTRACTED]
-- [[{ spawnSync }]] - `contains` [EXTRACTED]
+- [[{ spawnSync }_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

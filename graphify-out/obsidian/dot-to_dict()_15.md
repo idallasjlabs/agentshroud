@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "PipelineAction"
-location: "L88"
+community: "plan_remediation"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/plan_remediation
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `method` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
+- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
+- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

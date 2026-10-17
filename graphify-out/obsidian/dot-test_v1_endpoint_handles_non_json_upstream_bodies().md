@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # .test_v1_endpoint_handles_non_json_upstream_bodies()
@@ -15,4 +15,4 @@ tags:
 - [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - `rationale_for` [EXTRACTED]
 - [[TestLLMProxyEndpoints]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

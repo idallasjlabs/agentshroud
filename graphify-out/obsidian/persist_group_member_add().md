@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py (5)"
+community: "telegram_proxy.py (3)"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_5
+  - community/telegram_proxypy_3
 ---
 
 # persist_group_member_add()
@@ -16,9 +16,9 @@ tags:
 - [[Persist a runtime group membership addition.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
-- [[add_group_member()]] - `calls` [EXTRACTED]
+- [[add_group_member()_1]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_5
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3

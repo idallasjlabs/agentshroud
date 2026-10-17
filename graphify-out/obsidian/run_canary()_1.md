@@ -17,7 +17,7 @@ tags:
 - [[CanaryResult]] - `references` [EXTRACTED]
 - [[HTTPForwarder]] - `calls` [INFERRED]
 - [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [INFERRED]
+- [[SecurityPipeline_1]] - `calls` [INFERRED]
 - [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # get_security_alerts()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[from_dict()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

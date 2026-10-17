@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "soc.js (3)"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/socjs_3
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_36]] - `references` [EXTRACTED]
-- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/socjs_3

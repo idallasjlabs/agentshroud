@@ -1,18 +1,32 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "canary-deploy.sh"
-location: "L47"
+community: "sunday-upgrade-apply.sh"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canary-deploysh
+  - community/sunday-upgrade-applysh
 ---
 
 # log()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[_attempt_rollback()]] - `calls` [EXTRACTED]
+- [[_build_one_service()]] - `calls` [EXTRACTED]
+- [[_prune_build_cache()]] - `calls` [EXTRACTED]
+- [[_record_head()]] - `calls` [EXTRACTED]
+- [[_wait_for_docker()]] - `calls` [EXTRACTED]
+- [[check_noop_gate()]] - `calls` [EXTRACTED]
+- [[head-guard function extraction (line-number sed)]] - `references` [EXTRACTED]
+- [[phase_apply()]] - `calls` [EXTRACTED]
+- [[phase_baseline()]] - `calls` [EXTRACTED]
+- [[phase_discover()]] - `calls` [EXTRACTED]
+- [[phase_preflight()]] - `calls` [EXTRACTED]
+- [[phase_scan()]] - `calls` [EXTRACTED]
+- [[phase_verify()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[write_handoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canary-deploysh
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

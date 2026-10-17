@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig (6)"
+community: "ApprovalQueueConfig (3)"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_6
+  - community/ApprovalQueueConfig_3
 ---
 
 # .test_validate_command_newline_injection()
 
 ## Connections
-- [[SSHProxy]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `references` [EXTRACTED]
 - [[TestInjectionNewline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_6
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

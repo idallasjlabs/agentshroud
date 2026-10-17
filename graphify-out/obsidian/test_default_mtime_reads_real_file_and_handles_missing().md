@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - `rationale_for` [EXTRACTED]
 - [[_default_mtime()]] - `calls` [EXTRACTED]
-- [[_write()]] - `calls` [EXTRACTED]
+- [[_write()_1]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

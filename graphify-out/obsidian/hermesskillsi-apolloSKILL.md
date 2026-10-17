@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-apollo/SKILL.md
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Technical_Specification

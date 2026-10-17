@@ -12,7 +12,7 @@ tags:
 # hook_is_pre_commit()
 
 ## Connections
-- [[install.sh]] - `defines` [EXTRACTED]
-- [[install.sh script]] - `calls` [EXTRACTED]
+- [[git-hooksinstall.sh]] - `defines` [EXTRACTED]
+- [[install.sh script_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

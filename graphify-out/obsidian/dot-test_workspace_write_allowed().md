@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L187"
+community: "MiddlewareManager (2)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_2
 ---
 
 # .test_workspace_write_allowed()
 
 ## Connections
-- [[Agent can write to its own workspace directory.]] - `rationale_for` [EXTRACTED]
-- [[TestWorkspaceAccessPreserved]] - `method` [EXTRACTED]
+- [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

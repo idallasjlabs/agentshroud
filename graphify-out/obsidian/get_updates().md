@@ -12,7 +12,7 @@ tags:
 # get_updates()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

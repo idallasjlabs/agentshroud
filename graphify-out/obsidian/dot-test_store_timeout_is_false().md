@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # .test_store_timeout_is_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStoreIn1Password]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

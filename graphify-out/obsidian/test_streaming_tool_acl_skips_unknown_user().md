@@ -16,7 +16,7 @@ tags:
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[_FakeToolACL]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

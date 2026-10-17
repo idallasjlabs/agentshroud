@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalDecision]] - `imports` [EXTRACTED]
 - [[ApprovalRequest_4]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
 - [[limit_request_body()]] - `imports` [EXTRACTED]
 - [[log_requests()]] - `imports` [EXTRACTED]

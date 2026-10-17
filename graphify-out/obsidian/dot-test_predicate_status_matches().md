@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L9175"
+community: "test_telegram_proxy_inbound.py"
+location: "L9193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # .test_predicate_status_matches()
 
 ## Connections
-- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

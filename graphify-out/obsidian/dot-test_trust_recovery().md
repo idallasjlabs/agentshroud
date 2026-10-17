@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestAuth]] - `method` [EXTRACTED]
 - [[Trust should recover after good behavior.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

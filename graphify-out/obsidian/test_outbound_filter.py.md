@@ -15,7 +15,7 @@ tags:
 - [[InfoCategory]] - `imports` [EXTRACTED]
 - [[OutboundInfoFilter]] - `imports` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `contains` [EXTRACTED]
-- [[TestIntegration_1]] - `contains` [EXTRACTED]
+- [[TestIntegration]] - `contains` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -12,9 +12,9 @@ tags:
 # print_output()
 
 ## Connections
-- [[OutputFormat]] - `references` [EXTRACTED]
+- [[OutputFormat_1]] - `references` [EXTRACTED]
 - [[Value_3]] - `references` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[render_output_lines()]] - `calls` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .test_within_rate_limit()
 
 ## Connections
-- [[TestRateLimiting_1]] - `method` [EXTRACTED]
+- [[TestRateLimiting_2]] - `method` [EXTRACTED]
 - [[_msg()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

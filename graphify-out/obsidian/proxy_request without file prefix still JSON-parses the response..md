@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestFileDownload"
-location: "L8787"
+community: "Tests for _forward_file_download() and proxy_request() binary path. Regression…"
+location: "L8805"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFileDownload
+  - community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
 ---
 
 # proxy_request without file/ prefix still JSON-parses the response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_request_api_path_still_json_parsed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFileDownload
+#graphify/rationale #graphify/EXTRACTED #community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression

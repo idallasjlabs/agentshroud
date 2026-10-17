@@ -15,6 +15,6 @@ tags:
 - [[A dict text payload is JSON-serialized before the 80-char preview.]] - `rationale_for` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

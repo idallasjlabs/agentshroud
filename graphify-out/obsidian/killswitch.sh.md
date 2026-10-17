@@ -15,6 +15,6 @@ tags:
 - [[confirm()]] - `defines` [EXTRACTED]
 - [[killswitch.sh script]] - `contains` [EXTRACTED]
 - [[op-wrapper.sh]] - `semantically_similar_to` [INFERRED]
-- [[usage()_8]] - `defines` [EXTRACTED]
+- [[usage()_7]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/killswitchsh

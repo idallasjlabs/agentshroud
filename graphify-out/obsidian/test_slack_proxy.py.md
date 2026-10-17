@@ -20,7 +20,7 @@ tags:
 - [[TestSocketModeRelay]] - `contains` [EXTRACTED]
 - [[TestWebhookReceiverSlackExtraction]] - `contains` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
-- [[_make_proxy()_4]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
 - [[_pass_result()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

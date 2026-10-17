@@ -19,7 +19,7 @@ tags:
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (2)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_2
 ---
 
 # group_workspace.py (GroupWorkspaceManager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_workspace_manager.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

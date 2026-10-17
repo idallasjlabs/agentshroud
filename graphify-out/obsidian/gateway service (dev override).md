@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "code"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "AgentTarget (5)"
 location: "docker/docker-compose.agentshroud-bot.marvin.yml:14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/AgentTarget_5
 ---
 
 # gateway service (dev override)
@@ -19,4 +19,4 @@ tags:
 - [[_wait_for_gateway_healthy()]] - `references` [EXTRACTED]
 - [[pre-commit check-yaml hook (--unsafe)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_5

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[GatewayConfig_3]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

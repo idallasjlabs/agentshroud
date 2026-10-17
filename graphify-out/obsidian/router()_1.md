@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget_2

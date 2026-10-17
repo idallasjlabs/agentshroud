@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "ToolResultSanitizer"
 location: "L456"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ToolResultSanitizer
 ---
 
 # .update_user_trust_level()
@@ -17,4 +17,4 @@ tags:
 - [[Update the trust level for a user within a bot's namespace.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

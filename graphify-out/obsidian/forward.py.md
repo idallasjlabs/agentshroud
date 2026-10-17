@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "create_auth_dependency"
+community: "create_auth_dependency (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/create_auth_dependency_2
 ---
 
 # forward.py
@@ -17,11 +17,11 @@ tags:
 - [[EmailSendRequest]] - `imports` [EXTRACTED]
 - [[EmailSendResponse]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[ForwardResponse]] - `imports` [EXTRACTED]
 - [[GatewayEmailService_1]] - `imports` [EXTRACTED]
 - [[OwnerEmailRequest]] - `contains` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - `rationale_for` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[_process_inbound()]] - `contains` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `contains` [EXTRACTED]
 - [[_sentences_from_deltas()]] - `contains` [EXTRACTED]
-- [[auth_dep()_3]] - `contains` [EXTRACTED]
+- [[auth_dep()_1]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[email_send()]] - `contains` [EXTRACTED]
 - [[email_send_owner()]] - `contains` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_forward_routing.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

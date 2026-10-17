@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertDispatcher (2)"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertDispatcher_2
 ---
 
 # test_drift_detection_in_pipeline()
@@ -17,4 +17,4 @@ tags:
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

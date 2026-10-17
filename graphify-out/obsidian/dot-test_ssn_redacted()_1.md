@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "PipelineAction"
-location: "L120"
+community: "TestLogSanitizer"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/TestLogSanitizer
 ---
 
 # .test_ssn_redacted()
 
 ## Connections
-- [[TestE2E02InboundPIIRedaction]] - `method` [EXTRACTED]
+- [[dot-_filter_msg()]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

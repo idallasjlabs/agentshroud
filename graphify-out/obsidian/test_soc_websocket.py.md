@@ -12,8 +12,8 @@ tags:
 # test_soc_websocket.py
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `imports` [EXTRACTED]
+- [[Severity]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEvent]] - `contains` [EXTRACTED]
 - [[TestSOCWebSocketHandlerImport]] - `contains` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `contains` [EXTRACTED]

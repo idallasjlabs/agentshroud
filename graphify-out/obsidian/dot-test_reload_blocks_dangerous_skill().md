@@ -12,7 +12,7 @@ tags:
 # .test_reload_blocks_dangerous_skill()
 
 ## Connections
-- [[Path_29]] - `references` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 - [[TestClient]] - `references` [EXTRACTED]
 - [[TestReloadIntegration]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]

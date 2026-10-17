@@ -25,7 +25,7 @@ tags:
 - [[_up_says()]] - `defines` [EXTRACTED]
 - [[_ver_verdict()]] - `defines` [EXTRACTED]
 - [[_wait_result()]] - `defines` [EXTRACTED]
-- [[check()_5]] - `defines` [EXTRACTED]
+- [[check()_4]] - `defines` [EXTRACTED]
 - [[hc_run()]] - `defines` [EXTRACTED]
 - [[smoke.sh Startup Smoke Runner]] - `calls` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `contains` [EXTRACTED]

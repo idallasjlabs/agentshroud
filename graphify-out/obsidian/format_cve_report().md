@@ -26,7 +26,7 @@ tags:
 - [[Any_67]] - `references` [EXTRACTED]
 - [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[generate_summary()]] - `calls` [EXTRACTED]
+- [[generate_summary()_2]] - `calls` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `references` [EXTRACTED]
 

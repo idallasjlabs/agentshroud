@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (4)"
 location: "L830"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_4
 ---
 
 # .test_rtl_override_detection()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

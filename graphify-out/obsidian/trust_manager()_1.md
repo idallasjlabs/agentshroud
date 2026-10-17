@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "TrustConfig"
-location: "L85"
+community: "PipelineAction"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PipelineAction
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_a2a_integration.py]] - `contains` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

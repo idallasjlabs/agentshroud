@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
-type: "code"
-community: "TrustConfig"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+type: "document"
+community: "TrustManager"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
-# trust_manager.py
+# trust_manager.py.md
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
-- [[TrustConfig]] - `contains` [EXTRACTED]
-- [[TrustLevel]] - `imports` [EXTRACTED]
-- [[TrustLevel_1]] - `contains` [EXTRACTED]
-- [[TrustManager_1]] - `contains` [EXTRACTED]
-- [[ViolationType]] - `imports` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/document #graphify/EXTRACTED #community/TrustManager

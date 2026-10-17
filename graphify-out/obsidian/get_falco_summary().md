@@ -12,11 +12,11 @@ tags:
 # get_falco_summary()
 
 ## Connections
-- [[dot-test_clean_when_installed_not_running()_2]] - `calls` [EXTRACTED]
-- [[dot-test_not_run_when_no_alert_dir()_1]] - `calls` [EXTRACTED]
-- [[dot-test_returns_summary_for_empty_dir()_1]] - `calls` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[dot-test_clean_when_installed_not_running()]] - `calls` [EXTRACTED]
+- [[dot-test_not_run_when_no_alert_dir()]] - `calls` [EXTRACTED]
+- [[dot-test_returns_summary_for_empty_dir()]] - `calls` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
+- [[Path_32]] - `calls` [EXTRACTED]
 - [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - `rationale_for` [EXTRACTED]
 - [[_is_falco_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]

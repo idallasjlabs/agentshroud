@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/AlertDispatcher
 ---
 
 # file_sandbox.py
@@ -24,4 +24,4 @@ tags:
 - [[StagingPattern]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

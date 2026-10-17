@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # test_shortcut_rejects_unknown_content_type()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # .test_workspace_subdirectory_write_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Agent can write to subdirectories in workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestWorkspaceAccessPreserved]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

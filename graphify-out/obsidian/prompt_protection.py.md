@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Phase 1 — Raw Collection (3)"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection_3
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # prompt_protection.py
@@ -18,4 +18,4 @@ tags:
 - [[RedactionResult_3]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

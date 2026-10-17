@@ -12,8 +12,8 @@ tags:
 # test_mcp_permissions.py
 
 ## Connections
-- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_1]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[PermissionLevel_1]] - `imports` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[TestToolPermission]] - `contains` [EXTRACTED]
 - [[TestTrustLevels]] - `contains` [EXTRACTED]
 - [[TestTrustMapping]] - `contains` [EXTRACTED]
-- [[config()_4]] - `contains` [EXTRACTED]
-- [[mgr()_2]] - `contains` [EXTRACTED]
+- [[config()_3]] - `contains` [EXTRACTED]
+- [[mgr()]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 

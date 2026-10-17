@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity]] - `imports` [EXTRACTED]
 - [[_map_severity()]] - `contains` [EXTRACTED]
 - [[collect_recent_events()]] - `contains` [EXTRACTED]
 - [[from_anomaly_alert()]] - `contains` [EXTRACTED]

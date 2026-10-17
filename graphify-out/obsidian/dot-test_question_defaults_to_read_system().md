@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L730"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # .test_question_defaults_to_read_system()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAnalyzeRequestForRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

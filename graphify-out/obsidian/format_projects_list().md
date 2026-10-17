@@ -17,7 +17,7 @@ tags:
 - [[dot-test_no_projects_for_unknown_user()]] - `calls` [EXTRACTED]
 - [[Format a user's accessible projects for display.]] - `rationale_for` [EXTRACTED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

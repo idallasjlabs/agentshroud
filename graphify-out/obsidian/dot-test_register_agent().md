@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "CrossBotTrustLedger (2)"
+community: "TrustConfig"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_2
+  - community/TrustConfig
 ---
 
 # .test_register_agent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -12,9 +12,9 @@ tags:
 # run_full()
 
 ## Connections
-- [[fail()_3]] - `calls` [EXTRACTED]
-- [[info()_1]] - `calls` [EXTRACTED]
-- [[pass()_2]] - `calls` [EXTRACTED]
+- [[fail()]] - `calls` [EXTRACTED]
+- [[info()]] - `calls` [EXTRACTED]
+- [[pass()]] - `calls` [EXTRACTED]
 - [[run_bypass()]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 - [[run_chain()]] - `calls` [EXTRACTED]

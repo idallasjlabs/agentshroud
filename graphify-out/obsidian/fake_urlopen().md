@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L416"
+community: "When update_id is missing, same message_id should dedupe self-diagnostic…"
+location: "L5529"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_llm_proxypy
+  - graphify/EXTRACTED
+  - community/When_update_id_is_missing_same_message_id_should_dedupe_self-diagnostic
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_same_message()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/When_update_id_is_missing_same_message_id_should_dedupe_self-diagnostic

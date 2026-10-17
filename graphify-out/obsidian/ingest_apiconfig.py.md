@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig (5)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig_5
 ---
 
 # ingest_api/config.py
@@ -14,19 +14,19 @@ tags:
 ## Connections
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - `rationale_for` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `contains` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `contains` [EXTRACTED]
 - [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[ChannelsConfig]] - `contains` [EXTRACTED]
-- [[GatewayConfig_2]] - `contains` [EXTRACTED]
-- [[LedgerConfig_1]] - `contains` [EXTRACTED]
+- [[GatewayConfig]] - `contains` [EXTRACTED]
+- [[LedgerConfig]] - `contains` [EXTRACTED]
 - [[PIIConfig_2]] - `contains` [EXTRACTED]
-- [[RouterConfig_1]] - `contains` [EXTRACTED]
+- [[RouterConfig]] - `contains` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
-- [[SecurityConfig]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SecurityConfig_4]] - `contains` [EXTRACTED]
 - [[SecurityModuleConfig]] - `contains` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `contains` [EXTRACTED]
 - [[ToolRiskPolicy]] - `contains` [EXTRACTED]
 - [[_default_mtime()]] - `contains` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

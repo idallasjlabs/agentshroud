@@ -1,18 +1,28 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "competitive-report-*.md dated reports"
-location: "L250"
+community: "model_usage.py"
+location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/model_usagepy
 ---
 
 # main()
 
 ## Connections
-- [[render()]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[aggregate_costs()]] - `calls` [EXTRACTED]
+- [[build_json_all()]] - `calls` [EXTRACTED]
+- [[build_json_current()]] - `calls` [EXTRACTED]
+- [[eprint()]] - `calls` [EXTRACTED]
+- [[filter_by_days()]] - `calls` [EXTRACTED]
+- [[latest_day_cost()]] - `calls` [EXTRACTED]
+- [[load_payload()]] - `calls` [EXTRACTED]
+- [[model_usage.py]] - `contains` [EXTRACTED]
+- [[parse_daily_entries()]] - `calls` [EXTRACTED]
+- [[pick_current_model()]] - `calls` [EXTRACTED]
+- [[render_text_all()]] - `calls` [EXTRACTED]
+- [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

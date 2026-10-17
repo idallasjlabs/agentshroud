@@ -12,7 +12,7 @@ tags:
 # test_gate_stays_closed_leaves_state_idle()
 
 ## Connections
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[main()_11]] - `calls` [EXTRACTED]
 - [[playback_step()]] - `calls` [EXTRACTED]
 - [[reset_all()]] - `calls` [EXTRACTED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]

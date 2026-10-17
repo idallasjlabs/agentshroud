@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Connect failures to cloud providers keep the existing 502 behavior.]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[mock_forward()_2]] - `contains` [EXTRACTED]
 - [[mock_forward()]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]

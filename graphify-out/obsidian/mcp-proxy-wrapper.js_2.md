@@ -18,9 +18,9 @@ tags:
 - [[How It Works_4]] - `contains` [EXTRACTED]
 - [[Key Behavior]] - `contains` [EXTRACTED]
 - [[Process Architecture]] - `contains` [EXTRACTED]
-- [[Purpose_157]] - `contains` [EXTRACTED]
-- [[Related Notes_58]] - `contains` [EXTRACTED]
-- [[Usage_114]] - `contains` [EXTRACTED]
+- [[Purpose_146]] - `contains` [EXTRACTED]
+- [[Related Notes_56]] - `contains` [EXTRACTED]
+- [[Usage_102]] - `contains` [EXTRACTED]
 - [[mcp-proxy-wrapper.js_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2

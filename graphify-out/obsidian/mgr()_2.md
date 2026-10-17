@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "MCPPermissionManager (2)"
-location: "L112"
+community: "DelegationManager"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/DelegationManager
 ---
 
 # mgr()
 
 ## Connections
-- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[DelegationManager]] - `references` [EXTRACTED]
+- [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
+- [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_audit_chain.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L22"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
-- [[test_audit_chain.py]] - `contains` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

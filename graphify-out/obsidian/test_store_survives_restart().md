@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[Path_10]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[Simulates a full restart cycle save, close, reopen, verify.]] - `rationale_for` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]

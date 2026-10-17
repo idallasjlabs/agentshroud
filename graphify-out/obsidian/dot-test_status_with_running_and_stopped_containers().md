@@ -12,7 +12,7 @@ tags:
 # .test_status_with_running_and_stopped_containers()
 
 ## Connections
-- [[TestStatus_1]] - `method` [EXTRACTED]
+- [[TestStatus]] - `method` [EXTRACTED]
 - [[_container()]] - `calls` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 

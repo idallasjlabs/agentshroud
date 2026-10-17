@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "AlertDispatcher"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AlertDispatcher
 ---
 
 # .test_security_module_config_defaults()
@@ -16,4 +16,4 @@ tags:
 - [[Test that SecurityModuleConfig defaults to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

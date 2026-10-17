@@ -12,7 +12,7 @@ tags:
 # test_web_proxy_security.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[MockDNSVerdict]] - `contains` [EXTRACTED]
 - [[MockEgressChannel]] - `contains` [EXTRACTED]
 - [[MockEgressEvent]] - `contains` [EXTRACTED]

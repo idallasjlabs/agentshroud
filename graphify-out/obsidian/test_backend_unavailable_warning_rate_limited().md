@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[Repeated connect failures log one WARNING per window, not per request.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[mock_forward()_1]] - `contains` [EXTRACTED]
 - [[mock_forward()]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]

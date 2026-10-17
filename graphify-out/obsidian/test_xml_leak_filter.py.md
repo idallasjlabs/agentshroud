@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # test_xml_leak_filter.py
@@ -17,4 +17,4 @@ tags:
 - [[TestXMLLeakFilter]] - `contains` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

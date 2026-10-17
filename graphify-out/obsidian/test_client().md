@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_3]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

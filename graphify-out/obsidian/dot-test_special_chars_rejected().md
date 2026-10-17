@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (4)"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_4
 ---
 
 # .test_special_chars_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInputValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_4

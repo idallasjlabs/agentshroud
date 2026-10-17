@@ -12,8 +12,8 @@ tags:
 # .test_returns_none_when_no_dir()
 
 ## Connections
-- [[Path_36]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[TestGetSbom_1]] - `method` [EXTRACTED]
-- [[get_sbom()_1]] - `calls` [EXTRACTED]
+- [[get_sbom()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/get_trivy_summary

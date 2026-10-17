@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `references` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `references` [EXTRACTED]
 - [[Write file content to an allowlisted SSH host via structured transport. Unlike…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[post]] - `references` [EXTRACTED]

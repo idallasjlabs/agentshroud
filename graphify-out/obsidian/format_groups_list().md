@@ -18,7 +18,7 @@ tags:
 - [[Format a user's group memberships for display.]] - `rationale_for` [EXTRACTED]
 - [[build_project_context_injection()]] - `conceptually_related_to` [INFERRED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

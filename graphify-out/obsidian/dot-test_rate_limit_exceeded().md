@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L129"
+community: "SessionManager (2)"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/SessionManager_2
 ---
 
 # .test_rate_limit_exceeded()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
 - [[TestRateLimiting_1]] - `method` [EXTRACTED]
-- [[_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/SessionManager_2

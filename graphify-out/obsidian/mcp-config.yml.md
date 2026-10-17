@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
+community: "Audit Ledger (SHA-256 hash only)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # mcp-config.yml
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

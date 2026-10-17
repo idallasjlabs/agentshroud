@@ -1,18 +1,22 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "AlertDispatcher"
-location: "L7"
+community: "test_e2e_proxy.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_e2e_proxypy
 ---
 
 # fail()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

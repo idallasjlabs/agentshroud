@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "AlertDispatcher"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # lifespan()
@@ -54,10 +54,10 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
@@ -69,15 +69,15 @@ tags:
 - [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `calls` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig_1]] - `calls` [EXTRACTED]
@@ -90,10 +90,10 @@ tags:
 - [[install_log_handler()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

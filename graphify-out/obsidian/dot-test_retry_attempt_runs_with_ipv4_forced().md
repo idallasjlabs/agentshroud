@@ -16,7 +16,7 @@ tags:
 - [[discover()]] - `calls` [INFERRED]
 - [[hub()_3]] - `contains` [EXTRACTED]
 - [[hub()_1]] - `indirect_call` [INFERRED]
-- [[recorder()]] - `contains` [EXTRACTED]
-- [[recorder()_3]] - `indirect_call` [INFERRED]
+- [[recorder()_4]] - `contains` [EXTRACTED]
+- [[recorder()_2]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

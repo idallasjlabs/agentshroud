@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "ApprovalQueueConfig (5)"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/ApprovalQueueConfig_5
 ---
 
 # test_load_config_has_bots()
@@ -16,4 +16,4 @@ tags:
 - [[_load_config()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

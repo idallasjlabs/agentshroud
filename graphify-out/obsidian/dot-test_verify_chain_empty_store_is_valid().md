@@ -12,7 +12,7 @@ tags:
 # .test_verify_chain_empty_store_is_valid()
 
 ## Connections
-- [[IntelReportStore]] - `references` [EXTRACTED]
+- [[IntelReportStore_1]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

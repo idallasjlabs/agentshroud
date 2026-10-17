@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[ReportStore]] - `imports` [EXTRACTED]
 - [[TestAsyncSave]] - `contains` [EXTRACTED]
-- [[TestPersistence_2]] - `contains` [EXTRACTED]
+- [[TestPersistence]] - `contains` [EXTRACTED]
 - [[TestReportAPI]] - `contains` [EXTRACTED]
 - [[TestReviewHardening]] - `contains` [EXTRACTED]
 - [[TestSaveAndGet]] - `contains` [EXTRACTED]
 - [[TestSecurity]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[report_store.py]] - `references` [EXTRACTED]
-- [[store()_2]] - `contains` [EXTRACTED]
+- [[store()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ReportStore

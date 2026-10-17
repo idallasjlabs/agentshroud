@@ -12,7 +12,7 @@ tags:
 # test_parse_jsonrpc_extracts_callback_url_from_set_push_config()
 
 ## Connections
-- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
+- [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

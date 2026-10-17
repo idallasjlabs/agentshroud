@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # ledger.py
 
 ## Connections
 - [[DataLedger]] - `contains` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[LedgerEntry]] - `imports` [EXTRACTED]
 - [[LedgerQueryResponse]] - `imports` [EXTRACTED]
 - [[aiosqlite]] - `references` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

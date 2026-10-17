@@ -17,6 +17,6 @@ tags:
 - [[CLAUDE]] - `shares_data_with` [INFERRED]
 - [[Effort]] - `contains` [EXTRACTED]
 - [[Outcome]] - `contains` [EXTRACTED]
-- [[Problem_1]] - `contains` [EXTRACTED]
+- [[Problem_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/postmortemmd

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-send_request()_2]] - `calls` [EXTRACTED]
-- [[dot-stop()_10]] - `calls` [EXTRACTED]
+- [[dot-stop()_11]] - `calls` [EXTRACTED]
 - [[FakeProcess]] - `calls` [EXTRACTED]
 - [[MCPServerConfig_1]] - `calls` [EXTRACTED]
 - [[StdioConnection]] - `calls` [EXTRACTED]

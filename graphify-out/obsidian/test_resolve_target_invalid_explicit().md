@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # test_resolve_target_invalid_explicit()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[Test routing with invalid explicit target falls back to default]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

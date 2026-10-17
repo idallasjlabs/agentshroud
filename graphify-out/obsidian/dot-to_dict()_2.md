@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
-location: "L35"
+community: "ToolResultSanitizer"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/ToolResultSanitizer
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-set_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Configuration  Environment Variables_23]] - `contains` [EXTRACTED]
-- [[Function Details_41]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_43]] - `contains` [EXTRACTED]
-- [[Purpose_171]] - `contains` [EXTRACTED]
-- [[Related_46]] - `contains` [EXTRACTED]
-- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
+- [[Purpose_165]] - `contains` [EXTRACTED]
+- [[Related_48]] - `contains` [EXTRACTED]
+- [[Responsibilities_45]] - `contains` [EXTRACTED]
 - [[Severity Order (for ranking)]] - `contains` [EXTRACTED]
 - [[Threat Model_27]] - `contains` [EXTRACTED]
 - [[trivy_report.py_1]] - `contains` [EXTRACTED]

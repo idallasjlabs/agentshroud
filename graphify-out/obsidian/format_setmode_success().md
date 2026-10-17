@@ -16,7 +16,7 @@ tags:
 - [[dot-test_setmode_success_group()]] - `calls` [EXTRACTED]
 - [[dot-test_setmode_success_user()]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

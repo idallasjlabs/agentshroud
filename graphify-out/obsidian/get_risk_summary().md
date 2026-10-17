@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Operator-ready risk summary with plain-English bullets and per-user risk map (V9]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

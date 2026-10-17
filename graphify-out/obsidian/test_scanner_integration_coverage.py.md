@@ -49,9 +49,9 @@ tags:
 - [[TestSupplyChain_1]] - `contains` [EXTRACTED]
 - [[TestTextReaders]] - `contains` [EXTRACTED]
 - [[TestTrivyImageSummaries]] - `contains` [EXTRACTED]
-- [[TestTrivySummary_1]] - `contains` [EXTRACTED]
+- [[TestTrivySummary]] - `contains` [EXTRACTED]
 - [[TestVulnerabilityManagement]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary]] - `contains` [EXTRACTED]
 - [[_FakeResp]] - `contains` [EXTRACTED]
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]
@@ -61,6 +61,6 @@ tags:
 - [[fs()]] - `contains` [EXTRACTED]
 - [[test_router.py]] - `conceptually_related_to` [AMBIGUOUS]
 - [[tools()]] - `contains` [EXTRACTED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
+- [[wazuh_client.py_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_7

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[After sleeping, if the day is now marked done, the loop skips ingest.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[datetime_5]] - `calls` [EXTRACTED]
+- [[datetime_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

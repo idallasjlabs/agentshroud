@@ -12,7 +12,7 @@ tags:
 # .test_valid_router_url_accepted()
 
 ## Connections
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
 - [[Tracker errors are non-fatal — Slack response still returned to bot.]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

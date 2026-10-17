@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "FalcoAlertWatcher (2)"
+community: "FalcoAlertWatcher"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/FalcoAlertWatcher
 ---
 
 # test_warning_alert_not_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[_make_alert()]] - `calls` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

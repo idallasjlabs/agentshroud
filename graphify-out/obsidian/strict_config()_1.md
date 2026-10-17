@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "TrustConfig"
-location: "L35"
+community: "MiddlewareManager (2)"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/MiddlewareManager_2
 ---
 
 # strict_config()
 
 ## Connections
-- [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -1,29 +1,26 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
-type: "code"
-community: "MCPPermissionManager (2)"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+type: "document"
+community: "mcp_config.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/mcp_configpy
 ---
 
 # mcp_config.py
 
 ## Connections
-- [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `contains` [EXTRACTED]
-- [[MCPServerConfig_1]] - `contains` [EXTRACTED]
-- [[MCPToolConfig]] - `contains` [EXTRACTED]
-- [[MCPTransport]] - `contains` [EXTRACTED]
-- [[PermissionLevel_1]] - `contains` [EXTRACTED]
-- [[agentshroud.yaml]] - `references` [INFERRED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
-- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_24]] - `contains` [EXTRACTED]
+- [[Function Details_44]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_46]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig Fields]] - `contains` [EXTRACTED]
+- [[MCPServerConfig Fields]] - `contains` [EXTRACTED]
+- [[PermissionLevel Ordering]] - `contains` [EXTRACTED]
+- [[Purpose_173]] - `contains` [EXTRACTED]
+- [[Related_50]] - `contains` [EXTRACTED]
+- [[Responsibilities_47]] - `contains` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

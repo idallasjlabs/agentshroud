@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "LLMProxy"
+community: "test_llm_proxy_local_parity.py (2)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()
@@ -17,4 +17,4 @@ tags:
 - [[Only the known stalemismatched alias is rewritten; anything else forwards as-…]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2

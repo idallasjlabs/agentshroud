@@ -12,7 +12,7 @@ tags:
 # ingest_api/auth.py
 
 ## Connections
-- [[GatewayConfig_2]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[RateLimiter_1]] - `contains` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]

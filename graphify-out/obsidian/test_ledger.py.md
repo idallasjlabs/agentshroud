@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[test_delete_entry()]] - `contains` [EXTRACTED]
 - [[test_delete_nonexistent()]] - `contains` [EXTRACTED]
 - [[test_get_entry()]] - `contains` [EXTRACTED]
-- [[test_get_stats()_2]] - `contains` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `contains` [EXTRACTED]
+- [[test_get_stats()]] - `contains` [EXTRACTED]
+- [[test_initialize_is_idempotent()]] - `contains` [EXTRACTED]
 - [[test_query_ledger()]] - `contains` [EXTRACTED]
 - [[test_query_with_filter()]] - `contains` [EXTRACTED]
 - [[test_query_with_forwarded_to_filter()]] - `contains` [EXTRACTED]

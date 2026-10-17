@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # .test_unknown_domain_denied_when_denied()
@@ -16,4 +16,4 @@ tags:
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

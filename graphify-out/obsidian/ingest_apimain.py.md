@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
-- [[CI docs-drift version consistency check]] - `references` [EXTRACTED]
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 - [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - `references` [EXTRACTED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
@@ -32,7 +31,7 @@ tags:
 - [[_scanner_summary()]] - `contains` [EXTRACTED]
 - [[add_blocked_domain()]] - `contains` [EXTRACTED]
 - [[agent_cve_registry.py]] - `conceptually_related_to` [INFERRED]
-- [[asyncio_3]] - `imports` [EXTRACTED]
+- [[asyncio]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `contains` [EXTRACTED]
 - [[container_security_profile()]] - `contains` [EXTRACTED]
 - [[cors_middleware()]] - `contains` [EXTRACTED]

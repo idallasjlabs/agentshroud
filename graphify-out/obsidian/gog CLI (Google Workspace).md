@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "concept"
-community: "telegram_proxy.py (6)"
+community: "SSH Configuration Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/telegram_proxypy_6
+  - community/SSH_Configuration_Guide
 ---
 
 # gog CLI (Google Workspace)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gogSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/telegram_proxypy_6
+#graphify/concept #graphify/EXTRACTED #community/SSH_Configuration_Guide

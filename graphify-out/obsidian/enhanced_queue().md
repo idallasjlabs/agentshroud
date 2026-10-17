@@ -12,7 +12,7 @@ tags:
 # enhanced_queue()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[Create an enhanced approval queue for testing.]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]

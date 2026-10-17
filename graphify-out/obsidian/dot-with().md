@@ -12,7 +12,7 @@ tags:
 # .with()
 
 ## Connections
-- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-new()_1]] - `calls` [EXTRACTED]
 - [[FakeTransport]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
 - [[approvals_list_errors_on_401()]] - `calls` [EXTRACTED]

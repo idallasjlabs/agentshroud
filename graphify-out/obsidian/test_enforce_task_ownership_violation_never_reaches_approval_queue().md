@@ -12,7 +12,7 @@ tags:
 # test_enforce_task_ownership_violation_never_reaches_approval_queue()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
 - [[_StubApprovalQueue]] - `calls` [EXTRACTED]
 - [[_base_config()_1]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Expired items are marked expired during load_pending.]] - `rationale_for` [EXTRACTED]
-- [[Path_10]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 

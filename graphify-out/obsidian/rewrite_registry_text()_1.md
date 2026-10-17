@@ -12,7 +12,7 @@ tags:
 # rewrite_registry_text()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
 - [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - `rationale_for` [EXTRACTED]
 - [[_py_literal()]] - `calls` [EXTRACTED]
 - [[main()_12]] - `calls` [EXTRACTED]

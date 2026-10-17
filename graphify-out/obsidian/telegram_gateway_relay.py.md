@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TelegramGatewayRelay]] - `contains` [EXTRACTED]
 - [[TelegramSendResult]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `semantically_similar_to` [AMBIGUOUS]
+- [[telegram_proxy.py_2]] - `semantically_similar_to` [AMBIGUOUS]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay

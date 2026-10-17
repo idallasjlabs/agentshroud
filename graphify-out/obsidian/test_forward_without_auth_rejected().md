@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "test_e2e_proxy.py (2)"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_e2e_proxypy_2
 ---
 
 # test_forward_without_auth_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[Forward without auth returns 401403.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (42)"
+community: "TestOutboundInfoFilter"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_42
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_tailnet_id_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test that tailnet IDs are filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_42
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

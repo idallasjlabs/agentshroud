@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "AuditChain"
-location: "L74"
+community: "test_mfa_guard.py"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/test_mfa_guardpy
 ---
 
 # .verify()
 
 ## Connections
-- [[dot-_compute_signature()]] - `calls` [EXTRACTED]
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
-- [[InstructionEnvelope]] - `references` [EXTRACTED]
-- [[Return True if the envelope's signature is valid.]] - `rationale_for` [EXTRACTED]
+- [[dot-_prune_used()]] - `calls` [EXTRACTED]
+- [[dot-_totp_for_counter()]] - `calls` [EXTRACTED]
+- [[dot-is_required()]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `method` [EXTRACTED]
+- [[MFAResult]] - `references` [EXTRACTED]
+- [[Verify the second factor for a high-risk action.          Args             acti]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

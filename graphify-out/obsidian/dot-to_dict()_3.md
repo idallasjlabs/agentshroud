@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "RBACConfig"
-location: "L62"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_e2e_proxypy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
+- [[CanaryResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

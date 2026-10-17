@@ -1,24 +1,24 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
-type: "code"
-community: "TestSSRFDetection"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+type: "document"
+community: "url_analyzer.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/url_analyzerpy
 ---
 
 # url_analyzer.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
-- [[URLAnalyzer_1]] - `contains` [EXTRACTED]
-- [[URLFinding]] - `contains` [EXTRACTED]
-- [[URLVerdict]] - `contains` [EXTRACTED]
-- [[_looks_like_base64()]] - `contains` [EXTRACTED]
-- [[web_config.py_2]] - `references` [EXTRACTED]
-- [[web_content_scanner.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_20]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
+- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Related_43]] - `contains` [EXTRACTED]
+- [[Responsibilities_40]] - `contains` [EXTRACTED]
+- [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

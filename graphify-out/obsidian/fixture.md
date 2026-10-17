@@ -11,6 +11,8 @@ tags:
 # fixture
 
 ## Connections
+- [[_no_owner_mirror()]] - `references` [EXTRACTED]
+- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
 - [[session_manager()]] - `references` [EXTRACTED]
 - [[smm()]] - `references` [EXTRACTED]
 - [[tmp_workspace()]] - `references` [EXTRACTED]

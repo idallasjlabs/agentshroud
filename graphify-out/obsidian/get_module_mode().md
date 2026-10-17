@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "create_auth_dependency"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # get_module_mode()
@@ -27,4 +27,4 @@ tags:
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

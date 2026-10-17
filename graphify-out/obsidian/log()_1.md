@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "start-agentshroud.sh (3)"
-location: "L18"
+community: "canary-deploy.sh"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/start-agentshroudsh_3
+  - community/canary-deploysh
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh_3
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

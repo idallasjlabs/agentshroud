@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "TrustConfig"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # resolve_enforcement_mode()
@@ -20,4 +20,4 @@ tags:
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "UserSessionManager (4)"
+community: "discover_upstream_versions.py"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/discover_upstream_versionspy
 ---
 
 # .test_retry_attempts_force_ipv4()
@@ -16,7 +16,7 @@ tags:
 - [[_guarded_fetch()]] - `calls` [INFERRED]
 - [[fetch()_1]] - `contains` [EXTRACTED]
 - [[fetch()]] - `indirect_call` [INFERRED]
-- [[recorder()_2]] - `contains` [EXTRACTED]
-- [[recorder()_3]] - `indirect_call` [INFERRED]
+- [[recorder()_1]] - `contains` [EXTRACTED]
+- [[recorder()_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

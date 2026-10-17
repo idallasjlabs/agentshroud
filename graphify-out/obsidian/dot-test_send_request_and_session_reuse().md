@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_fake_aiohttp()]] - `calls` [EXTRACTED]
 - [[dot-send_request()_2]] - `calls` [EXTRACTED]
-- [[dot-stop()_10]] - `calls` [EXTRACTED]
+- [[dot-stop()_11]] - `calls` [EXTRACTED]
 - [[HttpSseConnection]] - `calls` [EXTRACTED]
 - [[MCPServerConfig_1]] - `calls` [EXTRACTED]
 - [[TestHttpSseConnection]] - `method` [EXTRACTED]

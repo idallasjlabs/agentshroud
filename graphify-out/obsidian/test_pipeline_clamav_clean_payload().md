@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Clean base64 payload → FORWARD.]] - `rationale_for` [EXTRACTED]
 - [[_b64_payload()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_2]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L173"
+community: "PipelineAction"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PipelineAction
 ---
 
 # sanitizer()
 
 ## Connections
-- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_3]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `references` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

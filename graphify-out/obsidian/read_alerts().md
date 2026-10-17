@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
-- [[Path_44]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
+- [[Path_2]] - `references` [EXTRACTED]
 - [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
 - [[datetime]] - `references` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]

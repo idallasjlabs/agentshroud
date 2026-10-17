@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PipelineAction"
+community: "PipelineAction (2)"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/PipelineAction_2
 ---
 
 # test_inbound_unicode_homoglyph_injection_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

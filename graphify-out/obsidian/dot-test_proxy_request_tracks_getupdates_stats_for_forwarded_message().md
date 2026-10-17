@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L273"
+community: "proxy_request should increment inbound getUpdates stats when messages pass…"
+location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/proxy_request_should_increment_inbound_getUpdates_stats_when_messages_pass
 ---
 
 # .test_proxy_request_tracks_getupdates_stats_for_forwarded_message()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[proxy_request should increment inbound getUpdates stats when messages pass throu]] - `rationale_for` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_forward()_2]] - `indirect_call` [INFERRED]
+- [[proxy_request should increment inbound getUpdates stats when messages pass…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/proxy_request_should_increment_inbound_getUpdates_stats_when_messages_pass

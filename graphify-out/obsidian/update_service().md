@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[JSONResponse]] - `references` [EXTRACTED]
 - [[Pull the latest image for a container and restart it.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]

@@ -23,6 +23,6 @@ tags:
 - [[TestRedelegation]] - `contains` [EXTRACTED]
 - [[TestRevoke]] - `contains` [EXTRACTED]
 - [[TestSerialization_2]] - `contains` [EXTRACTED]
-- [[mgr()_1]] - `contains` [EXTRACTED]
+- [[mgr()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationManager

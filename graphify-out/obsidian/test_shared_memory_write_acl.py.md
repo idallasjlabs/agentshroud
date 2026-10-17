@@ -12,16 +12,16 @@ tags:
 # test_shared_memory_write_acl.py
 
 ## Connections
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[TestAuthorizationHelper]] - `contains` [EXTRACTED]
 - [[TestGroupMemoryWriteACL]] - `contains` [EXTRACTED]
 - [[TestUserMemoryWriteACL]] - `contains` [EXTRACTED]
 - [[TestWriteFailurePath]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[rbac()_1]] - `contains` [EXTRACTED]
-- [[session_manager()_2]] - `contains` [EXTRACTED]
+- [[rbac()]] - `contains` [EXTRACTED]
+- [[session_manager()_3]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()_1]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]

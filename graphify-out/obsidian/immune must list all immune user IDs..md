@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response"
-location: "L8552"
+community: "test_telegram_proxy_inbound.py"
+location: "L8570"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # /immune must list all immune user IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_immune_command_lists_immune_users()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

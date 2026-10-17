@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L74"
+community: "EgressFilterConfig (2)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/EgressFilterConfig_2
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

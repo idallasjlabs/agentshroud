@@ -2,25 +2,16 @@
 source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
 community: "egress_monitor.py"
-location: "L10"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/egress_monitorpy
 ---
 
-# egress_monitor.py
+# egress_monitor.py.md
 
 ## Connections
-- [[Alert Actions]] - `contains` [EXTRACTED]
-- [[Configuration  Environment Variables_17]] - `contains` [EXTRACTED]
-- [[Default Thresholds]] - `contains` [EXTRACTED]
-- [[Function Details_31]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_33]] - `contains` [EXTRACTED]
-- [[Purpose_150]] - `contains` [EXTRACTED]
-- [[Related_36]] - `contains` [EXTRACTED]
-- [[Responsibilities_34]] - `contains` [EXTRACTED]
-- [[Threat Model_21]] - `contains` [EXTRACTED]
-- [[egress_monitor.py]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_monitorpy

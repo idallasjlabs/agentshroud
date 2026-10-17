@@ -17,10 +17,10 @@ tags:
 - [[_ensure_collab_dir()]] - `calls` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[_write_collab_store()]] - `calls` [EXTRACTED]
-- [[add_collaborator()]] - `calls` [EXTRACTED]
+- [[add_collaborator()_1]] - `calls` [EXTRACTED]
 - [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3

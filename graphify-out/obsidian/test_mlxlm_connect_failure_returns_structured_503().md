@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 

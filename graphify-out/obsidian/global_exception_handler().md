@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `references` [EXTRACTED]
+- [[Exception_1]] - `references` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
 - [[exception_handler]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

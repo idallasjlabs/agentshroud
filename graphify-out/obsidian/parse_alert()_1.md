@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "test_security_toolchain.py"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/test_security_toolchainpy
 ---
 
 # parse_alert()
 
 ## Connections
-- [[Any_51]] - `references` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
 - [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - `rationale_for` [EXTRACTED]
 - [[level_to_severity()]] - `calls` [EXTRACTED]
 - [[read_alerts()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

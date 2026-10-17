@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertDispatcher (2)"
 location: "L922"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertDispatcher_2
 ---
 
 # .test_simultaneous_baseline_and_config_change()
@@ -17,4 +17,4 @@ tags:
 - [[TestDriftDetectorHardened]] - `method` [EXTRACTED]
 - [[Verify drift is detected even with rapid changes.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -12,11 +12,11 @@ tags:
 # test_config()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[GatewayConfig_2]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

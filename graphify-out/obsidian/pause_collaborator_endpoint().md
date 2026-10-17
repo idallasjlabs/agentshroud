@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Pause a contributor's bot access without removing their record.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[pause_collaborator()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

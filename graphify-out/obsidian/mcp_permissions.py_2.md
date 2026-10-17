@@ -1,29 +1,24 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
-type: "code"
-community: "MCPPermissionManager (2)"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+type: "document"
+community: "mcp_permissions.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/mcp_permissionspy
 ---
 
 # mcp_permissions.py
 
 ## Connections
-- [[MCPPermissionManager_1]] - `contains` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `imports` [EXTRACTED]
-- [[MCPServerConfig_1]] - `imports` [EXTRACTED]
-- [[PermissionCheck]] - `contains` [EXTRACTED]
-- [[PermissionLevel_1]] - `imports` [EXTRACTED]
-- [[PrivateAccessAttempt]] - `contains` [EXTRACTED]
-- [[PrivateRedactionEvent]] - `contains` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[RateLimitEntry]] - `contains` [EXTRACTED]
-- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
-- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_19]] - `contains` [EXTRACTED]
+- [[Function Details_36]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_38]] - `contains` [EXTRACTED]
+- [[Purpose_147]] - `contains` [EXTRACTED]
+- [[Related_42]] - `contains` [EXTRACTED]
+- [[Responsibilities_39]] - `contains` [EXTRACTED]
+- [[Trust Level Reference]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

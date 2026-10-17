@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2) (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2_4
 ---
 
 # key_vault.py
@@ -21,8 +21,8 @@ tags:
 - [[KeyVault]] - `contains` [EXTRACTED]
 - [[KeyVaultConfig]] - `contains` [EXTRACTED]
 - [[LeakScanResult]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_2]] - `references` [EXTRACTED]
-- [[env_guard.py_2]] - `semantically_similar_to` [INFERRED]
-- [[log_sanitizer.py_2]] - `semantically_similar_to` [INFERRED]
+- [[egress_monitor.py]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `semantically_similar_to` [INFERRED]
+- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "package_skill"
-location: "L99"
+community: "competitive-report-*.md dated reports"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/competitive-report-md_dated_reports
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/package_skill
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

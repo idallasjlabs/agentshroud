@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ssh_proxy/__init__.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # ssh_proxy/__init__.py
 
 ## Connections
-- [[SSHProxy_1]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

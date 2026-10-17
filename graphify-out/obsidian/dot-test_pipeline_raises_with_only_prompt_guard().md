@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Even with PromptGuard, pipeline refuses to start without PII sanitizer.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestE2E10FailClosed]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

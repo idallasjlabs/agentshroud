@@ -1,19 +1,20 @@
 ---
-source_file: ".llm_settings/git-hooks/install.sh"
+source_file: "scripts/launchd/install.sh"
 type: "code"
-community: "test_colima_and_sdk_patch_fallback_resolution.sh"
+community: "launchd/install.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_colima_and_sdk_patch_fallback_resolutionsh
+  - community/launchd/installsh
 ---
 
 # install.sh script
 
 ## Connections
-- [[backup_path()]] - `calls` [EXTRACTED]
-- [[hook_is_pre_commit()]] - `calls` [EXTRACTED]
-- [[install.sh]] - `contains` [EXTRACTED]
+- [[install_agent()]] - `calls` [EXTRACTED]
+- [[install_dev_crontab()]] - `calls` [EXTRACTED]
+- [[launchdinstall.sh]] - `contains` [EXTRACTED]
+- [[say()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh
+#graphify/code #graphify/EXTRACTED #community/launchd/installsh

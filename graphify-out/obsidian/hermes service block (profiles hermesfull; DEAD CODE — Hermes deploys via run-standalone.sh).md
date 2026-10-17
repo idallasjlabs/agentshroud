@@ -15,7 +15,6 @@ tags:
 - [[Compose secrets block (file fallbacks; asb extracts from credential backend at runtime)]] - `shares_data_with` [EXTRACTED]
 - [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - `rationale_for` [EXTRACTED]
 - [[Multi-Agent Orchestration (specialized agents, per-agent isolation)]] - `semantically_similar_to` [INFERRED]
-- [[Sunday upgrade mission every component in dev and prod to latest stable, resolve every finding, dev first]] - `references` [EXTRACTED]
 - [[Three-tier network segmentation (internal edge  isolated DMZ  dmz) — IEC 62443 FR5]] - `rationale_for` [EXTRACTED]
 - [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - `references` [EXTRACTED]
 - [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - `references` [EXTRACTED]

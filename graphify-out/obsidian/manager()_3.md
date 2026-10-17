@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "RBACConfig"
-location: "L51"
+community: "TrustConfig"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TrustConfig
 ---
 
 # manager()
 
 ## Connections
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - `rationale_for` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

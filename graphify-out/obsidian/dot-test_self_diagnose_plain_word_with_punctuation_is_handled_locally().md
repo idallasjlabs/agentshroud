@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L5122"
+community: "FakeRBAC"
+location: "L5140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # .test_self_diagnose_plain_word_with_punctuation_is_handled_locally()
@@ -15,9 +15,11 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Plain-word self-diagnose punctuation variant should still route locally.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_urlopen()_73]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

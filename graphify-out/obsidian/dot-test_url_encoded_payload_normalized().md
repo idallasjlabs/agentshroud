@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "TelegramAPIProxy (3)"
 location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/TelegramAPIProxy_3
 ---
 
 # .test_url_encoded_payload_normalized()
@@ -15,4 +15,4 @@ tags:
 - [[TestEncodingBypass]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

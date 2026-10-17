@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
-type: "document"
-community: "log_sanitizer.py"
-location: "L53"
+source_file: "gateway/security/log_sanitizer.py"
+type: "code"
+community: "AlertDispatcher (2)"
+location: "L157"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/AlertDispatcher_2
 ---
 
 # get_sanitizer_stats()
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
+- [[Get statistics about sanitization patterns.]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `contains` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `contains` [EXTRACTED]
 - [[TestConcurrentWrites]] - `contains` [EXTRACTED]
 - [[TestRetention]] - `contains` [EXTRACTED]
 - [[TestTamperDetection]] - `contains` [EXTRACTED]
-- [[ledger()_1]] - `contains` [EXTRACTED]
+- [[ledger()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

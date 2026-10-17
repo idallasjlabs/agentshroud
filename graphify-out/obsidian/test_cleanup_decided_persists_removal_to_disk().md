@@ -12,7 +12,7 @@ tags:
 # test_cleanup_decided_persists_removal_to_disk()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
 - [[ApprovalRequest_4]] - `calls` [EXTRACTED]
 - [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]

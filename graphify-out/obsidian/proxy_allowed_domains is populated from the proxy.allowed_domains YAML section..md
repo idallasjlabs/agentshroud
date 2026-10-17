@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "MCPPolicyEngine (2)"
+community: "ApprovalQueueConfig (5)"
 location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

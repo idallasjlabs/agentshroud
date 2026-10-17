@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Create a router configuration for testing]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget_2

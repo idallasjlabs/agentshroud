@@ -12,7 +12,7 @@ tags:
 # .test_security_pipeline_set_global_mode()
 
 ## Connections
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[Test SecurityPipeline.set_global_mode method.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 

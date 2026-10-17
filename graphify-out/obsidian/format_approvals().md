@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "main.rs"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/mainrs
 ---
 
 # format_approvals()
@@ -19,4 +19,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "AlertDispatcher"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/AlertDispatcher
 ---
 
 # .test_register_user_session()
@@ -15,4 +15,4 @@ tags:
 - [[Test user session registration.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

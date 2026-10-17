@@ -12,11 +12,11 @@ tags:
 # test_approval_queue.py
 
 ## Connections
-- [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
 - [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[_HangingWebSocket_1]] - `contains` [EXTRACTED]
-- [[approval_queue()_1]] - `contains` [EXTRACTED]
+- [[approval_queue()]] - `contains` [EXTRACTED]
 - [[queue_config()]] - `contains` [EXTRACTED]
 - [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `contains` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `contains` [EXTRACTED]

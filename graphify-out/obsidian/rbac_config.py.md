@@ -12,15 +12,15 @@ tags:
 # rbac_config.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[Group]] - `contains` [EXTRACTED]
 - [[GroupRegistry]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `contains` [EXTRACTED]
-- [[Role_65]] - `contains` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
-- [[ToolTier_2]] - `contains` [EXTRACTED]
+- [[RBACConfig_2]] - `contains` [EXTRACTED]
+- [[Role_28]] - `contains` [EXTRACTED]
+- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[ToolTier_1]] - `contains` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `contains` [EXTRACTED]
 - [[_load_collab_store()]] - `contains` [EXTRACTED]
 - [[_load_persisted_groups()]] - `contains` [EXTRACTED]

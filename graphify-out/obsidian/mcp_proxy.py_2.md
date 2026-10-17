@@ -1,42 +1,23 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
-type: "code"
-community: "MCPPermissionManager (2)"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+type: "document"
+community: "Function Details (8)"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Function_Details_8
 ---
 
 # mcp_proxy.py
 
 ## Connections
-- [[ConnectionPool]] - `contains` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
-- [[HttpSseConnection]] - `contains` [EXTRACTED]
-- [[InspectionResult]] - `imports` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
-- [[MCPInspector_1]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
-- [[MCPProxy_1]] - `contains` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `imports` [EXTRACTED]
-- [[MCPServerConfig_1]] - `imports` [EXTRACTED]
-- [[MCPToolCall_1]] - `contains` [EXTRACTED]
-- [[MCPToolResult]] - `contains` [EXTRACTED]
-- [[MCPTransport]] - `imports` [EXTRACTED]
-- [[ProxyResult]] - `contains` [EXTRACTED]
-- [[StdioConnection]] - `contains` [EXTRACTED]
-- [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[make_event()]] - `imports` [EXTRACTED]
-- [[mcp_audit.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
-- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
-- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_12]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_27]] - `contains` [EXTRACTED]
+- [[Purpose_134]] - `contains` [EXTRACTED]
+- [[Related_31]] - `contains` [EXTRACTED]
+- [[Responsibilities_28]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/document #graphify/EXTRACTED #community/Function_Details_8

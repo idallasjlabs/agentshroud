@@ -1,30 +1,25 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L631"
+community: "SecureBrowser (4)"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/SecureBrowser_4
 ---
 
 # main()
 
 ## Connections
-- [[dot-get()_1]] - `calls` [EXTRACTED]
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
-- [[dot-post()_1]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `calls` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
-- [[print_output()]] - `calls` [EXTRACTED]
-- [[resolve_token()]] - `calls` [EXTRACTED]
-- [[run_approvals_decide()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[dot-_take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[dot-click()_3]] - `calls` [EXTRACTED]
+- [[dot-close()_7]] - `calls` [EXTRACTED]
+- [[dot-extract()_3]] - `calls` [EXTRACTED]
+- [[dot-fill_field()_3]] - `calls` [EXTRACTED]
+- [[dot-navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

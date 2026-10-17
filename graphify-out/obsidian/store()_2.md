@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ReportStore"
-location: "L12"
+community: "UserSessionManager (2)"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/UserSessionManager_2
 ---
 
 # store()
 
 ## Connections
-- [[ReportStore]] - `calls` [EXTRACTED]
-- [[test_report_store.py]] - `contains` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

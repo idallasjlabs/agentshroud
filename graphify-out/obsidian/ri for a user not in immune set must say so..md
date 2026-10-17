@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestFileDownload"
-location: "L8534"
+community: "test_telegram_proxy_inbound.py"
+location: "L8552"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFileDownload
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # /ri for a user not in immune set must say so.
 
 ## Connections
-- [[dot-test_forward_file_download_returns_raw_body_sentinel()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_revoke_immunity_unknown_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFileDownload
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

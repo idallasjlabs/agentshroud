@@ -12,7 +12,7 @@ tags:
 # trust_manager()
 
 ## Connections
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

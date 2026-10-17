@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "PIIConfig"
-location: "L60"
+community: "ApprovalQueueConfig"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[PIISanitizer_2]] - `references` [EXTRACTED]
+- [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,18 +1,20 @@
 ---
-source_file: "docker/scripts/security-report-retention.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "FR3: System Integrity (2)"
-location: "L20"
+community: "AgentTarget (5)"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity_2
+  - community/AgentTarget_5
 ---
 
 # log()
 
 ## Connections
-- [[security-report-retention.sh]] - `defines` [EXTRACTED]
-- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
+- [[DOCKER-USER iptables reapply + verify (step 3)]] - `references` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[notify()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_5

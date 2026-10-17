@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[fail()_5]] - `defines` [EXTRACTED]
 - [[infra-check.sh]] - `semantically_similar_to` [INFERRED]
-- [[ok()_1]] - `defines` [EXTRACTED]
+- [[ok()_2]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `contains` [EXTRACTED]
-- [[warn()_5]] - `defines` [EXTRACTED]
+- [[warn()_6]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/egress_filterpy_5

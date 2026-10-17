@@ -12,11 +12,11 @@ tags:
 # summarize()
 
 ## Connections
-- [[Any_83]] - `references` [EXTRACTED]
+- [[Any_15]] - `references` [EXTRACTED]
 - [[Compute resulting-status counts and gap themes from triage results. Args…]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
 - [[final_status()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()]] - `calls` [EXTRACTED]
 - [[render_gap_report()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 

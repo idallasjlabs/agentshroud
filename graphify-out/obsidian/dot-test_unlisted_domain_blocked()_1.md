@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L48"
+community: "WebProxyConfig (2)"
+location: "L546"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/WebProxyConfig_2
 ---
 
 # .test_unlisted_domain_blocked()
 
 ## Connections
-- [[TestEnforceMode]] - `method` [EXTRACTED]
-- [[_make_filter()]] - `calls` [EXTRACTED]
+- [[TestAllowlistMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_2

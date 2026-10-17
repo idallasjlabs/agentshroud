@@ -29,7 +29,7 @@ tags:
 - [[TestResolveBotContainer]] - `contains` [EXTRACTED]
 - [[TestSecurityReport]] - `contains` [EXTRACTED]
 - [[TestServiceControl]] - `contains` [EXTRACTED]
-- [[TestStatus_1]] - `contains` [EXTRACTED]
+- [[TestStatus]] - `contains` [EXTRACTED]
 - [[TestWsLogs]] - `contains` [EXTRACTED]
 - [[TestWsUpdates]] - `contains` [EXTRACTED]
 - [[UpdateRequest]] - `imports` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[_gitless_run()]] - `contains` [EXTRACTED]
 - [[_module_state_guard()]] - `contains` [EXTRACTED]
 - [[_resolve_bot_container()]] - `imports` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
+- [[client()_17]] - `contains` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 

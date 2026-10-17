@@ -31,7 +31,7 @@ tags:
 - [[fetch_op_secret()]] - `contains` [EXTRACTED]
 - [[find_transition_id()]] - `contains` [EXTRACTED]
 - [[resolve_cloud_id()]] - `contains` [EXTRACTED]
-- [[run()_2]] - `contains` [EXTRACTED]
+- [[run()_1]] - `contains` [EXTRACTED]
 - [[transition_issue()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

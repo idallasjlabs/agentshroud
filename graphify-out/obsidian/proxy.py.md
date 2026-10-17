@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # proxy.py
 
 ## Connections
 - [[SSH Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
-- [[SSHProxy_1]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `contains` [EXTRACTED]
 - [[SSHResult]] - `contains` [EXTRACTED]
 - [[SSHWriteResult]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -2,7 +2,7 @@
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
 community: "sunday-upgrade-apply.sh"
-location: "L955"
+location: "L960"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -31,12 +31,13 @@ tags:
 - [[_wait_for_docker()]] - `calls` [EXTRACTED]
 - [[asb up fullhermes]] - `references` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_apply build loop calls the guard every iteration]] - `references` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[sunday_dev_handoff_gate()]] - `calls` [EXTRACTED]
 - [[warn()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

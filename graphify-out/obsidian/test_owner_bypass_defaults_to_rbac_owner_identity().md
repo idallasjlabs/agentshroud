@@ -15,7 +15,7 @@ tags:
 - [[LOW finding when owner_bypass is enabled but owner_user_id is left     blank, t]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

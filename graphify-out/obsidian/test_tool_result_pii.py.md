@@ -12,7 +12,7 @@ tags:
 # test_tool_result_pii.py
 
 ## Connections
-- [[GatewayConfig_2]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[RedactionDetail]] - `imports` [EXTRACTED]
@@ -22,8 +22,8 @@ tags:
 - [[TestMiddlewareIntegration]] - `contains` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIConfig]] - `contains` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `contains` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `contains` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

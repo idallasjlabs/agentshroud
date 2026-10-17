@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
 community: "test_collaborator_greeter.py (2)"
-location: "L366"
+location: "L326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .test_returns_summary_for_empty_dir()
 
 ## Connections
-- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[TestGetFalcoSummary]] - `method` [EXTRACTED]
+- [[get_falco_summary()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

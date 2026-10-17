@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "AuditChain (2)"
+community: "How to Fix (5 Minutes)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditChain_2
+  - community/How_to_Fix_5_Minutes
 ---
 
 # iMessage Integration Status
@@ -16,9 +16,9 @@ tags:
 - [[Current State Partially Working]] - `contains` [EXTRACTED]
 - [[Current Status Summary]] - `contains` [EXTRACTED]
 - [[IMESSAGE_STATUS]] - `contains` [EXTRACTED]
-- [[Next Steps_11]] - `contains` [EXTRACTED]
+- [[Next Steps_6]] - `contains` [EXTRACTED]
 - [[Solutions]] - `contains` [EXTRACTED]
 - [[The Error]] - `contains` [EXTRACTED]
 - [[What This Means_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditChain_2
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

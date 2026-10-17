@@ -12,6 +12,6 @@ tags:
 # parse_clamscan_output(output, returncode)
 
 ## Connections
-- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

@@ -12,7 +12,7 @@ tags:
 # readHermesMcpServers()
 
 ## Connections
-- [[read()]] - `calls` [EXTRACTED]
+- [[read()_2]] - `calls` [EXTRACTED]
 - [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs

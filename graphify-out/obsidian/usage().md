@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/switch_model.sh"
+source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "switch_model.sh"
-location: "L18"
+community: "docker-cleanup.sh"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/docker-cleanupsh
 ---
 
 # usage()
 
 ## Connections
-- [[switch_model.sh]] - `defines` [EXTRACTED]
-- [[switch_model.sh script]] - `calls` [EXTRACTED]
+- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
+- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh

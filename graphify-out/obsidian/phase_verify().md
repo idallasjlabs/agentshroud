@@ -2,7 +2,7 @@
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
 community: "sunday-upgrade-apply.sh"
-location: "L1109"
+location: "L1124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_attempt_rollback()]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]

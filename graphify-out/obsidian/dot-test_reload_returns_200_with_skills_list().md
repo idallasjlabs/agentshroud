@@ -12,7 +12,7 @@ tags:
 # .test_reload_returns_200_with_skills_list()
 
 ## Connections
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[TestClient_1]] - `references` [EXTRACTED]
 - [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]

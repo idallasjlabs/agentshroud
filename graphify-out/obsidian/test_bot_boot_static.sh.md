@@ -12,7 +12,7 @@ tags:
 # test_bot_boot_static.sh
 
 ## Connections
-- [[check()_4]] - `defines` [EXTRACTED]
+- [[check()_3]] - `defines` [EXTRACTED]
 - [[test_bot_boot_static.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget_5

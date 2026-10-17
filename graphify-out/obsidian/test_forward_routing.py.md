@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget_2]] - `references` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `contains` [EXTRACTED]
 - [[TestOutboundBlockedNotDelivered]] - `contains` [EXTRACTED]
 - [[TestOwnerSpoofingViaForwardBody]] - `contains` [EXTRACTED]

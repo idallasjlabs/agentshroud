@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Resume a paused contributor's bot access.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[unpause_collaborator()]] - `calls` [EXTRACTED]

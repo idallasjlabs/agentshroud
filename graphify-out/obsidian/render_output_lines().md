@@ -12,8 +12,8 @@ tags:
 # render_output_lines()
 
 ## Connections
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[OutputFormat]] - `references` [EXTRACTED]
+- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[OutputFormat_1]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[Value_3]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]

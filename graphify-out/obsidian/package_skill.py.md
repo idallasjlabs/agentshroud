@@ -12,7 +12,7 @@ tags:
 # package_skill.py
 
 ## Connections
-- [[main()_21]] - `contains` [EXTRACTED]
+- [[main()_22]] - `contains` [EXTRACTED]
 - [[package_skill()]] - `contains` [EXTRACTED]
 - [[skill-creatorSKILL]] - `references` [EXTRACTED]
 

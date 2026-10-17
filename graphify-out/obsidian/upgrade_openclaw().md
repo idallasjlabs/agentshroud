@@ -15,6 +15,6 @@ tags:
 - [[UpdateRequest]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw (backward-compat alias for updatesbotopenclawupgrade).]] - `rationale_for` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
-- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
+- [[upgrade_bot()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

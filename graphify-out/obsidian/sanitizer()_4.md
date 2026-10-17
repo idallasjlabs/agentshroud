@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "PipelineAction"
-location: "L49"
+community: "EgressFilterConfig (2)"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/EgressFilterConfig_2
 ---
 
 # sanitizer()
 
 ## Connections
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

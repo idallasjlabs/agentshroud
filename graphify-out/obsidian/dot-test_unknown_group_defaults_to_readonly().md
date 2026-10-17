@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig (2) (3)"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig_2_3
 ---
 
 # .test_unknown_group_defaults_to_readonly()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupRoleResolver]] - `method` [EXTRACTED]
 - [[Unknown group_chat_id defaults to GroupRole.READ_ONLY.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_3

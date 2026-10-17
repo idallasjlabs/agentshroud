@@ -12,17 +12,17 @@ tags:
 # middleware.py
 
 ## Connections
-- [[Config Keys Read_1]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_1]] - `contains` [EXTRACTED]
+- [[Config Keys Read_2]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_2]] - `contains` [EXTRACTED]
 - [[FileSandbox Configuration (hardcoded in __init__)]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_1]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_14]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_129]] - `contains` [EXTRACTED]
-- [[Related_17]] - `contains` [EXTRACTED]
-- [[Responsibilities_15]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_2]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_15]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
+- [[Purpose_122]] - `contains` [EXTRACTED]
+- [[Related_19]] - `contains` [EXTRACTED]
+- [[Responsibilities_16]] - `contains` [EXTRACTED]
 - [[Security Modules Initialized]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `contains` [EXTRACTED]
+- [[middleware.py]] - `contains` [EXTRACTED]
 - [[process_request Flow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/middlewarepy

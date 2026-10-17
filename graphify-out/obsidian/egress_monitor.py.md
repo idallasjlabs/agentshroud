@@ -1,17 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
-type: "document"
-community: "egress_monitor.py"
+source_file: "gateway/security/egress_monitor.py"
+type: "code"
+community: "AlertDispatcher (2)"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/AlertDispatcher_2
 ---
 
-# egress_monitor.py.md
+# egress_monitor.py
 
 ## Connections
-- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
+- [[AlertSeverity]] - `contains` [EXTRACTED]
+- [[AnomalyAlert]] - `contains` [EXTRACTED]
+- [[EgressChannel]] - `contains` [EXTRACTED]
+- [[EgressEvent]] - `contains` [EXTRACTED]
+- [[EgressMonitor]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `contains` [EXTRACTED]
+- [[EgressSummary]] - `contains` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[key_vault.py_2]] - `references` [EXTRACTED]
+- [[log_sanitizer.py]] - `references` [EXTRACTED]
+- [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

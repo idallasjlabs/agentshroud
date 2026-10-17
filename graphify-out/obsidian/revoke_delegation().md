@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DelegationPrivilege]] - `calls` [EXTRACTED]
 - [[Revoke a privilege delegation. Omit privilege to revoke all for the user.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

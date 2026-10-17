@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "RBACConfig"
+community: "ToolResultSanitizer"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ToolResultSanitizer
 ---
 
 # .test_tool_results_key_detected()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsToolCallRequest]] - `method` [EXTRACTED]
 - [[_tool_result_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

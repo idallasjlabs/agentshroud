@@ -13,18 +13,18 @@ tags:
 
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `imports` [EXTRACTED]
 - [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `contains` [EXTRACTED]
-- [[MFAGuard_2]] - `imports` [EXTRACTED]
+- [[MFAGuard_1]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[ToolRiskPolicy]] - `imports` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[group_router.py]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 

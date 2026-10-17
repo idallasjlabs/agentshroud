@@ -12,8 +12,8 @@ tags:
 # latest_day_cost()
 
 ## Connections
-- [[Any_54]] - `references` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[main()_20]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/model_usagepy

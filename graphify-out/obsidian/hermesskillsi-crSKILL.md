@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 - [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 - [[Expected output]] - `contains` [EXTRACTED]
 - [[Expected ok]] - `contains` [EXTRACTED]

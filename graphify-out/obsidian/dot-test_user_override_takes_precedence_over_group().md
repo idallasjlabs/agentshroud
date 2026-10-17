@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Per-user override beats group-derived collab_mode.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
 - [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupConfig

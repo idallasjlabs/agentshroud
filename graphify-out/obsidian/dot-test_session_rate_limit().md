@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L1067"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_2
 ---
 
 # .test_session_rate_limit()
@@ -15,4 +15,4 @@ tags:
 - [[Session]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "RBACConfig"
-location: "L61"
+community: "RBACConfig (3)"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_3
 ---
 
 # tmp_workspace()
 
 ## Connections
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

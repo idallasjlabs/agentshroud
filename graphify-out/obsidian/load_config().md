@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "ApprovalQueueConfig (5)"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # load_config()
@@ -23,19 +23,19 @@ tags:
 - [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
 - [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
 - [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[AuditExportConfig]] - `calls` [EXTRACTED]
 - [[BotConfig]] - `calls` [EXTRACTED]
 - [[ChannelsConfig]] - `calls` [EXTRACTED]
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[Path_14]] - `references` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
-- [[SSHConfig_2]] - `calls` [EXTRACTED]
-- [[SecurityConfig]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
+- [[Path_39]] - `references` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig]] - `calls` [EXTRACTED]
+- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
 - [[_build_image_targets()]] - `calls` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

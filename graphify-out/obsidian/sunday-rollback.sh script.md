@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-rollback.sh"
 type: "code"
-community: "check-vendor-compat.sh"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/colima-health-checksh
 ---
 
 # sunday-rollback.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-rollback.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

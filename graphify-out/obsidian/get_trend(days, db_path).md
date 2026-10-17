@@ -12,6 +12,6 @@ tags:
 # get_trend(days, db_path)
 
 ## Connections
-- [[Function Details_9]] - `contains` [EXTRACTED]
+- [[Function Details_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details_3

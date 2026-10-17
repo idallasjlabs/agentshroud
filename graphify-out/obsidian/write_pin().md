@@ -17,7 +17,7 @@ tags:
 - [[dot-test_write_pin_refuses_an_absent_key()]] - `calls` [INFERRED]
 - [[dot-test_write_pin_replaces_only_the_target_line()]] - `calls` [INFERRED]
 - [[dot-test_write_pin_round_trips_through_read_pin()]] - `calls` [INFERRED]
-- [[Path_55]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[Rewrite one pin in place, preserving every other line byte for byte.      Raises]] - `rationale_for` [EXTRACTED]
 - [[apply_remediation()]] - `calls` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]

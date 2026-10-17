@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[Path_10]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (4)"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_4
 ---
 
 # .test_session_to_dict_and_back()
@@ -15,4 +15,4 @@ tags:
 - [[TestSerialization]] - `method` [EXTRACTED]
 - [[UserSession]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_4

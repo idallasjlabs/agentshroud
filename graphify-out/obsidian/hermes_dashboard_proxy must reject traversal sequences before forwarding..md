@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "test_main_endpoints.py"
+community: "test_main_endpoints.py (2)"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/test_main_endpointspy_2
 ---
 
 # hermes_dashboard_proxy must reject traversal sequences before forwarding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHermesDashboardPathTraversal]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy_2

@@ -12,6 +12,6 @@ tags:
 # sunday-scan.sh script
 
 ## Connections
-- [[sunday-scan.sh (Trivy scan gate library)]] - `contains` [EXTRACTED]
+- [[sunday-scan.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/colima-health-checksh_3

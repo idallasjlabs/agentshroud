@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test detection of tool inventory queries.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
+- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

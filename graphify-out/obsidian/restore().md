@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "background.js"
+community: "background.js (2)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/backgroundjs_2
 ---
 
 # restore()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/backgroundjs_2

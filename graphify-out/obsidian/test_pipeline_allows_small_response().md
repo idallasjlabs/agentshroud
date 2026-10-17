@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

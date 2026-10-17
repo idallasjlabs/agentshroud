@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (10)"
+community: "TelegramAPIProxy (2)"
 location: "L2474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_10
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_proxy_request_allows_delayed_starting_then_online_sequence()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_10
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

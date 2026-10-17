@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - `rationale_for` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

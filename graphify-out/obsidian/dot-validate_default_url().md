@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AgentTarget"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AgentTarget
 ---
 
 # .validate_default_url()
 
 ## Connections
-- [[RouterConfig_1]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `method` [EXTRACTED]
 - [[Validate that default_url uses httphttps and targets an internal Docker host.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget
