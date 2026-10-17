@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Nothing to deliver is a legitimate 'done', not a failure to retry.]] - `rationale_for` [EXTRACTED]
 - [[TestUpstreamCveCheckSchedulerRetry]] - `method` [EXTRACTED]
-- [[datetime_1]] - `calls` [EXTRACTED]
+- [[datetime_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

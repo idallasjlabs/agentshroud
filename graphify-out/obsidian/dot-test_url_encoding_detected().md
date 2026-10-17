@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "InjectionAction"
+community: "PipelineAction"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/PipelineAction
 ---
 
 # .test_url_encoding_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

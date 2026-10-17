@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (3)"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_3
 ---
 
 # .test_workspace_paths_under_bot_namespace()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultiBotIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

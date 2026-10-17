@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "hermes/SOUL.md"
+community: "RBACConfig (2)"
 location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/RBACConfig_2
 ---
 
 # .test_unlisted_tool_always_passes()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolRateLimiting]] - `method` [EXTRACTED]
 - [[Tools not in the rate-limit map should always pass.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AgentTarget"
+community: "AlertDispatcher (2)"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AlertDispatcher_2
 ---
 
 # .test_key_redacted_from_string()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

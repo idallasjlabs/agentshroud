@@ -12,7 +12,7 @@ tags:
 # .test_prompt_guard_instantiates()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

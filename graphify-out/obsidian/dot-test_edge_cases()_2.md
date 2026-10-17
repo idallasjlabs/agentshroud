@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (35)"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_35
 ---
 
 # .test_edge_cases()
@@ -15,4 +15,4 @@ tags:
 - [[Test edge cases and boundary conditions.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_35

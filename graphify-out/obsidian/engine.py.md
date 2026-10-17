@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ABC]] - `imports_from` [EXTRACTED]
 - [[ContainerEngine]] - `contains` [EXTRACTED]
-- [[ContainerInfo]] - `contains` [EXTRACTED]
+- [[ContainerInfo_3]] - `contains` [EXTRACTED]
 - [[apple_engine.py]] - `imports_from` [EXTRACTED]
 - [[compose_generator.py]] - `references` [EXTRACTED]
 - [[docker_engine.py]] - `imports_from` [EXTRACTED]

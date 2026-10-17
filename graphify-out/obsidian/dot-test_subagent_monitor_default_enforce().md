@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_subagent_monitor_default_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
 - [[TestModuleConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

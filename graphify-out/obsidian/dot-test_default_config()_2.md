@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L35"
+community: "ToolResultSanitizer"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ToolResultSanitizer
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
-- [[Test default configuration values._1]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
+- [[Test default configuration]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

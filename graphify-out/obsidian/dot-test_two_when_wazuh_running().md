@@ -12,7 +12,7 @@ tags:
 # .test_two_when_wazuh_running()
 
 ## Connections
-- [[TestScoreLoggingMonitoring_1]] - `method` [EXTRACTED]
+- [[TestScoreLoggingMonitoring]] - `method` [EXTRACTED]
 - [[_score_logging_monitoring()]] - `calls` [EXTRACTED]
 - [[_wazuh_clean()]] - `calls` [EXTRACTED]
 

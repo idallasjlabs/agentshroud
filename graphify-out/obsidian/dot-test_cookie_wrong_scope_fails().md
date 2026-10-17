@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .test_cookie_wrong_scope_fails()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConsentCookieBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

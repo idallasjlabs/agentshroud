@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "_t"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/_t
 ---
 
 # .test_representative_titles()
@@ -16,4 +16,4 @@ tags:
 - [[_t()]] - `calls` [EXTRACTED]
 - [[parametrize]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/_t

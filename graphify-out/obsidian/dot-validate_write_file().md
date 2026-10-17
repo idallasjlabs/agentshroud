@@ -12,7 +12,7 @@ tags:
 # .validate_write_file()
 
 ## Connections
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 - [[Validate a structured sshwrite_file request (host, path, content).          Re]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

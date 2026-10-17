@@ -16,6 +16,6 @@ tags:
 - [[RedactionDetail]] - `calls` [EXTRACTED]
 - [[RedactionResult_2]] - `calls` [EXTRACTED]
 - [[Test sanitizing string content with PII]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

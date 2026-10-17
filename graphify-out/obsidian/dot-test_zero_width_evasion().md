@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "EgressFilterConfig"
 location: "L803"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/EgressFilterConfig
 ---
 
 # .test_zero_width_evasion()
@@ -15,4 +15,4 @@ tags:
 - [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 - [[Zero-width chars between letters should not bypass detection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

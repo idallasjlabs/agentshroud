@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[Test that outbound filter works alongside PII sanitizer.]] - `rationale_for` [EXTRACTED]
-- [[TestIntegration]] - `method` [EXTRACTED]
+- [[TestIntegration_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

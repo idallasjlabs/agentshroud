@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig"
 location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # .test_config_with_tool_result_pii()
@@ -16,4 +16,4 @@ tags:
 - [[Test that configuration includes tool result PII settings]] - `rationale_for` [EXTRACTED]
 - [[TestConfigurationLoading]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

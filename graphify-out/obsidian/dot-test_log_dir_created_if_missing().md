@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "parse_trivy_output"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/parse_trivy_output
 ---
 
 # .test_log_dir_created_if_missing()
@@ -17,4 +17,4 @@ tags:
 - [[save_report creates the log directory if it does not exist.]] - `rationale_for` [EXTRACTED]
 - [[save_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

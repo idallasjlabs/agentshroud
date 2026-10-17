@@ -12,7 +12,7 @@ tags:
 # .test_router_url_must_be_localhost_or_openclaw()
 
 ## Connections
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

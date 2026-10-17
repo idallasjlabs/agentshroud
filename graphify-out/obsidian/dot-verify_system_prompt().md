@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_get_hmac_key()]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
 - [[Return True if prompt_text matches the stored HMAC fingerprint.]] - `rationale_for` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `references` [EXTRACTED]
 

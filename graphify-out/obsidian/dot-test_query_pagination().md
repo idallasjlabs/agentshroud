@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_query_pagination()
@@ -15,4 +15,4 @@ tags:
 - [[Paginated queries return correct subsets.]] - `rationale_for` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

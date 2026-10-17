@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L50"
+community: "test-op-auth.sh"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/test-op-authsh
 ---
 
 # fail()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[test-op-auth.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/test-op-authsh

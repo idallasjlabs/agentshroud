@@ -12,7 +12,7 @@ tags:
 # .test_rate_limit_blocks_excess()
 
 ## Connections
-- [[TestRateLimiting_2]] - `method` [EXTRACTED]
+- [[TestRateLimiting]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 

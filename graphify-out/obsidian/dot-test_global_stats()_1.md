@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "MultiTurnTracker"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MultiTurnTracker
 ---
 
 # .test_global_stats()
@@ -16,4 +16,4 @@ tags:
 - [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
 - [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

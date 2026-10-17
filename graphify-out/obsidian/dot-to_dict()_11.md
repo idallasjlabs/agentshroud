@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L50"
+community: "Path"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/Path
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_67]] - `references` [EXTRACTED]
-- [[CanaryResult_2]] - `method` [EXTRACTED]
+- [[ManifestEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/Path

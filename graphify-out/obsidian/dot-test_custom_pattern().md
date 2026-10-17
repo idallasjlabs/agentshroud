@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "ContextSegment"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/ContextSegment
 ---
 
 # .test_custom_pattern()
 
 ## Connections
 - [[PatternRule]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

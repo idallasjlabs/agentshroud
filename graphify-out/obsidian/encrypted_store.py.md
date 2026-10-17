@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
-type: "code"
-community: "KillSwitchMonitor"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+type: "document"
+community: "encrypted_store.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/encrypted_storepy
 ---
 
-# encrypted_store.py
+# encrypted_store.py.md
 
 ## Connections
-- [[Encrypted Store Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[EncryptedStore]] - `contains` [EXTRACTED]
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
-- [[_secure_zero()]] - `contains` [EXTRACTED]
-- [[canary.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `references` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

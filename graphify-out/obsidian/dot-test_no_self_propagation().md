@@ -15,6 +15,6 @@ tags:
 - [[An incident on openclaw should not re-apply to openclaw via the ledger.]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `references` [EXTRACTED]
 - [[TestIncidentPropagation]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

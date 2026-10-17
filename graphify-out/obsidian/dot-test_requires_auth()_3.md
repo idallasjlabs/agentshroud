@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
 community: "TestEmailSend"
-location: "L121"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Endpoint returns 401 without auth override._1]] - `rationale_for` [EXTRACTED]
-- [[TestEmailSend]] - `method` [EXTRACTED]
+- [[TestTelegramWebhook]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEmailSend

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[CrossBotTrustLedger]] - `references` [EXTRACTED]
 - [[TestGetIncidentsLimit]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -12,7 +12,7 @@ tags:
 # .test_predicate_whos_there_matches()
 
 ## Connections
-- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

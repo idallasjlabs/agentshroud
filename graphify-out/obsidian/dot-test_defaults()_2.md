@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_models.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L80"
+community: "test_runtime_engines.py (2)"
+location: "L638"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_runtime_enginespy_2
 ---
 
 # .test_defaults()
 
 ## Connections
-- [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
-- [[TestServiceDescriptor]] - `method` [EXTRACTED]
+- [[ContainerInfo_3]] - `calls` [EXTRACTED]
+- [[TestContainerInfo]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy_2

@@ -12,7 +12,7 @@ tags:
 # .test_monitor_mode_allows_unknown_domains()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Test that monitor mode allows unknown domains but logs them.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]

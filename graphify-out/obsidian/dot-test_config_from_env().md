@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (17)"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_17
 ---
 
 # .test_config_from_env()
@@ -15,4 +15,4 @@ tags:
 - [[Test configuration from environment variables.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_17

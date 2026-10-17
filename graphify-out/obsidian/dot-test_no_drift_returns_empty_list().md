@@ -12,7 +12,7 @@ tags:
 # .test_no_drift_returns_empty_list()
 
 ## Connections
-- [[Path_59]] - `references` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 - [[TestValidateManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]

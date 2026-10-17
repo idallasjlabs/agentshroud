@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .test_unique_client_id_accepted()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthRequest]] - `calls` [EXTRACTED]
 - [[TestClientValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_var_log_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot write to varlog system logs.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPathProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

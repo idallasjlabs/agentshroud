@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "TelegramAPIProxy (2)"
 location: "L2187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_proxy_request_suppresses_duplicate_system_startup_notice()
 
 ## Connections
 - [[System startup notice should be deduplicated in a short cooldown window.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

@@ -12,7 +12,7 @@ tags:
 # .test_first_bot_used_when_no_default_flag()
 
 ## Connections
-- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
 - [[TestDefaultBotDockerfile]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

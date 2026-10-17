@@ -12,7 +12,7 @@ tags:
 # .test_default_bot_dockerfile_used()
 
 ## Connections
-- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
 - [[TestDefaultBotDockerfile]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

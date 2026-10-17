@@ -12,7 +12,7 @@ tags:
 # .verify_audit_chain()
 
 ## Connections
-- [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

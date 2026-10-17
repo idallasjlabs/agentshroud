@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # .test_empty_user_id_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInputValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

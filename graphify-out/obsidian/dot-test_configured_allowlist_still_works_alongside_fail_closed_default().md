@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "A2APolicyEngine (3)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/A2APolicyEngine_3
 ---
 
 # .test_configured_allowlist_still_works_alongside_fail_closed_default()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
 - [[Fail-closed-by-default must not mean impossible to allow anything         — an]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # .test_pii_detection_accuracy_at_scale()
@@ -15,4 +15,4 @@ tags:
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 - [[Verify detection accuracy doesn't degrade at scale.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

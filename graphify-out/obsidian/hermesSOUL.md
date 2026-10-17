@@ -18,7 +18,7 @@ tags:
 - [[EgressFilter_3]] - `references` [EXTRACTED]
 - [[Isaiah Jefferson (Owner)]] - `references` [EXTRACTED]
 - [[OpenClaw_3]] - `references` [EXTRACTED]
-- [[PII Sanitizer_2]] - `references` [EXTRACTED]
+- [[PII Sanitizer_1]] - `references` [EXTRACTED]
 - [[TrustManager_5]] - `references` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh helper]] - `references` [EXTRACTED]
 - [[approval_queue.py]] - `references` [EXTRACTED]

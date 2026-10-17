@@ -12,7 +12,7 @@ tags:
 # fetch_dockerhub_tags()
 
 ## Connections
-- [[Any_54]] - `references` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
 - [[Tag records for a Docker Hub repository, newest first.]] - `rationale_for` [EXTRACTED]
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]

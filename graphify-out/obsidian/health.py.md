@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[StatusResponse]] - `imports` [EXTRACTED]
-- [[auth_dep()_4]] - `contains` [EXTRACTED]
+- [[auth_dep()_2]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[get_engine()]] - `imports` [EXTRACTED]
 - [[health_check()]] - `contains` [EXTRACTED]

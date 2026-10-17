@@ -15,6 +15,6 @@ tags:
 - [[No trust_manager configured — the hook must no-op, not crash the         request]] - `rationale_for` [EXTRACTED]
 - [[TestTrustViolationRecording]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

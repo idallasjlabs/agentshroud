@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L638"
+community: "ServiceManager (2)"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/ServiceManager_2
 ---
 
 # .test_defaults()
 
 ## Connections
-- [[ContainerInfo]] - `calls` [EXTRACTED]
-- [[TestContainerInfo]] - `method` [EXTRACTED]
+- [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
+- [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager_2

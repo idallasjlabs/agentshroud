@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AgentTarget"
+community: "AuditChain"
 location: "L712"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AuditChain
 ---
 
 # .test_standard_trust_tool_result_injection_is_blocked()
@@ -18,4 +18,4 @@ tags:
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AuditChain

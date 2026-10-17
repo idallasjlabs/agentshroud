@@ -12,7 +12,7 @@ tags:
 # .test_summary_top_cves_ids()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

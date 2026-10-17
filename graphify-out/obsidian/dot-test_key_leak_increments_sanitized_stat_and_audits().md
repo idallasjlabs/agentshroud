@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AgentTarget"
+community: "AuditChain"
 location: "L614"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AuditChain
 ---
 
 # .test_key_leak_increments_sanitized_stat_and_audits()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AuditChain

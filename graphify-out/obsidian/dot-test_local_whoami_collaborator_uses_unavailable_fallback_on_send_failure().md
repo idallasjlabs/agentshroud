@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

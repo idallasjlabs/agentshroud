@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "UserSessionManager"
-location: "L62"
+community: "soc.js"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/socjs
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/socjs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "RBACConfig (2)"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/RBACConfig_2
 ---
 
 # .test_member_allowed_web_search_in_group()
@@ -15,4 +15,4 @@ tags:
 - [[Regular member IS allowed web_search in group context.]] - `rationale_for` [EXTRACTED]
 - [[TestMemberGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

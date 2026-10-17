@@ -12,7 +12,7 @@ tags:
 # .test_verify_flag_accepted_without_error()
 
 ## Connections
-- [[Path_14]] - `calls` [EXTRACTED]
+- [[Path_7]] - `calls` [EXTRACTED]
 - [[TestSwitchModelVerifyFlag]] - `method` [EXTRACTED]
 - [[switch_model.sh local --verify exits 0 (mocked health checks).]] - `rationale_for` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "ModeRequest (3)"
 location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/ModeRequest_3
 ---
 
 # .test_update_config_round_trips_bots_key()
 
 ## Connections
 - [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - `rationale_for` [EXTRACTED]
-- [[TestConfig]] - `method` [EXTRACTED]
+- [[TestConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/ModeRequest_3

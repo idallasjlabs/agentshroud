@@ -12,7 +12,7 @@ tags:
 # .validate_command()
 
 ## Connections
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 - [[Validate a command against allowdeny lists and injection patterns.          Ret]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

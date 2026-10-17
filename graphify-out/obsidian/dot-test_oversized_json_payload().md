@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # .test_oversized_json_payload()
@@ -16,4 +16,4 @@ tags:
 - [[TestHTTPSecurity]] - `method` [EXTRACTED]
 - [[Very large JSON shouldn't crash the parser.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

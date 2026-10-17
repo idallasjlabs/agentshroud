@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FakeProcess]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
 - [[StdioConnection]] - `calls` [EXTRACTED]
 - [[TestStdioConnection]] - `method` [EXTRACTED]
 

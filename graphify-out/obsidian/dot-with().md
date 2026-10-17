@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "MCPPermissionManager"
+community: "main.rs"
 location: "L921"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/mainrs
 ---
 
 # .with()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[FakeTransport]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
 - [[approvals_list_errors_on_401()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[status_errors_on_401()]] - `calls` [EXTRACTED]
 - [[status_errors_when_gateway_down()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/mainrs

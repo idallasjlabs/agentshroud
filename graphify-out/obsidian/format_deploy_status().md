@@ -1,24 +1,24 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "test_soc_realtime_coverage.py"
 location: "L462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/test_soc_realtime_coveragepy
 ---
 
 # format_deploy_status()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[deploy_status_formats_version_and_services()]] - `calls` [EXTRACTED]
 - [[deploy_status_no_services()]] - `calls` [EXTRACTED]
 - [[json_str()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_deploy_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

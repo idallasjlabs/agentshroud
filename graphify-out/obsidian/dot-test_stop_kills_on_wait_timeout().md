@@ -12,9 +12,9 @@ tags:
 # .test_stop_kills_on_wait_timeout()
 
 ## Connections
-- [[dot-stop()_3]] - `calls` [EXTRACTED]
+- [[dot-stop()_10]] - `calls` [EXTRACTED]
 - [[FakeProcess]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
 - [[StdioConnection]] - `calls` [EXTRACTED]
 - [[TestStdioConnection]] - `method` [EXTRACTED]
 

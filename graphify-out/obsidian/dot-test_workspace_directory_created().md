@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # .test_workspace_directory_created()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

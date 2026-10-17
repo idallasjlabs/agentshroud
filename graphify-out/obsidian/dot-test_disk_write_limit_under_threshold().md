@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher (2)"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher_2
 ---
 
 # .test_disk_write_limit_under_threshold()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCpuMemoryDiskLimits]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

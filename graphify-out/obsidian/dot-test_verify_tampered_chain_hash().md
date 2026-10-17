@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # .test_verify_tampered_chain_hash()
 
 ## Connections
 - [[AuditChain]] - `calls` [EXTRACTED]
-- [[TestAuditChain_1]] - `method` [EXTRACTED]
+- [[TestAuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/AuditChain

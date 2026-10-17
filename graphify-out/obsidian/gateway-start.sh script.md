@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/gateway-start.sh"
 type: "code"
-community: "start-agentshroud.sh"
+community: "start-agentshroud.sh (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/start-agentshroudsh_3
 ---
 
 # gateway-start.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gateway-start.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh_3

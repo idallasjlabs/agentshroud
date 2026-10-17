@@ -20,7 +20,7 @@ tags:
 - [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[ingest_apimodels.py]] - `references` [EXTRACTED]
 - [[ingest_apirouter.py]] - `references` [EXTRACTED]
-- [[ledger.py_1]] - `references` [EXTRACTED]
+- [[ledger.py]] - `references` [EXTRACTED]
 - [[queue.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 

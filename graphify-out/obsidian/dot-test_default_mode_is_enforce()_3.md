@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L44"
+community: "TrustConfig (2)"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TrustConfig_2
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - `rationale_for` [EXTRACTED]
+- [[TestSubagentMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

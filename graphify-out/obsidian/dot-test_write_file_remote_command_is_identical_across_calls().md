@@ -12,7 +12,7 @@ tags:
 # .test_write_file_remote_command_is_identical_across_calls()
 
 ## Connections
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[The remote command string must not vary with request content —         proving i]] - `rationale_for` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # .test_enforce_mode_blocks_unknown_domains()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Test that enforce mode blocks domains not in allowlist.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]

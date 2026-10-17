@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[When update_id is missing, same message_id should dedupe self-diagnostic notices]] - `rationale_for` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

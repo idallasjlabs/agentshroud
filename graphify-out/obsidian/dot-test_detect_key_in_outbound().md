@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AgentTarget"
+community: "AuditChain"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AuditChain
 ---
 
 # .test_detect_key_in_outbound()
@@ -15,4 +15,4 @@ tags:
 - [[KeyLeakDetector]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AuditChain

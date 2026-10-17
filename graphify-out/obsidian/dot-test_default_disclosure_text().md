@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
 - [[local_only collaborator must receive the restricted-scope disclosure message.]] - `rationale_for` [EXTRACTED]
 

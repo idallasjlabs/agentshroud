@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-generate_report()]] - `calls` [EXTRACTED]
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 - [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

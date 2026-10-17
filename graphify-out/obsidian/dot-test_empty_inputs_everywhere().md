@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # .test_empty_inputs_everywhere()
@@ -16,4 +16,4 @@ tags:
 - [[Empty strings shouldn't crash any module.]] - `rationale_for` [EXTRACTED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # .test_entries_returns_copy()
 
 ## Connections
 - [[AuditChain]] - `calls` [EXTRACTED]
-- [[TestAuditChain_1]] - `method` [EXTRACTED]
+- [[TestAuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/AuditChain

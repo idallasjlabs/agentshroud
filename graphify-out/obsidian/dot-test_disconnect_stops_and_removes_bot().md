@@ -12,7 +12,7 @@ tags:
 # .test_disconnect_stops_and_removes_bot()
 
 ## Connections
-- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
 - [[TestKillSwitch_1]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 

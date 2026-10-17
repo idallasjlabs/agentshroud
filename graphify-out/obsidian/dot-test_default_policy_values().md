@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Restart Procedure"
+community: "UserSessionManager"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/UserSessionManager
 ---
 
 # .test_default_policy_values()
@@ -16,4 +16,4 @@ tags:
 - [[Test default policy has reasonable values.]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialRotationPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L34"
+community: "PipelineAction"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PipelineAction
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[Test custom configuration values._1]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+- [[CanaryConfig_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

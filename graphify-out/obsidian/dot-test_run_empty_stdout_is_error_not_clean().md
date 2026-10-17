@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "export-bot-conversations.py"
+community: "parse_trivy_output"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/parse_trivy_output
 ---
 
 # .test_run_empty_stdout_is_error_not_clean()
@@ -16,4 +16,4 @@ tags:
 - [[TestTrivyRun]] - `method` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

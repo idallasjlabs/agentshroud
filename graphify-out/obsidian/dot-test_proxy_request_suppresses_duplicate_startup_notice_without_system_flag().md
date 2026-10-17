@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (10)"
 location: "L2219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_10
 ---
 
 # .test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag()
 
 ## Connections
 - [[Startup notice dedupe should still apply when sender forgets system header.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_10

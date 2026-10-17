@@ -12,7 +12,7 @@ tags:
 # falco_alerts()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Return recent Falco runtime security alerts with summary.]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

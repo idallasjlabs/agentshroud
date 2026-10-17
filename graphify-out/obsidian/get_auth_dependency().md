@@ -12,9 +12,9 @@ tags:
 # get_auth_dependency()
 
 ## Connections
-- [[dot-check()_6]] - `calls` [EXTRACTED]
+- [[dot-check()_2]] - `calls` [EXTRACTED]
 - [[Factory that returns authentication dependency for FastAPI      This allows us t]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
 - [[GatewayConfig_2]] - `shares_data_with` [INFERRED]
 - [[auth.py]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_load_latest_json"
+community: "get_trivy_summary"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_load_latest_json
+  - community/get_trivy_summary
 ---
 
 # .test_not_run_when_no_report_dir()
 
 ## Connections
-- [[Path_28]] - `calls` [EXTRACTED]
+- [[Path_36]] - `calls` [EXTRACTED]
 - [[TestGetTrivySummary]] - `method` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_load_latest_json
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

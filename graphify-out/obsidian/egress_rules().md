@@ -12,7 +12,7 @@ tags:
 # egress_rules()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Return egress rules and emergency-block status.]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Large inputs shouldn't crash prompt guard.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

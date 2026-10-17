@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "AsyncMock (2)"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AsyncMock_2
 ---
 
 # .test_redaction_count_access_error_is_non_fatal()
@@ -18,4 +18,4 @@ tags:
 - [[_RaisingRedactionResult]] - `calls` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

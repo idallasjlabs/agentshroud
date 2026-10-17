@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

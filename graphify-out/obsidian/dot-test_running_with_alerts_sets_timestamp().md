@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (12)"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_12
 ---
 
 # .test_running_with_alerts_sets_timestamp()
 
 ## Connections
-- [[TestFalcoSummary]] - `method` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_12

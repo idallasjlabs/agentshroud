@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "RBACConfig (2)"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/RBACConfig_2
 ---
 
 # .test_member_denied_gmail_private_tool_in_group()
@@ -15,4 +15,4 @@ tags:
 - [[Regular member denied gmail (private tool) even in group context.]] - `rationale_for` [EXTRACTED]
 - [[TestMemberGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

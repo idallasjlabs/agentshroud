@@ -15,9 +15,9 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Repeated rate-limited messages within the cooldown window send at most one notic]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestStrangerRateLimit

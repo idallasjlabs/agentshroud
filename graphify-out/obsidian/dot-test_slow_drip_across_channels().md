@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (3)"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_3
 ---
 
 # .test_slow_drip_across_channels()
@@ -16,4 +16,4 @@ tags:
 - [[Small amounts across multiple channels should be detected.]] - `rationale_for` [EXTRACTED]
 - [[TestSlowDripDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

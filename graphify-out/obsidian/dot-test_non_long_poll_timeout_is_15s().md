@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_fake_urlopen_factory()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[sendMessage and similar calls must use a 15s urlopen timeout.]] - `rationale_for` [EXTRACTED]

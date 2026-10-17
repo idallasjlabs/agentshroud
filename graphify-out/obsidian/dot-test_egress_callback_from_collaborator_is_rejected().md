@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Collaborator callback attempts must not approvedeny egress requests.]] - `rationale_for` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

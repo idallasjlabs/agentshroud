@@ -12,7 +12,7 @@ tags:
 # .test_private_ip_blocking()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Test that private IPs are blocked regardless of mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]

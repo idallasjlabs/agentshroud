@@ -12,7 +12,7 @@ tags:
 # .test_report_total_reflects_all_appended()
 
 ## Connections
-- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
 - [[TestAuditTrailBounded]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

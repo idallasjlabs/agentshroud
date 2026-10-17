@@ -12,7 +12,7 @@ tags:
 # group_router.py
 
 ## Connections
-- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 

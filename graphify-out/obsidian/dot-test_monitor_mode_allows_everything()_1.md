@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AlertDispatcher (2)"
 location: "L583"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher_2
 ---
 
 # .test_monitor_mode_allows_everything()
@@ -15,4 +15,4 @@ tags:
 - [[Monitor mode flags but allows — verify difference from enforce.]] - `rationale_for` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (3)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_3
 ---
 
 # .test_record_http_event()
@@ -15,4 +15,4 @@ tags:
 - [[EgressEvent]] - `calls` [EXTRACTED]
 - [[TestEventRecording]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

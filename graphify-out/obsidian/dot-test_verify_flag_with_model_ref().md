@@ -12,7 +12,7 @@ tags:
 # .test_verify_flag_with_model_ref()
 
 ## Connections
-- [[Path_14]] - `calls` [EXTRACTED]
+- [[Path_7]] - `calls` [EXTRACTED]
 - [[TestSwitchModelVerifyFlag]] - `method` [EXTRACTED]
 - [[switch_model.sh local qwen314b --verify exits 0.]] - `rationale_for` [EXTRACTED]
 

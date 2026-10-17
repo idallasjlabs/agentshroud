@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "PipelineAction"
-location: "L125"
+community: "MCPAuditTrail"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/MCPAuditTrail
 ---
 
 # .test_tamper_in_retained_window_detected()
 
 ## Connections
-- [[AuditChain]] - `calls` [EXTRACTED]
-- [[TestAuditChainBounded]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
+- [[TestAuditTrailBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

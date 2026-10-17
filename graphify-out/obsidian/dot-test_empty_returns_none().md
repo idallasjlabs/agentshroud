@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "egress_filter.py"
-location: "L142"
+community: "pick_latest_stable"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/pick_latest_stable
 ---
 
 # .test_empty_returns_none()
 
 ## Connections
-- [[TestPickLatestHermesTag]] - `method` [EXTRACTED]
-- [[pick_latest_hermes_tag()]] - `calls` [INFERRED]
+- [[TestPickLatestStable]] - `method` [EXTRACTED]
+- [[pick_latest_stable()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/pick_latest_stable

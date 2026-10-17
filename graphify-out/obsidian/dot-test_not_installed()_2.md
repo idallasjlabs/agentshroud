@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
 community: "ServiceManager"
-location: "L219"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .test_not_installed()
 
 ## Connections
-- [[TestCheckFluentBit]] - `method` [EXTRACTED]
-- [[_patch_exists()]] - `calls` [EXTRACTED]
+- [[TestCheckOpenscap]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ServiceManager

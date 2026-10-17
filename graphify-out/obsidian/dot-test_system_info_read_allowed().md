@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_system_info_read_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Agent can read basic system info.]] - `rationale_for` [EXTRACTED]
 - [[TestReadAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

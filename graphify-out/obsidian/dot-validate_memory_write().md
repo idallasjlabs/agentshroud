@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (9)"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_9
 ---
 
 # .validate_memory_write()
@@ -15,7 +15,7 @@ tags:
 - [[dot-scan_content_for_threats()]] - `calls` [EXTRACTED]
 - [[ContentThreat]] - `references` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_63]] - `references` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
 - [[Validate content before writing to memory file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9

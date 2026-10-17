@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L560"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # .test_owner_admin_access()
@@ -16,4 +16,4 @@ tags:
 - [[TestSessionIsolationEndToEnd]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

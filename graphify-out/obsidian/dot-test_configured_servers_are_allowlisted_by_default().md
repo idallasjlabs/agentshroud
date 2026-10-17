@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "MCPPolicyEngine (2)"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPolicyEngine_2
 ---
 
 # .test_configured_servers_are_allowlisted_by_default()
@@ -17,4 +17,4 @@ tags:
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

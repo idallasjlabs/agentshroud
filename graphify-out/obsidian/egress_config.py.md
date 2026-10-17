@@ -1,28 +1,17 @@
 ---
-source_file: "gateway/security/egress_config.py"
-type: "code"
-community: "EgressFilterConfig"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+type: "document"
+community: "egress_config.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/egress_configpy
 ---
 
-# egress_config.py
+# egress_config.py.md
 
 ## Connections
-- [[EgressFilterConfig]] - `contains` [EXTRACTED]
-- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - `references` [EXTRACTED]
-- [[citation_verifier.py]] - `imports_from` [EXTRACTED]
-- [[domain_matches()]] - `contains` [EXTRACTED]
-- [[egress_approval.py]] - `imports_from` [EXTRACTED]
-- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
-- [[get_egress_config()]] - `contains` [EXTRACTED]
-- [[http_proxy.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[management.py]] - `imports_from` [EXTRACTED]
-- [[set_egress_config()]] - `contains` [EXTRACTED]
-- [[test_config_validation.py]] - `conceptually_related_to` [INFERRED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

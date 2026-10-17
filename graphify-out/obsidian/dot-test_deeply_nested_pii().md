@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (6)"
 location: "L1126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_6
 ---
 
 # .test_deeply_nested_pii()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInspectorEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_6

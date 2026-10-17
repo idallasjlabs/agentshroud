@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AgentTarget"
+community: "AlertDispatcher (2)"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AlertDispatcher_2
 ---
 
 # .test_inject_fails_for_unscoped()
@@ -15,4 +15,4 @@ tags:
 - [[KeyInjector]] - `calls` [EXTRACTED]
 - [[TestKeyInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

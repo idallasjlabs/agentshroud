@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Path"
+community: "Path (3)"
 location: "L1158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Path_3
 ---
 
 # .test_returns_empty_when_no_image_reports()
 
 ## Connections
 - [[Directory exists but contains only fs scan files — returns .]] - `rationale_for` [EXTRACTED]
-- [[Path_28]] - `calls` [EXTRACTED]
+- [[Path_36]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Path_3

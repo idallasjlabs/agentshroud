@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L73"
+community: "TestPromptProtection"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestPromptProtection
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test manager initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[Test proper initialization of PromptProtection.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

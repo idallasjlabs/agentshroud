@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # .test_owner_message_mentioning_other_users_file_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestOwnerBypassContentPatternChecks]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

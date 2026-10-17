@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditEvent"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditEvent
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_41]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `method` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
+- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

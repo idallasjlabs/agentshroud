@@ -12,7 +12,7 @@ tags:
 # .test_port_not_allowed()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestEnforceMode]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L70"
+community: "ApprovalHardening"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/ApprovalHardening
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Test custom configuration values.]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

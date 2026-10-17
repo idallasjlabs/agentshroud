@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "test_prompt_guard.py"
-location: "L80"
+community: "DNSFilterConfig"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/DNSFilterConfig
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestGetMode]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
+- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

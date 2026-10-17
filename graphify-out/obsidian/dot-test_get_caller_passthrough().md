@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SCLCaller_2]] - `calls` [EXTRACTED]
 - [[TestResolveCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 - [[get_caller()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

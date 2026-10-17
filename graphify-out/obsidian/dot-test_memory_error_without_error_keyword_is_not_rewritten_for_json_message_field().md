@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field"
+community: "TelegramAPIProxy (2)"
 location: "L1555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field()
 
 ## Connections
 - [[JSON message field with embeddingprovider hints but no error keyword should rem]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

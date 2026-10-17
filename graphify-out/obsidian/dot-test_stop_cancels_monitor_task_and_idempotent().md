@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher (2)"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher_2
 ---
 
 # .test_stop_cancels_monitor_task_and_idempotent()
@@ -15,4 +15,4 @@ tags:
 - [[ResourceGuard]] - `calls` [EXTRACTED]
 - [[TestResourceGuardLifecycle]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

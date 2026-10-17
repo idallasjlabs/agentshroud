@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "ApprovalHardening"
+community: "MiddlewareManager (3)"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/MiddlewareManager_3
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[Test custom configuration values.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[Test custom configuration values._1]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

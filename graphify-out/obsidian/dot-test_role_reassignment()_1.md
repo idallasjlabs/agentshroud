@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L238"
+community: "ContextSegment"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ContextSegment
 ---
 
 # .test_role_reassignment()
 
 ## Connections
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

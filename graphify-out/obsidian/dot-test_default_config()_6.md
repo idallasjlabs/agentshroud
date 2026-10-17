@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L21"
+community: "CrossBotTrustLedger"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/CrossBotTrustLedger
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
+- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

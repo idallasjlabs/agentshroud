@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "ApprovalHardening"
+community: "ApprovalHardening (2)"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/ApprovalHardening_2
 ---
 
 # .test_deception_detection_benign_request()
@@ -15,4 +15,4 @@ tags:
 - [[Test deception detection with legitimate request.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .test_reject_none_algorithm()
@@ -15,4 +15,4 @@ tags:
 - [[Reject JWTs with alg=none (classic attack).]] - `rationale_for` [EXTRACTED]
 - [[TestAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

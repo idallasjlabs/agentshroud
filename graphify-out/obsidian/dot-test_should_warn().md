@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "TestDomainValidationHelper"
+community: "UserSessionManager"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/UserSessionManager
 ---
 
 # .test_should_warn()
@@ -17,4 +17,4 @@ tags:
 - [[Test warning threshold calculation.]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialInfo]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

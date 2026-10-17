@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[First iteration ingests + records; second sees dedup and skips.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[datetime_1]] - `calls` [EXTRACTED]
+- [[datetime_5]] - `calls` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

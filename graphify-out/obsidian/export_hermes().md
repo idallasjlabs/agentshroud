@@ -12,11 +12,11 @@ tags:
 # export_hermes()
 
 ## Connections
-- [[Path_55]] - `references` [EXTRACTED]
+- [[Path_56]] - `references` [EXTRACTED]
 - [[_docker_read_file()]] - `calls` [EXTRACTED]
 - [[datetime_6]] - `references` [EXTRACTED]
 - [[export()]] - `conceptually_related_to` [INFERRED]
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L224"
+community: "InjectionAction"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/InjectionAction
 ---
 
 # .test_ignore_previous_instructions()
 
 ## Connections
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[TestHighSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

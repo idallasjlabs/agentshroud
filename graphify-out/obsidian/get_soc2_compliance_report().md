@@ -12,7 +12,7 @@ tags:
 # get_soc2_compliance_report()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[SOC 2 Trust Service Criteria compliance coverage report. Maps active…]] - `rationale_for` [EXTRACTED]
 - [[_active()]] - `contains` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # .test_multiple_pii_single_message()
@@ -15,4 +15,4 @@ tags:
 - [[Multiple PII entities in one message.]] - `rationale_for` [EXTRACTED]
 - [[TestPIIDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

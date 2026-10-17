@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (15)"
 location: "L463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_15
 ---
 
 # .test_garbage_timestamp_falls_back_to_mtime()
@@ -15,4 +15,4 @@ tags:
 - [[TestOpenscapSummary]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_15

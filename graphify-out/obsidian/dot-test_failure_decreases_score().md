@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # .test_failure_decreases_score()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

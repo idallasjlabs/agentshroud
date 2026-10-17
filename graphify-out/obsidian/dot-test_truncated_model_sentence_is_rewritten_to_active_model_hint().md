@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "TelegramAPIProxy (2)"
 location: "L947"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_truncated_model_sentence_is_rewritten_to_active_model_hint()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Truncated 'current model' replies should be rewritten to deterministic model hin]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

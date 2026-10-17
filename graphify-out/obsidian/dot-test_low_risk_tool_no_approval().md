@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (2)"
 location: "L237"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_low_risk_tool_no_approval()
@@ -15,4 +15,4 @@ tags:
 - [[Test that low-risk tools don't require approval.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

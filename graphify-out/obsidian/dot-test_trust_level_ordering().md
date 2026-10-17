@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "CrossBotTrustLedger"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/CrossBotTrustLedger
 ---
 
 # .test_trust_level_ordering()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustLevels_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

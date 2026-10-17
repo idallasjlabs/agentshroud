@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestSendEventAndKeepalive]] - `method` [EXTRACTED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 

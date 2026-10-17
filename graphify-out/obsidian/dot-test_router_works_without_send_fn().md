@@ -12,7 +12,7 @@ tags:
 # .test_router_works_without_send_fn()
 
 ## Connections
-- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
 - [[GroupApprovalRouter]] - `calls` [EXTRACTED]
 - [[Router with no send_message_fn uses the default stub (no network calls).]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalRouterDefaultSend]] - `method` [EXTRACTED]

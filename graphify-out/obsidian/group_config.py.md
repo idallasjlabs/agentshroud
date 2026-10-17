@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (5)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_5
 ---
 
 # group_config.py
@@ -29,4 +29,4 @@ tags:
 - [[persist_user_collab_mode()]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_5

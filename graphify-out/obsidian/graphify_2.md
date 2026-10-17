@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "What You Must Do When Invoked (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/What_You_Must_Do_When_Invoked_3
 ---
 
 # /graphify
@@ -18,9 +18,9 @@ tags:
 - [[For the commit hook and native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
 - [[Honesty Rules_2]] - `contains` [EXTRACTED]
 - [[Interpreter guard for subcommands_2]] - `contains` [EXTRACTED]
-- [[Usage_69]] - `contains` [EXTRACTED]
+- [[Usage_73]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 - [[What graphify is for_2]] - `contains` [EXTRACTED]
 - [[openclawskillsgraphifySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_3

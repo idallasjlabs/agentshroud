@@ -12,7 +12,7 @@ tags:
 # .write_file()
 
 ## Connections
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 - [[SSHWriteResult]] - `references` [EXTRACTED]
 - [[Write file content to a remote host via structured (non-shell-string) transport.]] - `rationale_for` [EXTRACTED]
 

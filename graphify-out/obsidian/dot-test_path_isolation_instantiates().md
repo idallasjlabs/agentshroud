@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_path_isolation_instantiates()
@@ -16,4 +16,4 @@ tags:
 - [[PathIsolationManager]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

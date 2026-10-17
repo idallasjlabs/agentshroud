@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ToolResultSanitizer"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ToolResultSanitizer
 ---
 
 # .test_monitor_mode_warning_message_format()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig]] - `calls` [EXTRACTED]
 - [[Test that monitor mode warnings contain required information.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

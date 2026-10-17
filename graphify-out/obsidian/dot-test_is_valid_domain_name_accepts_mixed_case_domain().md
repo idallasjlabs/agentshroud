@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "test_collaborator_tracker.py (4)"
 location: "L3997"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/test_collaborator_trackerpy_4
 ---
 
 # .test_is_valid_domain_name_accepts_mixed_case_domain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDomainValidationHelper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

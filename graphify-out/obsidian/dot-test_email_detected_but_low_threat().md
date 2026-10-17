@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (7)"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_7
 ---
 
 # .test_email_detected_but_low_threat()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_7

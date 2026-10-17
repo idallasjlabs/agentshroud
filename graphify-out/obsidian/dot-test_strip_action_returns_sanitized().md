@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_prompt_guard.py"
+community: "_req"
 location: "L840"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/_req
 ---
 
 # .test_strip_action_returns_sanitized()
@@ -15,4 +15,4 @@ tags:
 - [[TestScanToolResult]] - `method` [EXTRACTED]
 - [[_scan_result()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/_req

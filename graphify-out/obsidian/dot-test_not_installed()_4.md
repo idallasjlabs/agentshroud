@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "ServiceManager (3)"
 location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ServiceManager_3
 ---
 
 # .test_not_installed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckWazuhAgent]] - `method` [EXTRACTED]
 - [[_patch_exists()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ServiceManager_3

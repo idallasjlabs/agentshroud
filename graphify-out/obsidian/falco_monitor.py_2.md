@@ -1,32 +1,25 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
-type: "code"
-community: "FalcoAlertWatcher"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+type: "document"
+community: "falco_monitor.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/falco_monitorpy
 ---
 
 # falco_monitor.py
 
 ## Connections
-- [[FalcoAlertWatcher]] - `contains` [EXTRACTED]
-- [[api.py_2]] - `conceptually_related_to` [INFERRED]
-- [[categorize_alerts()]] - `contains` [EXTRACTED]
-- [[configure_rules()]] - `contains` [EXTRACTED]
-- [[datetime_5]] - `imports_from` [EXTRACTED]
-- [[falco-rules]] - `references` [INFERRED]
-- [[generate_summary()_2]] - `contains` [EXTRACTED]
-- [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[parse_alert()_1]] - `contains` [EXTRACTED]
-- [[read_alerts()_1]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py]] - `references` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `references` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
-- [[wazuh_client.py_2]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_18]] - `contains` [EXTRACTED]
+- [[Function Details_32]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_34]] - `contains` [EXTRACTED]
+- [[Priority Mapping]] - `contains` [EXTRACTED]
+- [[Purpose_151]] - `contains` [EXTRACTED]
+- [[Related_37]] - `contains` [EXTRACTED]
+- [[Responsibilities_35]] - `contains` [EXTRACTED]
+- [[Threat Model_22]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

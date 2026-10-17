@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "AsyncMock"
+community: "AsyncMock (3)"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AsyncMock_3
 ---
 
 # .test_owner_recipient_body_preserved()
@@ -16,4 +16,4 @@ tags:
 - [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerEmailBypassesPii]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_3

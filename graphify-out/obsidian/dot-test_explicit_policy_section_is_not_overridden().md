@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "MCPPolicyEngine (2)"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPolicyEngine_2
 ---
 
 # .test_explicit_policy_section_is_not_overridden()
@@ -17,4 +17,4 @@ tags:
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

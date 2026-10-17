@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - `rationale_for` [EXTRACTED]
-- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_bot_config()]] - `calls` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]

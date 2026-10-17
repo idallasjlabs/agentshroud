@@ -12,7 +12,7 @@ tags:
 # .test_web_search_log_called_with_correct_params()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - `rationale_for` [EXTRACTED]

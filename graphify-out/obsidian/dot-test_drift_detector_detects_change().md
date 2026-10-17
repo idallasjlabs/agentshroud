@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "test_telegram_proxy_outbound.py"
 location: "L799"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_drift_detector_detects_change()
@@ -16,4 +16,4 @@ tags:
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[TestAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

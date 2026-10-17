@@ -12,7 +12,7 @@ tags:
 # .test_empty_content_rejected()
 
 ## Connections
-- [[ForwardRequest_3]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

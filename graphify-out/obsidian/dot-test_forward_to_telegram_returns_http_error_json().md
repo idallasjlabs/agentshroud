@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (2)"
 location: "L3638"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_forward_to_telegram_returns_http_error_json()
 
 ## Connections
 - [[HTTPError JSON payloads should be returned as structured API responses.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

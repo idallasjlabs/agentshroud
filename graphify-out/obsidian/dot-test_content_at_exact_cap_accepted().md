@@ -12,7 +12,7 @@ tags:
 # .test_content_at_exact_cap_accepted()
 
 ## Connections
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

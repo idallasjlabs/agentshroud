@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (2)"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # enhanced_queue()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[Create an enhanced approval queue for testing.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

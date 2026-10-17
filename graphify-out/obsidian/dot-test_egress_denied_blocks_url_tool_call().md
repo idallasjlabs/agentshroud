@@ -12,9 +12,9 @@ tags:
 # .test_egress_denied_blocks_url_tool_call()
 
 ## Connections
-- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
 - [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]

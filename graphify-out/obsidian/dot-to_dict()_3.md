@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "AgentRegistry"
-location: "L74"
+community: "RBACConfig"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/RBACConfig
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

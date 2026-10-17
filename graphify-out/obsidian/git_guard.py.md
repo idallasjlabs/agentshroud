@@ -12,10 +12,10 @@ tags:
 # git_guard.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[GitGuard]] - `contains` [EXTRACTED]
 - [[SecurityFinding]] - `contains` [EXTRACTED]
-- [[ThreatLevel_1]] - `contains` [EXTRACTED]
+- [[ThreatLevel]] - `contains` [EXTRACTED]
 - [[scan_repository()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceGuard

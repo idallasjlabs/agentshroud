@@ -12,6 +12,6 @@ tags:
 # .test_two_with_wazuh()
 
 ## Connections
-- [[TestScoreLoggingMonitoring]] - `method` [EXTRACTED]
+- [[TestScoreLoggingMonitoring_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreLoggingMonitoring

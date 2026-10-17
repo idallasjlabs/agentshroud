@@ -12,7 +12,7 @@ tags:
 # heartbeat.sh
 
 ## Connections
-- [[_log()_1]] - `defines` [EXTRACTED]
+- [[_log()]] - `defines` [EXTRACTED]
 - [[heartbeat.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/heartbeatsh

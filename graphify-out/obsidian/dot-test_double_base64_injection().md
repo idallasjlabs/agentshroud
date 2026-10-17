@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "EgressFilterConfig"
 location: "L818"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/EgressFilterConfig
 ---
 
 # .test_double_base64_injection()
@@ -15,4 +15,4 @@ tags:
 - [[Double-encoded base64 injection should be caught.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

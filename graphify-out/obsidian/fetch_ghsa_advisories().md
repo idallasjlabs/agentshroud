@@ -12,7 +12,7 @@ tags:
 # fetch_ghsa_advisories()
 
 ## Connections
-- [[Any_9]] - `references` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
 - [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - `rationale_for` [EXTRACTED]
 - [[Fetch every published GitHub Security Advisory for repo (cursor-paginated)._1]] - `rationale_for` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

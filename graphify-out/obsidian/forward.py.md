@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # forward.py
 
 ## Connections
-- [[AgentTarget_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
-- [[EmailSendRequest_1]] - `imports` [EXTRACTED]
+- [[AgentTarget_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[EmailSendRequest]] - `imports` [EXTRACTED]
 - [[EmailSendResponse]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_3]] - `imports` [EXTRACTED]
+- [[ForwardRequest_1]] - `imports` [EXTRACTED]
 - [[ForwardResponse]] - `imports` [EXTRACTED]
 - [[GatewayEmailService_1]] - `imports` [EXTRACTED]
 - [[OwnerEmailRequest]] - `contains` [EXTRACTED]
@@ -32,12 +32,12 @@ tags:
 - [[_process_inbound()]] - `contains` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `contains` [EXTRACTED]
 - [[_sentences_from_deltas()]] - `contains` [EXTRACTED]
-- [[auth_dep()_1]] - `contains` [EXTRACTED]
+- [[auth_dep()_3]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[email_send()]] - `contains` [EXTRACTED]
 - [[email_send_owner()]] - `contains` [EXTRACTED]
 - [[email_service.py]] - `imports_from` [EXTRACTED]
-- [[event_bus.py_1]] - `imports_from` [EXTRACTED]
+- [[event_bus.py]] - `imports_from` [EXTRACTED]
 - [[forward_content()]] - `contains` [EXTRACTED]
 - [[forward_content_stream()]] - `contains` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_forward_routing.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

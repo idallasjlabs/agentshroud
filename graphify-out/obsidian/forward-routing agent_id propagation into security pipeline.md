@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (3)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_3
 ---
 
 # forward-routing agent_id propagation into security pipeline
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_forward_routing.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

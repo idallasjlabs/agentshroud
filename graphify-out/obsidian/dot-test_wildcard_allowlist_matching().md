@@ -12,7 +12,7 @@ tags:
 # .test_wildcard_allowlist_matching()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Test wildcard matching in allowlist.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]

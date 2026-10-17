@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (5)"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_5
 ---
 
 # .test_daily_notes_retention()
@@ -15,4 +15,4 @@ tags:
 - [[Test retention policy for daily notes.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "TestDomainValidationHelper"
+community: "UserSessionManager"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/UserSessionManager
 ---
 
 # .test_get_credential_status()
@@ -15,4 +15,4 @@ tags:
 - [[Test credential status reporting.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

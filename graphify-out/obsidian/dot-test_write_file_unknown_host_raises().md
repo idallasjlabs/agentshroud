@@ -12,7 +12,7 @@ tags:
 # .test_write_file_unknown_host_raises()
 
 ## Connections
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

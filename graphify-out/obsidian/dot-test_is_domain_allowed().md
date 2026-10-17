@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "egress_filter.py"
+community: "AlertDispatcher"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/AlertDispatcher
 ---
 
 # .test_is_domain_allowed()
 
 ## Connections
 - [[Test domain allowlist checking.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

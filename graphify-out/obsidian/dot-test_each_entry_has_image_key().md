@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Path"
+community: "Path (3)"
 location: "L1092"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Path_3
 ---
 
 # .test_each_entry_has_image_key()
 
 ## Connections
-- [[Path_28]] - `calls` [EXTRACTED]
+- [[Path_36]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[_write_image_report()]] - `calls` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Path_3

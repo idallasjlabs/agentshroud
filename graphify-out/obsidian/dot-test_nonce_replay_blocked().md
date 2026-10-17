@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TestInstructionNonce"
+community: "TestInstructionNonce (2)"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInstructionNonce
+  - community/TestInstructionNonce_2
 ---
 
 # .test_nonce_replay_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Replaying the same nonce is rejected.]] - `rationale_for` [EXTRACTED]
 - [[TestInstructionNonce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInstructionNonce
+#graphify/code #graphify/EXTRACTED #community/TestInstructionNonce_2

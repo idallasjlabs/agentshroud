@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ToolResultSanitizer"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ToolResultSanitizer
 ---
 
 # .test_security_config_killswitch_enforce()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig]] - `calls` [EXTRACTED]
 - [[TestSecurityConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

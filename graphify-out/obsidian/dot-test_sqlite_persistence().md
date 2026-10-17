@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "CrossBotTrustLedger (2)"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/CrossBotTrustLedger_2
 ---
 
 # .test_sqlite_persistence()
 
 ## Connections
 - [[TestTrustManager]] - `method` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2

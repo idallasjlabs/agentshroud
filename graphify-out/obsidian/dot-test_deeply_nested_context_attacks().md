@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # .test_deeply_nested_context_attacks()
@@ -16,4 +16,4 @@ tags:
 - [[Nested context attacks shouldn't cause stack overflow.]] - `rationale_for` [EXTRACTED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

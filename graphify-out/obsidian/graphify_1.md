@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "What You Must Do When Invoked (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/What_You_Must_Do_When_Invoked_2
 ---
 
 # /graphify
@@ -18,9 +18,9 @@ tags:
 - [[For the commit hook and native CLAUDE.md integration]] - `contains` [EXTRACTED]
 - [[Honesty Rules_1]] - `contains` [EXTRACTED]
 - [[Interpreter guard for subcommands_1]] - `contains` [EXTRACTED]
-- [[Usage_68]] - `contains` [EXTRACTED]
+- [[Usage_72]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_1]] - `contains` [EXTRACTED]
 - [[What graphify is for_1]] - `contains` [EXTRACTED]
 - [[hermesskillsgraphifySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2

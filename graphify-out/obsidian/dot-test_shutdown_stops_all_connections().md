@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "StdioConnection (2)"
 location: "L720"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/StdioConnection_2
 ---
 
 # .test_shutdown_stops_all_connections()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[FakeConn]] - `calls` [EXTRACTED]
 - [[TestResultProcessingAndLifecycle]] - `method` [EXTRACTED]
-- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[make_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/StdioConnection_2

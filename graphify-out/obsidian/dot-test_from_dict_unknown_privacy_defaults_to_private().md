@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (3)"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_3
 ---
 
 # .test_from_dict_unknown_privacy_defaults_to_private()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivacyPolicyParsing]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

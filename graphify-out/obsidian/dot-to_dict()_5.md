@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AuditEvent"
-location: "L88"
+community: "AgentRegistry"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AuditEvent_1]] - `method` [EXTRACTED]
-- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

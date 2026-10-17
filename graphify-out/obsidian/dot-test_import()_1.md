@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "ServiceManager"
+community: "ServiceManager (2)"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ServiceManager_2
 ---
 
 # .test_import()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceManagerImport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ServiceManager_2

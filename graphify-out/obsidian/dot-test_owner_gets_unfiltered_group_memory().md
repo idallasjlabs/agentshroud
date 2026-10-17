@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "DataLedger"
+community: "RBACConfig"
 location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/RBACConfig
 ---
 
 # .test_owner_gets_unfiltered_group_memory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

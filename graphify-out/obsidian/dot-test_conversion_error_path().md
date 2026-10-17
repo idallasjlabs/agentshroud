@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "export_bot"
-location: "L361"
+community: "MiddlewareManager"
+location: "L460"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromAuditChainEntry]] - `method` [EXTRACTED]
+- [[TestFromAnomalyAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

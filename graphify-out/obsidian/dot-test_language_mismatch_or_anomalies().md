@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "TestHermesDashboardForwarderBinding"
+community: "TestToolChainAnalyzer"
 location: "L483"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHermesDashboardForwarderBinding
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_language_mismatch_or_anomalies()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResponseConsistency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHermesDashboardForwarderBinding
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

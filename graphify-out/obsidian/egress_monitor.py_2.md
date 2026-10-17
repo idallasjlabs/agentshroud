@@ -1,26 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
-type: "document"
-community: "egress_monitor.py"
-location: "L10"
+source_file: "gateway/security/egress_monitor.py"
+type: "code"
+community: "AlertDispatcher (3)"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/AlertDispatcher_3
 ---
 
 # egress_monitor.py
 
 ## Connections
-- [[Alert Actions]] - `contains` [EXTRACTED]
-- [[Configuration  Environment Variables_17]] - `contains` [EXTRACTED]
-- [[Default Thresholds]] - `contains` [EXTRACTED]
-- [[Function Details_31]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_33]] - `contains` [EXTRACTED]
-- [[Purpose_150]] - `contains` [EXTRACTED]
-- [[Related_37]] - `contains` [EXTRACTED]
-- [[Responsibilities_35]] - `contains` [EXTRACTED]
-- [[Threat Model_21]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
+- [[AlertSeverity]] - `contains` [EXTRACTED]
+- [[AnomalyAlert]] - `contains` [EXTRACTED]
+- [[EgressChannel]] - `contains` [EXTRACTED]
+- [[EgressEvent]] - `contains` [EXTRACTED]
+- [[EgressMonitor]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `contains` [EXTRACTED]
+- [[EgressSummary]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[key_vault.py_2]] - `references` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `references` [EXTRACTED]
+- [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

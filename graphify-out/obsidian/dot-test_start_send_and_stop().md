@@ -12,10 +12,10 @@ tags:
 # .test_start_send_and_stop()
 
 ## Connections
-- [[dot-send_request()_1]] - `calls` [EXTRACTED]
-- [[dot-stop()_3]] - `calls` [EXTRACTED]
+- [[dot-send_request()_2]] - `calls` [EXTRACTED]
+- [[dot-stop()_10]] - `calls` [EXTRACTED]
 - [[FakeProcess]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
 - [[StdioConnection]] - `calls` [EXTRACTED]
 - [[TestStdioConnection]] - `method` [EXTRACTED]
 

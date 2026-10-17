@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L212"
+community: "MiddlewareManager (2)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # .test_workspace_read_allowed()
 
 ## Connections
-- [[Agent can read its own workspace.]] - `rationale_for` [EXTRACTED]
-- [[TestReadAccess]] - `method` [EXTRACTED]
+- [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

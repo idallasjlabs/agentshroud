@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "ApprovalHardening"
+community: "ApprovalHardening (2)"
 location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/ApprovalHardening_2
 ---
 
 # .test_format_parameters_with_highlighting()
@@ -15,4 +15,4 @@ tags:
 - [[Test parameter formatting with risk highlighting.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening_2

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (6)"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_6
 ---
 
 # .test_execute_success()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestExecute]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_6

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (4)"
 location: "L264"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/UserSessionManager
+  - community/UserSessionManager_4
 ---
 
 # .test_first_attempt_keeps_default_resolver()
@@ -18,4 +18,4 @@ tags:
 - [[recorder()_1]] - `contains` [EXTRACTED]
 - [[recorder()_3]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/UserSessionManager_4

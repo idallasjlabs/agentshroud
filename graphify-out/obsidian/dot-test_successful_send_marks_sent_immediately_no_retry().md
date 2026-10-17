@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestCveReportSchedulerRetry]] - `method` [EXTRACTED]
-- [[datetime_1]] - `calls` [EXTRACTED]
+- [[datetime_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

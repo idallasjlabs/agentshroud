@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "InjectionAction"
-location: "L56"
+community: "AlertDispatcher (2)"
+location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/AlertDispatcher_2
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

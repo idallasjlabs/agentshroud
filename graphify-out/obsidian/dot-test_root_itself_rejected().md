@@ -12,7 +12,7 @@ tags:
 # .test_root_itself_rejected()
 
 ## Connections
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

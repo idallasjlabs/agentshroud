@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "MiddlewareManager"
+community: "create_auth_dependency"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/create_auth_dependency
 ---
 
 # .test_global_monitor_override_downgrades_all()
@@ -17,4 +17,4 @@ tags:
 - [[TestGetModuleModeEnforceDefault]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

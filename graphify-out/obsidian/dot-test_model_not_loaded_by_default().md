@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "A2APolicyEngine (2)"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/A2APolicyEngine_2
 ---
 
 # .test_model_not_loaded_by_default()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_2

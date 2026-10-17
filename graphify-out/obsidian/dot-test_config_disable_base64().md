@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "InjectionAction"
+community: "PipelineAction"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/PipelineAction
 ---
 
 # .test_config_disable_base64()
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

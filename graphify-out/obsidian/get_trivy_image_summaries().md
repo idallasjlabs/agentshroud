@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Path"
+community: "Path (3)"
 location: "L522"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Path_3
 ---
 
 # get_trivy_image_summaries()
@@ -21,10 +21,10 @@ tags:
 - [[dot-test_returns_empty_list_when_dir_missing()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_empty_when_no_image_reports()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Path_3

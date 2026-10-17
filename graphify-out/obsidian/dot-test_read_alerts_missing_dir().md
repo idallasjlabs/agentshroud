@@ -12,7 +12,7 @@ tags:
 # .test_read_alerts_missing_dir()
 
 ## Connections
-- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
-- [[read_alerts()_1]] - `calls` [EXTRACTED]
+- [[TestFalcoSummary]] - `method` [EXTRACTED]
+- [[read_alerts()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

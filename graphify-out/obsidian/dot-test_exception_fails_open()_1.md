@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "UserSessionManager"
-location: "L890"
+community: "_req"
+location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/_req
 ---
 
 # .test_exception_fails_open()
 
 ## Connections
-- [[TestFilterOutboundResponse]] - `method` [EXTRACTED]
+- [[TestScanToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/_req

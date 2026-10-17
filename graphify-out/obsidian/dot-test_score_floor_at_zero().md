@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # .test_score_floor_at_zero()
@@ -15,4 +15,4 @@ tags:
 - [[Score should not go below 0.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

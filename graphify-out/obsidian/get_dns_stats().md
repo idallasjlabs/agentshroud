@@ -12,7 +12,7 @@ tags:
 # get_dns_stats()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Get DNS blocklist statistics. Returns current DNS filtering statistics from the…]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "SkillGuard"
-location: "L125"
+community: "test_telegram_proxy_outbound.py"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-to_json()]] - `calls` [EXTRACTED]
-- [[SkillsManifest]] - `method` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[dot-set_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

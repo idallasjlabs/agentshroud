@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[SCLCaller_2]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

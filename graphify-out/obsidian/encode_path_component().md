@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "test_soc_realtime_coverage.py"
 location: "L296"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/test_soc_realtime_coveragepy
 ---
 
 # encode_path_component()
@@ -15,4 +15,4 @@ tags:
 - [[String]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

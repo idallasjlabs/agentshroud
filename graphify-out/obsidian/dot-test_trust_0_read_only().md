@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "StdioConnection"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/StdioConnection
 ---
 
 # .test_trust_0_read_only()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustMapping]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

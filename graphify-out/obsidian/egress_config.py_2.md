@@ -1,26 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
-type: "document"
-community: "egress_config.py"
-location: "L10"
+source_file: "gateway/security/egress_config.py"
+type: "code"
+community: "EgressFilterConfig"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/EgressFilterConfig
 ---
 
 # egress_config.py
 
 ## Connections
-- [[Configuration  Environment Variables_16]] - `contains` [EXTRACTED]
-- [[Default Allowlist]] - `contains` [EXTRACTED]
-- [[Default Denylist Categories]] - `contains` [EXTRACTED]
-- [[Function Details_30]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
-- [[Purpose_149]] - `contains` [EXTRACTED]
-- [[Related_36]] - `contains` [EXTRACTED]
-- [[Responsibilities_34]] - `contains` [EXTRACTED]
-- [[Threat Model_20]] - `contains` [EXTRACTED]
-- [[egress_config.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig]] - `contains` [EXTRACTED]
+- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - `references` [EXTRACTED]
+- [[citation_verifier.py]] - `imports_from` [EXTRACTED]
+- [[domain_matches()]] - `contains` [EXTRACTED]
+- [[egress_approval.py]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
+- [[get_egress_config()]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[management.py]] - `imports_from` [EXTRACTED]
+- [[set_egress_config()]] - `contains` [EXTRACTED]
+- [[test_config_validation.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

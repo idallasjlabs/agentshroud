@@ -12,7 +12,7 @@ tags:
 # .test_dry_run_writes_nothing()
 
 ## Connections
-- [[TestSerialization]] - `method` [EXTRACTED]
+- [[TestSerialization_1]] - `method` [EXTRACTED]
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 

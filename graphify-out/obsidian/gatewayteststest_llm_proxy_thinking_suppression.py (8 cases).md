@@ -15,7 +15,7 @@ tags:
 - [[Regression tests for LLMProxy._suppress_qwen3_thinking. 2026-10-16 incident…]] - `rationale_for` [EXTRACTED]
 - [[Root cause Nemotron in-band reasoning + Qwen-only no_think suffix]] - `references` [EXTRACTED]
 - [[_req()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[llm_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[test_missing_model_treated_as_non_qwen()]] - `contains` [EXTRACTED]
 - [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - `contains` [EXTRACTED]
 - [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - `contains` [EXTRACTED]

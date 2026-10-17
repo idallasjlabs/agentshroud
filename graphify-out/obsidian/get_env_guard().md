@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (3)"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_3
 ---
 
 # get_env_guard()
@@ -15,6 +15,6 @@ tags:
 - [[EnvironmentGuard]] - `references` [EXTRACTED]
 - [[Get the global environment guard instance.]] - `rationale_for` [EXTRACTED]
 - [[check_command()]] - `calls` [EXTRACTED]
-- [[env_guard.py]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

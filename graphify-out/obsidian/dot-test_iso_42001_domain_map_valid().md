@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (4)"
 location: "L949"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_4
 ---
 
 # .test_iso_42001_domain_map_valid()
@@ -15,4 +15,4 @@ tags:
 - [[ISO 42001 domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
 - [[TestComputeScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_4

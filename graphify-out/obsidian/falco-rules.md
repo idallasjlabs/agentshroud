@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[alert_dispatcher.py]] - `references` [INFERRED]
 - [[falco-rules.yaml]] - `contains` [EXTRACTED]
-- [[falco_monitor.py_2]] - `references` [INFERRED]
+- [[falco_monitor.py]] - `references` [INFERRED]
 - [[wazuh-ossec]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

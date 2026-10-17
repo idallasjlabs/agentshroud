@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "telegram_proxy.py (2)"
 location: "L518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/telegram_proxypy_2
 ---
 
 # .test_create_custom_group()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2

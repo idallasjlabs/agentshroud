@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

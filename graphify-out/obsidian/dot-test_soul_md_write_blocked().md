@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_soul_md_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot modify SOUL.md behavioral instructions.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityPolicyProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

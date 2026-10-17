@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
-type: "code"
-community: "create_auth_dependency"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+type: "document"
+community: "make_event"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/make_event
 ---
 
-# event_bus.py
+# event_bus.py.md
 
 ## Connections
-- [[EventBus]] - `contains` [EXTRACTED]
-- [[GatewayEvent]] - `contains` [EXTRACTED]
-- [[approval.py]] - `imports_from` [EXTRACTED]
-- [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[make_event()]] - `contains` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[EventBus]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `references` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/make_event

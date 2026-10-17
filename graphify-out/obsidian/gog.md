@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (6)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_6
 ---
 
 # gog
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gogSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_6

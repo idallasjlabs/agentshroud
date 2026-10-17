@@ -12,7 +12,7 @@ tags:
 # .test_stranger_hello_in_group_receives_ack()
 
 ## Connections
-- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets th]] - `rationale_for` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

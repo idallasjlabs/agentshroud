@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "CrossBotTrustLedger (2)"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/CrossBotTrustLedger_2
 ---
 
 # .test_get_trust_unknown()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2

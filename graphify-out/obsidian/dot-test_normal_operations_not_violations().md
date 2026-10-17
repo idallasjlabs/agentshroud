@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_normal_operations_not_violations()
@@ -15,4 +15,4 @@ tags:
 - [[Normal workspace operations should not be flagged as violations.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityViolationLogging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (2)"
 location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_long_outbound_message_blocked_for_non_owner()
 
 ## Connections
 - [[Messages above hard size cap should be blocked to prevent split bypass.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

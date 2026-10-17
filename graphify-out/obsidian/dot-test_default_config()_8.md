@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "TrustConfig"
-location: "L63"
+community: "EgressFilterConfig"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/EgressFilterConfig
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._5]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

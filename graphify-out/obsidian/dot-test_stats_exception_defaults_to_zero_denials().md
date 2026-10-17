@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-_state()]] - `calls` [EXTRACTED]
-- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestComputeBotScorecard

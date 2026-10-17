@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "main"
+community: "main (2)"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main
+  - community/main_2
 ---
 
 # .test_main_default_hosts()
 
 ## Connections
 - [[TestMain_1]] - `method` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/main
+#graphify/code #graphify/EXTRACTED #community/main_2

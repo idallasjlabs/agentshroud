@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "diagrams/README.md"
+community: "RBACConfig"
 location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/RBACConfig
 ---
 
 # .test_member_allowed_in_group()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInboundChokepointWiring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

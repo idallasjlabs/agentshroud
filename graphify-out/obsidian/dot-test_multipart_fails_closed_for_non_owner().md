@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

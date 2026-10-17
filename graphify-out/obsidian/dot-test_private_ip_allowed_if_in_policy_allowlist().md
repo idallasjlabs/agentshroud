@@ -12,7 +12,7 @@ tags:
 # .test_private_ip_allowed_if_in_policy_allowlist()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - `rationale_for` [EXTRACTED]
 - [[TestIPRules]] - `method` [EXTRACTED]

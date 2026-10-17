@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval"
+community: "TelegramAPIProxy (2)"
 location: "L3101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Trailing markdown backtick in leaked URL should normalize for approval.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

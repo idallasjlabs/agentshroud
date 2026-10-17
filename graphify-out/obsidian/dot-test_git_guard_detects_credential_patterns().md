@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # .test_git_guard_detects_credential_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[GitGuard]] - `calls` [INFERRED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

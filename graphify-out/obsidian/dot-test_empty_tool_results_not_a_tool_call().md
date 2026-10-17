@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # .test_empty_tool_results_not_a_tool_call()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsToolCallRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

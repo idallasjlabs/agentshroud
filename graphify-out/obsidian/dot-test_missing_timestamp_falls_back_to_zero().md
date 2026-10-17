@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher (2)"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher_2
 ---
 
 # .test_missing_timestamp_falls_back_to_zero()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_build_bridge()]] - `calls` [EXTRACTED]
 - [[TestResourceGuardAlertBridge]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -12,8 +12,8 @@ tags:
 # gitleaks.toml
 
 ## Connections
-- [[Integration]] - `contains` [EXTRACTED]
-- [[Purpose_4]] - `contains` [EXTRACTED]
+- [[Integration_1]] - `contains` [EXTRACTED]
+- [[Purpose_6]] - `contains` [EXTRACTED]
 - [[Related Notes_9]] - `contains` [EXTRACTED]
 - [[Usage_1]] - `contains` [EXTRACTED]
 - [[What It Checks]] - `contains` [EXTRACTED]

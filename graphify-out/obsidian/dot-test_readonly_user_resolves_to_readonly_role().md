@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "test_runtime_engines.py"
+community: "RBACConfig (2)"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/RBACConfig_2
 ---
 
 # .test_readonly_user_resolves_to_readonly_role()
@@ -15,4 +15,4 @@ tags:
 - [[Read-only user resolves to GroupRole.READ_ONLY.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

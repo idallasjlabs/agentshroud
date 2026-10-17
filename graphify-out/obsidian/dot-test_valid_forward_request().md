@@ -12,7 +12,7 @@ tags:
 # .test_valid_forward_request()
 
 ## Connections
-- [[ForwardRequest_3]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

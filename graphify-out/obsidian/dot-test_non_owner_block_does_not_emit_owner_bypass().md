@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestContextGuardInPipeline]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

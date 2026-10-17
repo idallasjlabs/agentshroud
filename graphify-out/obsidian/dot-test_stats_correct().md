@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_stats_correct()
@@ -15,4 +15,4 @@ tags:
 - [[Stats reflect actual data.]] - `rationale_for` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

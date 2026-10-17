@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "RBACConfig"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/RBACConfig
 ---
 
 # .test_self_write_succeeds()
@@ -15,4 +15,4 @@ tags:
 - [[A user may write into their own private memory.]] - `rationale_for` [EXTRACTED]
 - [[TestUserMemoryWriteACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

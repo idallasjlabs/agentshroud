@@ -16,9 +16,9 @@ tags:
 - [[If notice send fails, cooldown should not suppress the next retry attempt.]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimiter

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FreeTypeFont]] - `references` [EXTRACTED]
-- [[Path_39]] - `calls` [EXTRACTED]
+- [[Path_38]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `calls` [EXTRACTED]
 - [[generate_feature_icons()]] - `calls` [EXTRACTED]

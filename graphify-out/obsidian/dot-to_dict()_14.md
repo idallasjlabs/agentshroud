@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "plan_remediation"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/plan_remediation
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
+- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
+- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

@@ -12,6 +12,6 @@ tags:
 # .test_one_baseline()
 
 ## Connections
-- [[TestScoreLoggingMonitoring]] - `method` [EXTRACTED]
+- [[TestScoreLoggingMonitoring_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreLoggingMonitoring

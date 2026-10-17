@@ -12,7 +12,7 @@ tags:
 # .test_egress_filter_instantiates()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

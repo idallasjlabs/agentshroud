@@ -12,7 +12,7 @@ tags:
 # egress_log()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[List recent egress attempts for dashboardSOC triage.]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

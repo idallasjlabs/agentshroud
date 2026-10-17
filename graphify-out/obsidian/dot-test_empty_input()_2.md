@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L298"
+community: "PipelineAction"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PipelineAction
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

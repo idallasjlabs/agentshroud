@@ -15,7 +15,7 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Repeated rate-limited messages within the cooldown window send at most one notic]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
 - [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - `rationale_for` [EXTRACTED]
 

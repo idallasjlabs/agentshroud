@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L66"
+community: "AlertDispatcher (2)"
+location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher_2
 ---
 
 # .test_tmp_read_allowed()
 
 ## Connections
-- [[TestNormalFileOperations]] - `method` [EXTRACTED]
+- [[Reading from app should be allowed.]] - `rationale_for` [EXTRACTED]
+- [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

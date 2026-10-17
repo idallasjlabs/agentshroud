@@ -12,7 +12,7 @@ tags:
 # .test_object_form_with_defaults()
 
 ## Connections
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestFromAnomalyAlert]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager
