@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_url_analyzer.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "TestSSRFDetection (3)"
-location: "L79"
+community: "EgressFilterConfig (2)"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_3
+  - community/EgressFilterConfig_2
 ---
 
 # .test_ipv4_mapped_ipv6_blocked()
 
 ## Connections
-- [[TestSSRFDetection]] - `method` [EXTRACTED]
+- [[TestIPRules]] - `method` [EXTRACTED]
+- [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_3
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

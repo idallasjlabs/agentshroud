@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "AlertDispatcher"
 location: "L390"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/AlertDispatcher
 ---
 
 # .detect_staging_patterns()
@@ -15,4 +15,4 @@ tags:
 - [[FileSandbox]] - `method` [EXTRACTED]
 - [[StagingPattern]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L904"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # .test_default_bot_and_sanitizer_configured()
@@ -16,4 +16,4 @@ tags:
 - [[TestSetConfig]] - `method` [EXTRACTED]
 - [[_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

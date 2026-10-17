@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer (2)"
+community: "TestToolChainAnalyzer"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/TestToolChainAnalyzer
 ---
 
 # .sanitize_tool_params()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_5]] - `references` [EXTRACTED]
 - [[ParamScanResult]] - `references` [EXTRACTED]
 - [[Scan tool parameters for injection payloads and return sanitized copy.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

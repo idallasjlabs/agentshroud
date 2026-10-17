@@ -18,7 +18,7 @@ tags:
 - [[dot-_quarantine_outbound_block()]] - `calls` [EXTRACTED]
 - [[dot-_set_outbound_block_cascade()]] - `calls` [EXTRACTED]
 - [[Core outbound security scan shared by JSON, form, and multipart branches.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[_OutboundScan]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

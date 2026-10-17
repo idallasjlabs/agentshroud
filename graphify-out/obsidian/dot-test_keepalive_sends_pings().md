@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
 - [[TestSendEventAndKeepalive]] - `method` [EXTRACTED]
 - [[_spin()]] - `calls` [EXTRACTED]
 

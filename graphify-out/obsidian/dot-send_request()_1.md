@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-start()_1]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[Send a JSON-RPC request and read the response.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `method` [EXTRACTED]
 

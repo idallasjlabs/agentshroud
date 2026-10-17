@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "ToolResultSanitizer"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ToolResultSanitizer
 ---
 
 # ._validate_user_id()
@@ -17,4 +17,4 @@ tags:
 - [[UserSessionManager]] - `method` [EXTRACTED]
 - [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

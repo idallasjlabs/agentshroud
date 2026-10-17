@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection (3)"
+community: "TestSSRFDetection"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_3
+  - community/TestSSRFDetection
 ---
 
 # .test_ipv4_mapped_ipv6_private_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSRFDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_3
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

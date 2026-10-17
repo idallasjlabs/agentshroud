@@ -12,7 +12,7 @@ tags:
 # .test_baseline_at_least_two()
 
 ## Connections
-- [[TestScoreSecretsManagement]] - `method` [EXTRACTED]
+- [[TestScoreSecretsManagement_1]] - `method` [EXTRACTED]
 - [[_score_secrets_management()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

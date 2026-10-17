@@ -12,8 +12,8 @@ tags:
 # .set_user_role()
 
 ## Connections
-- [[RBACConfig_3]] - `method` [EXTRACTED]
-- [[Role_65]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `method` [EXTRACTED]
+- [[Role_28]] - `references` [EXTRACTED]
 - [[Set role for a user ID (owner-only operation).]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

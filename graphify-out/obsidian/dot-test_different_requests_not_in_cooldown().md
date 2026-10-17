@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "ApprovalHardening (2)"
+community: "ApprovalHardening"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening_2
+  - community/ApprovalHardening
 ---
 
 # .test_different_requests_not_in_cooldown()
@@ -15,4 +15,4 @@ tags:
 - [[Test that different requests are not affected by cooldown.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

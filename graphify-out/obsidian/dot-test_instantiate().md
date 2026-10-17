@@ -12,7 +12,7 @@ tags:
 # .test_instantiate()
 
 ## Connections
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `calls` [EXTRACTED]
 - [[TestSOCWebSocketHandlerImport]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_2

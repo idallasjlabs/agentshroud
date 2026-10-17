@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "TrustConfig"
-location: "L345"
+community: "MiddlewareManager (2)"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/MiddlewareManager_2
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[ProgressiveTrustConfig_1]] - `calls` [EXTRACTED]
-- [[TestEnforcementMode]] - `method` [EXTRACTED]
+- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

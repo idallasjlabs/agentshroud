@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (5)"
+community: "AlertDispatcher"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_5
+  - community/AlertDispatcher
 ---
 
 # .get_session_risk_level()
@@ -16,4 +16,4 @@ tags:
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Get risk level for a session based on detected attacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_5
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

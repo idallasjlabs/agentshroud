@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "StdioConnection"
-location: "L98"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPPolicyEngine
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_52]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `method` [EXTRACTED]
-- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel_1]] - `calls` [EXTRACTED]
+- [[Any_49]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `calls` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

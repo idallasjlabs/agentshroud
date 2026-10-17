@@ -12,7 +12,7 @@ tags:
 # .get_item()
 
 ## Connections
-- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
 - [[Fetch a single queue item by ID          Args             request_id Request U]] - `rationale_for` [EXTRACTED]
 

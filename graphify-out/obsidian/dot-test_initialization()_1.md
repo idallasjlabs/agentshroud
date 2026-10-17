@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "ApprovalHardening (2)"
-location: "L60"
+community: "TestToolChainAnalyzer"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening_2
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test hardening initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[Test proper initialization of ToolChainAnalyzer.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

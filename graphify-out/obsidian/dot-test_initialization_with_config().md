@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (34)"
+community: "TestOutboundInfoFilter"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_34
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_initialization_with_config()
@@ -16,4 +16,4 @@ tags:
 - [[Test filter initializes with custom configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_34
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

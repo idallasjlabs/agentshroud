@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_decide()_1]] - `calls` [EXTRACTED]
 - [[dot-enforce()_1]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_49]] - `references` [EXTRACTED]
 - [[Evaluate a single MCP tool call. Pure — no IO, no side effects         beyond b]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyDecision]] - `references` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (5)"
+community: "AlertDispatcher"
 location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_5
+  - community/AlertDispatcher
 ---
 
 # .get_attack_summary()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-export_attack_report()]] - `calls` [EXTRACTED]
 - [[dot-get_session_risk_level()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Get summary of detected attacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_5
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

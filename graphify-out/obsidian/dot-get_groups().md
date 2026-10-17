@@ -12,7 +12,7 @@ tags:
 # .get_groups()
 
 ## Connections
-- [[dot-get()]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

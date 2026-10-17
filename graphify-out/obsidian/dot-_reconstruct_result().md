@@ -15,6 +15,6 @@ tags:
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
 - [[Any_3]] - `references` [EXTRACTED]
 - [[Reconstruct the tool result with sanitized content]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

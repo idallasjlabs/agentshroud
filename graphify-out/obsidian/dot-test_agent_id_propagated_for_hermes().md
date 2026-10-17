@@ -12,7 +12,7 @@ tags:
 # .test_agent_id_propagated_for_hermes()
 
 ## Connections
-- [[dot-process_inbound()_2]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
 - [[dot-process_outbound()_3]] - `calls` [EXTRACTED]
 - [[AgentTarget_2]] - `calls` [EXTRACTED]
 - [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - `rationale_for` [EXTRACTED]

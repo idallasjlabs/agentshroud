@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "First Time Setup"
-location: "L220"
+community: "test_dashboard_endpoints.py"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/test_dashboard_endpointspy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
-- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

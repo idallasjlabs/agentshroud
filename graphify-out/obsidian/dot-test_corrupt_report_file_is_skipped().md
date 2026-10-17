@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A JSON-corrupt file is silently skipped, others are still returned.]] - `rationale_for` [EXTRACTED]
-- [[Path_36]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[_write_image_report()]] - `calls` [EXTRACTED]

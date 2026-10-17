@@ -12,7 +12,7 @@ tags:
 # .record_private_data_redaction()
 
 ## Connections
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PrivateRedactionEvent]] - `calls` [EXTRACTED]
 - [[Record admin-private data redaction event for compliance audit.]] - `rationale_for` [EXTRACTED]
 

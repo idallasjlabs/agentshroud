@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (4)"
 location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_4
 ---
 
 # .test_concurrent_saves_do_not_lose_entries()
@@ -15,4 +15,4 @@ tags:
 - [[Concurrent add_conversation_message calls (each of which saves) must         not]] - `rationale_for` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_4

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L290"
+community: "TestToolChainAnalyzer"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and malformed inputs.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[Test edge cases and error conditions.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L457"
+community: "SCLClient"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/SCLClient
 ---
 
 # .get_events()
 
 ## Connections
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceEvent]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[Retrieve governance events with optional filters.]] - `rationale_for` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/SCLClient

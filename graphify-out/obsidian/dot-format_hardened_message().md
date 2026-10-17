@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_format_parameters_with_highlighting()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[DeceptionDetection]] - `references` [EXTRACTED]
 - [[Format an approval message with hardening measures applied.]] - `rationale_for` [EXTRACTED]

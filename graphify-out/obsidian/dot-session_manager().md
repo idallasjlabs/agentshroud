@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "RBACConfig"
-location: "L236"
+community: "test_dashboard_endpoints.py"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_dashboard_endpointspy
 ---
 
 # .session_manager()
 
 ## Connections
-- [[Create a session manager.]] - `rationale_for` [EXTRACTED]
-- [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
+- [[Create a session manager with temporary workspace.]] - `rationale_for` [EXTRACTED]
+- [[TestUserSessionManager]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

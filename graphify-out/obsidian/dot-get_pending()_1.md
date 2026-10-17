@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
 - [[Get all pending (not expired, not decided) items          First expires any stal]] - `rationale_for` [EXTRACTED]
 

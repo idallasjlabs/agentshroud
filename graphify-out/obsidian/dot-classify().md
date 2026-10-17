@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "A2APolicyEngine (4)"
+community: "HeuristicClassifier"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_4
+  - community/HeuristicClassifier
 ---
 
 # .classify()
@@ -18,4 +18,4 @@ tags:
 - [[Classify text for injection probability.          Args             text Input]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_4
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

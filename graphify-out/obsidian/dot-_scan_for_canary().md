@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "TestSSRFDetection (5)"
+community: "AlertDispatcher"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_5
+  - community/AlertDispatcher
 ---
 
 # ._scan_for_canary()
 
 ## Connections
 - [[dot-check_response()_1]] - `calls` [EXTRACTED]
-- [[Any_80]] - `references` [EXTRACTED]
+- [[Any_62]] - `references` [EXTRACTED]
 - [[CanaryResult_2]] - `references` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 - [[Scan response text for a specific canary.          Args             session_id]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_5
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

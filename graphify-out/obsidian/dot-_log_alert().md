@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "First Time Setup"
+community: "AlertDispatcher (2)"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/AlertDispatcher_2
 ---
 
 # ._log_alert()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-dispatch()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_1]] - `references` [EXTRACTED]
 - [[Append alert to JSONL log file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -12,7 +12,7 @@ tags:
 # .deregister()
 
 ## Connections
-- [[dot-to_dict()_17]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_16]] - `calls` [EXTRACTED]
 - [[Remove a subagent from governance tracking. Returns final usage.]] - `rationale_for` [EXTRACTED]
 - [[ResourceUsage_2]] - `references` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]

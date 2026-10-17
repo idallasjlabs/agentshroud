@@ -16,8 +16,6 @@ tags:
 - [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[dot-proxy_messages_streaming()]] - `calls` [EXTRACTED]
 - [[FIELDFLARE_API_BASE (TurboFieldfare 8238)]] - `shares_data_with` [INFERRED]
-- [[Fieldflare tool-schema flatten fix (skill_manage six-branch union 400)]] - `references` [EXTRACTED]
-- [[Fieldflare unsupported-fields shim]] - `rationale_for` [INFERRED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Remove OpenAI request fields TurboFieldfare rejects with HTTP 400, in place.…]] - `rationale_for` [EXTRACTED]
 - [[test_fieldflare_shim_collapses_type_list_to_one_concrete_type_plus_null()]] - `calls` [EXTRACTED]

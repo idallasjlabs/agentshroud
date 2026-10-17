@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestDockerEngine"
-location: "L126"
+community: "MiddlewareManager"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DockerEngine]] - `calls` [EXTRACTED]
-- [[TestDockerEngine]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

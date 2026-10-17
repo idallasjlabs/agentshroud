@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AgentRegistry"
-location: "L79"
+community: "A2APolicyEngine (3)"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/A2APolicyEngine_3
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-register()]] - `calls` [EXTRACTED]
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
+- [[A2APolicyAction]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig]] - `method` [EXTRACTED]
+- [[Any_47]] - `references` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L486"
+community: "ToolResultSanitizer"
+location: "L463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # .cleanup_old_sessions()
 
 ## Connections
-- [[Clean up old session data.]] - `rationale_for` [EXTRACTED]
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Clean up sessions that haven't been active for the specified number of days.]] - `rationale_for` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig (2) (3)"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig_2_3
 ---
 
 # .test_is_high_risk_false_for_web_search()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupRoleResolver]] - `method` [EXTRACTED]
 - [[web_search is NOT a high-risk tool.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_3

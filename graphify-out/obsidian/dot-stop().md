@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L115"
+community: "FalcoAlertWatcher"
+location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/FalcoAlertWatcher
 ---
 
 # .stop()
 
 ## Connections
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

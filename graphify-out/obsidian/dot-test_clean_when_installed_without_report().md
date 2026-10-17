@@ -12,6 +12,6 @@ tags:
 # .test_clean_when_installed_without_report()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestTrivySummary

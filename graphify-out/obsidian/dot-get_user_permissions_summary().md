@@ -12,8 +12,8 @@ tags:
 # .get_user_permissions_summary()
 
 ## Connections
-- [[dot-get_user_role()_2]] - `calls` [EXTRACTED]
-- [[Any_62]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
 - [[Get a summary of permissions for a user.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
 

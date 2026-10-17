@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "make_event"
-location: "L95"
+community: "AuditStore"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/AuditStore
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_53]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -1,23 +1,29 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "cli/src/main.rs"
 type: "code"
-community: "AgentRegistry"
-location: "L66"
+community: "main.rs"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/mainrs
 ---
 
 # .get()
 
 ## Connections
-- [[dot-generate_compose()]] - `calls` [EXTRACTED]
-- [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
-- [[dot-verify_shared_nothing()]] - `calls` [EXTRACTED]
-- [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[ContainerConfig_1]] - `references` [EXTRACTED]
-- [[Get container config for an agent.]] - `rationale_for` [EXTRACTED]
+- [[dot-request()_1]] - `calls` [EXTRACTED]
+- [[Result]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `method` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
+- [[format_cves()]] - `calls` [EXTRACTED]
+- [[format_deploy_status()]] - `calls` [EXTRACTED]
+- [[json_str()]] - `calls` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
+- [[map_http_error()]] - `calls` [EXTRACTED]
+- [[run_approvals_list()]] - `calls` [EXTRACTED]
+- [[run_cves()]] - `calls` [EXTRACTED]
+- [[run_deploy_status()]] - `calls` [EXTRACTED]
+- [[run_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/mainrs

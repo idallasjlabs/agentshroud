@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ContextSegment"
+community: "ApprovalQueueConfig"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig
 ---
 
 # .guard()
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

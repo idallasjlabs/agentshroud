@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L446"
+community: "test_e2e_proxy.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_e2e_proxypy
 ---
 
 # .forward()
 
 ## Connections
-- [[dot-process_agent_card_request()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[dot-health_check()]] - `calls` [EXTRACTED]
+- [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
+- [[ForwardResult]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

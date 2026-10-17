@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L201"
+community: "CrossBotTrustLedger"
+location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/CrossBotTrustLedger
 ---
 
 # .register_peer()
 
 ## Connections
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[A2APeer]] - `references` [EXTRACTED]
-- [[Register a known A2A peer agent.]] - `rationale_for` [EXTRACTED]
+- [[dot-build_full_mesh()]] - `calls` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

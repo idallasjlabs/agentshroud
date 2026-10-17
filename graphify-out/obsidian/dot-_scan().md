@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "DifferentialPIIDetector (2)"
 location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/DifferentialPIIDetector_2
 ---
 
 # ._scan()
@@ -21,4 +21,4 @@ tags:
 - [[ToolResultPIIReport]] - `references` [EXTRACTED]
 - [[_normalize_adversarial()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector_2

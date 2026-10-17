@@ -12,7 +12,7 @@ tags:
 # .get_user_groups_by_id()
 
 ## Connections
-- [[RBACConfig_3]] - `method` [EXTRACTED]
+- [[RBACConfig_2]] - `method` [EXTRACTED]
 - [[Return member IDs of a group, or empty list if no teams config.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

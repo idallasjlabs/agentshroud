@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestMultipartOutboundPipeline (2)"
+community: "TestMultipartOutboundPipeline"
 location: "L5253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline_2
+  - community/TestMultipartOutboundPipeline
 ---
 
 # .test_form_owner_id_redaction_continues_to_pipeline_scan()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline_2
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

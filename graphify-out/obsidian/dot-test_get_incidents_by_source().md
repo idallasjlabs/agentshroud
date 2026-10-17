@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[CrossBotTrustLedger]] - `references` [EXTRACTED]
 - [[TestIncidentAudit]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

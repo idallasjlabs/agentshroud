@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L8964"
+community: "test_telegram_proxy_inbound.py"
+location: "L8982"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # .test_group_command_with_bot_suffix_eligible()
 
 ## Connections
-- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[command@botname marks chat as response-eligible.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

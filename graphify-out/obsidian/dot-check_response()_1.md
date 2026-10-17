@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "TestSSRFDetection (5)"
+community: "AlertDispatcher"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_5
+  - community/AlertDispatcher
 ---
 
 # .check_response()
@@ -17,4 +17,4 @@ tags:
 - [[Check if response contains the session's canary (prompt leakage detected).]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_5
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

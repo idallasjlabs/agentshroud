@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L53"
+community: "RBACConfig (3)"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/RBACConfig_3
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[dot-is_admin()]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

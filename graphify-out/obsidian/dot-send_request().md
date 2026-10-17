@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_execute_tool_call()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[HttpSseConnection]] - `method` [EXTRACTED]
 - [[Send an HTTP request to the MCP server.]] - `rationale_for` [EXTRACTED]
 

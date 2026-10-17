@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-shutdown()]] - `calls` [EXTRACTED]
-- [[dot-stop()_3]] - `calls` [EXTRACTED]
+- [[dot-stop()_2]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection_3

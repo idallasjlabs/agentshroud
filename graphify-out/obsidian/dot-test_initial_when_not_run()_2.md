@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scorecard_integrity.py"
-location: "L649"
+community: "test_scanner_integration.py"
+location: "L714"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/test_scanner_integrationpy
 ---
 
 # .test_initial_when_not_run()
 
 ## Connections
-- [[TestScoreVulnerabilityManagement_1]] - `method` [EXTRACTED]
-- [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
-- [[_trivy_not_run()]] - `calls` [EXTRACTED]
+- [[TestScoreRuntimeProtection_1]] - `method` [EXTRACTED]
+- [[_falco_not_run()]] - `calls` [EXTRACTED]
+- [[_score_runtime_protection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

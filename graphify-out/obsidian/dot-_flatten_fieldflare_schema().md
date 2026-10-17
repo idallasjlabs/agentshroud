@@ -12,12 +12,10 @@ tags:
 # ._flatten_fieldflare_schema()
 
 ## Connections
-- [[dot-_flatten_fieldflare_schema()]] - `calls` [EXTRACTED]
 - [[dot-_merge_object_schemas()]] - `calls` [EXTRACTED]
 - [[dot-_strip_fieldflare_unsupported_fields()]] - `calls` [EXTRACTED]
 - [[dot-_widen_optional_tool_param_types()]] - `semantically_similar_to` [INFERRED]
 - [[Fieldflare representable tool-schema subset (two-branch nullable unions only)]] - `implements` [EXTRACTED]
-- [[Fieldflare tool-schema flatten fix (skill_manage six-branch union 400)]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Rewrite a tool-parameter JSON schema into the subset Fieldflare's Gemma…]] - `rationale_for` [EXTRACTED]
 - [[test_fieldflare_shim_degenerate_unions()]] - `calls` [INFERRED]

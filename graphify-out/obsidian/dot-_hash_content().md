@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # ._hash_content()
 
 ## Connections
-- [[dot-record()]] - `calls` [EXTRACTED]
+- [[dot-record()_1]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[SHA-256 hash of content string          Args             content Text to hash]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[Extract outbound URL-like targets from nested MCP tool parameters.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 

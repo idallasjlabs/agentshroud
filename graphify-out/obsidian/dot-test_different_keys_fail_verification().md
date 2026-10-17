@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "AuditChain"
+community: "AuditChain (2)"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AuditChain_2
 ---
 
 # .test_different_keys_fail_verification()
@@ -16,4 +16,4 @@ tags:
 - [[Envelopes signed with one key should not verify with a different key.]] - `rationale_for` [EXTRACTED]
 - [[TestEnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AuditChain_2

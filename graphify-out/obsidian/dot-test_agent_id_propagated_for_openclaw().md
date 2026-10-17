@@ -12,9 +12,9 @@ tags:
 # .test_agent_id_propagated_for_openclaw()
 
 ## Connections
-- [[dot-process_inbound()_2]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
 - [[AgentTarget_2]] - `calls` [EXTRACTED]
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `method` [EXTRACTED]
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]

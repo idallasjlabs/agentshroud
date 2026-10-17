@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # .get_entry()
@@ -16,4 +16,4 @@ tags:
 - [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - `rationale_for` [EXTRACTED]
 - [[LedgerEntry_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

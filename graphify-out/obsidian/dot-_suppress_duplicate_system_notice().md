@@ -15,6 +15,6 @@ tags:
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[dot-_resolve_text_field()]] - `calls` [EXTRACTED]
 - [[Suppress repeated startupshutdown system notices in short windows.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

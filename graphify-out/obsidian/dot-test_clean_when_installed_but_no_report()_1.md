@@ -12,7 +12,7 @@ tags:
 # .test_clean_when_installed_but_no_report()
 
 ## Connections
-- [[Path_36]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[TestGetTrivySummary]] - `method` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 

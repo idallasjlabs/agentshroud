@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

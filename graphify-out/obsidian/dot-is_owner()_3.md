@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L159"
+community: "MiddlewareManager"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/MiddlewareManager
 ---
 
 # .is_owner()
 
 ## Connections
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

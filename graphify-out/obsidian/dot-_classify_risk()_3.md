@@ -16,7 +16,7 @@ tags:
 - [[dot-fill_field()_3]] - `calls` [EXTRACTED]
 - [[dot-navigate()_3]] - `calls` [EXTRACTED]
 - [[Classify action risk level          Security Determines if approval is needed_3]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_3]] - `references` [EXTRACTED]
+- [[RiskLevel_5]] - `references` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

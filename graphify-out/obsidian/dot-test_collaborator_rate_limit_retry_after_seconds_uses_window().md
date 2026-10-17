@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "RateLimiter"
-location: "L7503"
+community: "Unit tests for collaborator-facing prompt classification helpers."
+location: "L7521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
 ---
 
 # .test_collaborator_rate_limit_retry_after_seconds_uses_window()
 
 ## Connections
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers

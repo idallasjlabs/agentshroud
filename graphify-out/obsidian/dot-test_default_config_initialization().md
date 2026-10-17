@@ -12,7 +12,7 @@ tags:
 # .test_default_config_initialization()
 
 ## Connections
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[Test default RBAC configuration initialization.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 

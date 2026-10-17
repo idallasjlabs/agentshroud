@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "PipelineAction"
-location: "L1658"
+community: "EgressFilterConfig (2)"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/EgressFilterConfig_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
-- [[SecurityPipeline_2]] - `method` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

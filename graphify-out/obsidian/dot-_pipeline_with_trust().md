@@ -17,9 +17,9 @@ tags:
 - [[dot-test_clean_request_does_not_touch_trust_score()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_exempted_block_does_not_decay_trust()]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestTrustViolationRecording]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

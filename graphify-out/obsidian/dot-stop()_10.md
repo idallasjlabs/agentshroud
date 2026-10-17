@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
 community: "StdioConnection"
-location: "L137"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,7 @@ tags:
 # .stop()
 
 ## Connections
-- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
-- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
+- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection

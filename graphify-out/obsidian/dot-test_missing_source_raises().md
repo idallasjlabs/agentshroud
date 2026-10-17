@@ -12,7 +12,7 @@ tags:
 # .test_missing_source_raises()
 
 ## Connections
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

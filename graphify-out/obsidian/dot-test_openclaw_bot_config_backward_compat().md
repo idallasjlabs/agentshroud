@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "ApprovalQueueConfig (5)"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/ApprovalQueueConfig_5
 ---
 
 # .test_openclaw_bot_config_backward_compat()
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw BotConfig must still work without the new fields.]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramBotConfigTokenSecretField]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

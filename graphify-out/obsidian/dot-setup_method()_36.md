@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PipelineAction"
-location: "L10"
+community: "EgressFilterConfig (4)"
+location: "L800"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/EgressFilterConfig_4
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

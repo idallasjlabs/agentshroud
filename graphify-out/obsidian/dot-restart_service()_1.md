@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "ServiceManager"
-location: "L365"
+community: "SCLClient"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/SCLClient
 ---
 
 # .restart_service()
 
 ## Connections
-- [[dot-_get_engine()]] - `calls` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[dot-post()]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -15,6 +15,6 @@ tags:
 - [[dot-_enforce_group_workspace_access()]] - `calls` [EXTRACTED]
 - [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - `rationale_for` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

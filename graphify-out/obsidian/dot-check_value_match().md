@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2) (4)"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2_4
 ---
 
 # .check_value_match()
@@ -16,4 +16,4 @@ tags:
 - [[Check if any stored key values appear in text. Returns matching key names.]] - `rationale_for` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

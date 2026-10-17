@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "PipelineAction"
+community: "PipelineAction (2)"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/PipelineAction_2
 ---
 
 # .test_base64_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

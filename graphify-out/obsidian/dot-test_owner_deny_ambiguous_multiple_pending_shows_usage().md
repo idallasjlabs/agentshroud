@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_owner_deny_without_target_auto_selects_single_pending"
-location: "L1035"
+community: "Owner /approve should fail closed when target has no pending request."
+location: "L1053"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_owner_deny_without_target_auto_selects_single_pending
+  - community/Owner_/approve_should_fail_closed_when_target_has_no_pending_request
 ---
 
 # .test_owner_deny_ambiguous_multiple_pending_shows_usage()
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[Owner deny without target, with 2+ pending collaborator         requests, is ge]] - `rationale_for` [EXTRACTED]
+- [[Owner deny without target, with 2+ pending collaborator requests, is genuinely…]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_owner_notice()_10]] - `contains` [EXTRACTED]
+- [[fake_owner_notice()_4]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_owner_deny_without_target_auto_selects_single_pending
+#graphify/code #graphify/EXTRACTED #community/Owner_/approve_should_fail_closed_when_target_has_no_pending_request

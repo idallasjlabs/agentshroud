@@ -20,7 +20,7 @@ tags:
 - [[Analyze a message for context poisoning attempts.          Args             ses]] - `rationale_for` [EXTRACTED]
 - [[ContextAttack]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
-- [[SessionContext_1]] - `calls` [EXTRACTED]
+- [[SessionContext]] - `calls` [EXTRACTED]
 - [[check_message()]] - `calls` [EXTRACTED]
 - [[deque]] - `calls` [INFERRED]
 - [[normalize_input()]] - `calls` [EXTRACTED]

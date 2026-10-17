@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
 - [[Check if tool call rate is abnormal.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "A2APolicyEngine (4)"
+community: "HeuristicClassifier"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_4
+  - community/HeuristicClassifier
 ---
 
 # ._score_signal()
@@ -17,4 +17,4 @@ tags:
 - [[Pattern_1]] - `references` [EXTRACTED]
 - [[Score a single signal pattern. Returns 0.0–1.0.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_4
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

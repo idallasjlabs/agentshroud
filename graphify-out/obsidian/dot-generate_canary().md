@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "MiddlewareManager (11)"
+community: "AlertDispatcher"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_11
+  - community/AlertDispatcher
 ---
 
 # .generate_canary()
@@ -17,4 +17,4 @@ tags:
 - [[Generate and store a canary for this session.          Args             session]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_11
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

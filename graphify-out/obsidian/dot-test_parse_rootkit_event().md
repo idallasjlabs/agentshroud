@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "test_security_toolchain.py"
 location: "L679"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/test_security_toolchainpy
 ---
 
 # .test_parse_rootkit_event()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWazuhParser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

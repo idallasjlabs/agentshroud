@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L5733"
+community: "FakeRBAC"
+location: "L5751"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # .test_egress_callback_from_collaborator_is_rejected()
@@ -14,7 +14,11 @@ tags:
 ## Connections
 - [[Collaborator callback attempts must not approvedeny egress requests.]] - `rationale_for` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[answer_callback()_2]] - `contains` [EXTRACTED]
+- [[approve()_2]] - `contains` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[deny()_2]] - `contains` [EXTRACTED]
+- [[handle_callback()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

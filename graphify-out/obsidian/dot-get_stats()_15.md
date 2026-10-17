@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L160"
+community: "AlertDispatcher"
+location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/AlertDispatcher
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[any_60]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

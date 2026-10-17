@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-submit()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[Send Telegram notification for approval requests.          Sends a formatted mes]] - `rationale_for` [EXTRACTED]
 

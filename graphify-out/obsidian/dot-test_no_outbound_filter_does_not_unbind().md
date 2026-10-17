@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestOutboundFilterResultBinding]] - `method` [EXTRACTED]
-- [[_make_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

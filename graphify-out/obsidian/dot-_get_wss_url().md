@@ -12,7 +12,7 @@ tags:
 # ._get_wss_url()
 
 ## Connections
-- [[dot-run()]] - `calls` [EXTRACTED]
+- [[dot-run()_1]] - `calls` [EXTRACTED]
 - [[Call apps.connections.open to get a fresh WSS URL.]] - `rationale_for` [EXTRACTED]
 - [[SlackSocketClient]] - `method` [EXTRACTED]
 

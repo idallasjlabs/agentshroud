@@ -28,7 +28,7 @@ tags:
 - [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
 - [[dot-_strip_collaborator_html_markup()]] - `calls` [EXTRACTED]
 - [[Filter outbound bot messages (sendMessage, etc.).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 

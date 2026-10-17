@@ -15,6 +15,6 @@ tags:
 - [[dot-_active_send_token()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4

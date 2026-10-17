@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-exec()_1]] - `calls` [EXTRACTED]
 - [[dot-generate_systemd()]] - `calls` [EXTRACTED]
-- [[dot-health_check()_1]] - `calls` [EXTRACTED]
+- [[dot-health_check()_2]] - `calls` [EXTRACTED]
 - [[dot-inspect()_1]] - `calls` [EXTRACTED]
 - [[dot-logs()_1]] - `calls` [EXTRACTED]
 - [[dot-network_create()_1]] - `calls` [EXTRACTED]

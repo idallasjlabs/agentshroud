@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/AlertDispatcher_2_2
 ---
 
 # .test_check_resource_over_limit_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Test that resource usage over limits is blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

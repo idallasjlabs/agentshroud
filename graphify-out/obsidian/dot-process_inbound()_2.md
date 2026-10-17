@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L407"
+community: "BlockingPipeline"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/BlockingPipeline
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
-- [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
-- [[dot-test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[FakePipelineResult]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/BlockingPipeline

@@ -16,6 +16,6 @@ tags:
 - [[dot-_telegram_create_invite_link()]] - `calls` [EXTRACTED]
 - [[dot-_telegram_kick_member()]] - `calls` [EXTRACTED]
 - [[Forward request to real Telegram API and return parsed response.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4

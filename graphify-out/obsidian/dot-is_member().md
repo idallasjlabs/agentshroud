@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py (2)"
-location: "L300"
+community: "RBACConfig (3)"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/RBACConfig_3
 ---
 
 # .is_member()
 
 ## Connections
-- [[GroupRegistry]] - `method` [EXTRACTED]
-- [[Return True if user_id is in the group.]] - `rationale_for` [EXTRACTED]
+- [[dot-get_group_safe_response_prefix()]] - `calls` [EXTRACTED]
+- [[dot-get_user_groups()]] - `calls` [EXTRACTED]
+- [[GroupConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

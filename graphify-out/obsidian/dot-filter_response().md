@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
-location: "L91"
+community: "TestOutboundInfoFilter"
+location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/TestOutboundInfoFilter
 ---
 
 # .filter_response()
 
 ## Connections
-- [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
-- [[FilterResult]] - `references` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[dot-_classify_response_risk()]] - `calls` [EXTRACTED]
+- [[dot-_is_allowed_for_trust()]] - `calls` [EXTRACTED]
+- [[Filter agent response for sensitive information disclosure.          Args]] - `rationale_for` [EXTRACTED]
+- [[FilterMatch]] - `calls` [EXTRACTED]
+- [[FilterResult_1]] - `references` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

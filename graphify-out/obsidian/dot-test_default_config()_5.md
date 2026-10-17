@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "AlertDispatcher"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AlertDispatcher
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
-- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
-- [[TestKillSwitchConfig]] - `method` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

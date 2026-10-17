@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
 - [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

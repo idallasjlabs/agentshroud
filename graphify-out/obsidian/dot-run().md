@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L66"
+community: "FalcoAlertWatcher"
+location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/FalcoAlertWatcher
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_connect_and_handle()]] - `calls` [EXTRACTED]
-- [[dot-_get_wss_url()]] - `calls` [EXTRACTED]
-- [[Main reconnect loop. Runs until stop() is called.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
-- [[compute_backoff()]] - `calls` [EXTRACTED]
+- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Poll Falco alert files until stopped.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

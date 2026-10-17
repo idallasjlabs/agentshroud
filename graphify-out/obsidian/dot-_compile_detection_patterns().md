@@ -12,7 +12,7 @@ tags:
 # ._compile_detection_patterns()
 
 ## Connections
-- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_25]] - `calls` [EXTRACTED]
 - [[Compile regex patterns for detecting disclosure attempts.]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 

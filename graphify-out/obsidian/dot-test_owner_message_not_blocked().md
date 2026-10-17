@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "BlockingPipeline"
-location: "L202"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,9 +15,9 @@ tags:
 - [[BlockingPipeline]] - `calls` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Owner messages must pass even if the pipeline would block them.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

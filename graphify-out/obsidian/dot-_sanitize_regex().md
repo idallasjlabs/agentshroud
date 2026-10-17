@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
-- [[dot-sanitize()_3]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `method` [EXTRACTED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
 - [[RedactionResult]] - `references` [EXTRACTED]

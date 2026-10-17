@@ -19,6 +19,6 @@ tags:
 - [[Any_3]] - `references` [EXTRACTED]
 - [[RedactionResult_1]] - `references` [EXTRACTED]
 - [[Sanitize a tool result for PII before it reaches the agent          Args]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -12,8 +12,8 @@ tags:
 # ._record_guard_init_failure()
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
-- [[Exception]] - `references` [EXTRACTED]
+- [[dot-__init__()_152]] - `calls` [EXTRACTED]
+- [[Exception_2]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Record a guard __init__ exception so the request path can fail closed.]] - `rationale_for` [EXTRACTED]
 

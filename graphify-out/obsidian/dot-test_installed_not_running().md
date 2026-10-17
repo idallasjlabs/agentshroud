@@ -12,7 +12,7 @@ tags:
 # .test_installed_not_running()
 
 ## Connections
-- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

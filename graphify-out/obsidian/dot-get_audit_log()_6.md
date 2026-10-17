@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L409"
+community: "DNSFilterConfig"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/DNSFilterConfig
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
-- [[FileOperation]] - `references` [EXTRACTED]
-- [[FileSandbox]] - `method` [EXTRACTED]
+- [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSQuery_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ContextSegment"
+community: "ApprovalQueueConfig"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig
 ---
 
 # .test_10000_lookups_under_1s()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[10000 trust lookups in under 1 second.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

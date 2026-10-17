@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-get_private_redaction_summary()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return recent private-data redaction events.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

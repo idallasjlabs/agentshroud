@@ -1,30 +1,21 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L427"
+community: "A2AGovernanceProxy"
+location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/A2AGovernanceProxy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
-- [[test_approval_queue_enforced()]] - `calls` [EXTRACTED]
-- [[test_audit_chain_integrity()]] - `calls` [EXTRACTED]
-- [[test_clean_message_passes()]] - `calls` [EXTRACTED]
-- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
-- [[test_kill_switch_freezes()]] - `calls` [EXTRACTED]
-- [[test_mixed_pii_and_injection()]] - `calls` [EXTRACTED]
-- [[test_multiple_prompt_patterns()]] - `calls` [EXTRACTED]
-- [[test_pii_stripped_inbound()]] - `calls` [EXTRACTED]
-- [[test_pipeline_processing_time()]] - `calls` [EXTRACTED]
-- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
-- [[test_prompt_injection_blocked()]] - `calls` [EXTRACTED]
-- [[test_tampered_audit_detected()]] - `calls` [EXTRACTED]
-- [[test_trust_level_enforced()]] - `calls` [EXTRACTED]
+- [[dot-_process()]] - `calls` [EXTRACTED]
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[A2AMessage]] - `references` [EXTRACTED]
+- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

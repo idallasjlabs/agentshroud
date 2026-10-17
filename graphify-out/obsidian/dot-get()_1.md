@@ -1,29 +1,29 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L509"
+community: "SCLClient"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/SCLClient
 ---
 
 # .get()
 
 ## Connections
-- [[dot-request()_1]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `method` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
-- [[format_cves()]] - `calls` [EXTRACTED]
-- [[format_deploy_status()]] - `calls` [EXTRACTED]
-- [[json_str()]] - `calls` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[dot-_request()]] - `calls` [EXTRACTED]
+- [[dot-get_correlation()]] - `calls` [EXTRACTED]
+- [[dot-get_egress_pending()]] - `calls` [EXTRACTED]
+- [[dot-get_events()_1]] - `calls` [EXTRACTED]
+- [[dot-get_groups()]] - `calls` [EXTRACTED]
+- [[dot-get_health()]] - `calls` [EXTRACTED]
+- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
+- [[dot-get_risk()]] - `calls` [EXTRACTED]
+- [[dot-get_services()]] - `calls` [EXTRACTED]
+- [[dot-get_users()]] - `calls` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
+- [[client_from_env()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SCLClient

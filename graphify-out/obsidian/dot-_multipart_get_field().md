@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[Extract a non-file text field value from a multipartform-data body.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

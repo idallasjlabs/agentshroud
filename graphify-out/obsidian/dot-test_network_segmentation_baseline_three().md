@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget (4)"
+community: "scanner_integration.py"
 location: "L1017"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/scanner_integrationpy
 ---
 
 # .test_network_segmentation_baseline_three()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

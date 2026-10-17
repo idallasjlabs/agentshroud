@@ -1,24 +1,23 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined"
-location: "L1612"
+community: "FakeRBAC"
+location: "L1630"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined
+  - community/FakeRBAC
 ---
 
 # .test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[Fullwidth + mentionpunctuation blocked command variants should still be quarant]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[Zero-width + mentionpunctuation blocked command variants should still be quaran]] - `rationale_for` [EXTRACTED]
+- [[Zero-width + mentionpunctuation blocked command variants should still be…]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

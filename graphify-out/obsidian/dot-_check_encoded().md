@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_normalize()]] - `calls` [EXTRACTED]
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
 - [[CanaryResult_1]] - `references` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 

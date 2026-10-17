@@ -15,6 +15,6 @@ tags:
 - [[dot-build_full_mesh()]] - `calls` [EXTRACTED]
 - [[Attach a TrustManager instance to a bot name.]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustManager_2]] - `references` [EXTRACTED]
+- [[TrustManager]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

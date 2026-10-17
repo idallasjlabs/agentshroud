@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestOutboundInfoFilter (35)"
-location: "L334"
+community: "TestPromptProtection"
+location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_35
+  - community/TestPromptProtection
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and boundary conditions.]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Test edge cases and error conditions._2]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_35
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

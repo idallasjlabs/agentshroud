@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "AuditStore"
-location: "L129"
+community: "ApprovalQueueConfig (2)"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/ApprovalQueueConfig_2
 ---
 
 # .initialize()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Open the database, create the schema, and run column migrations.          Initia]] - `rationale_for` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Open the database and create the schema. Idempotent a second call         must]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

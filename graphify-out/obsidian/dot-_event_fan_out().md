@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_send_event()]] - `calls` [EXTRACTED]
-- [[dot-run()_6]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
+- [[dot-run()_4]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
 - [[Subscribe to EventBus and forward matching events to the client.]] - `rationale_for` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 

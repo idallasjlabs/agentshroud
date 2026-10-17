@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_handle_critical()]] - `calls` [EXTRACTED]
-- [[dot-run()_5]] - `calls` [EXTRACTED]
+- [[dot-run()]] - `calls` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 - [[parse_alert()]] - `calls` [EXTRACTED]
 

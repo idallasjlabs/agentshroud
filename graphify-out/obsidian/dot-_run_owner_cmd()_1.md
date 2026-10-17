@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "ProgressiveLockdown (2)"
 location: "L375"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/ProgressiveLockdown_2
 ---
 
 # ._run_owner_cmd()
@@ -25,4 +25,4 @@ tags:
 - [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2

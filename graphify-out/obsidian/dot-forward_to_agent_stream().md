@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_build_forward_payload()]] - `calls` [EXTRACTED]
 - [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_45]] - `references` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
 - [[ForwardError]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - `rationale_for` [EXTRACTED]

@@ -12,9 +12,9 @@ tags:
 # .is_operator_or_higher()
 
 ## Connections
-- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
+- [[dot-get_user_role()_2]] - `calls` [EXTRACTED]
 - [[Check if user has operator privileges or higher (admin, operator, owner).]] - `rationale_for` [EXTRACTED]
 - [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `method` [EXTRACTED]
+- [[RBACConfig_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

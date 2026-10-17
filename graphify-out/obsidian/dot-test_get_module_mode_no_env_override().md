@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # .test_get_module_mode_no_env_override()
 
 ## Connections
-- [[GatewayConfig_2]] - `calls` [EXTRACTED]
+- [[GatewayConfig]] - `calls` [EXTRACTED]
 - [[TestGetModuleModeEnforceDefault]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

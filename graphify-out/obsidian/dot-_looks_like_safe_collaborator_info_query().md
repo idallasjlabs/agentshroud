@@ -16,7 +16,7 @@ tags:
 - [[dot-_looks_like_command_enumeration_query()]] - `calls` [EXTRACTED]
 - [[dot-_looks_like_file_query()]] - `calls` [EXTRACTED]
 - [[Allow conceptual securityprocess questions that don't request executiondata ac]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

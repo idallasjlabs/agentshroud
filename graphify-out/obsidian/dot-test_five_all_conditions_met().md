@@ -12,6 +12,6 @@ tags:
 # .test_five_all_conditions_met()
 
 ## Connections
-- [[TestScoreSecretsManagement_1]] - `method` [EXTRACTED]
+- [[TestScoreSecretsManagement]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement

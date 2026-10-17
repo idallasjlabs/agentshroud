@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
 community: "ApprovalQueueConfig (2)"
-location: "L57"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .close()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
+- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -16,6 +16,6 @@ tags:
 - [[dot-_collaborator_rate_limit_retry_after_seconds()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Notify a collaborator they have exceeded the hourly rate limit.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4

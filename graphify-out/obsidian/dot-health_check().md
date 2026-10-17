@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "ContainerEngine"
-location: "L157"
+community: "test_e2e_proxy.py"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/test_e2e_proxypy
 ---
 
 # .health_check()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Return True if the runtime is available and responsive.]] - `rationale_for` [EXTRACTED]
+- [[dot-forward()]] - `calls` [EXTRACTED]
+- [[Check if the OpenClaw backend is healthy.]] - `rationale_for` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

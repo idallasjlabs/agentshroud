@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PipelineAction"
-location: "L56"
+community: "ContextSegment (2)"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ContextSegment_2
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ContextSegment_2

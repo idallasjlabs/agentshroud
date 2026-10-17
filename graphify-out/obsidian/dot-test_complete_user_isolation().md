@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "RBACConfig"
+community: "test_dashboard_endpoints.py"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_dashboard_endpointspy
 ---
 
 # .test_complete_user_isolation()
@@ -16,4 +16,4 @@ tags:
 - [[TestSessionIsolationEndToEnd]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

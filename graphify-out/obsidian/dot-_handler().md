@@ -18,9 +18,9 @@ tags:
 - [[dot-test_initial_subscribe_message_sets_filter()]] - `calls` [EXTRACTED]
 - [[dot-test_initial_timeout_subscribes_to_all()]] - `calls` [EXTRACTED]
 - [[dot-test_inner_timeout_continues_loop()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `references` [EXTRACTED]
 - [[TestHandlerRun]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

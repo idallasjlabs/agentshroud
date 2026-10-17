@@ -12,7 +12,7 @@ tags:
 # .get_private_data_patterns()
 
 ## Connections
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return configured admin-private data redaction patterns.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

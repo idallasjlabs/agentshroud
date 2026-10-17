@@ -16,6 +16,6 @@ tags:
 - [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
 - [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
-- [[Role_64]] - `references` [EXTRACTED]
+- [[Role_27]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

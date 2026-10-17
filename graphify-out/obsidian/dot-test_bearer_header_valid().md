@@ -12,7 +12,7 @@ tags:
 # .test_bearer_header_valid()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
 - [[TestResolveCaller]] - `method` [EXTRACTED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 

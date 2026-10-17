@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined"
-location: "L4473"
+community: "FakeRBAC"
+location: "L4491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined
+  - community/FakeRBAC
 ---
 
 # .test_collaborator_path_traversal_request_is_blocked_and_quarantined()
@@ -15,10 +15,9 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Path traversal prompts should be blocked and quarantined.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[Unicodeinvisible-character bypass prompts should be blocked and quarantined.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

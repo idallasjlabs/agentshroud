@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (4)"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_4
 ---
 
 # ._log_audit()
 
 ## Connections
 - [[dot-delete_key()]] - `calls` [EXTRACTED]
-- [[dot-get_key()]] - `calls` [EXTRACTED]
+- [[dot-get_key()_1]] - `calls` [EXTRACTED]
 - [[dot-rotate_key()]] - `calls` [EXTRACTED]
 - [[dot-scan_outbound()]] - `calls` [EXTRACTED]
 - [[KeyAuditEvent]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_send_event()]] - `calls` [EXTRACTED]
-- [[dot-run()_6]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
+- [[dot-run()_4]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
 - [[WSEvent_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

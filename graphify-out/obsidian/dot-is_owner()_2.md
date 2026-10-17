@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L169"
+community: "ProgressiveLockdown (2)"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ProgressiveLockdown_2
 ---
 
 # .is_owner()
 
 ## Connections
-- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `method` [EXTRACTED]
+- [[FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2

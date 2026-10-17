@@ -12,7 +12,7 @@ tags:
 # ._logs_via_socket()
 
 ## Connections
-- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
+- [[dot-get_logs()]] - `calls` [EXTRACTED]
 - [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 

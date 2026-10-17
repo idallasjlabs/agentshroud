@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_persist()]] - `calls` [EXTRACTED]
-- [[dot-delete()_1]] - `calls` [EXTRACTED]
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-delete()]] - `calls` [EXTRACTED]
+- [[dot-get()]] - `calls` [EXTRACTED]
 - [[Prune oldest reports so the shared volume can't be filled.]] - `rationale_for` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L219"
+community: "TelegramAPIProxy (3)"
+location: "L1002"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/TelegramAPIProxy_3
 ---
 
 # .get_stats()
 
 ## Connections
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

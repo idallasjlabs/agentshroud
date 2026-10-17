@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "ServiceManager (2)"
+community: "ServiceManager"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_2
+  - community/ServiceManager
 ---
 
 # .test_instantiate_without_engine()
@@ -15,4 +15,4 @@ tags:
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestServiceManagerImport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

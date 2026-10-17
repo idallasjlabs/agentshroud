@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "ToolResultSanitizer"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/ToolResultSanitizer
 ---
 
 # .filter()
 
 ## Connections
-- [[LogRecord_2]] - `references` [EXTRACTED]
+- [[LogRecord_1]] - `references` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

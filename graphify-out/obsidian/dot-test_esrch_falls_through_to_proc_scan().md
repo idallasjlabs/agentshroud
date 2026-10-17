@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager (3)"
+community: "ServiceManager"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_3
+  - community/ServiceManager
 ---
 
 # .test_esrch_falls_through_to_proc_scan()
@@ -16,4 +16,4 @@ tags:
 - [[TestCheckWazuhAgent]] - `method` [EXTRACTED]
 - [[_patch_open()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

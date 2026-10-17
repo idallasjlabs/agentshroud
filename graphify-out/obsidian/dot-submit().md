@@ -17,8 +17,8 @@ tags:
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
 - [[dot-submit_tool_request()_1]] - `calls` [EXTRACTED]
 - [[Add an action to the approval queue with policy-based timeout.]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[ApprovalRequest_1]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
 

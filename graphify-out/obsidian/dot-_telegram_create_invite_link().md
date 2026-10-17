@@ -15,6 +15,6 @@ tags:
 - [[dot-_active_send_token()]] - `calls` [EXTRACTED]
 - [[dot-_forward_to_telegram()]] - `calls` [EXTRACTED]
 - [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4

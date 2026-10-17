@@ -12,7 +12,7 @@ tags:
 # ._check_unicode_tricks()
 
 ## Connections
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
 - [[Detect unicode obfuscation tricks.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard_1]] - `method` [EXTRACTED]
 

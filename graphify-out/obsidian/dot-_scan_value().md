@@ -15,7 +15,7 @@ tags:
 - [[dot-_scan_text()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[InspectionFinding]] - `references` [EXTRACTED]
 - [[MCPInspector_1]] - `method` [EXTRACTED]
 - [[Recursively scan a value, appending findings in-place.]] - `rationale_for` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # .allowlist_config()
@@ -15,4 +15,4 @@ tags:
 - [[TestAllowlistMode]] - `method` [EXTRACTED]
 - [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_2

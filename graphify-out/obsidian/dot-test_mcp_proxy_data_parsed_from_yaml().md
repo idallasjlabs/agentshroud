@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "ApprovalQueueConfig (5)"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # .test_mcp_proxy_data_parsed_from_yaml()
@@ -16,4 +16,4 @@ tags:
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

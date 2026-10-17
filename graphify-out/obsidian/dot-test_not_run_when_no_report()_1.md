@@ -12,7 +12,7 @@ tags:
 # .test_not_run_when_no_report()
 
 ## Connections
-- [[Path_36]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[TestGetOpenscapSummary]] - `method` [EXTRACTED]
 - [[get_openscap_summary()]] - `calls` [EXTRACTED]
 

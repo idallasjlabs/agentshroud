@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "test_collaborator_tracker.py (3)"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/test_collaborator_trackerpy_3
 ---
 
 # .get_activity_summary()
@@ -16,4 +16,4 @@ tags:
 - [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[Return aggregated statistics over all recorded activity.          Returns]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

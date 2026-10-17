@@ -12,7 +12,7 @@ tags:
 # ._detect_encoded_injection()
 
 ## Connections
-- [[dot-scan_tool_result()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
 - [[Check for base64 or hex encoded injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[InjectionSeverity]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `method` [EXTRACTED]

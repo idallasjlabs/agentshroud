@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[A2AProxy]] - `method` [EXTRACTED]
+- [[A2AProxy_1]] - `method` [EXTRACTED]
 - [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

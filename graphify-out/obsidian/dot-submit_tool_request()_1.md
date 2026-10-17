@@ -16,8 +16,8 @@ tags:
 - [[dot-get_tool_risk_tier()]] - `calls` [EXTRACTED]
 - [[dot-requires_approval()]] - `calls` [EXTRACTED]
 - [[dot-submit()]] - `calls` [EXTRACTED]
-- [[Any_30]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
+- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[Submit a tool call request for approval.          Args             tool_name T]] - `rationale_for` [EXTRACTED]
 

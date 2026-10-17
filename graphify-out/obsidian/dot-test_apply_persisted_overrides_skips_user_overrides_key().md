@@ -12,7 +12,7 @@ tags:
 # .test_apply_persisted_overrides_skips_user_overrides_key()
 
 ## Connections
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
 - [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
 - [[__user_overrides__ key must not be treated as a group_id.]] - `rationale_for` [EXTRACTED]
 

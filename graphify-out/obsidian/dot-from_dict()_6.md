@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/runtime/config.py"
 type: "code"
-community: "A2APolicyEngine (3)"
-location: "L210"
+community: "Path (4)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/Path_4
 ---
 
 # .from_dict()
 
 ## Connections
-- [[A2APolicyAction]] - `calls` [EXTRACTED]
-- [[A2APolicyConfig]] - `method` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
+- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/code #graphify/EXTRACTED #community/Path_4

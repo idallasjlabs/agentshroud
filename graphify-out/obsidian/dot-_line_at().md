@@ -12,7 +12,7 @@ tags:
 # ._line_at()
 
 ## Connections
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[SkillGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard_2

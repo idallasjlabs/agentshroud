@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SecureBrowser (2)"
-location: "L401"
+community: "ServiceManager"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/ServiceManager
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
-- [[main()_5]] - `calls` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -12,11 +12,11 @@ tags:
 # ._request()
 
 ## Connections
-- [[dot-delete()]] - `calls` [EXTRACTED]
-- [[dot-get()]] - `calls` [EXTRACTED]
+- [[dot-delete()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[dot-post()]] - `calls` [EXTRACTED]
 - [[dot-put()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

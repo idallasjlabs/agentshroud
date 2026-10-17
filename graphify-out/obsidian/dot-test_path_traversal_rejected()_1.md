@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_session_manager.py"
+source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "RBACConfig"
-location: "L103"
+community: "AlertDispatcher (2) (3)"
+location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AlertDispatcher_2_3
 ---
 
 # .test_path_traversal_rejected()
 
 ## Connections
-- [[TestInputValidation]] - `method` [EXTRACTED]
+- [[TestRedirectURI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_3

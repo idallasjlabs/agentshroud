@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "ApprovalHardening (2)"
-location: "L384"
+community: "MultiTurnTracker"
+location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening_2
+  - community/MultiTurnTracker
 ---
 
 # .test_get_stats()
 
 ## Connections
-- [[Test getting hardening statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening_2
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

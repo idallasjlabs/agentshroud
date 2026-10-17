@@ -17,6 +17,6 @@ tags:
 - [[dot-_send_owner_collabs_notice()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_pending_notice()]] - `calls` [EXTRACTED]
 - [[Resolve a readable label for user id when available.          Priority user sel]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4

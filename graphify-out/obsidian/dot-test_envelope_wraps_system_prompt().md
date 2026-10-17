@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "AuditChain"
+community: "AuditChain (2)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AuditChain_2
 ---
 
 # .test_envelope_wraps_system_prompt()
@@ -15,4 +15,4 @@ tags:
 - [[TestEnvelopeSigner]] - `method` [EXTRACTED]
 - [[wrap_system_prompt() sets issuer='system' and passes verification.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AuditChain_2

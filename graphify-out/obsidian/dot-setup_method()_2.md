@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestAppleContainerEngine"
-location: "L360"
+community: "AlertDispatcher (2)"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAppleContainerEngine
+  - community/AlertDispatcher_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[ContainerSnapshot]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

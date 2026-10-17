@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (13)"
+community: "TelegramAPIProxy (2)"
 location: "L558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_13
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_collaborator_not_authorized_command_text_is_normalized_json()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_13
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

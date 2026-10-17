@@ -16,6 +16,6 @@ tags:
 - [[ContextAttack]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Detect rapid context window filling.]] - `rationale_for` [EXTRACTED]
-- [[SessionContext_1]] - `references` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

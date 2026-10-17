@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "UserSessionManager (5)"
+community: "discover_upstream_versions.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_5
+  - community/discover_upstream_versionspy
 ---
 
 # .test_beta_rc_alpha_are_not_stable()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsStable]] - `method` [EXTRACTED]
 - [[is_stable()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_5
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

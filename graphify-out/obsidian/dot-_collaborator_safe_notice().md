@@ -24,7 +24,7 @@ tags:
 - [[dot-_redact_owner_ids()]] - `calls` [EXTRACTED]
 - [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
 - [[Concise collaborator-safe reason text without internal leakage.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

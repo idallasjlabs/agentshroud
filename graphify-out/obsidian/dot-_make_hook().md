@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ResourceGuard"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ResourceGuard
 ---
 
 # ._make_hook()
@@ -18,6 +18,6 @@ tags:
 - [[dot-test_nc_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_wget_flagged()]] - `calls` [EXTRACTED]
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

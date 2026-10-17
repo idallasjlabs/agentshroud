@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L174"
+community: "AlertDispatcher (2) (4)"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/AlertDispatcher_2_4
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `references` [EXTRACTED]
+- [[KeyAuditEvent]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

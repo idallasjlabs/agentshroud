@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "EgressFilterConfig"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/EgressFilterConfig
 ---
 
 # .matches_allowlist()
@@ -16,4 +16,4 @@ tags:
 - [[Public does domain match any pattern in the effective default allowlist…]] - `rationale_for` [EXTRACTED]
 - [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

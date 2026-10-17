@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Get the RBAC manager for external access.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[RBACManager]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "BlockingPipeline"
-location: "L341"
+location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[BlockingPipeline]] - `calls` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Zero-width obfuscation should be normalized before pipeline evaluation.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

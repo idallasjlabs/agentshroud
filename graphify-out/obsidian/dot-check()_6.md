@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L163"
+community: "create_auth_dependency"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/create_auth_dependency
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - `rationale_for` [EXTRACTED]
-- [[record_decision()]] - `calls` [EXTRACTED]
+- [[Check if client is within rate limit          Args             client_id Usual]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[get_auth_dependency()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

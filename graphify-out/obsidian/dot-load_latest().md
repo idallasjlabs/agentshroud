@@ -15,7 +15,7 @@ tags:
 - [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
 - [[dot-verify_integrity()]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
 - [[Load the most recently saved report.          Args             verify If True,]] - `rationale_for` [EXTRACTED]
 - [[ReportIntegrityError]] - `calls` [EXTRACTED]
 

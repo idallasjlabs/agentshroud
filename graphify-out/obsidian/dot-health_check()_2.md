@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L389"
+community: "PodmanEngine"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/PodmanEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_45]] - `references` [EXTRACTED]
-- [[Check health of one or all agent targets          Args             target Spec]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

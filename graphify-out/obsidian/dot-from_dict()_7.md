@@ -1,19 +1,24 @@
 ---
-source_file: "gateway/runtime/config.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Path (4)"
-location: "L57"
+community: "StdioConnection"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_4
+  - community/StdioConnection
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
-- [[RuntimeConfig]] - `method` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `method` [EXTRACTED]
+- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[MCPTransport]] - `calls` [EXTRACTED]
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
+- [[PermissionLevel_1]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_4
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "ServiceManager (2)"
+community: "ServiceManager"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_2
+  - community/ServiceManager
 ---
 
 # .test_defaults()
@@ -15,4 +15,4 @@ tags:
 - [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
 - [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

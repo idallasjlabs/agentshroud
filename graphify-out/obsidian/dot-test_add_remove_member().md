@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager
 ---
 
 # .test_add_remove_member()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

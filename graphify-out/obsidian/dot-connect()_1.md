@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Accept a WebSocket connection and add to connected set.]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[WebSocket_2]] - `references` [EXTRACTED]
+- [[WebSocket_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

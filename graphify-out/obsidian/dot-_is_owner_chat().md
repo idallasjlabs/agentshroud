@@ -16,6 +16,6 @@ tags:
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[dot-_notify_user_blocked()]] - `calls` [EXTRACTED]
 - [[Return True when chat_id belongs to the configured owner.          Handles both]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

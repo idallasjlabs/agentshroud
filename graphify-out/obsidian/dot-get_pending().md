@@ -12,7 +12,7 @@ tags:
 # .get_pending()
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[Get all pending approval items.]] - `rationale_for` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "TrustConfig"
+community: "RBACConfig (2)"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/RBACConfig_2
 ---
 
 # .test_enforcer_without_trust_manager_unchanged()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolACLComposition]] - `method` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

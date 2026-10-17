@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_conn_ok()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 - [[Return undelivered updates older than grace window (avoids replay storms).]] - `rationale_for` [EXTRACTED]
 - [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 

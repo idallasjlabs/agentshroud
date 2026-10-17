@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
-location: "L89"
+community: "RBACConfig (3)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/RBACConfig_3
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[ServicePolicy]] - `method` [EXTRACTED]
+- [[ServicePrivacy]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

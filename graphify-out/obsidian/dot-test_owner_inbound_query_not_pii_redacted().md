@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_redacting_pii()]] - `calls` [EXTRACTED]
 - [[Owner query must pass through PII sanitisation unchanged; sanitiser not called.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestInboundPIIOwnerExemption]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

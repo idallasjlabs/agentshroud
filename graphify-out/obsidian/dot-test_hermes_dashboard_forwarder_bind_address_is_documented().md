@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py (4)"
+community: "test_security_regressions_v1_2.py"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py_4
+  - community/test_security_regressions_v1_2py
 ---
 
 # .test_hermes_dashboard_forwarder_bind_address_is_documented()
@@ -15,4 +15,4 @@ tags:
 - [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - `rationale_for` [EXTRACTED]
 - [[TestHermesDashboardForwarderBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py_4
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

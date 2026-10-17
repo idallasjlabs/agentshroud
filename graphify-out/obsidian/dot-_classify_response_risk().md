@@ -12,7 +12,7 @@ tags:
 # ._classify_response_risk()
 
 ## Connections
-- [[dot-filter_response()_2]] - `calls` [EXTRACTED]
+- [[dot-filter_response()]] - `calls` [EXTRACTED]
 - [[Classify the risk level of a response based on info disclosure density.]] - `rationale_for` [EXTRACTED]
 - [[FilterMatch]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]

@@ -1,24 +1,25 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_allowed_collaborator_model_command_with_mention_is_handled_locally"
-location: "L1699"
+community: "test_llm_proxy_local_parity.py"
+location: "L1717"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_allowed_collaborator_model_command_with_mention_is_handled_locally
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .test_allowed_collaborator_model_command_with_mention_is_handled_locally()
 
 ## Connections
-- [[Allowed collaborator local command should survive mentionpunctuation normalizat]] - `rationale_for` [EXTRACTED]
+- [[Allowed collaborator local command should survive mentionpunctuation…]] - `rationale_for` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[Unknown collaborator slash commands should stay blocked with mentionpunctuation]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_urlopen()_2]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_allowed_collaborator_model_command_with_mention_is_handled_locally
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

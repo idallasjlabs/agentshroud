@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ApprovalHardening"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalHardening
 ---
 
 # .test_deception_detection_disabled()
@@ -17,4 +17,4 @@ tags:
 - [[Test that deception detection can be disabled.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

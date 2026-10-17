@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "_FakeRBAC"
+community: "soc/router.py"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # .is_group_admin()
 
 ## Connections
 - [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[SCLCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

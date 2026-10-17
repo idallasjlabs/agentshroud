@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L8922"
+community: "test_telegram_proxy_inbound.py"
+location: "L8940"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # ._make_proxy()
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy]] - `references` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

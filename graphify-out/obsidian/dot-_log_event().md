@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "TrustConfig (2)"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TrustConfig_2
 ---
 
 # ._log_event()
@@ -21,4 +21,4 @@ tags:
 - [[SubagentEventType]] - `references` [EXTRACTED]
 - [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

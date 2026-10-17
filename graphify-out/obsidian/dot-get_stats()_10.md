@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L385"
+community: "TestOutboundInfoFilter"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestOutboundInfoFilter
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_33]] - `references` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

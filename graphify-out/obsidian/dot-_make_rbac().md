@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager
 ---
 
 # ._make_rbac()
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_is_member_unknown_group_returns_false()]] - `calls` [EXTRACTED]
 - [[dot-test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `references` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

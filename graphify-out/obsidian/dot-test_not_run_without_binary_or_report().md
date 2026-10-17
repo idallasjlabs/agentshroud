@@ -12,6 +12,6 @@ tags:
 # .test_not_run_without_binary_or_report()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestTrivySummary

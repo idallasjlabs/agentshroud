@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
+community: "TestPromptProtection"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/TestPromptProtection
 ---
 
 # .test_disabled_protection()
@@ -16,4 +16,4 @@ tags:
 - [[Test that disabled protection passes through content unchanged.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

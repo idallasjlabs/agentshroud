@@ -15,7 +15,7 @@ tags:
 - [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
 - [[Move suspicious files to quarantine directory.]] - `rationale_for` [EXTRACTED]
-- [[Path_31]] - `calls` [EXTRACTED]
+- [[Path_8]] - `calls` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceGuard

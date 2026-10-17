@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

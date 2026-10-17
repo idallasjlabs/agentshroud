@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (43)"
+community: "TestOutboundInfoFilter"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_43
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_internal_url_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test that internal URLs are filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_43
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

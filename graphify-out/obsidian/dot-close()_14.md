@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L401"
+community: "DNSForwarderProtocol"
+location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/DNSForwarderProtocol
 ---
 
 # .close()
 
 ## Connections
-- [[Close database connection]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

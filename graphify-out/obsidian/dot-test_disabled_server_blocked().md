@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
 - [[MCPServerConfig_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestAllowDenyList]] - `method` [EXTRACTED]

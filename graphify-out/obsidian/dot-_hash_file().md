@@ -12,7 +12,7 @@ tags:
 # ._hash_file()
 
 ## Connections
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_3]] - `calls` [EXTRACTED]
 - [[dot-reset_baseline()]] - `calls` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Path_24]] - `references` [EXTRACTED]

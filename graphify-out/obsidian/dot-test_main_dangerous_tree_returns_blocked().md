@@ -12,7 +12,7 @@ tags:
 # .test_main_dangerous_tree_returns_blocked()
 
 ## Connections
-- [[Path_29]] - `references` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 

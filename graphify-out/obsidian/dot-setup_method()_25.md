@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_log_sanitizer.py"
+source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "TestLogSanitizer"
-location: "L15"
+community: "A2APolicyEngine (2)"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/A2APolicyEngine_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[LogSanitizer]] - `calls` [EXTRACTED]
-- [[TestLogSanitizer]] - `method` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
+- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_2

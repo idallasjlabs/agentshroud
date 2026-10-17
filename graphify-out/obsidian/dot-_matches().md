@@ -17,7 +17,7 @@ tags:
 - [[dot-test_no_subscription_accepts_security_event()]] - `calls` [EXTRACTED]
 - [[dot-test_subscription_filters_correctly()]] - `calls` [EXTRACTED]
 - [[Replicate the filter logic from _event_fan_out.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `references` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `method` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 

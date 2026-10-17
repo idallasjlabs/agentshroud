@@ -15,8 +15,8 @@ tags:
 - [[dot-check_agent_server_access()]] - `calls` [EXTRACTED]
 - [[dot-check_rate_limit()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_parameters()]] - `calls` [EXTRACTED]
-- [[dot-check_tool_permission()_2]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[dot-check_tool_permission()_1]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 - [[Run all permission checks in order. Returns first failure or final success.]] - `rationale_for` [EXTRACTED]
 

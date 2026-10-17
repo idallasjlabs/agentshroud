@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "test_soc_realtime_coverage.py (3)"
+community: "main.rs"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy_3
+  - community/mainrs
 ---
 
 # .new()
@@ -16,4 +16,4 @@ tags:
 - [[Self]] - `references` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_3
+#graphify/code #graphify/EXTRACTED #community/mainrs

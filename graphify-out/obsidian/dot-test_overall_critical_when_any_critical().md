@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_collaborator_greeter.py (2)"
+community: "test_scanner_integration.py"
 location: "L504"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/test_scanner_integrationpy
 ---
 
 # .test_overall_critical_when_any_critical()
@@ -17,4 +17,4 @@ tags:
 - [[_trivy_critical()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

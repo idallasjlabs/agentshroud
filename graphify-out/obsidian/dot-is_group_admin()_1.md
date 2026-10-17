@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L133"
+community: "test_soc_router_coverage.py"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/test_soc_router_coveragepy
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[dot-is_admin()]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

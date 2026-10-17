@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "SCLClient"
-location: "L64"
+community: "ReportStore"
+location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/ReportStore
 ---
 
 # .delete()
 
 ## Connections
-- [[dot-_request()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[dot-_enforce_count_cap()]] - `calls` [EXTRACTED]
+- [[dot-_path()]] - `calls` [EXTRACTED]
+- [[dot-_valid_id()]] - `calls` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/ReportStore

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_private_access_events()]] - `calls` [EXTRACTED]
 - [[Aggregate recent private-tool violations for SOC reporting.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer (2)"
+community: "TestToolChainAnalyzer"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/TestToolChainAnalyzer
 ---
 
 # ._load_default_patterns()
 
 ## Connections
-- [[dot-__init__()_111]] - `calls` [EXTRACTED]
+- [[dot-__init__()_22]] - `calls` [EXTRACTED]
 - [[ChainPattern]] - `calls` [EXTRACTED]
 - [[Load default suspicious chain patterns.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

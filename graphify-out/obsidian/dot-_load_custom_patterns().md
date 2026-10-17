@@ -12,11 +12,11 @@ tags:
 # ._load_custom_patterns()
 
 ## Connections
-- [[dot-__init__()_111]] - `calls` [EXTRACTED]
+- [[dot-__init__()_22]] - `calls` [EXTRACTED]
 - [[ChainAction]] - `calls` [EXTRACTED]
 - [[ChainPattern]] - `calls` [EXTRACTED]
 - [[Load custom patterns from configuration.]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_4]] - `calls` [EXTRACTED]
+- [[RiskLevel]] - `calls` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

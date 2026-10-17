@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "TrustConfig"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/TrustConfig
 ---
 
 # .test_custom_points()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfig]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

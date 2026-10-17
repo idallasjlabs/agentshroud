@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice (2)"
+community: "test_dashboard_endpoints.py"
 location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/test_dashboard_endpointspy
 ---
 
 # .test_middleware_user_identification()
@@ -15,4 +15,4 @@ tags:
 - [[Test that middleware requires user identification.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

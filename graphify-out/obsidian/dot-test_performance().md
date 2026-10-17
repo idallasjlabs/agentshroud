@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (18)"
+community: "TestOutboundInfoFilter"
 location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_18
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_performance()
@@ -16,4 +16,4 @@ tags:
 - [[Test that filtering performance is acceptable.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_18
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

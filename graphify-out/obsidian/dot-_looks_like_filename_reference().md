@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_trigger_web_fetch_approval()]] - `calls` [EXTRACTED]
 - [[Best-effort check to avoid treating local file names as egress domains.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

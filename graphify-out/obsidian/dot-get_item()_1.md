@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-decide()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[Fetch a single queue item by ID.]] - `rationale_for` [EXTRACTED]
 

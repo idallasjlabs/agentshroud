@@ -12,7 +12,7 @@ tags:
 # ._get_role_value()
 
 ## Connections
-- [[dot-filter_response()_1]] - `calls` [EXTRACTED]
+- [[dot-filter_response()_2]] - `calls` [EXTRACTED]
 - [[dot-is_service_allowed()]] - `calls` [EXTRACTED]
 - [[dot-should_alert()]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]

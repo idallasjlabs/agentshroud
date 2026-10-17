@@ -12,7 +12,7 @@ tags:
 # .test_one_when_no_wazuh_no_fluent()
 
 ## Connections
-- [[TestScoreLoggingMonitoring]] - `method` [EXTRACTED]
+- [[TestScoreLoggingMonitoring_1]] - `method` [EXTRACTED]
 - [[_score_logging_monitoring()]] - `calls` [EXTRACTED]
 - [[_wazuh_not_run()]] - `calls` [EXTRACTED]
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L8762"
+community: "Tests for _forward_file_download() and proxy_request() binary path. Regression…"
+location: "L8780"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
 ---
 
 # .test_forward_file_download_aborts_at_size_limit()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
-- [[_FakeResponse]] - `calls` [INFERRED]
-- [[_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320]] - `rationale_for` [EXTRACTED]
+- [[_forward_file_download must raise when streamed bytes exceed limit…]] - `rationale_for` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[read()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression

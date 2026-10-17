@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L471"
+community: "AuditChain"
+location: "L1658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/AuditChain
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

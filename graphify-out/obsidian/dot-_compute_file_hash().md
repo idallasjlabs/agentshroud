@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (8)"
+community: "MiddlewareManager (5)"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/MiddlewareManager_5
 ---
 
 # ._compute_file_hash()
 
 ## Connections
-- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_file()]] - `calls` [EXTRACTED]
 - [[Compute SHA-256 hash of a file.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_49]] - `references` [EXTRACTED]
+- [[Path_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

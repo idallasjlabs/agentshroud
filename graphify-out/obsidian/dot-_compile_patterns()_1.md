@@ -12,8 +12,8 @@ tags:
 # ._compile_patterns()
 
 ## Connections
-- [[dot-__init__()_197]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[dot-__init__()_98]] - `calls` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[Compile all filter patterns into regex objects.]] - `rationale_for` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L2114"
+community: "Collaborator URL web-access prompts should queue owner approval and return…"
+location: "L2132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Collaborator_URL_web-access_prompts_should_queue_owner_approval_and_return
 ---
 
 # .test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()
@@ -14,10 +14,14 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[URL policy questions without collaborator keyword should still remain informatio]] - `rationale_for` [EXTRACTED]
+- [[URL policy questions without collaborator keyword should still remain…]] - `rationale_for` [EXTRACTED]
+- [[_fake_approval()_5]] - `contains` [EXTRACTED]
+- [[_fake_approval()_6]] - `indirect_call` [INFERRED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_urlopen()_58]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/Collaborator_URL_web-access_prompts_should_queue_owner_approval_and_return

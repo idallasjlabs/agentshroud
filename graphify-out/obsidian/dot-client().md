@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "TestInstallerAPI"
-location: "L781"
+community: "ReportStore"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInstallerAPI
+  - community/ReportStore
 ---
 
 # .client()
 
 ## Connections
-- [[TestInstallerAPI]] - `method` [EXTRACTED]
+- [[ReportStore]] - `calls` [EXTRACTED]
+- [[TestReportAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInstallerAPI
+#graphify/code #graphify/EXTRACTED #community/ReportStore

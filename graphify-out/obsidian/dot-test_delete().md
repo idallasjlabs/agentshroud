@@ -12,6 +12,6 @@ tags:
 # .test_delete()
 
 ## Connections
-- [[TestPersistence_2]] - `method` [EXTRACTED]
+- [[TestPersistence]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ReportStore

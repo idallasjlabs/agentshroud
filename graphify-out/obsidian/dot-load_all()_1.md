@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
 - [[Load all reports in chronological order (oldest first).]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

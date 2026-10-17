@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "KillSwitchMonitor (4)"
+community: "AlertDispatcher (2)"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_4
+  - community/AlertDispatcher_2
 ---
 
 # .test_custom_key_id()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_4
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

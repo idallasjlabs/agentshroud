@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig (3)"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig_3
 ---
 
 # .get_group_admin_ids()
 
 ## Connections
 - [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig_2]] - `method` [EXTRACTED]
+- [[TeamsConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

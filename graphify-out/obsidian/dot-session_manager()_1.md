@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
-location: "L40"
+community: "test_dashboard_endpoints.py"
+location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/test_dashboard_endpointspy
 ---
 
 # .session_manager()
 
 ## Connections
-- [[Create a session manager with temporary workspace.]] - `rationale_for` [EXTRACTED]
-- [[TestUserSessionManager]] - `method` [EXTRACTED]
+- [[Create a session manager.]] - `rationale_for` [EXTRACTED]
+- [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

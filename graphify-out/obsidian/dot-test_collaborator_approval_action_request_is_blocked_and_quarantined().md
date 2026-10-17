@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy (7)"
-location: "L4351"
+community: "FakeRBAC"
+location: "L4369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_7
+  - community/FakeRBAC
 ---
 
 # .test_collaborator_approval_action_request_is_blocked_and_quarantined()
@@ -15,10 +15,9 @@ tags:
 - [[Collaborator attempts to approvedeny requests should be blocked.]] - `rationale_for` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[System promptinstruction leakage probes should be blocked and quarantined.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_7
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

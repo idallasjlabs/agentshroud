@@ -15,7 +15,7 @@ tags:
 - [[dot-get_blocked_entries()]] - `calls` [EXTRACTED]
 - [[dot-get_failed_entries()]] - `calls` [EXTRACTED]
 - [[dot-verify_chain()]] - `calls` [EXTRACTED]
-- [[Any_31]] - `references` [EXTRACTED]
+- [[Any_33]] - `references` [EXTRACTED]
 - [[Generate an MCP audit report summary.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 

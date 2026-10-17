@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "MCPPolicyEngine"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/MCPPolicyEngine
 ---
 
 # .test_missing_section_yields_deny_by_default_policy()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
-- [[_write()_1]] - `calls` [EXTRACTED]
+- [[_write()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

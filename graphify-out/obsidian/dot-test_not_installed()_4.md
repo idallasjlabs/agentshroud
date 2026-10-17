@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ServiceManager (3)"
-location: "L251"
+community: "TestPathIsolationManager"
+location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_3
+  - community/TestPathIsolationManager
 ---
 
 # .test_not_installed()
 
 ## Connections
-- [[TestCheckWazuhAgent]] - `method` [EXTRACTED]
-- [[_patch_exists()]] - `calls` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_3
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-exec()_3]] - `calls` [EXTRACTED]
-- [[dot-health_check()_4]] - `calls` [EXTRACTED]
+- [[dot-health_check()_5]] - `calls` [EXTRACTED]
 - [[dot-inspect()_3]] - `calls` [EXTRACTED]
 - [[dot-logs()_3]] - `calls` [EXTRACTED]
 - [[dot-network_create()_3]] - `calls` [EXTRACTED]

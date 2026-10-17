@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PipelineAction"
-location: "L136"
+community: "AuditChain"
+location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
+- [[dot-_check_unicode_tricks()]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_1]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[Scan input text for prompt injection patterns.          Args             text]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_4]] - `references` [EXTRACTED]
+- [[detect_base64_payloads()]] - `calls` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/AuditChain

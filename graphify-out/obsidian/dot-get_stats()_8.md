@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L1002"
+community: "RateLimitGuard"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/RateLimitGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

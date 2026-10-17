@@ -19,10 +19,10 @@ tags:
 - [[dot-block_egress()]] - `calls` [EXTRACTED]
 - [[dot-deny_egress()]] - `calls` [EXTRACTED]
 - [[dot-freeze()]] - `calls` [EXTRACTED]
-- [[dot-restart_service()]] - `calls` [EXTRACTED]
+- [[dot-restart_service()_1]] - `calls` [EXTRACTED]
 - [[dot-run_scan()]] - `calls` [EXTRACTED]
-- [[dot-stop_service()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
+- [[dot-stop_service()_1]] - `calls` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

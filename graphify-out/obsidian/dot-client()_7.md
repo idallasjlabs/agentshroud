@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "ReportStore"
-location: "L132"
+community: "Path"
+location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/Path
 ---
 
 # .client()
 
 ## Connections
-- [[ReportStore]] - `calls` [EXTRACTED]
-- [[TestReportAPI]] - `method` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
+- [[TestClient_1]] - `references` [EXTRACTED]
+- [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/Path

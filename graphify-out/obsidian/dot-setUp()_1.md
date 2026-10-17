@@ -12,7 +12,7 @@ tags:
 # .setUp()
 
 ## Connections
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 

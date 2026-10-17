@@ -1,22 +1,23 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L350"
+community: "AgentRegistry (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/AgentRegistry_2
 ---
 
 # .get()
 
 ## Connections
-- [[dot-request()]] - `calls` [EXTRACTED]
-- [[GatewayClientT]] - `method` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
-- [[build_url()]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
+- [[dot-generate_compose()]] - `calls` [EXTRACTED]
+- [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
+- [[dot-verify_shared_nothing()]] - `calls` [EXTRACTED]
+- [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `references` [EXTRACTED]
+- [[Get container config for an agent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry_2

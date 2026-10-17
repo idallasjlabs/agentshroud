@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[MultiHostResult]] - `method` [EXTRACTED]
 - [[Render an aligned PASSFAIL table plus a totals line.]] - `rationale_for` [EXTRACTED]
-- [[main()_29]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/main_2

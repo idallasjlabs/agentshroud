@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "test_prompt_guard.py"
-location: "L80"
+community: "TrustConfig (2)"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/TrustConfig_2
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestGetMode]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
+- [[TestSubagentMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

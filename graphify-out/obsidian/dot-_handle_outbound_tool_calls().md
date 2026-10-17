@@ -20,8 +20,8 @@ tags:
 - [[dot-_resolve_collaborator_mode()]] - `calls` [EXTRACTED]
 - [[dot-_trigger_web_fetch_approval()]] - `calls` [EXTRACTED]
 - [[dot-_trigger_web_search_log()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
+- [[Any_83]] - `references` [EXTRACTED]
 - [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

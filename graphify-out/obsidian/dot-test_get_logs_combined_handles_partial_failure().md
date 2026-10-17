@@ -12,7 +12,7 @@ tags:
 # .test_get_logs_combined_handles_partial_failure()
 
 ## Connections
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestLogs]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 

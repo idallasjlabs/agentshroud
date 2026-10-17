@@ -1,29 +1,22 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "SCLClient"
-location: "L55"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/ReportStore
 ---
 
 # .get()
 
 ## Connections
-- [[dot-_request()]] - `calls` [EXTRACTED]
-- [[dot-get_correlation()]] - `calls` [EXTRACTED]
-- [[dot-get_egress_pending()]] - `calls` [EXTRACTED]
-- [[dot-get_events()]] - `calls` [EXTRACTED]
-- [[dot-get_groups()]] - `calls` [EXTRACTED]
-- [[dot-get_health()]] - `calls` [EXTRACTED]
-- [[dot-get_logs()]] - `calls` [EXTRACTED]
-- [[dot-get_risk()]] - `calls` [EXTRACTED]
-- [[dot-get_services()]] - `calls` [EXTRACTED]
-- [[dot-get_users()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
-- [[SCLClient]] - `method` [EXTRACTED]
-- [[client_from_env()]] - `calls` [EXTRACTED]
+- [[dot-_enforce_count_cap()]] - `calls` [EXTRACTED]
+- [[dot-_path()]] - `calls` [EXTRACTED]
+- [[dot-_valid_id()]] - `calls` [EXTRACTED]
+- [[dot-list()]] - `calls` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/ReportStore

@@ -1,24 +1,25 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_internal_network_probe_is_blocked_and_quarantined"
-location: "L2871"
+community: "test_llm_proxy_local_parity.py"
+location: "L2889"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_internal_network_probe_is_blocked_and_quarantined
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .test_collaborator_internal_network_probe_returns_protect_egress_notice()
 
 ## Connections
-- [[Blocked internal-network probes should return deterministic Protect egress wordi]] - `rationale_for` [EXTRACTED]
+- [[Blocked internal-network probes should return deterministic Protect egress…]] - `rationale_for` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[Internal-network target probes should be blocked and quarantined.]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[fake_urlopen()_14]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_internal_network_probe_is_blocked_and_quarantined
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

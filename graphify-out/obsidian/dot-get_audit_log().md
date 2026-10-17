@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
 community: "AlertDispatcher (2)"
-location: "L127"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .get_audit_log()
 
 ## Connections
-- [[KeyAuditEvent]] - `references` [EXTRACTED]
-- [[KeyVault]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -15,9 +15,9 @@ tags:
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[dot-_suppress_duplicate_system_notice()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
+- [[Any_83]] - `references` [EXTRACTED]
 - [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

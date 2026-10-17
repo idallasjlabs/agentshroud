@@ -15,7 +15,7 @@ tags:
 - [[appendLog()_3]] - `contains` [EXTRACTED]
 - [[browserFetch()_3]] - `contains` [EXTRACTED]
 - [[fs_4]] - `contains` [EXTRACTED]
-- [[path_20]] - `contains` [EXTRACTED]
+- [[path_22]] - `contains` [EXTRACTED]
 - [[{ chromium }_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

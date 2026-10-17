@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L542"
+community: "AlertDispatcher (2) (2)"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AlertDispatcher_2_2
 ---
 
 # ._check_system_resources()
 
 ## Connections
-- [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
-- [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[Any_37]] - `references` [EXTRACTED]
-- [[Check if system resource usage is abnormal.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[dot-_alert_high_usage()]] - `calls` [EXTRACTED]
+- [[dot-_monitor_resources()]] - `calls` [EXTRACTED]
+- [[Check system-wide resource usage for anomalies (synchronous).]] - `rationale_for` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

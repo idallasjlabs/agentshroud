@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "test_llm_proxy_local_parity.py (2)"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # .get_stats()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2

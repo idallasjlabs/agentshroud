@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (3)"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_3
 ---
 
 # ._check_impl()
 
 ## Connections
 - [[dot-_is_ipv6()]] - `calls` [EXTRACTED]
-- [[dot-_is_private_ip()_1]] - `calls` [EXTRACTED]
+- [[dot-_is_private_ip()]] - `calls` [EXTRACTED]
 - [[dot-_matches_allowlist_domain()]] - `calls` [EXTRACTED]
 - [[dot-_matches_ip_list()]] - `calls` [EXTRACTED]
-- [[dot-_record()]] - `calls` [EXTRACTED]
-- [[dot-check()_6]] - `calls` [EXTRACTED]
+- [[dot-_record()_1]] - `calls` [EXTRACTED]
+- [[dot-check()_4]] - `calls` [EXTRACTED]
 - [[dot-get_policy()_1]] - `calls` [EXTRACTED]
 - [[dot-matches_domain()]] - `calls` [EXTRACTED]
 - [[dot-matches_ip()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[EgressAttempt]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3

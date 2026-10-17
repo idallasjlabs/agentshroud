@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-check_all()]] - `calls` [EXTRACTED]
 - [[Check and update rate limits for a tool call.          Returns allowed=True and]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 - [[RateLimitEntry]] - `calls` [EXTRACTED]
 

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L20"
+community: "ToolResultSanitizer"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

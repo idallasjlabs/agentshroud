@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "InjectionAction (2)"
-location: "L245"
+community: "AuditChain"
+location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction_2
+  - community/AuditChain
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
-- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
-- [[InjectionResult]] - `references` [EXTRACTED]
-- [[Scan tool result content for injection attempts.          Args             tool]] - `rationale_for` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[normalize_input()]] - `calls` [EXTRACTED]
-- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction_2
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -12,7 +12,7 @@ tags:
 # .build_full_mesh()
 
 ## Connections
-- [[dot-register_peer()]] - `calls` [EXTRACTED]
+- [[dot-register_peer()_1]] - `calls` [EXTRACTED]
 - [[dot-register_trust_manager()]] - `calls` [EXTRACTED]
 - [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "AlertDispatcher"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AlertDispatcher
 ---
 
 # .test_pii_sanitizer_default_action()
 
 ## Connections
-- [[SecurityConfig]] - `calls` [EXTRACTED]
+- [[SecurityConfig_4]] - `calls` [EXTRACTED]
 - [[Test that PII sanitizer defaults to redact action.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

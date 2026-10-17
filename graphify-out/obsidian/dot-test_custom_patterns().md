@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestOutboundInfoFilter (39)"
-location: "L440"
+community: "TestToolChainAnalyzer"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_39
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_custom_patterns()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[Test adding custom filter patterns.]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Test loading custom patterns from configuration.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_39
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py (5)"
+community: "dashboard_endpoints.py"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_5
+  - community/dashboard_endpointspy
 ---
 
 # .append()
@@ -18,4 +18,4 @@ tags:
 - [[logs_recent()]] - `calls` [EXTRACTED]
 - [[ssh_hosts()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_5
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

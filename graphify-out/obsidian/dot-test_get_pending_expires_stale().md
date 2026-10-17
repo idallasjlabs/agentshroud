@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "UserSessionManager (2)"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/UserSessionManager_2
 ---
 
 # .test_get_pending_expires_stale()
@@ -16,4 +16,4 @@ tags:
 - [[TestApprovalTimeout]] - `method` [EXTRACTED]
 - [[get_pending should expire stale items.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

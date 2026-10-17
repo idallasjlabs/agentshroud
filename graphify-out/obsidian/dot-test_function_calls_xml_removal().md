@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .test_function_calls_xml_removal()
@@ -15,4 +15,4 @@ tags:
 - [[Test removal of function call XML blocks.]] - `rationale_for` [EXTRACTED]
 - [[TestXMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

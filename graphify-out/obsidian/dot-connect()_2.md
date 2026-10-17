@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ServiceManager"
-location: "L51"
+community: "UserSessionManager (2)"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/UserSessionManager_2
 ---
 
 # .connect()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[Accept a WebSocket connection and add to connected set          Args]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[WebSocket_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
 - [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]

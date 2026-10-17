@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestPromptProtection (3)"
+community: "TestPromptProtection"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection_3
+  - community/TestPromptProtection
 ---
 
 # .test_multiple_redactions()
@@ -15,4 +15,4 @@ tags:
 - [[Test text with multiple types of sensitive content.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection_3
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

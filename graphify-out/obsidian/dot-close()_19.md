@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L102"
+community: "TrustConfig"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/TrustConfig
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesTargetWriter]] - `method` [EXTRACTED]
-- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

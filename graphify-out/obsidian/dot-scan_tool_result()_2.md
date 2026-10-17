@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "ContextSegment"
-location: "L786"
+community: "InjectionAction (2)"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/InjectionAction_2
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
-- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_2]] - `references` [EXTRACTED]
+- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
+- [[InjectionResult]] - `references` [EXTRACTED]
+- [[Scan tool result content for injection attempts.          Args             tool]] - `rationale_for` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/InjectionAction_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "_FakeRBAC"
+community: "ProgressiveLockdown"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/ProgressiveLockdown
 ---
 
 # .test_paused_is_independent_of_lockdown_level()
@@ -16,6 +16,6 @@ tags:
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

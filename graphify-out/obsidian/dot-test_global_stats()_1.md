@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test getting global statistics.]] - `rationale_for` [EXTRACTED]
 - [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

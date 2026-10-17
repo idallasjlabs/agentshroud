@@ -12,7 +12,7 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 

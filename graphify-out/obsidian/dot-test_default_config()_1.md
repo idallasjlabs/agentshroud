@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L34"
+community: "MiddlewareManager (5)"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager_5
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
+- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

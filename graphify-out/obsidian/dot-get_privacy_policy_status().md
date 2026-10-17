@@ -12,7 +12,7 @@ tags:
 # .get_privacy_policy_status()
 
 ## Connections
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return privacy policy file load status for dashboardaudit APIs.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

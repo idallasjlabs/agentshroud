@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_redact_pii()]] - `calls` [EXTRACTED]
 - [[dot-_scan_value()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[Inspect a tool result for PII and encoding issues.]] - `rationale_for` [EXTRACTED]
 - [[InspectionResult]] - `references` [EXTRACTED]
 - [[MCPInspector_1]] - `method` [EXTRACTED]
