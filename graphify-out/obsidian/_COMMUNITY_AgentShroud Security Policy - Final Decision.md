@@ -1,19 +1,21 @@
 ---
 type: community
-cohesion: 0.10
-members: 20
+members: 24
 ---
 
 # AgentShroud Security Policy - Final Decision
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 24 nodes
 
 ## Members
 - [[1Password App]] - document - docs/security/SECURITY-POLICY-FINAL.md
 - [[AgentShroud Security Policy - Final Decision]] - document - docs/security/SECURITY-POLICY-FINAL.md
 - [[Console (Direct Command)]] - document - docs/security/SECURITY-POLICY-FINAL.md
+- [[DEVICE_PAIRING]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - rationale - docs/setup/DEVICE_PAIRING.md
 - [[Internal Use (Bot)]] - document - docs/security/SECURITY-POLICY-FINAL.md
+- [[SECURITY-POLICY-FINAL]] - document - docs/security/SECURITY-POLICY-FINAL.md
+- [[Ultra-Conservative Credential Display Policy]] - rationale - docs/security/SECURITY-POLICY-FINAL.md
 - [[Version 1.0 No Protection]] - document - docs/security/SECURITY-POLICY-FINAL.md
 - [[Version 2.0 Context-Aware (Attempted)]] - document - docs/security/SECURITY-POLICY-FINAL.md
 - [[Version 3.0 Ultra-Conservative (FINAL)]] - document - docs/security/SECURITY-POLICY-FINAL.md
@@ -39,7 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
+- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
+- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
+- 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Policy - Final Decision]] - degree 12, connects to 1 community
+- [[Ultra-Conservative Credential Display Policy]] - degree 4, connects to 2 communities
+- [[SECURITY-POLICY-FINAL]] - degree 4, connects to 2 communities
+- [[DEVICE_PAIRING]] - degree 3, connects to 1 community
+- [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - degree 2, connects to 1 community

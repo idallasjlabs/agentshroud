@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.50
 members: 4
 ---
 
 # .test_collaborator_web_access_request_queues_owner_approval_and_pending_notice
 
-**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
@@ -23,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

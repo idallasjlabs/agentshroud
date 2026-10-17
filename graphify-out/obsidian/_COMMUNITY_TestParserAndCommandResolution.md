@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.50
 members: 5
 ---
 
 # TestParserAndCommandResolution
 
-**Cohesion:** 0.50 - moderately connected
 **Members:** 5 nodes
 
 ## Members
@@ -27,7 +25,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
 - 2 edges to [[_COMMUNITY_MultiHostResult]]
 - 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_main_1]]
+- 1 edge to [[_COMMUNITY_main (2)]]
 - 1 edge to [[_COMMUNITY_multi_host_test.py]]
 
 ## Top bridge nodes

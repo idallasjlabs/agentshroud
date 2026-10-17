@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 18
 ---
 
 # Known Log Messages
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members

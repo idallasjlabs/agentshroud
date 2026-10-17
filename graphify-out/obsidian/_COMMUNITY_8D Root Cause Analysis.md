@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # 8D Root Cause Analysis
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[dot-agentsskillsi-eightdREADME]] - document - .agents/skills/i-eightd/README.md
 - [[8D Root Cause Analysis]] - document - .agents/skills/i-eightd/README.md
-- [[Purpose_15]] - document - .agents/skills/i-eightd/README.md
-- [[Related Skills_4]] - document - .agents/skills/i-eightd/README.md
-- [[Usage_7]] - document - .agents/skills/i-eightd/README.md
+- [[Purpose_19]] - document - .agents/skills/i-eightd/README.md
+- [[Related Skills_6]] - document - .agents/skills/i-eightd/README.md
+- [[Usage_10]] - document - .agents/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 

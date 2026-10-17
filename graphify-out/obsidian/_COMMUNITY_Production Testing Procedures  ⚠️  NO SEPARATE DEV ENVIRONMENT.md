@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 20
 ---
 
 # Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -27,7 +25,7 @@ members: 20
 - [[Objective]] - document - .agents/skills/i-qa/SKILL.md
 - [[Output Format_12]] - document - .agents/skills/i-qa/SKILL.md
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
-- [[Role_45]] - document - .agents/skills/i-qa/SKILL.md
+- [[Role_43]] - document - .agents/skills/i-qa/SKILL.md
 - [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
 - [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
 

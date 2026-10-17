@@ -1,17 +1,31 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
-type: "document"
-community: "telegram_proxy.py"
-location: "L15"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "test_soc_realtime_coverage.py"
+location: "L255"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Value
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[dot-get()_2]] - `references` [EXTRACTED]
+- [[dot-get()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-request()]] - `references` [EXTRACTED]
+- [[dot-request()_1]] - `references` [EXTRACTED]
+- [[FakeTransport]] - `references` [EXTRACTED]
+- [[format_approvals()]] - `references` [EXTRACTED]
+- [[format_cves()]] - `references` [EXTRACTED]
+- [[format_decision()]] - `references` [EXTRACTED]
+- [[format_deploy_status()]] - `references` [EXTRACTED]
+- [[format_status()]] - `references` [EXTRACTED]
+- [[json_str()]] - `references` [EXTRACTED]
+- [[print_output()]] - `references` [EXTRACTED]
+- [[render_output_lines()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

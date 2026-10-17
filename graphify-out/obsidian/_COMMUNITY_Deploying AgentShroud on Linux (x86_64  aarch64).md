@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # Deploying AgentShroud on Linux (x86_64 / aarch64)
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members

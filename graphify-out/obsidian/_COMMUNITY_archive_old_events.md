@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 24
 ---
 
 # archive_old_events
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 24 nodes
 
 ## Members

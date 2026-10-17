@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.36
 members: 8
 ---
 
 # find-sessions.sh
 
-**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -14,8 +12,8 @@ members: 8
 - [[find-sessions.sh script]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
 - [[list_sessions()]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
 - [[tmuxSKILL]] - document - skills/openclaw/tmux/SKILL.md
-- [[usage()_3]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[usage()_4]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[usage()_2]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[usage()_3]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
 - [[wait-for-text.sh]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
 - [[wait-for-text.sh script]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
 

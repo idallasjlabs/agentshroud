@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.43
 members: 7
 ---
 
 # MCP Auth Reset Skill
 
-**Cohesion:** 0.43 - moderately connected
 **Members:** 7 nodes
 
 ## Members

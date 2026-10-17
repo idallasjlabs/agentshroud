@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 23
 ---
 
 # agentshroud-ieee-paper.md
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -24,7 +22,7 @@ members: 23
 - [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_1]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
@@ -42,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_WebProxyConfig_1]]
+- 3 edges to [[_COMMUNITY_WebProxyConfig (2)]]
 - 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
 - 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
 

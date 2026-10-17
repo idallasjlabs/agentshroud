@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SCRUM-110: restart recovery must preserve original timeout_action, not hardcoded deny
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

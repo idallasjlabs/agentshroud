@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD)"
+community: ".agents/skills/i-cr/SKILL.md (3)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/agents/skills/i-cr/SKILLmd_3
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_3

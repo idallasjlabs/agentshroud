@@ -12,6 +12,6 @@ tags:
 # Verify the integrity of the retained hash-chain window.          When the bounde
 
 ## Connections
-- [[dot-verify_chain()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PipelineAction

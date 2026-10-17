@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # web_content_scanner.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -15,8 +13,8 @@ members: 15
 - [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Purpose_145]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Related_32]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Responsibilities_30]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md

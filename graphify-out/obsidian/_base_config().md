@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A representative policy two allowlisted servers, one denylisted server,     a p]] - `rationale_for` [EXTRACTED]
-- [[MCPPolicyConfig]] - `references` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
 - [[engine()]] - `calls` [EXTRACTED]
 - [[test_decision_records_soc_heatmap()]] - `calls` [EXTRACTED]
 - [[test_enforce_allows_allowlisted_safe_tool()]] - `calls` [EXTRACTED]

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.16
 members: 19
 ---
 
 # MultiHostResult
 
-**Cohesion:** 0.16 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -42,7 +40,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_HostStatus]]
 - 4 edges to [[_COMMUNITY_run_multi_host]]
 - 4 edges to [[_COMMUNITY_multi_host_test.py]]
-- 3 edges to [[_COMMUNITY_main_1]]
+- 3 edges to [[_COMMUNITY_main (2)]]
 - 2 edges to [[_COMMUNITY_TestTail]]
 - 2 edges to [[_COMMUNITY_ssh_runner]]
 - 2 edges to [[_COMMUNITY_TestParserAndCommandResolution]]

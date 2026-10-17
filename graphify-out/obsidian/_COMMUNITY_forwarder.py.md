@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # forwarder.py
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -19,7 +17,7 @@ members: 12
 - [[Key Classes  Functions_51]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[Purpose_187]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[Related_55]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
+- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[forwarder.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[forwarder.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 

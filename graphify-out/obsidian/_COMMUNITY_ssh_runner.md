@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 6
 ---
 
 # ssh_runner
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
@@ -25,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_main_1]]
+- 2 edges to [[_COMMUNITY_main (2)]]
 - 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
 - 2 edges to [[_COMMUNITY_MultiHostResult]]
 - 1 edge to [[_COMMUNITY_HostStatus]]

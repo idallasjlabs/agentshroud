@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 23
 ---
 
 # Findings
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -31,7 +29,7 @@ members: 23
 - [[M3 Pi-hole Web Password in Secrets File]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 - [[MEDIUM — Recommended]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 - [[Remediation Plan]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Summary_17]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Summary_14]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 - [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)

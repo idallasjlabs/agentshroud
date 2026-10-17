@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 11
 ---
 
 # Common Operations
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -30,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Common Operations_1]]
+- 1 edge to [[_COMMUNITY_Common Operations (2)]]
 
 ## Top bridge nodes
 - [[Common Operations_1]] - degree 11, connects to 1 community

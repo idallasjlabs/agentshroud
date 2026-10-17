@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.08
 members: 38
 ---
 
 # GatewayEmailService
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 38 nodes
 
 ## Members
 - [[dot-__enter__()_3]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-__exit__()_3]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-__init__()_68]] - code - gateway/ingest_api/email_service.py
-- [[dot-__init__()_69]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__init__()_77]] - code - gateway/ingest_api/email_service.py
+- [[dot-__init__()_78]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-build_message()]] - code - gateway/ingest_api/email_service.py
 - [[dot-login()]] - code - gateway/ingest_api/email_service.py
 - [[dot-login()_1]] - code - gateway/tests/test_gateway_email_service.py
@@ -57,7 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 3 edges to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
 
 ## Top bridge nodes

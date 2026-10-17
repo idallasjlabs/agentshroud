@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.50
 members: 4
 ---
 
 # API Documentation
 
-**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
 - [[API Documentation]] - document - docs/api/README.md
-- [[Current Status_3]] - document - docs/api/README.md
+- [[Current Status_4]] - document - docs/api/README.md
 - [[Planned Documents_3]] - document - docs/api/README.md
 - [[apiREADME]] - document - docs/api/README.md
 

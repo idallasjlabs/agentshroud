@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 28
 ---
 
 # TELEGRAM_ISSUES.md
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 28 nodes
 
 ## Members

@@ -1,48 +1,72 @@
 ---
 type: community
-cohesion: 0.07
-members: 33
+members: 59
 ---
 
 # AgentShroud Incident Response Plan
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 33 nodes
+**Members:** 59 nodes
 
 ## Members
+- [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
 - [[2. Health Monitoring]] - document - docs/operations/runbook.md
+- [[3. Viewing Audit Logs]] - document - docs/operations/runbook.md
+- [[6. System Updates]] - document - docs/operations/runbook.md
 - [[7. Backup and Restore Procedures]] - document - docs/operations/runbook.md
 - [[AgentShroud Deployment Procedure]] - document - docs/operations/deployment-procedure.md
 - [[AgentShroud Incident Response Plan]] - document - docs/operations/incident-response.md
 - [[AgentShroud Operations Runbook]] - document - docs/operations/runbook.md
+- [[AgentShroud Updates]] - document - docs/operations/runbook.md
 - [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
 - [[Backup Procedures]] - document - docs/operations/runbook.md
+- [[Command-Line Access]] - document - docs/operations/runbook.md
+- [[Configuration Updates]] - document - docs/operations/runbook.md
+- [[Contact Information]] - document - docs/operations/incident-response.md
 - [[Container Escape Attempt]] - document - docs/operations/incident-response.md
+- [[Container Won't Start_2]] - document - docs/operations/deployment-procedure.md
 - [[Dashboard Access_1]] - document - docs/operations/runbook.md
 - [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
+- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
+- [[Deployment Modes]] - document - docs/operations/deployment-procedure.md
+- [[Emergency Contacts_2]] - document - docs/operations/incident-response.md
+- [[Escalation Chain]] - document - docs/operations/incident-response.md
+- [[External Contacts]] - document - docs/operations/incident-response.md
+- [[Functional Testing]] - document - docs/operations/deployment-procedure.md
 - [[Grafana Dashboard Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Incident Classification System]] - document - docs/operations/incident-response.md
+- [[Incident Response Team Structure]] - document - docs/operations/incident-response.md
 - [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[Maintenance Procedures]] - document - docs/operations/deployment-procedure.md
 - [[Monitoring Setup]] - document - docs/operations/deployment-procedure.md
 - [[P1 Critical Incidents]] - document - docs/operations/incident-response.md
 - [[P3 Medium Priority Incidents]] - document - docs/operations/incident-response.md
-- [[PII Sanitizer (Presidio + regex hybrid)]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[Performance Tuning]] - document - docs/operations/deployment-procedure.md
+- [[Port Already in Use_2]] - document - docs/operations/deployment-procedure.md
+- [[Post-Deployment Validation]] - document - docs/operations/deployment-procedure.md
+- [[Primary Roles]] - document - docs/operations/incident-response.md
+- [[Priority Levels_1]] - document - docs/operations/incident-response.md
 - [[Production Hardening]] - document - docs/operations/deployment-procedure.md
 - [[Prometheus Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Proxy Mode (Recommended)]] - document - docs/operations/deployment-procedure.md
 - [[Regular Maintenance Tasks]] - document - docs/operations/deployment-procedure.md
+- [[Restart Procedure_1]] - document - docs/operations/runbook.md
 - [[Restore Procedures]] - document - docs/operations/runbook.md
+- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
 - [[Security Hardening_4]] - document - docs/operations/deployment-procedure.md
+- [[Security Validation_1]] - document - docs/operations/deployment-procedure.md
+- [[Severity Assessment Matrix]] - document - docs/operations/incident-response.md
+- [[Sidecar Mode (Advanced)]] - document - docs/operations/deployment-procedure.md
+- [[Starting the System]] - document - docs/operations/runbook.md
+- [[Stopping the System]] - document - docs/operations/runbook.md
 - [[System Architecture Overview]] - document - docs/operations/runbook.md
 - [[System Health Checks]] - document - docs/operations/runbook.md
+- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
 - [[Trust Level Anomaly]] - document - docs/operations/incident-response.md
-- [[Trust Manager  Progressive Trust System]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[Unauthorized SSH Access Attempt]] - document - docs/operations/incident-response.md
 - [[Update Procedure]] - document - docs/operations/deployment-procedure.md
-- [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Web Interface Access]] - document - docs/operations/runbook.md
 - [[deployment-procedure]] - document - docs/operations/deployment-procedure.md
 - [[runbook_1]] - document - docs/operations/runbook.md
-- [[voice-gateway service (ESP32 voice terminal backend)]] - concept - docs/integrations/voice-terminal-esp32-s3.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,30 +76,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_4]]
+- 5 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 - 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines_2]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines (2)]]
 - 1 edge to [[_COMMUNITY_Prerequisites]]
-- 1 edge to [[_COMMUNITY_Troubleshooting Common Issues]]
+- 1 edge to [[_COMMUNITY_Post-Incident Activities]]
 - 1 edge to [[_COMMUNITY_4. Handling Alerts]]
 - 1 edge to [[_COMMUNITY_5. API Key Rotation]]
-- 1 edge to [[_COMMUNITY_Post-Incident Activities]]
-- 1 edge to [[_COMMUNITY_1. Starting and Stopping AgentShroud]]
-- 1 edge to [[_COMMUNITY_Deployment Modes]]
-- 1 edge to [[_COMMUNITY_Post-Deployment Validation]]
-- 1 edge to [[_COMMUNITY_Contact Information]]
-- 1 edge to [[_COMMUNITY_Incident Response Team Structure]]
-- 1 edge to [[_COMMUNITY_Incident Classification System]]
-- 1 edge to [[_COMMUNITY_3. Viewing Audit Logs]]
-- 1 edge to [[_COMMUNITY_6. System Updates]]
 - 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
 - 1 edge to [[_COMMUNITY_Step-by-Step Deployment]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
 
 ## Top bridge nodes
-- [[AgentShroud Incident Response Plan]] - degree 14, connects to 7 communities
-- [[AgentShroud Operations Runbook]] - degree 14, connects to 6 communities
-- [[AgentShroud Deployment Procedure]] - degree 13, connects to 5 communities
-- [[PII Sanitizer (Presidio + regex hybrid)]] - degree 7, connects to 2 communities
-- [[Trust Manager  Progressive Trust System]] - degree 5, connects to 1 community
+- [[AgentShroud Incident Response Plan]] - degree 14, connects to 5 communities
+- [[AgentShroud Operations Runbook]] - degree 14, connects to 4 communities
+- [[AgentShroud Deployment Procedure]] - degree 13, connects to 3 communities
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - degree 4, connects to 1 community

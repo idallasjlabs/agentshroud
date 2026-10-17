@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 22
 ---
 
 # test_sanitizer.py
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -41,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
 
 ## Top bridge nodes
 - [[test_sanitizer.py]] - degree 12, connects to 1 community

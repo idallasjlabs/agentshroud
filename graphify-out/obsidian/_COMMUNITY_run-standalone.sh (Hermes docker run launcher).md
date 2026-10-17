@@ -1,26 +1,47 @@
 ---
 type: community
-cohesion: 0.24
-members: 11
+members: 34
 ---
 
 # run-standalone.sh (Hermes docker run launcher)
 
-**Cohesion:** 0.24 - loosely connected
-**Members:** 11 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[OpenClaw Cron Jobs Configuration]] - document - docker/config/openclaw/cron/jobs.json
-- [[S10 start-agentshroud.sh force-reconciles security-critical live cron jobs]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S11 init-openclaw-config.sh seeds jira_dev_ticket.py into live OpenClaw workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S8 no raw sshagentshroud-bot@real Tailscale FQDN in baked bot config]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S9 init-openclaw-config.sh seeds agentshroud-ssh-exec.sh rules into live AGENTS]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[_oc_config_set()]] - code - docker/scripts/init-openclaw-config.sh
-- [[_sha256()]] - code - docker/scripts/init-openclaw-config.sh
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - code - docker/scripts/init-openclaw-config.sh
-- [[init-openclaw-config.sh runs doctor --fix before version seed (schema v23-v24 trap)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[init-openclaw-config.sh script]] - code - docker/scripts/init-openclaw-config.sh
+- [[AGENTSHROUD_ENV auto-detected from invoking account]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM opt-in]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[Colima VM default-route auto-heal (step 2)]] - rationale - docker/scripts/colima-health-check.sh
+- [[Container net-diag expected-failure baseline (step 5)]] - rationale - docker/scripts/colima-health-check.sh
+- [[Dev container caps under the 4 CPU  9 GiB VM]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Dev network subnet offsets (172.20-22.0.024)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Dev secrets telegram_bot_token_marvin  hermes_telegram_bot_token_marvin]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[HERMES_DASHBOARD_UPSTREAM  _HOST_UPSTREAM dev hostnames]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Hermes cron jobs paused by empty AGENTSHROUD_PROD_CRON_KEEP on container recreate]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[Hermes deliberately absent from the dev compose override]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Hermes launched via docker run, not compose]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[Hermes resource caps by environment]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[Missing-secret visibility banner (expected secrets loop)]] - rationale - docker/bots/hermes/start.sh
+- [[S13 Hermes start.sh expected-secrets banner accepts env vars in place of mounted files]] - concept - tests/startup_smoke/test_bot_boot_static.sh
+- [[S14 Hermes run-standalone.sh image tag falls back to dockerversions.env, not 'latest']] - concept - tests/startup_smoke/test_bot_boot_static.sh
+- [[S17 Hermes run-standalone.sh resource caps prod 3g1.5, dev 2g1.0, env override honoured]] - concept - tests/startup_smoke/test_bot_boot_static.sh
+- [[_dashboard_auth_env_args()]] - code - docker/bots/hermes/run-standalone.sh
+- [[_dashboard_host_default()]] - code - docker/bots/hermes/run-standalone.sh
+- [[_feedbin_env_args()]] - code - docker/bots/hermes/run-standalone.sh
+- [[_secret_mount_args()]] - code - docker/bots/hermes/run-standalone.sh
+- [[_wait_for_gateway_healthy()]] - code - docker/bots/hermes/run-standalone.sh
+- [[aiohttp ClientSession closed-session crash-loop fix (partial)]] - rationale - docker/bots/hermes/patch_slack_session_recreate.py
+- [[cmd_down()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_logs()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_status()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_up()]] - code - docker/bots/hermes/run-standalone.sh
+- [[gateway service (dev override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[openclaw service (dev override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[patch_slack_session_recreate.py]] - code - docker/bots/hermes/patch_slack_session_recreate.py
+- [[pre-commit check-yaml hook (--unsafe)]] - code - .pre-commit-config.yaml
+- [[run-standalone.sh]] - code - docker/bots/hermes/run-standalone.sh
+- [[run-standalone.sh script]] - code - docker/bots/hermes/run-standalone.sh
+- [[voice-gateway service (dev override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[wazuh-manager service (dev override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,12 +51,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_apply-patches.js]]
+- 3 edges to [[_COMMUNITY_AgentTarget (5)]]
+- 2 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 - 1 edge to [[_COMMUNITY_test_hermes_cron_seed.py]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
 
 ## Top bridge nodes
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - degree 10, connects to 2 communities
-- [[OpenClaw Cron Jobs Configuration]] - degree 2, connects to 1 community
-- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - degree 2, connects to 1 community
+- [[Missing-secret visibility banner (expected secrets loop)]] - degree 4, connects to 2 communities
+- [[run-standalone.sh]] - degree 13, connects to 1 community
+- [[cmd_up()]] - degree 11, connects to 1 community
+- [[Dev container caps under the 4 CPU  9 GiB VM]] - degree 6, connects to 1 community
+- [[Hermes deliberately absent from the dev compose override]] - degree 3, connects to 1 community

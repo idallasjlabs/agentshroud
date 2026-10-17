@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 22
 ---
 
 # Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -41,9 +39,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_4]]
 - 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
 - 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
 - 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud]]
 
 ## Top bridge nodes

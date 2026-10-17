@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.22
 members: 20
 ---
 
 # SubagentGovernance
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[dot-__init__()_138]] - code - gateway/security/subagent_governance.py
+- [[dot-__init__()_139]] - code - gateway/security/subagent_governance.py
 - [[dot-test_api_calls_exceed()]] - code - gateway/tests/test_subagent_governance.py
 - [[dot-test_no_tracking_returns_ok()]] - code - gateway/tests/test_subagent_governance.py
 - [[dot-test_tokens_exceed_budget()]] - code - gateway/tests/test_subagent_governance.py
@@ -45,7 +43,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_TestOutputTrustScoring]]
 - 4 edges to [[_COMMUNITY_TestSpawnAuthorization]]
 - 4 edges to [[_COMMUNITY_TestToolAuthorization]]
-- 3 edges to [[_COMMUNITY_GovernanceAction_1]]
+- 3 edges to [[_COMMUNITY_GovernanceAction (2)]]
 - 3 edges to [[_COMMUNITY_ResourceUsage]]
 
 ## Top bridge nodes

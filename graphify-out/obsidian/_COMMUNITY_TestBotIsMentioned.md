@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 11
 ---
 
 # TestBotIsMentioned
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -30,9 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 1 edge to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

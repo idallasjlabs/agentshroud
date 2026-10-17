@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 25
 ---
 
 # test_gemini_openai_translator.py
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 25 nodes
 
 ## Members
@@ -44,8 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_gemini_openai_translator.py_1]]
-- 5 edges to [[_COMMUNITY_test_gemini_openai_translator.py_2]]
+- 10 edges to [[_COMMUNITY_test_gemini_openai_translator.py (2)]]
+- 5 edges to [[_COMMUNITY_test_gemini_openai_translator.py (3)]]
 - 1 edge to [[_COMMUNITY_LLMProxy]]
 - 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 

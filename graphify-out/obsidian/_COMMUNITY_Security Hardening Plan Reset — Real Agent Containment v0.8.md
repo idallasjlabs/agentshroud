@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.29
 members: 8
 ---
 
 # Security Hardening Plan Reset — Real Agent Containment v0.8
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members

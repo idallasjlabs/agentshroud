@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 22
 ---
 
 # TestMultipartOutboundPipeline
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -41,18 +39,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_TelegramAPIProxy_7]]
-- 9 edges to [[_COMMUNITY_ApprovalQueueConfig_5]]
-- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline_1]]
+- 18 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline (2)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 1 edge to [[_COMMUNITY_BlockingPipeline]]
 
 ## Top bridge nodes
 - [[TestMultipartOutboundPipeline]] - degree 15, connects to 4 communities
-- [[dot-test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 3 communities
 - [[_make_multipart_body()]] - degree 12, connects to 2 communities
-- [[dot-test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 2 communities
-- [[dot-test_multipart_outbound_pipeline_called()]] - degree 5, connects to 2 communities
+- [[dot-test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 2 communities
+- [[dot-test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 1 community
+- [[dot-test_multipart_outbound_pipeline_called()]] - degree 5, connects to 1 community

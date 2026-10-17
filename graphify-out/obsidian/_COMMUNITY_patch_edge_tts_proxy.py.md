@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # patch_edge_tts_proxy.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

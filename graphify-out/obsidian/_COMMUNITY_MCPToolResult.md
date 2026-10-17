@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # MCPToolResult
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -29,12 +27,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager_1]]
-- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 3 edges to [[_COMMUNITY_StdioConnection]]
 - 2 edges to [[_COMMUNITY_MCPInspector]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_2]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_4]]
+- 1 edge to [[_COMMUNITY_PermissionLevel]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
 
 ## Top bridge nodes
 - [[TestInjectionDetection]] - degree 22, connects to 7 communities

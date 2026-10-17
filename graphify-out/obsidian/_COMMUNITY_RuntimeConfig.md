@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 19
 ---
 
 # RuntimeConfig
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -38,20 +36,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 7 edges to [[_COMMUNITY_test_runtime_engines.py]]
 - 6 edges to [[_COMMUNITY_ContainerEngine]]
-- 6 edges to [[_COMMUNITY_TestSecurityFeatures]]
+- 5 edges to [[_COMMUNITY_api.py]]
+- 5 edges to [[_COMMUNITY_TestSecurityFeatures]]
+- 5 edges to [[_COMMUNITY_test_runtime_engines.py (2)]]
 - 3 edges to [[_COMMUNITY_PodmanEngine]]
 - 3 edges to [[_COMMUNITY_DockerEngine]]
 - 3 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 3 edges to [[_COMMUNITY_api.py]]
-- 3 edges to [[_COMMUNITY_get_engine]]
 - 2 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
-- 2 edges to [[_COMMUNITY_Path_3]]
+- 2 edges to [[_COMMUNITY_Path (4)]]
+- 1 edge to [[_COMMUNITY_get_engine]]
 
 ## Top bridge nodes
-- [[runtime__init__.py]] - degree 10, connects to 5 communities
-- [[TestRuntimeConfig]] - degree 12, connects to 4 communities
+- [[runtime__init__.py]] - degree 10, connects to 6 communities
+- [[TestRuntimeConfig]] - degree 12, connects to 5 communities
 - [[docker_engine.py]] - degree 9, connects to 4 communities
 - [[podman_engine.py]] - degree 9, connects to 4 communities
 - [[RuntimeConfig]] - degree 13, connects to 3 communities

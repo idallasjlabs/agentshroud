@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 15
 ---
 
 # test_wire_llm_settings.js
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -16,7 +14,7 @@ members: 15
 - [[assert()_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
 - [[fs_6]] - code - tests/startup_smoke/test_wire_llm_settings.js
 - [[os_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[path_50]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[path_51]] - code - tests/startup_smoke/test_wire_llm_settings.js
 - [[read()]] - code - tests/startup_smoke/test_wire_llm_settings.js
 - [[readHermesMcpServers()]] - code - tests/startup_smoke/test_wire_llm_settings.js
 - [[runHermesInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.60
 members: 6
 ---
 
 # _is_stale_callback_error
 
-**Cohesion:** 0.60 - moderately connected
 **Members:** 6 nodes
 
 ## Members

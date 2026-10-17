@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 32
 ---
 
 # The 8D Investigation Process
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -30,7 +28,7 @@ members: 32
 - [[Input Requirements_7]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Knowledge Base Schema_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Learning System (Continuous Improvement)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
-- [[Overview_8]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Overview_4]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Pattern Matching for New Incidents_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Step 1 Collect the Error Event Data_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Step 2 Collect ALL Data in the Time Window_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md

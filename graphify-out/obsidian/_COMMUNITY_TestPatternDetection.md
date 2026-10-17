@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 19
 ---
 
 # TestPatternDetection
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -39,7 +37,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_SubagentGovernance]]
-- 4 edges to [[_COMMUNITY_GovernanceAction_1]]
+- 4 edges to [[_COMMUNITY_GovernanceAction (2)]]
 - 3 edges to [[_COMMUNITY_GovernanceAction]]
 
 ## Top bridge nodes

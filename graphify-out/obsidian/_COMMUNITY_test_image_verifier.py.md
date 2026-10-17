@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 19
 ---
 
 # test_image_verifier.py
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -38,8 +36,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AsyncMock_1]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 
 ## Top bridge nodes
 - [[verify_images()]] - degree 7, connects to 1 community

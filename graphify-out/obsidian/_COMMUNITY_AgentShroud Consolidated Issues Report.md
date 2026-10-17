@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 19
 ---
 
 # AgentShroud Consolidated Issues Report
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -38,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🟠 HIGH Security & Logic Issues]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
 - 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0]]
 
 ## Top bridge nodes

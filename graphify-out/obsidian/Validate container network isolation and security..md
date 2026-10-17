@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "validate_network_security"
+community: "AlertDispatcher"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/AlertDispatcher
 ---
 
 # Validate container network isolation and security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/validate_network_security
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

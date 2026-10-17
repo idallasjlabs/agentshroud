@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.09
 members: 25
 ---
 
 # AuditStore
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 25 nodes
 
 ## Members
-- [[dot-__init__()_121]] - code - gateway/security/audit_store.py
+- [[dot-__init__()_125]] - code - gateway/security/audit_store.py
 - [[dot-close()_11]] - code - gateway/security/audit_store.py
 - [[dot-get_recent_entries()_1]] - code - gateway/security/audit_store.py
-- [[dot-get_stats()_9]] - code - gateway/security/audit_store.py
-- [[dot-initialize()_3]] - code - gateway/security/audit_store.py
+- [[dot-get_stats()_11]] - code - gateway/security/audit_store.py
+- [[dot-initialize()_2]] - code - gateway/security/audit_store.py
 - [[dot-query_events()]] - code - gateway/security/audit_store.py
 - [[dot-store()_1]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
@@ -46,16 +44,15 @@ SORT file.name ASC
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_AuditEvent]]
 - 8 edges to [[_COMMUNITY_AuditExporter]]
-- 4 edges to [[_COMMUNITY_Mac App Discovery Skill_1]]
-- 4 edges to [[_COMMUNITY_AuditExporter_2]]
-- 3 edges to [[_COMMUNITY_AuditExporter_1]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager_8]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 4 edges to [[_COMMUNITY_AuditExporter (3)]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 3 edges to [[_COMMUNITY_AuditExporter (2)]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_archive_old_events]]
 
 ## Top bridge nodes
-- [[AuditStore]] - degree 36, connects to 9 communities
+- [[AuditStore]] - degree 36, connects to 8 communities
 - [[test_audit_export.py]] - degree 8, connects to 4 communities
 - [[TestAuditStoreBotId]] - degree 13, connects to 3 communities
 - [[dot-query_events()]] - degree 4, connects to 1 community

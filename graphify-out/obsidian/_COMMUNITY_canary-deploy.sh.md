@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.57
 members: 7
 ---
 
 # canary-deploy.sh
 
-**Cohesion:** 0.57 - moderately connected
 **Members:** 7 nodes
 
 ## Members
@@ -15,7 +13,7 @@ members: 7
 - [[deploy_ref()]] - code - scripts/canary-deploy.sh
 - [[die()_1]] - code - scripts/canary-deploy.sh
 - [[log()_2]] - code - scripts/canary-deploy.sh
-- [[run()]] - code - scripts/canary-deploy.sh
+- [[run()_1]] - code - scripts/canary-deploy.sh
 - [[run_in_repo()]] - code - scripts/canary-deploy.sh
 
 ## Live Query (requires Dataview plugin)

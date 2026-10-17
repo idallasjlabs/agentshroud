@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 26
 ---
 
 # AgentShroud Setup Guide
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -23,11 +21,11 @@ members: 26
 - [[Important Notes_1]] - document - docs/setup/setup-guide.md
 - [[Optional Requirements]] - document - docs/setup/setup-guide.md
 - [[Performance Issues_1]] - document - docs/setup/setup-guide.md
-- [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
+- [[Port Already in Use]] - document - docs/setup/setup-guide.md
 - [[Prerequisites_5]] - document - docs/setup/setup-guide.md
 - [[Production Checklist]] - document - docs/setup/setup-guide.md
 - [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
-- [[Security Testing_1]] - document - docs/setup/setup-guide.md
+- [[Security Testing]] - document - docs/setup/setup-guide.md
 - [[Security Verification]] - document - docs/setup/setup-guide.md
 - [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
 - [[Supported Platforms]] - document - docs/setup/setup-guide.md
@@ -45,11 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Step-by-Step Installation]]
 - 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_apply-patches.js_2]]
-- 1 edge to [[_COMMUNITY_Step-by-Step Installation]]
 - 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 - 1 edge to [[_COMMUNITY_Update AgentShroud]]
 
 ## Top bridge nodes
-- [[AgentShroud Setup Guide]] - degree 12, connects to 5 communities
+- [[AgentShroud Setup Guide]] - degree 12, connects to 4 communities

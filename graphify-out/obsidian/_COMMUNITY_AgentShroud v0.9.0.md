@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 42
 ---
 
 # AgentShroud v0.9.0
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 42 nodes
 
 ## Members
@@ -45,8 +43,8 @@ members: 42
 - [[9.2 Regression Triggers]] - document - docs/testing/test-plan.md
 - [[Adversarial Red-Team  Blue-Team Assessment]] - document - docs/testing/test-coverage-report.md
 - [[AgentShroud v0.9.0]] - document - docs/testing/test-plan.md
-- [[AgentShroud v1.3.0_1]] - document - docs/testing/test-coverage-report.md
-- [[Executive Summary_3]] - document - docs/testing/test-coverage-report.md
+- [[AgentShroud v1.3.0]] - document - docs/testing/test-coverage-report.md
+- [[Executive Summary_2]] - document - docs/testing/test-coverage-report.md
 - [[How to regenerate this report accurately]] - document - docs/testing/test-coverage-report.md
 - [[Test Coverage Report]] - document - docs/testing/test-coverage-report.md
 - [[Test Plan]] - document - docs/testing/test-plan.md

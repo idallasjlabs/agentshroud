@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.31
 members: 9
 ---
 
 # TestIsContainerRunning
 
-**Cohesion:** 0.31 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[dot-__init__()_20]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-__init__()_31]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-_patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-read()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
@@ -28,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_7]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
 
 ## Top bridge nodes
 - [[TestIsContainerRunning]] - degree 6, connects to 1 community

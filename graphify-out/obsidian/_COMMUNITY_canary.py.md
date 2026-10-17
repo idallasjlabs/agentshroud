@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # canary.py
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -17,9 +15,9 @@ members: 14
 - [[Key Classes  Functions_40]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Operational Notes_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Purpose_169]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Related_44]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Purpose_161]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Related_43]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Threat Model_24]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[canary.py_2]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[canary.py_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md

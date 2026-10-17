@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 25
 ---
 
 # test_anthropic_openai_translator.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 25 nodes
 
 ## Members
@@ -44,9 +42,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_anthropic_openai_translator.py_2]]
-- 6 edges to [[_COMMUNITY_test_anthropic_openai_translator.py_1]]
-- 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py_2]]
+- 7 edges to [[_COMMUNITY_test_anthropic_openai_translator.py (3)]]
+- 6 edges to [[_COMMUNITY_test_anthropic_openai_translator.py (2)]]
+- 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py (3)]]
 - 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py]]
 
 ## Top bridge nodes

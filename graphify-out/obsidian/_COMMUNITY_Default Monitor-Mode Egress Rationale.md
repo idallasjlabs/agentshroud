@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.60
 members: 5
 ---
 
 # Default Monitor-Mode Egress Rationale
 
-**Cohesion:** 0.60 - moderately connected
 **Members:** 5 nodes
 
 ## Members

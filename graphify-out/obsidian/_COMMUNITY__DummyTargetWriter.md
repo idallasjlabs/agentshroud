@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.18
 members: 13
 ---
 
 # _DummyTargetWriter
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[dot-__init__()_180]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_181]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_182]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_183]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-readline()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-write()_3]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -33,7 +31,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 3 edges to [[_COMMUNITY_ProxyAction]]
+- 3 edges to [[_COMMUNITY_WebProxy]]
 - 3 edges to [[_COMMUNITY_WebProxyConfig]]
 
 ## Top bridge nodes

@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.06
 members: 35
 ---
 
 # TestEgressTelegramNotify
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 35 nodes
 
 ## Members
 - [[dot-notifier()]] - code - gateway/tests/test_egress_telegram_notify.py
 - [[dot-test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
 - [[dot-test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_cleanup_expired_requests()]] - code - gateway/tests/test_egress_telegram_notify.py
 - [[dot-test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
 - [[dot-test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
 - [[dot-test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py

@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # MCP Tools Usage (MCPM)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[MCP Tools Usage (MCPM)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Purpose_42]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Related Skills_31]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Usage_34]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Purpose_52]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Related Skills_39]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Usage_43]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[openclawskillsi-mcpmREADME]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 21
 ---
 
 # Security Modules (58)
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -26,7 +24,7 @@ members: 21
 - [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
 - [[Security Modules (58)]] - document - docs/security/security-inventory.md
 - [[Security Test Files (38)]] - document - docs/security/security-inventory.md
-- [[Summary_18]] - document - docs/security/security-inventory.md
+- [[Summary_15]] - document - docs/security/security-inventory.md
 - [[Supply Chain & Browser (2)]] - document - docs/security/security-inventory.md
 - [[Testing Checklist_1]] - document - docs/security/security-inventory.md
 - [[security-inventory]] - document - docs/security/security-inventory.md

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # OKE Channel — CPA Exam Context
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -28,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_2]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (3)]]
 - 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (SKILL)]]
 
 ## Top bridge nodes

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 34
 ---
 
 # ADR-006: Multi-Runtime Container Support
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 34 nodes
 
 ## Members
@@ -23,7 +21,7 @@ members: 34
 - [[Colima as primary macOS dev runtime]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
 - [[Consequences]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
 - [[Context_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Decision_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Decision_2]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
 - [[Docker Desktop (network topology diagram)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
 - [[Fix (Colima)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
 - [[Fix (Docker Desktop)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md

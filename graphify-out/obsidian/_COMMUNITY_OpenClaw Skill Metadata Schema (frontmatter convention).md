@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 22
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter convention)
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 22 nodes
 
 ## Members

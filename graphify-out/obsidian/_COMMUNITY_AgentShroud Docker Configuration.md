@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 37
 ---
 
 # AgentShroud Docker Configuration
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -42,8 +40,8 @@ members: 37
 - [[Startup Warnings Reference]] - document - docker/README.md
 - [[Stop the Stack]] - document - docker/README.md
 - [[Test Chat]] - document - docker/README.md
-- [[Troubleshooting_10]] - document - docker/README.md
-- [[Usage_52]] - document - docker/README.md
+- [[Troubleshooting_9]] - document - docker/README.md
+- [[Usage_56]] - document - docker/README.md
 - [[Verify Security]] - document - docker/README.md
 - [[View Logs]] - document - docker/README.md
 - [[dockerREADME]] - document - docker/README.md

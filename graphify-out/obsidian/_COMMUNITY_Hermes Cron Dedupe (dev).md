@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 14
 ---
 
 # Hermes Cron Dedupe (dev)
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -34,7 +32,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Local-Model Job Quality Matrix]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal_1]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal (2)]]
 
 ## Top bridge nodes
 - [[Sunday Upgrade 2026-09-14 (dev)]] - degree 4, connects to 2 communities

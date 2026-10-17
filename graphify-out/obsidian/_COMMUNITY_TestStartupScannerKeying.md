@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.25
 members: 16
 ---
 
 # TestStartupScannerKeying
 
-**Cohesion:** 0.25 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -36,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 
 ## Top bridge nodes
 - [[TestStartupScannerKeying]] - degree 11, connects to 2 communities

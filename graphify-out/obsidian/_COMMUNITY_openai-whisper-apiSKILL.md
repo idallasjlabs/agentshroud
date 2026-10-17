@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 13
 ---
 
 # openai-whisper-api/SKILL.md
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -22,7 +20,7 @@ members: 13
 - [[sagSKILL]] - document - skills/openclaw/sag/SKILL.md
 - [[transcribe.sh]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
 - [[transcribe.sh script]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
-- [[usage()_8]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[usage()_7]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
 
 ## Live Query (requires Dataview plugin)
 

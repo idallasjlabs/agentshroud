@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 30
 ---
 
 # TestNewPatternsV080
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 30 nodes
 
 ## Members

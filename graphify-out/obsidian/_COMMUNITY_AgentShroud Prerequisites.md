@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 26
 ---
 
 # AgentShroud Prerequisites
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -15,15 +13,15 @@ members: 26
 - [[AgentShroud Prerequisites]] - document - docs/reference/PREREQUISITES.md
 - [[Annually]] - document - docs/reference/PREREQUISITES.md
 - [[Base Images]] - document - docs/reference/PREREQUISITES.md
-- [[Common Issues_2]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
+- [[Common Issues_1]] - document - docs/reference/PREREQUISITES.md
+- [[Configuration_6]] - document - docs/reference/PREREQUISITES.md
 - [[Monthly]] - document - docs/reference/PREREQUISITES.md
 - [[Network Security]] - document - docs/reference/PREREQUISITES.md
-- [[Overview_12]] - document - docs/reference/PREREQUISITES.md
+- [[Overview_11]] - document - docs/reference/PREREQUISITES.md
 - [[Quarterly]] - document - docs/reference/PREREQUISITES.md
 - [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
 - [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_3]] - document - docs/reference/PREREQUISITES.md
+- [[Verification_2]] - document - docs/reference/PREREQUISITES.md
 - [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
 - [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
 - [[🆘 Troubleshooting_1]] - document - docs/reference/PREREQUISITES.md

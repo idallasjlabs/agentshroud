@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 17
 ---
 
 # AgentShroud — Master Feature List (Everything Ever Mentioned)
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -24,7 +22,7 @@ members: 17
 - [[Infrastructure_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_20]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_17]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 

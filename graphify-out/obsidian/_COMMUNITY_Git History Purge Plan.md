@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 15
 ---
 
 # Git History Purge Plan
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -34,12 +32,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 - 1 edge to [[_COMMUNITY_Security Implementation Verification]]
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
 - 1 edge to [[_COMMUNITY_Security Verification Report]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
 
 ## Top bridge nodes
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - degree 6, connects to 4 communities

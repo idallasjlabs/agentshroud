@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # Kill Switch Procedure
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -21,7 +19,7 @@ members: 13
 - [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_65]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Related Notes_61]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[When to Use_3]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 
 ## Live Query (requires Dataview plugin)

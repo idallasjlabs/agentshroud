@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 25
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members

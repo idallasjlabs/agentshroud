@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 44
 ---
 
 # TestNormalizeForSpeech
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members

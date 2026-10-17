@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 28
 ---
 
 # test_soc_egress_endpoints.py
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 28 nodes
 
 ## Members

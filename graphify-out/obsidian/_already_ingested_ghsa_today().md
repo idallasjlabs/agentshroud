@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[datetime_1]] - `references` [EXTRACTED]
+- [[datetime_5]] - `references` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

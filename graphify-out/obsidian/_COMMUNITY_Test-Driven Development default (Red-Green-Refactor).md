@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Test-Driven Development default (Red-Green-Refactor)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

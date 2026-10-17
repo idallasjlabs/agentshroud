@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 33
 ---
 
 # AgentShroud Documentation
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 33 nodes
 
 ## Members

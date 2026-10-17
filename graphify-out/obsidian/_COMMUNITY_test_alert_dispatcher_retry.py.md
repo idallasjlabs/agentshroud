@@ -1,19 +1,15 @@
 ---
 type: community
-cohesion: 0.31
-members: 10
+members: 8
 ---
 
 # test_alert_dispatcher_retry.py
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 10 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Path_7]] - code - gateway/tests/test_alert_dispatcher_retry.py
 - [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
 - [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[dispatcher()]] - code - gateway/tests/test_alert_dispatcher_retry.py
 - [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
 - [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
 - [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
@@ -29,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
 - [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community
-- [[dispatcher()]] - degree 3, connects to 1 community
-- [[Path_7]] - degree 2, connects to 1 community

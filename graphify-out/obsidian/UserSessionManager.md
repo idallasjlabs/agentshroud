@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # UserSessionManager
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_132]] - `calls` [EXTRACTED]
-- [[dot-__init__()_156]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_86]] - `calls` [EXTRACTED]
+- [[dot-__init__()_85]] - `method` [EXTRACTED]
 - [[dot-_load_sessions()]] - `method` [EXTRACTED]
 - [[dot-_save_sessions()]] - `method` [EXTRACTED]
 - [[dot-_session_key()]] - `method` [EXTRACTED]
@@ -33,8 +33,8 @@ tags:
 - [[dot-list_sessions_for_user()]] - `method` [EXTRACTED]
 - [[dot-middleware_manager()]] - `calls` [EXTRACTED]
 - [[dot-reanchor_system_prompt()]] - `method` [EXTRACTED]
-- [[dot-session_manager()]] - `calls` [EXTRACTED]
 - [[dot-session_manager()_1]] - `calls` [EXTRACTED]
+- [[dot-session_manager()]] - `calls` [EXTRACTED]
 - [[dot-test_complete_user_isolation()]] - `calls` [EXTRACTED]
 - [[dot-test_lazy_migration_copies_legacy_memory()]] - `calls` [EXTRACTED]
 - [[dot-test_legacy_session_promoted_on_load()]] - `calls` [EXTRACTED]
@@ -43,20 +43,20 @@ tags:
 - [[dot-test_owner_admin_access()]] - `calls` [EXTRACTED]
 - [[dot-test_session_persistence()]] - `calls` [EXTRACTED]
 - [[dot-update_user_trust_level()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
-- [[Any_50]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Any_33]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FastAPI]] - `uses` [INFERRED]
-- [[LogRecord]] - `uses` [INFERRED]
+- [[LogRecord_2]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_37]] - `uses` [INFERRED]
+- [[Path_19]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[Test File Sandbox Message Gate Suite]] - `references` [EXTRACTED]
 - [[TestAccessControl]] - `uses` [INFERRED]
@@ -94,7 +94,7 @@ tags:
 - [[TestMembersShareGroupWorkspace]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityRegistration]] - `uses` [INFERRED]
 - [[TestMergedMemory]] - `uses` [INFERRED]
-- [[TestMetadataGuard_1]] - `uses` [INFERRED]
+- [[TestMetadataGuard]] - `uses` [INFERRED]
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
 - [[TestMultiBotIsolation]] - `uses` [INFERRED]
@@ -107,7 +107,7 @@ tags:
 - [[TestProcessRequestRBAC]] - `uses` [INFERRED]
 - [[TestProcessToolResult]] - `uses` [INFERRED]
 - [[TestScanToolResult]] - `uses` [INFERRED]
-- [[TestSerialization_1]] - `uses` [INFERRED]
+- [[TestSerialization]] - `uses` [INFERRED]
 - [[TestSessionContext]] - `uses` [INFERRED]
 - [[TestSessionIsolation]] - `uses` [INFERRED]
 - [[TestSessionIsolationEndToEnd]] - `uses` [INFERRED]
@@ -124,17 +124,17 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
+- [[_FakeRBAC]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[mgr()_1]] - `calls` [EXTRACTED]
+- [[mgr()]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
-- [[session_manager()_2]] - `calls` [EXTRACTED]
-- [[session_manager()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[session_manager()_4]] - `calls` [EXTRACTED]
+- [[session_manager()_1]] - `calls` [EXTRACTED]
 - [[session_manager()_3]] - `calls` [EXTRACTED]
+- [[session_manager()_2]] - `calls` [EXTRACTED]
 - [[session_manager.py]] - `contains` [EXTRACTED]
 - [[session_mgr()]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `imports` [EXTRACTED]
@@ -150,4 +150,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/RBACConfig

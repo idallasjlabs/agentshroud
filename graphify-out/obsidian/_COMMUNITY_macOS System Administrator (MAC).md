@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # macOS System Administrator (MAC)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[dot-agentsskillsi-macREADME]] - document - .agents/skills/i-mac/README.md
-- [[Purpose_18]] - document - .agents/skills/i-mac/README.md
-- [[Related Skills_7]] - document - .agents/skills/i-mac/README.md
-- [[Usage_10]] - document - .agents/skills/i-mac/README.md
+- [[Purpose_22]] - document - .agents/skills/i-mac/README.md
+- [[Related Skills_9]] - document - .agents/skills/i-mac/README.md
+- [[Usage_13]] - document - .agents/skills/i-mac/README.md
 - [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)

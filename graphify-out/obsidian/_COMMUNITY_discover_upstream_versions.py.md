@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.06
-members: 52
+members: 50
 ---
 
 # discover_upstream_versions.py
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 52 nodes
+**Members:** 50 nodes
 
 ## Members
 - [[dot-test_gives_up_after_attempts_and_reraises_last_error()]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -23,8 +21,7 @@ members: 52
 - [[dot-test_returns_value_when_fn_finishes_in_time()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_single_attempt_never_sleeps()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[A fetch that never returns must not hang the unattended run. 2026-10-16 the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[All published versions of an npm package (via the npm CLI).]] - rationale - scripts/discover_upstream_versions.py
-- [[Any_54]] - code
+- [[Any_7]] - code
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all…]] - rationale - scripts/discover_upstream_versions.py
 - [[Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…]] - rationale - scripts/discover_upstream_versions.py
 - [[One attempt of ``fetch`` hard-bounded, IPv4-only after the first failure.]] - rationale - scripts/discover_upstream_versions.py
@@ -48,7 +45,6 @@ members: 52
 - [[discover() applies the retry to both sources, independently.]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[discover_upstream_versions.py]] - code - scripts/discover_upstream_versions.py
 - [[fetch_dockerhub_tags()]] - code - scripts/discover_upstream_versions.py
-- [[fetch_npm_versions()]] - code - scripts/discover_upstream_versions.py
 - [[flaky()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[fn()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[hub()]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -56,7 +52,7 @@ members: 52
 - [[hub()_2]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[hub()_3]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[is_stable]] - code - scripts/discover_upstream_versions.py
-- [[main()_1]] - code - scripts/discover_upstream_versions.py
+- [[main()]] - code - scripts/discover_upstream_versions.py
 - [[npm()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[pick_latest_hermes_tag]] - code - scripts/discover_upstream_versions.py
 - [[pick_latest_stable]] - code - scripts/discover_upstream_versions.py
@@ -71,12 +67,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_UserSessionManager_6]]
+- 8 edges to [[_COMMUNITY_UserSessionManager (4)]]
 - 5 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 4 edges to [[_COMMUNITY_pick_latest_stable]]
-- 3 edges to [[_COMMUNITY_egress_filter.py_4]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager_3]]
-- 2 edges to [[_COMMUNITY_UserSessionManager_7]]
+- 3 edges to [[_COMMUNITY_egress_filter.py (4)]]
+- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (5)]]
 - 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 - 1 edge to [[_COMMUNITY_plan_remediation]]
 

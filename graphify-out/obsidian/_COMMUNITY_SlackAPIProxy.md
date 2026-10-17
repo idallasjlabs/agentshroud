@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.19
 members: 23
 ---
 
 # SlackAPIProxy
 
-**Cohesion:** 0.19 - loosely connected
 **Members:** 23 nodes
 
 ## Members
 - [[dot-test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
-- [[Any_71]] - code - gateway/soc/event_adapter.py
+- [[Any_48]] - code - gateway/soc/event_adapter.py
 - [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
 - [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
@@ -23,7 +21,7 @@ members: 23
 - [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
 - [[SecurityEvent]] - code - gateway/soc/event_adapter.py
 - [[SecurityEvent_1]] - code - gateway/soc/models.py
-- [[Severity_7]] - code - gateway/soc/event_adapter.py
+- [[Severity_2]] - code - gateway/soc/event_adapter.py
 - [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
 - [[_map_severity()]] - code - gateway/soc/event_adapter.py
 - [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
@@ -42,17 +40,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 8 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 5 edges to [[_COMMUNITY_test_soc_bots.py]]
 - 4 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 4 edges to [[_COMMUNITY__FakeRBAC_1]]
 - 3 edges to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY__FakeRBAC]]
 - 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
 - [[SecurityEvent_1]] - degree 20, connects to 5 communities
-- [[event_adapter.py]] - degree 11, connects to 3 communities
 - [[collect_recent_events()]] - degree 10, connects to 3 communities
-- [[Any_71]] - degree 9, connects to 1 community
+- [[event_adapter.py]] - degree 11, connects to 2 communities
+- [[Any_48]] - degree 9, connects to 1 community
 - [[SecurityEvent]] - degree 8, connects to 1 community

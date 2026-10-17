@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "_FakeRBAC"
+community: "TestToolChainAnalyzer"
 location: "L14"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/TestToolChainAnalyzer
 ---
 
 # UserRole
 
 ## Connections
-- [[ContributorRecord_1]] - `uses` [INFERRED]
+- [[ContributorRecord]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole]] - `uses` [INFERRED]
 - [[_role_enum()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer

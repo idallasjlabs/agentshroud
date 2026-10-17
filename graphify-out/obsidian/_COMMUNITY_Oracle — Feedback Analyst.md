@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # Oracle — Feedback Analyst
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 13
 - [[Oracle — Feedback Analyst_3]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Output Format_30]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Persona_12]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Purpose_176]] - document - .agents/skills/i-oracle/README.md
+- [[Purpose_175]] - document - .agents/skills/i-oracle/README.md
 - [[Quality Checklist_15]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Related Skills_115]] - document - .agents/skills/i-oracle/README.md
 - [[Role_79]] - document - .agents/skills/i-oracle/SKILL.md

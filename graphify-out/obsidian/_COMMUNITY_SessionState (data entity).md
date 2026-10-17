@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SessionState (data entity)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

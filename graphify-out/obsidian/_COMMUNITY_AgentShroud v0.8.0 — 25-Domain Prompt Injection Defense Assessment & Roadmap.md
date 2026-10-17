@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -33,7 +31,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_DELIVERABLE 3 — v0.8.0 Implementation Items]]
 - 1 edge to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
-- 1 edge to [[_COMMUNITY_Output Sections (ALL required)_1]]
+- 1 edge to [[_COMMUNITY_Output Sections (ALL required) (2)]]
 
 ## Top bridge nodes
 - [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - degree 11, connects to 3 communities

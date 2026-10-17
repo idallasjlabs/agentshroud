@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 23
 ---
 
 # AgentShroud Security Hardening Plan
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -14,7 +12,7 @@ members: 23
 - [[Architecture_7]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Endpoints_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Endpoints]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[Execution Order]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[FINAL Network Lockdown Activation ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[GitHub Workflow]] - document - docs/planning/v0.8/SECURITY_PLAN.md

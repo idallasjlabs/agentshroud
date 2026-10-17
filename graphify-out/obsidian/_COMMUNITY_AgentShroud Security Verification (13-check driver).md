@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.23
 members: 14
 ---
 
 # AgentShroud Security Verification (13-check driver)
 
-**Cohesion:** 0.23 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -33,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_InjectionAction_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
 
 ## Top bridge nodes
 - [[SecureClaw Security Review (SEC)]] - degree 3, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 35
 ---
 
 # Browser — Secure Browser Automation (SKILL)
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 35 nodes
 
 ## Members
@@ -41,9 +39,9 @@ members: 35
 - [[browser-fetch package.json_3]] - document - .agents/skills/i-browser/package.json
 - [[browser-fetch package.json_2]] - code - docker/config/openclaw/skills/i-browser/package.json
 - [[browserFetch()_3]] - code - .agents/skills/i-browser/browse.js
-- [[fs_5]] - code - .agents/skills/i-browser/browse.js
+- [[fs_4]] - code - .agents/skills/i-browser/browse.js
 - [[main() CLI entrypoint]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[path_22]] - code - .agents/skills/i-browser/browse.js
+- [[path_20]] - code - .agents/skills/i-browser/browse.js
 - [[{ chromium }_3]] - code - .agents/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)

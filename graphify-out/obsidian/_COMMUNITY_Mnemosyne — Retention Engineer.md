@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # Mnemosyne — Retention Engineer
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 13
 - [[Mnemosyne — Retention Engineer_3]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[Output Format_29]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[Persona_11]] - document - .agents/skills/i-mnemosyne/SKILL.md
-- [[Purpose_175]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Purpose_174]] - document - .agents/skills/i-mnemosyne/README.md
 - [[Quality Checklist_14]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[Related Skills_114]] - document - .agents/skills/i-mnemosyne/README.md
 - [[Role_78]] - document - .agents/skills/i-mnemosyne/SKILL.md

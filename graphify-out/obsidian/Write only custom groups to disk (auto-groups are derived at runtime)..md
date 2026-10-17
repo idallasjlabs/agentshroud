@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (2)"
 location: "L337"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_2
 ---
 
 # Write only custom groups to disk (auto-groups are derived at runtime).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_persist_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2

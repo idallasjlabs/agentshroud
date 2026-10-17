@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # mcp_inspector.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -21,10 +19,10 @@ members: 15
 - [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[Purpose_142]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Related_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Related_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 
 ## Live Query (requires Dataview plugin)
 

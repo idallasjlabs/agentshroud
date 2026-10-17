@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.07
 members: 41
 ---
 
 # SlackSocketClient
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 41 nodes
 
 ## Members
-- [[dot-__init__()_66]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-__init__()_68]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-run()_1]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-stop()_5]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-run()]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-stop()_4]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
 - [[dot-test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py
 - [[dot-test_first_attempt_uses_base()]] - code - gateway/tests/test_slack_socket_client.py
@@ -60,8 +58,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AsyncMock_1]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_AsyncMock (2)]]
 
 ## Top bridge nodes
 - [[SlackSocketClient]] - degree 13, connects to 1 community

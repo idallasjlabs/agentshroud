@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 23
 ---
 
 # AgentShroud™ Telegram-Reported Issues
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[1. Anthropic API Credits & Rate Limits]] - document - docs/project/TELEGRAM_ISSUES.md
@@ -17,12 +15,21 @@ members: 14
 - [[13. Hallucination in Competitor Reports]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[2. Bot Startup Crash-Loops (Config Errors)]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[3. 1Password Session Expiry (`op-proxy`)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
 - [[4. SSH Key Regeneration on Restart]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
+- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[8. Colima  Docker Stability (Marvin)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
 - [[9. Glibc TLS Incompatibility (Trillian)]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[AgentShroud™ Telegram-Reported Issues]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[🔴 CRITICAL System Blockers]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[🔵 LOW User Experience & Documentation]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
 - [[🟡 MEDIUM Infrastructure & Deployment]] - document - docs/project/TELEGRAM_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
@@ -34,7 +41,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_🟠 HIGH Security & Logic Issues]]
+- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
 
 ## Top bridge nodes
-- [[AgentShroud™ Telegram-Reported Issues]] - degree 5, connects to 2 communities
+- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 1 community
+- [[AgentShroud™ Telegram-Reported Issues]] - degree 5, connects to 1 community

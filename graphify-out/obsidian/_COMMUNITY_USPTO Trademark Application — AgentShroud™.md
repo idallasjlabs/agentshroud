@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # USPTO Trademark Application — AgentShroud™
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members

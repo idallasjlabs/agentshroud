@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 33
 ---
 
 # test_llm_proxy_failover.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 33 nodes
 
 ## Members
@@ -19,7 +17,7 @@ members: 33
 - [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[make_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
@@ -53,9 +51,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_AgentTarget_1]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
 - [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
-- [[make_proxy()]] - degree 24, connects to 1 community
+- [[make_proxy()_1]] - degree 24, connects to 1 community
 - [[LLMProxy_1]] - degree 2, connects to 1 community

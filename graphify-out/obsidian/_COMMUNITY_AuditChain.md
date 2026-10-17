@@ -1,49 +1,74 @@
 ---
 type: community
-cohesion: 0.04
-members: 97
+members: 158
 ---
 
 # AuditChain
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 97 nodes
+**Members:** 158 nodes
 
 ## Members
-- [[dot-__init__()_168]] - code - gateway/security/instruction_envelope.py
+- [[dot-__init__()_71]] - code - gateway/proxy/pipeline.py
+- [[dot-__init__()_70]] - code - gateway/security/instruction_envelope.py
+- [[dot-__init__()_69]] - code - gateway/security/key_vault.py
+- [[dot-__len__()]] - code - gateway/proxy/pipeline.py
+- [[dot-_blocking_prompt_guard()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-_compute_signature()]] - code - gateway/security/instruction_envelope.py
+- [[dot-_make_vault_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-_passthrough_pii()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-_pipeline_with_trust()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-_redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-entries()]] - code - gateway/proxy/pipeline.py
+- [[dot-last_hash()]] - code - gateway/proxy/pipeline.py
 - [[dot-sign()]] - code - gateway/security/instruction_envelope.py
+- [[dot-test_append_chain()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_append_owner_bypass_persists_high_severity()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_append_single()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_blocked_request_decays_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_blocked_request_propagates_to_cross_bot_peer()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_chain_continuity_preserved_across_wrap()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_clean_message_passes()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_clean_request_does_not_touch_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_clean_response_passes_unchanged()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_content_hash_deterministic()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_context_guard_error_fails_closed()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_critical_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_default_window_is_10k()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_detect_api_key_patterns()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_detect_key_in_outbound()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_detector_failure_fails_closed_for_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_different_content_different_hash()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
 - [[dot-test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_entries_returns_copy()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_envelope_metadata_in_audit_entry()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
 - [[dot-test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
+- [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_genesis()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_high_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_high_score_forwards_and_records()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_key_leak_increments_sanitized_stat_and_audits()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_leak_detection_logged()]] - code - gateway/tests/test_key_vault.py
 - [[dot-test_lockdown_block_is_audited()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_lockdown_score_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_lockdown_score_blocks_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_metadata()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_missing_trust_manager_does_not_raise()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_no_context_guard_passes_through()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_no_leak_clean_message()]] - code - gateway/tests/test_key_vault.py
 - [[dot-test_no_outbound_filter_does_not_unbind()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_no_scorer_leaves_result_unscored()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_no_signer_leaves_envelope_empty()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_non_owner_block_does_not_emit_owner_bypass()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_non_owner_inbound_query_still_redacted()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_outbound_response_is_signed_and_verifiable()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_owner_bypass_audited_at_every_guard()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_owner_bypass_is_recorded_in_audit_chain()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_owner_exempted_block_does_not_decay_trust()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_owner_inbound_query_not_pii_redacted()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_persisted_event_records_true_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_repetition_attack_does_not_block()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_scorer_error_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_scorer_error_fails_closed_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
@@ -51,15 +76,28 @@ members: 97
 - [[dot-test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
 - [[dot-test_signer_failure_never_blocks()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_skip_context_guard_bypasses_step0()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_standard_trust_tool_result_injection_is_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_stored_key_value_redacted_from_outbound()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_tamper_in_retained_window_detected()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
 - [[dot-test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
 - [[dot-test_tool_result_uses_wrap_tool_result()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_untrusted_tool_result_injection_is_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_unwrapped_chain_must_anchor_at_genesis()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_chain_valid_after_wrap()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_tampered_chain_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_tampered_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_valid()]] - code - gateway/tests/test_pipeline_unit.py
 - [[dot-test_warn_zone_forwards()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-verify()_1]] - code - gateway/security/instruction_envelope.py
+- [[dot-test_window_capped_at_max_entries()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-total_appended()]] - code - gateway/proxy/pipeline.py
+- [[dot-verify()]] - code - gateway/security/instruction_envelope.py
 - [[dot-wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
 - [[dot-wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
 - [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[A self-consistent window on a forged anchor must fail when the         chain nev]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
+- [[AuditChain]] - code - gateway/proxy/pipeline.py
 - [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
 - [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
@@ -68,7 +106,10 @@ members: 97
 - [[EnvelopeSigner]] - code - gateway/security/instruction_envelope.py
 - [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
+- [[KeyLeakDetector]] - code - gateway/security/key_vault.py
+- [[KeyLeakDetector wiring — stored credential values must never leave the gateway.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
@@ -81,28 +122,46 @@ members: 97
 - [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
 - [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
-- [[ScanResult_4]] - code - gateway/security/prompt_guard.py
+- [[SHA-256 hash chain for tamper-evident audit logging.]] - rationale - gateway/proxy/pipeline.py
+- [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[ScanResult_2]] - code - gateway/security/prompt_guard.py
 - [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
+- [[Step 1.76 PromptGuard tool-result scan must respect user_trust_level.      CVE-2]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[TestAuditChain]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestAuditChainBounded]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestContextGuardInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestContextIntegrityInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
 - [[TestEnvelopeSignerInPipeline]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestKeyLeakDetection]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyLeakDetection_1]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestOutboundFilterResultBinding]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestPromptGuardToolResultTrustGate]] - code - gateway/tests/test_pipeline_unit.py
 - [[TestTrustViolationRecording]] - code - gateway/tests/test_pipeline_unit.py
+- [[Tests for the SHA-256 hash chain.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The in-memory window must be bounded; full history lives in SQLite.]] - rationale - gateway/tests/test_pipeline_unit.py
 - [[ThreatAction]] - code - gateway/security/prompt_guard.py
 - [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Verify empty audit chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify single-entry chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[_FakeAttack]] - code - gateway/tests/test_pipeline_unit.py
 - [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
 - [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_pipeline()_4]] - code - gateway/tests/test_pipeline_unit.py
+- [[_make_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
 - [[_make_signer_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
 - [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
 - [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
 - [[signer()]] - code - gateway/tests/test_instruction_envelope.py
 - [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_audit_chain_single_entry()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
 - [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
 - [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
@@ -116,29 +175,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 46 edges to [[_COMMUNITY_PipelineAction]]
-- 38 edges to [[_COMMUNITY_AgentTarget_2]]
-- 21 edges to [[_COMMUNITY_TrustConfig]]
-- 10 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 9 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 9 edges to [[_COMMUNITY_AsyncMock_1]]
-- 9 edges to [[_COMMUNITY_InjectionAction]]
-- 8 edges to [[_COMMUNITY_ContextSegment]]
-- 6 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor_1]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 76 edges to [[_COMMUNITY_PipelineAction]]
+- 42 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 29 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 18 edges to [[_COMMUNITY_WebProxyConfig]]
+- 15 edges to [[_COMMUNITY_TrustConfig]]
+- 14 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 12 edges to [[_COMMUNITY_AsyncMock]]
+- 9 edges to [[_COMMUNITY_ContextSegment]]
+- 7 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 6 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
-- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)_1]]
-- 1 edge to [[_COMMUNITY_CrossBotTrustLedger_1]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (4)]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger (2)]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig (3)]]
+- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
 
 ## Top bridge nodes
-- [[ThreatAction]] - degree 33, connects to 13 communities
-- [[test_pipeline_unit.py]] - degree 31, connects to 6 communities
-- [[_FakeAttack]] - degree 27, connects to 6 communities
-- [[TestContextGuardInPipeline]] - degree 27, connects to 6 communities
-- [[TestContextIntegrityInPipeline]] - degree 26, connects to 6 communities
+- [[AuditChain]] - degree 89, connects to 8 communities
+- [[ThreatAction]] - degree 33, connects to 8 communities
+- [[TestKeyLeakDetection_1]] - degree 24, connects to 6 communities
+- [[test_pipeline_unit.py]] - degree 31, connects to 5 communities
+- [[_FakeAttack]] - degree 27, connects to 5 communities

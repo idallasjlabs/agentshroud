@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # Telegram Bot Setup for OpenClaw
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 15
 - [[Important Notes_2]] - document - docs/setup/TELEGRAM_SETUP.md
 - [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
 - [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Next Steps_10]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Next Steps_9]] - document - docs/setup/TELEGRAM_SETUP.md
 - [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
 - [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
 - [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md

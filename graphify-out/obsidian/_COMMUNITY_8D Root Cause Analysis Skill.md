@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.67
 members: 4
 ---
 
 # 8D Root Cause Analysis Skill
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 4 nodes
 
 ## Members

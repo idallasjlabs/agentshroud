@@ -12,7 +12,7 @@ tags:
 # VERIFICATION_RESULTS.md
 
 ## Connections
-- [[Kill Switch_1]] - `references` [EXTRACTED]
+- [[Kill Switch]] - `references` [EXTRACTED]
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `conceptually_related_to` [AMBIGUOUS]
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]

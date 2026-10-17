@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 1.00
 members: 3
 ---
 
 # A2APolicyEngine (gateway/security/a2a_policy.py)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.31
 members: 9
 ---
 
 # Turbo Fieldfare (MLX inference backend)
 
-**Cohesion:** 0.31 - loosely connected
 **Members:** 9 nodes
 
 ## Members

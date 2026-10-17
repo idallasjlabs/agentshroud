@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 26
 ---
 
 # hermes/SOUL.md
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -21,10 +19,10 @@ members: 26
 - [[OpenClaw_3]] - concept - docker/config/hermes/SOUL.md
 - [[OpenClawAgentShroud Bot Identity]] - document - docker/config/hermes/agents/openclaw-identity.md
 - [[Owner_2]] - document - docker/config/hermes/SOUL.md
-- [[PII Sanitizer_2]] - concept - docker/config/hermes/SOUL.md
+- [[PII Sanitizer_1]] - concept - docker/config/hermes/SOUL.md
 - [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/hermes/SOUL.md
 - [[Security Reviewer Agent]] - document - docker/config/hermes/agents/i-security-reviewer.md
-- [[Trademark Notice_3]] - document - docker/config/hermes/SOUL.md
+- [[Trademark Notice_2]] - document - docker/config/hermes/SOUL.md
 - [[Your Role_2]] - document - docker/config/hermes/SOUL.md
 - [[agentshroud-gateway MCP proxy entry (disabled)]] - concept - docker/config/hermes/mcp/servers.json
 - [[agentshroud-ssh-exec.sh helper]] - concept - docker/config/hermes/SOUL.md
@@ -45,11 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 - 1 edge to [[_COMMUNITY_EgressFilter]]
 - 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 - 1 edge to [[_COMMUNITY_prompt_guard.py]]
-- 1 edge to [[_COMMUNITY_auth.py_1]]
+- 1 edge to [[_COMMUNITY_auth.py (2)]]
 
 ## Top bridge nodes
 - [[hermesSOUL]] - degree 15, connects to 4 communities

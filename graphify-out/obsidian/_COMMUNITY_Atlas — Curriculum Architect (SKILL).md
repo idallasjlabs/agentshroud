@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # Atlas — Curriculum Architect (SKILL)
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -26,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_1]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (2)]]
 - 1 edge to [[_COMMUNITY_OKE Channel — CPA Exam Context]]
 
 ## Top bridge nodes

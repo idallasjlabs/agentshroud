@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 20
 ---
 
 # AgentShroud v0.8.0 — Full Security & Functionality Audit
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members

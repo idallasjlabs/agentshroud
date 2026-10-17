@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 22
 ---
 
 # Safe Refactor Specialist
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members

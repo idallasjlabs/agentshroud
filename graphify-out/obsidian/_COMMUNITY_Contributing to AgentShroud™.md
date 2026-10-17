@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # Contributing to AgentShroud™
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -14,7 +12,7 @@ members: 16
 - [[Code of Conduct]] - document - CONTRIBUTING.md
 - [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
 - [[Development Setup]] - document - CONTRIBUTING.md
-- [[Implementation Status_3]] - document - scripts/README.md
+- [[Implementation Status_2]] - document - scripts/README.md
 - [[Maintenance Scripts]] - document - scripts/README.md
 - [[Pull Request Process]] - document - CONTRIBUTING.md
 - [[Questions_1]] - document - CONTRIBUTING.md

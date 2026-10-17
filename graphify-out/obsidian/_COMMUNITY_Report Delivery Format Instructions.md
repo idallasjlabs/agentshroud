@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 37
 ---
 
 # Report Delivery Format Instructions
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -56,7 +54,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Report Delivery Format Instructions_1]]
+- 5 edges to [[_COMMUNITY_Report Delivery Format Instructions (2)]]
 - 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
 
 ## Top bridge nodes

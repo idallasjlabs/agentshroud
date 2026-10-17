@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.10
 members: 27
 ---
 
 # AuditEvent
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[dot-__init__()_116]] - code - gateway/security/audit_store.py
+- [[dot-__init__()_121]] - code - gateway/security/audit_store.py
 - [[dot-_generate_event_id()]] - code - gateway/security/audit_store.py
 - [[dot-_get_latest_hash()]] - code - gateway/security/audit_store.py
 - [[dot-compute_content_hash()]] - code - gateway/security/audit_store.py
@@ -19,7 +17,7 @@ members: 27
 - [[dot-test_content_hash()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_event_creation()]] - code - gateway/tests/test_audit_export.py
-- [[dot-to_dict()_5]] - code - gateway/security/audit_store.py
+- [[dot-to_dict()_6]] - code - gateway/security/audit_store.py
 - [[dot-verify_hash_chain()]] - code - gateway/security/audit_store.py
 - [[AuditEvent_1]] - code - gateway/security/audit_store.py
 - [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
@@ -48,15 +46,16 @@ SORT file.name ASC
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_AuditStore]]
 - 6 edges to [[_COMMUNITY_AuditExporter]]
-- 4 edges to [[_COMMUNITY_AuditExporter_2]]
-- 2 edges to [[_COMMUNITY_InjectionAction_1]]
-- 2 edges to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_AuditExporter_1]]
+- 4 edges to [[_COMMUNITY_AuditExporter (3)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure (2)]]
+- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
 
 ## Top bridge nodes
 - [[AuditEvent_1]] - degree 25, connects to 4 communities
 - [[audit_export.py]] - degree 7, connects to 4 communities
+- [[audit_store.py]] - degree 6, connects to 4 communities
 - [[TestAuditEvent]] - degree 9, connects to 3 communities
-- [[audit_store.py]] - degree 6, connects to 3 communities
 - [[dot-log_event()]] - degree 5, connects to 1 community

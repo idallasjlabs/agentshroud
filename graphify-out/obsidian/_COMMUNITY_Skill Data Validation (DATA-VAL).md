@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.20
 members: 10
 ---
 
 # Skill: Data Validation (DATA-VAL)
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members

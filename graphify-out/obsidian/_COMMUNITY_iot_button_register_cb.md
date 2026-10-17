@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 6
 ---
 
 # iot_button_register_cb
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MCPPermissionManager"
+community: "test_soc_realtime_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _T
@@ -22,4 +22,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

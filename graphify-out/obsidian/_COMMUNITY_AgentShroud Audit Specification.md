@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 37
 ---
 
 # AgentShroud Audit Specification
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -33,7 +31,7 @@ members: 37
 - [[Hash Chain Structure]] - document - docs/security/audit-specification.md
 - [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
 - [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
-- [[Overview_5]] - document - docs/security/audit-specification.md
+- [[Overview_2]] - document - docs/security/audit-specification.md
 - [[Performance and Scalability]] - document - docs/security/audit-specification.md
 - [[Processing Activities Register]] - document - docs/security/audit-specification.md
 - [[Query API Specification]] - document - docs/security/audit-specification.md
@@ -56,8 +54,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_3]]
+- 2 edges to [[_COMMUNITY_system-requirements]]
 
 ## Top bridge nodes
 - [[AgentShroud Audit Specification]] - degree 8, connects to 1 community

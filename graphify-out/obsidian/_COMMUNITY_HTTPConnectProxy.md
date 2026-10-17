@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.07
 members: 81
 ---
 
 # HTTPConnectProxy
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 81 nodes
 
 ## Members
-- [[dot-__init__()_145]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_146]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_143]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_144]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_12]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_13]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-get_stats()_14]] - code - gateway/proxy/http_proxy.py
+- [[dot-get_stats()_13]] - code - gateway/proxy/http_proxy.py
 - [[dot-readline()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-start()_2]] - code - gateway/proxy/http_proxy.py
 - [[dot-stop()_11]] - code - gateway/proxy/http_proxy.py
@@ -100,25 +98,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_WebProxy]]
+- 39 edges to [[_COMMUNITY_WebProxy]]
 - 10 edges to [[_COMMUNITY_WebProxyConfig]]
 - 10 edges to [[_COMMUNITY__DummyTargetWriter]]
-- 9 edges to [[_COMMUNITY_ProxyAction]]
 - 6 edges to [[_COMMUNITY_dot-_process_connect]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 - 1 edge to [[_COMMUNITY_PortManager]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig_2]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
 - 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
 - 1 edge to [[_COMMUNITY_canvas_proxy_app]]
 - 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy_1]] - degree 93, connects to 15 communities
-- [[test_http_proxy_coverage.py]] - degree 53, connects to 4 communities
+- [[HTTPConnectProxy_1]] - degree 93, connects to 14 communities
+- [[test_http_proxy_coverage.py]] - degree 53, connects to 3 communities
 - [[HTTPConnectProxy]] - degree 36, connects to 3 communities
 - [[_MockWriter]] - degree 36, connects to 2 communities
 - [[StreamReader]] - degree 15, connects to 2 communities

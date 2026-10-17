@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.19
 members: 14
 ---
 
 # sync-llm-settings.sh
 
-**Cohesion:** 0.19 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -33,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Path_1]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
 
 ## Top bridge nodes
 - [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # 2. Security Value Audit — Real Protection vs. Theater Assessment
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 18
 ---
 
 # TestMCPResultEndpoint
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -37,12 +35,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_1]]
-- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig]]
 - 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_AgentTarget_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
 
 ## Top bridge nodes
-- [[TestMCPResultEndpoint]] - degree 17, connects to 6 communities
+- [[TestMCPResultEndpoint]] - degree 17, connects to 4 communities

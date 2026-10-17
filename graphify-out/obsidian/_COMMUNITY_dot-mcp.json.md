@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 33
 ---
 
 # .mcp.json
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 33 nodes
 
 ## Members
@@ -26,7 +24,7 @@ members: 33
 - [[AWS_REGION]] - code - .mcp.json
 - [[FASTMCP_LOG_LEVEL]] - code - .mcp.json
 - [[FASTMCP_NO_BANNER]] - code - .mcp.json
-- [[PATH_27]] - code - .mcp.json
+- [[PATH_26]] - code - .mcp.json
 - [[atlassian-agentshroud]] - code - .mcp.json
 - [[atlassian-fluence]] - code - .mcp.json
 - [[atlassian-idallasj]] - code - .mcp.json

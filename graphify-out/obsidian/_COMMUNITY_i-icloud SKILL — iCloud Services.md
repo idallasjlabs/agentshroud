@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # i-icloud SKILL — iCloud Services
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members

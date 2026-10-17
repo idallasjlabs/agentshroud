@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.04
 members: 81
 ---
 
 # test_dashboard.py
 
-**Cohesion:** 0.04 - loosely connected
 **Members:** 81 nodes
 
 ## Members
@@ -14,8 +12,8 @@ members: 81
 - [[dot-test_ws_activity_accepts_scoped_token()]] - code - gateway/tests/test_security_fixes.py
 - [[dot-test_ws_activity_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
 - [[dot-test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
-- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[AuthRequired_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[AuthRequired_4]] - code - gateway/ingest_api/routes/dashboard.py
 - [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
@@ -28,8 +26,8 @@ members: 81
 - [[Helper to create a GatewayEvent with current timestamp]] - rationale - gateway/ingest_api/event_bus.py
 - [[JSON stats for dashboard]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Path_24]] - code - gateway/ingest_api/routes/dashboard.py
-- [[Request_4]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Path_40]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Request_6]] - code - gateway/ingest_api/routes/dashboard.py
 - [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Return a short-lived WS-only auth token for cookie-authenticated sessions.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - rationale - gateway/ingest_api/routes/dashboard.py
@@ -40,8 +38,8 @@ members: 81
 - [[WS wsactivity accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
 - [[WS wsactivity should accept scoped ws_ token]] - rationale - gateway/tests/test_security_fixes.py
 - [[WS wsapprovals accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WebSocket_3]] - code - gateway/ingest_api/routes/approval.py
-- [[WebSocket_4]] - code - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket_5]] - code - gateway/ingest_api/routes/approval.py
+- [[WebSocket_6]] - code - gateway/ingest_api/routes/dashboard.py
 - [[WebSocket wsactivity connects and authenticates via scoped WS token]] - rationale - gateway/tests/test_dashboard.py
 - [[WebSocket wsactivity receives emitted events]] - rationale - gateway/tests/test_dashboard.py
 - [[WebSocket wsactivity rejects bad auth during handshake]] - rationale - gateway/tests/test_dashboard.py
@@ -61,7 +59,7 @@ members: 81
 - [[_validate_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[activity_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
-- [[auth_dep()_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[auth_dep()_4]] - code - gateway/ingest_api/routes/dashboard.py
 - [[dashboard.py]] - code - gateway/ingest_api/routes/dashboard.py
 - [[dashboard_stats()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[dashboard_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
@@ -100,26 +98,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_create_auth_dependency]]
-- 10 edges to [[_COMMUNITY_make_event_1]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
+- 13 edges to [[_COMMUNITY_create_auth_dependency]]
+- 10 edges to [[_COMMUNITY_make_event (2)]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
 - 4 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 4 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
 - 3 edges to [[_COMMUNITY_AlertTelegramRelay]]
 - 3 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
 - 3 edges to [[_COMMUNITY_make_event]]
-- 3 edges to [[_COMMUNITY_ForwardRequest]]
-- 2 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig_1]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_1]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_1]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_ForwardRequest (2)]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (5)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (5)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
 
 ## Top bridge nodes
-- [[make_event()]] - degree 46, connects to 13 communities
+- [[make_event()]] - degree 46, connects to 11 communities
 - [[dashboard.py]] - degree 22, connects to 3 communities
-- [[test_dashboard.py]] - degree 31, connects to 1 community
+- [[test_dashboard.py]] - degree 31, connects to 2 communities
 - [[_create_ws_token()]] - degree 15, connects to 1 community
 - [[_build_egress_live_snapshot()]] - degree 8, connects to 1 community

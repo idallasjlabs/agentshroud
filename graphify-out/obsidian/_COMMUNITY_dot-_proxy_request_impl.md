@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.13
-members: 16
+members: 18
 ---
 
 # ._proxy_request_impl
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 16 nodes
+**Members:** 18 nodes
 
 ## Members
 - [[dot-_build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_forward_file_download()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_is_suppressed_outbound_payload()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_proxy_request_impl()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
@@ -23,6 +22,7 @@ members: 16
 - [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - rationale - gateway/proxy/telegram_proxy.py
 - [[True when filtered payload should be dropped instead of forwarded.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -35,13 +35,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 14 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 4 edges to [[_COMMUNITY_dot-_filter_outbound]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy_3]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (4)]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
 - [[dot-_proxy_request_impl()]] - degree 15, connects to 3 communities
 - [[dot-_resolve_text_field()]] - degree 7, connects to 2 communities
+- [[dot-_mirror_to_owner_if_collaborator()]] - degree 5, connects to 2 communities
 - [[dot-_build_ack_only_updates()]] - degree 4, connects to 2 communities
 - [[dot-_suppress_duplicate_system_notice()]] - degree 4, connects to 1 community
-- [[dot-_username_for_bot()]] - degree 4, connects to 1 community

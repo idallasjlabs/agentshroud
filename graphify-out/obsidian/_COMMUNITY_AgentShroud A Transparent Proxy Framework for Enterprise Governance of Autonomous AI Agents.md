@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 21
 ---
 
 # AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -23,7 +21,7 @@ members: 21
 - [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[References_1]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
@@ -41,9 +39,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_MCP Doctor (MCPM-DOCTOR)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter_4]]
-- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (6)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
 - 1 edge to [[_COMMUNITY_VIII. Evaluation]]
 
 ## Top bridge nodes

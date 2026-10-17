@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # Operating Rules (Non-Negotiable)
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -26,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (3)]]
 
 ## Top bridge nodes
 - [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community

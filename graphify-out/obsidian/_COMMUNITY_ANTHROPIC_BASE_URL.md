@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # ANTHROPIC_BASE_URL
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
 - [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Configuration_15]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[Description_9]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[Description_10]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[How It Works_3]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_46]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_47]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Related Notes_42]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_43]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[Set In_5]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md

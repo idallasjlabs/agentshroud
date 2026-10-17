@@ -1,15 +1,16 @@
 ---
 type: community
-cohesion: 0.08
-members: 38
+members: 44
 ---
 
 # KeyRotationManager
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 38 nodes
+**Members:** 44 nodes
 
 ## Members
+- [[dot-__init__()_56]] - code - gateway/security/key_rotation.py
+- [[dot-_read_credential_from_1password()]] - code - gateway/security/key_rotation.py
+- [[dot-register_validator()]] - code - gateway/security/key_rotation.py
 - [[dot-test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
@@ -17,6 +18,7 @@ members: 38
 - [[dot-test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
@@ -32,10 +34,12 @@ members: 38
 - [[dot-test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[dot-test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[Base class for credential validators.]] - rationale - gateway/security/key_rotation.py
-- [[CredentialValidator]] - code - gateway/security/key_rotation.py
-- [[RotationStatus]] - code - gateway/security/key_rotation.py
-- [[Status of a credential rotation.]] - rationale - gateway/security/key_rotation.py
+- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
+- [[KeyRotationConfig]] - code - gateway/security/key_rotation.py
+- [[KeyRotationManager]] - code - gateway/security/key_rotation.py
+- [[Manages automated rotation of credentials with zero downtime.]] - rationale - gateway/security/key_rotation.py
+- [[Register a validator for a credential type.]] - rationale - gateway/security/key_rotation.py
+- [[Safely read a credential from 1Password using op CLI.]] - rationale - gateway/security/key_rotation.py
 - [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
 - [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
 - [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
@@ -46,7 +50,7 @@ members: 38
 - [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[key_rotation.py (KeyRotationManager)]] - code - gateway/security/key_rotation.py
 - [[key_rotation_config.py (KeyRotationConfig)]] - code - gateway/security/key_rotation_config.py
-- [[manager()_1]] - code - gateway/tests/test_key_rotation_internals.py
+- [[manager()]] - code - gateway/tests/test_key_rotation_internals.py
 - [[test_key_rotation_internals.py]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
@@ -57,16 +61,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_UserSessionManager_4]]
-- 14 edges to [[_COMMUNITY_TestDomainValidationHelper]]
-- 11 edges to [[_COMMUNITY_KeyRotationManager_1]]
-- 5 edges to [[_COMMUNITY_Restart Procedure_1]]
-- 4 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 52 edges to [[_COMMUNITY_UserSessionManager]]
+- 12 edges to [[_COMMUNITY_KeyRotationManager (2)]]
+- 11 edges to [[_COMMUNITY_AlertDispatcher]]
+- 6 edges to [[_COMMUNITY_TestSSRFDetection (2)]]
 
 ## Top bridge nodes
-- [[CredentialValidator]] - degree 21, connects to 5 communities
-- [[RotationStatus]] - degree 20, connects to 5 communities
-- [[test_key_rotation_internals.py]] - degree 17, connects to 4 communities
-- [[TestRotateGuardBranches]] - degree 11, connects to 3 communities
-- [[TestReadFrom1Password]] - degree 10, connects to 3 communities
+- [[KeyRotationManager]] - degree 55, connects to 4 communities
+- [[test_key_rotation_internals.py]] - degree 17, connects to 1 community
+- [[TestRotateGuardBranches]] - degree 11, connects to 1 community
+- [[TestReadFrom1Password]] - degree 10, connects to 1 community
+- [[TestStoreIn1Password]] - degree 10, connects to 1 community

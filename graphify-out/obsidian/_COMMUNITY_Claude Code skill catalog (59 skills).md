@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 13
 ---
 
 # Claude Code skill catalog (59 skills)
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -34,9 +32,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--readonly)]]
 - 1 edge to [[_COMMUNITY_Commit list 2026-10-10 through 2026-10-16 on main]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
-- 1 edge to [[_COMMUNITY_agentshroud-gateway service (proxy mode)]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (2)]]
 - 1 edge to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
+- 1 edge to [[_COMMUNITY_agentshroud-gateway service (proxy mode)]]
 
 ## Top bridge nodes
 - [[Claude Code skill catalog (59 skills)]] - degree 7, connects to 3 communities

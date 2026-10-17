@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 26
 ---
 
 # test_ptt_state.c
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -19,7 +17,7 @@ members: 26
 - [[freertosFreeRTOS.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
 - [[freertostask.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
 - [[iot_button.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[main()_16]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[main()_15]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
 - [[test_clear_allows_fresh_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
 - [[test_ptt_finish_ends_listening()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
 - [[test_ptt_finish_noop_when_idle()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c

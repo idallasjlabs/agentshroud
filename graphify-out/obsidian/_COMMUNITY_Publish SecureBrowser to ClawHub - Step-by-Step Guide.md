@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # Publish SecureBrowser to ClawHub - Step-by-Step Guide
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members

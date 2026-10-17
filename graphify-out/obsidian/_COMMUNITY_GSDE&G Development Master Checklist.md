@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # GSDE&G Development Master Checklist
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members

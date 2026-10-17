@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.21
 members: 12
 ---
 
 # stt.py
 
-**Cohesion:** 0.21 - loosely connected
 **Members:** 12 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.36
 members: 8
 ---
 
 # HostStatus
 
-**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -31,15 +29,14 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_MultiHostResult]]
 - 3 edges to [[_COMMUNITY_multi_host_test.py]]
 - 2 edges to [[_COMMUNITY_run_multi_host]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_main_1]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_main (2)]]
 - 1 edge to [[_COMMUNITY_TestParseHosts]]
 - 1 edge to [[_COMMUNITY_TestParserAndCommandResolution]]
 - 1 edge to [[_COMMUNITY_ssh_runner]]
 - 1 edge to [[_COMMUNITY_TestTail]]
 
 ## Top bridge nodes
-- [[HostStatus]] - degree 18, connects to 11 communities
+- [[HostStatus]] - degree 18, connects to 10 communities
 - [[classify()_1]] - degree 8, connects to 3 communities
 - [[TestClassify_1]] - degree 7, connects to 2 communities

@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.06
-members: 65
+members: 66
 ---
 
 # DelegationManager
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 65 nodes
+**Members:** 66 nodes
 
 ## Members
 - [[dot-__init__()_176]] - code - gateway/security/delegation.py
@@ -17,7 +15,7 @@ members: 65
 - [[dot-_save()]] - code - gateway/security/delegation.py
 - [[dot-cleanup_expired()_2]] - code - gateway/security/delegation.py
 - [[dot-delegate()]] - code - gateway/security/delegation.py
-- [[dot-from_dict()_7]] - code - gateway/security/delegation.py
+- [[dot-from_dict()_8]] - code - gateway/security/delegation.py
 - [[dot-get_active_delegations()]] - code - gateway/security/delegation.py
 - [[dot-get_delegations_for_user()]] - code - gateway/security/delegation.py
 - [[dot-is_active()]] - code - gateway/security/delegation.py
@@ -46,7 +44,7 @@ members: 65
 - [[dot-test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-to_dict()_12]] - code - gateway/security/delegation.py
+- [[dot-to_dict()_13]] - code - gateway/security/delegation.py
 - [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
 - [[Create a time-bounded delegation.          Args             owner_id Must matc]] - rationale - gateway/security/delegation.py
 - [[Delegation_1]] - code - gateway/security/delegation.py
@@ -54,6 +52,7 @@ members: 65
 - [[DelegationManager]] - code - gateway/tests/test_delegation.py
 - [[DelegationManager_1]] - code - gateway/security/delegation.py
 - [[DelegationPrivilege]] - code - gateway/security/delegation.py
+- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
 - [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
 - [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
 - [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
@@ -73,7 +72,7 @@ members: 65
 - [[TestSerialization_2]] - code - gateway/tests/test_delegation.py
 - [[ValueError]] - code
 - [[delegation.py]] - code - gateway/security/delegation.py
-- [[mgr()_2]] - code - gateway/tests/test_delegation.py
+- [[mgr()_1]] - code - gateway/tests/test_delegation.py
 - [[test_delegation.py]] - code - gateway/tests/test_delegation.py
 
 ## Live Query (requires Dataview plugin)
@@ -84,22 +83,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
 - 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_Path_1]]
-- 1 edge to [[_COMMUNITY_Path_3]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_1]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
 - 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_05-behavior]]
 
 ## Top bridge nodes
-- [[DelegationPrivilege]] - degree 25, connects to 6 communities
+- [[FR2 Use Control]] - degree 7, connects to 6 communities
+- [[DelegationPrivilege]] - degree 25, connects to 5 communities
 - [[DelegationManager_1]] - degree 26, connects to 3 communities
-- [[delegation.py]] - degree 6, connects to 2 communities
-- [[dot-from_dict()_7]] - degree 3, connects to 1 community
-- [[ValueError]] - degree 2, connects to 1 community
+- [[delegation.py]] - degree 6, connects to 1 community
+- [[dot-from_dict()_8]] - degree 3, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 20
 ---
 
 # Message Composition with MML (MIME Meta Language)
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -39,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_4]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
 
 ## Top bridge nodes
 - [[Message Composition with MML (MIME Meta Language)]] - degree 8, connects to 1 community

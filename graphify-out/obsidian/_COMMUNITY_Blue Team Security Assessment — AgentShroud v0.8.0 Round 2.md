@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.08
 members: 25
 ---
 
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
 - [[Final Assessment Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[CRITICAL Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Executive Summary_8]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Executive Summary_9]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Executive Summary_7]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[Executive Summary_8]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Fixes Applied_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[HIGH Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[LOW Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
@@ -32,7 +30,7 @@ members: 25
 - [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[Round 1 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Round 2 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Summary_11]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Summary_10]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Verification of ALL Prior Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Verification of Round 1 Fixes]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 

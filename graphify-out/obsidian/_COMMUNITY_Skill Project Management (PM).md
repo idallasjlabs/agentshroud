@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 19
 ---
 
 # Skill: Project Management (PM)
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -21,7 +19,7 @@ members: 19
 - [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
 - [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
 - [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
-- [[Role_50]] - document - .agents/skills/i-pm/SKILL.md
+- [[Role_48]] - document - .agents/skills/i-pm/SKILL.md
 - [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
 - [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
 - [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md

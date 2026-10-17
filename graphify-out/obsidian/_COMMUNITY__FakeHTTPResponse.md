@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # _FakeHTTPResponse
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
 - [[dot-__enter__()_2]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__exit__()_2]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_37]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_45]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-read()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
 - [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py

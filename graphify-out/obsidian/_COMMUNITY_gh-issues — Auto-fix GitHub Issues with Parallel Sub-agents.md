@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 18
 ---
 
 # gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members

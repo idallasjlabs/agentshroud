@@ -12,6 +12,6 @@ tags:
 # Verify Isolation
 
 ## Connections
-- [[Security Validation_1]] - `contains` [EXTRACTED]
+- [[Security Validation]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

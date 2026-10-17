@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.06
 members: 47
 ---
 
 # GroupApprovalRouter
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 47 nodes
 
 ## Members
-- [[dot-__init__()_178]] - code - gateway/approval_queue/group_router.py
+- [[dot-__init__()_46]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_default_send()]] - code - gateway/approval_queue/group_router.py
@@ -25,8 +23,8 @@ members: 47
 - [[dot-test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
-- [[Any_75]] - code - gateway/approval_queue/group_router.py
-- [[ApprovalRequest_5]] - code - gateway/approval_queue/group_router.py
+- [[Any_15]] - code - gateway/approval_queue/group_router.py
+- [[ApprovalRequest_1]] - code - gateway/approval_queue/group_router.py
 - [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
@@ -54,7 +52,7 @@ members: 47
 - [[group_router.py (GroupApprovalRouter)]] - code - gateway/approval_queue/group_router.py
 - [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
 - [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[router()_3]] - code - gateway/tests/test_group_approval_routing.py
+- [[router()]] - code - gateway/tests/test_group_approval_routing.py
 - [[router_with_sent()]] - code - gateway/tests/test_group_approval_routing.py
 - [[test_group_approval_routing.py]] - code - gateway/tests/test_group_approval_routing.py
 
@@ -66,8 +64,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_1]]
+- 13 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 
 ## Top bridge nodes
 - [[group_router.py]] - degree 3, connects to 2 communities

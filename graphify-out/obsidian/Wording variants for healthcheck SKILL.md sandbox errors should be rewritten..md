@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_healthcheck_skill_sandbox_error_variant_is_rewritten"
+community: "TelegramAPIProxy (2)"
 location: "L1338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_healthcheck_skill_sandbox_error_variant_is_rewritten
+  - community/TelegramAPIProxy_2
 ---
 
 # Wording variants for healthcheck SKILL.md sandbox errors should be rewritten.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_healthcheck_skill_sandbox_error_variant_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_healthcheck_skill_sandbox_error_variant_is_rewritten
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2

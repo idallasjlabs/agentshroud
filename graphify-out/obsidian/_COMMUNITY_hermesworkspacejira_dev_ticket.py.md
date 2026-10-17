@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 39
 ---
 
 # hermes/workspace/jira_dev_ticket.py
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 39 nodes
 
 ## Members
@@ -47,7 +45,7 @@ members: 39
 - [[find_transition_id()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[hermesworkspacejira_dev_ticket.py]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[resolve_cloud_id()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[run()_2]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[run()_3]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 - [[transition_issue()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)

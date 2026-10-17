@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 24
 ---
 
 # AgentShroud v1.2.0 Master Plan
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -22,7 +20,7 @@ members: 24
 - [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 - [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 - [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Source of truth_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Source of truth]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 - [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 - [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 - [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md

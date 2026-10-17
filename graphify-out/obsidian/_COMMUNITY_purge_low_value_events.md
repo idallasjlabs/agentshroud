@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.30
 members: 12
 ---
 
 # purge_low_value_events
 
-**Cohesion:** 0.30 - loosely connected
 **Members:** 12 nodes
 
 ## Members

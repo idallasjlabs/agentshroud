@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Pull Request Generator (PR)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[Pull Request Generator (PR)]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Purpose_45]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Related Skills_34]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Usage_37]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_55]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Related Skills_42]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Usage_46]] - document - docker/config/openclaw/skills/i-pr/README.md
 - [[openclawskillsi-prREADME]] - document - docker/config/openclaw/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)

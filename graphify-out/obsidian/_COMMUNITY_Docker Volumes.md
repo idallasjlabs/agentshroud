@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 20
 ---
 
 # Docker Volumes
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -16,9 +14,9 @@ members: 20
 - [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Purpose_82]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_40]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_41]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Purpose_97]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_37]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_38]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Security Controls_1]] - document - docs/vault/05 - Dependencies/playwright.md
 - [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
 - [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md

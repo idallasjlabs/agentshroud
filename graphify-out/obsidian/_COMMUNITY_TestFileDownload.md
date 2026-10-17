@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # TestFileDownload
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -34,11 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 11 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 4 edges to [[_COMMUNITY__wrap_response]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 
 ## Top bridge nodes
 - [[TestFileDownload]] - degree 12, connects to 5 communities

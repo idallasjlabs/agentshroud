@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 20
 ---
 
 # iMessage Integration Fix - Using imsg + imessage-exporter
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -22,10 +20,10 @@ members: 20
 - [[Option 1 Grant Automation Permission (REQUIRED)]] - document - docs/setup/IMESSAGE_FIX.md
 - [[Option 2 Check if Messages.app is Signed In]] - document - docs/setup/IMESSAGE_FIX.md
 - [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - rationale - docs/security/container-policy.md
-- [[Status_2]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Status_3]] - document - docs/setup/IMESSAGE_FIX.md
 - [[The Fix]] - document - docs/setup/IMESSAGE_FIX.md
 - [[The Problem]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Verification_2]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Verification_3]] - document - docs/setup/IMESSAGE_FIX.md
 - [[Wazuh CVE-2025-24016 (CVSS 9.9)]] - concept - docs/security/security-supply-chain.md
 - [[container-policy]] - document - docs/security/container-policy.md
 - [[iMessage Integration Fix - Using imsg + imessage-exporter]] - document - docs/setup/IMESSAGE_FIX.md
@@ -39,18 +37,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
+- 1 edge to [[_COMMUNITY_Apple Services Setup Guide]]
+- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
+- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide]]
 - 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
+- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_Detailed Profiles]]
 - 1 edge to [[_COMMUNITY_Git History Purge Plan]]
-- 1 edge to [[_COMMUNITY_Apple Services Setup Guide]]
 - 1 edge to [[_COMMUNITY_Google Calendar & Contacts - Quick Setup]]
-- 1 edge to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
-- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (2)]]
 
 ## Top bridge nodes
 - [[container-policy]] - degree 6, connects to 3 communities

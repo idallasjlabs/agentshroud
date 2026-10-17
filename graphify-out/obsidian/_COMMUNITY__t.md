@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.06
-members: 65
+members: 66
 ---
 
 # _t
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 65 nodes
+**Members:** 66 nodes
 
 ## Members
 - [[dot-_results()]] - code - gateway/tests/test_triage_cve_mitigations.py
@@ -31,6 +29,7 @@ members: 65
 - [[dot-test_parse_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
 - [[dot-test_priority_rce_before_generic_injection()]] - code - gateway/tests/test_triage_cve_mitigations.py
 - [[dot-test_proactive_only_layers_have_real_gateway_implementation()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_representative_titles()]] - code - gateway/tests/test_triage_cve_mitigations.py
 - [[dot-test_rewrite_is_idempotent()]] - code - gateway/tests/test_triage_cve_mitigations.py
 - [[dot-test_rewrite_never_touches_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
 - [[dot-test_rewrite_sets_status_and_layers()]] - code - gateway/tests/test_triage_cve_mitigations.py
@@ -86,16 +85,16 @@ SORT file.name ASC
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_triage-cve-mitigations.py]]
 - 2 edges to [[_COMMUNITY_WebContentScanner]]
-- 2 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 - 2 edges to [[_COMMUNITY_plan_remediation]]
 - 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 - 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
 - 1 edge to [[_COMMUNITY_check_upstream_cves]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
 
 ## Top bridge nodes
 - [[_AGENT_CVE_REGISTRIES]] - degree 8, connects to 5 communities
 - [[test_triage_cve_mitigations.py]] - degree 18, connects to 2 communities
 - [[TestVersion]] - degree 12, connects to 2 communities
-- [[TestClassify]] - degree 6, connects to 2 communities
 - [[TestDefenseLayerVocabulary]] - degree 5, connects to 2 communities
+- [[TestDriverIsolation]] - degree 12, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.25
 members: 8
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
 
-**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -28,7 +26,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
-- 1 edge to [[_COMMUNITY_Mode A — Single task_2]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task (3)]]
 - 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep]]
 
 ## Top bridge nodes

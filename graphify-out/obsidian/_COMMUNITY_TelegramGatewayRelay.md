@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.27
 members: 10
 ---
 
 # TelegramGatewayRelay
 
-**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -29,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_1]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
 - [[telegram_gateway_relay.py]] - degree 3, connects to 1 community

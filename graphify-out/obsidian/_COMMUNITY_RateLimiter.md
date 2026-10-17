@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.04
 members: 48
 ---
 
 # RateLimiter
 
-**Cohesion:** 0.04 - loosely connected
 **Members:** 48 nodes
 
 ## Members
-- [[dot-__init__()_42]] - code - gateway/ingest_api/auth.py
+- [[dot-__init__()_43]] - code - gateway/ingest_api/auth.py
 - [[dot-test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -67,25 +65,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 49 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 49 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 18 edges to [[_COMMUNITY__wrap_response]]
 - 8 edges to [[_COMMUNITY_create_auth_dependency]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 4 edges to [[_COMMUNITY_AlertDispatcher]]
 - 3 edges to [[_COMMUNITY_BlockingPipeline]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py_1]]
-- 2 edges to [[_COMMUNITY_test_security.py]]
 - 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
 - 2 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 - 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_AsyncMock_1]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 - 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
 - 1 edge to [[_COMMUNITY_TestFileDownload]]
 - 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
 - 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
 
 ## Top bridge nodes
-- [[RateLimiter_1]] - degree 47, connects to 15 communities
+- [[RateLimiter_1]] - degree 47, connects to 16 communities
 - [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
 - [[TestIsGroupMessage]] - degree 10, connects to 3 communities
 - [[TestNoResponseGuarantee]] - degree 9, connects to 3 communities

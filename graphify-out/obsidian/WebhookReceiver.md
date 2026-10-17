@@ -12,14 +12,14 @@ tags:
 # WebhookReceiver
 
 ## Connections
-- [[dot-__init__()_132]] - `method` [EXTRACTED]
+- [[dot-__init__()_86]] - `method` [EXTRACTED]
 - [[dot-_can_create_directory()]] - `method` [EXTRACTED]
 - [[dot-_extract_message()]] - `method` [EXTRACTED]
 - [[dot-_extract_user_id()_1]] - `method` [EXTRACTED]
 - [[dot-_extract_username()]] - `method` [EXTRACTED]
 - [[dot-_prepare_session_payload()]] - `method` [EXTRACTED]
 - [[dot-_replace_message()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_12]] - `method` [EXTRACTED]
+- [[dot-get_stats()_10]] - `method` [EXTRACTED]
 - [[dot-process_webhook()]] - `method` [EXTRACTED]
 - [[dot-test_webhook_conversation_logging()]] - `calls` [EXTRACTED]
 - [[dot-test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[TestWebhookReceiverSlackExtraction]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[telegram_webhook()]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `imports` [EXTRACTED]

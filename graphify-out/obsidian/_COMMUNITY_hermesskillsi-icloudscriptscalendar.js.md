@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.27
 members: 10
 ---
 
 # hermes/skills/i-icloud/scripts/calendar.js
 
-**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members

@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.10
 members: 21
 ---
 
 # browser-extension/manifest.json
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
 - [[128]] - code - browser-extension/manifest.json
 - [[48]] - code - browser-extension/manifest.json
-- [[action_3]] - code - browser-extension/manifest.json
+- [[action_1]] - code - browser-extension/manifest.json
 - [[background]] - code - browser-extension/manifest.json
 - [[browser-extensionmanifest.json]] - code - browser-extension/manifest.json
 - [[browser_specific_settings]] - code - browser-extension/manifest.json
 - [[default_popup]] - code - browser-extension/manifest.json
 - [[default_title]] - code - browser-extension/manifest.json
-- [[description_6]] - code - browser-extension/manifest.json
+- [[description_8]] - code - browser-extension/manifest.json
 - [[gecko]] - code - browser-extension/manifest.json
 - [[host_permissions]] - code - browser-extension/manifest.json
 - [[icons]] - code - browser-extension/manifest.json

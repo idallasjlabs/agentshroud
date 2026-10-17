@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # 7. Recommendations by Severity
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
@@ -24,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 
 ## Top bridge nodes
 - [[7. Recommendations by Severity]] - degree 5, connects to 1 community

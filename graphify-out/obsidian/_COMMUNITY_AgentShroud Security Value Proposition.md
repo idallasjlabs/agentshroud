@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 23
 ---
 
 # AgentShroud Security Value Proposition
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -42,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
 
 ## Top bridge nodes

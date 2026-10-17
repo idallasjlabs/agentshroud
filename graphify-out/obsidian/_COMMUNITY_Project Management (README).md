@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.10
-members: 24
+members: 27
 ---
 
 # Project Management (README)
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 24 nodes
+**Members:** 27 nodes
 
 ## Members
 - [[dot-agentsskillsi-crREADME]] - document - .agents/skills/i-cr/README.md
@@ -16,22 +14,25 @@ members: 24
 - [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
 - [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
 - [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Production-Ready PR (i-crpr)]] - document - .agents/skills/i-crpr/SKILL.md
 - [[Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
 - [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
+- [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
 - [[Purpose_70]] - document - .agents/skills/i-cr/README.md
 - [[Purpose_71]] - document - .agents/skills/i-pm/README.md
 - [[Purpose_72]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Purpose_73]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Related Skills_56]] - document - .agents/skills/i-cr/README.md
-- [[Related Skills_57]] - document - .agents/skills/i-pm/README.md
-- [[Related Skills_58]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Related Skills_59]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Related Skills_58]] - document - .agents/skills/i-cr/README.md
+- [[Related Skills_59]] - document - .agents/skills/i-pm/README.md
+- [[Related Skills_60]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Related Skills_61]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_60]] - document - .agents/skills/i-cr/README.md
-- [[Usage_61]] - document - .agents/skills/i-pm/README.md
-- [[Usage_62]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Usage_63]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Usage_66]] - document - .agents/skills/i-cr/README.md
+- [[Usage_67]] - document - .agents/skills/i-pm/README.md
+- [[Usage_68]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_69]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md
 
@@ -52,3 +53,4 @@ SORT file.name ASC
 - [[Project Management (README)]] - degree 11, connects to 3 communities
 - [[Code Review (i-cr)]] - degree 10, connects to 2 communities
 - [[Project Management (SKILL)]] - degree 8, connects to 2 communities
+- [[Pull Request Generator (README)]] - degree 2, connects to 1 community

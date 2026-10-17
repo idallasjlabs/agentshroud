@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.21
 members: 15
 ---
 
 # test-sunday-upgrade-scan.sh
 
-**Cohesion:** 0.21 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -35,7 +33,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 1 edge to [[_COMMUNITY_AgentTarget_3]]
+- 1 edge to [[_COMMUNITY_AgentTarget (5)]]
 
 ## Top bridge nodes
 - [[test-sunday-upgrade-scan.sh]] - degree 10, connects to 1 community

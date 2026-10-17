@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 3
 ---
 
 # test_bot_boot_live.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
-- [[check()_1]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[check()_2]] - code - tests/startup_smoke/test_bot_boot_live.sh
 - [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
 - [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
 

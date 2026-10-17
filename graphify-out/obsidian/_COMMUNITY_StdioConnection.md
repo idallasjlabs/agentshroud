@@ -1,59 +1,96 @@
 ---
 type: community
-cohesion: 0.11
-members: 44
+members: 83
 ---
 
 # StdioConnection
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 44 nodes
+**Members:** 83 nodes
 
 ## Members
-- [[dot-__init__()_195]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-get_item()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-submit_tool_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_denied_decision_blocks_with_item_status()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_denied_decision_with_missing_item_defaults_denied()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_egress_filter_allow_passes_through()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_emit_swallows_bus_errors()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_emits_event_to_bus()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_execution_redacts_admin_private_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_execution_with_none_content_skips_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_generic_exception()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_get_stats_after_allowed_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_get_stats_zero_and_after_calls()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_no_patterns_returns_unchanged()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_no_queue_allows_by_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_owner_bypasses_redaction()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_process_tool_call_blocks_on_denial()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_process_tool_result_handles_none_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_process_tool_result_redacts_private_data()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_redacts_nested_dict_list_tuple()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_sanitized_params_preferred_over_originals()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_server_error_response()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_server_error_response_without_message()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_shutdown_stops_all_connections()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_successful_execution_with_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_sync_egress_filter_deny_blocks()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_timeout_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-wait_for_decision()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FakeApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_136]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_137]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_138]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-_fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-from_dict()_5]] - code - gateway/proxy/mcp_config.py
+- [[dot-get_or_create()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-is_running()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-remove()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-stop()_9]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-stop()_10]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_denied_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_disabled_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_get_or_create_by_transport_and_caching()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_not_in_allowlist()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_passthrough_process_tool_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_passthrough_with_execute()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_rate_limit_enforced()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_stop_all_clears_pool()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_sufficient_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Any_52]] - code - gateway/proxy/mcp_config.py
+- [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
+- [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
+- [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
+- [[Exception_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPProxyConfig_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_config.py
+- [[MCPServerConfig_2]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPServerConfig_1]] - code - gateway/proxy/mcp_config.py
+- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
+- [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
+- [[Pool of connections to MCP servers.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestConnectionPool]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[make_proxy()_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestPassthrough]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestRateLimiting_3]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestServerAccess]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()_4]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[make_config()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
 - [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[test_mcp_proxy_endpoint.py]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,22 +100,30 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_StdioConnection_1]]
-- 20 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 19 edges to [[_COMMUNITY_PermissionLevel]]
-- 19 edges to [[_COMMUNITY_MCPInspector]]
-- 18 edges to [[_COMMUNITY_MCPPermissionManager_1]]
-- 13 edges to [[_COMMUNITY_MCPPermissionManager_4]]
-- 10 edges to [[_COMMUNITY_MCPPermissionManager_2]]
-- 10 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 3 edges to [[_COMMUNITY_AsyncMock_1]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig_1]]
-- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller_4]]
+- 83 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 59 edges to [[_COMMUNITY_MCPInspector]]
+- 58 edges to [[_COMMUNITY_StdioConnection (2)]]
+- 51 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 39 edges to [[_COMMUNITY_PermissionLevel]]
+- 24 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 22 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 4 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
+- 3 edges to [[_COMMUNITY_MCPToolResult]]
+- 3 edges to [[_COMMUNITY_MCPPermissionManager (6)]]
+- 3 edges to [[_COMMUNITY_MCPPermissionManager (7)]]
+- 3 edges to [[_COMMUNITY_TestAuditTrail]]
+- 2 edges to [[_COMMUNITY_StdioConnection (3)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
 - 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 
 ## Top bridge nodes
-- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 10 communities
-- [[FakeApprovalQueue]] - degree 27, connects to 9 communities
-- [[FakeConn]] - degree 30, connects to 8 communities
-- [[TestExecuteToolCall]] - degree 24, connects to 8 communities
-- [[TestApprovalQueue]] - degree 21, connects to 8 communities
+- [[MCPProxyConfig_1]] - degree 88, connects to 15 communities
+- [[MCPServerConfig_1]] - degree 90, connects to 12 communities
+- [[MCPToolConfig]] - degree 59, connects to 11 communities
+- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 7 communities
+- [[FakeProcess]] - degree 23, connects to 7 communities

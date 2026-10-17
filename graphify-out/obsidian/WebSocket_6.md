@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L350"
+community: "test_dashboard.py"
+location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_dashboardpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()_1]] - `references` [EXTRACTED]
-- [[dot-disconnect()_1]] - `references` [EXTRACTED]
+- [[activity_websocket()]] - `references` [EXTRACTED]
+- [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

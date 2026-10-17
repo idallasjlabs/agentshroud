@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.06
 members: 35
 ---
 
 # TestOutputCanary
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 35 nodes
 
 ## Members
-- [[dot-__init__()_46]] - code - gateway/security/output_canary.py
-- [[dot-setup_method()_6]] - code - gateway/tests/test_output_canary.py
+- [[dot-__init__()_95]] - code - gateway/security/output_canary.py
+- [[dot-setup_method()_16]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_canary_cleanup()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_canary_generation_per_session()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_clean_response_passes()]] - code - gateway/tests/test_output_canary.py
@@ -22,13 +20,13 @@ members: 35
 - [[dot-test_leaked_canary_detected_in_response()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_partial_canary_match_handling()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_session_without_canary_returns_safe_result()]] - code - gateway/tests/test_output_canary.py
-- [[dot-test_status_reporting()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_status_reporting()_1]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_unicode_normalization_resistance()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_zero_width_character_detection()]] - code - gateway/tests/test_output_canary.py
 - [[CanaryConfig]] - code - gateway/security/output_canary.py
 - [[Configuration for the Output Canary System.]] - rationale - gateway/security/output_canary.py
 - [[Initialize the Output Canary System.          Args             config Optional]] - rationale - gateway/security/output_canary.py
-- [[Set up test fixtures.]] - rationale - gateway/tests/test_output_canary.py
+- [[Set up test fixtures._4]] - rationale - gateway/tests/test_output_canary.py
 - [[Test canary status reporting for dashboard.]] - rationale - gateway/tests/test_output_canary.py
 - [[Test cases for the Output Canary System.]] - rationale - gateway/tests/test_output_canary.py
 - [[Test cleanup of expired canaries.]] - rationale - gateway/tests/test_output_canary.py
@@ -54,12 +52,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection_5]]
+- 6 edges to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_TestSSRFDetection (5)]]
 
 ## Top bridge nodes
 - [[TestOutputCanary]] - degree 18, connects to 1 community
 - [[CanaryConfig]] - degree 8, connects to 1 community
-- [[dot-setup_method()_6]] - degree 4, connects to 1 community
+- [[dot-setup_method()_16]] - degree 4, connects to 1 community
 - [[dot-test_incident_logging()]] - degree 4, connects to 1 community
 - [[dot-test_partial_canary_match_handling()]] - degree 4, connects to 1 community

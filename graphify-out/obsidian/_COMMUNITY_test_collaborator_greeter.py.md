@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.09
 members: 39
 ---
 
 # test_collaborator_greeter.py
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 39 nodes
 
 ## Members
-- [[dot-__init__()_126]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-__init__()_75]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
@@ -63,5 +61,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[CollaboratorGreeter]] - degree 21, connects to 1 community
-- [[dot-__init__()_126]] - degree 4, connects to 1 community
+- [[dot-__init__()_75]] - degree 4, connects to 1 community
 - [[dot-_get_client()]] - degree 3, connects to 1 community

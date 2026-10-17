@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.07
-members: 52
+members: 51
 ---
 
 # FetchOutcome
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 52 nodes
+**Members:** 51 nodes
 
 ## Members
 - [[dot-__call__()_2]] - code - gateway/tests/test_intel_endpoint.py
@@ -15,9 +13,9 @@ members: 52
 - [[dot-__enter__()_1]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-__exit__()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-__exit__()_1]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__init__()_30]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__init__()_31]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__init__()_32]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__init__()_36]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__init__()_37]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__init__()_38]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-_patch_stream()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-iter_bytes()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-iter_bytes()_1]] - code - gateway/tests/test_intel_endpoint.py
@@ -57,8 +55,7 @@ members: 52
 - [[_StreamResp]] - code - gateway/tests/test_intel_endpoint.py
 - [[_draft()]] - code - gateway/tests/test_intel_endpoint.py
 - [[_inject_fetcher()]] - code - gateway/tests/test_intel_endpoint.py
-- [[citation_verifier module]] - code - gateway/security/citation_verifier.py
-- [[client()_7]] - code - gateway/tests/test_intel_endpoint.py
+- [[client()_2]] - code - gateway/tests/test_intel_endpoint.py
 - [[make_httpx_fetcher()]] - code - gateway/security/citation_verifier.py
 - [[test_intel_endpoint.py]] - code - gateway/tests/test_intel_endpoint.py
 - [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
@@ -71,12 +68,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_api.py_1]]
+- 22 edges to [[_COMMUNITY_api.py (2)]]
 - 10 edges to [[_COMMUNITY_CompetitiveIntelReport]]
 - 2 edges to [[_COMMUNITY_ModeRequest]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
 - 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_Path_1]]
 - 1 edge to [[_COMMUNITY_Path]]
 
 ## Top bridge nodes

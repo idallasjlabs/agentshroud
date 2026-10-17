@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # SSH Configuration Guide
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -31,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_4]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
 
 ## Top bridge nodes
 - [[SSH Configuration Guide]] - degree 7, connects to 1 community

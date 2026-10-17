@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.25
 members: 8
 ---
 
 # TestLoadFromText
 
-**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[dot-setup_method()_2]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-setup_method()_3]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_deduplication()]] - code - gateway/tests/test_dns_blocklist.py
@@ -31,4 +29,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[TestLoadFromText]] - degree 9, connects to 1 community
-- [[dot-setup_method()_2]] - degree 2, connects to 1 community
+- [[dot-setup_method()_3]] - degree 2, connects to 1 community

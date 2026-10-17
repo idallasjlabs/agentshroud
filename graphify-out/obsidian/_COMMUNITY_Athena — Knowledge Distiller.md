@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 14
 ---
 
 # Athena — Knowledge Distiller
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -33,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Atlas — Curriculum Architect_1]]
+- 2 edges to [[_COMMUNITY_Atlas — Curriculum Architect (2)]]
 - 1 edge to [[_COMMUNITY_Apollo — Audio Systems Producer]]
 
 ## Top bridge nodes

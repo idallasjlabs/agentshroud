@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.02
 members: 135
 ---
 
 # test_soc_router_coverage.py
 
-**Cohesion:** 0.02 - loosely connected
 **Members:** 135 nodes
 
 ## Members
-- [[dot-__init__()_85]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_86]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-__init__()_87]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-__init__()_88]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_89]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_90]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-is_group_admin()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-is_owner()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-is_owner()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-require()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-require()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[FakeAuditStore]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
@@ -154,11 +152,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_AsyncMock_1]]
+- 26 edges to [[_COMMUNITY_AsyncMock]]
 - 6 edges to [[_COMMUNITY_MiddlewareManager]]
-- 5 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 5 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
 - 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
 - [[test_soc_router_coverage.py]] - degree 151, connects to 5 communities

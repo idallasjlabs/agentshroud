@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 11
 ---
 
 # IEC 62443 Compliance Matrix — AgentShroud
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -20,7 +18,7 @@ members: 11
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - document - docs/compliance/iec-62443-matrix.md
 - [[Key Components Referenced (v1.0.0)]] - document - docs/compliance/iec-62443-matrix.md
 - [[Overview_29]] - document - docs/compliance/iec-62443-matrix.md
-- [[Summary_25]] - document - docs/compliance/iec-62443-matrix.md
+- [[Summary_24]] - document - docs/compliance/iec-62443-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
 
 ## Top bridge nodes
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - degree 11, connects to 2 communities

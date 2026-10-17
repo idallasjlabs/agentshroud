@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.02
 members: 95
 ---
 
 # TestCollaboratorPromptClassifiers
 
-**Cohesion:** 0.02 - loosely connected
 **Members:** 95 nodes
 
 ## Members
@@ -114,10 +112,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 1 edge to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

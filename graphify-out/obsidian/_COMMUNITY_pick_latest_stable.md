@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.17
 members: 17
 ---
 
 # pick_latest_stable
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 17 nodes
 
 ## Members
 - [[dot-test_downstream_counter_sorts_above_its_base_release()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_empty_returns_none()_1]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_no_stable_versions_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_numeric_ordering_not_lexicographic()]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -37,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_discover_upstream_versions.py]]
-- 1 edge to [[_COMMUNITY_UserSessionManager_7]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (5)]]
 
 ## Top bridge nodes
 - [[pick_latest_stable()]] - degree 13, connects to 2 communities

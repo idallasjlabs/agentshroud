@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.05
 members: 69
 ---
 
 # soc.js
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 69 nodes
 
 ## Members
-- [[dot-to_dict()_14]] - code - gateway/security/soc_correlation.py
-- [[Any_74]] - code - gateway/security/soc_correlation.py
+- [[dot-to_dict()_10]] - code - gateway/security/soc_correlation.py
+- [[Any_71]] - code - gateway/security/soc_correlation.py
 - [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
 - [[MATURITY_DESC]] - code - gateway/soc/static/soc.js
 - [[MATURITY_LEVELS]] - code - gateway/soc/static/soc.js
@@ -88,12 +86,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 4 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 2 edges to [[_COMMUNITY__FakeRBAC_1]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_ServiceManager (2)]]
 - 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_ServiceManager_1]]
 
 ## Top bridge nodes
 - [[CorrelationSummary]] - degree 5, connects to 2 communities

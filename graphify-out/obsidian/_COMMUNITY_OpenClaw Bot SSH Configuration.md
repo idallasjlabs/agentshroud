@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 37
 ---
 
 # OpenClaw Bot SSH Configuration
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -20,7 +18,7 @@ members: 37
 - [[Default Settings (All Hosts)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[From Docker Command Line]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[From OpenClaw Bot (Natural Language)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Next Steps_2]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Next Steps_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[One-Liner to Add to Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[OpenClaw Bot SSH Configuration]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Problem Bad owner or permissions on ~.sshconfig]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
@@ -41,7 +39,7 @@ members: 37
 - [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Troubleshooting_11]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Troubleshooting_10]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Usage Examples]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Verification Checklist]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md

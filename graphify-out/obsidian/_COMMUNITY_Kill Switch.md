@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 23
 ---
 
 # Kill Switch
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -16,7 +14,7 @@ members: 23
 - [[Best Practices_7]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Kill Switch_1]] - document - dashboard/README.md
+- [[Kill Switch]] - document - dashboard/README.md
 - [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -43,12 +41,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 - 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
 - 1 edge to [[_COMMUNITY_Git History Purge Plan]]
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
 
 ## Top bridge nodes
-- [[Kill Switch_1]] - degree 9, connects to 3 communities
+- [[Kill Switch]] - degree 9, connects to 3 communities
 - [[VERIFICATION_RESULTS]] - degree 5, connects to 3 communities

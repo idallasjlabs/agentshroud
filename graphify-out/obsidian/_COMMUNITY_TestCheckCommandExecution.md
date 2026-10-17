@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 35
 ---
 
 # TestCheckCommandExecution
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 35 nodes
 
 ## Members
@@ -18,7 +16,7 @@ members: 35
 - [[dot-test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_printenv()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
 - [[dot-test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
@@ -43,7 +41,7 @@ members: 35
 - [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
 - [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
 - [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_4]] - code - gateway/tests/test_env_guard_class.py
+- [[guard()_3]] - code - gateway/tests/test_env_guard_class.py
 - [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
 
 ## Live Query (requires Dataview plugin)

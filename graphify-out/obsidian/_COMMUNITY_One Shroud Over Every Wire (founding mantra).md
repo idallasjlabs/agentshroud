@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 30
 ---
 
 # One Shroud Over Every Wire (founding mantra)
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 30 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 43
 ---
 
 # Colima & Docker Operations Guide — AgentShroud
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -37,7 +35,7 @@ members: 43
 - [[Health status]] - document - docs/runbooks/colima-docker-guide.md
 - [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
 - [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Logs_1]] - document - docs/runbooks/colima-docker-guide.md
+- [[Logs]] - document - docs/runbooks/colima-docker-guide.md
 - [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
 - [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
 - [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md
@@ -62,7 +60,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_3]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
 
 ## Top bridge nodes
 - [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

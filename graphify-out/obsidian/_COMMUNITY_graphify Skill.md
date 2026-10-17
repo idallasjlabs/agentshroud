@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 20
 ---
 
 # graphify Skill
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 20 nodes
 
 ## Members

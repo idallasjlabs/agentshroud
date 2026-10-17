@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 59
 ---
 
 # Added
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 59 nodes
 
 ## Members
@@ -40,7 +38,7 @@ members: 59
 - [[Recommended Steps]] - document - CHANGELOG.md
 - [[Removed]] - document - CHANGELOG.md
 - [[Security_12]] - document - CHANGELOG.md
-- [[Summary_26]] - document - CHANGELOG.md
+- [[Summary_25]] - document - CHANGELOG.md
 - [[Testing_1]] - document - CHANGELOG.md
 - [[Tests_3]] - document - CHANGELOG.md
 - [[Tranche Status]] - document - CHANGELOG.md

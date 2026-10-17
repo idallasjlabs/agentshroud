@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 34
 ---
 
 # What Does OpenClaw Actually Need to Write?
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 34 nodes
 
 ## Members

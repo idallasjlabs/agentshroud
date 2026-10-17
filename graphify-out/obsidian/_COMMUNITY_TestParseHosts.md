@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.31
 members: 11
 ---
 
 # TestParseHosts
 
-**Cohesion:** 0.31 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -33,7 +31,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_MultiHostResult]]
 - 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
 - 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_main_1]]
+- 1 edge to [[_COMMUNITY_main (2)]]
 - 1 edge to [[_COMMUNITY_multi_host_test.py]]
 
 ## Top bridge nodes

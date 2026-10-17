@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # Deployment Runbook — AgentShroud
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -33,10 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_pytest.ini]]
 - 1 edge to [[_COMMUNITY_Update AgentShroud]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)_1]]
 - 1 edge to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
 
 ## Top bridge nodes
 - [[Environment Variables_16]] - degree 4, connects to 3 communities

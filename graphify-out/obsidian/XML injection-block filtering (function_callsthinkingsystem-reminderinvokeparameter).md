@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "concept"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # XML injection-block filtering (function_calls/thinking/system-reminder/invoke/parameter)
 
 ## Connections
-- [[PIISanitizer_1]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/PIIConfig
+#graphify/concept #graphify/EXTRACTED #community/ToolResultSanitizer

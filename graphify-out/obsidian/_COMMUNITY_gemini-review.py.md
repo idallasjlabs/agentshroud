@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.33
 members: 7
 ---
 
 # gemini-review.py
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
 - [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
-- [[PATH_9]] - code - scripts/peer-review.sh
+- [[PATH_3]] - code - scripts/peer-review.sh
 - [[call_gemini()]] - code - scripts/gemini-review.py
 - [[gemini-review.py]] - code - scripts/gemini-review.py
-- [[main()_3]] - code - scripts/gemini-review.py
+- [[main()_2]] - code - scripts/gemini-review.py
 - [[peer-review.sh]] - code - scripts/peer-review.sh
 - [[peer-review.sh script]] - code - scripts/peer-review.sh
 

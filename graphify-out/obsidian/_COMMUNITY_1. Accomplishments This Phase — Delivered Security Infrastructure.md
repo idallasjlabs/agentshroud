@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # 1. Accomplishments This Phase — Delivered Security Infrastructure
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members

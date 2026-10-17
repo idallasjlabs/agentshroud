@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "Project Management (README)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Project_Management_README
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

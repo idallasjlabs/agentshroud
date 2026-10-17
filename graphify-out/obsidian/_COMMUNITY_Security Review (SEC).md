@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.25
 members: 8
 ---
 
 # Security Review (SEC)
 
-**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
 - [[dot-agentsskillsi-secREADME]] - document - .agents/skills/i-sec/README.md
-- [[Purpose_2]] - document - .agents/skills/i-sec/README.md
+- [[Purpose_4]] - document - .agents/skills/i-sec/README.md
 - [[Related Skills]] - document - .agents/skills/i-sec/README.md
 - [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
 - [[Usage]] - document - .agents/skills/i-sec/README.md

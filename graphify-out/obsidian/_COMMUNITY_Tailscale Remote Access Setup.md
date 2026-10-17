@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # Tailscale Remote Access Setup
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
 - [[Access OpenClaw Dashboard Remotely]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Current Status_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Next Steps_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Next Steps_10]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 1 OpenClaw Control UI on Port 18790]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 2 Gateway Dashboard on Port 8080]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 3 Both Services]] - document - docs/reference/TAILSCALE_COMMANDS.md

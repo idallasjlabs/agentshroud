@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "UserSessionManager"
+community: "UserSessionManager (6)"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_6
 ---
 
 # Where Used
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 26
 ---
 
 # Coding Agent (bash-first)
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members

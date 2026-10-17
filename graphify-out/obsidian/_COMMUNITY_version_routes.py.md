@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # version_routes.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
 - [[Config Keys Read_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Environment Variables Used_5]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Function Details_15]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Function Details_14]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Purpose_121]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Related_21]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Responsibilities_19]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Purpose_131]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[VersionRequest Fields]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[downgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[get_version_history()_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md

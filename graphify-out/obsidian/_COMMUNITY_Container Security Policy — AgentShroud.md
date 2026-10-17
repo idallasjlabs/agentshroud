@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 21
 ---
 
 # Container Security Policy — AgentShroud
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -41,7 +39,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
 
 ## Top bridge nodes
 - [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities

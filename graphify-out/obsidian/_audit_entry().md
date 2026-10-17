@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "export_bot"
+community: "MiddlewareManager"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # _audit_entry()
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_summary_from_agent_id()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_from_non_allowed_action()]] - `calls` [EXTRACTED]
 - [[dot-test_user_key_fallback()]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `references` [EXTRACTED]
+- [[SimpleNamespace_1]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

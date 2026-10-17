@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 30
 ---
 
 # Browser — Secure Browser Automation
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -22,10 +20,10 @@ members: 30
 - [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Best Practices_4]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Best Practices_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Browser — Secure Browser Automation_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Core Security Principles_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Extract Data_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Fetch JavaScript-Heavy Page (Node.js)]] - document - docker/config/hermes/skills/i-browser/SKILL.md
@@ -37,8 +35,8 @@ members: 30
 - [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Troubleshooting_17]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Troubleshooting_14]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_64]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

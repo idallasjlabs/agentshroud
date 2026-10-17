@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 29
 ---
 
 # SecureBrowser Skill
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -19,11 +17,11 @@ members: 29
 - [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
 - [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
 - [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
-- [[Integration_1]] - document - skills/custom/securebrowser/README.md
-- [[Key Features_1]] - document - skills/custom/securebrowser/README.md
+- [[Integration_2]] - document - skills/custom/securebrowser/README.md
+- [[Key Features_2]] - document - skills/custom/securebrowser/README.md
 - [[License_2]] - document - skills/custom/securebrowser/README.md
 - [[Limitations_3]] - document - skills/custom/securebrowser/README.md
-- [[Overview_11]] - document - skills/custom/securebrowser/README.md
+- [[Overview_8]] - document - skills/custom/securebrowser/README.md
 - [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
 - [[Quick Start_6]] - document - skills/custom/securebrowser/README.md
 - [[Risk Classification]] - document - skills/custom/securebrowser/README.md
@@ -48,8 +46,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_UserSessionManager (7)]]
 - 1 edge to [[_COMMUNITY_CLI Reference]]
-- 1 edge to [[_COMMUNITY_UserSessionManager_9]]
 - 1 edge to [[_COMMUNITY_SSH Config]]
 
 ## Top bridge nodes

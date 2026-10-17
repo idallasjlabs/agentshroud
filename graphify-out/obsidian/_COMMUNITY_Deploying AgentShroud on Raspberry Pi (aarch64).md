@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 21
 ---
 
 # Deploying AgentShroud on Raspberry Pi (aarch64)
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 21
 - [[5. Build and Start]] - document - docs/operations/raspberry-pi.md
 - [[6. Verify]] - document - docs/operations/raspberry-pi.md
 - [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
-- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
+- [[Container Won't Start_1]] - document - docs/operations/raspberry-pi.md
 - [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
 - [[Fresh Install]] - document - docs/operations/raspberry-pi.md
 - [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md

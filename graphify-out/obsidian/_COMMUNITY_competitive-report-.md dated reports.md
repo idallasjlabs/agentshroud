@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 18
 ---
 
 # competitive-report-*.md dated reports
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -24,7 +22,7 @@ members: 18
 - [[competitive-analysis.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
 - [[competitive-report-.md dated reports]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
 - [[cron-operations skill]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[main()_22]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_20]] - code - docker/bots/hermes/render_md_email.py
 - [[render()]] - code - docker/bots/hermes/render_md_email.py
 - [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 - [[trend-log.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt

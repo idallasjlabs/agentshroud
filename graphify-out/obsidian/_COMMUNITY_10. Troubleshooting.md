@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 34
 ---
 
 # 10. Troubleshooting
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 34 nodes
 
 ## Members
@@ -36,9 +34,9 @@ members: 34
 - [[MCP Troubleshooting]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
 - [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
-- [[Role_22]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Role_21]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Troubleshooting_13]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting_11]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
 - [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
 - [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
@@ -53,13 +51,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]]
-- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)_1]]
+- 2 edges to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET) (3)]]
+- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS) (2)]]
 - 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation_2]]
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (3)]]
 - 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
 
 ## Top bridge nodes
 - [[10. Troubleshooting]] - degree 29, connects to 4 communities
-- [[Troubleshooting_13]] - degree 6, connects to 1 community
+- [[Troubleshooting_11]] - degree 6, connects to 1 community
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - degree 6, connects to 1 community

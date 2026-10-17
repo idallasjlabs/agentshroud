@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Production Safety Checklist (PROD-SAFETY)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[Production Safety Checklist (PROD-SAFETY)]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Purpose_46]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Related Skills_35]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Usage_38]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Purpose_56]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Related Skills_43]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Usage_47]] - document - docker/config/openclaw/skills/i-ps/README.md
 - [[openclawskillsi-psREADME]] - document - docker/config/openclaw/skills/i-ps/README.md
 
 ## Live Query (requires Dataview plugin)

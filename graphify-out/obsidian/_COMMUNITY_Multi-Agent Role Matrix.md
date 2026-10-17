@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 20
 ---
 
 # Multi-Agent Role Matrix
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 20 nodes
 
 ## Members

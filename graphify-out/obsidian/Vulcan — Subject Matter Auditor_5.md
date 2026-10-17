@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
+community: "Vulcan — Subject Matter Auditor (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/Vulcan__Subject_Matter_Auditor_3
 ---
 
 # Vulcan — Subject Matter Auditor
@@ -22,4 +22,4 @@ tags:
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-vulcanSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor_3

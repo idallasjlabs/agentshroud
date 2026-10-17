@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.06
 members: 31
 ---
 
 # Common Queries
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
 - [[CodexBar CLI quick ref (usage + cost)]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Commands]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
+- [[Commands_2]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
 - [[Common Queries]] - document - skills/openclaw/session-logs/SKILL.md
 - [[Cost JSON fields]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
 - [[Count messages and tokens in a session]] - document - skills/openclaw/session-logs/SKILL.md
@@ -28,9 +26,9 @@ members: 31
 - [[Model usage]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Notes_1]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
 - [[Output_1]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Overview_10]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Overview_6]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Quick start_5]] - document - skills/openclaw/model-usage/SKILL.md
-- [[References_2]] - document - skills/openclaw/model-usage/SKILL.md
+- [[References_1]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Search across ALL sessions for a phrase]] - document - skills/openclaw/session-logs/SKILL.md
 - [[Search for keyword in assistant responses]] - document - skills/openclaw/session-logs/SKILL.md
 - [[Structure]] - document - skills/openclaw/session-logs/SKILL.md

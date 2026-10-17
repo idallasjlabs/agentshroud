@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 44
 ---
 
 # GroupConfig
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 44 nodes
 
 ## Members
@@ -63,12 +61,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py_1]]
+- 11 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 9 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 3 edges to [[_COMMUNITY_telegram_proxy.py (5)]]
 
 ## Top bridge nodes
-- [[test_group_config.py]] - degree 11, connects to 2 communities
-- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 1 community
-- [[TestUserCollabModeOverride]] - degree 9, connects to 1 community
-- [[TeamsConfig]] - degree 7, connects to 1 community
-- [[TestMembershipQueries]] - degree 7, connects to 1 community
+- [[test_group_config.py]] - degree 11, connects to 3 communities
+- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 2 communities
+- [[TestUserCollabModeOverride]] - degree 9, connects to 2 communities
+- [[TeamsConfig]] - degree 7, connects to 2 communities
+- [[TestMembershipQueries]] - degree 7, connects to 2 communities

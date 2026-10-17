@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 23
 ---
 
 # GSDE&G Development Master Checklist Skill
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -24,9 +22,9 @@ members: 23
 - [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
 - [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
 - [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[Purpose_75]] - document - .agents/skills/i-mc/README.md
-- [[Related Skills_60]] - document - .agents/skills/i-mc/README.md
-- [[Usage_70]] - document - .agents/skills/i-mc/README.md
+- [[Purpose_74]] - document - .agents/skills/i-mc/README.md
+- [[Related Skills_63]] - document - .agents/skills/i-mc/README.md
+- [[Usage_74]] - document - .agents/skills/i-mc/README.md
 - [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
 - [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
 - [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md

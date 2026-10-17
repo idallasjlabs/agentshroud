@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Project Management (PM)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[Project Management (PM)]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Purpose_44]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Related Skills_33]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Usage_36]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Purpose_54]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Related Skills_41]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Usage_45]] - document - docker/config/openclaw/skills/i-pm/README.md
 - [[openclawskillsi-pmREADME]] - document - docker/config/openclaw/skills/i-pm/README.md
 
 ## Live Query (requires Dataview plugin)

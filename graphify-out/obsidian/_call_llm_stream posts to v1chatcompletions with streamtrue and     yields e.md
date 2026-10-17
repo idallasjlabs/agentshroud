@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "server.py"
+community: "server.py (2)"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/serverpy_2
 ---
 
 # _call_llm_stream posts to /v1/chat/completions with stream:true and     yields e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_llm_stream_yields_sentences()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy_2

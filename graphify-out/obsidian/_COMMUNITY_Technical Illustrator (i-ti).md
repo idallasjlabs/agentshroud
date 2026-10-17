@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.18
 members: 13
 ---
 
 # Technical Illustrator (i-ti)
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
 - [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
 - [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Purpose_173]] - document - .agents/skills/i-ti/README.md
-- [[Purpose_174]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Purpose_172]] - document - .agents/skills/i-ti/README.md
+- [[Purpose_173]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[Related Skills_112]] - document - .agents/skills/i-ti/README.md
 - [[Related Skills_113]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/README.md

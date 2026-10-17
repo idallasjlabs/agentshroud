@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.04
 members: 62
 ---
 
 # _pcm_bytes
 
-**Cohesion:** 0.04 - loosely connected
 **Members:** 62 nodes
 
 ## Members
@@ -82,7 +80,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 31 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 3 edges to [[_COMMUNITY_AsyncMock_1]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
 - [[_mock_ws()]] - degree 25, connects to 2 communities

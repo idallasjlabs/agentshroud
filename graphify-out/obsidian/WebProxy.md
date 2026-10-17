@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "WebProxy"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProxyAction
+  - community/WebProxy
 ---
 
 # WebProxy
@@ -16,7 +16,7 @@ tags:
 - [[dot-_audit()]] - `method` [EXTRACTED]
 - [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[dot-check_request()]] - `method` [EXTRACTED]
-- [[dot-get_stats()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_1]] - `method` [EXTRACTED]
 - [[dot-scan_response()]] - `method` [EXTRACTED]
 - [[dot-setUp()_1]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
@@ -34,11 +34,11 @@ tags:
 - [[MockThreatLevel]] - `uses` [INFERRED]
 - [[MockURLResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `calls` [EXTRACTED]
-- [[StreamReader_1]] - `uses` [INFERRED]
+- [[StreamReader_3]] - `uses` [INFERRED]
 - [[StreamReader]] - `uses` [INFERRED]
-- [[StreamWriter]] - `uses` [INFERRED]
+- [[StreamWriter_2]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
@@ -48,7 +48,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -67,7 +67,7 @@ tags:
 - [[_SocketTransportWriter]] - `uses` [INFERRED]
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[http_proxy.py]] - `imports` [EXTRACTED]
+- [[http_proxy.py_2]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
@@ -85,4 +85,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/WebProxy

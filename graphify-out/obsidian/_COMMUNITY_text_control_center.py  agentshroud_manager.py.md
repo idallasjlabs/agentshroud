@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # text_control_center.py / agentshroud_manager.py
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
 - [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Purpose_11]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Purpose_12]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 - [[Related Notes_17]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 - [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 - [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md

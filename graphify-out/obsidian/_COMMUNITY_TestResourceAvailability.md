@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.50
 members: 4
 ---
 
 # TestResourceAvailability
 
-**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
@@ -24,7 +22,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
 
 ## Top bridge nodes
 - [[TestResourceAvailability]] - degree 4, connects to 1 community

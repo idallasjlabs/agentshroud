@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # Deploying AgentShroud on macOS (Apple Silicon / Intel)
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members

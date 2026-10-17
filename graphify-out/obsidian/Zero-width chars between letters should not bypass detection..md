@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "EgressFilterConfig"
 location: "L804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/EgressFilterConfig
 ---
 
 # Zero-width chars between letters should not bypass detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_zero_width_evasion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # egress_config.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -20,11 +18,11 @@ members: 15
 - [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Key Classes  Functions_32]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Purpose_149]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
-- [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
-- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Threat Model_20]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
-- [[egress_config.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[egress_config.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

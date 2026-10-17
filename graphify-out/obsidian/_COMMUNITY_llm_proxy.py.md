@@ -1,38 +1,36 @@
 ---
 type: community
-cohesion: 0.09
 members: 23
 ---
 
 # llm_proxy.py
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
 - [[Buffered streaming filter (`_filter_outbound_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Claude Opus intercept]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Configuration_9]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Configuration_8]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Constructor dependencies (dependency injection)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Environment variables_4]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Environment variables_3]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Failover chain]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Failover controls]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Failover notifications]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Header pass-through policy]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Key Classes  Functions_1]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Overview_16]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Overview_13]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Related_4]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Related_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Retry policy (`_forward_request`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Stats tracked]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Streaming]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[True-streaming path (`proxy_messages_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[`think` tag stripping]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[llm_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[llm_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 

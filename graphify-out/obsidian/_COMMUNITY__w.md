@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 37
 ---
 
 # _w
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -56,27 +54,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_ApprovalQueueConfig_7]]
-- 8 edges to [[_COMMUNITY_Layer-by-Layer Breakdown_1]]
-- 4 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report_1]]
-- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter_13]]
-- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter_15]]
-- 2 edges to [[_COMMUNITY_TestDaemonConfigReader]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter_11]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter_12]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy_8]]
-- 2 edges to [[_COMMUNITY_TestMandatoryGates]]
+- 14 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 8 edges to [[_COMMUNITY_Layer-by-Layer Breakdown (2)]]
+- 4 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
+- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter (15)]]
+- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter (17)]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (13)]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (14)]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (16)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (6)]]
 - 2 edges to [[_COMMUNITY_TestResourceAvailability]]
+- 2 edges to [[_COMMUNITY_TestDaemonConfigReader]]
+- 2 edges to [[_COMMUNITY_TestMandatoryGates]]
 - 2 edges to [[_COMMUNITY_TestSecretsManagement]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter_14]]
-- 1 edge to [[_COMMUNITY_TestAiModelSupplyChain]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter_8]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter_10]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (10)]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (12)]]
+- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
 - 1 edge to [[_COMMUNITY_TestFluentBitSummary]]
-- 1 edge to [[_COMMUNITY_TestIdentityAuth]]
 - 1 edge to [[_COMMUNITY_TestSocketAndPidProbes]]
 - 1 edge to [[_COMMUNITY_TestTrivySummary]]
-- 1 edge to [[_COMMUNITY_TestPathIsolationManager_1]]
+- 1 edge to [[_COMMUNITY_TestAiModelSupplyChain]]
+- 1 edge to [[_COMMUNITY_TestIdentityAuth]]
 
 ## Top bridge nodes
 - [[_w()]] - degree 73, connects to 21 communities

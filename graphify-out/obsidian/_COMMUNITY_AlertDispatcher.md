@@ -1,417 +1,553 @@
 ---
 type: community
-cohesion: 0.01
-members: 402
+members: 540
 ---
 
 # AlertDispatcher
 
-**Cohesion:** 0.01 - loosely connected
-**Members:** 402 nodes
+**Members:** 540 nodes
 
 ## Members
-- [[dot-__init__()_11]] - code - gateway/ingest_api/middleware.py
-- [[dot-__init__()_12]] - code - gateway/security/drift_detector.py
-- [[dot-__init__()_13]] - code - gateway/security/egress_monitor.py
-- [[dot-__init__()_14]] - code - gateway/security/env_guard.py
-- [[dot-__init__()_15]] - code - gateway/security/log_sanitizer.py
-- [[dot-__init__()_16]] - code - gateway/security/metadata_guard.py
-- [[dot-_compile_patterns()]] - code - gateway/security/log_sanitizer.py
-- [[dot-_contains_env_access_patterns()]] - code - gateway/security/env_guard.py
+- [[dot-__init__()_10]] - code - gateway/ingest_api/middleware.py
+- [[dot-__init__()_15]] - code - gateway/security/approval_hardening.py
+- [[dot-__init__()_16]] - code - gateway/security/browser_security.py
+- [[dot-__init__()_20]] - code - gateway/security/context_guard.py
+- [[dot-__init__()_11]] - code - gateway/security/drift_detector.py
+- [[dot-__init__()_12]] - code - gateway/security/env_guard.py
+- [[dot-__init__()_17]] - code - gateway/security/file_sandbox.py
+- [[dot-__init__()_13]] - code - gateway/security/metadata_guard.py
+- [[dot-__init__()_22]] - code - gateway/security/network_validator.py
+- [[dot-__init__()_14]] - code - gateway/security/oauth_security.py
+- [[dot-__init__()_18]] - code - gateway/security/path_isolation.py
+- [[dot-__init__()_19]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-__init__()_21]] - code - gateway/security/xml_leak_filter.py
+- [[dot-_analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_critical_guard_failure()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_ensure_base_directory()]] - code - gateway/security/path_isolation.py
+- [[dot-_extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_extract_file_paths()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_extract_user_id()]] - code - gateway/ingest_api/middleware.py
 - [[dot-_init_db()]] - code - gateway/security/drift_detector.py
-- [[dot-_looks_like_credential()]] - code - gateway/security/env_guard.py
-- [[dot-_make_record()]] - code - gateway/tests/test_security_audit.py
-- [[dot-_record_leakage()]] - code - gateway/security/env_guard.py
+- [[dot-_is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_is_owner()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_is_path_allowed_for_user()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_make_hook()]] - code - gateway/tests/test_git_guard.py
+- [[dot-_record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-acknowledge_alert()]] - code - gateway/security/drift_detector.py
-- [[dot-check_anomalies()]] - code - gateway/security/egress_monitor.py
-- [[dot-check_command_execution()]] - code - gateway/security/env_guard.py
-- [[dot-check_file_access()]] - code - gateway/security/env_guard.py
+- [[dot-approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
 - [[dot-check_for_exif()]] - code - gateway/security/metadata_guard.py
 - [[dot-check_oversized_headers()]] - code - gateway/security/metadata_guard.py
+- [[dot-cleanup_expired_canaries()]] - code - gateway/security/output_canary.py
+- [[dot-cleanup_old_sessions()]] - code - gateway/security/context_guard.py
 - [[dot-cleanup_seen()]] - code - gateway/security/alert_dispatcher.py
 - [[dot-clear_detected_leakages()]] - code - gateway/security/env_guard.py
-- [[dot-close()_1]] - code - gateway/security/drift_detector.py
-- [[dot-daily_summary()]] - code - gateway/security/egress_monitor.py
-- [[dot-export_leakage_report()]] - code - gateway/security/env_guard.py
+- [[dot-close()_1]] - code - gateway/ingest_api/middleware.py
+- [[dot-close()]] - code - gateway/security/drift_detector.py
+- [[dot-create_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[dot-filter_function_calls_only()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-filter_outbound_response()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_active_users()]] - code - gateway/security/path_isolation.py
+- [[dot-get_alert_dispatcher()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_alerts()]] - code - gateway/security/drift_detector.py
-- [[dot-get_events()]] - code - gateway/security/egress_monitor.py
-- [[dot-get_leakage_summary()]] - code - gateway/security/env_guard.py
-- [[dot-guard()]] - code - gateway/tests/test_security_audit.py
-- [[dot-monitor_environment_access()]] - code - gateway/security/env_guard.py
-- [[dot-record()_1]] - code - gateway/security/egress_monitor.py
+- [[dot-get_dns_filter()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_drift_detector()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_enhanced_tool_sanitizer()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_killswitch_monitor()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_log_sanitizer()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_multi_turn_tracker()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_network_validator()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_output_canary()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_rbac_manager()]] - code - gateway/ingest_api/middleware.py
+- [[dot-get_temp_files()]] - code - gateway/security/file_sandbox.py
+- [[dot-get_tool_chain_analyzer()]] - code - gateway/ingest_api/middleware.py
+- [[dot-monitor_git_operations()]] - code - gateway/security/git_guard.py
+- [[dot-monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-process_request()]] - code - gateway/ingest_api/middleware.py
+- [[dot-process_tool_result()]] - code - gateway/ingest_api/middleware.py
+- [[dot-record_network_activity()]] - code - gateway/security/file_sandbox.py
+- [[dot-record_state_used()]] - code - gateway/security/oauth_security.py
+- [[dot-register_known_shared_ids()]] - code - gateway/security/oauth_security.py
+- [[dot-register_screenshot_hook()]] - code - gateway/security/browser_security.py
+- [[dot-reset_session()]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-sanitize()_2]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-sanitize_filename()]] - code - gateway/security/metadata_guard.py
 - [[dot-sanitize_headers()]] - code - gateway/security/metadata_guard.py
 - [[dot-sanitize_image_metadata()]] - code - gateway/security/metadata_guard.py
-- [[dot-sanitizer()_2]] - code - gateway/tests/test_security_audit.py
-- [[dot-scrub_command_output()]] - code - gateway/security/env_guard.py
-- [[dot-test_agent_isolation_module()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_agent_registry_module()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_alert_dedup()]] - code - gateway/tests/test_security_audit.py
+- [[dot-sanitize_images()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-sanitize_links()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-scan_tool_result()]] - code - gateway/ingest_api/middleware.py
+- [[dot-setup_method()_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_alert_dispatcher_concurrent_dispatch()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_alert_dispatcher_init()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_alert_dispatcher_write()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_alert_has_description()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_alert_has_severity()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_alert_monitor_mode_no_block()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_all_modules_have_copyright()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_all_security_modules_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_aws_key_redaction()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_aws_key_redaction_via_pattern()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_binary_data_in_text_fields()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_browser_security_loaded()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_canary_system_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clamav_parse_infected()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_consent_framework_loads()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_browser_security_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_clean_hook_passes()]] - code - gateway/tests/test_git_guard.py
+- [[dot-test_clean_repo_no_findings()]] - code - gateway/tests/test_git_guard.py
+- [[dot-test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_consent_required_for_sensitive_ops()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_credit_card_amex()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_credit_card_in_logs()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_credit_card_no_dashes()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_credit_card_visa()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_context_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_context_guard_session_isolation_under_load()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_context_guard_tool_manipulation()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_cooldown_disabled_when_feature_disabled()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_crlf_in_prompt_guard()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_curl_in_hook_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[dot-test_custom_config()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_dashboard_has_csp_meta()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_dashboard_html_exists()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_dashboard_no_inline_secrets()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deeply_nested_context_attacks()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_deeply_nested_json()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_default_mode_is_enforce()]] - code - gateway/tests/test_egress_monitor.py
+- [[dot-test_default_config()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_default_mode_is_enforce()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_default_mode_is_enforce()_1]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_dns_entropy_calculator()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dns_low_entropy_legit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_dns_tunneling_detection()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_dockerfile_exists()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_drift_detector_baseline()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_drift_detector_concurrent_writes()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_drift_detector_detects_change()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_drift_no_false_positive()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_edge_cases()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_egress_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[dot-test_egress_monitor_loaded()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_egress_monitor_loaded()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_email_standard()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_email_with_plus()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_empty_and_none_input()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_empty_summary()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_env_guard_command_check()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_empty_inputs_everywhere()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_env_guard_detects_data_access()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_env_guard_monitoring()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_env_guard_scrub_output()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_env_guard_scrubs_output()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[dot-test_file_sandbox_mcp_write()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_file_sandbox_staging_detection()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
 - [[dot-test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_generous_baselines()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_git_guard_scan_repo()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_github_token_redaction()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_health_report_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_high_volume_triggers_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[dot-test_full_init_success_and_getters()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_hmac_comparison_for_secrets()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_install_log_sanitizer_no_error()]] - code - gateway/tests/test_log_sanitizer.py
-- [[dot-test_json_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_jwt_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_init_all_modules_fail_falls_back_to_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_internal_link_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_internal_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_is_domain_allowed()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_json_injection_in_context()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_legitimate_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_log_sanitizer_covers_stack_traces()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_logging()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_malicious_image_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_malicious_link_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_many_pii_entities()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_mcp_proxy_module_exists()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_metadata_guard_strips_internal_headers()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_metadata_oversized_headers()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_metadata_path_traversal_stripped()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_metadata_sanitize_filename()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_multiple_pii_single_message()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_mixed_content_sanitization()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_multi_turn_tracker_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_network_validator_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_eval_or_exec_in_security()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_false_positive_on_dates()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_false_positive_on_zip()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[dot-test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
 - [[dot-test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_no_hardcoded_secrets_in_source()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_no_mixed_content()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_no_pickle_in_security_modules()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_no_shell_true_in_subprocess()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_no_yaml_unsafe_load()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_normal_multi_channel_not_flagged()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_normal_volume_no_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[dot-test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_null_byte_in_prompt()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_oauth_confused_deputy()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_oauth_pkce_violation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_oauth_redirect_mismatch()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_phone_international()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_phone_us_standard()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_boundary_handling()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_in_code_block()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_in_json()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_output_canary_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_oversized_json_payload()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_path_isolation_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_path_traversal_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_pii_scan_time_independent_of_content()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_pii_with_obfuscation_attempt()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_polyglot_payload()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_prompt_guard_catches_tool_injection()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_prompt_guard_concurrent_scans()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_prompt_guard_no_early_exit_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_rapid_fire_scans()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_record_dns_event()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_record_file_event()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_record_http_event()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_record_mcp_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[dot-test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_regex_redos_email()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_regex_redos_ssn()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_reject_empty_token()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_reject_garbage_token()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_reject_malformed_jwt()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_reject_none_algorithm()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_requirements_pinned()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_role_switching()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_reverse_shell_flagged()]] - code - gateway/tests/test_git_guard.py
 - [[dot-test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_security_toolchain_clamav()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_security_toolchain_falco()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_security_toolchain_trivy()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_security_toolchain_wazuh()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_session_binding()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_session_cannot_impersonate()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_session_different_fingerprints()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_session_isolation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_slow_drip_across_channels()]] - code - gateway/tests/test_egress_monitor.py
-- [[dot-test_ssn_no_dashes()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ssn_redaction_in_logs()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ssn_space_separated()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ssn_standard_format()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_subagent_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[dot-test_subagent_monitor_tracks_events()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_summary_report()]] - code - gateway/tests/test_egress_monitor.py
+- [[dot-test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_tmp_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_token_error_no_secret_leak()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_token_validation_rejects_fast()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[dot-test_trust_cannot_exceed_max()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_trust_manager_rapid_updates()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_unicode_normalization_bypass()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_unicode_pii()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_unparseable_text_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_unregistered_agent_blocked()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_unusual_destination_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[dot-test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_very_long_message()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_violation_drops_trust_significantly()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[dot-test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_xml_entity_expansion()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_xml_tag_injection()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_xss_in_dashboard_inputs()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-token_validator()]] - code - gateway/tests/test_security_audit.py
+- [[dot-validate_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[dot-verify_pkce()]] - code - gateway/security/oauth_security.py
 - [[A single violation should meaningfully impact trust.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Agent registry should be importable.]] - rationale - gateway/tests/test_security_audit.py
+- [[Action]] - code - gateway/ingest_api/middleware.py
+- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[AlertDispatcher]] - code - gateway/security/alert_dispatcher.py
-- [[AlertSeverity]] - code - gateway/security/egress_monitor.py
-- [[Alerts in monitor mode should never block.]] - rationale - gateway/tests/test_egress_monitor.py
-- [[All security modules should have copyright header.]] - rationale - gateway/tests/test_security_audit.py
-- [[Amex card 378282246310005 (15 digits starting with 37).]] - rationale - gateway/tests/test_security_audit.py
-- [[AnomalyAlert]] - code - gateway/security/egress_monitor.py
-- [[Any]] - code - gateway/security/env_guard.py
-- [[Any_1]] - code - gateway/security/log_sanitizer.py
-- [[Attempt to hide PII with zero-width chars.]] - rationale - gateway/tests/test_security_audit.py
+- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
+- [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
+- [[Any]] - code - gateway/ingest_api/middleware.py
+- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
+- [[ApprovalHardeningConfig]] - code - gateway/security/approval_hardening.py
+- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
 - [[Binary data in text fields shouldn't crash.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
 - [[CRLF injection in prompt shouldn't bypass detection.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Card without dashes 4111111111111111.]] - rationale - gateway/tests/test_security_audit.py
-- [[Check if a value looks like a credential.]] - rationale - gateway/security/env_guard.py
+- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
+- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
+- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if a file path is allowed for a user to access.]] - rationale - gateway/ingest_api/middleware.py
 - [[Check if binary data contains EXIF metadata.]] - rationale - gateway/security/metadata_guard.py
-- [[Check if command contains patterns that could access environment.]] - rationale - gateway/security/env_guard.py
-- [[Check if command execution should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
-- [[Check if file access should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Check if headers exceed size limits.]] - rationale - gateway/security/metadata_guard.py
+- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if user_id is the system owner via RBAC config (single source of truth).]] - rationale - gateway/ingest_api/middleware.py
+- [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - rationale - gateway/security/output_canary.py
+- [[Clean up old session data.]] - rationale - gateway/security/context_guard.py
 - [[Clear the list of detected leakages.]] - rationale - gateway/security/env_guard.py
-- [[Compile regex patterns for sensitive data detection.]] - rationale - gateway/security/log_sanitizer.py
+- [[Combined memory security configuration.]] - rationale - gateway/security/memory_config.py
 - [[Concurrent alert dispatch shouldn't lose or corrupt alerts.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Concurrent baseline updates — SQLite is single-threaded by default.         This]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Concurrent prompt scans shouldn't interfere with each other.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Configuration for approval queue hardening.]] - rationale - gateway/security/approval_hardening.py
+- [[Configuration for path isolation system.]] - rationale - gateway/security/path_isolation.py
+- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Consent framework should be available for gating.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[ConsentDecision]] - code - gateway/security/consent_framework.py
+- [[Context guard should detect tool result manipulation.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[ContextGuard]] - code - gateway/security/context_guard.py
+- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Create base agentshroud temp directory if it doesn't exist.]] - rationale - gateway/security/path_isolation.py
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - rationale - gateway/security/log_sanitizer.py
 - [[Dashboard should escape user inputs (no raw innerHTML from API).]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Dashboard should have Content-Security-Policy or mention it.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Dashboard should have an HTML file.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Dashboard should not contain hardcoded secrets.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Dashboard should not load HTTP resources.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Dates should not be flagged as SSNphone.]] - rationale - gateway/tests/test_security_audit.py
 - [[Deeply nested JSON shouldn't cause stack overflow.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_egress_monitor.py
 - [[Detect configuration drift from known-good baselines.]] - rationale - gateway/security/drift_detector.py
 - [[Detect data staging patterns (collect → compress → exfil).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Detected environment variable leakage.]] - rationale - gateway/security/env_guard.py
-- [[Different fingerprints should create different sessions.]] - rationale - gateway/tests/test_security_audit.py
-- [[Different sessions should have different identities.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
 - [[Dispatches security alerts with dedup and rate limiting.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Dockerfile should be present for reproducible builds.]] - rationale - gateway/tests/test_security_audit.py
 - [[DriftDetector]] - code - gateway/security/drift_detector.py
-- [[Duplicate alerts should be deduplicated.]] - rationale - gateway/tests/test_security_audit.py
-- [[Edge case empty string.]] - rationale - gateway/tests/test_security_audit.py
 - [[Egress monitoring should be available.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[EgressChannel]] - code - gateway/security/egress_monitor.py
-- [[EgressEvent]] - code - gateway/security/egress_monitor.py
-- [[EgressMonitor]] - code - gateway/security/egress_monitor.py
+- [[EgressFilterConfig_1]] - code - gateway/security/egress_filter.py
 - [[EgressMonitorConfig]] - code - gateway/security/egress_monitor.py
-- [[EgressSummary]] - code - gateway/security/egress_monitor.py
 - [[Email regex should not be vulnerable to ReDoS.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Email with plus addressing user+tag@gmail.com.]] - rationale - gateway/tests/test_security_audit.py
-- [[EntropyCalculator]] - code - gateway/security/dns_filter.py
+- [[Empty strings shouldn't crash any module.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
+- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Environment guard should monitor data access patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Environment guard should scrub sensitive output.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[EnvironmentGuard]] - code - gateway/security/env_guard.py
-- [[EnvironmentLeakage]] - code - gateway/security/env_guard.py
-- [[Every security module should import without error.]] - rationale - gateway/tests/test_security_audit.py
-- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
+- [[Even blocked paths are allowed in monitor mode (just flagged).]] - rationale - gateway/tests/test_file_sandbox.py
+- [[Exception]] - code - gateway/ingest_api/middleware.py
+- [[Extract code blocks to preserve them during sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Extract potential file paths from message content.]] - rationale - gateway/ingest_api/middleware.py
+- [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
+- [[FastAPI]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[FileSandbox]] - code - gateway/security/file_sandbox.py
+- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
-- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
-- [[Get statistics about sanitization patterns.]] - rationale - gateway/security/log_sanitizer.py
-- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
-- [[Get the global environment guard instance.]] - rationale - gateway/security/env_guard.py
+- [[Filter outbound response to remove sensitive XML and path information.]] - rationale - gateway/ingest_api/middleware.py
+- [[Filter to remove sensitive XML and path information from outbound responses.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Get set of currently active users.]] - rationale - gateway/security/path_isolation.py
+- [[Get the RBAC manager for external access.]] - rationale - gateway/ingest_api/middleware.py
+- [[Get the log sanitizer for integration with logging system.]] - rationale - gateway/ingest_api/middleware.py
+- [[Git guard errors shouldn't expose full file paths.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[GitGuard]] - code - gateway/security/git_guard.py
+- [[Guard against context window poisoning attacks.]] - rationale - gateway/security/context_guard.py
 - [[Guard against environment variable leakage and unauthorized access.]] - rationale - gateway/security/env_guard.py
 - [[Guards against metadata channel attacks and information disclosure.]] - rationale - gateway/security/metadata_guard.py
 - [[High-entropy DNS queries indicate tunneling.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[High-entropy domains (potential tunneling).]] - rationale - gateway/tests/test_security_audit.py
 - [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
-- [[Install the log sanitizer on all existing loggers.]] - rationale - gateway/security/log_sanitizer.py
+- [[Initialize the filter with predefined patterns.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Internal infrastructure headers should be stripped.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[International phone +1-555-867-5309.]] - rationale - gateway/tests/test_security_audit.py
 - [[Invalid tokens should be rejected quickly (no expensive operations).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[IsolationStatus]] - code - gateway/security/agent_isolation.py
+- [[JSON injection in message shouldn't manipulate context.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Kaizen Fix AlertDispatcher now retries 3x with exponential backoff instead of failing on a single 10s timeout, which had been the top gateway error category (14week) at ERROR level]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
-- [[Legit domains have lower entropy.]] - rationale - gateway/tests/test_security_audit.py
+- [[Large-write-then-network-activity stagingexfiltration pattern detection]] - concept - gateway/tests/test_file_sandbox.py
+- [[LogSanitizer_1]] - code - gateway/ingest_api/middleware.py
 - [[LogSanitizer]] - code - gateway/security/log_sanitizer.py
 - [[MCP file writes should go through sandbox.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[MCP proxy module should be importable.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Main Output Canary System for detecting prompt leakage.      This system generat]] - rationale - gateway/security/output_canary.py
+- [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Manages per-user path isolation for temporary files and directories.]] - rationale - gateway/security/path_isolation.py
+- [[Manages the P1 security middleware modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[Mark an alert as acknowledged.]] - rationale - gateway/security/drift_detector.py
+- [[MemorySecurityConfig]] - code - gateway/security/memory_config.py
 - [[Message with hundreds of PII entities should complete.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[MetadataGuard]] - code - gateway/security/metadata_guard.py
-- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
-- [[Multiple PII entities in one message.]] - rationale - gateway/tests/test_security_audit.py
-- [[No hardcoded secrets in Python source files.]] - rationale - gateway/tests/test_security_audit.py
+- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[MiddlewareManager]] - code - gateway/ingest_api/middleware.py
+- [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
+- [[Monitor and analyze git hooks and package installation scripts.]] - rationale - gateway/security/git_guard.py
+- [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
+- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
+- [[MultiTurnTracker]] - code - gateway/security/multi_turn_tracker.py
+- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Nested context attacks shouldn't cause stack overflow.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[NetworkValidator]] - code - gateway/security/network_validator.py
 - [[No yaml.load() without Loader (arbitrary code execution).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Normal usage across channels should not trigger drip detection.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Null bytes shouldn't bypass prompt guard.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[PII at message start and end.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII embedded in JSON.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII in codemarkdown blocks.]] - rationale - gateway/tests/test_security_audit.py
+- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
+- [[Output Canary System Tests]] - code - gateway/tests/test_output_canary.py
+- [[OutputCanary]] - code - gateway/security/output_canary.py
 - [[PII scanning time should be roughly linear, not exponential.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[PII with Unicode characters nearby.]] - rationale - gateway/tests/test_security_audit.py
-- [[PIIConfig]] - code - gateway/ingest_api/sanitizer.py
-- [[Pattern]] - code - gateway/security/log_sanitizer.py
+- [[Path]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[Path Isolation Manager Tests]] - code - gateway/tests/test_path_isolation.py
+- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[PathIsolationConfig]] - code - gateway/security/path_isolation.py
+- [[PathIsolationManager]] - code - gateway/security/path_isolation.py
 - [[Polyglot (valid as multiple formats) shouldn't bypass checks.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Privilege Separation File Sandbox Tests]] - code - gateway/tests/test_privilege_separation.py
+- [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[Process tool result through PII sanitization before it reaches agent          Ar]] - rationale - gateway/ingest_api/middleware.py
 - [[Prompt guard should catch tool-call injection attempts.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Prompt guard should scan full input, not short-circuit on first match.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
+- [[Quick filter that only removes function call XML (for performance).          Arg]] - rationale - gateway/security/xml_leak_filter.py
+- [[RBACManager]] - code - gateway/ingest_api/middleware.py
 - [[Rapid scanning shouldn't degrade or crash.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Rapid trust score updates shouldn't corrupt state.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Record a detected environment leakage.]] - rationale - gateway/security/env_guard.py
-- [[Reject JWTs with alg=none (classic attack).]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Record a guard __init__ exception so the request path can fail closed.]] - rationale - gateway/ingest_api/middleware.py
+- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Remove EXIF metadata from image data if present.]] - rationale - gateway/security/metadata_guard.py
 - [[Remove expired entries from seen IDs cache.          Returns             Number]] - rationale - gateway/security/alert_dispatcher.py
+- [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Requirements should have pinned versions.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Reset session score after owner review.          Args             session_id S]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Resource]] - code - gateway/ingest_api/middleware.py
+- [[Restore code blocks after sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
 - [[Retrieve stored drift alerts.]] - rationale - gateway/security/drift_detector.py
-- [[SSN in standard XXX-XX-XXXX format.]] - rationale - gateway/tests/test_security_audit.py
+- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
+- [[Return the name of a failed critical guard, or None if all healthy.          Use]] - rationale - gateway/ingest_api/middleware.py
+- [[Round 2 Security Hardening Tests]] - code - gateway/tests/test_round2_hardening.py
 - [[SSN regex should not be vulnerable to ReDoS.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[SSN with spaces 123 45 6789.]] - rationale - gateway/tests/test_security_audit.py
-- [[SSN without dashes 123456789 — Presidio+spaCy only (regex needs dashes).]] - rationale - gateway/tests/test_security_audit.py
+- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Sanitize HTTP headers by removing sensitive information.]] - rationale - gateway/security/metadata_guard.py
 - [[Sanitize filename by removing unicode control characters and normalizing.]] - rationale - gateway/security/metadata_guard.py
-- [[Scrub environment variables and API keys from command output.          Args]] - rationale - gateway/security/env_guard.py
-- [[Security modules should not call eval() or exec().          Uses AST analysis]] - rationale - gateway/tests/test_security_audit.py
+- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Scan tool result for injection attempts and return sanitized content.          A]] - rationale - gateway/ingest_api/middleware.py
+- [[Scanner for detecting prompt injection in tool results.]] - rationale - gateway/security/tool_result_injection.py
+- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
 - [[Security modules should not use pickle (deserialization attack).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Session]] - code - gateway/security/session_security.py
-- [[Session must bind to user identity.]] - rationale - gateway/tests/test_security_audit.py
-- [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - concept - gateway/tests/test_egress_monitor.py
-- [[Small amounts across multiple channels should be detected.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
+- [[Sessions shouldn't leak data under concurrent access.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Set up test fixtures.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Shutdown middleware background tasks cleanly.]] - rationale - gateway/ingest_api/middleware.py
 - [[Stack traces containing secrets should be sanitized.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Standard email address.]] - rationale - gateway/tests/test_security_audit.py
 - [[Subagent events should be trackable.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[SubagentEventType]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitorConfig]] - code - gateway/security/subagent_monitor.py
 - [[Subprocess calls should not pass shell=True.          Uses AST analysis to flag]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test DNS filtering, SSRF prevention, and egress control.]] - rationale - gateway/tests/test_security_audit.py
+- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test HTTP-level security CRLF, header injection, content types.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Test MCP tool proxy security controls.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test audit chain integrity and tamper detection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test authentication and authorization enforcement.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test container hardening and runtime security.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test cooldown is disabled when feature is disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test default configuration values.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test dependency and supply chain security.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test detection of data exfiltration patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain pattern matching including wildcards.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test edge cases and malformed inputs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test for timing side-channels in security-critical comparisons.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test log sanitization and information leakage prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test handling of empty or None input.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test handling of images with empty alt text.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test resilience against denial of service patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test supply chain security measures.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test sanitization of mixed legitimate and malicious content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of links to non-allowlisted domains.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown images.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that appropriate logging occurs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that code blocks with URLs are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that deception detection can be disabled.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test that errors don't leak sensitive information.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Test that internalrelative links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test thread safety and race conditions in security modules.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Test trust boundaries and privilege escalation prevention.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test web dashboard and API security headers.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[TestAlertGeneration]] - code - gateway/tests/test_egress_monitor.py
-- [[TestAnomalyDetection]] - code - gateway/tests/test_egress_monitor.py
-- [[TestAuditTrail]] - code - gateway/tests/test_security_audit.py
-- [[TestAuth]] - code - gateway/tests/test_security_audit.py
+- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestConcurrency]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestContainerSecurity]] - code - gateway/tests/test_security_audit.py
-- [[TestContextGuard]] - code - gateway/tests/test_security_audit.py
+- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
-- [[TestDailySummary]] - code - gateway/tests/test_egress_monitor.py
 - [[TestDependencySecurity]] - code - gateway/tests/test_security_audit_advanced.py
 - [[TestDoSPrevention]] - code - gateway/tests/test_security_audit_advanced.py
+- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
 - [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEgressMonitorConfig]] - code - gateway/tests/test_egress_monitor.py
 - [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEventRecording]] - code - gateway/tests/test_egress_monitor.py
 - [[TestExfiltrationDetection]] - code - gateway/tests/test_security_audit_advanced.py
 - [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
+- [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestGitGuard]] - code - gateway/tests/test_git_guard.py
+- [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
 - [[TestHTTPSecurity]] - code - gateway/tests/test_security_audit_advanced.py
 - [[TestInfoLeakage]] - code - gateway/tests/test_security_audit_advanced.py
+- [[TestInit]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestIntegration]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
 - [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
-- [[TestLoggingSecurity]] - code - gateway/tests/test_security_audit.py
 - [[TestMCPSecurity]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestNetworkSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestModuleConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestModuleInstantiationInEnforceMode]] - code - gateway/tests/test_all_modules_enforce.py
 - [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
-- [[TestPIIDetection]] - code - gateway/tests/test_security_audit.py
+- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
 - [[TestPrivilegeEscalation]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestSlowDripDetection]] - code - gateway/tests/test_egress_monitor.py
-- [[TestSupplyChain]] - code - gateway/tests/test_security_audit.py
+- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestTimingAttacks]] - code - gateway/tests/test_security_audit_advanced.py
+- [[TestToolResultSanitizer]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[TestWebSecurity]] - code - gateway/tests/test_security_audit_advanced.py
+- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
 - [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
 - [[Token validation errors shouldn't expose signing keys.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolResultInjectionScanner]] - code - gateway/security/tool_result_injection.py
+- [[ToolResultSanitizer]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolTier]] - code - gateway/ingest_api/middleware.py
 - [[Trust score should have an upper bound.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[US phone (555) 867-5309.]] - rationale - gateway/tests/test_security_audit.py
 - [[Unicode tricks shouldn't bypass PII detection.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Unregistered agents should not be trusted.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Validate container network isolation and security.]] - rationale - gateway/security/network_validator.py
+- [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
 - [[Verify hmac.compare_digest is available for constant-time comparison.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Verify individual module configs default to enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify modules can instantiate and operate in enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Very large JSON shouldn't crash the parser.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Very long messages should be handled without crash.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Visa card 4111-1111-1111-1111.]] - rationale - gateway/tests/test_security_audit.py
+- [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
+- [[XMLLeakFilter]] - code - gateway/security/xml_leak_filter.py
 - [[XXE-style payloads shouldn't crash processing.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[ZIP codes should not be flagged as SSNphoneCC.]] - rationale - gateway/tests/test_security_audit.py
-- [[default_config()]] - code - gateway/tests/test_egress_monitor.py
-- [[egress_monitor.py]] - code - gateway/security/egress_monitor.py
-- [[env_guard.py]] - code - gateway/security/env_guard.py
-- [[gatewaysecuritydns_filter.py (DNSFilterConfig)]] - code - gateway/security/dns_filter.py
-- [[gatewaysecuritydrift_detector.py (DriftDetector)]] - code - gateway/security/drift_detector.py
-- [[gatewaysecurityencrypted_store.py (EncryptedStore)]] - code - gateway/security/encrypted_store.py
-- [[gatewaysecurityfile_sandbox.py (FileSandbox)]] - code - gateway/security/file_sandbox.py
-- [[gatewaysecuritykey_vault.py (KeyVault)]] - code - gateway/security/key_vault.py
-- [[gatewaysecuritymetadata_guard.py (MetadataGuard)]] - code - gateway/security/metadata_guard.py
-- [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - code - gateway/security/network_validator.py
-- [[gatewaysecurityprompt_guard.py (PromptGuard)]] - code - gateway/security/prompt_guard.py
-- [[get_env_guard()]] - code - gateway/security/env_guard.py
-- [[get_sanitizer_stats()]] - code - gateway/security/log_sanitizer.py
-- [[install_log_sanitizer()]] - code - gateway/security/log_sanitizer.py
-- [[log_sanitizer.py]] - code - gateway/security/log_sanitizer.py
-- [[monitor()]] - code - gateway/tests/test_egress_monitor.py
-- [[monitor_config()]] - code - gateway/tests/test_egress_monitor.py
-- [[test_egress_monitor.py]] - code - gateway/tests/test_egress_monitor.py
-- [[test_log_sanitizer.py]] - code - gateway/tests/test_log_sanitizer.py
+- [[dispatcher()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
+- [[enforcement-audit-script.py]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[fail()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[lifespan()]] - code - gateway/ingest_api/lifespan.py
+- [[middleware.py]] - code - gateway/ingest_api/middleware.py
+- [[middleware.py_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
+- [[ok()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[run()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[strict_sandbox()]] - code - gateway/tests/test_privilege_separation.py
+- [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
+- [[test_git_guard.py]] - code - gateway/tests/test_git_guard.py
+- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
 - [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
-- [[test_security_audit.py]] - code - gateway/tests/test_security_audit.py
 - [[test_security_audit_advanced.py]] - code - gateway/tests/test_security_audit_advanced.py
+- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[warn()]] - code - docs/planning/reviews/enforcement-audit-script.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -421,76 +557,143 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 89 edges to [[_COMMUNITY_MiddlewareManager]]
-- 45 edges to [[_COMMUNITY_ResourceGuard]]
-- 45 edges to [[_COMMUNITY_MiddlewareManager_1]]
-- 42 edges to [[_COMMUNITY_AlertDispatcher_1]]
-- 38 edges to [[_COMMUNITY_KillSwitchMonitor_1]]
-- 35 edges to [[_COMMUNITY_ResourceGuard_1]]
-- 32 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
-- 30 edges to [[_COMMUNITY_TrustConfig_1]]
-- 27 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
-- 25 edges to [[_COMMUNITY_TrustConfig]]
-- 24 edges to [[_COMMUNITY_PIIConfig]]
-- 23 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 21 edges to [[_COMMUNITY_AgentTarget_2]]
-- 21 edges to [[_COMMUNITY_EgressFilterConfig_1]]
-- 20 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 19 edges to [[_COMMUNITY_ContextSegment]]
-- 15 edges to [[_COMMUNITY_ApprovalQueueConfig_6]]
-- 14 edges to [[_COMMUNITY_MiddlewareManager_8]]
-- 13 edges to [[_COMMUNITY_AgentRegistry]]
-- 12 edges to [[_COMMUNITY_validate_network_security]]
-- 11 edges to [[_COMMUNITY_ConsentFramework]]
-- 10 edges to [[_COMMUNITY_ConsentFramework_1]]
-- 9 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 9 edges to [[_COMMUNITY_parse_clamscan_output]]
-- 8 edges to [[_COMMUNITY_First Time Setup_1]]
+- 246 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 78 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 68 edges to [[_COMMUNITY_MiddlewareManager]]
+- 55 edges to [[_COMMUNITY__req]]
+- 48 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 41 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 38 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 38 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 30 edges to [[_COMMUNITY_RBACConfig]]
+- 30 edges to [[_COMMUNITY_PipelineAction]]
+- 26 edges to [[_COMMUNITY_AgentRegistry]]
+- 25 edges to [[_COMMUNITY_ApprovalHardening]]
+- 24 edges to [[_COMMUNITY_ContextSegment]]
+- 24 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 24 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 23 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 21 edges to [[_COMMUNITY_ConsentFramework]]
+- 21 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 19 edges to [[_COMMUNITY_MiddlewareManager (5)]]
+- 19 edges to [[_COMMUNITY_TrustConfig (2)]]
+- 18 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 15 edges to [[_COMMUNITY_MiddlewareManager (6)]]
+- 15 edges to [[_COMMUNITY_TrustConfig]]
+- 14 edges to [[_COMMUNITY_ResourceGuard]]
+- 12 edges to [[_COMMUNITY_TestToolChainAnalyzer (2)]]
+- 11 edges to [[_COMMUNITY_SessionManager (2)]]
+- 11 edges to [[_COMMUNITY_KeyRotationManager]]
+- 11 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 11 edges to [[_COMMUNITY_InjectionAction]]
+- 10 edges to [[_COMMUNITY_test_docs_accuracy.py]]
+- 9 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 8 edges to [[_COMMUNITY_First Time Setup]]
 - 8 edges to [[_COMMUNITY_TestCheckCommandExecution]]
-- 8 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 6 edges to [[_COMMUNITY_test_prompt_guard.py_1]]
-- 4 edges to [[_COMMUNITY_check_command]]
+- 8 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (2)]]
+- 7 edges to [[_COMMUNITY_validate_network_security]]
+- 7 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
+- 6 edges to [[_COMMUNITY_check_command]]
+- 6 edges to [[_COMMUNITY_test_prompt_guard.py (2)]]
+- 6 edges to [[_COMMUNITY_ApprovalHardening (2)]]
+- 6 edges to [[_COMMUNITY_create_auth_dependency]]
+- 6 edges to [[_COMMUNITY_telegram_proxy.py (2)]]
+- 6 edges to [[_COMMUNITY_TestOutputCanary]]
+- 5 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 5 edges to [[_COMMUNITY__wrap_response]]
+- 4 edges to [[_COMMUNITY_parse_trivy_output]]
 - 4 edges to [[_COMMUNITY_TestLogSanitizer]]
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 3 edges to [[_COMMUNITY_test_alert_dispatcher_retry.py]]
-- 3 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 3 edges to [[_COMMUNITY_export-bot-conversations.py_1]]
-- 3 edges to [[_COMMUNITY_SessionManager]]
-- 2 edges to [[_COMMUNITY_SessionManager_1]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 2 edges to [[_COMMUNITY_TestPathIsolationManager]]
-- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)_1]]
-- 2 edges to [[_COMMUNITY_CrossBotTrustLedger_1]]
+- 4 edges to [[_COMMUNITY_main.py]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_RateLimiter]]
+- 4 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 4 edges to [[_COMMUNITY_TestSSRFDetection (5)]]
+- 4 edges to [[_COMMUNITY_MultiTurnTracker (2)]]
+- 4 edges to [[_COMMUNITY_dot-_parse_service_network_config]]
+- 3 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 3 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher (4)]]
+- 3 edges to [[_COMMUNITY_InjectionAction (2)]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_BlockingPipeline]]
+- 3 edges to [[_COMMUNITY_AuditStore]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager (11)]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager (4)]]
+- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (5)]]
+- 3 edges to [[_COMMUNITY_TestNetworkValidator]]
+- 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
 - 2 edges to [[_COMMUNITY_TestAlertDispatcher]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_parse_trivy_output]]
-- 2 edges to [[_COMMUNITY_test_daily_cve_report.py_1]]
-- 2 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 2 edges to [[_COMMUNITY_ProxyAction]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager_2]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter_1]]
+- 2 edges to [[_COMMUNITY_test_alert_dispatcher_retry.py]]
+- 2 edges to [[_COMMUNITY_CronStateMonitor]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (3)]]
 - 2 edges to [[_COMMUNITY_TestMetadataGuard]]
-- 1 edge to [[_COMMUNITY_UserSessionManager_3]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_5]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_4]]
-- 1 edge to [[_COMMUNITY_InjectionAction]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_2]]
-- 1 edge to [[_COMMUNITY_ApprovalHardening_1]]
-- 1 edge to [[_COMMUNITY_ApprovalHardening_2]]
-- 1 edge to [[_COMMUNITY_KeyRotationManager_1]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker_1]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice (2)]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 2 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 2 edges to [[_COMMUNITY_AlertTelegramRelay]]
+- 2 edges to [[_COMMUNITY_make_event]]
+- 2 edges to [[_COMMUNITY_AgentTarget (2)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 2 edges to [[_COMMUNITY_ReportStore]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_RateLimitGuard]]
+- 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 2 edges to [[_COMMUNITY_ResourceGuard (3)]]
+- 1 edge to [[_COMMUNITY_WebProxy]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
 - 1 edge to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
 - 1 edge to [[_COMMUNITY_TestStartupScannerKeying]]
-- 1 edge to [[_COMMUNITY_CronStateMonitor]]
-- 1 edge to [[_COMMUNITY_SkillGuard_1]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (4)]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger (2)]]
+- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 - 1 edge to [[_COMMUNITY_FetchOutcome]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_8]]
+- 1 edge to [[_COMMUNITY_A2AMethod]]
+- 1 edge to [[_COMMUNITY__FakeRBAC]]
+- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice]]
+- 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 1 edge to [[_COMMUNITY_TestFileDownload]]
+- 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
+- 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (12)]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker (3)]]
+- 1 edge to [[_COMMUNITY_ConsistencyScore]]
+- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_DNSForwarderProtocol]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py (2)]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
+- 1 edge to [[_COMMUNITY_EgressTelegramNotifier]]
+- 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_RBACConfig (2)]]
+- 1 edge to [[_COMMUNITY_RBACConfig (3)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[dot-__init__()_11]] - degree 42, connects to 26 communities
-- [[test_security_audit.py]] - degree 63, connects to 23 communities
-- [[AlertDispatcher]] - degree 77, connects to 20 communities
-- [[TestContainerSecurity]] - degree 45, connects to 18 communities
-- [[TestPIIDetection]] - degree 55, connects to 16 communities
+- [[lifespan()]] - degree 83, connects to 50 communities
+- [[MiddlewareResult]] - degree 111, connects to 24 communities
+- [[MiddlewareManager]] - degree 175, connects to 21 communities
+- [[middleware.py]] - degree 54, connects to 16 communities
+- [[AlertDispatcher]] - degree 77, connects to 15 communities

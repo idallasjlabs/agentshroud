@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.07
 members: 27
 ---
 
 # Phase Review: P0 — Core Pipeline Wiring
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
 - [[1. Accomplishments This Phase_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 - [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
@@ -22,7 +20,7 @@ members: 27
 - [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Executive Summary_7]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Executive Summary_6]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md

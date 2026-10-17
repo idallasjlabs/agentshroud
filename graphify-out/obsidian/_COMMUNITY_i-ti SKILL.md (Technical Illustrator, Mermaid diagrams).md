@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.48
 members: 7
 ---
 
 # i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)
 
-**Cohesion:** 0.48 - moderately connected
 **Members:** 7 nodes
 
 ## Members

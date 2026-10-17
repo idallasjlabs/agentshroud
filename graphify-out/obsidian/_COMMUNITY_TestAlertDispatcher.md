@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.29
 members: 13
 ---
 
 # TestAlertDispatcher
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -33,7 +31,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 
 ## Top bridge nodes
 - [[TestAlertDispatcher]] - degree 14, connects to 2 communities

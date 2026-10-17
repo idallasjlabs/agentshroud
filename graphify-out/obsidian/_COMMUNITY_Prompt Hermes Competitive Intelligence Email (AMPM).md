@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 26
 ---
 
 # Prompt: Hermes Competitive Intelligence Email (AM/PM)
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -46,7 +44,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 3 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide_1]]
+- 3 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (2)]]
 
 ## Top bridge nodes
 - [[Prompt Hermes Competitive Landscape Update (AMPM)]] - degree 6, connects to 2 communities

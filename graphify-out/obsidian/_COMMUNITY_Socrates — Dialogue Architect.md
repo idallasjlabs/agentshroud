@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 18
 ---
 
 # Socrates — Dialogue Architect
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -22,7 +20,7 @@ members: 18
 - [[Output Format_19]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Persona_5]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Quality Checklist_6]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Role_58]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Role_55]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Socrates Dialogue Architect README]] - document - .agents/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect_6]] - document - .agents/skills/i-socrates/SKILL.md
 - [[Speaker Definitions]] - document - .agents/skills/i-socrates/SKILL.md
@@ -37,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect_4]]
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_1]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect (5)]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (2)]]
 
 ## Top bridge nodes
 - [[Socrates — Dialogue Architect_6]] - degree 14, connects to 2 communities

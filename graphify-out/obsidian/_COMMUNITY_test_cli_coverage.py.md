@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 19
 ---
 
 # test_cli_coverage.py
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -15,8 +13,8 @@ members: 19
 - [[dot-__aiter__()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__anext__()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__call__()_9]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_140]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__init__()_141]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_142]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-send()_2]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py

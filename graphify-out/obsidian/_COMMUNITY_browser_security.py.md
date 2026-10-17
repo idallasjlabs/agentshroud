@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # browser_security.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -18,8 +16,8 @@ members: 15
 - [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Purpose_148]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Threat Model_19]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[URL Reputation Signals]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members

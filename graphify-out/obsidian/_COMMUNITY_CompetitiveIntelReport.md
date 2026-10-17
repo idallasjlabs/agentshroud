@@ -1,21 +1,17 @@
 ---
 type: community
-cohesion: 0.05
-members: 86
+members: 78
 ---
 
 # CompetitiveIntelReport
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 86 nodes
+**Members:** 78 nodes
 
 ## Members
-- [[dot-__init__()_192]] - code - gateway/security/citation_verifier.py
-- [[dot-__init__()_193]] - code - gateway/security/intel_report.py
+- [[dot-__init__()_151]] - code - gateway/security/intel_report.py
 - [[dot-_compute_content_hash()]] - code - gateway/security/intel_report.py
 - [[dot-_load_latest_file()]] - code - gateway/security/intel_report.py
 - [[dot-_make_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-_verify_url()]] - code - gateway/security/citation_verifier.py
 - [[dot-load_all()_1]] - code - gateway/security/intel_report.py
 - [[dot-load_latest()]] - code - gateway/security/intel_report.py
 - [[dot-report_id_not_empty()]] - code - gateway/security/intel_report.py
@@ -52,10 +48,8 @@ members: 86
 - [[dot-test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_verify_integrity_fails_after_tampering()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_verify_integrity_passes_for_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-verify_chain()_2]] - code - gateway/security/intel_report.py
-- [[dot-verify_entry()]] - code - gateway/security/citation_verifier.py
+- [[dot-verify_chain()_1]] - code - gateway/security/intel_report.py
 - [[dot-verify_integrity()]] - code - gateway/security/intel_report.py
-- [[dot-verify_report()]] - code - gateway/security/citation_verifier.py
 - [[A single competitor record in a competitive intel report.]] - rationale - gateway/security/intel_report.py
 - [[A verified source backing a competitor claim.      A Citation is only created by]] - rationale - gateway/security/intel_report.py
 - [[Citation]] - code - gateway/security/citation_verifier.py
@@ -74,26 +68,22 @@ members: 86
 - [[IntelReportStore_1]] - code - gateway/security/intel_report.py
 - [[Load all reports in chronological order (oldest first).]] - rationale - gateway/security/intel_report.py
 - [[Load the most recently saved report.          Args             verify If True,]] - rationale - gateway/security/intel_report.py
-- [[Path_61]] - code - gateway/security/intel_report.py
-- [[Path_62]] - code - gateway/tests/test_intel_pipeline.py
+- [[Path_42]] - code - gateway/security/intel_report.py
+- [[Path_43]] - code - gateway/tests/test_intel_pipeline.py
 - [[Persist report to the store, linking it to the previous report.          Sets]] - rationale - gateway/security/intel_report.py
 - [[Persistent store for competitive intelligence reports.      Each report is saved]] - rationale - gateway/security/intel_report.py
 - [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
-- [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - rationale - gateway/security/citation_verifier.py
 - [[ReportIntegrityError]] - code - gateway/security/intel_report.py
 - [[Return True iff the stored content_hash matches recomputation.]] - rationale - gateway/security/intel_report.py
-- [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - rationale - gateway/security/citation_verifier.py
 - [[Return the most recent JSON file in the store, or None.]] - rationale - gateway/security/intel_report.py
 - [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - rationale - gateway/security/intel_report.py
 - [[TestCompetitiveIntelReportSchema]] - code - gateway/tests/test_intel_pipeline.py
 - [[TestIntelReportHashIntegrity]] - code - gateway/tests/test_intel_pipeline.py
 - [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
 - [[Tests for Pydantic model validation.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[Verify every draft claim; return a report of only verified claims.          Clai]] - rationale - gateway/security/citation_verifier.py
 - [[Walk the entire report chain and verify hash linkage.          Returns]] - rationale - gateway/security/intel_report.py
 - [[_compute_hash()]] - code - gateway/security/intel_report.py
 - [[citation_verifier.py]] - code - gateway/security/citation_verifier.py
-- [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
 - [[intel_report.py]] - code - gateway/security/intel_report.py
 - [[test_intel_pipeline.py]] - code - gateway/tests/test_intel_pipeline.py
 
@@ -105,17 +95,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_api.py_1]]
+- 29 edges to [[_COMMUNITY_api.py (2)]]
 - 10 edges to [[_COMMUNITY_FetchOutcome]]
-- 5 edges to [[_COMMUNITY_api.py]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 7 edges to [[_COMMUNITY_api.py]]
 - 3 edges to [[_COMMUNITY_ModeRequest]]
 - 3 edges to [[_COMMUNITY__FakeRBAC]]
-- 1 edge to [[_COMMUNITY_ConsentFramework_1]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 1 edge to [[_COMMUNITY_test_prompt_guard.py]]
+- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[IntelReportStore_1]] - degree 39, connects to 4 communities
+- [[IntelReportStore_1]] - degree 39, connects to 5 communities
+- [[citation_verifier.py]] - degree 10, connects to 4 communities
 - [[CompetitiveIntelReport_2]] - degree 36, connects to 3 communities
 - [[CompetitorEntry_1]] - degree 22, connects to 3 communities
 - [[Citation_1]] - degree 11, connects to 3 communities
-- [[citation_verifier.py]] - degree 10, connects to 3 communities

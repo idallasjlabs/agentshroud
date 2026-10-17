@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 13
 ---
 
 # TestCanvasAuthHelpers
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 13 nodes
 
 ## Members

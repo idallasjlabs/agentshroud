@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 24
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members

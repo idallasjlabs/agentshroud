@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 15
 ---
 
 # Feature: Global Monitor-Only Mode ("Observatory Mode")
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 15 nodes
 
 ## Members

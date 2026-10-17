@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.03
-members: 108
+members: 106
 ---
 
 # LLMProxy
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 108 nodes
+**Members:** 106 nodes
 
 ## Members
-- [[dot-__init__()_6]] - code - gateway/proxy/llm_proxy.py
+- [[dot-__init__()_5]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_apply_filters()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_build_timeout_fallback_response()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_emit_failover_notice()]] - code - gateway/proxy/llm_proxy.py
@@ -33,12 +31,12 @@ members: 108
 - [[dot-_scan_request_data()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_suppress_qwen3_thinking()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_widen_optional_tool_param_types()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-get_stats()_1]] - code - gateway/proxy/llm_proxy.py
+- [[dot-get_stats()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-proxy_messages()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
 - [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls through to…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Add 'null' as an accepted type for every non-required tool parameter, in place.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Any_34]] - code
+- [[Any_41]] - code
 - [[Append 'no_think' to the last user message, in place, if not already present.…]] - rationale - gateway/proxy/llm_proxy.py
 - [[Apply XML and credential filters to text.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Apply outbound text filters to known streaming response formats. Also enforces…]] - rationale - gateway/proxy/llm_proxy.py
@@ -55,7 +53,6 @@ members: 108
 - [[If openai_to_gemini_request raises, the request must still be     forwarded (unm]] - rationale - gateway/tests/test_gemini_via_openai_path.py
 - [[If the model already uses dashes (LM Studio native ID), normalizing again is a…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Inject per-backend auth for local backends that require it. Unlike LM Studio …]] - rationale - gateway/proxy/llm_proxy.py
-- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - rationale - gateway/proxy/llm_proxy.py
 - [[LLMProxy]] - code - gateway/proxy/llm_proxy.py
 - [[Non-coder Qwen3 models (e.g. the 14B base) keep the generic LM Studio route —…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Only the known stalemismatched alias is rewritten; anything else forwards as-…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
@@ -84,7 +81,6 @@ members: 108
 - [[_urlopen_and_read()]] - code - gateway/proxy/llm_proxy.py
 - [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
 - [[gemma-4-12b-it-4bit is NOT renamed — oMLX accepts it case-insensitively…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[llm_proxy.py]] - code - gateway/proxy/llm_proxy.py
 - [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[oMLX requires a bearer token, unlike LM Studiomlx_lmFieldflare.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic 'deepseek-r1' -…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
@@ -127,22 +123,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_test_llm_proxy.py]]
-- 28 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
-- 7 edges to [[_COMMUNITY_dot-_is_local_oom()]]
-- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 3 edges to [[_COMMUNITY_test_anthropic_openai_translator.py_1]]
+- 44 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
+- 30 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 5 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 5 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 3 edges to [[_COMMUNITY_test_anthropic_openai_translator.py (2)]]
 - 3 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
 - 2 edges to [[_COMMUNITY_is_rate_limited_post_retry]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY__FakeStreamResponse]]
+- 1 edge to [[_COMMUNITY_SecureBrowser Skill (2)]]
 - 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py]]
 
 ## Top bridge nodes
-- [[LLMProxy]] - degree 109, connects to 9 communities
-- [[llm_proxy.py]] - degree 7, connects to 3 communities
-- [[dot-proxy_messages()]] - degree 21, connects to 2 communities
+- [[LLMProxy]] - degree 120, connects to 9 communities
+- [[dot-proxy_messages_streaming()]] - degree 14, connects to 3 communities
+- [[dot-proxy_messages()]] - degree 23, connects to 2 communities
+- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - degree 13, connects to 2 communities
 - [[test_gemini_via_openai_path.py]] - degree 5, connects to 2 communities
-- [[dot-_normalize_local_model()]] - degree 13, connects to 1 community

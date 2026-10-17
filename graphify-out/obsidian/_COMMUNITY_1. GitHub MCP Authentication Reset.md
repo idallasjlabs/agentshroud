@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 14
 ---
 
 # 1. GitHub MCP Authentication Reset
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -34,8 +32,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset_2]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset_1]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (3)]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
 
 ## Top bridge nodes
 - [[Step 4 Restart Codex]] - degree 3, connects to 2 communities

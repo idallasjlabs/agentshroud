@@ -1,85 +1,145 @@
 ---
 type: community
-cohesion: 0.03
-members: 106
+members: 217
 ---
 
 # ToolResultSanitizer
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 106 nodes
+**Members:** 217 nodes
 
 ## Members
-- [[dot-__init__()_102]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-__init__()_29]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-__init__()_30]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-__init__()_28]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-_close_middleware_after()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-_extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-_extract_scannable_content()]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-_get_sanitizer_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_init_presidio()]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-_log_redaction_audit()]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-_reconstruct_result()]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-_sanitize_presidio()]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-_sanitize_regex()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-block_credentials()_2]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-default_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-filter_xml_blocks()_2]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-get_config_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-get_mode()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-get_supported_tools()]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-get_tool_config()]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-mock_config()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-sanitize()_2]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-sanitize()_3]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-sanitizer()_1]] - code - gateway/tests/test_performance.py
+- [[dot-sanitizer()_2]] - code - gateway/tests/test_security_audit.py
 - [[dot-sanitizer()_3]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_all_production_tool_overrides_meet_floor()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_default_config()_3]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-set_config()]] - code - gateway/ingest_api/middleware.py
+- [[dot-test_default_config()_2]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_default_pii_config_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_email_content_scanning()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_empty_content_handling()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_extract_scannable_content_dict()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_extract_scannable_content_list()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_extract_scannable_content_string()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
 - [[dot-test_icloud_contact_scanning()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_initialization()_3]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_initialization()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_middleware_set_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_middleware_set_config_disabled()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_middleware_set_config_missing()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
 - [[dot-test_process_tool_result_no_sanitizer()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_process_tool_result_sanitizer_error()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_process_tool_result_success()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_sanitize_dict_with_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_sanitize_disabled()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_sanitize_string_with_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
 - [[dot-test_tool_result_config_default_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_tool_specific_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_tool_specific_configuration()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-tool_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Any_32]] - code - gateway/security/tool_result_sanitizer.py
+- [[Any_3]] - code - gateway/security/tool_result_sanitizer.py
+- [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
 - [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
 - [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Detect and redact PII from content          Args             content Text to s]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Extract text content from various tool result formats for PII scanning]] - rationale - gateway/security/tool_result_sanitizer.py
-- [[GatewayConfig_3]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[Get PII config for a specific tool, applying overrides if configured]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get list of tools with specific PII configurations]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Get or create a PIISanitizer instance for the specified tool]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Get the PII configuration for a specific tool]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Individual redaction record]] - rationale - gateway/ingest_api/models.py
+- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Log PII redaction for audit trail without logging actual PII]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[PII configuration with per-tool overrides]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
+- [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
 - [[PIIConfig_1]] - code - gateway/security/tool_result_sanitizer.py
 - [[PIIConfig_2]] - code - gateway/ingest_api/config.py
-- [[PIISanitizer_3]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIISanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIISanitizer]] - code - gateway/ingest_api/sanitizer.py
+- [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
+- [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
 - [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[RedactionDetail]] - code - gateway/ingest_api/models.py
 - [[RedactionResult]] - code - gateway/ingest_api/sanitizer.py
 - [[RedactionResult_1]] - code - gateway/security/tool_result_sanitizer.py
 - [[RedactionResult_2]] - code - gateway/ingest_api/models.py
+- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Result of PII sanitization]] - rationale - gateway/ingest_api/models.py
+- [[Return current enforcement mode          Returns             enforce or moni]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Sanitize a tool result for PII before it reaches the agent          Args]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - rationale - gateway/ingest_api/sanitizer.py
+- [[SecurityConfig]] - code - gateway/ingest_api/config.py
+- [[Set configuration and initialize tool result sanitizer]] - rationale - gateway/ingest_api/middleware.py
+- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test configuration loading and validation]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test content extraction from dictionary results]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test content extraction from string results]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test default configuration]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test handling of empty or whitespace-only content]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test integration with MiddlewareManager]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test middleware configuration setup]] - rationale - gateway/tests/test_tool_result_pii.py
@@ -87,13 +147,21 @@ members: 106
 - [[Test middleware configuration with missing tool_result_pii config]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test realistic tool result scenarios]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test sanitizer initialization]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizer when disabled]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test sanitizing dictionary content with PII]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test sanitizing string content with PII]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test scanning email content for sensitive data]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test scanning iCloud contact data for PII]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test successful tool result processing]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test that different tools get different PII configurations]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test the ToolResultPIIConfig configuration class]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test the ToolResultSanitizer class]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test tool result processing when sanitizer not configured]] - rationale - gateway/tests/test_tool_result_pii.py
@@ -101,21 +169,62 @@ members: 106
 - [[Test tool-specific configuration overrides]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[TestConfidenceFloor]] - code - gateway/tests/test_tool_result_pii.py
 - [[TestConfigurationLoading]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
 - [[TestMiddlewareIntegration]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
 - [[TestRealWorldScenarios]] - code - gateway/tests/test_tool_result_pii.py
 - [[TestToolResultPIIConfig]] - code - gateway/tests/test_tool_result_pii.py
-- [[TestToolResultSanitizer]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_pii.py
+- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Tool result PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Tool result PII sanitizer with per-tool configuration]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Tool result sanitizer instance for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[ToolResultPIIConfig]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._extract_dict_content]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._extract_scannable_content]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._get_sanitizer_for_tool]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._log_redaction_audit]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer._reconstruct_result]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer.sanitize_tool_result]] - code - gateway/security/tool_result_sanitizer.py
 - [[Track every MiddlewareManager instantiated in this class and         close its s]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
-- [[canary_pipeline()]] - code - gateway/tests/test_canary.py
-- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
-- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - concept - gateway/tests/test_filter_xml_blocks.py
+- [[sanitizer()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
+- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
+- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
 - [[test_tool_result_pii.py]] - code - gateway/tests/test_tool_result_pii.py
+- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
 - [[tool_result_sanitizer.py]] - code - gateway/security/tool_result_sanitizer.py
-- [[verify.sh]] - code - gateway/verify.sh
-- [[verify.sh script]] - code - gateway/verify.sh
+- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -125,57 +234,47 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 67 edges to [[_COMMUNITY_MiddlewareManager]]
-- 36 edges to [[_COMMUNITY_PIIConfig]]
-- 19 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 17 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
-- 16 edges to [[_COMMUNITY_PipelineAction]]
-- 14 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 14 edges to [[_COMMUNITY__req]]
-- 7 edges to [[_COMMUNITY_AsyncMock_1]]
-- 5 edges to [[_COMMUNITY_MiddlewareManager_2]]
-- 5 edges to [[_COMMUNITY_create_auth_dependency]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager_3]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig_2]]
-- 4 edges to [[_COMMUNITY_UserSessionManager_3]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_InjectionAction]]
-- 3 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 3 edges to [[_COMMUNITY__FakeRBAC]]
-- 3 edges to [[_COMMUNITY_test_hermes_model_resolver.py_1]]
-- 2 edges to [[_COMMUNITY_AWS Cloud Management & FinOps]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
-- 2 edges to [[_COMMUNITY_test_filter_xml_blocks.py]]
-- 2 edges to [[_COMMUNITY_ContextSegment]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_5]]
-- 2 edges to [[_COMMUNITY_AgentTarget_1]]
-- 2 edges to [[_COMMUNITY_InjectionAction_1]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_test_prompt_guard.py_4]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_9]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_7]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 78 edges to [[_COMMUNITY_AlertDispatcher]]
+- 58 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 35 edges to [[_COMMUNITY_PipelineAction]]
+- 26 edges to [[_COMMUNITY__req]]
+- 24 edges to [[_COMMUNITY_ContextSegment]]
+- 18 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 18 edges to [[_COMMUNITY_create_auth_dependency]]
+- 16 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
+- 8 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 8 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 8 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager (4)]]
+- 6 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 6 edges to [[_COMMUNITY_AsyncMock]]
+- 5 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY__FakeRBAC]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py (2)]]
+- 2 edges to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (4)]]
+- 2 edges to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
+- 2 edges to [[_COMMUNITY_TestInternalBannerMatcher]]
+- 2 edges to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
+- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 2 edges to [[_COMMUNITY_TestOutboundClassifierHelpers]]
+- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline (2)]]
+- 2 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py (2)]]
+- 2 edges to [[_COMMUNITY_TestWebSearchLog]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_TestMCPResultEndpoint]]
-- 1 edge to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
-- 1 edge to [[_COMMUNITY_TestInternalBannerMatcher]]
-- 1 edge to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 1 edge to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline_1]]
-- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
-- 1 edge to [[_COMMUNITY_egress_filter.py_3]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 - 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 
 ## Top bridge nodes
-- [[PIIConfig_2]] - degree 175, connects to 34 communities
-- [[sanitizer.py]] - degree 13, connects to 7 communities
-- [[RedactionResult_2]] - degree 27, connects to 5 communities
-- [[tool_result_sanitizer.py]] - degree 9, connects to 5 communities
-- [[GatewayConfig_3]] - degree 7, connects to 5 communities
+- [[PIIConfig_2]] - degree 175, connects to 30 communities
+- [[PIISanitizer]] - degree 156, connects to 26 communities
+- [[SecurityConfig]] - degree 30, connects to 6 communities
+- [[ToolResultSanitizer_1]] - degree 40, connects to 3 communities
+- [[RedactionResult_2]] - degree 27, connects to 3 communities

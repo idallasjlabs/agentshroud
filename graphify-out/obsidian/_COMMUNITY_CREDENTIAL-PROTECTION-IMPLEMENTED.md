@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 31
 ---
 
 # CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
@@ -53,7 +51,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 1 edge to [[_COMMUNITY_GSDE&G Skills Reference]]
 - 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
 
 ## Top bridge nodes
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 4 communities

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "InjectionAction"
-location: "L24"
+community: "Test-Driven Development README"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/Test-Driven_Development_README
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

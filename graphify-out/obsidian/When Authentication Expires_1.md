@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "1. GitHub MCP Authentication Reset (2)"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # When Authentication Expires
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Atlassian MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

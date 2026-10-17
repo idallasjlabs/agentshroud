@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 26
 ---
 
 # Apple Services Setup Guide
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # Critical Findings
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -14,7 +12,7 @@ members: 13
 - [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
 - [[3. No Cross-Turn Analysis (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
 - [[4. No Semantic Understanding (Severity MEDIUM)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Critical Findings_1]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Critical Findings_2]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
 - [[Current Defenses (3 Layers)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
 - [[Layer 1 PromptGuard (11 regex patterns) — P0, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
 - [[Layer 2 ContextGuard (23 patterns + session tracking) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
@@ -32,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index_4]]
+- 1 edge to [[_COMMUNITY_Error Index.md (2)]]
 
 ## Top bridge nodes
 - [[Prompt Injection Assessment — AgentShroud v0.7.0]] - degree 5, connects to 1 community

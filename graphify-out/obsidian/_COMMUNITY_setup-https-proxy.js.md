@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.16
 members: 15
 ---
 
 # setup-https-proxy.js
 
-**Cohesion:** 0.16 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -34,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh_1]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh (2)]]
 
 ## Top bridge nodes
 - [[setup-https-proxy.js]] - degree 10, connects to 1 community

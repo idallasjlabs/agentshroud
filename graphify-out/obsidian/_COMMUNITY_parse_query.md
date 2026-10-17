@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 13
 ---
 
 # parse_query
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 13 nodes
 
 ## Members

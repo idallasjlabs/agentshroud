@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 20
 ---
 
 # AgentShroud™ — Trademark Prior Use Record
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -25,7 +23,7 @@ members: 20
 - [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
 - [[TRADEMARK_2]] - document - docs/project/legal/TRADEMARK.md
 - [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Notice_2]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Notice_3]] - document - docs/project/legal/TRADEMARK.md
 - [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
 - [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md

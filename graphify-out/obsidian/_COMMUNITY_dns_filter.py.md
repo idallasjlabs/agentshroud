@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # dns_filter.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -16,14 +14,14 @@ members: 16
 - [[DNSFilter._detect_tunneling(domain)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[DNSFilter.check(domain, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[EntropyCalculator.shannon_entropy(s)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Function Details_18]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Purpose_137]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Related_24]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Threat Model_15]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Environment Variables_10]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Function Details_17]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Key Classes  Functions_19]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Mode Enforce vs Monitor_6]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Purpose_134]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Related_22]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Responsibilities_20]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Threat Model_14]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[dns_filter.py_2]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[dns_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 

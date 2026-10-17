@@ -1,22 +1,19 @@
 ---
 type: community
-cohesion: 0.12
-members: 55
+members: 54
 ---
 
 # sunday-upgrade-apply.sh
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 55 nodes
+**Members:** 54 nodes
 
 ## Members
 - [[Build one service at a time]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[COMPOSE_CMD]] - code - scripts/sunday-upgrade-apply.sh
 - [[HEAD_AT_START]] - code - scripts/sunday-upgrade-apply.sh
-- [[PATH_8]] - code - scripts/sunday-upgrade-apply.sh
+- [[PATH_2]] - code - scripts/sunday-upgrade-apply.sh
 - [[Preflight git hygiene graphify-out never counts as dirty; pathspec-scoped commits only]] - rationale - prompts/sunday-upgrade.md
 - [[Prove the outcome, never the steps (CLAUDE.md 0.0)]] - rationale - scripts/sunday-upgrade-apply.sh
-- [[S15 asb _preserve_nonempty_secrets restores emptymissing values and keeps new non-empty ones]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[Shared working-tree stability guard]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[Sunday apply exit-code contract]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[UPGRADE_LOCK]] - code - scripts/sunday-upgrade-apply.sh
@@ -63,7 +60,7 @@ members: 55
 - [[sunday-upgrade-apply.sh]] - code - scripts/sunday-upgrade-apply.sh
 - [[sunday-upgrade-apply.sh exit-code contract (0102025304050127)]] - rationale - prompts/sunday-upgrade.md
 - [[sunday-upgrade-apply.sh script]] - code - scripts/sunday-upgrade-apply.sh
-- [[warn()]] - code - scripts/sunday-upgrade-apply.sh
+- [[warn()_1]] - code - scripts/sunday-upgrade-apply.sh
 - [[write_handoff()]] - code - scripts/sunday-upgrade-apply.sh
 
 ## Live Query (requires Dataview plugin)
@@ -74,18 +71,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_colima-health-check.sh]]
+- 16 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 13 edges to [[_COMMUNITY_setup-secrets.sh]]
-- 9 edges to [[_COMMUNITY_AgentTarget_3]]
+- 9 edges to [[_COMMUNITY_AgentTarget (5)]]
 - 5 edges to [[_COMMUNITY_check-vendor-compat.sh]]
+- 3 edges to [[_COMMUNITY_colima-health-check.sh (3)]]
 - 2 edges to [[_COMMUNITY_test-sunday-upgrade-scan.sh]]
 - 2 edges to [[_COMMUNITY_plan_remediation]]
-- 2 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
+- 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
 - 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 - 1 edge to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
-- [[sunday-upgrade-apply.sh]] - degree 58, connects to 8 communities
+- [[sunday-upgrade-apply.sh]] - degree 58, connects to 9 communities
 - [[sunday-upgrade-apply main sequence]] - degree 19, connects to 2 communities
 - [[phase_baseline()]] - degree 13, connects to 2 communities
 - [[_build_one_service()]] - degree 8, connects to 2 communities

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 43
 ---
 
 # AgentShroud Security Architecture
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -33,7 +31,7 @@ members: 43
 - [[Effectiveness Metrics]] - document - docs/security/security-architecture.md
 - [[Emergency Procedures]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Encryption and Cryptographic Controls]] - document - docs/security/security-architecture.md
-- [[Executive Summary_2]] - document - docs/security/security-architecture.md
+- [[Executive Summary_1]] - document - docs/security/security-architecture.md
 - [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -62,15 +60,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_system-requirements]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py_3]]
+- 7 edges to [[_COMMUNITY_system-requirements]]
 - 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
 - 1 edge to [[_COMMUNITY_Security Module Inventory]]
 - 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 32, connects to 8 communities
+- [[AgentShroud Security Architecture]] - degree 32, connects to 7 communities
 - [[DNS Filtering]] - degree 2, connects to 1 community

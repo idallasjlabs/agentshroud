@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 24
 ---
 
 # app_main.c
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 24 nodes
 
 ## Members

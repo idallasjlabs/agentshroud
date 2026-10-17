@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_48]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Purpose_58]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 - [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Related Skills_37]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Usage_40]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Related Skills_45]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Usage_49]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 - [[openclawskillsi-sec-offenseREADME]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)

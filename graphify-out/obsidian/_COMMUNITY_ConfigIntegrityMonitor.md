@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.11
 members: 34
 ---
 
 # ConfigIntegrityMonitor
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_91]] - code - gateway/security/config_integrity.py
+- [[dot-__init__()_98]] - code - gateway/security/config_integrity.py
 - [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
 - [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
 - [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
-- [[dot-check()_3]] - code - gateway/security/config_integrity.py
+- [[dot-check()_4]] - code - gateway/security/config_integrity.py
 - [[dot-format_alert_text()]] - code - gateway/security/config_integrity.py
 - [[dot-reset_baseline()]] - code - gateway/security/config_integrity.py
 - [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
@@ -23,7 +21,7 @@ members: 34
 - [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
 - [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
 - [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_25]] - code - gateway/security/config_integrity.py
+- [[Path_24]] - code - gateway/security/config_integrity.py
 - [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
 - [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
 - [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
@@ -53,9 +51,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 
 ## Top bridge nodes
 - [[ConfigIntegrityMonitor]] - degree 26, connects to 3 communities

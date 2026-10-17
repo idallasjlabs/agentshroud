@@ -1,21 +1,26 @@
 ---
 type: community
-cohesion: 0.10
-members: 65
+members: 71
 ---
 
 # _FakeRBAC
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 65 nodes
+**Members:** 71 nodes
 
 ## Members
-- [[dot-__init__()_148]] - code - gateway/soc/auth.py
-- [[dot-__init__()_149]] - code - gateway/soc/contributors.py
-- [[dot-__init__()_150]] - code - gateway/tests/test_soc_contributors.py
-- [[dot-get_user_role()_2]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-__init__()_163]] - code - gateway/soc/auth.py
+- [[dot-__init__()_164]] - code - gateway/soc/contributors.py
+- [[dot-__init__()_165]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-_build_record()]] - code - gateway/soc/contributors.py
+- [[dot-_ensure_rbac()]] - code - gateway/soc/contributors.py
+- [[dot-_ensure_teams()]] - code - gateway/soc/contributors.py
+- [[dot-_load_paused_ids()]] - code - gateway/soc/contributors.py
+- [[dot-get_contributor()]] - code - gateway/soc/contributors.py
+- [[dot-get_user_role()_3]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-is_group_admin()_2]] - code - gateway/soc/auth.py
-- [[dot-is_owner()_4]] - code - gateway/soc/auth.py
+- [[dot-is_owner()_3]] - code - gateway/soc/auth.py
+- [[dot-list_contributors()]] - code - gateway/soc/contributors.py
+- [[dot-require()_1]] - code - gateway/soc/auth.py
 - [[dot-test_build_record_defaults_to_normal_when_no_lockdown_state()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_build_record_does_not_crash_if_lockdown_missing()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_build_record_reports_real_lockdown_level()]] - code - gateway/tests/test_soc_contributors.py
@@ -25,19 +30,21 @@ members: 65
 - [[dot-test_non_paused_user_reports_paused_false()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_paused_is_independent_of_lockdown_level()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_paused_user_reports_paused_true()]] - code - gateway/tests/test_soc_contributors.py
+- [[Action_3]] - code - gateway/soc/auth.py
 - [[AddCollaboratorRequest]] - code - gateway/soc/router.py
 - [[AddGroupMemberRequest]] - code - gateway/soc/router.py
-- [[Any_53]] - code - gateway/soc/router.py
+- [[Any_68]] - code - gateway/soc/router.py
 - [[ApprovalDecisionRequest]] - code - gateway/soc/router.py
 - [[AuditLogEntry]] - code - gateway/soc/models.py
 - [[AuditResult]] - code - gateway/soc/router.py
 - [[AuditResult_1]] - code - gateway/soc/models.py
-- [[BaseModel_1]] - code
+- [[BaseModel_2]] - code
 - [[Bug 2 contributors.py must call get_status(), not the nonexistent get_level().]] - rationale - gateway/tests/test_soc_contributors.py
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - rationale - gateway/soc/contributors.py
 - [[Check group admin status via TeamsConfig if available.]] - rationale - gateway/soc/auth.py
 - [[Constraint check paused (owner-initiated) and lockdown_level         (auto-esca]] - rationale - gateway/tests/test_soc_contributors.py
 - [[ContributorManager]] - code - gateway/soc/contributors.py
+- [[ContributorRecord_1]] - code - gateway/soc/contributors.py
 - [[CreateDelegationRequest]] - code - gateway/soc/router.py
 - [[CreateGroupRequest]] - code - gateway/soc/router.py
 - [[DisconnectRequest]] - code - gateway/soc/router.py
@@ -47,20 +54,16 @@ members: 65
 - [[EmergencyBlockRequest]] - code - gateway/soc/router.py
 - [[LoginRequest]] - code - gateway/soc/router.py
 - [[RBACManager_2]] - code - gateway/soc/auth.py
+- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
 - [[RenameGroupRequest]] - code - gateway/soc/router.py
-- [[Request_5]] - code - gateway/soc/router.py
-- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
+- [[Request_9]] - code - gateway/soc/router.py
 - [[Resolved identity of the SCL caller, including role and user_id.]] - rationale - gateway/soc/auth.py
-- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
-- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
-- [[Role_57]] - code - gateway/soc/auth.py
+- [[Resource_2]] - code - gateway/soc/auth.py
+- [[Role_66]] - code - gateway/soc/auth.py
 - [[SCLCaller_2]] - code - gateway/soc/auth.py
 - [[SCLConfirmationRequired]] - code - gateway/soc/models.py
 - [[SCLInterface]] - code - gateway/soc/router.py
 - [[SCLInterface_1]] - code - gateway/soc/models.py
-- [[SSHExecRequest_1]] - code - gateway/ingest_api/models.py
-- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
 - [[ScanRequest]] - code - gateway/soc/router.py
 - [[SetLogLevelRequest]] - code - gateway/soc/router.py
 - [[SetModeRequest]] - code - gateway/soc/router.py
@@ -70,10 +73,11 @@ members: 65
 - [[TestLockdownLevelWiring]] - code - gateway/tests/test_soc_contributors.py
 - [[TestPausedFieldWiring]] - code - gateway/tests/test_soc_contributors.py
 - [[UpdateDisplayNameRequest]] - code - gateway/soc/router.py
-- [[WebSocket_5]] - code - gateway/soc/router.py
-- [[_FakeRBAC_1]] - code - gateway/tests/test_soc_contributors.py
+- [[WebSocket_8]] - code - gateway/soc/router.py
+- [[_FakeRBAC_2]] - code - gateway/tests/test_soc_contributors.py
 - [[_load_paused_ids must never crash record-building if the persisted         store]] - rationale - gateway/tests/test_soc_contributors.py
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - rationale - gateway/tests/test_soc_contributors.py
+- [[soc_websocket()]] - code - gateway/soc/router.py
 - [[test_soc_contributors.py]] - code - gateway/tests/test_soc_contributors.py
 
 ## Live Query (requires Dataview plugin)
@@ -84,44 +88,41 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 71 edges to [[_COMMUNITY_socrouter.py]]
-- 25 edges to [[_COMMUNITY_ServiceManager_1]]
-- 23 edges to [[_COMMUNITY__FakeRBAC_1]]
+- 73 edges to [[_COMMUNITY_socrouter.py]]
+- 26 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 24 edges to [[_COMMUNITY_ServiceManager]]
 - 19 edges to [[_COMMUNITY_MiddlewareManager]]
+- 13 edges to [[_COMMUNITY_create_auth_dependency]]
 - 9 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 6 edges to [[_COMMUNITY_create_auth_dependency]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
-- 3 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 3 edges to [[_COMMUNITY_ModeRequest]]
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 3 edges to [[_COMMUNITY_AgentTarget_1]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 4 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
-- 3 edges to [[_COMMUNITY_api.py_1]]
-- 2 edges to [[_COMMUNITY_test_prompt_guard.py_2]]
-- 2 edges to [[_COMMUNITY_All Dependencies_1]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager_2]]
+- 2 edges to [[_COMMUNITY_TestSSRFDetection (2)]]
+- 2 edges to [[_COMMUNITY_ModeRequest]]
 - 2 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection_1]]
-- 2 edges to [[_COMMUNITY_chatbotmain.py]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 2 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
 - 2 edges to [[_COMMUNITY_upgrade]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY__is_op_reference_allowed]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_TestPathIsolationManager_5]]
-- 1 edge to [[_COMMUNITY_soc_dashboard]]
-- 1 edge to [[_COMMUNITY_Request]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_1]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
+- 2 edges to [[_COMMUNITY_api.py (2)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 1 edge to [[_COMMUNITY_test_prompt_guard.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_ServiceManager (2)]]
 - 1 edge to [[_COMMUNITY_SlackAPIProxy]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_RBACConfig (2)]]
 
 ## Top bridge nodes
-- [[BaseModel_1]] - degree 84, connects to 28 communities
+- [[BaseModel_2]] - degree 84, connects to 26 communities
 - [[ContributorManager]] - degree 57, connects to 5 communities
-- [[SCLCaller_2]] - degree 46, connects to 4 communities
-- [[AuditResult_1]] - degree 31, connects to 4 communities
-- [[SCLInterface_1]] - degree 31, connects to 4 communities
+- [[SCLCaller_2]] - degree 46, connects to 3 communities
+- [[SCLConfirmationRequired]] - degree 35, connects to 2 communities
+- [[AuditLogEntry]] - degree 31, connects to 2 communities

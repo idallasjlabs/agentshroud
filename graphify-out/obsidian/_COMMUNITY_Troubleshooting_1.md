@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Troubleshooting
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
@@ -14,7 +12,7 @@ members: 5
 - [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 - [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 - [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Troubleshooting_2]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Troubleshooting_4]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
 
 ## Top bridge nodes
-- [[Troubleshooting_2]] - degree 5, connects to 1 community
+- [[Troubleshooting_4]] - degree 5, connects to 1 community

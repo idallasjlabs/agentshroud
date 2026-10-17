@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # Startup Flow Diagram
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Related Notes_19]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Related Notes_21]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 - [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 - [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 

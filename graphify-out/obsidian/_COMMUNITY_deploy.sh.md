@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # deploy.sh
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[PATH_16]] - code - scripts/deploy.sh
+- [[PATH_11]] - code - scripts/deploy.sh
 - [[deploy.sh]] - code - scripts/deploy.sh
 - [[deploy.sh script]] - code - scripts/deploy.sh
 

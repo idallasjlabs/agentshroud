@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: ".agents/skills/i-cr/SKILL.md (5)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/agents/skills/i-cr/SKILLmd_5
 ---
 
 # Usage
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_5

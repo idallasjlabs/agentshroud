@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.20
 members: 11
 ---
 
 # Commit list 2026-10-10 through 2026-10-16 on main
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 11 nodes
 
 ## Members

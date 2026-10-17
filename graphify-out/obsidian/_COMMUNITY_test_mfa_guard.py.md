@@ -1,23 +1,21 @@
 ---
 type: community
-cohesion: 0.05
 members: 73
 ---
 
 # test_mfa_guard.py
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 73 nodes
 
 ## Members
 - [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[dot-__init__()_161]] - code - gateway/security/mfa_guard.py
+- [[dot-__init__()_156]] - code - gateway/security/mfa_guard.py
 - [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
 - [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
 - [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
 - [[dot-is_required()]] - code - gateway/security/mfa_guard.py
-- [[dot-verify()]] - code - gateway/security/mfa_guard.py
+- [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
 - [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
 - [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
 - [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
@@ -92,17 +90,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
-- 2 edges to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_Path_3]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher_1]]
+- 28 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 3 edges to [[_COMMUNITY_create_auth_dependency]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 1 edge to [[_COMMUNITY_Path (4)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
 
 ## Top bridge nodes
 - [[queue.py]] - degree 14, connects to 5 communities

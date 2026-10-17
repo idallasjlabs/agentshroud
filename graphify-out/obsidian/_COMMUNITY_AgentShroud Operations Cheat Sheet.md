@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 21
 ---
 
 # AgentShroud Operations Cheat Sheet
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members

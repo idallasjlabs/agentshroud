@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 26
 ---
 
 # Sunday Upgrade Report — 2026-09-17 (prod, on-demand)
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -46,8 +44,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_SecurityFinding]]
-- 2 edges to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06_1]]
-- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30_1]]
+- 2 edges to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06 (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30]]
 - 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06]]
 - 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-20 (PROD run, full)]]

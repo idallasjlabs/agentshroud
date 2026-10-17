@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Branding Specialist (BS)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[Branding Specialist (BS)]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Purpose_31]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Related Skills_20]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Usage_23]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Purpose_41]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Related Skills_28]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Usage_32]] - document - docker/config/openclaw/skills/i-bs/README.md
 - [[openclawskillsi-bsREADME]] - document - docker/config/openclaw/skills/i-bs/README.md
 
 ## Live Query (requires Dataview plugin)

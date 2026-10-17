@@ -15,7 +15,7 @@ tags:
 - [[Acceptance]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.2.0 Master Plan]] - `references` [EXTRACTED]
 - [[Intent]] - `contains` [EXTRACTED]
-- [[Source of truth_1]] - `contains` [EXTRACTED]
+- [[Source of truth]] - `contains` [EXTRACTED]
 - [[Surface to extend]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 

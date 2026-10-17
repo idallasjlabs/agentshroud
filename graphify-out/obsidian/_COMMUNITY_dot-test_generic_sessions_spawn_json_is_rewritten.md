@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # .test_generic_sessions_spawn_json_is_rewritten
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
@@ -21,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_7]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_5]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
 
 ## Top bridge nodes
-- [[dot-test_generic_sessions_spawn_json_is_rewritten()]] - degree 4, connects to 3 communities
+- [[dot-test_generic_sessions_spawn_json_is_rewritten()]] - degree 4, connects to 1 community

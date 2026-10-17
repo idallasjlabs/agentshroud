@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 26
 ---
 
 # TestOutboundClassifierHelpers
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -45,10 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
 - [[TestOutboundClassifierHelpers]] - degree 27, connects to 4 communities

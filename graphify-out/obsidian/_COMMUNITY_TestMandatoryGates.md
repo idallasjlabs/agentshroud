@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # TestMandatoryGates
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
@@ -23,7 +21,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
 
 ## Top bridge nodes
 - [[TestMandatoryGates]] - degree 3, connects to 1 community

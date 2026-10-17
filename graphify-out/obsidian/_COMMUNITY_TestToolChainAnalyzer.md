@@ -1,61 +1,56 @@
 ---
 type: community
-cohesion: 0.02
-members: 126
+members: 150
 ---
 
 # TestToolChainAnalyzer
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 126 nodes
+**Members:** 150 nodes
 
 ## Members
-- [[dot-__init__()_179]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-_calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-_cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-_detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-__init__()_73]] - code - gateway/soc/websocket.py
 - [[dot-_load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-_load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-_matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-_trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-add_alert_callback()_2]] - code - gateway/security/tool_chain_analyzer.py
 - [[dot-add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
 - [[dot-analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
-- [[dot-score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
 - [[dot-test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_approved_status()]] - code - gateway/tests/test_soc_egress.py
 - [[dot-test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_construction()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_construction()_1]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_construction()_2]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_destructive_requires_confirmation()]] - code - gateway/tests/test_soc_egress.py
 - [[dot-test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_edge_cases()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_error_model()]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_get_stats()_1]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_initialization()_5]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_initialization()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_pending_status_default()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_permission_denied_error()]] - code - gateway/tests/test_soc_egress.py
 - [[dot-test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_red_risk_high_threat()]] - code - gateway/tests/test_soc_egress.py
 - [[dot-test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
@@ -64,39 +59,45 @@ members: 126
 - [[dot-test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[dot-test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
 - [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
 - [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Any_76]] - code - gateway/security/tool_chain_analyzer.py
-- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Alarm]] - code - gateway/soc/models.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Alert severity levels.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
+- [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
 - [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
 - [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
 - [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
-- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ContributorRecord]] - code - gateway/soc/models.py
+- [[Create a MultiTurnTracker instance for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Create a mock alert callback for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[DisclosureCategory]] - code - gateway/security/multi_turn_tracker.py
+- [[EgressRequest]] - code - gateway/soc/models.py
+- [[EgressStatus]] - code - gateway/soc/models.py
+- [[Enum_2]] - code
+- [[HealthStatus]] - code - gateway/soc/services.py
+- [[HealthStatus_1]] - code - gateway/soc/models.py
 - [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
 - [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
 - [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
-- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Platform]] - code - gateway/soc/models.py
+- [[ResourceUsage_1]] - code - gateway/soc/models.py
 - [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
 - [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
 - [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[RiskLevel_5]] - code - gateway/security/tool_chain_analyzer.py
-- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_4]] - code - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_5]] - code - gateway/soc/models.py
+- [[SCLError]] - code - gateway/soc/models.py
+- [[ServiceStatus]] - code - gateway/soc/services.py
+- [[ServiceStatus_1]] - code - gateway/soc/models.py
+- [[Severity_1]] - code - gateway/soc/models.py
 - [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
@@ -107,10 +108,8 @@ members: 126
 - [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting statistics.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
@@ -120,22 +119,45 @@ members: 126
 - [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
 - [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestConfirmationModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestContributorRecord]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequest]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequestModel]] - code - gateway/tests/test_soc_egress.py
 - [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestSCLError]] - code - gateway/tests/test_soc_models.py
 - [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[TestToolChainAnalyzer]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[TestWSEvent]] - code - gateway/tests/test_soc_models.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel]] - code - gateway/security/git_guard.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[UserRole]] - code - gateway/soc/models.py
+- [[UserRole_1]] - code - gateway/soc/contributors.py
 - [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[WSEvent]] - code - gateway/soc/models.py
+- [[WSEvent_1]] - code - gateway/soc/websocket.py
+- [[WSEventType]] - code - gateway/soc/models.py
+- [[WebSocket_1]] - code - gateway/soc/websocket.py
+- [[_new_uuid()]] - code - gateway/soc/models.py
+- [[_now_iso()]] - code - gateway/soc/models.py
+- [[_role_enum()]] - code - gateway/soc/contributors.py
+- [[contributors.py]] - code - gateway/soc/contributors.py
+- [[mock_alert_callback()_1]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[mock_alert_callback()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
+- [[socmodels.py]] - code - gateway/soc/models.py
+- [[str_2]] - code
+- [[test_multi_turn_tracker.py]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[test_soc_egress.py]] - code - gateway/tests/test_soc_egress.py
+- [[test_soc_models.py]] - code - gateway/tests/test_soc_models.py
+- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
 - [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
 - [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[websocket.py]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -145,18 +167,73 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_MiddlewareManager]]
-- 6 edges to [[_COMMUNITY_MiddlewareManager_8]]
-- 3 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_InjectionAction_1]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_2]]
-- 1 edge to [[_COMMUNITY_soc.js]]
+- 30 edges to [[_COMMUNITY_MiddlewareManager]]
+- 26 edges to [[_COMMUNITY__FakeRBAC]]
+- 21 edges to [[_COMMUNITY_AlertDispatcher]]
+- 13 edges to [[_COMMUNITY_ServiceManager]]
+- 11 edges to [[_COMMUNITY_TestToolChainAnalyzer (2)]]
+- 8 edges to [[_COMMUNITY_ServiceManager (2)]]
+- 8 edges to [[_COMMUNITY_TestSSRFDetection]]
+- 8 edges to [[_COMMUNITY_SlackAPIProxy]]
+- 8 edges to [[_COMMUNITY_test_soc_realtime_coverage.py (2)]]
+- 5 edges to [[_COMMUNITY_PipelineAction]]
+- 5 edges to [[_COMMUNITY_A2AGovernanceProxy]]
+- 5 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 4 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 4 edges to [[_COMMUNITY_TrustConfig]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 4 edges to [[_COMMUNITY_GovernanceAction]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 4 edges to [[_COMMUNITY_soc.js]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 3 edges to [[_COMMUNITY_ProxyAction]]
+- 3 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 3 edges to [[_COMMUNITY_DelegationManager]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 3 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 3 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 3 edges to [[_COMMUNITY_RBACConfig (3)]]
+- 3 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 2 edges to [[_COMMUNITY_HostStatus]]
+- 2 edges to [[_COMMUNITY_SecureBrowser]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 2 edges to [[_COMMUNITY_SecureBrowser (2)]]
+- 2 edges to [[_COMMUNITY_SecureBrowser (3)]]
+- 2 edges to [[_COMMUNITY_SecureBrowser (4)]]
+- 2 edges to [[_COMMUNITY_MCPInspector]]
+- 2 edges to [[_COMMUNITY_InjectionAction]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_ResourceGuard]]
+- 2 edges to [[_COMMUNITY_ConsentFramework]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 2 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 2 edges to [[_COMMUNITY_A2APolicyEngine (3)]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 2 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
+- 2 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (6)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (5)]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 2 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_GovernanceAction (2)]]
+- 1 edge to [[_COMMUNITY_ConsistencyScore]]
+- 1 edge to [[_COMMUNITY_TestSSRFDetection (3)]]
+- 1 edge to [[_COMMUNITY_A2AMethod]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_SkillGuard (2)]]
+- 1 edge to [[_COMMUNITY_multi_host_test.py]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker (2)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[ToolChainAnalyzer]] - degree 49, connects to 5 communities
-- [[tool_chain_analyzer.py]] - degree 12, connects to 2 communities
-- [[ChainAction]] - degree 10, connects to 2 communities
-- [[RiskLevel_5]] - degree 10, connects to 2 communities
-- [[dot-test_global_stats()]] - degree 2, connects to 1 community
+- [[Enum_2]] - degree 105, connects to 50 communities
+- [[str_2]] - degree 44, connects to 22 communities
+- [[multi_turn_tracker.py]] - degree 12, connects to 6 communities
+- [[socmodels.py]] - degree 29, connects to 5 communities
+- [[WSEvent]] - degree 14, connects to 4 communities

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 23
 ---
 
 # Implementation Status
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 23
 - [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Emergency Override]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[FAQ_1]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Implementation Status_2]] - document - browser-extension/README.md
+- [[Implementation Status]] - document - browser-extension/README.md
 - [[Implementation Strategy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Option 1 Gateway-Level Filtering]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Option 1 Gateway-Level Filtering (Recommended)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
@@ -30,7 +28,7 @@ members: 23
 - [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Summary_16]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Summary_13]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 
@@ -42,15 +40,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
 - 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
-- 1 edge to [[_COMMUNITY_BotConfig_1]]
-- 1 edge to [[_COMMUNITY_AgentTarget_1]]
 - 1 edge to [[_COMMUNITY_Security Modules (58)]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
-- [[Implementation Status_2]] - degree 11, connects to 2 communities
+- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 3 communities
+- [[Implementation Status]] - degree 11, connects to 2 communities
 - [[Access Control (7)]] - degree 2, connects to 1 community

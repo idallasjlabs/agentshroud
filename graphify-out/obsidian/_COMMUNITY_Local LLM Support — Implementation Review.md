@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # Local LLM Support — Implementation Review
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -32,8 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
 
 ## Top bridge nodes
 - [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities

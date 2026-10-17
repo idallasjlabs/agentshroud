@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members

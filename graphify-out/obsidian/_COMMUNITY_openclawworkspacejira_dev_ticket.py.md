@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 40
 ---
 
 # openclaw/workspace/jira_dev_ticket.py
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 40 nodes
 
 ## Members
@@ -48,7 +46,7 @@ members: 40
 - [[find_transition_id()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 - [[openclawworkspacejira_dev_ticket.py]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 - [[resolve_cloud_id()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[run()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[run()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 - [[transition_issue()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)

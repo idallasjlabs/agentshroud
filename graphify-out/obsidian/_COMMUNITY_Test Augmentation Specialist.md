@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 18
 ---
 
 # Test Augmentation Specialist
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -37,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 - 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
 
 ## Top bridge nodes

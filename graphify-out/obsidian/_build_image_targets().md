@@ -19,7 +19,7 @@ tags:
 - [[dot-test_env_var_empty_string_ignored()]] - `calls` [EXTRACTED]
 - [[dot-test_whitespace_stripped_from_env_var()]] - `calls` [EXTRACTED]
 - [[Build the list of container image targets for Trivy image scanning.      Prefers]] - `rationale_for` [EXTRACTED]
-- [[Path_41]] - `calls` [EXTRACTED]
+- [[Path_46]] - `calls` [EXTRACTED]
 - [[_running_image()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]

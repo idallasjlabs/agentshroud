@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 40
 ---
 
 # AgentShroud Agentic OS
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 40 nodes
 
 ## Members
@@ -30,7 +28,7 @@ members: 40
 - [[Authorization Matrix]] - document - docs/architecture/agentic-os.md
 - [[Build-Time Security Scan (IEC 62443 4-1 SDL)]] - document - docs/architecture/agentic-os.md
 - [[Configuration Locations]] - document - docs/architecture/agentic-os.md
-- [[Container Architecture_1]] - document - docs/architecture/agentic-os.md
+- [[Container Architecture]] - document - docs/architecture/agentic-os.md
 - [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
 - [[Development Workflow — End to End]] - document - docs/architecture/agentic-os.md
 - [[Distribution by Platform]] - document - docs/architecture/agentic-os.md
@@ -60,9 +58,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Key Skills in Detail]]
-- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_main]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity_1]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
 
 ## Top bridge nodes
 - [[AgentShroud Agentic OS]] - degree 18, connects to 4 communities

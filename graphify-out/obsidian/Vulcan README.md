@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "Atlas — Curriculum Architect (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Atlas__Curriculum_Architect_2
 ---
 
 # Vulcan README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Vulcan Subject Matter Auditor Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_2

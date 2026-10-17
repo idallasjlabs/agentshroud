@@ -1,21 +1,19 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # security.py
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
 - [[Configuration  Environment Variables_21]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Function Details_37]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Purpose_168]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Related_43]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Purpose_160]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Related_42]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md

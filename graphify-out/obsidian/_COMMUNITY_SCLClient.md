@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.10
 members: 42
 ---
 
 # SCLClient
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_65]] - code - gateway/cli/client.py
+- [[dot-__init__()_64]] - code - gateway/cli/client.py
 - [[dot-_request()]] - code - gateway/cli/client.py
 - [[dot-add_collaborator()]] - code - gateway/cli/client.py
 - [[dot-add_group_member()]] - code - gateway/cli/client.py
@@ -22,9 +20,9 @@ members: 42
 - [[dot-get()]] - code - gateway/cli/client.py
 - [[dot-get_correlation()]] - code - gateway/cli/client.py
 - [[dot-get_egress_pending()]] - code - gateway/cli/client.py
-- [[dot-get_events()_1]] - code - gateway/cli/client.py
+- [[dot-get_events()]] - code - gateway/cli/client.py
 - [[dot-get_groups()]] - code - gateway/cli/client.py
-- [[dot-get_health()_1]] - code - gateway/cli/client.py
+- [[dot-get_health()]] - code - gateway/cli/client.py
 - [[dot-get_logs()]] - code - gateway/cli/client.py
 - [[dot-get_risk()]] - code - gateway/cli/client.py
 - [[dot-get_services()]] - code - gateway/cli/client.py
@@ -43,7 +41,7 @@ members: 42
 - [[dot-test_init_strips_trailing_slash_and_builds_soc_base()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_post_serializes_body()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_put_and_delete_methods()]] - code - gateway/tests/test_cli_coverage.py
-- [[Any_16]] - code - gateway/cli/client.py
+- [[Any_24]] - code - gateway/cli/client.py
 - [[Exception_1]] - code - gateway/tests/test_cli_coverage.py
 - [[Minimal synchronous httpx-free client for the SCL API.]] - rationale - gateway/cli/client.py
 - [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - rationale - gateway/tests/test_cli_coverage.py

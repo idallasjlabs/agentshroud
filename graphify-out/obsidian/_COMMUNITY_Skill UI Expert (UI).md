@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 27
 ---
 
 # Skill: UI Expert (UI)
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -32,7 +30,7 @@ members: 27
 - [[Navigation]] - document - .agents/skills/i-ui/SKILL.md
 - [[React  Next.js Component Architecture]] - document - .agents/skills/i-ui/SKILL.md
 - [[Responsive Layout System]] - document - .agents/skills/i-ui/SKILL.md
-- [[Role_30]] - document - .agents/skills/i-ui/SKILL.md
+- [[Role_27]] - document - .agents/skills/i-ui/SKILL.md
 - [[Rules_7]] - document - .agents/skills/i-ui/SKILL.md
 - [[Skill UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
 - [[UI Validation Checklist]] - document - .agents/skills/i-ui/SKILL.md

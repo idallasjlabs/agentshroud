@@ -1,23 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
-location: "L226"
+community: "What You Must Do When Invoked (2)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - community/What_You_Must_Do_When_Invoked_2
 ---
 
 # Usage
 
 ## Connections
-- [[Adding a future agent_1]] - `contains` [EXTRACTED]
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
-- [[Tap to talk]] - `contains` [EXTRACTED]
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
-- [[Voice volume]] - `contains` [EXTRACTED]
-- [[Wake word]] - `contains` [EXTRACTED]
+- [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2

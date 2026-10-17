@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-__aenter__()_5]] - `method` [EXTRACTED]
 - [[dot-__aexit__()_5]] - `method` [EXTRACTED]
-- [[dot-__init__()_135]] - `method` [EXTRACTED]
-- [[dot-request()]] - `method` [EXTRACTED]
+- [[dot-__init__()_133]] - `method` [EXTRACTED]
+- [[dot-request()_2]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[Stands in for httpx.AsyncClient; records request kwargs.]] - `rationale_for` [EXTRACTED]

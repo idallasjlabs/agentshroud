@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.09
-members: 38
+members: 42
 ---
 
 # test_scorecard_integrity.py
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 38 nodes
+**Members:** 42 nodes
 
 ## Members
 - [[dot-test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_initial_when_not_run()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_not_run()_2]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
@@ -21,17 +19,21 @@ members: 38
 - [[dot-test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
 - [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
 - [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
 - [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
 - [[TestScoreMalwareDefense_1]] - code - gateway/tests/test_scanner_integration.py
 - [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
 - [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
 - [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
+- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
 - [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
@@ -57,14 +59,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 12 edges to [[_COMMUNITY_test_scanner_integration.py]]
 - 4 edges to [[_COMMUNITY_scanner_integration.py]]
-- 2 edges to [[_COMMUNITY_AgentTarget_4]]
-- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py_1]]
+- 3 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 2 edges to [[_COMMUNITY_AgentTarget (4)]]
+- 1 edge to [[_COMMUNITY_get_trivy_summary]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration.py (2)]]
 
 ## Top bridge nodes
 - [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
 - [[_score_malware_defense()]] - degree 15, connects to 4 communities
+- [[_is_fresh()]] - degree 8, connects to 4 communities
+- [[_trivy_critical()]] - degree 4, connects to 2 communities
 - [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community
-- [[TestScoreMalwareDefense_1]] - degree 5, connects to 1 community
-- [[dot-test_initial_when_infected()]] - degree 3, connects to 1 community

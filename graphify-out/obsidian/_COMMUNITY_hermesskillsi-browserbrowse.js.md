@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 6
 ---
 
 # hermes/skills/i-browser/browse.js
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
@@ -14,7 +12,7 @@ members: 6
 - [[browserFetch()]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[fs_1]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[hermesskillsi-browserbrowse.js]] - code - docker/config/hermes/skills/i-browser/browse.js
-- [[path_10]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[path_4]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[{ chromium }]] - code - docker/config/hermes/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)

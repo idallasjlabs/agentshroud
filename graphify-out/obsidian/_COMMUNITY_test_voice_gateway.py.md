@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.02
 members: 93
 ---
 
 # test_voice_gateway.py
 
-**Cohesion:** 0.02 - loosely connected
 **Members:** 93 nodes
 
 ## Members
@@ -114,12 +112,12 @@ SORT file.name ASC
 ## Connections to other communities
 - 31 edges to [[_COMMUNITY__pcm_bytes]]
 - 8 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 6 edges to [[_COMMUNITY_AsyncMock_1]]
+- 6 edges to [[_COMMUNITY_AsyncMock]]
 - 6 edges to [[_COMMUNITY_tts.py]]
 - 6 edges to [[_COMMUNITY__fw_client]]
-- 5 edges to [[_COMMUNITY_test_voice_latency_guard.py_1]]
-- 4 edges to [[_COMMUNITY_test_voice_gateway.py_1]]
-- 4 edges to [[_COMMUNITY_server.py_1]]
+- 5 edges to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
+- 4 edges to [[_COMMUNITY_test_voice_gateway.py (2)]]
+- 4 edges to [[_COMMUNITY_server.py (2)]]
 - 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
 - 1 edge to [[_COMMUNITY_stt.py]]
 - 1 edge to [[_COMMUNITY_TestSplitForSpeech]]

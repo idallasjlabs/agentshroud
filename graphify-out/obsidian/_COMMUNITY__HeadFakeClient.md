@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # _HeadFakeClient
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[dot-__aenter__()_3]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__aexit__()_3]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_5]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-stream()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__aenter__()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__aexit__()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-stream()]] - code - gateway/tests/test_llm_proxy.py
 - [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)

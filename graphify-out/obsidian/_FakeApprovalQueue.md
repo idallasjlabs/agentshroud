@@ -12,14 +12,14 @@ tags:
 # _FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_118]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()_1]] - `method` [EXTRACTED]
-- [[dot-wait_for_decision()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_170]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_2]] - `method` [EXTRACTED]
+- [[dot-wait_for_decision()_2]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyDecision]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]

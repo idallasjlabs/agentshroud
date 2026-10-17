@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L2704"
+community: "test_dashboard.py"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_FakeRBAC
+  - graphify/EXTRACTED
+  - community/test_dashboardpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_websocket()]] - `references` [EXTRACTED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

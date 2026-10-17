@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 14
 ---
 
 # _run
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 14 nodes
 
 ## Members

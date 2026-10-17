@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 19
 ---
 
 # agentshroud-gateway service (proxy mode)
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members

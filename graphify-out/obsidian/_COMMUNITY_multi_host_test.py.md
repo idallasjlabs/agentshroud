@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.24
 members: 10
 ---
 
 # multi_host_test.py
 
-**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -31,12 +29,12 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_MultiHostResult]]
 - 3 edges to [[_COMMUNITY_HostStatus]]
-- 3 edges to [[_COMMUNITY_main_1]]
+- 3 edges to [[_COMMUNITY_main (2)]]
 - 3 edges to [[_COMMUNITY_test_multi_host_test.py]]
 - 1 edge to [[_COMMUNITY_TestTail]]
 - 1 edge to [[_COMMUNITY_ssh_runner]]
 - 1 edge to [[_COMMUNITY_TestParserAndCommandResolution]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_run_multi_host]]
 - 1 edge to [[_COMMUNITY_TestParseHosts]]
 

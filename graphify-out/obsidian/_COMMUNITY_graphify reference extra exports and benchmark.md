@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 29
 ---
 
 # graphify reference: extra exports and benchmark
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members

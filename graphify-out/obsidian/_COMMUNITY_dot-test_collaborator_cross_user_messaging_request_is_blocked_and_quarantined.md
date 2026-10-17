@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # .test_collaborator_cross_user_messaging_request_is_blocked_and_quarantined
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -25,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 15 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 3 edges to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # ._filter_streaming_event
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Any_17]] - code
+- [[Any_26]] - code
 
 ## Live Query (requires Dataview plugin)
 

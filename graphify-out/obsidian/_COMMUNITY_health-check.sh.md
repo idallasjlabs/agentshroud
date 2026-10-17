@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.83
 members: 4
 ---
 
 # health-check.sh
 
-**Cohesion:** 0.83 - tightly connected
 **Members:** 4 nodes
 
 ## Members

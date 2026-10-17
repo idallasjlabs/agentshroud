@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.16
 members: 25
 ---
 
 # voice_task
 
-**Cohesion:** 0.16 - loosely connected
 **Members:** 25 nodes
 
 ## Members

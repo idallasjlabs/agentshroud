@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 24
 ---
 
 # gen.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -26,8 +24,8 @@ members: 24
 - [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_model_defaults()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_17]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_18]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[main()_16]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[main()_17]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[nano-banana-proSKILL]] - document - skills/openclaw/nano-banana-pro/SKILL.md
 - [[openai-image-genSKILL]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[pick_prompts()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py

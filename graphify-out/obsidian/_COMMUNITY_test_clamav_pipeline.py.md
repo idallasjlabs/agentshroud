@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 26
 ---
 
 # test_clamav_pipeline.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -45,15 +43,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AsyncMock_1]]
-- 3 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 7 edges to [[_COMMUNITY_AsyncMock]]
 - 3 edges to [[_COMMUNITY_PipelineAction]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
 
 ## Top bridge nodes
+- [[scan_bytes()]] - degree 11, connects to 3 communities
 - [[test_clamav_pipeline.py]] - degree 18, connects to 2 communities
-- [[scan_bytes()]] - degree 11, connects to 2 communities
 - [[_make_pipeline()_3]] - degree 8, connects to 1 community
 - [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
 - [[test_pipeline_clamav_error_fail_open()]] - degree 5, connects to 1 community

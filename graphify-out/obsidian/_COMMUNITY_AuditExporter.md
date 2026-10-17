@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 32
 ---
 
 # AuditExporter
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -53,8 +51,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_AuditStore]]
 - 6 edges to [[_COMMUNITY_AuditEvent]]
-- 3 edges to [[_COMMUNITY_AuditExporter_2]]
-- 2 edges to [[_COMMUNITY_AuditExporter_1]]
+- 3 edges to [[_COMMUNITY_AuditExporter (3)]]
+- 2 edges to [[_COMMUNITY_AuditExporter (2)]]
 
 ## Top bridge nodes
 - [[AuditExporter]] - degree 22, connects to 4 communities

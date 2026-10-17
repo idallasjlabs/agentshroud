@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skills by Category"
-location: "L183"
+community: "AWS Cloud Management & FinOps Agent (3)"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/AWS_Cloud_Management__FinOps_Agent_3
 ---
 
 # Workflow
 
 ## Connections
-- [[Skills by Category_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3

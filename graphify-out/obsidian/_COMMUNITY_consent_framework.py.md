@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # consent_framework.py
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -16,9 +14,9 @@ members: 14
 - [[ConsentFramework.validate_config(config)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Function Details_39]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Purpose_170]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Purpose_169]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Related_44]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Shell Injection Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Threat Model_25]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md

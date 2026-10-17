@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 38
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 38 nodes
 
 ## Members
@@ -57,10 +55,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide_1]]
+- 10 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (2)]]
 - 5 edges to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (AMPM)]]
-- 4 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide_2]]
-- 2 edges to [[_COMMUNITY_Report Delivery Format Instructions_1]]
+- 4 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
+- 2 edges to [[_COMMUNITY_Report Delivery Format Instructions (2)]]
 - 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
 - 1 edge to [[_COMMUNITY_Report Delivery Format Instructions]]
 - 1 edge to [[_COMMUNITY_Job details]]

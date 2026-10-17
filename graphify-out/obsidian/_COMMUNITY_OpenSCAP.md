@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # OpenSCAP
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -21,7 +19,7 @@ members: 14
 - [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
 - [[OpenSCAP_1]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[Purpose_155]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Related Notes_59]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Related Notes_57]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
 
@@ -33,9 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ClamAV]]
 - 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
 - 1 edge to [[_COMMUNITY_Integration Guide]]
+- 1 edge to [[_COMMUNITY_ClamAV]]
 - 1 edge to [[_COMMUNITY_agent_isolation.py]]
 - 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
 

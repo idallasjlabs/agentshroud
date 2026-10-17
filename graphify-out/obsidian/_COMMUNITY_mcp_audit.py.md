@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # mcp_audit.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -21,10 +19,10 @@ members: 15
 - [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[Purpose_141]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Related_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Related_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[mcp_audit.py]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 
 ## Live Query (requires Dataview plugin)
 

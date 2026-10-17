@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 22
 ---
 
 # Phase 3: MITIGATE (Rollback First!)
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -20,15 +18,15 @@ members: 22
 - [[Phase 3 MITIGATE (Rollback First!)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Post-Incident]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Post-Mortem Template]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Purpose_78]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Purpose_77]] - document - docker/config/openclaw/skills/i-production/README.md
 - [[RDS Rollback (Point-in-Time or Snapshot)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Related Skills_61]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Role_40]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Related Skills_64]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Role_38]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[S3 Data Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Severity Matrix]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Skill Incident Response (INCIDENT)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Step Function Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Usage_71]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Usage_75]] - document - docker/config/openclaw/skills/i-production/README.md
 - [[Zabbix Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[openclawskillsi-productionREADME]] - document - docker/config/openclaw/skills/i-production/README.md
 - [[openclawskillsi-productionSKILL]] - document - docker/config/openclaw/skills/i-production/SKILL.md

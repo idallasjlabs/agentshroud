@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 29
 ---
 
 # Local-Model Job Quality Matrix
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -49,8 +47,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
 - 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
 
 ## Top bridge nodes
 - [[Local-Model Job Quality Matrix]] - degree 6, connects to 1 community

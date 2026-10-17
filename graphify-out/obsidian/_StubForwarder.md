@@ -1,42 +1,28 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L29"
+community: "A2APolicyEngine"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/A2APolicyEngine
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_18]] - `method` [EXTRACTED]
-- [[dot-forward()]] - `method` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
+- [[dot-forward()_1]] - `method` [EXTRACTED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[A2AProxyResult]] - `uses` [INFERRED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
-- [[Records what it was asked to forward; returns a canned response.]] - `rationale_for` [EXTRACTED]
-- [[forwarder()]] - `references` [EXTRACTED]
-- [[proxy()]] - `references` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
-- [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
-- [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_malformed_body_is_blocked()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `calls` [EXTRACTED]
+- [[test_proxy_without_trust_manager_does_not_raise()]] - `calls` [EXTRACTED]
+- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
+- [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.05
-members: 85
+members: 87
 ---
 
 # test_llm_proxy.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 85 nodes
+**Members:** 87 nodes
 
 ## Members
-- [[dot-__init__()_8]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_9]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_6]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_7]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-block_credentials()]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-can_use_tool()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-filter_xml_blocks()]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-inject_headers()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-sanitize()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-sanitize()]] - code - gateway/tests/test_llm_proxy.py
 - [[A cloud 400 that is NOT a quota wall must surface as a 400, not a 200.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[A known secret value echoed in a streaming delta must be scrubbed.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Allowed tool blocks must pass through unchanged.]] - rationale - gateway/tests/test_llm_proxy.py
@@ -28,6 +26,7 @@ members: 85
 - [[Existing callers (with_head=False) keep getting bytes only — no StreamHead.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - rationale - gateway/tests/test_llm_proxy.py
 - [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - rationale - gateway/proxy/llm_proxy.py
+- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - rationale - gateway/proxy/llm_proxy.py
 - [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
@@ -41,24 +40,25 @@ members: 85
 - [[Same regression as…]] - rationale - gateway/tests/test_llm_proxy.py
 - [[StreamHead]] - code - gateway/proxy/llm_proxy.py
 - [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy.py
+- [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
 - [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
 - [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_19]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_20]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_21]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_22]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_23]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_24]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_25]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_2]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_5]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_6]] - code - gateway/tests/test_llm_proxy.py
 - [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
 - [[_proxy_with_connect_refused()]] - code - gateway/tests/test_llm_proxy.py
 - [[_run_stream (StreamHead test harness)]] - code - gateway/tests/test_llm_proxy.py
-- [[asyncio_3]] - code
+- [[asyncio_2]] - code
 - [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
 - [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[fake_open()]] - code - gateway/tests/test_llm_proxy.py
 - [[fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
+- [[llm_proxy.py_2]] - code - gateway/proxy/llm_proxy.py
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[mock_forward()]] - code - gateway/tests/test_llm_proxy.py
 - [[mock_forward()_1]] - code - gateway/tests/test_llm_proxy.py
@@ -104,16 +104,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_LLMProxy]]
+- 30 edges to [[_COMMUNITY_LLMProxy]]
 - 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 3 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
 - 2 edges to [[_COMMUNITY__HeadFakeResponse]]
 - 1 edge to [[_COMMUNITY__HeadFakeClient]]
 - 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
 
 ## Top bridge nodes
-- [[StreamHead]] - degree 15, connects to 4 communities
+- [[StreamHead]] - degree 16, connects to 4 communities
 - [[test_llm_proxy.py]] - degree 43, connects to 3 communities
 - [[_run_stream (StreamHead test harness)]] - degree 10, connects to 3 communities
+- [[llm_proxy.py_2]] - degree 7, connects to 3 communities
 - [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - degree 7, connects to 2 communities
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - degree 8, connects to 1 community

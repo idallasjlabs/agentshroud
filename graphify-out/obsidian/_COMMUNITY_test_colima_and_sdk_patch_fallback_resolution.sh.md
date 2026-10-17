@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.47
 members: 6
 ---
 
 # test_colima_and_sdk_patch_fallback_resolution.sh
 
-**Cohesion:** 0.47 - moderately connected
 **Members:** 6 nodes
 
 ## Members

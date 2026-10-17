@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 29
 ---
 
 # Security Module Inventory
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -49,7 +47,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
 
 ## Top bridge nodes
 - [[Security Module Inventory]] - degree 8, connects to 2 communities

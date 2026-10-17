@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.05
-members: 90
+members: 92
 ---
 
 # test_soc_bots.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 90 nodes
+**Members:** 92 nodes
 
 ## Members
 - [[dot-_make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
@@ -67,12 +65,13 @@ members: 90
 - [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - rationale - gateway/tests/test_soc_bots.py
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - rationale - gateway/security/scanner_integration.py
 - [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
+- [[Return full collaborator activity log. limit=0 returns all entries.      Returns]] - rationale - gateway/soc/router.py
 - [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - rationale - gateway/soc/router.py
 - [[Return the tracked advisory registry for the wrapped AI agent.      When bot_id]] - rationale - gateway/soc/router.py
 - [[TestAgentCvesBotId]] - code - gateway/tests/test_soc_bots.py
 - [[TestBotSelectorFrontend]] - code - gateway/tests/test_soc_bots.py
 - [[TestCollaboratorActivityBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestComputeBotScorecard]] - code - gateway/tests/test_soc_bots.py
+- [[TestComputeBotScorecard_1]] - code - gateway/tests/test_soc_bots.py
 - [[TestConfigBotId]] - code - gateway/tests/test_soc_bots.py
 - [[TestEgressHistoryBotFilter]] - code - gateway/tests/test_soc_bots.py
 - [[TestEgressLogBotFilter]] - code - gateway/tests/test_soc_bots.py
@@ -93,7 +92,8 @@ members: 90
 - [[_make_owner_caller()]] - code - gateway/tests/test_soc_bots.py
 - [[compute_bot_scorecard()]] - code - gateway/security/scanner_integration.py
 - [[get_agent_cves()]] - code - gateway/soc/router.py
-- [[get_config()_1]] - code - gateway/soc/router.py
+- [[get_collaborator_activity()]] - code - gateway/soc/router.py
+- [[get_config()]] - code - gateway/soc/router.py
 - [[get_egress_history()]] - code - gateway/soc/router.py
 - [[get_egress_pending()]] - code - gateway/soc/router.py
 - [[get_security_events()]] - code - gateway/soc/router.py
@@ -109,18 +109,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_socrouter.py]]
+- 33 edges to [[_COMMUNITY_socrouter.py]]
 - 30 edges to [[_COMMUNITY_MiddlewareManager]]
-- 9 edges to [[_COMMUNITY_AsyncMock_1]]
+- 9 edges to [[_COMMUNITY_AsyncMock]]
 - 5 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 4 edges to [[_COMMUNITY_ServiceManager_1]]
+- 3 edges to [[_COMMUNITY_ServiceManager (2)]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 2 edges to [[_COMMUNITY__FakeRBAC]]
-- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget (4)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
 - 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
 - 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_AgentTarget_4]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py_1]]
 
 ## Top bridge nodes
 - [[test_soc_bots.py]] - degree 38, connects to 6 communities

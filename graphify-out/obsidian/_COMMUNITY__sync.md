@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.14
 members: 30
 ---
 
 # _sync
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -33,7 +31,7 @@ members: 30
 - [[TestFetch]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestProcessGhsaAdvisories]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[TestSerialization]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSerialization_1]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestSnapshotSmoke]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[The committed snapshot yields a real backlog, all honest under_review.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_adv()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py

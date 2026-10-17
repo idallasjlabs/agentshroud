@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # Implement per-user session isolation using Telegram user ID
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 16
 - [[Problem_4]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Remediation_3]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Root Cause_3]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Severity_4]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Severity_5]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 1 Add user session registry to the gateway]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 2 Partition conversation context at the gateway]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 3 Isolate file workspaces per user]] - document - docs/planning/redteam/03-session-isolation.md

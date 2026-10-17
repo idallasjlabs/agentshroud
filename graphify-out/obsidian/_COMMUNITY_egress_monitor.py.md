@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # egress_monitor.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -20,11 +18,11 @@ members: 15
 - [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Purpose_150]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[egress_monitor.py]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 

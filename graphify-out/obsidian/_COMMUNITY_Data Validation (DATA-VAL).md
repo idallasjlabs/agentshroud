@@ -1,22 +1,18 @@
 ---
 type: community
-cohesion: 0.43
-members: 7
+members: 5
 ---
 
 # Data Validation (DATA-VAL)
 
-**Cohesion:** 0.43 - moderately connected
-**Members:** 7 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_log()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
-- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
-- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
+- [[Data Validation (DATA-VAL)_1]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Purpose_44]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Related Skills_31]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Usage_35]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[openclawskillsi-dataREADME]] - document - docker/config/openclaw/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[_telegram_alert()]] - degree 3, connects to 1 community
+- [[Data Validation (DATA-VAL)_1]] - degree 5, connects to 1 community

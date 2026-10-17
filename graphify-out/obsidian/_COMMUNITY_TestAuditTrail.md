@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.20
 members: 10
 ---
 
 # TestAuditTrail
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -30,12 +28,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY_PermissionLevel]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 3 edges to [[_COMMUNITY_StdioConnection]]
 - 2 edges to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_2]]
+- 1 edge to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_4]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
 
 ## Top bridge nodes
 - [[TestAuditTrail_2]] - degree 23, connects to 7 communities

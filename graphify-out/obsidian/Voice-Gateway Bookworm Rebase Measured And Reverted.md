@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "rationale"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "ESP32-S3-BOX-3 Voice Terminal (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/ESP32-S3-BOX-3_Voice_Terminal_2
 ---
 
 # Voice-Gateway Bookworm Rebase Measured And Reverted
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `cites` [EXTRACTED]
 - [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2

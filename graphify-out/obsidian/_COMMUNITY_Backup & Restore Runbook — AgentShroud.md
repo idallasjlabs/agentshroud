@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # Backup & Restore Runbook — AgentShroud
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -34,8 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
 - 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
 - 1 edge to [[_COMMUNITY_Morning Checklist (5 minutes)]]
 
 ## Top bridge nodes

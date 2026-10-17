@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 20
 ---
 
 # OpenClaw Management Scripts
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -20,8 +18,8 @@ members: 20
 - [[Initial Setup]] - document - docker/scripts/README.md
 - [[OpenClaw CLI]] - document - docker/scripts/README.md
 - [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
-- [[Quick Reference_6]] - document - docker/scripts/README.md
-- [[Security Notes_2]] - document - docker/scripts/README.md
+- [[Quick Reference_7]] - document - docker/scripts/README.md
+- [[Security Notes_4]] - document - docker/scripts/README.md
 - [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
 - [[check-status.sh_1]] - document - docker/scripts/README.md
 - [[devices.sh_1]] - document - docker/scripts/README.md
@@ -40,7 +38,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Blue Team Security Auditor (SEC-DEFENSE)]]
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_3]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (4)]]
 
 ## Top bridge nodes
 - [[OpenClaw Management Scripts]] - degree 14, connects to 2 communities

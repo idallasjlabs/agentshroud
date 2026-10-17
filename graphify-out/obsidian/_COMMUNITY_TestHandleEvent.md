@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 15
 ---
 
 # TestHandleEvent
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -34,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_AsyncMock (2)]]
 - 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
 - 2 edges to [[_COMMUNITY__make_proxy]]
 

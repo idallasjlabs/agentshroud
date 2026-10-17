@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.04
 members: 45
 ---
 
 # AgentShroud Phase Review — 2026-02-23
 
-**Cohesion:** 0.04 - loosely connected
 **Members:** 45 nodes
 
 ## Members
@@ -28,8 +26,8 @@ members: 45
 - [[1. Changes in This Diff (Summary)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
 - [[1. Prior Review Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
 - [[2. New Blue Team Changes Since Round 1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 - [[4. Risks & Gaps_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 - [[4. Risks & Gaps_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 - [[4. Test Coverage Assessment]] - document - docs/planning/reviews/phase-review-2026-03-05.md
@@ -49,10 +47,10 @@ members: 45
 - [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
 - [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Summary_1]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Summary_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[What This Means_1]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Summary_2]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[What This Means]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[What Would Change This to NO-GO]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
@@ -67,24 +65,24 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
 - 2 edges to [[_COMMUNITY_AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]]
 - 2 edges to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
-- 1 edge to [[_COMMUNITY_3. Remaining Work — Prioritized by Value]]
 - 1 edge to [[_COMMUNITY_4. Risks & Gaps]]
-- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase_1]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase (2)]]
 - 1 edge to [[_COMMUNITY_3. Brutally Honest Self-Assessment]]
-- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase_2]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase (3)]]
 - 1 edge to [[_COMMUNITY_1. Accomplishments This Phase — Delivered Security Infrastructure]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit — Real Protection vs. Theater Assessment]]
 - 1 edge to [[_COMMUNITY_2. Security Value Audit]]
 - 1 edge to [[_COMMUNITY_2. Security Value Audit — Genuine Protection vs. Security Theater]]
 - 1 edge to [[_COMMUNITY_5. Strategic Recommendations]]
 - 1 edge to [[_COMMUNITY_6. Conclusion — Mission-Critical Security Infrastructure Delivered]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit — Real Protection vs. Theater Assessment]]
 - 1 edge to [[_COMMUNITY_5. Test Results]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit_1]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit (2)]]
 - 1 edge to [[_COMMUNITY_1. Accomplishments This Phase]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit_2]]
+- 1 edge to [[_COMMUNITY_3. Remaining Work — Prioritized by Value]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit (3)]]
 - 1 edge to [[_COMMUNITY_3. Code Quality]]
 - 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
-- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)_1]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have) (2)]]
 - 1 edge to [[_COMMUNITY_2. Security Analysis]]
 
 ## Top bridge nodes

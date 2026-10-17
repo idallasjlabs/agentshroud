@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Technical Writer (TW)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_52]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Related Skills_41]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Purpose_62]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Related Skills_49]] - document - docker/config/openclaw/skills/i-tw/README.md
 - [[Technical Writer (TW)]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Usage_44]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Usage_53]] - document - docker/config/openclaw/skills/i-tw/README.md
 - [[openclawskillsi-twREADME]] - document - docker/config/openclaw/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)

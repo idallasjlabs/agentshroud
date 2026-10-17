@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # sanitizer.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
 - [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Function Details_14]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Environment Variables Used_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Function Details_13]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Purpose_120]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Related_20]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Purpose_130]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Related_18]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Responsibilities_16]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[_sanitize_presidio(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[_sanitize_regex(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[block_credentials(content, source)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # TestNetworkValidator
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[dot-setup_method()_30]] - code - gateway/tests/test_network_validator.py
+- [[dot-setup_method()_22]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
@@ -32,6 +30,7 @@ members: 22
 - [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
 - [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
+- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,9 +40,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_AlertDispatcher]]
 - 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 2 edges to [[_COMMUNITY_validate_network_security]]
 
 ## Top bridge nodes
 - [[TestNetworkValidator]] - degree 15, connects to 2 communities
-- [[dot-setup_method()_30]] - degree 2, connects to 1 community
+- [[test_network_validator.py]] - degree 3, connects to 2 communities
+- [[dot-setup_method()_22]] - degree 2, connects to 1 community

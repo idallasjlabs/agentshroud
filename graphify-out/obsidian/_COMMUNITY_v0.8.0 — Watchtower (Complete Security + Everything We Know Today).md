@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.10
 members: 22
 ---
 
 # v0.8.0 — "Watchtower" (Complete Security + Everything We Know Today)
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -25,7 +23,7 @@ members: 22
 - [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Features_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
@@ -42,10 +40,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AgentShroud — Master Feature List (Everything Ever Mentioned)]]
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 
 ## Top bridge nodes
 - [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 1 community
-- [[Features_3]] - degree 7, connects to 1 community
+- [[Features_1]] - degree 7, connects to 1 community
 - [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community

@@ -1,89 +1,38 @@
 ---
 type: community
-cohesion: 0.03
-members: 125
+members: 41
 ---
 
 # InjectionAction
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 125 nodes
+**Members:** 41 nodes
 
 ## Members
-- [[dot-__init__()_47]] - code - gateway/security/encoding_detector.py
-- [[dot-__init__()_48]] - code - gateway/security/tool_result_injection.py
-- [[dot-_detect_encoded_injection()]] - code - gateway/security/tool_result_injection.py
-- [[dot-_detect_unicode_obfuscation()]] - code - gateway/security/tool_result_injection.py
-- [[dot-analyze()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_base64_segments()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_hex()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_rot13()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_url()]] - code - gateway/security/encoding_detector.py
-- [[dot-replace_homoglyphs()]] - code - gateway/security/encoding_detector.py
-- [[dot-scan_tool_result()_1]] - code - gateway/security/tool_result_injection.py
-- [[dot-setup_method()_7]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-setup_method()_8]] - code - gateway/tests/test_tool_injection_scan.py
-- [[dot-strip_zero_width()]] - code - gateway/security/encoding_detector.py
+- [[dot-setup_method()_10]] - code - gateway/tests/test_tool_injection_scan.py
 - [[dot-test_base64_clean_content_not_flagged()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_base64_detected()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_base64_encoded_injection()]] - code - gateway/tests/test_tool_injection_scan.py
-- [[dot-test_base64_encoded_injection()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[dot-test_base64_encoded_injection()_1]] - code - gateway/tests/test_tool_injection_scan.py
+- [[dot-test_base64_encoded_injection()_2]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_clean_content_passes_through()]] - code - gateway/tests/test_tool_injection_scan.py
 - [[dot-test_clean_tool_output_passes()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_config_disable_base64()]] - code - gateway/tests/test_encoding_detector.py
 - [[dot-test_empty_content()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_empty_input()]] - code - gateway/tests/test_encoding_detector.py
 - [[dot-test_high_severity_strips_content()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_homoglyph_replaced()]] - code - gateway/tests/test_encoding_detector.py
 - [[dot-test_ignore_instructions_injection_high_severity()]] - code - gateway/tests/test_tool_injection_scan.py
-- [[dot-test_ignore_previous_instructions()]] - code - gateway/tests/test_tool_result_injection.py
+- [[dot-test_ignore_previous_instructions()_1]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_jailbreak_attempt()]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_medium_severity_warns()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_nested_encoding()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_new_instructions_override()]] - code - gateway/tests/test_tool_result_injection.py
+- [[dot-test_new_instructions_override()_1]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_none_content()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_plain_text_no_detection()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_prompt_extraction()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_role_reassignment()]] - code - gateway/tests/test_tool_result_injection.py
+- [[dot-test_prompt_extraction()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[dot-test_role_reassignment()_2]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_rtl_override_detected()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_short_base64_not_flagged()]] - code - gateway/tests/test_encoding_detector.py
 - [[dot-test_social_engineering_admin()]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_system_delimiter_injection()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_url_encoding_detected()]] - code - gateway/tests/test_encoding_detector.py
 - [[dot-test_xml_function_injection()]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_xml_function_injection_detection()]] - code - gateway/tests/test_tool_injection_scan.py
 - [[dot-test_zero_width_chars_dont_bypass_detection()]] - code - gateway/tests/test_tool_result_injection.py
-- [[dot-test_zero_width_stripped()]] - code - gateway/tests/test_encoding_detector.py
-- [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Benign base64 content should not trigger encoded injection.]] - rationale - gateway/tests/test_tool_result_injection.py
-- [[Check for base64 or hex encoded injection attempts.]] - rationale - gateway/security/tool_result_injection.py
-- [[Cleartext injection is not re-rotated into noise (indicator already present).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a]] - rationale - gateway/security/encoding_detector.py
-- [[DecodedLayer]] - code - gateway/security/encoding_detector.py
-- [[Detect unicode-based obfuscation techniques.]] - rationale - gateway/security/tool_result_injection.py
-- [[Empty inbound text is handled without error.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[EncodingConfig]] - code - gateway/security/encoding_detector.py
-- [[EncodingDetector]] - code - gateway/security/encoding_detector.py
-- [[EncodingResult]] - code - gateway/security/encoding_detector.py
-- [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
-- [[InjectionAction]] - code - gateway/security/tool_result_injection.py
-- [[InjectionResult]] - code - gateway/security/tool_result_injection.py
-- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
 - [[InjectionSeverity]] - code - gateway/security/tool_result_injection.py
-- [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Result from tool result injection scan.]] - rationale - gateway/security/tool_result_injection.py
-- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
-- [[Scan tool result content for injection attempts.          Args             tool]] - rationale - gateway/security/tool_result_injection.py
-- [[Scanner for detecting prompt injection in tool results.]] - rationale - gateway/security/tool_result_injection.py
-- [[SecurityPipeline]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Set up test fixtures._1]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Set up test fixtures._3]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[Test cases for ToolResultInjectionScanner.]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[Test detection of 'ignore previous instructions' injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[Test detection of XML function call injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
@@ -91,50 +40,15 @@ members: 125
 - [[Test that clean content passes through unchanged.]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[TestCleanContent]] - code - gateway/tests/test_tool_result_injection.py
 - [[TestEncodedInjection]] - code - gateway/tests/test_tool_result_injection.py
-- [[TestEncodingDetector]] - code - gateway/tests/test_encoding_detector.py
 - [[TestHighSeverity]] - code - gateway/tests/test_tool_result_injection.py
 - [[TestMediumSeverity]] - code - gateway/tests/test_tool_result_injection.py
 - [[TestSanitization]] - code - gateway/tests/test_tool_result_injection.py
 - [[TestToolResultInjectionScanner]] - code - gateway/tests/test_tool_injection_scan.py
 - [[TestUnicodeObfuscation]] - code - gateway/tests/test_tool_result_injection.py
-- [[The check_rot13 config flag gates the rot13 layer.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[ToolResultInjectionScanner]] - code - gateway/security/tool_result_injection.py
-- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Zero-width chars are stripped by normalize_input, so injection is still caught.]] - rationale - gateway/tests/test_tool_result_injection.py
-- [[_make_pipeline()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
-- [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[rot13 layer is surfaced when the decoded text reveals injection language.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[scanner()]] - code - gateway/tests/test_tool_result_injection.py
-- [[test_encoding_detector.py]] - code - gateway/tests/test_encoding_detector.py
-- [[test_encoding_detector_decodes_rot13_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_can_be_disabled()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_empty_text()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_ignores_benign_prose()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_skips_already_visible_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_encoding_detector_error_fails_closed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_hex_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_nested_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_owner_encoded_injection_allowed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_plain_benign_message_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_tool_injection_scan.py]] - code - gateway/tests/test_tool_injection_scan.py
-- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_tool_result_injection.py]] - code - gateway/tests/test_tool_result_injection.py
-- [[test_ws_e_rt2_inbound_encoding.py]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -144,30 +58,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_PipelineAction]]
-- 12 edges to [[_COMMUNITY_MiddlewareManager]]
-- 9 edges to [[_COMMUNITY_AuditChain]]
-- 6 edges to [[_COMMUNITY_ContextSegment]]
-- 5 edges to [[_COMMUNITY_PIIConfig]]
-- 5 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager_8]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager_3]]
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_AgentTarget_2]]
-- 2 edges to [[_COMMUNITY_InjectionAction_1]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_A2AMethod]]
-- 1 edge to [[_COMMUNITY_ForwardRequest_1]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
+- 11 edges to [[_COMMUNITY_AlertDispatcher]]
+- 9 edges to [[_COMMUNITY_PipelineAction]]
+- 2 edges to [[_COMMUNITY_InjectionAction (2)]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 
 ## Top bridge nodes
-- [[ToolResultInjectionScanner]] - degree 41, connects to 8 communities
-- [[InjectionAction]] - degree 34, connects to 6 communities
-- [[EncodingDetector]] - degree 45, connects to 5 communities
-- [[test_ws_e_rt2_inbound_encoding.py]] - degree 31, connects to 4 communities
-- [[_make_pipeline()]] - degree 20, connects to 4 communities
+- [[InjectionSeverity]] - degree 14, connects to 3 communities
+- [[TestToolResultInjectionScanner]] - degree 10, connects to 2 communities
+- [[test_tool_result_injection.py]] - degree 10, connects to 2 communities
+- [[TestHighSeverity]] - degree 10, connects to 2 communities
+- [[TestCleanContent]] - degree 7, connects to 2 communities

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.48
 members: 7
 ---
 
 # TestStreamingProxyStatusPropagation
 
-**Cohesion:** 0.48 - moderately connected
 **Members:** 7 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.25
 members: 8
 ---
 
 # Apollo — Audio Systems Producer
 
-**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -27,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Technical Specification_2]]
+- 1 edge to [[_COMMUNITY_Technical Specification (3)]]
 - 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller]]
 
 ## Top bridge nodes

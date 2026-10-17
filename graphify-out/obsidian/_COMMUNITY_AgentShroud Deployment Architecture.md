@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 22
 ---
 
 # AgentShroud Deployment Architecture
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -22,8 +20,8 @@ members: 22
 - [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
 - [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
 - [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
-- [[Network Topology_1]] - document - docs/architecture/deployment-diagram.md
-- [[Overview_17]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_14]] - document - docs/architecture/deployment-diagram.md
 - [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
 - [[Podman Support]] - document - docs/architecture/deployment-diagram.md
 - [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
@@ -41,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
 
 ## Top bridge nodes
 - [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

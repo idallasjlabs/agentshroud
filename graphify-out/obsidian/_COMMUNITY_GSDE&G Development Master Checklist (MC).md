@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[GSDE&G Development Master Checklist (MC)]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Purpose_39]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Related Skills_28]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Usage_31]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Purpose_49]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Related Skills_36]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Usage_40]] - document - docker/config/openclaw/skills/i-mc/README.md
 - [[openclawskillsi-mcREADME]] - document - docker/config/openclaw/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)

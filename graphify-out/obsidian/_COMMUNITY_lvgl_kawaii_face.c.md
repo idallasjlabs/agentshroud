@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 29
 ---
 
 # lvgl_kawaii_face.c
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 29 nodes
 
 ## Members

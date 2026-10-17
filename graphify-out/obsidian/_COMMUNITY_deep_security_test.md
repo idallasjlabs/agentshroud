@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 30
 ---
 
 # deep_security_test
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -49,8 +47,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_AuditChain_1]]
+- 3 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 
 ## Top bridge nodes
-- [[deep_security_test()]] - degree 32, connects to 2 communities
+- [[deep_security_test()]] - degree 32, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.09
 members: 27
 ---
 
 # Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 27 nodes
 
 ## Members

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.06
 members: 31
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members

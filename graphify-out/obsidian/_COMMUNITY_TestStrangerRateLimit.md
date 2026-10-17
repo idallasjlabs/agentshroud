@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 10
 ---
 
 # TestStrangerRateLimit
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -29,11 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 15 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 4 edges to [[_COMMUNITY__wrap_response]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 
 ## Top bridge nodes
 - [[TestStrangerRateLimit]] - degree 9, connects to 4 communities

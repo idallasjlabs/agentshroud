@@ -1,25 +1,32 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+members: 20
 ---
 
 # pytest.ini
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Members:** 20 nodes
 
 ## Members
 - [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 - [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Directory Structure]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Directory Structure_2]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 - [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Related Notes_3]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Related Notes_36]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Related Notes_35]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 - [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 - [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 - [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 
 ## Live Query (requires Dataview plugin)
@@ -30,8 +37,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)_1]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 2 edges to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
+- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
 
 ## Top bridge nodes
-- [[Dockerfile — Bot (OpenClaw)]] - degree 12, connects to 2 communities
+- [[Dockerfile — Gateway]] - degree 11, connects to 4 communities
+- [[Dockerfile — Bot (OpenClaw)]] - degree 12, connects to 1 community

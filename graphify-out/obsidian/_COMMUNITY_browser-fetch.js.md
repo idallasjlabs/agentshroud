@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # browser-fetch.js
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
 - [[Expected Behavior]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Purpose_10]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[Purpose_11]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 - [[Related Notes_16]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 - [[Security Controls]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 - [[browser-fetch.js_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md

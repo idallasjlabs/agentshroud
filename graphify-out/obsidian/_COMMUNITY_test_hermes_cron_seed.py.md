@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 38
 ---
 
 # test_hermes_cron_seed.py
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 38 nodes
 
 ## Members
@@ -59,8 +57,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 - 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
-- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)_1]]
 
 ## Top bridge nodes
 - [[init-config.sh (Hermes first-boot config materialisation)]] - degree 11, connects to 2 communities

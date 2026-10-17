@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-process_outbound()]] - `method` [EXTRACTED]
-- [[AgentTarget_3]] - `uses` [INFERRED]
+- [[AgentTarget_2]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - `rationale_for` [EXTRACTED]
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - `calls` [EXTRACTED]
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `calls` [EXTRACTED]

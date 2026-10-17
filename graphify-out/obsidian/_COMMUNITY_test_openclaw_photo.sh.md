@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 17
 ---
 
 # test_openclaw_photo.sh
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -36,10 +34,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
 - 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
 - 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)_1]]
+- 1 edge to [[_COMMUNITY_pytest.ini]]
 
 ## Top bridge nodes
 - [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities

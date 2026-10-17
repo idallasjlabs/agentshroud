@@ -1,120 +1,108 @@
 ---
 type: community
-cohesion: 0.02
-members: 303
+members: 284
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 303 nodes
+**Members:** 284 nodes
 
 ## Members
-- [[dot-__init__()_78]] - code - gateway/security/rbac.py
-- [[dot-__init__()_79]] - code - gateway/security/tool_result_sanitizer.py
-- [[dot-__init__()_80]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-__init__()_81]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-_analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
+- [[dot-__init__()_158]] - code - gateway/security/rbac.py
+- [[dot-__init__()_159]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-__init__()_160]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-_build_permission_matrix()]] - code - gateway/security/rbac.py
 - [[dot-_build_tool_permissions()]] - code - gateway/security/rbac.py
-- [[dot-_check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_create_detection_patterns()]] - code - gateway/security/output_canary.py
-- [[dot-_create_invisible_canary()]] - code - gateway/security/output_canary.py
-- [[dot-_critical_guard_failure()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_extract_file_paths()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_extract_user_id()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_event_fan_out()]] - code - gateway/soc/websocket.py
 - [[dot-_handler()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-_is_owner()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_is_path_allowed_for_user()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
+- [[dot-_keepalive_loop()]] - code - gateway/soc/websocket.py
+- [[dot-_send_event()]] - code - gateway/soc/websocket.py
 - [[dot-audit_privilege_change()]] - code - gateway/security/rbac.py
 - [[dot-can_user_manage_user()]] - code - gateway/security/rbac.py
 - [[dot-check_group_permission()]] - code - gateway/security/rbac.py
-- [[dot-check_permission()]] - code - gateway/security/rbac.py
-- [[dot-check_permission()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-check_permission()_1]] - code - gateway/security/rbac.py
+- [[dot-check_permission()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-check_tool_permission()_1]] - code - gateway/security/rbac.py
-- [[dot-cleanup_expired_canaries()]] - code - gateway/security/output_canary.py
-- [[dot-close()_10]] - code - gateway/ingest_api/middleware.py
-- [[dot-filter_outbound_response()]] - code - gateway/ingest_api/middleware.py
-- [[dot-generate_canary()]] - code - gateway/security/output_canary.py
-- [[dot-get_alert_dispatcher()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_dns_filter()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_drift_detector()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_enhanced_tool_sanitizer()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_killswitch_monitor()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_log_sanitizer()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_multi_turn_tracker()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_network_validator()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_output_canary()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_rbac_manager()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_role_hierarchy()]] - code - gateway/security/rbac.py
-- [[dot-get_supported_tools()]] - code - gateway/security/tool_result_sanitizer.py
-- [[dot-get_tool_chain_analyzer()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
 - [[dot-get_user_permissions_summary()]] - code - gateway/security/rbac.py
-- [[dot-get_user_role()]] - code - gateway/security/rbac_config.py
-- [[dot-get_user_role()_1]] - code - gateway/security/rbac.py
+- [[dot-get_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[dot-get_user_role()_2]] - code - gateway/security/rbac.py
 - [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
 - [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
 - [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
 - [[dot-is_operator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_owner()]] - code - gateway/security/rbac_config.py
+- [[dot-is_owner()_2]] - code - gateway/security/rbac_config.py
 - [[dot-is_privilege_escalation()]] - code - gateway/security/rbac.py
 - [[dot-list_users_and_roles()]] - code - gateway/security/rbac.py
-- [[dot-process_request()]] - code - gateway/ingest_api/middleware.py
-- [[dot-process_tool_result()]] - code - gateway/ingest_api/middleware.py
-- [[dot-scan_tool_result()_3]] - code - gateway/ingest_api/middleware.py
-- [[dot-set_config()]] - code - gateway/ingest_api/middleware.py
+- [[dot-run()_6]] - code - gateway/soc/websocket.py
 - [[dot-set_user_role()]] - code - gateway/security/rbac_config.py
 - [[dot-set_user_role()_1]] - code - gateway/security/rbac.py
-- [[dot-setup_method()_13]] - code - gateway/tests/test_rbac.py
-- [[dot-setup_method()_14]] - code - gateway/tests/test_rbac.py
-- [[dot-subscribe()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-teardown_method()_5]] - code - gateway/tests/test_rbac.py
+- [[dot-setup_method()_29]] - code - gateway/tests/test_rbac.py
+- [[dot-setup_method()_30]] - code - gateway/tests/test_rbac.py
+- [[dot-setup_method()_31]] - code - gateway/tests/test_soc_auth.py
+- [[dot-setup_method()_32]] - code - gateway/tests/test_soc_auth.py
+- [[dot-subscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-teardown_method()_7]] - code - gateway/tests/test_rbac.py
 - [[dot-test_allowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_collects_and_converts()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_command_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_command_message_updates_subscription()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_4]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_conversion_error_path()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_conversion_error_path()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_conversion_error_path()_3]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_conversion_error_path()_4]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_default_config_initialization()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_dict_allowed_without_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_dict_blocked_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_dict_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_empty_token_or_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_expired_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_fan_out_filters_and_forwards()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_fan_out_survives_coerce_exception()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_full_context_summary_from_details()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_full_dict()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_full_init_success_and_getters()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_get_caller_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_get_users_by_role()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_init_all_modules_fail_falls_back_to_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_initial_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_initial_subscribe_message_sets_filter()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_initial_timeout_subscribes_to_all()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_inner_timeout_continues_loop()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_invalid_action_resource_combinations()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
 - [[dot-test_invalid_user_id()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_is_group_admin_with_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_is_group_admin_without_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_is_owner_delegates_to_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_keepalive_breaks_on_construction_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_keepalive_sends_pings()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_list_users_and_roles()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_match()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_minimal_dict_uses_fallbacks()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_mismatch()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_missing_timestamp_uses_now()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
 - [[dot-test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_none_bus_returns_immediately()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_none_store_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_object_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
@@ -125,44 +113,54 @@ members: 303
 - [[dot-test_permission_matrix_collaborator()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_permission_matrix_owner()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_permission_matrix_viewer()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_rbac_allows_authorized_access()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_rbac_blocks_unauthorized_access()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_rbac_handles_missing_user_id()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_rbac_initialization_in_middleware()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_rbac_manager_without_config()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_require_allowed_does_not_raise()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_require_denied_raises_403_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_require_denied_without_reason_uses_forbidden()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_role_assignment()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_role_hierarchy_checks()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_role_hierarchy_levels()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_sanitize_disabled()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_sanitized()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_send_event_serializes()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_send_event_swallows_transport_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_set_user_role()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_severity_enum_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_severity_filter_drops_lower()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_single_use()]] - code - gateway/tests/test_soc_auth.py
 - [[dot-test_string_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_falls_back_to_block_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_falls_back_to_event_type()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_falls_back_to_message()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_from_agent_id()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_from_non_allowed_action()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_tool_tier_permissions()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_user_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_user_management_hierarchy()]] - code - gateway/tests/test_rbac.py
 - [[dot-test_user_permissions_summary()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
 - [[dot-test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-unsubscribe()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-unsubscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
-- [[Action_1]] - code - gateway/ingest_api/middleware.py
 - [[Action_2]] - code - gateway/security/rbac.py
 - [[Actions that can be performed in the system.]] - rationale - gateway/security/rbac.py
-- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
-- [[Any_21]] - code - gateway/ingest_api/middleware.py
-- [[Any_22]] - code - gateway/security/rbac.py
-- [[Any_23]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Any_62]] - code - gateway/security/rbac.py
+- [[Any_63]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[Build the permission matrix for all roles.]] - rationale - gateway/security/rbac.py
 - [[Build tool tier permissions for each role.]] - rationale - gateway/security/rbac.py
-- [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
-- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
-- [[Check if a file path is allowed for a user to access.]] - rationale - gateway/ingest_api/middleware.py
 - [[Check if a user can perform an action on a group.          Permission matrix]] - rationale - gateway/security/rbac.py
 - [[Check if a user can use tools of a specific tier.]] - rationale - gateway/security/rbac.py
 - [[Check if a user has permission to perform an action on a resource.]] - rationale - gateway/security/rbac.py
@@ -171,77 +169,54 @@ members: 303
 - [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
 - [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
 - [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
-- [[Check if user_id is the system owner via RBAC config (single source of truth).]] - rationale - gateway/ingest_api/middleware.py
-- [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - rationale - gateway/security/output_canary.py
+- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
 - [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - rationale - gateway/tests/test_rbac.py
-- [[Combined memory security configuration.]] - rationale - gateway/security/memory_config.py
 - [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
 - [[Constant-time comparison against the gateway shared secret.]] - rationale - gateway/soc/auth.py
-- [[Create an invisible version of the canary using various techniques.          Arg]] - rationale - gateway/security/output_canary.py
-- [[Create regex patterns to detect the canary in responses.          Args]] - rationale - gateway/security/output_canary.py
-- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
+- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
+- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
 - [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
-- [[Exception_3]] - code - gateway/ingest_api/middleware.py
-- [[Extract potential file paths from message content.]] - rationale - gateway/ingest_api/middleware.py
-- [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
+- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
 - [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
-- [[Filter outbound response to remove sensitive XML and path information.]] - rationale - gateway/ingest_api/middleware.py
-- [[Generate and store a canary for this session.          Args             session]] - rationale - gateway/security/output_canary.py
 - [[Get a summary of permissions for a user.]] - rationale - gateway/security/rbac.py
 - [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
-- [[Get list of tools with specific PII configurations]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
 - [[Get role hierarchy levels (higher number = more privileges).]] - rationale - gateway/security/rbac.py
-- [[Get the RBAC manager for external access.]] - rationale - gateway/ingest_api/middleware.py
-- [[Get the log sanitizer for integration with logging system.]] - rationale - gateway/ingest_api/middleware.py
 - [[Get the role for a user.]] - rationale - gateway/security/rbac.py
 - [[Initialize RBAC manager with configuration.]] - rationale - gateway/security/rbac.py
+- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
 - [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - rationale - gateway/security/rbac.py
-- [[LogSanitizer_1]] - code - gateway/ingest_api/middleware.py
-- [[Main Output Canary System for detecting prompt leakage.      This system generat]] - rationale - gateway/security/output_canary.py
-- [[Manages the P1 security middleware modules.]] - rationale - gateway/ingest_api/middleware.py
-- [[MemorySecurityConfig]] - code - gateway/security/memory_config.py
+- [[Main connection loop.]] - rationale - gateway/soc/websocket.py
+- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Manages a single wssoc client connection.]] - rationale - gateway/soc/websocket.py
 - [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
-- [[MiddlewareManager]] - code - gateway/ingest_api/middleware.py
-- [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
 - [[Minimal RBAC stand-in with controllable check_permission results.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[Output Canary System Tests]] - code - gateway/tests/test_output_canary.py
-- [[OutputCanary]] - code - gateway/security/output_canary.py
-- [[PII configuration with per-tool overrides]] - rationale - gateway/security/tool_result_sanitizer.py
-- [[Pattern_1]] - code - gateway/security/output_canary.py
 - [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
 - [[PermissionResult]] - code - gateway/security/rbac.py
-- [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
-- [[Process tool result through PII sanitization before it reaches agent          Ar]] - rationale - gateway/ingest_api/middleware.py
 - [[Public FastAPI dependency injected by SCL route handlers.]] - rationale - gateway/soc/auth.py
 - [[RBACConfig]] - code - gateway/security/rbac.py
 - [[RBACConfig_1]] - code - gateway/tests/test_privacy_policy.py
 - [[RBACConfig_2]] - code - gateway/tests/test_rbac.py
 - [[RBACConfig_3]] - code - gateway/security/rbac_config.py
-- [[RBACManager]] - code - gateway/ingest_api/middleware.py
 - [[RBACManager_1]] - code - gateway/security/rbac.py
-- [[Record a guard __init__ exception so the request path can fail closed.]] - rationale - gateway/ingest_api/middleware.py
+- [[Read the gateway auth token from envsecret.      Resolution order (matches inge]] - rationale - gateway/soc/auth.py
 - [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[Resource_1]] - code - gateway/ingest_api/middleware.py
-- [[Resource_2]] - code - gateway/security/rbac.py
+- [[Resource_1]] - code - gateway/security/rbac.py
 - [[Resources that can be accessed in the system.]] - rationale - gateway/security/rbac.py
-- [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
 - [[Return True if changing from_role → to_role represents an escalation.]] - rationale - gateway/security/rbac.py
-- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
 - [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
-- [[Return the name of a failed critical guard, or None if all healthy.          Use]] - rationale - gateway/ingest_api/middleware.py
-- [[Role_20]] - code - gateway/security/rbac.py
-- [[Role_21]] - code - gateway/security/rbac_config.py
+- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
+- [[Role_64]] - code - gateway/security/rbac.py
+- [[Role_65]] - code - gateway/security/rbac_config.py
 - [[Role-Based Access Control Manager.]] - rationale - gateway/security/rbac.py
 - [[SCLCaller_1]] - code - gateway/tests/test_soc_bots.py
-- [[SOCWebSocketHandler_2]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[Scan tool result for injection attempts and return sanitized content.          A]] - rationale - gateway/ingest_api/middleware.py
+- [[SOCWebSocketHandler_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[SOCWebSocketHandler_2]] - code - gateway/soc/websocket.py
 - [[Set a user's role (owner-only operation).]] - rationale - gateway/security/rbac.py
-- [[Set configuration and initialize tool result sanitizer]] - rationale - gateway/ingest_api/middleware.py
 - [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
-- [[Set up test environment.]] - rationale - gateway/tests/test_rbac.py
-- [[Shutdown middleware background tasks cleanly.]] - rationale - gateway/ingest_api/middleware.py
-- [[SimpleNamespace]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Set up test environment._1]] - rationale - gateway/tests/test_rbac.py
+- [[SimpleNamespace_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Subscribe to EventBus and forward matching events to the client.]] - rationale - gateway/soc/websocket.py
 - [[Test RBAC configuration.]] - rationale - gateway/tests/test_rbac.py
 - [[Test RBAC error handling and edge cases.]] - rationale - gateway/tests/test_rbac.py
 - [[Test RBAC handling when user ID is missing.]] - rationale - gateway/tests/test_rbac.py
@@ -261,7 +236,6 @@ members: 303
 - [[Test permission checks with additional context.]] - rationale - gateway/tests/test_rbac.py
 - [[Test role hierarchy helper methods.]] - rationale - gateway/tests/test_rbac.py
 - [[Test role hierarchy levels.]] - rationale - gateway/tests/test_rbac.py
-- [[Test sanitizer when disabled]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test setting user roles.]] - rationale - gateway/tests/test_rbac.py
 - [[Test that RBAC allows authorized access.]] - rationale - gateway/tests/test_rbac.py
 - [[Test that RBAC blocks unauthorized access attempts.]] - rationale - gateway/tests/test_rbac.py
@@ -272,13 +246,13 @@ members: 303
 - [[TestCollectRecentEvents]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestFromAnomalyAlert]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromAuditChainEntry]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestFromDict]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestFromEgressAttempt]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestFromPipelineResult]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestHandlerRun]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestInit]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestMapSeverity]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestRBACConfig]] - code - gateway/tests/test_rbac.py
 - [[TestRBACErrorHandling]] - code - gateway/tests/test_rbac.py
 - [[TestRBACIntegration]] - code - gateway/tests/test_rbac.py
@@ -286,33 +260,38 @@ members: 303
 - [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestSCLCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestSendEventAndKeepalive]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
 - [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestVerifyBearer]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[Tool result PII sanitizer with per-tool configuration]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
 - [[Tool security tiers for RBAC permissions.]] - rationale - gateway/security/rbac_config.py
 - [[ToolRateLimit]] - code - gateway/security/tool_acl.py
-- [[ToolResultPIIConfig]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolResultSanitizer]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolTier]] - code - gateway/ingest_api/middleware.py
 - [[ToolTier_1]] - code - gateway/security/rbac.py
 - [[ToolTier_2]] - code - gateway/security/rbac_config.py
 - [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - rationale - gateway/security/rbac_config.py
 - [[_FakeBus]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_FakeRBAC]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_FakeRBAC_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_audit_entry()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_get_config_token()]] - code - gateway/soc/auth.py
 - [[_get_rbac_manager()]] - code - gateway/soc/auth.py
+- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[_resolve_caller()]] - code - gateway/soc/auth.py
 - [[_spin()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[_verify_bearer()]] - code - gateway/soc/auth.py
+- [[_verify_session_token()]] - code - gateway/soc/auth.py
 - [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[get_caller()]] - code - gateway/soc/auth.py
-- [[middleware.py]] - code - gateway/ingest_api/middleware.py
-- [[middleware.py_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[issue_session_token()]] - code - gateway/soc/auth.py
+- [[issue_ws_token()]] - code - gateway/soc/auth.py
 - [[rbac.py]] - code - gateway/security/rbac.py
+- [[redeem_ws_token()]] - code - gateway/soc/auth.py
 - [[socauth.py]] - code - gateway/soc/auth.py
-- [[str_3]] - code
 - [[test_rbac.py]] - code - gateway/tests/test_rbac.py
+- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
 - [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[tool_acl.py]] - code - gateway/security/tool_acl.py
+- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -322,124 +301,47 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 89 edges to [[_COMMUNITY_AlertDispatcher]]
-- 68 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 67 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 34 edges to [[_COMMUNITY_MiddlewareManager_8]]
-- 33 edges to [[_COMMUNITY__req]]
+- 68 edges to [[_COMMUNITY_AlertDispatcher]]
+- 49 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 39 edges to [[_COMMUNITY_RBACConfig]]
+- 30 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 30 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 29 edges to [[_COMMUNITY_RBACConfig_1]]
-- 23 edges to [[_COMMUNITY_UserSessionManager_3]]
-- 22 edges to [[_COMMUNITY_RBACConfig_2]]
-- 21 edges to [[_COMMUNITY_MiddlewareManager_1]]
-- 20 edges to [[_COMMUNITY_TrustConfig_1]]
-- 20 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 21 edges to [[_COMMUNITY_RBACConfig (3)]]
 - 19 edges to [[_COMMUNITY__FakeRBAC]]
-- 15 edges to [[_COMMUNITY_MiddlewareManager_4]]
-- 15 edges to [[_COMMUNITY_Action]]
-- 14 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 14 edges to [[_COMMUNITY_RBACConfig]]
-- 13 edges to [[_COMMUNITY_AsyncMock_1]]
-- 13 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
-- 12 edges to [[_COMMUNITY_socrouter.py]]
-- 12 edges to [[_COMMUNITY_InjectionAction]]
-- 12 edges to [[_COMMUNITY_MiddlewareManager_5]]
-- 12 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 11 edges to [[_COMMUNITY_ConsentFramework_1]]
-- 11 edges to [[_COMMUNITY_AgentRegistry]]
-- 11 edges to [[_COMMUNITY_ForwardRequest_1]]
-- 11 edges to [[_COMMUNITY_Action_1]]
-- 11 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 10 edges to [[_COMMUNITY_export_bot_1]]
-- 10 edges to [[_COMMUNITY_ResourceGuard_1]]
-- 10 edges to [[_COMMUNITY_ConsentFramework]]
-- 10 edges to [[_COMMUNITY_SessionManager_1]]
-- 10 edges to [[_COMMUNITY_ResourceGuard]]
-- 10 edges to [[_COMMUNITY_ApprovalHardening_1]]
-- 10 edges to [[_COMMUNITY_ApprovalHardening_2]]
-- 10 edges to [[_COMMUNITY_KeyRotationManager_1]]
-- 10 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 10 edges to [[_COMMUNITY_MultiTurnTracker_1]]
-- 10 edges to [[_COMMUNITY_validate_network_security]]
-- 10 edges to [[_COMMUNITY_AlertDispatcher_1]]
-- 10 edges to [[_COMMUNITY_TestSSRFDetection_2]]
-- 10 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_2]]
-- 9 edges to [[_COMMUNITY_MCPPermissionManager_1]]
-- 9 edges to [[_COMMUNITY_PipelineAction]]
-- 9 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 8 edges to [[_COMMUNITY_PIIConfig]]
-- 8 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 8 edges to [[_COMMUNITY_telegram_proxy.py_1]]
-- 8 edges to [[_COMMUNITY__FakeRBAC_1]]
-- 7 edges to [[_COMMUNITY_test_docs_accuracy.py]]
-- 7 edges to [[_COMMUNITY_TrustConfig]]
-- 7 edges to [[_COMMUNITY_DataLedger]]
-- 6 edges to [[_COMMUNITY_TestOutputCanary]]
-- 6 edges to [[_COMMUNITY_UserSessionManager]]
-- 6 edges to [[_COMMUNITY_test_hermes_model_resolver.py_1]]
+- 17 edges to [[_COMMUNITY_socrouter.py]]
+- 16 edges to [[_COMMUNITY_telegram_proxy.py (2)]]
+- 14 edges to [[_COMMUNITY_test_soc_realtime_coverage.py (2)]]
+- 12 edges to [[_COMMUNITY_AsyncMock]]
+- 10 edges to [[_COMMUNITY_Action]]
+- 9 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 9 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 8 edges to [[_COMMUNITY_create_auth_dependency]]
 - 6 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 5 edges to [[_COMMUNITY__wrap_response]]
-- 5 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig_8]]
-- 4 edges to [[_COMMUNITY_TestSSRFDetection_5]]
-- 4 edges to [[_COMMUNITY_RateLimiter]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 4 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 4 edges to [[_COMMUNITY_InjectionAction_1]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 4 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
-- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 3 edges to [[_COMMUNITY_AgentShroud Brand Guidelines_1]]
-- 3 edges to [[_COMMUNITY_main.py]]
-- 3 edges to [[_COMMUNITY_BlockingPipeline]]
+- 6 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 6 edges to [[_COMMUNITY_PipelineAction]]
+- 3 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
 - 3 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 2 edges to [[_COMMUNITY_hermesSOUL_1]]
-- 2 edges to [[_COMMUNITY_ProxyAction_1]]
-- 2 edges to [[_COMMUNITY_test_prompt_guard.py_4]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_9]]
-- 2 edges to [[_COMMUNITY_AWS Cloud Management & FinOps]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager_2]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
-- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
 - 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
-- 2 edges to [[_COMMUNITY_export_bot]]
-- 2 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 2 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 2 edges to [[_COMMUNITY_GovernanceAction]]
-- 2 edges to [[_COMMUNITY_ServiceManager_1]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection_3]]
-- 1 edge to [[_COMMUNITY_diagramsREADME_1]]
-- 1 edge to [[_COMMUNITY_WebContentScanner_1]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_A2AMethod_1]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_2]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 1 edge to [[_COMMUNITY_TestFileDownload]]
-- 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
-- 1 edge to [[_COMMUNITY_Path_3]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_test_runtime_engines.py_1]]
-- 1 edge to [[_COMMUNITY_test_prompt_guard.py_3]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)_2]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
-- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice (2)]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
 
 ## Top bridge nodes
-- [[MiddlewareManager]] - degree 175, connects to 44 communities
-- [[MiddlewareResult]] - degree 111, connects to 44 communities
-- [[RBACConfig_3]] - degree 222, connects to 40 communities
-- [[middleware.py]] - degree 54, connects to 32 communities
-- [[Any_21]] - degree 55, connects to 28 communities
+- [[RBACConfig_3]] - degree 222, connects to 27 communities
+- [[Role_65]] - degree 107, connects to 16 communities
+- [[Action_2]] - degree 54, connects to 6 communities
+- [[Resource_1]] - degree 53, connects to 6 communities
+- [[rbac.py]] - degree 16, connects to 6 communities

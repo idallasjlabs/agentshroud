@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # agent_isolation.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -20,8 +18,8 @@ members: 15
 - [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Purpose_147]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Related_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md

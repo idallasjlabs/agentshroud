@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 16
 ---
 
 # MCP AWS Profile Configuration README
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -18,12 +16,12 @@ members: 16
 - [[MCP Auth Reset Skill_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[MCP Doctor README]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[MCP Doctor Skill]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Purpose_116]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_117]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_88]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_89]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Usage_97]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Usage_98]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_126]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_127]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_101]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_102]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Usage_110]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Usage_111]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
 - [[hermesskillsi-mcpm-aws-profileREADME]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
 - [[hermesskillsi-mcpm-aws-profileSKILL]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 
@@ -35,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)]]
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes

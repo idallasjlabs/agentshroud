@@ -1,42 +1,30 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+members: 17
 ---
 
 # First Time Setup
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Prerequisites_13]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Related Notes_63]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Related Notes_64]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Startup Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[dot-_format_alert_message()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_duplicate()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_log_alert()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_stats()_14]] - code - gateway/security/alert_dispatcher.py
+- [[Any_60]] - code - gateway/security/alert_dispatcher.py
+- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
+- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
+- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,11 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_02-infrastructure_1]]
-- 1 edge to [[_COMMUNITY_Slack Channel Setup]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
-- [[Restart Procedure_2]] - degree 3, connects to 2 communities
-- [[First Time Setup_1]] - degree 12, connects to 1 community
-- [[Startup Errors]] - degree 4, connects to 1 community
+- [[dot-dispatch()]] - degree 7, connects to 1 community
+- [[dot-_send_notification()]] - degree 5, connects to 1 community
+- [[dot-_format_alert_message()]] - degree 4, connects to 1 community
+- [[dot-_log_alert()]] - degree 4, connects to 1 community
+- [[dot-get_digest()]] - degree 3, connects to 1 community

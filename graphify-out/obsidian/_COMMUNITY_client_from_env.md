@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.36
 members: 8
 ---
 
 # client_from_env
 
-**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members

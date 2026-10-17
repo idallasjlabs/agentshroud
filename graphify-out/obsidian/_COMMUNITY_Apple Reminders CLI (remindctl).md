@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # Apple Reminders CLI (remindctl)
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -19,7 +17,7 @@ members: 15
 - [[Example Clarifying User Intent]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[Manage Lists]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[Output Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Setup_6]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Setup_5]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[View Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[When NOT to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[When to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md

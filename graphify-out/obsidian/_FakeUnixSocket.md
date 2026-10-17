@@ -12,8 +12,8 @@ tags:
 # _FakeUnixSocket
 
 ## Connections
-- [[dot-__init__()_153]] - `method` [EXTRACTED]
-- [[dot-close()_14]] - `method` [EXTRACTED]
+- [[dot-__init__()_106]] - `method` [EXTRACTED]
+- [[dot-close()_10]] - `method` [EXTRACTED]
 - [[dot-connect()_2]] - `method` [EXTRACTED]
 - [[dot-settimeout()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]

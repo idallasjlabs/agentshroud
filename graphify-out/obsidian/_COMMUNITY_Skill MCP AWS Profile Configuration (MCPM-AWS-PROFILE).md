@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.05
 members: 41
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
-**Cohesion:** 0.05 - loosely connected
 **Members:** 41 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 41
 - [[AWS SSO Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Best Practices_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Check Current Profile]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configuration Files_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configuration Files]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Configure New Profile]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Default Profile vs Named Profiles]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Initial SSO Setup]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
@@ -33,17 +31,17 @@ members: 41
 - [[Option 1 Interactive Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Option 2 Manual Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Organization_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Purpose_58]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_63]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
 - [[Quick Reference_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_47]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_48]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_19]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_50]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_51]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_20]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Security_5]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_7]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Usage_50]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Troubleshooting_5]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Usage_54]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
 - [[Use SSO Profile with MCP]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Using AssumeRole for Cross-Account Access]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[View Configured Profiles]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md

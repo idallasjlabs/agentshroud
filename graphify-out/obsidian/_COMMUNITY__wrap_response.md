@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 0.04
 members: 104
 ---
 
 # _wrap_response
 
-**Cohesion:** 0.04 - loosely connected
 **Members:** 104 nodes
 
 ## Members
-- [[dot-_make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_make_proxy()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -123,14 +121,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 171 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 171 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 18 edges to [[_COMMUNITY_RateLimiter]]
 - 8 edges to [[_COMMUNITY_BlockingPipeline]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 5 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_AlertDispatcher]]
+- 5 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 4 edges to [[_COMMUNITY_dot-test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined]]
-- 4 edges to [[_COMMUNITY_AsyncMock_1]]
 - 4 edges to [[_COMMUNITY_TestStrangerRateLimit]]
+- 4 edges to [[_COMMUNITY_AsyncMock]]
 - 4 edges to [[_COMMUNITY_TestFileDownload]]
 - 4 edges to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
 - 3 edges to [[_COMMUNITY_dot-test_collaborator_internal_network_probe_is_blocked_and_quarantined]]
@@ -145,7 +143,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_dot-test_collaborator_plugin_discovery_request_is_blocked_and_quarantined]]
 - 2 edges to [[_COMMUNITY_dot-test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined]]
 - 2 edges to [[_COMMUNITY_dot-test_collaborator_service_control_request_is_blocked_and_quarantined]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy_4]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (7)]]
 - 2 edges to [[_COMMUNITY_dot-test_owner_revoke_command_requires_target_user_id]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]

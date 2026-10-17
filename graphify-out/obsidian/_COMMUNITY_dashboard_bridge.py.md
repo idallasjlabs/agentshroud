@@ -1,21 +1,19 @@
 ---
 type: community
-cohesion: 0.21
 members: 16
 ---
 
 # dashboard_bridge.py
 
-**Cohesion:** 0.21 - loosely connected
 **Members:** 16 nodes
 
 ## Members
 - [[Read up to the end of the request's header block (rnrn).      Returns (h]] - rationale - docker/bots/hermes/dashboard_bridge.py
 - [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - rationale - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader_2]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader_3]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[StreamWriter_1]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[StreamWriter_2]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[StreamReader_1]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamReader_2]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[_handle()]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[_handle()_1]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[_pipe()]] - code - docker/bots/hermes/dashboard_bridge.py
@@ -23,8 +21,8 @@ members: 16
 - [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[main()_25]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[main()_26]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[main()_23]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[main()_24]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)

@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.05
-members: 63
+members: 55
 ---
 
 # WebContentScanner
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 63 nodes
+**Members:** 55 nodes
 
 ## Members
 - [[dot-__init__()]] - code - gateway/proxy/web_content_scanner.py
@@ -18,7 +16,6 @@ members: 63
 - [[dot-_scan_prompt_injection()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-_scan_xml_dtd()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-_scan_zero_width()]] - code - gateway/proxy/web_content_scanner.py
-- [[dot-_triage()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-finding_summary()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-flagged()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-scan()]] - code - gateway/proxy/web_content_scanner.py
@@ -32,12 +29,9 @@ members: 63
 - [[dot-test_external_dtd_reference_detected()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_finding_severity_is_critical()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_json_not_flagged()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_plain_html_not_flagged()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_plain_xml_not_flagged()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_unrelated_classes_unchanged()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_web_proxy_blocks_on_dangerous_xml()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_xxe_class_is_covered_by_the_gateway_control()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[A document with no DTD is untouched — this must not break feeds.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[A single finding from content scanning.]] - rationale - gateway/proxy/web_content_scanner.py
 - [[An attacker controls the Content-Type header, so sniff the body.]] - rationale - gateway/tests/test_xml_dtd_control.py
@@ -49,7 +43,6 @@ members: 63
 - [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
 - [[Gateway XML DTDentity control — CLAUDE.md 0.05 arm 2. CVE-2026-6653 is a use-…]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[HTML5's bare !DOCTYPE html has no internal subset and is harmless.]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[It calls itself DoS; the generic DOS profile is containment-only. Left as DOS…]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[No internal subset, but still pulls a remote DTD.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[Proves enforcement, not just detection.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[Result of scanning web content.]] - rationale - gateway/proxy/web_content_scanner.py
@@ -62,11 +55,8 @@ members: 63
 - [[ScanResult]] - code - gateway/proxy/web_content_scanner.py
 - [[TestDangerousXMLDetection]] - code - gateway/tests/test_xml_dtd_control.py
 - [[TestDangerousXMLIsBlockedNotFlagged]] - code - gateway/tests/test_xml_dtd_control.py
-- [[TestTriageClassLevelCoverage]] - code - gateway/tests/test_xml_dtd_control.py
 - [[The '' block inside DOCTYPE is what xmlParseInternalSubset parses.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[The distinction this whole control rests on.]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[The durable statement is at the CLASS level, not per-CVE. A register entry…]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[The new rule runs first, so prove it does not swallow neighbours.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[URLAnalyzer]] - code
 - [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
 - [[WebProxyConfig]] - code
@@ -82,14 +72,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_ProxyAction]]
 - 3 edges to [[_COMMUNITY_TestSSRFDetection]]
+- 2 edges to [[_COMMUNITY_ProxyAction]]
 - 2 edges to [[_COMMUNITY__t]]
+- 2 edges to [[_COMMUNITY_WebProxy]]
 - 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_WebContentScanner (2)]]
 - 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 
 ## Top bridge nodes
-- [[WebContentScanner]] - degree 22, connects to 4 communities
+- [[WebContentScanner]] - degree 22, connects to 5 communities
 - [[web_content_scanner.py]] - degree 10, connects to 3 communities
 - [[dot-__init__()_1]] - degree 5, connects to 2 communities
+- [[test_xml_dtd_control.py]] - degree 7, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.24
 members: 10
 ---
 
 # 05-behavior.md
 
-**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -30,8 +28,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 - 1 edge to [[_COMMUNITY_03-data]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
 - [[State Machine — Approval Queue Item Lifecycle]] - degree 4, connects to 2 communities

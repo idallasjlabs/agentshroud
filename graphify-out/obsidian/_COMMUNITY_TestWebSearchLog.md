@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # TestWebSearchLog
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -31,16 +29,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy_7]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig_5]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 10 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
 - [[TestWebSearchLog]] - degree 11, connects to 4 communities
-- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 2 communities
-- [[dot-test_raw_web_search_json_owner_message()]] - degree 4, connects to 2 communities
-- [[dot-test_web_search_log_called_with_correct_params()]] - degree 4, connects to 2 communities
-- [[dot-test_web_search_no_egress_filter()]] - degree 4, connects to 2 communities
+- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 1 community
+- [[dot-test_raw_web_search_json_owner_message()]] - degree 4, connects to 1 community
+- [[dot-test_web_search_log_called_with_correct_params()]] - degree 4, connects to 1 community
+- [[dot-test_web_search_no_egress_filter()]] - degree 4, connects to 1 community

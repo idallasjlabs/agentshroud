@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.25
 members: 8
 ---
 
 # .test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined
 
-**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -27,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 20 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 4 edges to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

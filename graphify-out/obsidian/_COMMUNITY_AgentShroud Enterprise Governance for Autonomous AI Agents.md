@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 24
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -31,7 +29,7 @@ members: 24
 - [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary_11]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary_10]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
 - [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
@@ -44,12 +42,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_8. Performance & Testing]]
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents_2]]
+- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents (3)]]
 - 1 edge to [[_COMMUNITY_3. Security Controls]]
 - 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
 - 1 edge to [[_COMMUNITY_SSH Config]]
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents (2)]]
 - 1 edge to [[_COMMUNITY_Recommendation]]
 
 ## Top bridge nodes

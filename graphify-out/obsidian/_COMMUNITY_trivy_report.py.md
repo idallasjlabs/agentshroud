@@ -1,21 +1,19 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # trivy_report.py
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
 - [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Key Classes  Functions_43]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Purpose_172]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Related_47]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Responsibilities_44]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Severity Order (for ranking)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[generate_summary(report)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md

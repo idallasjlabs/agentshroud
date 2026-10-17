@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # docker_engine.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -21,8 +19,8 @@ members: 15
 - [[Function Details_27]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 - [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 - [[Purpose_146]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Related_33]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Related_32]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Responsibilities_30]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 - [[docker_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 - [[docker_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 

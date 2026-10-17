@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # AgentShroud v0.8.0 Peer Review Round 3 (FINAL)
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -20,7 +18,7 @@ members: 13
 - [[R3-W3 — WARNING Dead code `_is_imessage_recipient_allowed` in forward.py]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[R3-W4 — WARNING Debug log leaking agent response content]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[Release Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Summary_24]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Summary_23]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[Test Results_1]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[phase-review-2026-03-03]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 

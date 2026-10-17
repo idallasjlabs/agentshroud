@@ -1,24 +1,21 @@
 ---
 type: community
-cohesion: 0.05
-members: 73
+members: 68
 ---
 
 # scanner_integration.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 73 nodes
+**Members:** 68 nodes
 
 ## Members
+- [[dot-test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
 - [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/falco_monitor.py
-- [[Path_26]] - code - gateway/security/scanner_integration.py
+- [[Path_50]] - code - gateway/security/scanner_integration.py
 - [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if running inside a Docker container (.dockerenv present).]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if the named Docker container is currently in 'running' state.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
@@ -39,27 +36,25 @@ members: 73
 - [[Score domain 26 Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standar]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 28 Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA M]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
+- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scanner_integration.py
 - [[_app_state_has()]] - code - gateway/security/scanner_integration.py
 - [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
 - [[_is_container_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_containerized()]] - code - gateway/security/scanner_integration.py
 - [[_is_falco_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
-- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
 - [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
 - [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
 - [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
-- [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
 - [[_score_ai_observability()]] - code - gateway/security/scanner_integration.py
 - [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
 - [[_score_data_confidentiality_encryption()]] - code - gateway/security/scanner_integration.py
@@ -80,8 +75,6 @@ members: 73
 - [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
-- [[generate_summary()_1]] - code - gateway/security/clamav_scanner.py
-- [[generate_summary()_2]] - code - gateway/security/falco_monitor.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -92,23 +85,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_AgentTarget_4]]
-- 16 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 10 edges to [[_COMMUNITY_test_collaborator_greeter.py_1]]
-- 9 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 27 edges to [[_COMMUNITY_AgentTarget (4)]]
+- 16 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 14 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 5 edges to [[_COMMUNITY_get_trivy_summary]]
 - 4 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 4 edges to [[_COMMUNITY_Path_2]]
-- 4 edges to [[_COMMUNITY__load_latest_json]]
-- 4 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 2 edges to [[_COMMUNITY_parse_clamscan_output]]
-- 2 edges to [[_COMMUNITY_get_trivy_summary]]
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py_1]]
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 3 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 3 edges to [[_COMMUNITY__load_latest_json]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration.py (2)]]
+- 1 edge to [[_COMMUNITY_parse_trivy_output]]
 - 1 edge to [[_COMMUNITY_test_soc_bots.py]]
+- 1 edge to [[_COMMUNITY_Path (3)]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 12 communities
-- [[Path_26]] - degree 34, connects to 6 communities
+- [[scanner_integration.py]] - degree 67, connects to 13 communities
+- [[Path_50]] - degree 34, connects to 5 communities
 - [[_score_network_segmentation()]] - degree 9, connects to 2 communities
-- [[generate_summary()_2]] - degree 8, connects to 2 communities
-- [[_is_fresh()]] - degree 8, connects to 2 communities
+- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities
+- [[_score_secrets_management()]] - degree 7, connects to 2 communities

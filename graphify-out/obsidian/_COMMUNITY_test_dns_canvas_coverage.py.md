@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.12
 members: 21
 ---
 
 # test_dns_canvas_coverage.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 21 nodes
 
 ## Members
 - [[dot-__aenter__()_5]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-__aexit__()_5]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_135]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_136]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-request()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_133]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_134]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-request()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_compression_pointer()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_dns_blocklist_import_failure_sets_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_pointer_loop_bounded()]] - code - gateway/tests/test_dns_canvas_coverage.py

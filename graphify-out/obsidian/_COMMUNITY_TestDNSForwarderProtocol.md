@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.30
 members: 15
 ---
 
 # TestDNSForwarderProtocol
 
-**Cohesion:** 0.30 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -34,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AsyncMock_1]]
+- 4 edges to [[_COMMUNITY_AsyncMock]]
 - 4 edges to [[_COMMUNITY_DNSForwarderProtocol]]
 - 3 edges to [[_COMMUNITY_DNSBlocklist]]
 - 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]

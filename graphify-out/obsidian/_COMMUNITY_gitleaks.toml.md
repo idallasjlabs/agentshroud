@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # gitleaks.toml
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Integration]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Purpose_4]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Integration_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Purpose_6]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 - [[Related Notes_9]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 - [[Usage_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 - [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md

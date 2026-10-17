@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 12
 ---
 
 # LVGL KAWAII FACE
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 12 nodes
 
 ## Members

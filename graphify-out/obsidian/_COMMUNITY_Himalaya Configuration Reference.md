@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # Himalaya Configuration Reference
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -35,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_4]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py (6)]]
 
 ## Top bridge nodes
 - [[Himalaya Configuration Reference]] - degree 10, connects to 1 community

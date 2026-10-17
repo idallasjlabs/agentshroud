@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.18
 members: 12
 ---
 
 # SSH Config
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -17,8 +15,8 @@ members: 12
 - [[Configuration_20]] - document - skills/custom/securebrowser/README.md
 - [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
 - [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_190]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_70]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_184]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Related Notes_63]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
@@ -31,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_iCloud Services_2]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
+- 2 edges to [[_COMMUNITY_iCloud Services (3)]]
 - 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
 - 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
 
 ## Top bridge nodes

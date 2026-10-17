@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.23
 members: 12
 ---
 
 # chat_console.py
 
-**Cohesion:** 0.23 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -18,7 +16,7 @@ members: 12
 - [[chat-console launcher]] - code - scripts/chat-console
 - [[chat_console.py]] - code - src/interfaces/chat_console.py
 - [[check_status()]] - code - src/interfaces/chat_console.py
-- [[main()_34]] - code - src/interfaces/chat_console.py
+- [[main()_30]] - code - src/interfaces/chat_console.py
 - [[print_banner()]] - code - src/interfaces/chat_console.py
 - [[print_help()]] - code - src/interfaces/chat_console.py
 - [[send_message()]] - code - src/interfaces/chat_console.py

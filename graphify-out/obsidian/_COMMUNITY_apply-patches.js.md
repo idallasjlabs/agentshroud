@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.05
-members: 40
+members: 35
 ---
 
 # apply-patches.js
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 40 nodes
+**Members:** 35 nodes
 
 ## Members
 - [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
@@ -16,8 +14,6 @@ members: 40
 - [[LOCAL_PROVIDER_KEY derivation (mode-derived, not ref-derived)]] - code - docker/config/openclaw/apply-patches.js
 - [[LOCAL_PROVIDER_KEY mode-derivation design]] - rationale - docker/config/openclaw/apply-patches.js
 - [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
-- [[Per-chat group agent + binding reconciliation (Patch 1e)]] - code - docker/config/openclaw/apply-patches.js
-- [[RBAC collaborator_user_ids list (gatewaysecurityrbac_config.py)]] - concept - docker/config/openclaw/apply-patches.js
 - [[Telegram channel tokendmPolicyallowlist patch (Patch 3)]] - code - docker/config/openclaw/apply-patches.js
 - [[Telegram channel-wide fallback binding design]] - rationale - docker/config/openclaw/apply-patches.js
 - [[Telegram dmPolicy=open security tradeoff]] - rationale - docker/config/openclaw/apply-patches.js
@@ -26,19 +22,16 @@ members: 40
 - [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
 - [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
 - [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
 - [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
 - [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
 - [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
 - [[apply-patches.js]] - code - docker/config/openclaw/apply-patches.js
-- [[apply-patches.js patch driver (openclaw.json)]] - code - docker/config/openclaw/apply-patches.js
 - [[cIdx]] - code - docker/config/openclaw/apply-patches.js
 - [[config]] - code - docker/config/openclaw/apply-patches.js
 - [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
 - [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
 - [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[fs_4]] - code - docker/config/openclaw/apply-patches.js
+- [[fs_5]] - code - docker/config/openclaw/apply-patches.js
 - [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
 - [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
 - [[hasMain]] - code - docker/config/openclaw/apply-patches.js
@@ -59,9 +52,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
-- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 3 edges to [[_COMMUNITY_apply-patches.js (3)]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 
 ## Top bridge nodes
-- [[apply-patches.js]] - degree 38, connects to 1 community
-- [[apply-patches.js patch driver (openclaw.json)]] - degree 3, connects to 1 community
+- [[apply-patches.js]] - degree 38, connects to 2 communities

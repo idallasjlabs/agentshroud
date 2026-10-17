@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 24
 ---
 
 # AgentShroud v1.0.0 Fortress Release Announcement
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members

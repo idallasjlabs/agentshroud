@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.11
 members: 21
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -40,8 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal_1]]
-- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide_2]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal (2)]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
 
 ## Top bridge nodes
 - [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community

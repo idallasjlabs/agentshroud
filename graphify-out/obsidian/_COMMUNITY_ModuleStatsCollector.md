@@ -1,29 +1,33 @@
 ---
 type: community
-cohesion: 0.10
-members: 36
+members: 42
 ---
 
 # ModuleStatsCollector
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 36 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_98]] - code - gateway/security/module_stats.py
-- [[dot-record()_2]] - code - gateway/security/module_stats.py
+- [[dot-__init__()_65]] - code - gateway/security/module_stats.py
+- [[dot-record()_1]] - code - gateway/security/module_stats.py
 - [[dot-reset()_1]] - code - gateway/security/module_stats.py
-- [[dot-setup_method()_22]] - code - gateway/tests/test_module_stats.py
-- [[dot-setup_method()_23]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_7]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_8]] - code - gateway/tests/test_module_stats.py
 - [[dot-snapshot()]] - code - gateway/security/module_stats.py
 - [[dot-test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_record_decision_helper()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_record_decision_never_raises()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_tool_acl_can_use_tool_records()]] - code - gateway/tests/test_module_stats.py
-- [[Decision_2]] - code - gateway/security/module_stats.py
+- [[Decision_1]] - code - gateway/security/module_stats.py
 - [[Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`]] - rationale - gateway/security/module_stats.py
+- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
+- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
+- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
+- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
+- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
 - [[ModuleStatsCollector]] - code - gateway/security/module_stats.py
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
 - [[Record one enforcement decision for ``module``.          Never raises an unknow]] - rationale - gateway/security/module_stats.py
 - [[Return a per-module stats snapshot with totals and block rate.]] - rationale - gateway/security/module_stats.py
 - [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The]] - rationale - gateway/tests/test_module_stats.py
@@ -55,23 +59,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_RBACConfig_1]]
-- 8 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 10 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 9 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_A2AMethod_1]]
-- 2 edges to [[_COMMUNITY_A2APolicyEngine_1]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 2 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 2 edges to [[_COMMUNITY_A2AMethod]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine (2)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig_1]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide_1]]
-- 1 edge to [[_COMMUNITY_ModuleStatsCollector_1]]
+- 1 edge to [[_COMMUNITY_ModuleStatsCollector (2)]]
 
 ## Top bridge nodes
-- [[record_decision()]] - degree 20, connects to 8 communities
+- [[record_decision()]] - degree 20, connects to 7 communities
 - [[test_module_stats.py]] - degree 18, connects to 2 communities
 - [[TestEnforcementWiring]] - degree 11, connects to 2 communities
 - [[TestEgressWiringEndToEnd]] - degree 10, connects to 2 communities
-- [[Decision_2]] - degree 7, connects to 2 communities
+- [[get_collector()]] - degree 11, connects to 1 community
