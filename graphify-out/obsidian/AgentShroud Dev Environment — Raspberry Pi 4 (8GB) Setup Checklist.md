@@ -28,6 +28,6 @@ tags:
 - [[Phase 7 Secret Management]] - `contains` [EXTRACTED]
 - [[Phase 8 Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Phase 9 OpenClaw Agent Configuration]] - `contains` [EXTRACTED]
-- [[Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

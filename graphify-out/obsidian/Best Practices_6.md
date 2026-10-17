@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Browser — Secure Browser Automation (3)"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Browser__Secure_Browser_Automation_3
 ---
 
 # Best Practices
@@ -19,4 +19,4 @@ tags:
 - [[5. Never Extract Credentials_3]] - `contains` [EXTRACTED]
 - [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Post-Deployment Validation"
+community: "AgentShroud Incident Response Plan"
 location: "L403"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-Deployment_Validation
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Functional Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-Deployment_Validation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

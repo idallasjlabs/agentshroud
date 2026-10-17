@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L726"
+community: "test_telegram_replay.py"
+location: "L82"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager
+  - graphify/EXTRACTED
+  - community/test_telegram_replaypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handler()]] - `references` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
+- [[dot-record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

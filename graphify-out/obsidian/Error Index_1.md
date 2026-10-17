@@ -1,26 +1,25 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Error Index"
-location: "L9"
+community: "Error Index.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Index
+  - community/Error_Indexmd
 ---
 
-# Error Index
+# Error Index.md
 
 ## Connections
-- [[Auth Errors_1]] - `contains` [EXTRACTED]
-- [[Container Errors_2]] - `contains` [EXTRACTED]
-- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
+- [[Auth Errors_1]] - `references` [EXTRACTED]
+- [[Container Errors_1]] - `references` [EXTRACTED]
+- [[Egress Filter Errors_1]] - `references` [EXTRACTED]
 - [[Error Index]] - `contains` [EXTRACTED]
-- [[HTTP Status Codes]] - `contains` [EXTRACTED]
-- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
-- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
-- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
-- [[Related Notes_71]] - `contains` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_2]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors_2]] - `references` [EXTRACTED]
+- [[Prompt Injection Blocks_2]] - `references` [EXTRACTED]
+- [[SSH Proxy Errors]] - `references` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Index
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

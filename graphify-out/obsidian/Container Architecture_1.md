@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "AgentShroud Agentic OS"
-location: "L693"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Container Architecture
 
 ## Connections
-- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
+- [[Development Environment_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

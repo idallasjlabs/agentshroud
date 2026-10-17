@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L49"
+community: "UserSessionManager (2)"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/UserSessionManager_2
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

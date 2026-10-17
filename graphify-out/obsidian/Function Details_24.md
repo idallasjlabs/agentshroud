@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Function Details"
+community: "Function Details (8)"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_8
 ---
 
 # Function Details
@@ -19,6 +19,6 @@ tags:
 - [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
 - [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
 - [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_8

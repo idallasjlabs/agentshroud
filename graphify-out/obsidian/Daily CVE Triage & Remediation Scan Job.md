@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/cve-triage-report.txt"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "Report Delivery Format Instructions (2)"
 location: "L1-L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/Report_Delivery_Format_Instructions_2
 ---
 
 # Daily CVE Triage & Remediation Scan Job
@@ -20,4 +20,4 @@ tags:
 - [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - `implements` [EXTRACTED]
 - [[cve_prefetch.py (CVE fetch-and-diff)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions_2

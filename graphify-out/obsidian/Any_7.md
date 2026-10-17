@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: ""
 type: "code"
-community: "MiddlewareManager"
-location: "L49"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/discover_upstream_versionspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_2]] - `references` [EXTRACTED]
-- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
-- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_1]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

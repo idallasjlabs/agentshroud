@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "FalcoAlertWatcher"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/FalcoAlertWatcher
 ---
 
 # Generate a summary dict suitable for the health report.      Args:         alert
@@ -15,4 +15,4 @@ tags:
 - [[generate_summary()_1]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

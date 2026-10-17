@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "document"
-community: "egress_filter.py"
+community: "egress_filter.py (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/egress_filterpy_2
 ---
 
 # AgentShroud Semgrep SAST Configuration
@@ -35,4 +35,4 @@ tags:
 - [[subprocess-shell-true rule (CWE-78)]] - `references` [EXTRACTED]
 - [[subprocess-unvalidated-input rule (CWE-78)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy_2

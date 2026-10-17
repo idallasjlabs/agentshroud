@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Browser Support]] - `contains` [EXTRACTED]
-- [[Features_4]] - `contains` [EXTRACTED]
-- [[Implementation Status_2]] - `contains` [EXTRACTED]
+- [[Features_3]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Privacy Features]] - `contains` [EXTRACTED]
-- [[Structure_2]] - `contains` [EXTRACTED]
+- [[Structure_1]] - `contains` [EXTRACTED]
 - [[browser-extensionREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser_Extension

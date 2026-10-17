@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo-transparent.png"
 type: "image"
-community: "egress_filter.py"
+community: "egress_filter.py (3)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/egress_filterpy
+  - community/egress_filterpy_3
 ---
 
 # AgentShroud Logo - Glow/Transparent Variant
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/egress_filterpy
+#graphify/image #graphify/INFERRED #community/egress_filterpy_3

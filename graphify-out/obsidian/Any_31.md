@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L56"
+community: "MCPAuditTrail"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/MCPAuditTrail
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_100]] - `references` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
+- [[dot-generate_report()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

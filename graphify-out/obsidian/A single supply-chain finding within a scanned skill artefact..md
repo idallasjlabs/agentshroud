@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "SkillGuard"
+community: "SkillGuard (2)"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/SkillGuard_2
 ---
 
 # A single supply-chain finding within a scanned skill artefact.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Finding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard_2

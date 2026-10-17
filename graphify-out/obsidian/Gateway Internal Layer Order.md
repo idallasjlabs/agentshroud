@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "agentshroud-blueteam/SKILL.md (4)"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/agentshroud-blueteam/SKILLmd_4
 ---
 
 # Gateway Internal Layer Order
 
 ## Connections
-- [[Architecture Overview]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4

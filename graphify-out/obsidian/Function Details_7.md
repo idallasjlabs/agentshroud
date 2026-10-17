@@ -1,25 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Function Details"
-location: "L41"
+community: "Function Details (2)"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_2
 ---
 
 # Function Details
 
 ## Connections
-- [[KeyInjector.inject_for_request(url, headers, agent_id, key_name)]] - `contains` [EXTRACTED]
-- [[KeyLeakDetector.scan_outbound(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.check_value_match(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.get_audit_log()]] - `contains` [EXTRACTED]
-- [[KeyVault.get_key(name, agent_id)]] - `contains` [EXTRACTED]
-- [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
-- [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_2

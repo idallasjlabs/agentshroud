@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "prompt_guard.py.md"
+community: "wazuh_client.py"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/wazuh_clientpy
 ---
 
 # Function Details
 
 ## Connections
-- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - `contains` [EXTRACTED]
-- [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
-- [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
-- [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)]] - `contains` [EXTRACTED]
+- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - `contains` [EXTRACTED]
+- [[level_to_severity(level)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since)]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

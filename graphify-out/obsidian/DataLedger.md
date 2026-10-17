@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # DataLedger
 
 ## Connections
-- [[dot-__init__()_173]] - `method` [EXTRACTED]
+- [[dot-__init__()_44]] - `method` [EXTRACTED]
 - [[dot-_hash_content()]] - `method` [EXTRACTED]
-- [[dot-close()]] - `method` [EXTRACTED]
+- [[dot-close()_14]] - `method` [EXTRACTED]
 - [[dot-delete_entry()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-enforce_retention()]] - `method` [EXTRACTED]
 - [[dot-get_entry()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_17]] - `method` [EXTRACTED]
-- [[dot-initialize()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_3]] - `method` [EXTRACTED]
+- [[dot-initialize()_3]] - `method` [EXTRACTED]
 - [[dot-ledger()]] - `calls` [EXTRACTED]
 - [[dot-ledger()_1]] - `calls` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
@@ -30,13 +30,13 @@ tags:
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
 - [[Data Flow_1]] - `references` [EXTRACTED]
 - [[FastAPI]] - `uses` [INFERRED]
-- [[GatewayConfig]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[LogRecord]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[Startup Sequence_1]] - `references` [EXTRACTED]
+- [[LogRecord_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
@@ -61,18 +61,18 @@ tags:
 - [[TestTamperDetection]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()]] - `calls` [EXTRACTED]
-- [[client()_1]] - `calls` [EXTRACTED]
+- [[client()_9]] - `calls` [EXTRACTED]
+- [[client()_10]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
-- [[ledger()]] - `calls` [EXTRACTED]
 - [[ledger()_1]] - `calls` [EXTRACTED]
-- [[ledger.py_1]] - `contains` [EXTRACTED]
-- [[ledger.py_2]] - `references` [EXTRACTED]
+- [[ledger()_2]] - `calls` [EXTRACTED]
+- [[ledger.py]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `references` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_audit_chain.py]] - `imports` [EXTRACTED]
-- [[test_initialize_is_idempotent()]] - `calls` [EXTRACTED]
+- [[test_initialize_is_idempotent()_1]] - `calls` [EXTRACTED]
 - [[test_ledger()]] - `calls` [EXTRACTED]
 - [[test_ledger.py]] - `imports` [EXTRACTED]
 - [[test_performance.py]] - `imports` [EXTRACTED]
@@ -80,4 +80,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

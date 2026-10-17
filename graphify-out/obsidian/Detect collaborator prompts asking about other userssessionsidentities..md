@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (3)"
 location: "L1442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_3
 ---
 
 # Detect collaborator prompts asking about other users/sessions/identities.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_collaborator_privacy_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Release Notes - AgentShroud v0.9.0"
-location: "L10"
+community: "AgentShroud™ CVE Mitigation Matrix"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
+- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

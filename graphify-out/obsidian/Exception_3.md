@@ -1,64 +1,31 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L459"
+community: "StdioConnection"
+location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/StdioConnection
 ---
 
 # Exception
 
 ## Connections
-- [[dot-_record_guard_init_failure()]] - `references` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
-- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[ConsentFramework]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PathIsolationConfig]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[dot-__init__()_67]] - `references` [EXTRACTED]
+- [[ConnectionPool]] - `uses` [INFERRED]
+- [[HttpSseConnection]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[StdioConnection]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/StdioConnection

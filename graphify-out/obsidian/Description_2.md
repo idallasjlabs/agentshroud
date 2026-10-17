@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "egress_filter.py"
+community: "egress_filter.py (6)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/egress_filterpy_6
 ---
 
 # Description
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy_6

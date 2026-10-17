@@ -1,17 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "LLMProxy"
+community: "PodmanEngine"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/LLMProxy
+  - graphify/INFERRED
+  - community/PodmanEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/PodmanEngine

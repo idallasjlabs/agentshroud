@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Chaos Engineering Skill"
+community: "Chaos Engineering Skill (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Chaos_Engineering_Skill
+  - community/Chaos_Engineering_Skill_2
 ---
 
 # Chaos Engineering Skill
 
-#graphify/document #graphify/EXTRACTED #community/Chaos_Engineering_Skill
+#graphify/document #graphify/EXTRACTED #community/Chaos_Engineering_Skill_2

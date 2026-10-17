@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "TestCrossBotTrustPivot"
+community: "Route map (by router)"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCrossBotTrustPivot
+  - community/Route_map_by_router
 ---
 
 # Example: `GET /manage/health`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCrossBotTrustPivot
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

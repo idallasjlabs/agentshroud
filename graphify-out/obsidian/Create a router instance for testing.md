@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # Create a router instance for testing
 
 ## Connections
-- [[router()_1]] - `rationale_for` [EXTRACTED]
+- [[router()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2

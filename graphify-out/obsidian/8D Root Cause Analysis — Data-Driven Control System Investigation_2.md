@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process"
+community: "The 8D Investigation Process (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/The_8D_Investigation_Process_2
 ---
 
 # 8D Root Cause Analysis — Data-Driven Control System Investigation
@@ -17,9 +17,9 @@ tags:
 - [[Critical Rules_2]] - `contains` [EXTRACTED]
 - [[Input Requirements_8]] - `contains` [EXTRACTED]
 - [[Learning System (Continuous Improvement)_2]] - `contains` [EXTRACTED]
-- [[Overview_9]] - `contains` [EXTRACTED]
+- [[Overview_5]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process_2]] - `contains` [EXTRACTED]
 - [[XML Configuration File Parsing_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-eightdSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2

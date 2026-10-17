@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L347"
+community: "EgressFilterConfig (2)"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/create_auth_dependency
+  - graphify/EXTRACTED
+  - community/EgressFilterConfig_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_17]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[dot-get_stats()_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

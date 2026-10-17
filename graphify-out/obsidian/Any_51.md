@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "test_security_toolchain.py (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_security_toolchainpy_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_13]] - `references` [EXTRACTED]
-- [[dot-to_dict()_9]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

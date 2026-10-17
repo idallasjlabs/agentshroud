@@ -18,9 +18,9 @@ tags:
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 - [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - `conceptually_related_to` [EXTRACTED]
 - [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
-- [[Purpose_75]] - `contains` [EXTRACTED]
-- [[Related Skills_60]] - `contains` [EXTRACTED]
-- [[Usage_70]] - `contains` [EXTRACTED]
+- [[Purpose_74]] - `contains` [EXTRACTED]
+- [[Related Skills_63]] - `contains` [EXTRACTED]
+- [[Usage_74]] - `contains` [EXTRACTED]
 - [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
 - [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 

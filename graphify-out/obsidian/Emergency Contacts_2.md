@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "GSDE&G Skills Reference"
-location: "L260"
+community: "AgentShroud Incident Response Plan"
+location: "L572"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
+- [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

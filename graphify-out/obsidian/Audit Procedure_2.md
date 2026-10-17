@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
+community: "AgentShroud Blue Team Security Auditor (3)"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/AgentShroud_Blue_Team_Security_Auditor_3
 ---
 
 # Audit Procedure
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 Configuration Audit_2]] - `contains` [EXTRACTED]
 - [[Phase 5 Steve Hay's Specific Probes_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

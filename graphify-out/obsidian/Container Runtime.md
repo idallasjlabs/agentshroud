@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "telegram_proxy.py"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/system-requirementsmd
 ---
 
 # Container Runtime
@@ -17,4 +17,4 @@ tags:
 - [[setup-guide]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

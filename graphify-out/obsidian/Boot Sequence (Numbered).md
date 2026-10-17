@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "TestFabricatedSecurityNotice"
+community: "TestFabricatedSecurityNotice (3)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestFabricatedSecurityNotice_3
 ---
 
 # Boot Sequence (Numbered)
@@ -17,6 +17,6 @@ tags:
 - [[Stage 3 Health Check]] - `contains` [EXTRACTED]
 - [[Stage 4 Bot Container Startup]] - `contains` [EXTRACTED]
 - [[Stage 5 Fully Operational]] - `contains` [EXTRACTED]
-- [[Startup Sequence]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3

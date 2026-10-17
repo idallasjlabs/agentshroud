@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/ws-e-audit-v1.2.md"
+source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
-location: "L16"
+community: "Phase Review: P0 — Core Pipeline Wiring"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # Executive Summary
 
 ## Connections
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
+- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

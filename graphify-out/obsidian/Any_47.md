@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L465"
+community: "AppleContainerEngine"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - graphify/INFERRED
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

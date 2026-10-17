@@ -19,7 +19,7 @@ tags:
 - [[Colima Initial Setup Procedure]] - `contains` [EXTRACTED]
 - [[Consequences]] - `contains` [EXTRACTED]
 - [[Context_1]] - `contains` [EXTRACTED]
-- [[Decision_1]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
 - [[Docker Desktop (network topology diagram)]] - `conceptually_related_to` [EXTRACTED]
 - [[Multi-Runtime Support (DockerPodmanApple Containers)]] - `conceptually_related_to` [EXTRACTED]
 - [[Per-Host Runtime Selection]] - `contains` [EXTRACTED]

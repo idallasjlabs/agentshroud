@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "AWS Cloud Management & FinOps Agent (3)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/AWS_Cloud_Management__FinOps_Agent_3
 ---
 
 # AWS Cloud Management & FinOps README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3

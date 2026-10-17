@@ -1,17 +1,18 @@
 ---
-source_file: "docs/security/security-architecture.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L3"
+community: "AgentShroud v0.9.0"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/AgentShroud_v090
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

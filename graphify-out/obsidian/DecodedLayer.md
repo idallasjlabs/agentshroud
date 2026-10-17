@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "InjectionAction"
+community: "PipelineAction"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/PipelineAction
 ---
 
 # DecodedLayer
@@ -16,4 +16,4 @@ tags:
 - [[dot-decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

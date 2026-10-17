@@ -12,6 +12,6 @@ tags:
 # AlertDispatcher._send_notification(alert)
 
 ## Connections
-- [[Function Details_4]] - `contains` [EXTRACTED]
+- [[Function Details_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

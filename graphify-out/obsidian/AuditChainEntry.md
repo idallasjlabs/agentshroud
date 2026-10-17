@@ -15,13 +15,13 @@ tags:
 - [[dot-append()_1]] - `references` [EXTRACTED]
 - [[dot-append_block()]] - `references` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-entries()_1]] - `references` [EXTRACTED]
+- [[dot-entries()]] - `references` [EXTRACTED]
 - [[An entry in the SHA-256 hash chain audit ledger.]] - `rationale_for` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

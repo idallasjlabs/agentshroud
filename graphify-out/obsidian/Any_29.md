@@ -1,27 +1,21 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L122"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/AlertTelegramRelay
 ---
 
 # Any
 
 ## Connections
-- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
-- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
-- [[build_id_plan()]] - `references` [EXTRACTED]
-- [[compute_stats()]] - `references` [EXTRACTED]
-- [[fetch_advisories()]] - `references` [EXTRACTED]
-- [[gather_advisories()]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
-- [[match_entry()]] - `references` [EXTRACTED]
-- [[render_manual_review()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
+- [[dot-__call__()_5]] - `references` [EXTRACTED]
+- [[dot-__init__()_91]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

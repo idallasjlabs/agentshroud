@@ -23,7 +23,7 @@ tags:
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Bot container verification (2026-03-14)]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `references` [EXTRACTED]
-- [[Executive Summary_10]] - `contains` [EXTRACTED]
+- [[Executive Summary_9]] - `contains` [EXTRACTED]
 - [[Gateway regression suites]] - `contains` [EXTRACTED]
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[OpenClaw_2]] - `references` [EXTRACTED]

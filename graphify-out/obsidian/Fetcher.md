@@ -12,7 +12,7 @@ tags:
 # Fetcher
 
 ## Connections
-- [[dot-__init__()_192]] - `references` [EXTRACTED]
+- [[dot-__init__()_203]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]

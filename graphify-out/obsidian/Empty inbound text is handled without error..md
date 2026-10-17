@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "InjectionAction"
+community: "PipelineAction"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/PipelineAction
 ---
 
 # Empty inbound text is handled without error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_rot13_empty_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

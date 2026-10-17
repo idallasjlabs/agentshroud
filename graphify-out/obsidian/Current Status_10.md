@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "OpenClaw Bot Container"
-location: "L63"
+community: "How to Fix (5 Minutes)"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

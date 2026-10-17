@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L41"
+community: "encrypted_store.py"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/encrypted_storepy
 ---
 
 # Function Details
 
 ## Connections
-- [[ContainerSnapshot.config_hash()]] - `contains` [EXTRACTED]
-- [[DriftDetector.acknowledge_alert(alert_id)]] - `contains` [EXTRACTED]
-- [[DriftDetector.check_drift(current)]] - `contains` [EXTRACTED]
-- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - `contains` [EXTRACTED]
-- [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
+- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

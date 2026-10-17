@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L56"
+community: "First Time Setup"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/First_Time_Setup
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/First_Time_Setup

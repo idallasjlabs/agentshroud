@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: "SecureBrowser (2)"
 location: "L350"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_2
 ---
 
 # Extract data from page          Security: No credential extraction allowed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-extract()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_2

@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-_check_impl()]] - `references` [EXTRACTED]
-- [[dot-_record()_1]] - `references` [EXTRACTED]
-- [[dot-check()_4]] - `references` [EXTRACTED]
+- [[dot-_record()]] - `references` [EXTRACTED]
+- [[dot-check()_6]] - `references` [EXTRACTED]
 - [[dot-check_async()]] - `references` [EXTRACTED]
 - [[dot-get_log()]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]

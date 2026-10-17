@@ -1,56 +1,56 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # AuditChain
 
 ## Connections
-- [[dot-__init__()_122]] - `calls` [EXTRACTED]
-- [[dot-__init__()_111]] - `method` [EXTRACTED]
-- [[dot-__len__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_71]] - `calls` [EXTRACTED]
+- [[dot-__init__()_119]] - `method` [EXTRACTED]
+- [[dot-__len__()]] - `method` [EXTRACTED]
 - [[dot-append()_1]] - `method` [EXTRACTED]
 - [[dot-append_block()]] - `method` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `method` [EXTRACTED]
-- [[dot-entries()_1]] - `method` [EXTRACTED]
-- [[dot-last_hash()_1]] - `method` [EXTRACTED]
+- [[dot-entries()]] - `method` [EXTRACTED]
+- [[dot-last_hash()]] - `method` [EXTRACTED]
 - [[dot-test_append_chain()]] - `calls` [EXTRACTED]
 - [[dot-test_append_owner_bypass_persists_high_severity()]] - `calls` [EXTRACTED]
 - [[dot-test_append_single()]] - `calls` [EXTRACTED]
 - [[dot-test_audit_chain_hash_chained()]] - `calls` [EXTRACTED]
 - [[dot-test_chain_continuity_preserved_across_wrap()]] - `calls` [EXTRACTED]
 - [[dot-test_content_hash_deterministic()]] - `calls` [EXTRACTED]
-- [[dot-test_default_window_is_10k()_1]] - `calls` [EXTRACTED]
+- [[dot-test_default_window_is_10k()]] - `calls` [EXTRACTED]
 - [[dot-test_different_content_different_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_entries_returns_copy()]] - `calls` [EXTRACTED]
 - [[dot-test_genesis()]] - `calls` [EXTRACTED]
 - [[dot-test_metadata()]] - `calls` [EXTRACTED]
 - [[dot-test_persisted_event_records_true_previous_hash()]] - `calls` [EXTRACTED]
-- [[dot-test_tamper_in_retained_window_detected()_1]] - `calls` [EXTRACTED]
+- [[dot-test_tamper_in_retained_window_detected()]] - `calls` [EXTRACTED]
 - [[dot-test_unwrapped_chain_must_anchor_at_genesis()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_chain_valid_after_wrap()_1]] - `calls` [EXTRACTED]
+- [[dot-test_verify_chain_valid_after_wrap()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_tampered_chain_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_tampered_previous_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_valid()]] - `calls` [EXTRACTED]
-- [[dot-test_window_capped_at_max_entries()_1]] - `calls` [EXTRACTED]
-- [[dot-total_appended()_1]] - `method` [EXTRACTED]
-- [[dot-verify_chain()_1]] - `method` [EXTRACTED]
+- [[dot-test_window_capped_at_max_entries()]] - `calls` [EXTRACTED]
+- [[dot-total_appended()]] - `method` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `semantically_similar_to` [INFERRED]
+- [[MCPAuditTrail_1]] - `semantically_similar_to` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SHA-256 hash chain for tamper-evident audit logging.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `shares_data_with` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -78,7 +78,7 @@ tags:
 - [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -91,9 +91,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[audit_chain()]] - `calls` [EXTRACTED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
 - [[test_audit_chain_empty_valid()]] - `calls` [EXTRACTED]
 - [[test_audit_chain_single_entry()]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
@@ -102,4 +102,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PipelineAction
+#graphify/code #graphify/INFERRED #community/AuditChain

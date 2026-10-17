@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (2)"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # A single finding from inspection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InspectionFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

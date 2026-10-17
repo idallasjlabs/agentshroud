@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "SessionManager"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/SessionManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_128]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()]] - `references` [EXTRACTED]
+- [[dot-validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/SessionManager

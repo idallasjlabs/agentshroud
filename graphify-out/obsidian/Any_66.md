@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: ""
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L160"
+community: "WebProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/WebProxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

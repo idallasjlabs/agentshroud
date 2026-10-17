@@ -1,18 +1,17 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "AgentTarget"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "docker/bots/hermes/run-standalone.sh:221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # AGENTSHROUD_HERMES_DISABLE_TELEGRAM opt-in
 
 ## Connections
-- [[Dev Hermes polled prod's Hermes Telegram bot]] - `rationale_for` [EXTRACTED]
 - [[_secret_mount_args()]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "AlertDispatcher (3)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/AlertDispatcher_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_14]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

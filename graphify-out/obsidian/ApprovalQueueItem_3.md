@@ -1,20 +1,28 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "UserSessionManager"
-location: "L71"
+community: "ApprovalQueueConfig (2)"
+location: "L215"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/UserSessionManager
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig_2
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[dot-decide()_1]] - `references` [EXTRACTED]
+- [[dot-_notify_telegram()]] - `references` [EXTRACTED]
+- [[dot-decide()]] - `references` [EXTRACTED]
 - [[dot-get_item()_1]] - `references` [EXTRACTED]
-- [[dot-get_pending()_1]] - `references` [EXTRACTED]
-- [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[dot-get_pending()]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2

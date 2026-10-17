@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
+community: "GSDE&G Development Master Checklist (3)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/GSDEG_Development_Master_Checklist_3
 ---
 
 # GSDE&G Development Master Checklist
@@ -25,4 +25,4 @@ tags:
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mcSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_3

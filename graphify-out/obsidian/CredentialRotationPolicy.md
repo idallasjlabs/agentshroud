@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # CredentialRotationPolicy
@@ -17,4 +17,4 @@ tags:
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

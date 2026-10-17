@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "cli/main.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/cli/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_13]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

@@ -12,7 +12,7 @@ tags:
 # Application CVEs (OpenClaw / Hermes)
 
 ## Connections
-- [[Executive Summary_5]] - `contains` [EXTRACTED]
+- [[Executive Summary_4]] - `contains` [EXTRACTED]
 - [[Hermes Agent (7 tracked)]] - `contains` [EXTRACTED]
 - [[OpenClaw (816 tracked)]] - `contains` [EXTRACTED]
 

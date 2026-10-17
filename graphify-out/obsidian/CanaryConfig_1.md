@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "PipelineAction"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PipelineAction
 ---
 
 # CanaryConfig
 
 ## Connections
-- [[dot-__init__()_108]] - `references` [EXTRACTED]
-- [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_185]] - `references` [EXTRACTED]
+- [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
 - [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

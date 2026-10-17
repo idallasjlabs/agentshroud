@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: "SecureBrowser (4)"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_4
 ---
 
 # Fill a single form field          Security: Risk classification, approval for se
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-fill_field()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4

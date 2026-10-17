@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "Voice Gateway Service (STT/TTS WebSocket Bridge to Governed Path)"
+community: "Red Team Assessment v1.2.0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_to_Governed_Path
+  - community/Red_Team_Assessment_v120
 ---
 
 # ESP32-S3-BOX-3 Hermes Voice Terminal Planning Doc
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_to_Governed_Path
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120

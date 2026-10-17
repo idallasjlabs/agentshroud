@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "SCLClient"
-location: "L23"
+community: "ResourceGuard (3)"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/ResourceGuard_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()]] - `references` [EXTRACTED]
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_3

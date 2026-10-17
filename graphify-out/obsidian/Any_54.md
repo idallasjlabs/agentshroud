@@ -1,19 +1,25 @@
 ---
-source_file: ""
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "model_usage.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/model_usagepy
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[aggregate_costs()]] - `references` [EXTRACTED]
+- [[build_json_all()]] - `references` [EXTRACTED]
+- [[build_json_current()]] - `references` [EXTRACTED]
+- [[filter_by_days()]] - `references` [EXTRACTED]
+- [[latest_day_cost()]] - `references` [EXTRACTED]
+- [[load_payload()]] - `references` [EXTRACTED]
+- [[parse_daily_entries()]] - `references` [EXTRACTED]
+- [[pick_current_model()]] - `references` [EXTRACTED]
+- [[run_codexbar_cost()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

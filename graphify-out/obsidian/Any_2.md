@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ResourceGuard"
-location: "L439"
+community: "AlertDispatcher (2)"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ResourceGuard
+  - graphify/INFERRED
+  - community/AlertDispatcher_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

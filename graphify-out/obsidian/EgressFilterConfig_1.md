@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # EgressFilterConfig
 
 ## Connections
-- [[dot-__init__()_120]] - `references` [EXTRACTED]
+- [[dot-__init__()_173]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -12,6 +12,6 @@ tags:
 # ApprovalQueueConfig
 
 ## Connections
-- [[dot-__init__()_43]] - `references` [EXTRACTED]
+- [[dot-__init__()_42]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "export_bot"
+community: "RBACConfig (2)"
 location: "L391"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/RBACConfig_2
 ---
 
 # Fail closed: an origin nobody vouched for is not trusted.          A caller that
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unknown_origin_defaults_to_unverified()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export_bot
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

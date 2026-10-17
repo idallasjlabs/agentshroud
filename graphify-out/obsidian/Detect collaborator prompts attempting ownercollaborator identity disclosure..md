@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (3)"
 location: "L1462"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_3
 ---
 
 # Detect collaborator prompts attempting owner/collaborator identity disclosure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_identity_enumeration_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

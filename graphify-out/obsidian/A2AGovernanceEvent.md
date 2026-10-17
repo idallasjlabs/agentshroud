@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_finalize()]] - `calls` [EXTRACTED]
-- [[dot-get_events()_2]] - `references` [EXTRACTED]
+- [[dot-get_events()_1]] - `references` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
 - [[Audit event for A2A governance decisions.]] - `rationale_for` [EXTRACTED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (2)"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # Enhanced approval queue with enforce mode and tool risk tiers.      Features:
 
 ## Connections
-- [[EnhancedApprovalQueue]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

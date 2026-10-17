@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo-mockup.png"
 type: "image"
-community: "egress_filter.py"
+community: "egress_filter.py (3)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/egress_filterpy
+  - community/egress_filterpy_3
 ---
 
 # AgentShroud Brand Collateral Mockup
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Primary Logo Lockup]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/egress_filterpy
+#graphify/image #graphify/INFERRED #community/egress_filterpy_3

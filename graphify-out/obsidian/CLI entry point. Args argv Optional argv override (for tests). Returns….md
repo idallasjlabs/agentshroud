@@ -12,6 +12,6 @@ tags:
 # CLI entry point. Args: argv: Optional argv override (for tests). Returns:…
 
 ## Connections
-- [[main()]] - `rationale_for` [EXTRACTED]
+- [[main()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy

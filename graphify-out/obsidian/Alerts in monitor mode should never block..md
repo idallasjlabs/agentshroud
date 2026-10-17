@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (3)"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_3
 ---
 
 # Alerts in monitor mode should never block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_alert_monitor_mode_no_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

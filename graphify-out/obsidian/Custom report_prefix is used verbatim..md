@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "parse_trivy_output"
 location: "L268"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/parse_trivy_output
 ---
 
 # Custom report_prefix is used verbatim.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_custom_prefix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/parse_trivy_output

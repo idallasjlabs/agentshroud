@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Deployment Modes"
+community: "AgentShroud Incident Response Plan"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Modes
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Deployment Modes
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)]] - `contains` [EXTRACTED]
 - [[Sidecar Mode (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Modes
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

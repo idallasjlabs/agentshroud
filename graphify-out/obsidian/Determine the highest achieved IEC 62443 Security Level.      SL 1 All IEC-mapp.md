@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "AgentTarget"
+community: "AgentTarget (4)"
 location: "L2321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_4
 ---
 
 # Determine the highest achieved IEC 62443 Security Level.      SL 1: All IEC-mapp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_determine_iec_sl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_4

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L177"
+community: "Skill: Technical Illustrator (TI)"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Dependencies
 
 ## Connections
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

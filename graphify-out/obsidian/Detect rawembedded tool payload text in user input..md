@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (3)"
 location: "L2685"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_3
 ---
 
 # Detect raw/embedded tool payload text in user input.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_tool_payload_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

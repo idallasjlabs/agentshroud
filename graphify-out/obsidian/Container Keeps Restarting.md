@@ -12,6 +12,6 @@ tags:
 # Container Keeps Restarting
 
 ## Connections
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

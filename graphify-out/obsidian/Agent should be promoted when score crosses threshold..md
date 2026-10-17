@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # Agent should be promoted when score crosses threshold.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_promotion_on_threshold()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

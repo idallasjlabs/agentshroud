@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L18530"
+community: "AgentTarget (2)"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/AgentTarget_2
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_2]] - `references` [EXTRACTED]
+- [[AgentTarget_2]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

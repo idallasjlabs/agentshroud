@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Skill: UI Expert (UI) (2)"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Skill_UI_Expert_UI_2
 ---
 
 # Component Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Navigation_1]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_2

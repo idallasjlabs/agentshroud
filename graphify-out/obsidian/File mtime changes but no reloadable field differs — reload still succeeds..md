@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (5)"
 location: "L168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_5
 ---
 
 # File mtime changes but no reloadable field differs — reload still succeeds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_reload_no_reloadable_field_changed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

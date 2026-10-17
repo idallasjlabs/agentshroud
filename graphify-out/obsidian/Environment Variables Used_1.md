@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only)"
-location: "L72"
+community: "middleware.py"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/middlewarepy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

@@ -12,8 +12,8 @@ tags:
 # Data Recovery
 
 ## Connections
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
-- [[Ledger Database_1]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `contains` [EXTRACTED]
+- [[Ledger Database]] - `contains` [EXTRACTED]
 - [[Pending Approvals]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Crash_Recovery

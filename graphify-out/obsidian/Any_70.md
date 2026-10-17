@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "cli/main.py"
-location: "L39"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/MCPPolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[dot-enforce()_1]] - `references` [EXTRACTED]
+- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[dot-from_dict()_1]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

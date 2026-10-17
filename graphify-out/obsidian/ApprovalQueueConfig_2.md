@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (2)"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # ApprovalQueueConfig
@@ -17,24 +17,24 @@ tags:
 - [[dot-test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
 - [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `uses` [INFERRED]
+- [[Any_30]] - `uses` [INFERRED]
 - [[Approval queue configuration]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
-- [[GatewayConfig]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MFAGuard_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
@@ -44,7 +44,7 @@ tags:
 - [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
-- [[TestPersistence]] - `uses` [INFERRED]
+- [[TestPersistence_1]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
@@ -59,7 +59,7 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_HangingWebSocket]] - `uses` [INFERRED]
@@ -93,4 +93,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2

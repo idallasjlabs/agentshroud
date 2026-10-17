@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L58"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_FakeRBAC
+  - graphify/EXTRACTED
+  - community/make_event
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_12]] - `references` [EXTRACTED]
+- [[dot-to_dict()_8]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/make_event

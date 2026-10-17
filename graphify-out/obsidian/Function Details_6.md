@@ -1,22 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "encrypted_store.py"
-location: "L43"
+community: "Function Details"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
-- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[KeyInjector.inject_for_request(url, headers, agent_id, key_name)]] - `contains` [EXTRACTED]
+- [[KeyLeakDetector.scan_outbound(text)]] - `contains` [EXTRACTED]
+- [[KeyVault.check_value_match(text)]] - `contains` [EXTRACTED]
+- [[KeyVault.get_audit_log()]] - `contains` [EXTRACTED]
+- [[KeyVault.get_key(name, agent_id)]] - `contains` [EXTRACTED]
+- [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
+- [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
+- [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
+- [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

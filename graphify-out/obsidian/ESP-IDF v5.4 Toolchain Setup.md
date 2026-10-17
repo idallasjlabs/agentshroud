@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Hermes Cron Jobs Reference & Recreation Guide (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3
 ---
 
 # ESP-IDF v5.4 Toolchain Setup
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ESP32-S3-BOX-3 Voice Terminal]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3

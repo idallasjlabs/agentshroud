@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (2)"
 location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_2
 ---
 
 # EgressAllowlistUpdate
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[Request model for updating egress allowlist.]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 - [[update_egress_allowlist()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_2

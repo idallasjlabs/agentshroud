@@ -12,6 +12,6 @@ tags:
 # EnvironmentGuard.scrub_command_output(output, command)
 
 ## Connections
-- [[Function Details_3]] - `contains` [EXTRACTED]
+- [[Function Details_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/env_guardpy

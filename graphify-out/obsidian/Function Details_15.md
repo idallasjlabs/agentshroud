@@ -1,21 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "version_routes.py"
-location: "L37"
+community: "apple_engine.py"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/apple_enginepy
 ---
 
 # Function Details
 
 ## Connections
-- [[downgrade_version(request)]] - `contains` [EXTRACTED]
-- [[get_version_history()_1]] - `contains` [EXTRACTED]
-- [[rollback_version(request)]] - `contains` [EXTRACTED]
-- [[upgrade_version(request)]] - `contains` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.health_check()]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.inspect(name)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.pause(name)  unpause(name)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.ps(all)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

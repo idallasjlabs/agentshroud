@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "PipelineAction"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PipelineAction
 ---
 
 # Bridge result returned by scan_response() for pipeline compatibility.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TripwireResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

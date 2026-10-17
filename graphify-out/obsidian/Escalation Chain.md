@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Incident Response Team Structure"
+community: "AgentShroud Incident Response Plan"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_Team_Structure
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Escalation Chain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response Team Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Team_Structure
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

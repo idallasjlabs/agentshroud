@@ -12,6 +12,6 @@ tags:
 # Args:             block_threshold: Score at or above which input is blocked.
 
 ## Connections
-- [[dot-__init__()_77]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_49]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextSegment

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
 - [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
-- [[sidecar.py_1]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sidecarpy

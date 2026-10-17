@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-request_approval()]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[Result of an approval request.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]

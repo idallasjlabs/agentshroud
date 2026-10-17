@@ -25,7 +25,7 @@ tags:
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[RBAC (Role-Based Access Control)]] - `references` [EXTRACTED]
-- [[Summary_5]] - `contains` [EXTRACTED]
+- [[Summary]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[Verdict ✅ CONDITIONAL GO]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]

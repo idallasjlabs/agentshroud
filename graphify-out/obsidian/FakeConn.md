@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "StdioConnection (2)"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/StdioConnection_2
 ---
 
 # FakeConn
 
 ## Connections
-- [[dot-__init__()_41]] - `method` [EXTRACTED]
-- [[dot-send_request()_1]] - `method` [EXTRACTED]
-- [[dot-stop()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-send_request()_2]] - `method` [EXTRACTED]
+- [[dot-stop()_10]] - `method` [EXTRACTED]
 - [[dot-test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
 - [[dot-test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
 - [[dot-test_generic_exception()]] - `calls` [EXTRACTED]
@@ -28,19 +28,19 @@ tags:
 - [[dot-test_timeout_error()]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[Stand-in connection injected into the proxy's pool.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/StdioConnection_2

@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "UserSessionManager"
-location: "L62"
+community: "upgrade"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_6]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_10]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/upgrade

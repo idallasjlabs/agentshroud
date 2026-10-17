@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
 community: "Error Index.md"
-location: "L1"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/Error_Indexmd
 ---
 
-# Egress Filter Errors.md
+# Egress Filter Errors
 
 ## Connections
-- [[Auth Errors]] - `semantically_similar_to` [INFERRED]
-- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
-- [[Error Index]] - `references` [EXTRACTED]
+- [[Error Index]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

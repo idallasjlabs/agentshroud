@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Browser — Secure Browser Automation (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Browser__Secure_Browser_Automation_3
 ---
 
 # Browser — Secure Browser Automation
@@ -18,13 +18,13 @@ tags:
 - [[Approval Integration_3]] - `contains` [EXTRACTED]
 - [[Audit Logging_3]] - `contains` [EXTRACTED]
 - [[Best Practices_6]] - `contains` [EXTRACTED]
-- [[Core Security Principles_4]] - `contains` [EXTRACTED]
+- [[Core Security Principles_3]] - `contains` [EXTRACTED]
 - [[Example Apple ID Creation (Semi-Automated)_3]] - `contains` [EXTRACTED]
 - [[Limitations_4]] - `contains` [EXTRACTED]
 - [[Risk Levels_3]] - `contains` [EXTRACTED]
 - [[Security Architecture_3]] - `contains` [EXTRACTED]
 - [[Security Configuration_3]] - `contains` [EXTRACTED]
 - [[Security Guarantees_4]] - `contains` [EXTRACTED]
-- [[Usage_67]] - `contains` [EXTRACTED]
+- [[Usage_71]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3

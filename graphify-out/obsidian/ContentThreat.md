@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (5)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_5
 ---
 
 # ContentThreat
 
 ## Connections
-- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
+- [[dot-__post_init__()]] - `method` [EXTRACTED]
 - [[dot-get_recent_threats()]] - `references` [EXTRACTED]
 - [[dot-sanitize_content()]] - `references` [EXTRACTED]
 - [[dot-scan_content_for_threats()]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "AgentTarget"
-location: "L152"
+community: "_FakeRBAC"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentTarget
+  - graphify/INFERRED
+  - community/_FakeRBAC
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[dot-health_check()_5]] - `references` [EXTRACTED]
-- [[AgentTarget_3]] - `uses` [INFERRED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

@@ -11,7 +11,4 @@ tags:
 
 # AGENTSHROUD_VERSION fallback to docker/versions.env
 
-## Connections
-- [[Hermes 'latest'-tag outage on prod]] - `rationale_for` [EXTRACTED]
-
 #graphify/rationale #graphify/EXTRACTED #community/AGENTSHROUD_VERSION_fallback_to_docker/versionsenv

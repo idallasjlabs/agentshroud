@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._enforce_group_workspace_access"
+community: "TelegramAPIProxy (3)"
 location: "L7753"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_enforce_group_workspace_access
+  - community/TelegramAPIProxy_3
 ---
 
 # Build a GroupWorkspaceManager from current teams/RBAC config.          Returns a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_group_workspace_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_enforce_group_workspace_access
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

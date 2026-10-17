@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "sanitizer.py"
-location: "L67"
+community: "ledger.py"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/ledgerpy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

@@ -27,8 +27,8 @@ tags:
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
-- [[Usage_52]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Usage_56]] - `contains` [EXTRACTED]
 - [[dockerREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

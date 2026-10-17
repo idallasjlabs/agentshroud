@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "plan_remediation"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/plan_remediation
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_178]] - `references` [EXTRACTED]
-- [[dot-_default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[dot-to_dict()_14]] - `references` [EXTRACTED]
+- [[load_registry()_1]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

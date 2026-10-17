@@ -12,7 +12,7 @@ tags:
 # Any
 
 ## Connections
-- [[dot-__init__()_113]] - `references` [EXTRACTED]
+- [[dot-__init__()_102]] - `references` [EXTRACTED]
 - [[dot-_check_request_rate()]] - `references` [EXTRACTED]
 - [[dot-_check_system_resources()_1]] - `references` [EXTRACTED]
 - [[dot-_check_token_usage()]] - `references` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-_test_script_permissions()]] - `references` [EXTRACTED]
 - [[dot-_test_script_syntax()]] - `references` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `references` [EXTRACTED]
-- [[dot-get_status()_1]] - `references` [EXTRACTED]
+- [[dot-get_status()]] - `references` [EXTRACTED]
 - [[dot-heartbeat_check()]] - `references` [EXTRACTED]
 - [[dot-verify_killswitch()]] - `references` [EXTRACTED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]

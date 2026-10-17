@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # Agent cannot modify system prompt files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_system_prompt_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

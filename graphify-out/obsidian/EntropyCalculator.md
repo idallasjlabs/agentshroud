@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "AlertDispatcher"
+community: "DNSFilterConfig"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/DNSFilterConfig
 ---
 
 # EntropyCalculator
@@ -47,4 +47,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/DNSFilterConfig

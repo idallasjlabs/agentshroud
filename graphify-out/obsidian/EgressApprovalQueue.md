@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # EgressApprovalQueue
 
 ## Connections
-- [[dot-__init__()_197]] - `method` [EXTRACTED]
+- [[dot-__init__()_193]] - `method` [EXTRACTED]
 - [[dot-_append_decision()]] - `method` [EXTRACTED]
 - [[dot-_assess_risk()]] - `method` [EXTRACTED]
 - [[dot-_check_existing_rule()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

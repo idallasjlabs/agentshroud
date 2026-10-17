@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
-location: "L3"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Context
 
 ## Connections
-- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

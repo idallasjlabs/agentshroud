@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Remediation"
+community: "Remediation (2)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Remediation_2
 ---
 
 # Evidence
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/Remediation_2

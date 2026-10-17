@@ -16,6 +16,6 @@ tags:
 - [[DelegationError]] - `uses` [INFERRED]
 - [[DelegationManager_1]] - `uses` [INFERRED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[mgr()_2]] - `references` [EXTRACTED]
+- [[mgr()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/DelegationManager

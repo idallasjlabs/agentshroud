@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice"
+community: "RBACConfig"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/RBACConfig
 ---
 
 # Create a temporary workspace.
@@ -15,4 +15,4 @@ tags:
 - [[dot-temp_workspace()]] - `rationale_for` [EXTRACTED]
 - [[dot-temp_workspace()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

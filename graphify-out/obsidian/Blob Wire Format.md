@@ -12,6 +12,6 @@ tags:
 # Blob Wire Format
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/encrypted_storepy

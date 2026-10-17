@@ -12,6 +12,6 @@ tags:
 # EgressFilter._record(agent_id, dest, port, action, rule)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_20]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EgressFilter

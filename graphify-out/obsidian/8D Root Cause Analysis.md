@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-eightdREADME]] - `contains` [EXTRACTED]
-- [[Purpose_15]] - `contains` [EXTRACTED]
-- [[Related Skills_4]] - `contains` [EXTRACTED]
-- [[Usage_7]] - `contains` [EXTRACTED]
+- [[Purpose_19]] - `contains` [EXTRACTED]
+- [[Related Skills_6]] - `contains` [EXTRACTED]
+- [[Usage_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-dataREADME]] - `contains` [EXTRACTED]
-- [[Purpose_129]] - `contains` [EXTRACTED]
-- [[Related Skills_97]] - `contains` [EXTRACTED]
-- [[Usage_106]] - `contains` [EXTRACTED]
+- [[Purpose_83]] - `contains` [EXTRACTED]
+- [[Related Skills_70]] - `contains` [EXTRACTED]
+- [[Usage_82]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-dataREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

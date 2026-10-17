@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "InjectionAction"
+community: "PipelineAction"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/PipelineAction
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[dot-__init__()_47]] - `method` [EXTRACTED]
+- [[dot-__init__()_184]] - `method` [EXTRACTED]
 - [[dot-analyze()]] - `method` [EXTRACTED]
 - [[dot-decode_base64_segments()]] - `method` [EXTRACTED]
 - [[dot-decode_hex()]] - `method` [EXTRACTED]
 - [[dot-decode_rot13()]] - `method` [EXTRACTED]
 - [[dot-decode_url()]] - `method` [EXTRACTED]
 - [[dot-replace_homoglyphs()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_7]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_36]] - `calls` [EXTRACTED]
 - [[dot-strip_zero_width()]] - `method` [EXTRACTED]
 - [[dot-test_config_disable_base64()]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
 - [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
@@ -41,13 +41,13 @@ tags:
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_2]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector_decodes_rot13_injection()]] - `calls` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

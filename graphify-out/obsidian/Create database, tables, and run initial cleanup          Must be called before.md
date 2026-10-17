@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Create database, tables, and run initial cleanup          Must be called before
 
 ## Connections
-- [[dot-initialize()]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

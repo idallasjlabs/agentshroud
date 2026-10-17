@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sec-defenseREADME]] - `contains` [EXTRACTED]
-- [[Purpose_135]] - `contains` [EXTRACTED]
-- [[Related Skills_103]] - `contains` [EXTRACTED]
-- [[Usage_112]] - `contains` [EXTRACTED]
+- [[Purpose_91]] - `contains` [EXTRACTED]
+- [[Related Skills_78]] - `contains` [EXTRACTED]
+- [[Usage_90]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sec-defenseREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

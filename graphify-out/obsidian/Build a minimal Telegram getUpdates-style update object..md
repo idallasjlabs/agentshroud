@@ -12,6 +12,6 @@ tags:
 # Build a minimal Telegram getUpdates-style update object.
 
 ## Connections
-- [[_make_update()_1]] - `rationale_for` [EXTRACTED]
+- [[_make_update()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

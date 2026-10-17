@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # ApprovalMode
@@ -16,9 +16,9 @@ tags:
 - [[dot-add_rule()]] - `references` [EXTRACTED]
 - [[dot-approve()]] - `references` [EXTRACTED]
 - [[dot-deny()]] - `references` [EXTRACTED]
-- [[Any_80]] - `uses` [INFERRED]
+- [[Any_4]] - `uses` [INFERRED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[FakeGroup]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

@@ -12,6 +12,6 @@ tags:
 # DriftDetector.get_alerts(container_id, unacknowledged_only, limit)
 
 ## Connections
-- [[Function Details_5]] - `contains` [EXTRACTED]
+- [[Function Details_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/drift_detectorpy

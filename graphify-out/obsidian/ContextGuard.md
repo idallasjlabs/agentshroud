@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # ContextGuard
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_131]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_20]] - `method` [EXTRACTED]
 - [[dot-_detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[dot-_detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[dot-_detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-get_attack_summary()]] - `method` [EXTRACTED]
 - [[dot-get_segment_provenance()]] - `method` [EXTRACTED]
 - [[dot-get_session_risk_level()]] - `method` [EXTRACTED]
-- [[dot-guard()_5]] - `calls` [EXTRACTED]
+- [[dot-guard()_6]] - `calls` [EXTRACTED]
 - [[dot-guard()]] - `calls` [EXTRACTED]
 - [[dot-record_segment()]] - `method` [EXTRACTED]
 - [[dot-should_block_message()]] - `method` [EXTRACTED]
@@ -36,18 +36,18 @@ tags:
 - [[dot-test_empty_inputs_everywhere()]] - `calls` [INFERRED]
 - [[dot-test_json_injection_in_context()]] - `calls` [INFERRED]
 - [[dot-test_oversized_json_payload()]] - `calls` [INFERRED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `semantically_similar_to` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestCheckMessage]] - `uses` [INFERRED]
@@ -95,11 +95,11 @@ tags:
 - [[get_context_guard()]] - `references` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[pipeline()_2]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

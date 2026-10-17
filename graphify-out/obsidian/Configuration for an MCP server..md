@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "StdioConnection"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/StdioConnection
 ---
 
 # Configuration for an MCP server.
 
 ## Connections
-- [[MCPServerConfig_2]] - `rationale_for` [EXTRACTED]
+- [[MCPServerConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

@@ -12,13 +12,13 @@ tags:
 # EgressTelegramNotifier
 
 ## Connections
-- [[dot-__init__()_127]] - `method` [EXTRACTED]
+- [[dot-__init__()_128]] - `method` [EXTRACTED]
 - [[dot-_api_url()]] - `method` [EXTRACTED]
 - [[dot-_async_send()]] - `method` [EXTRACTED]
 - [[dot-_send_request()]] - `method` [EXTRACTED]
 - [[dot-_token_for()]] - `method` [EXTRACTED]
 - [[dot-answer_callback()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()_1]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()]] - `method` [EXTRACTED]
 - [[dot-edit_decision_message()]] - `method` [EXTRACTED]
 - [[dot-get_pending_count()]] - `method` [EXTRACTED]
 - [[dot-handle_callback()]] - `method` [EXTRACTED]

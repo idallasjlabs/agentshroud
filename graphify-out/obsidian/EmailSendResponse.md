@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "create_auth_dependency"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # EmailSendResponse
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[Response from POST emailsend.]] - `rationale_for` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

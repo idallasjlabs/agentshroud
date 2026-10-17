@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L101"
+community: "AgentShroud Agentic OS"
+location: "L693"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AgentShroud_Agentic_OS
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Architecture Overview]] - `contains` [EXTRACTED]
-- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
-- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
+- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

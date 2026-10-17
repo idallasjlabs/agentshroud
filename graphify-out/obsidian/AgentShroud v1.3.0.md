@@ -1,20 +1,20 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "TestCrossBotTrustPivot"
-location: "L3"
+community: "AgentShroud v0.9.0"
+location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCrossBotTrustPivot
+  - community/AgentShroud_v090
 ---
 
 # AgentShroud v1.3.0
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
-- [[Integration Guide]] - `contains` [EXTRACTED]
-- [[Overview_1]] - `contains` [EXTRACTED]
-- [[Overview_2]] - `contains` [EXTRACTED]
+- [[Adversarial Red-Team  Blue-Team Assessment]] - `contains` [EXTRACTED]
+- [[Executive Summary_2]] - `contains` [EXTRACTED]
+- [[How to regenerate this report accurately]] - `contains` [EXTRACTED]
+- [[Test Coverage Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCrossBotTrustPivot
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # EgressScope
@@ -15,14 +15,14 @@ tags:
 - [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
 - [[dot-_save_rules()]] - `calls` [EXTRACTED]
 - [[dot-add_rule()]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_10]] - `method` [EXTRACTED]
+- [[dot-from_dict()_11]] - `method` [EXTRACTED]
 - [[dot-get_rules_for_user()]] - `calls` [EXTRACTED]
 - [[dot-matches()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_17]] - `method` [EXTRACTED]
+- [[dot-to_dict()_16]] - `method` [EXTRACTED]
 - [[Defines who an egress rule applies to.      kind values       all   — applies]] - `rationale_for` [EXTRACTED]
 - [[EgressRule]] - `references` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[override_egress_rule()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

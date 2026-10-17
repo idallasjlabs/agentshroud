@@ -12,7 +12,7 @@ tags:
 # Colima VM default-route auto-heal (step 2)
 
 ## Connections
-- [[check()_4]] - `references` [EXTRACTED]
+- [[check()_5]] - `references` [EXTRACTED]
 - [[gateway service (dev override)]] - `shares_data_with` [INFERRED]
 
 #graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

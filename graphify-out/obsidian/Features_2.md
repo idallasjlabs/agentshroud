@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Features"
-location: "L28"
+community: "DOCKER-VPN-NETWORKING.md"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # Features
 
 ## Connections
-- [[Approval Queue_1]] - `contains` [EXTRACTED]
-- [[Authentication_2]] - `contains` [EXTRACTED]
-- [[Data Ledger]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
-- [[Ingest API]] - `contains` [EXTRACTED]
-- [[PII Sanitizer]] - `contains` [EXTRACTED]
+- [[Action Feed]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Memory Browser]] - `contains` [EXTRACTED]
+- [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

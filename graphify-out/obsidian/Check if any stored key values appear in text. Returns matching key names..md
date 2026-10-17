@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "rationale"
-community: "AgentTarget"
+community: "AlertDispatcher (3)"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AlertDispatcher_3
 ---
 
 # Check if any stored key values appear in text. Returns matching key names.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_value_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

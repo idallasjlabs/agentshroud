@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/daily-memory-journal.txt"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "Report Delivery Format Instructions (2)"
 location: "L1-L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/Report_Delivery_Format_Instructions_2
 ---
 
 # Daily Memory Journal Job (nightly memory consolidation)
@@ -17,4 +17,4 @@ tags:
 - [[Zero Hallucinations On Errors Policy]] - `implements` [EXTRACTED]
 - [[memorycontext.md Continuity File (50 lines)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions_2

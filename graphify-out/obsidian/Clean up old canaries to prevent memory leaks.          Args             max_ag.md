@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # Clean up old canaries to prevent memory leaks.          Args:             max_ag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-cleanup_expired_canaries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

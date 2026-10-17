@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # Context guard should detect tool result manipulation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

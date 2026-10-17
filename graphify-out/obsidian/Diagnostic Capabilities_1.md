@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (2)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_2
 ---
 
 # Diagnostic Capabilities
@@ -18,4 +18,4 @@ tags:
 - [[4. Test AWS API MCP Server_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_2

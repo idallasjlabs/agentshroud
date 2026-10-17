@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "TestAggregateResults"
-location: "L516"
+community: "ToolResultSanitizer"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/ToolResultSanitizer
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[dot-__init__()_30]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

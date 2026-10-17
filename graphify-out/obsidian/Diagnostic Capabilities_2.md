@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
 ---
 
 # Diagnostic Capabilities
@@ -18,4 +18,4 @@ tags:
 - [[4. Test AWS API MCP Server_2]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3

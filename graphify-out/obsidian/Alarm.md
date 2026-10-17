@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "TestToolChainAnalyzer"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/TestToolChainAnalyzer
 ---
 
 # Alarm
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

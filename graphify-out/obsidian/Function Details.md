@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "EgressFilter"
-location: "L46"
+community: "TrustManager"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/TrustManager
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
-- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
-- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
-- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
+- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/TrustManager

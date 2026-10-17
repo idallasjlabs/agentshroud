@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
 community: "_FakeRBAC"
-location: "L175"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,15 +12,11 @@ tags:
 # ContributorRecord
 
 ## Connections
-- [[dot-test_construction()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[ContributorManager]] - `uses` [INFERRED]
+- [[dot-_build_record()]] - `references` [EXTRACTED]
+- [[dot-get_contributor()]] - `references` [EXTRACTED]
+- [[dot-list_contributors()]] - `references` [EXTRACTED]
 - [[ContributorRecord]] - `uses` [INFERRED]
-- [[Role_21]] - `conceptually_related_to` [AMBIGUOUS]
-- [[UserRole_1]] - `uses` [INFERRED]
-- [[_loadContributors()]] - `shares_data_with` [INFERRED]
-- [[contributors.py]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[Platform]] - `uses` [INFERRED]
+- [[UserRole]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

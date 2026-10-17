@@ -85,6 +85,13 @@
       "files": 6,
       "subagent_tokens_total": 280734,
       "note": "incremental --update at e926dd6184; Claude subagent usage reported as total only (no input/output split)"
+    },
+    {
+      "date": "2026-10-17T14:35:01.153036+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 4,
+      "note": "subagent semantic extraction ~95.5k tokens total (split not reported)"
     }
   ],
   "total_input_tokens": 3918694,

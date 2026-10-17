@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
+community: "Skill: Technical Illustrator (TI) (3)"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Skill_Technical_Illustrator_TI_3
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_3

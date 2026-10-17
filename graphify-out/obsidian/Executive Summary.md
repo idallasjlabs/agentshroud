@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
+source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "AgentShroud (system, C4 context)"
-location: "L3"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

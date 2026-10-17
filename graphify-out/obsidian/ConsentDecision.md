@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # ConsentDecision
@@ -46,4 +46,4 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

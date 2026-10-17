@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "triage-cve-mitigations.py"
 location: "56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/triage-cve-mitigationspy
 ---
 
 # Dev->prod handoff contract via /Users/Shared/agentshroud-sunday/dev-result-YYYY-MM-DD.json
@@ -17,4 +17,4 @@ tags:
 - [[Sunday upgrade mission every component in dev and prod to latest stable, resolve every finding, dev first]] - `rationale_for` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy

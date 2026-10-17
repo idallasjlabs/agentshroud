@@ -12,6 +12,6 @@ tags:
 # EgressFilter.check(agent_id, destination, port)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_20]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EgressFilter

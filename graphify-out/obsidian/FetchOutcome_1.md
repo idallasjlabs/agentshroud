@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "api.py"
+community: "api.py (2)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # FetchOutcome
@@ -22,4 +22,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/apipy_2

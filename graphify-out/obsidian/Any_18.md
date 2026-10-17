@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "ResourceGuard"
-location: "L102"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ResourceGuard
+  - graphify/INFERRED
+  - community/ContextSegment
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-__init__()_48]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/ContextSegment

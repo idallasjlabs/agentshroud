@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Error Index.md"
-location: "L9"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Core Security Principles
 
 ## Connections
-- [[1. Least Privilege]] - `contains` [EXTRACTED]
-- [[2. Defense in Depth]] - `contains` [EXTRACTED]
-- [[3. Explicit Over Implicit]] - `contains` [EXTRACTED]
-- [[4. Fail Secure]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

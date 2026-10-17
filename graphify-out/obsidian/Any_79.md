@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "First Time Setup"
-location: "L58"
+community: "MultiTurnTracker (2)"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/MultiTurnTracker_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
-- [[dot-_log_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_notification()]] - `references` [EXTRACTED]
-- [[dot-dispatch()]] - `references` [EXTRACTED]
-- [[dot-get_digest()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_18]] - `references` [EXTRACTED]
+- [[dot-__init__()_189]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker_2

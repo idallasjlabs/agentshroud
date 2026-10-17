@@ -12,13 +12,13 @@ tags:
 # DataExfilVolumeGuard
 
 ## Connections
-- [[dot-__init__()_71]] - `method` [EXTRACTED]
+- [[dot-__init__()_79]] - `method` [EXTRACTED]
 - [[dot-_size()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_3]] - `method` [EXTRACTED]
+- [[dot-get_stats()_6]] - `method` [EXTRACTED]
 - [[dot-observe()]] - `method` [EXTRACTED]
-- [[dot-reset_session()]] - `method` [EXTRACTED]
+- [[dot-reset_session()_1]] - `method` [EXTRACTED]
 - [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_1]] - `conceptually_related_to` [EXTRACTED]
+- [[EgressFilter_2]] - `conceptually_related_to` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[test_cumulative_is_per_session()]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `imports` [EXTRACTED]
 - [[test_disabled_never_blocks()]] - `calls` [EXTRACTED]
-- [[test_get_stats()_1]] - `calls` [EXTRACTED]
+- [[test_get_stats()]] - `calls` [EXTRACTED]
 - [[test_pipeline_allows_small_response()]] - `calls` [EXTRACTED]
 - [[test_pipeline_blocks_and_downstream_not_reached()]] - `calls` [EXTRACTED]
 - [[test_reset_session_clears_state()]] - `calls` [EXTRACTED]

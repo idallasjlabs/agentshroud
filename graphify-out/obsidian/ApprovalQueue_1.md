@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `uses` [INFERRED]
 - [[MFAResult]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]

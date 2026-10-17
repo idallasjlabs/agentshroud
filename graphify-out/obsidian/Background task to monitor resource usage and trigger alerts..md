@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "AlertDispatcher (2)"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher_2
 ---
 
 # Background task to monitor resource usage and trigger alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_monitor_resources()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

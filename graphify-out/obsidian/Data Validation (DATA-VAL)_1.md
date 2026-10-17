@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "Data Validation (DATA-VAL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_88]] - `contains` [EXTRACTED]
-- [[Related Skills_67]] - `contains` [EXTRACTED]
-- [[Usage_78]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-dataREADME]] - `contains` [EXTRACTED]
+- [[Purpose_44]] - `contains` [EXTRACTED]
+- [[Related Skills_31]] - `contains` [EXTRACTED]
+- [[Usage_35]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-dataREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

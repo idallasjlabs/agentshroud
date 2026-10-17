@@ -1,18 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ProxyAction"
+community: "create_auth_dependency"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ProxyAction
+  - graphify/INFERRED
+  - community/create_auth_dependency
 ---
 
 # Any
 
 ## Connections
-- [[dot-_audit()]] - `references` [EXTRACTED]
-- [[dot-get_stats()]] - `references` [EXTRACTED]
-- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_3]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/create_auth_dependency

@@ -18,10 +18,10 @@ tags:
 - [[CREDENTIAL-SECURITY-POLICY]] - `contains` [EXTRACTED]
 - [[Emergency Override]] - `contains` [EXTRACTED]
 - [[FAQ_1]] - `contains` [EXTRACTED]
-- [[Implementation Status_2]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Implementation Strategy]] - `contains` [EXTRACTED]
 - [[Recommended Configuration (All 4 Options Combined)]] - `contains` [EXTRACTED]
 - [[Security Requirement]] - `contains` [EXTRACTED]
-- [[Summary_16]] - `contains` [EXTRACTED]
+- [[Summary_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implementation_Status

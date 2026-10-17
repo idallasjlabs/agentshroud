@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
-location: "L49"
+community: "prompt_guard.py.md"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requirementstxt
+  - community/prompt_guardpymd
 ---
 
 # Configuration
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

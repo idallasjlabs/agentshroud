@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "InjectionAction"
+community: "MiddlewareManager (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/MiddlewareManager_2
 ---
 
 # AgentShroud Blue Team Security Auditor (SEC-DEFENSE)
@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `conceptually_related_to` [INFERRED]
 - [[Blue Team Security Auditor README]] - `references` [EXTRACTED]
-- [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
+- [[STPA-Sec Methodology]] - `references` [EXTRACTED]
 - [[SecureClaw Security Review (SEC)]] - `semantically_similar_to` [AMBIGUOUS]
 - [[Steve Hay Adversary Model]] - `references` [EXTRACTED]
 - [[approval_hardening.py]] - `references` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2

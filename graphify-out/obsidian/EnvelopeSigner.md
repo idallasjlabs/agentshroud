@@ -12,18 +12,18 @@ tags:
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_168]] - `method` [EXTRACTED]
+- [[dot-__init__()_70]] - `method` [EXTRACTED]
 - [[dot-_compute_signature()]] - `method` [EXTRACTED]
 - [[dot-sign()]] - `method` [EXTRACTED]
 - [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
 - [[dot-test_different_signers_same_key_verify()]] - `calls` [EXTRACTED]
 - [[dot-test_outbound_response_is_signed_and_verifiable()]] - `calls` [EXTRACTED]
-- [[dot-verify()_1]] - `method` [EXTRACTED]
+- [[dot-verify()]] - `method` [EXTRACTED]
 - [[dot-wrap_system_prompt()]] - `method` [EXTRACTED]
 - [[dot-wrap_tool_result()]] - `method` [EXTRACTED]
 - [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - `rationale_for` [EXTRACTED]
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]

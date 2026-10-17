@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
+community: "AgentShroud Hermes — System Identity (2)"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/AgentShroud_Hermes__System_Identity_2
 ---
 
 # AgentShroud Hermes — System Identity
@@ -20,4 +20,4 @@ tags:
 - [[Your Role_1]] - `contains` [EXTRACTED]
 - [[openclawagentshermes-soul]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity_2

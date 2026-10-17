@@ -1,22 +1,22 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Browser Extension"
-location: "L47"
+community: "Features"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Features
 ---
 
 # Features
 
 ## Connections
-- [[1. URL Forwarder]] - `contains` [EXTRACTED]
-- [[2. Page Clipper]] - `contains` [EXTRACTED]
-- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
-- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
-- [[5. Reading List Queue]] - `contains` [EXTRACTED]
-- [[Browser Extension]] - `contains` [EXTRACTED]
+- [[Approval Queue_1]] - `contains` [EXTRACTED]
+- [[Authentication_3]] - `contains` [EXTRACTED]
+- [[Data Ledger]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[Ingest API]] - `contains` [EXTRACTED]
+- [[PII Sanitizer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Features

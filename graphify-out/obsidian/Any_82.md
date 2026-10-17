@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L210"
+community: "TestOutboundInfoFilter"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/TestOutboundInfoFilter
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_11]] - `references` [EXTRACTED]
+- [[dot-__init__()_197]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
+- [[dot-get_stats()_19]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Container for application-wide state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AppState]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

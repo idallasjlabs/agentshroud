@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L25"
+community: "SlackAPIProxy"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/SlackAPIProxy
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

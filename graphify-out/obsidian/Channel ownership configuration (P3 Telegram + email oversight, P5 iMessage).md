@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "create_auth_dependency"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/create_auth_dependency
 ---
 
 # Channel ownership configuration (P3: Telegram + email oversight, P5: iMessage)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ChannelsConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

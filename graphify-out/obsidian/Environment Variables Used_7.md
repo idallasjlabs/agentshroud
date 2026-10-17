@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "router.py"
-location: "L67"
+community: "main.py"
+location: "L433"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/mainpy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/mainpy

@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L67"
+community: "test_dashboard_endpoints.py"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/test_dashboard_endpointspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-recent()]] - `references` [EXTRACTED]
-- [[dot-tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_10]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

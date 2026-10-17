@@ -12,6 +12,6 @@ tags:
 # Audit trail for MCP tool calls, integrated with SHA-256 hash chain.
 
 ## Connections
-- [[MCPAuditTrail]] - `rationale_for` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Content hash should be a valid SHA-256 hex digest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hash_is_sha256()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

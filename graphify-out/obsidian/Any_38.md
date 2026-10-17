@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "MCPInspector"
-location: "L140"
+community: "ServiceManager"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/ServiceManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[dot-__init__()_104]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

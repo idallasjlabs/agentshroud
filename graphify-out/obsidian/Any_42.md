@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "DockerEngine"
-location: "L139"
+community: "TestClassify"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DockerEngine
+  - graphify/EXTRACTED
+  - community/TestClassify
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/TestClassify

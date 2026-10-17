@@ -19,6 +19,6 @@ tags:
 - [[Remediation_6]] - `contains` [EXTRACTED]
 - [[Root Cause_5]] - `contains` [EXTRACTED]
 - [[Severity_8]] - `contains` [EXTRACTED]
-- [[Verification_10]] - `contains` [EXTRACTED]
+- [[Verification_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode

@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Path"
-location: "L458"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L269"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Path
+  - graphify/EXTRACTED
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Path
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L82"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/GroupApprovalRouter
 ---
 
 # Any
 
 ## Connections
-- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
-- [[dot-record_inbound()]] - `references` [EXTRACTED]
+- [[dot-__init__()_46]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

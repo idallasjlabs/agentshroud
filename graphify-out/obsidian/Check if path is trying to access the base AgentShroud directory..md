@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (3)"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_3
 ---
 
 # Check if path is trying to access the base AgentShroud directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_base_directory_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

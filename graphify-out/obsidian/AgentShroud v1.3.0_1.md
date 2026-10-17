@@ -1,20 +1,20 @@
 ---
-source_file: "docs/testing/test-coverage-report.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "AgentShroud v0.9.0"
-location: "L2"
+community: "Integration Guide"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Integration_Guide
 ---
 
 # AgentShroud v1.3.0
 
 ## Connections
-- [[Adversarial Red-Team  Blue-Team Assessment]] - `contains` [EXTRACTED]
-- [[Executive Summary_3]] - `contains` [EXTRACTED]
-- [[How to regenerate this report accurately]] - `contains` [EXTRACTED]
-- [[Test Coverage Report]] - `contains` [EXTRACTED]
+- [[API Reference]] - `contains` [EXTRACTED]
+- [[Integration Guide]] - `contains` [EXTRACTED]
+- [[Overview_18]] - `contains` [EXTRACTED]
+- [[Overview_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "egress_retry.py"
-location: "L75"
+community: "test_agent_cve_registry.py"
+location: "L18530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/test_agent_cve_registrypy
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

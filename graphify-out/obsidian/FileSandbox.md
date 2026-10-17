@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # FileSandbox
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_60]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_17]] - `method` [EXTRACTED]
 - [[dot-_check()]] - `method` [EXTRACTED]
 - [[dot-_detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[dot-_is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-check_read()]] - `method` [EXTRACTED]
 - [[dot-check_write()]] - `method` [EXTRACTED]
 - [[dot-detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_5]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_6]] - `method` [EXTRACTED]
 - [[dot-get_security_violations()]] - `method` [EXTRACTED]
 - [[dot-get_temp_files()]] - `method` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -33,16 +33,16 @@ tags:
 - [[dot-test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
 - [[dot-test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[dot-test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[Large-write-then-network-activity stagingexfiltration pattern detection]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Privilege Separation File Sandbox Tests]] - `references` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Round 2 Security Hardening Tests]] - `references` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
@@ -89,13 +89,13 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[sandbox()]] - `calls` [EXTRACTED]
-- [[strict_sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()_1]] - `calls` [EXTRACTED]
+- [[strict_sandbox()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
-location: "L10"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft

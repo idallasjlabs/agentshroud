@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "MCPPermissionManager"
+community: "test_soc_realtime_coverage.py"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # GatewayClient
@@ -23,4 +23,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

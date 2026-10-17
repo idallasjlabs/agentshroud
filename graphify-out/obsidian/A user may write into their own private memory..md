@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "RBACConfig"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/RBACConfig
 ---
 
 # A user may write into their own private memory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_self_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

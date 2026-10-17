@@ -1,25 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Function Details"
-location: "L40"
+community: "Function Details (6)"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_6
 ---
 
 # Function Details
 
 ## Connections
-- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - `contains` [EXTRACTED]
-- [[SessionManager.cleanup_expired()]] - `contains` [EXTRACTED]
-- [[SessionManager.create_session(ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.destroy_session(session_id)]] - `contains` [EXTRACTED]
-- [[SessionManager.register_event_source(session_id, source)]] - `contains` [EXTRACTED]
-- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.deregister(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_active(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_flagged_events(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.kill_all(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_6

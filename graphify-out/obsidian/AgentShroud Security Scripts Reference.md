@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Automation Examples]] - `contains` [EXTRACTED]
 - [[Best Practices_7]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
 - [[Monitoring Integration]] - `contains` [EXTRACTED]
 - [[SECURITY_SCRIPTS_REFERENCE]] - `contains` [EXTRACTED]
 - [[Script Permissions]] - `contains` [EXTRACTED]

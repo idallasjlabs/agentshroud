@@ -18,6 +18,6 @@ tags:
 - [[MCPInspector._should_block(findings)]] - `contains` [EXTRACTED]
 - [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - `contains` [EXTRACTED]
 - [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - `contains` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

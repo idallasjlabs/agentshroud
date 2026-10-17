@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "diagrams/README.md"
+community: "diagrams/README.md (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/diagrams/READMEmd_2
 ---
 
 # 06-operations.md
@@ -18,4 +18,4 @@ tags:
 - [[Runbook  Decision Tree — On-Call Logic]] - `conceptually_related_to` [EXTRACTED]
 - [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd_2

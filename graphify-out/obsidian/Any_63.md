@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "MiddlewareManager"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - graphify/INFERRED
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action_2]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

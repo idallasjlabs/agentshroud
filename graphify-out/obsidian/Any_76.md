@@ -1,22 +1,30 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L183"
+community: "PipelineAction"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/PipelineAction
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_179]] - `references` [EXTRACTED]
-- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[dot-score_reversibility()]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()_1]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_18]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
+- [[dot-to_dict()_15]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

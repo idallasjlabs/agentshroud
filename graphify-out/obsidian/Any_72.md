@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "UserSessionManager"
-location: "L369"
+community: "tts.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/ttspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/ttspy

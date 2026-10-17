@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A verified source backing a competitor claim.      A Citation is only created by]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[Citation]] - `uses` [INFERRED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport]] - `uses` [INFERRED]

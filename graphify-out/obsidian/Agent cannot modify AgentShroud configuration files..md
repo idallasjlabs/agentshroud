@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # Agent cannot modify AgentShroud configuration files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConfigurationProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

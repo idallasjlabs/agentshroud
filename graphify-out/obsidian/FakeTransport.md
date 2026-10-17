@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-ok()_1]] - `method` [EXTRACTED]
-- [[dot-request()_1]] - `method` [EXTRACTED]
+- [[dot-request()]] - `method` [EXTRACTED]
 - [[dot-with()]] - `method` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[Option]] - `references` [EXTRACTED]
 - [[RefCell]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 

@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L73"
+community: "RBACConfig"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/RBACConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_93]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_5]] - `references` [EXTRACTED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_3]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

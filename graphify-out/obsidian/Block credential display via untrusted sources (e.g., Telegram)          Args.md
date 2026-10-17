@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L418"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # Block credential display via untrusted sources (e.g., Telegram)          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-block_credentials()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

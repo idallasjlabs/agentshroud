@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L487"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # Clean up old session data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (5)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_5
 ---
 
 # ContentThreatType
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_5

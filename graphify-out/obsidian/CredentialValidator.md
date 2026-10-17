@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "UserSessionManager"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyRotationManager
+  - community/UserSessionManager
 ---
 
 # CredentialValidator
@@ -34,4 +34,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationManager
+#graphify/code #graphify/INFERRED #community/UserSessionManager

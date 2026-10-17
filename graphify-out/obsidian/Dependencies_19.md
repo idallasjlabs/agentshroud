@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "prompt_guard.py.md"
-location: "L106"
+community: "🛡️ AgentShroud Release Plan"
+location: "L177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Dependencies
 
 ## Connections
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

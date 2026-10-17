@@ -12,9 +12,9 @@ tags:
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_39]] - `contains` [EXTRACTED]
-- [[Related Skills_28]] - `contains` [EXTRACTED]
-- [[Usage_31]] - `contains` [EXTRACTED]
+- [[Purpose_49]] - `contains` [EXTRACTED]
+- [[Related Skills_36]] - `contains` [EXTRACTED]
+- [[Usage_40]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mcREADME]] - `contains` [EXTRACTED]
 

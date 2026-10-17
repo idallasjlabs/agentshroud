@@ -12,12 +12,12 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()_129]] - `method` [EXTRACTED]
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_116]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
-- [[dot-is_owner()_3]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-is_owner()_1]] - `method` [EXTRACTED]
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]

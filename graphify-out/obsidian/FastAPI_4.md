@@ -1,18 +1,21 @@
 ---
-source_file: "voice_gateway/server.py"
-type: "code"
-community: "test_voice_latency_guard.py"
-location: "L357"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "All Dependencies.md (2)"
+location: "L9"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/All_Dependenciesmd_2
 ---
 
 # FastAPI
 
 ## Connections
-- [[_lifespan()]] - `references` [EXTRACTED]
-- [[server.py]] - `imports_from` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_153]] - `contains` [EXTRACTED]
+- [[Related Notes_55]] - `contains` [EXTRACTED]
+- [[Where Used_4]] - `contains` [EXTRACTED]
+- [[fastapi_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2

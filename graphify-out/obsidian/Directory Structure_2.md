@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "InjectionAction"
-location: "L5"
+community: "pytest.ini"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/pytestini
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/pytestini

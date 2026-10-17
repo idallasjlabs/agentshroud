@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "AlertDispatcher (2)"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher_2
 ---
 
 # Add a callback function to be called when resource alerts are triggered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-add_alert_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

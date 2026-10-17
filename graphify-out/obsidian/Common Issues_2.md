@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L642"
+community: "TestSSRFDetection (4)"
+location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/TestSSRFDetection_4
 ---
 
 # Common Issues
 
 ## Connections
-- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_4

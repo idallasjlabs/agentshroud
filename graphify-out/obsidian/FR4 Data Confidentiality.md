@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "TestOutboundInfoFilter"
+community: "AlertDispatcher (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/AlertDispatcher_3
 ---
 
 # FR4: Data Confidentiality
@@ -14,10 +14,10 @@ tags:
 - [[Credential Flow Diagram (op-proxy)]] - `conceptually_related_to` [INFERRED]
 - [[Gateway Password Moved to Docker Secrets]] - `conceptually_related_to` [INFERRED]
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
-- [[encrypted_store.py]] - `references` [EXTRACTED]
+- [[encrypted_store.py_2]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[key_vault.py]] - `references` [EXTRACTED]
+- [[key_vault.py_2]] - `references` [EXTRACTED]
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/concept #graphify/EXTRACTED #community/AlertDispatcher_3

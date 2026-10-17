@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "ServiceManager"
-location: "L25"
+community: "egress_retry.py"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/egress_retrypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_182]] - `references` [EXTRACTED]
-- [[dot-_describe_service()]] - `references` [EXTRACTED]
-- [[dot-_get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/egress_retrypy

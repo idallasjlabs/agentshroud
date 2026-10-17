@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (6)"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_6
 ---
 
 # FileIntegrityRecord
@@ -20,4 +20,4 @@ tags:
 - [[Record of a file's integrity state.]] - `rationale_for` [EXTRACTED]
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
-location: "L36"
+community: "Features"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requirementstxt
+  - community/Features
 ---
 
 # Authentication
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
+#graphify/document #graphify/EXTRACTED #community/Features

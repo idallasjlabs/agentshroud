@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "EgressFilter"
-location: "L70"
+community: "iCloud Services"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/iCloud_Services
 ---
 
 # Configuration
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

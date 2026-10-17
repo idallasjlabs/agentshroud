@@ -1,19 +1,18 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "rationale"
-community: "AgentTarget"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "docker/scripts/colima-health-check.sh:470"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/AgentTarget
+  - graphify/EXTRACTED
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # Container net-diag expected-failure baseline (step 5)
 
 ## Connections
-- [[check()_4]] - `references` [EXTRACTED]
+- [[check()_5]] - `references` [EXTRACTED]
 - [[openclaw service (dev override)]] - `shares_data_with` [INFERRED]
-- [[sunday-upgrade-apply.sh no-op gate fixes (CLAUDE.md 0.0)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

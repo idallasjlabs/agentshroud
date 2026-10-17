@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "PodmanEngine"
-location: "L159"
+community: "ContainerEngine"
+location: "L123"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PodmanEngine
+  - graphify/EXTRACTED
+  - community/ContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[dot-inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

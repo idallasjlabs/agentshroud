@@ -12,9 +12,9 @@ tags:
 # AsyncMock
 
 ## Connections
-- [[dot-__call__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_34]] - `method` [EXTRACTED]
-- [[dot-__init__()_33]] - `calls` [INFERRED]
+- [[dot-__call__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_124]] - `method` [EXTRACTED]
+- [[dot-__init__()_123]] - `calls` [INFERRED]
 - [[dot-_handler()]] - `calls` [INFERRED]
 - [[dot-_mock_request()]] - `calls` [INFERRED]
 - [[dot-_passthrough_pii()_1]] - `calls` [INFERRED]
@@ -169,7 +169,7 @@ tags:
 - [[_make_integrity_pipeline()]] - `calls` [INFERRED]
 - [[_make_mock_app_state()]] - `calls` [INFERRED]
 - [[_make_pipeline()_1]] - `calls` [INFERRED]
-- [[_make_pipeline()_4]] - `calls` [INFERRED]
+- [[_make_pipeline()]] - `calls` [INFERRED]
 - [[_make_pipeline()_2]] - `calls` [INFERRED]
 - [[_make_signer_pipeline()]] - `calls` [INFERRED]
 - [[_make_stream_app_state()]] - `calls` [INFERRED]
@@ -177,8 +177,8 @@ tags:
 - [[_make_ws()]] - `calls` [INFERRED]
 - [[_mock_ws()]] - `calls` [INFERRED]
 - [[_run_disconnect_test()]] - `calls` [INFERRED]
-- [[client()_2]] - `calls` [INFERRED]
-- [[client()_6]] - `calls` [INFERRED]
+- [[client()]] - `calls` [INFERRED]
+- [[client()_3]] - `calls` [INFERRED]
 - [[test_approvals_approve_and_deny()]] - `calls` [INFERRED]
 - [[test_approvals_approve_raises()]] - `calls` [INFERRED]
 - [[test_audit_export_cef()]] - `calls` [INFERRED]

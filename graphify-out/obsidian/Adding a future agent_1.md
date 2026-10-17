@@ -12,6 +12,6 @@ tags:
 # Adding a future agent
 
 ## Connections
-- [[Usage_72]] - `contains` [EXTRACTED]
+- [[Usage_76]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

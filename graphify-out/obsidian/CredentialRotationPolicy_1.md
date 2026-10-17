@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[dot-add_custom_policy()]] - `references` [EXTRACTED]
-- [[dot-get_policy()_1]] - `references` [EXTRACTED]
+- [[dot-get_policy()]] - `references` [EXTRACTED]
 - [[dot-test_add_custom_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_default_policy_values()]] - `calls` [EXTRACTED]
 - [[dot-test_should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-test_should_warn()]] - `calls` [EXTRACTED]
-- [[Any_30]] - `uses` [INFERRED]
+- [[Any_35]] - `uses` [INFERRED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -32,7 +32,7 @@ tags:
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
-- [[datetime_3]] - `uses` [INFERRED]
+- [[datetime_4]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]

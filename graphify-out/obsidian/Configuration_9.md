@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L148"
+community: "pipeline.py — Security Pipeline"
+location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # Configuration
 
 ## Connections
-- [[Constructor dependencies (dependency injection)]] - `contains` [EXTRACTED]
-- [[Environment variables_4]] - `contains` [EXTRACTED]
-- [[Header pass-through policy]] - `contains` [EXTRACTED]
-- [[Retry policy (`_forward_request`)]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
+- [[Key Thresholds]] - `contains` [EXTRACTED]
+- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
+- [[Owner Exemption]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

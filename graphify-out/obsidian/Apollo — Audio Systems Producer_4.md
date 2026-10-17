@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Technical Specification"
+community: "Technical Specification (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Technical_Specification_2
 ---
 
 # Apollo — Audio Systems Producer
@@ -20,4 +20,4 @@ tags:
 - [[openclawskillsi-apolloSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification_2

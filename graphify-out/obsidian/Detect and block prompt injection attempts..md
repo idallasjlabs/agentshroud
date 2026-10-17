@@ -12,6 +12,6 @@ tags:
 # Detect and block prompt injection attempts.
 
 ## Connections
-- [[PromptGuard]] - `rationale_for` [EXTRACTED]
+- [[PromptGuard_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextSegment

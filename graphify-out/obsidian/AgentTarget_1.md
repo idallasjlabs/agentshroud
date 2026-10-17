@@ -1,17 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
-type: "document"
-community: "models.py"
-location: "L66"
+source_file: "gateway/ingest_api/router.py"
+type: "code"
+community: "AgentTarget (2)"
+location: "L116"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/AgentTarget_2
 ---
 
 # AgentTarget
 
 ## Connections
-- [[Model Details]] - `contains` [EXTRACTED]
+- [[dot-__init__()_122]] - `calls` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_2]] - `references` [EXTRACTED]
+- [[dot-list_targets()]] - `references` [EXTRACTED]
+- [[dot-register_bots()]] - `calls` [EXTRACTED]
+- [[dot-resolve_target()]] - `references` [EXTRACTED]
+- [[AgentTarget_2]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

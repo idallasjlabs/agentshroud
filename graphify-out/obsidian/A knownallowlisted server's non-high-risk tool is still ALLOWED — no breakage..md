@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "MCPPolicyEngine (2)"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPolicyEngine_2
 ---
 
 # A known/allowlisted server's non-high-risk tool is still ALLOWED — no breakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_engine_allows_known_server_under_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2

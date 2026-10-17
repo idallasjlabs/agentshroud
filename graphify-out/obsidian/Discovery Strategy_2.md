@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
+community: "Phase 1 — Raw Collection (5)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Phase_1__Raw_Collection_5
 ---
 
 # Discovery Strategy
@@ -20,4 +20,4 @@ tags:
 - [[Phase 4 — Enrichment_2]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection_5

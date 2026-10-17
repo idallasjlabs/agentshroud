@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "dns_filter.py"
-location: "L44"
+community: "prompt_guard.py.md"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/prompt_guardpymd
 ---
 
 # Function Details
 
 ## Connections
-- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
-- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
-- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - `contains` [EXTRACTED]
+- [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
+- [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
+- [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

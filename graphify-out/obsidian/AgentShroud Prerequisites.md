@@ -12,8 +12,8 @@ tags:
 # AgentShroud Prerequisites
 
 ## Connections
-- [[Overview_12]] - `contains` [EXTRACTED]
-- [[PREREQUISITES_15]] - `contains` [EXTRACTED]
+- [[Overview_11]] - `contains` [EXTRACTED]
+- [[PREREQUISITES_14]] - `contains` [EXTRACTED]
 - [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 - [[✅ Your Current Setup Status]] - `contains` [EXTRACTED]
 - [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]

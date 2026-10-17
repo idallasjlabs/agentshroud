@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-macos-rounded-1024x1024.png"
 type: "image"
-community: "egress_filter.py"
+community: "egress_filter.py (3)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/egress_filterpy
+  - community/egress_filterpy_3
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle)
@@ -28,4 +28,4 @@ tags:
 - [[SSH Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[Trust Manager Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/egress_filterpy
+#graphify/image #graphify/INFERRED #community/egress_filterpy_3

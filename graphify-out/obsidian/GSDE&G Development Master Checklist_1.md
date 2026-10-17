@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
+community: "GSDE&G Development Master Checklist (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/GSDEG_Development_Master_Checklist_2
 ---
 
 # GSDE&G Development Master Checklist
@@ -25,4 +25,4 @@ tags:
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2

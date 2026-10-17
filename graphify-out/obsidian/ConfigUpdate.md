@@ -12,7 +12,7 @@ tags:
 # ConfigUpdate
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]

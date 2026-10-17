@@ -1,25 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "http_proxy.py"
-location: "L68"
+community: "env_guard.py"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/env_guardpy
 ---
 
 # Function Details
 
 ## Connections
-- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy.get_stats()`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy.stop()`]] - `contains` [EXTRACTED]
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - `contains` [EXTRACTED]
+- [[check_command(cmd)]] - `contains` [EXTRACTED]
+- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[scrub_output(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

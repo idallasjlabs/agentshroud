@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "FalcoAlertWatcher (2)"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/FalcoAlertWatcher_2
 ---
 
 # FalcoAlertWatcher
 
 ## Connections
-- [[dot-__init__()_167]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `method` [EXTRACTED]
 - [[dot-_handle_critical()]] - `method` [EXTRACTED]
 - [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
-- [[dot-run()_6]] - `method` [EXTRACTED]
+- [[dot-run()_5]] - `method` [EXTRACTED]
 - [[dot-stop()_12]] - `method` [EXTRACTED]
 - [[SecurityPipeline_2]] - `conceptually_related_to` [INFERRED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
 - [[Test Falco Watcher Module]] - `references` [EXTRACTED]
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_critical_alert_triggers_lockdown()]] - `calls` [EXTRACTED]
 - [[test_deduplication_same_alert_twice()]] - `calls` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

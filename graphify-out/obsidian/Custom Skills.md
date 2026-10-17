@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "InjectionAction"
+community: "InjectionAction (3)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/InjectionAction_3
 ---
 
 # Custom Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/InjectionAction_3

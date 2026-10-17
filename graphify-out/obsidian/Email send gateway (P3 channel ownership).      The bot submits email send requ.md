@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "test_forward_stream.py"
+community: "create_auth_dependency"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # Email send gateway (P3: channel ownership).      The bot submits email send requ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[email_send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

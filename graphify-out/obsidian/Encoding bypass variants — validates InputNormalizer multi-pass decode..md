@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "HeuristicClassifier"
 location: "L333"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/HeuristicClassifier
 ---
 
 # Encoding bypass variants — validates InputNormalizer multi-pass decode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingBypass]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

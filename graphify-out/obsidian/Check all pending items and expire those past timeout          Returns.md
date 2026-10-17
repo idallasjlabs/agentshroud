@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # Check all pending items and expire those past timeout          Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_expire_stale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2

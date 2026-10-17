@@ -12,7 +12,7 @@ tags:
 # CrossBotTrustLedger
 
 ## Connections
-- [[dot-__init__()_27]] - `method` [EXTRACTED]
+- [[dot-__init__()_117]] - `method` [EXTRACTED]
 - [[dot-_propagate()]] - `method` [EXTRACTED]
 - [[dot-build_full_mesh()]] - `method` [EXTRACTED]
 - [[dot-get_incidents()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-register_trust_manager()]] - `method` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
 - [[TestBuildFullMesh]] - `uses` [INFERRED]
@@ -41,8 +41,8 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]

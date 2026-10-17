@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Create a FastAPI TestClient with test configuration      Note: This doesn't init
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

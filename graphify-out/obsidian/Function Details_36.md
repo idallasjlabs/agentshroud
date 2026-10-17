@@ -17,6 +17,6 @@ tags:
 - [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
 - [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
 - [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/url_analyzerpy

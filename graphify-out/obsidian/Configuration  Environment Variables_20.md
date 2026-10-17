@@ -12,6 +12,6 @@ tags:
 # Configuration / Environment Variables
 
 ## Connections
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/url_analyzerpy

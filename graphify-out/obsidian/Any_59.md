@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "canvas_proxy_app"
-location: "L119"
+community: "agentshroud-blueteam/SKILL.md (3)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[dot-__init__()_153]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

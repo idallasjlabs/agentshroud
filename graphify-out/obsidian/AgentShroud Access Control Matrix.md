@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Agent Operational Permissions]] - `contains` [EXTRACTED]
 - [[MCP Proxy Tool Authorization]] - `contains` [EXTRACTED]
-- [[Overview_4]] - `contains` [EXTRACTED]
+- [[Overview_1]] - `contains` [EXTRACTED]
 - [[Permission Matrix]] - `contains` [EXTRACTED]
 - [[RBAC Role Definitions]] - `contains` [EXTRACTED]
 - [[Trust Level Progression Rules]] - `contains` [EXTRACTED]

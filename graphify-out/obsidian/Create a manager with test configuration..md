@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper"
+community: "UserSessionManager"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/UserSessionManager
 ---
 
 # Create a manager with test configuration.
 
 ## Connections
-- [[dot-manager()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-manager()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "rationale"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # Enforce-by-Default Semantics (R-02, R-03)
@@ -14,4 +14,4 @@ tags:
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig_2

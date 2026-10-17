@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
-location: "L301"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

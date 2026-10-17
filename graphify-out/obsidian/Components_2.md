@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "main.py.md"
-location: "L48"
+community: "SSH Capability Architecture Document"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Components
 
 ## Connections
-- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
+- [[API Endpoints (`gatewayingest_apimain.py`)]] - `contains` [EXTRACTED]
+- [[RequestResponse Models (`gatewayingest_apimodels.py`)]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - `contains` [EXTRACTED]
+- [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

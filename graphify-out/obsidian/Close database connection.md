@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Close database connection
 
 ## Connections
-- [[dot-close()]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

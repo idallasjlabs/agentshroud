@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L83"
+community: "ANTHROPIC_BASE_URL"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Configuration
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

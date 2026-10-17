@@ -17,6 +17,6 @@ tags:
 - [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
 - [[MCPPermissionManager.get_trust_level(agent_id)]] - `contains` [EXTRACTED]
 - [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - `contains` [EXTRACTED]
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

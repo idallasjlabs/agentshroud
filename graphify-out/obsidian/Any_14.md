@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L148"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/FalcoAlertWatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_57]] - `references` [EXTRACTED]
-- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

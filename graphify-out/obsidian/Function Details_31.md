@@ -16,6 +16,6 @@ tags:
 - [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
 - [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
 - [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_monitorpy

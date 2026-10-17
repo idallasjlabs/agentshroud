@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "BotConfig"
+community: "AgentShroud Security Policy - Final Decision"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/AgentShroud_Security_Policy_-_Final_Decision
 ---
 
 # DEVICE_PAIRING.md
@@ -16,4 +16,4 @@ tags:
 - [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision

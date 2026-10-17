@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/hooks.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "graphify reference: extra exports and benchmark (3)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/graphify_reference_extra_exports_and_benchmark_3
 ---
 
 # For native CLAUDE.md integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference commit hook and native CLAUDE.md integration_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3

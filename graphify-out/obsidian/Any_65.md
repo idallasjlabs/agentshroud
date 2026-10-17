@@ -1,17 +1,17 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "tts.py"
-location: "L39"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ttspy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

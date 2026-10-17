@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Restart Procedure"
-location: "L1"
+community: "Error Index.md"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Error_Indexmd
 ---
 
-# Container Errors.md
+# Container Errors
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
-- [[Crash Recovery]] - `references` [EXTRACTED]
-- [[Error Index]] - `references` [EXTRACTED]
-- [[Startup Errors]] - `references` [EXTRACTED]
+- [[Error Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

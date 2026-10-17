@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Phase 1 — Raw Collection"
+community: "DifferentialPIIDetector"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/DifferentialPIIDetector
 ---
 
 # Full scan result for a tool result or prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultPIIReport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector

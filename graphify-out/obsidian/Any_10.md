@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L85"
+community: "MiddlewareManager (10)"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/MiddlewareManager_10
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_2]] - `references` [EXTRACTED]
+- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_1]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_10

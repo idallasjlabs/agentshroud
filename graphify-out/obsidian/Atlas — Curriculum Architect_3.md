@@ -1,21 +1,27 @@
 ---
-source_file: ".agents/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L1"
+community: "Atlas — Curriculum Architect"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[dot-agentsskillsi-atlasREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_125]] - `contains` [EXTRACTED]
-- [[Related Skills_93]] - `contains` [EXTRACTED]
-- [[Usage_102]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[Output Format_22]] - `contains` [EXTRACTED]
+- [[Persona_8]] - `contains` [EXTRACTED]
+- [[Quality Checklist_9]] - `contains` [EXTRACTED]
+- [[Role_61]] - `contains` [EXTRACTED]
+- [[System Prompt_8]] - `contains` [EXTRACTED]
+- [[User Prompt Template_3]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
+- [[openclawskillsi-atlasSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

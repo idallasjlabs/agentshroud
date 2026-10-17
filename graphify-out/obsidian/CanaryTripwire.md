@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "PipelineAction"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PipelineAction
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[dot-__init__()_108]] - `method` [EXTRACTED]
+- [[dot-__init__()_185]] - `method` [EXTRACTED]
 - [[dot-_check_encoded()]] - `method` [EXTRACTED]
 - [[dot-_check_plain()]] - `method` [EXTRACTED]
 - [[dot-_normalize()]] - `method` [EXTRACTED]
-- [[dot-_record()]] - `method` [EXTRACTED]
+- [[dot-_record()_1]] - `method` [EXTRACTED]
 - [[dot-detection_count()]] - `method` [EXTRACTED]
 - [[dot-register_canary()]] - `method` [EXTRACTED]
-- [[dot-scan()_3]] - `method` [EXTRACTED]
-- [[dot-scan_response()_2]] - `method` [EXTRACTED]
-- [[dot-setup_method()_24]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `method` [EXTRACTED]
+- [[dot-scan_response()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_37]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
 - [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
@@ -43,8 +43,8 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_2]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

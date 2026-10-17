@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_latency_guard.py"
+community: "test_voice_latency_guard.py (2)"
 location: "L1257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_voice_latency_guardpy_2
 ---
 
 # A single corrupted SSE line logs a warning and is skipped — it must not     abor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # FileSandbox must NOT block plain chat messages that mention file-like words.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandboxSkippedForPlainMessages]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

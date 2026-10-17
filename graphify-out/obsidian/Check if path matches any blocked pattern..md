@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # Check if path matches any blocked pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_matches_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

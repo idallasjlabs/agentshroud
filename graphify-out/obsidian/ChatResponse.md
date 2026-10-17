@@ -12,7 +12,7 @@ tags:
 # ChatResponse
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[chat()]] - `calls` [EXTRACTED]
 - [[chatbotmain.py]] - `contains` [EXTRACTED]
 

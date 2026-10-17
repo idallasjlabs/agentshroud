@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # Credential Isolation Architecture
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig_2

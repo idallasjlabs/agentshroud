@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "TestPathIsolationManager"
+community: "TestPathIsolationManager (3)"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TestPathIsolationManager_3
 ---
 
 # CollabMode
@@ -16,4 +16,4 @@ tags:
 - [[Display]] - `implements` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager_3

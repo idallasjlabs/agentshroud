@@ -1,23 +1,22 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
-location: "L6"
+community: "Browser Extension"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+  - community/Browser_Extension
 ---
 
 # Features
 
 ## Connections
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - `contains` [EXTRACTED]
-- [[2. Prompt Injection Hardening]] - `contains` [EXTRACTED]
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
-- [[4. ML-Based Injection Classifier (Stretch)]] - `contains` [EXTRACTED]
-- [[5. Output Canary System]] - `contains` [EXTRACTED]
-- [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[1. URL Forwarder]] - `contains` [EXTRACTED]
+- [[2. Page Clipper]] - `contains` [EXTRACTED]
+- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
+- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
+- [[5. Reading List Queue]] - `contains` [EXTRACTED]
+- [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

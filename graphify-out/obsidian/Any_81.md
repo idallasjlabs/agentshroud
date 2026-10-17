@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L93"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ReportStore
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_19]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
+- [[dot-list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ReportStore

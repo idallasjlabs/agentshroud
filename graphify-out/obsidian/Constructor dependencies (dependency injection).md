@@ -12,6 +12,6 @@ tags:
 # Constructor dependencies (dependency injection)
 
 ## Connections
-- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Configuration_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/llm_proxypy

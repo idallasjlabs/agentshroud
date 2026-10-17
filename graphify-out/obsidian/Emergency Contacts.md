@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/incident-response.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Contact Information"
-location: "L572"
+community: "GSDE&G Skills Reference"
+location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contact_Information
+  - community/GSDEG_Skills_Reference
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Contact Information]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contact_Information
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference

@@ -1,18 +1,13 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: ""
 type: "code"
-community: "MCPAuditTrail"
-location: "L93"
+community: "._filter_streaming_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/_filter_streaming_event
 ---
 
 # Any
 
-## Connections
-- [[dot-generate_report()]] - `references` [EXTRACTED]
-- [[dot-log_tool_call()]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

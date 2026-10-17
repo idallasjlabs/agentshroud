@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `references` [EXTRACTED]
-- [[main()_27]] - `shares_data_with` [INFERRED]
+- [[main()_25]] - `shares_data_with` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/main

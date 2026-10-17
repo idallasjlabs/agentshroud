@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[1Password Auth Failures]] - `contains` [EXTRACTED]
-- [[Auth Errors]] - `contains` [EXTRACTED]
+- [[Auth Errors_1]] - `contains` [EXTRACTED]
 - [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
 - [[Related Notes_72]] - `contains` [EXTRACTED]
 

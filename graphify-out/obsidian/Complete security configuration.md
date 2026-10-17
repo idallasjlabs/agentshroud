@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "ToolResultSanitizer"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ToolResultSanitizer
 ---
 
 # Complete security configuration
 
 ## Connections
-- [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
+- [[SecurityConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

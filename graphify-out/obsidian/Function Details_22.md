@@ -18,6 +18,6 @@ tags:
 - [[MCPAuditTrail.start_call(call_id)]] - `contains` [EXTRACTED]
 - [[MCPAuditTrail.verify_chain()]] - `contains` [EXTRACTED]
 - [[Query Methods]] - `contains` [EXTRACTED]
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_auditpy

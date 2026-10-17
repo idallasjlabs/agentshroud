@@ -12,6 +12,6 @@ tags:
 # EntropyCalculator.shannon_entropy(s)
 
 ## Connections
-- [[Function Details_18]] - `contains` [EXTRACTED]
+- [[Function Details_17]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/dns_filterpy

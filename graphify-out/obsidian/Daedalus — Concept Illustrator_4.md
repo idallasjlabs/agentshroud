@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "Daedalus — Concept Illustrator (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Daedalus__Concept_Illustrator_2
 ---
 
 # Daedalus — Concept Illustrator
@@ -20,4 +20,4 @@ tags:
 - [[System Prompt_18]] - `contains` [EXTRACTED]
 - [[hermesskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (2)"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_2
 ---
 
 # Encrypt data using AES-256-GCM.          Args:             data: String, bytes,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-encrypt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_2

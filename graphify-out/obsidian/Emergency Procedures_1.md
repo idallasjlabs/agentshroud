@@ -12,7 +12,7 @@ tags:
 # Emergency Procedures
 
 ## Connections
-- [[Emergency Contacts_1]] - `contains` [EXTRACTED]
+- [[Emergency Contacts]] - `contains` [EXTRACTED]
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 - [[P1 Incident Response]] - `contains` [EXTRACTED]
 

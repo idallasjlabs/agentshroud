@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (2)"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_2
 ---
 
 # Add a user to a group (auto-groups are updated in-memory only).
@@ -15,4 +15,4 @@ tags:
 - [[dot-add_member()]] - `rationale_for` [EXTRACTED]
 - [[dot-remove_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2

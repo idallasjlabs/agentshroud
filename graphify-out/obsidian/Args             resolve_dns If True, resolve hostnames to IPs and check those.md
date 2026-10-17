@@ -12,6 +12,6 @@ tags:
 # Args:             resolve_dns: If True, resolve hostnames to IPs and check those
 
 ## Connections
-- [[dot-__init__()_133]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_188]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

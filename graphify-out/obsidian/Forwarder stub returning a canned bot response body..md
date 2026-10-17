@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # Forwarder stub returning a canned bot response body.
 
 ## Connections
-- [[_StubForwarder_2]] - `rationale_for` [EXTRACTED]
+- [[_StubForwarder_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

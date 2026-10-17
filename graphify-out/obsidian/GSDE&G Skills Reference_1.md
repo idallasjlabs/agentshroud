@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "GSDE&G Skills Reference"
+community: "GSDE&G Skills Reference (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference
+  - community/GSDEG_Skills_Reference_2
 ---
 
 # GSDE&G Skills Reference
@@ -24,4 +24,4 @@ tags:
 - [[openclawskillsi-referenceSKILLS_GUIDE]] - `contains` [EXTRACTED]
 - [[📚 Created Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2

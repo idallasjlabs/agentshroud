@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "A2APolicyEngine"
+community: "A2APolicyEngine (4)"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/A2APolicyEngine_4
 ---
 
 # [EXPERIMENTAL] ML model classification placeholder.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_classify_ml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_4

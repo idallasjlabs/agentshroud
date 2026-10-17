@@ -1,29 +1,27 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "MCPInspector"
-location: "L119"
+community: "migrate-cve-registry-ghsa.py"
+location: "L122"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPInspector
+  - graphify/EXTRACTED
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_7]] - `references` [EXTRACTED]
-- [[dot-send_request()_2]] - `references` [EXTRACTED]
-- [[dot-send_request()]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
+- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
+- [[build_id_plan()]] - `references` [EXTRACTED]
+- [[compute_stats()]] - `references` [EXTRACTED]
+- [[fetch_advisories()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[match_entry()]] - `references` [EXTRACTED]
+- [[render_manual_review()]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

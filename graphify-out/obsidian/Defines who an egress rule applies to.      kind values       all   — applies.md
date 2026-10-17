@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # Defines who an egress rule applies to.      kind values:       "all"   — applies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressScope]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
