@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "RateLimiter"
-location: "L8895"
+community: "Unit tests for TelegramAPIProxy._is_group_message()."
+location: "L8913"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/Unit_tests_for_TelegramAPIProxy_is_group_message
 ---
 
 # TestIsGroupMessage
@@ -17,10 +17,7 @@ tags:
 - [[dot-test_missing_chat_is_not_group()]] - `method` [EXTRACTED]
 - [[dot-test_private_is_not_group()]] - `method` [EXTRACTED]
 - [[dot-test_supergroup_is_group()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for TelegramAPIProxy._is_group_message().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_TelegramAPIProxy_is_group_message

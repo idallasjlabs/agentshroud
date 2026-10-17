@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[dot-test_get_trust_registered()]] - `method` [EXTRACTED]
 - [[dot-test_get_trust_unregistered()]] - `method` [EXTRACTED]
-- [[dot-test_register_idempotent()]] - `method` [EXTRACTED]
+- [[dot-test_register_idempotent()_1]] - `method` [EXTRACTED]
 - [[dot-test_register_new_agent()]] - `method` [EXTRACTED]
 - [[Test agent registration and initial trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

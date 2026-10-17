@@ -20,7 +20,7 @@ tags:
 - [[dot-test_prefix_returned_for_member()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_user_returns_none()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupConfig

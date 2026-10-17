@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L9136"
+community: "test_telegram_proxy_inbound.py"
+location: "L9154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # TestGroupPresenceProbe
 
 ## Connections
-- [[dot-_make_proxy()_3]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_suppresses_second_ack()]] - `method` [EXTRACTED]
 - [[dot-test_dm_hello_does_not_trigger_probe()]] - `method` [EXTRACTED]
 - [[dot-test_hello_in_group_sends_hermes_ack()]] - `method` [EXTRACTED]
@@ -27,10 +27,7 @@ tags:
 - [[dot-test_predicate_whos_there_matches()]] - `method` [EXTRACTED]
 - [[dot-test_status_in_group_sends_short_ack_not_full_status()]] - `method` [EXTRACTED]
 - [[dot-test_stranger_hello_in_group_receives_ack()]] - `method` [EXTRACTED]
-- [[Group presence probe bare trigger phrases make each bot reply with a short live]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[Group presence probe bare trigger phrases make each bot reply with a short…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

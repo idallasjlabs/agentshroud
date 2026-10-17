@@ -1,19 +1,19 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "AgentShroud Data Dictionary"
+community: "SecureBrowser Security Policies"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Security Management Entities
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
-- [[TrustLevel_3]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_2]] - `contains` [EXTRACTED]
+- [[TrustLevel]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

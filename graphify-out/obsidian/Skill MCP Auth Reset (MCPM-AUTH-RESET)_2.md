@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
-- [[Authentication Reset Procedures_2]] - `contains` [EXTRACTED]
-- [[Related Skills_104]] - `contains` [EXTRACTED]
-- [[Role_63]] - `contains` [EXTRACTED]
+- [[Authentication Reset Procedures_1]] - `contains` [EXTRACTED]
+- [[Related Skills_92]] - `contains` [EXTRACTED]
+- [[Role_66]] - `contains` [EXTRACTED]
 - [[Security Best Practices_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_11]] - `contains` [EXTRACTED]
-- [[Usage_113]] - `contains` [EXTRACTED]
+- [[Troubleshooting_15]] - `contains` [EXTRACTED]
+- [[Usage_101]] - `contains` [EXTRACTED]
 - [[Verification Checklist_3]] - `contains` [EXTRACTED]
 - [[When to Invoke_8]] - `contains` [EXTRACTED]
 

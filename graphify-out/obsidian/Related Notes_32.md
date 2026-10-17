@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "troubleshooting.md"
-location: "L143"
+community: "Error Index.md (4)"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/Error_Indexmd_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

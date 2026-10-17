@@ -12,7 +12,7 @@ tags:
 # TestClamAVSummary
 
 ## Connections
-- [[dot-test_summary_clean()_3]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()_2]] - `method` [EXTRACTED]
 - [[dot-test_summary_error()_1]] - `method` [EXTRACTED]
 - [[dot-test_summary_infected()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]

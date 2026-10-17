@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_filters_pending_by_bot_id()]] - `method` [EXTRACTED]
 - [[dot-test_no_bot_id_returns_all_pending()]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

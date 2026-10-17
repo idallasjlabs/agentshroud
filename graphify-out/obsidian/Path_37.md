@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "api.py"
-location: "L946"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/archive_old_events
 ---
 
 # Path
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[_skills_reload_paths()]] - `references` [EXTRACTED]
-- [[dashboard()]] - `calls` [EXTRACTED]
-- [[dashboard_main()]] - `calls` [EXTRACTED]
-- [[get_config()_1]] - `calls` [EXTRACTED]
-- [[update_config()]] - `calls` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

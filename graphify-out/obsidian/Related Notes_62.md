@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (3)"
+community: "Health Checks"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_3
+  - community/Health_Checks
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Common Issues]] - `contains` [EXTRACTED]
 - [[ContextGuard False Positive Collaborator Block]] - `semantically_similar_to` [INFERRED]
-- [[troubleshooting_22]] - `references` [EXTRACTED]
+- [[troubleshooting_20]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

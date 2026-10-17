@@ -12,9 +12,9 @@ tags:
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[Purpose_92]] - `contains` [EXTRACTED]
-- [[Related Skills_79]] - `contains` [EXTRACTED]
-- [[Usage_91]] - `contains` [EXTRACTED]
+- [[Purpose_104]] - `contains` [EXTRACTED]
+- [[Related Skills_84]] - `contains` [EXTRACTED]
+- [[Usage_93]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
 

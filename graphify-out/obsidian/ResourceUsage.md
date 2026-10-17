@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L73"
+community: "TestToolChainAnalyzer"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TestToolChainAnalyzer
 ---
 
 # ResourceUsage
 
 ## Connections
-- [[dot-get_usage_stats()]] - `calls` [EXTRACTED]
-- [[Current resource usage metrics.]] - `rationale_for` [EXTRACTED]
-- [[resource_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

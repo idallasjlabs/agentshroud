@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (21)"
+community: "TestOutboundInfoFilter"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_21
+  - community/TestOutboundInfoFilter
 ---
 
 # Test that security module references are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_security_architecture_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_21
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -12,12 +12,12 @@ tags:
 # StdioConnection
 
 ## Connections
-- [[dot-__init__()_138]] - `method` [EXTRACTED]
+- [[dot-__init__()_164]] - `method` [EXTRACTED]
 - [[dot-get_or_create()]] - `references` [EXTRACTED]
 - [[dot-is_running()]] - `method` [EXTRACTED]
 - [[dot-send_request()_1]] - `method` [EXTRACTED]
 - [[dot-start()_1]] - `method` [EXTRACTED]
-- [[dot-stop()_9]] - `method` [EXTRACTED]
+- [[dot-stop()_10]] - `method` [EXTRACTED]
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
 - [[dot-test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
 - [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
@@ -28,10 +28,10 @@ tags:
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
@@ -48,7 +48,7 @@ tags:
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestStdioConnection]] - `uses` [INFERRED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/StdioConnection

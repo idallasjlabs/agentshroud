@@ -18,7 +18,7 @@ tags:
 - [[5. Merge Readiness Assessment]] - `contains` [EXTRACTED]
 - [[AgentShroud Phase Review — 2026-02-23]] - `references` [EXTRACTED]
 - [[Conclusion]] - `contains` [EXTRACTED]
-- [[Executive Summary_6]] - `contains` [EXTRACTED]
+- [[Executive Summary_7]] - `contains` [EXTRACTED]
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 - [[phase-review-p0-2026-02-23]] - `contains` [EXTRACTED]
 

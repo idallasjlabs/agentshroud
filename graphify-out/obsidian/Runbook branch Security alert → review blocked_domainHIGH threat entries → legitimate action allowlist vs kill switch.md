@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "AgentShroud Development Roadmap — 2026 Gantt Chart (2)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart_2
 ---
 
 # Runbook branch: Security alert → review blocked_domain/HIGH threat entries → legitimate action? allowlist vs kill switch
@@ -15,4 +15,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `references` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart_2

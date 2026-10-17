@@ -1,19 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "gen.py"
-location: "L22"
+community: "AuditStore"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/AuditStore
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[dot-__init__()_131]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

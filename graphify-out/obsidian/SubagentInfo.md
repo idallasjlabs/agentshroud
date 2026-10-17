@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "TrustConfig (2)"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TrustConfig_2
 ---
 
 # SubagentInfo
@@ -16,4 +16,4 @@ tags:
 - [[dot-register_spawn()]] - `references` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

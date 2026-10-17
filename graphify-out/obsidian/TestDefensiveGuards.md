@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (2)"
 location: "L343"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/RBACConfig_2
 ---
 
 # TestDefensiveGuards
@@ -18,11 +18,11 @@ tags:
 - [[dot-test_rbac_without_is_owner_callable()]] - `method` [EXTRACTED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/RBACConfig_2

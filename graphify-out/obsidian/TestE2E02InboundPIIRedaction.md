@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_email_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_phone_redacted()]] - `method` [EXTRACTED]
-- [[dot-test_ssn_redacted()_1]] - `method` [EXTRACTED]
+- [[dot-test_ssn_redacted()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -24,9 +24,9 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PipelineAction

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Restart Procedure"
-location: "L78"
+community: "AgentShroud Incident Response Plan (2)"
+location: "L565"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/AgentShroud_Incident_Response_Plan_2
 ---
 
 # Port Already in Use
 
 ## Connections
-- [[Container Errors_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_2

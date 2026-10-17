@@ -1,17 +1,17 @@
 ---
-source_file: "docs/flows/README.md"
+source_file: "docs/integrations/README.md"
 type: "document"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "AgentShroud Development Roadmap — 2026 Gantt Chart (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart_2
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Flows Documentation]] - `contains` [EXTRACTED]
+- [[Integrations Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart_2

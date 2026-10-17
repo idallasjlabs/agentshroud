@@ -12,6 +12,6 @@ tags:
 # Test detection of base64 encoded injections.
 
 ## Connections
-- [[dot-test_base64_encoded_injection()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/InjectionAction

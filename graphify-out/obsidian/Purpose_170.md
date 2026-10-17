@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "log_sanitizer.py"
-location: "L12"
+community: "Mnemosyne — Retention Engineer (2)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/Mnemosyne__Retention_Engineer_2
 ---
 
 # Purpose
 
 ## Connections
-- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2

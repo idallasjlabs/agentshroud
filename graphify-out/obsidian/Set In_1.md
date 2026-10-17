@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "telegram_proxy.py (7)"
-location: "L27"
+community: "egress_filter.py"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_7
+  - community/egress_filterpy
 ---
 
 # Set In
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_7
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

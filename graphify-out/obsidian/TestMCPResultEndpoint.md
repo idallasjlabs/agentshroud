@@ -22,12 +22,12 @@ tags:
 - [[dot-test_result_returns_processing_time()]] - `method` [EXTRACTED]
 - [[dot-test_result_with_null_content()]] - `method` [EXTRACTED]
 - [[dot-test_result_with_pii_is_audited_not_blocked()]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint

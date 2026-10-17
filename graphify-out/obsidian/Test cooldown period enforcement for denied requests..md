@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "ApprovalHardening (2)"
+community: "ApprovalHardening"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening_2
+  - community/ApprovalHardening
 ---
 
 # Test cooldown period enforcement for denied requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_cooldown_period_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

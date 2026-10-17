@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (2)"
-location: "L6"
+community: "config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_2
+  - community/configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2
+#graphify/document #graphify/EXTRACTED #community/configpy

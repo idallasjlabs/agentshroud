@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_2
 ---
 
 # TestResourceGuardWiring
@@ -19,4 +19,4 @@ tags:
 - [[ResourceLimits]] - `uses` [INFERRED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

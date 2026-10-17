@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "ApprovalHardening (2)"
+community: "ApprovalHardening"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening_2
+  - community/ApprovalHardening
 ---
 
 # Test detection of base64-encoded parameters.
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_parameter_obfuscation_detection_base64()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_parameter_obfuscation_detection_hex()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L983"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # TestClose
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

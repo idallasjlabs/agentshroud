@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "soc/router.py"
 location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/soc/routerpy
 ---
 
 # Response from SSH command execution
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHExecResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

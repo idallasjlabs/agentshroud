@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L43"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

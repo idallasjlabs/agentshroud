@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
+community: "test_collaborator_tracker.py (2) (2)"
 location: "L3845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/test_collaborator_trackerpy_2_2
 ---
 
 # TestEgressTargetExtraction
@@ -34,8 +34,8 @@ tags:
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[Unit tests for outbound target extraction helper used by egress preflight.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_2

@@ -12,13 +12,13 @@ tags:
 # Skill: Hermes Dev Workflow (HDEV)
 
 ## Connections
-- [[Guardrails_6]] - `contains` [EXTRACTED]
+- [[Guardrails_5]] - `contains` [EXTRACTED]
 - [[Invocation_4]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_4]] - `contains` [EXTRACTED]
 - [[Mode A — Single task]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_4]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_4]] - `contains` [EXTRACTED]
-- [[Role_28]] - `contains` [EXTRACTED]
+- [[Role_32]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_4]] - `contains` [EXTRACTED]
 - [[hermesskillsi-hdevSKILL]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "GSDE&G Skills Reference (2)"
+community: "GSDE&G Skills Reference (2) (2)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/GSDEG_Skills_Reference_2_2
 ---
 
 # Skills by Category
@@ -23,6 +23,6 @@ tags:
 - [[Reference_2]] - `contains` [EXTRACTED]
 - [[SecureClaw (Project-Specific)_1]] - `contains` [EXTRACTED]
 - [[System Utilities_1]] - `contains` [EXTRACTED]
-- [[Workflow_2]] - `contains` [EXTRACTED]
+- [[Workflow_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2_2

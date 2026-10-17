@@ -1,27 +1,25 @@
 ---
-source_file: "gateway/tests/test_git_guard.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L16"
+community: "ToolResultSanitizer"
+location: "L554"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # TestGitGuard
 
 ## Connections
-- [[dot-_make_hook()]] - `method` [EXTRACTED]
-- [[dot-test_clean_hook_passes()]] - `method` [EXTRACTED]
-- [[dot-test_clean_repo_no_findings()]] - `method` [EXTRACTED]
-- [[dot-test_curl_in_hook_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_finding_has_file_path()]] - `method` [EXTRACTED]
-- [[dot-test_nc_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_no_git_dir_returns_empty()]] - `method` [EXTRACTED]
-- [[dot-test_reverse_shell_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_wget_flagged()]] - `method` [EXTRACTED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[test_git_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_critical_finding_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_git_guard_exception_fails_closed()]] - `method` [EXTRACTED]
+- [[dot-test_low_finding_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_owner_bypass()_2]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

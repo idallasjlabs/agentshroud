@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_module_has_implementation()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Verify each module listed in README has actual implementation.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 

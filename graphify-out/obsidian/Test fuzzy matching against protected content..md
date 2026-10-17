@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "TestPromptProtection (2)"
+community: "TestPromptProtection"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptProtection_2
+  - community/TestPromptProtection
 ---
 
 # Test fuzzy matching against protected content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_fuzzy_matching()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection_2
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

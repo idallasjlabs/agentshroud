@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # TestKeyRotationWorkflow
@@ -27,4 +27,4 @@ tags:
 - [[Test the complete rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

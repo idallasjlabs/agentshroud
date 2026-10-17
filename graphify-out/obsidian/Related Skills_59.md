@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
 community: "Project Management (README)"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

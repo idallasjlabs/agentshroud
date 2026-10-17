@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-inventory.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Security Modules (58)"
-location: "L215"
+community: "Findings"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/Findings
 ---
 
 # Summary
 
 ## Connections
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/document #graphify/EXTRACTED #community/Findings

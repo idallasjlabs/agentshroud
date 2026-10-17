@@ -12,7 +12,7 @@ tags:
 # TestPIIDetection
 
 ## Connections
-- [[dot-sanitizer()_2]] - `method` [EXTRACTED]
+- [[dot-sanitizer()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_amex()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_no_dashes()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_visa()]] - `method` [EXTRACTED]
@@ -65,7 +65,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher_2

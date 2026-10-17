@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L205"
+community: "test_collaborator_tracker.py (3)"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/test_collaborator_trackerpy_3
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_151]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

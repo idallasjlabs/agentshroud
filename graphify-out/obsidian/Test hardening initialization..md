@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "ApprovalHardening (2)"
+community: "ApprovalHardening"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening_2
+  - community/ApprovalHardening
 ---
 
 # Test hardening initialization.
 
 ## Connections
-- [[dot-test_initialization()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

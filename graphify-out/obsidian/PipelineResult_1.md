@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # PipelineResult
@@ -17,14 +17,14 @@ tags:
 - [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
 - [[dot-process_inbound()_10]] - `references` [EXTRACTED]
 - [[dot-process_outbound()_7]] - `references` [EXTRACTED]
-- [[dot-to_dict()_15]] - `method` [EXTRACTED]
+- [[dot-to_dict()_12]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Result of running a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundFallbackToDirectSanitizer]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedNonOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedOwner]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[pipeline.py_1]] - `contains` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PipelineAction
+#graphify/code #graphify/INFERRED #community/AuditChain

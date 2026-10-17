@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L3936"
+community: "FakeRBAC"
+location: "L3954"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # Raw tool trace/arguments requests should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_tool_trace_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

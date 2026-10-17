@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L126"
+community: "create_auth_dependency (3)"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/create_auth_dependency_3
 ---
 
 # Request
 
 ## Connections
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
-- [[auth_dep()_3]] - `references` [EXTRACTED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[auth_dep()_2]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3

@@ -12,6 +12,6 @@ tags:
 # Scan tool result content for injection attempts.          Args:             tool
 
 ## Connections
-- [[dot-scan_tool_result()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/InjectionAction_2

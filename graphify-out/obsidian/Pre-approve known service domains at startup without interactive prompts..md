@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue (2)"
+community: "TestEgressApprovalQueue"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/TestEgressApprovalQueue
 ---
 
 # Pre-approve known service domains at startup without interactive prompts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-preload_permanent_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

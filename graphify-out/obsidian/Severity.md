@@ -1,40 +1,31 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SkillGuard"
-location: "L76"
+community: "TestToolChainAnalyzer"
+location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SkillGuard
+  - graphify/EXTRACTED
+  - community/TestToolChainAnalyzer
 ---
 
 # Severity
 
 ## Connections
-- [[dot-severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_1]] - `uses` [INFERRED]
-- [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_29]] - `uses` [INFERRED]
-- [[ScanResult_1]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[TestAggregation]] - `uses` [INFERRED]
-- [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient]] - `uses` [INFERRED]
-- [[TestExecOfDownload]] - `uses` [INFERRED]
-- [[TestExfiltration]] - `uses` [INFERRED]
-- [[TestKnownMalicious]] - `uses` [INFERRED]
-- [[TestObfuscation]] - `uses` [INFERRED]
-- [[TestOversizedUnscannable]] - `uses` [INFERRED]
-- [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestReloadIntegration]] - `uses` [INFERRED]
-- [[TestScanEntrypoint]] - `uses` [INFERRED]
-- [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
-- [[TestSecretAccess]] - `uses` [INFERRED]
-- [[TestSyncScriptPreflight]] - `uses` [INFERRED]
-- [[skill_guard.py]] - `contains` [EXTRACTED]
-- [[test_skill_guard.py]] - `imports` [EXTRACTED]
+- [[Any_55]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SecurityEvent]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEvent_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[event_adapter.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

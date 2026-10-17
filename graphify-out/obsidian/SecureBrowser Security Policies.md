@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[Approval Workflows]] - `contains` [EXTRACTED]
 - [[Audit Trail Standards]] - `contains` [EXTRACTED]
-- [[Compliance]] - `contains` [EXTRACTED]
-- [[Core Security Principles_4]] - `contains` [EXTRACTED]
+- [[Compliance_1]] - `contains` [EXTRACTED]
+- [[Core Security Principles_3]] - `contains` [EXTRACTED]
 - [[Future Enhancements_1]] - `contains` [EXTRACTED]
 - [[Incident Response]] - `contains` [EXTRACTED]
 - [[Risk Classification Matrix]] - `contains` [EXTRACTED]
-- [[Security Testing_1]] - `contains` [EXTRACTED]
+- [[Security Testing]] - `contains` [EXTRACTED]
 - [[Threat Model_2]] - `contains` [EXTRACTED]
 - [[security-policies]] - `contains` [EXTRACTED]
 

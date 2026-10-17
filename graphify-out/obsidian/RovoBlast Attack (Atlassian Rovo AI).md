@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "A2AMethod"
+community: "A2AMethod (2)"
 location: "lines 9-36"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/A2AMethod_2
 ---
 
 # RovoBlast Attack (Atlassian Rovo AI)
@@ -20,4 +20,4 @@ tags:
 - [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - `cites` [EXTRACTED]
 - [[context_guard.py Provenance Tagging (ContextSegment)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/A2AMethod
+#graphify/concept #graphify/EXTRACTED #community/A2AMethod_2

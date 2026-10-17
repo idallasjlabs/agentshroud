@@ -12,7 +12,7 @@ tags:
 # TestAgentIsolation
 
 ## Connections
-- [[dot-setup_method()_18]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `method` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `method` [EXTRACTED]
 - [[dot-test_generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_list_agents()_1]] - `method` [EXTRACTED]
@@ -40,8 +40,8 @@ tags:
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AgentRegistry

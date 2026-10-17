@@ -12,7 +12,7 @@ tags:
 # TestDomainDenylist
 
 ## Connections
-- [[dot-test_allowed_domain_passes()]] - `method` [EXTRACTED]
+- [[dot-test_allowed_domain_passes()_1]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `method` [EXTRACTED]
 - [[dot-test_denied_domain_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_denied_domain_malware()]] - `method` [EXTRACTED]

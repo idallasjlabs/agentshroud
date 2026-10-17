@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "_FakeRBAC"
+community: "ProgressiveLockdown"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/ProgressiveLockdown
 ---
 
 # TestPausedFieldWiring
@@ -19,8 +19,8 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `method` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "mcp_config.py"
+community: "forwarder.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/forwarderpy
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_config.py_1]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

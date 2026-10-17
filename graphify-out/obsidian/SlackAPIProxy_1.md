@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[SlackAPIProxy]] - `uses` [INFERRED]
-- [[_make_proxy()_1]] - `references` [EXTRACTED]
+- [[_make_proxy()_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

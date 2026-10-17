@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (18)"
+community: "TestOutboundInfoFilter"
 location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_18
+  - community/TestOutboundInfoFilter
 ---
 
 # Test that filtering performance is acceptable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_performance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_18
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

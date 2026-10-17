@@ -12,7 +12,7 @@ tags:
 # Startup Flow Diagram
 
 ## Connections
-- [[Related Notes_21]] - `contains` [EXTRACTED]
+- [[Related Notes_17]] - `contains` [EXTRACTED]
 - [[Startup Flow Diagram]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager (6)"
+community: "MiddlewareManager (5)"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/MiddlewareManager_5
 ---
 
 # Register an expected write to a file to prevent false alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_expected_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

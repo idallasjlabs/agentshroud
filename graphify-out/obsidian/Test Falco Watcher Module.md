@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "FalcoAlertWatcher (2)"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/FalcoAlertWatcher
 ---
 
 # Test Falco Watcher Module
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FalcoAlertWatcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

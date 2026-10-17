@@ -12,9 +12,9 @@ tags:
 # RBACConfig
 
 ## Connections
-- [[dot-__init__()_158]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-__init__()_118]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/MiddlewareManager

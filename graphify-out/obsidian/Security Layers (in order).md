@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "main.py.md (2)"
+community: "main.py.md"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd_2
+  - community/mainpymd
 ---
 
 # Security Layers (in order)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd_2
+#graphify/document #graphify/EXTRACTED #community/mainpymd

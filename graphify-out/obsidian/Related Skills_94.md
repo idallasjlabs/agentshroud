@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

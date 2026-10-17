@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_jailbreak_attempt()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_extraction()_1]] - `method` [EXTRACTED]
+- [[dot-test_prompt_extraction()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]

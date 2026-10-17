@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "First Time Setup (2)"
-location: "L161"
+community: "create_auth_dependency"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/create_auth_dependency
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

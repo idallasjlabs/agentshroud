@@ -24,7 +24,7 @@ tags:
 - [[EgressFilter_2]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[SecurityConfig]] - `uses` [INFERRED]
+- [[SecurityConfig_4]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[Test that core security modules default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]

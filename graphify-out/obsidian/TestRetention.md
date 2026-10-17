@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[Retention enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 

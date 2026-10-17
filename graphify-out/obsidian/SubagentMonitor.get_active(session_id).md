@@ -12,6 +12,6 @@ tags:
 # SubagentMonitor.get_active(session_id)
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details_6

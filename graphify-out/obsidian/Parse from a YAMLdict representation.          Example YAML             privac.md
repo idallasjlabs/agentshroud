@@ -12,6 +12,6 @@ tags:
 # Parse from a YAML/dict representation.          Example YAML:             privac
 
 ## Connections
-- [[dot-from_dict()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RBACConfig_3

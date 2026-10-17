@@ -12,6 +12,6 @@ tags:
 # Request to scan a message.
 
 ## Connections
-- [[ScanRequest_1]] - `rationale_for` [EXTRACTED]
+- [[ScanRequest]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

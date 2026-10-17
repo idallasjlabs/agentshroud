@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-_record_private_access_attempt()]] - `calls` [EXTRACTED]
 - [[Audit signal for blocked admin-private tool access attempts.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/MCPPermissionManager_2

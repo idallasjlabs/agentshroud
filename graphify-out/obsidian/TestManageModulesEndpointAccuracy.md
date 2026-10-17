@@ -17,7 +17,7 @@ tags:
 - [[dot-test_manage_modules_endpoint_uses_the_same_registry()]] - `method` [EXTRACTED]
 - [[dot-test_readme_p1_count_matches_middleware_manager()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Verify managemodules enumerates every module MiddlewareManager wires.      Mid]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 

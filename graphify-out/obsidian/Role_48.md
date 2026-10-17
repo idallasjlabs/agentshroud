@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3

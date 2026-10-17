@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L56"
+community: "Crash Recovery"
+location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/Crash_Recovery
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[Crash Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

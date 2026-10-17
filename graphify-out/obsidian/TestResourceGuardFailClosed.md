@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L10"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_2
 ---
 
 # TestResourceGuardFailClosed
@@ -20,8 +20,8 @@ tags:
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[Verify resource check methods return False (deny) on exception.]] - `rationale_for` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_2

@@ -25,7 +25,7 @@ tags:
 - [[dot-test_suspended_level_at_10_blocks()]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

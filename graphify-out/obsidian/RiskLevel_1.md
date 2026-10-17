@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SecureBrowser (2)"
-location: "L34"
+community: "TestToolChainAnalyzer"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/TestToolChainAnalyzer
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_classify_risk()_1]] - `references` [EXTRACTED]
-- [[dot-_log_action()_1]] - `references` [EXTRACTED]
-- [[dot-_requires_approval()_1]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_1]] - `rationale_for` [EXTRACTED]
-- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_soc_egress.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

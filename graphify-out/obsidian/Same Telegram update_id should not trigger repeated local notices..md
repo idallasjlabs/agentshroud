@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L5227"
+community: "FakeRBAC"
+location: "L5245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # Same Telegram update_id should not trigger repeated local notices.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_healthcheck_local_notice_is_deduped_per_update()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

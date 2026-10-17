@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L117"
+community: "02-infrastructure.md (2)"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/02-infrastructuremd_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[Restart Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2

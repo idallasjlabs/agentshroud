@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "UserSessionManager (5)"
+community: "discover_upstream_versions.py"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_5
+  - community/discover_upstream_versionspy
 ---
 
 # Pre-release builds must never be shipped to production automatically.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsStable]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_5
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy

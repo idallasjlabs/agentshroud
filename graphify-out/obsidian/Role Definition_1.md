@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/safe-refactor.agent.md"
+source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Safe Refactor Specialist"
+community: "Validation Runner Specialist"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/Validation_Runner_Specialist
 ---
 
 # Role Definition
 
 ## Connections
-- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
+- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "main.py"
-location: "L13"
+community: "Use Cases"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/Use_Cases
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

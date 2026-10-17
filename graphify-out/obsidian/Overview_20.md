@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Detailed Profiles"
+community: "Integration Guide"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/Integration_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

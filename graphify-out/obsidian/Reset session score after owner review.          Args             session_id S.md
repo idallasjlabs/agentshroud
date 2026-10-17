@@ -12,6 +12,6 @@ tags:
 # Reset session score after owner review.          Args:             session_id: S
 
 ## Connections
-- [[dot-reset_session()]] - `rationale_for` [EXTRACTED]
+- [[dot-reset_session()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

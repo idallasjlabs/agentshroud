@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_stable"
+community: "discover_upstream_versions.py"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/discover_upstream_versionspy
 ---
 
 # TestPickLatestStable
 
 ## Connections
 - [[dot-test_downstream_counter_sorts_above_its_base_release()]] - `method` [EXTRACTED]
-- [[dot-test_empty_returns_none()]] - `method` [EXTRACTED]
+- [[dot-test_empty_returns_none()_1]] - `method` [EXTRACTED]
 - [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - `method` [EXTRACTED]
 - [[dot-test_no_stable_versions_returns_none()]] - `method` [EXTRACTED]
 - [[dot-test_numeric_ordering_not_lexicographic()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[Selecting the newest shippable npm release.]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

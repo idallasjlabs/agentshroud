@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L306"
+community: "main.py"
+location: "L446"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/mainpy
 ---
 
 # Security Notes
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/mainpy

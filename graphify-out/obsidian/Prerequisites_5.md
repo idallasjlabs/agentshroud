@@ -1,20 +1,20 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L17"
+community: "xurl — Agent Skill Reference"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Optional Requirements]] - `contains` [EXTRACTED]
-- [[Supported Platforms]] - `contains` [EXTRACTED]
-- [[System Requirements_1]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

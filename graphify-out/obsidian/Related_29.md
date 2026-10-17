@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Function Details (8)"
-location: "L77"
+community: "mcp_audit.py"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/mcp_auditpy
 ---
 
 # Related
 
 ## Connections
-- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_8
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

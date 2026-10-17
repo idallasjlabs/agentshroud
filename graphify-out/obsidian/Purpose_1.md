@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "FalcoAlertWatcher (3)"
-location: "L16"
+community: "All Dependencies.md (3)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_3
+  - community/All_Dependenciesmd_3
 ---
 
 # Purpose
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher_3
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_3

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L9"
+community: "Hermes Agent — Connection Setup"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Overview
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

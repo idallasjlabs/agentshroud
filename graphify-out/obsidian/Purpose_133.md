@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Function Details (7)"
+community: "mcp_inspector.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_7
+  - community/mcp_inspectorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_7
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

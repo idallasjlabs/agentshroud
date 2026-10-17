@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "RBACConfig"
-location: "L89"
+community: "AgentTarget"
+location: "L17"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/RBACConfig
+  - graphify/INFERRED
+  - community/AgentTarget
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_86]] - `calls` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[_parse_env_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/AgentTarget

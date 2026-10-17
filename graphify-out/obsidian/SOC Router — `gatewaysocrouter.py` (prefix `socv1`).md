@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py (2)"
+community: "main.py"
 location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy_2
+  - community/mainpy
 ---
 
 # SOC Router — `gateway/soc/router.py` (prefix `/soc/v1`)
 
 ## Connections
-- [[Endpoints_1]] - `contains` [EXTRACTED]
+- [[Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy_2
+#graphify/document #graphify/EXTRACTED #community/mainpy

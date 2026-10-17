@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
+source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L132"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

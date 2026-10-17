@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L43"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

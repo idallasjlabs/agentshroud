@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "AlertDispatcher"
-location: "L21"
+community: "MiddlewareManager (5)"
+location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

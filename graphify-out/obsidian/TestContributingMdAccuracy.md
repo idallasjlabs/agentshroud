@@ -20,7 +20,7 @@ tags:
 - [[dot-test_mentions_test_directory()]] - `method` [EXTRACTED]
 - [[dot-test_pytest_command_syntax()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Verify CONTRIBUTING.md references are correct.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 

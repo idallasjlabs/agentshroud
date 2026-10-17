@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "concept"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2
 ---
 
 # Slow-drip / coordinated multi-channel exfiltration anomaly detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EgressMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/concept #graphify/EXTRACTED #community/AlertDispatcher_2

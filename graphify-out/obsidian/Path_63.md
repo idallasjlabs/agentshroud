@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "test_multi_host_test.py"
-location: "L324"
+community: "export-bot-conversations.py (4)"
+location: "L101"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_multi_host_testpy
+  - graphify/EXTRACTED
+  - community/export-bot-conversationspy_4
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_35]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_4

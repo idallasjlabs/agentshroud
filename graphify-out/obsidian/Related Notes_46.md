@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L72"
+community: "ANTHROPIC_BASE_URL"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Networks]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

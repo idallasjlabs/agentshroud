@@ -17,7 +17,7 @@ tags:
 - [[Design Principles]] - `contains` [EXTRACTED]
 - [[Docker Compose Template]] - `contains` [EXTRACTED]
 - [[Future Enhancements_2]] - `contains` [EXTRACTED]
-- [[Overview_23]] - `contains` [EXTRACTED]
+- [[Overview_25]] - `contains` [EXTRACTED]
 - [[Per-Agent Audit Trails]] - `contains` [EXTRACTED]
 - [[Request Routing]] - `contains` [EXTRACTED]
 - [[Security Verification_1]] - `contains` [EXTRACTED]

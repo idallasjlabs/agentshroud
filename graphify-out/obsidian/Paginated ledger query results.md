@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # Paginated ledger query results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LedgerQueryResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

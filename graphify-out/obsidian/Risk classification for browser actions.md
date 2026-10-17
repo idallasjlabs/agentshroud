@@ -12,6 +12,6 @@ tags:
 # Risk classification for browser actions
 
 ## Connections
-- [[RiskLevel]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

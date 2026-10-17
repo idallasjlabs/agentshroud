@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "UserSessionManager (2)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/UserSessionManager_2
 ---
 
 # TestApprovalStorePersistence
@@ -16,12 +16,12 @@ tags:
 - [[dot-test_store_persists_across_reopen()]] - `method` [EXTRACTED]
 - [[dot-test_store_save_and_load()]] - `method` [EXTRACTED]
 - [[dot-test_store_update_status()]] - `method` [EXTRACTED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
 - [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[Queue persistence across restart.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

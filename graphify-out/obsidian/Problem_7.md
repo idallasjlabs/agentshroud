@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Flip core security modules from monitor to enforce mode"
-location: "L6"
+community: "ModeRequest (2)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
+  - community/ModeRequest_2
 ---
 
 # Problem
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode
+#graphify/document #graphify/EXTRACTED #community/ModeRequest_2

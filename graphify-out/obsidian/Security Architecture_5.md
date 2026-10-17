@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
-location: "L404"
+community: "Browser — Secure Browser Automation (3)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Browser__Secure_Browser_Automation_3
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Defense in Depth]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3

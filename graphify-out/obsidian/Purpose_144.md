@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "telegram_proxy.py (4)"
-location: "L12"
+community: "OpenSCAP"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_4
+  - community/OpenSCAP
 ---
 
 # Purpose
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_4
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L4730"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[slack_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

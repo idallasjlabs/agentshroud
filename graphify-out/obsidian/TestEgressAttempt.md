@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L252"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # TestEgressAttempt
@@ -23,4 +23,4 @@ tags:
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2

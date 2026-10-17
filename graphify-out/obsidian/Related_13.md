@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Function Details (3)"
-location: "L91"
+community: "models.py"
+location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_3
+  - community/modelspy
 ---
 
 # Related
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_3
+#graphify/document #graphify/EXTRACTED #community/modelspy

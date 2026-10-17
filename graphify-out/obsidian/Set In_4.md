@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "AgentRegistry"
-location: "L27"
+community: "ANTHROPIC_BASE_URL"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Set In
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

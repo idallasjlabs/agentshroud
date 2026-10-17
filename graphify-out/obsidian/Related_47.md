@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "auth.py"
-location: "L80"
+community: "log_sanitizer.py"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/log_sanitizerpy
 ---
 
 # Related
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

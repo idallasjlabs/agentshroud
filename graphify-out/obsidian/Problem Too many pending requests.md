@@ -12,6 +12,6 @@ tags:
 # Problem: Too many pending requests
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

@@ -12,7 +12,7 @@ tags:
 # SlackAPIProxy
 
 ## Connections
-- [[dot-__init__()_93]] - `method` [EXTRACTED]
+- [[dot-__init__()_95]] - `method` [EXTRACTED]
 - [[dot-_call_slack_api()]] - `method` [EXTRACTED]
 - [[dot-_intercept_connections_open()]] - `method` [EXTRACTED]
 - [[dot-_is_owner_channel()]] - `method` [EXTRACTED]
@@ -24,11 +24,11 @@ tags:
 - [[dot-provision_group_channel()]] - `method` [EXTRACTED]
 - [[dot-proxy_outbound()]] - `method` [EXTRACTED]
 - [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[SlackSocketClient]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestBodyParsing]] - `uses` [INFERRED]
 - [[TestCallSlackApi]] - `uses` [INFERRED]
 - [[TestHandleEvent]] - `uses` [INFERRED]
@@ -43,8 +43,8 @@ tags:
 - [[TestSocketModeRelay]] - `uses` [INFERRED]
 - [[TestWebhookReceiverSlackExtraction]] - `uses` [INFERRED]
 - [[_RaisingRedactionResult]] - `uses` [INFERRED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[slack_proxy.py]] - `contains` [EXTRACTED]
 - [[slack_socket_client.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "ClamAV"
-location: "L48"
+community: "agentshroud-bot"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/agentshroud-bot
 ---
 
 # Related Notes
 
 ## Connections
-- [[ClamAV_1]] - `contains` [EXTRACTED]
+- [[Docker Networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

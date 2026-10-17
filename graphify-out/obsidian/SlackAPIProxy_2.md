@@ -20,6 +20,6 @@ tags:
 - [[dot-test_tracker_error_does_not_propagate()]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
-- [[_make_proxy()_4]] - `references` [EXTRACTED]
+- [[_make_proxy()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestHandleEvent

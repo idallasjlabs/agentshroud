@@ -12,7 +12,7 @@ tags:
 # TestGetLogs
 
 ## Connections
-- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
+- [[dot-get_logs()]] - `calls` [EXTRACTED]
 - [[dot-test_bytes_payload_is_decoded()]] - `method` [EXTRACTED]
 - [[dot-test_engine_error_falls_back_to_socket()]] - `method` [EXTRACTED]
 - [[dot-test_no_engine_no_socket()]] - `method` [EXTRACTED]

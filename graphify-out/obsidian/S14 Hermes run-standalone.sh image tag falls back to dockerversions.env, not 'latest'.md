@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "colima-health-check.sh"
 location: "lines 212-228"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/colima-health-checksh
 ---
 
 # S14 Hermes run-standalone.sh image tag falls back to docker/versions.env, not 'latest'
@@ -15,4 +15,4 @@ tags:
 - [[cmd_up()]] - `references` [EXTRACTED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh

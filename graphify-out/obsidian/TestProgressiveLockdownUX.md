@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L8003"
+community: "test_telegram_proxy_inbound.py"
+location: "L8021"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # TestProgressiveLockdownUX
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_3]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - `method` [EXTRACTED]
@@ -35,10 +35,7 @@ tags:
 - [[dot-test_unlock_clears_suspended_drop_cooldown()]] - `method` [EXTRACTED]
 - [[dot-test_unlock_persists_unpause_to_disk()]] - `method` [EXTRACTED]
 - [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
-- [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - `rationale_for` [EXTRACTED]
+- [[Tests for lockdown UX unlock fix, collaborator notifications, locked,…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

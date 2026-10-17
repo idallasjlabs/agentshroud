@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_1]] - `references` [EXTRACTED]
+- [[dot-get_audit_log()]] - `references` [EXTRACTED]
 - [[dot-get_flagged_events()]] - `references` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]

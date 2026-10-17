@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "TestToolChainAnalyzer (2)"
+community: "TestToolChainAnalyzer"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/TestToolChainAnalyzer
 ---
 
 # Represents a single tool call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolCall]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Restart Procedure"
-location: "L1"
+community: "First Time Setup (2)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/First_Time_Setup_2
 ---
 
-# Startup Errors.md
+# Startup Errors
 
 ## Connections
-- [[Container Errors_1]] - `references` [EXTRACTED]
-- [[First Time Setup]] - `references` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
+- [[Bot Container Startup Failures]] - `contains` [EXTRACTED]
+- [[Gateway Container Startup Failures]] - `contains` [EXTRACTED]
+- [[Related Notes_58]] - `contains` [EXTRACTED]
+- [[Startup Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2

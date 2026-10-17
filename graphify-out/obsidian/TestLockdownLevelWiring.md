@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "_FakeRBAC"
+community: "ProgressiveLockdown"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/ProgressiveLockdown
 ---
 
 # TestLockdownLevelWiring
@@ -19,7 +19,7 @@ tags:
 - [[Bug 2 contributors.py must call get_status(), not the nonexistent get_level().]] - `rationale_for` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

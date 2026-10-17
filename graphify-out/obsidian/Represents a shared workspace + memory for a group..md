@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "RBACConfig"
+community: "ToolResultSanitizer"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ToolResultSanitizer
 ---
 
 # Represents a shared workspace + memory for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

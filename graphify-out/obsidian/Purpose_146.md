@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "docker_engine.py"
-location: "L12"
+community: "mcp-proxy-wrapper.js (2)"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker_enginepy
+  - community/mcp-proxy-wrapperjs_2
 ---
 
 # Purpose
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker_enginepy
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2

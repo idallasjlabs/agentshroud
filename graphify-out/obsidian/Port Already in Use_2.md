@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L565"
+community: "AgentShroud Setup Guide"
+location: "L789"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Port Already in Use
 
 ## Connections
-- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

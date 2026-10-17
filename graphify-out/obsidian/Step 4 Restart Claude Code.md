@@ -12,6 +12,6 @@ tags:
 # Step 4: Restart Claude Code
 
 ## Connections
-- [[1. GitHub MCP Authentication Reset_1]] - `contains` [EXTRACTED]
+- [[1. GitHub MCP Authentication Reset_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

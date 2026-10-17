@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/slack/SKILL.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Actions"
-location: "L9"
+community: "Integration Guide"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/Integration_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[Slack Actions]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

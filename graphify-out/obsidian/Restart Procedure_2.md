@@ -1,26 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
+source_file: "docs/operations/runbook.md"
 type: "document"
-community: "02-infrastructure.md (2)"
-location: "L9"
+community: "AgentShroud Incident Response Plan"
+location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Restart Procedure
 
 ## Connections
-- [[After Config Change]] - `contains` [EXTRACTED]
-- [[After Secret Rotation]] - `contains` [EXTRACTED]
-- [[Bot Only Restart]] - `contains` [EXTRACTED]
-- [[Full Stack Restart]] - `contains` [EXTRACTED]
-- [[Gateway Only Restart]] - `contains` [EXTRACTED]
-- [[Related Notes_69]] - `contains` [EXTRACTED]
-- [[Restart Procedure]] - `contains` [EXTRACTED]
-- [[Restart Verification]] - `contains` [EXTRACTED]
-- [[When to Restart]] - `contains` [EXTRACTED]
-- [[Zero-Downtime Restart (Advanced)]] - `contains` [EXTRACTED]
+- [[1. Starting and Stopping AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

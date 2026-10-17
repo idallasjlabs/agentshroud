@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L5826"
+community: "FakeRBAC"
+location: "L5844"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # Owner URL messages should queue interactive preflight approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_url_triggers_egress_preflight_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

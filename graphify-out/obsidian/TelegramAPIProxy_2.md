@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_make_owner_proxy()]] - `calls` [EXTRACTED]
-- [[dot-_make_proxy()_5]] - `references` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `references` [EXTRACTED]
 - [[dot-_make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[dot-test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[dot-test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]
@@ -231,6 +231,6 @@ tags:
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

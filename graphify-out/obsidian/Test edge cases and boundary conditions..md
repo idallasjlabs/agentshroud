@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (35)"
+community: "TestOutboundInfoFilter"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_35
+  - community/TestOutboundInfoFilter
 ---
 
 # Test edge cases and boundary conditions.
 
 ## Connections
-- [[dot-test_edge_cases()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_35
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "SecureBrowser"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/SecureBrowser
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_classify_risk()_2]] - `references` [EXTRACTED]
-- [[dot-_log_action()_2]] - `references` [EXTRACTED]
-- [[dot-_requires_approval()_2]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_2]] - `rationale_for` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-_classify_risk()]] - `references` [EXTRACTED]
+- [[dot-_log_action()]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()]] - `references` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

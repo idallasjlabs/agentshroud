@@ -12,7 +12,7 @@ tags:
 # TestLoadFromText
 
 ## Connections
-- [[dot-setup_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_allowlist_skip()]] - `method` [EXTRACTED]
 - [[dot-test_comments_skipped()]] - `method` [EXTRACTED]
 - [[dot-test_deduplication()]] - `method` [EXTRACTED]

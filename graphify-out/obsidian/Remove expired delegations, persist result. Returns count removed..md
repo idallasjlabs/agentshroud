@@ -12,6 +12,6 @@ tags:
 # Remove expired delegations, persist result. Returns count removed.
 
 ## Connections
-- [[dot-cleanup_expired()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_expired()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DelegationManager

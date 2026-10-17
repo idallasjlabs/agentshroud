@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L789"
+community: "Restart Procedure"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Restart_Procedure
 ---
 
 # Port Already in Use
 
 ## Connections
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Container Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

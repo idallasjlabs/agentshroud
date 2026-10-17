@@ -18,7 +18,7 @@ tags:
 - [[dot-test_setmode_success_user()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
 - [[ProjectConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

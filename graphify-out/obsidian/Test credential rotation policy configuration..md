@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "UserSessionManager (5)"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_5
 ---
 
 # Test credential rotation policy configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialRotationPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_5

@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-check_rate_limit()]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Track rate limit state for a tool+agent combo.]] - `rationale_for` [EXTRACTED]
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/MCPPermissionManager_2

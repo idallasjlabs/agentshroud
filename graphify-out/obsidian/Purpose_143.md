@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "Function Details (8)"
+community: "input_normalizer.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/input_normalizerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_8
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

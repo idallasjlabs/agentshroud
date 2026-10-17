@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice (2)"
+community: "test_dashboard_endpoints.py"
 location: "L450"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/test_dashboard_endpointspy
 ---
 
 # Test that users can access their own workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_middleware_own_workspace_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy

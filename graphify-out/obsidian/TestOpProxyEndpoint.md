@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "_is_op_reference_allowed (2)"
+community: "_is_op_reference_allowed"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed_2
+  - community/_is_op_reference_allowed
 ---
 
 # TestOpProxyEndpoint
@@ -16,9 +16,9 @@ tags:
 - [[dot-test_malformed_reference_returns_422()]] - `method` [EXTRACTED]
 - [[dot-test_op_subprocess_failure_returns_502()]] - `method` [EXTRACTED]
 - [[dot-test_path_traversal_returns_403()]] - `method` [EXTRACTED]
-- [[dot-test_requires_auth()_1]] - `method` [EXTRACTED]
+- [[dot-test_requires_auth()_3]] - `method` [EXTRACTED]
 - [[dot-test_valid_reference_returns_value()]] - `method` [EXTRACTED]
 - [[auth_dep()]] - `references` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed_2
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

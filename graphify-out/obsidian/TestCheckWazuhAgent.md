@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager (3)"
+community: "ServiceManager"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_3
+  - community/ServiceManager
 ---
 
 # TestCheckWazuhAgent
 
 ## Connections
 - [[dot-test_esrch_falls_through_to_proc_scan()]] - `method` [EXTRACTED]
-- [[dot-test_not_installed()_4]] - `method` [EXTRACTED]
+- [[dot-test_not_installed()_3]] - `method` [EXTRACTED]
 - [[dot-test_running_via_pid_file()_1]] - `method` [EXTRACTED]
 - [[dot-test_running_via_proc_scan()_2]] - `method` [EXTRACTED]
 - [[dot-test_running_when_kill_raises_eperm()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[_check_wazuh_agent]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

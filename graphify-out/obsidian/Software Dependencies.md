@@ -1,17 +1,17 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Prerequisites"
+community: "AgentShroud Incident Response Plan"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prerequisites
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Software Dependencies
 
 ## Connections
-- [[Prerequisites_1]] - `contains` [EXTRACTED]
+- [[Prerequisites_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prerequisites
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

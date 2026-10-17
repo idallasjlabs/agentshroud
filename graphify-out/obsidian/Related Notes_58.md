@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "mcp-proxy-wrapper.js (2)"
-location: "L112"
+community: "First Time Setup (2)"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs_2
+  - community/First_Time_Setup_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2

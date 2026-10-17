@@ -14,14 +14,14 @@ tags:
 ## Connections
 - [[dot-test_email_content_scanning()]] - `method` [EXTRACTED]
 - [[dot-test_icloud_contact_scanning()]] - `method` [EXTRACTED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]
 - [[Test realistic tool result scenarios]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ToolResultSanitizer

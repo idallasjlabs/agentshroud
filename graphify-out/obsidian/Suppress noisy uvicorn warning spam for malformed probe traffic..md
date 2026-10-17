@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "telegram_proxy.py (2)"
+community: "ToolResultSanitizer"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/ToolResultSanitizer
 ---
 
 # Suppress noisy uvicorn warning spam for malformed probe traffic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_DropInvalidHTTPRequestFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

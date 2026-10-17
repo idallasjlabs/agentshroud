@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "All Dependencies.md (2)"
-location: "L53"
+community: "mcp-proxy-wrapper.js (2)"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/mcp-proxy-wrapperjs_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Pydantic_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2

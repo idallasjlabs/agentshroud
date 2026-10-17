@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L415"
+community: "test_llm_proxy_local_parity.py"
+location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # Owner /start should be handled locally with deterministic status message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_start_uses_local_notice_and_does_not_forward()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

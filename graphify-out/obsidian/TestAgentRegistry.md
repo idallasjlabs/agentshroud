@@ -12,7 +12,7 @@ tags:
 # TestAgentRegistry
 
 ## Connections
-- [[dot-test_get_missing_returns_none()]] - `method` [EXTRACTED]
+- [[dot-test_get_missing_returns_none()_1]] - `method` [EXTRACTED]
 - [[dot-test_list_agents()]] - `method` [EXTRACTED]
 - [[dot-test_register_and_get()]] - `method` [EXTRACTED]
 - [[dot-test_serialization_roundtrip()]] - `method` [EXTRACTED]

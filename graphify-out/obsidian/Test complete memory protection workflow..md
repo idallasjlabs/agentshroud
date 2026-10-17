@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MiddlewareManager (16)"
+community: "MiddlewareManager (5)"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_16
+  - community/MiddlewareManager_5
 ---
 
 # Test complete memory protection workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_integrated_memory_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_16
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

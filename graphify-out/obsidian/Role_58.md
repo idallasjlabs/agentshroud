@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!) (2)"
-location: "L7"
+community: "Socrates — Dialogue Architect"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First_2
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_2
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

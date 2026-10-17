@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L8"
+community: "Phase 3: MITIGATE (Rollback First!) (2)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Phase_3_MITIGATE_Rollback_First_2
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_2

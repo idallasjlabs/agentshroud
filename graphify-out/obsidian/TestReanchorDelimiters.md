@@ -12,7 +12,7 @@ tags:
 # TestReanchorDelimiters
 
 ## Connections
-- [[dot-guard()_2]] - `method` [EXTRACTED]
+- [[dot-guard()_3]] - `method` [EXTRACTED]
 - [[dot-test_preserves_legitimate_markdown()]] - `method` [EXTRACTED]
 - [[dot-test_strips_fake_system_tags()]] - `method` [EXTRACTED]
 - [[dot-test_strips_separator_overrides()]] - `method` [EXTRACTED]

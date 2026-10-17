@@ -12,6 +12,6 @@ tags:
 # PII Not Being Detected
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

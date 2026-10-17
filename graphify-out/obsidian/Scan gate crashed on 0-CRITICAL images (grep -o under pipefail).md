@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[Baseline phase logs PASS with 0 images captured]] - `semantically_similar_to` [INFERRED]
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - `references` [EXTRACTED]
-- [[sunday-scan.sh (Trivy scan gate library)]] - `references` [EXTRACTED]
+- [[sunday-scan.sh]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/colima-health-checksh

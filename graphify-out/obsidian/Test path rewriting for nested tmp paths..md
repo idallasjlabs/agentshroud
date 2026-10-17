@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager (3)"
+community: "AlertDispatcher"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/AlertDispatcher
 ---
 
 # Test path rewriting for nested /tmp paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_path_rewriting_nested_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

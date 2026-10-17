@@ -12,6 +12,6 @@ tags:
 # Pipeline-compatible bridge: scan response text and return TripwireResponse.
 
 ## Connections
-- [[dot-scan_response()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_response()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PipelineAction

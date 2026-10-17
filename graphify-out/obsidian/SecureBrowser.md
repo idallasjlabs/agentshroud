@@ -12,7 +12,7 @@ tags:
 # SecureBrowser
 
 ## Connections
-- [[dot-__init__()_47]] - `method` [EXTRACTED]
+- [[dot-__init__()_57]] - `method` [EXTRACTED]
 - [[dot-_classify_risk()]] - `method` [EXTRACTED]
 - [[dot-_domain_matches()]] - `method` [EXTRACTED]
 - [[dot-_init_browser()]] - `method` [EXTRACTED]
@@ -24,13 +24,13 @@ tags:
 - [[dot-_validate_url()]] - `method` [EXTRACTED]
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 - [[dot-click()]] - `method` [EXTRACTED]
-- [[dot-close()_2]] - `method` [EXTRACTED]
+- [[dot-close()_4]] - `method` [EXTRACTED]
 - [[dot-detect_captcha()]] - `method` [EXTRACTED]
 - [[dot-extract()]] - `method` [EXTRACTED]
 - [[dot-fill_field()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_2]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_1]] - `method` [EXTRACTED]
 - [[dot-navigate()]] - `method` [EXTRACTED]
 - [[Secure browser automation with enterprise controls      Security guarantees]] - `rationale_for` [EXTRACTED]
-- [[main()_4]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

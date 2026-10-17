@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!) (3)"
-location: "L7"
+community: "Socrates — Dialogue Architect (3)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First_3
+  - community/Socrates__Dialogue_Architect_3
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_3
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_3

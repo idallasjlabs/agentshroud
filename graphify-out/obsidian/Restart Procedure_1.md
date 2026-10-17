@@ -1,17 +1,19 @@
 ---
-source_file: "docs/operations/runbook.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L95"
+community: "02-infrastructure.md (2)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/02-infrastructuremd_2
 ---
 
-# Restart Procedure
+# Restart Procedure.md
 
 ## Connections
-- [[1. Starting and Stopping AgentShroud]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `references` [EXTRACTED]
+- [[First Time Setup]] - `references` [EXTRACTED]
+- [[Restart Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2

@@ -12,7 +12,7 @@ tags:
 # SharedMemoryManager
 
 ## Connections
-- [[dot-__init__()_84]] - `method` [EXTRACTED]
+- [[dot-__init__()_159]] - `method` [EXTRACTED]
 - [[dot-_is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[dot-_strip_private_content()]] - `method` [EXTRACTED]
 - [[dot-append_to_group_memory()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[High-level shared-memory API wrapping UserSessionManager storage.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
 - [[TestAuthorizationHelper]] - `uses` [INFERRED]
 - [[TestConfigGate]] - `uses` [INFERRED]

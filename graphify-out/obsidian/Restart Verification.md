@@ -12,6 +12,6 @@ tags:
 # Restart Verification
 
 ## Connections
-- [[Restart Procedure_2]] - `contains` [EXTRACTED]
+- [[Restart Procedure]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2

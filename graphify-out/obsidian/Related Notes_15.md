@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "installer.py (2)"
-location: "L42"
+community: "browser-fetch.js"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy_2
+  - community/browser-fetchjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy_2
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

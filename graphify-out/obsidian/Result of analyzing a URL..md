@@ -12,6 +12,6 @@ tags:
 # Result of analyzing a URL.
 
 ## Connections
-- [[URLAnalysisResult_1]] - `rationale_for` [EXTRACTED]
+- [[URLAnalysisResult]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

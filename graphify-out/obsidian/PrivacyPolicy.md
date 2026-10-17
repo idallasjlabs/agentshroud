@@ -12,12 +12,12 @@ tags:
 # PrivacyPolicy
 
 ## Connections
-- [[dot-__init__()_187]] - `references` [EXTRACTED]
+- [[dot-__init__()_205]] - `references` [EXTRACTED]
 - [[dot-default()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_9]] - `method` [EXTRACTED]
+- [[dot-from_dict()_10]] - `method` [EXTRACTED]
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]

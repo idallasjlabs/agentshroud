@@ -12,7 +12,7 @@ tags:
 # TestOutputCanary
 
 ## Connections
-- [[dot-setup_method()_16]] - `method` [EXTRACTED]
+- [[dot-setup_method()_13]] - `method` [EXTRACTED]
 - [[dot-test_canary_cleanup()]] - `method` [EXTRACTED]
 - [[dot-test_canary_generation_per_session()]] - `method` [EXTRACTED]
 - [[dot-test_clean_response_passes()]] - `method` [EXTRACTED]

@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
 community: "Error Index.md"
-location: "L1"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/Error_Indexmd
 ---
 
-# Prompt Injection Blocks.md
+# Prompt Injection Blocks
 
 ## Connections
-- [[Error Index_1]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_2]] - `semantically_similar_to` [INFERRED]
-- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

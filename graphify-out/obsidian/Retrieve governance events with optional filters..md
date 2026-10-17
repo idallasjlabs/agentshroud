@@ -12,7 +12,7 @@ tags:
 # Retrieve governance events with optional filters.
 
 ## Connections
-- [[dot-get_events()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_events()_2]] - `rationale_for` [EXTRACTED]
 - [[dot-get_governance_events()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/GovernanceAction

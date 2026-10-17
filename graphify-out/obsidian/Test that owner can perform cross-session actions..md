@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice (2)"
+community: "test_dashboard_endpoints.py"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/test_dashboard_endpointspy
 ---
 
 # Test that owner can perform cross-session actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_middleware_owner_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy

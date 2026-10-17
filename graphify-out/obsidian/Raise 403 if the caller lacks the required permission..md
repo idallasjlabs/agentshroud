@@ -12,6 +12,6 @@ tags:
 # Raise 403 if the caller lacks the required permission.
 
 ## Connections
-- [[dot-require()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-require()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
+source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L171"
+community: "cve-registry-manual-review.md"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/cve-registry-manual-reviewmd
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd

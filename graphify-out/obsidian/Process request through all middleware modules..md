@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ToolResultSanitizer"
 location: "L501"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # Process request through all middleware modules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-process_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

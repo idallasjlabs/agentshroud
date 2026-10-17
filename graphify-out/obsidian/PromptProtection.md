@@ -12,7 +12,7 @@ tags:
 # PromptProtection
 
 ## Connections
-- [[dot-__init__()_153]] - `method` [EXTRACTED]
+- [[dot-__init__()_25]] - `method` [EXTRACTED]
 - [[dot-_calculate_similarity()]] - `method` [EXTRACTED]
 - [[dot-_compile_detection_patterns()]] - `method` [EXTRACTED]
 - [[dot-_load_protected_content()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-add_protected_content()]] - `method` [EXTRACTED]
 - [[dot-get_protection_stats()]] - `method` [EXTRACTED]
 - [[dot-register_bot_hostnames()]] - `method` [EXTRACTED]
-- [[dot-scan_response()_2]] - `method` [EXTRACTED]
+- [[dot-scan_response()_1]] - `method` [EXTRACTED]
 - [[dot-test_disabled_protection()]] - `calls` [EXTRACTED]
 - [[dot-test_protected_content_loading()]] - `calls` [EXTRACTED]
 - [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - `rationale_for` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[prompt_protection()]] - `calls` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "All Dependencies.md (2)"
-location: "L46"
+community: "telegram_proxy.py (3)"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/telegram_proxypy_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3

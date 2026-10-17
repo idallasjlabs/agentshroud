@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "config.py"
+community: "sidecar.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/sidecarpy
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

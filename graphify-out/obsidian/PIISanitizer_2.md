@@ -12,13 +12,13 @@ tags:
 # PIISanitizer
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[sanitizer()_2]] - `references` [EXTRACTED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[sanitizer()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

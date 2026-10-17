@@ -12,6 +12,6 @@ tags:
 # Test trust survives restart.
 
 ## Connections
-- [[TestPersistence]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TrustConfig

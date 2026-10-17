@@ -1,24 +1,18 @@
 ---
-source_file: "SECURITY.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
-location: "L15"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+location: "L404"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Security Architecture
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
-- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
-- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
-- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
-- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
-- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
-- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
+- [[Defense in Depth]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

@@ -12,9 +12,9 @@ tags:
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_93]] - `contains` [EXTRACTED]
-- [[Related Skills_80]] - `contains` [EXTRACTED]
-- [[Usage_92]] - `contains` [EXTRACTED]
+- [[Purpose_105]] - `contains` [EXTRACTED]
+- [[Related Skills_85]] - `contains` [EXTRACTED]
+- [[Usage_94]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-secREADME]] - `contains` [EXTRACTED]
 

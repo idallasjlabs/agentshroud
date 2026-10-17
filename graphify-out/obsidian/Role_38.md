@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

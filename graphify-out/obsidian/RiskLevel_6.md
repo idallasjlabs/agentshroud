@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_assess_risk()]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]

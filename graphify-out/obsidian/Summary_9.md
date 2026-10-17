@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "LOW — Informational"
-location: "L141"
+community: "Telegram & Gmail Integration Guide"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

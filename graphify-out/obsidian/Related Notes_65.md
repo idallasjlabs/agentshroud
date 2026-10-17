@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "apply-patches.js (2)"
-location: "L78"
+community: "First Time Setup (3)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs_2
+  - community/First_Time_Setup_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs_2
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_3

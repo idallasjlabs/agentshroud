@@ -12,9 +12,9 @@ tags:
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_99]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[Usage_95]] - `contains` [EXTRACTED]
+- [[Purpose_89]] - `contains` [EXTRACTED]
+- [[Related Skills_69]] - `contains` [EXTRACTED]
+- [[Usage_78]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tddREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

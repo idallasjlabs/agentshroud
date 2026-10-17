@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "KillSwitchMonitor"
-location: "L28"
+community: "ApprovalHardening"
+location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ApprovalHardening
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "auth.py"
+community: "ssh_config.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/ssh_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

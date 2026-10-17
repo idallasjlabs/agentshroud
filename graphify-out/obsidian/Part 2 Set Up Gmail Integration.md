@@ -12,7 +12,7 @@ tags:
 # Part 2: Set Up Gmail Integration
 
 ## Connections
-- [[Prerequisites_2]] - `contains` [EXTRACTED]
+- [[Prerequisites_1]] - `contains` [EXTRACTED]
 - [[Step 1 Enable IMAP in Gmail]] - `contains` [EXTRACTED]
 - [[Step 2 Create Gmail App Password]] - `contains` [EXTRACTED]
 - [[Step 3 Add Gmail to OpenClaw]] - `contains` [EXTRACTED]

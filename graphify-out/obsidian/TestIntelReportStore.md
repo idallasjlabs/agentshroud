@@ -32,7 +32,7 @@ tags:
 - [[dot-test_verify_chain_passes_for_intact_store()]] - `method` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 

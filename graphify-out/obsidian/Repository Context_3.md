@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/test-augmenter.agent.md"
+source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Test Augmentation Specialist"
-location: "L107"
+community: "Safe Refactor Specialist"
+location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/Safe_Refactor_Specialist
 ---
 
 # Repository Context
 
 ## Connections
-- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
+- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist

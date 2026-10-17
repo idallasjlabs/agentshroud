@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/gsd.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "postmortem.md"
+community: "Implement gateway-level outbound information filtering module"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Problem
 
 ## Connections
-- [[gsd]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Advanced Telegram Commands]] - `contains` [EXTRACTED]
 - [[Multi-Device Access]] - `contains` [EXTRACTED]
-- [[Next Steps_9]] - `contains` [EXTRACTED]
+- [[Next Steps_10]] - `contains` [EXTRACTED]
 - [[Optional Restrict Bot Access]] - `contains` [EXTRACTED]
 - [[Security Considerations_1]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Telegram Bot]] - `contains` [EXTRACTED]

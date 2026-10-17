@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Function Details (7)"
-location: "L74"
+community: "version_routes.py"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_7
+  - community/version_routespy
 ---
 
 # Related
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_7
+#graphify/document #graphify/EXTRACTED #community/version_routespy

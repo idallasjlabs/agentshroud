@@ -12,6 +12,6 @@ tags:
 # ResourceGuard.get_usage_stats(agent_id)
 
 ## Connections
-- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Function Details_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details_2

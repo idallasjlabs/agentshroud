@@ -12,7 +12,7 @@ tags:
 # TestEgressFilterConfig
 
 ## Connections
-- [[dot-test_default_config()_8]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[dot-test_denylist_wildcards()]] - `method` [EXTRACTED]
 - [[dot-test_effective_allowlist_basic()]] - `method` [EXTRACTED]
 - [[dot-test_effective_allowlist_with_denylist()]] - `method` [EXTRACTED]

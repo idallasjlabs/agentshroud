@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "UserSessionManager (2)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_4
+  - community/UserSessionManager_2
 ---
 
 # TestConcurrentApprovalRequests
@@ -15,11 +15,11 @@ tags:
 - [[dot-test_100_concurrent_submissions()]] - `method` [EXTRACTED]
 - [[dot-test_concurrent_submit_and_decide()]] - `method` [EXTRACTED]
 - [[100 concurrent approval requests.]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
 - [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/INFERRED #community/UserSessionManager_2

@@ -18,7 +18,7 @@ tags:
 - [[dot-test_hash_matches_content()]] - `method` [EXTRACTED]
 - [[Chain with many entries — verify integrity.]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

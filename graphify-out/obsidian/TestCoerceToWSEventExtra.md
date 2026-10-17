@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py (2)"
+community: "MiddlewareManager"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy_2
+  - community/MiddlewareManager
 ---
 
 # TestCoerceToWSEventExtra
@@ -20,12 +20,12 @@ tags:
 - [[dot-test_type_mapping()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_severity_defaults_to_info()]] - `method` [EXTRACTED]
 - [[dot-test_wsevent_passthrough()]] - `method` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

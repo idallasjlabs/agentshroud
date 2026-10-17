@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "GSDE&G Development Master Checklist Skill"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

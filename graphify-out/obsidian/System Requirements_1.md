@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L21"
+community: "AgentShroud Incident Response Plan"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # System Requirements
 
 ## Connections
-- [[Prerequisites_5]] - `contains` [EXTRACTED]
+- [[Prerequisites_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

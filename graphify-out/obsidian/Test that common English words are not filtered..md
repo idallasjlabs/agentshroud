@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (19)"
+community: "TestOutboundInfoFilter"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_19
+  - community/TestOutboundInfoFilter
 ---
 
 # Test that common English words are not filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_common_tools_not_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_19
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

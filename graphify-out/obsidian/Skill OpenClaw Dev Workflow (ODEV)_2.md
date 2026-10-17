@@ -12,13 +12,13 @@ tags:
 # Skill: OpenClaw Dev Workflow (ODEV)
 
 ## Connections
-- [[Guardrails_7]] - `contains` [EXTRACTED]
+- [[Guardrails_6]] - `contains` [EXTRACTED]
 - [[Invocation_5]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_5]] - `contains` [EXTRACTED]
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_5]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_5]] - `contains` [EXTRACTED]
-- [[Role_31]] - `contains` [EXTRACTED]
+- [[Role_34]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_5]] - `contains` [EXTRACTED]
 - [[hermesskillsi-odevSKILL]] - `contains` [EXTRACTED]
 

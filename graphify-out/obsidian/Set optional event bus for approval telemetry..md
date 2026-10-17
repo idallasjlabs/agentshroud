@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue (2)"
+community: "TestEgressApprovalQueue"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/TestEgressApprovalQueue
 ---
 
 # Set optional event bus for approval telemetry.
 
 ## Connections
-- [[dot-set_event_bus()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-set_event_bus()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

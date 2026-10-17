@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "prompt_guard.py.md"
+community: "telegram_proxy.py (4)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/telegram_proxypy_4
 ---
 
 # Purpose
 
 ## Connections
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_4

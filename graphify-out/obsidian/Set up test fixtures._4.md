@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "TestOutputCanary"
-location: "L21"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_16]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

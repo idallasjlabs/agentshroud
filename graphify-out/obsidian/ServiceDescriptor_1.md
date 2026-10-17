@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "ServiceManager (2)"
+community: "ServiceManager"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_2
+  - community/ServiceManager
 ---
 
 # ServiceDescriptor
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_stopped_service()]] - `calls` [EXTRACTED]
 - [[dot-test_unhealthy_service()]] - `calls` [EXTRACTED]
 - [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_38]] - `uses` [INFERRED]
+- [[Any_14]] - `uses` [INFERRED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

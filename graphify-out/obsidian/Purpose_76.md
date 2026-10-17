@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "http_proxy.py"
-location: "L12"
+community: "Error Index.md (4)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/Error_Indexmd_4
 ---
 
 # Purpose
 
 ## Connections
-- [[http_proxy.py_1]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

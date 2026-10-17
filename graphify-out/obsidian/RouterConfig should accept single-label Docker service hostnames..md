@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "AgentTarget"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/AgentTarget
 ---
 
 # RouterConfig should accept single-label Docker service hostnames.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_router_config_accepts_docker_service_hostname()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

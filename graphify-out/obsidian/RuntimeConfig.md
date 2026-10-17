@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-effective_rootless()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_7]] - `method` [EXTRACTED]
-- [[dot-from_env()_1]] - `method` [EXTRACTED]
+- [[dot-from_dict()_6]] - `method` [EXTRACTED]
+- [[dot-from_env()]] - `method` [EXTRACTED]
 - [[dot-test_effective_rootless_docker()]] - `calls` [EXTRACTED]
 - [[dot-test_effective_rootless_override()]] - `calls` [EXTRACTED]
 - [[dot-test_effective_rootless_podman()]] - `calls` [EXTRACTED]

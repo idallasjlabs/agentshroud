@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "TestSSRFDetection (2)"
+community: "EgressFilterConfig"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/EgressFilterConfig
 ---
 
 # Serve the emergency kill switch page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[killswitch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

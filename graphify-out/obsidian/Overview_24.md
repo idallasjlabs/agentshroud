@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/healthcheck/SKILL.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L8"
+community: "SSH Capability Architecture Document"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Overview
 
 ## Connections
-- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

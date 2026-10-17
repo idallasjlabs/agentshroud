@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only) (2)"
-location: "L76"
+community: "main.py.md"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only_2
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[Architecture Overview_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only_2
+#graphify/document #graphify/EXTRACTED #community/mainpymd

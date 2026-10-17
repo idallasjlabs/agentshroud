@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "AlertDispatcher"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AlertDispatcher
 ---
 
 # Test get_module_mode returns enforce when no override set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_module_mode_no_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

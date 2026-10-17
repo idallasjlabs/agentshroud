@@ -12,6 +12,6 @@ tags:
 # Post-Recovery Verification
 
 ## Connections
-- [[Crash Recovery]] - `contains` [EXTRACTED]
+- [[Crash Recovery_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Crash_Recovery

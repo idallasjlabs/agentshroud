@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "router.py"
-location: "L15"
+community: "input_normalizer.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/input_normalizerpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertDispatcher (2)"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertDispatcher_2
 ---
 
 # Store a known-good baseline configuration. Returns config hash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-set_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

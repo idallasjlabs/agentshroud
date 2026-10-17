@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (30)"
+community: "TestOutboundInfoFilter"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_30
+  - community/TestOutboundInfoFilter
 ---
 
 # Test filter initializes with default configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_initialization_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_30
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

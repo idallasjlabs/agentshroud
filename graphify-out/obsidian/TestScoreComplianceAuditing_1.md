@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py (2)"
+community: "test_scanner_integration.py"
 location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/test_scanner_integrationpy
 ---
 
 # TestScoreComplianceAuditing
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_zero_when_not_run()_1]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

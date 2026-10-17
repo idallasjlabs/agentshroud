@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L91"
+community: "SecureBrowser (4)"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SecureBrowser_4
 ---
 
 # RiskLevel
 
 ## Connections
-- [[Enum_2]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
-- [[test_soc_egress.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-_classify_risk()_3]] - `references` [EXTRACTED]
+- [[dot-_log_action()_3]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()_3]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Risk classification for browser actions_3]] - `rationale_for` [EXTRACTED]
+- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

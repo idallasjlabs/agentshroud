@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L385"
+community: "create_auth_dependency"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/create_auth_dependency
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[dashboard_ws_token()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
-- [[serve_dashboard()]] - `references` [EXTRACTED]
+- [[auth_dep()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

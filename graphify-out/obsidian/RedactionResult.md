@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
 - [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
-- [[dot-sanitize()_3]] - `references` [EXTRACTED]
+- [[dot-sanitize()_2]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]

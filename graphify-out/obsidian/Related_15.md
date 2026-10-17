@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Function Details (5)"
-location: "L82"
+community: "Function Details (3)"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Function_Details_3
 ---
 
 # Related
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/document #graphify/EXTRACTED #community/Function_Details_3

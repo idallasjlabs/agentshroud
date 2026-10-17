@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "trivy_report.py"
-location: "L12"
+community: "Oracle — Feedback Analyst (2)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Oracle__Feedback_Analyst_2
 ---
 
 # Purpose
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_2

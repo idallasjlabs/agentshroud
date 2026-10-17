@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "api.py"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/apipy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_125]] - `references` [EXTRACTED]
+- [[dot-__init__()_128]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/apipy

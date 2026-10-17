@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (3)"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # SSHResult
@@ -19,9 +19,9 @@ tags:
 - [[dot-test_ssh_exec_cwd_none_forwards_none()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_history()]] - `calls` [EXTRACTED]
 - [[Result of an SSH command execution]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestExecute]] - `uses` [INFERRED]
 - [[TestInjectionNewline]] - `uses` [INFERRED]
 - [[TestIsAutoApproved]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

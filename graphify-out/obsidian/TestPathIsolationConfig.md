@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "AlertDispatcher"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/AlertDispatcher
 ---
 
 # TestPathIsolationConfig
 
 ## Connections
 - [[dot-test_custom_config()_2]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_7]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_5]] - `method` [EXTRACTED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[PathRewriteResult]] - `uses` [INFERRED]
 - [[Test path isolation configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_path_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

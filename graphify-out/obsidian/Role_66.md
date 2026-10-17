@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "_FakeRBAC"
-location: "L141"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+type: "document"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_163]] - `references` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3

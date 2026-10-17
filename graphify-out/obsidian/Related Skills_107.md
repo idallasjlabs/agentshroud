@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L12"
+community: "Mnemosyne — Retention Engineer"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

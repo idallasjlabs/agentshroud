@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (5)"
+community: "TelegramAPIProxy (3)"
 location: "L7823"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_5
+  - community/TelegramAPIProxy_3
 ---
 
 # Return list of ProjectConfig objects for this user, or empty list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_user_projects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_5
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "http_proxy.py"
-location: "L198"
+community: "OpenClaw Management Scripts"
+location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Security Notes
 
 ## Connections
-- [[http_proxy.py_1]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

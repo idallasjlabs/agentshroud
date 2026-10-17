@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (2)"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # SSHWriteResult
@@ -18,7 +18,7 @@ tags:
 - [[dot-test_write_file_valid_round_trip()]] - `calls` [EXTRACTED]
 - [[dot-write_file()]] - `references` [EXTRACTED]
 - [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
 - [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[proxy.py]] - `contains` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

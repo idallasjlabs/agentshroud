@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # Test edge cases and potential bypass attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeCases]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2

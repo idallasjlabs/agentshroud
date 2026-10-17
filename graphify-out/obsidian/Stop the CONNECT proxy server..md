@@ -12,6 +12,6 @@ tags:
 # Stop the CONNECT proxy server.
 
 ## Connections
-- [[dot-stop()_11]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_12]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

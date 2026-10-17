@@ -12,7 +12,7 @@ tags:
 # TestEgressWiringEndToEnd
 
 ## Connections
-- [[dot-setup_method()_7]] - `method` [EXTRACTED]
+- [[dot-setup_method()_9]] - `method` [EXTRACTED]
 - [[dot-test_allowed_egress_counts_as_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_denied_egress_counts_as_blocked()]] - `method` [EXTRACTED]
 - [[Decision_1]] - `uses` [INFERRED]

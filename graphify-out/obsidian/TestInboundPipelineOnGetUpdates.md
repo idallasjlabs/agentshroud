@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L151"
+community: "FakeRBAC"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # TestInboundPipelineOnGetUpdates
@@ -212,10 +212,7 @@ tags:
 - [[dot-test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify that _filter_inbound_updates() calls pipeline.process_inbound().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

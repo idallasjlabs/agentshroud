@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L126"
+community: "FakeRBAC"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # PassthroughPipeline
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_7]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_2]] - `method` [EXTRACTED]
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]
@@ -217,10 +217,7 @@ tags:
 - [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - `calls` [EXTRACTED]
 - [[dot-test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Pipeline that allows everything.]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

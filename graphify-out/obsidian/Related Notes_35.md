@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "pytest.ini"
-location: "L96"
+community: "`SecurityPipeline`"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/SecurityPipeline
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

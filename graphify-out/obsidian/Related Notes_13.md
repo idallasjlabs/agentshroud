@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Error Index.md (5)"
-location: "L104"
+community: "ClamAV"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_5
+  - community/ClamAV
 ---
 
 # Related Notes
 
 ## Connections
-- [[MCP Proxy Errors]] - `contains` [EXTRACTED]
+- [[ClamAV]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_5
+#graphify/document #graphify/EXTRACTED #community/ClamAV

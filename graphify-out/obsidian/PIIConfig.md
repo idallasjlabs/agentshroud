@@ -12,7 +12,7 @@ tags:
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_29]] - `references` [EXTRACTED]
+- [[dot-__init__()_18]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]

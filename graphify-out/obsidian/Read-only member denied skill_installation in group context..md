@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "RBACConfig (2) (2)"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig_2_2
 ---
 
 # Read-only member denied skill_installation in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_readonly_denied_skill_installation_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2_2

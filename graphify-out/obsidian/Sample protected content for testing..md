@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (9)"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_9
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # Sample protected content for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sample_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_9
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

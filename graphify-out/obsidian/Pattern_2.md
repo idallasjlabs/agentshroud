@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L24"
+community: "AlertDispatcher"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

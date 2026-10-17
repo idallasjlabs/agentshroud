@@ -15,6 +15,6 @@ tags:
 - [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access (Pi)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
-- [[troubleshooting_22]] - `conceptually_related_to` [INFERRED]
+- [[troubleshooting_20]] - `conceptually_related_to` [INFERRED]
 
 #graphify/document #graphify/INFERRED #community/Tailscale_Remote_Access_Setup

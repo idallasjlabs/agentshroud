@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # Path traversal attempts should be blocked.
 
 ## Connections
-- [[dot-test_path_traversal_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "_FakeRBAC"
+community: "soc/router.py"
 location: "L2717"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # Request
@@ -15,10 +15,10 @@ tags:
 - [[AuditLogEntry]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/soc/routerpy

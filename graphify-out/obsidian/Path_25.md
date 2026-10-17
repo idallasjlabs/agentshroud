@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "SkillGuard (2)"
-location: "L42"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SkillGuard_2
+  - graphify/EXTRACTED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[dot-__init__()_102]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

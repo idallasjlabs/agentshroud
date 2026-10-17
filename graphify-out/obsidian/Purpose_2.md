@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "All Dependencies.md (3)"
-location: "L15"
+community: "FalcoAlertWatcher (2)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_3
+  - community/FalcoAlertWatcher_2
 ---
 
 # Purpose
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_3
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher_2

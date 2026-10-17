@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "All Dependencies.md (3)"
-location: "L58"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_3
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_3
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

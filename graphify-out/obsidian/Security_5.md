@@ -12,6 +12,6 @@ tags:
 # Security
 
 ## Connections
-- [[Best Practices_1]] - `contains` [EXTRACTED]
+- [[Best Practices]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

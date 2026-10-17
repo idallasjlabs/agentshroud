@@ -12,7 +12,7 @@ tags:
 # Set up test environment.
 
 ## Connections
-- [[dot-setup_method()_30]] - `rationale_for` [EXTRACTED]
-- [[dot-setup_method()_29]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_21]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_20]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

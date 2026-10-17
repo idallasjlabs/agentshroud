@@ -16,7 +16,7 @@ tags:
 - [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[Security module configuration]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]

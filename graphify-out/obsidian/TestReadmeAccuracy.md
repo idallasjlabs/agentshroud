@@ -20,7 +20,7 @@ tags:
 - [[dot-test_quickstart_section_present()]] - `method` [EXTRACTED]
 - [[dot-test_security_modules_listed()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Verify README.md claims match actual implementation.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 

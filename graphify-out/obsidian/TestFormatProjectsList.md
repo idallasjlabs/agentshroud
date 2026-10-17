@@ -16,7 +16,7 @@ tags:
 - [[dot-test_no_projects_for_unknown_user()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
 - [[ProjectConfig]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

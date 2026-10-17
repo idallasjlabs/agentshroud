@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "CrossBotTrustLedger"
+community: "TrustConfig"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/TrustConfig
 ---
 
 # Test configuration options.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

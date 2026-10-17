@@ -12,14 +12,14 @@ tags:
 # ProxyAction
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[MockDNSVerdict]] - `uses` [INFERRED]
 - [[MockEgressChannel]] - `uses` [INFERRED]
 - [[MockEgressEvent]] - `uses` [INFERRED]
 - [[MockThreatLevel]] - `uses` [INFERRED]
 - [[MockURLResult]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "TelegramAPIProxy (3)"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/TelegramAPIProxy_3
 ---
 
 # TestEncodingBypass
@@ -22,4 +22,4 @@ tags:
 - [[normalize_input()]] - `references` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

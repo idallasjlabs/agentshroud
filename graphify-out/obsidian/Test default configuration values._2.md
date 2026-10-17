@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "MiddlewareManager (15)"
-location: "L36"
+community: "EgressFilterConfig"
+location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_15
+  - community/EgressFilterConfig
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_15
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

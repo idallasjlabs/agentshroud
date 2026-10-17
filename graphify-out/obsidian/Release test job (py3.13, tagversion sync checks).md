@@ -12,8 +12,6 @@ tags:
 # Release test job (py3.13, tag/version sync checks)
 
 ## Connections
-- [[CI docs-drift version consistency check]] - `semantically_similar_to` [INFERRED]
-- [[Leak gate ResourceWarningPytestUnraisableExceptionWarning fatal only on ubuntu+3.11]] - `references` [EXTRACTED]
 - [[Release Docker build & tag job]] - `references` [EXTRACTED]
 - [[sync-version.sh]] - `references` [EXTRACTED]
 

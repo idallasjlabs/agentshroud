@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_bot_id_augments_result_with_image_scan()]] - `method` [EXTRACTED]
 - [[dot-test_no_bot_id_omits_bot_keys()]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

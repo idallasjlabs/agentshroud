@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Skill: Technical Illustrator (TI) (2)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Skill_Technical_Illustrator_TI_2
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2

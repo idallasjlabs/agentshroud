@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "AlertDispatcher"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/AlertDispatcher
 ---
 
 # TestPathIsolationManager
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_dont_cleanup_active_user_directories()]] - `method` [EXTRACTED]
 - [[dot-test_end_user_session()]] - `method` [EXTRACTED]
 - [[dot-test_get_active_users()]] - `method` [EXTRACTED]
-- [[dot-test_get_stats()_1]] - `method` [EXTRACTED]
+- [[dot-test_get_stats()]] - `method` [EXTRACTED]
 - [[dot-test_get_user_temp_path()]] - `method` [EXTRACTED]
 - [[dot-test_initialization()_5]] - `method` [EXTRACTED]
 - [[dot-test_path_rewriting_nested_paths()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[Test path isolation manager.]] - `rationale_for` [EXTRACTED]
 - [[test_path_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

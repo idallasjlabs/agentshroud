@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "AlertDispatcher"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/AlertDispatcher
 ---
 
 # PathRewriteResult
@@ -22,4 +22,4 @@ tags:
 - [[path_isolation.py]] - `contains` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
-location: "L443"
+community: "MultiTurnTracker"
+location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MultiTurnTracker
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

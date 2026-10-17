@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig (2) (2)"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig_2
+  - community/RBACConfig_2_2
 ---
 
 # TestOwnerGroupContext
@@ -17,10 +17,10 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Owner must have unrestricted access even in group context.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig_2
+#graphify/code #graphify/INFERRED #community/RBACConfig_2_2

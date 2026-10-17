@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
-location: "L58"
+community: "MiddlewareManager (5)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/MiddlewareManager_5
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[dot-__init__()_59]] - `references` [EXTRACTED]
+- [[dot-archive_file()]] - `references` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

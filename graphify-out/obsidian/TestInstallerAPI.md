@@ -12,7 +12,7 @@ tags:
 # TestInstallerAPI
 
 ## Connections
-- [[dot-client()]] - `method` [EXTRACTED]
+- [[dot-client()_1]] - `method` [EXTRACTED]
 - [[dot-test_install()]] - `method` [EXTRACTED]
 - [[dot-test_installer_page()]] - `method` [EXTRACTED]
 - [[dot-test_prerequisites()]] - `method` [EXTRACTED]

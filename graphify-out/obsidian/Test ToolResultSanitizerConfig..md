@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # Test ToolResultSanitizerConfig.
 
 ## Connections
-- [[TestToolResultSanitizer]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
 community: "agentshroud-blueteam/SKILL.md"
-location: "L60"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,15 +12,9 @@ tags:
 # SessionContext
 
 ## Connections
-- [[dot-_add_disclosure_event()]] - `references` [EXTRACTED]
-- [[dot-_analyze_agent_response()]] - `references` [EXTRACTED]
-- [[dot-_analyze_user_message()]] - `references` [EXTRACTED]
-- [[dot-_check_thresholds()]] - `references` [EXTRACTED]
-- [[dot-_score_message_patterns()]] - `references` [EXTRACTED]
-- [[dot-_score_response_patterns()]] - `references` [EXTRACTED]
-- [[dot-_trigger_alert()_1]] - `references` [EXTRACTED]
-- [[dot-track_message()]] - `references` [EXTRACTED]
+- [[dot-_detect_rapid_context_growth()]] - `references` [EXTRACTED]
+- [[dot-analyze_message()]] - `calls` [EXTRACTED]
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
-- [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
+- [[context_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

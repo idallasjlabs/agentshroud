@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ContextSegment"
+community: "ApprovalQueueConfig"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig
 ---
 
 # PII sanitizer: 1000 messages in < 10s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIISanitizerPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

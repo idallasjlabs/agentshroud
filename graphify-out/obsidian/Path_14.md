@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
-location: "L380"
+community: "MiddlewareManager (5)"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/MiddlewareManager_5
 ---
 
 # Path
 
 ## Connections
-- [[dot-model_post_init()]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[dot-__init__()_58]] - `references` [EXTRACTED]
+- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
+- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
+- [[dot-scan_file()]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

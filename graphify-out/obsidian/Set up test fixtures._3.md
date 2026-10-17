@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "InjectionAction"
-location: "L24"
+community: "TestOutboundInfoFilter"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/TestOutboundInfoFilter
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_15]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

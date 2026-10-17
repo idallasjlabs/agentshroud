@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L73"
+community: "SkillGuard (2)"
+location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine_2
+  - community/SkillGuard_2
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2
+#graphify/code #graphify/INFERRED #community/SkillGuard_2

@@ -12,7 +12,7 @@ tags:
 # Test getting statistics.
 
 ## Connections
-- [[dot-test_get_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_stats()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_global_stats()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_global_stats()_1]] - `rationale_for` [EXTRACTED]
 

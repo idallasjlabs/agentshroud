@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L132"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # TestInboundPipelineBlockedOwner
@@ -15,7 +15,7 @@ tags:
 - [[dot-test_blocked_owner_message_allowed_through_with_sanitized_text()]] - `method` [EXTRACTED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PipelineAction
+#graphify/code #graphify/INFERRED #community/AuditChain

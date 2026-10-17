@@ -1,13 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Request (2)"
+community: "installer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/installerpy
 ---
 
 # Request
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+## Connections
+- [[installer_page()]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/installerpy

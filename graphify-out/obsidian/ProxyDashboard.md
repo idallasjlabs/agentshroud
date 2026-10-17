@@ -12,7 +12,7 @@ tags:
 # ProxyDashboard
 
 ## Connections
-- [[dot-__init__()_58]] - `method` [EXTRACTED]
+- [[dot-__init__()_67]] - `method` [EXTRACTED]
 - [[dot-get_display()]] - `method` [EXTRACTED]
 - [[dot-get_report()]] - `method` [EXTRACTED]
 - [[dot-record_message_proxied()]] - `method` [EXTRACTED]

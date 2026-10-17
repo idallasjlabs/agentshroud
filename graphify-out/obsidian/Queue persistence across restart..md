@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "ApprovalQueueConfig (4)"
+community: "UserSessionManager (2)"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/UserSessionManager_2
 ---
 
 # Queue persistence across restart.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalStorePersistence]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2

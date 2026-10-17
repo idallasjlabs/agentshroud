@@ -12,6 +12,6 @@ tags:
 # Security configuration for browser automation
 
 ## Connections
-- [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
+- [[SecurityConfig_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4

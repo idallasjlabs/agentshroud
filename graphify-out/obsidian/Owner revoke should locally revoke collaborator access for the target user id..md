@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L648"
+community: "FakeRBAC"
+location: "L666"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/FakeRBAC
 ---
 
 # Owner /revoke should locally revoke collaborator access for the target user id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_revoke_command_revokes_target_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

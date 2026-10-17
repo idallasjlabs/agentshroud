@@ -21,12 +21,12 @@ tags:
 - [[dot-test_summary_from_agent_id()]] - `method` [EXTRACTED]
 - [[dot-test_summary_from_non_allowed_action()]] - `method` [EXTRACTED]
 - [[dot-test_user_key_fallback()]] - `method` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

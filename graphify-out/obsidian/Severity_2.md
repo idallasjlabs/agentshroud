@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[_map_severity()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/SlackAPIProxy

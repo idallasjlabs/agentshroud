@@ -12,6 +12,6 @@ tags:
 # Subscribe to all events
 
 ## Connections
-- [[dot-subscribe()]] - `rationale_for` [EXTRACTED]
+- [[dot-subscribe()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/make_event

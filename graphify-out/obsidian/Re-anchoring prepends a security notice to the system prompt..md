@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "RBACConfig"
+community: "RBACConfig (4)"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_4
 ---
 
 # Re-anchoring prepends a security notice to the system prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_reanchor_prepends_preamble()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_4

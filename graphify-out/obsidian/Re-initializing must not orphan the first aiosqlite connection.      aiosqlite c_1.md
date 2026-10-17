@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_ledger.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
-location: "L217"
+community: "ApprovalQueueConfig (4)"
+location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_4
 ---
 
 # Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_initialize_is_idempotent()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4

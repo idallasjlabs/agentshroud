@@ -12,7 +12,7 @@ tags:
 # TestDockerEngine
 
 ## Connections
-- [[dot-setup_method()_21]] - `method` [EXTRACTED]
+- [[dot-setup_method()_26]] - `method` [EXTRACTED]
 - [[dot-test_build()]] - `method` [EXTRACTED]
 - [[dot-test_build_with_args()]] - `method` [EXTRACTED]
 - [[dot-test_compose_down()]] - `method` [EXTRACTED]

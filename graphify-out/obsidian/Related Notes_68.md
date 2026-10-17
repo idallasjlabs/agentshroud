@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "First Time Setup (3)"
-location: "L183"
+community: "main.py.md"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_3
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_3
+#graphify/document #graphify/EXTRACTED #community/mainpymd

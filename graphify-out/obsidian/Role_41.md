@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist (2)"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_2
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

@@ -17,7 +17,7 @@ tags:
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/test_prompt_guardpy

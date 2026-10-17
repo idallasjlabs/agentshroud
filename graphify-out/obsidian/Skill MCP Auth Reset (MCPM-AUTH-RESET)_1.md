@@ -12,9 +12,9 @@ tags:
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Authentication Reset Procedures_1]] - `contains` [EXTRACTED]
+- [[Authentication Reset Procedures_2]] - `contains` [EXTRACTED]
 - [[Related Skills_88]] - `contains` [EXTRACTED]
-- [[Role_62]] - `contains` [EXTRACTED]
+- [[Role_65]] - `contains` [EXTRACTED]
 - [[Security Best Practices_2]] - `contains` [EXTRACTED]
 - [[Troubleshooting_32]] - `contains` [EXTRACTED]
 - [[Usage_97]] - `contains` [EXTRACTED]

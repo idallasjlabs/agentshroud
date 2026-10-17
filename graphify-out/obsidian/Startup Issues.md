@@ -12,6 +12,6 @@ tags:
 # Startup Issues
 
 ## Connections
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[troubleshooting_20]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "MiddlewareManager (8)"
-location: "L65"
+community: "TestOAuthInjection"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/TestOAuthInjection
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_82]] - `references` [EXTRACTED]
-- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
-- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-scan_file()_1]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

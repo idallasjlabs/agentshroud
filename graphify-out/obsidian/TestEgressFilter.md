@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (3)"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_3
 ---
 
 # TestEgressFilter
 
 ## Connections
-- [[dot-setup_method()_33]] - `method` [EXTRACTED]
+- [[dot-setup_method()_29]] - `method` [EXTRACTED]
 - [[dot-test_allowed_domain()]] - `method` [EXTRACTED]
 - [[dot-test_allowed_ip()_1]] - `method` [EXTRACTED]
 - [[dot-test_allowed_specific_ip()]] - `method` [EXTRACTED]
@@ -43,8 +43,8 @@ tags:
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3

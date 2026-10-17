@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Error Index.md (6)"
-location: "L78"
+community: "ClamAV (2)"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_6
+  - community/ClamAV_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_6
+#graphify/document #graphify/EXTRACTED #community/ClamAV_2

@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "Browser-Fetch Skill for 1Password Share Links"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/Browser-Fetch_Skill_for_1Password_Share_Links
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Home_1]] - `references` [EXTRACTED]
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links

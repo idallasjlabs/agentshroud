@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (3)"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_3
 ---
 
 # TestFileSandbox
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_proc_self_environ_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_staging_detection()]] - `method` [EXTRACTED]
 - [[dot-test_symlink_traversal_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_tmp_read_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_tmp_read_allowed()_1]] - `method` [EXTRACTED]
 - [[dot-test_windows_traversal_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_write_outside_allowed_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_write_pii_detection()]] - `method` [EXTRACTED]
@@ -65,7 +65,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_3

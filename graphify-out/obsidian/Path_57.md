@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L54"
+community: "test_security_toolchain.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_186]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

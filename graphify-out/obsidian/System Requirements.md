@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Prerequisites"
-location: "L7"
+community: "AgentShroud Setup Guide"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prerequisites
+  - community/AgentShroud_Setup_Guide
 ---
 
 # System Requirements
 
 ## Connections
-- [[Prerequisites_1]] - `contains` [EXTRACTED]
+- [[Prerequisites_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prerequisites
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

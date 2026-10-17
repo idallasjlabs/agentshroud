@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L88"
+community: "SecureBrowser (3)"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SecureBrowser_3
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
-- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
-- [[TestParamSanitization]] - `uses` [INFERRED]
-- [[TestReversibilityScoring]] - `uses` [INFERRED]
-- [[TestShellBleedPatterns]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer]] - `uses` [INFERRED]
-- [[str_2]] - `inherits` [EXTRACTED]
-- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
-- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
+- [[dot-_classify_risk()_2]] - `references` [EXTRACTED]
+- [[dot-_log_action()_2]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()_2]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Risk classification for browser actions_2]] - `rationale_for` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

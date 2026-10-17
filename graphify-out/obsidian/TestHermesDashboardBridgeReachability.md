@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "test_security_regressions_v1_2.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/test_security_regressions_v1_2py
 ---
 
 # TestHermesDashboardBridgeReachability
@@ -17,4 +17,4 @@ tags:
 - [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor hermes-…]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

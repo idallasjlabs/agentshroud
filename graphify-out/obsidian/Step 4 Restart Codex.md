@@ -1,19 +1,19 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "1. GitHub MCP Authentication Reset (2)"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # Step 4: Restart Codex
 
 ## Connections
-- [[1. GitHub MCP Authentication Reset_2]] - `contains` [EXTRACTED]
-- [[1. GitHub MCP Authentication Reset]] - `contains` [EXTRACTED]
 - [[1. GitHub MCP Authentication Reset_1]] - `contains` [EXTRACTED]
+- [[1. GitHub MCP Authentication Reset]] - `contains` [EXTRACTED]
+- [[1. GitHub MCP Authentication Reset_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

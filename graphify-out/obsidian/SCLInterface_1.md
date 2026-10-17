@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "soc/router.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # SCLInterface
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_68]] - `uses` [INFERRED]
+- [[Any_82]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -24,14 +24,14 @@ tags:
 - [[EgressRuleOverrideRequest]] - `uses` [INFERRED]
 - [[EgressScopeRequest]] - `uses` [INFERRED]
 - [[EmergencyBlockRequest]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_9]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
-- [[ScanRequest]] - `uses` [INFERRED]
+- [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
 - [[SetModeRequest]] - `uses` [INFERRED]
@@ -42,6 +42,6 @@ tags:
 - [[WebSocket_8]] - `uses` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/soc/routerpy

@@ -1,26 +1,23 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L2040"
+community: "EgressFilterConfig (2)"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_FakeRBAC
+  - graphify/EXTRACTED
+  - community/EgressFilterConfig_2
 ---
 
 # ScanRequest
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[run_scanner()]] - `references` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[dot-scan()_3]] - `references` [EXTRACTED]
+- [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
+- [[_PassInboundPipeline]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[sidecar.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
+- [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

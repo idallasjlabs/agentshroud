@@ -12,6 +12,6 @@ tags:
 # Test loading custom patterns from configuration.
 
 ## Connections
-- [[dot-test_custom_patterns()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_custom_patterns()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

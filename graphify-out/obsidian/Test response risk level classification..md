@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (33)"
+community: "TestOutboundInfoFilter"
 location: "L316"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_33
+  - community/TestOutboundInfoFilter
 ---
 
 # Test response risk level classification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_risk_classification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_33
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

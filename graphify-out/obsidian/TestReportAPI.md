@@ -12,7 +12,7 @@ tags:
 # TestReportAPI
 
 ## Connections
-- [[dot-client()_7]] - `method` [EXTRACTED]
+- [[dot-client()]] - `method` [EXTRACTED]
 - [[dot-test_create_list_get_roundtrip()]] - `method` [EXTRACTED]
 - [[dot-test_cross_bot_visibility()]] - `method` [EXTRACTED]
 - [[dot-test_missing_content_422()]] - `method` [EXTRACTED]

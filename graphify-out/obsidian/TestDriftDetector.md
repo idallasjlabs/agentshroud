@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertDispatcher (2)"
 location: "L508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertDispatcher_2
 ---
 
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_11]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_2]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `method` [EXTRACTED]
@@ -44,8 +44,8 @@ tags:
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

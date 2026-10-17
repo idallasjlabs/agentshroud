@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "test_forward_stream.py"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/test_forward_streampy
 ---
 
 # Raised when forwarding to agent fails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "concept"
-community: "apply-patches.js (3)"
+community: "apply-patches.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/apply-patchesjs_3
+  - community/apply-patchesjs
 ---
 
 # RBAC collaborator_user_ids list (gateway/security/rbac_config.py)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[apply-patches.js patch driver (openclaw.json)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/apply-patchesjs_3
+#graphify/concept #graphify/EXTRACTED #community/apply-patchesjs

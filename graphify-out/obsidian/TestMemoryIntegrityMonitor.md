@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (6)"
+community: "MiddlewareManager (5)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/MiddlewareManager_5
 ---
 
 # TestMemoryIntegrityMonitor
 
 ## Connections
-- [[dot-setup_method()_14]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_5]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_expected_write_window()]] - `method` [EXTRACTED]
 - [[dot-test_file_monitoring_new_file()]] - `method` [EXTRACTED]
 - [[dot-test_hash_computation()]] - `method` [EXTRACTED]
@@ -23,11 +23,11 @@ tags:
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]
 - [[Test memory integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

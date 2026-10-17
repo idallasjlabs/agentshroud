@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[dot-test_config_from_env()]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]

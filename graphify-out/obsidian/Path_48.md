@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cron_jobs_prompts.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L40"
+community: "validate_network_security"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/validate_network_security
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/validate_network_security

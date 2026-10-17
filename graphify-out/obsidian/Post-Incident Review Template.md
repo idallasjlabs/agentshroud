@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Post-Incident Activities"
+community: "AgentShroud Incident Response Plan"
 location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-Incident_Activities
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Post-Incident Review Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident Activities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-Incident_Activities
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

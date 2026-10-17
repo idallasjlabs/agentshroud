@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "ApprovalQueueConfig (5)"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/ApprovalQueueConfig_5
 ---
 
 # Test that configuration has sensible defaults
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

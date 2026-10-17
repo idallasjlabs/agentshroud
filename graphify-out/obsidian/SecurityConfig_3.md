@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "SecureBrowser (4)"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/SecureBrowser_4
 ---
 
 # SecurityConfig
 
 ## Connections
-- [[dot-_load_config()_2]] - `references` [EXTRACTED]
-- [[Security configuration for browser automation_2]] - `rationale_for` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-_load_config()_3]] - `references` [EXTRACTED]
+- [[Security configuration for browser automation_3]] - `rationale_for` [EXTRACTED]
+- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

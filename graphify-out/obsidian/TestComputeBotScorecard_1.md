@@ -28,8 +28,8 @@ tags:
 - [[dot-test_risk_level_yellow_50_to_79()]] - `method` [EXTRACTED]
 - [[dot-test_score_clamped_to_hundred()]] - `method` [EXTRACTED]
 - [[dot-test_score_clamped_to_zero()]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 

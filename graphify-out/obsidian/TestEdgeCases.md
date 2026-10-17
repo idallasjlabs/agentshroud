@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # TestEdgeCases
 
 ## Connections
 - [[dot-test_case_sensitivity()]] - `method` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()_1]] - `method` [EXTRACTED]
 - [[dot-test_relative_path_resolution()]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[Test edge cases and potential bypass attempts.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

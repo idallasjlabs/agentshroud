@@ -24,7 +24,7 @@ tags:
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Test Observatory Mode configuration and endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 

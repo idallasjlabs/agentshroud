@@ -12,6 +12,6 @@ tags:
 # Stop periodic updates.
 
 ## Connections
-- [[dot-stop()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

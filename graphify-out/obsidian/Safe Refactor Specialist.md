@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[Critical Rules_3]] - `contains` [EXTRACTED]
-- [[Definition of Done_1]] - `contains` [EXTRACTED]
+- [[Definition of Done_2]] - `contains` [EXTRACTED]
 - [[Example Refactorings]] - `contains` [EXTRACTED]
 - [[Refactoring Workflow]] - `contains` [EXTRACTED]
-- [[Remember_1]] - `contains` [EXTRACTED]
-- [[Repository Context_2]] - `contains` [EXTRACTED]
-- [[Role Definition_1]] - `contains` [EXTRACTED]
+- [[Remember_2]] - `contains` [EXTRACTED]
+- [[Repository Context_3]] - `contains` [EXTRACTED]
+- [[Role Definition_2]] - `contains` [EXTRACTED]
 - [[What You CAN Refactor]] - `contains` [EXTRACTED]
 - [[When in Doubt]] - `contains` [EXTRACTED]
 - [[safe-refactor.agent]] - `contains` [EXTRACTED]

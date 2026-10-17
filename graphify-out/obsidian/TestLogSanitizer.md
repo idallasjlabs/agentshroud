@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_filter_msg()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_25]] - `method` [EXTRACTED]
+- [[dot-setup_method()_31]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_unchanged()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_redacted()_1]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_openai_key_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_password_assignment_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_secret_assignment_redacted()]] - `method` [EXTRACTED]
-- [[dot-test_ssn_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_redacted()_1]] - `method` [EXTRACTED]
 - [[dot-test_telegram_bot_token_in_url_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_telegram_bot_token_shorter_id_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_token_assignment_redacted()]] - `method` [EXTRACTED]

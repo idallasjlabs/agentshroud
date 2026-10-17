@@ -1,21 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Prerequisites"
-location: "L5"
+community: "Telegram & Gmail Integration Guide"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prerequisites
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Prerequisites
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements]] - `contains` [EXTRACTED]
+- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

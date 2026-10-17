@@ -12,7 +12,7 @@ tags:
 # SubagentGovernance
 
 ## Connections
-- [[dot-__init__()_139]] - `method` [EXTRACTED]
+- [[dot-__init__()_148]] - `method` [EXTRACTED]
 - [[dot-_check_budget()]] - `method` [EXTRACTED]
 - [[dot-_log_event()_1]] - `method` [EXTRACTED]
 - [[dot-authorize_spawn()]] - `method` [EXTRACTED]

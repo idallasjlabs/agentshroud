@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (2)"
 location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_2
 ---
 
 # TestLoggingSecurity
 
 ## Connections
 - [[dot-_make_record()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()]] - `method` [EXTRACTED]
+- [[dot-sanitizer()_3]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redaction()]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redaction_via_pattern()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_in_logs()]] - `method` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test log sanitization and information leakage prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_2

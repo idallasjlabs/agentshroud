@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
-location: "L6974"
+community: "Unit tests for collaborator-facing prompt classification helpers."
+location: "L6992"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
 ---
 
 # TestCollaboratorPromptClassifiers
@@ -98,10 +98,7 @@ tags:
 - [[dot-test_owner_versus_collaborator_probe_gets_no_banner_direct_answer()]] - `method` [EXTRACTED]
 - [[dot-test_safe_info_response_exception_sends_unavailable_fallback()]] - `method` [EXTRACTED]
 - [[dot-test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for collaborator-facing prompt classification helpers.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers

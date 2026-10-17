@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect (3)"
-location: "L8"
+community: "Skill: Project Management (PM) (3)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_3
+  - community/Skill_Project_Management_PM_3
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

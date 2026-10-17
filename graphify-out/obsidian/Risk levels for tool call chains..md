@@ -12,6 +12,6 @@ tags:
 # Risk levels for tool call chains.
 
 ## Connections
-- [[RiskLevel_4]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

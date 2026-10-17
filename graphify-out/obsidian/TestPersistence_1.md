@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `method` [EXTRACTED]
 - [[dot-test_restore_pending_items()]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]

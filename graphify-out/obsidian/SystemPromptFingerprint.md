@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-register_system_prompt()]] - `references` [EXTRACTED]
 - [[dot-verify_system_prompt()]] - `references` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_44]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[HMAC-SHA256 fingerprint for a registered system prompt.]] - `rationale_for` [EXTRACTED]
 - [[IntegrityScore]] - `uses` [INFERRED]

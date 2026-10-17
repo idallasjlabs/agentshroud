@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
 community: "1. GitHub MCP Authentication Reset (2)"
 location: "L46"

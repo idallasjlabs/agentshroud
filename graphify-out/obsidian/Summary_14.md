@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "Findings"
-location: "L74"
+community: "egress_filter.py (2)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/egress_filterpy_2
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy_2

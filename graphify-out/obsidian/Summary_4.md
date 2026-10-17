@@ -1,8 +1,8 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
 community: "AgentShroud Phase Review — 2026-02-23"
-location: "L228"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -19,7 +19,7 @@ tags:
 - [[dot-test_rate_limiter_reset()]] - `calls` [EXTRACTED]
 - [[Simple in-memory per-domain rate limiter using sliding window.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[EgressFilterConfig]] - `shares_data_with` [EXTRACTED]
-- [[egress_config.py_2]] - `references` [EXTRACTED]
+- [[egress_config.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

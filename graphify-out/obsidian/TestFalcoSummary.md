@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_read_alerts_missing_dir()]] - `method` [EXTRACTED]
-- [[dot-test_summary_clean()_1]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()]] - `method` [EXTRACTED]
 - [[dot-test_summary_top_rules()]] - `method` [EXTRACTED]
 - [[dot-test_summary_with_alerts()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]

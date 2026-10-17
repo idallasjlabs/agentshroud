@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
-location: "L6"
+community: "Docker Volumes"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/Docker_Volumes
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
+- [[Playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Phase 3 Requirements: Working Chat Container"
-location: "L387"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L419"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_Requirements_Working_Chat_Container
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # References
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager
 ---
 
 # Return True if user_id is in the group.
 
 ## Connections
-- [[dot-is_member()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_member()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

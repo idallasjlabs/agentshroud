@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (5)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/UserSessionManager
+  - community/UserSessionManager_5
 ---
 
 # TestCredentialRotationPolicy
@@ -22,4 +22,4 @@ tags:
 - [[Test credential rotation policy configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/UserSessionManager_5

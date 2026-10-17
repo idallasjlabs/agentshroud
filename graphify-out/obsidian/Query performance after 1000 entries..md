@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ContextSegment"
+community: "ApprovalQueueConfig"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig
 ---
 
 # Query performance after 1000 entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_query_after_1000_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

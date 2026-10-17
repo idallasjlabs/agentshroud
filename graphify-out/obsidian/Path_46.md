@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "_build_image_targets"
-location: "L164"
+community: "Layer-by-Layer Breakdown (2)"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/Layer-by-Layer_Breakdown_2
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_2

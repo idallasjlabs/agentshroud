@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (39)"
+community: "TestOutboundInfoFilter"
 location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_39
+  - community/TestOutboundInfoFilter
 ---
 
 # Test adding custom filter patterns.
 
 ## Connections
-- [[dot-test_custom_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_custom_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_39
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

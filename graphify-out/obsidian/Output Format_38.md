@@ -12,7 +12,7 @@ tags:
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 - [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
 - [[diagramsREADME_1]] - `contains` [EXTRACTED]
 - [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection (3)"
+community: "TestSSRFDetection"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_3
+  - community/TestSSRFDetection
 ---
 
 # TestSSRFDetection
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_decimal_ip_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_hex_ip_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_ip6_localhost_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_ipv4_mapped_ipv6_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_ipv4_mapped_ipv6_blocked()_1]] - `method` [EXTRACTED]
 - [[dot-test_ipv4_mapped_ipv6_private_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_ipv6_link_local_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_ipv6_loopback_blocked()]] - `method` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_3
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

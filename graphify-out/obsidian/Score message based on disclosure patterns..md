@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AlertDispatcher"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AlertDispatcher
 ---
 
 # Score message based on disclosure patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_score_message_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

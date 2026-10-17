@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # Sanitize tool result content by filtering markdown links and images.          Ar
 
 ## Connections
-- [[dot-sanitize()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

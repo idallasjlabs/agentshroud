@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 location: "L528"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # TestAllowlistMode
@@ -18,7 +18,7 @@ tags:
 - [[dot-test_denylist_mode_still_works()]] - `method` [EXTRACTED]
 - [[dot-test_listed_domain_passes()]] - `method` [EXTRACTED]
 - [[dot-test_ssrf_blocked_before_allowlist_check()]] - `method` [EXTRACTED]
-- [[dot-test_unlisted_domain_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_unlisted_domain_blocked()_1]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_deeper_subdomain_passes()]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_subdomain_passes()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_2
