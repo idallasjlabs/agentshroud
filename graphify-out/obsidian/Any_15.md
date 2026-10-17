@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: ""
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/triage-cve-mitigationspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_46]] - `references` [EXTRACTED]
-- [[dot-_default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

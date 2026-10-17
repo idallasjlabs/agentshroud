@@ -1,18 +1,17 @@
 ---
-source_file: "branding/README.md"
+source_file: "skills/README.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

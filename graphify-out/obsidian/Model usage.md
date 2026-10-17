@@ -15,9 +15,9 @@ tags:
 - [[Current model logic]] - `contains` [EXTRACTED]
 - [[Inputs]] - `contains` [EXTRACTED]
 - [[Output_1]] - `contains` [EXTRACTED]
-- [[Overview_6]] - `contains` [EXTRACTED]
+- [[Overview_4]] - `contains` [EXTRACTED]
 - [[Quick start_5]] - `contains` [EXTRACTED]
-- [[References_1]] - `contains` [EXTRACTED]
+- [[References]] - `contains` [EXTRACTED]
 - [[model-usageSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Common_Queries

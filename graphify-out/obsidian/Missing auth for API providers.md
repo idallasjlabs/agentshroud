@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Blue Team Security Auditor (SEC-DEFENSE)"
+community: "API Keys Setup Guide"
 location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
+  - community/API_Keys_Setup_Guide
 ---
 
 # "Missing auth" for API providers
 
 ## Connections
-- [[Troubleshooting]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
+- [[Troubleshooting_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

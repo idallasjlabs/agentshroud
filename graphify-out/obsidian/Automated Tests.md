@@ -12,6 +12,6 @@ tags:
 # Automated Tests
 
 ## Connections
-- [[Security Testing_1]] - `contains` [EXTRACTED]
+- [[Security Testing]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

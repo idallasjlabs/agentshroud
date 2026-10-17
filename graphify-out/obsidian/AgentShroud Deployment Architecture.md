@@ -12,10 +12,10 @@ tags:
 # AgentShroud Deployment Architecture
 
 ## Connections
-- [[Deployment Modes_1]] - `contains` [EXTRACTED]
+- [[Deployment Modes]] - `contains` [EXTRACTED]
 - [[Multi-Runtime Support_1]] - `contains` [EXTRACTED]
-- [[Network Topology]] - `contains` [EXTRACTED]
-- [[Overview_14]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
+- [[Overview_9]] - `contains` [EXTRACTED]
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 - [[Volume Mounts and Secrets Management]] - `contains` [EXTRACTED]
 - [[Zero-Configuration Deployment]] - `contains` [EXTRACTED]

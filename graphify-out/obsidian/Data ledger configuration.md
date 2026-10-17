@@ -12,6 +12,6 @@ tags:
 # Data ledger configuration
 
 ## Connections
-- [[LedgerConfig_1]] - `rationale_for` [EXTRACTED]
+- [[LedgerConfig]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

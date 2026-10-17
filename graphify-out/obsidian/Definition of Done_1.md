@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/safe-refactor.agent.md"
+source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Safe Refactor Specialist"
-location: "L166"
+community: "Validation Runner Specialist"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/Validation_Runner_Specialist
 ---
 
 # Definition of Done
 
 ## Connections
-- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
+- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

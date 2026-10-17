@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (5)"
+community: "._filter_outbound"
 location: "L6959"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_5
+  - community/_filter_outbound
 ---
 
 # Best-effort async event emission for quarantine actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_5
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (28)"
+community: "TestOutboundInfoFilter"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_28
+  - community/TestOutboundInfoFilter
 ---
 
 # Admin-private service references should be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_admin_private_service_data_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_28
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

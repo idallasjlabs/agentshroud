@@ -1,38 +1,38 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (3)"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_3
 ---
 
 # EgressFilter
 
 ## Connections
-- [[dot-__init__()_173]] - `method` [EXTRACTED]
+- [[dot-__init__()_105]] - `method` [EXTRACTED]
 - [[dot-_check_impl()]] - `method` [EXTRACTED]
 - [[dot-_is_ipv6()]] - `method` [EXTRACTED]
-- [[dot-_is_private_ip()_1]] - `method` [EXTRACTED]
+- [[dot-_is_private_ip()]] - `method` [EXTRACTED]
 - [[dot-_matches_allowlist_domain()]] - `method` [EXTRACTED]
 - [[dot-_matches_ip_list()]] - `method` [EXTRACTED]
-- [[dot-_record()]] - `method` [EXTRACTED]
-- [[dot-check()_6]] - `method` [EXTRACTED]
+- [[dot-_record()_1]] - `method` [EXTRACTED]
+- [[dot-check()_4]] - `method` [EXTRACTED]
 - [[dot-check_async()]] - `method` [EXTRACTED]
 - [[dot-flush_notifications()]] - `method` [EXTRACTED]
 - [[dot-get_log()]] - `method` [EXTRACTED]
 - [[dot-get_policy()_1]] - `method` [EXTRACTED]
-- [[dot-get_stats()_17]] - `method` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
 - [[dot-get_top_destinations()]] - `method` [EXTRACTED]
 - [[dot-grant_timed_approval()]] - `method` [EXTRACTED]
 - [[dot-set_agent_policy()]] - `method` [EXTRACTED]
 - [[dot-set_approval_queue()]] - `method` [EXTRACTED]
 - [[dot-set_event_bus()_1]] - `method` [EXTRACTED]
 - [[dot-set_notifier()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_33]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_egress_counts_as_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_denied_egress_counts_as_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_deny_all_false()]] - `calls` [EXTRACTED]
@@ -50,14 +50,14 @@ tags:
 - [[dot-test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
 - [[Data Flow_1]] - `references` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `conceptually_related_to` [EXTRACTED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - `rationale_for` [EXTRACTED]
 - [[Only DENY egress decisions persisted to audit store (ALLOW caused 57M+ row32GB unbounded growth)]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -99,13 +99,13 @@ tags:
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[egress_filter()]] - `calls` [EXTRACTED]
 - [[egress_filter()_1]] - `calls` [EXTRACTED]
-- [[egress_filter.py_1]] - `contains` [EXTRACTED]
+- [[egress_filter.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
@@ -116,4 +116,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3

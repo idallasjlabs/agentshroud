@@ -21,7 +21,7 @@ tags:
 - [[SSH Key Generated]] - `contains` [EXTRACTED]
 - [[Security Considerations]] - `contains` [EXTRACTED]
 - [[Setup Instructions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 - [[Usage Examples]] - `contains` [EXTRACTED]
 - [[Verification Checklist]] - `contains` [EXTRACTED]
 

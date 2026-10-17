@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ContextSegment"
+community: "ApprovalQueueConfig"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig
 ---
 
 # End-to-end pipeline latency for a single message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFullPipelineLatency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

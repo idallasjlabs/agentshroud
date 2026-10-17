@@ -1,24 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Function Details (8)"
-location: "L37"
+community: "mcp_inspector.py"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/mcp_inspectorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[ConnectionPool.get_or_create(server_name, config)]] - `contains` [EXTRACTED]
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - `contains` [EXTRACTED]
-- [[MCPProxy.check_approval_required(tool_call)]] - `contains` [EXTRACTED]
-- [[MCPProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
-- [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
+- [[MCPInspector._redact_pii(value)]] - `contains` [EXTRACTED]
+- [[MCPInspector._scan_text(text, path, findings, ...)]] - `contains` [EXTRACTED]
+- [[MCPInspector._scan_value(value, path, findings, ...)]] - `contains` [EXTRACTED]
+- [[MCPInspector._should_block(findings)]] - `contains` [EXTRACTED]
+- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - `contains` [EXTRACTED]
+- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_8
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

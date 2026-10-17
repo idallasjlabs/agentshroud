@@ -12,7 +12,7 @@ tags:
 # ControlCenter
 
 ## Connections
-- [[dot-__init__()_110]] - `method` [EXTRACTED]
+- [[dot-__init__()_112]] - `method` [EXTRACTED]
 - [[dot-clear_screen()]] - `method` [EXTRACTED]
 - [[dot-draw_approvals()]] - `method` [EXTRACTED]
 - [[dot-draw_box()]] - `method` [EXTRACTED]
@@ -22,9 +22,9 @@ tags:
 - [[dot-draw_modules()]] - `method` [EXTRACTED]
 - [[dot-draw_ssh_hosts()]] - `method` [EXTRACTED]
 - [[dot-get_auth()]] - `method` [EXTRACTED]
-- [[dot-get_key()_1]] - `method` [EXTRACTED]
+- [[dot-get_key()]] - `method` [EXTRACTED]
 - [[dot-make_api_request()]] - `method` [EXTRACTED]
-- [[dot-run()_2]] - `method` [EXTRACTED]
+- [[dot-run()_3]] - `method` [EXTRACTED]
 - [[main()_13]] - `calls` [EXTRACTED]
 - [[text_control_center.py_1]] - `contains` [EXTRACTED]
 

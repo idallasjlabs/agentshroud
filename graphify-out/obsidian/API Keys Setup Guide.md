@@ -12,10 +12,10 @@ tags:
 # API Keys Setup Guide
 
 ## Connections
-- [[Overview_17]] - `contains` [EXTRACTED]
-- [[Quick Reference_10]] - `contains` [EXTRACTED]
+- [[Overview_11]] - `contains` [EXTRACTED]
+- [[Quick Reference_9]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
-- [[Security Notes_5]] - `contains` [EXTRACTED]
+- [[Security Notes_3]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
 - [[Step 2 Restart OpenClaw Container]] - `contains` [EXTRACTED]
 - [[Step 3 Configure API Keys in OpenClaw]] - `contains` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[Step 6 Add Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 - [[Summary Checklist]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

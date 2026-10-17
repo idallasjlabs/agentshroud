@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Access Control (7)]] - `contains` [EXTRACTED]
-- [[Audit Logging_4]] - `contains` [EXTRACTED]
+- [[Audit Logging_3]] - `contains` [EXTRACTED]
 - [[Behavior Examples]] - `contains` [EXTRACTED]
 - [[CREDENTIAL-SECURITY-POLICY]] - `contains` [EXTRACTED]
 - [[Emergency Override]] - `contains` [EXTRACTED]

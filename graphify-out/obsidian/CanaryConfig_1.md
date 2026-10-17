@@ -12,8 +12,8 @@ tags:
 # CanaryConfig
 
 ## Connections
-- [[dot-__init__()_185]] - `references` [EXTRACTED]
-- [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
+- [[dot-__init__()_106]] - `references` [EXTRACTED]
+- [[dot-test_custom_config()]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
 - [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]

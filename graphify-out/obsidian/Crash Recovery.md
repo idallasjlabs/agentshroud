@@ -1,25 +1,22 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Crash Recovery"
-location: "L9"
+community: "02-infrastructure.md (2)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/02-infrastructuremd_2
 ---
 
-# Crash Recovery
+# Crash Recovery.md
 
 ## Connections
-- [[Auto-Restart]] - `contains` [EXTRACTED]
-- [[Crash Diagnosis]] - `contains` [EXTRACTED]
+- [[Container Errors_1]] - `references` [EXTRACTED]
 - [[Crash Recovery_1]] - `contains` [EXTRACTED]
-- [[Data Recovery]] - `contains` [EXTRACTED]
-- [[Immediate Assessment]] - `contains` [EXTRACTED]
-- [[Post-Recovery Verification]] - `contains` [EXTRACTED]
-- [[Recovery Procedures]] - `contains` [EXTRACTED]
-- [[Recurring Crashes]] - `contains` [EXTRACTED]
-- [[Related Notes_39]] - `contains` [EXTRACTED]
+- [[Health Checks]] - `references` [EXTRACTED]
+- [[Restart Procedure_1]] - `references` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
+- [[store.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2

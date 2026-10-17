@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L66"
+community: ".validate_docker_compose_config"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/validate_docker_compose_config
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
+- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
+- [[dot-get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config

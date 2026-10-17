@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Architecture Notes]] - `contains` [EXTRACTED]
 - [[Fresh Install_1]] - `contains` [EXTRACTED]
-- [[Prerequisites_10]] - `contains` [EXTRACTED]
+- [[Prerequisites_9]] - `contains` [EXTRACTED]
 - [[Systemd Service for Auto-Start]] - `contains` [EXTRACTED]
 - [[Updating to Latest Release_1]] - `contains` [EXTRACTED]
 - [[VPS Deployment Notes]] - `contains` [EXTRACTED]

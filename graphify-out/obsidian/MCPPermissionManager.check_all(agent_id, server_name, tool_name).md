@@ -12,6 +12,6 @@ tags:
 # MCPPermissionManager.check_all(agent_id, server_name, tool_name)
 
 ## Connections
-- [[Function Details_35]] - `contains` [EXTRACTED]
+- [[Function Details_36]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

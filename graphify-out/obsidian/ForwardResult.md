@@ -12,7 +12,7 @@ tags:
 # ForwardResult
 
 ## Connections
-- [[dot-forward()_2]] - `references` [EXTRACTED]
+- [[dot-forward()]] - `references` [EXTRACTED]
 - [[Result of forwarding a request.]] - `rationale_for` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 

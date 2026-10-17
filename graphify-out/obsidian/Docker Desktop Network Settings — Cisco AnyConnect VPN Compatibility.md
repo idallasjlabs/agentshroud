@@ -16,7 +16,7 @@ tags:
 - [[How to Apply]] - `contains` [EXTRACTED]
 - [[If It Stops Working After a VPN Reconnect]] - `contains` [EXTRACTED]
 - [[Network Architecture (unchanged)]] - `contains` [EXTRACTED]
-- [[Problem_8]] - `contains` [EXTRACTED]
+- [[Problem_7]] - `contains` [EXTRACTED]
 - [[Related Files]] - `contains` [EXTRACTED]
 - [[Root Cause_6]] - `contains` [EXTRACTED]
 - [[Settings Changed]] - `contains` [EXTRACTED]

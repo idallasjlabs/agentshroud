@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2)"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2
 ---
 
 # Compile regex patterns for sensitive data detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compile_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

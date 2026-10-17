@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L50"
+community: "StdioConnection"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/StdioConnection
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_9]] - `references` [EXTRACTED]
+- [[dot-from_dict()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

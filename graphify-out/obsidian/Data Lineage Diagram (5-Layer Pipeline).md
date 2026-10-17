@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "image"
-community: "Approval Queue (human-in-the-loop)"
+community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
 ---
 
 # Data Lineage Diagram (5-Layer Pipeline)
@@ -17,4 +17,4 @@ tags:
 - [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - `conceptually_related_to` [EXTRACTED]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart

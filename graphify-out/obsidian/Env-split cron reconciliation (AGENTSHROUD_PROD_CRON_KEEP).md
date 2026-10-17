@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "rationale"
-community: "test_hermes_cron_seed.py"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "L689-L764"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)
@@ -16,4 +16,4 @@ tags:
 - [[_hermes_cron_ids_names]] - `calls` [EXTRACTED]
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

@@ -15,7 +15,7 @@ tags:
 - [[06-outbound-info-filter]] - `contains` [EXTRACTED]
 - [[Constraints]] - `contains` [EXTRACTED]
 - [[Evidence]] - `contains` [EXTRACTED]
-- [[Problem_2]] - `contains` [EXTRACTED]
+- [[Problem_1]] - `contains` [EXTRACTED]
 - [[Relationship to chunk 00-information-disclosure]] - `contains` [EXTRACTED]
 - [[Remediation_1]] - `contains` [EXTRACTED]
 - [[Root Cause_1]] - `contains` [EXTRACTED]

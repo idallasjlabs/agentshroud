@@ -12,7 +12,7 @@ tags:
 # FetchOutcome
 
 ## Connections
-- [[dot-__call__()_2]] - `calls` [EXTRACTED]
+- [[dot-__call__()_3]] - `calls` [EXTRACTED]
 - [[dot-ok()]] - `method` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]

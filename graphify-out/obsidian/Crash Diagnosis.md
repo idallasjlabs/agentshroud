@@ -12,8 +12,8 @@ tags:
 # Crash Diagnosis
 
 ## Connections
-- [[Crash Recovery]] - `contains` [EXTRACTED]
-- [[OOM Kill (Exit Code 137)]] - `contains` [EXTRACTED]
+- [[Crash Recovery_1]] - `contains` [EXTRACTED]
+- [[OOM Kill (Exit Code 137)_1]] - `contains` [EXTRACTED]
 - [[Python Exception (Exit Code 1)]] - `contains` [EXTRACTED]
 - [[Segfault (Exit Code 139)]] - `contains` [EXTRACTED]
 

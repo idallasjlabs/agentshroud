@@ -12,7 +12,7 @@ tags:
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_77]] - `contains` [EXTRACTED]
+- [[Purpose_84]] - `contains` [EXTRACTED]
 - [[Related Skills_64]] - `contains` [EXTRACTED]
 - [[Usage_75]] - `contains` [EXTRACTED]
 - [[openclawskillsi-productionREADME]] - `contains` [EXTRACTED]

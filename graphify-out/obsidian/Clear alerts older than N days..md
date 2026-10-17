@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager (8)"
+community: "MiddlewareManager (5)"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/MiddlewareManager_5
 ---
 
 # Clear alerts older than N days.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-clear_old_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

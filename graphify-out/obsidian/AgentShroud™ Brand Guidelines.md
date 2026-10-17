@@ -25,7 +25,7 @@ tags:
 - [[Colors]] - `contains` [EXTRACTED]
 - [[Communication Templates]] - `contains` [EXTRACTED]
 - [[Contact]] - `contains` [EXTRACTED]
-- [[Directory Structure_1]] - `contains` [EXTRACTED]
+- [[Directory Structure]] - `contains` [EXTRACTED]
 - [[File Formats]] - `contains` [EXTRACTED]
 - [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 - [[Key Messaging_1]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ResourceGuard"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ResourceGuard
 ---
 
 # Monitor and analyze git hooks and package installation scripts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Error Index.md (6)"
+community: "Error Index.md (4)"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_6
+  - community/Error_Indexmd_4
 ---
 
 # False Positive (Legitimate Content Blocked)
 
 ## Connections
-- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_6
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

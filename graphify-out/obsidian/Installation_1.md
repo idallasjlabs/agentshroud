@@ -1,21 +1,21 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L37"
+community: "TestOutboundInfoFilter (5)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/TestOutboundInfoFilter_5
 ---
 
 # Installation
 
 ## Connections
-- [[Go]] - `contains` [EXTRACTED]
-- [[Homebrew (macOS)]] - `contains` [EXTRACTED]
-- [[Shell script]] - `contains` [EXTRACTED]
-- [[npm]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Install Script]] - `contains` [EXTRACTED]
+- [[Windows]] - `contains` [EXTRACTED]
+- [[macOS  Linux]] - `contains` [EXTRACTED]
+- [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

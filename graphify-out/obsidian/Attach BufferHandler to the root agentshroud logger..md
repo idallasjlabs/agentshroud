@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "dashboard_endpoints.py (2)"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # Attach BufferHandler to the root agentshroud logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[install_log_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

@@ -1,22 +1,25 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Restart Procedure"
-location: "L1"
+community: "Crash Recovery"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Crash_Recovery
 ---
 
-# Crash Recovery.md
+# Crash Recovery
 
 ## Connections
-- [[Container Errors_1]] - `references` [EXTRACTED]
+- [[Auto-Restart]] - `contains` [EXTRACTED]
+- [[Crash Diagnosis]] - `contains` [EXTRACTED]
 - [[Crash Recovery]] - `contains` [EXTRACTED]
-- [[Health Checks]] - `references` [EXTRACTED]
-- [[Restart Procedure]] - `references` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
-- [[store.py]] - `references` [INFERRED]
+- [[Data Recovery]] - `contains` [EXTRACTED]
+- [[Immediate Assessment]] - `contains` [EXTRACTED]
+- [[Post-Recovery Verification]] - `contains` [EXTRACTED]
+- [[Recovery Procedures]] - `contains` [EXTRACTED]
+- [[Recurring Crashes]] - `contains` [EXTRACTED]
+- [[Related Notes_45]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

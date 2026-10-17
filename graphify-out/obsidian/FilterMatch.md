@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_classify_response_risk()]] - `references` [EXTRACTED]
-- [[dot-filter_response()_2]] - `calls` [EXTRACTED]
+- [[dot-filter_response()]] - `calls` [EXTRACTED]
 - [[A single match found by the outbound filter.]] - `rationale_for` [EXTRACTED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 

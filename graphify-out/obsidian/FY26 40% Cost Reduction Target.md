@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "rationale"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "awslabs.aws-api-mcp-server configuration (--readonly)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/awslabsaws-api-mcp-server_configuration_--readonly
 ---
 
 # FY26 40% Cost Reduction Target
@@ -16,4 +16,4 @@ tags:
 - [[CDAS — Central Data Acquisition Systems]] - `references` [EXTRACTED]
 - [[FODL — Fluence Operational Data Lakehouse]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/rationale #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly

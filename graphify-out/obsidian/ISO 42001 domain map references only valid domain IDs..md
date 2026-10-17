@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "AgentTarget (4)"
+community: "scanner_integration.py"
 location: "L950"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/scanner_integrationpy
 ---
 
 # ISO 42001 domain map references only valid domain IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_iso_42001_domain_map_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

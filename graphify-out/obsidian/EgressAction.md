@@ -12,10 +12,10 @@ tags:
 # EgressAction
 
 ## Connections
-- [[dot-_record()]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[dot-_record()_1]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
@@ -47,10 +47,10 @@ tags:
 - [[TestURLParsing]] - `uses` [INFERRED]
 - [[_DummyTargetWriter]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `uses` [INFERRED]
-- [[egress_filter.py_1]] - `contains` [EXTRACTED]
+- [[egress_filter.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 - [[test_http_proxy.py]] - `imports` [EXTRACTED]

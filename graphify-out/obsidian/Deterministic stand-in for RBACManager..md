@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # Deterministic stand-in for RBACManager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_req
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

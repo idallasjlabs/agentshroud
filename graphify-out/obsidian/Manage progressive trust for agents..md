@@ -12,6 +12,6 @@ tags:
 # Manage progressive trust for agents.
 
 ## Connections
-- [[TrustManager_1]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TrustConfig

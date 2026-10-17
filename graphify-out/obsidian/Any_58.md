@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "A2APolicyEngine (3)"
-location: "L210"
+community: "test_dashboard_endpoints.py"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/test_dashboard_endpointspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_6]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_14]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (3)"
+community: "main.py.md"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_3
+  - community/mainpymd
 ---
 
 # Common Startup Failures
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3
+#graphify/document #graphify/EXTRACTED #community/mainpymd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_STATUS.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "AuditChain (2)"
-location: "L56"
+community: "Tailscale Remote Access Setup"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditChain_2
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Next Steps
 
 ## Connections
-- [[iMessage Integration Status]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditChain_2
+#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

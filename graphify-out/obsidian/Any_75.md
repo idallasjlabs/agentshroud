@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: ""
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "WebProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/WebProxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_14]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/WebProxy

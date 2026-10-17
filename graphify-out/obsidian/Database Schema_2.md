@@ -12,6 +12,6 @@ tags:
 # Database Schema
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ledgerpy

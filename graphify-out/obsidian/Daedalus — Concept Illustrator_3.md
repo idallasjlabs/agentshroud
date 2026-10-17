@@ -1,24 +1,23 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "Daedalus — Concept Illustrator (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Daedalus__Concept_Illustrator_2
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
-- [[Input Requirements_23]] - `contains` [EXTRACTED]
-- [[Output Format_38]] - `contains` [EXTRACTED]
-- [[Persona_17]] - `contains` [EXTRACTED]
-- [[Quality Checklist_20]] - `contains` [EXTRACTED]
-- [[Role_94]] - `contains` [EXTRACTED]
-- [[System Prompt_17]] - `contains` [EXTRACTED]
+- [[Input Requirements_24]] - `contains` [EXTRACTED]
+- [[Output Format_39]] - `contains` [EXTRACTED]
+- [[Persona_18]] - `contains` [EXTRACTED]
+- [[Quality Checklist_21]] - `contains` [EXTRACTED]
+- [[Role_95]] - `contains` [EXTRACTED]
+- [[System Prompt_18]] - `contains` [EXTRACTED]
+- [[hermesskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2

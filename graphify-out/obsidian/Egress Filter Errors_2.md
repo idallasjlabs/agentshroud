@@ -12,7 +12,7 @@ tags:
 # Egress Filter Errors
 
 ## Connections
-- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors]] - `contains` [EXTRACTED]
 - [[Egress Filter Not Initialized]] - `contains` [EXTRACTED]
 - [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
 - [[Monitor Mode — Egress Not Enforced]] - `contains` [EXTRACTED]

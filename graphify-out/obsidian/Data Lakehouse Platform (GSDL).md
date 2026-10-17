@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "AGENTS.md — Codex CLI Guidance"
+community: "Test Augmentation Specialist"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AGENTSmd__Codex_CLI_Guidance
+  - community/Test_Augmentation_Specialist
 ---
 
 # Data Lakehouse Platform (GSDL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance
+#graphify/concept #graphify/EXTRACTED #community/Test_Augmentation_Specialist

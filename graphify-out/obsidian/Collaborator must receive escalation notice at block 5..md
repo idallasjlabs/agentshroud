@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response"
-location: "L8199"
+community: "test_telegram_proxy_inbound.py"
+location: "L8217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # Collaborator must receive escalation notice at block 5.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

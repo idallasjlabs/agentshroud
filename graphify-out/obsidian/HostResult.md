@@ -19,7 +19,7 @@ tags:
 - [[dot-test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
 - [[dot-test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
 - [[dot-unreachable()]] - `references` [EXTRACTED]
-- [[Path_63]] - `uses` [INFERRED]
+- [[Path_62]] - `uses` [INFERRED]
 - [[Result of running the command on a single host.]] - `rationale_for` [EXTRACTED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify_1]] - `uses` [INFERRED]

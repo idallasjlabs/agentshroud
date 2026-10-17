@@ -12,6 +12,6 @@ tags:
 # BrowserSecurityGuard.register_screenshot_hook(hook)
 
 ## Connections
-- [[Function Details_29]] - `contains` [EXTRACTED]
+- [[Function Details_30]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/browser_securitypy

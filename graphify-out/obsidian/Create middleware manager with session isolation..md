@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice (2)"
+community: "ToolResultSanitizer"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/ToolResultSanitizer
 ---
 
 # Create middleware manager with session isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-middleware_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

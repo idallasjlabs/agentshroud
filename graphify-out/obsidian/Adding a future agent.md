@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
-location: "L479"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Adding a future agent
 
 ## Connections
-- [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
+- [[Usage_76]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

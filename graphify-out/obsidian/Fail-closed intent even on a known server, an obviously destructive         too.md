@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "MCPPolicyEngine (2)"
+community: "MCPPolicyEngine"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/MCPPolicyEngine
 ---
 
 # Fail-closed intent: even on a known server, an obviously destructive         too
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

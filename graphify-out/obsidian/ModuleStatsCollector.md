@@ -12,9 +12,9 @@ tags:
 # ModuleStatsCollector
 
 ## Connections
-- [[dot-__init__()_65]] - `method` [EXTRACTED]
-- [[dot-record()_1]] - `method` [EXTRACTED]
-- [[dot-reset()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_78]] - `method` [EXTRACTED]
+- [[dot-record()_2]] - `method` [EXTRACTED]
+- [[dot-reset()_2]] - `method` [EXTRACTED]
 - [[dot-snapshot()]] - `method` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEnforcementWiring]] - `uses` [INFERRED]

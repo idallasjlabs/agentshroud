@@ -11910,10 +11910,10 @@
     "semantic_hash": "7b6d99ea2cc48dabf5133db028e7dcda"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/pyproject.toml": {
-    "mtime": 1789811365.9469905,
-    "seen": 1792247622.141731,
-    "ast_hash": "3edae2aadfee252c9e024be19d12cb49",
-    "semantic_hash": "3edae2aadfee252c9e024be19d12cb49"
+    "mtime": 1792264594.9060223,
+    "seen": 1792270038.017208,
+    "ast_hash": "744cf982177c60b6c6849e953a0620ff",
+    "semantic_hash": "744cf982177c60b6c6849e953a0620ff"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/runtime/__init__.py": {
     "mtime": 1775204152.565921,
@@ -13404,10 +13404,10 @@
     "semantic_hash": "a68dd7cb2375cdd720d70f36a73028b6"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_llm_proxy_thinking_suppression.py": {
-    "mtime": 1792149456.3510787,
-    "seen": 1792247622.1418738,
-    "ast_hash": "5484ac23df47e8e787044bc2f1880345",
-    "semantic_hash": "5484ac23df47e8e787044bc2f1880345"
+    "mtime": 1792264594.9064267,
+    "seen": 1792270038.017417,
+    "ast_hash": "05a7c3ff9904df6fa438693dd99d0a41",
+    "semantic_hash": "05a7c3ff9904df6fa438693dd99d0a41"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_llm_quota_detector.py": {
     "mtime": 1784041562.7122447,
@@ -13980,10 +13980,10 @@
     "semantic_hash": "c81fae4d2af6715d404ce6492e12edfc"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_telegram_proxy_inbound.py": {
-    "mtime": 1787315691.4395976,
-    "seen": 1792247622.1419299,
-    "ast_hash": "4c4124ec319bdf957497fc5cbed5c3d0",
-    "semantic_hash": "4c4124ec319bdf957497fc5cbed5c3d0"
+    "mtime": 1792264594.907816,
+    "seen": 1792270038.017493,
+    "ast_hash": "4f0429457979751592a2090f2b94ce74",
+    "semantic_hash": "4f0429457979751592a2090f2b94ce74"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_telegram_proxy_multibot.py": {
     "mtime": 1786393443.7845778,
@@ -14418,10 +14418,10 @@
     "semantic_hash": "49bf45f1074c066f217686fa0d74b9ac"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/lib/sunday-scan.sh": {
-    "mtime": 1791762528.3973873,
-    "seen": 1792247622.1419709,
-    "ast_hash": "fd35bd272ae45bab51cbd4e761d5cfe1",
-    "semantic_hash": "fd35bd272ae45bab51cbd4e761d5cfe1"
+    "mtime": 1792264594.9105444,
+    "seen": 1792270038.0175638,
+    "ast_hash": "350db2316cac29e62a45b11d1140367f",
+    "semantic_hash": "350db2316cac29e62a45b11d1140367f"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/list_registry_ghsa_ids.py": {
     "mtime": 1785935495.387493,
@@ -14520,16 +14520,16 @@
     "semantic_hash": "1692cc982b5bc0643dae538cf7aa75f7"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/smoke.d/test-sunday-upgrade-scan.sh": {
-    "mtime": 1791762528.3981247,
-    "seen": 1792247622.141981,
-    "ast_hash": "c874f02af1da7f34b0303b731eada2b3",
-    "semantic_hash": "c874f02af1da7f34b0303b731eada2b3"
+    "mtime": 1792264594.9113026,
+    "seen": 1792270038.017579,
+    "ast_hash": "14650d74f2b32b4d46a7280fb10edbbe",
+    "semantic_hash": "14650d74f2b32b4d46a7280fb10edbbe"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/smoke.sh": {
-    "mtime": 1789763168.1351051,
-    "seen": 1792247622.1419818,
-    "ast_hash": "7f099f18d494195333533a0d2a93f1f4",
-    "semantic_hash": "7f099f18d494195333533a0d2a93f1f4"
+    "mtime": 1792264594.911732,
+    "seen": 1792270038.01758,
+    "ast_hash": "4cc495c448002e954c0cb4084e3ae008",
+    "semantic_hash": "4cc495c448002e954c0cb4084e3ae008"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/soak_status.py": {
     "mtime": 1789833559.267373,
@@ -14550,10 +14550,10 @@
     "semantic_hash": "e8ef2595f92d5d8bc4588851114a497c"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/sunday-upgrade-apply.sh": {
-    "mtime": 1792184317.347811,
-    "seen": 1792247622.141984,
-    "ast_hash": "fe96706ad5f082231644bd5bd7c4c201",
-    "semantic_hash": "fe96706ad5f082231644bd5bd7c4c201"
+    "mtime": 1792264594.9139333,
+    "seen": 1792270038.017584,
+    "ast_hash": "7ce5fb71be1fc30617b8ebdac5fa2dc6",
+    "semantic_hash": "7ce5fb71be1fc30617b8ebdac5fa2dc6"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/sunday-upgrade-approve.sh": {
     "mtime": 1791873541.0976229,
@@ -14562,10 +14562,10 @@
     "semantic_hash": "27514082ee852bdf1ce53b7e2775abc6"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/sunday-upgrade.sh": {
-    "mtime": 1790516042.9480488,
-    "seen": 1792247622.141985,
-    "ast_hash": "ae2a131b5bb6c61f735021f1f87f96ba",
-    "semantic_hash": "ae2a131b5bb6c61f735021f1f87f96ba"
+    "mtime": 1792264594.9146404,
+    "seen": 1792270038.017586,
+    "ast_hash": "b570a2b084832317d47bd74cc497399a",
+    "semantic_hash": "b570a2b084832317d47bd74cc497399a"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/switch_model.sh": {
     "mtime": 1789315904.1873958,
@@ -15600,10 +15600,10 @@
     "semantic_hash": "2d2c282c4a985f2de6bce437930dbb25"
   },
   "/Users/agentshroud-bot/Development/agentshroud/.github/workflows/ci.yml": {
-    "mtime": 1791873541.0882287,
-    "seen": 1792247622.142129,
-    "ast_hash": "a99313f6abaa98cbb0901704deb363df",
-    "semantic_hash": "a99313f6abaa98cbb0901704deb363df"
+    "mtime": 1792264594.9031916,
+    "seen": 1792270038.017781,
+    "ast_hash": "ad02e4718f26565cb9f9786e84d288fe",
+    "semantic_hash": "ad02e4718f26565cb9f9786e84d288fe"
   },
   "/Users/agentshroud-bot/Development/agentshroud/.github/workflows/pages.yml": {
     "mtime": 1785935492.8789647,
@@ -15618,10 +15618,10 @@
     "semantic_hash": "f4ff5f288437794e27090077d47bc546"
   },
   "/Users/agentshroud-bot/Development/agentshroud/.github/workflows/security-scan.yml": {
-    "mtime": 1791873541.0895455,
-    "seen": 1792247622.1421309,
-    "ast_hash": "64737b22c5b73a8046bb8c49dfd0ef1f",
-    "semantic_hash": "64737b22c5b73a8046bb8c49dfd0ef1f"
+    "mtime": 1792264594.903793,
+    "seen": 1792270038.017783,
+    "ast_hash": "bed1d23e33f0cb82f6c90d4e555400a8",
+    "semantic_hash": "bed1d23e33f0cb82f6c90d4e555400a8"
   },
   "/Users/agentshroud-bot/Development/agentshroud/.github/workflows/update-cve-page.yml": {
     "mtime": 1785935492.8793926,
@@ -15804,10 +15804,10 @@
     "semantic_hash": "c87a37a49efb9a768b950f9e4764c749"
   },
   "/Users/agentshroud-bot/Development/agentshroud/INCIDENT_2026-10-16_conduit-outage.md": {
-    "mtime": 1792247391.818352,
-    "seen": 1792247622.142148,
-    "ast_hash": "8086aaf8d65290efcce802e03af3b9fd",
-    "semantic_hash": "8086aaf8d65290efcce802e03af3b9fd"
+    "mtime": 1792264594.9052005,
+    "seen": 1792270038.017811,
+    "ast_hash": "a3df4da734c7d71c1903db1fc65d3b67",
+    "semantic_hash": "a3df4da734c7d71c1903db1fc65d3b67"
   },
   "/Users/agentshroud-bot/Development/agentshroud/README.md": {
     "mtime": 1785935492.8864794,
@@ -15948,10 +15948,10 @@
     "semantic_hash": "b46ef6f1884260d8f7bb8cc4d14663e5"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md": {
-    "mtime": 1784041562.6970043,
-    "seen": 1792247622.142161,
-    "ast_hash": "f8c823fde090c7ce0cdffceece3f0bc0",
-    "semantic_hash": "f8c823fde090c7ce0cdffceece3f0bc0"
+    "mtime": 1792264594.9057117,
+    "seen": 1792270038.0178308,
+    "ast_hash": "2c8754356915e61f02f208052264611c",
+    "semantic_hash": "2c8754356915e61f02f208052264611c"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/config/hermes/SOUL.md": {
     "mtime": 1785935492.90579,
@@ -19854,10 +19854,10 @@
     "semantic_hash": "814786b5eb9db691ea03694cb4462c89"
   },
   "/Users/agentshroud-bot/Development/agentshroud/prompts/sunday-upgrade.md": {
-    "mtime": 1791873541.095453,
-    "seen": 1792247622.142584,
-    "ast_hash": "6ef67bafeb1532c1685f42ebeb9fd85e",
-    "semantic_hash": "6ef67bafeb1532c1685f42ebeb9fd85e"
+    "mtime": 1792264594.9088125,
+    "seen": 1792270038.018381,
+    "ast_hash": "20eea8bc6b7278d96b59474f4422bea9",
+    "semantic_hash": "20eea8bc6b7278d96b59474f4422bea9"
   },
   "/Users/agentshroud-bot/Development/agentshroud/reports/upgrade-2026-08-30-20260830-2009.md": {
     "mtime": 1789315904.1853828,
@@ -21106,5 +21106,23 @@
     "seen": 1792247622.1426969,
     "ast_hash": "677d0d8a189a25b1445d0ffea50fbc16",
     "semantic_hash": "677d0d8a189a25b1445d0ffea50fbc16"
+  },
+  "/Users/agentshroud-bot/Development/agentshroud/scripts/launchd/install.sh": {
+    "mtime": 1792264594.9098074,
+    "seen": 1792270038.01756,
+    "ast_hash": "c045a209961ec26b3cc7d4d6f4c5e5d8",
+    "semantic_hash": "c045a209961ec26b3cc7d4d6f4c5e5d8"
+  },
+  "/Users/agentshroud-bot/Development/agentshroud/tests/startup_smoke/test_launchd_install.sh": {
+    "mtime": 1792264594.915225,
+    "seen": 1792270038.01762,
+    "ast_hash": "83a82fba25fedb3778b6b47ab9b59856",
+    "semantic_hash": "83a82fba25fedb3778b6b47ab9b59856"
+  },
+  "/Users/agentshroud-bot/Development/agentshroud/tests/startup_smoke/test_sunday_upgrade_session_guard.sh": {
+    "mtime": 1792264594.915681,
+    "seen": 1792270038.017625,
+    "ast_hash": "e9151db989216611e283045fa5cd4b3f",
+    "semantic_hash": "e9151db989216611e283045fa5cd4b3f"
   }
 }

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "test_security_regressions_v1_2.py (4)"
+community: "test_security_regressions_v1_2.py"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py_4
+  - community/test_security_regressions_v1_2py
 ---
 
 # BT-M1: Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hermes_dashboard_forwarder_bind_address_is_documented()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py_4
+#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py

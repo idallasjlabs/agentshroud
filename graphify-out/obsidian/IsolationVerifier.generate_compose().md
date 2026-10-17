@@ -12,6 +12,6 @@ tags:
 # IsolationVerifier.generate_compose()
 
 ## Connections
-- [[Function Details_28]] - `contains` [EXTRACTED]
+- [[Function Details_29]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agent_isolationpy

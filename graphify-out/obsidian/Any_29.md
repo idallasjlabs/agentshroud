@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L55"
+community: "ApprovalQueueConfig (2)"
+location: "L141"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-__call__()_5]] - `references` [EXTRACTED]
-- [[dot-__init__()_91]] - `references` [EXTRACTED]
-- [[dot-_clean_tool()]] - `references` [EXTRACTED]
-- [[dot-_coerce()]] - `references` [EXTRACTED]
-- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[dot-broadcast()]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_1]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2

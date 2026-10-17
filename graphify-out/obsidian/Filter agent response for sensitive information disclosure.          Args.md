@@ -12,6 +12,6 @@ tags:
 # Filter agent response for sensitive information disclosure.          Args:
 
 ## Connections
-- [[dot-filter_response()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L137"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Container Won't Start
 
 ## Connections
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

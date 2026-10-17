@@ -12,6 +12,6 @@ tags:
 # Initialize router          Args:             config: Router configuration
 
 ## Connections
-- [[dot-__init__()_122]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_125]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2

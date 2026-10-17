@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "MCPPolicyEngine (2)"
+community: "MCPPolicyEngine"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/MCPPolicyEngine
 ---
 
 # Declarative MCP security policy.      Loaded from the ``mcp_policy:`` section of
 
 ## Connections
-- [[MCPPolicyConfig]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

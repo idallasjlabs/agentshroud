@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ContainerConfig]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
@@ -43,7 +43,7 @@ tags:
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]

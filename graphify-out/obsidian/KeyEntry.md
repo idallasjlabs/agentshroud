@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2) (4)"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2_4
 ---
 
 # KeyEntry
@@ -15,4 +15,4 @@ tags:
 - [[dot-store_key()]] - `calls` [EXTRACTED]
 - [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4

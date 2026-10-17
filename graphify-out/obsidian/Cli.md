@@ -1,20 +1,20 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs (2)"
+community: "main.rs"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs_2
+  - community/mainrs
 ---
 
 # Cli
 
 ## Connections
-- [[Commands_1]] - `references` [EXTRACTED]
-- [[OutputFormat_1]] - `references` [EXTRACTED]
+- [[Commands_2]] - `references` [EXTRACTED]
+- [[OutputFormat]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs_2
+#graphify/code #graphify/EXTRACTED #community/mainrs

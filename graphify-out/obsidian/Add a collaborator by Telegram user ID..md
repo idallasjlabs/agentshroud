@@ -12,6 +12,6 @@ tags:
 # Add a collaborator by Telegram user ID.
 
 ## Connections
-- [[add_collaborator()_1]] - `rationale_for` [EXTRACTED]
+- [[add_collaborator()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

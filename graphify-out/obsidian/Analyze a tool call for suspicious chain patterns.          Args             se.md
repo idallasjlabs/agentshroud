@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "TestToolChainAnalyzer (2)"
+community: "TestToolChainAnalyzer"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/TestToolChainAnalyzer
 ---
 
 # Analyze a tool call for suspicious chain patterns.          Args:             se
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-analyze_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,21 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L1"
+community: "Daedalus — Concept Illustrator"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_162]] - `contains` [EXTRACTED]
-- [[Related Skills_105]] - `contains` [EXTRACTED]
-- [[Usage_115]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-daedalusREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_23]] - `contains` [EXTRACTED]
+- [[Output Format_38]] - `contains` [EXTRACTED]
+- [[Persona_17]] - `contains` [EXTRACTED]
+- [[Quality Checklist_20]] - `contains` [EXTRACTED]
+- [[Role_94]] - `contains` [EXTRACTED]
+- [[System Prompt_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "test_llm_proxy_local_parity.py (2)"
 location: "L248-L2107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLMProxy
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_6]] - `method` [EXTRACTED]
 - [[dot-_apply_filters()]] - `method` [EXTRACTED]
 - [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
@@ -49,7 +49,6 @@ tags:
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
-- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[llm_proxy.py_2]] - `contains` [EXTRACTED]
@@ -98,11 +97,6 @@ tags:
 - [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - `uses` [INFERRED]
 - [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - `uses` [INFERRED]
 - [[test_local_secondary_failover_base_routes_correctly()]] - `uses` [INFERRED]
-- [[test_missing_model_treated_as_non_qwen()]] - `uses` [INFERRED]
-- [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - `uses` [INFERRED]
-- [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - `uses` [INFERRED]
-- [[test_non_qwen_caller_supplied_effort_is_overridden_to_none()]] - `uses` [INFERRED]
-- [[test_non_qwen_reasoning_effort_already_none_is_noop()]] - `uses` [INFERRED]
 - [[test_normalize_local_model_already_dashed_is_idempotent()]] - `uses` [INFERRED]
 - [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - `uses` [INFERRED]
 - [[test_normalize_local_model_mlxlm_keeps_colon()]] - `uses` [INFERRED]
@@ -122,9 +116,6 @@ tags:
 - [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - `uses` [INFERRED]
 - [[test_proxy_rewrites_claude_via_openai_path()]] - `calls` [EXTRACTED]
 - [[test_proxy_rewrites_gemini_via_openai_path()]] - `calls` [EXTRACTED]
-- [[test_qwen_list_content_gets_suffix_on_last_text_part()]] - `uses` [INFERRED]
-- [[test_qwen_model_gets_no_think_suffix()]] - `uses` [INFERRED]
-- [[test_qwen_model_suffix_already_present_is_noop()]] - `uses` [INFERRED]
 - [[test_rate_limit_failover.py]] - `imports` [EXTRACTED]
 - [[test_scan_request_data_scans_messages_without_name_error()]] - `uses` [INFERRED]
 - [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - `uses` [INFERRED]
@@ -133,4 +124,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `uses` [INFERRED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/test_llm_proxy_local_paritypy_2

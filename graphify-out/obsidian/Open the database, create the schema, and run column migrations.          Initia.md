@@ -12,6 +12,6 @@ tags:
 # Open the database, create the schema, and run column migrations.          Initia
 
 ## Connections
-- [[dot-initialize()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditStore

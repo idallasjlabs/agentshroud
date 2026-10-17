@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ProxyAction"
+community: "WebContentScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/WebContentScanner
 ---
 
 # Enum
 
 ## Connections
-- [[ProxyAction]] - `inherits` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[FindingSeverity]] - `inherits` [EXTRACTED]
+- [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

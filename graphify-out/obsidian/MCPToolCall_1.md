@@ -12,7 +12,7 @@ tags:
 # MCPToolCall
 
 ## Connections
-- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_7]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
 - [[dot-process_tool_call()]] - `references` [EXTRACTED]
 - [[dot-test_audit_entry_created()]] - `calls` [EXTRACTED]
@@ -51,12 +51,12 @@ tags:
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
@@ -103,7 +103,7 @@ tags:
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket]] - `uses` [INFERRED]
 - [[make_call()]] - `calls` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]

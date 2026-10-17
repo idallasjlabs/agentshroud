@@ -12,7 +12,7 @@ tags:
 # FetchOutcome
 
 ## Connections
-- [[dot-__call__()_10]] - `references` [EXTRACTED]
+- [[dot-__call__()_6]] - `references` [EXTRACTED]
 - [[dot-test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
 - [[dot-test_not_ok_without_content()]] - `calls` [EXTRACTED]
 - [[dot-test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
@@ -20,6 +20,6 @@ tags:
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/apipy_2

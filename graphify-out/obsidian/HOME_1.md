@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
-- [[Architecture Overview_1]] - `references` [EXTRACTED]
+- [[Architecture Overview_3]] - `references` [EXTRACTED]
 - [[Data Flow_1]] - `references` [EXTRACTED]
-- [[Quick Reference_8]] - `references` [EXTRACTED]
-- [[Shutdown & Recovery]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[Quick Reference_10]] - `references` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpymd

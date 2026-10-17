@@ -12,7 +12,7 @@ tags:
 # ContextIntegrityScorer
 
 ## Connections
-- [[dot-__init__()_48]] - `method` [EXTRACTED]
+- [[dot-__init__()_122]] - `method` [EXTRACTED]
 - [[dot-score_context()]] - `method` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `shares_data_with` [EXTRACTED]

@@ -22,7 +22,7 @@ tags:
 - [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - `contains` [EXTRACTED]
 - [[8. Telegram Integration]] - `contains` [EXTRACTED]
 - [[9. Bot Startup Flow (local mode)]] - `contains` [EXTRACTED]
-- [[Architecture Overview_2]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 - [[LOCAL_LLM_REVIEW]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review

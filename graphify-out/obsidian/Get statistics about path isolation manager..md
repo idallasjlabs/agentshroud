@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager (12)"
+community: "AlertDispatcher"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_12
+  - community/AlertDispatcher
 ---
 
 # Get statistics about path isolation manager.
 
 ## Connections
-- [[dot-get_stats()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_15]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_12
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

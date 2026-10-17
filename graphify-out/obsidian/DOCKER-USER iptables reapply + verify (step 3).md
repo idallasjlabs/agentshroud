@@ -12,7 +12,7 @@ tags:
 # DOCKER-USER iptables reapply + verify (step 3)
 
 ## Connections
-- [[check()_5]] - `references` [EXTRACTED]
-- [[log()_6]] - `references` [EXTRACTED]
+- [[check()_4]] - `references` [EXTRACTED]
+- [[log()_5]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5

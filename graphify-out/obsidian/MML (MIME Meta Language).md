@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "concept"
-community: "telegram_proxy.py (6)"
+community: "SSH Configuration Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/telegram_proxypy_6
+  - community/SSH_Configuration_Guide
 ---
 
 # MML (MIME Meta Language)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message-composition]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/telegram_proxypy_6
+#graphify/concept #graphify/EXTRACTED #community/SSH_Configuration_Guide

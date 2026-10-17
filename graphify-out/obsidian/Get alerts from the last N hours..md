@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager (10)"
+community: "MiddlewareManager (5)"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_10
+  - community/MiddlewareManager_5
 ---
 
 # Get alerts from the last N hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_recent_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_10
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

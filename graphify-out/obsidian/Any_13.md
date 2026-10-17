@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: ""
 type: "code"
-community: "create_auth_dependency"
-location: "L347"
+community: "LLMProxy"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/create_auth_dependency
+  - graphify/EXTRACTED
+  - community/LLMProxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_3]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
+- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

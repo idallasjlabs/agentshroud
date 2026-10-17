@@ -11,7 +11,6 @@ tags:
 # Gateway-Enforced Intel Verification (SCRUM-75)
 
 ## Connections
-- [[Anti-Security-Theater Principle]] - `conceptually_related_to` [INFERRED]
 - [[Competitive Intelligence Report Standard Prompt (Hermes)]] - `implements` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Gateway-Enforced_Intel_Verification_SCRUM-75

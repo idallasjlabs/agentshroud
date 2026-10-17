@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "cli/main.py"
+community: "tts.py"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/ttspy
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/ttspy

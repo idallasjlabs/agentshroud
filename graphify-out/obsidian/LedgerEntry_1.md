@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # LedgerEntry
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-get_entry()]] - `references` [EXTRACTED]
 - [[dot-query()]] - `calls` [EXTRACTED]
-- [[dot-record()]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[dot-record()_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

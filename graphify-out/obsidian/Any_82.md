@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L73"
+community: "soc/router.py"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_197]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_19]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/INFERRED #community/soc/routerpy

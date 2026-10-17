@@ -12,6 +12,6 @@ tags:
 # Analyze a URL for security issues.          Returns URLAnalysisResult with verdi
 
 ## Connections
-- [[dot-analyze()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-analyze()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

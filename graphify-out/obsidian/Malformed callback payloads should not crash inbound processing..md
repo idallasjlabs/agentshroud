@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L5694"
+community: "Malformed callback payloads should not crash inbound processing."
+location: "L5712"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Malformed_callback_payloads_should_not_crash_inbound_processing
 ---
 
 # Malformed callback payloads should not crash inbound processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_egress_callback_non_dict_result_is_handled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Malformed_callback_payloads_should_not_crash_inbound_processing

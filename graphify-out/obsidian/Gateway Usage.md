@@ -12,6 +12,6 @@ tags:
 # Gateway Usage
 
 ## Connections
-- [[ClamAV_1]] - `contains` [EXTRACTED]
+- [[ClamAV]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ClamAV

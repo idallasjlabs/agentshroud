@@ -15,6 +15,6 @@ tags:
 - [[WebProxyConfig.get_domain_settings(domain)]] - `contains` [EXTRACTED]
 - [[WebProxyConfig.is_domain_allowed(domain)]] - `contains` [EXTRACTED]
 - [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
-- [[web_config.py_1]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_configpy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Bot Exits Before Gateway Is Healthy]] - `contains` [EXTRACTED]
 - [[OpenClaw Not Starting]] - `contains` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 - [[`Could not load Claude OAuth token after retries`]] - `contains` [EXTRACTED]
 - [[`startup Warning Gateway password file not found`]] - `contains` [EXTRACTED]
 

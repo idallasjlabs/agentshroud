@@ -12,12 +12,12 @@ tags:
 # DelegationManager
 
 ## Connections
-- [[dot-__init__()_176]] - `method` [EXTRACTED]
+- [[dot-__init__()_198]] - `method` [EXTRACTED]
 - [[dot-_load()]] - `method` [EXTRACTED]
 - [[dot-_require_owner()]] - `method` [EXTRACTED]
 - [[dot-_revoke_by_user_privilege()]] - `method` [EXTRACTED]
 - [[dot-_save()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()_2]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[dot-delegate()]] - `method` [EXTRACTED]
 - [[dot-get_active_delegations()]] - `method` [EXTRACTED]
 - [[dot-get_delegations_for_user()]] - `method` [EXTRACTED]

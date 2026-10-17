@@ -15,8 +15,8 @@ tags:
 - [[Coverage Threshold]] - `contains` [EXTRACTED]
 - [[Expected Pipeline (Inferred)]] - `contains` [EXTRACTED]
 - [[Key Test Command]] - `contains` [EXTRACTED]
-- [[Purpose_111]] - `contains` [EXTRACTED]
-- [[Related Notes_40]] - `contains` [EXTRACTED]
+- [[Purpose_70]] - `contains` [EXTRACTED]
+- [[Related Notes_23]] - `contains` [EXTRACTED]
 - [[ci-workflows]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

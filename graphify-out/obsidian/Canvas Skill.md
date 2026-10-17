@@ -16,10 +16,10 @@ tags:
 - [[Configuration_7]] - `contains` [EXTRACTED]
 - [[Debugging]] - `contains` [EXTRACTED]
 - [[How It Works]] - `contains` [EXTRACTED]
-- [[Overview_12]] - `contains` [EXTRACTED]
+- [[Overview_13]] - `contains` [EXTRACTED]
 - [[Tips_2]] - `contains` [EXTRACTED]
 - [[URL Path Structure]] - `contains` [EXTRACTED]
-- [[Workflow_4]] - `contains` [EXTRACTED]
+- [[Workflow_2]] - `contains` [EXTRACTED]
 - [[canvasSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Canvas_Skill

@@ -1,17 +1,21 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "v0.9.0 — Apple Messages Integration"
-location: "L380"
+community: "SSH Capability Architecture Document"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Components
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[API Endpoints (`gatewayingest_apimain.py`)]] - `contains` [EXTRACTED]
+- [[RequestResponse Models (`gatewayingest_apimodels.py`)]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - `contains` [EXTRACTED]
+- [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

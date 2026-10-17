@@ -12,8 +12,8 @@ tags:
 # ConnectionPool
 
 ## Connections
-- [[dot-__init__()_60]] - `calls` [EXTRACTED]
-- [[dot-__init__()_136]] - `method` [EXTRACTED]
+- [[dot-__init__()_69]] - `calls` [EXTRACTED]
+- [[dot-__init__()_162]] - `method` [EXTRACTED]
 - [[dot-get_or_create()]] - `method` [EXTRACTED]
 - [[dot-remove()]] - `method` [EXTRACTED]
 - [[dot-stop_all()]] - `method` [EXTRACTED]
@@ -26,10 +26,10 @@ tags:
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
@@ -46,7 +46,7 @@ tags:
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestStdioConnection]] - `uses` [INFERRED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/StdioConnection

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "AlertDispatcher"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AlertDispatcher
 ---
 
 # Complete security configuration
 
 ## Connections
-- [[SecurityConfig]] - `rationale_for` [EXTRACTED]
+- [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

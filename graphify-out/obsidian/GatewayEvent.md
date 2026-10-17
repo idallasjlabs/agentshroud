@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-emit()_1]] - `shares_data_with` [EXTRACTED]
-- [[dot-to_dict()_8]] - `method` [EXTRACTED]
+- [[dot-to_dict()_11]] - `method` [EXTRACTED]
 - [[A single gateway event]] - `rationale_for` [EXTRACTED]
 - [[EventBus]] - `shares_data_with` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]

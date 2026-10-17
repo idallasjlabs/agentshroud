@@ -12,6 +12,6 @@ tags:
 # Manages permissions for MCP tool calls.      Default-allow philosophy: tools wor
 
 ## Connections
-- [[MCPPermissionManager_1]] - `rationale_for` [EXTRACTED]
+- [[MCPPermissionManager]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2)"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2
 ---
 
 # EgressSummary
 
 ## Connections
 - [[dot-daily_summary()]] - `references` [EXTRACTED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

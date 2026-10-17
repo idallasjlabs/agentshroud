@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "_req"
+community: "ToolResultSanitizer"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_req
+  - community/ToolResultSanitizer
 ---
 
 # MiddlewareManager built via __new__ — every module attr explicitly None     so e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_req
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

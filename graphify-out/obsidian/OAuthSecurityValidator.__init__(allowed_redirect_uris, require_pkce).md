@@ -12,6 +12,6 @@ tags:
 # OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)
 
 ## Connections
-- [[Function Details_10]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details_4

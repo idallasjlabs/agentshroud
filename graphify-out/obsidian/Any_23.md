@@ -1,18 +1,29 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L82"
+community: "KeyRotationManager (2)"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/KeyRotationManager_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
-- [[dot-record_inbound()]] - `references` [EXTRACTED]
+- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
+- [[dot-_validate_credential()]] - `references` [EXTRACTED]
+- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[dot-get_credential_status()]] - `references` [EXTRACTED]
+- [[dot-get_health_score()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[dot-rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-validate()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

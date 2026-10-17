@@ -1,17 +1,17 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Blue Team Security Auditor (SEC-DEFENSE)"
+community: "API Keys Setup Guide"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
+  - community/API_Keys_Setup_Guide
 ---
 
 # Container unhealthy
 
 ## Connections
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

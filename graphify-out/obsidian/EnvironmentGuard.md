@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2) (2)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2_2
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
-- [[dot-__init__()_12]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `calls` [EXTRACTED]
+- [[dot-__init__()_138]] - `method` [EXTRACTED]
 - [[dot-_contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[dot-_looks_like_credential()]] - `method` [EXTRACTED]
 - [[dot-_record_leakage()]] - `method` [EXTRACTED]
@@ -30,16 +30,16 @@ tags:
 - [[dot-test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
 - [[dot-test_env_guard_scrubs_output()]] - `calls` [INFERRED]
 - [[dot-test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_unparseable_text_is_allowed()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[dot-test_unparseable_text_is_allowed()_1]] - `calls` [EXTRACTED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against environment variable leakage and unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestCheckCommandExecution]] - `uses` [INFERRED]
@@ -77,13 +77,13 @@ tags:
 - [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[env_guard.py]] - `contains` [EXTRACTED]
 - [[get_env_guard()]] - `references` [EXTRACTED]
-- [[guard()_3]] - `calls` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[guard()_2]] - `calls` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[test_env_guard_class.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_2

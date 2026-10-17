@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "ClamAV"
+community: "ClamAV (2)"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/ClamAV_2
 ---
 
 # ARM64 Support
 
 ## Connections
-- [[Trivy_1]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV
+#graphify/document #graphify/EXTRACTED #community/ClamAV_2

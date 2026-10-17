@@ -1,5 +1,5 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
 community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
 location: "L10"

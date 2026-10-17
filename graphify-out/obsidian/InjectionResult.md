@@ -12,7 +12,7 @@ tags:
 # InjectionResult
 
 ## Connections
-- [[dot-scan_tool_result()_1]] - `references` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `references` [EXTRACTED]
 - [[Result from tool result injection scan.]] - `rationale_for` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 

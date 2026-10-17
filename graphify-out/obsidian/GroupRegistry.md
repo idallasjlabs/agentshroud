@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager
 ---
 
 # GroupRegistry
@@ -17,7 +17,7 @@ tags:
 - [[dot-delete_group()]] - `method` [EXTRACTED]
 - [[dot-get_group()]] - `method` [EXTRACTED]
 - [[dot-init_auto_groups()]] - `method` [EXTRACTED]
-- [[dot-is_member()]] - `method` [EXTRACTED]
+- [[dot-is_member()_1]] - `method` [EXTRACTED]
 - [[dot-list_groups()]] - `method` [EXTRACTED]
 - [[dot-remove_member()]] - `method` [EXTRACTED]
 - [[dot-test_add_remove_member()]] - `calls` [EXTRACTED]
@@ -31,10 +31,10 @@ tags:
 - [[dot-test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
 - [[FastAPI]] - `uses` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
+- [[LogRecord_1]] - `uses` [INFERRED]
 - [[Manages user groups including auto-groups and custom groups.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
 - [[TestRBACConfig]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

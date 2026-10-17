@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MiddlewareManager (7)"
-location: "L379"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/MCPPolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[dot-enforce()_1]] - `references` [EXTRACTED]
+- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

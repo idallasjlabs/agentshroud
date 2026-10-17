@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ToolResultSanitizer"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # MiddlewareManager
 
 ## Connections
-- [[dot-__init__()_10]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `method` [EXTRACTED]
 - [[dot-_analyze_request_for_rbac()]] - `method` [EXTRACTED]
 - [[dot-_check_cross_session_access()]] - `method` [EXTRACTED]
 - [[dot-_check_rbac_permissions()]] - `method` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[dot-process_tool_result()]] - `method` [EXTRACTED]
 - [[dot-scan_tool_result()]] - `method` [EXTRACTED]
 - [[dot-set_config()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_20]] - `calls` [EXTRACTED]
 - [[dot-test_all_module_attrs_exist_after_init()]] - `calls` [EXTRACTED]
 - [[dot-test_context_guard_init_raise_recorded_and_logged()]] - `calls` [EXTRACTED]
 - [[dot-test_endpoint_reports_no_key_collisions_and_high_total()]] - `calls` [EXTRACTED]
@@ -55,7 +55,7 @@ tags:
 - [[dot-test_process_tool_result_no_sanitizer()]] - `calls` [EXTRACTED]
 - [[dot-test_process_tool_result_sanitizer_error()]] - `calls` [EXTRACTED]
 - [[dot-test_process_tool_result_success()]] - `calls` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -75,7 +75,7 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogRecord_2]] - `uses` [INFERRED]
+- [[LogRecord_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages the P1 security middleware modules.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -90,13 +90,13 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[Test File Sandbox Message Gate Suite]] - `references` [EXTRACTED]
@@ -119,7 +119,7 @@ tags:
 - [[TestFileSandboxSkippedForPlainMessages]] - `uses` [INFERRED]
 - [[TestFileSandboxStep]] - `uses` [INFERRED]
 - [[TestFilterOutboundResponse]] - `uses` [INFERRED]
-- [[TestGitGuard_1]] - `uses` [INFERRED]
+- [[TestGitGuard]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
 - [[TestInit]] - `uses` [INFERRED]
 - [[TestIsOwner]] - `uses` [INFERRED]
@@ -132,7 +132,7 @@ tags:
 - [[TestMiddlewareIntegration]] - `uses` [INFERRED]
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
-- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
+- [[TestMultiTurnTracker]] - `uses` [INFERRED]
 - [[TestOwnerBypassContentPatternChecks]] - `uses` [INFERRED]
 - [[TestPathIsolationStep]] - `uses` [INFERRED]
 - [[TestPatternMatching]] - `uses` [INFERRED]
@@ -155,19 +155,19 @@ tags:
 - [[TestSetConfig]] - `uses` [INFERRED]
 - [[TestSystemPathProtection]] - `uses` [INFERRED]
 - [[TestTestCountAccuracy]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer]] - `uses` [INFERRED]
 - [[TestToolResultPIIConfig]] - `uses` [INFERRED]
-- [[TestToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[TestToolResultSanitizer]] - `uses` [INFERRED]
 - [[TestUserSessionManager]] - `uses` [INFERRED]
 - [[TestWebhookReceiverIntegration]] - `uses` [INFERRED]
 - [[TestWorkspaceAccessPreserved]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
@@ -175,11 +175,11 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[middleware.py]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[middleware.py_1]] - `contains` [EXTRACTED]
+- [[middleware.py]] - `references` [EXTRACTED]
 - [[middleware_manager()]] - `calls` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
@@ -188,4 +188,4 @@ tags:
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

@@ -17,7 +17,7 @@ tags:
 - [[Issue Register]] - `contains` [EXTRACTED]
 - [[Linked Artifacts]] - `contains` [EXTRACTED]
 - [[Recommended Next Closure Sequence]] - `contains` [EXTRACTED]
-- [[Summary_1]] - `contains` [EXTRACTED]
+- [[Summary_2]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[session-issue-register-2026-03-14]] - `contains` [EXTRACTED]
 

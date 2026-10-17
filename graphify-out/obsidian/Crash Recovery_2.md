@@ -16,6 +16,6 @@ tags:
 - [[Detecting a Crash]] - `contains` [EXTRACTED]
 - [[Manual Recovery]] - `contains` [EXTRACTED]
 - [[OOM Recovery]] - `contains` [EXTRACTED]
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

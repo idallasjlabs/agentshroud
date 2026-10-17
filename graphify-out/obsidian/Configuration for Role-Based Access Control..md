@@ -12,6 +12,6 @@ tags:
 # Configuration for Role-Based Access Control.
 
 ## Connections
-- [[RBACConfig_3]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

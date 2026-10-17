@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "ForwardRequest (2)"
+community: "test_e2e_proxy.py (2)"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest_2
+  - community/test_e2e_proxypy_2
 ---
 
 # GET /dashboard with valid cookie serves HTML
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dashboard_cookie_auth_serves_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest_2
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy_2

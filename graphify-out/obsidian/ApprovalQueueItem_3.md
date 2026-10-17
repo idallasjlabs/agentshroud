@@ -1,28 +1,20 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L215"
+community: "ApprovalQueueConfig (4)"
+location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig_4
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[dot-_notify_telegram()]] - `references` [EXTRACTED]
-- [[dot-decide()]] - `references` [EXTRACTED]
-- [[dot-get_item()_1]] - `references` [EXTRACTED]
-- [[dot-get_pending()]] - `references` [EXTRACTED]
-- [[dot-submit()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[AuditStore]] - `uses` [INFERRED]
+- [[_make_item()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_4

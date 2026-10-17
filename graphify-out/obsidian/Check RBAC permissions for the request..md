@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ToolResultSanitizer"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # Check RBAC permissions for the request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_rbac_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

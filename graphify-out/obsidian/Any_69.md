@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L93"
+community: "upgrade"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/upgrade

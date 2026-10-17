@@ -1,37 +1,26 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L37"
+community: "ApprovalHardening"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ApprovalHardening
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_102]] - `references` [EXTRACTED]
-- [[dot-_check_request_rate()]] - `references` [EXTRACTED]
-- [[dot-_check_system_resources()_1]] - `references` [EXTRACTED]
-- [[dot-_check_token_usage()]] - `references` [EXTRACTED]
-- [[dot-_check_tool_call_rate()]] - `references` [EXTRACTED]
-- [[dot-_get_system_stats()]] - `references` [EXTRACTED]
-- [[dot-_log_heartbeat_result()]] - `references` [EXTRACTED]
-- [[dot-_log_verification_result()]] - `references` [EXTRACTED]
-- [[dot-_send_anomaly_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_heartbeat_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_verification_alert()]] - `references` [EXTRACTED]
-- [[dot-_test_docker_available()]] - `references` [EXTRACTED]
-- [[dot-_test_killswitch_mode()]] - `references` [EXTRACTED]
-- [[dot-_test_script_exists()]] - `references` [EXTRACTED]
-- [[dot-_test_script_permissions()]] - `references` [EXTRACTED]
-- [[dot-_test_script_syntax()]] - `references` [EXTRACTED]
-- [[dot-anomaly_detection()]] - `references` [EXTRACTED]
-- [[dot-get_status()]] - `references` [EXTRACTED]
-- [[dot-heartbeat_check()]] - `references` [EXTRACTED]
-- [[dot-verify_killswitch()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[dot-_check_description_parameter_mismatch()]] - `references` [EXTRACTED]
+- [[dot-_check_parameter_obfuscation()]] - `references` [EXTRACTED]
+- [[dot-_check_repeat_request_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_parameter_fingerprint()]] - `references` [EXTRACTED]
+- [[dot-_format_parameters_with_highlighting()]] - `references` [EXTRACTED]
+- [[dot-analyze_request()]] - `references` [EXTRACTED]
+- [[dot-format_hardened_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_11]] - `references` [EXTRACTED]
+- [[dot-is_request_in_cooldown()]] - `references` [EXTRACTED]
+- [[dot-record_denied_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

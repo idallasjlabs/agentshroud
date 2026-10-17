@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_agent_cve_registry.py"
+source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "test_agent_cve_registry.py (3)"
-location: "L580"
+community: "._run_and_read"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_3
+  - community/_run_and_read
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_triage()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_3
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

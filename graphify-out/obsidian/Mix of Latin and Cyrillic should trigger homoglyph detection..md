@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (4)"
 location: "L835"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_4
 ---
 
 # Mix of Latin and Cyrillic should trigger homoglyph detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_homoglyph_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4

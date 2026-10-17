@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (2)"
+community: "Browser — Secure Browser Automation"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_2
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Extract Data
 
 ## Connections
-- [[Usage_65]] - `contains` [EXTRACTED]
+- [[Usage_64]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

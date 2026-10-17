@@ -28,7 +28,7 @@ tags:
 - [[Secrets_1]] - `contains` [EXTRACTED]
 - [[Security Scanners]] - `references` [EXTRACTED]
 - [[Telegram Bot Commands (Owner)]] - `contains` [EXTRACTED]
-- [[Tests]] - `contains` [EXTRACTED]
+- [[Tests_1]] - `contains` [EXTRACTED]
 - [[Upgrades & Rollbacks]] - `contains` [EXTRACTED]
 - [[Web Management UI]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `references` [EXTRACTED]

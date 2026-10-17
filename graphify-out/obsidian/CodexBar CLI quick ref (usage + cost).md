@@ -12,7 +12,7 @@ tags:
 # CodexBar CLI quick ref (usage + cost)
 
 ## Connections
-- [[Commands_2]] - `contains` [EXTRACTED]
+- [[Commands]] - `contains` [EXTRACTED]
 - [[Cost JSON fields]] - `contains` [EXTRACTED]
 - [[Install]] - `contains` [EXTRACTED]
 - [[Notes_1]] - `contains` [EXTRACTED]

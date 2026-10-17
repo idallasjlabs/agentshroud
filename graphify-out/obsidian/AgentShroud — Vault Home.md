@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "main.py.md (3)"
+community: "main.py.md"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd_3
+  - community/mainpymd
 ---
 
 # AgentShroud — Vault Home
@@ -19,4 +19,4 @@ tags:
 - [[Navigate This Vault]] - `contains` [EXTRACTED]
 - [[Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd_3
+#graphify/document #graphify/EXTRACTED #community/mainpymd

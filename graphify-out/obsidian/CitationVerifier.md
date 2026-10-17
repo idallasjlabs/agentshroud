@@ -12,7 +12,7 @@ tags:
 # CitationVerifier
 
 ## Connections
-- [[dot-__init__()_203]] - `method` [EXTRACTED]
+- [[dot-__init__()_171]] - `method` [EXTRACTED]
 - [[dot-_verifier()]] - `calls` [EXTRACTED]
 - [[dot-_verifier()_1]] - `calls` [EXTRACTED]
 - [[dot-_verify_url()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[Path_37]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[TestVerifyReport]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_4]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_FakeFetcher_1]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
 - [[_FakeStreamResponse_1]] - `uses` [INFERRED]

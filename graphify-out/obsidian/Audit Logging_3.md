@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Browser — Secure Browser Automation (3)"
-location: "L183"
+community: "Implementation Status"
+location: "L320"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_3
+  - community/Implementation_Status
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

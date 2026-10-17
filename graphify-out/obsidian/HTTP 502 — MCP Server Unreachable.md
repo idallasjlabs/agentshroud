@@ -12,6 +12,6 @@ tags:
 # HTTP 502 — MCP Server Unreachable
 
 ## Connections
-- [[MCP Proxy Errors]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd_5

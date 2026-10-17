@@ -1,21 +1,13 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: ""
 type: "code"
-community: "RBACConfig"
-location: "L62"
+community: "._filter_streaming_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/_filter_streaming_event
 ---
 
 # Any
 
-## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_3]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_3]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

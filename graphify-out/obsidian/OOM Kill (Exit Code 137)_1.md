@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Restart Procedure"
-location: "L28"
+community: "Crash Recovery"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Crash_Recovery
 ---
 
 # OOM Kill (Exit Code 137)
 
 ## Connections
-- [[Container Errors_2]] - `contains` [EXTRACTED]
+- [[Crash Diagnosis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

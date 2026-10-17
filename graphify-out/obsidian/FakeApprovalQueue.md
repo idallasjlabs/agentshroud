@@ -12,7 +12,7 @@ tags:
 # FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_66]] - `method` [EXTRACTED]
+- [[dot-__init__()_79]] - `method` [EXTRACTED]
 - [[dot-get_item()]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()]] - `method` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
@@ -28,9 +28,9 @@ tags:
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]

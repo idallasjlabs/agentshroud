@@ -1,32 +1,23 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L54"
+community: "sync-cve-registry.py"
+location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/sync-cve-registrypy
 ---
 
 # Any
 
 ## Connections
-- [[_clamav_clean()]] - `references` [EXTRACTED]
-- [[_clamav_infected()]] - `references` [EXTRACTED]
-- [[_clean_trivy_report()]] - `references` [EXTRACTED]
-- [[_critical_trivy_report()]] - `references` [EXTRACTED]
-- [[_falco_clean()]] - `references` [EXTRACTED]
-- [[_falco_critical()]] - `references` [EXTRACTED]
-- [[_falco_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_clean()]] - `references` [EXTRACTED]
-- [[_openscap_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_warn()]] - `references` [EXTRACTED]
-- [[_trivy_clean()]] - `references` [EXTRACTED]
-- [[_trivy_critical()]] - `references` [EXTRACTED]
-- [[_trivy_not_run()]] - `references` [EXTRACTED]
-- [[_wazuh_clean()]] - `references` [EXTRACTED]
-- [[_wazuh_not_run()]] - `references` [EXTRACTED]
-- [[_write_image_report()]] - `references` [EXTRACTED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

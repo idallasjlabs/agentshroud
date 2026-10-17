@@ -12,6 +12,6 @@ tags:
 # ConsentFramework.add_to_blacklist(command) / remove_from_blacklist(command)
 
 ## Connections
-- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Function Details_40]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

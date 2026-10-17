@@ -1,22 +1,29 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L56"
+community: "MCPInspector"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - graphify/INFERRED
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_5]] - `references` [EXTRACTED]
+- [[dot-send_request()]] - `references` [EXTRACTED]
+- [[dot-send_request()_1]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/INFERRED #community/MCPInspector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "TestOutboundInfoFilter (3)"
+community: "AlertDispatcher (2)"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_3
+  - community/AlertDispatcher_2
 ---
 
 # LogRecord
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

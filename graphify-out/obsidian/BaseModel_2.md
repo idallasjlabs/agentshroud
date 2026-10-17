@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "_FakeRBAC"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # BaseModel
@@ -17,8 +17,8 @@ tags:
 - [[Alarm]] - `inherits` [EXTRACTED]
 - [[ApprovalDecision]] - `inherits` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `inherits` [EXTRACTED]
 - [[ApprovalRequest_4]] - `inherits` [EXTRACTED]
 - [[AuditExportConfig]] - `inherits` [EXTRACTED]
 - [[AuditLogEntry]] - `inherits` [EXTRACTED]
@@ -43,14 +43,14 @@ tags:
 - [[EmailSendRequest]] - `inherits` [EXTRACTED]
 - [[EmailSendResponse]] - `inherits` [EXTRACTED]
 - [[EmergencyBlockRequest]] - `inherits` [EXTRACTED]
-- [[ForwardRequest_1]] - `inherits` [EXTRACTED]
+- [[ForwardRequest]] - `inherits` [EXTRACTED]
 - [[ForwardResponse]] - `inherits` [EXTRACTED]
-- [[GatewayConfig_2]] - `inherits` [EXTRACTED]
+- [[GatewayConfig]] - `inherits` [EXTRACTED]
 - [[GroupConfig]] - `inherits` [EXTRACTED]
 - [[IntelDraftEntry]] - `inherits` [EXTRACTED]
 - [[IntelDraftRequest]] - `inherits` [EXTRACTED]
 - [[KillSwitchAction]] - `inherits` [EXTRACTED]
-- [[LedgerConfig_1]] - `inherits` [EXTRACTED]
+- [[LedgerConfig]] - `inherits` [EXTRACTED]
 - [[LedgerEntry]] - `inherits` [EXTRACTED]
 - [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
 - [[LoginRequest]] - `inherits` [EXTRACTED]
@@ -64,19 +64,19 @@ tags:
 - [[RedactionDetail]] - `inherits` [EXTRACTED]
 - [[RedactionResult_2]] - `inherits` [EXTRACTED]
 - [[RenameGroupRequest]] - `inherits` [EXTRACTED]
-- [[ResourceUsage_1]] - `inherits` [EXTRACTED]
+- [[ResourceUsage]] - `inherits` [EXTRACTED]
 - [[RollbackRequest]] - `inherits` [EXTRACTED]
-- [[RouterConfig_1]] - `inherits` [EXTRACTED]
+- [[RouterConfig]] - `inherits` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `inherits` [EXTRACTED]
 - [[SCLError]] - `inherits` [EXTRACTED]
-- [[SSHConfig_2]] - `inherits` [EXTRACTED]
+- [[SSHConfig]] - `inherits` [EXTRACTED]
 - [[SSHExecRequest_1]] - `inherits` [EXTRACTED]
 - [[SSHExecResponse]] - `inherits` [EXTRACTED]
 - [[SSHHostConfig]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileRequest_1]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
-- [[ScanRequest]] - `inherits` [EXTRACTED]
-- [[SecurityConfig]] - `inherits` [EXTRACTED]
+- [[ScanRequest_1]] - `inherits` [EXTRACTED]
+- [[SecurityConfig_4]] - `inherits` [EXTRACTED]
 - [[SecurityEvent_1]] - `inherits` [EXTRACTED]
 - [[SecurityModuleConfig]] - `inherits` [EXTRACTED]
 - [[ServiceAction]] - `inherits` [EXTRACTED]
@@ -88,7 +88,7 @@ tags:
 - [[SetRoleRequest]] - `inherits` [EXTRACTED]
 - [[SetUserModeRequest]] - `inherits` [EXTRACTED]
 - [[StatusResponse]] - `inherits` [EXTRACTED]
-- [[TeamsConfig_2]] - `inherits` [EXTRACTED]
+- [[TeamsConfig]] - `inherits` [EXTRACTED]
 - [[ToolRiskConfig]] - `inherits` [EXTRACTED]
 - [[ToolRiskPolicy]] - `inherits` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `inherits` [EXTRACTED]
@@ -96,4 +96,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -12,6 +12,6 @@ tags:
 # Layer 2 — Middleware (P1)
 
 ## Connections
-- [[Security Architecture_4]] - `contains` [EXTRACTED]
+- [[Security Architecture_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

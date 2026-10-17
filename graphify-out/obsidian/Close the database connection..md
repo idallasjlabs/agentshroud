@@ -12,6 +12,6 @@ tags:
 # Close the database connection.
 
 ## Connections
-- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

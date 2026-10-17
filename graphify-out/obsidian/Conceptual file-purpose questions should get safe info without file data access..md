@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
-location: "L2917"
+community: "test_llm_proxy_local_parity.py"
+location: "L2935"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # Conceptual file-purpose questions should get safe info without file data access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

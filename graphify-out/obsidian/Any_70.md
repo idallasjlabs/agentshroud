@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L200"
+community: "EgressFilterConfig (2)"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/EgressFilterConfig_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[dot-get_stats()_18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

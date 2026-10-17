@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "TestToolChainAnalyzer"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProgressiveLockdown
+  - community/TestToolChainAnalyzer
 ---
 
 # LockdownLevel
 
 ## Connections
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[FakePipelineResult_1]] - `uses` [INFERRED]
 - [[FakeRBAC_1]] - `uses` [INFERRED]
 - [[PassthroughPipeline_1]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[TestSuspendedDropNotice]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProgressiveLockdown
+#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer

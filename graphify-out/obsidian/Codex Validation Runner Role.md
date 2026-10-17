@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "AGENTS.md — Codex CLI Guidance"
+community: "Test Augmentation Specialist"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AGENTSmd__Codex_CLI_Guidance
+  - community/Test_Augmentation_Specialist
 ---
 
 # Codex Validation Runner Role
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[validation-runner.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance
+#graphify/concept #graphify/EXTRACTED #community/Test_Augmentation_Specialist

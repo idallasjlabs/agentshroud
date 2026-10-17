@@ -1,33 +1,21 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "._filter_outbound"
-location: "L2713"
+community: "ToolResultSanitizer"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/ToolResultSanitizer
 ---
 
 # Any
 
 ## Connections
-- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
-- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
-- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
-- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
-- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
-- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
-- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
-- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
-- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
-- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
-- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (13)"
+community: "TelegramAPIProxy (2)"
 location: "L559"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_13
+  - community/TelegramAPIProxy_2
 ---
 
 # Collaborator auth-denial command text should map to protected scope notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_not_authorized_command_text_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_13
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2

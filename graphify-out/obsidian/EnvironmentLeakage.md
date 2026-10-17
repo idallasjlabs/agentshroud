@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "check_command"
+community: "AlertDispatcher (2) (2)"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/AlertDispatcher_2_2
 ---
 
 # EnvironmentLeakage
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_record_leakage()]] - `calls` [EXTRACTED]
 - [[Detected environment variable leakage.]] - `rationale_for` [EXTRACTED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

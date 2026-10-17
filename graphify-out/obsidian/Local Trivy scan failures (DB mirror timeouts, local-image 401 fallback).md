@@ -17,6 +17,6 @@ tags:
 - [[Upgrade Report 2026-09-23 1400 (dev, PARTIAL, disk full)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)]] - `references` [EXTRACTED]
-- [[sunday-scan.sh (Trivy scan gate library)]] - `conceptually_related_to` [EXTRACTED]
+- [[sunday-scan.sh]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/colima-health-checksh

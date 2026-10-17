@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "A2APolicyEngine (4)"
+community: "HeuristicClassifier"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_4
+  - community/HeuristicClassifier
 ---
 
 # Detect unusual Unicode patterns that suggest evasion.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compute_unicode_anomaly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_4
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

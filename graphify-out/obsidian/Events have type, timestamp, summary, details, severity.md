@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "make_event (2)"
+community: "test_soc_egress_endpoints.py"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/make_event_2
+  - community/test_soc_egress_endpointspy
 ---
 
 # Events have type, timestamp, summary, details, severity
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_event_has_required_fields()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/make_event_2
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy

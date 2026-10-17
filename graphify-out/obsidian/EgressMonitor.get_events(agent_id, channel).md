@@ -12,6 +12,6 @@ tags:
 # EgressMonitor.get_events(agent_id, channel)
 
 ## Connections
-- [[Function Details_31]] - `contains` [EXTRACTED]
+- [[Function Details_32]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_monitorpy

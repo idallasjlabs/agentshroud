@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "security.py"
-location: "L36"
+community: "url_analyzer.py"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/url_analyzerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[_validate_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_features_for_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_missing_features(runtime)]] - `contains` [EXTRACTED]
-- [[get_security_options(runtime)]] - `contains` [EXTRACTED]
-- [[security.py_2]] - `contains` [EXTRACTED]
-- [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer._check_base64(parsed, result)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer._is_private_ip(ip_str)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
+- [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

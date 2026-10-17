@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-resolve_target()]] - `references` [EXTRACTED]
 - [[AgentTarget_2]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/AgentTarget_2

@@ -12,6 +12,6 @@ tags:
 # MCPInspector._should_block(findings)
 
 ## Connections
-- [[Function Details_23]] - `contains` [EXTRACTED]
+- [[Function Details_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

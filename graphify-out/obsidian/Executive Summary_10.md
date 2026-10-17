@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
-location: "L10"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft

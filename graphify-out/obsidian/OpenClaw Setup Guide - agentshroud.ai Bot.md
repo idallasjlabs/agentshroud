@@ -21,7 +21,7 @@ tags:
 - [[OpenClaw Features Now Available]] - `contains` [EXTRACTED]
 - [[Quick Start_4]] - `contains` [EXTRACTED]
 - [[Security Notes]] - `contains` [EXTRACTED]
-- [[Troubleshooting_12]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
 - [[Using OpenClaw]] - `contains` [EXTRACTED]
 - [[What Changed]] - `contains` [EXTRACTED]
 

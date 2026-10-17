@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L726"
+community: "AlertDispatcher"
+location: "L465"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager
+  - graphify/EXTRACTED
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handler()]] - `references` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

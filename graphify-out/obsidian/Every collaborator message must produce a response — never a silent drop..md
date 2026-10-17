@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "RateLimiter"
-location: "L7928"
+community: "Every collaborator message must produce a response — never a silent drop."
+location: "L7946"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/Every_collaborator_message_must_produce_a_response__never_a_silent_drop
 ---
 
 # Every collaborator message must produce a response — never a silent drop.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNoResponseGuarantee]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/Every_collaborator_message_must_produce_a_response__never_a_silent_drop

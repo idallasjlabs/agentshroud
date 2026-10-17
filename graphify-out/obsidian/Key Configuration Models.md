@@ -12,6 +12,6 @@ tags:
 # Key Configuration Models
 
 ## Connections
-- [[Pydantic_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2

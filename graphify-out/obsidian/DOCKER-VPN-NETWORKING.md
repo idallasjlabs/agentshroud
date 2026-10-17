@@ -18,6 +18,6 @@ tags:
 - [[VPNKit Userspace Networking Mode (fix)]] - `references` [EXTRACTED]
 - [[VpnKitTransparentProxy Setting]] - `references` [EXTRACTED]
 - [[gVisor Networking Mode (Docker Desktop, problematic)]] - `references` [EXTRACTED]
-- [[telegram_proxy.py]] - `references` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

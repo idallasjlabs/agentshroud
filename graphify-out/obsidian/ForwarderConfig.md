@@ -12,7 +12,7 @@ tags:
 # ForwarderConfig
 
 ## Connections
-- [[dot-__init__()_161]] - `references` [EXTRACTED]
+- [[dot-__init__()_26]] - `references` [EXTRACTED]
 - [[Configuration for the HTTP forwarder.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]

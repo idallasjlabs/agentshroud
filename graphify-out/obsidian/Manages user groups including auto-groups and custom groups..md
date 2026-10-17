@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager
 ---
 
 # Manages user groups including auto-groups and custom groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

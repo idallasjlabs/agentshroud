@@ -18,7 +18,7 @@ tags:
 - [[dot-test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
 - [[Per-domain configuration overrides.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
@@ -35,6 +35,6 @@ tags:
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/WebProxyConfig

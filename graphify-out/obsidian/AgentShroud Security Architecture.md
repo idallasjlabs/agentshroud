@@ -39,7 +39,7 @@ tags:
 - [[Prompt Injection]] - `references` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 - [[Quick Reference]] - `contains` [EXTRACTED]
-- [[Security Controls_2]] - `contains` [EXTRACTED]
+- [[Security Controls_1]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 - [[Threat Model]] - `references` [EXTRACTED]
 - [[Trust Level]] - `references` [EXTRACTED]

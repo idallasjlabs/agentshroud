@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "AlertDispatcher"
 location: "L349"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/AlertDispatcher
 ---
 
 # Check if path is within any allowed pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_matches_allowed_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "EgressFilterConfig"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/egress_filterpy
 ---
 
 # HTTP_PROXY.md
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `references` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [INFERRED]
-- [[http_proxy.py_2]] - `references` [INFERRED]
+- [[egress_filter.py]] - `references` [INFERRED]
+- [[http_proxy.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

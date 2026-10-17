@@ -12,7 +12,7 @@ tags:
 # DifferentialPIIDetector
 
 ## Connections
-- [[dot-__init__()_130]] - `method` [EXTRACTED]
+- [[dot-__init__()_167]] - `method` [EXTRACTED]
 - [[dot-_deduplicate()]] - `method` [EXTRACTED]
 - [[dot-_detect_pii()]] - `method` [EXTRACTED]
 - [[dot-_detect_presidio()]] - `method` [EXTRACTED]
@@ -22,8 +22,8 @@ tags:
 - [[dot-_scan()]] - `method` [EXTRACTED]
 - [[dot-scan_prompt()]] - `method` [EXTRACTED]
 - [[dot-scan_tool_result()_3]] - `method` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - `rationale_for` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
@@ -38,11 +38,11 @@ tags:
 - [[TestRedaction]] - `uses` [INFERRED]
 - [[TestStandardPIIAlwaysCaught]] - `uses` [INFERRED]
 - [[TestToolResultPIIReport]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `semantically_similar_to` [INFERRED]
+- [[ToolResultSanitizer]] - `semantically_similar_to` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_FakeRecognizerResult]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

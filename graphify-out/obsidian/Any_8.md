@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (5)"
-location: "L465"
+community: "test_e2e_proxy.py"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_5
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_5
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

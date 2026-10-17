@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Filter outbound response content to remove sensitive information.          Args:
 
 ## Connections
-- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

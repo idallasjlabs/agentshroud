@@ -1,17 +1,30 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L157"
+community: "AuditChain"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AuditChain
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()_1]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()_1]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_19]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
+- [[dot-to_dict()_12]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AuditChain

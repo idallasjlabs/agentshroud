@@ -1,19 +1,24 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "MultiTurnTracker (2)"
-location: "L94"
+community: "A2APolicyEngine"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker_2
+  - community/A2APolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_189]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_193]] - `references` [EXTRACTED]
+- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker_2
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

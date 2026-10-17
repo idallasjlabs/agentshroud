@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "RBACConfig"
+community: "RBACConfig (4)"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_4
 ---
 
 # A corrupt/partial registry file must not crash construction.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_load_tolerates_corrupt_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_4

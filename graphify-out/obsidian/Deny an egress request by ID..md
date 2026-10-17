@@ -12,6 +12,6 @@ tags:
 # Deny an egress request by ID.
 
 ## Connections
-- [[deny()]] - `rationale_for` [EXTRACTED]
+- [[deny()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

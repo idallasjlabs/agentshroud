@@ -19,7 +19,7 @@ tags:
 - [[dot-test_threat_cleanup()]] - `calls` [EXTRACTED]
 - [[dot-validate_memory_write()]] - `references` [EXTRACTED]
 - [[Detected threat in memory file content.]] - `rationale_for` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]

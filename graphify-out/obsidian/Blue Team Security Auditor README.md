@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "MiddlewareManager (2)"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Blue Team Security Auditor README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

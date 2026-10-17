@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L187"
+community: "AlertDispatcher"
+location: "L231"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager
+  - graphify/EXTRACTED
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-check_permission()_1]] - `references` [EXTRACTED]
-- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_65]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
+- [[dot-get_status()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "_FakeRBAC"
+community: "soc/router.py"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # Check group admin status via TeamsConfig if available.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_group_admin()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

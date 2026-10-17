@@ -18,7 +18,7 @@ tags:
 - [[Context_2]] - `contains` [EXTRACTED]
 - [[Decision_3]] - `contains` [EXTRACTED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `references` [EXTRACTED]
-- [[Status_2]] - `contains` [EXTRACTED]
+- [[Status_3]] - `contains` [EXTRACTED]
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]
 - [[ledger.py (audit trail, SHA-256 hashing)]] - `implements` [EXTRACTED]
 

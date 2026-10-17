@@ -12,7 +12,7 @@ tags:
 # MatchResult
 
 ## Connections
-- [[dot-__init__()_107]] - `method` [EXTRACTED]
+- [[dot-__init__()_110]] - `method` [EXTRACTED]
 - [[dot-confident()]] - `method` [EXTRACTED]
 - [[Outcome of matching one registry entry to the advisory feed.]] - `rationale_for` [EXTRACTED]
 - [[match_entry()]] - `references` [EXTRACTED]

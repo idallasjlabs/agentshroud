@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (6)"
+community: "MiddlewareManager (5)"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/MiddlewareManager_5
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
-- [[dot-__init__()_82]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `calls` [EXTRACTED]
+- [[dot-__init__()_58]] - `method` [EXTRACTED]
 - [[dot-_compute_file_hash()]] - `method` [EXTRACTED]
 - [[dot-_detect_modification_source()]] - `method` [EXTRACTED]
 - [[dot-_is_in_write_window()]] - `method` [EXTRACTED]
@@ -26,13 +26,13 @@ tags:
 - [[dot-get_recent_alerts()]] - `method` [EXTRACTED]
 - [[dot-register_expected_write()]] - `method` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `method` [EXTRACTED]
-- [[dot-scan_file()_1]] - `method` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
+- [[dot-scan_file()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_5]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_7]] - `calls` [EXTRACTED]
 - [[dot-test_integrity_database_persistence()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
@@ -41,17 +41,17 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[ModificationSource]] - `references` [EXTRACTED]
 - [[Monitors integrity of critical memory files.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
 - [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

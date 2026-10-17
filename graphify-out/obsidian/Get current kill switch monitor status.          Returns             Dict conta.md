@@ -12,6 +12,6 @@ tags:
 # Get current kill switch monitor status.          Returns:             Dict conta
 
 ## Connections
-- [[dot-get_status()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_status()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

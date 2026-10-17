@@ -1,17 +1,18 @@
 ---
-source_file: "skills/README.md"
+source_file: "branding/README.md"
 type: "document"
-community: "InjectionAction (3)"
+community: "AgentShroud™ Brand Guidelines"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction_3
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

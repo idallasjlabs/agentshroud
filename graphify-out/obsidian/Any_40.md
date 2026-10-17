@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: ""
 type: "code"
-community: "TestToolChainAnalyzer (2)"
-location: "L183"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/discover_upstream_versionspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_111]] - `references` [EXTRACTED]
-- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[dot-score_reversibility()]] - `references` [EXTRACTED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

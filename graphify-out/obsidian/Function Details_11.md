@@ -1,25 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Function Details (5)"
-location: "L40"
+community: "Function Details (4)"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Function_Details_4
 ---
 
 # Function Details
 
 ## Connections
-- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - `contains` [EXTRACTED]
-- [[SessionManager.cleanup_expired()]] - `contains` [EXTRACTED]
-- [[SessionManager.create_session(ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.destroy_session(session_id)]] - `contains` [EXTRACTED]
-- [[SessionManager.register_event_source(session_id, source)]] - `contains` [EXTRACTED]
-- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.validate_request(req)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/document #graphify/EXTRACTED #community/Function_Details_4

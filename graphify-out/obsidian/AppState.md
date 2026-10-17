@@ -15,7 +15,7 @@ tags:
 - [[Container for application-wide state]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]

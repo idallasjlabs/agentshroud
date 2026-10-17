@@ -12,6 +12,6 @@ tags:
 # MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)
 
 ## Connections
-- [[Function Details_23]] - `contains` [EXTRACTED]
+- [[Function Details_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

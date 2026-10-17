@@ -1,20 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "router.py"
-location: "L36"
+community: "input_normalizer.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/input_normalizerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
-- [[health_check(target)]] - `contains` [EXTRACTED]
-- [[resolve_target(request)]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[detect_base64_payloads(text)]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
+- [[normalize_input(text)]] - `contains` [EXTRACTED]
+- [[strip_markdown_exfil(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

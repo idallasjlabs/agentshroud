@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # MockValidator
 
 ## Connections
-- [[dot-__init__()_154]] - `method` [EXTRACTED]
+- [[dot-__init__()_145]] - `method` [EXTRACTED]
 - [[dot-setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[dot-test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[dot-test_register_validator()]] - `calls` [EXTRACTED]
 - [[dot-test_rotation_with_validation_failure()]] - `calls` [EXTRACTED]
-- [[dot-validate()]] - `method` [EXTRACTED]
+- [[dot-validate()_2]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

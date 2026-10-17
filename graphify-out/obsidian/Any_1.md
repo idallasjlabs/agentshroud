@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
 community: "AlertDispatcher (2)"
-location: "L102"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,11 @@ tags:
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

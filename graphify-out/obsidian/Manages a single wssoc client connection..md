@@ -12,6 +12,6 @@ tags:
 # Manages a single /ws/soc client connection.
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `rationale_for` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

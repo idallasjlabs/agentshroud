@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # Main security pipeline that all messages pass through.      Wires together: Prom
 
 ## Connections
-- [[SecurityPipeline_2]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

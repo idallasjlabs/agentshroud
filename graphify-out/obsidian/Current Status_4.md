@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/README.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "API Documentation"
-location: "L14"
+community: "egress_filter.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Documentation
+  - community/egress_filterpy
 ---
 
 # Current Status
 
 ## Connections
-- [[API Documentation]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Documentation
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

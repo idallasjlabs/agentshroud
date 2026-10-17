@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/runtime/config.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
 community: "Path (4)"
-location: "L37"
+location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

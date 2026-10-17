@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_174]] - `contains` [EXTRACTED]
-- [[Related Skills_114]] - `contains` [EXTRACTED]
-- [[Usage_124]] - `contains` [EXTRACTED]
+- [[Purpose_168]] - `contains` [EXTRACTED]
+- [[Related Skills_107]] - `contains` [EXTRACTED]
+- [[Usage_117]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

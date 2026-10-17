@@ -12,12 +12,12 @@ tags:
 # Decision
 
 ## Connections
-- [[dot-record()_1]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[dot-record()_2]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEnforcementWiring]] - `uses` [INFERRED]
 - [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

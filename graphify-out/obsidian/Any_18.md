@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "soc.js (3)"
+location: "L44"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/EXTRACTED
+  - community/socjs_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_48]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/socjs_3

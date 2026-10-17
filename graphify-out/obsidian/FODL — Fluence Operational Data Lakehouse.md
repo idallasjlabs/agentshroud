@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "awslabs.aws-api-mcp-server configuration (--readonly)"
 location: "Infrastructure the Agent Understands"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/awslabsaws-api-mcp-server_configuration_--readonly
 ---
 
 # FODL — Fluence Operational Data Lakehouse
@@ -21,4 +21,4 @@ tags:
 - [[FY26 Cost Reduction Plan (40% target)]] - `references` [EXTRACTED]
 - [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly

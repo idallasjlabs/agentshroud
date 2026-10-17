@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-mcREADME]] - `contains` [EXTRACTED]
-- [[Purpose_74]] - `contains` [EXTRACTED]
+- [[Purpose_82]] - `contains` [EXTRACTED]
 - [[Related Skills_63]] - `contains` [EXTRACTED]
 - [[Usage_74]] - `contains` [EXTRACTED]
 

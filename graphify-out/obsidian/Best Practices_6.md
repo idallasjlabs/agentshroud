@@ -1,22 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Browser — Secure Browser Automation (3)"
-location: "L227"
+community: "Kill Switch"
+location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_3
+  - community/Kill_Switch
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_3]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_3]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_3]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_3]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

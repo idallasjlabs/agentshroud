@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Gateway Health Check Never Passes]] - `contains` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 - [[`FileNotFoundError No agentshroud.yaml found`]] - `contains` [EXTRACTED]
 - [[`No auth_token found in secret file`]] - `contains` [EXTRACTED]
 - [[`ValueError Invalid YAML structure`]] - `contains` [EXTRACTED]

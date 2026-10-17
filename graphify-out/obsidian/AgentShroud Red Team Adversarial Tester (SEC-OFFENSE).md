@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "MiddlewareManager (2)"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)
@@ -19,4 +19,4 @@ tags:
 - [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

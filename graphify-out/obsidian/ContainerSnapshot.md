@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertDispatcher (2)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertDispatcher_2
 ---
 
 # ContainerSnapshot
@@ -17,7 +17,7 @@ tags:
 - [[dot-from_dict()]] - `method` [EXTRACTED]
 - [[dot-get_baseline()]] - `references` [EXTRACTED]
 - [[dot-set_baseline()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `calls` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `calls` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `calls` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[dot-test_removed_capability()]] - `calls` [EXTRACTED]
 - [[dot-test_seccomp_drift()]] - `calls` [EXTRACTED]
 - [[dot-test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_2]] - `method` [EXTRACTED]
+- [[dot-to_dict()_1]] - `method` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -76,4 +76,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ResourceGuard"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ResourceGuard
 ---
 
 # Monitor for git clone and npm install operations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-monitor_git_operations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

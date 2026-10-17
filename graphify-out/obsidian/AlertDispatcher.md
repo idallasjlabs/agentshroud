@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
-- [[dot-__init__()_120]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `calls` [EXTRACTED]
+- [[dot-__init__()_102]] - `method` [EXTRACTED]
 - [[dot-_format_alert_message()]] - `method` [EXTRACTED]
 - [[dot-_is_duplicate()]] - `method` [EXTRACTED]
 - [[dot-_is_rate_limited()]] - `method` [EXTRACTED]
@@ -23,23 +23,23 @@ tags:
 - [[dot-cleanup_seen()]] - `method` [EXTRACTED]
 - [[dot-dispatch()]] - `method` [EXTRACTED]
 - [[dot-get_digest()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_14]] - `method` [EXTRACTED]
+- [[dot-get_stats()_2]] - `method` [EXTRACTED]
 - [[dot-test_alert_dedup()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `calls` [INFERRED]
 - [[dot-test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
 - [[CronStateMonitor]] - `calls` [INFERRED]
 - [[Dispatches security alerts with dedup and rate limiting.]] - `rationale_for` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Kaizen Fix AlertDispatcher now retries 3x with exponential backoff instead of failing on a single 10s timeout, which had been the top gateway error category (14week) at ERROR level]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Path]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -75,19 +75,19 @@ tags:
 - [[TestTrivyParser]] - `uses` [INFERRED]
 - [[TestTrivyRun]] - `uses` [INFERRED]
 - [[TestTrivySaveReport]] - `uses` [INFERRED]
-- [[TestTrivySummary]] - `uses` [INFERRED]
+- [[TestTrivySummary_1]] - `uses` [INFERRED]
 - [[TestWazuhParser]] - `uses` [INFERRED]
-- [[TestWazuhSummary]] - `uses` [INFERRED]
+- [[TestWazuhSummary_1]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[alert_dispatcher.py]] - `contains` [EXTRACTED]
 - [[dispatcher()]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[run_canary()_1]] - `conceptually_related_to` [INFERRED]
 - [[test_alert_dispatcher_retry.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

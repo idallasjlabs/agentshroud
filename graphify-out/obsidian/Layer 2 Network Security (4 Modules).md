@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Layer-by-Layer Breakdown (3)"
+community: "Container Security Policy — AgentShroud"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown_3
+  - community/Container_Security_Policy__AgentShroud
 ---
 
 # Layer 2: Network Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[8. Network Rate Limiter]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_3
+#graphify/document #graphify/EXTRACTED #community/Container_Security_Policy__AgentShroud

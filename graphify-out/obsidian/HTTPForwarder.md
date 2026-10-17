@@ -12,17 +12,17 @@ tags:
 # HTTPForwarder
 
 ## Connections
-- [[dot-__init__()_161]] - `method` [EXTRACTED]
-- [[dot-forward()_2]] - `method` [EXTRACTED]
-- [[dot-get_stats()_15]] - `method` [EXTRACTED]
-- [[dot-health_check()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_26]] - `method` [EXTRACTED]
+- [[dot-forward()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_3]] - `method` [EXTRACTED]
+- [[dot-health_check()]] - `method` [EXTRACTED]
 - [[dot-is_healthy()]] - `method` [EXTRACTED]
 - [[dot-last_forward_time()]] - `method` [EXTRACTED]
 - [[dot-set_response_handler()]] - `method` [EXTRACTED]
 - [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `conceptually_related_to` [INFERRED]
 - [[MultiAgentRouter]] - `semantically_similar_to` [INFERRED]
-- [[SecurityPipeline_2]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `references` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[forwarder()]] - `calls` [EXTRACTED]

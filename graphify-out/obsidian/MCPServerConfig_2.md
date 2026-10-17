@@ -12,14 +12,14 @@ tags:
 # MCPServerConfig
 
 ## Connections
-- [[dot-__init__()_137]] - `references` [EXTRACTED]
-- [[dot-__init__()_138]] - `references` [EXTRACTED]
+- [[dot-__init__()_163]] - `references` [EXTRACTED]
+- [[dot-__init__()_164]] - `references` [EXTRACTED]
 - [[dot-get_or_create()]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 

@@ -1,27 +1,18 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L91"
+community: "ApprovalQueueConfig (5)"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/ApprovalQueueConfig_5
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[sanitizer()_2]] - `references` [EXTRACTED]
-- [[test_client()]] - `references` [EXTRACTED]
-- [[test_config()]] - `references` [EXTRACTED]
-- [[test_ledger()]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

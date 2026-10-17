@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
-- [[Commands_3]] - `contains` [EXTRACTED]
+- [[Commands_1]] - `contains` [EXTRACTED]
 - [[Regular Messages]] - `contains` [EXTRACTED]
 - [[Tips_1]] - `contains` [EXTRACTED]
 

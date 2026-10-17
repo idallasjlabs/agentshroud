@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "ApprovalQueueConfig (5)"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/ApprovalQueueConfig_5
 ---
 
 # OpenClaw BotConfig must still work without the new fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_openclaw_bot_config_backward_compat()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

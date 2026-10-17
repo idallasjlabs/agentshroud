@@ -16,6 +16,6 @@ tags:
 - [[DNSQuery]] - `contains` [EXTRACTED]
 - [[InspectionResult_1]] - `contains` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
-- [[URLAnalysisResult]] - `contains` [EXTRACTED]
+- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

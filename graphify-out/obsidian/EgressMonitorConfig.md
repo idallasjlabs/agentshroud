@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # EgressMonitorConfig
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
-- [[dot-__init__()_177]] - `references` [EXTRACTED]
+- [[dot-__init__()_152]] - `calls` [EXTRACTED]
+- [[dot-__init__()_13]] - `references` [EXTRACTED]
 - [[dot-test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
+- [[TestAnomalyDetection]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestEgressMonitorConfig]] - `uses` [INFERRED]
 - [[TestEventRecording]] - `uses` [INFERRED]
@@ -33,12 +33,12 @@ tags:
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_4]] - `calls` [EXTRACTED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor_config()_2]] - `calls` [EXTRACTED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[default_config()]] - `calls` [EXTRACTED]
+- [[egress_monitor.py]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[monitor_config()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

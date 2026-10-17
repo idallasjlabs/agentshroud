@@ -12,6 +12,6 @@ tags:
 # Layer 4 — Tool & Agent Control
 
 ## Connections
-- [[Security Architecture_4]] - `contains` [EXTRACTED]
+- [[Security Architecture_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

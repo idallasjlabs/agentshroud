@@ -15,7 +15,7 @@ tags:
 - [[Collaborators (Advisory — Read-Only)]] - `contains` [EXTRACTED]
 - [[Development Environment_1]] - `contains` [EXTRACTED]
 - [[Development Team]] - `contains` [EXTRACTED]
-- [[How It Works_2]] - `contains` [EXTRACTED]
+- [[How It Works_1]] - `contains` [EXTRACTED]
 - [[Key Principles]] - `contains` [EXTRACTED]
 - [[Product Owner]] - `contains` [EXTRACTED]
 - [[Scrum Master  Agile Coach]] - `contains` [EXTRACTED]

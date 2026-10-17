@@ -12,6 +12,6 @@ tags:
 # Main connection loop.
 
 ## Connections
-- [[dot-run()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

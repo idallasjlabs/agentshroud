@@ -12,6 +12,6 @@ tags:
 # HTTP 403 — MCP Tool Permission Denied
 
 ## Connections
-- [[MCP Proxy Errors]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd_5

@@ -12,6 +12,6 @@ tags:
 # Gateway Can't Reach OpenClaw
 
 ## Connections
-- [[Troubleshooting_12]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

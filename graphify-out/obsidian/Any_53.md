@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "AlertDispatcher (2) (2)"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/AlertDispatcher_2_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_12]] - `references` [EXTRACTED]
-- [[dot-to_dict()_8]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2

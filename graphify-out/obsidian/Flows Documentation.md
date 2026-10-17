@@ -12,8 +12,8 @@ tags:
 # Flows Documentation
 
 ## Connections
-- [[Current Status_6]] - `contains` [EXTRACTED]
-- [[Planned Documents_5]] - `contains` [EXTRACTED]
+- [[Current Status_5]] - `contains` [EXTRACTED]
+- [[Planned Documents_4]] - `contains` [EXTRACTED]
 - [[flowsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart

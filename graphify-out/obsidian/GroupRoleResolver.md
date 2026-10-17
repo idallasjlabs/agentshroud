@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig (2) (2)"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig_2_2
 ---
 
 # GroupRoleResolver
 
 ## Connections
-- [[dot-__init__()_190]] - `method` [EXTRACTED]
+- [[dot-__init__()_176]] - `method` [EXTRACTED]
 - [[dot-get_all_roles()]] - `method` [EXTRACTED]
 - [[dot-get_role()]] - `method` [EXTRACTED]
 - [[dot-is_high_risk_tool()]] - `method` [EXTRACTED]
 - [[dot-is_member_or_higher()]] - `method` [EXTRACTED]
-- [[dot-is_owner()_5]] - `method` [EXTRACTED]
+- [[dot-is_owner()_4]] - `method` [EXTRACTED]
 - [[dot-remove_role()]] - `method` [EXTRACTED]
 - [[dot-set_role()]] - `method` [EXTRACTED]
 - [[dot-test_get_all_roles_empty_for_unknown_group()]] - `calls` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_2

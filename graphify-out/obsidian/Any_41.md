@@ -1,17 +1,21 @@
 ---
-source_file: ""
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "LLMProxy"
+community: "MiddlewareManager"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/LLMProxy
+  - graphify/INFERRED
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
+- [[dot-check_permission()_1]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Role_28]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

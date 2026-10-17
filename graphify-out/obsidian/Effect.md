@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "telegram_proxy.py (7)"
+community: "AgentRegistry (2)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_7
+  - community/AgentRegistry_2
 ---
 
 # Effect
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_7
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2

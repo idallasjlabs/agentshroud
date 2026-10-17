@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper"
+community: "UserSessionManager (3)"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/UserSessionManager_3
 ---
 
 # Age of credential in days.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-age_days()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_3

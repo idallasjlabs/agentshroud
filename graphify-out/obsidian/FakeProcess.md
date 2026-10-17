@@ -12,7 +12,7 @@ tags:
 # FakeProcess
 
 ## Connections
-- [[dot-__init__()_123]] - `method` [EXTRACTED]
+- [[dot-__init__()_130]] - `method` [EXTRACTED]
 - [[dot-kill()]] - `method` [EXTRACTED]
 - [[dot-terminate()]] - `method` [EXTRACTED]
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
@@ -23,9 +23,9 @@ tags:
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]

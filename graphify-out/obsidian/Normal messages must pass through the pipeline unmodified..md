@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
 community: "BlockingPipeline"
-location: "L187"
+location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

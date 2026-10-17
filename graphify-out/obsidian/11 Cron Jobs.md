@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
 location: "L770"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # 11 Cron Jobs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Automated Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

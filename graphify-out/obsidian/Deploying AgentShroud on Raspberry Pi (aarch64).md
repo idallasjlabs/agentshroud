@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Fresh Install]] - `contains` [EXTRACTED]
 - [[Pi-Specific Notes]] - `contains` [EXTRACTED]
-- [[Prerequisites_9]] - `contains` [EXTRACTED]
+- [[Prerequisites_8]] - `contains` [EXTRACTED]
 - [[Tailscale Remote Access (Optional)]] - `contains` [EXTRACTED]
 - [[Troubleshooting_30]] - `contains` [EXTRACTED]
 - [[Updating to Latest Release]] - `contains` [EXTRACTED]

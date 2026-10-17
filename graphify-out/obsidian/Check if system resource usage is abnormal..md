@@ -12,6 +12,6 @@ tags:
 # Check if system resource usage is abnormal.
 
 ## Connections
-- [[dot-_check_system_resources()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_system_resources()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

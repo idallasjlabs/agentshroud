@@ -12,6 +12,6 @@ tags:
 # HTTP Status Codes
 
 ## Connections
-- [[Error Index]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

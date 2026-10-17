@@ -16,7 +16,7 @@ tags:
 - [[Key Class `EnhancedApprovalQueue`]] - `contains` [EXTRACTED]
 - [[Persistence]] - `contains` [EXTRACTED]
 - [[Purpose_193]] - `contains` [EXTRACTED]
-- [[Related Notes_70]] - `contains` [EXTRACTED]
+- [[Related Notes_67]] - `contains` [EXTRACTED]
 - [[Responsibilities_56]] - `contains` [EXTRACTED]
 - [[Timeout Behavior]] - `contains` [EXTRACTED]
 - [[Tool Risk Tiers]] - `contains` [EXTRACTED]

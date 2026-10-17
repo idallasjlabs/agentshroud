@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "test_e2e_proxy.py (2)"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_e2e_proxypy_2
 ---
 
 # GET /dashboard/stats returns JSON stats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_stats_returns_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy_2

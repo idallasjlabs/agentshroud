@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "TestToolChainAnalyzer (2)"
+community: "TestToolChainAnalyzer"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/TestToolChainAnalyzer
 ---
 
 # Initialize the tool chain analyzer.          Args:             config: Configura
 
 ## Connections
-- [[dot-__init__()_111]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_22]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

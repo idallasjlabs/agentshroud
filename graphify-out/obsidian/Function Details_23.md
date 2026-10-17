@@ -1,23 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "mcp_inspector.py"
-location: "L33"
+community: "mcp_audit.py"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/mcp_auditpy
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPInspector._redact_pii(value)]] - `contains` [EXTRACTED]
-- [[MCPInspector._scan_text(text, path, findings, ...)]] - `contains` [EXTRACTED]
-- [[MCPInspector._scan_value(value, path, findings, ...)]] - `contains` [EXTRACTED]
-- [[MCPInspector._should_block(findings)]] - `contains` [EXTRACTED]
-- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - `contains` [EXTRACTED]
-- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - `contains` [EXTRACTED]
-- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.generate_report()]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.start_call(call_id)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.verify_chain()]] - `contains` [EXTRACTED]
+- [[Query Methods]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "AlertDispatcher (2)"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_3
+  - community/AlertDispatcher_2
 ---
 
 # EgressChannel
 
 ## Connections
-- [[dot-get_events()_2]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[dot-get_events()]] - `references` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[MockEgressChannel]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
+- [[TestAnomalyDetection]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -31,8 +31,8 @@ tags:
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[egress_monitor.py]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_3
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

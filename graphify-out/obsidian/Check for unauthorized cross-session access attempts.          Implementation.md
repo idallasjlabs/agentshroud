@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ToolResultSanitizer"
 location: "L1200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer
 ---
 
 # Check for unauthorized cross-session access attempts.          **Implementation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_cross_session_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

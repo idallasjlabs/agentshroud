@@ -12,6 +12,6 @@ tags:
 # HTTP 429 — MCP Rate Limit Exceeded
 
 ## Connections
-- [[MCP Proxy Errors]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd_5

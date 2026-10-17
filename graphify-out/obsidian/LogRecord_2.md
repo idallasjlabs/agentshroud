@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "telegram_proxy.py (2)"
-location: "L64"
+community: "dashboard_endpoints.py"
+location: "L175"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/telegram_proxypy_2
+  - graphify/EXTRACTED
+  - community/dashboard_endpointspy
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-emit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

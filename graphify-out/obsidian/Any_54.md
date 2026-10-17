@@ -1,25 +1,19 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "model_usage.py"
-location: "L23"
+community: "AlertDispatcher (2) (2)"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/model_usagepy
+  - graphify/INFERRED
+  - community/AlertDispatcher_2_2
 ---
 
 # Any
 
 ## Connections
-- [[aggregate_costs()]] - `references` [EXTRACTED]
-- [[build_json_all()]] - `references` [EXTRACTED]
-- [[build_json_current()]] - `references` [EXTRACTED]
-- [[filter_by_days()]] - `references` [EXTRACTED]
-- [[latest_day_cost()]] - `references` [EXTRACTED]
-- [[load_payload()]] - `references` [EXTRACTED]
-- [[parse_daily_entries()]] - `references` [EXTRACTED]
-- [[pick_current_model()]] - `references` [EXTRACTED]
-- [[run_codexbar_cost()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/model_usagepy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_2

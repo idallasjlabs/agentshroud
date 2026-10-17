@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
-- [[http_proxy.py_2]] - `conceptually_related_to` [INFERRED]
+- [[http_proxy.py]] - `conceptually_related_to` [INFERRED]
 
 #graphify/image #graphify/INFERRED #community/egress_filterpy_3

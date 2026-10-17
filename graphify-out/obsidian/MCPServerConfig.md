@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-infer_permission_level()]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/PermissionLevel

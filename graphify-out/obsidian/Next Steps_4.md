@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
-location: "L293"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

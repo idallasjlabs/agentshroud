@@ -1,17 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L51"
+community: "pipeline.py — Security Pipeline"
+location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # Configuration
 
 ## Connections
-- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
+- [[Key Thresholds]] - `contains` [EXTRACTED]
+- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
+- [[Owner Exemption]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

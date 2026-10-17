@@ -15,7 +15,7 @@ tags:
 - [[Audit ledger (hash-verifiable chain)]] - `rationale_for` [EXTRACTED]
 - [[Enforce mode by default]] - `rationale_for` [EXTRACTED]
 - [[Fail-closed by default]] - `rationale_for` [EXTRACTED]
-- [[Human-in-the-loop approval queue]] - `rationale_for` [EXTRACTED]
+- [[Human-in-the-loop approval queue_1]] - `rationale_for` [EXTRACTED]
 - [[Least privilege MCP permissions]] - `rationale_for` [EXTRACTED]
 - [[PII redacted before forwarding]] - `rationale_for` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]

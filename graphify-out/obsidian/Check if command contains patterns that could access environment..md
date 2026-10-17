@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "check_command"
+community: "AlertDispatcher (2) (2)"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check_command
+  - community/AlertDispatcher_2_2
 ---
 
 # Check if command contains patterns that could access environment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_contains_env_access_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check_command
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2

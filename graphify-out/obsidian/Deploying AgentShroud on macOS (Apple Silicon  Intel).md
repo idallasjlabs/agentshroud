@@ -15,7 +15,7 @@ tags:
 - [[Apple Silicon vs Intel]] - `contains` [EXTRACTED]
 - [[Docker Desktop Resource Allocation]] - `contains` [EXTRACTED]
 - [[Fresh Install_2]] - `contains` [EXTRACTED]
-- [[Prerequisites_11]] - `contains` [EXTRACTED]
+- [[Prerequisites_10]] - `contains` [EXTRACTED]
 - [[Running Without Docker (Native Python)]] - `contains` [EXTRACTED]
 - [[Updating to Latest Release_2]] - `contains` [EXTRACTED]
 - [[macos]] - `contains` [EXTRACTED]

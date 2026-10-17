@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher (2) (4)"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher_2_4
 ---
 
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_23]] - `references` [EXTRACTED]
-- [[dot-__init__()_69]] - `references` [EXTRACTED]
-- [[dot-__init__()_24]] - `method` [EXTRACTED]
+- [[dot-__init__()_188]] - `references` [EXTRACTED]
+- [[dot-__init__()_189]] - `references` [EXTRACTED]
+- [[dot-__init__()_190]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-check_value_match()]] - `method` [EXTRACTED]
 - [[dot-delete_key()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()]] - `method` [EXTRACTED]
-- [[dot-get_key()]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_7]] - `method` [EXTRACTED]
+- [[dot-get_key()_1]] - `method` [EXTRACTED]
 - [[dot-list_keys()]] - `method` [EXTRACTED]
 - [[dot-redact()]] - `method` [EXTRACTED]
 - [[dot-rotate_key()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
 - [[Per-agent API key scoping, redaction, leak detection, and rotation]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -68,4 +68,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[vault()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_4

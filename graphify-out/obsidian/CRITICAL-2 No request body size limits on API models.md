@@ -12,6 +12,6 @@ tags:
 # CRITICAL-2: No request body size limits on API models
 
 ## Connections
-- [[Critical Findings_1]] - `contains` [EXTRACTED]
+- [[Critical Findings_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

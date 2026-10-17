@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "_FakeRBAC"
+community: "soc/router.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/soc/routerpy
 ---
 
 # ContributorManager
 
 ## Connections
-- [[dot-__init__()_164]] - `method` [EXTRACTED]
+- [[dot-__init__()_199]] - `method` [EXTRACTED]
 - [[dot-_build_record()]] - `method` [EXTRACTED]
 - [[dot-_ensure_rbac()]] - `method` [EXTRACTED]
 - [[dot-_ensure_teams()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_68]] - `uses` [INFERRED]
+- [[Any_82]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]
@@ -45,12 +45,12 @@ tags:
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `references` [EXTRACTED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_9]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
-- [[ScanRequest]] - `uses` [INFERRED]
+- [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
 - [[SetModeRequest]] - `uses` [INFERRED]
@@ -62,7 +62,7 @@ tags:
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[UserRole]] - `uses` [INFERRED]
 - [[WebSocket_8]] - `uses` [INFERRED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
+- [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
@@ -70,4 +70,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/soc/routerpy

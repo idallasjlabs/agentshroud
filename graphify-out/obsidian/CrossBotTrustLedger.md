@@ -28,7 +28,7 @@ tags:
 - [[dot-test_propagated_to_is_empty_for_no_peers()]] - `references` [EXTRACTED]
 - [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - `references` [EXTRACTED]
-- [[dot-test_register_peer()]] - `references` [EXTRACTED]
+- [[dot-test_register_peer()_1]] - `references` [EXTRACTED]
 - [[dot-test_register_peer_is_bidirectional_by_default()]] - `references` [EXTRACTED]
 - [[dot-test_unregistered_bot_has_no_peers()]] - `references` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[ledger()]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `uses` [INFERRED]
+- [[ledger()_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

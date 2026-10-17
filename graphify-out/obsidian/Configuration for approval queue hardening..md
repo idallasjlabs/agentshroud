@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ApprovalHardening"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalHardening
 ---
 
 # Configuration for approval queue hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalHardeningConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

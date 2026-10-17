@@ -12,6 +12,6 @@ tags:
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/input_normalizerpy

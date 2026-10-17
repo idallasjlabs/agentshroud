@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L348"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # Get aggregate statistics          Returns:             Dictionary with total ent
 
 ## Connections
-- [[dot-get_stats()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

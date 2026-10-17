@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L289"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
-- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

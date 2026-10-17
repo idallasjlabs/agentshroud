@@ -12,15 +12,15 @@ tags:
 # HealthStatus
 
 ## Connections
-- [[Any_38]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Any_14]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[services.py]] - `imports` [EXTRACTED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]

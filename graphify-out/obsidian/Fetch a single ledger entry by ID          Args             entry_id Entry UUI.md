@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig
 ---
 
 # Fetch a single ledger entry by ID          Args:             entry_id: Entry UUI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

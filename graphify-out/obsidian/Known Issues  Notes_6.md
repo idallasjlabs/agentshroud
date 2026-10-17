@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "auth.py"
-location: "L73"
+community: "ledger.py"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/ledgerpy
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

@@ -22,9 +22,9 @@ tags:
 - [[Key Benefits]] - `contains` [EXTRACTED]
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
-- [[Next Steps_5]] - `contains` [EXTRACTED]
+- [[Next Steps_7]] - `contains` [EXTRACTED]
 - [[Resources]] - `contains` [EXTRACTED]
-- [[Security Architecture_5]] - `contains` [EXTRACTED]
+- [[Security Architecture_4]] - `contains` [EXTRACTED]
 - [[Use Cases_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

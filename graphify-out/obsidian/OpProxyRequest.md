@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "_is_op_reference_allowed"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/_is_op_reference_allowed
 ---
 
 # OpProxyRequest
@@ -17,4 +17,4 @@ tags:
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

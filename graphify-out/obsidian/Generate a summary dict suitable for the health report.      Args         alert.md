@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "parse_trivy_output"
-location: "L176"
+community: "parse_clamscan_output"
+location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/parse_clamscan_output
 ---
 
 # Generate a summary dict suitable for the health report.      Args:         alert
 
 ## Connections
+- [[generate_summary()_1]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()]] - `rationale_for` [EXTRACTED]
-- [[generate_summary()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output

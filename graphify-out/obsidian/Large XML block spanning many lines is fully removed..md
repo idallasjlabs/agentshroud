@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "ToolResultSanitizer (2)"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ToolResultSanitizer_2
 ---
 
 # Large XML block spanning many lines is fully removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_large_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer_2

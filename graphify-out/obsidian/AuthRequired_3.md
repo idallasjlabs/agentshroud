@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
 community: "create_auth_dependency"
-location: "L148"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,6 @@ tags:
 # AuthRequired
 
 ## Connections
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[health_check_detail()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/create_auth_dependency

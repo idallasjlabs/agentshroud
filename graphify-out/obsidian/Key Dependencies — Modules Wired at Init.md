@@ -12,6 +12,6 @@ tags:
 # Key Dependencies — Modules Wired at Init
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpy

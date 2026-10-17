@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "BlockingPipeline"
-location: "L79"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # BlockingPipeline
 
 ## Connections
-- [[dot-process_inbound()_5]] - `method` [EXTRACTED]
+- [[dot-process_inbound()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_passes_through()]] - `calls` [EXTRACTED]
 - [[dot-test_form_outbound_pipeline_block_non_owner()]] - `calls` [INFERRED]
 - [[dot-test_inbound_text_normalized_before_pipeline()]] - `calls` [EXTRACTED]
@@ -20,10 +20,7 @@ tags:
 - [[dot-test_multipart_pipeline_block_non_owner()]] - `calls` [INFERRED]
 - [[dot-test_owner_message_not_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_prompt_injection_blocked_on_getUpdates()]] - `calls` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Pipeline that blocks any message containing injection keywords.]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager (8)"
+community: "MiddlewareManager (5)"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/MiddlewareManager_5
 ---
 
 # Compute SHA-256 hash of a file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compute_file_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

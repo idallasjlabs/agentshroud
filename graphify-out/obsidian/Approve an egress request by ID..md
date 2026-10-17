@@ -12,6 +12,6 @@ tags:
 # Approve an egress request by ID.
 
 ## Connections
-- [[approve()]] - `rationale_for` [EXTRACTED]
+- [[approve()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

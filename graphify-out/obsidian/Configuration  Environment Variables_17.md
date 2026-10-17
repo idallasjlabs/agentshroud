@@ -12,6 +12,6 @@ tags:
 # Configuration / Environment Variables
 
 ## Connections
-- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_monitorpy

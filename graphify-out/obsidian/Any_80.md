@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "TestSSRFDetection (5)"
-location: "L231"
+community: "UserSessionManager (2)"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_5
+  - community/UserSessionManager_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()_2]] - `references` [EXTRACTED]
+- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
+- [[dot-broadcast()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_5
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

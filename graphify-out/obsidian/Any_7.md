@@ -1,19 +1,17 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "TestAggregateResults"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/TestAggregateResults
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

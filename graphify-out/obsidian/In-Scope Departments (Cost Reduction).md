@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (4)"
+community: "AWS Cloud Management & FinOps Agent (2) (2)"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_4
+  - community/AWS_Cloud_Management__FinOps_Agent_2_2
 ---
 
 # In-Scope Departments (Cost Reduction)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_4
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2_2

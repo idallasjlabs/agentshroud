@@ -12,6 +12,6 @@ tags:
 # Convert configuration to dictionary for serialization.
 
 ## Connections
-- [[dot-to_dict()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_8]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "._parse_service_network_config"
-location: "L124"
+community: "plan_remediation"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_parse_service_network_config
+  - community/plan_remediation
 ---
 
 # Any
 
 ## Connections
-- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
-- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
-- [[dot-get_security_report()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_15]] - `references` [EXTRACTED]
+- [[load_registry()_1]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_parse_service_network_config
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

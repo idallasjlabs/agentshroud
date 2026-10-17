@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py (2)"
+community: "api.py"
 location: "L1130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/apipy
 ---
 
 # Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_intel_verifier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/apipy

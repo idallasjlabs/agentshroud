@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[CVE Triage — Gaps & Development Plan (OpenClaw), 891 triaged]] - `references` [EXTRACTED]
-- [[Two-arm CVE remediation vendor fix AND AgentShroud gateway control]] - `conceptually_related_to` [INFERRED]
+- [[Two-arm CVE remediation (vendor fix + AgentShroud control)]] - `conceptually_related_to` [INFERRED]
 
 #graphify/concept #graphify/EXTRACTED #community/triage-cve-mitigationspy

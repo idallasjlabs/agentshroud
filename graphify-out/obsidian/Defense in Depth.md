@@ -12,6 +12,6 @@ tags:
 # Defense in Depth
 
 ## Connections
-- [[Security Architecture_5]] - `contains` [EXTRACTED]
+- [[Security Architecture_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

@@ -12,6 +12,6 @@ tags:
 # Implementation Timeline
 
 ## Connections
-- [[Next Steps_5]] - `contains` [EXTRACTED]
+- [[Next Steps_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

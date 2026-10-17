@@ -12,6 +12,6 @@ tags:
 # Container Won't Stop (Stuck in Stopping)
 
 ## Connections
-- [[Container Errors_2]] - `contains` [EXTRACTED]
+- [[Container Errors]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Restart_Procedure

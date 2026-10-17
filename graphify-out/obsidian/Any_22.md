@@ -1,29 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MCPInspector"
-location: "L119"
+community: "MiddlewareManager (5)"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPInspector
+  - graphify/EXTRACTED
+  - community/MiddlewareManager_5
 ---
 
 # Any
 
 ## Connections
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_5]] - `references` [EXTRACTED]
-- [[dot-send_request()]] - `references` [EXTRACTED]
-- [[dot-send_request()_1]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

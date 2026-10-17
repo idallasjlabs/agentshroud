@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
 - [[Actions to take on suspicious chains.]] - `rationale_for` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum]] - `inherits` [EXTRACTED]
 - [[TestParamSanitization]] - `uses` [INFERRED]
 - [[TestReversibilityScoring]] - `uses` [INFERRED]
 - [[TestShellBleedPatterns]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer]] - `uses` [INFERRED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 

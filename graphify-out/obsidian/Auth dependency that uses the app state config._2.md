@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
 community: "create_auth_dependency"
-location: "L127"
+location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

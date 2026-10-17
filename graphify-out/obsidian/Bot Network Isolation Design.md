@@ -11,6 +11,6 @@ tags:
 # Bot Network Isolation Design
 
 ## Connections
-- [[Network Topology_1]] - `rationale_for` [EXTRACTED]
+- [[Network Topology]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

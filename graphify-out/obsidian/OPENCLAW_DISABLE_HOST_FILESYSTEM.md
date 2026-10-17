@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "AgentRegistry"
+community: "AgentRegistry (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AgentRegistry_2
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM.md
@@ -16,4 +16,4 @@ tags:
 - [[OPENCLAW_SANDBOX_MODE]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2

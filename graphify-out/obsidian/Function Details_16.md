@@ -1,24 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Function Details (7)"
+community: "apple_engine.py"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_7
+  - community/apple_enginepy
 ---
 
 # Function Details
 
 ## Connections
-- [[PodmanEngine.__init__(cli)]] - `contains` [EXTRACTED]
-- [[PodmanEngine._detect_compose()]] - `contains` [EXTRACTED]
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.generate_systemd(name)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.health_check()]] - `contains` [EXTRACTED]
-- [[PodmanEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - `contains` [EXTRACTED]
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.health_check()]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.inspect(name)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.pause(name)  unpause(name)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.ps(all)]] - `contains` [EXTRACTED]
+- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_7
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

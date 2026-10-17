@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector"
+community: "DifferentialPIIDetector (2)"
 location: "L406"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/DifferentialPIIDetector_2
 ---
 
 # Core scan: normalize adversarial patterns, then run PII recognition.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector_2

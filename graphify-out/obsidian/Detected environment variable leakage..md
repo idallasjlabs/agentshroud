@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "check_command"
+community: "AlertDispatcher (2) (2)"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check_command
+  - community/AlertDispatcher_2_2
 ---
 
 # Detected environment variable leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvironmentLeakage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check_command
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2

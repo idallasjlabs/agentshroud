@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
-- [[Configuration_10]] - `contains` [EXTRACTED]
+- [[Configuration_8]] - `contains` [EXTRACTED]
 - [[Policy Table]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

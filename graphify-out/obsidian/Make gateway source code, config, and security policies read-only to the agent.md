@@ -15,7 +15,7 @@ tags:
 - [[04-separation-of-privilege]] - `contains` [EXTRACTED]
 - [[Constraints_4]] - `contains` [EXTRACTED]
 - [[Evidence_4]] - `contains` [EXTRACTED]
-- [[Problem_6]] - `contains` [EXTRACTED]
+- [[Problem_5]] - `contains` [EXTRACTED]
 - [[Remediation_5]] - `contains` [EXTRACTED]
 - [[Root Cause_4]] - `contains` [EXTRACTED]
 - [[Severity_7]] - `contains` [EXTRACTED]

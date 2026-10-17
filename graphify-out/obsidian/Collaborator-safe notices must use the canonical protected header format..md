@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
-location: "L7687"
+community: "Unit tests for collaborator-facing prompt classification helpers."
+location: "L7705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
 ---
 
 # Collaborator-safe notices must use the canonical protected header format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_safe_notice_uses_canonical_header_with_blank_line()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers

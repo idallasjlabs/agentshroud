@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L149"
+community: "A2APolicyEngine (3)"
+location: "L210"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AppleContainerEngine
+  - graphify/EXTRACTED
+  - community/A2APolicyEngine_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-from_dict()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3

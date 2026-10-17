@@ -12,9 +12,9 @@ tags:
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_83]] - `contains` [EXTRACTED]
-- [[Related Skills_70]] - `contains` [EXTRACTED]
-- [[Usage_82]] - `contains` [EXTRACTED]
+- [[Purpose_95]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_84]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-dataREADME]] - `contains` [EXTRACTED]
 

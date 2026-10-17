@@ -12,6 +12,6 @@ tags:
 # Key Thresholds
 
 ## Connections
-- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Configuration_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
