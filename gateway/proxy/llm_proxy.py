@@ -572,7 +572,143 @@ class LLMProxy:
             # backend; "auto" is the closest accepted behaviour.
             request_data["tool_choice"] = "auto"
             changed = True
+        tools = request_data.get("tools")
+        if isinstance(tools, list):
+            for tool in tools:
+                fn = tool.get("function") if isinstance(tool, dict) else None
+                params = fn.get("parameters") if isinstance(fn, dict) else None
+                if isinstance(params, dict) and LLMProxy._flatten_fieldflare_schema(params):
+                    changed = True
         return changed
+
+    _SCHEMA_CHILD_KEYS = ("properties", "$defs", "definitions", "patternProperties")
+
+    @staticmethod
+    def _flatten_fieldflare_schema(node: dict) -> bool:
+        """Rewrite a tool-parameter JSON schema into the subset Fieldflare's
+        Gemma template can represent, in place. Returns True if modified.
+
+        Probed live against :8238 (2026-10-17, incident doc): the server
+        answers 400 {"code": "invalid_tool_schema"} unless every `anyOf` /
+        `oneOf` is exactly one branch plus one exact {"type": "null"} branch
+        ("only a two-branch nullable union is representable" / "union must
+        contain one exact null branch"), every `type` list is one concrete
+        type plus "null", and no `allOf` appears at all. Hermes's skill_manage
+        advertises a six-branch per-action object union (its memory tool uses
+        the same pattern), so every Conduit turn on gemma-4-26b-a4b-it 400'd.
+
+        Rewrites, lossy by design but always representable:
+        - object-only unions (>1 non-null branch): merged into ONE object —
+          properties unioned (first definition of a key wins, `enum` lists
+          unioned so the action discriminator keeps every value), `required`
+          reduced to the keys every branch required, `additionalProperties:
+          false` kept only if every branch had it;
+        - mixed/scalar unions: the first non-null branch is kept;
+        - a null branch, if present, is re-attached as the second branch;
+        - `type` lists: first concrete type (+ "null" if listed);
+        - `allOf`: branches merged into the node itself.
+        """
+        changed = False
+        # Recurse first so merged branches arrive already representable.
+        for field in LLMProxy._SCHEMA_CHILD_KEYS:
+            group = node.get(field)
+            if isinstance(group, dict):
+                for child in group.values():
+                    if isinstance(child, dict) and LLMProxy._flatten_fieldflare_schema(child):
+                        changed = True
+        for field in ("items", "additionalProperties", "not"):
+            child = node.get(field)
+            if isinstance(child, dict) and LLMProxy._flatten_fieldflare_schema(child):
+                changed = True
+        for field in ("prefixItems", "anyOf", "oneOf", "allOf"):
+            group = node.get(field)
+            if isinstance(group, list):
+                for child in group:
+                    if isinstance(child, dict) and LLMProxy._flatten_fieldflare_schema(child):
+                        changed = True
+
+        all_of = node.pop("allOf", None)
+        if isinstance(all_of, list):
+            merged = LLMProxy._merge_object_schemas(
+                [b for b in all_of if isinstance(b, dict)], conjunction=True
+            )
+            for k, v in merged.items():
+                node.setdefault(k, v)
+            changed = True
+
+        for union in ("anyOf", "oneOf"):
+            branches = node.get(union)
+            if not isinstance(branches, list):
+                continue
+            null_branches = [b for b in branches if b == {"type": "null"}]
+            concrete = [b for b in branches if isinstance(b, dict) and b != {"type": "null"}]
+            if len(concrete) == 1 and len(null_branches) == 1 and len(branches) == 2:
+                continue  # already the one accepted shape
+            if not concrete:
+                continue
+            if len(concrete) == 1:
+                kept = concrete[0]
+            elif all(b.get("type") == "object" for b in concrete):
+                kept = LLMProxy._merge_object_schemas(concrete)
+            else:
+                kept = concrete[0]
+            del node[union]
+            if null_branches:
+                node["anyOf"] = [kept, {"type": "null"}]
+            else:
+                for k, v in kept.items():
+                    node.setdefault(k, v)
+            changed = True
+
+        type_ = node.get("type")
+        if isinstance(type_, list):
+            concrete_types = [t for t in type_ if t != "null"]
+            if len(concrete_types) > 1:
+                first = concrete_types[0]
+                node["type"] = [first, "null"] if "null" in type_ else first
+                changed = True
+        return changed
+
+    @staticmethod
+    def _merge_object_schemas(branches: list, conjunction: bool = False) -> dict:
+        """Union several object schemas into one (see _flatten_fieldflare_schema).
+
+        `conjunction=True` (allOf) keeps every branch's required keys; the
+        default (anyOf/oneOf) keeps only the keys every branch required.
+        """
+        merged: dict = {"type": "object", "properties": {}}
+        required_sets = []
+        additional_false = True
+        for branch in branches:
+            props = branch.get("properties")
+            if isinstance(props, dict):
+                for name, prop in props.items():
+                    existing = merged["properties"].get(name)
+                    if existing is None:
+                        merged["properties"][name] = prop
+                    elif isinstance(existing, dict) and isinstance(prop, dict):
+                        enum_a, enum_b = existing.get("enum"), prop.get("enum")
+                        if isinstance(enum_a, list) and isinstance(enum_b, list):
+                            existing["enum"] = list(dict.fromkeys([*enum_a, *enum_b]))
+            req = branch.get("required")
+            required_sets.append(set(req) if isinstance(req, list) else set())
+            if branch.get("additionalProperties") is not False:
+                additional_false = False
+        if conjunction:
+            keep = set.union(*required_sets) if required_sets else set()
+        else:
+            keep = set.intersection(*required_sets) if required_sets else set()
+        if keep:
+            # Preserve the branches' own ordering for the surviving keys.
+            ordered = []
+            for branch in branches:
+                for k in branch.get("required") or []:
+                    if k in keep and k not in ordered:
+                        ordered.append(k)
+            merged["required"] = ordered
+        if additional_false:
+            merged["additionalProperties"] = False
+        return merged
 
     @staticmethod
     def _local_backend_headers(base_url: str, headers: dict) -> dict:
