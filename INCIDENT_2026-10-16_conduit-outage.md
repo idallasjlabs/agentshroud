@@ -895,3 +895,14 @@ carries only the unchanged `HERMES_IMAGE` digest — a silent no-op of the CLAUD
 kind. 0.22.2's release note flags a known issue (sessions from the 0.22.1 gateway cannot
 be deleted); 0.22.0 retires `session_reset` idle/daily modes and moves memory providers
 and Home Assistant to catalog plugins — config migration work for the upgrade.
+
+Sunday item, OpenClaw per-container memory cap (both hosts, 2026-10-17): after the VM
+fixes, OpenClaw still hits its container cap on both hosts. Dev (cap 3.5 GiB): a third
+`CONSTRAINT_MEMCG` kill of `openclaw-gateway` at 07:58 EDT (anon-rss 2.1 GB), container
+restarts = 3. Prod (cap 4 GiB): one `CONSTRAINT_MEMCG` kill inside `agentshroud-openclaw`'s
+cgroup at ≈09:40 EDT (dmesg -T time, approximate) of child process `openclaw` (pid 91040,
+anon-rss 468 MB, total-vm 3.7 GB), not the main gateway process; restarts = 0, healthy,
+3.4 of 4 GiB in use; VM fine (0 global OOMs, 2.7 GB available of 11.9 GB). Prod also
+re-accumulates about ten `openclaw-mcp-github-*` sidecars after each restart. Fix scope:
+size the OpenClaw cap to its measured steady RSS plus headroom on each host (dev stays
+below prod), and stop or reap the duplicate MCP sidecars.
