@@ -73,9 +73,9 @@ stack. "Dev goes first" is therefore enforced by a handoff contract:
 - The dev account runs its own copy of this job **earlier** (03:00 ET) and
   stages a machine-readable result at
   `/Users/Shared/agentshroud-sunday/dev-result-YYYY-MM-DD.json`
-  (`{"date","status":"PASS|FAIL","versions":{component:version,...},"notes"}`).
-- **Before applying anything to prod**, read that file. If it is missing or
-  `status` != `PASS`, apply NOTHING to prod: report every component as
+  (`{"date","status":"PASS|FAIL|NOTHING_UPGRADED|SCAN_INCOMPLETE","versions":{component:version,...},"notes"}`).
+- **Before applying anything to prod**, read that file. If it is missing, is
+  not dated today, or `status` != `PASS`, apply NOTHING to prod: report every component as
   BLOCKED-awaiting-dev and stop after the inventory/scan phases (those are
   read-only and always run).
 - Promote to prod **only the exact versions dev passed** — never a version
@@ -100,7 +100,10 @@ script did not give you:
 |------|---------|-------------|
 | 0 | all requested phases passed | continue |
 | 10 | preflight failed (disk, docker, compose, missing binary) | fix the named cause or stop; do not build |
+| 15 | prod: no dev PASS handoff dated today (the script enforces this itself) | report BLOCKED-awaiting-dev; do not work around it |
 | 20 | CVE gate exceeded `--max-critical` | triage findings, do not override |
+| 21 | dev: every phase passed but no image was scanned or a scan errored; handoff is `SCAN_INCOMPLETE`, not PASS | report the scan failure; prod stays blocked |
+| 25 | nothing was upgraded although a newer upstream release exists | report it as a failed run, not a pass |
 | 30 | build/compose failed (rollback attempted) | report the named service that failed |
 | 40 | verify failed — unhealthy/restart loop (rollback attempted) | report; do not retry blindly |
 | 50 | rollback itself failed | **STOP. Escalate. The stack may be degraded.** |

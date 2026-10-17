@@ -82,6 +82,14 @@ run_test "test-container-runtime.sh" bash "$SCRIPT_DIR/smoke.d/test-container-ru
 # Sunday-upgrade scan-gate assertions: phantom-tag fallback + Trivy auto-provisioning
 run_test "test-sunday-upgrade-scan.sh" bash "$SCRIPT_DIR/smoke.d/test-sunday-upgrade-scan.sh"
 
+# Sunday wrapper: overlapping fires skip, orphaned sessions are reaped
+run_test "test_sunday_upgrade_session_guard.sh" bash "$SMOKE_DIR/test_sunday_upgrade_session_guard.sh"
+
+# Scheduler installer (macOS: PlistBuddy, launchd)
+if [ "$(uname -s)" = "Darwin" ]; then
+    run_test "test_launchd_install.sh" bash "$SMOKE_DIR/test_launchd_install.sh"
+fi
+
 # Live boot test (gated by SMOKE_LIVE=1)
 run_test "test_bot_boot_live.sh" bash "$SMOKE_DIR/test_bot_boot_live.sh"
 

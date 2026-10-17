@@ -43,6 +43,11 @@
 #                                          gate failure; never reports PASS
 #                                          without at least one image having
 #                                          actually been scanned.
+#   sunday_handoff_status <status> <scanned> <failed>
+#                                        - downgrade a PASS to SCAN_INCOMPLETE
+#                                          when no image scanned or any failed.
+#   sunday_dev_handoff_gate <dir> <today>
+#                                        - prod's gate: today's dev PASS only.
 #
 # Callers are expected to already define log/warn/die (sunday-upgrade-apply.sh
 # does); fallbacks are provided below so this file is independently testable.
@@ -279,4 +284,53 @@ sunday_run_scan_gate() {
     die 20 "CVE gate FAILED: ${total_crit} CRITICAL findings exceeds --max-critical=${max_critical}"
   fi
   log "scan: PASS (${scanned} image(s) scanned)"
+}
+
+# ── Handoff truth (CLAUDE.md §0.0) ───────────────────────────────────────────
+# sunday_handoff_status <requested> <images_scanned> <scans_failed>
+#   Echo the status the dev->prod handoff may honestly publish. Dev only WARNS
+#   on scan failure (owner policy 2026-09-25), so a full run whose scanner never
+#   produced a finding still reached `write_handoff PASS`: on 2026-10-11 the
+#   handoff read status PASS with images_scanned:0, scans_failed:3. A PASS needs
+#   at least one image scanned and none failed; anything else — including
+#   "null" (no scan artefact at all) — is SCAN_INCOMPLETE. Non-PASS statuses
+#   pass through unchanged.
+sunday_handoff_status() {
+  local requested="$1" scanned="${2:-null}" failed="${3:-null}"
+  if [ "$requested" != "PASS" ]; then
+    printf '%s\n' "$requested"
+    return 0
+  fi
+  case "$scanned" in ''|*[!0-9]*) printf 'SCAN_INCOMPLETE\n'; return 0 ;; esac
+  case "$failed"  in ''|*[!0-9]*) printf 'SCAN_INCOMPLETE\n'; return 0 ;; esac
+  if [ "$scanned" -eq 0 ] || [ "$failed" -ne 0 ]; then
+    printf 'SCAN_INCOMPLETE\n'
+    return 0
+  fi
+  printf 'PASS\n'
+}
+
+# sunday_dev_handoff_gate <handoff_dir> <today>
+#   Return 0 only when dev published a PASS for <today>: the file must be
+#   dev-result-<today>.json AND its own "date" field must say <today>, so a
+#   previous Sunday's PASS (or a copy of one under today's name) can never
+#   unlock a prod apply. Prints the reason on refusal.
+sunday_dev_handoff_gate() {
+  local dir="$1" today="$2" f date status
+  f="${dir}/dev-result-${today}.json"
+  if [ ! -f "$f" ]; then
+    printf 'dev handoff: %s does not exist — dev has not passed today\n' "$f" >&2
+    return 1
+  fi
+  date="$(grep -oE '"date": *"[^"]*"' "$f" 2>/dev/null | head -1 | sed -E 's/.*"([^"]*)"$/\1/')"
+  status="$(grep -oE '"status": *"[^"]*"' "$f" 2>/dev/null | head -1 | sed -E 's/.*"([^"]*)"$/\1/')"
+  if [ "$date" != "$today" ]; then
+    printf 'dev handoff: %s is dated "%s", not %s — stale, refusing\n' "$f" "$date" "$today" >&2
+    return 1
+  fi
+  if [ "$status" != "PASS" ]; then
+    printf 'dev handoff: %s has status "%s", not PASS — refusing\n' "$f" "$status" >&2
+    return 1
+  fi
+  return 0
 }

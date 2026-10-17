@@ -45,9 +45,16 @@
         <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     </dict>
 
+    <!-- Per-account log paths, never /tmp. Both accounts install this job,
+         and with a shared log under /tmp, whichever runs first creates it as
+         itself, 0644 — launchd then cannot open them for the other account
+         and refuses to spawn its job at all (verified 2026-09-19). Written
+         with prod's home like com.agentshroud.sunday-upgrade.plist;
+         scripts/launchd/install.sh substitutes the installing account's
+         $HOME, which is a no-op on prod. -->
     <key>StandardOutPath</key>
-    <string>/tmp/colima-autostart.log</string>
+    <string>/Users/ijefferson.admin/Library/Logs/colima-autostart.log</string>
     <key>StandardErrorPath</key>
-    <string>/tmp/colima-autostart.err</string>
+    <string>/Users/ijefferson.admin/Library/Logs/colima-autostart.err</string>
 </dict>
 </plist>

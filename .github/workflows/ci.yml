@@ -137,6 +137,9 @@ jobs:
       - name: Run bot boot static smoke tests
         run: bash tests/startup_smoke/test_bot_boot_static.sh
 
+      - name: Run Sunday-upgrade session guard tests
+        run: bash tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+
   soul-freshness:
     name: SOUL.md Freshness Check
     runs-on: ubuntu-latest
