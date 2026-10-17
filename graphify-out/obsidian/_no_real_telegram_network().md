@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "test_security_regressions_v1_2.py"
+location: "L46"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_security_regressions_v1_2py
+---
+
+# _no_real_telegram_network()
+
+## Connections
+- [[Fail any real urlopen fast unless a test installs its own fake. Blocked-message…]] - `rationale_for` [EXTRACTED]
+- [[_refuse()]] - `indirect_call` [INFERRED]
+- [[fixture]] - `references` [EXTRACTED]
+- [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
