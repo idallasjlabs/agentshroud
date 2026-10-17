@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "🟠 HIGH: Security & Logic Issues"
+community: "AgentShroud™ Telegram-Reported Issues"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_HIGH_Security__Logic_Issues
+  - community/AgentShroud_Telegram-Reported_Issues
 ---
 
 # 🟠 HIGH: Security & Logic Issues
@@ -23,4 +23,4 @@ tags:
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_HIGH_Security__Logic_Issues
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues

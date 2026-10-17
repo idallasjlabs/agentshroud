@@ -12,7 +12,7 @@ tags:
 # retry_request_sync()
 
 ## Connections
-- [[Any_78]] - `references` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
 - [[RetryConfig]] - `references` [EXTRACTED]
 - [[RetryResult]] - `references` [EXTRACTED]
 - [[Synchronous version of retry_request for non-async contexts.]] - `rationale_for` [EXTRACTED]

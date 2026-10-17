@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[_FakeToolACL]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L74"
+community: "PIIConfig"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/PIIConfig
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[TrustManager_2]] - `calls` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

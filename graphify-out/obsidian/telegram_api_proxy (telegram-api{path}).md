@@ -20,7 +20,7 @@ tags:
 - [[Crash backoff escalation (rolling 10-minute start window)]] - `references` [EXTRACTED]
 - [[LLMProxy._emit_failover_notice]] - `references` [EXTRACTED]
 - [[Proxy Telegram Bot API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_7]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[TestTelegramTokenRegistry]] - `conceptually_related_to` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `calls` [EXTRACTED]
 - [[_build_telegram_token_registry]] - `calls` [EXTRACTED]

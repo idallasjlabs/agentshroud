@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "InjectionAction"
+community: "PipelineAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/PipelineAction
 ---
 
 # test_ws_e_rt2_inbound_encoding.py
@@ -16,12 +16,12 @@ tags:
 - [[EncodingDetector]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_1]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `references` [EXTRACTED]
-- [[_make_pipeline()]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_4]] - `contains` [EXTRACTED]
 - [[test_encoding_detector_decodes_rot13_injection()]] - `contains` [EXTRACTED]
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `contains` [EXTRACTED]
 - [[test_encoding_detector_rot13_empty_text()]] - `contains` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `contains` [EXTRACTED]
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

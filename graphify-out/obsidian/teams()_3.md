@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
-location: "L71"
+community: "telegram_proxy.py"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+  - community/telegram_proxypy
 ---
 
 # teams()
 
 ## Connections
+- [[GroupConfig]] - `calls` [EXTRACTED]
+- [[ProjectConfig]] - `calls` [EXTRACTED]
 - [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

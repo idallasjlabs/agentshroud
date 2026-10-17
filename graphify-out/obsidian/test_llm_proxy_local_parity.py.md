@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "test_llm_proxy_local_parity.py (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # test_llm_proxy_local_parity.py
@@ -14,24 +14,35 @@ tags:
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
 - [[Workstream C — Full local-model parity for both bots. Tests that every cloud-…]] - `rationale_for` [EXTRACTED]
-- [[_FakeSanitizer]] - `contains` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
 - [[_FakeStreamClient]] - `contains` [EXTRACTED]
 - [[_FakeStreamResponse]] - `contains` [EXTRACTED]
 - [[_anthropic_ok()]] - `contains` [EXTRACTED]
 - [[_anthropic_tool_use_ok()]] - `contains` [EXTRACTED]
 - [[_make_proxy()]] - `contains` [EXTRACTED]
+- [[_op()]] - `contains` [EXTRACTED]
 - [[_openai_ok()]] - `contains` [EXTRACTED]
 - [[_openai_tool_use_ok()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[_skill_manage_like_request()]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `contains` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_collapses_type_list_to_one_concrete_type_plus_null()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_degenerate_unions()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_inlines_allof_and_recurses_into_nested_nodes()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_is_noop_without_the_fields()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_keeps_first_branch_of_scalar_union()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_keeps_null_branch_when_merging()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_keeps_two_branch_nullable_union_unchanged()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_leaves_representable_tool_schemas_alone()]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_merges_multi_branch_object_union_into_one_object()]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto]] - `contains` [EXTRACTED]
 - [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto]] - `contains` [EXTRACTED]
+- [[test_fieldflare_shim_tolerates_malformed_tool_entries()]] - `contains` [EXTRACTED]
 - [[test_get_local_model_reads_fieldflare_ref()]] - `contains` [EXTRACTED]
 - [[test_get_local_secondary_model_reads_env()]] - `contains` [EXTRACTED]
 - [[test_get_local_secondary_model_returns_none_when_unset()]] - `contains` [EXTRACTED]
@@ -81,4 +92,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2

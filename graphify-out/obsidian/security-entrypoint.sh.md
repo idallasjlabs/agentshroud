@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "start-agentshroud.sh"
+community: "start-agentshroud.sh (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/start-agentshroudsh_3
 ---
 
 # security-entrypoint.sh
@@ -20,4 +20,4 @@ tags:
 - [[log()_1]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh_3

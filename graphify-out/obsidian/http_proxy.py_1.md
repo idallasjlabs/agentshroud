@@ -2,16 +2,29 @@
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
 community: "http_proxy.py"
-location: "L1"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/http_proxypy
 ---
 
-# http_proxy.py.md
+# http_proxy.py
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[CONNECT Retry Logic]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables]] - `contains` [EXTRACTED]
+- [[Constructor Parameters]] - `contains` [EXTRACTED]
+- [[Domain Policy Decision Tree]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Internal State (`_stats`)]] - `contains` [EXTRACTED]
+- [[Key Classes_1]] - `contains` [EXTRACTED]
+- [[Module-level Constants]] - `contains` [EXTRACTED]
+- [[Purpose_76]] - `contains` [EXTRACTED]
+- [[Related_1]] - `contains` [EXTRACTED]
+- [[Responsibilities_2]] - `contains` [EXTRACTED]
+- [[Security Notes_2]] - `contains` [EXTRACTED]
+- [[TCP Keepalive]] - `contains` [EXTRACTED]
+- [[http_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/http_proxypy

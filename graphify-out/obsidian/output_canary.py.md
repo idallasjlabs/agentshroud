@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (5)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_5
 ---
 
 # output_canary.py
 
 ## Connections
 - [[CanaryConfig]] - `contains` [EXTRACTED]
-- [[CanaryResult]] - `contains` [EXTRACTED]
+- [[CanaryResult_2]] - `contains` [EXTRACTED]
 - [[OutputCanary]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_5

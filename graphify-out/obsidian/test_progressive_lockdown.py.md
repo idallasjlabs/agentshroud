@@ -23,8 +23,8 @@ tags:
 - [[TestProgressiveLockdownUnit]] - `contains` [EXTRACTED]
 - [[TestSuspendedDropNotice]] - `contains` [EXTRACTED]
 - [[TestUnlockCommand]] - `contains` [EXTRACTED]
-- [[_make_proxy()_3]] - `contains` [EXTRACTED]
-- [[_make_update()_2]] - `contains` [EXTRACTED]
+- [[_make_proxy()_2]] - `contains` [EXTRACTED]
+- [[_make_update()_1]] - `contains` [EXTRACTED]
 - [[_wrap()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

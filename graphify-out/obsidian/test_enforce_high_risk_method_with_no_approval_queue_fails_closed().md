@@ -12,7 +12,7 @@ tags:
 # test_enforce_high_risk_method_with_no_approval_queue_fails_closed()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 

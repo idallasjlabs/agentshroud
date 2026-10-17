@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
-type: "document"
-community: "sidecar.py"
+source_file: "gateway/proxy/sidecar.py"
+type: "code"
+community: "EgressFilterConfig (2)"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/EgressFilterConfig_2
 ---
 
-# sidecar.py.md
+# sidecar.py
 
 ## Connections
-- [[sidecar.py_1]] - `contains` [EXTRACTED]
+- [[ScanRequest_1]] - `contains` [EXTRACTED]
+- [[ScanResponse]] - `contains` [EXTRACTED]
+- [[SidecarScanner]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sidecarpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

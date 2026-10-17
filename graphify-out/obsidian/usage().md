@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/killswitch.sh"
+source_file: "scripts/switch_model.sh"
 type: "code"
-community: "killswitch.sh"
-location: "L28"
+community: "switch_model.sh"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/switch_modelsh
 ---
 
 # usage()
 
 ## Connections
-- [[killswitch.sh]] - `defines` [EXTRACTED]
-- [[killswitch.sh script]] - `calls` [EXTRACTED]
+- [[switch_model.sh]] - `defines` [EXTRACTED]
+- [[switch_model.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/killswitchsh
+#graphify/code #graphify/EXTRACTED #community/switch_modelsh

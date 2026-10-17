@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "plan_remediation"
-location: "L89"
+community: "validate_network_security"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/validate_network_security
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/validate_network_security

@@ -1,17 +1,19 @@
 ---
-source_file: ""
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "sync-cve-registry.py"
+location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/sync-cve-registrypy
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
-- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[main()_3]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `references` [EXTRACTED]
+- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

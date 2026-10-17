@@ -12,11 +12,11 @@ tags:
 # save_to_history()
 
 ## Connections
-- [[Any_60]] - `references` [EXTRACTED]
-- [[Path_45]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
+- [[Path_12]] - `references` [EXTRACTED]
 - [[Save a health report to history.      Args         score Overall score.]] - `rationale_for` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `contains` [EXTRACTED]
 - [[init_db()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

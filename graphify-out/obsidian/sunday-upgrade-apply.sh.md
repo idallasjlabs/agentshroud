@@ -15,7 +15,7 @@ tags:
 - [[Dev-prod handoff contract via UsersSharedagentshroud-sundaydev-result-YYYY-MM-DD.json]] - `references` [EXTRACTED]
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `rationale_for` [EXTRACTED]
 - [[Exit 50 build failed and rollback failed (stack may be degraded)]] - `references` [EXTRACTED]
-- [[PATH_8]] - `defines` [EXTRACTED]
+- [[PATH_2]] - `defines` [EXTRACTED]
 - [[Refuse to build with uncommitted changes in build context]] - `rationale_for` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]
@@ -68,7 +68,7 @@ tags:
 - [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh]] - `calls` [EXTRACTED]
 - [[versions.env]] - `imports_from` [INFERRED]
-- [[warn()]] - `defines` [EXTRACTED]
+- [[warn()_1]] - `defines` [EXTRACTED]
 - [[write_handoff()]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

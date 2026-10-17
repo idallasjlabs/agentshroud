@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/docker-cleanup.sh"
+source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "docker-cleanup.sh"
-location: "L19"
+community: "find-sessions.sh"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/find-sessionssh
 ---
 
 # usage()
 
 ## Connections
-- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
-- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
+- [[find-sessions.sh]] - `defines` [EXTRACTED]
+- [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/code #graphify/EXTRACTED #community/find-sessionssh

@@ -1,18 +1,18 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "MiddlewareManager"
-location: "L9"
+community: "colima-health-check.sh (2)"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/colima-health-checksh_2
 ---
 
 # warn()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh_2

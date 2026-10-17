@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAResult]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]

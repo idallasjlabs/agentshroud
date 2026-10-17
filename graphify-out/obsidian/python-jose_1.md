@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Auth Methods]] - `contains` [EXTRACTED]
 - [[Current Usage]] - `contains` [EXTRACTED]
-- [[Key Features_2]] - `contains` [EXTRACTED]
-- [[Purpose_157]] - `contains` [EXTRACTED]
-- [[Related Notes_60]] - `contains` [EXTRACTED]
-- [[Security Note_1]] - `contains` [EXTRACTED]
+- [[Key Features_1]] - `contains` [EXTRACTED]
+- [[Purpose_13]] - `contains` [EXTRACTED]
+- [[Related Notes_18]] - `contains` [EXTRACTED]
+- [[Security Note]] - `contains` [EXTRACTED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/create_auth_dependency

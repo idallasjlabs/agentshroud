@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[Regression 2026-09-16 openai-local is AgentShroud's own local-model…]] - `rationale_for` [EXTRACTED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
-- [[_fake_forward()_23]] - `contains` [EXTRACTED]
-- [[_fake_forward()_21]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[_fake_forward()_4]] - `contains` [EXTRACTED]
+- [[_fake_forward()_2]] - `indirect_call` [INFERRED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

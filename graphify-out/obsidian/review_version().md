@@ -12,7 +12,7 @@ tags:
 # review_version()
 
 ## Connections
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[Perform security review for a target version (no approval needed).]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]

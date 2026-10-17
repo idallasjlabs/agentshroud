@@ -12,17 +12,17 @@ tags:
 # prompt_guard.py.md
 
 ## Connections
-- [[Configuration_18]] - `contains` [EXTRACTED]
-- [[Dependencies_19]] - `contains` [EXTRACTED]
-- [[Environment Variables_12]] - `contains` [EXTRACTED]
-- [[Function Details_19]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_21]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_8]] - `contains` [EXTRACTED]
+- [[Configuration_17]] - `contains` [EXTRACTED]
+- [[Dependencies_18]] - `contains` [EXTRACTED]
+- [[Environment Variables_11]] - `contains` [EXTRACTED]
+- [[Function Details_18]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_20]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_7]] - `contains` [EXTRACTED]
 - [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
-- [[Purpose_138]] - `contains` [EXTRACTED]
-- [[Related_25]] - `contains` [EXTRACTED]
-- [[Responsibilities_23]] - `contains` [EXTRACTED]
-- [[Threat Model_16]] - `contains` [EXTRACTED]
+- [[Purpose_135]] - `contains` [EXTRACTED]
+- [[Related_23]] - `contains` [EXTRACTED]
+- [[Responsibilities_21]] - `contains` [EXTRACTED]
+- [[Threat Model_15]] - `contains` [EXTRACTED]
 - [[hermesSOUL]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

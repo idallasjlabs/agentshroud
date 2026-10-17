@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestToolChainAnalyzer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestToolChainAnalyzer
 ---
 
 # websocket.py
 
 ## Connections
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `contains` [EXTRACTED]
-- [[Severity]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `contains` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

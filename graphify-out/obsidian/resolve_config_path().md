@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (5)"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_5
 ---
 
 # resolve_config_path()
 
 ## Connections
-- [[Path]] - `references` [EXTRACTED]
+- [[Path_14]] - `references` [EXTRACTED]
 - [[Resolve the config file path using the same search order as load_config().]] - `rationale_for` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_resolve_config_path_explicit_and_env()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

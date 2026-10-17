@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # test_config.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[GatewayConfig_2]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[_bot_service_names()]] - `imports` [EXTRACTED]
 - [[_entity_type_mapping()]] - `imports` [EXTRACTED]
 - [[_load_config()]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_router_config_accepts_docker_service_hostname()]] - `contains` [EXTRACTED]
 - [[test_router_config_accepts_hermes_hostname()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

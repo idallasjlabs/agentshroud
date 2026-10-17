@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "DataLedger"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/RBACConfig
 ---
 
 # test_shared_memory.py
@@ -24,6 +24,6 @@ tags:
 - [[rbac()_2]] - `contains` [EXTRACTED]
 - [[session_mgr()]] - `contains` [EXTRACTED]
 - [[smm()_1]] - `contains` [EXTRACTED]
-- [[tmp_workspace()_1]] - `contains` [EXTRACTED]
+- [[tmp_workspace()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "code"
-community: "test_anthropic_openai_translator.py"
+community: "test_anthropic_openai_translator.py (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/test_anthropic_openai_translatorpy_2
 ---
 
 # test_claude_via_openai_path.py
@@ -22,4 +22,4 @@ tags:
 - [[test_openai_to_anthropic_request_strips_system_role()]] - `contains` [EXTRACTED]
 - [[test_proxy_rewrites_claude_via_openai_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_2

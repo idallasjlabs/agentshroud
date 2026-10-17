@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # test_router_openai_translation.py
 
 ## Connections
-- [[AgentTarget_3]] - `imports` [EXTRACTED]
+- [[AgentTarget_2]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[_mock_response()]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `references` [EXTRACTED]
 - [[ingest_apimodels.py]] - `references` [EXTRACTED]
 - [[ingest_apirouter.py]] - `references` [EXTRACTED]
-- [[router()]] - `contains` [EXTRACTED]
+- [[router()_1]] - `contains` [EXTRACTED]
 - [[test_generic_target_returns_json_as_is()]] - `contains` [EXTRACTED]
 - [[test_generic_target_sends_content_body()]] - `contains` [EXTRACTED]
 - [[test_openai_empty_choices_raises_forward_error()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_openai_target_returns_content_string()]] - `contains` [EXTRACTED]
 - [[test_openai_target_sends_messages_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

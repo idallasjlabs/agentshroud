@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # planning/reviews/blue-team-audit-v0.7.0.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

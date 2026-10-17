@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (5)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_5
 ---
 
 # test_bot_boot_static.sh script
 
 ## Connections
-- [[check()_3]] - `calls` [EXTRACTED]
+- [[check()_4]] - `calls` [EXTRACTED]
 - [[test_bot_boot_static.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_5

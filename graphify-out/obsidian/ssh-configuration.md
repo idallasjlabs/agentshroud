@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (6)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_6
 ---
 
 # ssh-configuration.md
@@ -20,4 +20,4 @@ tags:
 - [[himalayaSKILL]] - `references` [EXTRACTED]
 - [[icloudSKILL]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_6

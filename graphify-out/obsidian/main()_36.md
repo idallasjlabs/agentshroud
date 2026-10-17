@@ -1,17 +1,20 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "_script"
-location: "L32"
+community: "generate-job-schedule.py"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_script
+  - community/generate-job-schedulepy
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
+- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
+- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
+- [[render_html()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_script
+#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy

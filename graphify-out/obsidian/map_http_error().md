@@ -12,8 +12,8 @@ tags:
 # map_http_error()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[dot-ok()_1]] - `calls` [EXTRACTED]
 - [[dot-post()_2]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `calls` [EXTRACTED]

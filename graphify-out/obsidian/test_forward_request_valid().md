@@ -12,7 +12,7 @@ tags:
 # test_forward_request_valid()
 
 ## Connections
-- [[ForwardRequest_3]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[Test ForwardRequest with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 

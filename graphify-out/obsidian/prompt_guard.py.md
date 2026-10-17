@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[PatternRule]] - `contains` [EXTRACTED]
 - [[Prompt Guard Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[PromptGuard]] - `contains` [EXTRACTED]
-- [[ScanResult_4]] - `contains` [EXTRACTED]
+- [[PromptGuard_1]] - `contains` [EXTRACTED]
+- [[ScanResult_2]] - `contains` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `contains` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [INFERRED]

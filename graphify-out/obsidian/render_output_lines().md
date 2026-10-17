@@ -12,10 +12,10 @@ tags:
 # render_output_lines()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
-- [[OutputFormat_1]] - `references` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[OutputFormat]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[print_output()]] - `calls` [EXTRACTED]

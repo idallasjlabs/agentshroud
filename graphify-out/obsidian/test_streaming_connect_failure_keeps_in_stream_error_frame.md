@@ -16,8 +16,8 @@ tags:
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[StreamHead]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

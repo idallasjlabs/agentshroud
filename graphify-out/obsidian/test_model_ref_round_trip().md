@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Full round-trip each model ref is normalized and dispatched to the correct…]] - `rationale_for` [EXTRACTED]
-- [[_fake_forward()_15]] - `contains` [EXTRACTED]
-- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_fake_forward()_20]] - `contains` [EXTRACTED]
+- [[_fake_forward()_22]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[parametrize]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

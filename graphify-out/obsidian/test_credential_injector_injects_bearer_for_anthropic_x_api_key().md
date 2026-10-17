@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[_TrackingInjector]] - `calls` [EXTRACTED]
 - [[_make_fake_urlopen()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

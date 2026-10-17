@@ -15,7 +15,7 @@ tags:
 - [[TestDriverIsolation]] - `calls` [EXTRACTED]
 - [[Triage every ``under_review`` entry for agent_id (per-agent isolated). Reads…]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]

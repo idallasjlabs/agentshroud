@@ -12,7 +12,7 @@ tags:
 # progressive_lockdown.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 - [[LockdownAction]] - `contains` [EXTRACTED]
 - [[LockdownLevel]] - `contains` [EXTRACTED]

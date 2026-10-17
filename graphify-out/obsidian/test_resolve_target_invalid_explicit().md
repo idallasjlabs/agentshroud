@@ -12,7 +12,7 @@ tags:
 # test_resolve_target_invalid_explicit()
 
 ## Connections
-- [[ForwardRequest_3]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[Test routing with invalid explicit target falls back to default]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

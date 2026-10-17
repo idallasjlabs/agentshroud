@@ -1,23 +1,42 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
-type: "document"
-community: "Function Details"
-location: "L10"
+source_file: "gateway/proxy/mcp_proxy.py"
+type: "code"
+community: "MCPPermissionManager (2)"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/MCPPermissionManager_2
 ---
 
 # mcp_proxy.py
 
 ## Connections
-- [[Configuration  Environment Variables_12]] - `contains` [EXTRACTED]
-- [[Function Details_24]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_26]] - `contains` [EXTRACTED]
-- [[Purpose_143]] - `contains` [EXTRACTED]
-- [[Related_30]] - `contains` [EXTRACTED]
-- [[Responsibilities_28]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
+- [[ConnectionPool]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
+- [[HttpSseConnection]] - `contains` [EXTRACTED]
+- [[InspectionResult]] - `imports` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
+- [[MCPInspector_1]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
+- [[MCPProxy_1]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `imports` [EXTRACTED]
+- [[MCPServerConfig_1]] - `imports` [EXTRACTED]
+- [[MCPToolCall_1]] - `contains` [EXTRACTED]
+- [[MCPToolResult]] - `contains` [EXTRACTED]
+- [[MCPTransport]] - `imports` [EXTRACTED]
+- [[ProxyResult]] - `contains` [EXTRACTED]
+- [[StdioConnection]] - `contains` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[make_event()]] - `imports` [EXTRACTED]
+- [[mcp_audit.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
+- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

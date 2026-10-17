@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Slack Channel Setup"
+community: "Slack Channel Setup (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Slack_Channel_Setup_2
 ---
 
 # pii_sanitizer module (disabled — false positives)
@@ -15,4 +15,4 @@ tags:
 - [[PII Sanitizer (user-facing description)]] - `semantically_similar_to` [INFERRED]
 - [[Steve Hay's External Reviewer Findings]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2

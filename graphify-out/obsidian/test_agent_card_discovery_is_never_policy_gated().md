@@ -12,9 +12,9 @@ tags:
 # test_agent_card_discovery_is_never_policy_gated()
 
 ## Connections
-- [[A2AProxy]] - `references` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
 - [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - `rationale_for` [EXTRACTED]
-- [[_StubForwarder]] - `references` [EXTRACTED]
+- [[_StubForwarder_2]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

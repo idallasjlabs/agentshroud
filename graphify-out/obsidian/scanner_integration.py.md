@@ -76,8 +76,8 @@ tags:
 - [[get_trivy_image_summaries()]] - `contains` [EXTRACTED]
 - [[get_trivy_summary()]] - `contains` [EXTRACTED]
 - [[get_wazuh_summary()]] - `contains` [EXTRACTED]
-- [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[read_alerts()]] - `imports` [EXTRACTED]
+- [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

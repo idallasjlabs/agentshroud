@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/AlertDispatcher
 ---
 
 # tool_result_sanitizer_enhanced.py
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `contains` [EXTRACTED]
+- [[ToolResultSanitizer]] - `contains` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `contains` [EXTRACTED]
 - [[sanitize_tool_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

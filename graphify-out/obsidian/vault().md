@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AgentTarget"
+community: "AlertDispatcher (2)"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AlertDispatcher_2
 ---
 
 # vault()
@@ -15,4 +15,4 @@ tags:
 - [[KeyVault]] - `calls` [EXTRACTED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[Config Keys Read]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_2]] - `contains` [EXTRACTED]
+- [[Environment Variables Used]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_9]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_1]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_8]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes]] - `contains` [EXTRACTED]
 - [[Model Details]] - `contains` [EXTRACTED]
-- [[Purpose_109]] - `contains` [EXTRACTED]
-- [[Related_13]] - `contains` [EXTRACTED]
-- [[Responsibilities_11]] - `contains` [EXTRACTED]
+- [[Purpose_105]] - `contains` [EXTRACTED]
+- [[Related_11]] - `contains` [EXTRACTED]
+- [[Responsibilities_9]] - `contains` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/modelspy

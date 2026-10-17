@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
-- [[Configuration_4]] - `contains` [EXTRACTED]
+- [[Configuration_3]] - `contains` [EXTRACTED]
 - [[Contact Operations]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
 - [[Notes Operations]] - `contains` [EXTRACTED]
-- [[Security_7]] - `contains` [EXTRACTED]
+- [[Security_6]] - `contains` [EXTRACTED]
 - [[Setup]] - `contains` [EXTRACTED]
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 

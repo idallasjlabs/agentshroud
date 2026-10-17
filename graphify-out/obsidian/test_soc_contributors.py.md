@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ContributorManager]] - `tests` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[Role_21]] - `imports` [EXTRACTED]
+- [[Role_65]] - `imports` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `contains` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_1]] - `contains` [EXTRACTED]
+- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

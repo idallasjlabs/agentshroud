@@ -1,42 +1,42 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # test_e2e_proxy.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter_2]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_1]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[ScanRequest_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager_4]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
-- [[_StubForwarder_2]] - `contains` [EXTRACTED]
-- [[egress_filter()_1]] - `contains` [EXTRACTED]
-- [[forwarder()_1]] - `contains` [EXTRACTED]
-- [[pii_config()_1]] - `contains` [EXTRACTED]
+- [[_StubForwarder_1]] - `contains` [EXTRACTED]
+- [[egress_filter()]] - `contains` [EXTRACTED]
+- [[forwarder()]] - `contains` [EXTRACTED]
+- [[pii_config()]] - `contains` [EXTRACTED]
 - [[pipeline()_1]] - `contains` [EXTRACTED]
 - [[prompt_guard()_2]] - `contains` [EXTRACTED]
 - [[run_full()]] - `references` [EXTRACTED]
-- [[sanitizer()_4]] - `contains` [EXTRACTED]
+- [[sanitizer()_3]] - `contains` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_empty_valid()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_integrity()]] - `contains` [EXTRACTED]
@@ -64,6 +64,6 @@ tags:
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `contains` [EXTRACTED]
 - [[test_webhook_receiver_processes()]] - `contains` [EXTRACTED]
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
-- [[trust_manager()_3]] - `contains` [EXTRACTED]
+- [[trust_manager()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

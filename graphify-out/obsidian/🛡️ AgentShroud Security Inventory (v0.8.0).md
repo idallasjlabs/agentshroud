@@ -16,7 +16,7 @@ tags:
 - [[Security Configuration Files (9)]] - `contains` [EXTRACTED]
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 - [[Security Test Files (38)]] - `contains` [EXTRACTED]
-- [[Summary_18]] - `contains` [EXTRACTED]
+- [[Summary_15]] - `contains` [EXTRACTED]
 - [[Testing Checklist_1]] - `contains` [EXTRACTED]
 - [[security-inventory]] - `contains` [EXTRACTED]
 

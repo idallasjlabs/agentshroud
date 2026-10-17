@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[openai-whisper-apiSKILL]] - `references` [EXTRACTED]
 - [[transcribe.sh script]] - `contains` [EXTRACTED]
-- [[usage()_8]] - `defines` [EXTRACTED]
+- [[usage()_7]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

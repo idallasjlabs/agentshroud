@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - `rationale_for` [EXTRACTED]
-- [[_jsonrpc()]] - `calls` [EXTRACTED]
+- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

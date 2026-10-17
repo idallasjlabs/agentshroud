@@ -20,6 +20,6 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh]] - `references` [EXTRACTED]
-- [[warn()]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

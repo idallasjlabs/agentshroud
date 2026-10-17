@@ -1,21 +1,19 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "colima-health-check.sh"
-location: "L54"
+community: "check-vendor-compat.sh"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/check-vendor-compatsh
 ---
 
 # warn()
 
 ## Connections
-- [[_sunday_warn_expiring_acceptances()]] - `calls` [EXTRACTED]
-- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
-- [[sunday_ensure_trivy()]] - `calls` [EXTRACTED]
-- [[sunday_resolve_scan_image()]] - `calls` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
-location: "L61"
+community: "RBACConfig"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+  - community/RBACConfig
 ---
 
 # tmp_workspace()
 
 ## Connections
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

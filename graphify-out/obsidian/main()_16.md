@@ -1,23 +1,24 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "test_ptt_state.c"
-location: "L187"
+community: "gen.py"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/genpy
 ---
 
 # main()
 
 ## Connections
-- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
-- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
-- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
-- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
+- [[Path_35]] - `calls` [EXTRACTED]
+- [[default_out_dir()]] - `calls` [EXTRACTED]
+- [[gen.py]] - `contains` [EXTRACTED]
+- [[get_model_defaults()]] - `calls` [EXTRACTED]
+- [[pick_prompts()]] - `calls` [EXTRACTED]
+- [[request_images()]] - `calls` [EXTRACTED]
+- [[slugify()]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/code #graphify/EXTRACTED #community/genpy

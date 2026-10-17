@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AlertDispatcher (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AlertDispatcher_2
 ---
 
 # test_security_audit.py
@@ -33,9 +33,9 @@ tags:
 - [[LogSanitizer]] - `imports` [EXTRACTED]
 - [[MetadataGuard]] - `imports` [EXTRACTED]
 - [[NetworkValidator]] - `imports` [EXTRACTED]
-- [[PIISanitizer_1]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PKCEViolation]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[RedirectMismatch]] - `imports` [EXTRACTED]
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
@@ -55,9 +55,9 @@ tags:
 - [[TestResourceProtection]] - `contains` [EXTRACTED]
 - [[TestSupplyChain]] - `contains` [EXTRACTED]
 - [[ThreatAssessment]] - `imports` [EXTRACTED]
-- [[TrustManager_4]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
-- [[falco_monitor.py_2]] - `imports_from` [EXTRACTED]
+- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
 - [[gatewaysecuritydns_filter.py (DNSFilterConfig)]] - `references` [EXTRACTED]
 - [[gatewaysecuritydrift_detector.py (DriftDetector)]] - `references` [EXTRACTED]
 - [[gatewaysecurityencrypted_store.py (EncryptedStore)]] - `references` [EXTRACTED]
@@ -66,14 +66,14 @@ tags:
 - [[gatewaysecuritymetadata_guard.py (MetadataGuard)]] - `references` [EXTRACTED]
 - [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - `references` [EXTRACTED]
 - [[gatewaysecurityprompt_guard.py (PromptGuard)]] - `references` [EXTRACTED]
-- [[health_report.py_2]] - `imports_from` [EXTRACTED]
+- [[health_report.py]] - `imports_from` [EXTRACTED]
 - [[oauth_security.py]] - `references` [EXTRACTED]
 - [[parse_clamscan_output()]] - `imports` [EXTRACTED]
-- [[run_canary()]] - `imports` [EXTRACTED]
+- [[run_canary()_1]] - `imports` [EXTRACTED]
 - [[run_clamscan()]] - `imports` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `imports` [EXTRACTED]
 - [[test_security_audit_advanced.py]] - `conceptually_related_to` [INFERRED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
-- [[wazuh_client.py_2]] - `imports_from` [EXTRACTED]
+- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

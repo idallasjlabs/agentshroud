@@ -12,8 +12,8 @@ tags:
 # module_stats.py
 
 ## Connections
-- [[Decision_2]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Decision_1]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[ModuleStatsCollector]] - `contains` [EXTRACTED]
 - [[get_collector()]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `contains` [EXTRACTED]

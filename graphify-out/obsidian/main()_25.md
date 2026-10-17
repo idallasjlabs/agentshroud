@@ -1,18 +1,20 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "dashboard_bridge.py"
-location: "L134"
+community: "main"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/main
 ---
 
 # main()
 
 ## Connections
-- [[_handle()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
+- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/code #graphify/EXTRACTED #community/main

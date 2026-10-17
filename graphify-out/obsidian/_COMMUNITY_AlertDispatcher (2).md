@@ -1,0 +1,499 @@
+---
+type: community
+members: 445
+---
+
+# AlertDispatcher (2)
+
+**Members:** 445 nodes
+
+## Members
+- [[dot-__del__()]] - code - gateway/security/resource_guard.py
+- [[dot-__init__()_25]] - code - gateway/security/encrypted_store.py
+- [[dot-__init__()_23]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_24]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_26]] - code - gateway/security/resource_guard.py
+- [[dot-__init__()_27]] - code - gateway/security/subagent_monitor.py
+- [[dot-_agent_in_scope()]] - code - gateway/security/key_vault.py
+- [[dot-_alert_high_usage()]] - code - gateway/security/resource_guard.py
+- [[dot-_build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-_check_system_resources()]] - code - gateway/security/resource_guard.py
+- [[dot-_cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
+- [[dot-_get_disk_io_stats()]] - code - gateway/security/resource_guard.py
+- [[dot-_log_audit()]] - code - gateway/security/key_vault.py
+- [[dot-_log_event()]] - code - gateway/security/subagent_monitor.py
+- [[dot-_make_record()]] - code - gateway/tests/test_security_audit.py
+- [[dot-_monitor_resources()]] - code - gateway/security/resource_guard.py
+- [[dot-_resolve_secret()]] - code - gateway/security/encrypted_store.py
+- [[dot-_start_monitoring_task()]] - code - gateway/security/resource_guard.py
+- [[dot-add_alert_callback()]] - code - gateway/security/resource_guard.py
+- [[dot-analyze_content()]] - code - gateway/security/browser_security.py
+- [[dot-analyze_screenshot()]] - code - gateway/security/browser_security.py
+- [[dot-check_cpu_limit()]] - code - gateway/security/resource_guard.py
+- [[dot-check_disk_write_limit()]] - code - gateway/security/resource_guard.py
+- [[dot-check_memory_limit()]] - code - gateway/security/resource_guard.py
+- [[dot-check_resource()]] - code - gateway/security/resource_guard.py
+- [[dot-check_state_reuse()]] - code - gateway/security/oauth_security.py
+- [[dot-check_tool_usage()]] - code - gateway/security/subagent_monitor.py
+- [[dot-check_vram_headroom()]] - code - gateway/security/resource_guard.py
+- [[dot-cleanup_temp_files()]] - code - gateway/security/resource_guard.py
+- [[dot-delete_key()]] - code - gateway/security/key_vault.py
+- [[dot-deregister()]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_active()]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_audit_log()]] - code - gateway/security/key_vault.py
+- [[dot-get_audit_log()_1]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_blob_key_id()]] - code - gateway/security/encrypted_store.py
+- [[dot-get_flagged_events()]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_key()]] - code - gateway/security/key_vault.py
+- [[dot-get_usage_stats()]] - code - gateway/security/resource_guard.py
+- [[dot-guard()]] - code - gateway/tests/test_security_audit.py
+- [[dot-inject_for_request()]] - code - gateway/security/key_vault.py
+- [[dot-kill_agent()]] - code - gateway/security/subagent_monitor.py
+- [[dot-kill_all()]] - code - gateway/security/subagent_monitor.py
+- [[dot-list_keys()]] - code - gateway/security/key_vault.py
+- [[dot-redact()]] - code - gateway/security/key_vault.py
+- [[dot-register_spawn()]] - code - gateway/security/subagent_monitor.py
+- [[dot-register_temp_file()]] - code - gateway/security/resource_guard.py
+- [[dot-rotate_key()]] - code - gateway/security/key_vault.py
+- [[dot-sanitizer()]] - code - gateway/tests/test_security_audit.py
+- [[dot-start_request_tracking()]] - code - gateway/security/resource_guard.py
+- [[dot-stop()]] - code - gateway/security/resource_guard.py
+- [[dot-stop_monitoring()]] - code - gateway/security/resource_guard.py
+- [[dot-store()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_agent_isolation_module()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_agent_registry_module()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_alert_dedup()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_alert_dispatcher_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_alert_dispatcher_write()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_all_modules_have_copyright()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_all_security_modules_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_aws_key_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_aws_key_redaction_via_pattern()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_base64_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_browser_security_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_canary_system_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_ciphertext_not_plaintext()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_consent_framework_loads()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_cookie_custom_max_age_expires_sooner()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_expired_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_tamper_detected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_within_max_age_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_wrong_client_fails()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_wrong_scope_fails()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_create_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_credit_card_amex()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_credit_card_in_logs()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_credit_card_no_dashes()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_credit_card_visa()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dan_jailbreak()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_default_config()_1]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_delete_key()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_different_plaintexts_different_ciphertexts()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_different_uri_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_dns_entropy_calculator()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dns_low_entropy_legit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dockerfile_exists()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_egress_monitor_loaded()_1]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_email_standard()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_email_with_plus()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_empty_and_none_input()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_empty_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_empty_input()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_empty_state_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_encrypt_decrypt_roundtrip()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_encrypt_json()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_encrypted_store_constant_time()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_encrypted_store_error_no_key_leak()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_env_guard_command_check()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_env_guard_monitoring()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_env_guard_scrub_output()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_exact_match_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_git_guard_scan_repo()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_github_token_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_health_report_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_http_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_ignore_previous_instructions()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_inject_auth_header()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_inject_fails_for_unscoped()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_inject_preserves_existing_headers()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_instruction_override()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_json_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_jwt_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_key_not_found()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_key_redacted_from_string()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_key_rotation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_key_vault_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_list_keys_no_values()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_metadata_oversized_headers()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_metadata_path_traversal_stripped()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_metadata_sanitize_filename()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_multiple_keys_redacted()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_multiple_pii_single_message()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_network_validator_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_no_eval_or_exec_in_security()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_no_false_positive_on_dates()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_no_false_positive_on_zip()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_no_hardcoded_secrets_in_source()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_no_keys_unchanged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_oauth_confused_deputy()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_oauth_pkce_violation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_oauth_redirect_mismatch()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_old_key_in_redaction_after_rotation()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_partial_key_redacted()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_path_traversal_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_phone_international()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_phone_us_standard()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_pii_boundary_handling()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_pii_in_code_block()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_pii_in_json()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_pii_with_obfuscation_attempt()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_pkce_plain_rejected_when_s256_required()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_required_missing_challenge()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_s256_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_verifier_validation()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_reject_empty_token()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_reject_garbage_token()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_reject_malformed_jwt()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_reject_none_algorithm()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_role_reassignment()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_role_switching()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_rotate_key()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_rotate_nonexistent_raises()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_rotation_logged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_scope_enforcement_logged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_scoped_agent_can_access()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_security_toolchain_clamav()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_security_toolchain_falco()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_security_toolchain_trivy()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_security_toolchain_wazuh()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_session_binding()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_session_cannot_impersonate()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_session_different_fingerprints()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_session_isolation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_short_state_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_ssn_no_dashes()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_ssn_redaction_in_logs()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_ssn_space_separated()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_ssn_standard_format()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_staging_detection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_state_replay_detected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_static_shared_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_store_and_retrieve()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_tampered_ciphertext_fails()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_tmp_read_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_unicode_pii()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_unique_client_id_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_unscoped_agent_denied()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_valid_state_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_validate_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_wildcard_scope_allows_all()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_wrong_key_fails()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_xml_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_xml_tag_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-token_validator()]] - code - gateway/tests/test_security_audit.py
+- [[dot-validate_redirect_uri()]] - code - gateway/security/oauth_security.py
+- [[dot-validate_request()]] - code - gateway/security/oauth_security.py
+- [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - rationale - gateway/security/encrypted_store.py
+- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
+- [[Agent registry should be importable.]] - rationale - gateway/tests/test_security_audit.py
+- [[All security modules should have copyright header.]] - rationale - gateway/tests/test_security_audit.py
+- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Amex card 378282246310005 (15 digits starting with 37).]] - rationale - gateway/tests/test_security_audit.py
+- [[Any_1]] - code - gateway/security/resource_guard.py
+- [[Any_2]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Attempt to hide PII with zero-width chars.]] - rationale - gateway/tests/test_security_audit.py
+- [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
+- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
+- [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
+- [[Card without dashes 4111111111111111.]] - rationale - gateway/tests/test_security_audit.py
+- [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if resource usage is allowed for an agent.          Args             agen]] - rationale - gateway/security/resource_guard.py
+- [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[ConfusedDeputyError]] - code - gateway/security/oauth_security.py
+- [[ConsentDecision]] - code - gateway/security/consent_framework.py
+- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
+- [[Dates should not be flagged as SSNphone.]] - rationale - gateway/tests/test_security_audit.py
+- [[Decryption errors shouldn't expose the encryption key.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
+- [[Different fingerprints should create different sessions.]] - rationale - gateway/tests/test_security_audit.py
+- [[Different sessions should have different identities.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
+- [[Dockerfile should be present for reproducible builds.]] - rationale - gateway/tests/test_security_audit.py
+- [[Duplicate alerts should be deduplicated.]] - rationale - gateway/tests/test_security_audit.py
+- [[Edge case empty string.]] - rationale - gateway/tests/test_security_audit.py
+- [[Email with plus addressing user+tag@gmail.com.]] - rationale - gateway/tests/test_security_audit.py
+- [[EncryptedStore]] - code - gateway/security/encrypted_store.py
+- [[Encryptiondecryption time should not leak plaintext length.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Every security module should import without error.]] - rationale - gateway/tests/test_security_audit.py
+- [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
+- [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[High-entropy domains (potential tunneling).]] - rationale - gateway/tests/test_security_audit.py
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - rationale - gateway/security/encrypted_store.py
+- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
+- [[International phone +1-555-867-5309.]] - rationale - gateway/tests/test_security_audit.py
+- [[IsolationStatus]] - code - gateway/security/agent_isolation.py
+- [[Key rotation should re-encrypt all blobs.]] - rationale - gateway/tests/test_security_audit.py
+- [[KeyAuditEvent]] - code - gateway/security/key_vault.py
+- [[KeyInjector]] - code - gateway/security/key_vault.py
+- [[KeyVault]] - code - gateway/security/key_vault.py
+- [[KeyVaultConfig]] - code - gateway/security/key_vault.py
+- [[Legit domains have lower entropy.]] - rationale - gateway/tests/test_security_audit.py
+- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
+- [[Multiple PII entities in one message.]] - rationale - gateway/tests/test_security_audit.py
+- [[No hardcoded secrets in Python source files.]] - rationale - gateway/tests/test_security_audit.py
+- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[OAuthError]] - code - gateway/security/oauth_security.py
+- [[OAuthRequest]] - code - gateway/security/oauth_security.py
+- [[PII at message start and end.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII embedded in JSON.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII in codemarkdown blocks.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII with Unicode characters nearby.]] - rationale - gateway/tests/test_security_audit.py
+- [[PIIConfig]] - code - gateway/ingest_api/sanitizer.py
+- [[PKCEViolation]] - code - gateway/security/oauth_security.py
+- [[Per-agent API key scoping, redaction, leak detection, and rotation]] - concept - gateway/tests/test_key_vault.py
+- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
+- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
+- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[RedirectMismatch]] - code - gateway/security/oauth_security.py
+- [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
+- [[Reject JWTs with alg=none (classic attack).]] - rationale - gateway/tests/test_security_audit.py
+- [[Resolve master secret from args, file, or environment.]] - rationale - gateway/security/encrypted_store.py
+- [[ResourceGuard]] - code - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[ResourceUsage]] - code - gateway/security/resource_guard.py
+- [[SSN in standard XXX-XX-XXXX format.]] - rationale - gateway/tests/test_security_audit.py
+- [[SSN with spaces 123 45 6789.]] - rationale - gateway/tests/test_security_audit.py
+- [[SSN without dashes 123456789 — Presidio+spaCy only (regex needs dashes).]] - rationale - gateway/tests/test_security_audit.py
+- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same plaintext encrypted twice should produce different ciphertext (random IV).]] - rationale - gateway/tests/test_security_audit.py
+- [[Security modules should not call eval() or exec().          Uses AST analysis]] - rationale - gateway/tests/test_security_audit.py
+- [[Session]] - code - gateway/security/session_security.py
+- [[Session must bind to user identity.]] - rationale - gateway/tests/test_security_audit.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[Standard email address.]] - rationale - gateway/tests/test_security_audit.py
+- [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
+- [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
+- [[SubagentEvent]] - code - gateway/security/subagent_monitor.py
+- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
+- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test DNS filtering, SSRF prevention, and egress control.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test audit chain integrity and tamper detection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test authentication and authorization enforcement.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test container hardening and runtime security.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test encryption, key management, and secret handling.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test log sanitization and information leakage prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test supply chain security measures.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestAuditTrail]] - code - gateway/tests/test_security_audit.py
+- [[TestAuth]] - code - gateway/tests/test_security_audit.py
+- [[TestClientValidation]] - code - gateway/tests/test_oauth_security.py
+- [[TestConsentCookieBinding]] - code - gateway/tests/test_oauth_security.py
+- [[TestContainerSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestContextGuard]] - code - gateway/tests/test_security_audit.py
+- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestCryptography]] - code - gateway/tests/test_security_audit.py
+- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
+- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyRedaction]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyRotation]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyScoping]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyStorage]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyVaultConfig]] - code - gateway/tests/test_key_vault.py
+- [[TestLoggingSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestNetworkSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestPIIDetection]] - code - gateway/tests/test_security_audit.py
+- [[TestPKCE]] - code - gateway/tests/test_oauth_security.py
+- [[TestPromptGuard]] - code - gateway/tests/test_security_audit.py
+- [[TestRedirectURI]] - code - gateway/tests/test_oauth_security.py
+- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
+- [[TestStateValidation]] - code - gateway/tests/test_oauth_security.py
+- [[TestSupplyChain]] - code - gateway/tests/test_security_audit.py
+- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
+- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ThreatAssessment]] - code - gateway/security/browser_security.py
+- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
+- [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
+- [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
+- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[US phone (555) 867-5309.]] - rationale - gateway/tests/test_security_audit.py
+- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
+- [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[Visa card 4111-1111-1111-1111.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[ZIP codes should not be flagged as SSNphoneCC.]] - rationale - gateway/tests/test_security_audit.py
+- [[config()]] - code - gateway/tests/test_key_vault.py
+- [[gatewaysecuritydns_filter.py (DNSFilterConfig)]] - code - gateway/security/dns_filter.py
+- [[gatewaysecuritydrift_detector.py (DriftDetector)]] - code - gateway/security/drift_detector.py
+- [[gatewaysecurityencrypted_store.py (EncryptedStore)]] - code - gateway/security/encrypted_store.py
+- [[gatewaysecurityfile_sandbox.py (FileSandbox)]] - code - gateway/security/file_sandbox.py
+- [[gatewaysecuritykey_vault.py (KeyVault)]] - code - gateway/security/key_vault.py
+- [[gatewaysecuritymetadata_guard.py (MetadataGuard)]] - code - gateway/security/metadata_guard.py
+- [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - code - gateway/security/network_validator.py
+- [[gatewaysecurityprompt_guard.py (PromptGuard)]] - code - gateway/security/prompt_guard.py
+- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[guard()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[oauth_security.py]] - code - gateway/security/oauth_security.py
+- [[resource_guard.py]] - code - gateway/security/resource_guard.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
+- [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
+- [[test_oauth_security.py]] - code - gateway/tests/test_oauth_security.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[test_security_audit.py]] - code - gateway/tests/test_security_audit.py
+- [[validator()]] - code - gateway/tests/test_oauth_security.py
+- [[vault()]] - code - gateway/tests/test_key_vault.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/AlertDispatcher_2
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 246 edges to [[_COMMUNITY_AlertDispatcher]]
+- 42 edges to [[_COMMUNITY_AuditChain]]
+- 31 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 27 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 22 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 20 edges to [[_COMMUNITY_ConsentFramework]]
+- 19 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 18 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 17 edges to [[_COMMUNITY_ContextSegment]]
+- 15 edges to [[_COMMUNITY_AgentRegistry]]
+- 15 edges to [[_COMMUNITY_TrustConfig]]
+- 10 edges to [[_COMMUNITY_TrustConfig (2)]]
+- 9 edges to [[_COMMUNITY_KillSwitchMonitor (4)]]
+- 8 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 7 edges to [[_COMMUNITY_ResourceGuard (2)]]
+- 5 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 4 edges to [[_COMMUNITY_SessionManager]]
+- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 3 edges to [[_COMMUNITY_parse_trivy_output]]
+- 2 edges to [[_COMMUNITY_CrossBotTrustLedger (2)]]
+- 2 edges to [[_COMMUNITY_SessionManager (2)]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+
+## Top bridge nodes
+- [[test_security_audit.py]] - degree 63, connects to 14 communities
+- [[EncryptedStore]] - degree 65, connects to 10 communities
+- [[TestContainerSecurity]] - degree 45, connects to 10 communities
+- [[TestFileSandbox]] - degree 55, connects to 8 communities
+- [[TestPIIDetection]] - degree 55, connects to 8 communities

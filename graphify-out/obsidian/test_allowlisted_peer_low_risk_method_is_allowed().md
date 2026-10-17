@@ -12,7 +12,7 @@ tags:
 # test_allowlisted_peer_low_risk_method_is_allowed()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

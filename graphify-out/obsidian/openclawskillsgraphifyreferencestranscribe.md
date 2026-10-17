@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/transcribe.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "graphify reference: extra exports and benchmark (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/graphify_reference_extra_exports_and_benchmark_2
 ---
 
 # openclaw/skills/graphify/references/transcribe.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference transcribe video and audio_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2

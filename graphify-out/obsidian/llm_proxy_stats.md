@@ -12,7 +12,7 @@ tags:
 # llm_proxy_stats
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[LLMProxy.get_stats]] - `calls` [EXTRACTED]
 - [[Return LLM proxy statistics.]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]

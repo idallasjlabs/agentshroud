@@ -12,9 +12,9 @@ tags:
 # submit_approval_request()
 
 ## Connections
-- [[ApprovalRequest_3]] - `references` [EXTRACTED]
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[Request_8]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[Submit an action for human approval      Called by agents when attempting sensit]] - `rationale_for` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]

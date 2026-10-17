@@ -22,7 +22,7 @@ tags:
 - [[_draft()]] - `contains` [EXTRACTED]
 - [[_inject_fetcher()]] - `contains` [EXTRACTED]
 - [[citation_verifier module]] - `references` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
+- [[client()_2]] - `contains` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `implements` [EXTRACTED]

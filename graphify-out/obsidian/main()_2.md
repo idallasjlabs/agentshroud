@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "generate-job-schedule.py"
-location: "L259"
+community: "gemini-review.py"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/gemini-reviewpy
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

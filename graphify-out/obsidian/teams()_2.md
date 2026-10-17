@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_collaborator_responses.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L29"
+community: "RBACConfig"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/RBACConfig
 ---
 
 # teams()
 
 ## Connections
-- [[GroupConfig]] - `calls` [EXTRACTED]
-- [[ProjectConfig]] - `calls` [EXTRACTED]
 - [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

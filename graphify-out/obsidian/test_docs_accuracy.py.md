@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[CONTRIBUTING]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[SECURITY_3]] - `references` [EXTRACTED]
+- [[SECURITY_2]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[TestContributingMdAccuracy]] - `contains` [EXTRACTED]
 - [[TestLifespanWiresEveryPipelineModule]] - `contains` [EXTRACTED]

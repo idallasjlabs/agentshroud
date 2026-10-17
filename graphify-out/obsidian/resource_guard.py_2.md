@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Function Details"
+community: "Function Details (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_2
 ---
 
 # resource_guard.py
@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[Configuration  Environment Variables_2]] - `contains` [EXTRACTED]
 - [[Default Limits]] - `contains` [EXTRACTED]
-- [[Function Details_8]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_8]] - `contains` [EXTRACTED]
-- [[Purpose_108]] - `contains` [EXTRACTED]
-- [[Related_12]] - `contains` [EXTRACTED]
-- [[Responsibilities_10]] - `contains` [EXTRACTED]
-- [[Threat Model_9]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
+- [[Purpose_104]] - `contains` [EXTRACTED]
+- [[Related_10]] - `contains` [EXTRACTED]
+- [[Responsibilities_8]] - `contains` [EXTRACTED]
+- [[Threat Model_8]] - `contains` [EXTRACTED]
 - [[resource_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_2

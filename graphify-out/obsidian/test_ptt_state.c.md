@@ -20,7 +20,7 @@ tags:
 - [[freertosFreeRTOS.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[freertostask.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[iot_button.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
-- [[main()_16]] - `contains` [EXTRACTED]
+- [[main()_15]] - `contains` [EXTRACTED]
 - [[test_clear_allows_fresh_tap()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_ends_listening()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_noop_when_idle()]] - `contains` [EXTRACTED]

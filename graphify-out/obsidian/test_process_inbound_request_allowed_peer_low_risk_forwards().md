@@ -12,9 +12,9 @@ tags:
 # test_process_inbound_request_allowed_peer_low_risk_forwards()
 
 ## Connections
-- [[A2AProxy]] - `references` [EXTRACTED]
-- [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_jsonrpc()]] - `calls` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
+- [[_StubForwarder_2]] - `references` [EXTRACTED]
+- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

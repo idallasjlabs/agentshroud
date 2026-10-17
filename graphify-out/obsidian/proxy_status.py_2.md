@@ -15,8 +15,8 @@ tags:
 - [[Key Output]] - `contains` [EXTRACTED]
 - [[My Responsibilities_1]] - `contains` [EXTRACTED]
 - [[Purpose_189]] - `contains` [EXTRACTED]
-- [[Related Notes_69]] - `contains` [EXTRACTED]
-- [[Responsibilities_55]] - `contains` [EXTRACTED]
+- [[Related Notes_66]] - `contains` [EXTRACTED]
+- [[Responsibilities_54]] - `contains` [EXTRACTED]
 - [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/proxy_statuspy

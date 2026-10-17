@@ -12,7 +12,7 @@ tags:
 # peer-review.sh
 
 ## Connections
-- [[PATH_9]] - `defines` [EXTRACTED]
+- [[PATH_3]] - `defines` [EXTRACTED]
 - [[gemini-review.py]] - `references` [EXTRACTED]
 - [[peer-review.sh script]] - `contains` [EXTRACTED]
 

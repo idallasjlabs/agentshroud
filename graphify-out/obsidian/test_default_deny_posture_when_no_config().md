@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[An empty config denies everything — never a blanket allow.]] - `rationale_for` [EXTRACTED]
-- [[MCPPolicyConfig]] - `calls` [EXTRACTED]
 - [[MCPPolicyConfig_1]] - `calls` [EXTRACTED]
+- [[MCPPolicyConfig]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]

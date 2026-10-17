@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # test_all_modules_enforce.py
@@ -15,7 +15,7 @@ tags:
 - [[BrowserSecurityGuard]] - `imports` [EXTRACTED]
 - [[ContextGuard]] - `imports` [EXTRACTED]
 - [[DNSFilterConfig]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter_2]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
 - [[FileSandbox]] - `imports` [EXTRACTED]
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
@@ -26,8 +26,8 @@ tags:
 - [[OutputCanary]] - `imports` [EXTRACTED]
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
-- [[SecurityConfig_4]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[SecurityConfig]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
 - [[TestGetModuleModeEnforceDefault]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

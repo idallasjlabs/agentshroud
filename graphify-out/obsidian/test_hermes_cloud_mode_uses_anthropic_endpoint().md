@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[In cloud mode, Hermes Claude model routes to Anthropic endpoint.]] - `rationale_for` [EXTRACTED]
-- [[_fake_forward()_3]] - `contains` [EXTRACTED]
-- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_fake_forward()_24]] - `contains` [EXTRACTED]
+- [[_fake_forward()_22]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

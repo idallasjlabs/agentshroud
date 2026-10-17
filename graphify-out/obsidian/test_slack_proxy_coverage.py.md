@@ -12,7 +12,7 @@ tags:
 # test_slack_proxy_coverage.py
 
 ## Connections
-- [[SlackAPIProxy_1]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy]] - `references` [EXTRACTED]
 - [[TestBodyParsing]] - `contains` [EXTRACTED]
 - [[TestCallSlackApi]] - `contains` [EXTRACTED]

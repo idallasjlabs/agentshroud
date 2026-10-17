@@ -12,9 +12,9 @@ tags:
 # pick_current_model()
 
 ## Connections
-- [[Any_52]] - `references` [EXTRACTED]
+- [[Any_54]] - `references` [EXTRACTED]
 - [[ModelCost]] - `calls` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/model_usagepy

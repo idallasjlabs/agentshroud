@@ -12,6 +12,6 @@ tags:
 # 🔧 **P1 — Enhanced Security Capabilities (High Value)**
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/3_Remaining_Work__Prioritized_by_Value

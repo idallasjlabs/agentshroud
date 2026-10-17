@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "parse_trivy_output"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/parse_trivy_output
 ---
 
 # trivy_report.py
@@ -21,4 +21,4 @@ tags:
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

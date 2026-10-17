@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "MCPPermissionManager"
+community: "main.rs"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/mainrs
 ---
 
 # run_cves()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[cves_reports_unknown_bot_error()]] - `calls` [EXTRACTED]
 - [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
 - [[format_cves()]] - `calls` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
+- [[main()_9]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/mainrs

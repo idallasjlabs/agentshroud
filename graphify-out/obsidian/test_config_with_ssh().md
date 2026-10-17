@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[GatewayConfig_2]] - `calls` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[LedgerConfig_1]] - `calls` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

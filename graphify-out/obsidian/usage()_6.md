@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/agentshroud-manage.sh"
+source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "agentshroud-manage.sh"
-location: "L11"
+community: "workspace.sh"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/workspacesh
 ---
 
 # usage()
 
 ## Connections
-- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
-- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
+- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
+- [[workspace.sh]] - `defines` [EXTRACTED]
+- [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/code #graphify/EXTRACTED #community/workspacesh

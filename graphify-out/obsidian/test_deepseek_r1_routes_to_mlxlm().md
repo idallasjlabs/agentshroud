@@ -12,10 +12,10 @@ tags:
 # test_deepseek_r1_routes_to_mlxlm()
 
 ## Connections
-- [[_fake_forward()_1]] - `contains` [EXTRACTED]
-- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_fake_forward()_8]] - `contains` [EXTRACTED]
+- [[_fake_forward()_22]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[deepseek-r1 is routed to mlx_lm endpoint.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

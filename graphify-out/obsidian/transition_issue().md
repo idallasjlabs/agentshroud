@@ -17,6 +17,6 @@ tags:
 - [[build_transitions_url()]] - `calls` [EXTRACTED]
 - [[find_transition_id()]] - `calls` [EXTRACTED]
 - [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

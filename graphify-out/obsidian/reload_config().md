@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (5)"
 location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_5
 ---
 
 # reload_config()
 
 ## Connections
 - [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[Path]] - `references` [EXTRACTED]
+- [[Path_14]] - `references` [EXTRACTED]
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - `rationale_for` [EXTRACTED]
 - [[apply_reloadable_config()]] - `calls` [EXTRACTED]
 - [[config_watcher()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
 - [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

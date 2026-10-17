@@ -22,8 +22,8 @@ tags:
 - [[TestMiddlewareIntegration]] - `contains` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIConfig]] - `contains` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `contains` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `contains` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
-- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

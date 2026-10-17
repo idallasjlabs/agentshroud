@@ -1,24 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
-type: "document"
-community: "web_config.py"
-location: "L10"
+source_file: "gateway/proxy/web_config.py"
+type: "code"
+community: "TestSSRFDetection"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/TestSSRFDetection
 ---
 
 # web_config.py
 
 ## Connections
-- [[Configuration  Environment Variables_29]] - `contains` [EXTRACTED]
-- [[Function Details_49]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_52]] - `contains` [EXTRACTED]
-- [[Purpose_188]] - `contains` [EXTRACTED]
-- [[Related_56]] - `contains` [EXTRACTED]
-- [[Responsibilities_54]] - `contains` [EXTRACTED]
-- [[WebProxyConfig Fields]] - `contains` [EXTRACTED]
-- [[web_config.py_1]] - `contains` [EXTRACTED]
+- [[DomainSettings]] - `contains` [EXTRACTED]
+- [[WebProxyConfig_1]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[url_analyzer.py_2]] - `references` [EXTRACTED]
+- [[web_content_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

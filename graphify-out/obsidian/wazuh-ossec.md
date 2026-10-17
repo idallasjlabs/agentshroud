@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[alert_dispatcher.py]] - `references` [INFERRED]
 - [[falco-rules]] - `references` [EXTRACTED]
-- [[falco_monitor.py_2]] - `conceptually_related_to` [INFERRED]
-- [[health_report.py_2]] - `references` [INFERRED]
+- [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
+- [[health_report.py]] - `references` [INFERRED]
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
-- [[wazuh_client.py_2]] - `references` [INFERRED]
+- [[wazuh_client.py]] - `references` [INFERRED]
 
 #graphify/document #graphify/INFERRED #community/FalcoAlertWatcher

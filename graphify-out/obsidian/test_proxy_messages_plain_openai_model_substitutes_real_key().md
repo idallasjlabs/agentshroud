@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[Regression 2026-08-07 a plain (non-Claude, non-Gemini, non-local) OpenAI-model…]] - `rationale_for` [EXTRACTED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
-- [[_fake_forward()_20]] - `contains` [EXTRACTED]
-- [[_fake_forward()_21]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[_fake_forward()_1]] - `contains` [EXTRACTED]
+- [[_fake_forward()_2]] - `indirect_call` [INFERRED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[fake_open()]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 

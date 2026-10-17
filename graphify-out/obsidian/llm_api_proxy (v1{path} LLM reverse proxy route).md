@@ -15,7 +15,7 @@ tags:
 - [[LLMProxy.proxy_messages (non-streaming)]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[Proxy Anthropic API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_7]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[StreamHead]] - `shares_data_with` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `calls` [INFERRED]
 - [[api_route]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "export-bot-conversations.py"
+community: "parse_trivy_output"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/parse_trivy_output
 ---
 
 # run_trivy_scan()
@@ -21,7 +21,7 @@ tags:
 - [[dot-test_run_timeout()]] - `calls` [EXTRACTED]
 - [[dot-test_run_whitespace_only_stdout_is_error()]] - `calls` [EXTRACTED]
 - [[dot-test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
 - [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[generate_summary()]] - `shares_data_with` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

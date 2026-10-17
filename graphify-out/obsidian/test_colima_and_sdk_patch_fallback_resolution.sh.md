@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (5)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_5
 ---
 
 # test_colima_and_sdk_patch_fallback_resolution.sh
@@ -25,9 +25,9 @@ tags:
 - [[_up_says()]] - `defines` [EXTRACTED]
 - [[_ver_verdict()]] - `defines` [EXTRACTED]
 - [[_wait_result()]] - `defines` [EXTRACTED]
-- [[check()_4]] - `defines` [EXTRACTED]
+- [[check()_5]] - `defines` [EXTRACTED]
 - [[hc_run()]] - `defines` [EXTRACTED]
 - [[smoke.sh Startup Smoke Runner]] - `calls` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_5

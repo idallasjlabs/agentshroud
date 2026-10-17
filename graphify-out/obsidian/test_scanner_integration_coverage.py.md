@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_7
 ---
 
 # test_scanner_integration_coverage.py
@@ -20,13 +20,13 @@ tags:
 - [[TestClamavSummary]] - `contains` [EXTRACTED]
 - [[TestComplianceAuditing]] - `contains` [EXTRACTED]
 - [[TestComplianceMaths]] - `contains` [EXTRACTED]
-- [[TestComputeBotScorecard_1]] - `contains` [EXTRACTED]
+- [[TestComputeBotScorecard]] - `contains` [EXTRACTED]
 - [[TestComputeScorecard_1]] - `contains` [EXTRACTED]
 - [[TestContainerRuntimeIsolation]] - `contains` [EXTRACTED]
 - [[TestDaemonConfigReader]] - `contains` [EXTRACTED]
 - [[TestDataConfidentiality]] - `contains` [EXTRACTED]
 - [[TestDockerDaemonConfig]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
 - [[TestFluentBitSummary]] - `contains` [EXTRACTED]
 - [[TestGetSbom]] - `contains` [EXTRACTED]
 - [[TestHostOsHardening]] - `contains` [EXTRACTED]
@@ -49,18 +49,18 @@ tags:
 - [[TestSupplyChain_1]] - `contains` [EXTRACTED]
 - [[TestTextReaders]] - `contains` [EXTRACTED]
 - [[TestTrivyImageSummaries]] - `contains` [EXTRACTED]
-- [[TestTrivySummary]] - `contains` [EXTRACTED]
+- [[TestTrivySummary_1]] - `contains` [EXTRACTED]
 - [[TestVulnerabilityManagement]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
 - [[_FakeResp]] - `contains` [EXTRACTED]
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]
 - [[_w()]] - `contains` [EXTRACTED]
-- [[falco_monitor.py_2]] - `references` [EXTRACTED]
+- [[falco_monitor.py]] - `references` [EXTRACTED]
 - [[flags()]] - `contains` [EXTRACTED]
 - [[fs()]] - `contains` [EXTRACTED]
 - [[test_router.py]] - `conceptually_related_to` [AMBIGUOUS]
 - [[tools()]] - `contains` [EXTRACTED]
-- [[wazuh_client.py_2]] - `references` [EXTRACTED]
+- [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_7

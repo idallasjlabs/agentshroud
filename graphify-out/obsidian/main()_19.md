@@ -1,30 +1,28 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L631"
+community: "model_usage.py"
+location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/model_usagepy
 ---
 
 # main()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
-- [[dot-new()_1]] - `calls` [EXTRACTED]
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
-- [[dot-post()_1]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `calls` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
-- [[print_output()]] - `calls` [EXTRACTED]
-- [[resolve_token()]] - `calls` [EXTRACTED]
-- [[run_approvals_decide()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[aggregate_costs()]] - `calls` [EXTRACTED]
+- [[build_json_all()]] - `calls` [EXTRACTED]
+- [[build_json_current()]] - `calls` [EXTRACTED]
+- [[eprint()]] - `calls` [EXTRACTED]
+- [[filter_by_days()]] - `calls` [EXTRACTED]
+- [[latest_day_cost()]] - `calls` [EXTRACTED]
+- [[load_payload()]] - `calls` [EXTRACTED]
+- [[model_usage.py]] - `contains` [EXTRACTED]
+- [[parse_daily_entries()]] - `calls` [EXTRACTED]
+- [[pick_current_model()]] - `calls` [EXTRACTED]
+- [[render_text_all()]] - `calls` [EXTRACTED]
+- [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

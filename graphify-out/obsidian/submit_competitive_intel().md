@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "api.py (2)"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # submit_competitive_intel()
@@ -20,4 +20,4 @@ tags:
 - [[_intel_verifier()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

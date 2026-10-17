@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SSH Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[SSHConfig_2]] - `imports` [EXTRACTED]
-- [[SSHProxy]] - `contains` [EXTRACTED]
+- [[SSHProxy_1]] - `contains` [EXTRACTED]
 - [[SSHResult]] - `contains` [EXTRACTED]
 - [[SSHWriteResult]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]

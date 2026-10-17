@@ -12,7 +12,7 @@ tags:
 # post-deploy-check.sh
 
 ## Connections
-- [[check()_5]] - `defines` [EXTRACTED]
+- [[check()_1]] - `defines` [EXTRACTED]
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[post-deploy-check.sh script]] - `contains` [EXTRACTED]
 - [[run_test()]] - `semantically_similar_to` [INFERRED]

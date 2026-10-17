@@ -1,0 +1,44 @@
+---
+type: community
+members: 19
+---
+
+# Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (3)
+
+**Members:** 19 nodes
+
+## Members
+- [[Anti-Patterns to Flag_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Dependencies_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Role_52]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[openclawskillsi-bsSKILL]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Required__45_for_text__30_for_UI_elements_3
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - degree 10, connects to 1 community
+- [[Skill Branding Specialist (BS)_2]] - degree 8, connects to 1 community
+- [[Validate contrast ratio_2]] - degree 2, connects to 1 community

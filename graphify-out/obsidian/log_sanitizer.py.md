@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
-type: "code"
-community: "AlertDispatcher"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+type: "document"
+community: "log_sanitizer.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/log_sanitizerpy
 ---
 
-# log_sanitizer.py
+# log_sanitizer.py.md
 
 ## Connections
-- [[LogSanitizer]] - `contains` [EXTRACTED]
-- [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `semantically_similar_to` [INFERRED]
-- [[get_sanitizer_stats()]] - `contains` [EXTRACTED]
-- [[install_log_sanitizer()]] - `contains` [EXTRACTED]
-- [[key_vault.py]] - `semantically_similar_to` [INFERRED]
-- [[session_security.py]] - `references` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

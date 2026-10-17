@@ -31,7 +31,7 @@ tags:
 - [[TestIsOwner]] - `contains` [EXTRACTED]
 - [[TestIsPathAllowedForUser]] - `contains` [EXTRACTED]
 - [[TestMemoryIntegrityRegistration]] - `contains` [EXTRACTED]
-- [[TestMetadataGuard_1]] - `contains` [EXTRACTED]
+- [[TestMetadataGuard]] - `contains` [EXTRACTED]
 - [[TestMiddlewareResult]] - `contains` [EXTRACTED]
 - [[TestMultiTurnTracker_1]] - `contains` [EXTRACTED]
 - [[TestPathIsolationStep]] - `contains` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[TestSetConfig]] - `contains` [EXTRACTED]
 - [[TestToolChainAnalyzer_1]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_bot()]] - `contains` [EXTRACTED]
 - [[_req()_1]] - `contains` [EXTRACTED]
 - [[_scan_result()]] - `contains` [EXTRACTED]
@@ -50,7 +50,7 @@ tags:
 - [[middleware.py]] - `references` [EXTRACTED]
 - [[mm()]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `references` [EXTRACTED]
-- [[temp_workspace()_1]] - `contains` [EXTRACTED]
+- [[temp_workspace()]] - `contains` [EXTRACTED]
 - [[usm()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

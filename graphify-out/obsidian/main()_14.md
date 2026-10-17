@@ -1,19 +1,19 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "ControlCenter"
-location: "L427"
+community: "TestClassify"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/TestClassify
 ---
 
 # main()
 
 ## Connections
-- [[dot-run()_3]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py_1]] - `contains` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/TestClassify

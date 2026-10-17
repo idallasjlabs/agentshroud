@@ -12,7 +12,7 @@ tags:
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer_1]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

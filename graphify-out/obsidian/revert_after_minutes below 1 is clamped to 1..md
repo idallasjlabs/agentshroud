@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (5)"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_5
 ---
 
 # revert_after_minutes below 1 is clamped to 1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_revert_minutes_clamped_min()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_5

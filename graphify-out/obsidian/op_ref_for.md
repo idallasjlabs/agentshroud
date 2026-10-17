@@ -1,12 +1,12 @@
 ---
 source_file: "docker/setup-secrets.sh"
 type: "code"
-community: "setup-secrets.sh"
+community: "setup-secrets.sh (2)"
 location: "L127-L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # op_ref_for
@@ -18,4 +18,4 @@ tags:
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

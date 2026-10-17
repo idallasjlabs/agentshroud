@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Path_35]] - `references` [EXTRACTED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/genpy

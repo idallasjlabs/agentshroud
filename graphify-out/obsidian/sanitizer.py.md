@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/create_auth_dependency
 ---
 
 # sanitizer.py
@@ -15,7 +15,7 @@ tags:
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_1]] - `contains` [EXTRACTED]
+- [[PIISanitizer]] - `contains` [EXTRACTED]
 - [[RedactionDetail]] - `imports` [EXTRACTED]
 - [[RedactionResult_2]] - `imports` [EXTRACTED]
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

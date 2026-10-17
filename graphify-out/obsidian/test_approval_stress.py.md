@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_4
 ---
 
 # test_approval_stress.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `contains` [EXTRACTED]
 - [[TestApprovalTimeout]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[queue()]] - `contains` [EXTRACTED]
 - [[store()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

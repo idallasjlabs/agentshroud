@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "test_voice_gateway.py (2)"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_voice_gatewaypy_2
 ---
 
 # test_tts_synthesize_passes_normalised_text_to_kokoro()
@@ -16,4 +16,4 @@ tags:
 - [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy_2

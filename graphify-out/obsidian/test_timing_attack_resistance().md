@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "test_security.py"
+community: "create_auth_dependency"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/create_auth_dependency
 ---
 
 # test_timing_attack_resistance()
@@ -16,4 +16,4 @@ tags:
 - [[test_security.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_securitypy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

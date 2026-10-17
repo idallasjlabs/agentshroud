@@ -16,6 +16,6 @@ tags:
 - [[build_tenant_info_url()_2]] - `calls` [EXTRACTED]
 - [[jira_dev_ticket resolve_cloud_id()]] - `semantically_similar_to` [INFERRED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "dashboard_bridge.py"
-location: "L70"
+community: "cli/main.py"
+location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/cli/mainpy
 ---
 
 # main()
 
 ## Connections
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
+- [[cli()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

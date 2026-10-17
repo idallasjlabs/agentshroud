@@ -1,29 +1,33 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py"
-location: "L11"
+community: "main.py.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/mainpymd
 ---
 
-# main.py
+# main.py.md
 
 ## Connections
-- [[Endpoints]] - `contains` [EXTRACTED]
-- [[Environment Variables Used]] - `contains` [EXTRACTED]
-- [[Key Dependencies — Modules Wired at Init]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes]] - `contains` [EXTRACTED]
-- [[Lifespan  Startup]] - `contains` [EXTRACTED]
-- [[Middleware (applied to all requests, outermost first)]] - `contains` [EXTRACTED]
-- [[Overview_15]] - `contains` [EXTRACTED]
-- [[POST forward — 5-Step Security Pipeline]] - `contains` [EXTRACTED]
-- [[Related_2]] - `contains` [EXTRACTED]
-- [[Security Notes_5]] - `contains` [EXTRACTED]
-- [[Static Mounts]] - `contains` [EXTRACTED]
-- [[WebSocket Endpoints]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `references` [EXTRACTED]
+- [[Data Flow_1]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
+- [[Home_1]] - `references` [EXTRACTED]
+- [[MiddlewareManager]] - `references` [EXTRACTED]
+- [[MultiAgentRouter]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `references` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[auth.py]] - `references` [EXTRACTED]
+- [[event_bus.py_1]] - `references` [EXTRACTED]
+- [[fastapi_3]] - `references` [INFERRED]
+- [[ledger.py_1]] - `references` [EXTRACTED]
+- [[lifespan()]] - `references` [EXTRACTED]
 - [[main.py_1]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/mainpymd

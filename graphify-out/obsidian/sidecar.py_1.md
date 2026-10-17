@@ -2,23 +2,16 @@
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
 community: "sidecar.py"
-location: "L10"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/sidecarpy
 ---
 
-# sidecar.py
+# sidecar.py.md
 
 ## Connections
-- [[Configuration  Environment Variables_30]] - `contains` [EXTRACTED]
-- [[Function Details_50]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_53]] - `contains` [EXTRACTED]
-- [[Purpose_191]] - `contains` [EXTRACTED]
-- [[Related_57]] - `contains` [EXTRACTED]
-- [[Responsibilities_56]] - `contains` [EXTRACTED]
-- [[Security Limitation Warning]] - `contains` [EXTRACTED]
-- [[sidecar.py]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sidecarpy

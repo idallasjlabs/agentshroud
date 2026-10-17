@@ -17,8 +17,8 @@ tags:
 - [[Injection Pattern Weights]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
 - [[Purpose_145]] - `contains` [EXTRACTED]
-- [[Related_32]] - `contains` [EXTRACTED]
-- [[Responsibilities_30]] - `contains` [EXTRACTED]
+- [[Related_31]] - `contains` [EXTRACTED]
+- [[Responsibilities_29]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Skill: Project Management (PM) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Skill_Project_Management_PM_2
 ---
 
 # hermes/skills/i-pm/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_2

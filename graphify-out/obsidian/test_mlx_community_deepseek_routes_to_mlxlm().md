@@ -12,10 +12,10 @@ tags:
 # test_mlx_community_deepseek_routes_to_mlxlm()
 
 ## Connections
-- [[_fake_forward()_14]] - `contains` [EXTRACTED]
-- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_fake_forward()_19]] - `contains` [EXTRACTED]
+- [[_fake_forward()_22]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (5)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_5
 ---
 
 # npm (Cross-platform)
 
 ## Connections
-- [[Installation_1]] - `contains` [EXTRACTED]
+- [[Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

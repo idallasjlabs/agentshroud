@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "RBACConfig (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/RBACConfig_2
 ---
 
 # test_group_rbac.py
@@ -27,7 +27,7 @@ tags:
 - [[enforcer()_2]] - `contains` [EXTRACTED]
 - [[group_rbac.py (GroupRoleResolver)]] - `implements` [EXTRACTED]
 - [[group_role_resolver()]] - `contains` [EXTRACTED]
-- [[rbac()_1]] - `contains` [EXTRACTED]
-- [[teams()_1]] - `contains` [EXTRACTED]
+- [[rbac()_5]] - `contains` [EXTRACTED]
+- [[teams()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

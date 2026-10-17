@@ -12,9 +12,9 @@ tags:
 # test_process_inbound_request_malformed_body_is_blocked()
 
 ## Connections
-- [[A2AProxy]] - `references` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
 - [[An unparseable request must be rejected through the same     process_inbound_req]] - `rationale_for` [EXTRACTED]
-- [[_StubForwarder]] - `references` [EXTRACTED]
+- [[_StubForwarder_2]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

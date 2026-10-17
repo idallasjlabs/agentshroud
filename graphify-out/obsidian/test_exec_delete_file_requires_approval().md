@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (4)"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_4
 ---
 
 # test_exec_delete_file_requires_approval()
@@ -15,4 +15,4 @@ tags:
 - [[Probe 1.1b delete_file action must go through approval or be blocked.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4

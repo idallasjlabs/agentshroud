@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "gemini-review.py"
-location: "L83"
+community: "sync-cve-registry.py"
+location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gemini-reviewpy
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[Path_6]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

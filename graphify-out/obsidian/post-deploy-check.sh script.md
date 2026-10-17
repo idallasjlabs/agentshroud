@@ -12,7 +12,7 @@ tags:
 # post-deploy-check.sh script
 
 ## Connections
-- [[check()_5]] - `calls` [EXTRACTED]
+- [[check()_1]] - `calls` [EXTRACTED]
 - [[post-deploy-check.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

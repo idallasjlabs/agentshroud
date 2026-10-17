@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_session_manager.py"
+source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "UserSessionManager"
-location: "L20"
+community: "DelegationManager"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/DelegationManager
 ---
 
 # mgr()
 
 ## Connections
-- [[Create a UserSessionManager with a temp base workspace and an owner.]] - `rationale_for` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_session_manager.py]] - `contains` [EXTRACTED]
+- [[DelegationManager]] - `references` [EXTRACTED]
+- [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
+- [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

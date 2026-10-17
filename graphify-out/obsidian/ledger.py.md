@@ -1,27 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
-type: "document"
-community: "ledger.py"
-location: "L10"
+source_file: "gateway/ingest_api/ledger.py"
+type: "code"
+community: "create_auth_dependency"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/ledgerpy
+  - community/create_auth_dependency
 ---
 
 # ledger.py
 
 ## Connections
-- [[Config Keys Read_4]] - `contains` [EXTRACTED]
-- [[Database Schema_2]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
-- [[Function Details_21]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
-- [[Purpose_140]] - `contains` [EXTRACTED]
-- [[Related_27]] - `contains` [EXTRACTED]
-- [[Responsibilities_25]] - `contains` [EXTRACTED]
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[DataLedger]] - `contains` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerEntry]] - `imports` [EXTRACTED]
+- [[LedgerQueryResponse]] - `imports` [EXTRACTED]
+- [[aiosqlite]] - `references` [EXTRACTED]
+- [[gatewayREADME]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledgerpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

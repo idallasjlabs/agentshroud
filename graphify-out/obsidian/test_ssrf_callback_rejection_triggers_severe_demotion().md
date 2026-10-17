@@ -12,11 +12,11 @@ tags:
 # test_ssrf_callback_rejection_triggers_severe_demotion()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `calls` [EXTRACTED]
-- [[TrustManager_2]] - `references` [EXTRACTED]
-- [[_StubForwarder_1]] - `calls` [EXTRACTED]
-- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
+- [[A2AProxy]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
+- [[_StubForwarder]] - `calls` [EXTRACTED]
+- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -12,7 +12,7 @@ tags:
 # rollback_version()
 
 ## Connections
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[Rollback to the previous version. Requires approval_id.]] - `rationale_for` [EXTRACTED]
 - [[RollbackRequest]] - `references` [EXTRACTED]
 - [[rollback()]] - `calls` [EXTRACTED]

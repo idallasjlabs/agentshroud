@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPolicyEngine (2)"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPolicyEngine_2
 ---
 
 # load_config()
@@ -28,13 +28,13 @@ tags:
 - [[BotConfig]] - `calls` [EXTRACTED]
 - [[ChannelsConfig]] - `calls` [EXTRACTED]
 - [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[LedgerConfig_1]] - `calls` [EXTRACTED]
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[Path]] - `references` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[Path_14]] - `references` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[SSHConfig_2]] - `calls` [EXTRACTED]
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig]] - `calls` [EXTRACTED]
 - [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

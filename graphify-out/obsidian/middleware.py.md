@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # middleware.py
@@ -48,7 +48,7 @@ tags:
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
-- [[Resource_2]] - `imports` [EXTRACTED]
+- [[Resource_1]] - `imports` [EXTRACTED]
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[SessionManager]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
@@ -56,8 +56,8 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
-- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[ToolTier]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
@@ -67,4 +67,4 @@ tags:
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

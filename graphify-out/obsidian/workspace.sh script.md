@@ -20,7 +20,7 @@ tags:
 - [[cmd_rm()]] - `calls` [EXTRACTED]
 - [[cmd_shell()]] - `calls` [EXTRACTED]
 - [[cmd_tree()]] - `calls` [EXTRACTED]
-- [[usage()_7]] - `calls` [EXTRACTED]
+- [[usage()_6]] - `calls` [EXTRACTED]
 - [[workspace.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/workspacesh

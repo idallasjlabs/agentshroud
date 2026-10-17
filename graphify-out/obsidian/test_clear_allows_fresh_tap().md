@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[do_tap()]] - `calls` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 - [[test_ptt_state.c]] - `contains` [EXTRACTED]
 - [[wakeword_clear()]] - `calls` [INFERRED]
 - [[wakeword_ended()]] - `calls` [INFERRED]

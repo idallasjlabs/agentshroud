@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Trust manager starting at untrusted.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

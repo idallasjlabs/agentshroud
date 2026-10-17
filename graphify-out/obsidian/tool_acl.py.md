@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "MiddlewareManager"
+community: "RBACConfig (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/RBACConfig_2
 ---
 
 # tool_acl.py
@@ -15,11 +15,11 @@ tags:
 - [[GroupRole]] - `imports` [EXTRACTED]
 - [[GroupRoleResolver]] - `imports` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[Role_21]] - `imports` [EXTRACTED]
+- [[Role_65]] - `imports` [EXTRACTED]
 - [[ToolACLConfig]] - `contains` [EXTRACTED]
 - [[ToolACLEnforcer]] - `contains` [EXTRACTED]
 - [[ToolRateLimit]] - `contains` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

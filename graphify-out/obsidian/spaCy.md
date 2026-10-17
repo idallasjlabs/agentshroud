@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "UserSessionManager"
+community: "UserSessionManager (6)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_6
 ---
 
 # spaCy
@@ -15,9 +15,9 @@ tags:
 - [[Fallback Behavior]] - `contains` [EXTRACTED]
 - [[First-Boot Performance]] - `contains` [EXTRACTED]
 - [[Model]] - `contains` [EXTRACTED]
-- [[Purpose_12]] - `contains` [EXTRACTED]
-- [[Related Notes_18]] - `contains` [EXTRACTED]
+- [[Purpose_8]] - `contains` [EXTRACTED]
+- [[Related Notes_12]] - `contains` [EXTRACTED]
 - [[Where Used_2]] - `contains` [EXTRACTED]
 - [[spacy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6

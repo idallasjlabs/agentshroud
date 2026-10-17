@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Error Index.md"
+community: "Error Index.md (2)"
 location: "L235"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Error_Indexmd_2
 ---
 
 # 🎓 Key Principles
@@ -17,4 +17,4 @@ tags:
 - [[3. Bot's Superior Reasoning]] - `contains` [EXTRACTED]
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2

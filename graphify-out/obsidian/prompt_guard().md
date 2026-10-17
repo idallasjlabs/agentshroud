@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

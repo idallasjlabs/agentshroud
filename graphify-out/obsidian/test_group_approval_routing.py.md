@@ -12,7 +12,7 @@ tags:
 # test_group_approval_routing.py
 
 ## Connections
-- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `imports` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `contains` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - `imports_from` [EXTRACTED]
 - [[group_router.py (GroupApprovalRouter)]] - `implements` [EXTRACTED]
 - [[mock_send_message()]] - `contains` [EXTRACTED]
-- [[router()_3]] - `contains` [EXTRACTED]
+- [[router()]] - `contains` [EXTRACTED]
 - [[router_with_sent()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

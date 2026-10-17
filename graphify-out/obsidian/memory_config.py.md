@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (6)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_6
 ---
 
 # memory_config.py
@@ -16,4 +16,4 @@ tags:
 - [[MemoryLifecycleConfig]] - `contains` [EXTRACTED]
 - [[MemorySecurityConfig]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

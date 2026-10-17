@@ -24,9 +24,9 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `contains` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustDecayPolicy]] - `imports` [EXTRACTED]
-- [[TrustManager_4]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[hermes_tm()]] - `contains` [EXTRACTED]
-- [[ledger()_2]] - `contains` [EXTRACTED]
+- [[ledger()]] - `contains` [EXTRACTED]
 - [[openclaw_tm()]] - `contains` [EXTRACTED]
 - [[policy()]] - `contains` [EXTRACTED]
 

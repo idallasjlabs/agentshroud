@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/create_auth_dependency
 ---
 
 # ingest_api/config.py
@@ -19,12 +19,12 @@ tags:
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[ChannelsConfig]] - `contains` [EXTRACTED]
 - [[GatewayConfig_2]] - `contains` [EXTRACTED]
-- [[LedgerConfig]] - `contains` [EXTRACTED]
+- [[LedgerConfig_1]] - `contains` [EXTRACTED]
 - [[PIIConfig_2]] - `contains` [EXTRACTED]
-- [[RouterConfig]] - `contains` [EXTRACTED]
+- [[RouterConfig_1]] - `contains` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
 - [[SSHConfig_2]] - `imports` [EXTRACTED]
-- [[SecurityConfig_4]] - `contains` [EXTRACTED]
+- [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityModuleConfig]] - `contains` [EXTRACTED]
 - [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `contains` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
-- [[ledger.py_1]] - `imports_from` [EXTRACTED]
+- [[ledger.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `contains` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

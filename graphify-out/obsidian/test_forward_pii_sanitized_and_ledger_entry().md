@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "ForwardRequest"
+community: "test_e2e_proxy.py"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/test_e2e_proxypy
 ---
 
 # test_forward_pii_sanitized_and_ledger_entry()
@@ -15,4 +15,4 @@ tags:
 - [[Forward content → PII sanitized → ledger entry created → event bus fired.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

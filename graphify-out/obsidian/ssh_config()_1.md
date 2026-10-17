@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L19"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # ssh_config()
 
 ## Connections
-- [[SSHConfig_1]] - `references` [EXTRACTED]
+- [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

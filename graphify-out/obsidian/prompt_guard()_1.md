@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ContextSegment"
+community: "PIIConfig"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/PIIConfig
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

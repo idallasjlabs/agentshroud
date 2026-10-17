@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/RBACConfig
 ---
 
 # test_shared_memory_write_acl.py
@@ -20,10 +20,10 @@ tags:
 - [[TestUserMemoryWriteACL]] - `contains` [EXTRACTED]
 - [[TestWriteFailurePath]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[rbac()_4]] - `contains` [EXTRACTED]
-- [[session_manager()_3]] - `contains` [EXTRACTED]
+- [[rbac()_1]] - `contains` [EXTRACTED]
+- [[session_manager()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()_1]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

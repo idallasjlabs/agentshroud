@@ -12,6 +12,6 @@ tags:
 # save_report(report, log_dir)
 
 ## Connections
-- [[Function Details_9]] - `contains` [EXTRACTED]
+- [[Function Details_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

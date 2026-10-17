@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
-- [[_fake_forward()_21]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[_fake_forward()_2]] - `indirect_call` [INFERRED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

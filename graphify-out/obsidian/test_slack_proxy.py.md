@@ -12,7 +12,7 @@ tags:
 # test_slack_proxy.py
 
 ## Connections
-- [[SlackAPIProxy_1]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy]] - `imports` [EXTRACTED]
 - [[TestHandleEvent]] - `contains` [EXTRACTED]
 - [[TestMultiFieldOutboundScanning]] - `contains` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `contains` [EXTRACTED]

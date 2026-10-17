@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "PIIConfig"
-location: "L173"
+community: "ToolResultSanitizer"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # sanitizer()
 
 ## Connections
-- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer]] - `references` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

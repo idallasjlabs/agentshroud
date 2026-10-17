@@ -20,7 +20,7 @@ tags:
 - [[_nl()]] - `contains` [EXTRACTED]
 - [[_py_list_literal()]] - `calls` [EXTRACTED]
 - [[final_status()]] - `calls` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

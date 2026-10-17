@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # test_openai_malformed_response_raises_forward_error()
 
 ## Connections
-- [[AgentTarget_3]] - `calls` [EXTRACTED]
+- [[AgentTarget_2]] - `calls` [EXTRACTED]
 - [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

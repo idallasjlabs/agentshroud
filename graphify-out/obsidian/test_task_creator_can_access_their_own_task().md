@@ -12,7 +12,7 @@ tags:
 # test_task_creator_can_access_their_own_task()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

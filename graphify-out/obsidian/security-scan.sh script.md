@@ -17,6 +17,6 @@ tags:
 - [[require_tool()]] - `calls` [EXTRACTED]
 - [[scriptssecurity-scan.sh]] - `contains` [EXTRACTED]
 - [[success()]] - `calls` [EXTRACTED]
-- [[warn()_1]] - `calls` [EXTRACTED]
+- [[warn()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

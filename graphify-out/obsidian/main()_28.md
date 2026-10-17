@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "cli/main.py"
-location: "L391"
+community: "export-bot-conversations.py"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/export-bot-conversationspy
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[Path_56]] - `calls` [EXTRACTED]
+- [[_parse_since()]] - `calls` [EXTRACTED]
+- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
+- [[export_hermes()]] - `calls` [EXTRACTED]
+- [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MCPPolicyAction]] - `imports` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `imports` [EXTRACTED]
+- [[MCPPolicyConfig]] - `imports` [EXTRACTED]
 - [[MCPPolicyDecision]] - `imports` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]

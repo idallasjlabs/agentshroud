@@ -12,7 +12,7 @@ tags:
 # test_multilingual_injection.py
 
 ## Connections
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[TestMultilingualInjection]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 

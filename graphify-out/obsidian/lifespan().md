@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "PIIConfig"
+community: "AlertDispatcher"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/AlertDispatcher
 ---
 
 # lifespan()
@@ -33,12 +33,12 @@ tags:
 - [[DifferentialPIIDetector_1]] - `calls` [EXTRACTED]
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `calls` [EXTRACTED]
 - [[EventBus]] - `calls` [EXTRACTED]
 - [[FastAPI]] - `references` [EXTRACTED]
@@ -54,7 +54,7 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
@@ -64,20 +64,20 @@ tags:
 - [[NetworkValidator]] - `calls` [EXTRACTED]
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
-- [[PIISanitizer_1]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig_1]] - `calls` [EXTRACTED]
@@ -90,10 +90,10 @@ tags:
 - [[install_log_handler()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

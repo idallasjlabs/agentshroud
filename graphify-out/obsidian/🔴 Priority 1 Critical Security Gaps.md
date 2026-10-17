@@ -12,6 +12,6 @@ tags:
 # **🔴 Priority 1: Critical Security Gaps**
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_2]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

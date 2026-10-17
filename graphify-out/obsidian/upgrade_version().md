@@ -12,7 +12,7 @@ tags:
 # upgrade_version()
 
 ## Connections
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[Upgrade to a target version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]

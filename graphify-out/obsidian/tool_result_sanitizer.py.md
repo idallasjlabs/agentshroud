@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_1]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[RedactionResult_2]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `contains` [EXTRACTED]
-- [[ToolResultSanitizer]] - `contains` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[job-quality-matrix]] - `references` [EXTRACTED]

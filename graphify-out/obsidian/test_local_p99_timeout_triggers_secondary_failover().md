@@ -12,11 +12,11 @@ tags:
 # test_local_p99_timeout_triggers_secondary_failover()
 
 ## Connections
-- [[_fake_forward()_10]] - `contains` [EXTRACTED]
-- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_fake_forward()_15]] - `contains` [EXTRACTED]
+- [[_fake_forward()_22]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[_openai_ok()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

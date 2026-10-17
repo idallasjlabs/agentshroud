@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CVE-2026-31045 — indirect prompt injection via tool results]] - `references` [EXTRACTED]
 - [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - `conceptually_related_to` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `imports` [EXTRACTED]
 - [[TestNewPatternsV080]] - `contains` [EXTRACTED]
 - [[TestReanchorDelimiters]] - `contains` [EXTRACTED]

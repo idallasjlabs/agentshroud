@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_2
 ---
 
 # management.py
@@ -25,11 +25,11 @@ tags:
 - [[credentials_status()]] - `contains` [EXTRACTED]
 - [[dashboard()]] - `contains` [EXTRACTED]
 - [[dashboard_main()]] - `contains` [EXTRACTED]
-- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[falco_dashboard()]] - `contains` [EXTRACTED]
 - [[get_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[get_egress_config()]] - `imports` [EXTRACTED]
-- [[killswitch()_1]] - `contains` [EXTRACTED]
+- [[killswitch()]] - `contains` [EXTRACTED]
 - [[modules()]] - `contains` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `contains` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_2

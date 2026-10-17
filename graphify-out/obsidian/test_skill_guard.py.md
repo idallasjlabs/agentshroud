@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Path"
+community: "SkillGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SkillGuard
 ---
 
 # test_skill_guard.py
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_3]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[ScanResult_4]] - `imports` [EXTRACTED]
+- [[Severity]] - `imports` [EXTRACTED]
 - [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillScanError]] - `imports` [EXTRACTED]
 - [[TestAggregation]] - `contains` [EXTRACTED]
@@ -36,9 +36,9 @@ tags:
 - [[_write_tree()]] - `contains` [EXTRACTED]
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - `references` [EXTRACTED]
 - [[gatewayskillsscan.py (scan CLI)]] - `references` [EXTRACTED]
-- [[guard()]] - `contains` [EXTRACTED]
+- [[guard()_1]] - `contains` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

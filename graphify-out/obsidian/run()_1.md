@@ -1,23 +1,19 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L356"
+community: "canary-deploy.sh"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/canary-deploysh
 ---
 
 # run()
 
 ## Connections
-- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - `rationale_for` [EXTRACTED]
-- [[_build_arg_parser()]] - `calls` [EXTRACTED]
-- [[add_comment()]] - `calls` [EXTRACTED]
-- [[create_issue()]] - `calls` [EXTRACTED]
-- [[fetch_credentials()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[transition_issue()]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[deploy_ref()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "SkillGuard"
+community: "SkillGuard (2)"
 location: "L1031"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/SkillGuard_2
 ---
 
 # skills_reload()
@@ -16,4 +16,4 @@ tags:
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/SkillGuard_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "AgentRegistry"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/AgentRegistry
 ---
 
 # test_hermes_forwarder_drops_non_http()
@@ -15,4 +15,4 @@ tags:
 - [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_executor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

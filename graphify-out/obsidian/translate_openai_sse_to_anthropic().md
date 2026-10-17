@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py"
+community: "test_anthropic_openai_translator.py (3)"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/test_anthropic_openai_translatorpy_3
 ---
 
 # translate_openai_sse_to_anthropic()
@@ -19,4 +19,4 @@ tags:
 - [[anthropic_openai_sse_translator.py]] - `contains` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_3

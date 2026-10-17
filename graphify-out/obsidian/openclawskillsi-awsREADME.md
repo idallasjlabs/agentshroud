@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-aws/README.md
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

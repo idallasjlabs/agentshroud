@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "agentshroud-bot"
+community: "agentshroud-bot (2)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/agentshroud-bot_2
 ---
 
 # tmpfs Mounts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "test_voice_latency_guard.py (2)"
 location: "L1256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_voice_latency_guardpy_2
 ---
 
 # test_call_agent_stream_malformed_json_line_skipped_not_fatal()
@@ -17,4 +17,4 @@ tags:
 - [[_sse_body()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy_2

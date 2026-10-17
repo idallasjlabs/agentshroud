@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "ForwardRequest"
+community: "test_e2e_proxy.py"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/test_e2e_proxypy
 ---
 
 # test_ssh_submit_queues_approval()
@@ -15,4 +15,4 @@ tags:
 - [[Submit SSH command → approval queued.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

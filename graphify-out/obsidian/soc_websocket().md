@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_FakeRBAC"
 location: "L2704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_FakeRBAC
 ---
 
 # soc_websocket()
 
 ## Connections
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket_8]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

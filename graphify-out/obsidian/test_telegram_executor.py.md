@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "AgentRegistry"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/AgentRegistry
 ---
 
 # test_telegram_executor.py
@@ -17,4 +17,4 @@ tags:
 - [[test_lifespan_hermes_forwarder_has_http_peek()]] - `contains` [EXTRACTED]
 - [[test_lifespan_installs_64_worker_executor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

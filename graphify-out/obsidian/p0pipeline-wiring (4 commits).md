@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "1. Accomplishments This Phase"
+community: "1. Accomplishments This Phase (2)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/1_Accomplishments_This_Phase_2
 ---
 
 # p0/pipeline-wiring (4 commits)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase_2

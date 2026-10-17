@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "WebContentScanner"
+community: "test_forward_stream.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/test_forward_streampy
 ---
 
 # test_resolve_trust_level_no_trust_manager_defaults_untrusted()
@@ -17,4 +17,4 @@ tags:
 - [[_target()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

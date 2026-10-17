@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L51"
+community: "ApprovalQueueConfig"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/ApprovalQueueConfig
 ---
 
 # ledger()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
-- [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
-- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

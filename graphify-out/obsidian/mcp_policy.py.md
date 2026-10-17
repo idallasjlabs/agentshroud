@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "MCPPolicyEngine (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPolicyEngine_2
 ---
 
 # mcp_policy.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[MCPPolicyAction]] - `contains` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `contains` [EXTRACTED]
+- [[MCPPolicyConfig]] - `contains` [EXTRACTED]
 - [[MCPPolicyDecision]] - `contains` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `contains` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_mcp_policy.py]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

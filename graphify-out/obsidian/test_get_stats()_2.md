@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_event_bus.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "make_event"
-location: "L80"
+community: "ApprovalQueueConfig"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ApprovalQueueConfig
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
-- [[test_event_bus.py]] - `contains` [EXTRACTED]
+- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
+- [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
