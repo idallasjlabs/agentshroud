@@ -666,3 +666,148 @@ settings must survive reboots):
   CVE-2026-43185 (2026-11-10) are within the warn window — re-review before they lapse.
 - Dependabot PRs #499/#500/#501 (fastapi, pydantic, aiohttp bumps) are open and will be
   in Sunday's scope.
+
+## Night of 2026-10-16/17: prod Hermes unreachable behind the gateway (open)
+
+Timeline (EDT), everything below measured from dev's account on the same Mac, read-only:
+- 21:26 — dev `asb rebuild full` from `7da4817b31` finished (exit 0, 11/11 post-deploy
+  checks) after the in-VM `docker image prune -af` reclaimed 1,191 → 297 images and
+  `/var/lib/docker` went 98% → 24%. Both hosts on `7da4817b31`, `main` only.
+- ~23:04 — the prod account's Claude desktop app restarted (process age); the prod
+  session's bridge address went stale (HTTP 409 on send), so the three diagnostic
+  requests sent to it between 23:14 and 23:30 were never delivered.
+- 23:08 — owner's Conduit screenshot: *"Failed to refresh the dashboard session: Your
+  Hermes server doesn't support this yet. Update Hermes, then try again."*, showing a
+  saved copy from ~14:00.
+- 23:10 — `127.0.0.1:9119/openapi.json` (prod gateway's TCP forwarder → Hermes
+  dashboard) still answered 302 and `/api/openapi.json` 401: Hermes was alive.
+- 23:14 onward — `127.0.0.1:9119/*` and `127.0.0.1:8642/*` (gateway forwarders to
+  Hermes, `lifespan.py:2199-2379`) accept TCP and send no bytes; `127.0.0.1:8080/
+  hermes-dashboard/*` returns 502 after exactly 30 s (`hermes_dashboard_proxy`'s
+  httpx timeout, `main.py:4891`); the Funnel path `/hermes` (tailscaled →
+  `127.0.0.1:8080/hermes-dashboard/`, `scripts/tailscale-serve.sh:107`) connects then
+  stalls. Gateway `/status` 200 in 6 ms, voice gateway `8765/health` 200 in 4 ms.
+  Polled every 20–30 s through 06:40 the next morning: no self-recovery.
+
+What the Conduit message means (Conduit is open source, kaishi00/hermes-conduit):
+- `Conduit/Services/DashboardTicketBridge.swift:309-311` maps any bare 404/405/501 to
+  *"Your Hermes server doesn't support this yet"*; the "refresh" is `POST
+  /api/auth/ws-ticket` (lines 629/650). It is not a version check.
+- Hermes mounts its dashboard auth router unconditionally
+  (`hermes_cli/web_server.py:1002-1004` in the installed 0.21.5), and
+  `/auth/native/refresh` exists there too, so a missing route is ruled out. Through
+  dev's rebuilt gateway the same POST answers 401 (`{"detail":"Unauthorized"}`).
+- A doubled slash after the prefix (`/hermes-dashboard//api/auth/ws-ticket`) does
+  produce a bare 405 on dev — noted as a possible contributor if Tailscale ever joins
+  the Funnel target path and the request path with an extra `/`; not proven to be what
+  Conduit hit.
+
+Ruled out on dev: the 3g/1.5 Hermes cap is not new (run-standalone.sh always
+hard-coded it; `3955d3b267` only made it overridable). No Mac sleep/wake in `pmset`
+log; uptime 1 d 8 h.
+
+Host state at 06:40 EDT 2026-10-17 (the "tight on resources" the owner described):
+load 41/21/16 on 65% idle CPU — memory thrash, not compute. 63 GB used, 33 GB
+compressor, 78 MB unused, swap 14.2/15.4 GB used, 16 M pageouts. Largest residents:
+`python3.12` (rapid-mlx) 17 GB, prod Colima VM 10 GB, dev Colima VM 9.2 GB, Little
+Snitch 5.4 GB, CloneKitService (Carbon Copy Cloner) 3.4 GB, TurboFieldfare 3.2 GB,
+CrashPlan 2.7 GB. Dev containers all healthy under their caps; dev OpenClaw restarted
+itself cleanly at 04:27 EDT (exit 0, `oom=false`, its own `rss_threshold` warning at
+1.9 GiB vs its 1.5 GiB internal threshold), restarts=2.
+
+Owner's word at ~06:35 EDT: "Go". Brief with the diagnostic/fix procedure sent to the
+new prod session (`agentshroud`, listed 06:38, delivery unconfirmed): evidence first
+(`docker inspect` state/OOM/restarts, network membership of Hermes and gateway,
+`getent`/`nc` from the gateway to `agentshroud-hermes-v2:8642/9120`, Hermes self-check on
+`127.0.0.1:8642`, cgroup `memory.events`, last 80 log lines), then either `docker network
+connect` (gateway cannot reach a live Hermes) or `bash docker/bots/hermes/run-standalone.sh`
+from `7da4817b31`, then four host-side curls must return 200 (8642/health,
+9119/api/auth/providers, 8080/hermes-dashboard/api/auth/providers,
+8642/api/plugins/conduit_push/capabilities), then Conduit "Repair Connection" + Telegram.
+
+Root cause (prod's raw evidence, 06:45 EDT 2026-10-17; the three dev hypotheses above
+are all ruled out): **prod's Colima VM lost all outbound traffic at 02:45Z (22:45
+EDT)** — first gateway `getUpdates` timeout. From inside the VM `curl 1.1.1.1` via
+eth0 and col0, `curl 192.168.5.2:8002` (rapid-mlx on the host) and ping to
+192.168.5.2 / 192.168.64.1 all time out while the host reaches the same targets in
+ms. Hermes itself was healthy the whole time: gateway→`agentshroud-hermes-v2:9120`
+providers 200 in 46 ms and `:8642` health 200 in 1.5 ms from inside the gateway
+container, Hermes self-check 200/200, cgroup `memory.current` 600 MB of 3 GiB,
+`oom_kill 0`, restarts 0, both containers on `agentshroud_agentshroud-isolated`
+(gateway 10.254.111.4, Hermes 10.254.111.9). `py-spy` on the gateway showed only two
+`tg-io` threads stuck in `socket.create_connection` to api.telegram.org — the
+host→9119 / →8080/hermes-dashboard stalls were the gateway's event loop wedged behind
+that, not Hermes. Same fault explains Hermes's "Rapid-MLX backend is not running" and
+OpenClaw turns taking 164 s. Fix (owner approved, prod executing 06:45 EDT): full
+Colima stop/start on prod.
+
+Second fault (prod's, corrected here): last night's prod Colima restart came up at
+**6 CPU / 10 GiB**, not the 8 / 12 prod ran before `e8fca117df`; the VM's dmesg shows
+two OOM kills of `openclaw-gateway` (anon-rss 2.1 GB and 2.0 GB) with 176 MB free of
+9,923 MB. The "prod VM target 6 CPU / 10 GiB" line in the evening section above is
+therefore withdrawn: **prod's Colima sizing is 8 CPU / 12 GiB** (project memory
+`colima-runtime-settings` already says so) and 6/10 must not appear in any runbook.
+Prod is restarting with `--cpu 8 --memory 12`.
+
+Recovery seen from the host: prod Colima stop/start by prod (owner approved);
+`127.0.0.1:8642/health` and `:9119/api/auth/providers` flipped 000 → 200 at
+**06:44:37 EDT 2026-10-17** (outage ≈ 7 h 30 min from 23:14). At 06:45:
+`8080/hermes-dashboard/api/auth/providers` 200 in 0.59 s, `8080/status` 200, voice
+`8765/health` 200, `9119/api/plugins/conduit_push/capabilities` 401 `no_cookie` (the
+plugin API is served by the dashboard behind its login, same as dev; it is NOT on the
+8642 API port, where the path 404s — the first probe here used the wrong port).
+Authenticated plugin check, Conduit "Repair Connection" and Telegram are prod's /
+owner's step 4. Dev's VM, same Mac, same window: egress fine at 06:42 but its gateway
+logged Telegram timeouts at 05:06, 06:01 (×3), 06:06, 06:14 EDT; two
+`CONSTRAINT_MEMCG` OOM kills of `openclaw-gateway` (anon-rss 2.1 GB each) at 01:56 and
+04:27 EDT inside the openclaw container's cgroup; dev OpenClaw at 3.33 of 3.5 GiB
+afterwards — the per-container OpenClaw cap is too small on both hosts for its ≈3.3 GiB
+steady RSS (already flagged as abnormal above).
+
+Third, Conduit-side (prod verified at 03:07Z): Conduit's dashboard bridge issues
+`fetch("/api/auth/ws-ticket")` root-relative from its WKWebView
+(`DashboardTicketBridge.swift:650/787/940`), so with a dashboard URL ending in
+`/hermes` the POST goes to the Funnel root → bare 404 → "doesn't support this yet",
+while `/hermes/...` login itself was 200. Fix: serve the dashboard at the Funnel root
+path (owner `sudo tailscale funnel`) and set Conduit's URL without `/hermes`. This is
+the one the owner's screenshot shows; the VM egress loss is what kept it from being
+noticed as a separate problem. Daily Brief 04:30 run
+on 2026-10-17 is presumed missed (Hermes unreachable at that time) — prod to confirm
+from the cron log.
+
+Prod's step-4 evidence (prod's raw message, ~07:00 EDT 2026-10-17): recovery at
+06:43:36 EDT after `colima stop` + `colima start --cpu 8 --memory 12 --disk 120
+--network-address`. `colima list`: Running, 8 CPU, 12 GiB, 120 GiB, 192.168.64.24;
+colima.yaml cpu 8 / memory 12 / disk 120; in-VM nproc 8, mem 11,934 MiB, `free -m`
+used 8,138 / avail 3,795 (was 176 MB free). Egress: VM → 1.1.1.1 301 in 0.39 s; VM →
+192.168.5.2:8002 400 in 0.004 s (rapid-mlx answering); gateway → api.telegram.org 302
+in 0.64 s; gateway → host.docker.internal:8002 200 and :8238 200. Host routes:
+`8080/status` 200, `8080/hermes-dashboard/api/health` 200, `9119/api/health` 200,
+`8642/health` 200. `docker ps`: docker-socket-proxy, gateway, hermes-v2, openclaw,
+voice-gateway, wazuh-agent, wazuh-manager all `Up (healthy)`; container-set diff vs
+before the restart = only the ephemeral `openclaw-mcp-github-*` sidecars gone
+(recreated on demand) and one new hermes-sandbox. post-deploy-check 12/12 passed.
+Telegram: gateway `getUpdates` 200 every ~31 s (normal long-poll), zero "timed out after
+65s" / UNEXPECTED_EOF in the following 10 min. Authenticated
+`/api/plugins/conduit_push/capabilities` via 9119 with the session cookie: login 200,
+capabilities 200, body `{"ok":true,"version":"0.41.0","loaded_version":"0.41.0",
+"restart_needed":false,...}`. OOM distinction: prod's two kills were
+`CONSTRAINT_NONE` global OOMs (VM sizing, fixed by 8/12); dev's are `CONSTRAINT_MEMCG`
+against the 3.5 GiB openclaw cap — a different fix, on the Sunday list. Daily Brief
+04:30: Hermes cron shows last run 2026-10-17T04:33:01 **error** "Script exited with
+code 1", scheduler "delivery error: Telegram send failed: Timed out"; no
+`/opt/data/podcasts/outbox/daily/2026-10-17` existed, so prod re-ran cron job
+`4cb4f63b00da` manually and will run the host-side publish once READY appears (outcome
+to be appended). Conduit fix: PR #506 (`fix/tailscale-funnel-root-path`, 465c2c6401)
+adds the Funnel `/` path in `scripts/tailscale-serve.sh`; the live `sudo tailscale
+funnel` still needs the owner, as do the owner's Telegram and Conduit "Repair
+Connection" taps. Prod checkout back on `main` at 7da4817b31, tree clean; it will
+fast-forward to this docs-only commit.
+
+Side finding for Sunday (not this outage): Hermes is pinned at 0.21.5 (24 Sep) while
+upstream has 0.21.6 (8 Oct), 0.21.7 (12 Oct), 0.22.0/0.22.1/0.22.2 (14–15 Oct). The
+2026-10-11 Sunday record (`/Users/Shared/agentshroud-sunday/dev-result-2026-10-11.json`)
+carries only the unchanged `HERMES_IMAGE` digest — a silent no-op of the CLAUDE.md §0.0
+kind. 0.22.2's release note flags a known issue (sessions from the 0.22.1 gateway cannot
+be deleted); 0.22.0 retires `session_reset` idle/daily modes and moves memory providers
+and Home Assistant to catalog plugins — config migration work for the upgrade.
