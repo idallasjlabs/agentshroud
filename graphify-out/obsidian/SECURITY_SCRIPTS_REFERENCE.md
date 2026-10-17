@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `references` [EXTRACTED]
+- [[Kill Switch]] - `references` [EXTRACTED]
 - [[scan.sh]] - `references` [EXTRACTED]
 - [[verify-security.sh]] - `references` [EXTRACTED]
 

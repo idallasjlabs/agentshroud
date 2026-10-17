@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ProxyAction"
+community: "RBACConfig (2)"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/RBACConfig_2
 ---
 
 # TestCVE2026_9367TerminalToolDenied
@@ -20,11 +20,11 @@ tags:
 - [[dot-test_terminal_tool_not_in_collab_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_viewer_denied_terminal_tool()]] - `method` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

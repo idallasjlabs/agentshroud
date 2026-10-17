@@ -1,37 +1,37 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "TrustConfig"
+community: "AlertDispatcher (2)"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/AlertDispatcher_2
 ---
 
 # SubagentMonitor
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_64]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_27]] - `method` [EXTRACTED]
 - [[dot-_log_event()]] - `method` [EXTRACTED]
 - [[dot-check_tool_usage()]] - `method` [EXTRACTED]
 - [[dot-deregister()]] - `method` [EXTRACTED]
 - [[dot-get_active()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_6]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_1]] - `method` [EXTRACTED]
 - [[dot-get_flagged_events()]] - `method` [EXTRACTED]
 - [[dot-kill_agent()]] - `method` [EXTRACTED]
 - [[dot-kill_all()]] - `method` [EXTRACTED]
 - [[dot-register_spawn()]] - `method` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `semantically_similar_to` [INFERRED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `semantically_similar_to` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -53,10 +53,10 @@ tags:
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor()_1]] - `calls` [EXTRACTED]
+- [[monitor()]] - `calls` [EXTRACTED]
 - [[strict_monitor()]] - `calls` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

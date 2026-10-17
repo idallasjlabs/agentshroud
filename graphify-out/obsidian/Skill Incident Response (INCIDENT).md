@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Incident Response Workflow]] - `contains` [EXTRACTED]
 - [[Post-Incident]] - `contains` [EXTRACTED]
-- [[Role_40]] - `contains` [EXTRACTED]
+- [[Role_38]] - `contains` [EXTRACTED]
 - [[Severity Matrix]] - `contains` [EXTRACTED]
 - [[openclawskillsi-productionSKILL]] - `contains` [EXTRACTED]
 

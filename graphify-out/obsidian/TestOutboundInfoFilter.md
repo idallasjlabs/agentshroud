@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (2)"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_2
 ---
 
 # TestOutboundInfoFilter
 
 ## Connections
 - [[dot-_time_one_filter()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_21]] - `method` [EXTRACTED]
+- [[dot-setup_method()_9]] - `method` [EXTRACTED]
 - [[dot-test_admin_private_service_data_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_agentshroud_name_not_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_code_block_filtering()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[Test suite for the outbound information filter.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

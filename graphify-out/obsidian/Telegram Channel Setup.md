@@ -21,7 +21,7 @@ tags:
 - [[Step 6 Rebuild and Start]] - `contains` [EXTRACTED]
 - [[Step 7 Verify]] - `contains` [EXTRACTED]
 - [[Step 8 Configure Environment]] - `contains` [EXTRACTED]
-- [[Troubleshooting_22]] - `contains` [EXTRACTED]
+- [[Troubleshooting_21]] - `contains` [EXTRACTED]
 - [[setup-telegram]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

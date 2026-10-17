@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Skill: Project Management (PM) (3)"
 location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Skill_Project_Management_PM_3
 ---
 
 # Risk Management
@@ -16,4 +16,4 @@ tags:
 - [[Known Risks_2]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

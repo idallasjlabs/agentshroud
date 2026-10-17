@@ -12,6 +12,6 @@ tags:
 # System Prompt
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "hermes/SOUL.md"
+community: "RBACConfig (2)"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/RBACConfig_2
 ---
 
 # TestToolRateLimiting
@@ -18,10 +18,10 @@ tags:
 - [[dot-test_under_threshold_passes()]] - `method` [EXTRACTED]
 - [[dot-test_unlisted_tool_always_passes()]] - `method` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

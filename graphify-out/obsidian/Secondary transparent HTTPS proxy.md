@@ -1,17 +1,17 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "ModeRequest"
+community: "ModeRequest (2)"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/ModeRequest_2
 ---
 
 # Secondary: transparent HTTPS proxy
 
 ## Connections
-- [[Root Cause_7]] - `contains` [EXTRACTED]
+- [[Root Cause_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest
+#graphify/document #graphify/EXTRACTED #community/ModeRequest_2

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "TelegramAPIProxy (3)"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TelegramAPIProxy_3
 ---
 
 # TelegramAPIProxy
 
 ## Connections
-- [[dot-__init__()_147]] - `method` [EXTRACTED]
+- [[dot-__init__()_181]] - `method` [EXTRACTED]
 - [[dot-_active_bot_id()]] - `method` [EXTRACTED]
 - [[dot-_active_send_token()]] - `method` [EXTRACTED]
 - [[dot-_answer_callback_query()]] - `method` [EXTRACTED]
@@ -149,7 +149,7 @@ tags:
 - [[dot-_trigger_web_fetch_approval()]] - `method` [EXTRACTED]
 - [[dot-_trigger_web_search_log()]] - `method` [EXTRACTED]
 - [[dot-_username_for_bot()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
 - [[dot-proxy()]] - `calls` [EXTRACTED]
 - [[dot-proxy_request()]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
@@ -172,10 +172,10 @@ tags:
 - [[Proxies Telegram Bot API calls through the security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
@@ -247,8 +247,8 @@ tags:
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[TestWebSearchLog]] - `uses` [INFERRED]
 - [[UpdateReplayBuffer]] - `conceptually_related_to` [INFERRED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[slack_proxy.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
@@ -260,4 +260,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

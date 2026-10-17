@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "Pre-Deployment Checklist"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Pre-Deployment_Checklist
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

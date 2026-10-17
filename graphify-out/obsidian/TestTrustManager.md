@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "CrossBotTrustLedger (2)"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/CrossBotTrustLedger_2
 ---
 
 # TestTrustManager
 
 ## Connections
-- [[dot-setup_method()_37]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_7]] - `method` [EXTRACTED]
+- [[dot-setup_method()_27]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
 - [[dot-test_action_allowed_basic()]] - `method` [EXTRACTED]
 - [[dot-test_action_denied_high_trust()]] - `method` [EXTRACTED]
 - [[dot-test_action_unknown_agent()]] - `method` [EXTRACTED]
@@ -34,18 +34,18 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2

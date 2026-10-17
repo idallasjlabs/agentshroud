@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "GSDE&G Skills Reference Guide"
+community: "MiddlewareManager (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/MiddlewareManager_2
 ---
 
 # STPA-Sec Methodology
 
 ## Connections
-- [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [EXTRACTED]
-- [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `references` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide
+#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_2

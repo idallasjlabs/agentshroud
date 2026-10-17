@@ -15,8 +15,8 @@ tags:
 - [[Applied By_1]] - `contains` [EXTRACTED]
 - [[Configuration_20]] - `contains` [EXTRACTED]
 - [[Key Configuration]] - `contains` [EXTRACTED]
-- [[Purpose_190]] - `contains` [EXTRACTED]
-- [[Related Notes_70]] - `contains` [EXTRACTED]
+- [[Purpose_184]] - `contains` [EXTRACTED]
+- [[Related Notes_63]] - `contains` [EXTRACTED]
 - [[Relationship to agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[ssh-config]] - `contains` [EXTRACTED]
 

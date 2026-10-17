@@ -12,6 +12,6 @@ tags:
 # Test proper initialization of PromptProtection.
 
 ## Connections
-- [[dot-test_initialization()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

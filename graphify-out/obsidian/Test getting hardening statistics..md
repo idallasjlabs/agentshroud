@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "ApprovalHardening"
+community: "ApprovalHardening (2)"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/ApprovalHardening_2
 ---
 
 # Test getting hardening statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening_2

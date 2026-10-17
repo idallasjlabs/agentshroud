@@ -12,7 +12,7 @@ tags:
 # TestGetMode
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_6]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_2]] - `method` [EXTRACTED]
 - [[dot-test_response_includes_timestamp()]] - `method` [EXTRACTED]
 - [[dot-test_returns_monitor_when_set()]] - `method` [EXTRACTED]
 - [[dot-test_returns_observatory_when_set()]] - `method` [EXTRACTED]

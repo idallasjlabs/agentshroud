@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # SecurityModuleConfig
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
 - [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[Security module configuration]] - `rationale_for` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

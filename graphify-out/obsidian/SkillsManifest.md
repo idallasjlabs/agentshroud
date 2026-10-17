@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "SkillGuard"
+community: "Path"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Path
 ---
 
 # SkillsManifest
@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[dot-by_name()]] - `method` [EXTRACTED]
 - [[dot-from_source()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_2]] - `method` [EXTRACTED]
+- [[dot-to_dict()_12]] - `method` [EXTRACTED]
 - [[dot-to_json()]] - `method` [EXTRACTED]
 - [[In-memory representation of the skillsagentsMCP manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_17]] - `uses` [INFERRED]
-- [[Path_59]] - `uses` [INFERRED]
-- [[ScanResult_1]] - `uses` [INFERRED]
+- [[Path_25]] - `uses` [INFERRED]
+- [[Path_52]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `shares_data_with` [EXTRACTED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 - [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/Path

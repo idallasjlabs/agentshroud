@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: ".setup_method"
-location: "L52"
+community: "InjectionAction"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/setup_method
+  - community/InjectionAction
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_16]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/setup_method
+#graphify/rationale #graphify/EXTRACTED #community/InjectionAction

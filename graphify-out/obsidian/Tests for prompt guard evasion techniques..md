@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "EgressFilterConfig"
 location: "L798"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/EgressFilterConfig
 ---
 
 # Tests for prompt guard evasion techniques.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardEvasion]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

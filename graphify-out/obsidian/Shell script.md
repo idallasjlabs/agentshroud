@@ -12,6 +12,6 @@ tags:
 # Shell script
 
 ## Connections
-- [[Installation_2]] - `contains` [EXTRACTED]
+- [[Installation_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

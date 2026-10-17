@@ -16,6 +16,6 @@ tags:
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
 - [[A single finding from URL analysis.]] - `rationale_for` [EXTRACTED]
-- [[url_analyzer.py]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

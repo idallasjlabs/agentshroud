@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "TestPromptProtection"
+community: "TestPromptProtection (3)"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/TestPromptProtection_3
 ---
 
 # Test text with multiple types of sensitive content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_multiple_redactions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection_3

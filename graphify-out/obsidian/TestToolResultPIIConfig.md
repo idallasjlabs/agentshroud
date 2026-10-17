@@ -12,7 +12,7 @@ tags:
 # TestToolResultPIIConfig
 
 ## Connections
-- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_2]] - `method` [EXTRACTED]
 - [[dot-test_tool_specific_config()]] - `method` [EXTRACTED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -21,7 +21,7 @@ tags:
 - [[RedactionResult_2]] - `uses` [INFERRED]
 - [[Test the ToolResultPIIConfig configuration class]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ToolResultSanitizer

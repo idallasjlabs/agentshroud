@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "concept"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/check-vendor-compatsh
 ---
 
 # Tap-approval pipeline (PR #502)
@@ -17,4 +17,4 @@ tags:
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-approve.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/concept #graphify/EXTRACTED #community/check-vendor-compatsh

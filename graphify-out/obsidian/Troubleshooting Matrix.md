@@ -12,13 +12,13 @@ tags:
 # Troubleshooting Matrix.md
 
 ## Connections
-- [[Crash Recovery]] - `references` [EXTRACTED]
-- [[Error Index]] - `references` [EXTRACTED]
-- [[Health Checks_1]] - `references` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[Error Index_1]] - `references` [EXTRACTED]
+- [[Health Checks]] - `references` [EXTRACTED]
 - [[Kill Switch Procedure]] - `references` [EXTRACTED]
-- [[Startup Errors]] - `references` [EXTRACTED]
+- [[Startup Errors_1]] - `references` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
-- [[troubleshooting_23]] - `contains` [EXTRACTED]
+- [[troubleshooting_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Restart_Procedure

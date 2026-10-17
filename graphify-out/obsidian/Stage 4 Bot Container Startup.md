@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "TestFabricatedSecurityNotice"
+community: "TestFabricatedSecurityNotice (3)"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestFabricatedSecurityNotice_3
 ---
 
 # Stage 4: Bot Container Startup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3

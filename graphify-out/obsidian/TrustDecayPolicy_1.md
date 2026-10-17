@@ -21,8 +21,8 @@ tags:
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
-- [[ledger()_2]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ledger()]] - `references` [EXTRACTED]
 - [[policy()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

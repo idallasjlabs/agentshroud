@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Path"
+community: "Path (2)"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Path_2
 ---
 
 # TestScanEntrypointInProcess
@@ -20,10 +20,10 @@ tags:
 - [[dot-test_main_unreadable_file_fails_closed()]] - `method` [EXTRACTED]
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - `rationale_for` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Path_2

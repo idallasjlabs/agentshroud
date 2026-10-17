@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "EgressFilterConfig"
-location: "L31"
+community: "KillSwitchMonitor"
+location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/KillSwitchMonitor
 ---
 
 # Test default configuration values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_config()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

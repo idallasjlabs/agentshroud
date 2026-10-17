@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "get_engine"
+community: "test_runtime_engines.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_engine
+  - community/test_runtime_enginespy
 ---
 
 # TestDetectRuntime
@@ -18,10 +18,10 @@ tags:
 - [[dot-test_detect_none()]] - `method` [EXTRACTED]
 - [[dot-test_detect_podman()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_engine
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

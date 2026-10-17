@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "_FakeRBAC"
+community: "TestToolChainAnalyzer"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/TestToolChainAnalyzer
 ---
 
 # TestConfirmationModel
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_permission_denied_error()]] - `method` [EXTRACTED]
 - [[test_soc_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

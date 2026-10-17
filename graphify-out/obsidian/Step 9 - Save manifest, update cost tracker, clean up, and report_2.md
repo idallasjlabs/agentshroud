@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "What You Must Do When Invoked (3)"
 location: "L486"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/What_You_Must_Do_When_Invoked_3
 ---
 
 # Step 9 - Save manifest, update cost tracker, clean up, and report
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_3

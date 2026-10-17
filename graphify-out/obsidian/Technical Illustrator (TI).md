@@ -12,7 +12,7 @@ tags:
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_166]] - `contains` [EXTRACTED]
+- [[Purpose_167]] - `contains` [EXTRACTED]
 - [[Related Skills_110]] - `contains` [EXTRACTED]
 - [[Usage_120]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]

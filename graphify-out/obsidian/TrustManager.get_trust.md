@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "ModuleStatsCollector (2)"
 location: "176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ModuleStatsCollector_2
 ---
 
 # TrustManager.get_trust
@@ -15,4 +15,4 @@ tags:
 - [[A2AGovernanceProxy._check_peer]] - `shares_data_with` [INFERRED]
 - [[TrustManager.is_tool_allowed]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector_2

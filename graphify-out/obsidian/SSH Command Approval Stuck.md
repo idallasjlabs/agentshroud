@@ -12,6 +12,6 @@ tags:
 # SSH Command Approval Stuck
 
 ## Connections
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

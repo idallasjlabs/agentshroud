@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "TestFabricatedSecurityNotice (2)"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestFabricatedSecurityNotice_2
 ---
 
 # TestMiddlewareSessionEnforcement
@@ -23,10 +23,10 @@ tags:
 - [[dot-test_middleware_user_identification()]] - `method` [EXTRACTED]
 - [[dot-test_multi_turn_block_reason_hides_score()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[Test middleware enforcement of session boundaries.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2

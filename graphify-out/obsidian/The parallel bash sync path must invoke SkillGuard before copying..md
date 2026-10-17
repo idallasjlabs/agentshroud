@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "rationale"
-community: "Path"
+community: "Path (2)"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/Path_2
 ---
 
 # The parallel bash sync path must invoke SkillGuard before copying.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSyncScriptPreflight]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/Path_2

@@ -17,8 +17,8 @@ tags:
 - [[Diagnostic Capabilities]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow]] - `contains` [EXTRACTED]
 - [[Output Format_16]] - `contains` [EXTRACTED]
-- [[Related Skills_81]] - `contains` [EXTRACTED]
-- [[Role_49]] - `contains` [EXTRACTED]
+- [[Related Skills_82]] - `contains` [EXTRACTED]
+- [[Role_47]] - `contains` [EXTRACTED]
 - [[When to Invoke_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "ModuleStatsCollector (2)"
 location: "248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ModuleStatsCollector_2
 ---
 
 # ToolACLEnforcer._can_use_tool_impl
@@ -15,4 +15,4 @@ tags:
 - [[ToolACLEnforcer.can_use_tool]] - `calls` [EXTRACTED]
 - [[TrustManager.is_tool_allowed]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector_2

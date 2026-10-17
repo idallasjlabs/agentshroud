@@ -12,7 +12,7 @@ tags:
 # TestGroupMentionFilter
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()]] - `method` [EXTRACTED]
 - [[dot-test_filter_disabled_does_not_set_eligibility()]] - `method` [EXTRACTED]
 - [[dot-test_group_command_with_bot_suffix_eligible()]] - `method` [EXTRACTED]
 - [[dot-test_group_message_with_mention_forwarded_and_eligible()]] - `method` [EXTRACTED]

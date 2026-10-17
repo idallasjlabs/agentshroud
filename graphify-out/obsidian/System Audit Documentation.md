@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # System Audit Documentation
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sadREADME]] - `contains` [EXTRACTED]
-- [[Purpose_53]] - `contains` [EXTRACTED]
-- [[Related Skills_42]] - `contains` [EXTRACTED]
-- [[Usage_45]] - `contains` [EXTRACTED]
+- [[Purpose_90]] - `contains` [EXTRACTED]
+- [[Related Skills_77]] - `contains` [EXTRACTED]
+- [[Usage_89]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sadREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

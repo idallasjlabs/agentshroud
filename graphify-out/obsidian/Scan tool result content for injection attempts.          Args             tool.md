@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "InjectionAction"
+community: "InjectionAction (2)"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/InjectionAction_2
 ---
 
 # Scan tool result content for injection attempts.          Args:             tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_tool_result()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/InjectionAction_2

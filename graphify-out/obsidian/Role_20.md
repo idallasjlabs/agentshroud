@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
-type: "code"
-community: "MiddlewareManager"
-location: "L76"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+type: "document"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Role
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
-- [[dot-get_user_role()_1]] - `references` [EXTRACTED]
-- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

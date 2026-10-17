@@ -23,7 +23,7 @@ tags:
 - [[dot-test_owner_channel_uses_full_trust()]] - `method` [EXTRACTED]
 - [[dot-test_owner_pipeline_exception_fail_open()]] - `method` [EXTRACTED]
 - [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 

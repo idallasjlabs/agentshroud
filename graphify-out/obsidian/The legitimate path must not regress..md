@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "export_bot"
+community: "RBACConfig (2)"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/RBACConfig_2
 ---
 
 # The legitimate path must not regress.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export_bot
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

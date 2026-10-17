@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig"
+community: "RBACConfig (3)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_3
 ---
 
 # ServicePrivacy
 
 ## Connections
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[Privacy classification for a service.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
@@ -22,7 +22,7 @@ tags:
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

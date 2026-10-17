@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "export_bot"
+community: "MiddlewareManager"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # TestFromAuditChainEntry
 
 ## Connections
-- [[dot-test_conversion_error_path()]] - `method` [EXTRACTED]
+- [[dot-test_conversion_error_path()_4]] - `method` [EXTRACTED]
 - [[dot-test_full_context_summary_from_details()]] - `method` [EXTRACTED]
 - [[dot-test_missing_timestamp_uses_now()]] - `method` [EXTRACTED]
 - [[dot-test_summary_falls_back_to_block_reason()]] - `method` [EXTRACTED]
@@ -24,9 +24,9 @@ tags:
 - [[Action_2]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

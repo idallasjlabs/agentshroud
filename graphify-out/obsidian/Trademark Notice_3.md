@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/hermes/SOUL.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L81"
+community: "AgentShroud™ — Trademark Prior Use Record"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Trademark Notice
 
 ## Connections
-- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
+- [[Contact_1]] - `contains` [EXTRACTED]
+- [[Standard Footer]] - `contains` [EXTRACTED]
+- [[TRADEMARK_2]] - `contains` [EXTRACTED]
+- [[Trademark Details]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

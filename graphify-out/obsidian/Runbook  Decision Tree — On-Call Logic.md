@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "diagrams/README.md"
+community: "diagrams/README.md (2)"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/diagrams/READMEmd
+  - community/diagrams/READMEmd_2
 ---
 
 # Runbook / Decision Tree — On-Call Logic
@@ -15,4 +15,4 @@ tags:
 - [[DM Policy Allowlist Configuration]] - `conceptually_related_to` [AMBIGUOUS]
 - [[Incident Response Flow — Severity & Escalation]] - `references` [INFERRED]
 
-#graphify/concept #graphify/AMBIGUOUS #community/diagrams/READMEmd
+#graphify/concept #graphify/AMBIGUOUS #community/diagrams/READMEmd_2

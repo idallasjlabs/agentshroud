@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Socrates — Dialogue Architect (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Socrates__Dialogue_Architect_3
 ---
 
 # Socrates — Dialogue Architect
@@ -19,11 +19,11 @@ tags:
 - [[Output Format_21]] - `contains` [EXTRACTED]
 - [[Persona_7]] - `contains` [EXTRACTED]
 - [[Quality Checklist_8]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
+- [[Role_57]] - `contains` [EXTRACTED]
 - [[Speaker Definitions_2]] - `contains` [EXTRACTED]
 - [[System Prompt_7]] - `contains` [EXTRACTED]
 - [[User Prompt Template_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-socratesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_3

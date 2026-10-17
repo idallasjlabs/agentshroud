@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "test_collaborator_tracker.py (2)"
 location: "L4739"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_collaborator_trackerpy
+  - community/test_collaborator_trackerpy_2
 ---
 
 # TestPendingNoticeIncludesEgressSection
@@ -15,9 +15,9 @@ tags:
 - [[dot-test_pending_includes_egress_entries()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_send_owner_pending_notice must append Pending Egress Requests when queue non-em]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_collaborator_trackerpy
+#graphify/code #graphify/INFERRED #community/test_collaborator_trackerpy_2

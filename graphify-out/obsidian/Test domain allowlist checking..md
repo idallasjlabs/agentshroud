@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "AlertDispatcher"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/AlertDispatcher
 ---
 
 # Test domain allowlist checking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_is_domain_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

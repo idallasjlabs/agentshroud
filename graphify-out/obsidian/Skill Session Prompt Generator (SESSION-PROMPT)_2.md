@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Workflow: Survey → Draft → Inject → Confirm (3)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Workflow_Survey__Draft__Inject__Confirm_3
 ---
 
 # Skill: Session Prompt Generator (SESSION-PROMPT)
@@ -19,4 +19,4 @@ tags:
 - [[Workflow Survey → Draft → Inject → Confirm_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-session-promptSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_3

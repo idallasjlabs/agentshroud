@@ -12,7 +12,7 @@ tags:
 # TestOutputCanary
 
 ## Connections
-- [[dot-setup_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_16]] - `method` [EXTRACTED]
 - [[dot-test_canary_cleanup()]] - `method` [EXTRACTED]
 - [[dot-test_canary_generation_per_session()]] - `method` [EXTRACTED]
 - [[dot-test_clean_response_passes()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_leaked_canary_detected_in_response()]] - `method` [EXTRACTED]
 - [[dot-test_partial_canary_match_handling()]] - `method` [EXTRACTED]
 - [[dot-test_session_without_canary_returns_safe_result()]] - `method` [EXTRACTED]
-- [[dot-test_status_reporting()]] - `method` [EXTRACTED]
+- [[dot-test_status_reporting()_1]] - `method` [EXTRACTED]
 - [[dot-test_unicode_normalization_resistance()]] - `method` [EXTRACTED]
 - [[dot-test_zero_width_character_detection()]] - `method` [EXTRACTED]
 - [[CanaryConfig]] - `uses` [INFERRED]

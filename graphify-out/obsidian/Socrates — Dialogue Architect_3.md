@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Socrates — Dialogue Architect (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Socrates__Dialogue_Architect_2
 ---
 
 # Socrates — Dialogue Architect
@@ -19,10 +19,10 @@ tags:
 - [[Output Format_20]] - `contains` [EXTRACTED]
 - [[Persona_6]] - `contains` [EXTRACTED]
 - [[Quality Checklist_7]] - `contains` [EXTRACTED]
-- [[Role_59]] - `contains` [EXTRACTED]
+- [[Role_56]] - `contains` [EXTRACTED]
 - [[Speaker Definitions_1]] - `contains` [EXTRACTED]
 - [[System Prompt_6]] - `contains` [EXTRACTED]
 - [[User Prompt Template_1]] - `contains` [EXTRACTED]
 - [[hermesskillsi-socratesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2

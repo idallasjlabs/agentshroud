@@ -12,8 +12,8 @@ tags:
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_32]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_11]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `method` [EXTRACTED]
@@ -34,18 +34,18 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

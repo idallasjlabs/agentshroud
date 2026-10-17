@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[collect_recent_events()]] - `references` [EXTRACTED]
 - [[from_anomaly_alert()]] - `references` [EXTRACTED]
 - [[from_audit_chain_entry()]] - `references` [EXTRACTED]

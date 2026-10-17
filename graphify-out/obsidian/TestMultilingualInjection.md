@@ -12,7 +12,7 @@ tags:
 # TestMultilingualInjection
 
 ## Connections
-- [[dot-setup_method()_18]] - `method` [EXTRACTED]
+- [[dot-setup_method()_15]] - `method` [EXTRACTED]
 - [[dot-test_benign_multilingual_text()]] - `method` [EXTRACTED]
 - [[dot-test_case_insensitive_detection()]] - `method` [EXTRACTED]
 - [[dot-test_mixed_language_injection()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_tier2_tagalog_injection()]] - `method` [EXTRACTED]
 - [[dot-test_tier2_tamil_injection()]] - `method` [EXTRACTED]
 - [[dot-test_tier2_ukrainian_injection()]] - `method` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - `rationale_for` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `contains` [EXTRACTED]
 

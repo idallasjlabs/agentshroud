@@ -12,6 +12,6 @@ tags:
 # Static Mounts
 
 ## Connections
-- [[main.py]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpy

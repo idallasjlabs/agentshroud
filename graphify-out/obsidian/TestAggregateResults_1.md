@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_collaborator_greeter.py"
+community: "test_collaborator_greeter.py (2)"
 location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/test_collaborator_greeterpy_2
 ---
 
 # TestAggregateResults
@@ -22,4 +22,4 @@ tags:
 - [[dot-test_totals_sum_across_scanners()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

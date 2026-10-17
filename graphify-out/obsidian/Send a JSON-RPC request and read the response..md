@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "MCPInspector"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPInspector
 ---
 
 # Send a JSON-RPC request and read the response.
 
 ## Connections
-- [[dot-send_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-send_request()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

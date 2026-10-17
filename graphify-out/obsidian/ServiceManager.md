@@ -12,7 +12,7 @@ tags:
 # ServiceManager
 
 ## Connections
-- [[dot-__init__()_182]] - `method` [EXTRACTED]
+- [[dot-__init__()_104]] - `method` [EXTRACTED]
 - [[dot-_describe_service()]] - `method` [EXTRACTED]
 - [[dot-_get_engine()]] - `method` [EXTRACTED]
 - [[dot-_logs_via_socket()]] - `method` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[dot-update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_53]] - `uses` [INFERRED]
+- [[Any_68]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -71,7 +71,7 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_5]] - `uses` [INFERRED]
+- [[Request_9]] - `uses` [INFERRED]
 - [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ScanRequest]] - `uses` [INFERRED]
@@ -101,7 +101,7 @@ tags:
 - [[TestStatusMappings]] - `uses` [INFERRED]
 - [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - `rationale_for` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_FakeResponse]] - `uses` [INFERRED]
 - [[_FakeUnixSocket]] - `uses` [INFERRED]
 - [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `shares_data_with` [EXTRACTED]

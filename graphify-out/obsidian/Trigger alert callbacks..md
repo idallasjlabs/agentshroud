@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "MultiTurnTracker"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Trigger alert callbacks.
 
 ## Connections
-- [[dot-_trigger_alert()]] - `rationale_for` [EXTRACTED]
+- [[dot-_trigger_alert()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Test stats calculation
 
 ## Connections
-- [[test_get_stats()]] - `rationale_for` [EXTRACTED]
+- [[test_get_stats()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

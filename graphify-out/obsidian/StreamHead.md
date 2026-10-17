@@ -12,6 +12,7 @@ tags:
 # StreamHead
 
 ## Connections
+- [[dot-proxy_messages_streaming()]] - `calls` [EXTRACTED]
 - [[dot-test_upstream_200_streams_sse_as_before()]] - `calls` [EXTRACTED]
 - [[dot-test_upstream_400_returns_400_with_body()]] - `calls` [EXTRACTED]
 - [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - `rationale_for` [EXTRACTED]
@@ -20,7 +21,7 @@ tags:
 - [[_run_stream (StreamHead test harness)]] - `uses` [INFERRED]
 - [[_stream()]] - `calls` [EXTRACTED]
 - [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `shares_data_with` [EXTRACTED]
-- [[llm_proxy.py]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 - [[test_llm_proxy.py]] - `imports` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_streaming_cloud_non_quota_400_also_propagates]] - `uses` [INFERRED]

@@ -12,6 +12,6 @@ tags:
 # Serialize registry to dict.
 
 ## Connections
-- [[dot-to_dict()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_5]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

@@ -12,6 +12,6 @@ tags:
 # Threat Model
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_configpy

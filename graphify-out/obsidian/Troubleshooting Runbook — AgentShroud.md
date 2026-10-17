@@ -12,10 +12,10 @@ tags:
 # Troubleshooting Runbook — AgentShroud
 
 ## Connections
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
 - [[Diagnostic Commands]] - `contains` [EXTRACTED]
 - [[Getting Help]] - `contains` [EXTRACTED]
 - [[Known Log Messages]] - `contains` [EXTRACTED]
-- [[troubleshooting_23]] - `contains` [EXTRACTED]
+- [[troubleshooting_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

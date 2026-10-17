@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
@@ -21,11 +21,11 @@ tags:
 - [[List Available Profiles_1]] - `contains` [EXTRACTED]
 - [[Multi-Account AWS Access_1]] - `contains` [EXTRACTED]
 - [[Quick Reference_4]] - `contains` [EXTRACTED]
-- [[Related Skills_54]] - `contains` [EXTRACTED]
-- [[Role_23]] - `contains` [EXTRACTED]
+- [[Related Skills_57]] - `contains` [EXTRACTED]
+- [[Role_25]] - `contains` [EXTRACTED]
 - [[Switch AWS Profile for MCP_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
 - [[When to Invoke_1]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_2

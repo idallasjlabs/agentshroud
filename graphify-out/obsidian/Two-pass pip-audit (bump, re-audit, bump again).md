@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "rationale"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/check-vendor-compatsh
 ---
 
 # Two-pass pip-audit (bump, re-audit, bump again)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/rationale #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "AgentTarget"
+community: "AgentTarget (3)"
 location: "L471"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_3
 ---
 
 # SCRUM-46: verify forward.py elevates trust to FULL for the owner's user_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerTrustElevation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_3

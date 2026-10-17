@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
+community: "Skill: Test-Driven Development (TDD) (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Skill_Test-Driven_Development_TDD_2
 ---
 
 # Skill: Test-Driven Development (TDD)
@@ -21,4 +21,4 @@ tags:
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tddSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_2

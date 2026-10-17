@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "ServiceManager (2)"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/ServiceManager_2
 ---
 
 # TestServiceDescriptor
 
 ## Connections
-- [[dot-test_defaults()_2]] - `method` [EXTRACTED]
+- [[dot-test_defaults()_1]] - `method` [EXTRACTED]
 - [[dot-test_with_resource_usage()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/ServiceManager_2

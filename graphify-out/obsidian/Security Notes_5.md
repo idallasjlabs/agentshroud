@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "main.py"
-location: "L446"
+community: "API Keys Setup Guide"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/API_Keys_Setup_Guide
 ---
 
 # Security Notes
 
 ## Connections
-- [[main.py]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

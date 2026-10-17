@@ -12,6 +12,6 @@ tags:
 # Return True if the envelope's signature is valid.
 
 ## Connections
-- [[dot-verify()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-verify()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditChain

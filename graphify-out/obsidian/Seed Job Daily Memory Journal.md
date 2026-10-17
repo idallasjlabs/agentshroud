@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "Report Delivery Format Instructions (2)"
 location: "L75-L87"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Report_Delivery_Format_Instructions
+  - community/Report_Delivery_Format_Instructions_2
 ---
 
 # Seed Job: Daily Memory Journal
@@ -15,4 +15,4 @@ tags:
 - [[Daily Memory Journal (Hermes Prompt)]] - `semantically_similar_to` [INFERRED]
 - [[Prompt Daily Memory Journal]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/INFERRED #community/Report_Delivery_Format_Instructions_2

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode B — Comprehensive review sweep"
+community: "Mode B — Comprehensive review sweep (2)"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep
+  - community/Mode_B__Comprehensive_review_sweep_2
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep
+#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_2

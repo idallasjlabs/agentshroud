@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "AlertDispatcher"
 location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/AlertDispatcher
 ---
 
 # Test edge cases and malformed inputs.
 
 ## Connections
-- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -12,7 +12,7 @@ tags:
 # TestProgressiveLockdownUX
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - `method` [EXTRACTED]

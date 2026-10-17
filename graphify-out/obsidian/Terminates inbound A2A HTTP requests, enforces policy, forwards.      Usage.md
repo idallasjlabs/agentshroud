@@ -12,6 +12,6 @@ tags:
 # Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage::
 
 ## Connections
-- [[A2AProxy_1]] - `rationale_for` [EXTRACTED]
+- [[A2AProxy]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,26 +1,23 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "TestFabricatedSecurityNotice (3)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/TestFabricatedSecurityNotice_3
 ---
 
-# Startup Sequence.md
+# Startup Sequence
 
 ## Connections
-- [[Architecture Overview_3]] - `references` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[Home_1]] - `references` [EXTRACTED]
-- [[MiddlewareManager]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
+- [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
+- [[Common Startup Failures]] - `contains` [EXTRACTED]
+- [[First-Boot Notes]] - `contains` [EXTRACTED]
+- [[Overview_26]] - `contains` [EXTRACTED]
+- [[Related Notes_62]] - `contains` [EXTRACTED]
+- [[Startup Indicators]] - `contains` [EXTRACTED]
 - [[Startup Sequence]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_3

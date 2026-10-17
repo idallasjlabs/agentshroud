@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # Separation of Privilege (R-06, R-07)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig_2

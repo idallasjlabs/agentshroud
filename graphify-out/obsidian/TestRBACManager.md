@@ -12,7 +12,7 @@ tags:
 # TestRBACManager
 
 ## Connections
-- [[dot-setup_method()_14]] - `method` [EXTRACTED]
+- [[dot-setup_method()_30]] - `method` [EXTRACTED]
 - [[dot-test_list_users_and_roles()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_admin()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_collaborator()]] - `method` [EXTRACTED]
@@ -28,8 +28,8 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[Test RBAC manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]

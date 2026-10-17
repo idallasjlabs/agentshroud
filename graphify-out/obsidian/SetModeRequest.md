@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[SCLCaller_2]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]

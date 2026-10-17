@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
+community: "AgentShroud Weekly Upgrade — 2026-09-06 (2)"
 location: "L196"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06_2
 ---
 
 # Time spent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06_2

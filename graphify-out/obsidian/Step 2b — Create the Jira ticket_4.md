@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
+community: "Mode A — Single task (5)"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Mode_A__Single_task_5
 ---
 
 # Step 2b — Create the Jira ticket
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_5

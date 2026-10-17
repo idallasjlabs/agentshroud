@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_collaborator_greeter.py"
+community: "test_collaborator_greeter.py (2)"
 location: "L746"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/test_collaborator_greeterpy_2
 ---
 
 # Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_wazuh_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

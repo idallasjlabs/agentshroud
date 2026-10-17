@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "UserSessionManager"
-location: "L293"
+community: "ApprovalHardening (3)"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/ApprovalHardening_3
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening_3

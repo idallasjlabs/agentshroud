@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
+community: "Skill: Pre-Change Analysis (PCA) (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/Skill_Pre-Change_Analysis_PCA_2
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -15,8 +15,8 @@ tags:
 - [[Closing Gate_1]] - `contains` [EXTRACTED]
 - [[Output Format Rules_1]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)_2]] - `contains` [EXTRACTED]
-- [[Role_17]] - `contains` [EXTRACTED]
+- [[Role_18]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-pcaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA_2

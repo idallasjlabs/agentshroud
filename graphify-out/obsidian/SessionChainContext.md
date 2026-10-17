@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TestToolChainAnalyzer (2)"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/TestToolChainAnalyzer_2
 ---
 
 # SessionChainContext
@@ -17,4 +17,4 @@ tags:
 - [[Tool call chain context for a session.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

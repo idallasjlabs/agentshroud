@@ -23,7 +23,7 @@ tags:
 - [[Dependencies_6]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture]] - `contains` [EXTRACTED]
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
-- [[Role_30]] - `contains` [EXTRACTED]
+- [[Role_27]] - `contains` [EXTRACTED]
 - [[Rules_7]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist]] - `contains` [EXTRACTED]
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_collaborator_greeter.py"
+community: "test_collaborator_greeter.py (2)"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/test_collaborator_greeterpy_2
 ---
 
 # TestGetWazuhSummary
 
 ## Connections
-- [[dot-test_clean_when_installed_not_running()_2]] - `method` [EXTRACTED]
-- [[dot-test_not_run_when_no_alert_dir()_1]] - `method` [EXTRACTED]
-- [[dot-test_returns_summary_for_empty_dir()_1]] - `method` [EXTRACTED]
+- [[dot-test_clean_when_installed_not_running()_1]] - `method` [EXTRACTED]
+- [[dot-test_not_run_when_no_alert_dir()]] - `method` [EXTRACTED]
+- [[dot-test_returns_summary_for_empty_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

@@ -1,17 +1,21 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
-location: "L49"
+community: "Features"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Features
 ---
 
 # Setup
 
 ## Connections
-- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
+- [[1. Install Dependencies]] - `contains` [EXTRACTED]
+- [[2. Configure]] - `contains` [EXTRACTED]
+- [[3. Run]] - `contains` [EXTRACTED]
+- [[4. Test]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/Features

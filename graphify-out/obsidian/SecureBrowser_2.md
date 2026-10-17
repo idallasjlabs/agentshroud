@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (3)"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_3
 ---
 
 # SecureBrowser
 
 ## Connections
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-__init__()_52]] - `method` [EXTRACTED]
 - [[dot-_classify_risk()_2]] - `method` [EXTRACTED]
 - [[dot-_domain_matches()_2]] - `method` [EXTRACTED]
 - [[dot-_init_browser()_2]] - `method` [EXTRACTED]
@@ -23,14 +23,14 @@ tags:
 - [[dot-_take_screenshot()_2]] - `method` [EXTRACTED]
 - [[dot-_validate_url()_2]] - `method` [EXTRACTED]
 - [[dot-click()_2]] - `method` [EXTRACTED]
-- [[dot-close()_6]] - `method` [EXTRACTED]
+- [[dot-close()_4]] - `method` [EXTRACTED]
 - [[dot-detect_captcha()_2]] - `method` [EXTRACTED]
 - [[dot-extract()_2]] - `method` [EXTRACTED]
 - [[dot-fill_field()_2]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_3]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_4]] - `method` [EXTRACTED]
 - [[dot-navigate()_2]] - `method` [EXTRACTED]
 - [[Secure browser automation with enterprise controls      Security guarantees_2]] - `rationale_for` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 - [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

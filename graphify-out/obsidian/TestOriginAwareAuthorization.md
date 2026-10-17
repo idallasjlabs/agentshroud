@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "export_bot"
+community: "RBACConfig (2)"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/RBACConfig_2
 ---
 
 # TestOriginAwareAuthorization
@@ -21,10 +21,10 @@ tags:
 - [[dot-test_unverified_origin_still_allows_public_tools()]] - `method` [EXTRACTED]
 - [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

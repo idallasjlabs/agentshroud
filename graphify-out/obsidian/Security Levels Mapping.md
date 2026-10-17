@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "system-requirements.md"
 location: "L403"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/system-requirementsmd
 ---
 
 # Security Levels Mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IEC 62443 Industrial Security Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

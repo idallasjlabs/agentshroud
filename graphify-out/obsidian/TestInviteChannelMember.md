@@ -17,7 +17,7 @@ tags:
 - [[dot-test_no_token_returns_false()]] - `method` [EXTRACTED]
 - [[dot-test_other_error_returns_false()]] - `method` [EXTRACTED]
 - [[dot-test_success_returns_true()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

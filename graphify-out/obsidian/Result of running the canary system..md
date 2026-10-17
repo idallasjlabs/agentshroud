@@ -12,6 +12,6 @@ tags:
 # Result of running the canary system.
 
 ## Connections
-- [[CanaryResult_2]] - `rationale_for` [EXTRACTED]
+- [[CanaryResult]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -12,6 +12,6 @@ tags:
 # Risk assessment levels for egress requests.
 
 ## Connections
-- [[RiskLevel]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

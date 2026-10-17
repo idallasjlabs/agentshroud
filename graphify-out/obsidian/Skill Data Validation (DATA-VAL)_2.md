@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Skill: Data Validation (DATA-VAL)
@@ -19,4 +19,4 @@ tags:
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-dataSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

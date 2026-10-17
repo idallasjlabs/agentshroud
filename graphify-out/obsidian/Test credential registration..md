@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper"
+community: "TestDomainValidationHelper (3)"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/TestDomainValidationHelper_3
 ---
 
 # Test credential registration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_register_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper_3

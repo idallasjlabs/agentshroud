@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "http_proxy.py"
-location: "L198"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Security Notes
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

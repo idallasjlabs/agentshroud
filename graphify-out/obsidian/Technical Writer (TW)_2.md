@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_101]] - `contains` [EXTRACTED]
-- [[Related Skills_80]] - `contains` [EXTRACTED]
-- [[Usage_91]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-twREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-twREADME]] - `contains` [EXTRACTED]
+- [[Purpose_125]] - `contains` [EXTRACTED]
+- [[Related Skills_100]] - `contains` [EXTRACTED]
+- [[Usage_109]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

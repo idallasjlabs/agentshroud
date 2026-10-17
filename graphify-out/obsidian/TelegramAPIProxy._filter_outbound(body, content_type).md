@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (4)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_4
 ---
 
 # TelegramAPIProxy._filter_outbound(body, content_type)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_4

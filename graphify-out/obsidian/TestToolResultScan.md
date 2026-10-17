@@ -18,7 +18,7 @@ tags:
 - [[dot-test_empty_tool_result_passes()]] - `method` [EXTRACTED]
 - [[dot-test_lower_threshold_than_direct_scan()]] - `method` [EXTRACTED]
 - [[dot-test_role_override_in_tool_result_blocked()]] - `method` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[Tests for indirect prompt injection detection in tool results.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]

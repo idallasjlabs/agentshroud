@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "GovernanceAction"
+community: "GovernanceAction (2)"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/GovernanceAction_2
 ---
 
 # Result of scoring a subagent's output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction
+#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction_2

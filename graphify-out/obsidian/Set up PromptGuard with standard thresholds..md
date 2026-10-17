@@ -12,6 +12,6 @@ tags:
 # Set up PromptGuard with standard thresholds.
 
 ## Connections
-- [[dot-setup_method()_18]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_15]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

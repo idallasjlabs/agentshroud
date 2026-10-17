@@ -1,16 +1,21 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "AuditChain"
+community: "create_auth_dependency"
+location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/create_auth_dependency
 ---
 
 # SSHWriteFileRequest
 
 ## Connections
-- [[ssh_write_file()]] - `references` [EXTRACTED]
+- [[dot-path_not_empty()]] - `method` [EXTRACTED]
+- [[dot-validate_base64()]] - `method` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - `rationale_for` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

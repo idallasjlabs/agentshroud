@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L91"
+community: "TestEgressApprovalQueue"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/TestEgressApprovalQueue
 ---
 
 # RiskLevel
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
-- [[test_soc_egress.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-_assess_risk()]] - `references` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

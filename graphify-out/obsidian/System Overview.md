@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `references` [EXTRACTED]
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
-- [[Architecture Overview_3]] - `references` [EXTRACTED]
+- [[Architecture Overview_1]] - `references` [EXTRACTED]
 - [[Data Flow_1]] - `references` [EXTRACTED]
 - [[Home_1]] - `references` [EXTRACTED]
 - [[Quick Reference_8]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "RBACConfig (2)"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/telegram_proxypy
+  - community/RBACConfig_2
 ---
 
 # TeamsConfig
@@ -22,7 +22,7 @@ tags:
 - [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
 - [[dot-model_post_init()_1]] - `method` [EXTRACTED]
 - [[dot-test_group_keyed_by_raw_chat_id()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[Group]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
@@ -30,7 +30,7 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_21]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
@@ -90,19 +90,19 @@ tags:
 - [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - `rationale_for` [EXTRACTED]
 - [[WorkspaceContext]] - `uses` [INFERRED]
 - [[_apply_persisted_overrides()]] - `references` [EXTRACTED]
-- [[_make_rbac()_1]] - `calls` [EXTRACTED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[rbac()_2]] - `calls` [EXTRACTED]
-- [[rbac()_4]] - `calls` [EXTRACTED]
+- [[rbac()_1]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `imports` [EXTRACTED]
-- [[teams()_2]] - `calls` [EXTRACTED]
 - [[teams()_3]] - `calls` [EXTRACTED]
 - [[teams()_1]] - `calls` [EXTRACTED]
 - [[teams()_4]] - `calls` [EXTRACTED]
+- [[teams()_2]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `references` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
@@ -113,4 +113,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/telegram_proxypy
+#graphify/code #graphify/INFERRED #community/RBACConfig_2

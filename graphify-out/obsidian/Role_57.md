@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "_FakeRBAC"
-location: "L141"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+type: "document"
+community: "Socrates — Dialogue Architect (3)"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/Socrates__Dialogue_Architect_3
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_148]] - `references` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_3

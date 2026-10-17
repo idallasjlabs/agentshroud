@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "RBACConfig (2)"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GroupRoleResolver
+  - community/RBACConfig_2
 ---
 
 # TestOwnerGroupContext
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GroupRoleResolver
+#graphify/code #graphify/INFERRED #community/RBACConfig_2

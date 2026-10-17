@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "AlertDispatcher"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/AlertDispatcher
 ---
 
 # Test detection of internal/relative links.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_internal_link_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

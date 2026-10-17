@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "TrustConfig"
+community: "AlertDispatcher"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/AlertDispatcher
 ---
 
 # SubagentMonitorConfig
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_64]] - `references` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_27]] - `references` [EXTRACTED]
 - [[dot-test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
@@ -35,12 +35,12 @@ tags:
 - [[TestSubagentTracking]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_2]] - `calls` [EXTRACTED]
+- [[default_config()]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor_config()_1]] - `calls` [EXTRACTED]
-- [[strict_config()_1]] - `calls` [EXTRACTED]
+- [[monitor_config()]] - `calls` [EXTRACTED]
+- [[strict_config()]] - `calls` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

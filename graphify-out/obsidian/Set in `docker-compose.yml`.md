@@ -12,6 +12,6 @@ tags:
 # Set in `docker-compose.yml`
 
 ## Connections
-- [[Bot Container (`agentshroud-bot`)_1]] - `contains` [EXTRACTED]
+- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

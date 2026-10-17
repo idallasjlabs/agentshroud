@@ -12,7 +12,7 @@ tags:
 # TestIsBlocked
 
 ## Connections
-- [[dot-setup_method()_9]] - `method` [EXTRACTED]
+- [[dot-setup_method()_6]] - `method` [EXTRACTED]
 - [[dot-test_allowlist_overrides_blocklist()]] - `method` [EXTRACTED]
 - [[dot-test_case_normalization()]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()]] - `method` [EXTRACTED]

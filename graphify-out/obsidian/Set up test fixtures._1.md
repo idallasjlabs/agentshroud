@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "InjectionAction"
-location: "L24"
+community: "ProxyAction"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-setUp()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

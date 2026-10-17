@@ -12,7 +12,7 @@ tags:
 # TestMultiBotContextvarRouting
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `method` [EXTRACTED]
 - [[dot-test_active_bot_id_falls_back_to_openclaw()]] - `method` [EXTRACTED]
 - [[dot-test_active_bot_id_returns_contextvar_when_set()]] - `method` [EXTRACTED]
 - [[dot-test_active_send_token_returns_contextvar_inside_request()]] - `method` [EXTRACTED]

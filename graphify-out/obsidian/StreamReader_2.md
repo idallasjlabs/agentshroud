@@ -1,8 +1,8 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
 community: "dashboard_bridge.py"
-location: "L72"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,7 @@ tags:
 # StreamReader
 
 ## Connections
-- [[_handle()]] - `references` [EXTRACTED]
-- [[_pipe()]] - `references` [EXTRACTED]
-- [[_read_request_headers()]] - `references` [EXTRACTED]
+- [[_handle()_1]] - `references` [EXTRACTED]
+- [[_pump()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

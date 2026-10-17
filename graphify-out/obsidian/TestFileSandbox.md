@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AlertDispatcher (2)"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher_2
 ---
 
 # TestFileSandbox
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_proc_self_environ_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_staging_detection()]] - `method` [EXTRACTED]
 - [[dot-test_symlink_traversal_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_tmp_read_allowed()_1]] - `method` [EXTRACTED]
+- [[dot-test_tmp_read_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_windows_traversal_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_write_outside_allowed_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_write_pii_detection()]] - `method` [EXTRACTED]
@@ -54,9 +54,9 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

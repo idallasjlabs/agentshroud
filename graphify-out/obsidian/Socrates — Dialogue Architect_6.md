@@ -19,7 +19,7 @@ tags:
 - [[Output Format_19]] - `contains` [EXTRACTED]
 - [[Persona_5]] - `contains` [EXTRACTED]
 - [[Quality Checklist_6]] - `contains` [EXTRACTED]
-- [[Role_58]] - `contains` [EXTRACTED]
+- [[Role_55]] - `contains` [EXTRACTED]
 - [[Socrates Dialogue Architect README]] - `references` [EXTRACTED]
 - [[Speaker Definitions]] - `contains` [EXTRACTED]
 - [[System Prompt_5]] - `contains` [EXTRACTED]

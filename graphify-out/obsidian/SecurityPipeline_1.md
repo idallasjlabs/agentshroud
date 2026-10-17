@@ -1,30 +1,26 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L47"
+community: "PipelineAction"
+location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/PipelineAction
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
+- [[EncodingConfig]] - `uses` [INFERRED]
 - [[EncodingDetector]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
-- [[_make_full_pipeline()]] - `references` [EXTRACTED]
-- [[test_pipeline_fails_closed_without_pii()]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[_make_pipeline()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/PipelineAction

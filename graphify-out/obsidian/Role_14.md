@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "CI/CD Pipeline Advisor (SKILL) (2)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/CI/CD_Pipeline_Advisor_SKILL_2
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL_2

@@ -39,7 +39,7 @@ tags:
 - [[dot-test_tool_call_injection()]] - `method` [EXTRACTED]
 - [[dot-test_tool_result_injection_ref()]] - `method` [EXTRACTED]
 - [[dot-test_whitespace_obfuscation()]] - `method` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - `rationale_for` [EXTRACTED]

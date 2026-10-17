@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "concept"
-community: "WebProxyConfig"
+community: "WebProxyConfig (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/WebProxyConfig_2
 ---
 
 # Steve Hay Blue Team Assessment
@@ -14,4 +14,4 @@ tags:
 - [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - `conceptually_related_to` [INFERRED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/concept #graphify/EXTRACTED #community/WebProxyConfig_2

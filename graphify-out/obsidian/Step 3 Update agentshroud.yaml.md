@@ -12,6 +12,6 @@ tags:
 # Step 3: Update agentshroud.yaml
 
 ## Connections
-- [[Implementation Status_2]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implementation_Status

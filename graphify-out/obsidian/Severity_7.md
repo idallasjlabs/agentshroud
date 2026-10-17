@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
-type: "code"
-community: "SlackAPIProxy"
-location: "L23"
+source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+type: "document"
+community: "Make gateway source code, config, and security policies read-only to the agent"
+location: "L3"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/SlackAPIProxy
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
 ---
 
 # Severity
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent

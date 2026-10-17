@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Mode B — Comprehensive review sweep"
+community: "Mode B — Comprehensive review sweep (3)"
 location: "L447"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep
+  - community/Mode_B__Comprehensive_review_sweep_3
 ---
 
 # Step 3 — After the last directory (or a natural stopping point)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep
+#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_3

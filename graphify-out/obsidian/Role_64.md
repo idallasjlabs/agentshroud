@@ -1,17 +1,25 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
-type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L8"
+source_file: "gateway/security/rbac.py"
+type: "code"
+community: "MiddlewareManager"
+location: "L76"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/MiddlewareManager
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
+- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_2]] - `references` [EXTRACTED]
+- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

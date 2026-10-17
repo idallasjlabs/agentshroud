@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Pre-Deployment Checklist (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Pre-Deployment_Checklist_2
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
@@ -16,8 +16,8 @@ tags:
 - [[Invoke Before_1]] - `contains` [EXTRACTED]
 - [[Post-Deployment Verification_1]] - `contains` [EXTRACTED]
 - [[Pre-Deployment Checklist_1]] - `contains` [EXTRACTED]
-- [[Role_43]] - `contains` [EXTRACTED]
+- [[Role_41]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-psSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2

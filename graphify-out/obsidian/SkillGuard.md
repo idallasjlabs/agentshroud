@@ -43,10 +43,10 @@ tags:
 - [[dot-test_urllib_urlopen_flags()]] - `references` [EXTRACTED]
 - [[dot-test_wget_pipe_sh_blocks()]] - `references` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
-- [[guard()]] - `references` [EXTRACTED]
+- [[guard()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard

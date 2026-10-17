@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "lines 183-188"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace
@@ -15,4 +15,4 @@ tags:
 - [[S11 init-openclaw-config.sh seeds jira_dev_ticket.py into live OpenClaw workspace]] - `conceptually_related_to` [EXTRACTED]
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/concept #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

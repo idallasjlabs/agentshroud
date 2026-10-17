@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "BotConfig"
+community: "AgentShroud Security Policy - Final Decision"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/AgentShroud_Security_Policy_-_Final_Decision
 ---
 
 # SECURITY-POLICY-FINAL.md
@@ -17,4 +17,4 @@ tags:
 - [[CREDENTIAL-SECURITY-POLICY]] - `cites` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision

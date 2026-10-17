@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Technical Specification"
+community: "Technical Specification (3)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Technical_Specification_3
 ---
 
 # Technical Specification
@@ -21,4 +21,4 @@ tags:
 - [[Script Parsing]] - `contains` [EXTRACTED]
 - [[Voice Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification_3

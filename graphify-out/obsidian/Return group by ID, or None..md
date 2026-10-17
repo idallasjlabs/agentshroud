@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (2)"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_2
 ---
 
 # Return group by ID, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2

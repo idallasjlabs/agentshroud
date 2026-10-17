@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # ToolResultSanitizer._extract_scannable_content
@@ -14,4 +14,4 @@ tags:
 - [[ToolResultSanitizer._extract_dict_content]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer.sanitize_tool_result]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

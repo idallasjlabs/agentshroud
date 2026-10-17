@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Skill: Mindmap Architect (MM) (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Skill_Mindmap_Architect_MM_2
 ---
 
 # Skill: Mindmap Architect (MM)
@@ -19,7 +19,7 @@ tags:
 - [[Hierarchy Design — Outline First_1]] - `contains` [EXTRACTED]
 - [[Markdown-to-Mindmap Conversion_1]] - `contains` [EXTRACTED]
 - [[Markmap Generation via MCP_1]] - `contains` [EXTRACTED]
-- [[Role_32]] - `contains` [EXTRACTED]
+- [[Role_30]] - `contains` [EXTRACTED]
 - [[Rules_8]] - `contains` [EXTRACTED]
 - [[Use Case Patterns_1]] - `contains` [EXTRACTED]
 - [[Validation Checklist_3]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mmSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_2

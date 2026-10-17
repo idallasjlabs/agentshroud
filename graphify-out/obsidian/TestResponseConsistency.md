@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "TestHermesDashboardForwarderBinding"
+community: "TestToolChainAnalyzer"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHermesDashboardForwarderBinding
+  - community/TestToolChainAnalyzer
 ---
 
 # TestResponseConsistency
@@ -22,4 +22,4 @@ tags:
 - [[MultiTurnTracker]] - `uses` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHermesDashboardForwarderBinding
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

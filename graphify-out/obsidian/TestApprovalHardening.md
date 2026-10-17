@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "ApprovalHardening"
+community: "ApprovalHardening (2)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/ApprovalHardening_2
 ---
 
 # TestApprovalHardening
 
 ## Connections
-- [[dot-config()_3]] - `method` [EXTRACTED]
+- [[dot-config()]] - `method` [EXTRACTED]
 - [[dot-hardening()]] - `method` [EXTRACTED]
 - [[dot-test_cleanup_old_denied_requests()]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_disabled_when_feature_disabled()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_format_hardened_message_with_security_concerns()]] - `method` [EXTRACTED]
 - [[dot-test_format_parameters_with_highlighting()]] - `method` [EXTRACTED]
 - [[dot-test_get_stats()]] - `method` [EXTRACTED]
-- [[dot-test_initialization()_2]] - `method` [EXTRACTED]
+- [[dot-test_initialization()_1]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_handles_empty()]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_removes_misleading_phrases()]] - `method` [EXTRACTED]
 - [[dot-test_parameter_fingerprinting_consistency()]] - `method` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[Test approval hardening functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening_2

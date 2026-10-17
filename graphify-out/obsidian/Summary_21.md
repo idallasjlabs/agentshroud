@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L11"
+community: "🛡️ AgentShroud Release Plan"
+location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

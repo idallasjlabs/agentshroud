@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_echoes_status_until_disconnect()]] - `method` [EXTRACTED]
-- [[dot-test_invalid_token_closes_4003()_1]] - `method` [EXTRACTED]
+- [[dot-test_invalid_token_closes_4003()]] - `method` [EXTRACTED]
 - [[dot-test_missing_token_closes_4001()_1]] - `method` [EXTRACTED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]

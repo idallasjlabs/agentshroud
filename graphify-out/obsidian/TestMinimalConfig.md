@@ -12,13 +12,13 @@ tags:
 # TestMinimalConfig
 
 ## Connections
-- [[dot-config()]] - `method` [EXTRACTED]
+- [[dot-config()_1]] - `method` [EXTRACTED]
 - [[dot-test_has_auth_token()]] - `method` [EXTRACTED]
 - [[dot-test_has_gateway_bind()]] - `method` [EXTRACTED]
 - [[dot-test_has_gateway_port()]] - `method` [EXTRACTED]
 - [[dot-test_has_log_level()]] - `method` [EXTRACTED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[minimal.env should have reasonable defaults.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 

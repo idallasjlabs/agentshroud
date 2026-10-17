@@ -12,6 +12,6 @@ tags:
 # Tracks cumulative resource consumption for a single subagent.
 
 ## Connections
-- [[ResourceUsage_1]] - `rationale_for` [EXTRACTED]
+- [[ResourceUsage_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ResourceUsage

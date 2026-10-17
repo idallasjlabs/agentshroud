@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "AuditExporter"
+community: "AuditExporter (2)"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/AuditExporter_2
 ---
 
 # Test querying events with filters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_query_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditExporter
+#graphify/rationale #graphify/EXTRACTED #community/AuditExporter_2

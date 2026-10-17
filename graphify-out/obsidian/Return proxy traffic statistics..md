@@ -12,6 +12,6 @@ tags:
 # Return proxy traffic statistics.
 
 ## Connections
-- [[dot-get_stats()_14]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_13]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

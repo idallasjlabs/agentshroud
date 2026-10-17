@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L19"
+location: "L138"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/ApprovalQueueConfig
 ---
 
 # SSHConfig
 
 ## Connections
-- [[dot-test_ssh_disabled_config()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_145]] - `references` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
-- [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_3]] - `references` [EXTRACTED]
-- [[ssh_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

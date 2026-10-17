@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L29"
+community: "SecureBrowser"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/SecureBrowser
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_assess_risk()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
-- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
-- [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[test_egress_approval.py]] - `imports` [EXTRACTED]
+- [[dot-_classify_risk()]] - `references` [EXTRACTED]
+- [[dot-_log_action()]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()]] - `references` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

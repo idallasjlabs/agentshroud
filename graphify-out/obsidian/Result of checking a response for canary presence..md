@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (5)"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_5
 ---
 
 # Result of checking a response for canary presence.
 
 ## Connections
-- [[CanaryResult]] - `rationale_for` [EXTRACTED]
+- [[CanaryResult_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_5

@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
-type: "document"
-community: "Implement gateway-level outbound information filtering module"
-location: "L3"
+source_file: "gateway/soc/event_adapter.py"
+type: "code"
+community: "SlackAPIProxy"
+location: "L23"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_filtering_module
+  - graphify/code
+  - graphify/INFERRED
+  - community/SlackAPIProxy
 ---
 
 # Severity
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module
+#graphify/code #graphify/INFERRED #community/SlackAPIProxy

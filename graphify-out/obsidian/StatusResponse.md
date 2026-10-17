@@ -15,7 +15,7 @@ tags:
 - [[dot-test_status_response_model()]] - `calls` [EXTRACTED]
 - [[dot-test_status_response_monitor_mode()]] - `calls` [EXTRACTED]
 - [[dot-test_status_response_optional_fields()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[Health check response with v0.8.0 security dashboard data]] - `rationale_for` [EXTRACTED]
 - [[TestEnhancedStatus]] - `uses` [INFERRED]
 - [[health.py]] - `imports` [EXTRACTED]

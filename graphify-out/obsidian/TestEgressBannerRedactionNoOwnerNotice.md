@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "test_collaborator_tracker.py (2)"
 location: "L4712"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_collaborator_trackerpy
+  - community/test_collaborator_trackerpy_2
 ---
 
 # TestEgressBannerRedactionNoOwnerNotice
@@ -16,8 +16,8 @@ tags:
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[Outbound filter must redact egress banners but NOT call _send_owner_admin_notice]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_collaborator_trackerpy
+#graphify/code #graphify/INFERRED #community/test_collaborator_trackerpy_2

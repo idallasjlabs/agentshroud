@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # System Audit Documentation
 
 ## Connections
-- [[Purpose_96]] - `contains` [EXTRACTED]
-- [[Related Skills_75]] - `contains` [EXTRACTED]
-- [[Usage_86]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sadREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sadREADME]] - `contains` [EXTRACTED]
+- [[Purpose_124]] - `contains` [EXTRACTED]
+- [[Related Skills_99]] - `contains` [EXTRACTED]
+- [[Usage_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "test_security.py"
+community: "AgentTarget"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/AgentTarget
 ---
 
 # Test rate limiting behavior
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_securitypy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

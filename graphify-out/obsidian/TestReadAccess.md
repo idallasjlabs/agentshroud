@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # TestReadAccess
@@ -15,11 +15,11 @@ tags:
 - [[dot-test_gateway_source_read_flagged()]] - `method` [EXTRACTED]
 - [[dot-test_sensitive_config_read_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_system_info_read_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_workspace_read_allowed()_1]] - `method` [EXTRACTED]
+- [[dot-test_workspace_read_allowed()]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Test read access controls.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

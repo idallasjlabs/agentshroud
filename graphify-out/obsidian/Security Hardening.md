@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L68"
+community: "Dockerfile — Bot (OpenClaw) (2)"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/Dockerfile__Bot_OpenClaw_2
 ---
 
 # Security Hardening
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Dockerfile.gateway vault note]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2

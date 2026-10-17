@@ -1,20 +1,21 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L275"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

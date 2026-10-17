@@ -12,6 +12,6 @@ tags:
 # SSH command proxy with validation and audit support
 
 ## Connections
-- [[SSHProxy]] - `rationale_for` [EXTRACTED]
+- [[SSHProxy_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

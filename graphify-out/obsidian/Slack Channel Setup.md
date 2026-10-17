@@ -25,7 +25,7 @@ tags:
 - [[Step 7 Find Your Slack User ID]] - `contains` [EXTRACTED]
 - [[Step 8 Configure Environment]] - `contains` [EXTRACTED]
 - [[Step 9 Rebuild and Start]] - `contains` [EXTRACTED]
-- [[Troubleshooting_21]] - `contains` [EXTRACTED]
+- [[Troubleshooting_20]] - `contains` [EXTRACTED]
 - [[setup-slack]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

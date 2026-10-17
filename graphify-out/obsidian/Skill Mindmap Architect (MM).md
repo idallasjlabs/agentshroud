@@ -21,7 +21,7 @@ tags:
 - [[Hierarchy Design — Outline First]] - `contains` [EXTRACTED]
 - [[Markdown-to-Mindmap Conversion]] - `contains` [EXTRACTED]
 - [[Markmap Generation via MCP]] - `contains` [EXTRACTED]
-- [[Role_29]] - `contains` [EXTRACTED]
+- [[Role_26]] - `contains` [EXTRACTED]
 - [[Rules_6]] - `contains` [EXTRACTED]
 - [[Use Case Patterns]] - `contains` [EXTRACTED]
 - [[Validation Checklist_2]] - `contains` [EXTRACTED]

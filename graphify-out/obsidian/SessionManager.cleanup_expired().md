@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Function Details"
+community: "Function Details (5)"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_5
 ---
 
 # SessionManager.cleanup_expired()
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_5

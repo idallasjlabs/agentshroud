@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "RBACConfig (2)"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/RBACConfig_2
 ---
 
 # Return deduplicated list of all user IDs across all groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_all_member_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

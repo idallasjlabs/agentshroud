@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Skill: UI Expert (UI) (3)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Skill_UI_Expert_UI_3
 ---
 
 # Skill: UI Expert (UI)
@@ -21,10 +21,10 @@ tags:
 - [[Dependencies_10]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture_2]] - `contains` [EXTRACTED]
 - [[Responsive Layout System_2]] - `contains` [EXTRACTED]
-- [[Role_36]] - `contains` [EXTRACTED]
+- [[Role_34]] - `contains` [EXTRACTED]
 - [[Rules_11]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-uiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_3

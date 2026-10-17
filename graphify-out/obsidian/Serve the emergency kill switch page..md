@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (2)"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_2
 ---
 
 # Serve the emergency kill switch page.
 
 ## Connections
-- [[killswitch()_1]] - `rationale_for` [EXTRACTED]
+- [[killswitch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_2

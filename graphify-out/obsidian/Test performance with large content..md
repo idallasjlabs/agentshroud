@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "AlertDispatcher"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/AlertDispatcher
 ---
 
 # Test performance with large content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_performance_with_large_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -12,6 +12,6 @@ tags:
 # Safari
 
 ## Connections
-- [[Structure_2]] - `contains` [EXTRACTED]
+- [[Structure_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser_Extension

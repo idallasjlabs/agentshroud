@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "AlertDispatcher (2)"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher_2
 ---
 
 # The lifespan must stop the background monitor task on shutdown.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardLifecycle]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

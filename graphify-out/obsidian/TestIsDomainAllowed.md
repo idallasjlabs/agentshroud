@@ -12,7 +12,7 @@ tags:
 # TestIsDomainAllowed
 
 ## Connections
-- [[dot-test_case_insensitive()_3]] - `method` [EXTRACTED]
+- [[dot-test_case_insensitive()_1]] - `method` [EXTRACTED]
 - [[dot-test_empty_allowlist_blocks_everything()]] - `method` [EXTRACTED]
 - [[dot-test_exact_match()_1]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_does_not_match_other_root()]] - `method` [EXTRACTED]

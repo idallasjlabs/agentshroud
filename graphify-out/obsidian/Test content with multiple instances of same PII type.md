@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "test_security.py"
+community: "AgentTarget"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/AgentTarget
 ---
 
 # Test content with multiple instances of same PII type
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_multiple_same_type_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_securitypy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

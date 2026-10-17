@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "document"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/check-vendor-compatsh
 ---
 
 # Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)
@@ -22,4 +22,4 @@ tags:
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-approve.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

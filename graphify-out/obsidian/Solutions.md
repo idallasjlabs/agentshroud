@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "AuditChain"
+community: "AuditChain (2)"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AuditChain_2
 ---
 
 # Solutions
@@ -16,4 +16,4 @@ tags:
 - [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - `contains` [EXTRACTED]
 - [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditChain
+#graphify/document #graphify/EXTRACTED #community/AuditChain_2

@@ -12,7 +12,7 @@ tags:
 # SSH Proxy Errors.md
 
 ## Connections
-- [[Error Index]] - `references` [EXTRACTED]
+- [[Error Index_1]] - `references` [EXTRACTED]
 - [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

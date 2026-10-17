@@ -12,6 +12,6 @@ tags:
 # Test sanitizer initialization
 
 ## Connections
-- [[dot-test_initialization()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

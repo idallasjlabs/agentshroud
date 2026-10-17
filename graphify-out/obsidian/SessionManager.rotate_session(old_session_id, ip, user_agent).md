@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Function Details"
+community: "Function Details (5)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Function_Details_5
 ---
 
 # SessionManager.rotate_session(old_session_id, ip, user_agent)
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Function_Details_5

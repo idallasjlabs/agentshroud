@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "BotConfig"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Three-Phase Approach
@@ -18,4 +18,4 @@ tags:
 - [[Phase B Compatibility Testing]] - `contains` [EXTRACTED]
 - [[Phase C Production Lockdown]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

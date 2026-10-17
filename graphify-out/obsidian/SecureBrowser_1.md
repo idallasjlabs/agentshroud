@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (2)"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_2
 ---
 
 # SecureBrowser
@@ -23,14 +23,14 @@ tags:
 - [[dot-_take_screenshot()_1]] - `method` [EXTRACTED]
 - [[dot-_validate_url()_1]] - `method` [EXTRACTED]
 - [[dot-click()_1]] - `method` [EXTRACTED]
-- [[dot-close()_5]] - `method` [EXTRACTED]
+- [[dot-close()_3]] - `method` [EXTRACTED]
 - [[dot-detect_captcha()_1]] - `method` [EXTRACTED]
 - [[dot-extract()_1]] - `method` [EXTRACTED]
 - [[dot-fill_field()_1]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_2]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_3]] - `method` [EXTRACTED]
 - [[dot-navigate()_1]] - `method` [EXTRACTED]
 - [[Secure browser automation with enterprise controls      Security guarantees_1]] - `rationale_for` [EXTRACTED]
 - [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
-- [[main()_6]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2

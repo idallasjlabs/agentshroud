@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L8"
+community: "main.py.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/mainpymd
 ---
 
-# Shutdown & Recovery
+# Shutdown & Recovery.md
 
 ## Connections
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
-- [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
-- [[Kill Switch (Emergency Stop)]] - `contains` [EXTRACTED]
-- [[Related Notes_29]] - `contains` [EXTRACTED]
+- [[Home_1]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
-- [[State After Recovery]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/mainpymd

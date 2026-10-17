@@ -16,7 +16,7 @@ tags:
 - [[dot-test_classic_payloads_individually()]] - `method` [EXTRACTED]
 - [[Classic instruction-override payloads — should have near-100% detection.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

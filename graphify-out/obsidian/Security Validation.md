@@ -1,17 +1,19 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Post-Deployment Validation"
-location: "L449"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-Deployment_Validation
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Security Validation
 
 ## Connections
-- [[Post-Deployment Validation]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Check File Permissions]] - `contains` [EXTRACTED]
+- [[Verify Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-Deployment_Validation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

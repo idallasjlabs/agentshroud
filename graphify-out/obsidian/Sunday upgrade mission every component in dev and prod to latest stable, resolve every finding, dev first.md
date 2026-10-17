@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "document"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # Sunday upgrade mission: every component in dev and prod to latest stable, resolve every finding, dev first
@@ -20,4 +20,4 @@ tags:
 - [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/document #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

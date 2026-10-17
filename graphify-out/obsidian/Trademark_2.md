@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[COMMUNICATION-TEMPLATES]] - `conceptually_related_to` [INFERRED]
 - [[PRIOR-USE]] - `conceptually_related_to` [INFERRED]
-- [[Trademark Notice_2]] - `contains` [EXTRACTED]
+- [[Trademark Notice_3]] - `contains` [EXTRACTED]
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 - [[Usage Guidelines_2]] - `references` [EXTRACTED]
 

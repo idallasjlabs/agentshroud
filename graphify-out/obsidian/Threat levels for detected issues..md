@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "TestToolChainAnalyzer"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/TestToolChainAnalyzer
 ---
 
 # Threat levels for detected issues.
 
 ## Connections
-- [[ThreatLevel_1]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

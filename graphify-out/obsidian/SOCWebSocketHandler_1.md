@@ -1,56 +1,30 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L26"
+community: "MiddlewareManager"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_soc_realtime_coveragepy
+  - graphify/EXTRACTED
+  - community/MiddlewareManager
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_36]] - `method` [EXTRACTED]
-- [[dot-_event_fan_out()]] - `method` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
-- [[dot-_send_event()]] - `method` [EXTRACTED]
-- [[dot-run()]] - `method` [EXTRACTED]
-- [[Any_23]] - `uses` [INFERRED]
-- [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[dot-test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
+- [[dot-test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
+- [[dot-test_keepalive_breaks_on_construction_error()]] - `calls` [EXTRACTED]
+- [[dot-test_keepalive_sends_pings()]] - `calls` [EXTRACTED]
+- [[dot-test_none_bus_returns_immediately()]] - `calls` [EXTRACTED]
+- [[dot-test_send_event_serializes()]] - `calls` [EXTRACTED]
+- [[dot-test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
+- [[Action_2]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_65]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SimpleNamespace]] - `uses` [INFERRED]
-- [[TestCoerceToWSEvent]] - `uses` [INFERRED]
-- [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
-- [[TestCollectRecentEvents]] - `uses` [INFERRED]
-- [[TestEventFanOut]] - `uses` [INFERRED]
-- [[TestFromAnomalyAlert]] - `uses` [INFERRED]
-- [[TestFromAuditChainEntry]] - `uses` [INFERRED]
-- [[TestFromDict]] - `uses` [INFERRED]
-- [[TestFromEgressAttempt]] - `uses` [INFERRED]
-- [[TestFromPipelineResult]] - `uses` [INFERRED]
-- [[TestGetConfigToken]] - `uses` [INFERRED]
-- [[TestHandlerRun]] - `uses` [INFERRED]
-- [[TestMapSeverity]] - `uses` [INFERRED]
-- [[TestResolveCaller]] - `uses` [INFERRED]
-- [[TestSCLCaller]] - `uses` [INFERRED]
-- [[TestSOCWebSocketHandlerImport]] - `uses` [INFERRED]
-- [[TestSendEventAndKeepalive]] - `uses` [INFERRED]
-- [[TestSubscriptionFilter]] - `uses` [INFERRED]
-- [[TestTokenStorePruning]] - `uses` [INFERRED]
-- [[TestVerifyBearer]] - `uses` [INFERRED]
-- [[TestWSSOCEndpoint]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[_FakeBus]] - `uses` [INFERRED]
-- [[_FakeRBAC]] - `uses` [INFERRED]
-- [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
-- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
-- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
-- [[websocket.py]] - `contains` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

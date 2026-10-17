@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
-location: "L1136"
+community: "_FakeStreamResponse"
+location: "L1432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/_FakeStreamResponse
 ---
 
 # Stands in for httpx.AsyncClient inside LLMProxy._stream().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeStreamClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/_FakeStreamResponse

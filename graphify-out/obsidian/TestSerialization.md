@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "_sync"
-location: "L146"
+community: "RBACConfig"
+location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/RBACConfig
 ---
 
 # TestSerialization
 
 ## Connections
-- [[dot-test_append_targets_correct_agent_marker()]] - `method` [EXTRACTED]
-- [[dot-test_dry_run_writes_nothing()_1]] - `method` [EXTRACTED]
-- [[dot-test_entry_to_py_handles_none_cvss()]] - `method` [EXTRACTED]
-- [[dot-test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
-- [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
+- [[dot-test_session_to_dict_and_back()]] - `method` [EXTRACTED]
+- [[UserSession]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

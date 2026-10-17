@@ -12,6 +12,6 @@ tags:
 # Trademark Details
 
 ## Connections
-- [[Trademark Notice_2]] - `contains` [EXTRACTED]
+- [[Trademark Notice_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
