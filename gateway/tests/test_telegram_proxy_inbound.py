@@ -42,6 +42,24 @@ def _no_owner_mirror(monkeypatch):
     monkeypatch.setattr(TelegramAPIProxy, "_mirror_to_owner_if_collaborator", _noop)
 
 
+@pytest.fixture(autouse=True)
+def _no_real_telegram_network(monkeypatch):
+    """Fail any real urlopen fast unless a test installs its own fake.
+
+    Blocked-message paths send a best-effort notice through
+    _send_telegram_text, which with the tests' fake bot token went to the real
+    api.telegram.org: 3 attempts x 5 s timeout. On a slow CI runner that blew
+    the 60 s pytest timeout (2026-10-17, macOS 3.11,
+    test_collaborator_raw_tool_payload_text_is_quarantined). Tests that assert
+    on sends monkeypatch urlopen themselves, which overrides this default.
+    """
+
+    def _refuse(*args, **kwargs):
+        raise urllib.error.URLError("network disabled in tests")
+
+    monkeypatch.setattr(urllib.request, "urlopen", _refuse)
+
+
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 
