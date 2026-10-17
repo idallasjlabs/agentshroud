@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (3)"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_3
 ---
 
 # ._validate_url()
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 - [[Validate URL against allowlistblocklist          Security This is the primary_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

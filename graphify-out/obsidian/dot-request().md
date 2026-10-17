@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "cli/src/main.rs"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L609"
+community: "test_soc_realtime_coverage.py"
+location: "L933"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .request()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[FakeTransport]] - `method` [EXTRACTED]
+- [[HttpResponse]] - `references` [EXTRACTED]
+- [[Method_1]] - `references` [EXTRACTED]
+- [[Option]] - `references` [EXTRACTED]
+- [[Result]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

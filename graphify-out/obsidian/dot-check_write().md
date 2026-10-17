@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # .check_write()
 
 ## Connections
 - [[dot-_check()]] - `calls` [EXTRACTED]
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[dot-scan()_2]] - `calls` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 - [[FileVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

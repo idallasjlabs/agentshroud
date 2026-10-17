@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L83"
+community: "ResourceGuard (2)"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ResourceGuard_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEnforcementWiring]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

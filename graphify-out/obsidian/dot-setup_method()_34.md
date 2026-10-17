@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_benchmark_regression.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestBenchmarkRegression"
-location: "L44"
+community: "EgressFilterConfig"
+location: "L845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/EgressFilterConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
-- [[load_baseline()]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

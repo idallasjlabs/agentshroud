@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PIIConfig"
-location: "L43"
+community: "ToolResultSanitizer"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[PIISanitizer_1]] - `calls` [EXTRACTED]
-- [[TestPIIDetection]] - `method` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: ".update"
-location: "L64"
+community: "EgressFilterConfig"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-update()]] - `calls` [EXTRACTED]
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Path_52]] - `references` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

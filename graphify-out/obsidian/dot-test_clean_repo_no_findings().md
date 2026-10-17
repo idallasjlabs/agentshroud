@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # .test_clean_repo_no_findings()
@@ -15,4 +15,4 @@ tags:
 - [[GitGuard]] - `calls` [EXTRACTED]
 - [[TestGitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

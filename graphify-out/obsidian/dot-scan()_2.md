@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "ContextSegment"
-location: "L705"
+community: "MiddlewareManager (2)"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MiddlewareManager_2
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
-- [[dot-_check_unicode_tricks()]] - `calls` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
-- [[Scan input text for prompt injection patterns.          Args             text]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_4]] - `references` [EXTRACTED]
-- [[detect_base64_payloads()]] - `calls` [EXTRACTED]
-- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[dot-check_write()]] - `calls` [EXTRACTED]
+- [[PIIFinding]] - `calls` [EXTRACTED]
+- [[PIIScanResult]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

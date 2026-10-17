@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L138"
+community: "CompetitiveIntelReport"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/CompetitiveIntelReport
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig]] - `references` [EXTRACTED]
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Path_42]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

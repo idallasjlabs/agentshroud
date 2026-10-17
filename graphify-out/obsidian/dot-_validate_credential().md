@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # ._validate_credential()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-rotate_credential()]] - `calls` [EXTRACTED]
 - [[dot-validate()_1]] - `calls` [EXTRACTED]
-- [[Any_30]] - `references` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Validate a credential using registered validator.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

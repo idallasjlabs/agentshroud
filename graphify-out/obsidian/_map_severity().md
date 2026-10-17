@@ -12,9 +12,9 @@ tags:
 # _map_severity()
 
 ## Connections
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_48]] - `references` [EXTRACTED]
 - [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - `rationale_for` [EXTRACTED]
-- [[Severity_7]] - `references` [EXTRACTED]
+- [[Severity_2]] - `references` [EXTRACTED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 - [[from_anomaly_alert()]] - `calls` [EXTRACTED]

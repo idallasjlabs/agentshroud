@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "AuditExporter"
-location: "L28"
+community: "test_a2a_proxy.py"
+location: "L449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

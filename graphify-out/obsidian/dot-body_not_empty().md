@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "create_auth_dependency"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/create_auth_dependency
 ---
 
 # .body_not_empty()
 
 ## Connections
-- [[EmailSendRequest_1]] - `method` [EXTRACTED]
+- [[EmailSendRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

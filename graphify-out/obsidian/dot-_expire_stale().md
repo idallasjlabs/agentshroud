@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # ._expire_stale()
@@ -19,4 +19,4 @@ tags:
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Check all pending items and expire those past timeout          Returns]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L75"
+community: "api.py (2)"
+location: "L941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/apipy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig_1]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_63]] - `references` [EXTRACTED]
+- [[SkillGuardBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/apipy_2

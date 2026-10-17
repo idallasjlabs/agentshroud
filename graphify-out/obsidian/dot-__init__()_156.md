@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "test_mfa_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
-- [[Path_42]] - `references` [EXTRACTED]
-- [[UserSessionManager]] - `method` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "test_prompt_guard.py"
-location: "L188"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .guard()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestDocumentTagging]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

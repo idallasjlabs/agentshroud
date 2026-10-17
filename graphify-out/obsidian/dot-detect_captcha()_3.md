@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (4)"
 location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_4
 ---
 
 # .detect_captcha()
@@ -16,4 +16,4 @@ tags:
 - [[Detect if CAPTCHA is present on page_3]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

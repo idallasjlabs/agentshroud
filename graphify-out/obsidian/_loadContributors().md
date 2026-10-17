@@ -12,7 +12,7 @@ tags:
 # _loadContributors()
 
 ## Connections
-- [[ContributorRecord_1]] - `shares_data_with` [INFERRED]
+- [[ContributorRecord]] - `shares_data_with` [INFERRED]
 - [[_get()]] - `calls` [EXTRACTED]
 - [[_renderGroups()]] - `calls` [EXTRACTED]
 - [[_renderUsers()]] - `calls` [EXTRACTED]

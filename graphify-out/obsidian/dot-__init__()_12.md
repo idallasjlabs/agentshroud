@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L62"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

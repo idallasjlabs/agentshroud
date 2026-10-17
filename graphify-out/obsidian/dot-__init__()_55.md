@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "ConsentFramework"
-location: "L71"
+community: "ProxyAction"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

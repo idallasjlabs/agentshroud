@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L70"
+community: "ApprovalQueueConfig (2)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/ApprovalQueueConfig_2
 ---
 
 # .close()
 
 ## Connections
-- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

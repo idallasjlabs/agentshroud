@@ -16,6 +16,6 @@ tags:
 - [[dot-get_previous_trust_level()]] - `calls` [EXTRACTED]
 - [[Get trust levels in ascending order.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `method` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustLevel]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

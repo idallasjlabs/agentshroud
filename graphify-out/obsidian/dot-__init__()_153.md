@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "ServiceManager"
-location: "L45"
+community: "agentshroud-blueteam/SKILL.md (3)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

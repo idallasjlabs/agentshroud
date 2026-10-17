@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L183"
+community: "TestSSRFDetection (5)"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/TestSSRFDetection_5
 ---
 
 # .get_status()
 
 ## Connections
-- [[dot-all_statuses()]] - `calls` [EXTRACTED]
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
-- [[Return current lockdown state for a user (for collabs or owner inspection).]] - `rationale_for` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
+- [[Return canary status for dashboard.          Args             session_id Sessi]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_5

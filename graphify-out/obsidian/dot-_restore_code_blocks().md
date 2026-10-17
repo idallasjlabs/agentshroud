@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ForwardRequest"
+community: "AlertDispatcher"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AlertDispatcher
 ---
 
 # ._restore_code_blocks()
 
 ## Connections
-- [[dot-sanitize()_4]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[Restore code blocks after sanitization.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

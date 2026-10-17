@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AppleContainerEngine]] - `contains` [EXTRACTED]
 - [[ContainerEngine]] - `imports` [EXTRACTED]
-- [[ContainerInfo]] - `imports` [EXTRACTED]
+- [[ContainerInfo_3]] - `imports` [EXTRACTED]
 - [[RuntimeConfig]] - `references` [EXTRACTED]
 - [[engine.py]] - `imports_from` [EXTRACTED]
 - [[runtime__init__.py]] - `re_exports` [EXTRACTED]

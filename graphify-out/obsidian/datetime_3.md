@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "UserSessionManager"
-location: "L132"
+community: "test_security_toolchain.py (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/test_security_toolchainpy_2
 ---
 
 # datetime
 
 ## Connections
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

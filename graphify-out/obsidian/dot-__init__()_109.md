@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L111"
+community: "AgentRegistry"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

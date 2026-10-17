@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "_build_image_targets"
+community: "test_daily_cve_report.py"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/test_daily_cve_reportpy
 ---
 
 # _running_image()
@@ -17,4 +17,4 @@ tags:
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

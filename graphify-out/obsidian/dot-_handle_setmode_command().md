@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "telegram_proxy.py"
 location: "L7965"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/telegram_proxypy
 ---
 
 # ._handle_setmode_command()
@@ -19,4 +19,4 @@ tags:
 - [[format_setmode_success()]] - `calls` [EXTRACTED]
 - [[persist_group_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

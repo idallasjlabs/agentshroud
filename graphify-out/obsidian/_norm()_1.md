@@ -12,7 +12,7 @@ tags:
 # _norm()
 
 ## Connections
-- [[dot-__post_init__()_3]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_9]] - `calls` [EXTRACTED]
 - [[dot-enforce()_1]] - `calls` [EXTRACTED]
 - [[dot-evaluate()_1]] - `calls` [EXTRACTED]
 - [[Normalize a servertool reference for robust, evasion-resistant matching.      A]] - `rationale_for` [EXTRACTED]

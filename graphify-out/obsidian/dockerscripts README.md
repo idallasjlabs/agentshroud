@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "Atlas — Curriculum Architect (4)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Atlas__Curriculum_Architect_4
 ---
 
 # docker/scripts README.md
@@ -19,4 +19,4 @@ tags:
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_4

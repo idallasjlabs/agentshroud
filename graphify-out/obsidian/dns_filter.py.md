@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DNSFilter]] - `contains` [EXTRACTED]
 - [[DNSFilterConfig]] - `contains` [EXTRACTED]
-- [[DNSQuery]] - `contains` [EXTRACTED]
+- [[DNSQuery_1]] - `contains` [EXTRACTED]
 - [[DNSVerdict]] - `contains` [EXTRACTED]
 - [[EntropyCalculator]] - `contains` [EXTRACTED]
 - [[TunnelingPattern]] - `contains` [EXTRACTED]

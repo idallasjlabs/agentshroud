@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L67"
+community: "ApprovalQueueConfig (2)"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/ApprovalQueueConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `references` [EXTRACTED]
+- [[ApprovalStore_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_1]] - `references` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

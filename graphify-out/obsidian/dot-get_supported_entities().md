@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # .get_supported_entities()
 
 ## Connections
-- [[PIISanitizer_1]] - `method` [EXTRACTED]
+- [[PIISanitizer]] - `method` [EXTRACTED]
 - [[Return list of entity types currently enabled          Returns             List]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

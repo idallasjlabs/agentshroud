@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (2)"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_2
 ---
 
 # .navigate()
@@ -20,6 +20,6 @@ tags:
 - [[Navigate to URL          Security URL validation, audit logging_1]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 - [[SecurityError_1]] - `calls` [EXTRACTED]
-- [[main()_6]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2

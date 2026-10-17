@@ -12,7 +12,7 @@ tags:
 # .reanchor_delimiters()
 
 ## Connections
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
 - [[Strip injected fake delimiters and return sanitized message.          Called whe]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

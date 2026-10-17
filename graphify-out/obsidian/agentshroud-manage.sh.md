@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[agentshroud-manage.sh script]] - `contains` [EXTRACTED]
 - [[api_call()]] - `defines` [EXTRACTED]
-- [[usage()_6]] - `defines` [EXTRACTED]
+- [[usage()_5]] - `defines` [EXTRACTED]
 - [[validate_input()]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-managesh

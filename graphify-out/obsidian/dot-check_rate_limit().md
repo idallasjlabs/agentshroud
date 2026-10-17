@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (2)"
 location: "L562"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # .check_rate_limit()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-check_all()]] - `calls` [EXTRACTED]
 - [[Check and update rate limits for a tool call.          Returns allowed=True and]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 - [[RateLimitEntry]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

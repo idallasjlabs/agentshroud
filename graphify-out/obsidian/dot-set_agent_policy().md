@@ -12,7 +12,7 @@ tags:
 # .set_agent_policy()
 
 ## Connections
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 - [[EgressPolicy]] - `references` [EXTRACTED]
 - [[Set a per-agent egress policy.]] - `rationale_for` [EXTRACTED]
 

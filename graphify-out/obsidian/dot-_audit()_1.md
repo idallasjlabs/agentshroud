@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-process_agent_card_request()]] - `calls` [EXTRACTED]
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
+- [[A2AProxy]] - `method` [EXTRACTED]
 - [[A2AProxyResult]] - `references` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]
 

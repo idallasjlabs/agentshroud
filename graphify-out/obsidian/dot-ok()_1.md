@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "MCPPermissionManager"
+community: "main.rs"
 location: "L911"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/mainrs
 ---
 
 # .ok()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[FakeTransport]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
 - [[approvals_list_empty()]] - `calls` [EXTRACTED]
@@ -26,9 +26,9 @@ tags:
 - [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
 - [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
 - [[deploy_status_reads_version_endpoint()]] - `calls` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
+- [[main()_9]] - `calls` [EXTRACTED]
 - [[map_http_error()]] - `calls` [EXTRACTED]
 - [[status_hits_correct_path()]] - `calls` [EXTRACTED]
 - [[status_parses_and_formats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/mainrs

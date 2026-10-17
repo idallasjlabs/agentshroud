@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "telegram_proxy.py (2)"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/telegram_proxypy_2
 ---
 
 # .get_group()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRegistry]] - `method` [EXTRACTED]
 - [[Return group by ID, or None.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2

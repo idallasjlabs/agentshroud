@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # ._persist_pending_store()
@@ -19,4 +19,4 @@ tags:
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Persist queue items to disk for restart durability (best effort).          Uses]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

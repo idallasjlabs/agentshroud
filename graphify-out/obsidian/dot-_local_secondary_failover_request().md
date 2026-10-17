@@ -20,5 +20,6 @@ tags:
 - [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[Attempt a local→local-secondary failover when the primary local model hits OOM.…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
+- [[test_local_oom_triggers_secondary_failover]] - `references` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/LLMProxy

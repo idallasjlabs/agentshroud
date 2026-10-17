@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
 community: "LLMProxy"
-location: "L834"
+location: "L970"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -33,5 +33,7 @@ tags:
 - [[dot-_widen_optional_tool_param_types()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Proxy an LLM API request. Returns (status_code, response_headers,…]] - `rationale_for` [EXTRACTED]
+- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `calls` [INFERRED]
+- [[test_non_fieldflare_local_route_keeps_fields]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/LLMProxy

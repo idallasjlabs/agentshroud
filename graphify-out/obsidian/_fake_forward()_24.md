@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L355"
+community: "test_llm_proxy_local_parity.py (2)"
+location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # _fake_forward()
 
 ## Connections
-- [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `contains` [EXTRACTED]
+- [[_anthropic_ok()]] - `calls` [EXTRACTED]
+- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2

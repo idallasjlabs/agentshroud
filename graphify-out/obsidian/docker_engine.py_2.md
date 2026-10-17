@@ -17,8 +17,8 @@ tags:
 - [[Function Details_27]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
 - [[Purpose_146]] - `contains` [EXTRACTED]
-- [[Related_33]] - `contains` [EXTRACTED]
-- [[Responsibilities_31]] - `contains` [EXTRACTED]
+- [[Related_32]] - `contains` [EXTRACTED]
+- [[Responsibilities_30]] - `contains` [EXTRACTED]
 - [[docker_engine.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/docker_enginepy

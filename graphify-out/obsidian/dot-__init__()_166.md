@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L65"
+community: "EgressFilterConfig (2)"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/EgressFilterConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

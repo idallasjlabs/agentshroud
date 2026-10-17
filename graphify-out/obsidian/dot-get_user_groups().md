@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_user_collab_mode()]] - `calls` [EXTRACTED]
 - [[dot-get_user_projects()]] - `calls` [EXTRACTED]
-- [[dot-is_member()]] - `calls` [EXTRACTED]
+- [[dot-is_member()_1]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `references` [EXTRACTED]
 - [[Return all groups the user belongs to.]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `method` [EXTRACTED]

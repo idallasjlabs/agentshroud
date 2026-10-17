@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L19"
+community: "TestLogSanitizer"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/TestLogSanitizer
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
-- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
-- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

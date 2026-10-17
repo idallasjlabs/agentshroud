@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L56"
+community: "WebProxyConfig"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/WebProxyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
-- [[Any_31]] - `references` [EXTRACTED]
-- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[WebProxy_1]] - `references` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

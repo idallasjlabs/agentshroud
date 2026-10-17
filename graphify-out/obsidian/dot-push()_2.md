@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L49"
+community: "PodmanEngine"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/PodmanEngine
 ---
 
 # .push()
 
 ## Connections
-- [[dot-append()]] - `calls` [EXTRACTED]
-- [[Alert]] - `calls` [EXTRACTED]
-- [[AlertStore]] - `method` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

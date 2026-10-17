@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Extend AGENTSHROUD_RULES with bot-specific name prefixes.      Called at gateway]] - `rationale_for` [EXTRACTED]
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[falco_monitor.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "colima-health-check.sh"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "416"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)
@@ -21,4 +21,4 @@ tags:
 - [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - `references` [EXTRACTED]
 - [[openclaw service (isolated network only, egress via gateway8181, DOCKER_HOST=socket-proxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

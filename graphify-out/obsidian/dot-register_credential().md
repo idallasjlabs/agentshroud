@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # .register_credential()
 
 ## Connections
-- [[Any_30]] - `references` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Register a credential for rotation management.]] - `rationale_for` [EXTRACTED]
-- [[datetime_3]] - `references` [EXTRACTED]
+- [[datetime_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

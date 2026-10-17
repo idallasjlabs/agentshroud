@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L278"
+community: "CrossBotTrustLedger"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

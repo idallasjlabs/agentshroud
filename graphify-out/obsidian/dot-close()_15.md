@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L726"
+community: "A2APolicyEngine"
+location: "L466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/A2APolicyEngine
 ---
 
 # .close()
 
 ## Connections
-- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

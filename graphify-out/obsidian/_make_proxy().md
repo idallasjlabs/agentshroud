@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[LLMProxy]] - `calls` [EXTRACTED]
-- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `calls` [EXTRACTED]

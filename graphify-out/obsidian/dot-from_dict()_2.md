@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (6)"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_6
 ---
 
 # .from_dict()
 
 ## Connections
 - [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_7]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
 - [[FileIntegrityRecord]] - `method` [EXTRACTED]
 - [[ModificationSource]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

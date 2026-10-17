@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L141"
+community: "A2APolicyEngine"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager_2]] - `references` [EXTRACTED]
-- [[Role_57]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[A2APolicyConfig]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

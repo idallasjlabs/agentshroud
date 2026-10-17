@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L300"
+community: "KillSwitchMonitor"
+location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/KillSwitchMonitor
 ---
 
 # .get_status()
 
 ## Connections
-- [[Any_5]] - `references` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
-- [[Return canary status for dashboard.          Args             session_id Sessi]] - `rationale_for` [EXTRACTED]
+- [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
+- [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[Get current kill switch monitor status.          Returns             Dict conta]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

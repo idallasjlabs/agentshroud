@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L55"
+community: "HTTPConnectProxy"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[_SocketTransportWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

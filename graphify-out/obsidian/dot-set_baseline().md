@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_8]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_2]] - `calls` [EXTRACTED]
 - [[ContainerSnapshot]] - `references` [EXTRACTED]
 - [[DriftDetector]] - `method` [EXTRACTED]
 - [[Store a known-good baseline configuration. Returns config hash.]] - `rationale_for` [EXTRACTED]

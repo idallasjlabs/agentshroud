@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "InjectionAction"
-location: "L176"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

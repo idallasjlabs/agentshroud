@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L454"
+community: "StdioConnection (2)"
+location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/StdioConnection_2
 ---
 
 # .get_item()
 
 ## Connections
-- [[dot-decide()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[Fetch a single queue item by ID.]] - `rationale_for` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/StdioConnection_2

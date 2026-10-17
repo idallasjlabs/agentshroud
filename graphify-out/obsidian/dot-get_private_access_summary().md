@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (2)"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # .get_private_access_summary()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_private_access_events()]] - `calls` [EXTRACTED]
 - [[Aggregate recent private-tool violations for SOC reporting.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

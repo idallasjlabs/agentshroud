@@ -19,8 +19,8 @@ tags:
 - [[Key Classes  Functions_30]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_9]] - `contains` [EXTRACTED]
 - [[Purpose_147]] - `contains` [EXTRACTED]
-- [[Related_34]] - `contains` [EXTRACTED]
-- [[Responsibilities_32]] - `contains` [EXTRACTED]
+- [[Related_33]] - `contains` [EXTRACTED]
+- [[Responsibilities_31]] - `contains` [EXTRACTED]
 - [[Threat Model_18]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 

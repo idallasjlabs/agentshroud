@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test that oversized headers are flagged.]] - `rationale_for` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

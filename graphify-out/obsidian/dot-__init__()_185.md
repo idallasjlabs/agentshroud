@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "RBACConfig"
-location: "L181"
+community: "PipelineAction"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/PipelineAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[CanaryConfig_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -12,7 +12,7 @@ tags:
 # .is_required()
 
 ## Connections
-- [[dot-verify()]] - `calls` [EXTRACTED]
+- [[dot-verify()_1]] - `calls` [EXTRACTED]
 - [[MFAGuard_2]] - `method` [EXTRACTED]
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - `rationale_for` [EXTRACTED]
 

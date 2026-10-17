@@ -12,7 +12,7 @@ tags:
 # .test_allowed_egress_counts_as_allowed()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
 - [[get_collector()]] - `calls` [EXTRACTED]
 

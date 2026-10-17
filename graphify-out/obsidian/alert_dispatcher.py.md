@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # alert_dispatcher.py
@@ -20,7 +20,7 @@ tags:
 - [[drift_detector.py]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [EXTRACTED]
 - [[falco-rules]] - `references` [INFERRED]
-- [[health_report.py_2]] - `semantically_similar_to` [INFERRED]
+- [[health_report.py]] - `semantically_similar_to` [INFERRED]
 - [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DifferentialPIIConfig_1]] - `contains` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[PII Sanitizer Module Badge Icon]] - `conceptually_related_to` [AMBIGUOUS]
 - [[PIIHit]] - `contains` [EXTRACTED]
 - [[PIIHitSeverity]] - `contains` [EXTRACTED]

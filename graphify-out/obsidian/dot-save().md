@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (6)"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_6
 ---
 
 # .save()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Insert or replace an approval item.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_6

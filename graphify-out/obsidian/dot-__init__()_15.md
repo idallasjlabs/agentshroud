@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L20"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[LogSanitizer]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

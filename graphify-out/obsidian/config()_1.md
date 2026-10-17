@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "PermissionLevel"
-location: "L69"
+community: "WebProxyConfig"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/WebProxyConfig
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

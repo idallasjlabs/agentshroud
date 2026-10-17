@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
 - [[dot-append()_1]] - `calls` [EXTRACTED]
-- [[Any_41]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `references` [EXTRACTED]
 - [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - `rationale_for` [EXTRACTED]

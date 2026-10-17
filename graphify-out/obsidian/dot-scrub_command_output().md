@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "check_command"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/check_command
 ---
 
 # .scrub_command_output()
@@ -17,4 +17,4 @@ tags:
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Scrub environment variables and API keys from command output.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/check_command

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "DataLedger"
+community: "RBACConfig"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/RBACConfig
 ---
 
 # .test_append_to_user_memory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUserPrivateMemory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

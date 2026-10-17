@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "InjectionAction"
-location: "L69"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[dot-_load_config()]] - `calls` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

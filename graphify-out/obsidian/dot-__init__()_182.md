@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: "_DummyTargetWriter"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/_DummyTargetWriter
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

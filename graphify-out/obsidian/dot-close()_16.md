@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "WebProxy"
-location: "L117"
+community: "DNSForwarderProtocol"
+location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/DNSForwarderProtocol
 ---
 
 # .close()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "chatbot/test_main.py"
 type: "code"
-community: "ForwardRequest"
-location: "L32"
+community: "chatbot/main.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/chatbot/mainpy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

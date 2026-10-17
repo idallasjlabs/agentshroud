@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "AsyncMock"
-location: "L78"
+community: "TestOutputCanary"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/TestOutputCanary
 ---
 
 # .__init__()
 
 ## Connections
-- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `references` [EXTRACTED]
+- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

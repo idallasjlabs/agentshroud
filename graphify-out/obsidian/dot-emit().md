@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py"
+community: "dashboard_endpoints.py (5)"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/dashboard_endpointspy_5
 ---
 
 # .emit()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-append()]] - `calls` [EXTRACTED]
 - [[BufferHandler]] - `method` [EXTRACTED]
-- [[LogRecord_2]] - `references` [EXTRACTED]
+- [[LogRecord_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_5

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "AsyncMock"
+community: "AsyncMock (2)"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AsyncMock_2
 ---
 
 # .proxy_outbound()
@@ -16,6 +16,6 @@ tags:
 - [[dot-_intercept_connections_open()]] - `calls` [EXTRACTED]
 - [[dot-_is_owner_channel()]] - `calls` [EXTRACTED]
 - [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L47"
+community: "create_auth_dependency"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/create_auth_dependency
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `references` [EXTRACTED]
-- [[ApprovalStore_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_1]] - `references` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
+- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

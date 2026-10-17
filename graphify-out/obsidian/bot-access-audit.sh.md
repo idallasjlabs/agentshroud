@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/bot-access-audit.sh"
 type: "code"
-community: "start-agentshroud.sh"
+community: "start-agentshroud.sh (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/start-agentshroudsh_2
 ---
 
 # bot-access-audit.sh
@@ -16,4 +16,4 @@ tags:
 - [[bot-access-audit.sh script]] - `contains` [EXTRACTED]
 - [[run_op()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh_2

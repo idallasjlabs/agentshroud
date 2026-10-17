@@ -16,7 +16,7 @@ tags:
 - [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
 - [[dot-_domain_in_allowlist()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery]] - `calls` [EXTRACTED]
+- [[DNSQuery_1]] - `calls` [EXTRACTED]
 - [[DNSVerdict]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

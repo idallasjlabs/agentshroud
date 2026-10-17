@@ -19,7 +19,7 @@ tags:
 - [[DraftEntry]] - `contains` [EXTRACTED]
 - [[FetchOutcome]] - `contains` [EXTRACTED]
 - [[domain_matches()]] - `imports` [EXTRACTED]
-- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[intel_report.py]] - `imports_from` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `contains` [EXTRACTED]
 

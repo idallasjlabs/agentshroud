@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L49"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

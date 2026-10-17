@@ -12,7 +12,7 @@ tags:
 # ._dedup_key()
 
 ## Connections
-- [[dot-_handle()_1]] - `calls` [EXTRACTED]
+- [[dot-_handle()]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

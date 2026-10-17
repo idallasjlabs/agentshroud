@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_extract_scannable_content()]] - `calls` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
 - [[Recursively extract string content from dictionary]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

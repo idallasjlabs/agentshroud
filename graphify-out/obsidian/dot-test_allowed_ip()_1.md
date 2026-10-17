@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
 community: "EgressFilterConfig"
-location: "L114"
+location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .test_allowed_ip()
 
 ## Connections
-- [[TestIPRules]] - `method` [EXTRACTED]
-- [[_make_filter()]] - `calls` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

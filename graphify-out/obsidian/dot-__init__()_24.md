@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L69"
+community: "AlertDispatcher (2)"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/AlertDispatcher_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

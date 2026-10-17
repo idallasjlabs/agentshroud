@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "AuditStore"
-location: "L383"
+community: "AsyncMock (2)"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AsyncMock_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

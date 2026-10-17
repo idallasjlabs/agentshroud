@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "TrustConfig"
-location: "L442"
+community: "_DummyTargetWriter"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/_DummyTargetWriter
 ---
 
 # .close()
 
 ## Connections
-- [[TrustManager_4]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

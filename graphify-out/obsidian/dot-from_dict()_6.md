@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "UserSessionManager"
-location: "L85"
+community: "A2APolicyEngine (3)"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/A2APolicyEngine_3
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
-- [[ConversationMessage]] - `calls` [EXTRACTED]
-- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
-- [[Path_42]] - `calls` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[A2APolicyAction]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig]] - `method` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3

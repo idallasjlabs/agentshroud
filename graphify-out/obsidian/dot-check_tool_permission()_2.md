@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "_req"
-location: "L159"
+community: "MCPPermissionManager (2)"
+location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/MCPPermissionManager_2
 ---
 
 # .check_tool_permission()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[dot-_record_private_access_attempt()]] - `calls` [EXTRACTED]
+- [[dot-check_all()]] - `calls` [EXTRACTED]
+- [[dot-get_trust_level()]] - `calls` [EXTRACTED]
+- [[dot-infer_permission_level()]] - `calls` [EXTRACTED]
+- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - `rationale_for` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[PermissionCheck]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

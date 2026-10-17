@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_log_event()_1]] - `calls` [EXTRACTED]
 - [[Authorize a subagent spawn. Returns (allowed, reason).]] - `rationale_for` [EXTRACTED]
-- [[ResourceUsage_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage_2]] - `calls` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GovernanceAction

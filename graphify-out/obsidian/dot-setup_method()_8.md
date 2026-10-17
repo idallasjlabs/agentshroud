@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "InjectionAction"
-location: "L23"
+community: "ModuleStatsCollector"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ModuleStatsCollector
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TestEnforcementWiring]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

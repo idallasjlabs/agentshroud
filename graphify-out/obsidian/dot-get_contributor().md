@@ -17,6 +17,6 @@ tags:
 - [[dot-_ensure_teams()]] - `calls` [EXTRACTED]
 - [[dot-_load_paused_ids()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `method` [EXTRACTED]
-- [[ContributorRecord]] - `references` [EXTRACTED]
+- [[ContributorRecord_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

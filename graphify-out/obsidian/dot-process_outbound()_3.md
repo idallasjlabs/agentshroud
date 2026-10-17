@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L238"
+community: "AgentTarget (3)"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/AgentTarget_3
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[dot-_process()]] - `calls` [EXTRACTED]
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[A2AMessage]] - `references` [EXTRACTED]
-- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
+- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

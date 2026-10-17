@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L67"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/GroupApprovalRouter
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig]] - `references` [EXTRACTED]
-- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[Any_15]] - `references` [EXTRACTED]
+- [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

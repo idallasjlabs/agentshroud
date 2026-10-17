@@ -15,7 +15,7 @@ tags:
 - [[dot-_check_request_rate()]] - `calls` [EXTRACTED]
 - [[dot-_check_tool_call_rate()]] - `calls` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[dot-get_status()_1]] - `calls` [EXTRACTED]
+- [[dot-get_status()]] - `calls` [EXTRACTED]
 - [[Count events in the last N seconds.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[deque]] - `references` [EXTRACTED]

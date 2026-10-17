@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_collaborator_not_authorized_command_text_is_normalized_form"
+community: "TelegramAPIProxy (2)"
 location: "L573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_not_authorized_command_text_is_normalized_form
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_collaborator_not_authorized_command_text_is_normalized_form()
 
 ## Connections
 - [[Form payload auth-denial command text should map to protected scope notice.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_not_authorized_command_text_is_normalized_form
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

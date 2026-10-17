@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
 ---
 
 # .finding-scratch.md Overwrite-Per-Query Protocol
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Today in AI (12-Query Sweep)]] - `implements` [EXTRACTED]
 - [[append_finding.py Finding-Append Script]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2

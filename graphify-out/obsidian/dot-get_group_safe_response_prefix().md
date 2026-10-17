@@ -12,7 +12,7 @@ tags:
 # .get_group_safe_response_prefix()
 
 ## Connections
-- [[dot-is_member()]] - `calls` [EXTRACTED]
+- [[dot-is_member()_1]] - `calls` [EXTRACTED]
 - [[Return the safe_response_prefix for the first group that the user belongs to]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `method` [EXTRACTED]
 

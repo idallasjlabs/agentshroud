@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TestInstructionNonce"
+community: "SessionManager (2)"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInstructionNonce
+  - community/SessionManager_2
 ---
 
 # .manager()
@@ -15,4 +15,4 @@ tags:
 - [[SessionManager]] - `calls` [EXTRACTED]
 - [[TestInstructionNonce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInstructionNonce
+#graphify/code #graphify/EXTRACTED #community/SessionManager_2

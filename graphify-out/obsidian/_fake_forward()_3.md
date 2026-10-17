@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L705"
+community: "test_llm_proxy.py"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/test_llm_proxypy
 ---
 
 # _fake_forward()
 
 ## Connections
-- [[_anthropic_ok()]] - `calls` [EXTRACTED]
-- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `contains` [EXTRACTED]
+- [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

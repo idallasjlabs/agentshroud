@@ -12,11 +12,11 @@ tags:
 # .agents/skills/i-browser/scripts/browse.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_1]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[RiskLevel]] - `contains` [EXTRACTED]
 - [[SecureBrowser]] - `contains` [EXTRACTED]
-- [[SecurityConfig]] - `contains` [EXTRACTED]
+- [[SecurityConfig_1]] - `contains` [EXTRACTED]
 - [[SecurityError]] - `contains` [EXTRACTED]
-- [[main()_5]] - `contains` [EXTRACTED]
+- [[main()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "._run_proxy()"
+community: "test_main_endpoints.py"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/test_main_endpointspy
 ---
 
 # ._run_proxy()
@@ -22,4 +22,4 @@ tags:
 - [[multi_items()]] - `contains` [EXTRACTED]
 - [[request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_proxy
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

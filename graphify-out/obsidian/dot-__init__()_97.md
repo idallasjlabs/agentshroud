@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "RBACConfig"
-location: "L214"
+community: "ApprovalQueueConfig (2)"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `references` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

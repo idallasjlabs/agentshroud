@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
 community: "LLMProxy"
-location: "L1832"
+location: "L1968"
 tags:
   - graphify/code
   - graphify/EXTRACTED

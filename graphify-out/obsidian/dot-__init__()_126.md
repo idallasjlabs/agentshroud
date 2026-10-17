@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "test_collaborator_greeter.py"
-location: "L36"
+community: "DockerEngine"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/DockerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_state()]] - `calls` [EXTRACTED]
-- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
-- [[AsyncClient]] - `references` [EXTRACTED]
-- [[CollaboratorGreeter]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

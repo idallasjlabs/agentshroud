@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L62"
+community: "ControlCenter"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ControlCenter
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

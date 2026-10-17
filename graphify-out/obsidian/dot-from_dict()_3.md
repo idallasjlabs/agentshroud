@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L200"
+community: "RBACConfig"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/RBACConfig
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[MCPPolicyAction]] - `calls` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[ConversationMessage]] - `calls` [EXTRACTED]
+- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
+- [[Path_18]] - `calls` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "StdioConnection"
-location: "L125"
+community: "AgentTarget (3)"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/AgentTarget_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

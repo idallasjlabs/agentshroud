@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L314"
+community: "SubagentGovernance"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/SubagentGovernance
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
+- [[GovernanceConfig]] - `references` [EXTRACTED]
+- [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

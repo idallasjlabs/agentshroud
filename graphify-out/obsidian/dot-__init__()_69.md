@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L23"
+community: "AuditChain"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[KeyLeakDetector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/AuditChain

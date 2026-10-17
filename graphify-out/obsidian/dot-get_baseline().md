@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-check_drift()]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_4]] - `calls` [EXTRACTED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
 - [[ContainerSnapshot]] - `references` [EXTRACTED]
 - [[DriftDetector]] - `method` [EXTRACTED]
 - [[Retrieve baseline snapshot for a container.]] - `rationale_for` [EXTRACTED]

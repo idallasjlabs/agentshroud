@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L284"
+community: "MiddlewareManager"
+location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MiddlewareManager
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - `rationale_for` [EXTRACTED]
+- [[TestRBACIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

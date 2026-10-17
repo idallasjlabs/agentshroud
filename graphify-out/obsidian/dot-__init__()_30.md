@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "FetchOutcome"
-location: "L319"
+community: "ToolResultSanitizer"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

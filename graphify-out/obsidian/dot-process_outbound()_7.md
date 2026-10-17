@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L437"
+community: "PipelineAction"
+location: "L1032"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/PipelineAction
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
-- [[test_egress_allowed_domain()]] - `calls` [EXTRACTED]
-- [[test_egress_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
-- [[test_outbound_pii_stripped()]] - `calls` [EXTRACTED]
-- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `references` [EXTRACTED]
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

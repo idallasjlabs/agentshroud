@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "api.py"
-location: "L941"
+community: "_FakeRBAC"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

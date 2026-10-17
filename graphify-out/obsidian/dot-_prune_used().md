@@ -12,7 +12,7 @@ tags:
 # ._prune_used()
 
 ## Connections
-- [[dot-verify()]] - `calls` [EXTRACTED]
+- [[dot-verify()_1]] - `calls` [EXTRACTED]
 - [[Drop replay records older than the accepted window (bounded memory).]] - `rationale_for` [EXTRACTED]
 - [[MFAGuard_2]] - `method` [EXTRACTED]
 

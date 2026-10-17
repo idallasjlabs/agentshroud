@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "TestSSRFDetection (6)"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/TestSSRFDetection_6
 ---
 
 # .load_all()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Load all items (for auditdebugging).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_6

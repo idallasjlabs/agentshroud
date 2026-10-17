@@ -17,7 +17,7 @@ tags:
 - [[dot-_log_alert()]] - `calls` [EXTRACTED]
 - [[dot-_send_notification()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Dispatch an alert based on severity.          Args             alert Alert dic]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/First_Time_Setup

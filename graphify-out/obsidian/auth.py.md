@@ -12,13 +12,13 @@ tags:
 # auth.py.md
 
 ## Connections
-- [[Auth Errors]] - `references` [INFERRED]
+- [[Auth Errors_1]] - `references` [INFERRED]
 - [[GatewayConfig_2]] - `references` [EXTRACTED]
 - [[RateLimiter_1]] - `references` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `references` [EXTRACTED]
 - [[get_auth_dependency()]] - `references` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 - [[python-jose]] - `references` [INFERRED]
 - [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
 - [[verify_token()]] - `references` [EXTRACTED]

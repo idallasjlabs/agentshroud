@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()_176]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[DelegationManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationManager

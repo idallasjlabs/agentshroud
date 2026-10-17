@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L66"
+community: "PipelineAction"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/PipelineAction
 ---
 
 # .scan()
 
 ## Connections
-- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[ScanRequest_1]] - `references` [EXTRACTED]
-- [[ScanResponse]] - `references` [EXTRACTED]
-- [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
+- [[dot-_check_plain()]] - `calls` [EXTRACTED]
+- [[dot-_record()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
+- [[CanaryResult_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

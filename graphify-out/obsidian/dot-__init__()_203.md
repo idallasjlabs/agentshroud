@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L388"
+community: "api.py (2)"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/apipy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[CitationVerifier]] - `method` [EXTRACTED]
+- [[Fetcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

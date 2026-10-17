@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L63"
+community: "EgressFilterConfig"
+location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/EgressFilterConfig
 ---
 
 # ._record()
 
 ## Connections
-- [[dot-scan()_3]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[EgressAction]] - `references` [EXTRACTED]
+- [[EgressAttempt]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

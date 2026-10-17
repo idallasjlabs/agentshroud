@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # .monitor_git_operations()
@@ -15,4 +15,4 @@ tags:
 - [[GitGuard]] - `method` [EXTRACTED]
 - [[Monitor for git clone and npm install operations.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

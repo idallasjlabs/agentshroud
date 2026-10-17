@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "apply-patches.js"
+community: "apply-patches.js (3)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/apply-patchesjs_3
 ---
 
 # apply-patches.js patch driver (openclaw.json)
@@ -15,4 +15,4 @@ tags:
 - [[_resolveCollabToolConfig()]] - `calls` [EXTRACTED]
 - [[gateway LLM proxy local-model routing (llm_proxy.py)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_3

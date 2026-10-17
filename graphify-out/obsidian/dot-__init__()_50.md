@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (2)"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_2
 ---
 
 # .__init__()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_load_config()_1]] - `calls` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2

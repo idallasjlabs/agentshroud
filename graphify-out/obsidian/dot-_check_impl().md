@@ -16,14 +16,14 @@ tags:
 - [[dot-_is_private_ip()_1]] - `calls` [EXTRACTED]
 - [[dot-_matches_allowlist_domain()]] - `calls` [EXTRACTED]
 - [[dot-_matches_ip_list()]] - `calls` [EXTRACTED]
-- [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-check()_4]] - `calls` [EXTRACTED]
-- [[dot-get_policy()]] - `calls` [EXTRACTED]
+- [[dot-_record()]] - `calls` [EXTRACTED]
+- [[dot-check()_6]] - `calls` [EXTRACTED]
+- [[dot-get_policy()_1]] - `calls` [EXTRACTED]
 - [[dot-matches_domain()]] - `calls` [EXTRACTED]
 - [[dot-matches_ip()]] - `calls` [EXTRACTED]
 - [[dot-matches_port()]] - `calls` [EXTRACTED]
 - [[Check if an outbound connection is allowed.          Args             agent_id]] - `rationale_for` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

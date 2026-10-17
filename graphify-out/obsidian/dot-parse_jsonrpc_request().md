@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
+- [[A2AProxy]] - `method` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Parse a JSON-RPC 2.0 A2A request body into methodtask_id         callback_url.]] - `rationale_for` [EXTRACTED]
 - [[ParsedA2ARequest]] - `references` [EXTRACTED]
 

@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L136"
+community: "EgressFilterConfig (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/EgressFilterConfig_2
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-_record()]] - `calls` [EXTRACTED]
-- [[dot-scan_response()_2]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
+- [[ScanRequest_1]] - `references` [EXTRACTED]
+- [[ScanResponse]] - `references` [EXTRACTED]
+- [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

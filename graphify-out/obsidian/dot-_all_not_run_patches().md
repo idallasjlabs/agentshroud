@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (4)"
 location: "L868"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_4
 ---
 
 # ._all_not_run_patches()
@@ -31,4 +31,4 @@ tags:
 - [[_trivy_not_run()]] - `calls` [EXTRACTED]
 - [[_wazuh_not_run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_4

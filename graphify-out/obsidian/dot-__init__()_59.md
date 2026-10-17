@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L55"
+community: "MCPInspector"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

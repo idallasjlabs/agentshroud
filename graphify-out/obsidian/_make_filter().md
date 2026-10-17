@@ -16,7 +16,7 @@ tags:
 - [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_domain_passes()_1]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_domain_still_allowed_in_monitor()]] - `calls` [EXTRACTED]
-- [[dot-test_allowed_ip()_1]] - `calls` [EXTRACTED]
+- [[dot-test_allowed_ip()]] - `calls` [EXTRACTED]
 - [[dot-test_attempt_fields()]] - `calls` [EXTRACTED]
 - [[dot-test_bare_hostname()]] - `calls` [EXTRACTED]
 - [[dot-test_denied_domain_overrides_allow()]] - `calls` [EXTRACTED]
@@ -41,8 +41,8 @@ tags:
 - [[dot-test_wildcard_matches_base_domain()]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_one_level()]] - `calls` [EXTRACTED]
 - [[Create an EgressFilter with a simple config.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 

@@ -15,6 +15,6 @@ tags:
 - [[_handle()_1]] - `contains` [EXTRACTED]
 - [[_pump()]] - `contains` [EXTRACTED]
 - [[dashboard_bridge.py]] - `semantically_similar_to` [EXTRACTED]
-- [[main()_26]] - `contains` [EXTRACTED]
+- [[main()_24]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

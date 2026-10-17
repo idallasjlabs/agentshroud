@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

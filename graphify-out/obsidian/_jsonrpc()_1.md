@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
 community: "A2APolicyEngine"
-location: "L91"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,9 @@ tags:
 # _jsonrpc()
 
 ## Connections
-- [[test_a2a_integration.py]] - `contains` [EXTRACTED]
-- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - `calls` [EXTRACTED]
-- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - `calls` [EXTRACTED]
-- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - `calls` [EXTRACTED]
-- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `calls` [EXTRACTED]
-- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `calls` [EXTRACTED]
+- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `calls` [EXTRACTED]
+- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
+- [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

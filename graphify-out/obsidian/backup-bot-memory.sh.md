@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "code"
-community: "export-bot-conversations.py"
+community: "export-bot-conversations.py (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/export-bot-conversationspy_2
 ---
 
 # backup-bot-memory.sh
@@ -17,4 +17,4 @@ tags:
 - [[backup-bot-memory.sh script]] - `contains` [EXTRACTED]
 - [[disaster-recovery-backup.sh]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2

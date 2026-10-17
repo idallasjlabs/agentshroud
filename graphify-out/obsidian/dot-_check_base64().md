@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[Check for base64-encoded data in URL path and query values.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalysisResult]] - `references` [EXTRACTED]
+- [[URLAnalysisResult_1]] - `references` [EXTRACTED]
 - [[URLAnalyzer_1]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 - [[_looks_like_base64()]] - `calls` [EXTRACTED]

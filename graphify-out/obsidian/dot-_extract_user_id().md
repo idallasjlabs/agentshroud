@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L1019"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # ._extract_user_id()
 
 ## Connections
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[Extract user ID from request data.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

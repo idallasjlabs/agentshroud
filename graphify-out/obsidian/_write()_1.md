@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "MCPPolicyEngine (2)"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPolicyEngine_2
 ---
 
 # _write()
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
 - [[dot-test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Path_16]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

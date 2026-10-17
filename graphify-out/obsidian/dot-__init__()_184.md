@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L83"
+community: "PipelineAction"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/PipelineAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

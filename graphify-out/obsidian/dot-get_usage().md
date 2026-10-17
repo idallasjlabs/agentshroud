@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Get current resource usage for a subagent.]] - `rationale_for` [EXTRACTED]
-- [[ResourceUsage_1]] - `references` [EXTRACTED]
+- [[ResourceUsage_2]] - `references` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceUsage

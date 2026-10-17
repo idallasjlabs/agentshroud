@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "SkillGuard"
+community: "Path"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Path
 ---
 
 # .by_name()
@@ -15,4 +15,4 @@ tags:
 - [[ManifestEntry]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/Path

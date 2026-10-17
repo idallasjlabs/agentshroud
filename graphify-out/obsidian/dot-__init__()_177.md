@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
-location: "L30"
+community: "AlertDispatcher (3)"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/AlertDispatcher_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

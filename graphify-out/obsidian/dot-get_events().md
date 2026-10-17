@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L93"
+community: "SCLClient"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/SCLClient
 ---
 
 # .get_events()
 
 ## Connections
-- [[EgressChannel]] - `references` [EXTRACTED]
-- [[EgressEvent]] - `references` [EXTRACTED]
-- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[dot-get()]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/SCLClient

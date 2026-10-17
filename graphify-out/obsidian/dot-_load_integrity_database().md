@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (6)"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_6
 ---
 
 # ._load_integrity_database()
 
 ## Connections
-- [[dot-__init__()_84]] - `calls` [EXTRACTED]
+- [[dot-__init__()_82]] - `calls` [EXTRACTED]
 - [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[Load integrity database from disk.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

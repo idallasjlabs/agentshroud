@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AlertDispatcher"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher
 ---
 
 # .sandbox()
@@ -16,4 +16,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

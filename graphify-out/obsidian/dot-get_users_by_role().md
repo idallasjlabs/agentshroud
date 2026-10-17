@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Get all users with a specific role.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `method` [EXTRACTED]
-- [[Role_21]] - `references` [EXTRACTED]
+- [[Role_65]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

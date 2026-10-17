@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "Data Validation (DATA-VAL)"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Validation_DATA-VAL
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # _count_recent_restarts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Validation_DATA-VAL
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

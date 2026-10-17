@@ -12,12 +12,12 @@ tags:
 # _handle()
 
 ## Connections
-- [[StreamReader_2]] - `references` [EXTRACTED]
-- [[StreamWriter_1]] - `references` [EXTRACTED]
+- [[StreamReader_1]] - `references` [EXTRACTED]
+- [[StreamWriter]] - `references` [EXTRACTED]
 - [[_pipe()]] - `calls` [EXTRACTED]
 - [[_read_request_headers()]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 - [[rewrite_request_headers()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

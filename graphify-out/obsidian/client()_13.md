@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
 community: "ForwardRequest"
-location: "L25"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ForwardRequest

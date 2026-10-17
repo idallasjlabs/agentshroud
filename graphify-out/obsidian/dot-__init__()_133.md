@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L102"
+community: "test_dns_canvas_coverage.py"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L471"
+community: "MCPInspector"
+location: "L840"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/MCPInspector
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_28]] - `references` [EXTRACTED]
-- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
+- [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

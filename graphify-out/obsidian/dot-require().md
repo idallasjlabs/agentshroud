@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "All Dependencies.md"
-location: "L146"
+community: "test_soc_router_coverage.py"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/test_soc_router_coveragepy
 ---
 
 # .require()
 
 ## Connections
-- [[Action]] - `references` [EXTRACTED]
-- [[Raise 403 if the caller lacks the required permission.]] - `rationale_for` [EXTRACTED]
-- [[Resource]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

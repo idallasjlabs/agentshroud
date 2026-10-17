@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "SubagentGovernance"
-location: "L209"
+community: "StdioConnection"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[MCPServerConfig_2]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

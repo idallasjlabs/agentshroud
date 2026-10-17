@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_heuristic_classifier.py"
+source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L13"
+community: "MiddlewareManager"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
-- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+- [[TestSessionTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

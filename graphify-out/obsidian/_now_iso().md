@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "TestToolChainAnalyzer"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/TestToolChainAnalyzer
 ---
 
 # _now_iso()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[socmodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -16,7 +16,7 @@ tags:
 - [[dot-_relay_and_scan()]] - `calls` [EXTRACTED]
 - [[Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[StreamReader_1]] - `references` [EXTRACTED]
-- [[StreamWriter]] - `references` [EXTRACTED]
+- [[StreamReader_3]] - `references` [EXTRACTED]
+- [[StreamWriter_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_process_connect

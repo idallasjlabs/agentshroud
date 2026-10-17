@@ -12,9 +12,9 @@ tags:
 # ._coerce()
 
 ## Connections
-- [[dot-_handle()_1]] - `calls` [EXTRACTED]
+- [[dot-_handle()]] - `calls` [EXTRACTED]
 - [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - `rationale_for` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_25]] - `references` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

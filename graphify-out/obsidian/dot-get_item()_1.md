@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "UserSessionManager"
-location: "L252"
+community: "ApprovalQueueConfig (2)"
+location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/ApprovalQueueConfig_2
 ---
 
 # .get_item()
 
 ## Connections
-- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[dot-decide()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
-- [[Fetch a single queue item by ID          Args             request_id Request U]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Fetch a single queue item by ID.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

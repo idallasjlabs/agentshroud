@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L385"
+community: "make_event"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/make_event
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_50]] - `references` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[Any_53]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/make_event

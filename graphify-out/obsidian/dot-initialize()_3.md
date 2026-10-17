@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "AuditStore"
-location: "L129"
+community: "ApprovalQueueConfig"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/ApprovalQueueConfig
 ---
 
 # .initialize()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Open the database, create the schema, and run column migrations.          Initia]] - `rationale_for` [EXTRACTED]
+- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
+- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PIIConfig"
+community: "create_auth_dependency"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/create_auth_dependency
 ---
 
 # .record()
@@ -17,4 +17,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[LedgerEntry_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

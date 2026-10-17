@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L69"
+community: "UserSessionManager"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .manager()
 
 ## Connections
-- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `calls` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
+- [[KeyRotationManager]] - `calls` [EXTRACTED]
+- [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

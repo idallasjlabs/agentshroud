@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L288"
+community: "test_llm_proxy_local_parity.py"
+location: "L979"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # _fake_forward()
 
 ## Connections
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - `contains` [EXTRACTED]
+- [[_openai_ok()]] - `calls` [EXTRACTED]
+- [[test_model_ref_round_trip()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

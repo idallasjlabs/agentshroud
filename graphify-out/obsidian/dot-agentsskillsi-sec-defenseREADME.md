@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: ".agents/skills/i-cr/SKILL.md (5)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/agents/skills/i-cr/SKILLmd_5
 ---
 
 # .agents/skills/i-sec-defense/README.md
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_5

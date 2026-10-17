@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestAppleContainerEngine"
-location: "L360"
+community: "AlertDispatcher"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAppleContainerEngine
+  - community/AlertDispatcher
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

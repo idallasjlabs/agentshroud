@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # clamav_scanner.py
@@ -26,4 +26,4 @@ tags:
 - [[update_virus_db()]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

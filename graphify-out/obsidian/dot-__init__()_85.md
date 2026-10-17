@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L58"
+community: "RBACConfig"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
+- [[Path_18]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -16,7 +16,7 @@ tags:
 - [[dot-_analyze_script_content()]] - `calls` [EXTRACTED]
 - [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_5]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[Scan package.json for suspicious install scripts.]] - `rationale_for` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 

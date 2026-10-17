@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "InjectionAction"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/MiddlewareManager_2
 ---
 
 # agentshroud-blueteam/SKILL.md
@@ -18,7 +18,7 @@ tags:
 - [[Module Coverage Heat Map Legend (EMAC—)]] - `references` [EXTRACTED]
 - [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - `references` [INFERRED]
 - [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - `references` [EXTRACTED]
-- [[STPA-Sec Methodology_2]] - `references` [EXTRACTED]
+- [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 - [[approval_hardening.py]] - `references` [EXTRACTED]
 - [[audit_export.py]] - `references` [EXTRACTED]
 - [[canary_tripwire.py]] - `references` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2

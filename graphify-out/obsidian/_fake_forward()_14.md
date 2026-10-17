@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
 community: "test_llm_proxy_local_parity.py"
-location: "L766"
+location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # _fake_forward()
 
 ## Connections
-- [[_openai_ok()]] - `calls` [EXTRACTED]
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `contains` [EXTRACTED]
+- [[test_local_oom_triggers_secondary_failover]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

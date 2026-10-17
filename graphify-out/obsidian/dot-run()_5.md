@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L61"
+community: "FalcoAlertWatcher (2)"
+location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/FalcoAlertWatcher_2
 ---
 
 # .run()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Poll Falco alert files until stopped.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

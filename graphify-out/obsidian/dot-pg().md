@@ -12,7 +12,7 @@ tags:
 # .pg()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

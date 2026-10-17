@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-generate_report()]] - `calls` [EXTRACTED]
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

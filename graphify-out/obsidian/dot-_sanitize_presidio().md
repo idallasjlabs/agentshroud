@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
-- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_1]] - `method` [EXTRACTED]
+- [[dot-sanitize()_3]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `method` [EXTRACTED]
 - [[RedactionResult]] - `references` [EXTRACTED]
 - [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - `rationale_for` [EXTRACTED]
 

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L88"
+community: "ApprovalQueueConfig (2)"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize the store and restore pending items.]] - `rationale_for` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Open the database and create the schema. Idempotent a second call         must]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

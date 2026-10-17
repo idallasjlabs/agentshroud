@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "AuditEvent"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Path_33]] - `references` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

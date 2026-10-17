@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "RateLimitGuard"
+community: "TestToolChainAnalyzer"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/TestToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
+- [[WebSocket_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

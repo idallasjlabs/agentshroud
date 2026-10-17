@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L73"
+community: "EgressFilterConfig"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
-- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

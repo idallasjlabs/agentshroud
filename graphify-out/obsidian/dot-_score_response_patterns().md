@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ._score_response_patterns()
@@ -18,4 +18,4 @@ tags:
 - [[Score agent response for potential leaks.]] - `rationale_for` [EXTRACTED]
 - [[SessionContext]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

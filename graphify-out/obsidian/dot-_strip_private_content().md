@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "RBACConfig"
 location: "L372"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/RBACConfig
 ---
 
 # ._strip_private_content()
@@ -17,4 +17,4 @@ tags:
 - [[Remove private-looking content from shared memory before serving         to non-]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

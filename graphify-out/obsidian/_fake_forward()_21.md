@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L92"
+community: "test_llm_proxy_local_parity.py"
+location: "L1388"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_llm_proxypy
+  - graphify/EXTRACTED
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # _fake_forward()
 
 ## Connections
-- [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - `indirect_call` [INFERRED]
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - `indirect_call` [INFERRED]
-- [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - `indirect_call` [INFERRED]
-- [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - `indirect_call` [INFERRED]
-- [[test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend()]] - `indirect_call` [INFERRED]
-- [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `indirect_call` [INFERRED]
-- [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - `indirect_call` [INFERRED]
+- [[_openai_ok()]] - `calls` [EXTRACTED]
+- [[test_non_fieldflare_local_route_keeps_fields]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

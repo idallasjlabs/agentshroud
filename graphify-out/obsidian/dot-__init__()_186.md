@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L93"
+community: "test_collaborator_tracker.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/test_collaborator_trackerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
+- [[Path_57]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

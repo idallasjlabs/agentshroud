@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1438"
+community: "ServiceManager"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ServiceManager
 ---
 
 # .close()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

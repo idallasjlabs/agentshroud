@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L27"
+community: "test_e2e_proxy.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_e2e_proxypy
 ---
 
 # .forward()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[dot-health_check()_5]] - `calls` [EXTRACTED]
+- [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
+- [[ForwardResult]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

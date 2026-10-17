@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (4)"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_4
 ---
 
 # .navigate()
@@ -20,6 +20,6 @@ tags:
 - [[Navigate to URL          Security URL validation, audit logging_3]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[SecurityError_3]] - `calls` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

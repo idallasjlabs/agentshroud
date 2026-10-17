@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # .get_credential_status()
@@ -15,8 +15,8 @@ tags:
 - [[dot-get_all_credentials_status()]] - `calls` [EXTRACTED]
 - [[dot-should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-should_warn()]] - `calls` [EXTRACTED]
-- [[Any_30]] - `references` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
 - [[Get detailed status for a credential.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

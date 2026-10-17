@@ -17,7 +17,7 @@ tags:
 - [[dot-_scan_pyproject_toml()]] - `calls` [EXTRACTED]
 - [[Analyze file content for malicious patterns.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_5]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceGuard

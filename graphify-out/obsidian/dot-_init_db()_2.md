@@ -12,7 +12,7 @@ tags:
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_183]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_63]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

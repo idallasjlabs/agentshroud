@@ -15,8 +15,8 @@ tags:
 - [[dot-get_blocked_entries()]] - `calls` [EXTRACTED]
 - [[dot-get_failed_entries()]] - `calls` [EXTRACTED]
 - [[dot-verify_chain()]] - `calls` [EXTRACTED]
-- [[Any_26]] - `references` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 - [[Generate an MCP audit report summary.]] - `rationale_for` [EXTRACTED]
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

@@ -12,7 +12,7 @@ tags:
 # .guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L315"
+community: "AlertDispatcher (2)"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/AlertDispatcher_2
 ---
 
 # .stop()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

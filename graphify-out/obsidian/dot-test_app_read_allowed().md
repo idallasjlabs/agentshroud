@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AlertDispatcher (2)"
 location: "L537"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher_2
 ---
 
 # .test_app_read_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Reading from app should be allowed.]] - `rationale_for` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

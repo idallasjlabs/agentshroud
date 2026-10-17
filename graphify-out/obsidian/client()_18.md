@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
 community: "ForwardRequest"
-location: "L16"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ForwardRequest

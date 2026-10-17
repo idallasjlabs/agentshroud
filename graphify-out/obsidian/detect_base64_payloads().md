@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
-- [[dot-scan()_2]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
 - [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - `rationale_for` [EXTRACTED]
 - [[input_normalizer.py]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `imports` [EXTRACTED]

@@ -45,7 +45,7 @@ tags:
 - [[dot-test_text_sanitization_still_applied()]] - `calls` [EXTRACTED]
 - [[dot-test_urlencoded_body_parsed()]] - `calls` [EXTRACTED]
 - [[Create a SlackAPIProxy with test credentials and no real IO.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_2]] - `references` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 

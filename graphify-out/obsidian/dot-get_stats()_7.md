@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "MCPInspector"
-location: "L840"
+community: "RateLimitGuard"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/RateLimitGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
-- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

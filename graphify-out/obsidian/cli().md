@@ -17,7 +17,7 @@ tags:
 - [[_default_format()]] - `calls` [EXTRACTED]
 - [[climain.py]] - `contains` [EXTRACTED]
 - [[get()]] - `calls` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()_26]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/cli/mainpy

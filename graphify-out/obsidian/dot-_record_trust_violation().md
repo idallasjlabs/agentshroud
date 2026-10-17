@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
+- [[A2AProxy]] - `method` [EXTRACTED]
 - [[Record a typed violation against the peer's trust score for the         two A2A-]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

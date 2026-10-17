@@ -12,9 +12,9 @@ tags:
 # ._load_config()
 
 ## Connections
-- [[dot-__init__()_49]] - `calls` [EXTRACTED]
+- [[dot-__init__()_47]] - `calls` [EXTRACTED]
 - [[Load security configuration]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
-- [[SecurityConfig]] - `references` [EXTRACTED]
+- [[SecurityConfig_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

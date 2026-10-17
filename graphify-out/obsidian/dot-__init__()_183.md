@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "TrustConfig"
-location: "L97"
+community: "_DummyTargetWriter"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/_DummyTargetWriter
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `references` [EXTRACTED]
-- [[TrustLevel_2]] - `references` [EXTRACTED]
-- [[TrustManager_4]] - `method` [EXTRACTED]
+- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

@@ -12,9 +12,9 @@ tags:
 # .scan_tool_result()
 
 ## Connections
-- [[dot-scan()_2]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
 - [[Scan tool result content for indirect prompt injection.          Tool results (w]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_4]] - `references` [EXTRACTED]
+- [[ScanResult_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

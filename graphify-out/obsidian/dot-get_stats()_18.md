@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "First Time Setup"
-location: "L220"
+community: "PipelineAction"
+location: "L1658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/PipelineAction
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_79]] - `references` [EXTRACTED]
-- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

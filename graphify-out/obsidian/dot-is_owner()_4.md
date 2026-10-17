@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L159"
+community: "ProgressiveLockdown"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/ProgressiveLockdown
 ---
 
 # .is_owner()
 
 ## Connections
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig"
-location: "L95"
+community: "RBACConfig (3)"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_3

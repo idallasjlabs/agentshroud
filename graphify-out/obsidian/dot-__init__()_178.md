@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "AlertDispatcher (3)"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_75]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

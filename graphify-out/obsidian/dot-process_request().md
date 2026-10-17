@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .process_request()
@@ -21,11 +21,11 @@ tags:
 - [[dot-_is_owner()]] - `calls` [EXTRACTED]
 - [[dot-_is_path_allowed_for_user()]] - `calls` [EXTRACTED]
 - [[dot-_is_tool_call_request()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `references` [EXTRACTED]
 - [[Process request through all middleware modules.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

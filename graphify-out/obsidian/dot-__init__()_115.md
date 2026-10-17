@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "MCPInspector"
-location: "L230"
+community: "ResourceGuard"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `references` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `references` [EXTRACTED]
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

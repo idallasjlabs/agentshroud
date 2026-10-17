@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L145"
+community: "AppleContainerEngine"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/AppleContainerEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[dot-forward()_3]] - `calls` [EXTRACTED]
-- [[Check if the OpenClaw backend is healthy.]] - `rationale_for` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

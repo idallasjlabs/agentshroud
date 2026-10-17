@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L472"
+community: "AuditStore"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/AuditStore
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_46]] - `references` [EXTRACTED]
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/AuditStore

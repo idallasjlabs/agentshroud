@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Path"
+community: "Path (3)"
 location: "L1037"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/Path_3
 ---
 
 # _write_image_report()
@@ -19,9 +19,9 @@ tags:
 - [[dot-test_each_entry_has_image_key()]] - `calls` [EXTRACTED]
 - [[dot-test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
+- [[Path_36]] - `references` [EXTRACTED]
 - [[Write a fake image report file in the expected filename format.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/Path_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (8)"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_8
 ---
 
 # .scan_file()
@@ -19,7 +19,7 @@ tags:
 - [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_47]] - `references` [EXTRACTED]
+- [[Path_49]] - `references` [EXTRACTED]
 - [[Scan a single file for integrity changes.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8

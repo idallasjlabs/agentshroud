@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Check if a tool is allowed for the given trust level.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `method` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustLevel]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

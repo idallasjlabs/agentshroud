@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L97"
+community: "StdioConnection"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
-- [[dot-pause()_3]] - `calls` [EXTRACTED]
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

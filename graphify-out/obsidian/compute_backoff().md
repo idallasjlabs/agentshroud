@@ -12,7 +12,7 @@ tags:
 # compute_backoff()
 
 ## Connections
-- [[dot-run()_1]] - `calls` [EXTRACTED]
+- [[dot-run()]] - `calls` [EXTRACTED]
 - [[dot-test_capped_at_cap_for_large_attempts()]] - `calls` [EXTRACTED]
 - [[dot-test_first_attempt_uses_base()]] - `calls` [EXTRACTED]
 - [[dot-test_grows_exponentially_with_attempt()]] - `calls` [EXTRACTED]

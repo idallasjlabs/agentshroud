@@ -12,7 +12,7 @@ tags:
 # _lifespan()
 
 ## Connections
-- [[FastAPI_4]] - `references` [EXTRACTED]
+- [[FastAPI_2]] - `references` [EXTRACTED]
 - [[_warm()]] - `indirect_call` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 

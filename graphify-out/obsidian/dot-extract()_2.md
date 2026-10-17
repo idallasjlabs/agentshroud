@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (3)"
 location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_3
 ---
 
 # .extract()
@@ -17,6 +17,6 @@ tags:
 - [[Extract data from page          Security No credential extraction allowed_2]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 - [[SecurityError_2]] - `calls` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

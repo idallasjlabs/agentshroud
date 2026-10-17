@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (3)"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_3
 ---
 
 # .test_body_owner_id_without_trusted_header_is_stripped()
@@ -17,4 +17,4 @@ tags:
 - [[TestOwnerSpoofingViaForwardBody]] - `method` [EXTRACTED]
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

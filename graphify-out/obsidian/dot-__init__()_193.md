@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L205"
+community: "TestEgressApprovalQueue (2)"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/TestEgressApprovalQueue_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_61]] - `references` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

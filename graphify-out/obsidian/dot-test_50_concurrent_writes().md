@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_50_concurrent_writes()
@@ -15,4 +15,4 @@ tags:
 - [[50 concurrent write operations should all succeed.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentWrites]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

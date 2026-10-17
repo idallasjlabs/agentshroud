@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `contains` [EXTRACTED]
 - [[CredentialEntryBlocked]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[PhishingURLDetected]] - `contains` [EXTRACTED]
 - [[SocialEngineeringDetected]] - `contains` [EXTRACTED]
 - [[ThreatAssessment]] - `contains` [EXTRACTED]
-- [[ThreatLevel]] - `contains` [EXTRACTED]
+- [[ThreatLevel_1]] - `contains` [EXTRACTED]
 - [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - `cites` [EXTRACTED]
 - [[consent_framework.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]

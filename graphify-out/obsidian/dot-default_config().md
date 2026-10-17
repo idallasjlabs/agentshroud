@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Default PII configuration for tests]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

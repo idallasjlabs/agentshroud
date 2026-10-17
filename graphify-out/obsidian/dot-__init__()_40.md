@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "StdioConnection"
-location: "L95"
+community: "AgentTarget (3)"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/AgentTarget_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

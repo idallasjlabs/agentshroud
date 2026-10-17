@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L559"
+community: "MultiTurnTracker (2)"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MultiTurnTracker_2
 ---
 
 # .get_global_stats()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
-- [[Get global analyzer statistics.]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[Get global tracking statistics.]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker_2

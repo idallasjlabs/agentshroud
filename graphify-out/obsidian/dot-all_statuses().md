@@ -12,7 +12,7 @@ tags:
 # .all_statuses()
 
 ## Connections
-- [[dot-get_status()_2]] - `calls` [EXTRACTED]
+- [[dot-get_status()_1]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `method` [EXTRACTED]
 - [[Return lockdown status for all tracked users.]] - `rationale_for` [EXTRACTED]
 

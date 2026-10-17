@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_audit_log()_7]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery]] - `references` [EXTRACTED]
+- [[DNSQuery_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -12,7 +12,7 @@ tags:
 # ._is_allowed_for_trust()
 
 ## Connections
-- [[dot-filter_response()]] - `calls` [EXTRACTED]
+- [[dot-filter_response()_2]] - `calls` [EXTRACTED]
 - [[Check if a disclosure category is permitted for the user's trust level.]] - `rationale_for` [EXTRACTED]
 - [[InfoCategory]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]

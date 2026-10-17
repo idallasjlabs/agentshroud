@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L50"
+community: "CrossBotTrustLedger"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

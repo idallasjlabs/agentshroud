@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L56"
+community: "ContextSegment"
+location: "L800"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ContextSegment
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestSessionTokens]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -12,7 +12,7 @@ tags:
 # ._totp_for_counter()
 
 ## Connections
-- [[dot-verify()]] - `calls` [EXTRACTED]
+- [[dot-verify()_1]] - `calls` [EXTRACTED]
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - `rationale_for` [EXTRACTED]
 - [[MFAGuard_2]] - `method` [EXTRACTED]
 

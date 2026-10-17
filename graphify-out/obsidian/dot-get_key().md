@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AgentTarget"
+community: "AlertDispatcher (2)"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AlertDispatcher_2
 ---
 
 # .get_key()
@@ -17,4 +17,4 @@ tags:
 - [[dot-inject_for_request()]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "parse_clamscan_output"
 location: "L912"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/parse_clamscan_output
 ---
 
 # .test_clamav_parse_infected()
@@ -15,4 +15,4 @@ tags:
 - [[TestContainerSecurity]] - `method` [EXTRACTED]
 - [[parse_clamscan_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

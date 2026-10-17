@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "make_event"
-location: "L42"
+community: "StdioConnection"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

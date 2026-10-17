@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L28"
+community: "KillSwitchMonitor"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_32]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

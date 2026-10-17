@@ -12,8 +12,8 @@ tags:
 # _make_deny_all_filter()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]

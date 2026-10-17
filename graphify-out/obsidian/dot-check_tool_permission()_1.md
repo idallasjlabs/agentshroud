@@ -12,7 +12,7 @@ tags:
 # .check_tool_permission()
 
 ## Connections
-- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
+- [[dot-get_user_role()_2]] - `calls` [EXTRACTED]
 - [[Check if a user can use tools of a specific tier.]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `references` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]

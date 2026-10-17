@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "ContextSegment"
-location: "L584"
+community: "GatewayEmailService"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
-- [[PatternRule]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[GatewayEmailService_1]] - `method` [EXTRACTED]
+- [[TransportFactory]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L317"
+community: "agentshroud-blueteam/SKILL.md (2)"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PodmanEngine]] - `calls` [EXTRACTED]
-- [[TestPodmanEngine]] - `method` [EXTRACTED]
+- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-exec()_3]] - `calls` [EXTRACTED]
-- [[dot-health_check()_3]] - `calls` [EXTRACTED]
+- [[dot-health_check()_4]] - `calls` [EXTRACTED]
 - [[dot-inspect()_3]] - `calls` [EXTRACTED]
 - [[dot-logs()_3]] - `calls` [EXTRACTED]
 - [[dot-network_create()_3]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-pull()_3]] - `calls` [EXTRACTED]
 - [[dot-push()_4]] - `calls` [EXTRACTED]
 - [[dot-rm()_3]] - `calls` [EXTRACTED]
-- [[dot-stop()_10]] - `calls` [EXTRACTED]
+- [[dot-stop()_8]] - `calls` [EXTRACTED]
 - [[dot-unpause()_3]] - `calls` [EXTRACTED]
 - [[dot-volume_create()_3]] - `calls` [EXTRACTED]
 - [[dot-volume_rm()_3]] - `calls` [EXTRACTED]

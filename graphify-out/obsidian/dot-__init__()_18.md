@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L32"
+community: "AlertDispatcher"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder]] - `method` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

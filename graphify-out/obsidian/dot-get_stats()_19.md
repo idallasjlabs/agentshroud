@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L93"
+community: "TestOutboundInfoFilter"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestOutboundInfoFilter
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_81]] - `references` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

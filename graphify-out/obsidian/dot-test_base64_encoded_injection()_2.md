@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "TestPathIsolationManager"
-location: "L248"
+community: "InjectionAction"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/InjectionAction
 ---
 
 # .test_base64_encoded_injection()
 
 ## Connections
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
+- [[TestEncodedInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

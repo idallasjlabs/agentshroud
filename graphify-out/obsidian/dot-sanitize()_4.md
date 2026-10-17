@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ForwardRequest"
-location: "L228"
+community: "PipelineAction"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/PipelineAction
 ---
 
 # .sanitize()
 
 ## Connections
-- [[dot-_extract_code_blocks()]] - `calls` [EXTRACTED]
-- [[dot-_restore_code_blocks()]] - `calls` [EXTRACTED]
-- [[dot-sanitize_images()]] - `calls` [EXTRACTED]
-- [[dot-sanitize_links()]] - `calls` [EXTRACTED]
-- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[sanitize_tool_result()]] - `calls` [EXTRACTED]
+- [[_BrokenSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

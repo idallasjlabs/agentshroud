@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "PIIConfig"
-location: "L154"
+community: "ApprovalQueueConfig"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # auth_headers()
 
 ## Connections
-- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

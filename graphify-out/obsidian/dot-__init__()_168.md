@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AuditChain"
-location: "L51"
+community: "EgressFilterConfig (2)"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/EgressFilterConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

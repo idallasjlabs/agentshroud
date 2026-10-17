@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "RBACConfig"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/RBACConfig
 ---
 
 # .get_topic_scoped_memory()
@@ -20,4 +20,4 @@ tags:
 - [[Return memory from groups whose focus_topics match the query text.          For]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

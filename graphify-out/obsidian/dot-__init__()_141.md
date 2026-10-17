@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
 community: "test_cli_coverage.py"
-location: "L630"
+location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[_FakeWS]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

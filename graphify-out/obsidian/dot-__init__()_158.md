@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "MiddlewareManager"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

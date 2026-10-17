@@ -22,7 +22,7 @@ tags:
 - [[dot-test_unlock_without_user_id_shows_usage()]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy_3]] - `references` [EXTRACTED]
 - [[TestUnlockCommand]] - `method` [EXTRACTED]
-- [[_make_update()_2]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

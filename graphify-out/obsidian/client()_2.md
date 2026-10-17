@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_chat_completions_alias.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "test_claude_via_openai_path.py"
-location: "L27"
+community: "FetchOutcome"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/FetchOutcome
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

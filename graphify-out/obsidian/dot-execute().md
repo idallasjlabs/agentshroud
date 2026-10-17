@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Execute a command on a remote host via SSH.]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 - [[SSHResult]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

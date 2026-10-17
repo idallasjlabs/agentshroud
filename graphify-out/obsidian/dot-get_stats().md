@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "ProxyAction"
-location: "L628"
+community: "LLMProxy"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/LLMProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_13]] - `references` [EXTRACTED]
-- [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

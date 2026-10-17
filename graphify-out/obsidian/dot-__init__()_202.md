@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "ReportStore"
-location: "L66"
+community: "MiddlewareManager (9)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/MiddlewareManager_9
 ---
 
 # .__init__()
 
 ## Connections
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `references` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9

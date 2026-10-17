@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalDecision_1]] - `references` [EXTRACTED]
 - [[Approve or reject a pending action      Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[Request_8]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 

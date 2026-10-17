@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "._is_local_oom()"
+community: "test_llm_proxy_local_parity.py (2)"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_local_oom
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # ._is_local_oom()
@@ -22,4 +22,4 @@ tags:
 - [[test_is_local_oom_returns_false_for_200()]] - `calls` [EXTRACTED]
 - [[test_is_local_oom_returns_false_for_quota_429()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_local_oom
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2

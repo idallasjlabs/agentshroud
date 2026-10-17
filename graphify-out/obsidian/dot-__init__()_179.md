@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L183"
+community: "ProgressiveLockdown"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

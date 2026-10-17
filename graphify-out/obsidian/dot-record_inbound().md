@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_conn_ok()]] - `calls` [EXTRACTED]
-- [[Any_15]] - `references` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
 - [[Persist inbound updates so they can be replayed after a crash.]] - `rationale_for` [EXTRACTED]
 - [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L183"
+community: "AuditChain"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "SessionManager"
-location: "L181"
+community: "EgressTelegramNotifier"
+location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/EgressTelegramNotifier
 ---
 
 # .cleanup_expired()
 
 ## Connections
-- [[dot-create_session()]] - `calls` [EXTRACTED]
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

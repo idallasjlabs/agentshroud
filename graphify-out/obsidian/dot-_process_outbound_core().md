@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-append()_1]] - `calls` [EXTRACTED]
 - [[dot-append_block()]] - `calls` [EXTRACTED]
-- [[dot-process_outbound()_2]] - `calls` [EXTRACTED]
-- [[Any_41]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `calls` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[PipelineResult_1]] - `references` [EXTRACTED]
 - [[Process an outbound response through the security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `method` [EXTRACTED]

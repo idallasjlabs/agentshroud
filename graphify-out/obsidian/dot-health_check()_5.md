@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "AgentTarget"
-location: "L389"
+community: "test_e2e_proxy.py"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_e2e_proxypy
 ---
 
 # .health_check()
 
 ## Connections
-- [[AgentTarget_2]] - `references` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
-- [[Check health of one or all agent targets          Args             target Spec]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[dot-forward()_2]] - `calls` [EXTRACTED]
+- [[Check if the OpenClaw backend is healthy.]] - `rationale_for` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

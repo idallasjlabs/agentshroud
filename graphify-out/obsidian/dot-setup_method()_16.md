@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: ".setup_method"
-location: "L51"
+community: "TestOutputCanary"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup_method
+  - community/TestOutputCanary
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[OutputCanary]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup_method
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

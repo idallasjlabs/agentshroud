@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "UserSessionManager"
-location: "L122"
+community: "MiddlewareManager"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -12,7 +12,7 @@ tags:
 # _submit_tool_call()
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
 - [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_decide_missing_item_fail_closed()]] - `calls` [EXTRACTED]
 - [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - `calls` [EXTRACTED]

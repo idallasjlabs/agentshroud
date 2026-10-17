@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L165"
+community: "First Time Setup"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/First_Time_Setup
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
+- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/First_Time_Setup

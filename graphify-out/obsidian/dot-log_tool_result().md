@@ -15,6 +15,6 @@ tags:
 - [[dot-_compute_chain_hash()]] - `calls` [EXTRACTED]
 - [[Log an incoming MCP tool result.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

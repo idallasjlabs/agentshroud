@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "test_llm_proxy_local_parity.py (2)"
 location: "L552"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/test_llm_proxy_local_paritypy_2
 ---
 
 # _get_local_secondary_model reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_local_secondary_model_reads_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2

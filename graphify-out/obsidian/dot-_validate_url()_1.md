@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "SecureBrowser (2)"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SecureBrowser_2
 ---
 
 # ._validate_url()
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 - [[Validate URL against allowlistblocklist          Security This is the primary_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2

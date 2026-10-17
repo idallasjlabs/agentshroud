@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L126"
+community: "create_auth_dependency"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/create_auth_dependency
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
+- [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[forward.py]] - `contains` [EXTRACTED]
-- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
-- [[test_forward_stream.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

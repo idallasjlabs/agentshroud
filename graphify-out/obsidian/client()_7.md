@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "FetchOutcome"
-location: "L38"
+community: "ModeRequest"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ModeRequest
 ---
 
 # client()
 
 ## Connections
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

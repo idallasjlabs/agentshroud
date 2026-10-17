@@ -12,7 +12,7 @@ tags:
 # ._load_pending_store()
 
 ## Connections
-- [[dot-__init__()_43]] - `calls` [EXTRACTED]
+- [[dot-__init__()_42]] - `calls` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Load queue items from store file when present.]] - `rationale_for` [EXTRACTED]
 

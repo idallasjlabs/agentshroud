@@ -12,7 +12,7 @@ tags:
 # deploy.sh
 
 ## Connections
-- [[PATH_16]] - `defines` [EXTRACTED]
+- [[PATH_11]] - `defines` [EXTRACTED]
 - [[deploy.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/deploysh

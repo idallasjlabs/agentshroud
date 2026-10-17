@@ -1,18 +1,19 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "KeyRotationManager"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `references` [EXTRACTED]
+- [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

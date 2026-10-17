@@ -16,7 +16,7 @@ tags:
 - [[dot-test_passes_zero_based_attempt_index()]] - `calls` [INFERRED]
 - [[dot-test_returns_result_after_transient_failures()]] - `calls` [INFERRED]
 - [[dot-test_single_attempt_never_sleeps()]] - `calls` [INFERRED]
-- [[Any_54]] - `references` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all…]] - `rationale_for` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 - [[discover()]] - `calls` [EXTRACTED]

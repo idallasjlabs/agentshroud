@@ -18,7 +18,7 @@ tags:
 - [[LOG_LEVEL]] - `references` [EXTRACTED]
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [INFERRED]
-- [[mcp_config.py]] - `references` [INFERRED]
+- [[mcp_config.py_2]] - `references` [INFERRED]
 - [[ssh-config]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_filterpy

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "RBACConfig"
-location: "L57"
+community: "TestSSRFDetection"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TestSSRFDetection
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

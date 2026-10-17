@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L126"
+community: "PortManager"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/PortManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[PortManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/PortManager

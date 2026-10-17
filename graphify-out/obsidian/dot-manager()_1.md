@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "TestDomainValidationHelper"
-location: "L162"
+community: "MiddlewareManager (3)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/MiddlewareManager_3
 ---
 
 # .manager()
 
 ## Connections
-- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[TestKeyRotationManager]] - `method` [EXTRACTED]
+- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

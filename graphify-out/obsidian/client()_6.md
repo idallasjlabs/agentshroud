@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_v1_models_synthetic.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_v1_models_synthetic.py"
-location: "L31"
+community: "test_prompt_guard.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/test_prompt_guardpy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
-- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L93"
+community: "ContainerEngine"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/ContainerEngine
 ---
 
 # .stop()
 
 ## Connections
-- [[Signal the run loop to exit.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

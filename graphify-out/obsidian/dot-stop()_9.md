@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "DockerEngine"
-location: "L96"
+community: "StdioConnection"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
+- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

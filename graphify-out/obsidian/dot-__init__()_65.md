@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "SCLClient"
-location: "L17"
+community: "ModuleStatsCollector"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/ModuleStatsCollector
 ---
 
 # .__init__()
 
 ## Connections
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

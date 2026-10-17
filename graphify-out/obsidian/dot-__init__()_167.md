@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L194"
+community: "EgressFilterConfig (2)"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/EgressFilterConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path_49]] - `references` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

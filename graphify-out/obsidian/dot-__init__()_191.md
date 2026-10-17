@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L412"
+community: "RBACConfig (2)"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/RBACConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder_2]] - `method` [EXTRACTED]
+- [[ToolACLConfig]] - `references` [EXTRACTED]
+- [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

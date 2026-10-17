@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L278"
+community: "test_dns_canvas_coverage.py"
+location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

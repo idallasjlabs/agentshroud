@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L494"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ._trigger_alert()
 
 ## Connections
-- [[dot-analyze_tool_call()]] - `calls` [EXTRACTED]
-- [[ChainMatch]] - `references` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
-- [[Trigger alert callbacks for a detected chain.]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_thresholds()]] - `calls` [EXTRACTED]
+- [[AlertLevel]] - `references` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
+- [[Trigger alert callbacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

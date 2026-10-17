@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L116"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

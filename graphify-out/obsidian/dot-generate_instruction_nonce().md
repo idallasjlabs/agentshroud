@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "SessionManager"
+community: "SessionManager (2)"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/SessionManager_2
 ---
 
 # .generate_instruction_nonce()
@@ -15,4 +15,4 @@ tags:
 - [[Generate a single-use, time-bound nonce for an instruction.          Format ``]] - `rationale_for` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/SessionManager_2

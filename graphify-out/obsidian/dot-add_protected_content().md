@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Phase 1 — Raw Collection"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # .add_protected_content()
@@ -17,4 +17,4 @@ tags:
 - [[PromptProtection]] - `method` [EXTRACTED]
 - [[ProtectedContent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

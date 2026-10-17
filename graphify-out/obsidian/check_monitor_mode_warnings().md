@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "MiddlewareManager"
+community: "create_auth_dependency"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/create_auth_dependency
 ---
 
 # check_monitor_mode_warnings()
@@ -22,4 +22,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L308"
+location: "L1438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # .close()
 
 ## Connections
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

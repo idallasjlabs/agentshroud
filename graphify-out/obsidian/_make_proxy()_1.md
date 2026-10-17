@@ -43,8 +43,8 @@ tags:
 - [[dot-test_tracker_exception_does_not_break_response()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_content_type_ignored()]] - `calls` [EXTRACTED]
 - [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy]] - `references` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `references` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

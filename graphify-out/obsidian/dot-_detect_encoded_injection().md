@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "InjectionAction"
+community: "InjectionAction (2)"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/InjectionAction_2
 ---
 
 # ._detect_encoded_injection()
@@ -17,4 +17,4 @@ tags:
 - [[InjectionSeverity]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/InjectionAction_2

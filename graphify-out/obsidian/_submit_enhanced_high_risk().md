@@ -12,8 +12,8 @@ tags:
 # _submit_enhanced_high_risk()
 
 ## Connections
-- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
+- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
 - [[test_enhanced_decide_missing_code_denied()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_reject_no_mfa()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_valid_code_approves()]] - `calls` [EXTRACTED]

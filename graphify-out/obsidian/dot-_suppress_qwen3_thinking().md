@@ -16,6 +16,7 @@ tags:
 - [[dot-proxy_messages_streaming()]] - `calls` [EXTRACTED]
 - [[Append 'no_think' to the last user message, in place, if not already present.…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
+- [[Nemotron + Qwen-only no_think suffix root cause]] - `rationale_for` [EXTRACTED]
 - [[test_missing_model_treated_as_non_qwen()]] - `calls` [EXTRACTED]
 - [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - `calls` [EXTRACTED]
 - [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - `calls` [EXTRACTED]

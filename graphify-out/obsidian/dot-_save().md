@@ -16,7 +16,7 @@ tags:
 - [[dot-cleanup_expired()_2]] - `calls` [EXTRACTED]
 - [[dot-delegate()]] - `calls` [EXTRACTED]
 - [[dot-revoke_all_for_user()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_12]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_13]] - `calls` [EXTRACTED]
 - [[DelegationManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationManager

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/metadata_guard.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L39"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[MetadataGuard]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

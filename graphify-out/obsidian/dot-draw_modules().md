@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-clear_screen()]] - `calls` [EXTRACTED]
 - [[dot-make_api_request()]] - `calls` [EXTRACTED]
-- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[dot-run()_2]] - `calls` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 - [[Draw modules list screen]] - `rationale_for` [EXTRACTED]
 

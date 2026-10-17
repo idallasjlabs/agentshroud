@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "AsyncMock"
-location: "L439"
+community: "DataExfilVolumeGuard"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/DataExfilVolumeGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

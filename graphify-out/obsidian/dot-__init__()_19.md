@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L54"
+community: "AlertDispatcher"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Path_3]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

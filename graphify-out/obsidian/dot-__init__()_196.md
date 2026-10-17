@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "PortManager"
-location: "L88"
+community: "MCPPermissionManager (2)"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/MCPPermissionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

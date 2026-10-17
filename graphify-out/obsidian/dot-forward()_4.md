@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L415"
+community: "test_a2a_proxy.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/test_a2a_proxypy
 ---
 
 # .forward()
 
 ## Connections
 - [[_StubForwarder_2]] - `method` [EXTRACTED]
-- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
-- [[test_forwarder_mock()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

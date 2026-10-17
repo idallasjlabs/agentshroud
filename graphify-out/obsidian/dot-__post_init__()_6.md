@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L85"
+community: "MiddlewareManager (7)"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/MiddlewareManager_7
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[Initialize user roles based on configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `method` [EXTRACTED]
-- [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
-- [[load_removed_collaborator_ids()]] - `calls` [EXTRACTED]
+- [[RetentionAction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7

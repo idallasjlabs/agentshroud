@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "TestIsContainerRunning"
-location: "L145"
+community: "AlertDispatcher"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

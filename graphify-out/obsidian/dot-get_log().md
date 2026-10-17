@@ -12,9 +12,9 @@ tags:
 # .get_log()
 
 ## Connections
-- [[dot-get_stats()_8]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_17]] - `calls` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 - [[Get egress attempt log, optionally filtered by agent.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

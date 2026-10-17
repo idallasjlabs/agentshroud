@@ -18,9 +18,9 @@ tags:
 - [[Key Classes  Functions_40]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_11]] - `contains` [EXTRACTED]
 - [[Operational Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_169]] - `contains` [EXTRACTED]
-- [[Related_44]] - `contains` [EXTRACTED]
-- [[Responsibilities_42]] - `contains` [EXTRACTED]
+- [[Purpose_161]] - `contains` [EXTRACTED]
+- [[Related_43]] - `contains` [EXTRACTED]
+- [[Responsibilities_41]] - `contains` [EXTRACTED]
 - [[Threat Model_24]] - `contains` [EXTRACTED]
 - [[canary.py_1]] - `contains` [EXTRACTED]
 

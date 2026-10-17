@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BOT_DEVELOPMENT_TEAM_RPI_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[Container Security Policy — AgentShroud]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `references` [EXTRACTED]
+- [[Kill Switch]] - `references` [EXTRACTED]
 - [[Read-Only Filesystem (Planned)]] - `references` [EXTRACTED]
 - [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - `references` [EXTRACTED]
 - [[security-supply-chain]] - `conceptually_related_to` [INFERRED]

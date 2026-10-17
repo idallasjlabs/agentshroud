@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "ApprovalQueueConfig (2)"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ApprovalQueueConfig_2
 ---
 
 # .requires_approval()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-get_policy_for_tier()]] - `calls` [EXTRACTED]
 - [[dot-get_tool_risk_tier()]] - `calls` [EXTRACTED]
-- [[dot-submit_tool_request()]] - `calls` [EXTRACTED]
+- [[dot-submit_tool_request()_1]] - `calls` [EXTRACTED]
 - [[Check if a tool requires approval based on risk tier and policy.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

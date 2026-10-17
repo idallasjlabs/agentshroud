@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestMetadataGuard"
-location: "L18"
+community: "KillSwitchMonitor (4)"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/KillSwitchMonitor_4
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_4

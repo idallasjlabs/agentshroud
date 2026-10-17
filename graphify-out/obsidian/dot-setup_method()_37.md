@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L281"
+community: "PipelineAction"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/PipelineAction
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

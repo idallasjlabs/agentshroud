@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "SkillGuard"
-location: "L314"
+community: "HeuristicClassifier (2)"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/HeuristicClassifier_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuard_1]] - `method` [EXTRACTED]
-- [[_Rule]] - `references` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier_2

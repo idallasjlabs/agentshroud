@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery]] - `references` [EXTRACTED]
+- [[DNSQuery_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

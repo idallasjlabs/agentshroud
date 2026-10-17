@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L424"
+community: "RBACConfig (2)"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/RBACConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

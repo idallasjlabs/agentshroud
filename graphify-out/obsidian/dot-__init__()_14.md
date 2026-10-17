@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L36"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[EnvironmentGuard]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

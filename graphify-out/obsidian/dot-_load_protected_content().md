@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # ._load_protected_content()
 
 ## Connections
-- [[dot-__init__()_100]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
 - [[dot-add_protected_content()]] - `calls` [EXTRACTED]
 - [[Load protected content from configured sources.]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

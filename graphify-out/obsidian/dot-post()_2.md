@@ -12,11 +12,11 @@ tags:
 # .post()
 
 ## Connections
-- [[dot-request()_1]] - `calls` [EXTRACTED]
+- [[dot-request()]] - `calls` [EXTRACTED]
 - [[GatewayClientT]] - `method` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[build_url()]] - `calls` [EXTRACTED]
 - [[map_http_error()]] - `calls` [EXTRACTED]
 

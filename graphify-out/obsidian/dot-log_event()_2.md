@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L452"
+community: "EgressFilterConfig"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/EgressFilterConfig
 ---
 
 # .log_event()
 
 ## Connections
-- [[_Event]] - `calls` [EXTRACTED]
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

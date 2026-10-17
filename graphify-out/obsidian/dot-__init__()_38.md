@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "StdioConnection"
-location: "L201"
+community: "FetchOutcome"
+location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `method` [EXTRACTED]
+- [[_StreamResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

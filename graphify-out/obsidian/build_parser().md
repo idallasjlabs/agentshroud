@@ -15,7 +15,7 @@ tags:
 - [[dot-test_parser_defaults()]] - `calls` [EXTRACTED]
 - [[dot-test_parser_hosts_and_command()]] - `calls` [EXTRACTED]
 - [[ArgumentParser]] - `references` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 

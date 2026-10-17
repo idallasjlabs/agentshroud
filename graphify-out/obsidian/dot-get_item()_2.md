@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "StdioConnection"
-location: "L458"
+community: "UserSessionManager (2)"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/UserSessionManager_2
 ---
 
 # .get_item()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
+- [[Fetch a single queue item by ID          Args             request_id Request U]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

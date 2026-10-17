@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L352"
+community: "ResourceGuard (2)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ResourceGuard_2
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - `rationale_for` [EXTRACTED]
-- [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

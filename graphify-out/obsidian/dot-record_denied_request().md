@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_cleanup_old_denied_requests()]] - `calls` [EXTRACTED]
-- [[Any_46]] - `references` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[DeniedRequest]] - `calls` [EXTRACTED]
 - [[Record a denied request for cooldown tracking.]] - `rationale_for` [EXTRACTED]

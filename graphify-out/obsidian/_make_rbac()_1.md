@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
-location: "L26"
+community: "RBACConfig (2)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/RBACConfig_2
 ---
 
 # _make_rbac()
 
 ## Connections
-- [[dot-test_collaborator_allowed_shared_service()]] - `calls` [EXTRACTED]
-- [[dot-test_group_member_allowed_group_only_service()]] - `calls` [EXTRACTED]
-- [[dot-test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
+- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `references` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[rbac()_5]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_4]] - `references` [EXTRACTED]
+- [[TeamsConfig_1]] - `references` [EXTRACTED]
+- [[rbac()_6]] - `calls` [EXTRACTED]
+- [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

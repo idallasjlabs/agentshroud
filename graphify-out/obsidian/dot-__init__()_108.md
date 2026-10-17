@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L45"
+community: "AgentRegistry"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

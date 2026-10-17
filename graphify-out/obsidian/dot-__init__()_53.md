@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
 community: "ProxyAction"
-location: "L47"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[MockEgressEvent]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyAction

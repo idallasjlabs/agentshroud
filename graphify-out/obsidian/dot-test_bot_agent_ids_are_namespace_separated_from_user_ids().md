@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "test_security_regressions_v1_2.py (2)"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/test_security_regressions_v1_2py_2
 ---
 
 # .test_bot_agent_ids_are_namespace_separated_from_user_ids()
@@ -15,4 +15,4 @@ tags:
 - [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs. A…]] - `rationale_for` [EXTRACTED]
 - [[TestCrossBotTrustPivot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py_2

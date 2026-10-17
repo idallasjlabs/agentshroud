@@ -15,6 +15,6 @@ tags:
 - [[dot-log_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-log_tool_result()]] - `calls` [EXTRACTED]
 - [[Compute hash chain values. Returns (content_hash, chain_hash).]] - `rationale_for` [EXTRACTED]
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

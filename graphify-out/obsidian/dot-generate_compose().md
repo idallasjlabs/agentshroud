@@ -12,7 +12,7 @@ tags:
 # .generate_compose()
 
 ## Connections
-- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[dot-list_agents()]] - `calls` [EXTRACTED]
 - [[Generate Docker Compose config for all registered agents.]] - `rationale_for` [EXTRACTED]
 - [[IsolationVerifier]] - `method` [EXTRACTED]

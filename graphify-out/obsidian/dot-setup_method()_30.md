@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_network_validator.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestNetworkValidator"
-location: "L19"
+community: "MiddlewareManager"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[TestNetworkValidator]] - `method` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

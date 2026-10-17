@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "MCPPermissionManager"
+community: "test_soc_realtime_coverage.py (3)"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_soc_realtime_coveragepy_3
 ---
 
 # .new()
@@ -16,4 +16,4 @@ tags:
 - [[Self]] - `references` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_3

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Phase 1 — Raw Collection"
-location: "L371"
+community: "AlertDispatcher"
+location: "L1263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/AlertDispatcher
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-_scan()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
-- [[Scan a tool result with the lower confidence floor.          Args             t]] - `rationale_for` [EXTRACTED]
-- [[ToolResultPIIReport]] - `references` [EXTRACTED]
+- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[Scan tool result for injection attempts and return sanitized content.          A]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

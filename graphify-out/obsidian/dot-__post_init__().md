@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L98"
+community: "MiddlewareManager (5)"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MiddlewareManager_5
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[TrustDecayPolicy]] - `method` [EXTRACTED]
+- [[ContentThreat]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

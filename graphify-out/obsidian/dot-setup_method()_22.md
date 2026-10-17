@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L124"
+community: "TestNetworkValidator"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/TestNetworkValidator
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `calls` [EXTRACTED]
+- [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator
