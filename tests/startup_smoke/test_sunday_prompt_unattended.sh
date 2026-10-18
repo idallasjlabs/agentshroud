@@ -38,6 +38,17 @@ for needle in \
   if grep -qF "$needle" "$PROMPT"; then pass "dev gate mentions: $needle"; else fail "dev gate missing: $needle"; fi
 done
 
+# 2b. Not all-or-nothing (owner directive 2026-10-18): an OPEN finding with no
+# upstream fix must not block every other upgrade; only a regression does.
+for needle in 'do not block' 'a regression blocks the merge' 'PARTIAL (n components failed/blocked)' 'promotes the components that passed'; do
+  if grep -qF "$needle" "$PROMPT"; then pass "partial path mentions: $needle"; else fail "partial path missing: $needle"; fi
+done
+if grep -nF 'every finding is FIXED or ACCEPTED' "$PROMPT"; then
+  fail "a merge/promote gate still requires every finding FIXED or ACCEPTED"
+else
+  pass "no all-findings-fixed gate"
+fi
+
 # 3. The automatic prod-cutover gate names every condition and the rollback.
 for needle in \
   'Gate the cutover automatically' \
