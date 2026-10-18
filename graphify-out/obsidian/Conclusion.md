@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Phase Review: P0 — Core Pipeline Wiring"
-location: "L192"
+community: "Security Verification Report"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/Security_Verification_Report
 ---
 
 # Conclusion
 
 ## Connections
-- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report

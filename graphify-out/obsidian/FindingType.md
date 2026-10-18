@@ -12,7 +12,7 @@ tags:
 # FindingType
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]

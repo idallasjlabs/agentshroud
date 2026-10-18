@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "MiddlewareManager"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # Check if this is an internal link (relative, anchor, etc.).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_internal_link()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

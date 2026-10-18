@@ -12,11 +12,11 @@ tags:
 # FindingSeverity
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[TestDangerousXMLDetection]] - `uses` [INFERRED]
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

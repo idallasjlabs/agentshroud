@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only) (2)"
-location: "L72"
+community: "ssh_config.py"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only_2
+  - community/ssh_configpy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only_2
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # GroupWorkspaceManager
 
 ## Connections
-- [[dot-__init__()_196]] - `method` [EXTRACTED]
+- [[dot-__init__()_182]] - `method` [EXTRACTED]
 - [[dot-_group_workspace_manager()]] - `calls` [EXTRACTED]
 - [[dot-_is_owner()_1]] - `method` [EXTRACTED]
 - [[dot-_require_memory()]] - `method` [EXTRACTED]
@@ -32,13 +32,13 @@ tags:
 - [[dot-test_no_teams_config_fails_closed()]] - `calls` [EXTRACTED]
 - [[dot-test_rbac_without_is_owner_callable()]] - `calls` [EXTRACTED]
 - [[dot-test_two_members_of_same_group_share_one_workspace_id()]] - `calls` [EXTRACTED]
-- [[Any_83]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Resolve and access-control shared group workspaces.      Args         teams_con]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestConfigGate]] - `uses` [INFERRED]
 - [[TestCrossGroupIsolation]] - `uses` [INFERRED]
 - [[TestDefensiveGuards]] - `uses` [INFERRED]
@@ -49,10 +49,10 @@ tags:
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[group_config.py]] - `shares_data_with` [EXTRACTED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
-- [[manager()_4]] - `calls` [EXTRACTED]
+- [[manager()_3]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `shares_data_with` [EXTRACTED]
 - [[shared_memory.py]] - `shares_data_with` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

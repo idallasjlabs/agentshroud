@@ -1,27 +1,19 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L91"
+community: "create_auth_dependency"
+location: "L92"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/create_auth_dependency
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[sanitizer()_1]] - `references` [EXTRACTED]
-- [[test_client()]] - `references` [EXTRACTED]
-- [[test_config()]] - `references` [EXTRACTED]
-- [[test_ledger()]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[create_auth_dependency()]] - `references` [EXTRACTED]
+- [[get_auth_dependency()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

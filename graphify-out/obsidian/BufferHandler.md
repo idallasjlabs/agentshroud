@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py"
+community: "dashboard_endpoints.py (2)"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/dashboard_endpointspy_2
 ---
 
 # BufferHandler
 
 ## Connections
-- [[dot-emit()]] - `method` [EXTRACTED]
+- [[dot-emit()_1]] - `method` [EXTRACTED]
 - [[Logging handler that pushes records into the LogBuffer.]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 - [[install_log_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_2

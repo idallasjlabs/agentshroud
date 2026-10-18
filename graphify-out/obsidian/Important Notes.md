@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "AgentShroud Agentic OS (2)"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
 location: "L457"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS_2
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
 ---
 
 # Important Notes
@@ -20,4 +20,4 @@ tags:
 - [[Power Supply]] - `contains` [EXTRACTED]
 - [[Security Hardening Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

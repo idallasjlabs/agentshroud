@@ -17,7 +17,7 @@ tags:
 - [[EnvironmentGuard.monitor_environment_access(agent_id)]] - `contains` [EXTRACTED]
 - [[EnvironmentGuard.scrub_command_output(output, command)]] - `contains` [EXTRACTED]
 - [[check_command(cmd)]] - `contains` [EXTRACTED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py_1]] - `contains` [EXTRACTED]
 - [[scrub_output(text)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/env_guardpy

@@ -12,7 +12,7 @@ tags:
 # FakeProcess
 
 ## Connections
-- [[dot-__init__()_130]] - `method` [EXTRACTED]
+- [[dot-__init__()_181]] - `method` [EXTRACTED]
 - [[dot-kill()]] - `method` [EXTRACTED]
 - [[dot-terminate()]] - `method` [EXTRACTED]
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
@@ -26,12 +26,12 @@ tags:
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[Stand-in for asyncio.subprocess.Process — no real child process.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]

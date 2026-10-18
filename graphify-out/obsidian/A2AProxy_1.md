@@ -12,7 +12,7 @@ tags:
 # A2AProxy
 
 ## Connections
-- [[dot-__init__()_193]] - `method` [EXTRACTED]
+- [[dot-__init__()_177]] - `method` [EXTRACTED]
 - [[dot-_audit()_1]] - `method` [EXTRACTED]
 - [[dot-_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-extract_text_for_pii_scan()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_4]] - `uses` [INFERRED]

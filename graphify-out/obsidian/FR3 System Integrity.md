@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "FR3: System Integrity"
+community: "egress_filter.py (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/egress_filterpy_3
 ---
 
 # FR3: System Integrity
@@ -20,6 +20,5 @@ tags:
 - [[heuristic_classifier.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [EXTRACTED]
-- [[security-scan.sh (unified scan dispatcher)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/concept #graphify/EXTRACTED #community/egress_filterpy_3

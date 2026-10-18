@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard
 ---
 
 # Check if agent has exceeded disk write limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_disk_write_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

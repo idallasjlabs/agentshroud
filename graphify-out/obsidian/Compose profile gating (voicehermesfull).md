@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "rationale"
-community: "setup-secrets.sh"
+community: "setup-secrets.sh (2)"
 location: "L625-L630"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # Compose profile gating (voice/hermes/full)
@@ -17,4 +17,4 @@ tags:
 - [[asb clean-rebuild fullhermes]] - `rationale_for` [EXTRACTED]
 - [[asb rebuild fullhermes]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/setup-secretssh
+#graphify/rationale #graphify/EXTRACTED #community/setup-secretssh_2

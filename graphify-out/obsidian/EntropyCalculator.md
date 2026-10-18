@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # EntropyCalculator
@@ -38,7 +38,7 @@ tags:
 - [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "rationale"
-community: "AgentShroud Security Value Proposition - Revised (2)"
+community: "BotConfig (3)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised_2
+  - community/BotConfig_3
 ---
 
 # Approval Queue — Core Security Value
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue Control]] - `semantically_similar_to` [INFERRED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised_2
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig_3

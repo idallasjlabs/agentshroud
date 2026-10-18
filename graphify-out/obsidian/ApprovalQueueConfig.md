@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L47"
+community: "Git Workflow Guardian (GIT-GUARD)"
+location: "L41"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - graphify/EXTRACTED
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[dot-__init__()_91]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_1]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[dot-__init__()_40]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

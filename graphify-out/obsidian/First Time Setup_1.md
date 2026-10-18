@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "First Time Setup (3)"
+community: "First Time Setup"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_3
+  - community/First_Time_Setup
 ---
 
 # First Time Setup
 
 ## Connections
 - [[First Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_15]] - `contains` [EXTRACTED]
-- [[Related Notes_65]] - `contains` [EXTRACTED]
+- [[Prerequisites_3]] - `contains` [EXTRACTED]
+- [[Related Notes_33]] - `contains` [EXTRACTED]
 - [[Step 1 Create Secret Files]] - `contains` [EXTRACTED]
 - [[Step 3 Configure 1Password Items]] - `contains` [EXTRACTED]
 - [[Step 4 Build Container Images]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Step 8 Verify Security Posture]] - `contains` [EXTRACTED]
 - [[Troubleshooting First Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_3
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

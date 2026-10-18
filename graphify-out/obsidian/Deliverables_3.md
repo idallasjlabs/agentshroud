@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (2)"
+community: "AWS Cloud Management & FinOps Agent (3)"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2
+  - community/AWS_Cloud_Management__FinOps_Agent_3
 ---
 
 # Deliverables
@@ -17,4 +17,4 @@ tags:
 - [[Script Templates_2]] - `contains` [EXTRACTED]
 - [[Scripts (`.scripts`)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3

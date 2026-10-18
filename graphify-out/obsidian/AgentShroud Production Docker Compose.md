@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.production.yml"
 type: "document"
-community: "02-infrastructure.md (2)"
+community: "Error Index.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/02-infrastructuremd_2
+  - community/Error_Indexmd
 ---
 
 # AgentShroud Production Docker Compose
@@ -15,4 +15,4 @@ tags:
 - [[Health Checks]] - `conceptually_related_to` [INFERRED]
 - [[docker-commands]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/02-infrastructuremd_2
+#graphify/document #graphify/INFERRED #community/Error_Indexmd

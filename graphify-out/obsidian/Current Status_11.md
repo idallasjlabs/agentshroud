@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Tailscale Remote Access Setup"
-location: "L71"
+community: "egress_filter.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tailscale_Remote_Access_Setup
+  - community/egress_filterpy
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

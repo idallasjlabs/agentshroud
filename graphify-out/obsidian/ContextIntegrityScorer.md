@@ -12,7 +12,7 @@ tags:
 # ContextIntegrityScorer
 
 ## Connections
-- [[dot-__init__()_122]] - `method` [EXTRACTED]
+- [[dot-__init__()_63]] - `method` [EXTRACTED]
 - [[dot-score_context()]] - `method` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `shares_data_with` [EXTRACTED]
@@ -21,8 +21,6 @@ tags:
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[TestContextIntegrityScorer]] - `uses` [INFERRED]
 - [[context_integrity.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[scorer()]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 

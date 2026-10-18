@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_make_report()]] - `references` [EXTRACTED]
 - [[dot-test_content_hash_is_deterministic()]] - `calls` [EXTRACTED]
-- [[dot-test_different_content_different_hash()]] - `calls` [EXTRACTED]
+- [[dot-test_different_content_different_hash()_1]] - `calls` [EXTRACTED]
 - [[dot-test_empty_report_id_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_source_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_full_valid_report()]] - `calls` [EXTRACTED]

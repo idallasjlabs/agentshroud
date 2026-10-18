@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "UserSessionManager (7)"
+community: "SecureBrowser Skill"
 location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager_7
+  - community/SecureBrowser_Skill
 ---
 
 # "Approval required but none granted"
 
 ## Connections
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager_7
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "RBACConfig"
+community: "TeamsConfig"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TeamsConfig
 ---
 
 # High-level shared-memory API wrapping UserSessionManager storage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SharedMemoryManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

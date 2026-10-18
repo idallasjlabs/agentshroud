@@ -12,7 +12,7 @@ tags:
 # AgentShroud Weekly Upgrade Report — 2026-08-30
 
 ## Connections
-- [[1. Environment mapping_1]] - `contains` [EXTRACTED]
+- [[1. Environment mapping]] - `contains` [EXTRACTED]
 - [[1. Summary]] - `contains` [EXTRACTED]
 - [[11. Verification evidence]] - `contains` [EXTRACTED]
 - [[12. Breaking changes  manual follow-ups]] - `contains` [EXTRACTED]

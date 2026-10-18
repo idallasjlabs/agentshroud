@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # Canonical workspace id for a group chat_id: ``group-{chat_id}``.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-group_workspace_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

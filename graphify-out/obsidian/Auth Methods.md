@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "All Dependencies.md"
+community: "create_auth_dependency"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/create_auth_dependency
 ---
 
 # Auth Methods
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

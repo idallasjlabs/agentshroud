@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # A signed instruction or tool result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InstructionEnvelope]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

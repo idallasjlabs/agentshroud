@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown (2)"
+community: "ProgressiveLockdown"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProgressiveLockdown_2
+  - community/ProgressiveLockdown
 ---
 
 # FakePipelineResult
 
 ## Connections
-- [[dot-process_inbound()_6]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `references` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProgressiveLockdown_2
+#graphify/code #graphify/INFERRED #community/ProgressiveLockdown

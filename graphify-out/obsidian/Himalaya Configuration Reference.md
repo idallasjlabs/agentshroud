@@ -16,7 +16,7 @@ tags:
 - [[Folder Aliases]] - `contains` [EXTRACTED]
 - [[Gmail Configuration]] - `contains` [EXTRACTED]
 - [[Minimal IMAP + SMTP Setup]] - `contains` [EXTRACTED]
-- [[Multiple Accounts]] - `contains` [EXTRACTED]
+- [[Multiple Accounts_1]] - `contains` [EXTRACTED]
 - [[Notmuch Backend (local mail)]] - `contains` [EXTRACTED]
 - [[OAuth2 Authentication (for providers that support it)]] - `contains` [EXTRACTED]
 - [[Password Options]] - `contains` [EXTRACTED]

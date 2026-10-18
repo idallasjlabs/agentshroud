@@ -1,18 +1,17 @@
 ---
-source_file: "docs/security/cve-mitigation-matrix.md"
+source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
-location: "L13"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
-- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

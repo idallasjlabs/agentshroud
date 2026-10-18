@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L18530"
+community: "test_security_toolchain.py (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/test_security_toolchainpy_2
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

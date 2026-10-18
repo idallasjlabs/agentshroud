@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "ResourceGuard"
-location: "L439"
+community: "sync-cve-registry.py"
+location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/sync-cve-registrypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

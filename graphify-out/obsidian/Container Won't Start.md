@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Incident Response Plan (2)"
+community: "Troubleshooting Common Issues"
 location: "L598"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_2
+  - community/Troubleshooting_Common_Issues
 ---
 
 # Container Won't Start
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_2
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues

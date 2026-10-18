@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "AlertDispatcher (2) (2)"
+community: "MiddlewareManager (4)"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/MiddlewareManager_4
 ---
 
 # Agent can read its own workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_workspace_read_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4

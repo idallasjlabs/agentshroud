@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "RBACConfig (4)"
+community: "UserSessionManager"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_4
+  - community/UserSessionManager
 ---
 
 # Create a UserSessionManager with a temp base workspace and an owner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mgr()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

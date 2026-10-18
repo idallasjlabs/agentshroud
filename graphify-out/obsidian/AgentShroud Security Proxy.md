@@ -12,7 +12,7 @@ tags:
 # AgentShroud Security Proxy
 
 ## Connections
-- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Overview_26]] - `contains` [EXTRACTED]
 - [[Use Cases_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Use_Cases

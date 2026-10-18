@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L148"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Configuration
 
 ## Connections
-- [[Constructor dependencies (dependency injection)]] - `contains` [EXTRACTED]
-- [[Environment variables_3]] - `contains` [EXTRACTED]
-- [[Header pass-through policy]] - `contains` [EXTRACTED]
-- [[Retry policy (`_forward_request`)]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[enforce_retention()]] - `contains` [EXTRACTED]
 - [[initialize()]] - `contains` [EXTRACTED]
-- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 - [[query(page, page_size, source, since, until, forwarded_to)]] - `contains` [EXTRACTED]
 - [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - `contains` [EXTRACTED]
 

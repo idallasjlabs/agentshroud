@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (3)"
+community: "AWS Cloud Management & FinOps Agent (2)"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3
+  - community/AWS_Cloud_Management__FinOps_Agent_2
 ---
 
 # FY26 Cost Reduction Context
@@ -19,4 +19,4 @@ tags:
 - [[Savings Levers (Ranked by Impact)_2]] - `contains` [EXTRACTED]
 - [[Target 40% Full-Year Reduction on Global Services Resources_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2

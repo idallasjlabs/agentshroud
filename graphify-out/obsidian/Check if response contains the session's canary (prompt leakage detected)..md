@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "TestSSRFDetection (3)"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestSSRFDetection_3
 ---
 
 # Check if response contains the session's canary (prompt leakage detected).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_3

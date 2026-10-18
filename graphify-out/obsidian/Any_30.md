@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "ContainerEngine"
-location: "L123"
+community: "UserSessionManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/UserSessionManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()]] - `references` [EXTRACTED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_3]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

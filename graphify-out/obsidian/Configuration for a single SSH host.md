@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig"
 location: "L16"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig
 ---
 
 # Configuration for a single SSH host
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHHostConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

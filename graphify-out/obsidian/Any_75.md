@@ -1,18 +1,25 @@
 ---
-source_file: ""
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "WebProxy"
+community: "soc/router.py"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/WebProxy
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_audit()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_1]] - `references` [EXTRACTED]
-- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/INFERRED #community/soc/routerpy

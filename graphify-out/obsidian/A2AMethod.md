@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2AMethod"
+community: "A2APolicyEngine"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AMethod
+  - community/A2APolicyEngine
 ---
 
 # A2AMethod
 
 ## Connections
-- [[dot-_decide()]] - `references` [EXTRACTED]
-- [[dot-_tier_for()]] - `references` [EXTRACTED]
+- [[dot-_decide()_1]] - `references` [EXTRACTED]
+- [[dot-_tier_for()_1]] - `references` [EXTRACTED]
 - [[dot-parse_jsonrpc_request()]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
@@ -23,9 +23,9 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_79]] - `uses` [INFERRED]
+- [[Any_70]] - `uses` [INFERRED]
 - [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - `rationale_for` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
@@ -37,9 +37,9 @@ tags:
 - [[_method_of()]] - `references` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AMethod
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

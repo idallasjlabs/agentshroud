@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "4. Handling Alerts"
+community: "AgentShroud Incident Response Plan"
 location: "L268"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Handling_Alerts
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Critical Alert Response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Handling Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Handling_Alerts
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

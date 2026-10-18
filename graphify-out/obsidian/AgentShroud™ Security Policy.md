@@ -24,7 +24,7 @@ tags:
 - [[Security Architecture_3]] - `contains` [EXTRACTED]
 - [[Security Scanning]] - `contains` [EXTRACTED]
 - [[Supported Versions]] - `contains` [EXTRACTED]
-- [[Trademark_1]] - `references` [INFERRED]
+- [[Trademark_2]] - `references` [INFERRED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

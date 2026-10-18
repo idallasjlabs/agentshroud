@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "iCloud Services"
-location: "L125"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L495"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
-# Configuration
+# Configuration:
 
 ## Connections
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

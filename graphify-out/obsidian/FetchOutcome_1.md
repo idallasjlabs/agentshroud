@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "api.py (2)"
+community: "api.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy_2
+  - community/apipy
 ---
 
 # FetchOutcome
 
 ## Connections
-- [[dot-__call__()_6]] - `references` [EXTRACTED]
+- [[dot-__call__()_9]] - `references` [EXTRACTED]
 - [[dot-test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
 - [[dot-test_not_ok_without_content()]] - `calls` [EXTRACTED]
 - [[dot-test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/apipy_2
+#graphify/code #graphify/INFERRED #community/apipy

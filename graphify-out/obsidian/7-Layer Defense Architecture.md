@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "`SecurityPipeline`"
+community: "Layer-by-Layer Breakdown"
 location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # 7-Layer Defense Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

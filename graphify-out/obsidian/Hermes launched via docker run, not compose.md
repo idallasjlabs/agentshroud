@@ -12,7 +12,6 @@ tags:
 # Hermes launched via docker run, not compose
 
 ## Connections
-- [[Hermes deliberately absent from the dev compose override]] - `references` [EXTRACTED]
 - [[cmd_up()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
