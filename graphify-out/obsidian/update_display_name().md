@@ -12,7 +12,7 @@ tags:
 # update_display_name()
 
 ## Connections
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[Update a user's display name (CC-35).]] - `rationale_for` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

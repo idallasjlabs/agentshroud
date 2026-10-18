@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[In-place openclaw upgrade runs npm install -g inside the bot container.      No]] - `rationale_for` [EXTRACTED]
 - [[JSONResponse]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
 - [[_docker_exec_bot()]] - `calls` [EXTRACTED]

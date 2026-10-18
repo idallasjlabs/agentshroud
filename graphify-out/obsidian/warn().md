@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "scripts/security-scan.sh"
-location: "L51"
+community: "MiddlewareManager"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/security-scansh
+  - community/MiddlewareManager
 ---
 
 # warn()
 
 ## Connections
-- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[security-scan.sh script]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
-location: "L126"
+community: "asyncio"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/asyncio
 ---
 
 # test_pipeline_clamav_clean_payload()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
 - [[Clean base64 payload → FORWARD.]] - `rationale_for` [EXTRACTED]
 - [[_b64_payload()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_2]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/asyncio

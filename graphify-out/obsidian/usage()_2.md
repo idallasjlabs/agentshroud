@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
+source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "find-sessions.sh"
-location: "L4"
+community: "docker-cleanup.sh"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/docker-cleanupsh
 ---
 
 # usage()
 
 ## Connections
-- [[wait-for-text.sh]] - `defines` [EXTRACTED]
-- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
+- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
+- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/find-sessionssh
+#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh

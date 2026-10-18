@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Run a Trivy CVE scan immediately and send the report via Telegram.      Requires]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy
