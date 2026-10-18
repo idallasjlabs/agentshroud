@@ -55,6 +55,11 @@ for needle in 'Per-component change report' '- Security fixes:' '- Bug fixes:' '
   if grep -qF -- "$needle" "$PROMPT"; then pass "report mentions: $needle"; else fail "report missing: $needle"; fi
 done
 
+# 2d. 08:00 window (owner directive 2026-10-18).
+for needle in 'everything is up and usable by 08:00 ET' 'After **07:00 ET** do not START the prod cutover' 'After **07:30 ET** start no new change' 'BLOCKED (08:00 window)'; do
+  if grep -qF -- "$needle" "$PROMPT"; then pass "window mentions: $needle"; else fail "window missing: $needle"; fi
+done
+
 # 3. The automatic prod-cutover gate names every condition and the rollback.
 for needle in \
   'Gate the cutover automatically' \
