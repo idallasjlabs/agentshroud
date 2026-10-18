@@ -33,7 +33,8 @@ for needle in \
   'scan.scans_failed == 0' \
   'check-soak-status.sh' \
   'gh pr merge --squash --delete-branch' \
-  'merge-commit.txt'; do
+  'merge-commit.txt' \
+  'dev-merge-commit-YYYY-MM-DD.txt'; do
   if grep -qF "$needle" "$PROMPT"; then pass "dev gate mentions: $needle"; else fail "dev gate missing: $needle"; fi
 done
 
@@ -42,6 +43,7 @@ for needle in \
   'Gate the cutover automatically' \
   'sunday_dev_handoff_gate' \
   'git merge-base --is-ancestor' \
+  'no file = dev never merged = stop' \
   'check-version-pins-parity.sh' \
   'BLOCKED (<gate>)' \
   'ROLLED BACK'; do
