@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # test_forward_to_agent_unexpected_error()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[Test forwarding handles unexpected exceptions]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

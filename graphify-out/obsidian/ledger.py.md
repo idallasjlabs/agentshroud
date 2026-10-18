@@ -1,26 +1,23 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
-type: "code"
-community: "ApprovalQueueConfig"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+type: "document"
+community: "PIIConfig"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
-# ledger.py
+# ledger.py.md
 
 ## Connections
-- [[DataLedger]] - `contains` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[LedgerEntry]] - `imports` [EXTRACTED]
-- [[LedgerQueryResponse]] - `imports` [EXTRACTED]
-- [[aiosqlite]] - `references` [EXTRACTED]
-- [[gatewayREADME]] - `references` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[DataLedger]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[volumes_1]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/document #graphify/EXTRACTED #community/PIIConfig

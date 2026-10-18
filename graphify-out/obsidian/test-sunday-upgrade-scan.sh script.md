@@ -12,7 +12,7 @@ tags:
 # test-sunday-upgrade-scan.sh script
 
 ## Connections
-- [[check()_10]] - `calls` [EXTRACTED]
+- [[check()_8]] - `calls` [EXTRACTED]
 - [[dev_gate()]] - `calls` [EXTRACTED]
 - [[make_apply_bin()]] - `calls` [EXTRACTED]
 - [[make_fake_repo()]] - `calls` [EXTRACTED]

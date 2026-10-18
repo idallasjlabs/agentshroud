@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # .test_skip_context_guard_bypasses_step0()
@@ -17,4 +17,4 @@ tags:
 - [[_make_pipeline()_3]] - `calls` [EXTRACTED]
 - [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # .test_restart_recovery_preserves_timeout_action()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[ToolRiskPolicy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

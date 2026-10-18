@@ -1,12 +1,12 @@
 ---
 source_file: "docker/setup-secrets.sh"
 type: "code"
-community: "setup-secrets.sh (2)"
+community: "setup-secrets.sh"
 location: "L89-L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/setup-secretssh
 ---
 
 # keychain_store
@@ -18,4 +18,4 @@ tags:
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]
 - [[store_secret]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

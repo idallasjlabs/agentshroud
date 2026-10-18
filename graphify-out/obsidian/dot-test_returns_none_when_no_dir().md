@@ -12,7 +12,7 @@ tags:
 # .test_returns_none_when_no_dir()
 
 ## Connections
-- [[Path_31]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[TestGetSbom_1]] - `method` [EXTRACTED]
 - [[get_sbom()]] - `calls` [EXTRACTED]
 

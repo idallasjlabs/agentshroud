@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L62"
+community: "TestEgressApprovalQueue"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestEgressApprovalQueue
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
+- [[dot-_save_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

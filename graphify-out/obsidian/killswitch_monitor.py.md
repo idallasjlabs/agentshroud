@@ -19,6 +19,5 @@ tags:
 - [[KillSwitchMonitor]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[killswitch_config.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "soc/router.py"
-location: "L631"
+community: "cli/main.py"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/cli/mainpy
 ---
 
 # stop_service()
 
 ## Connections
-- [[JSONResponse]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
-- [[ServiceActionRequest]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[Stop a service container.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[get()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

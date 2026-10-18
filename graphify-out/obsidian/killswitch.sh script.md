@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[confirm()]] - `calls` [EXTRACTED]
 - [[killswitch.sh]] - `contains` [EXTRACTED]
-- [[usage()_7]] - `calls` [EXTRACTED]
+- [[usage()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/killswitchsh

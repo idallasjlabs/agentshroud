@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Collaborator URL web-access prompts should queue owner approval and return…"
-location: "L2092"
+community: "TestInboundPipelineOnGetUpdates"
+location: "L1121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_URL_web-access_prompts_should_queue_owner_approval_and_return
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_URL_web-access_prompts_should_queue_owner_approval_and_return
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

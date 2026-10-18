@@ -28,6 +28,6 @@ tags:
 - [[test_full_round_trip_allowed_request_reaches_the_peer()]] - `contains` [EXTRACTED]
 - [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `contains` [EXTRACTED]
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `contains` [EXTRACTED]
-- [[trust_manager()_4]] - `contains` [EXTRACTED]
+- [[trust_manager()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

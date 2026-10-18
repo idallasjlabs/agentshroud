@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/scan.sh"
 type: "code"
-community: "FR3: System Integrity"
+community: "docker/scripts/security-scan.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/docker/scripts/security-scansh
 ---
 
 # scan.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scan.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh

@@ -15,6 +15,6 @@ tags:
 - [[find-sessions.sh script]] - `contains` [EXTRACTED]
 - [[list_sessions()]] - `defines` [EXTRACTED]
 - [[tmuxSKILL]] - `conceptually_related_to` [INFERRED]
-- [[usage()_1]] - `defines` [EXTRACTED]
+- [[usage()_3]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/find-sessionssh

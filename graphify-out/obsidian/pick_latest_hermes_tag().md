@@ -12,7 +12,7 @@ tags:
 # pick_latest_hermes_tag()
 
 ## Connections
-- [[dot-test_empty_returns_none()]] - `calls` [INFERRED]
+- [[dot-test_empty_returns_none()_1]] - `calls` [INFERRED]
 - [[dot-test_handles_four_component_tags()]] - `calls` [INFERRED]
 - [[dot-test_picks_newest_date_tag()]] - `calls` [INFERRED]
 - [[dot-test_real_hermes_tail_picks_latest_date()]] - `calls` [INFERRED]

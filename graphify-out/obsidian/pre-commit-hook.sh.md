@@ -12,7 +12,6 @@ tags:
 # pre-commit-hook.sh
 
 ## Connections
-- [[dockerscriptssecurity-scan.sh]] - `semantically_similar_to` [INFERRED]
 - [[git-hooksinstall.sh]] - `references` [EXTRACTED]
 - [[pre-commit-hook.sh script]] - `contains` [EXTRACTED]
 

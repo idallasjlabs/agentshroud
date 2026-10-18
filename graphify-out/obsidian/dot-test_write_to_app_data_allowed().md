@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2) (3)"
+community: "AlertDispatcher"
 location: "L557"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_3
+  - community/AlertDispatcher
 ---
 
 # .test_write_to_app_data_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 - [[Writing to appdata should be allowed.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

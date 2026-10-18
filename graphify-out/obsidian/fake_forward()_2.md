@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "proxy_request should increment inbound getUpdates stats when messages pass…"
+community: ".test_proxy_request_returns_ack_only_updates_when_all_dropped()"
 location: "L297"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/proxy_request_should_increment_inbound_getUpdates_stats_when_messages_pass
+  - community/test_proxy_request_returns_ack_only_updates_when_all_dropped
 ---
 
 # fake_forward()
@@ -18,4 +18,4 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/proxy_request_should_increment_inbound_getUpdates_stats_when_messages_pass
+#graphify/code #graphify/INFERRED #community/test_proxy_request_returns_ack_only_updates_when_all_dropped

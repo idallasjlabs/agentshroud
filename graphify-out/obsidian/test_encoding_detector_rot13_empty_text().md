@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "MiddlewareManager (3)"
 location: "L330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/MiddlewareManager_3
 ---
 
 # test_encoding_detector_rot13_empty_text()
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

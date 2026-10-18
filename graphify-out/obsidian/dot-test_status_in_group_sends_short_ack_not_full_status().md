@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 location: "L9269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # .test_status_in_group_sends_short_ack_not_full_status()
@@ -17,9 +17,9 @@ tags:
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[fake_send()_5]] - `contains` [EXTRACTED]
-- [[fake_send()_7]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[fake_send()_9]] - `contains` [EXTRACTED]
+- [[fake_send()_11]] - `indirect_call` [INFERRED]
 - [[noop()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

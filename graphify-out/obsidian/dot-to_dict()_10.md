@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L94"
+community: "AgentRegistry"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_summary()]] - `calls` [EXTRACTED]
-- [[A2APeer]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

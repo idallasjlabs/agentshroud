@@ -2,14 +2,14 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "telegram_api_proxy (/telegram-api/{path})"
-location: "L4597-L4721"
+location: "L4589"
 tags:
   - graphify/code
   - graphify/EXTRACTED
   - community/telegram_api_proxy_/telegram-api/path
 ---
 
-# telegram_api_proxy (/telegram-api/{path})
+# telegram_api_proxy()
 
 ## Connections
 - [[dot-test_client_disconnect_returns_499()]] - `calls` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[Crash backoff escalation (rolling 10-minute start window)]] - `references` [EXTRACTED]
 - [[LLMProxy._emit_failover_notice]] - `references` [EXTRACTED]
 - [[Proxy Telegram Bot API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[TestTelegramTokenRegistry]] - `conceptually_related_to` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `calls` [EXTRACTED]
 - [[_build_telegram_token_registry]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[_telegram_send_photo]] - `references` [EXTRACTED]
 - [[api_route]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `semantically_similar_to` [INFERRED]
+- [[llm_api_proxy()]] - `semantically_similar_to` [INFERRED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 

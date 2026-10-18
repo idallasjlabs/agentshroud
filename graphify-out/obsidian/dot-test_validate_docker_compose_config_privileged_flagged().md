@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "TestNetworkValidator"
+community: "NetworkSecurityFinding"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/NetworkSecurityFinding
 ---
 
 # .test_validate_docker_compose_config_privileged_flagged()
@@ -15,4 +15,4 @@ tags:
 - [[Test that privileged containers are flagged.]] - `rationale_for` [EXTRACTED]
 - [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

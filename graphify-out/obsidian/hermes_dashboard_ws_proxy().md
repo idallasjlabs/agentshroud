@@ -2,14 +2,14 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "test_main_endpoints.py (2)"
-location: "L4930-L4994"
+location: "L4918"
 tags:
   - graphify/code
   - graphify/EXTRACTED
   - community/test_main_endpointspy_2
 ---
 
-# hermes_dashboard_ws_proxy (WebSocket relay)
+# hermes_dashboard_ws_proxy()
 
 ## Connections
 - [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - `calls` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[TestHermesDashboardWsProxy]] - `calls` [EXTRACTED]
 - [[_client_to_upstream()]] - `contains` [EXTRACTED]
 - [[_upstream_to_client()]] - `contains` [EXTRACTED]
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `shares_data_with` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `shares_data_with` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
-- [[websocket_2]] - `references` [EXTRACTED]
+- [[websocket_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2

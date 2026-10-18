@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[Config Keys Read_6]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_7]] - `contains` [EXTRACTED]
 - [[Function Details_35]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_37]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
-- [[Purpose_145]] - `contains` [EXTRACTED]
+- [[Purpose_158]] - `contains` [EXTRACTED]
 - [[Related_41]] - `contains` [EXTRACTED]
-- [[Responsibilities_38]] - `contains` [EXTRACTED]
+- [[Responsibilities_39]] - `contains` [EXTRACTED]
 - [[router.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/routerpy

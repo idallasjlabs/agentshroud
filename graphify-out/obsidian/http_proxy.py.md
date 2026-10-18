@@ -1,32 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
-type: "code"
-community: "WebProxyConfig"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+type: "document"
+community: "http_proxy.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/http_proxypy
 ---
 
-# http_proxy.py
+# http_proxy.py.md
 
 ## Connections
-- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - `rationale_for` [EXTRACTED]
-- [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
-- [[HTTP Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[HTTPConnectProxy_1]] - `contains` [EXTRACTED]
-- [[HTTP_PROXY]] - `references` [INFERRED]
-- [[WebProxy]] - `imports` [EXTRACTED]
-- [[WebProxyConfig_1]] - `imports` [EXTRACTED]
-- [[egress_config.py]] - `imports_from` [EXTRACTED]
-- [[egress_filter.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[run_clamscan()]] - `imports` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `references` [EXTRACTED]
-- [[web_config.py]] - `imports_from` [EXTRACTED]
-- [[web_proxy.py]] - `references` [EXTRACTED]
+- [[http_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

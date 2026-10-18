@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "test_e2e_proxy.py (2)"
+community: "ForwardRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy_2
+  - community/ForwardRequest
 ---
 
 # test_e2e.py
 
 ## Connections
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[Role_28]] - `references` [EXTRACTED]
+- [[Role_23]] - `references` [EXTRACTED]
 - [[TrustLevel_2]] - `imports` [EXTRACTED]
-- [[client()_11]] - `contains` [EXTRACTED]
+- [[client()_15]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
 - [[test_dashboard_requires_auth()]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_ssh_submit_queues_approval()]] - `contains` [EXTRACTED]
 - [[test_status_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

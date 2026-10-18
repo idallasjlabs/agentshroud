@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L4319-L4449"
+community: "Request"
+location: "L4311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Request
 ---
 
-# llm_api_proxy (/v1/{path} LLM reverse proxy route)
+# llm_api_proxy()
 
 ## Connections
 - [[LLMProxy.proxy_messages (non-streaming)]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[Proxy Anthropic API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[StreamHead]] - `shares_data_with` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `calls` [INFERRED]
 - [[api_route]] - `references` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[llm_api_v1_prefix_alias]] - `calls` [EXTRACTED]
 - [[llm_openai_chat_alias]] - `calls` [EXTRACTED]
-- [[telegram_api_proxy (telegram-api{path})]] - `semantically_similar_to` [INFERRED]
+- [[telegram_api_proxy()]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/Request

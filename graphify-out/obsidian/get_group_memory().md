@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Read raw shared memory for a group workspace.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[SharedMemoryManager]] - `calls` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

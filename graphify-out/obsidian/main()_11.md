@@ -1,28 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "test_playback_state.c"
-location: "L307"
+community: "Incident: Conduit/Hermes instability 2026-10-16"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/Incident_Conduit/Hermes_instability_2026-10-16
 ---
 
 # main()
 
 ## Connections
-- [[test_drain_clears_playing_and_returns_idle()]] - `calls` [EXTRACTED]
-- [[test_drain_keeps_face_off_idle_when_retriggered()]] - `calls` [EXTRACTED]
-- [[test_gate_open_sets_speaking_and_tts_playing()]] - `calls` [EXTRACTED]
-- [[test_gate_opens_on_20s_age()]] - `calls` [EXTRACTED]
-- [[test_gate_opens_on_768kb_cap()]] - `calls` [EXTRACTED]
-- [[test_gate_opens_on_reply_complete()]] - `calls` [EXTRACTED]
-- [[test_gate_stays_closed_before_any_cap()]] - `calls` [EXTRACTED]
-- [[test_gate_stays_closed_leaves_state_idle()]] - `calls` [EXTRACTED]
-- [[test_playback_state.c]] - `contains` [EXTRACTED]
-- [[test_resume_offset_first_attempt_is_zero()]] - `calls` [EXTRACTED]
-- [[test_resume_offset_rewinds_8kb()]] - `calls` [EXTRACTED]
-- [[test_track_sent_ok_is_monotonic()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16

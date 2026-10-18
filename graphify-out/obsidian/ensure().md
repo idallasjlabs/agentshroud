@@ -12,7 +12,7 @@ tags:
 # ensure()
 
 ## Connections
-- [[Path_43]] - `references` [EXTRACTED]
+- [[Path_42]] - `references` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `calls` [EXTRACTED]
 - [[generate_favicons()]] - `calls` [EXTRACTED]

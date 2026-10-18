@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L51"
+community: "KeyRotationManager (2)"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/KeyRotationManager_2
 ---
 
 # manager()
 
 ## Connections
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - `rationale_for` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
+- [[KeyRotationManager]] - `calls` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

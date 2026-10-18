@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-test_history_persistence()]] - `calls` [EXTRACTED]
 - [[dot-test_trend_empty_db()]] - `calls` [EXTRACTED]
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
 - [[Get score trend for the last N days.      Args         days Number of days to]] - `rationale_for` [EXTRACTED]
-- [[Path_57]] - `references` [EXTRACTED]
+- [[Path_10]] - `references` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `contains` [EXTRACTED]
 - [[init_db()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 

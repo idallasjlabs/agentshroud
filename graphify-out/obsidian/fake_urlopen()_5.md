@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L3143"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+location: "L2144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

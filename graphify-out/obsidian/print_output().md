@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[OutputFormat_1]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
+- [[Value_2]] - `references` [EXTRACTED]
 - [[main()_16]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[render_output_lines()]] - `calls` [EXTRACTED]
