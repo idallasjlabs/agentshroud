@@ -351,6 +351,25 @@ Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
 1. **Summary line** — one of: `ALL GREEN`, `PARTIAL (n components failed/blocked)`, `ROLLED BACK`, `ABORTED (reason)`, `BLOCKED (<gate>)`.
 2. **Environment mapping** you discovered (dev vs prod).
 3. **Upgrade table** — component | env | before | after | status (UPGRADED / ALREADY CURRENT / FAILED / BLOCKED / HELD BACK / SKIPPED) | notes.
+3a. **Per-component change report** (owner directive 2026-10-18 — this is the section the owner reads first). One block per component that changed version, in this exact shape:
+   ```
+   #### <component> — <from> → <to> (<env>)
+   - Security fixes: <CVE/GHSA ids and one line each, or "none listed">
+   - Bug fixes: <the user-visible ones, one line each, or "none listed">
+   - New features: <one line each, or "none listed">
+   - Breaking / behaviour changes: <or "none">
+   - Source: <release-notes / changelog URL(s) actually read for this, with the version range>
+   ```
+   Summarise from the upstream release notes / changelog for every version between `<from>` and `<to>` (not just the last one), read during this run — never from memory. If no release notes exist for a step, say "no upstream notes for <version>" rather than inventing content. Base-image digest refreshes list the OS-package CVEs the new digest fixes (from the before/after scan), not a changelog.
+3b. **Not updated this run — plan for the week**. One block per component that is FAILED, BLOCKED, HELD BACK or still has an OPEN finding:
+   ```
+   #### <component> — stays on <current>, wanted <target>
+   - Why: <the exact error / test that failed / breaking change / "no upstream fix released", with evidence>
+   - Plan: <the concrete fix — code change, patch re-anchor, config migration, or which upstream release to wait for>
+   - Owner: <dev session / prod session / owner action> · Target: <a weekday this week>
+   - Tracking: <Jira key or PR link>
+   ```
+   An empty 3b must say so explicitly ("everything in scope was updated"). A component that is absent from both 3a and the upgrade table is a failed report (see "EVERYTHING MEANS EVERYTHING" in CLAUDE.md).
 4. **Security findings** — ID | severity | component | before | after (FIXED / ACCEPTED-with-reason / OPEN).
 5. **Verification evidence** — the actual command outputs for each check in 3.3 and 4.3, trimmed to the relevant lines.
 6. **Breaking changes / needs human** — every BLOCKED, HELD BACK, or FAILED item as its own bullet: the specific policy change or breaking change it would require, so this list is a punch list a human can act on directly, not prose to reconstruct one from.

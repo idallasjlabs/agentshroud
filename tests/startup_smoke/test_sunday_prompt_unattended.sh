@@ -49,6 +49,12 @@ else
   pass "no all-findings-fixed gate"
 fi
 
+# 2c. Per-component report the owner asked for (2026-10-18): from -> to with
+# security fixes / bug fixes / features, and a week plan for what did not update.
+for needle in 'Per-component change report' '- Security fixes:' '- Bug fixes:' '- New features:' 'Not updated this run — plan for the week' '- Why:' '- Plan:'; do
+  if grep -qF -- "$needle" "$PROMPT"; then pass "report mentions: $needle"; else fail "report missing: $needle"; fi
+done
+
 # 3. The automatic prod-cutover gate names every condition and the rollback.
 for needle in \
   'Gate the cutover automatically' \
