@@ -22,6 +22,7 @@ services:
       dockerfile: gateway/Dockerfile
       args:
         AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
+        AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
     # Infra env — load docker/.env regardless of compose invocation directory.
     # Path is relative to this file (docker/), so this always resolves correctly.
     # This prevents the recurring regression where AGENTSHROUD_ALLOWED_IPS and
@@ -333,6 +334,7 @@ services:
       dockerfile: docker/wazuh-agent/Dockerfile
       args:
         WAZUH_VERSION: 4.14.8
+        AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
     image: agentshroud-wazuh-agent:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-wazuh-agent
     hostname: wazuh-agent
@@ -488,6 +490,7 @@ services:
         # Pinned vendor version — see docker/versions.env. No fallback default:
         # an unset value must fail the build loudly, not silently install @latest.
         OPENCLAW_VERSION: ${OPENCLAW_VERSION}
+        AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
     # Host entries for personal lab — override via AGENTSHROUD_EXTRA_HOSTS env var or docker-compose.override.yml
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -619,8 +622,11 @@ services:
       - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
       - /var/ossec/tmp:noexec,nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/logs/ossec:noexec,nosuid,size=20m,uid=1000,gid=1000
-    mem_limit: 4g
-    memswap_limit: 4g
+    # 5g (was 4g): the container holds openclaw-gateway (~2.1-2.5 GiB anon) AND
+    # a resident clamd (~1 GiB signature DB); prod was memcg-OOM-killed twice at
+    # 4g on 2026-10-17/18 with openclaw-gateway at 2.5 GiB anon.
+    mem_limit: 5g
+    memswap_limit: 5g
     cpus: 2.0
     pids_limit: 512
     logging:
@@ -677,6 +683,7 @@ services:
         # float to whatever :latest currently resolves to.
         HERMES_IMAGE: ${HERMES_IMAGE}
         AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
+        AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
     container_name: agentshroud-hermes-v2
     hostname: agentshroud-hermes-v2
     restart: unless-stopped
@@ -828,6 +835,7 @@ services:
       dockerfile: voice_gateway/Dockerfile
       args:
         WHISPER_MODEL_SIZE: small.en
+        AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
     container_name: agentshroud-voice-gateway
     hostname: agentshroud-voice-gateway
     restart: unless-stopped

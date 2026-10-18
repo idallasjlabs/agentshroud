@@ -72,9 +72,20 @@ fi
 
 # --- Initial ClamAV Scan ---
 log "Running initial ClamAV scan on workspace..."
-if command -v clamscan >/dev/null 2>&1; then
+# Use the resident clamd when it answers (give it up to 120s to load its DB):
+# a boot-time clamscan loads a second ~1 GB signature DB next to clamd's.
+_CLAM_CMD=""
+if command -v clamdscan >/dev/null 2>&1; then
+    for _i in $(seq 1 24); do
+        clamdscan --ping 1 >/dev/null 2>&1 && { _CLAM_CMD="clamdscan --fdpass"; break; }
+        sleep 5
+    done
+fi
+[ -z "$_CLAM_CMD" ] && command -v clamscan >/dev/null 2>&1 && _CLAM_CMD="clamscan -r"
+if [ -n "$_CLAM_CMD" ]; then
     WORKSPACE="${AGENTSHROUD_WORKSPACE:-/home/node}"
-    clamscan -r --no-summary "$WORKSPACE" \
+    log "ClamAV initial scan via: $_CLAM_CMD"
+    $_CLAM_CMD --no-summary "$WORKSPACE" \
         > "$LOG_DIR/clamav/clamscan-$TIMESTAMP.log" 2>&1 || true
 
     INFECTED=$(grep -c "FOUND$" "$LOG_DIR/clamav/clamscan-$TIMESTAMP.log" 2>/dev/null || echo "0")

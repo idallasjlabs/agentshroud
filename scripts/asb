@@ -37,6 +37,16 @@ else
   exit 1
 fi
 
+# Repo commit stamped into every image we build as org.opencontainers.image.revision
+# (docker-compose.yml build args), so a host's running images can be matched to
+# the commit they were built from. "-dirty" when the tree has uncommitted changes:
+# the label must never claim a clean commit the build did not use.
+AGENTSHROUD_GIT_SHA="$(git -C "$REPO_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
+if [ "$AGENTSHROUD_GIT_SHA" != unknown ] && ! git -C "$REPO_DIR" diff --quiet HEAD 2>/dev/null; then
+  AGENTSHROUD_GIT_SHA="${AGENTSHROUD_GIT_SHA}-dirty"
+fi
+export AGENTSHROUD_GIT_SHA
+
 # ── Container-runtime detection (SCRUM-92) ───────────────────────────────────
 # Resolve which compose command this host has (docker-compose / docker compose /
 # podman-compose / podman compose). On the deploy hosts the standalone
@@ -632,7 +642,14 @@ case "${1:-}" in
     $COMPOSE $_PROFILE_FLAG up -d
     [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
-    bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
+    # A failed check fails the rebuild: `|| true` here let asb exit 0 on a
+    # 10/11 DEPLOY FAILED (dev, 2026-10-17), so the caller saw success.
+    _pdc_rc=0
+    bash "$REPO_DIR/scripts/post-deploy-check.sh" || _pdc_rc=$?
+    if [[ "$_pdc_rc" -ne 0 ]]; then
+      echo "  [asb] rebuild: post-deploy-check failed (rc=$_pdc_rc)" >&2
+      exit "$_pdc_rc"
+    fi
     ;;
   clean-rebuild)
     _PROFILE_FLAG=""

@@ -11,7 +11,10 @@ Runs clamscan/freshclam as local binaries and parses output.
 
 
 import logging
+import os
 import re
+import shutil
+import socket
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,6 +23,37 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 DEFAULT_LOG_DIR = Path("/var/log/security/clamav")
+
+# clamd.conf in both images sets `LocalSocket /tmp/clamd.ctl` (gateway/Dockerfile,
+# docker/bots/openclaw/Dockerfile). Callers used to probe a /var/run/clamav path
+# which never exists, so every scan fell back to clamscan and loaded a second
+# ~1 GB signature DB beside the resident clamd — the gateway memcg OOM of
+# 2026-10-18 00:01 (clamd + clamscan, ~1.9 GB, 3 GiB cap).
+CLAMD_SOCKET = "/tmp/clamd.ctl"
+
+
+def clamd_available(socket_path: str = CLAMD_SOCKET) -> bool:
+    """True if clamd accepts connections on its socket.
+
+    Connects rather than testing for the file: a killed clamd leaves its
+    socket file behind, so existence alone reports a dead daemon as alive.
+    """
+    sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+    try:
+        sock.settimeout(1)
+        sock.connect(socket_path)
+        return True
+    except OSError:
+        return False
+    finally:
+        sock.close()
+
+
+def preferred_scan_binary(socket_path: str = CLAMD_SOCKET) -> str:
+    """'clamdscan' when the resident clamd can take the scan, else 'clamscan'."""
+    if shutil.which("clamdscan") and clamd_available(socket_path):
+        return "clamdscan"
+    return "clamscan"
 
 
 def update_virus_db(freshclam_bin: str = "freshclam", timeout: int = 300) -> dict[str, Any]:
@@ -69,11 +103,18 @@ def run_clamscan(
         Parsed scan results dict.
     """
     cmd = [clamscan_bin, "--no-summary"]
-    if recursive:
-        cmd.append("-r")
-    if exclude_patterns:
-        for pat in exclude_patterns:
-            cmd.extend(["--exclude", pat])
+    if os.path.basename(clamscan_bin) == "clamdscan":
+        # clamdscan always recurses and rejects -r/--exclude (exclusions live in
+        # clamd.conf); --fdpass lets clamd read files it could not open itself.
+        cmd.append("--fdpass")
+        if exclude_patterns:
+            logger.warning("clamdscan ignores exclude patterns; set ExcludePath in clamd.conf")
+    else:
+        if recursive:
+            cmd.append("-r")
+        if exclude_patterns:
+            for pat in exclude_patterns:
+                cmd.extend(["--exclude", pat])
     cmd.append(target)
 
     logger.info("Running ClamAV scan on: %s", target)

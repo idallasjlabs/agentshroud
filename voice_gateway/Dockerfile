@@ -126,3 +126,9 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:8765/health || exit 1
 
 CMD ["python", "-m", "voice_gateway"]
+
+# Repo commit this image was built from (set by scripts/asb and
+# sunday-upgrade-apply.sh via docker-compose.yml build args). Last so the
+# per-commit ARG never invalidates cached layers above it.
+ARG AGENTSHROUD_GIT_SHA=unknown
+LABEL org.opencontainers.image.revision="${AGENTSHROUD_GIT_SHA}"

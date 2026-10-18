@@ -201,6 +201,16 @@ export SUNDAY_SCAN_ENFORCE
 COMPOSE_CMD="$COMPOSE_CMD --profile full"
 log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
 
+# Repo commit stamped into every image we build as org.opencontainers.image.revision
+# (docker-compose.yml build args), so a host's running images can be matched to
+# the commit they were built from. "-dirty" when the tree has uncommitted changes:
+# the label must never claim a clean commit the build did not use.
+AGENTSHROUD_GIT_SHA="$(git -C "$REPO" rev-parse HEAD 2>/dev/null || echo unknown)"
+if [ "$AGENTSHROUD_GIT_SHA" != unknown ] && ! git -C "$REPO" diff --quiet HEAD 2>/dev/null; then
+  AGENTSHROUD_GIT_SHA="${AGENTSHROUD_GIT_SHA}-dirty"
+fi
+export AGENTSHROUD_GIT_SHA
+
 # ── Arg parsing ──────────────────────────────────────────────────────────────
 while [ $# -gt 0 ]; do
   case "$1" in

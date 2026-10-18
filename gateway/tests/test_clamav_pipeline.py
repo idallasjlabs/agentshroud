@@ -15,11 +15,18 @@ from __future__ import annotations
 
 import asyncio
 import base64
+import os
+import shutil
+import socket
+import subprocess
+import tempfile
+from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
 from gateway.proxy.pipeline import PipelineAction, SecurityPipeline
+from gateway.security import clamav_scanner
 from gateway.security.clamav_scanner import scan_bytes
 
 # ---------------------------------------------------------------------------
@@ -195,3 +202,86 @@ async def test_pipeline_short_base64_not_scanned():
     # clamav_fn should NOT have been called (message too short)
     clamav_fn.assert_not_called()
     assert result.action == PipelineAction.FORWARD
+
+
+# ---------------------------------------------------------------------------
+# clamd detection — 2026-10-18 gateway OOM: callers probed a socket path that
+# never exists, so every scan loaded a second ~1 GB DB via clamscan.
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def clamd_sock_path():
+    # Short dir: AF_UNIX paths are capped at ~104 bytes on macOS.
+    d = tempfile.mkdtemp(prefix="cd", dir="/tmp")
+    yield os.path.join(d, "clamd.ctl")
+    shutil.rmtree(d, ignore_errors=True)
+
+
+def test_clamd_socket_constant_matches_both_images_clamd_conf():
+    want = f"LocalSocket {clamav_scanner.CLAMD_SOCKET}"
+    assert want in Path("gateway/Dockerfile").read_text(encoding="utf-8")
+    assert want in Path("docker/bots/openclaw/Dockerfile").read_text(encoding="utf-8")
+
+
+def test_clamd_available_true_when_daemon_listening(clamd_sock_path):
+    srv = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+    srv.bind(clamd_sock_path)
+    srv.listen(1)
+    try:
+        assert clamav_scanner.clamd_available(clamd_sock_path) is True
+    finally:
+        srv.close()
+
+
+def test_clamd_available_false_for_stale_socket_left_by_killed_daemon(clamd_sock_path):
+    srv = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+    srv.bind(clamd_sock_path)
+    srv.close()  # daemon gone, socket file remains (what an OOM kill leaves)
+    assert os.path.exists(clamd_sock_path)
+    assert clamav_scanner.clamd_available(clamd_sock_path) is False
+
+
+def test_clamd_available_false_when_socket_missing(clamd_sock_path):
+    assert clamav_scanner.clamd_available(clamd_sock_path) is False
+
+
+def test_preferred_scan_binary_uses_daemon_when_listening(clamd_sock_path):
+    srv = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+    srv.bind(clamd_sock_path)
+    srv.listen(1)
+    try:
+        with patch.object(clamav_scanner.shutil, "which", return_value="/usr/bin/clamdscan"):
+            assert clamav_scanner.preferred_scan_binary(clamd_sock_path) == "clamdscan"
+        with patch.object(clamav_scanner.shutil, "which", return_value=None):
+            assert clamav_scanner.preferred_scan_binary(clamd_sock_path) == "clamscan"
+    finally:
+        srv.close()
+
+
+def test_preferred_scan_binary_falls_back_when_daemon_dead(clamd_sock_path):
+    with patch.object(clamav_scanner.shutil, "which", return_value="/usr/bin/clamdscan"):
+        assert clamav_scanner.preferred_scan_binary(clamd_sock_path) == "clamscan"
+
+
+def _run_capture(**kwargs):
+    seen = {}
+
+    def fake_run(cmd, **_kw):
+        seen["cmd"] = cmd
+        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    with patch.object(clamav_scanner.subprocess, "run", side_effect=fake_run):
+        result = clamav_scanner.run_clamscan(target="/app", **kwargs)
+    return seen["cmd"], result
+
+
+def test_run_clamscan_clamdscan_command_has_no_clamscan_only_flags():
+    cmd, result = _run_capture(clamscan_bin="clamdscan", exclude_patterns=["x"])
+    assert cmd == ["clamdscan", "--no-summary", "--fdpass", "/app"]
+    assert result["infected_count"] == 0
+
+
+def test_run_clamscan_clamscan_command_unchanged():
+    cmd, _ = _run_capture(clamscan_bin="clamscan", exclude_patterns=["x"])
+    assert cmd == ["clamscan", "--no-summary", "-r", "--exclude", "x", "/app"]

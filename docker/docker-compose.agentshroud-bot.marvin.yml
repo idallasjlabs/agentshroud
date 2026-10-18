@@ -55,10 +55,11 @@ services:
 
   openclaw:
     container_name: agentshroud-dev-openclaw
-    # 3.5 GiB, not lower: OpenClaw's resident set is 3.33 GiB on prod at
-    # steady state (it already trips its own 1.5 GiB RSS warning); a 2.5 GiB
-    # cap would simply OOM-kill it on dev.
-    mem_limit: 3584m
+    # 4.5 GiB (was 3.5): the container is openclaw-gateway (~2.1 GiB anon) plus
+    # a resident clamd (~1 GiB); at 3.5 GiB dev was memcg-OOM-killed on
+    # 2026-10-17 23:03. Dev's Colima VM went 9 -> 12 GiB with this so the
+    # larger cap does not just move the kill to the VM-wide OOM killer.
+    mem_limit: 4608m
     cpus: 1.5
     ports: !override
       - "127.0.0.1:18790:18789"

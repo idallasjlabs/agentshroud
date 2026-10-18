@@ -33,7 +33,10 @@ WAIT_SECS="${AGENTSHROUD_POST_DEPLOY_WAIT:-60}"
 # check greps for) inside the window. Observed normal boots on 2026-08-27
 # took ~2.5-3 min — the 120s window false-negatived 4 separate healthy
 # deploys that same day (container demonstrably healthy moments later).
-BOT_WAIT_SECS="${AGENTSHROUD_POST_DEPLOY_BOT_WAIT:-300}"
+# 600s (was 300s): no-cache rebuilds on 2026-10-17/18 took 5 min (dev) and
+# 7m03s (prod) from container start to "http server listening" -- config
+# bootstrap plus `openclaw doctor --fix` -- and 300s failed both healthy deploys.
+BOT_WAIT_SECS="${AGENTSHROUD_POST_DEPLOY_BOT_WAIT:-600}"
 
 pass=0
 fail=0

@@ -1497,14 +1497,7 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
     # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
-    import os as _os
-    import shutil as _sh
-
-    _bin = (
-        "clamdscan"
-        if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
-        else "clamscan"
-    )
+    _bin = app_state.clamav_scanner.preferred_scan_binary()
     result = await asyncio.get_running_loop().run_in_executor(
         None,
         lambda: app_state.clamav_scanner.run_clamscan(
@@ -2711,14 +2704,7 @@ async def run_all_scanners(auth: AuthRequired):
 
     # ClamAV
     if getattr(app_state, "clamav_scanner", None):
-        import os as _os
-        import shutil as _sh
-
-        _bin = (
-            "clamdscan"
-            if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
-            else "clamscan"
-        )
+        _bin = app_state.clamav_scanner.preferred_scan_binary()
         clam = await asyncio.get_running_loop().run_in_executor(
             None,
             lambda: app_state.clamav_scanner.run_clamscan(

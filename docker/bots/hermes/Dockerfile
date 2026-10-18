@@ -409,3 +409,9 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
 # Keep the image's own entrypoint (/init → main-wrapper.sh). CMD is passed as
 # args to main-wrapper.sh: if it's an executable it runs via s6-setuidgid hermes.
 CMD ["/usr/local/bin/start-hermes.sh"]
+
+# Repo commit this image was built from (set by scripts/asb and
+# sunday-upgrade-apply.sh via docker-compose.yml build args). Last so the
+# per-commit ARG never invalidates cached layers above it.
+ARG AGENTSHROUD_GIT_SHA=unknown
+LABEL org.opencontainers.image.revision="${AGENTSHROUD_GIT_SHA}"

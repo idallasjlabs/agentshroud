@@ -76,3 +76,9 @@ RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 # succeed; it renounces root itself within the first seconds of running.
 ENTRYPOINT ["/var/ossec/bin/wazuh-agentd"]
 CMD ["-f"]
+
+# Repo commit this image was built from (set by scripts/asb and
+# sunday-upgrade-apply.sh via docker-compose.yml build args). Last so the
+# per-commit ARG never invalidates cached layers above it.
+ARG AGENTSHROUD_GIT_SHA=unknown
+LABEL org.opencontainers.image.revision="${AGENTSHROUD_GIT_SHA}"
