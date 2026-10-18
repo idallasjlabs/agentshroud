@@ -51,7 +51,7 @@ fi
 
 # 2c. Per-component report the owner asked for (2026-10-18): from -> to with
 # security fixes / bug fixes / features, and a week plan for what did not update.
-for needle in 'Per-component change report' '- Security fixes:' '- Bug fixes:' '- New features:' 'Not updated this run — plan for the week' '- Why:' '- Plan:'; do
+for needle in 'Per-component change report' '- Security fixes:' '- Bug fixes:' '- New features:' 'Not updated this run — plan for the week' '- Why:' '- Exposure left open:' '- Plan:'; do
   if grep -qF -- "$needle" "$PROMPT"; then pass "report mentions: $needle"; else fail "report missing: $needle"; fi
 done
 

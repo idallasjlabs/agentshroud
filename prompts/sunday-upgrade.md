@@ -354,7 +354,7 @@ Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
 3a. **Per-component change report** (owner directive 2026-10-18 — this is the section the owner reads first). One block per component that changed version, in this exact shape:
    ```
    #### <component> — <from> → <to> (<env>)
-   - Security fixes: <CVE/GHSA ids and one line each, or "none listed">
+   - Security fixes: <CVE/GHSA id + severity + one line each, or "none listed">
    - Bug fixes: <the user-visible ones, one line each, or "none listed">
    - New features: <one line each, or "none listed">
    - Breaking / behaviour changes: <or "none">
@@ -365,6 +365,7 @@ Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
    ```
    #### <component> — stays on <current>, wanted <target>
    - Why: <the exact error / test that failed / breaking change / "no upstream fix released", with evidence>
+   - Exposure left open: <the CVEs/GHSAs still present on the current version, with severity, and whether a gateway control covers the attack class (the second CVE arm, CLAUDE.md §0.05)>
    - Plan: <the concrete fix — code change, patch re-anchor, config migration, or which upstream release to wait for>
    - Owner: <dev session / prod session / owner action> · Target: <a weekday this week>
    - Tracking: <Jira key or PR link>
