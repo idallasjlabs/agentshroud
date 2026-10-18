@@ -47,11 +47,18 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
       xxd \
     && rm -rf /var/lib/apt/lists/*
 
+# uv/uvx: Hermes v0.22.x dropped /usr/local/bin/uv from the upstream image (v0.21.x shipped
+# 0.11.6 there, which carried quinn-proto GHSA-4w2j-m93h-cj5j and rustls-webpki
+# GHSA-82j2-j2ch-gfr8). Install astral-sh's own current release binaries BEFORE the first
+# `uv pip install` below; on an older base that still ships uv this replaces its binaries
+# in place (`uv self update` refuses on the externally-installed copy).
+RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
+
 # Pre-install ddgs (DuckDuckGo HTML scraper) into the hermes venv so the keyless
 # web_search backend is available at first boot. Without it the cron's verify-
 # every-claim contract degrades to "no sources" the first time the cloud LLM
-# quota is exhausted and failover routes to local LM Studio. uv is part of the
-# upstream image; installing into the venv keeps the system Python clean.
+# quota is exhausted and failover routes to local LM Studio. Installing into the
+# venv keeps the system Python clean.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9.14.4
 
 # SCRUM-101 follow-up (v1.3.0): patch a vendored-venv dep whose upstream image
@@ -222,16 +229,6 @@ RUN npm install -g npm@12.0.2
 RUN npm install --prefix /opt/hermes browserslist@4.28.7 \
     && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.19 \
     && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.19 --legacy-peer-deps
-
-# 2026-09-08: uv/uvx (vendored Rust binaries used for the ddgs/tornado/etc.
-# venv installs above) shipped at 0.11.6 in the upstream base image, carrying
-# two transitive-dependency CVEs (quinn-proto GHSA-4w2j-m93h-cj5j, rustls-webpki
-# GHSA-82j2-j2ch-gfr8) fixed further upstream. `uv self update` refuses to run
-# ("installed through an external package manager") since the base image
-# installed it via a distro/vendor package rather than the official
-# installer, so replace the binaries directly via astral-sh's own installer
-# instead — same official release artifact `self update` would have fetched.
-RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
 
 # Crash-loop fix (2026-07-17): the Telegram adapter's getUpdates health instrumentation
 # does `request.do_request = _do_request` to wrap polling requests, but the vendored

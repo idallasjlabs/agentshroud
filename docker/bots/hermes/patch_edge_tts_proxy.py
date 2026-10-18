@@ -38,6 +38,7 @@
 # mismatch ("so hermes update propagates pin bumps to installed backends"),
 # so bumping the pin here is sufficient -- no separate reinstall step needed.
 
+import os
 import sys
 
 p = "/opt/hermes/tools/tts_tool_providers.py"
@@ -87,6 +88,15 @@ p2 = "/opt/hermes/tools/lazy_deps.py"
 src2 = open(p2, encoding="utf-8").read()
 
 anchor2 = '"tts.edge": ("edge-tts==7.2.7",),'
+if anchor2 not in src2 and os.path.isfile("/opt/hermes/pm/extras.py"):
+    # Hermes >= v0.22: the lazy_deps.py LAZY_DEPS table is gone; the pin lives in
+    # pyproject.toml's `edge-tts` extra (+ uv.lock) and availability is a bare
+    # find_spec("edge_tts") (pm/extras.py ANCHORS). The Dockerfile therefore
+    # pre-installs edge-tts==7.3.1 into the venv right after this patch, so the
+    # extra reads as already satisfied and the 7.2.7 pin is never synced.
+    print("[hermes-build] lazy_deps.py has no tts.edge pin (Hermes pm/extras layout); "
+          "edge-tts 7.3.1 is installed by the Dockerfile instead")
+    sys.exit(0)
 if anchor2 not in src2:
     sys.exit(
         "PATCH ANCHOR NOT FOUND in tools/lazy_deps.py -- the tts.edge pin "

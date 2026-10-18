@@ -71,6 +71,11 @@ replacement = (
 )
 
 src = open(PATH, encoding="utf-8").read()
+# Hermes >= v0.22 annotates kwargs as builtin `dict[...]` instead of typing `Dict[...]`;
+# accept either spelling and keep whichever the vendor file uses.
+if anchor not in src and anchor.replace("Dict[str, Any]", "dict[str, Any]") in src:
+    anchor = anchor.replace("Dict[str, Any]", "dict[str, Any]")
+    replacement = replacement.replace("Dict[str, Any]", "dict[str, Any]")
 if anchor not in src:
     sys.exit(
         "PATCH ANCHOR NOT FOUND (_edit_text) -- upstream digest drift. "
