@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L20"
+community: "AlertDispatcher"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[LogSanitizer]] - `method` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

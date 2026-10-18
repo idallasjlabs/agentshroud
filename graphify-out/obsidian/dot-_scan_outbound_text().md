@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L3575"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # ._scan_outbound_text()
@@ -18,7 +18,7 @@ tags:
 - [[dot-_quarantine_outbound_block()]] - `calls` [EXTRACTED]
 - [[dot-_set_outbound_block_cascade()]] - `calls` [EXTRACTED]
 - [[Core outbound security scan shared by JSON, form, and multipart branches.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 - [[_OutboundScan]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

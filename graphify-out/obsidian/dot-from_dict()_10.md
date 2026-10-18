@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig (3)"
+community: "RBACConfig (2)"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/RBACConfig_2
 ---
 
 # .from_dict()
@@ -18,4 +18,4 @@ tags:
 - [[ServicePolicy]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

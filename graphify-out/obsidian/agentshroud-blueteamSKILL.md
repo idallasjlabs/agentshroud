@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/MiddlewareManager_2
 ---
 
 # agentshroud-blueteam/SKILL.md
@@ -29,17 +29,16 @@ tags:
 - [[ingest_apiconfig.py]] - `references` [EXTRACTED]
 - [[key_rotation.py]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py]] - `references` [EXTRACTED]
-- [[middleware.py_1]] - `references` [EXTRACTED]
+- [[middleware.py]] - `references` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
 - [[prompt_protection.py]] - `references` [EXTRACTED]
 - [[rbac.py]] - `references` [EXTRACTED]
-- [[security-scan.sh (unified scan dispatcher)]] - `conceptually_related_to` [INFERRED]
 - [[skillsREADME]] - `references` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `references` [EXTRACTED]
 - [[tool_result_injection.py]] - `references` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2

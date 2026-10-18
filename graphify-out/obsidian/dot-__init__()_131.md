@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "MiddlewareManager (7)"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/MiddlewareManager_7
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Path_35]] - `references` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `references` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7

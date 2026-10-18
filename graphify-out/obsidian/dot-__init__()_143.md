@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L598"
+community: "SecurityPipeline"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/SecurityPipeline
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

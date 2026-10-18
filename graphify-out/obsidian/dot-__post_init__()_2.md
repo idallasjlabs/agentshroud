@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "A2AMethod"
-location: "L199"
+community: "MCPPolicyEngine"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/MCPPolicyEngine
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[A2APolicyConfig]] - `method` [EXTRACTED]
-- [[_norm()]] - `calls` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[_norm()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

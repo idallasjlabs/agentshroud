@@ -62,7 +62,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (13)]]
 - 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (14)]]
 - 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (16)]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (6)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (4)]]
 - 2 edges to [[_COMMUNITY_TestResourceAvailability]]
 - 2 edges to [[_COMMUNITY_TestDaemonConfigReader]]
 - 2 edges to [[_COMMUNITY_TestMandatoryGates]]

@@ -15,7 +15,7 @@ tags:
 - [[Create a new group at runtime (owner only).]] - `rationale_for` [EXTRACTED]
 - [[CreateGroupRequest]] - `references` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[persist_group_create()]] - `calls` [EXTRACTED]

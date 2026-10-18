@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "GroupConfig"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/GroupConfig
 ---
 
 # .coerce_members()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

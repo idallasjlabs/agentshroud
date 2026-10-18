@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/disaster-recovery-backup.sh"
 type: "code"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "egress_filter.py (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/egress_filterpy_3
 ---
 
 # disaster-recovery-backup.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[disaster-recovery-backup.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy_3

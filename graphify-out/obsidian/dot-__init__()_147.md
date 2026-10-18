@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "make_event"
-location: "L42"
+community: "TestFabricatedSecurityNotice"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[Path_40]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

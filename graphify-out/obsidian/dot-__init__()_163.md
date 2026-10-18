@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "StdioConnection"
-location: "L161"
+community: "telegram_proxy.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[HttpSseConnection]] - `method` [EXTRACTED]
-- [[MCPServerConfig_2]] - `references` [EXTRACTED]
+- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

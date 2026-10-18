@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
-- [[main()_8]] - `calls` [EXTRACTED]
+- [[main()_9]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

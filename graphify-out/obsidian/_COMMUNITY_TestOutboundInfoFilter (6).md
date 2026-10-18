@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Install Script]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Installation_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Windows]] - document - .github/COPILOT_CLI_SETUP.md
+- [[macOS  Linux]] - document - .github/COPILOT_CLI_SETUP.md
+- [[npm (Cross-platform)]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
+- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[IV. System Architecture]] - degree 5, connects to 1 community
+- [[Installation_1]] - degree 5, connects to 1 community

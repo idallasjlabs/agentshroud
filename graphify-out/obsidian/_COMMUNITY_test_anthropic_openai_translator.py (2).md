@@ -33,9 +33,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 2 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)_1]]
+- 2 edges to [[_COMMUNITY_LLMProxy]]
 - 2 edges to [[_COMMUNITY_test_claude_via_openai_path.py]]
-- 1 edge to [[_COMMUNITY_LLMProxy (3)]]
+- 1 edge to [[_COMMUNITY_LLMProxy (2)]]
 
 ## Top bridge nodes
 - [[test_claude_via_openai_path.py]] - degree 9, connects to 3 communities

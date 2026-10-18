@@ -12,8 +12,9 @@ tags:
 # check-version-pins-parity.sh
 
 ## Connections
+- [[Automatic prod cutover gate (no human tap, 2026-10-18)]] - `references` [EXTRACTED]
 - [[Prod promotion blocked dev tested an unmerged branch]] - `references` [EXTRACTED]
-- [[Sunday upgrade session prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)]] - `references` [EXTRACTED]

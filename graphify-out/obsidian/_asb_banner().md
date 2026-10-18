@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh"
-location: "L74"
+community: "setup-secrets.sh (2)"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # _asb_banner()
@@ -15,4 +15,4 @@ tags:
 - [[asb]] - `defines` [EXTRACTED]
 - [[asb script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

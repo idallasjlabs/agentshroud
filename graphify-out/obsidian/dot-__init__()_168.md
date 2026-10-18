@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L210"
+community: "ResourceGuard (2)"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/ResourceGuard_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

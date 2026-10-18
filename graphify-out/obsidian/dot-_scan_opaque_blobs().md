@@ -12,7 +12,7 @@ tags:
 # ._scan_opaque_blobs()
 
 ## Connections
-- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_file()]] - `calls` [EXTRACTED]
 - [[Finding]] - `calls` [EXTRACTED]
 - [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_3]] - `references` [EXTRACTED]

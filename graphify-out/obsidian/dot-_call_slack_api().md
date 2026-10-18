@@ -18,6 +18,6 @@ tags:
 - [[dot-provision_group_channel()]] - `calls` [EXTRACTED]
 - [[dot-proxy_outbound()]] - `calls` [EXTRACTED]
 - [[POST to httpsslack.comapimethod with the bot token.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

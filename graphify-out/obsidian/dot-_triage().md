@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "WebContentScanner (2)"
+community: "WebContentScanner"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner_2
+  - community/WebContentScanner
 ---
 
 # ._triage()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_xxe_class_is_covered_by_the_gateway_control()]] - `calls` [EXTRACTED]
 - [[TestTriageClassLevelCoverage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner_2
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

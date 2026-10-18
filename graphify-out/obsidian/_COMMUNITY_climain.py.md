@@ -24,7 +24,7 @@ members: 66
 - [[Add a user to a group.]] - rationale - gateway/cli/main.py
 - [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
 - [[Aggregate health report.]] - rationale - gateway/cli/main.py
-- [[Any_81]] - code - gateway/cli/main.py
+- [[Any_76]] - code - gateway/cli/main.py
 - [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
@@ -48,8 +48,8 @@ members: 66
 - [[_output()]] - code - gateway/cli/main.py
 - [[_print_table()]] - code - gateway/cli/main.py
 - [[add()_1]] - code - gateway/cli/main.py
-- [[add_collaborator()]] - code - gateway/cli/main.py
-- [[add_group_member()]] - code - gateway/cli/main.py
+- [[add_collaborator()_1]] - code - gateway/cli/main.py
+- [[add_group_member()_1]] - code - gateway/cli/main.py
 - [[approve()_3]] - code - gateway/cli/main.py
 - [[cli()]] - code - gateway/cli/main.py
 - [[climain.py]] - code - gateway/cli/main.py
@@ -60,19 +60,19 @@ members: 66
 - [[get_egress_pending()_1]] - code - gateway/cli/main.py
 - [[get_events()]] - code - gateway/cli/main.py
 - [[get_groups()]] - code - gateway/cli/main.py
-- [[get_health()]] - code - gateway/cli/main.py
+- [[get_health()_1]] - code - gateway/cli/main.py
 - [[get_logs()_1]] - code - gateway/cli/main.py
 - [[get_risk()]] - code - gateway/cli/main.py
 - [[get_services()]] - code - gateway/cli/main.py
 - [[get_users()]] - code - gateway/cli/main.py
-- [[main()_30]] - code - gateway/cli/main.py
+- [[main()_31]] - code - gateway/cli/main.py
 - [[restart()]] - code - gateway/cli/main.py
-- [[restart_service()_1]] - code - gateway/cli/main.py
+- [[restart_service()_2]] - code - gateway/cli/main.py
 - [[scan()]] - code - gateway/cli/main.py
 - [[set()]] - code - gateway/cli/main.py
 - [[set_mode()_1]] - code - gateway/cli/main.py
 - [[stop()]] - code - gateway/cli/main.py
-- [[stop_service()_1]] - code - gateway/cli/main.py
+- [[stop_service()_2]] - code - gateway/cli/main.py
 - [[tail()_1]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)

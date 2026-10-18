@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "SecureBrowser (2)"
-location: "L65"
+community: "AgentTarget (3)"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/AgentTarget_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

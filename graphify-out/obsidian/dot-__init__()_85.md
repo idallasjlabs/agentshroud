@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L23"
+community: "test_soc_router_coverage.py"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

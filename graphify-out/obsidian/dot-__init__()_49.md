@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L398"
+community: "FetchOutcome"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
-- [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
-- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

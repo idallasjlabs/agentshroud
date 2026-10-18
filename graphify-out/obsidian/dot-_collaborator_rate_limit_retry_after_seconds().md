@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy (4)"
+community: "TelegramAPIProxy"
 location: "L7037"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/TelegramAPIProxy
 ---
 
 # ._collaborator_rate_limit_retry_after_seconds()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_send_rate_limit_notice()]] - `calls` [EXTRACTED]
 - [[Estimate seconds until collaborator rate limit window opens again.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

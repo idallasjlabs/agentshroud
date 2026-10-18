@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L357"
+community: "UserSessionManager (4)"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/UserSessionManager_4
 ---
 
 # .decide()
 
 ## Connections
+- [[dot-_append_audit_event()]] - `calls` [EXTRACTED]
+- [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
-- [[dot-get_item()_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[PermissionError]] - `calls` [INFERRED]
-- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - `rationale_for` [EXTRACTED]
+- [[Process an approval decision          Args             request_id Request UUID]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

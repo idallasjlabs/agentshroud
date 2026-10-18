@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L25"
+community: "FetchOutcome"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

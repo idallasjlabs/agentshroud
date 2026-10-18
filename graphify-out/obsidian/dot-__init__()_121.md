@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "UserSessionManager"
-location: "L122"
+community: "ControlCenter"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/ControlCenter
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

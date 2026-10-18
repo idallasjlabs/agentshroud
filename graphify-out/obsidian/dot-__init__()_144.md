@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L585"
+community: "SecurityPipeline"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/SecurityPipeline
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

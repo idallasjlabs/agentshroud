@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "StdioConnection"
-location: "L95"
+community: "telegram_proxy.py"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig_2]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

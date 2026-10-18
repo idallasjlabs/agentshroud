@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Turn argparse REMAINDER tokens into a command string.      Drops a leading ``--`]] - `rationale_for` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()_30]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/multi_host_testpy

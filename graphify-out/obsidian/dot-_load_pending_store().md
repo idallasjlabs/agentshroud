@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L436"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # ._load_pending_store()
 
 ## Connections
-- [[dot-__init__()_197]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_40]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Load queue items from store file when present.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

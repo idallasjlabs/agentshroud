@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Bot Account (Manual Setup Required)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (You Do This Manually)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Clone Repo on Pi]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 3 GitHub Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Repo Access]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
+- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
 
 ## Top bridge nodes
-- [[Phase 3 GitHub Setup]] - degree 5, connects to 1 community
+- [[IV. System Architecture]] - degree 5, connects to 1 community

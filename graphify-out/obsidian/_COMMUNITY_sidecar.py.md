@@ -11,9 +11,9 @@ members: 11
 - [[Configuration  Environment Variables_30]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[Function Details_50]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Purpose_183]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Purpose_191]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[Related_57]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Responsibilities_56]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md

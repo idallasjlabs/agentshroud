@@ -12,7 +12,7 @@ tags:
 # ._record()
 
 ## Connections
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[dot-scan()_3]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

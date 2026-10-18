@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L71"
+community: "test_a2a_policy.py"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/test_a2a_policypy
 ---
 
 # .allowed()
 
 ## Connections
-- [[MCPPolicyDecision]] - `method` [EXTRACTED]
-- [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - `rationale_for` [EXTRACTED]
+- [[A2APolicyDecision]] - `method` [EXTRACTED]
+- [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

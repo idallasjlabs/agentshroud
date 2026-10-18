@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L45"
+community: "EgressFilterConfig"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "AuditEvent"
-location: "L62"
+community: "test_jira_weekly_review.py"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/test_jira_weekly_reviewpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
-- [[AuditEvent_1]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

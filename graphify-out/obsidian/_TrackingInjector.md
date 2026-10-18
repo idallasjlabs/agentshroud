@@ -12,7 +12,7 @@ tags:
 # _TrackingInjector
 
 ## Connections
-- [[dot-__init__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_5]] - `method` [EXTRACTED]
 - [[dot-inject_headers()]] - `method` [EXTRACTED]
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - `rationale_for` [EXTRACTED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]

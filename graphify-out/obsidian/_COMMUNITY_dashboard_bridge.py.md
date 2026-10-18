@@ -14,15 +14,15 @@ members: 16
 - [[StreamReader_2]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_handle()]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[_handle()_1]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_pipe()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[_handle()_2]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[_handle()_3]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_pipe()_2]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[_pump()]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[main()_24]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[main()_25]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[main()_26]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[main()_27]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)
@@ -31,9 +31,3 @@ members: 16
 TABLE source_file, type FROM #community/dashboard_bridgepy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-
-## Top bridge nodes
-- [[dashboard_bridge.py]] - degree 7, connects to 1 community

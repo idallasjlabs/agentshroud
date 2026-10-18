@@ -15,8 +15,8 @@ tags:
 - [[dot-close()_17]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[_DummyTargetWriter_1]] - `inherits` [EXTRACTED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[_DummyTargetWriter]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

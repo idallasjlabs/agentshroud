@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L86"
+community: "test_soc_router_coverage.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L50"
+community: "test_a2a_proxy.py"
+location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/test_a2a_proxypy
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[ContentThreat]] - `method` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

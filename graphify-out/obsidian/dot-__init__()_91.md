@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L47"
+community: "test_collaborator_greeter.py"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/test_collaborator_greeterpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[ApprovalStore_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

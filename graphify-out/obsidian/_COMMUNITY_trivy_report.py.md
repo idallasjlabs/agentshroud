@@ -11,9 +11,9 @@ members: 14
 - [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Function Details_42]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Purpose_165]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Purpose_166]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Related_48]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Severity Order (for ranking)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[generate_summary(report)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md

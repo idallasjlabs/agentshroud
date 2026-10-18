@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "AuditStore"
-location: "L163"
+community: "ApprovalQueueConfig (3)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/ApprovalQueueConfig_3
 ---
 
 # .close()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

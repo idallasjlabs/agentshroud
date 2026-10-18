@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L56"
+community: "MiddlewareManager"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
-- [[Any_6]] - `references` [EXTRACTED]
-- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
+- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

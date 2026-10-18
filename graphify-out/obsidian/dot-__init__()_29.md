@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L95"
+community: "PortManager"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/PortManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[PortManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/PortManager
