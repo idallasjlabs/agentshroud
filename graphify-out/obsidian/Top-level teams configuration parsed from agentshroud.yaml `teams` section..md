@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "RBACConfig (3)"
+community: "TeamsConfig"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/TeamsConfig
 ---
 
 # Top-level teams configuration parsed from agentshroud.yaml `teams:` section.
 
 ## Connections
-- [[TeamsConfig]] - `rationale_for` [EXTRACTED]
+- [[TeamsConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

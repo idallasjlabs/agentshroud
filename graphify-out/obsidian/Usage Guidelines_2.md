@@ -1,18 +1,19 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "branding/colors/palette.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L23"
+community: "AgentShroud Color Palette"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/AgentShroud_Color_Palette
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[TRADEMARK_2]] - `references` [EXTRACTED]
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
+- [[Accessibility]] - `contains` [EXTRACTED]
+- [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
+- [[Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

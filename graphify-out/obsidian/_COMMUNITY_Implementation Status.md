@@ -28,7 +28,7 @@ members: 23
 - [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Summary_13]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Summary_15]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 
@@ -40,15 +40,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
 - 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_BotConfig (3)]]
 - 1 edge to [[_COMMUNITY_Security Modules (58)]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
+- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 3 communities
 - [[Implementation Status]] - degree 11, connects to 2 communities
 - [[Access Control (7)]] - degree 2, connects to 1 community

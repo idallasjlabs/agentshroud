@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "skills/README.md"
 type: "document"
-community: "Project Management (README)"
-location: "L10"
+community: "MiddlewareManager (2)"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/MiddlewareManager_2
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -23,7 +23,7 @@ members: 19
 - [[Issue npx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Output Format_16]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_65]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_82]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Role_50]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[When to Invoke_3]] - document - .agents/skills/i-mcpm-doctor/SKILL.md

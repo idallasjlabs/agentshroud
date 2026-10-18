@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Contact_1]] - `contains` [EXTRACTED]
 - [[Standard Footer]] - `contains` [EXTRACTED]
-- [[TRADEMARK_2]] - `contains` [EXTRACTED]
+- [[TRADEMARK_1]] - `contains` [EXTRACTED]
 - [[Trademark Details]] - `contains` [EXTRACTED]
-- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

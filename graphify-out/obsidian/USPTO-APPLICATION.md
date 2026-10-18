@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `conceptually_related_to` [INFERRED]
 - [[TEAS Plus Filing Process]] - `references` [EXTRACTED]
-- [[TRADEMARK_2]] - `references` [EXTRACTED]
+- [[TRADEMARK_1]] - `references` [EXTRACTED]
 - [[USPTO Class 009 Filing (Downloadable Software)]] - `references` [EXTRACTED]
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `references` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]

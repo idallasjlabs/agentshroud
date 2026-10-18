@@ -18,6 +18,6 @@ tags:
 - [[downgrade_version()]] - `references` [EXTRACTED]
 - [[review_version()]] - `references` [EXTRACTED]
 - [[upgrade_version()]] - `references` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

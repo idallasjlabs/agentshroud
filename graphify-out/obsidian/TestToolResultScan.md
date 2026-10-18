@@ -12,7 +12,7 @@ tags:
 # TestToolResultScan
 
 ## Connections
-- [[dot-pg()_1]] - `method` [EXTRACTED]
+- [[dot-pg()]] - `method` [EXTRACTED]
 - [[dot-test_benign_tool_result_passes()]] - `method` [EXTRACTED]
 - [[dot-test_direct_injection_in_tool_result_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_empty_tool_result_passes()]] - `method` [EXTRACTED]

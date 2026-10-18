@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_35]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[Purpose_37]] - document - docker/config/hermes/skills/i-socrates/README.md
 - [[Related Skills_22]] - document - docker/config/hermes/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect_1]] - document - docker/config/hermes/skills/i-socrates/README.md
 - [[Usage_26]] - document - docker/config/hermes/skills/i-socrates/README.md

@@ -12,7 +12,7 @@ tags:
 # TestGetTrivySummary
 
 ## Connections
-- [[dot-test_clean_when_installed_but_no_report()_1]] - `method` [EXTRACTED]
+- [[dot-test_clean_when_installed_but_no_report()]] - `method` [EXTRACTED]
 - [[dot-test_not_run_when_no_report_dir()]] - `method` [EXTRACTED]
 - [[dot-test_returns_generate_summary_output()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]

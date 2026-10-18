@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[5) ENVIRONMENT SETUP]] - `contains` [EXTRACTED]
 - [[Common Validation Commands]] - `contains` [EXTRACTED]
-- [[Definition of Done_1]] - `contains` [EXTRACTED]
+- [[Definition of Done]] - `contains` [EXTRACTED]
 - [[Error Handling_1]] - `contains` [EXTRACTED]
-- [[Remember_1]] - `contains` [EXTRACTED]
+- [[Remember]] - `contains` [EXTRACTED]
 - [[Report Format]] - `contains` [EXTRACTED]
-- [[Repository Context_2]] - `contains` [EXTRACTED]
-- [[Role Definition_1]] - `contains` [EXTRACTED]
+- [[Repository Context_1]] - `contains` [EXTRACTED]
+- [[Role Definition]] - `contains` [EXTRACTED]
 - [[Validation Workflows]] - `contains` [EXTRACTED]
-- [[What You CANNOT Do_1]] - `contains` [EXTRACTED]
-- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
+- [[What You CANNOT Do]] - `contains` [EXTRACTED]
+- [[Your Responsibilities]] - `contains` [EXTRACTED]
 - [[validation-runner.agent]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

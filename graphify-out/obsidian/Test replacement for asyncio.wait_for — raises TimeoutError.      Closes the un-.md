@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_clamav_pipeline.py"
+source_file: "gateway/tests/test_image_verifier.py"
 type: "rationale"
-community: "test_clamav_pipeline.py"
-location: "L49"
+community: "test_image_verifier.py"
+location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/test_image_verifierpy
 ---
 
 # Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-
 
 ## Connections
 - [[_timeout_wait_for()]] - `rationale_for` [EXTRACTED]
+- [[_timeout_wait_for()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/rationale #graphify/EXTRACTED #community/test_image_verifierpy

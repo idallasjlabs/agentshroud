@@ -15,7 +15,7 @@ members: 14
 - [[Issue Triage]] - document - skills/openclaw/github/SKILL.md
 - [[Issues]] - document - skills/openclaw/github/SKILL.md
 - [[JSON Output]] - document - skills/openclaw/github/SKILL.md
-- [[Notes_6]] - document - skills/openclaw/github/SKILL.md
+- [[Notes_5]] - document - skills/openclaw/github/SKILL.md
 - [[PR Review Summary]] - document - skills/openclaw/github/SKILL.md
 - [[Pull Requests]] - document - skills/openclaw/github/SKILL.md
 - [[Setup_7]] - document - skills/openclaw/github/SKILL.md

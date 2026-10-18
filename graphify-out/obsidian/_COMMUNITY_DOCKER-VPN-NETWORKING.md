@@ -39,7 +39,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Kill Switch]]
 - 1 edge to [[_COMMUNITY_ModeRequest (2)]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
 - [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities

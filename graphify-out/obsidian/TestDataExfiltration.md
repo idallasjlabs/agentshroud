@@ -21,7 +21,7 @@ tags:
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[TestDataExfiltration_1]] - `semantically_similar_to` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/WebProxyConfig

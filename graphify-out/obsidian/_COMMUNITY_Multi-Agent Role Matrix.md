@@ -21,7 +21,7 @@ members: 20
 - [[Multi-Agent Role Matrix]] - document - docs/governance/AGENT_ROLES.md
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - document - docs/governance/AGENT_ROLES.md
 - [[Out of Scope_1]] - document - docs/governance/GSD_CADENCE.md
-- [[References_4]] - document - docs/governance/AGENT_ROLES.md
+- [[References_3]] - document - docs/governance/AGENT_ROLES.md
 - [[Rule 1 — GSD Issue Before the Branch]] - document - docs/governance/GSD_CADENCE.md
 - [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - concept - docs/governance/GSD_CADENCE.md
 - [[Rule 2 — Approval Tag for High-Severity Changes]] - document - docs/governance/GSD_CADENCE.md

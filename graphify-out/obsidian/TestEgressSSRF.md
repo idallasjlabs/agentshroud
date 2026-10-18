@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TrustConfig"
 location: "L842"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_3
+  - community/TrustConfig
 ---
 
 # TestEgressSSRF
 
 ## Connections
-- [[dot-setup_method()_30]] - `method` [EXTRACTED]
+- [[dot-setup_method()_9]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_3
+#graphify/code #graphify/INFERRED #community/TrustConfig

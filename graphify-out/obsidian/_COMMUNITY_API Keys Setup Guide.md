@@ -31,8 +31,8 @@ members: 26
 - [[Telegram bot not responding]] - document - docker/scripts/README.md
 - [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Troubleshooting_23]] - document - docker/scripts/README.md
-- [[Troubleshooting_24]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Troubleshooting_24]] - document - docker/scripts/README.md
+- [[Troubleshooting_25]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
@@ -49,4 +49,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[API Keys Setup Guide]] - degree 13, connects to 2 communities
-- [[Troubleshooting_23]] - degree 4, connects to 1 community
+- [[Troubleshooting_24]] - degree 4, connects to 1 community

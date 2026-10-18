@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "AlertDispatcher"
-location: "L24"
+community: "EgressFilterConfig (2)"
+location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/EgressFilterConfig_2
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

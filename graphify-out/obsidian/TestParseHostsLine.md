@@ -12,7 +12,7 @@ tags:
 # TestParseHostsLine
 
 ## Connections
-- [[dot-setup_method()_34]] - `method` [EXTRACTED]
+- [[dot-setup_method()_37]] - `method` [EXTRACTED]
 - [[dot-test_adblock_format()]] - `method` [EXTRACTED]
 - [[dot-test_adblock_format_invalid_chars()]] - `method` [EXTRACTED]
 - [[dot-test_blank_whitespace()]] - `method` [EXTRACTED]

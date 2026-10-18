@@ -36,21 +36,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Path]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (5)]]
-- 2 edges to [[_COMMUNITY_RBACConfig (3)_1]]
+- 5 edges to [[_COMMUNITY_Path]]
+- 2 edges to [[_COMMUNITY_RBACConfig (2)]]
 - 2 edges to [[_COMMUNITY_RuntimeConfig]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_SkillGuard (2)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 - 1 edge to [[_COMMUNITY_A2APolicyEngine (3)]]
 - 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_StdioConnection]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (10)]]
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 
 ## Top bridge nodes

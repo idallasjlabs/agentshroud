@@ -12,7 +12,7 @@ tags:
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_35]] - `contains` [EXTRACTED]
+- [[Purpose_37]] - `contains` [EXTRACTED]
 - [[Related Skills_22]] - `contains` [EXTRACTED]
 - [[Usage_26]] - `contains` [EXTRACTED]
 - [[hermesskillsi-socratesREADME]] - `contains` [EXTRACTED]

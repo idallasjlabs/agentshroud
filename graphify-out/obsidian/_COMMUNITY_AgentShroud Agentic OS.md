@@ -58,7 +58,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Key Skills in Detail]]
-- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_main]]
 - 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
 

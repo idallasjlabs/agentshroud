@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L171"
+community: "iCloud Services (2)"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/iCloud_Services_2
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
+- [[Connection timeout_1]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2

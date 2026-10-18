@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_2]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
 - [[Persona_2]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
 - [[Quality Checklist_3]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Role_5]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[Role_6]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
 - [[System Prompt_2]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
 - [[hermesskillsi-oracleSKILL]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
 

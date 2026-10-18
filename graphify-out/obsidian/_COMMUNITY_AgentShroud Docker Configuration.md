@@ -1,11 +1,11 @@
 ---
 type: community
-members: 37
+members: 36
 ---
 
 # AgentShroud Docker Configuration
 
-**Members:** 37 nodes
+**Members:** 36 nodes
 
 ## Members
 - [[AgentShroud Docker Configuration]] - document - docker/README.md
@@ -28,11 +28,10 @@ members: 37
 - [[Next Steps (Phase 4+)]] - document - docker/README.md
 - [[Port Reference]] - document - docker/README.md
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
-- [[Quick Start_3]] - document - docker/README.md
+- [[Quick Start_4]] - document - docker/README.md
 - [[Rebuild Containers]] - document - docker/README.md
 - [[Reference]] - document - docker/README.md
 - [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
 - [[Secrets]] - document - docker/README.md
 - [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
 - [[Security Features (Implemented)]] - document - docker/README.md
@@ -40,8 +39,8 @@ members: 37
 - [[Startup Warnings Reference]] - document - docker/README.md
 - [[Stop the Stack]] - document - docker/README.md
 - [[Test Chat]] - document - docker/README.md
-- [[Troubleshooting_6]] - document - docker/README.md
-- [[Usage_58]] - document - docker/README.md
+- [[Troubleshooting_9]] - document - docker/README.md
+- [[Usage_61]] - document - docker/README.md
 - [[Verify Security]] - document - docker/README.md
 - [[View Logs]] - document - docker/README.md
 - [[dockerREADME]] - document - docker/README.md
@@ -58,5 +57,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 
 ## Top bridge nodes
+- [[AgentShroud Docker Configuration]] - degree 18, connects to 1 community
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community

@@ -14,7 +14,7 @@ members: 8
 - [[Output Format]] - document - .agents/skills/i-hermes/SKILL.md
 - [[Persona]] - document - .agents/skills/i-hermes/SKILL.md
 - [[Quality Checklist_1]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Role_2]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Role_3]] - document - .agents/skills/i-hermes/SKILL.md
 - [[System Prompt]] - document - .agents/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)

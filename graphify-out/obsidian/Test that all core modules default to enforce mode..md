@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig (2)"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig_2
 ---
 
 # Test that all core modules default to enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_security_config_all_defaults_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

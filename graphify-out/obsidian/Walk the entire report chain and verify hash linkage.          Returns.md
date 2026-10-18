@@ -12,6 +12,6 @@ tags:
 # Walk the entire report chain and verify hash linkage.          Returns:
 
 ## Connections
-- [[dot-verify_chain()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

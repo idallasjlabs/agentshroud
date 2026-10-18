@@ -13,7 +13,7 @@ members: 7
 - [[2. Atlassian MCP (Jira + Confluence)]] - document - .agents/skills/i-mcpm/SKILL.md
 - [[3. AWS API MCP]] - document - .agents/skills/i-mcpm/SKILL.md
 - [[Available MCP Servers]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Role_11]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Role_12]] - document - .agents/skills/i-mcpm/SKILL.md
 - [[Skill MCP Tools Usage (MCP-TOOLS)]] - document - .agents/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)

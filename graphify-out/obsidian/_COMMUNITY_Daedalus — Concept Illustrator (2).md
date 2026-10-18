@@ -8,7 +8,7 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_3]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Daedalus — Concept Illustrator_4]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[Input Requirements_24]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[Output Format_39]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[Persona_18]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md

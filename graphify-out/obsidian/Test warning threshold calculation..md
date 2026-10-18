@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager (3)"
+community: "TestDomainValidationHelper"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/TestDomainValidationHelper
 ---
 
 # Test warning threshold calculation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_should_warn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper

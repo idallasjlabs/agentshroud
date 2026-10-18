@@ -15,7 +15,7 @@ members: 8
 - [[Input Requirements]] - document - .agents/skills/i-apollo/SKILL.md
 - [[Output]] - document - .agents/skills/i-apollo/SKILL.md
 - [[Quality Checklist]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Role]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Role_1]] - document - .agents/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

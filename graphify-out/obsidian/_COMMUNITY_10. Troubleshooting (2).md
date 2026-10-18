@@ -12,7 +12,7 @@ members: 7
 - [[2. Atlassian MCP (Jira + Confluence)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[3. AWS API MCP_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Available MCP Servers_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Role_12]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Role_13]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[hermesskillsi-mcpmSKILL]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 

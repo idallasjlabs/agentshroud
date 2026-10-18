@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "paper"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # Wu et al. 2026 — Browser-based attacks on AI agents (arXiv:2601.07263)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/paper #graphify/EXTRACTED #community/MiddlewareManager

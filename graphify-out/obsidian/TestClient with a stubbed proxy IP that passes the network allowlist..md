@@ -12,6 +12,6 @@ tags:
 # TestClient with a stubbed proxy IP that passes the network allowlist.
 
 ## Connections
-- [[client()_3]] - `rationale_for` [EXTRACTED]
+- [[client()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_v1_models_syntheticpy

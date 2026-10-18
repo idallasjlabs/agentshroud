@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager (5)"
+community: "Restart Procedure"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_5
+  - community/Restart_Procedure
 ---
 
 # Test default policy has reasonable values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_policy_values()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_5
+#graphify/rationale #graphify/EXTRACTED #community/Restart_Procedure

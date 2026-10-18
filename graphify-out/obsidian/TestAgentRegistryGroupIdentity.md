@@ -19,9 +19,9 @@ tags:
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - `rationale_for` [EXTRACTED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # The control is agent-agnostic by construction: it takes an origin and         an
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_applies_to_any_agent_not_just_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

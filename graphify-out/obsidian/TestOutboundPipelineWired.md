@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction (2)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction_2
 ---
 
 # TestOutboundPipelineWired
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - `method` [EXTRACTED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Error Index.md (4)"
-location: "L27"
+community: "All Dependencies.md"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/All_Dependenciesmd
 ---
 
 # Where Used
 
 ## Connections
-- [[spaCy_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
