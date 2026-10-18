@@ -350,10 +350,19 @@ Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
 
 1. **Summary line** — one of: `ALL GREEN`, `PARTIAL (n components failed/blocked)`, `ROLLED BACK`, `ABORTED (reason)`, `BLOCKED (<gate>)`.
 2. **Environment mapping** you discovered (dev vs prod).
-3. **Upgrade table** — component | env | before | after | status (UPGRADED / ALREADY CURRENT / FAILED / BLOCKED / HELD BACK / SKIPPED) | notes.
+3. **Upgrade table, then what changed per component** (owner, 2026-10-18: "I should get a report per component: upgraded from x->y, what has changed"). First the table — component | env | before → after | status (UPGRADED / ALREADY CURRENT / FAILED / BLOCKED / HELD BACK / SKIPPED) | notes — covering every component in scope (§0.05: a component missing from the table is a failed run). Then one subsection per UPGRADED component, headed `#### <component>: <before> → <after>`, with three bullets summarised from the upstream release notes / changelog / GitHub releases for every version in between, never from memory:
+   - **Security fixes** — the CVE / GHSA IDs closed, each with severity, and whether it affected our configuration.
+   - **Bug fixes** — the ones that matter to how we run it, in one line each.
+   - **New features / behaviour changes** — including anything that changes defaults or config we rely on.
+   End each subsection with the source you read (release URL, compare URL, or the command). If upstream publishes no notes, say so and give the compare/diff link instead of inventing a summary. An ALREADY CURRENT component gets one line, not a subsection: "already latest, verified against \<source\> on \<date\>".
 4. **Security findings** — ID | severity | component | before | after (FIXED / ACCEPTED-with-reason / OPEN).
 5. **Verification evidence** — the actual command outputs for each check in 3.3 and 4.3, trimmed to the relevant lines.
-6. **Breaking changes / needs human** — every BLOCKED, HELD BACK, or FAILED item as its own bullet: the specific policy change or breaking change it would require, so this list is a punch list a human can act on directly, not prose to reconstruct one from.
+6. **Not upgraded this week — why, and the plan before next Sunday** (owner, 2026-10-18: "what was not able to be updated and plan to upgrade/update during the week (why did update/upgrade fail and how we will move forward)"). One subsection per FAILED, BLOCKED, HELD BACK, or SKIPPED component, headed `#### <component>: <current> → <target attempted>`, with four bullets:
+   - **Why it did not ship** — the actual error or gate that stopped it, quoted from the log in one or two lines, not paraphrased.
+   - **Exposure left open** — the CVEs or fixes it would have delivered that we are still without, with severity, or "none known".
+   - **Plan this week** — the concrete next step (the code change, patch re-anchor, config migration, or upstream wait), who does it (dev session first, per the dev→prod flow), and a target date before next Sunday. Waiting on upstream is a valid plan only when no fix is published, and then it names what to watch.
+   - **Tracking** — the Jira key for that follow-up (§6 Jira tracking; create it if none exists).
+   This is a punch list someone can act on Monday morning, not prose to reconstruct one from. A partial run (§3 step 5) is expected to have entries here; an empty section on a PARTIAL run is a reporting failure.
 7. **Rollback instructions** — the exact one-line backout command, not prose steps: `bash scripts/sunday-rollback.sh YYYY-MM-DD` (reverts the merge commit on main and redeploys the previous pinned images — see §3.5) if dev merged; `bash reports/sunday/YYYY-MM-DD/rollback.sh` for prod-only image rollback (§4.4 uses this automatically on a failed health check).
 8. **Time spent** and whether the 90-minute budget was hit.
 

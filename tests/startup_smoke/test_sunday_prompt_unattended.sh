@@ -68,5 +68,20 @@ else
   fail "sunday_dev_handoff_gate not defined in scripts/lib/sunday-scan.sh"
 fi
 
+# 5. The report gives the owner a per-component account (owner, 2026-10-18):
+#    from -> to with what changed, and for anything not shipped, why + the plan.
+for needle in \
+  '#### <component>: <before> → <after>' \
+  '**Security fixes**' \
+  '**Bug fixes**' \
+  '**New features / behaviour changes**' \
+  '#### <component>: <current> → <target attempted>' \
+  '**Why it did not ship**' \
+  '**Exposure left open**' \
+  '**Plan this week**' \
+  '**Tracking**'; do
+  if grep -qF -- "$needle" "$PROMPT"; then pass "report spec mentions: $needle"; else fail "report spec missing: $needle"; fi
+done
+
 echo "Results: $fails failure(s)"
 [ "$fails" -eq 0 ]
