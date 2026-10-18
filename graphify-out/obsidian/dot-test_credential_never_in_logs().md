@@ -12,7 +12,7 @@ tags:
 # .test_credential_never_in_logs()
 
 ## Connections
-- [[TestStatus_1]] - `method` [EXTRACTED]
+- [[TestStatus]] - `method` [EXTRACTED]
 - [[Verify that raw credential values never appear in log output.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

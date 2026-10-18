@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig"
+community: "BotConfig (2)"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/BotConfig_2
 ---
 
 # .test_active_bot_id_returns_contextvar_when_set()
@@ -16,4 +16,4 @@ tags:
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 - [[When _inbound_bot_id is set, _active_bot_id() returns it.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/BotConfig_2

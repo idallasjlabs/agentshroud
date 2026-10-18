@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "StdioConnection"
+community: "PermissionLevel"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/PermissionLevel
 ---
 
 # .test_no_limit_always_allowed()
 
 ## Connections
-- [[TestRateLimiting_3]] - `method` [EXTRACTED]
+- [[TestRateLimiting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

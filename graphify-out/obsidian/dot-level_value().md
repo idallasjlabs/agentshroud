@@ -16,6 +16,6 @@ tags:
 - [[dot-__gt__()]] - `calls` [EXTRACTED]
 - [[dot-__le__()]] - `calls` [EXTRACTED]
 - [[dot-__lt__()]] - `calls` [EXTRACTED]
-- [[PermissionLevel_1]] - `method` [EXTRACTED]
+- [[PermissionLevel]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PermissionLevel

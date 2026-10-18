@@ -12,7 +12,7 @@ tags:
 # .test_cannot_set_tool_floor_below_minimum()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `calls` [EXTRACTED]
 - [[TestDeterministicPresidioInit]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

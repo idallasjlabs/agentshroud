@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (2) (6)"
+community: "TelegramAPIProxy (24)"
 location: "L2936"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2_6
+  - community/TelegramAPIProxy_24
 ---
 
 # .test_raw_web_fetch_json_ip_host_does_not_queue_approval()
 
 ## Connections
 - [[Literal IP targets should not enter interactive domain approval flow.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2_6
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_24

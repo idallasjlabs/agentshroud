@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (4)"
+community: "UserSessionManager"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_4
+  - community/UserSessionManager
 ---
 
 # .test_prompt_addition_mentions_isolation()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_4
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

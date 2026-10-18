@@ -12,7 +12,7 @@ tags:
 # .test_no_tracker_does_not_raise()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event is a no-op and does not raise when tracker is None.]] - `rationale_for` [EXTRACTED]
 

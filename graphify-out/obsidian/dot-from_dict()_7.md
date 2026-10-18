@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "StdioConnection"
-location: "L98"
+community: "AgentRegistry"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/AgentRegistry
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_65]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `method` [EXTRACTED]
-- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel_1]] - `calls` [EXTRACTED]
+- [[dot-register()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

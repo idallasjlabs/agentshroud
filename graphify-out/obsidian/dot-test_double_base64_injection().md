@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "ContextSegment"
 location: "L818"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/ContextSegment
 ---
 
 # .test_double_base64_injection()
@@ -15,4 +15,4 @@ tags:
 - [[Double-encoded base64 injection should be caught.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

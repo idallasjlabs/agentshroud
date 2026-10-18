@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "EgressFilterConfig (3)"
-location: "L133"
+community: "MCPPermissionManager"
+location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/MCPPermissionManager
 ---
 
 # .set_event_bus()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[Set optional event bus for real-time egress telemetry.]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Wire optional event bus for privacysecurity telemetry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

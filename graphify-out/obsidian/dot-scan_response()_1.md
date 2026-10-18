@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L175"
+community: "PipelineAction"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/PipelineAction
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-_calculate_similarity()]] - `calls` [EXTRACTED]
-- [[dot-_redact_fuzzy_match()]] - `calls` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
-- [[RedactionResult_3]] - `references` [EXTRACTED]
-- [[Scan text for protected content and return redacted version.          Args]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - `rationale_for` [EXTRACTED]
+- [[TripwireResponse]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

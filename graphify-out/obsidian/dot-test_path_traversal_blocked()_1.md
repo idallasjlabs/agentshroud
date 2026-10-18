@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "MiddlewareManager (4)"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/MiddlewareManager_4
 ---
 
 # .test_path_traversal_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Path traversal attempts should be blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4

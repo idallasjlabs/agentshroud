@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Unit tests for collaborator-facing prompt classification helpers."
+community: "TestCollaboratorPromptClassifiers"
 location: "L7521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .test_collaborator_rate_limit_retry_after_seconds_uses_window()
@@ -15,4 +15,4 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "PodmanEngine"
-location: "L111"
+community: "ResourceGuard"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/ResourceGuard
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()]] - `calls` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

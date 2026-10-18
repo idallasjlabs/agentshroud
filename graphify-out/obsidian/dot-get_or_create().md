@@ -16,7 +16,7 @@ tags:
 - [[ConnectionPool]] - `method` [EXTRACTED]
 - [[Get existing connection or create a new one.]] - `rationale_for` [EXTRACTED]
 - [[HttpSseConnection]] - `references` [EXTRACTED]
-- [[MCPServerConfig_2]] - `references` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
 - [[StdioConnection]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection

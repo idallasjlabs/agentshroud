@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[An empty source directory must raise ValueError.]] - `rationale_for` [EXTRACTED]
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

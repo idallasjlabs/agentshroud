@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L324"
+community: "EgressFilterConfig"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/EgressFilterConfig
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[test_egress_allowed_domain()]] - `calls` [EXTRACTED]
+- [[test_egress_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
+- [[test_outbound_pii_stripped()]] - `calls` [EXTRACTED]
+- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

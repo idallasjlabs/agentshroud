@@ -12,7 +12,7 @@ tags:
 # .test_empty_teams_parses()
 
 ## Connections
-- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[TestTeamsConfigParsing]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupConfig

@@ -16,6 +16,6 @@ tags:
 - [[dot-_mock_request()]] - `calls` [EXTRACTED]
 - [[Repeated misses within the debounce window must not re-read secrets         on e]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `method` [EXTRACTED]
-- [[telegram_api_proxy (telegram-api{path})]] - `calls` [EXTRACTED]
+- [[telegram_api_proxy()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

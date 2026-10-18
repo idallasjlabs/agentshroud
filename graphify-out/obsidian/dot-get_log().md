@@ -12,7 +12,7 @@ tags:
 # .get_log()
 
 ## Connections
-- [[dot-get_stats()_16]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_18]] - `calls` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `method` [EXTRACTED]
 - [[Get egress attempt log, optionally filtered by agent.]] - `rationale_for` [EXTRACTED]

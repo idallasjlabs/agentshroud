@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[DomainSettings]] - `calls` [EXTRACTED]
 - [[TestWebProxyConfig]] - `method` [EXTRACTED]
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

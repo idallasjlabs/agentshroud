@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L472"
+community: "TelegramAPIProxy"
+location: "L1002"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/TelegramAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

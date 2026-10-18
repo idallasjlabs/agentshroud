@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L88"
+community: "AuditStore"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/AuditStore
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Initialize the store and restore pending items.]] - `rationale_for` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Open the database, create the schema, and run column migrations.          Initia]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/AuditStore

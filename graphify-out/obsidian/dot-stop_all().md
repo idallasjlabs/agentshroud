@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection (3)"
+community: "StdioConnection"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_3
+  - community/StdioConnection
 ---
 
 # .stop_all()
@@ -16,4 +16,4 @@ tags:
 - [[dot-stop()_2]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_3
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

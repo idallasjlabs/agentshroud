@@ -15,10 +15,10 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult_2]] - `calls` [EXTRACTED]
+- [[RedactionResult_3]] - `calls` [EXTRACTED]
 - [[Test scanning email content for sensitive data]] - `rationale_for` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

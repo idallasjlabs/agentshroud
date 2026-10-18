@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "AuditChain"
+community: "ContextSegment"
 location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/ContextSegment
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
 - [[PromptGuard_1]] - `method` [EXTRACTED]
 - [[Scan tool result content for indirect prompt injection.          Tool results (w]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "api.py (2)"
+community: "api.py"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/apipy
 ---
 
 # .test_host_confusion_urls_rejected_and_never_fetched()
@@ -17,4 +17,4 @@ tags:
 - [[TestVerifyEntry]] - `method` [EXTRACTED]
 - [[_FakeFetcher_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/apipy
