@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "SkillGuard (2)"
+community: "SkillGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/SkillGuard
 ---
 
 # IntEnum
@@ -15,8 +15,8 @@ tags:
 - [[BotIncidentSeverity]] - `inherits` [EXTRACTED]
 - [[PIIHitSeverity]] - `inherits` [EXTRACTED]
 - [[Recommendation]] - `inherits` [EXTRACTED]
-- [[Severity_1]] - `inherits` [EXTRACTED]
-- [[ThreatLevel_1]] - `inherits` [EXTRACTED]
+- [[Severity]] - `inherits` [EXTRACTED]
+- [[ThreatLevel]] - `inherits` [EXTRACTED]
 - [[TrustLevel_2]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

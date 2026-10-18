@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L145"
+community: "KillSwitchMonitor"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - graphify/INFERRED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

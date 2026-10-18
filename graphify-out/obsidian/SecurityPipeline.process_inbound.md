@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig
 ---
 
 # SecurityPipeline.process_inbound
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SidecarScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

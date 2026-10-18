@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
-location: "L58"
+community: "TestFabricatedSecurityNotice"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_147]] - `calls` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

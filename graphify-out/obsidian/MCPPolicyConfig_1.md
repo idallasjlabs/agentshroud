@@ -12,19 +12,18 @@ tags:
 # MCPPolicyConfig
 
 ## Connections
-- [[dot-__init__()_133]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_128]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
 - [[dot-from_dict()_5]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]

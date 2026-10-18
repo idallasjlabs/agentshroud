@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # MCP Server Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/document #graphify/INFERRED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # Resolve the workspace/context for an inbound message, fail-closed.          Retu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-resolve_workspace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

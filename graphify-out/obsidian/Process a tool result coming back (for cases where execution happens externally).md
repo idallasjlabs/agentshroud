@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPPermissionManager (5)"
+community: "MCPPermissionManager"
 location: "L761"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_5
+  - community/MCPPermissionManager
 ---
 
 # Process a tool result coming back (for cases where execution happens externally)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-process_tool_result()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_5
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

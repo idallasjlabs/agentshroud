@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.png"
 type: "concept"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONE/LOW/MEDIUM/HIGH)
@@ -20,4 +20,4 @@ tags:
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[What Is Instrumented (bot apihealth, gateway status and ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/concept #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

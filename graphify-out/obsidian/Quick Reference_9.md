@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Quick Reference"
-location: "L257"
+community: "Browser-Fetch Skill for 1Password Share Links"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference
+  - community/Browser-Fetch_Skill_for_1Password_Share_Links
 ---
 
 # Quick Reference
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Change Default Model]] - `contains` [EXTRACTED]
-- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
-- [[List Available Models]] - `contains` [EXTRACTED]
-- [[View Configured Providers]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links

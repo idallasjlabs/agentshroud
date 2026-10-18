@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (4)"
+community: "TelegramAPIProxy"
 location: "L822"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/TelegramAPIProxy
 ---
 
 # Resolve a readable label for user id when available.          Priority: user sel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_resolve_display_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

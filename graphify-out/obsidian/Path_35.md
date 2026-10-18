@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "api.py"
+location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/apipy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_131]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
+- [[dashboard()]] - `calls` [EXTRACTED]
+- [[dashboard_main()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
+- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/apipy

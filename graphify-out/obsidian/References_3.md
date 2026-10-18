@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-ieee-paper.md"
+source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
-location: "L329"
+community: "Multi-Agent Role Matrix"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # References
 
 ## Connections
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

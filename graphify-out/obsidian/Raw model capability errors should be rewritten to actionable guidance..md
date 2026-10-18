@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_ollama_tools_unsupported_error_is_sanitized"
 location: "L738"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_ollama_tools_unsupported_error_is_sanitized
 ---
 
 # Raw model capability errors should be rewritten to actionable guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_ollama_tools_unsupported_error_is_sanitized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_ollama_tools_unsupported_error_is_sanitized

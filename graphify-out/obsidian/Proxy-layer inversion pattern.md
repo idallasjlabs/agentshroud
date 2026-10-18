@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "concept"
-community: "SecureBrowser Skill (2)"
+community: "Sunday Upgrade prompt"
 location: "L84"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Proxy-layer inversion pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Skill_2
+#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

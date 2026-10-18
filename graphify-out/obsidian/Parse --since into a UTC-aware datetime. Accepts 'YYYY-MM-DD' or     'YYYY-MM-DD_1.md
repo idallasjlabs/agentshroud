@@ -1,12 +1,12 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "rationale"
-community: "export-bot-conversations.py (3)"
-location: "L42"
+community: "export-bot-conversations.py (2)"
+location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_3
+  - community/export-bot-conversationspy_2
 ---
 
 # Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_since()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy_3
+#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy_2

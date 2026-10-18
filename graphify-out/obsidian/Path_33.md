@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "api.py"
-location: "L205"
+community: "MCPPolicyEngine"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/apipy
+  - graphify/INFERRED
+  - community/MCPPolicyEngine
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_128]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()_2]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

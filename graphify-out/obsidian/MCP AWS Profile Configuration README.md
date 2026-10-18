@@ -14,12 +14,12 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
 - [[MCP AWS Profile Configuration Skill_1]] - `references` [INFERRED]
-- [[Purpose_119]] - `contains` [EXTRACTED]
 - [[Purpose_120]] - `contains` [EXTRACTED]
+- [[Purpose_121]] - `contains` [EXTRACTED]
 - [[Related Skills_89]] - `contains` [EXTRACTED]
 - [[Related Skills_90]] - `contains` [EXTRACTED]
-- [[Usage_98]] - `contains` [EXTRACTED]
-- [[Usage_99]] - `contains` [EXTRACTED]
+- [[Usage_96]] - `contains` [EXTRACTED]
+- [[Usage_97]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

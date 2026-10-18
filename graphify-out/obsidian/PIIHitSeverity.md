@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-from_confidence()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Relative risk of a detected PII entity.]] - `rationale_for` [EXTRACTED]

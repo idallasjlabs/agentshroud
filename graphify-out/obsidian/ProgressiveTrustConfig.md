@@ -12,7 +12,7 @@ tags:
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-__init__()_187]] - `references` [EXTRACTED]
+- [[dot-__init__()_172]] - `references` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]

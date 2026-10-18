@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (16)"
 location: "L451"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_16
 ---
 
 # Owner's Telegram first_name with pipe chars is replaced by owner_display_name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_owner_display_name_overrides_pipe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_16

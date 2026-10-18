@@ -12,6 +12,6 @@ tags:
 # Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo
 
 ## Connections
-- [[SlackAPIProxy]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AsyncMock_2

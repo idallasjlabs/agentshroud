@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "All Dependencies.md (3)"
-location: "L58"
+community: "main.py.md"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_3
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_3
+#graphify/document #graphify/EXTRACTED #community/mainpymd

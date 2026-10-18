@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "MiddlewareManager"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/MiddlewareManager
 ---
 
 # Initialize the filter with predefined patterns.
 
 ## Connections
-- [[dot-__init__()_114]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_25]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

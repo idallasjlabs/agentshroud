@@ -12,8 +12,8 @@ tags:
 # MFAResult
 
 ## Connections
-- [[dot-verify()]] - `references` [EXTRACTED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[dot-verify()_1]] - `references` [EXTRACTED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - `rationale_for` [EXTRACTED]
 - [[mfa_guard.py]] - `contains` [EXTRACTED]

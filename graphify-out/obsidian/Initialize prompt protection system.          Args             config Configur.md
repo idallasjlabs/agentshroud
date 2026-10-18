@@ -12,6 +12,6 @@ tags:
 # Initialize prompt protection system.          Args:             config: Configur
 
 ## Connections
-- [[dot-__init__()_25]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_187]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

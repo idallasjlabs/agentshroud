@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "First Time Setup (3)"
-location: "L183"
+community: "egress_filter.py"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_3
+  - community/egress_filterpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_3
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

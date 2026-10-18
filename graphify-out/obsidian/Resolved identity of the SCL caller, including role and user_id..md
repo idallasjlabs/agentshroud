@@ -12,6 +12,6 @@ tags:
 # Resolved identity of the SCL caller, including role and user_id.
 
 ## Connections
-- [[SCLCaller_1]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

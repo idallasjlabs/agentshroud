@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud v1.0.0 Fortress Release Announcement]] - `references` [INFERRED]
-- [[Notes_3]] - `contains` [EXTRACTED]
+- [[Notes_11]] - `contains` [EXTRACTED]
 - [[Task list]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

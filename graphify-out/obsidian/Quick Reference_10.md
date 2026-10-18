@@ -1,19 +1,21 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "Quick Reference"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/Quick_Reference
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Home_1]] - `references` [EXTRACTED]
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Change Default Model]] - `contains` [EXTRACTED]
+- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
+- [[List Available Models]] - `contains` [EXTRACTED]
+- [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference

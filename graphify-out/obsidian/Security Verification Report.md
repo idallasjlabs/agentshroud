@@ -12,12 +12,12 @@ tags:
 # Security Verification Report
 
 ## Connections
-- [[Conclusion_2]] - `contains` [EXTRACTED]
-- [[Emergency Procedures_3]] - `contains` [EXTRACTED]
+- [[Conclusion]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 - [[Gitignore Protection (Multi-Layer)]] - `contains` [EXTRACTED]
 - [[SECURITY_VERIFICATION]] - `contains` [EXTRACTED]
-- [[Security Guarantees_5]] - `contains` [EXTRACTED]
-- [[Summary_21]] - `contains` [EXTRACTED]
+- [[Security Guarantees_4]] - `contains` [EXTRACTED]
+- [[Summary_12]] - `contains` [EXTRACTED]
 - [[Verification Tests]] - `contains` [EXTRACTED]
 - [[What Is Protected (Never Committed)]] - `contains` [EXTRACTED]
 - [[What Users Need to Do]] - `contains` [EXTRACTED]

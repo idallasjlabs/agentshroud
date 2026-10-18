@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
-- [[Decision_2]] - `references` [EXTRACTED]
+- [[Decision_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
