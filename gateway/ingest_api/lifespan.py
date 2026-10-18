@@ -29,6 +29,7 @@ from ..proxy.pipeline import SecurityPipeline
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..security.agent_isolation import AgentRegistry, ContainerConfig, IsolationVerifier
+from ..security.clamav_scanner import preferred_scan_binary as _clamav_preferred_bin
 from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
 from ..security.egress_filter import EgressFilter
 from ..security.killswitch_monitor import KillSwitchMonitor
@@ -1982,14 +1983,7 @@ async def lifespan(app: FastAPI):
         _clamav = getattr(app_state, "clamav_scanner", None)
         if _clamav:
             try:
-                import os as _os
-                import shutil as _sh
-
-                _bin = (
-                    "clamdscan"
-                    if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
-                    else "clamscan"
-                )
+                _bin = _clamav_preferred_bin()
                 _clam_result = await _loop.run_in_executor(
                     None,
                     lambda: _clamav.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin),

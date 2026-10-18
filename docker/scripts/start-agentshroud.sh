@@ -14,8 +14,18 @@ set -euo pipefail
 # ClamAV daemon — malware scanning for bot workspace
 # Bot has ClamAV installed; clamd.conf uses /tmp for socket (read_only rootfs safe).
 if command -v clamd >/dev/null 2>&1 && [ -f /var/lib/clamav/main.cvd -o -f /var/lib/clamav/main.cld ]; then
-    clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
-    echo "[startup] clamd launched (pid=$!)"
+    # Restart loop: a memcg OOM kill otherwise leaves the bot without clamd
+    # until the container restarts (see gateway-start.sh, 2026-10-18).
+    (
+        while :; do
+            rm -f /tmp/clamd.ctl
+            _rc=0
+            clamd --config-file=/etc/clamav/clamd.conf --foreground 2>>/tmp/clamd-start.log || _rc=$?
+            echo "[startup] clamd exited (rc=$_rc) — restarting in 30s"
+            sleep 30
+        done
+    ) &
+    echo "[startup] clamd launched under supervisor (pid=$!)"
 else
     echo "[startup] clamd: skipping (binary or virus DB not ready)"
 fi

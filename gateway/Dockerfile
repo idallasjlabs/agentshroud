@@ -531,3 +531,9 @@ ENV PYTHONPATH=/app
 # Run gateway (bind to 0.0.0.0 for Docker port mapping to work)
 # Security: docker-compose maps only to host 127.0.0.1
 CMD ["/usr/local/bin/gateway-start.sh"]
+
+# Repo commit this image was built from (set by scripts/asb and
+# sunday-upgrade-apply.sh via docker-compose.yml build args). Last so the
+# per-commit ARG never invalidates cached layers above it.
+ARG AGENTSHROUD_GIT_SHA=unknown
+LABEL org.opencontainers.image.revision="${AGENTSHROUD_GIT_SHA}"

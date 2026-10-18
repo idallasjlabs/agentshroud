@@ -46,6 +46,7 @@ from ..proxy.pipeline import SecurityPipeline
 from ..proxy.slack_proxy import SlackAPIProxy
 from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.telegram_replay import UpdateReplayBuffer
+from ..security.clamav_scanner import preferred_scan_binary as _clamav_preferred_bin
 from ..security.prompt_guard import PromptGuard
 from ..security.rbac_config import RBACConfig
 from ..security.trust_manager import TrustManager
@@ -1497,14 +1498,7 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
     # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
-    import os as _os
-    import shutil as _sh
-
-    _bin = (
-        "clamdscan"
-        if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
-        else "clamscan"
-    )
+    _bin = _clamav_preferred_bin()
     result = await asyncio.get_running_loop().run_in_executor(
         None,
         lambda: app_state.clamav_scanner.run_clamscan(
@@ -2711,14 +2705,7 @@ async def run_all_scanners(auth: AuthRequired):
 
     # ClamAV
     if getattr(app_state, "clamav_scanner", None):
-        import os as _os
-        import shutil as _sh
-
-        _bin = (
-            "clamdscan"
-            if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
-            else "clamscan"
-        )
+        _bin = _clamav_preferred_bin()
         clam = await asyncio.get_running_loop().run_in_executor(
             None,
             lambda: app_state.clamav_scanner.run_clamscan(

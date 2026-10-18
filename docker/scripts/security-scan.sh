@@ -115,9 +115,11 @@ run_clamav() {
 
     # Prefer clamdscan (delegates to running clamd daemon — much lighter than in-process clamscan).
     # Fallback to clamscan with strict size limits if clamd socket is unavailable.
-    if command -v clamdscan >/dev/null 2>&1 && \
-       ([ -S /run/clamav/clamd.ctl ] || [ -S /var/run/clamav/clamd.ctl ]); then
-        log "Using clamdscan (clamd socket found)"
+    # --ping, not a socket-file test: clamd.conf puts the socket at /tmp/clamd.ctl
+    # (the old /run/clamav paths never existed, so every scan loaded a second
+    # ~1 GB DB), and a killed clamd leaves its socket file behind.
+    if command -v clamdscan >/dev/null 2>&1 && clamdscan --ping 1 >/dev/null 2>&1; then
+        log "Using clamdscan (clamd answering)"
         clamdscan --no-summary \
             --max-filesize=50M --max-scansize=200M \
             --max-recursion=10 --cross-fs=no \
@@ -125,7 +127,7 @@ run_clamav() {
             --exclude-dir='^/dev' --exclude-dir='^/var/lib/clamav' \
             "$WORKSPACE" > "$CLAMAV_RAW" 2>&1 || SCAN_EXIT=$?
     elif command -v clamscan >/dev/null 2>&1; then
-        log "Using clamscan (clamd socket not found)"
+        log "Using clamscan (clamd not answering)"
         clamscan -r --no-summary \
             --max-filesize=50M --max-scansize=200M \
             --exclude-dir=/proc --exclude-dir=/sys --exclude-dir=/dev \

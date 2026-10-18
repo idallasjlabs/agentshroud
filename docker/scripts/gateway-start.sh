@@ -27,10 +27,21 @@ if command -v freshclam >/dev/null 2>&1; then
     echo "[gateway-start] freshclam DB update complete"
 fi
 
-# Start ClamAV daemon (non-fatal); wait up to 30s for socket so health checks pass
+# Start ClamAV daemon (non-fatal) under a restart loop; wait up to 30s for socket
+# so health checks pass. Supervised because nothing else restarts it: the
+# 2026-10-18 00:01 memcg OOM killed clamd and the gateway ran without malware
+# scanning until the next container restart. The stale socket a killed clamd
+# leaves behind is removed before each start.
 if command -v clamd >/dev/null 2>&1; then
-    clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
-    echo "[gateway-start] clamd launched (pid=$!)"
+    (
+        while :; do
+            rm -f /tmp/clamd.ctl
+            clamd --config-file=/etc/clamav/clamd.conf --foreground 2>>/tmp/clamd-start.log
+            echo "[gateway-start] clamd exited (rc=$?) — restarting in 30s"
+            sleep 30
+        done
+    ) &
+    echo "[gateway-start] clamd launched under supervisor (pid=$!)"
     for _i in $(seq 1 30); do [ -S /tmp/clamd.ctl ] && break; sleep 1; done
     [ -S /tmp/clamd.ctl ] && echo "[gateway-start] clamd socket ready" || echo "[gateway-start] clamd socket not yet ready (still initialising)"
 fi

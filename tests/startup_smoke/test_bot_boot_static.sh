@@ -272,6 +272,40 @@ check "S17: run-standalone.sh (Hermes): caps prod 3g/1.5, dev 2g/1.0, env overri
     "$([[ -n "$_s17_block" && "$_s17_prod" == "3g/1.5" && "$_s17_dev" == "2g/1.0" && "$_s17_ovr" == "1500m/0.75" && "$_s17_uses_vars" -ge 1 ]] && echo true || echo false)" \
     "prod='${_s17_prod}' dev='${_s17_dev}' override='${_s17_ovr}' docker-run-uses-var=${_s17_uses_vars}"
 
+# S18: `asb rebuild` exits with post-deploy-check's failure code (it used to
+# `|| true` and report success on DEPLOY FAILED, 2026-10-17). Behavioral: run
+# the real block against a stub check that fails with rc=3. `asb up` keeps
+# `|| true` -- sunday-upgrade-apply.sh reads `asb up hermes`'s rc itself.
+_s18_block="$(sed -n '/^    _pdc_rc=0$/,/^    fi$/p' "$asb_sh")"
+_s18_tmp="$(mktemp -d)"; mkdir -p "$_s18_tmp/scripts"
+printf '#!/bin/bash\nexit 3\n' > "$_s18_tmp/scripts/post-deploy-check.sh"
+_s18_rc=0; REPO_DIR="$_s18_tmp" bash -c "$_s18_block" >/dev/null 2>&1 || _s18_rc=$?
+printf '#!/bin/bash\nexit 0\n' > "$_s18_tmp/scripts/post-deploy-check.sh"
+_s18_ok_rc=0; REPO_DIR="$_s18_tmp" bash -c "$_s18_block" >/dev/null 2>&1 || _s18_ok_rc=$?
+rm -rf "$_s18_tmp"
+_s18_true="$(grep -c 'post-deploy-check.sh" || true' "$asb_sh" || true)"
+check "S18: asb rebuild propagates a failed post-deploy-check; asb up unchanged" \
+    "$([[ -n "$_s18_block" && "$_s18_rc" -eq 3 && "$_s18_ok_rc" -eq 0 && "$_s18_true" -eq 1 ]] && echo true || echo false)" \
+    "fail-rc=${_s18_rc} (want 3) ok-rc=${_s18_ok_rc} (want 0) '|| true' calls left=${_s18_true} (want 1: up)"
+
+# S19: post-deploy-check waits 600s for the bot by default (cold starts took
+# 5 min dev / 7 min prod on 2026-10-17/18; 300s failed both healthy deploys).
+_s19_wait="$(unset AGENTSHROUD_POST_DEPLOY_BOT_WAIT; bash -c "$(grep '^BOT_WAIT_SECS=' "$REPO/scripts/post-deploy-check.sh")"$'\n''echo "$BOT_WAIT_SECS"')"
+check "S19: post-deploy-check default bot wait is 600s" \
+    "$([[ "$_s19_wait" == "600" ]] && echo true || echo false)" "BOT_WAIT_SECS='${_s19_wait}'"
+
+# S20: clamd runs under a restart loop in both containers (a memcg OOM kill
+# left the gateway without clamd, 2026-10-18), and nothing probes the
+# /var/run/clamav socket path that clamd.conf never uses.
+_s20_sup=0
+for _f in "$REPO/docker/scripts/gateway-start.sh" "$REPO/docker/scripts/start-agentshroud.sh"; do
+    grep -q 'clamd --config-file=/etc/clamav/clamd.conf --foreground' "$_f" && grep -q 'while :; do' "$_f" && _s20_sup=$((_s20_sup + 1))
+done
+_s20_bad="$( { grep -rln 'run/clamav/clamd.ctl' "$REPO/gateway" "$REPO/docker/scripts" --include='*.py' --include='*.sh' 2>/dev/null || true; } | { grep -v '/tests/' || true; } | wc -l | tr -d ' ')"
+check "S20: clamd supervised in gateway + bot; no /var/run/clamav socket probes" \
+    "$([[ "$_s20_sup" -eq 2 && "$_s20_bad" -eq 0 ]] && echo true || echo false)" \
+    "supervised=${_s20_sup}/2 files-probing-wrong-path=${_s20_bad}"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
