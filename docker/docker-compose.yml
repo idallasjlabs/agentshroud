@@ -624,7 +624,11 @@ services:
       - /var/ossec/logs/ossec:noexec,nosuid,size=20m,uid=1000,gid=1000
     # 5g (was 4g): the container holds openclaw-gateway (~2.1-2.5 GiB anon) AND
     # a resident clamd (~1 GiB signature DB); prod was memcg-OOM-killed twice at
-    # 4g on 2026-10-17/18 with openclaw-gateway at 2.5 GiB anon.
+    # 4g on 2026-10-17/18 with openclaw-gateway at 2.5 GiB anon. Owner decision
+    # 2026-10-18: prod's Colima VM goes 12 -> 16 GiB with this (its caps already
+    # summed ~16.3 GiB), so the extra headroom is real rather than moving the
+    # kill to the VM-wide OOM killer. VM size lives in that account's
+    # ~/.colima/default/colima.yaml (one-time host step, see colima-health-check.sh).
     mem_limit: 5g
     memswap_limit: 5g
     cpus: 2.0

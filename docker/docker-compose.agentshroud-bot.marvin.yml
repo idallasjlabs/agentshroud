@@ -42,8 +42,10 @@ services:
       # to agentshroud-hermes-v2:9120 did not resolve). Same bridge port 9120.
       - HERMES_DASHBOARD_UPSTREAM=http://agentshroud-dev-hermes-v2:9120
     # 2026-10-16 owner directive: the Mac is tight on memory, so dev runs with
-    # less than prod. Dev's Colima VM is 4 CPU / 9 GiB (saved in this
-    # account's ~/.colima/default/colima.yaml); these caps are sized under
+    # less than prod. Dev's Colima VM is 4 CPU / 12 GiB (was 9; raised
+    # 2026-10-18 after VM-wide OOM kills, saved in this account's
+    # ~/.colima/default/colima.yaml -- a one-time host step, not applied by
+    # anything in this repo); these caps are sized under
     # that, below the base file's prod values (gateway 4g/1.0, openclaw 4g/2.0,
     # voice-gateway 4g/2.0, wazuh-manager 1g/1.0) and above prod's MEASURED
     # steady-state use (gateway 1.23 GiB, openclaw 3.33 GiB, voice-gateway
