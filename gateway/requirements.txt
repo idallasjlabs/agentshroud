@@ -21,7 +21,7 @@ cryptography>=50.0.1
 # setuptools: PYSEC-2026-3447 — fixed in 83.0.0
 setuptools>=83.0.0
 # multidict (via aiohttp): CVE-2026-104874 — fixed in 6.9.1
-multidict>=6.9.1
+multidict>=7.1.0
 # urllib3 (via docker SDK): PYSEC-2026-4175/4176/4177 — fixed in 2.8.0
 urllib3>=2.8.0
 # anyio (via starlette/httpx): PYSEC-2026-4024/4025 — fixed in 4.14.2
