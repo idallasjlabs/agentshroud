@@ -18,7 +18,7 @@ tags:
 - [[dot-test_scrubs_multiple_keys()]] - `calls` [EXTRACTED]
 - [[dot-test_scrubs_openai_key()]] - `calls` [EXTRACTED]
 - [[Scrub API keys and sensitive patterns from text output.      Args         text]] - `rationale_for` [EXTRACTED]
-- [[env_guard.py]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 - [[test_env_guard.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check_command

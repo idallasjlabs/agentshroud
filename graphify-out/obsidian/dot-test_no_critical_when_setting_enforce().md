@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_prompt_guard.py"
+community: "KillSwitchMonitor"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/KillSwitchMonitor
 ---
 
 # .test_no_critical_when_setting_enforce()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCriticalLogging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

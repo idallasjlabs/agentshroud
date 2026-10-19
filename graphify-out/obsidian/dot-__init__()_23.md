@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L29"
+community: "MiddlewareManager"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[WebSocket]] - `references` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

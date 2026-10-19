@@ -12,14 +12,14 @@ tags:
 # SkillGuard
 
 ## Connections
-- [[dot-__init__()_71]] - `method` [EXTRACTED]
+- [[dot-__init__()_111]] - `method` [EXTRACTED]
 - [[dot-_line_at()]] - `method` [EXTRACTED]
 - [[dot-_scan_opaque_blobs()]] - `method` [EXTRACTED]
-- [[dot-scan_file()_1]] - `method` [EXTRACTED]
+- [[dot-scan_file()]] - `method` [EXTRACTED]
 - [[dot-scan_skill_tree()]] - `method` [EXTRACTED]
-- [[CompletedProcess_3]] - `uses` [INFERRED]
-- [[Path_16]] - `uses` [INFERRED]
-- [[Path_23]] - `uses` [INFERRED]
+- [[CompletedProcess_4]] - `uses` [INFERRED]
+- [[Path_28]] - `uses` [INFERRED]
+- [[Path_32]] - `uses` [INFERRED]
 - [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_1]] - `uses` [INFERRED]
 - [[ScanResult_2]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[TestSyncScriptPreflight]] - `uses` [INFERRED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `imports` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[scan.py]] - `imports` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]

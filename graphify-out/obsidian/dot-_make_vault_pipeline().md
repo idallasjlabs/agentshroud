@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
+community: "SecurityPipeline"
 location: "L592"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/SecurityPipeline
 ---
 
 # ._make_vault_pipeline()
 
 ## Connections
-- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_clean_response_passes_unchanged()_1]] - `calls` [EXTRACTED]
 - [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_key_leak_increments_sanitized_stat_and_audits()]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager (4)"
+community: "TestDomainValidationHelper (2)"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/TestDomainValidationHelper_2
 ---
 
 # Test credential status reporting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_credential_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper_2

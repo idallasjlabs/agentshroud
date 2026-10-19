@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "MiddlewareManager"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # TestToolResultSanitizerConfig
 
 ## Connections
-- [[dot-test_custom_config()_3]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_6]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()_1]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `method` [EXTRACTED]
 - [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

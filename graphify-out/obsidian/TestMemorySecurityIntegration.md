@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (6)"
 location: "L391"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_6
 ---
 
 # TestMemorySecurityIntegration
 
 ## Connections
-- [[dot-setup_method()_7]] - `method` [EXTRACTED]
+- [[dot-setup_method()_2]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_integrated_memory_protection()]] - `method` [EXTRACTED]
-- [[dot-test_status_reporting()]] - `method` [EXTRACTED]
+- [[dot-test_status_reporting()_1]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[Test integration of memory security components.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_5
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_6

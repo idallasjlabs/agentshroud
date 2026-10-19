@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "_make_sanitizer()"
 location: "L2970"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/_make_sanitizer
 ---
 
 # Malformed domain labels should be rejected before approval queueing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_web_fetch_json_malformed_hyphen_domain_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

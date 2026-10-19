@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L251"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # TestClassificationSets
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-test_private_and_admin_do_not_overlap()]] - `method` [EXTRACTED]
 - [[dot-test_private_and_admin_do_not_overlap_with_collab_allowed()]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig_2
+#graphify/code #graphify/INFERRED #community/RBACConfig

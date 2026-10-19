@@ -15,11 +15,11 @@ members: 16
 - [[Logs_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Networks_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Ports]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Related Notes_51]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_50]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Resource Limits]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Secrets_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Security Hardening_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Summary_20]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_19]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Volumes_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[agentshroud-gateway_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md

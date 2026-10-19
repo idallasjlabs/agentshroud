@@ -12,7 +12,7 @@ tags:
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Purpose_36]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
 - [[Related Skills_23]] - `contains` [EXTRACTED]
 - [[Usage_27]] - `contains` [EXTRACTED]
 - [[openclawskillsi-apolloREADME]] - `contains` [EXTRACTED]

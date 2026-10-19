@@ -20,6 +20,6 @@ tags:
 - [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - `contains` [EXTRACTED]
 - [[`HTTPConnectProxy.get_stats()`]] - `contains` [EXTRACTED]
 - [[`HTTPConnectProxy.stop()`]] - `contains` [EXTRACTED]
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/http_proxypy

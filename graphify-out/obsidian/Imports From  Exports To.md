@@ -12,6 +12,6 @@ tags:
 # Imports From / Exports To
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/authpy

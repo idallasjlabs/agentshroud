@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction_2
 ---
 
 # test_telegram_pipeline.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PipelineResult_1]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `imports` [EXTRACTED]
 - [[TestInboundFallbackToDirectSanitizer]] - `contains` [EXTRACTED]
 - [[TestInboundPipelineBlockedNonOwner]] - `contains` [EXTRACTED]
 - [[TestInboundPipelineBlockedOwner]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[TestOutboundPipelineWired]] - `contains` [EXTRACTED]
 - [[_getUpdates_response()]] - `contains` [EXTRACTED]
 - [[_make_pipeline_result()]] - `contains` [EXTRACTED]
-- [[_make_proxy()_4]] - `contains` [EXTRACTED]
-- [[_make_update()_2]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
+- [[_make_update()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

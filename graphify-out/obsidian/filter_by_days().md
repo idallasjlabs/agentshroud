@@ -12,8 +12,8 @@ tags:
 # filter_by_days()
 
 ## Connections
-- [[Any_59]] - `references` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 - [[parse_date()]] - `calls` [EXTRACTED]
 

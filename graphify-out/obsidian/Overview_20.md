@@ -1,8 +1,8 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
 community: "Integration Guide"
-location: "L5"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED

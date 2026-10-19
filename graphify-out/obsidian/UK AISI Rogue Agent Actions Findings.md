@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "A2AMethod (2)"
+community: "A2AMethod"
 location: "line 44"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/A2AMethod_2
+  - community/A2AMethod
 ---
 
 # UK AISI Rogue Agent Actions Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/A2AMethod_2
+#graphify/concept #graphify/EXTRACTED #community/A2AMethod

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 22
+members: 20
 ---
 
 # TestSecurityFeatures
 
-**Members:** 22 nodes
+**Members:** 20 nodes
 
 ## Members
 - [[dot-test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
@@ -21,7 +21,6 @@ members: 22
 - [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
 - [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
 - [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
-- [[Return warning messages for missing security features.]] - rationale - gateway/runtime/security.py
 - [[SecurityFeature]] - code - gateway/runtime/security.py
 - [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
 - [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
@@ -29,7 +28,6 @@ members: 22
 - [[get_features_for_runtime()]] - code - gateway/runtime/security.py
 - [[get_missing_features()]] - code - gateway/runtime/security.py
 - [[get_security_options()]] - code - gateway/runtime/security.py
-- [[warn_missing_features()]] - code - gateway/runtime/security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,9 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 6 edges to [[_COMMUNITY_RuntimeConfig]]
-- 4 edges to [[_COMMUNITY_api.py]]
+- 6 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 5 edges to [[_COMMUNITY_RuntimeConfig]]
+- 4 edges to [[_COMMUNITY_api.py (2)]]
 - 1 edge to [[_COMMUNITY_PodmanEngine]]
 - 1 edge to [[_COMMUNITY_DockerEngine]]
 - 1 edge to [[_COMMUNITY_AppleContainerEngine]]
@@ -49,7 +47,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[TestSecurityFeatures]] - degree 16, connects to 5 communities
-- [[warn_missing_features()]] - degree 9, connects to 3 communities
+- [[get_missing_features()]] - degree 7, connects to 3 communities
 - [[get_security_options()]] - degree 9, connects to 2 communities
 - [[get_features_for_runtime()]] - degree 8, connects to 2 communities
-- [[get_missing_features()]] - degree 7, connects to 2 communities
+- [[_validate_runtime()]] - degree 6, connects to 2 communities

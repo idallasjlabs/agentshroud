@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 - [[Persona_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 - [[Quality Checklist_5]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Role_8]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Role_9]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 - [[System Prompt_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 - [[openclawskillsi-mnemosyneSKILL]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 

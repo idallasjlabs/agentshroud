@@ -36,14 +36,14 @@ members: 40
 - [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
 - [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
 - [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[fs_2]] - code - docker/config/openclaw/apply-patches.js
+- [[fs_3]] - code - docker/config/openclaw/apply-patches.js
 - [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
 - [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
 - [[hasMain]] - code - docker/config/openclaw/apply-patches.js
 - [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
 - [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
 - [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
-- [[path_17]] - code - docker/config/openclaw/apply-patches.js
+- [[path_20]] - code - docker/config/openclaw/apply-patches.js
 - [[providerModels]] - code - docker/config/openclaw/apply-patches.js
 - [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
 - [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
@@ -57,7 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes) (2)]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
 - 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
 
 ## Top bridge nodes

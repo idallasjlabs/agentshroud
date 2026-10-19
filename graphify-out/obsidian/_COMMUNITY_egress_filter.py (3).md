@@ -1,30 +1,26 @@
 ---
 type: community
-members: 17
+members: 13
 ---
 
 # egress_filter.py (3)
 
-**Members:** 17 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
-- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
-- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
-- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
-- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
-- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
-- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
-- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
-- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
-- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
-- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
-- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
-- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
-- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
-- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
-- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
+- [[FR1 Identification and Authentication Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR3 System Integrity]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR5 Restricted Data Flow]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR6 Timely Response to Events]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR7 Resource Availability]] - concept - docs/compliance/iec-62443-matrix.md
+- [[agentshroud-openclaw bot container]] - concept - scripts/backup-bot-memory.sh
+- [[backup-bot-memory.sh]] - code - scripts/backup-bot-memory.sh
+- [[backup-bot-memory.sh script]] - code - scripts/backup-bot-memory.sh
+- [[config_integrity.py]] - code - gateway/security/config_integrity.py
+- [[disaster-recovery-backup.sh]] - code - scripts/disaster-recovery-backup.sh
+- [[disaster-recovery-backup.sh script]] - code - scripts/disaster-recovery-backup.sh
+- [[heuristic_classifier.py]] - code - gateway/security/heuristic_classifier.py
+- [[iec-62443-matrix]] - document - docs/compliance/iec-62443-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,21 +30,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
+- 2 edges to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine (2)]]
+- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
 - 1 edge to [[_COMMUNITY_AuditEvent]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (3)]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_AgentRegistry (2)]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_dockerscriptssecurity-scan.sh]]
+- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_diagramsREADME]]
 
 ## Top bridge nodes
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 4 communities
-- [[Prompt Guard Module Badge Icon]] - degree 2, connects to 1 community
-- [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
-- [[Drift Detector Module Badge Icon]] - degree 2, connects to 1 community
-- [[Egress Filter Module Badge Icon]] - degree 2, connects to 1 community
+- [[FR3 System Integrity]] - degree 9, connects to 6 communities
+- [[iec-62443-matrix]] - degree 8, connects to 3 communities
+- [[FR5 Restricted Data Flow]] - degree 4, connects to 3 communities
+- [[heuristic_classifier.py]] - degree 3, connects to 2 communities
+- [[agentshroud-openclaw bot container]] - degree 3, connects to 1 community

@@ -11,6 +11,6 @@ tags:
 # rate_limiter (module-level instance)
 
 ## Connections
-- [[auth.py_1]] - `references` [EXTRACTED]
+- [[auth.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/create_auth_dependency

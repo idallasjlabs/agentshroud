@@ -12,7 +12,7 @@ tags:
 # AppleContainerEngine
 
 ## Connections
-- [[dot-__init__()_135]] - `method` [EXTRACTED]
+- [[dot-__init__()_139]] - `method` [EXTRACTED]
 - [[dot-_cmd()_2]] - `method` [EXTRACTED]
 - [[dot-build()_3]] - `method` [EXTRACTED]
 - [[dot-compose_down()_3]] - `method` [EXTRACTED]
@@ -26,11 +26,11 @@ tags:
 - [[dot-pause()_3]] - `method` [EXTRACTED]
 - [[dot-ps()]] - `method` [EXTRACTED]
 - [[dot-pull()_3]] - `method` [EXTRACTED]
-- [[dot-push()_4]] - `method` [EXTRACTED]
+- [[dot-push()_3]] - `method` [EXTRACTED]
 - [[dot-rm()_3]] - `method` [EXTRACTED]
 - [[dot-run()_6]] - `method` [EXTRACTED]
-- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
-- [[dot-stop()_8]] - `method` [EXTRACTED]
+- [[dot-setup_method()_6]] - `calls` [EXTRACTED]
+- [[dot-stop()_11]] - `method` [EXTRACTED]
 - [[dot-unpause()_3]] - `method` [EXTRACTED]
 - [[dot-volume_create()_3]] - `method` [EXTRACTED]
 - [[dot-volume_rm()_3]] - `method` [EXTRACTED]

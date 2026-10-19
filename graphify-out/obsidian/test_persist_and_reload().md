@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "Mac App Discovery Skill (2)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/Mac_App_Discovery_Skill_2
 ---
 
 # test_persist_and_reload()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Items saved by one store instance are visible to another.]] - `rationale_for` [EXTRACTED]
-- [[Path_47]] - `references` [EXTRACTED]
+- [[Path_50]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_2

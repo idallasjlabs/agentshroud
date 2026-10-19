@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Request"
+community: "test_security.py"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/test_securitypy
 ---
 
 # test_forward_request_validation_invalid_source()
@@ -16,4 +16,4 @@ tags:
 - [[Test ForwardRequest rejects invalid source]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

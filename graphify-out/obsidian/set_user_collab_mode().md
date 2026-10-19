@@ -12,7 +12,7 @@ tags:
 # set_user_collab_mode()
 
 ## Connections
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[Set per-user collab mode override (persists across restarts).]] - `rationale_for` [EXTRACTED]
 - [[SetUserModeRequest]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]

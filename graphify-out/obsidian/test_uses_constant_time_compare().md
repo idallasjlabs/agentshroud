@@ -12,7 +12,7 @@ tags:
 # test_uses_constant_time_compare()
 
 ## Connections
-- [[MFAGuard_1]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `calls` [EXTRACTED]
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 

@@ -12,9 +12,9 @@ tags:
 # get_current_version()
 
 ## Connections
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[Get the currently installed OpenClaw version.]] - `rationale_for` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

@@ -16,7 +16,7 @@ tags:
 - [[_guarded_fetch()]] - `calls` [INFERRED]
 - [[fetch()_1]] - `contains` [EXTRACTED]
 - [[fetch()]] - `indirect_call` [INFERRED]
-- [[recorder()_1]] - `contains` [EXTRACTED]
-- [[recorder()_2]] - `indirect_call` [INFERRED]
+- [[recorder()_2]] - `contains` [EXTRACTED]
+- [[recorder()_3]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

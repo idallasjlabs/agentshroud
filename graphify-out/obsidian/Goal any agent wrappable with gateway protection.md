@@ -1,18 +1,18 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "concept"
-community: "triage-cve-mitigations.py"
+community: "Sunday Upgrade prompt"
 location: "L86"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Goal: any agent wrappable with gateway protection
 
 ## Connections
+- [[AgentShroud-side CVE remediation arm]] - `conceptually_related_to` [INFERRED]
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
-- [[Two-arm CVE remediation (vendor fix + AgentShroud control)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

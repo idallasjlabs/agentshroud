@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/MiddlewareManager_2
 ---
 
 # prompt_protection.py
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[PromptProtection]] - `contains` [EXTRACTED]
 - [[ProtectedContent]] - `contains` [EXTRACTED]
-- [[RedactionResult_3]] - `contains` [EXTRACTED]
+- [[RedactionResult_1]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

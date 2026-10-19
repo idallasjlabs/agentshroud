@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller (4)"
+community: "Athena — Knowledge Distiller (5)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_4
+  - community/Athena__Knowledge_Distiller_5
 ---
 
 # Athena — Knowledge Distiller
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_2]] - `contains` [EXTRACTED]
 - [[Usage_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_4
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_5

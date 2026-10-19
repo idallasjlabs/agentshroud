@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # ContainerSnapshot
@@ -17,7 +17,7 @@ tags:
 - [[dot-from_dict()]] - `method` [EXTRACTED]
 - [[dot-get_baseline()]] - `references` [EXTRACTED]
 - [[dot-set_baseline()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_1]] - `calls` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `calls` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `calls` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `calls` [EXTRACTED]
@@ -76,4 +76,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

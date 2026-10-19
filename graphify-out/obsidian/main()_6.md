@@ -1,17 +1,20 @@
 ---
-source_file: "scripts/check_benchmark_regression.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "check_benchmark_regression.py"
-location: "L24"
+community: "sync-cve-registry.py"
+location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_benchmark_regressionpy
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
+- [[Path_14]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

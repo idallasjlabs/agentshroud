@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: "EgressFilterConfig (5)"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressFilterConfig_5
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_14]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5

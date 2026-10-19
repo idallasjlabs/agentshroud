@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Error Index.md (3)"
-location: "L16"
+community: "Security Review (SEC)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_3
+  - community/Security_Review_SEC
 ---
 
 # Purpose
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

@@ -16,7 +16,7 @@ members: 17
 - [[Common Commands]] - document - skills/openclaw/tmux/SKILL.md
 - [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
 - [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[Notes_5]] - document - skills/openclaw/tmux/SKILL.md
+- [[Notes_4]] - document - skills/openclaw/tmux/SKILL.md
 - [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
 - [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
 - [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md

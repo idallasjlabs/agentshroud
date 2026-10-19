@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L37"
+community: "AlertTelegramRelay"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_35]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

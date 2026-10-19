@@ -12,8 +12,8 @@ tags:
 # test_config()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[GatewayConfig_3]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]

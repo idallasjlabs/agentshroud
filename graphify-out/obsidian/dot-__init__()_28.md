@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L194"
+community: "KillSwitchMonitor (2)"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/KillSwitchMonitor_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path_2]] - `references` [EXTRACTED]
+- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `method` [EXTRACTED]
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

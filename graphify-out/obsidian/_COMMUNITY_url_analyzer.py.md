@@ -11,9 +11,9 @@ members: 14
 - [[Configuration  Environment Variables_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Function Details_37]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Purpose_148]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Purpose_161]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Related_43]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[URLAnalyzer._check_base64(parsed, result)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[URLAnalyzer._is_private_ip(ip_str)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md

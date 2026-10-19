@@ -1,58 +1,31 @@
 ---
 type: community
-members: 45
+members: 18
 ---
 
 # ToolResultSanitizer (2)
 
-**Members:** 45 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[dot-__init__()_167]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_extract_scannable_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_get_sanitizer_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_log_redaction_audit()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-_reconstruct_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-get_config_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-get_tool_config()]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[Any_61]] - code - gateway/security/tool_result_sanitizer.py
+- [[Extract text content from various tool result formats for PII scanning]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get PII config for a specific tool, applying overrides if configured]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get or create a PIISanitizer instance for the specified tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get the PII configuration for a specific tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Log PII redaction for audit trail without logging actual PII]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Sanitize a tool result for PII before it reaches the agent          Args]] - rationale - gateway/security/tool_result_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,7 +35,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 10 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 7 edges to [[_COMMUNITY_ApprovalQueueConfig]]
 
 ## Top bridge nodes
-- [[test_filter_xml_blocks.py]] - degree 25, connects to 1 community
+- [[Any_61]] - degree 8, connects to 2 communities
+- [[dot-sanitize_tool_result()]] - degree 8, connects to 2 communities
+- [[dot-get_config_for_tool()]] - degree 5, connects to 2 communities
+- [[dot-_get_sanitizer_for_tool()]] - degree 5, connects to 2 communities
+- [[dot-get_tool_config()]] - degree 4, connects to 2 communities

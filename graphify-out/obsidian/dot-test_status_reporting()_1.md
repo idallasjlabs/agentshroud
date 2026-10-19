@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L140"
+community: "MiddlewareManager (6)"
+location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/MiddlewareManager_6
 ---
 
 # .test_status_reporting()
 
 ## Connections
-- [[Test canary status reporting for dashboard.]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[Test status reporting from both components.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

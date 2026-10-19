@@ -1,12 +1,12 @@
 ---
 source_file: ".semgrep.yml"
 type: "rationale"
-community: "egress_filter.py (2)"
+community: "egress_filter.py"
 location: "L177-192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy_2
+  - community/egress_filterpy
 ---
 
 # sql-injection rule (CWE-89)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy_2
+#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy

@@ -2,7 +2,7 @@
 source_file: "cli/src/main.rs"
 type: "code"
 community: "main.rs"
-location: "L362"
+location: "L515"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,12 +12,12 @@ tags:
 # .post()
 
 ## Connections
-- [[dot-request()]] - `calls` [EXTRACTED]
-- [[GatewayClientT]] - `method` [EXTRACTED]
+- [[dot-request()_1]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
-- [[build_url()]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
+- [[SclClient_1]] - `method` [EXTRACTED]
+- [[Value_2]] - `references` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
+- [[run_approvals_decide()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mainrs

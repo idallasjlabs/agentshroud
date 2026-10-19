@@ -12,6 +12,6 @@ tags:
 # get_auth_dependency(config)
 
 ## Connections
-- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Function Details]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/authpy

@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "UserSessionManager (7)"
-location: "L293"
+community: "GitHub Copilot CLI Setup Guide (4)"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager_7
+  - community/GitHub_Copilot_CLI_Setup_Guide_4
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager_7
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_4

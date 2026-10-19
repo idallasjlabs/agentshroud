@@ -51,10 +51,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_diagramsREADME]]
 - 1 edge to [[_COMMUNITY_02-infrastructure]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 - 1 edge to [[_COMMUNITY_Per-Agent Container Isolation Architecture]]
-- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
+- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
 
 ## Top bridge nodes
 - [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities

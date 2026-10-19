@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Error Index.md (3)"
+community: "Error Index.md (2)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_3
+  - community/Error_Indexmd_2
 ---
 
 # Presidio Analyzer
@@ -16,9 +16,9 @@ tags:
 - [[Confidence Threshold]] - `contains` [EXTRACTED]
 - [[Configured Entities]] - `contains` [EXTRACTED]
 - [[NLP Backend]] - `contains` [EXTRACTED]
-- [[Purpose_3]] - `contains` [EXTRACTED]
+- [[Purpose_2]] - `contains` [EXTRACTED]
 - [[Related Notes_4]] - `contains` [EXTRACTED]
 - [[Where Used]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2

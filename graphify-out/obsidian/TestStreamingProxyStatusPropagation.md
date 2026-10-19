@@ -18,7 +18,7 @@ tags:
 - [[dot-test_upstream_400_returns_400_with_body()]] - `method` [EXTRACTED]
 - [[2026-10-16 a streaming request whose upstream answers 4xx must get that status…]] - `rationale_for` [EXTRACTED]
 - [[StreamHead]] - `uses` [INFERRED]
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `calls` [INFERRED]
+- [[llm_api_proxy()]] - `calls` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation

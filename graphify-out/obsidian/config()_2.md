@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "StdioConnection"
-location: "L33"
+community: "WebProxyConfig"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/WebProxyConfig
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

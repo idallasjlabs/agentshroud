@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "TelegramAPIProxy"
 location: "L7710"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/TelegramAPIProxy
 ---
 
 # ._send_owner_admin_notice()
@@ -23,6 +23,6 @@ tags:
 - [[dot-_queue_collaborator_access_request()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_text()]] - `calls` [EXTRACTED]
 - [[Send deterministic owner admin notice without model invocation.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

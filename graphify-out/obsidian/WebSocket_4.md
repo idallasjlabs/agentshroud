@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L119"
+community: "_FakeRBAC"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - graphify/INFERRED
+  - community/_FakeRBAC
 ---
 
 # WebSocket
 
 ## Connections
-- [[approval_websocket()]] - `references` [EXTRACTED]
+- [[dot-__init__()_112]] - `references` [EXTRACTED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

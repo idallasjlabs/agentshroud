@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "A2AGovernanceProxy"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/A2AGovernanceProxy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_34]] - `references` [EXTRACTED]
-- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
+- [[dot-get_summary()]] - `calls` [EXTRACTED]
+- [[A2APeer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

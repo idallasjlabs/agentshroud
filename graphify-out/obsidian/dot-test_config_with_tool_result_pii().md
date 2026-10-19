@@ -12,7 +12,7 @@ tags:
 # .test_config_with_tool_result_pii()
 
 ## Connections
-- [[GatewayConfig]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[Test that configuration includes tool result PII settings]] - `rationale_for` [EXTRACTED]
 - [[TestConfigurationLoading]] - `method` [EXTRACTED]
 

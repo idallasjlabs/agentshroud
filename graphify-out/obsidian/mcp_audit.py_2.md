@@ -16,9 +16,9 @@ tags:
 - [[Function Details_23]] - `contains` [EXTRACTED]
 - [[Hash Chain Structure_2]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_25]] - `contains` [EXTRACTED]
-- [[Purpose_132]] - `contains` [EXTRACTED]
+- [[Purpose_145]] - `contains` [EXTRACTED]
 - [[Related_29]] - `contains` [EXTRACTED]
-- [[Responsibilities_26]] - `contains` [EXTRACTED]
+- [[Responsibilities_27]] - `contains` [EXTRACTED]
 - [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_auditpy

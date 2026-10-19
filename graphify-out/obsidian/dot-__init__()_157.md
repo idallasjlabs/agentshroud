@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L54"
+community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

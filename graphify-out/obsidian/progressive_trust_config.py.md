@@ -12,7 +12,7 @@ tags:
 # progressive_trust_config.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `contains` [EXTRACTED]
 - [[PromotionThreshold]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (5)"
+community: "MCPPermissionManager"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_5
+  - community/MCPPermissionManager
 ---
 
 # ._emit_privacy_event()
@@ -18,4 +18,4 @@ tags:
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_5
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

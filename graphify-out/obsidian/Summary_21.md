@@ -1,17 +1,19 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Security Verification Report"
-location: "L5"
+community: "🛡️ AgentShroud Release Plan"
+location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Summary
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

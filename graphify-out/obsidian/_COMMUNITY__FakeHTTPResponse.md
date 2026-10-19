@@ -10,8 +10,8 @@ members: 6
 ## Members
 - [[dot-__enter__()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__exit__()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_37]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-read()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_46]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-read()_2]] - code - gateway/tests/test_cli_coverage.py
 - [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
 - [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py
 

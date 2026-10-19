@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Return a copy of raw_body with the first text Part's content replaced     by the]] - `rationale_for` [EXTRACTED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]

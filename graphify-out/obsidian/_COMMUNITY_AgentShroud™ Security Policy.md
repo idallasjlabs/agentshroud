@@ -29,7 +29,7 @@ members: 23
 - [[Security Architecture_3]] - document - SECURITY.md
 - [[Security Scanning]] - document - SECURITY.md
 - [[Supported Versions]] - document - SECURITY.md
-- [[Trademark_1]] - document - BRAND.md
+- [[Trademark_2]] - document - BRAND.md
 - [[Upstream Agent CVE Tracking]] - document - SECURITY.md
 
 ## Live Query (requires Dataview plugin)
@@ -47,6 +47,6 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[AgentShroud™ Security Policy]] - degree 14, connects to 2 communities
-- [[Trademark_1]] - degree 4, connects to 2 communities
+- [[Trademark_2]] - degree 4, connects to 2 communities
 - [[Kill Switch Operations]] - degree 2, connects to 1 community
 - [[7-Layer Security Architecture]] - degree 2, connects to 1 community

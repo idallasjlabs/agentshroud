@@ -1,18 +1,18 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "concept"
-community: "SecureBrowser Skill (2)"
+community: "Sunday Upgrade prompt"
 location: "L60"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Current Focus (AgentShroud v1.7.x)
 
 ## Connections
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
-- [[Sunday upgrade session prompt]] - `conceptually_related_to` [INFERRED]
+- [[Sunday Upgrade prompt]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Skill_2
+#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

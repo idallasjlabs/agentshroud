@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # .test_applies_to_any_agent_not_just_openclaw()
@@ -15,4 +15,4 @@ tags:
 - [[TestOriginAwareAuthorization]] - `method` [EXTRACTED]
 - [[The control is agent-agnostic by construction it takes an origin and         an]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -12,7 +12,7 @@ tags:
 # SCLClient
 
 ## Connections
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-__init__()_81]] - `method` [EXTRACTED]
 - [[dot-_request()]] - `method` [EXTRACTED]
 - [[dot-add_collaborator()]] - `method` [EXTRACTED]
 - [[dot-add_group_member()]] - `method` [EXTRACTED]
@@ -45,8 +45,8 @@ tags:
 - [[dot-test_init_strips_trailing_slash_and_builds_soc_base()]] - `calls` [EXTRACTED]
 - [[dot-test_post_serializes_body()]] - `calls` [EXTRACTED]
 - [[dot-test_put_and_delete_methods()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Any_76]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Minimal synchronous httpx-free client for the SCL API.]] - `rationale_for` [EXTRACTED]
 - [[TestClientFromEnv]] - `uses` [INFERRED]
 - [[TestEgressAndAdminCommands]] - `uses` [INFERRED]

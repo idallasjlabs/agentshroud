@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "TrustManager"
-location: "L18"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Responsibilities
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

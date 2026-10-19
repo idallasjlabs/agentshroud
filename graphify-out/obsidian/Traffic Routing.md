@@ -12,6 +12,6 @@ tags:
 # Traffic Routing
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecurityPipeline

@@ -18,7 +18,7 @@ members: 12
 - [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_62]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_61]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
 - [[Health Checks_1]] - degree 10, connects to 1 community

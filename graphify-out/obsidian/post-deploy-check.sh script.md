@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "validate_network_security"
+community: "Sunday Upgrade prompt"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/Sunday_Upgrade_prompt
 ---
 
 # post-deploy-check.sh script
 
 ## Connections
-- [[check()_8]] - `calls` [EXTRACTED]
+- [[check()_11]] - `calls` [EXTRACTED]
 - [[post-deploy-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

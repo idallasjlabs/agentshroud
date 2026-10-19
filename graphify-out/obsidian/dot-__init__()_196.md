@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "RBACConfig (2)"
-location: "L95"
+community: "ProxyAction"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L30"
+community: "SecurityPipeline"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/SecurityPipeline
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

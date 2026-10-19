@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[EgressEvent]] - `calls` [EXTRACTED]
-- [[TestAnomalyDetection]] - `method` [EXTRACTED]
+- [[TestAnomalyDetection_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

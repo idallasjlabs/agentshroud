@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_config.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "GroupConfig"
-location: "L68"
+community: "TeamsConfig"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/TeamsConfig
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig_1]] - `references` [EXTRACTED]
-- [[test_group_config.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

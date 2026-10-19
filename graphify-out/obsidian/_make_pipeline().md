@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/tests/test_data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L228"
+community: "asyncio"
+location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/asyncio
 ---
 
 # _make_pipeline()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
-- [[test_pipeline_allows_small_response()]] - `calls` [EXTRACTED]
-- [[test_pipeline_blocks_and_downstream_not_reached()]] - `calls` [EXTRACTED]
-- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - `calls` [EXTRACTED]
+- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - `rationale_for` [EXTRACTED]
+- [[_passthrough()]] - `indirect_call` [INFERRED]
+- [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
+- [[test_pipeline_clamav_clean_payload()]] - `calls` [EXTRACTED]
+- [[test_pipeline_clamav_error_fail_open()]] - `calls` [EXTRACTED]
+- [[test_pipeline_clamav_malware_blocked()]] - `calls` [EXTRACTED]
+- [[test_pipeline_clamav_not_configured()]] - `calls` [EXTRACTED]
+- [[test_pipeline_short_base64_not_scanned()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/asyncio

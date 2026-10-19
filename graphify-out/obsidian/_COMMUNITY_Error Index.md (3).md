@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Architecture_1]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Confidence Threshold]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Configured Entities]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[NLP Backend]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Presidio Analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Purpose_3]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Related Notes_4]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Where Used]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_6]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
-- [[Presidio Analyzer]] - degree 8, connects to 1 community
+- [[MCP Proxy Errors]] - degree 2, connects to 1 community

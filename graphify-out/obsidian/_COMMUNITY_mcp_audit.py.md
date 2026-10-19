@@ -17,10 +17,10 @@ members: 15
 - [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Purpose_132]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Purpose_145]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[Related_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 - [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
 

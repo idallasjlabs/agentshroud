@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Crash backoff escalation (rolling 10-minute start window)]] - `implements` [EXTRACTED]
 - [[HERMES_HOME]] - `defines` [EXTRACTED]
-- [[HOME]] - `defines` [EXTRACTED]
+- [[HOME_1]] - `defines` [EXTRACTED]
 - [[Missing-secret visibility banner (expected secrets loop)]] - `implements` [EXTRACTED]
 - [[Post-migration model lock + sandboxed terminal + cron fleet default]] - `implements` [EXTRACTED]
 - [[S13 Hermes start.sh expected-secrets banner accepts env vars in place of mounted files]] - `references` [EXTRACTED]

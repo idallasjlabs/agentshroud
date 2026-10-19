@@ -1,21 +1,21 @@
 ---
 type: community
-members: 66
+members: 65
 ---
 
 # DelegationManager
 
-**Members:** 66 nodes
+**Members:** 65 nodes
 
 ## Members
-- [[dot-__init__()_198]] - code - gateway/security/delegation.py
+- [[dot-__init__()_193]] - code - gateway/security/delegation.py
 - [[dot-_load()]] - code - gateway/security/delegation.py
 - [[dot-_require_owner()]] - code - gateway/security/delegation.py
 - [[dot-_revoke_by_user_privilege()]] - code - gateway/security/delegation.py
 - [[dot-_save()]] - code - gateway/security/delegation.py
-- [[dot-cleanup_expired()_3]] - code - gateway/security/delegation.py
+- [[dot-cleanup_expired()_2]] - code - gateway/security/delegation.py
 - [[dot-delegate()]] - code - gateway/security/delegation.py
-- [[dot-from_dict()_9]] - code - gateway/security/delegation.py
+- [[dot-from_dict()_8]] - code - gateway/security/delegation.py
 - [[dot-get_active_delegations()]] - code - gateway/security/delegation.py
 - [[dot-get_delegations_for_user()]] - code - gateway/security/delegation.py
 - [[dot-is_active()]] - code - gateway/security/delegation.py
@@ -52,7 +52,6 @@ members: 66
 - [[DelegationManager]] - code - gateway/tests/test_delegation.py
 - [[DelegationManager_1]] - code - gateway/security/delegation.py
 - [[DelegationPrivilege]] - code - gateway/security/delegation.py
-- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
 - [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
 - [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
 - [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
@@ -83,24 +82,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline]]
+- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
 - 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_Path (2)]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 - 1 edge to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
-- 1 edge to [[_COMMUNITY_05-behavior]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 
 ## Top bridge nodes
-- [[FR2 Use Control]] - degree 7, connects to 6 communities
 - [[DelegationPrivilege]] - degree 25, connects to 5 communities
-- [[DelegationManager_1]] - degree 26, connects to 2 communities
-- [[delegation.py]] - degree 6, connects to 1 community
-- [[dot-from_dict()_9]] - degree 3, connects to 1 community
+- [[delegation.py]] - degree 6, connects to 2 communities
+- [[DelegationManager_1]] - degree 24, connects to 1 community
+- [[dot-from_dict()_8]] - degree 3, connects to 1 community
+- [[ValueError]] - degree 2, connects to 1 community

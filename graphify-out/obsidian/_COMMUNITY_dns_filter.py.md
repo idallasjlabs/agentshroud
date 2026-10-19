@@ -18,9 +18,9 @@ members: 16
 - [[Function Details_18]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Mode Enforce vs Monitor_6]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Purpose_127]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Purpose_128]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Related_24]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Threat Model_14]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[dns_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[dns_filter.py]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md

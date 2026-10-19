@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-level_value()]] - `calls` [EXTRACTED]
-- [[PermissionLevel_1]] - `method` [EXTRACTED]
+- [[PermissionLevel]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PermissionLevel

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (6)"
+community: "Browser — Secure Browser Automation (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/Browser__Secure_Browser_Automation_7
 ---
 
 # openclaw/skills/i-browser/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_7

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L412"
+community: "_req (3)"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/_req_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/_req_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "PipelineAction (2)"
+community: "SecurityPipeline"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/SecurityPipeline
 ---
 
 # rot13-looking prose with no injection indicators is left alone.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

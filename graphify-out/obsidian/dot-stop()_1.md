@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L315"
+community: "FalcoAlertWatcher"
+location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/FalcoAlertWatcher
 ---
 
 # .stop()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

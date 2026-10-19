@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (2)"
+community: "GroupRoleResolver"
 location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_2
+  - community/GroupRoleResolver
 ---
 
 # .test_get_all_roles_invalid_string_defaults_to_readonly()
@@ -16,4 +16,4 @@ tags:
 - [[TestGroupRoleProperties]] - `method` [EXTRACTED]
 - [[get_all_roles with an invalid role string falls back to READ_ONLY per entry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

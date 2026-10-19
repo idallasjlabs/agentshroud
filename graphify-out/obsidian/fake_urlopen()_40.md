@@ -1,17 +1,91 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L612"
+community: "TestInboundPipelineOnGetUpdates"
+location: "L410"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - graphify/INFERRED
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_whoami_with_bot_mention_uses_local_notice()]] - `contains` [EXTRACTED]
+- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_block_notice_sent_without_markdown_parse_mode()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_approval_queue_probe_gets_safe_info()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_blocked_tools_question_gets_safe_info_not_blocked()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_command_inventory_query_gets_safe_info_response()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_direct_file_query_returns_protect_file_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_env_secret_probe_returns_protect_secret_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_healthcheck_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_help_uses_local_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_mixed_file_purpose_plus_show_question_gets_safe_info()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_network_infrastructure_question_gets_safe_guidance()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_safe_info_query_gets_local_safe_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_secret_value_block_returns_protect_secret_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_security_architecture_question_gets_safe_guidance()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_self_modification_policy_question_gets_safe_guidance()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_show_high_level_policy_question_gets_safe_guidance()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_start_uses_local_notice_and_does_not_forward()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_status_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_request_returns_pending_egress_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_whoami_uses_local_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_whoami_without_slash_uses_local_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_local_notice_dedupe_handles_missing_update_id()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_local_notice_is_deduped_per_update()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_fullwidth_chars_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_fullwidth_mention_and_punctuation_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_leading_whitespace_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_mention_and_punctuation_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_zero_width_char_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_with_zero_width_mention_and_punctuation_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_model_status_command_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_collabs_command_shows_named_roster()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_healthcheck_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_help_uses_local_notice_and_includes_revoke()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_revoke_command_cannot_revoke_owner()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_revoke_command_persists_pause_to_disk()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_revoke_command_requires_target_user_id()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_revoke_command_revokes_target_user()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_start_uses_local_notice_and_does_not_forward()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_status_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_whoami_uses_local_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_owner_whoami_with_bot_mention_uses_local_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_plain_model_question_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_rate_limit_notice_mentions_configured_limit()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_same_message()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_local_notice_is_deduped_per_update()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_plain_word_with_punctuation_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_with_mention_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_with_zero_width_char_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnostic_command_is_handled_locally_for_owner()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnostic_dedupe_handles_missing_update_id_same_message()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnostic_local_notice_is_deduped_per_update()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnostic_with_fullwidth_chars_is_handled_locally()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `indirect_call` [INFERRED]
+- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - `indirect_call` [INFERRED]
+- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/INFERRED #community/TestInboundPipelineOnGetUpdates

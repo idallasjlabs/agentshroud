@@ -1,29 +1,27 @@
 ---
 type: community
-members: 16
+members: 14
 ---
 
 # test_prompt_guard.py (2)
 
-**Members:** 16 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[dot-get_document_tag()]] - code - gateway/security/metadata_guard.py
-- [[dot-guard()_6]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-tag_document()]] - code - gateway/security/metadata_guard.py
-- [[dot-test_document_tag_creation()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_document_tag_lookup_by_hash()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_document_tag_untrusted_source()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_get_document_tag_unknown_hash_returns_none()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_tag_document_different_content_different_hash()]] - code - gateway/tests/test_metadata_guard.py
-- [[Create and store a provenance tag for a document.]] - rationale - gateway/security/metadata_guard.py
-- [[DocumentTag]] - code - gateway/security/metadata_guard.py
-- [[Look up a document tag by its SHA-256 content hash.]] - rationale - gateway/security/metadata_guard.py
-- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - concept - gateway/tests/test_prompt_guard.py
-- [[Provenance record for a document ingested into the agent context.]] - rationale - gateway/security/metadata_guard.py
-- [[TestDocumentTagging]] - code - gateway/tests/test_metadata_guard.py
-- [[metadata_guard.py]] - code - gateway/security/metadata_guard.py
-- [[test_metadata_guard.py]] - code - gateway/tests/test_metadata_guard.py
+- [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - rationale - gateway/ingest_api/main.py
+- [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - rationale - gateway/ingest_api/main.py
+- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
+- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
+- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
+- [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
+- [[Return True if the recipient is in the allowlist.]] - rationale - gateway/ingest_api/main.py
+- [[Validate and normalize agentuser identity used for policy checks.]] - rationale - gateway/ingest_api/main.py
+- [[_is_imessage_recipient_allowed()]] - code - gateway/ingest_api/main.py
+- [[_normalize_agent_identity()]] - code - gateway/ingest_api/main.py
+- [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
+- [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
+- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 2 edges to [[_COMMUNITY_TestMetadataGuard]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
-- 1 edge to [[_COMMUNITY_SessionManager]]
+- 11 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_Request]]
 
 ## Top bridge nodes
-- [[test_metadata_guard.py]] - degree 5, connects to 2 communities
-- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - degree 3, connects to 2 communities
-- [[TestDocumentTagging]] - degree 9, connects to 1 community
-- [[DocumentTag]] - degree 7, connects to 1 community
-- [[dot-get_document_tag()]] - degree 3, connects to 1 community
+- [[mcp_proxy_endpoint()]] - degree 8, connects to 2 communities
+- [[mcp_result_endpoint()]] - degree 7, connects to 2 communities
+- [[MCPProxyRequest]] - degree 4, connects to 2 communities
+- [[MCPResultRequest]] - degree 4, connects to 2 communities
+- [[_resolve_effective_agent_id()]] - degree 5, connects to 1 community

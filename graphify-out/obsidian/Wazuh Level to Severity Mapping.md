@@ -12,6 +12,6 @@ tags:
 # Wazuh Level to Severity Mapping
 
 ## Connections
-- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

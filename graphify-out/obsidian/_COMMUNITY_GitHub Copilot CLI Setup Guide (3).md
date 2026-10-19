@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+members: 6
 ---
 
 # GitHub Copilot CLI Setup Guide (3)
 
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Agent Not Found]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Authentication Issues]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Configuration Not Loading]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Path Permission Denied]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Troubleshooting_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
+- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
+- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
+- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
+- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
-- [[Troubleshooting_1]] - degree 5, connects to 1 community
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "discover_upstream_versions.py"
+community: "pick_latest_stable"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/pick_latest_stable
 ---
 
 # True when ``version`` is a shippable release rather than a pre-release.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_stable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

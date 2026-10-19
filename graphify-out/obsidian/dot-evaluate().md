@@ -12,7 +12,7 @@ tags:
 # .evaluate()
 
 ## Connections
-- [[dot-_decide()]] - `calls` [EXTRACTED]
+- [[dot-_decide()_1]] - `calls` [EXTRACTED]
 - [[dot-enforce()]] - `calls` [EXTRACTED]
 - [[A2APolicyDecision]] - `references` [EXTRACTED]
 - [[A2APolicyEngine_2]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "rationale"
-community: "BotConfig"
+community: "BotConfig (2)"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/BotConfig_2
 ---
 
 # When _inbound_bot_id is set, _active_bot_id() returns it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_active_bot_id_returns_contextvar_when_set()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig_2

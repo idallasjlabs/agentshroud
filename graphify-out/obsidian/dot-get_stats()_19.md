@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "AuditChain"
-location: "L1658"
+community: "AsyncMock (2)"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AsyncMock_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ReportStore"
-location: "L83"
+community: "TestSSRFDetection (4)"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/TestSSRFDetection_4
 ---
 
 # .save()
 
 ## Connections
-- [[dot-_check_size()]] - `calls` [EXTRACTED]
-- [[dot-_persist()]] - `calls` [EXTRACTED]
-- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - `rationale_for` [EXTRACTED]
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Insert or replace an approval item.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_4

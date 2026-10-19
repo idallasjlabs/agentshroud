@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: ".update"
-location: "L64"
+community: "A2APolicyEngine"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-update()]] - `calls` [EXTRACTED]
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Path_54]] - `references` [EXTRACTED]
+- [[_Event]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

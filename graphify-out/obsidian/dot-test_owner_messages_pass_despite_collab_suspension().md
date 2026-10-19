@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown (2)"
+community: "ProgressiveLockdown"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown_2
+  - community/ProgressiveLockdown
 ---
 
 # .test_owner_messages_pass_despite_collab_suspension()
@@ -15,7 +15,7 @@ tags:
 - [[Owner messages must never be blocked by the suspension logic.]] - `rationale_for` [EXTRACTED]
 - [[TestSuspendedDropNotice]] - `method` [EXTRACTED]
 - [[_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()_2]] - `calls` [EXTRACTED]
 - [[_wrap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

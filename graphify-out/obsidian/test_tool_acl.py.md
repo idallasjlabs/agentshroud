@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # test_tool_acl.py
@@ -15,9 +15,9 @@ tags:
 - [[ADMIN_TOOLS]] - `references` [EXTRACTED]
 - [[COLLABORATOR_ALLOWED_TOOLS]] - `references` [EXTRACTED]
 - [[PRIVATE_TOOLS]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
-- [[Role_28]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[Role_23]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TestAdminAccess]] - `contains` [EXTRACTED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `contains` [EXTRACTED]
 - [[TestClassificationSets]] - `contains` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[ToolACLEnforcer]] - `references` [EXTRACTED]
 - [[_make_rbac()]] - `contains` [EXTRACTED]
 - [[can_use_tool_from_origin]] - `references` [EXTRACTED]
-- [[enforcer()_1]] - `contains` [EXTRACTED]
-- [[rbac()_2]] - `contains` [EXTRACTED]
+- [[enforcer()]] - `contains` [EXTRACTED]
+- [[rbac()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,17 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
-type: "document"
-community: "version_routes.py"
-location: "L53"
+source_file: "gateway/ingest_api/version_routes.py"
+type: "code"
+community: "upgrade"
+location: "L57"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/upgrade
 ---
 
 # get_version_history()
 
 ## Connections
-- [[Function Details_15]] - `contains` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
+- [[Get version change history.]] - `rationale_for` [EXTRACTED]
+- [[agentshroud_manager (version manager)]] - `calls` [EXTRACTED]
+- [[list_versions()]] - `calls` [EXTRACTED]
+- [[mask_credentials()]] - `calls` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/upgrade

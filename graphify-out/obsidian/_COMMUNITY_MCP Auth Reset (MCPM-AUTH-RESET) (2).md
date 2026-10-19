@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_50]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_52]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
 - [[Related Skills_37]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
 - [[Usage_41]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
 - [[openclawskillsi-mcpm-auth-resetREADME]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md

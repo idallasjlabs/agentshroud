@@ -12,7 +12,7 @@ tags:
 # PodmanEngine
 
 ## Connections
-- [[dot-__init__()_104]] - `method` [EXTRACTED]
+- [[dot-__init__()_114]] - `method` [EXTRACTED]
 - [[dot-_cmd()]] - `method` [EXTRACTED]
 - [[dot-_detect_compose()]] - `method` [EXTRACTED]
 - [[dot-build()_1]] - `method` [EXTRACTED]
@@ -26,13 +26,13 @@ tags:
 - [[dot-network_create()_1]] - `method` [EXTRACTED]
 - [[dot-network_rm()_1]] - `method` [EXTRACTED]
 - [[dot-pause()_1]] - `method` [EXTRACTED]
-- [[dot-ps()_2]] - `method` [EXTRACTED]
+- [[dot-ps()_3]] - `method` [EXTRACTED]
 - [[dot-pull()_1]] - `method` [EXTRACTED]
-- [[dot-push()_2]] - `method` [EXTRACTED]
+- [[dot-push()_1]] - `method` [EXTRACTED]
 - [[dot-rm()_1]] - `method` [EXTRACTED]
-- [[dot-run()_2]] - `method` [EXTRACTED]
-- [[dot-setup_method()_16]] - `calls` [EXTRACTED]
-- [[dot-stop()_6]] - `method` [EXTRACTED]
+- [[dot-run()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `calls` [EXTRACTED]
+- [[dot-stop()_9]] - `method` [EXTRACTED]
 - [[dot-unpause()_1]] - `method` [EXTRACTED]
 - [[dot-volume_create()_1]] - `method` [EXTRACTED]
 - [[dot-volume_rm()_1]] - `method` [EXTRACTED]

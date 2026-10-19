@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "RBACConfig (2) (3)"
+community: "GroupRoleResolver"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2_3
+  - community/GroupRoleResolver
 ---
 
 # GroupRoleResolver correctly maps Telegram user IDs to per-group roles.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRoleResolver]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2_3
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

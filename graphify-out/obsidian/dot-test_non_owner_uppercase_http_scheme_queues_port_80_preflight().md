@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "_wrap_response()"
 location: "L6451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # .test_non_owner_uppercase_http_scheme_queues_port_80_preflight()
@@ -20,4 +20,4 @@ tags:
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[check_async()_23]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

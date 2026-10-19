@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L286"
+community: "TestFabricatedSecurityNotice"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
-- [[any_60]] - `references` [EXTRACTED]
+- [[Any_53]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

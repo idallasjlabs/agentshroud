@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # Output Canary System Tests
@@ -14,4 +14,4 @@ tags:
 - [[OutputCanary]] - `references` [EXTRACTED]
 - [[System Prompt Protection Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

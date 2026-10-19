@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[find-sessions.sh]] - `contains` [EXTRACTED]
 - [[list_sessions()]] - `calls` [EXTRACTED]
-- [[usage()_1]] - `calls` [EXTRACTED]
+- [[usage()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/find-sessionssh

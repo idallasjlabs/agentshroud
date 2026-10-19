@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[StreamReader_2]] - `references` [EXTRACTED]
 - [[StreamWriter_1]] - `references` [EXTRACTED]
-- [[_handle()_1]] - `calls` [EXTRACTED]
+- [[_handle()_3]] - `calls` [EXTRACTED]
 - [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "GSDE&G Skills Reference (2) (2)"
+community: "Skills by Category (2)"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2_2
+  - community/Skills_by_Category_2
 ---
 
 # Cloud & FinOps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2_2
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category_2

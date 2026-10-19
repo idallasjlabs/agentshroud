@@ -1,19 +1,24 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L425"
+community: "soc/router.py"
+location: "L2704"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/INFERRED #community/soc/routerpy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "PodmanEngine"
-location: "L32"
+community: "MCPInspector"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (4)"
+community: "MCPPermissionManager (2)"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_4
+  - community/MCPPermissionManager_2
 ---
 
 # .test_privacy_policy_overrides_patterns()
@@ -15,4 +15,4 @@ tags:
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_4
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

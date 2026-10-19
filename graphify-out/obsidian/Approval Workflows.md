@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "SecureBrowser Security Policies"
+community: "AgentShroud Data Dictionary"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Approval Workflows
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalRequest_2]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

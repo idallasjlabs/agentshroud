@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig"
 location: "L409"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_174]] - `method` [EXTRACTED]
+- [[dot-__init__()_72]] - `method` [EXTRACTED]
 - [[dot-forward()_2]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
@@ -22,7 +22,7 @@ tags:
 - [[ForwarderConfig]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ScanRequest]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

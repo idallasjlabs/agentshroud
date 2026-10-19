@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (5)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_5
 ---
 
 # EgressPolicy
 
 ## Connections
-- [[dot-__init__()_105]] - `references` [EXTRACTED]
+- [[dot-__init__()_38]] - `references` [EXTRACTED]
 - [[dot-get_policy()_1]] - `references` [EXTRACTED]
 - [[dot-matches_domain()]] - `method` [EXTRACTED]
 - [[dot-matches_ip()]] - `method` [EXTRACTED]
 - [[dot-matches_port()]] - `method` [EXTRACTED]
 - [[dot-set_agent_policy()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
 - [[dot-test_agent_specific_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
 - [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[Egress policy for an agent or global default.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[FakeAuditStore_1]] - `uses` [INFERRED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
@@ -98,9 +98,7 @@ tags:
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[egress_filter()]] - `calls` [EXTRACTED]
 - [[egress_filter()_1]] - `calls` [EXTRACTED]
-- [[egress_filter.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter_flush_without_notifier()]] - `calls` [EXTRACTED]
@@ -112,4 +110,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig_5

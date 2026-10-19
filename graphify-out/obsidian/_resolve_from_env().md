@@ -12,7 +12,7 @@ tags:
 # _resolve_from_env()
 
 ## Connections
-- [[main()_3]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 - [[resolve_model()]] - `calls` [EXTRACTED]
 - [[resolve_model.py]] - `contains` [EXTRACTED]
 

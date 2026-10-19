@@ -8,7 +8,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_60]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_74]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -42,7 +42,7 @@ members: 44
 - [[Raised when security policy is violated_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Return complete audit log_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Risk classification for browser actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[RiskLevel_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[RiskLevel_2]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Secure browser automation with enterprise controls      Security guarantees_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[SecureBrowser_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Security configuration for browser automation_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -51,7 +51,7 @@ members: 44
 - [[Take screenshot and save to audit directory_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[hermesskillsi-browserscriptsbrowse.py]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[main()_7]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[main()_8]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,10 +61,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
 
 ## Top bridge nodes
 - [[SecurityError_1]] - degree 7, connects to 1 community
 - [[hermesskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
-- [[RiskLevel_3]] - degree 6, connects to 1 community
+- [[RiskLevel_2]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "pytest.ini"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Dockerfile — Gateway
@@ -17,11 +17,11 @@ tags:
 - [[Dockerfile — Bot (OpenClaw)]] - `references` [EXTRACTED]
 - [[Dockerfile.gateway]] - `contains` [EXTRACTED]
 - [[Environment Variables_16]] - `contains` [EXTRACTED]
-- [[Image Labels (OCI)]] - `contains` [EXTRACTED]
-- [[Pre-installed Tools]] - `contains` [EXTRACTED]
-- [[Related Notes_41]] - `contains` [EXTRACTED]
+- [[Image Labels (OCI)_1]] - `contains` [EXTRACTED]
+- [[Pre-installed Tools_1]] - `contains` [EXTRACTED]
+- [[Related Notes_37]] - `contains` [EXTRACTED]
 - [[Runtime Command]] - `contains` [EXTRACTED]
 - [[Security Hardening]] - `contains` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

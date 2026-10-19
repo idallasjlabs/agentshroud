@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "DEVELOPER.md — Development Context for AgentShroud (2)"
+community: "DEVELOPER.md — Development Context for AgentShroud"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShroud_2
+  - community/DEVELOPERmd__Development_Context_for_AgentShroud
 ---
 
 # 4) LANGUAGE & TOOLING STANDARDS
@@ -21,4 +21,4 @@ tags:
 - [[Python]] - `contains` [EXTRACTED]
 - [[Python Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud_2
+#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud

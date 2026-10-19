@@ -28,17 +28,18 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 3 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_api.py (2)]]
 - 2 edges to [[_COMMUNITY_PodmanEngine]]
 - 2 edges to [[_COMMUNITY_DockerEngine]]
 - 2 edges to [[_COMMUNITY_AppleContainerEngine]]
 - 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 1 edge to [[_COMMUNITY_ContainerEngine]]
+- 1 edge to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_RuntimeConfig]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_test_runtime_engines.py (2)]]
 
 ## Top bridge nodes
-- [[get_engine()]] - degree 16, connects to 5 communities
+- [[get_engine()]] - degree 16, connects to 6 communities
 - [[TestGetEngine_1]] - degree 12, connects to 5 communities
 - [[ContainerEngine_2]] - degree 5, connects to 4 communities

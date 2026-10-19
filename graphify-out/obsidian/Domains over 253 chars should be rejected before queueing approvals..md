@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval"
 location: "L3460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval
 ---
 
 # Domains over 253 chars should be rejected before queueing approvals.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval

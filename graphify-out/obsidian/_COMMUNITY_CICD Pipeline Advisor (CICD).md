@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Purpose_42]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Purpose_44]] - document - docker/config/openclaw/skills/i-cicd/README.md
 - [[Related Skills_29]] - document - docker/config/openclaw/skills/i-cicd/README.md
 - [[Usage_33]] - document - docker/config/openclaw/skills/i-cicd/README.md
 - [[openclawskillsi-cicdREADME]] - document - docker/config/openclaw/skills/i-cicd/README.md

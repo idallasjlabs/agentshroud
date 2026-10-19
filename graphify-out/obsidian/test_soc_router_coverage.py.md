@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[FakeAuditStore]] - `contains` [EXTRACTED]
+- [[FakeAuditStore_1]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
-- [[Role_28]] - `imports` [EXTRACTED]
+- [[Role_23]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
+- [[client()_20]] - `contains` [EXTRACTED]
 - [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[holder()]] - `contains` [EXTRACTED]

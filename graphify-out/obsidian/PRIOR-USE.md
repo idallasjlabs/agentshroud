@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Mission Statement (Timestamped)]] - `references` [EXTRACTED]
 - [[AgentShroud™ — Trademark Prior Use Record]] - `contains` [EXTRACTED]
 - [[First Use in Commerce (Feb 20, 2026)]] - `references` [EXTRACTED]
-- [[TRADEMARK_2]] - `conceptually_related_to` [INFERRED]
+- [[TRADEMARK_1]] - `conceptually_related_to` [INFERRED]
 - [[USPTO-APPLICATION]] - `conceptually_related_to` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

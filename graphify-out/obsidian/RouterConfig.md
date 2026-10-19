@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalQueueConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalQueueConfig
 ---
 
 # RouterConfig
@@ -21,20 +21,20 @@ tags:
 - [[dot-validate_default_url()]] - `method` [EXTRACTED]
 - [[dot-validate_targets()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_46]] - `uses` [INFERRED]
+- [[Any_49]] - `uses` [INFERRED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_2]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[Multi-agent router configuration]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[Path_19]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[Path_17]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[TestAllExampleConfigsExist]] - `uses` [INFERRED]
 - [[TestConfigValidation]] - `uses` [INFERRED]
 - [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
@@ -59,7 +59,7 @@ tags:
 - [[ingest_apirouter.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[router()_1]] - `calls` [EXTRACTED]
-- [[router()_3]] - `calls` [EXTRACTED]
+- [[router()_2]] - `calls` [EXTRACTED]
 - [[router_config()]] - `calls` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
@@ -79,4 +79,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

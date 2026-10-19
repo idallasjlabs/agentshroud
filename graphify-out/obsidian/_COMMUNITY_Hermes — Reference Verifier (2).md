@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[Persona_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[Quality Checklist_2]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Role_4]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Role_5]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[System Prompt_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 - [[hermesskillsi-hermesSKILL]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 

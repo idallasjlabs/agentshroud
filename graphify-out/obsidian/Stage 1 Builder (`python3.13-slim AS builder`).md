@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "pytest.ini"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Stage 1: Builder (`python:3.13-slim AS builder`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Build Stages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

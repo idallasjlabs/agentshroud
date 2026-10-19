@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/video-frames/scripts/frame.sh"
+source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "frame.sh"
+community: "find-sessions.sh"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/framesh
+  - community/find-sessionssh
 ---
 
 # usage()
 
 ## Connections
-- [[frame.sh]] - `defines` [EXTRACTED]
-- [[frame.sh script]] - `calls` [EXTRACTED]
+- [[find-sessions.sh]] - `defines` [EXTRACTED]
+- [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/framesh
+#graphify/code #graphify/EXTRACTED #community/find-sessionssh

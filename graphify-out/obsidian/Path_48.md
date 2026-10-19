@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "validate_network_security"
-location: "L33"
+community: "test_collaborator_tracker.py (4)"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/test_collaborator_trackerpy_4
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

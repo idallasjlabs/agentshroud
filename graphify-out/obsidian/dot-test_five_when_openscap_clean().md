@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "test_scanner_integration.py (2)"
 location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/test_scanner_integrationpy_2
 ---
 
 # .test_five_when_openscap_clean()
@@ -16,4 +16,4 @@ tags:
 - [[_openscap_clean()]] - `calls` [EXTRACTED]
 - [[_score_container_hardening()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy_2

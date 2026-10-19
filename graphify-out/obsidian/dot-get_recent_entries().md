@@ -12,6 +12,6 @@ tags:
 # .get_recent_entries()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

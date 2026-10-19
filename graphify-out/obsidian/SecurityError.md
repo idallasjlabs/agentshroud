@@ -17,7 +17,7 @@ tags:
 - [[dot-extract()]] - `calls` [EXTRACTED]
 - [[dot-fill_field()]] - `calls` [EXTRACTED]
 - [[dot-navigate()]] - `calls` [EXTRACTED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception_3]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

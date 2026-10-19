@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: ".validate_docker_compose_config"
+community: "NetworkSecurityFinding"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/NetworkSecurityFinding
 ---
 
 # Export network security report to file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-export_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

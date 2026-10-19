@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller_2]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Purpose_37]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Related Skills_24]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Usage_28]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[openclawskillsi-athenaREADME]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[dot-agentsskillsi-athenaREADME]] - document - .agents/skills/i-athena/README.md
+- [[Athena — Knowledge Distiller]] - document - .agents/skills/i-athena/README.md
+- [[Purpose_15]] - document - .agents/skills/i-athena/README.md
+- [[Related Skills_2]] - document - .agents/skills/i-athena/README.md
+- [[Usage_6]] - document - .agents/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

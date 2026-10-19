@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._proxy_request_impl"
+community: "TelegramAPIProxy"
 location: "L8230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_proxy_request_impl
+  - community/TelegramAPIProxy
 ---
 
 # Forward a Telegram file download and return a raw-binary sentinel dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_forward_file_download()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_proxy_request_impl
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

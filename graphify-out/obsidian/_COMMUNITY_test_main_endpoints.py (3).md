@@ -1,24 +1,21 @@
 ---
 type: community
-members: 11
+members: 8
 ---
 
 # test_main_endpoints.py (3)
 
-**Members:** 11 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[dot-_run_proxy()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_decoded_body_drops_upstream_encoding_and_recomputes_length()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_multiple_set_cookie_headers_are_not_folded()]] - code - gateway/tests/test_main_endpoints.py
-- [[TestHermesDashboardProxyHeaders]] - code - gateway/tests/test_main_endpoints.py
-- [[__aenter__()]] - code - gateway/tests/test_main_endpoints.py
-- [[__aexit__()]] - code - gateway/tests/test_main_endpoints.py
-- [[__init__()_2]] - code - gateway/tests/test_main_endpoints.py
-- [[_body()]] - code - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy must relay upstream headers header-by-header. Found on…]] - rationale - gateway/tests/test_main_endpoints.py
-- [[multi_items()]] - code - gateway/tests/test_main_endpoints.py
-- [[request()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_forward_middleware_allowed()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_forward_middleware_blocking()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_forward_middleware_error_handling()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test forward endpoint with middleware integration.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test that middleware allows requests when they pass checks.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test that middleware can block requests with HTTP 403.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test that middleware errors cause requests to be blocked.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestForwardEndpoint]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +26,6 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 
 ## Top bridge nodes
-- [[TestHermesDashboardProxyHeaders]] - degree 6, connects to 2 communities
+- [[TestForwardEndpoint]] - degree 5, connects to 1 community

@@ -12,7 +12,7 @@ tags:
 # .record()
 
 ## Connections
-- [[Decision_1]] - `references` [EXTRACTED]
+- [[Decision_2]] - `references` [EXTRACTED]
 - [[ModuleStatsCollector]] - `method` [EXTRACTED]
 - [[Record one enforcement decision for ``module``.          Never raises an unknow]] - `rationale_for` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]

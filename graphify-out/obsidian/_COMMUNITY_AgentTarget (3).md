@@ -8,15 +8,15 @@ members: 49
 **Members:** 49 nodes
 
 ## Members
-- [[dot-__init__()_53]] - code - gateway/tests/test_forward_routing.py
-- [[dot-__init__()_54]] - code - gateway/tests/test_forward_routing.py
+- [[dot-__init__()_60]] - code - gateway/tests/test_forward_routing.py
+- [[dot-__init__()_61]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_post()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_post_forward()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_run_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
 - [[dot-process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_outbound()_2]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_1]] - code - gateway/tests/test_forward_routing.py
 - [[dot-test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
@@ -66,10 +66,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_AgentTarget (2)_1]]
-- 7 edges to [[_COMMUNITY_AgentTarget (2)]]
+- 13 edges to [[_COMMUNITY_AgentTarget]]
+- 7 edges to [[_COMMUNITY_test_security.py]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency (2)]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py (2)]]
 
 ## Top bridge nodes
 - [[test_forward_routing.py]] - degree 13, connects to 3 communities

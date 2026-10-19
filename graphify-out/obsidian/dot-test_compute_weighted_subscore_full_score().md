@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "scanner_integration.py"
+community: "AgentTarget (6)"
 location: "L971"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/AgentTarget_6
 ---
 
 # .test_compute_weighted_subscore_full_score()
@@ -16,4 +16,4 @@ tags:
 - [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_6

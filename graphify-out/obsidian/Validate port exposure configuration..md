@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: ".validate_docker_compose_config"
+community: "NetworkSecurityFinding"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/NetworkSecurityFinding
 ---
 
 # Validate port exposure configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_validate_port_exposure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

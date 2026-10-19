@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "AlertDispatcher (2)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/AlertDispatcher_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_13]] - `references` [EXTRACTED]
-- [[dot-to_dict()_11]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

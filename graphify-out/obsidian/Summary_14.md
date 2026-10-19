@@ -1,17 +1,17 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "egress_filter.py (2)"
-location: "L1"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy_2
+  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List

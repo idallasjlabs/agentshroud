@@ -12,9 +12,9 @@ tags:
 # A2APolicyEngine
 
 ## Connections
-- [[dot-__init__()_126]] - `method` [EXTRACTED]
-- [[dot-_decide()]] - `method` [EXTRACTED]
-- [[dot-_tier_for()]] - `method` [EXTRACTED]
+- [[dot-__init__()_125]] - `method` [EXTRACTED]
+- [[dot-_decide()_1]] - `method` [EXTRACTED]
+- [[dot-_tier_for()_1]] - `method` [EXTRACTED]
 - [[dot-enforce()]] - `method` [EXTRACTED]
 - [[dot-evaluate()]] - `method` [EXTRACTED]
 - [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
@@ -31,12 +31,12 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_79]] - `uses` [INFERRED]
+- [[Any_70]] - `uses` [INFERRED]
 - [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - `rationale_for` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `semantically_similar_to` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]

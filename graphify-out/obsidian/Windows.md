@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "TestOutboundInfoFilter (5)"
+community: "TestOutboundInfoFilter (6)"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_5
+  - community/TestOutboundInfoFilter_6
 ---
 
 # Windows
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Installation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_6

@@ -68,9 +68,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 8 edges to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 10 edges to [[_COMMUNITY_MiddlewareManager]]
+- 8 edges to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 - 1 edge to [[_COMMUNITY_Contributing to AgentShroud™]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]

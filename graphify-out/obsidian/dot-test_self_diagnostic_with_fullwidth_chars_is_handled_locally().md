@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L5174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # .test_self_diagnostic_with_fullwidth_chars_is_handled_locally()
@@ -18,8 +18,8 @@ tags:
 - [[Unicode fullwidth self-diagnostic command should still be local-handled.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[fake_urlopen()_48]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[fake_urlopen()_73]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_40]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

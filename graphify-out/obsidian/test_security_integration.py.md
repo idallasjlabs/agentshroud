@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # test_security_integration.py
 
 ## Connections
-- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
@@ -22,10 +22,10 @@ tags:
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
-- [[GatewayConfig]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_2]] - `imports` [EXTRACTED]
@@ -48,6 +48,6 @@ tags:
 - [[test_pipeline_selective_modules()]] - `contains` [EXTRACTED]
 - [[test_response_credential_blocking()]] - `contains` [EXTRACTED]
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
-- [[trust_manager()_2]] - `contains` [EXTRACTED]
+- [[trust_manager()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

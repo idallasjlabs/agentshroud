@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "AlertDispatcher (2) (3)"
+community: "AlertDispatcher (3)"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2_3
+  - community/AlertDispatcher_3
 ---
 
 # TestPKCE
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_3
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_3

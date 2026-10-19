@@ -12,6 +12,6 @@ tags:
 # Set a user's role (owner-only operation).
 
 ## Connections
-- [[dot-set_user_role()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-set_user_role()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

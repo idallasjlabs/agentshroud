@@ -14,7 +14,7 @@ members: 12
 - [[Format Codes]] - document - skills/openclaw/weather/SKILL.md
 - [[Format Options]] - document - skills/openclaw/weather/SKILL.md
 - [[Location_1]] - document - skills/openclaw/weather/SKILL.md
-- [[Notes_10]] - document - skills/openclaw/weather/SKILL.md
+- [[Notes_9]] - document - skills/openclaw/weather/SKILL.md
 - [[Quick Responses]] - document - skills/openclaw/weather/SKILL.md
 - [[Weather Skill]] - document - skills/openclaw/weather/SKILL.md
 - [[When NOT to Use_3]] - document - skills/openclaw/weather/SKILL.md

@@ -12,12 +12,12 @@ tags:
 # export()
 
 ## Connections
-- [[Path_63]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[_require_env()]] - `calls` [EXTRACTED]
 - [[_serialize()]] - `calls` [EXTRACTED]
-- [[datetime_8]] - `references` [EXTRACTED]
+- [[datetime]] - `references` [EXTRACTED]
 - [[export-telegram-history.py]] - `contains` [EXTRACTED]
 - [[export_hermes()]] - `conceptually_related_to` [INFERRED]
-- [[main()_35]] - `calls` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_4

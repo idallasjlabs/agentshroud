@@ -1,25 +1,24 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L87"
+community: "WebProxy"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/WebProxy
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[dot-__init__()_185]] - `method` [EXTRACTED]
-- [[dot-close()_18]] - `method` [EXTRACTED]
-- [[dot-drain()_3]] - `method` [EXTRACTED]
-- [[dot-write()_3]] - `method` [EXTRACTED]
+- [[dot-close()_19]] - `method` [EXTRACTED]
+- [[dot-drain()_2]] - `method` [EXTRACTED]
+- [[dot-write()_2]] - `method` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
-- [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/WebProxy

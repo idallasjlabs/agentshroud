@@ -12,7 +12,7 @@ tags:
 # .test_message_preview_truncated_to_80_chars()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event truncates message_preview to 80 characters.]] - `rationale_for` [EXTRACTED]
 

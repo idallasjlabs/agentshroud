@@ -1,14 +1,14 @@
 ---
 type: community
-members: 108
+members: 107
 ---
 
 # PipelineAction
 
-**Members:** 108 nodes
+**Members:** 107 nodes
 
 ## Members
-- [[dot-__init__()_106]] - code - gateway/security/canary_tripwire.py
+- [[dot-__init__()_115]] - code - gateway/security/canary_tripwire.py
 - [[dot-_check_encoded()]] - code - gateway/security/canary_tripwire.py
 - [[dot-_check_plain()]] - code - gateway/security/canary_tripwire.py
 - [[dot-_normalize()]] - code - gateway/security/canary_tripwire.py
@@ -17,9 +17,9 @@ members: 108
 - [[dot-detection_count()]] - code - gateway/security/canary_tripwire.py
 - [[dot-register_canary()]] - code - gateway/security/canary_tripwire.py
 - [[dot-sanitize()_3]] - code - gateway/tests/test_e2e_watchtower.py
-- [[dot-scan()_1]] - code - gateway/security/canary_tripwire.py
-- [[dot-scan_response()_2]] - code - gateway/security/canary_tripwire.py
-- [[dot-setup_method()_18]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-scan()_3]] - code - gateway/security/canary_tripwire.py
+- [[dot-scan_response()_1]] - code - gateway/security/canary_tripwire.py
+- [[dot-setup_method()_25]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_audit_chain_hash_chained()]] - code - gateway/tests/test_e2e_watchtower.py
@@ -36,15 +36,15 @@ members: 108
 - [[dot-test_counter_increments()]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_credit_card_stripped_from_response()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_cross_context_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[dot-test_custom_config()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_custom_config()_2]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_email_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[dot-test_empty_input()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_empty_input()_2]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_encoding_detector_is_wired()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_forwarded_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_jailbreak_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_low_trust_cannot_delete_file()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_no_canaries()]] - code - gateway/tests/test_canary_tripwire.py
-- [[dot-test_normal_content_passes()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_normal_content_passes()]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_phone_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_pipeline_raises_with_only_prompt_guard()]] - code - gateway/tests/test_e2e_watchtower.py
@@ -107,15 +107,14 @@ members: 108
 - [[_BrokenOutputCanary]] - code - gateway/tests/test_e2e_watchtower.py
 - [[_BrokenSanitizer]] - code - gateway/tests/test_e2e_watchtower.py
 - [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
-- [[pii_config()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pii_config()_1]] - code - gateway/tests/test_e2e_watchtower.py
 - [[pipeline()_1]] - code - gateway/tests/test_e2e_watchtower.py
-- [[sanitizer()_2]] - code - gateway/tests/test_e2e_watchtower.py
+- [[sanitizer()_4]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_canary_tripwire.py]] - code - gateway/tests/test_canary_tripwire.py
 - [[test_e2e_watchtower.py]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[trust_manager()_1]] - code - gateway/tests/test_e2e_watchtower.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -125,14 +124,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 46 edges to [[_COMMUNITY_AuditChain]]
-- 28 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 28 edges to [[_COMMUNITY_TrustConfig]]
-- 16 edges to [[_COMMUNITY_AlertDispatcher]]
+- 46 edges to [[_COMMUNITY_SecurityPipeline]]
+- 28 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 27 edges to [[_COMMUNITY_TrustConfig]]
 - 15 edges to [[_COMMUNITY_ContextSegment]]
-- 14 edges to [[_COMMUNITY_PipelineAction (2)]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 14 edges to [[_COMMUNITY_AlertDispatcher]]
+- 14 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
 
 ## Top bridge nodes
 - [[test_e2e_watchtower.py]] - degree 30, connects to 6 communities

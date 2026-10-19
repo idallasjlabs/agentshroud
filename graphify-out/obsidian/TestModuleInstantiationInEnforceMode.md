@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L147"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # TestModuleInstantiationInEnforceMode
@@ -29,7 +29,7 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GatewayConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[MultiTurnTracker]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[Verify modules can instantiate and operate in enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

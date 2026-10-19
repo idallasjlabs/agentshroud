@@ -15,6 +15,6 @@ tags:
 - [[dot-_call_slack_api()]] - `calls` [EXTRACTED]
 - [[dot-proxy_outbound()]] - `calls` [EXTRACTED]
 - [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

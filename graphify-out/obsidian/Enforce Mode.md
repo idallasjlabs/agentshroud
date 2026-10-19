@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "system-requirements.md (2)"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/system-requirementsmd_2
+  - community/system-requirementsmd
 ---
 
 # Enforce Mode
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 Watchtower Release Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd_2
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

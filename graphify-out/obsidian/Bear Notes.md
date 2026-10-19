@@ -15,7 +15,7 @@ tags:
 - [[Common Commands_3]] - `contains` [EXTRACTED]
 - [[Configuration_21]] - `contains` [EXTRACTED]
 - [[Getting a Bear Token]] - `contains` [EXTRACTED]
-- [[Notes_11]] - `contains` [EXTRACTED]
+- [[Notes_10]] - `contains` [EXTRACTED]
 - [[Options]] - `contains` [EXTRACTED]
 - [[bear-notesSKILL]] - `contains` [EXTRACTED]
 

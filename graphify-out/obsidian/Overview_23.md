@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/slack/SKILL.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Actions"
-location: "L9"
+community: "SSH Capability Architecture Document"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Overview
 
 ## Connections
-- [[Slack Actions]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

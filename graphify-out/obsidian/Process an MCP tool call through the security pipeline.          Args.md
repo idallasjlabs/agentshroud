@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPPermissionManager (5)"
+community: "MCPPermissionManager"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_5
+  - community/MCPPermissionManager
 ---
 
 # Process an MCP tool call through the security pipeline.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-process_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_5
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

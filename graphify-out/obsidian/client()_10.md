@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_e2e_proxy.py (2)"
-location: "L25"
+community: "ModeRequest"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy_2
+  - community/ModeRequest
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

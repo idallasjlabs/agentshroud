@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Collaborator tool/command inventory probes should return safe local guidance."
+community: "TestInboundPipelineOnGetUpdates"
 location: "L3090"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_tool/command_inventory_probes_should_return_safe_local_guidance
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # .test_collaborator_command_inventory_query_gets_safe_info_response()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[fake_urlopen()_52]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[fake_urlopen()_26]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_40]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_tool/command_inventory_probes_should_return_safe_local_guidance
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

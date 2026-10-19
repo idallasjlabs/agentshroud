@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "PipelineAction (2)"
+community: "ContextSegment"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/ContextSegment
 ---
 
 # `_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

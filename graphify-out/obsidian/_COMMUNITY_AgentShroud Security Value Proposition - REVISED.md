@@ -1,19 +1,30 @@
 ---
 type: community
-members: 20
+members: 31
 ---
 
 # AgentShroud Security Value Proposition - Revised
 
-**Members:** 20 nodes
+**Members:** 31 nodes
 
 ## Members
+- [[1. Re-enable Seccomp Profiles]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[2. Enable Read-Only Filesystem]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[3. Remove NET_RAW Capability]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[4. Disable mDNSBonjour Broadcasting]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[5. Set DM Policy to Allowlist]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[AgentShroud Security Value Proposition - Revised]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Create scan.sh Script]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Immediate Action Plan (Phase 3A - Completion)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 1 Fix Broken Security (CRITICAL)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 4 Create Security Verification Script (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Read-only filesystem (immutable infrastructure)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
@@ -37,9 +48,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
-- 1 edge to [[_COMMUNITY_Priority 1 Fix Broken Security (CRITICAL)]]
+- 2 edges to [[_COMMUNITY_BotConfig (3)]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition - Revised]] - degree 13, connects to 3 communities
+- [[AgentShroud Security Value Proposition - Revised]] - degree 13, connects to 2 communities

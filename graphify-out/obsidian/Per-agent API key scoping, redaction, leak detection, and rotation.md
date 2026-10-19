@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "concept"
-community: "AlertDispatcher (2) (4)"
+community: "AlertDispatcher (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/AlertDispatcher_2
 ---
 
 # Per-agent API key scoping, redaction, leak detection, and rotation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[KeyVault]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/concept #graphify/EXTRACTED #community/AlertDispatcher_2

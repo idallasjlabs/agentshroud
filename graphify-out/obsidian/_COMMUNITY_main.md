@@ -21,7 +21,7 @@ members: 15
 - [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - concept - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 - [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_26]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[main()_28]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 - [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 
 ## Live Query (requires Dataview plugin)

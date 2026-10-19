@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__call__()_4]] - `method` [EXTRACTED]
-- [[dot-__init__()_82]] - `method` [EXTRACTED]
+- [[dot-__init__()_89]] - `method` [EXTRACTED]
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - `rationale_for` [EXTRACTED]
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 - [[test_run_comment_posts_to_correct_issue()]] - `calls` [EXTRACTED]

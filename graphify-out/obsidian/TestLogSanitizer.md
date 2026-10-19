@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_filter_msg()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_31]] - `method` [EXTRACTED]
+- [[dot-setup_method()_34]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_unchanged()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_redacted()_1]] - `method` [EXTRACTED]

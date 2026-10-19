@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "test-sunday-upgrade-scan.sh"
-location: "L56"
+community: "sync-llm-settings.sh"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/sync-llm-settingssh
 ---
 
 # check()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

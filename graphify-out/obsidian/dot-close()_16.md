@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "WebProxy"
-location: "L101"
+community: "A2APolicyEngine"
+location: "L466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/A2APolicyEngine
 ---
 
 # .close()
 
 ## Connections
-- [[_MockWriter_1]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

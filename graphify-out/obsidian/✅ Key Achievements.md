@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "6. Conclusion — Mission-Critical Security Infrastructure Delivered"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/6_Conclusion__Mission-Critical_Security_Infrastructure_Delivered
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # ✅ **Key Achievements**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/6_Conclusion__Mission-Critical_Security_Infrastructure_Delivered
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

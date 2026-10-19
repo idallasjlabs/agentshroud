@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_agent_cve_registry.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L580"
+community: "SkillGuard (2)"
+location: "L458"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - graphify/INFERRED
+  - community/SkillGuard_2
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_triage()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/INFERRED #community/SkillGuard_2

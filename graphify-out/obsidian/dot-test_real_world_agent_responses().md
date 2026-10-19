@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (3)"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_3
 ---
 
 # .test_real_world_agent_responses()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[Test with realistic agent response patterns.]] - `rationale_for` [EXTRACTED]
-- [[TestIntegration]] - `method` [EXTRACTED]
+- [[TestIntegration_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_3

@@ -18,7 +18,7 @@ tags:
 - [[A2APolicyConfig]] - `contains` [EXTRACTED]
 - [[A2APolicyDecision]] - `contains` [EXTRACTED]
 - [[A2APolicyEngine_2]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[_address_is_public()]] - `contains` [EXTRACTED]
 - [[_canonicalize_ip_literal()]] - `contains` [EXTRACTED]

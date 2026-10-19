@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "TrustManager"
-location: "L102"
+community: "Step-by-Step Installation"
+location: "L698"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Step-by-Step_Installation
 ---
 
 # Environment Variables
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

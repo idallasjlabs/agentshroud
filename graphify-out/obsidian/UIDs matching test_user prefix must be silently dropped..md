@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (15)"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_15
 ---
 
 # UIDs matching test_user* prefix must be silently dropped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_test_user_prefix_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_15

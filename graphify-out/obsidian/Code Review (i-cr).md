@@ -18,8 +18,8 @@ tags:
 - [[Purpose_79]] - `contains` [EXTRACTED]
 - [[Related Skills_59]] - `contains` [EXTRACTED]
 - [[Related Skills_61]] - `contains` [EXTRACTED]
-- [[Usage_67]] - `contains` [EXTRACTED]
-- [[Usage_69]] - `contains` [EXTRACTED]
+- [[Usage_64]] - `contains` [EXTRACTED]
+- [[Usage_66]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

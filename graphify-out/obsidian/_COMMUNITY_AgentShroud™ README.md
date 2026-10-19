@@ -27,7 +27,7 @@ members: 39
 - [[Media]] - document - README.md
 - [[OpenClaw Bot]] - concept - README.md
 - [[Proxy & Network Layer]] - document - README.md
-- [[Quick Start_2]] - document - README.md
+- [[Quick Start_3]] - document - README.md
 - [[Supporting Infrastructure]] - document - README.md
 - [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[Technical Documentation]] - document - README.md

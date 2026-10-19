@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "GroupApprovalRouter"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/GroupApprovalRouter
 ---
 
 # DM approval must not send any message to a group chat ID.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dm_approval_no_group_side_effect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

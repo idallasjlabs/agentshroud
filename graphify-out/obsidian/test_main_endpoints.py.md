@@ -29,8 +29,8 @@ tags:
 - [[TestStatusEndpoint]] - `contains` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `imports` [EXTRACTED]
-- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `imports` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `imports` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy()]] - `imports` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[receive_security_alert()]] - `imports` [EXTRACTED]
 

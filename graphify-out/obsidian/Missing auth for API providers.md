@@ -12,7 +12,7 @@ tags:
 # "Missing auth" for API providers
 
 ## Connections
-- [[Troubleshooting_23]] - `contains` [EXTRACTED]
 - [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

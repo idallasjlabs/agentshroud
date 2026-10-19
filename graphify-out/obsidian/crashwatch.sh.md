@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_count_recent_restarts()]] - `defines` [EXTRACTED]
-- [[_log()]] - `defines` [EXTRACTED]
+- [[_log()_1]] - `defines` [EXTRACTED]
 - [[_read_last_alert_epoch()]] - `defines` [EXTRACTED]
 - [[_telegram_alert()]] - `defines` [EXTRACTED]
 - [[_write_last_alert_epoch()]] - `defines` [EXTRACTED]

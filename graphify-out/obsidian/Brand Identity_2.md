@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 - [[Mission]] - `contains` [EXTRACTED]
-- [[Values_2]] - `contains` [EXTRACTED]
+- [[Values]] - `contains` [EXTRACTED]
 - [[Vision]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

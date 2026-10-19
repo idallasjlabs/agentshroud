@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (3)"
+community: "GroupRoleResolver"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_3
+  - community/GroupRoleResolver
 ---
 
 # .test_is_high_risk_true_for_file_deletion()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_3
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

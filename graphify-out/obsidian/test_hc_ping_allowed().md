@@ -12,7 +12,7 @@ tags:
 # test_hc_ping_allowed()
 
 ## Connections
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_heartbeat_egress.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
 community: "CronStateMonitor"
-location: "L51"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CronStateMonitor

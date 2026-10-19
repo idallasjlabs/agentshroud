@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "FR3: System Integrity (2)"
+community: "FR3: System Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity_2
+  - community/FR3_System_Integrity
 ---
 
 # security-scheduler.sh
@@ -16,10 +16,9 @@ tags:
 - [[_stamp_write()]] - `defines` [EXTRACTED]
 - [[dockerscriptssecurity-scan.sh]] - `calls` [EXTRACTED]
 - [[gateway-seccomp.json (Docker seccomp profile)]] - `conceptually_related_to` [AMBIGUOUS]
-- [[log()_10]] - `defines` [EXTRACTED]
+- [[log()_8]] - `defines` [EXTRACTED]
 - [[security-report-retention.sh]] - `calls` [EXTRACTED]
 - [[security-report.sh]] - `calls` [EXTRACTED]
-- [[security-scan.sh (unified scan dispatcher)]] - `calls` [EXTRACTED]
 - [[security-scheduler.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity_2
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

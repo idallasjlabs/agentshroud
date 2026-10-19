@@ -22,13 +22,13 @@ tags:
 - [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - `contains` [EXTRACTED]
 - [[Next Steps (Phase 4+)]] - `contains` [EXTRACTED]
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - `contains` [EXTRACTED]
-- [[Quick Start_3]] - `contains` [EXTRACTED]
+- [[Quick Start_4]] - `contains` [EXTRACTED]
 - [[Reference]] - `contains` [EXTRACTED]
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
-- [[Usage_58]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Usage_61]] - `contains` [EXTRACTED]
 - [[dockerREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

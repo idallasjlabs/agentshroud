@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
 - [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - `rationale_for` [EXTRACTED]
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[input_normalizer.py]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

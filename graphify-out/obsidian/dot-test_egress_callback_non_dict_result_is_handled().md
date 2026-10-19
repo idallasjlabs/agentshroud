@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Malformed callback payloads should not crash inbound processing."
+community: "_wrap_response()"
 location: "L5711"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Malformed_callback_payloads_should_not_crash_inbound_processing
+  - community/_wrap_response
 ---
 
 # .test_egress_callback_non_dict_result_is_handled()
@@ -15,10 +15,10 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Malformed callback payloads should not crash inbound processing.]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[answer_callback()]] - `contains` [EXTRACTED]
-- [[approve()]] - `contains` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[deny()]] - `contains` [EXTRACTED]
-- [[handle_callback()]] - `contains` [EXTRACTED]
+- [[answer_callback()_2]] - `contains` [EXTRACTED]
+- [[approve()_2]] - `contains` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[deny()_2]] - `contains` [EXTRACTED]
+- [[handle_callback()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Malformed_callback_payloads_should_not_crash_inbound_processing
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

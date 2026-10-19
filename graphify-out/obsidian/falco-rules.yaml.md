@@ -12,11 +12,11 @@ tags:
 # falco-rules.yaml
 
 ## Connections
-- [[Integration]] - `contains` [EXTRACTED]
+- [[Integration_1]] - `contains` [EXTRACTED]
 - [[Network Enforcement]] - `contains` [EXTRACTED]
 - [[Priority Levels]] - `contains` [EXTRACTED]
-- [[Purpose_6]] - `contains` [EXTRACTED]
-- [[Related Notes_9]] - `contains` [EXTRACTED]
+- [[Purpose_16]] - `contains` [EXTRACTED]
+- [[Related Notes_19]] - `contains` [EXTRACTED]
 - [[Rules Defined]] - `contains` [EXTRACTED]
 - [[Shell Spawning Exceptions]] - `contains` [EXTRACTED]
 - [[falco-rules]] - `contains` [EXTRACTED]

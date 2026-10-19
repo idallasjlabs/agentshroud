@@ -27,8 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_test_prompt_guard.py]]
+- 4 edges to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
-- [[TestConfig_1]] - degree 12, connects to 2 communities
+- [[TestConfig_1]] - degree 12, connects to 1 community

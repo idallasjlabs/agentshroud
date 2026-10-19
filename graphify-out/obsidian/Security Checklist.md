@@ -12,6 +12,6 @@ tags:
 # Security Checklist
 
 ## Connections
-- [[Quick Reference]] - `contains` [EXTRACTED]
+- [[Quick Reference_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

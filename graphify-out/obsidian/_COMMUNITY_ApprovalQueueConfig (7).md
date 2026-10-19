@@ -49,9 +49,9 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_Layer-by-Layer Breakdown (2)]]
 - 2 edges to [[_COMMUNITY_TestIsContainerRunning]]
 - 2 edges to [[_COMMUNITY_TestAggregateResults]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 - 1 edge to [[_COMMUNITY_TestComputeBotScorecard]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (10)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (11)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (12)]]
@@ -62,7 +62,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (17)]]
 - 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
 - 1 edge to [[_COMMUNITY_TestFluentBitSummary]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (6)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (4)]]
 - 1 edge to [[_COMMUNITY_TestResourceAvailability]]
 - 1 edge to [[_COMMUNITY_TestSocketAndPidProbes]]
 - 1 edge to [[_COMMUNITY_TestTrivySummary]]
@@ -71,8 +71,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestIdentityAuth]]
 - 1 edge to [[_COMMUNITY_TestMandatoryGates]]
 - 1 edge to [[_COMMUNITY_TestSecretsManagement]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
 
 ## Top bridge nodes
 - [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities

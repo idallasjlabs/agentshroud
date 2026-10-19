@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Overview_11]] - `contains` [EXTRACTED]
-- [[Quick Reference_9]] - `contains` [EXTRACTED]
+- [[Quick Reference_10]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
 - [[Security Notes_3]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[Step 6 Add Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 - [[Summary Checklist]] - `contains` [EXTRACTED]
-- [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

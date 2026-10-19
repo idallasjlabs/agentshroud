@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "test_prompt_guard.py (2)"
+community: "test_prompt_guard.py"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_2
+  - community/test_prompt_guardpy
 ---
 
 # DocumentTag
@@ -16,8 +16,8 @@ tags:
 - [[dot-tag_document()]] - `references` [EXTRACTED]
 - [[Provenance record for a document ingested into the agent context.]] - `rationale_for` [EXTRACTED]
 - [[TestDocumentTagging]] - `uses` [INFERRED]
-- [[TestMetadataGuard_1]] - `uses` [INFERRED]
+- [[TestMetadataGuard]] - `uses` [INFERRED]
 - [[metadata_guard.py]] - `contains` [EXTRACTED]
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy_2
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

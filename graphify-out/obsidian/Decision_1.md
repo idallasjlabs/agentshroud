@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/security/module_stats.py"
-type: "code"
-community: "ModuleStatsCollector"
-location: "L29"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+type: "document"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L17"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Decision
 
 ## Connections
-- [[dot-record()_2]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
-- [[TestEnforcementWiring]] - `uses` [INFERRED]
-- [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_module_stats.py]] - `imports` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `references` [EXTRACTED]
+- [[Colima as primary macOS dev runtime]] - `references` [EXTRACTED]
+- [[Runtime Abstraction Layer]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

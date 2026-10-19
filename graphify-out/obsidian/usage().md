@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/docker-cleanup.sh"
+source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "docker-cleanup.sh"
-location: "L19"
+community: "killswitch.sh"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/killswitchsh
 ---
 
 # usage()
 
 ## Connections
-- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
-- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
+- [[killswitch.sh]] - `defines` [EXTRACTED]
+- [[killswitch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/code #graphify/EXTRACTED #community/killswitchsh

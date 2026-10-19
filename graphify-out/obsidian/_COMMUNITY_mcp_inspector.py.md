@@ -18,9 +18,9 @@ members: 15
 - [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Purpose_133]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Purpose_146]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[Related_30]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 

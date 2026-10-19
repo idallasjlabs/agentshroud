@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ContextSegment (2)"
+community: "ContextSegment"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment_2
+  - community/ContextSegment
 ---
 
 # TestPromptGuard
 
 ## Connections
-- [[dot-setup_method()_28]] - `method` [EXTRACTED]
-- [[dot-test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_10]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()]] - `method` [EXTRACTED]
 - [[dot-test_benign_base64()]] - `method` [EXTRACTED]
 - [[dot-test_clean_input()]] - `method` [EXTRACTED]
 - [[dot-test_combined_attack_high_score()]] - `method` [EXTRACTED]
 - [[dot-test_custom_pattern()]] - `method` [EXTRACTED]
 - [[dot-test_dan_jailbreak()_1]] - `method` [EXTRACTED]
 - [[dot-test_delimiter_injection()]] - `method` [EXTRACTED]
-- [[dot-test_empty_input()_2]] - `method` [EXTRACTED]
+- [[dot-test_empty_input()_1]] - `method` [EXTRACTED]
 - [[dot-test_forget_everything()]] - `method` [EXTRACTED]
 - [[dot-test_ignore_instructions()]] - `method` [EXTRACTED]
 - [[dot-test_indirect_injection()]] - `method` [EXTRACTED]
-- [[dot-test_new_instructions_override()_1]] - `method` [EXTRACTED]
+- [[dot-test_new_instructions_override()]] - `method` [EXTRACTED]
 - [[dot-test_none_input()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_extraction()_1]] - `method` [EXTRACTED]
+- [[dot-test_prompt_extraction()]] - `method` [EXTRACTED]
 - [[dot-test_prompt_leak_question()]] - `method` [EXTRACTED]
-- [[dot-test_role_reassignment()_2]] - `method` [EXTRACTED]
+- [[dot-test_role_reassignment()_1]] - `method` [EXTRACTED]
 - [[dot-test_rtl_override()]] - `method` [EXTRACTED]
 - [[dot-test_sanitized_output()]] - `method` [EXTRACTED]
 - [[dot-test_unicode_zero_width()]] - `method` [EXTRACTED]
@@ -53,4 +53,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment_2
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

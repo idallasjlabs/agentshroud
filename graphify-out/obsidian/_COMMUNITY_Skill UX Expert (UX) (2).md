@@ -31,7 +31,7 @@ members: 31
 - [[Nielsen's 10 Heuristics — GSDE&G Application_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 - [[Progressive Disclosure_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 - [[Progressive Form Pattern (for multi-step workflows)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Role_25]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Role_27]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 - [[Rules_4]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 - [[Site Alarm Acknowledgment Flow_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 - [[Skill UX Expert (UX)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md

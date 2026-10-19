@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "GSDE&G Skills Reference"
-location: "L252"
+community: "Security Verification Report"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference
+  - community/Security_Verification_Report
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Emergency Contacts]] - `contains` [EXTRACTED]
-- [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
-- [[P1 Incident Response]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report

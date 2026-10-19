@@ -12,7 +12,7 @@ tags:
 # _instant_wait_for()
 
 ## Connections
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly._1]] - `rationale_for` [EXTRACTED]
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - `rationale_for` [EXTRACTED]
 - [[test_image_verifier.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_image_verifierpy

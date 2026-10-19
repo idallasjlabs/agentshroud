@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalQueueConfig (2)"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalQueueConfig_2
 ---
 
 # test_router_config_accepts_docker_service_hostname()
@@ -16,4 +16,4 @@ tags:
 - [[RouterConfig should accept single-label Docker service hostnames.]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "test_prompt_guard.py"
+community: "ModeRequest"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_prompt_guardpy
+  - community/ModeRequest
 ---
 
 # ModeRequest
@@ -27,7 +27,7 @@ tags:
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_26]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
@@ -52,7 +52,7 @@ tags:
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
 - [[TestSetMode]] - `uses` [INFERRED]
-- [[TestStatus]] - `uses` [INFERRED]
+- [[TestStatus_1]] - `uses` [INFERRED]
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
 - [[api.py_2]] - `contains` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_prompt_guardpy
+#graphify/code #graphify/INFERRED #community/ModeRequest

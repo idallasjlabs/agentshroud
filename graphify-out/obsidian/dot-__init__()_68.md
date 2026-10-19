@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPInspector"
-location: "L133"
+community: "MCPPermissionManager (2)"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/MCPPermissionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

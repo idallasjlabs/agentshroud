@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "check_upstream_cves"
+community: "test_daily_cve_report.py"
 location: "L512"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/test_daily_cve_reportpy
 ---
 
 # check_upstream_cves()
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_skips_advisory_without_ghsa_id()]] - `calls` [EXTRACTED]
 - [[dot-test_skips_ghsa_already_in_registry()]] - `calls` [EXTRACTED]
 - [[dot-test_uses_github_token_in_header()]] - `calls` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - `rationale_for` [EXTRACTED]
 - [[_AGENT_CVE_REGISTRIES]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

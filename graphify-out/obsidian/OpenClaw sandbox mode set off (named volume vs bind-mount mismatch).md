@@ -1,18 +1,18 @@
 ---
 source_file: "INCIDENT-2026-10-16-conduit-and-stability.md"
 type: "concept"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "Sunday Upgrade prompt"
 location: "43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/Sunday_Upgrade_prompt
 ---
 
 # OpenClaw sandbox mode set off (named volume vs bind-mount mismatch)
 
 ## Connections
 - [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `references` [EXTRACTED]
-- [[openclaw service (isolated network only, egress via gateway8181, DOCKER_HOST=socket-proxy)]] - `references` [EXTRACTED]
+- [[openclaw bot service]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

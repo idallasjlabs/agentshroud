@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult_2]] - `calls` [EXTRACTED]
+- [[RedactionResult_3]] - `calls` [EXTRACTED]
 - [[Test sanitizing dictionary content with PII]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

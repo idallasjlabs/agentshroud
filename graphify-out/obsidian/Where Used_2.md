@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L24"
+community: "Pydantic"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Pydantic
 ---
 
 # Where Used
 
 ## Connections
-- [[FastAPI_3]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Pydantic

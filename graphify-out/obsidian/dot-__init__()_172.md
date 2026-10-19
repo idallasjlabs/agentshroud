@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L60"
+community: "TrustConfig"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

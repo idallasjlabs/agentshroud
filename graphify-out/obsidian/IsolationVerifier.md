@@ -12,7 +12,7 @@ tags:
 # IsolationVerifier
 
 ## Connections
-- [[dot-__init__()_192]] - `method` [EXTRACTED]
+- [[dot-__init__()_189]] - `method` [EXTRACTED]
 - [[dot-generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
@@ -58,8 +58,6 @@ tags:
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
 - [[Verify container isolation properties.]] - `rationale_for` [EXTRACTED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[detect_base64_payloads(text)]] - `contains` [EXTRACTED]
-- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 - [[normalize_input(text)]] - `contains` [EXTRACTED]
 - [[strip_markdown_exfil(text)]] - `contains` [EXTRACTED]
 

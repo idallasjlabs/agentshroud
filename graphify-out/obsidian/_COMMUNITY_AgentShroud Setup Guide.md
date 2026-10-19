@@ -20,12 +20,12 @@ members: 26
 - [[Health Check Verification]] - document - docs/setup/setup-guide.md
 - [[Important Notes_1]] - document - docs/setup/setup-guide.md
 - [[Optional Requirements]] - document - docs/setup/setup-guide.md
-- [[Performance Issues_1]] - document - docs/setup/setup-guide.md
+- [[Performance Issues]] - document - docs/setup/setup-guide.md
 - [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_4]] - document - docs/setup/setup-guide.md
+- [[Prerequisites_5]] - document - docs/setup/setup-guide.md
 - [[Production Checklist]] - document - docs/setup/setup-guide.md
 - [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
-- [[Security Testing_1]] - document - docs/setup/setup-guide.md
+- [[Security Testing]] - document - docs/setup/setup-guide.md
 - [[Security Verification]] - document - docs/setup/setup-guide.md
 - [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
 - [[Supported Platforms]] - document - docs/setup/setup-guide.md

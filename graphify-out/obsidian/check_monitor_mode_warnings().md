@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
+community: "ApprovalQueueConfig (2)"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/ApprovalQueueConfig_2
 ---
 
 # check_monitor_mode_warnings()
@@ -18,8 +18,6 @@ tags:
 - [[Log warnings for any core modules running in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

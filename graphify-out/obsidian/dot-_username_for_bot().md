@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._proxy_request_impl"
+community: "TelegramAPIProxy"
 location: "L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_proxy_request_impl
+  - community/TelegramAPIProxy
 ---
 
 # ._username_for_bot()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_proxy_request_impl
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
