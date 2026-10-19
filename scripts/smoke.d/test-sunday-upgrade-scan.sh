@@ -538,6 +538,61 @@ check "T14: restore runs after the session ends and before the report is staged"
 check "T14: post-deploy-check has a --functional mode" \
     "$(grep -q -- '--functional' "$PDC_SH" && echo true || echo false)"
 
+# ── T15: direct Telegram notice — reaches the owner when Hermes cannot ──────
+# The post seam is stubbed: it records its argv and stdin and answers with a
+# canned Bot API response, so no request leaves the machine.
+H15="$TMPROOT/t15"; mkdir -p "$H15"
+printf 'tok-123:SECRET\n' > "$H15/token"
+# shellcheck disable=SC2016  # expands in the child shell, by design
+notify() {
+    # $1 = canned response, $2 = token file
+    : > "$H15/argv"; : > "$H15/stdin"
+    env -i PATH="/usr/bin:/bin" RESP="$1" H="$H15" "$BASH_BIN" -c '
+        . "$1"
+        sunday_telegram_post() { printf "%s\n" "$@" > "$H/argv"; cat > "$H/stdin"; printf "%s" "$RESP"; }
+        sunday_notify_direct "$2" 42 "hello owner"' _ "$LIB" "$2"
+}
+set +e
+out15a="$(notify '{"ok":true,"result":{"message_id":7}}' "$H15/token" 2>/dev/null)"; rc15a=$?
+check "T15: Bot API accepts the message -> NOTIFY_SENT" \
+    "$([ "$rc15a" -eq 0 ] && [ "$out15a" = NOTIFY_SENT ] && echo true || echo false)" "rc=$rc15a out=$out15a"
+check "T15: token goes over stdin, never argv (ps shows every user's argv)" \
+    "$(! grep -q SECRET "$H15/argv" && grep -q 'bottok-123:SECRET/sendMessage' "$H15/stdin" && grep -qx 'hello owner' "$H15/argv" && echo true || echo false)"
+check "T15: the real post reads its URL from stdin (curl -K -)" \
+    "$(awk '/^sunday_telegram_post\(\) \{/,/^\}/' "$LIB" | grep -q 'curl .*-K -' && echo true || echo false)"
+out15b="$(notify '{"ok":false,"error_code":401}' "$H15/token" 2>/dev/null)"; rc15b=$?
+check "T15: Bot API rejects it -> NOTIFY_FAILED, non-zero (a failed send is not a sent one)" \
+    "$([ "$rc15b" -ne 0 ] && [ "$out15b" = NOTIFY_FAILED ] && echo true || echo false)" "rc=$rc15b out=$out15b"
+out15c="$(notify '' "$H15/token" 2>/dev/null)"; rc15c=$?
+check "T15: no response (network down) -> NOTIFY_FAILED" \
+    "$([ "$rc15c" -ne 0 ] && [ "$out15c" = NOTIFY_FAILED ] && echo true || echo false)" "rc=$rc15c out=$out15c"
+out15d="$(notify '{"ok":true,"result":{"message_id":7}}' "$H15/missing" 2>/dev/null)"; rc15d=$?
+check "T15: missing token file -> NOTIFY_NO_TOKEN without calling the API" \
+    "$([ "$rc15d" -ne 0 ] && [ "$out15d" = NOTIFY_NO_TOKEN ] && [ ! -s "$H15/stdin" ] && echo true || echo false)" "rc=$rc15d out=$out15d"
+set -e
+
+# shellcheck disable=SC2016  # expands in the child shell, by design
+summary() {
+    env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; shift; sunday_run_summary "$@"' _ "$LIB" "$@" 2>/dev/null
+}
+s15="$(summary 7 STACK_DEGRADED 0 1)"
+check "T15: summary names the outcome, the stack state, the cutoff and a missing Hermes report" \
+    "$(printf '%s' "$s15" | grep -q 'DEGRADED' && printf '%s' "$s15" | grep -q 'STACK_DEGRADED' \
+        && printf '%s' "$s15" | grep -q 'cut off' && printf '%s' "$s15" | grep -qi 'not staged' && echo true || echo false)" "got=$s15"
+s15b="$(summary 0 STACK_OK 1 0)"
+check "T15: a completed run reads as complete, with no cutoff or missing-report line" \
+    "$(printf '%s' "$s15b" | grep -q 'complete' && ! printf '%s' "$s15b" | grep -q 'cut off' \
+        && ! printf '%s' "$s15b" | grep -qi 'not staged' && echo true || echo false)" "got=$s15b"
+s15c="$(summary 3 '' 0 0)"
+check "T15: a preflight failure still says what failed (exit 3: git fetch)" \
+    "$(printf '%s' "$s15c" | grep -q 'exit 3' && printf '%s' "$s15c" | grep -q 'fetch' && echo true || echo false)" "got=$s15c"
+
+check "T15: wrapper sends the notice from an EXIT trap (covers preflight exits too)" \
+    "$(grep -qE '^trap _notify_on_exit EXIT' "$WRAP_SH" && echo true || echo false)"
+check "T15: the two 'nothing to do' skips do not send a notice" \
+    "$(grep -A2 'already running — skipping' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' \
+        && grep -A2 'run already completed today' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

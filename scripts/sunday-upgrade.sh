@@ -175,12 +175,30 @@ mkdir -p reports
 # sunday_deadline_epoch / sunday_stop_apply / sunday_restore_stack.
 . "$REPO/scripts/lib/sunday-scan.sh"
 
+# Owner notice that does not depend on Hermes: every exit from here on — the
+# preflight FATALs, a timeout, a DEGRADED stack — sends one line straight to
+# the Bot API (sunday_notify_direct). Hermes's 08:30 report still carries the
+# full write-up; this is how a failure reaches the owner when Hermes is down.
+# The two "nothing to do" skips set NOTIFY_ON_EXIT=0.
+NOTIFY_ON_EXIT=1
+_notify_on_exit() {
+  local rc=$? note
+  [ "${NOTIFY_ON_EXIT:-0}" = 1 ] || return 0
+  note="$(sunday_notify_direct \
+    "${SUNDAY_NOTIFY_TOKEN_FILE:-$REPO/docker/secrets/telegram_bot_token_production.txt}" \
+    "${SUNDAY_NOTIFY_CHAT_ID:-8096968754}" \
+    "$(sunday_run_summary "$rc" "${STACK_STATE:-}" "${REPORT_STAGED:-0}" "${CUT_OFF:-0}")")" || true
+  echo "[sunday-upgrade] direct owner notice: ${note}"
+}
+trap _notify_on_exit EXIT
+
 # Idempotency FIRST, before the branch guard: an overlapping fire must skip,
 # not FATAL on the live run's chore branch (2026-10-11 05:00). Guards against
 # a manual re-trigger the same day, or launchd re-firing after a delayed wake.
 case "$(_session_guard "$SESSION" $((WATCH_TIMEOUT_MIN + 10)))" in
   running)
     echo "[sunday-upgrade] tmux session ${SESSION} already running — skipping."
+    NOTIFY_ON_EXIT=0
     exit 0 ;;
   reaped)
     echo "[sunday-upgrade] WARN: tmux session ${SESSION} outlived its ${WATCH_TIMEOUT_MIN}m budget with no watcher — killed it." >&2
@@ -341,6 +359,7 @@ if [ "$FORCE" -eq 1 ]; then
   echo "[sunday-upgrade] --force: all safety gates in sunday-upgrade-apply.sh still apply."
 elif [ -f "$DONE_MARKER" ]; then
   echo "[sunday-upgrade] run already completed today (${DONE_MARKER}) — skipping."
+  NOTIFY_ON_EXIT=0
   exit 0
 fi
 if [ -s "$REPORT_MD" ]; then
@@ -482,6 +501,7 @@ if [ -s "$DELIVER_SRC" ] && docker ps --format '{{.Names}}' | grep -q "^${HERMES
   rm -f "$STAGED"
   docker exec -u root "$HERMES_CONTAINER" chown -R hermes:hermes /opt/data/reports
   echo "[sunday-upgrade] report staged for Hermes Telegram delivery"
+  REPORT_STAGED=1
 else
   echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
 fi
