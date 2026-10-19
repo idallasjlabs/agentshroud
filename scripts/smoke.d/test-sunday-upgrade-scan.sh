@@ -446,6 +446,98 @@ check "T11: phase_apply runs sunday_dev_handoff_gate before any build" \
 check "T11: EXIT trap leaves a deliberately written handoff alone" \
     "$(grep -E "^trap '.*HANDOFF_WRITTEN.*write_handoff FAIL" "$APPLY_SH" >/dev/null && echo true || echo false)"
 
+# ── T12: wall-clock cutoff (owner directive 2026-10-18: usable by 08:00) ────
+# SUNDAY_NOW="<epoch> <HH> <MM> <SS>" pins the clock. 1000000 at 03:00:00 local
+# means the 07:20 deadline is 4h20m later.
+# shellcheck disable=SC2016  # expands in the child shell, by design
+deadline() {
+    env -i PATH="/usr/bin:/bin" SUNDAY_NOW="$1" "$BASH_BIN" -c \
+        '. "$1"; shift; sunday_deadline_epoch "$@"' _ "$LIB" "$2" 2>/dev/null
+}
+check "T12: 03:00 launch, 07:20 deadline -> armed 4h20m out" \
+    "$([ "$(deadline '1000000 03 00 00' 07:20)" = "$((1000000 + 4*3600 + 20*60))" ] && echo true || echo false)" \
+    "got=$(deadline '1000000 03 00 00' 07:20)"
+check "T12: leading zeros parse as decimal (08/09 are not octal)" \
+    "$([ "$(deadline '1000000 03 08 09' 07:20)" = "$((1000000 + 4*3600 + 12*60 - 9))" ] && echo true || echo false)" \
+    "got=$(deadline '1000000 03 08 09' 07:20)"
+check "T12: launch after the deadline (an 11:00 retry) -> not armed" \
+    "$([ -z "$(deadline '1000000 11 00 00' 07:20)" ] && echo true || echo false)"
+check "T12: 'off' disables the cutoff" \
+    "$([ -z "$(deadline '1000000 03 00 00' off)" ] && echo true || echo false)"
+check "T12: malformed deadline -> not armed (never a cutoff at a guessed time)" \
+    "$([ -z "$(deadline '1000000 03 00 00' 7h20)" ] && [ -z "$(deadline '1000000 03 00 00' 25:00)" ] && echo true || echo false)"
+
+# ── T13: restore ladder — check, then start the default stack, then roll back ─
+# The hooks are the lib's seams: each stub records its call and passes or fails
+# on the Nth check, so every rung is exercised without a live stack.
+H13="$TMPROOT/t13"; mkdir -p "$H13"
+# shellcheck disable=SC2016  # expands in the child shell, by design
+restore() {
+    # $1 = which check attempt first passes (0 = never), $2 = rollback script path
+    : > "$H13/calls"
+    env -i PATH="/usr/bin:/bin" PASS_ON="$1" CALLS="$H13/calls" "$BASH_BIN" -c '
+        . "$1"
+        n=0
+        sunday_stack_check()    { n=$((n + 1)); echo check >> "$CALLS"; [ "$PASS_ON" -ne 0 ] && [ "$n" -ge "$PASS_ON" ]; }
+        sunday_stack_start()    { echo start >> "$CALLS"; }
+        sunday_stack_rollback() { echo "rollback $1" >> "$CALLS"; }
+        sunday_restore_stack "$2"' _ "$LIB" "$2"
+}
+RB13="$H13/rollback.sh"; printf '#!/bin/sh\n' > "$RB13"
+set +e
+out13a="$(restore 1 "$RB13" 2>/dev/null)"; rc13a=$?
+check "T13: healthy stack -> STACK_OK, nothing restarted or rolled back" \
+    "$([ "$rc13a" -eq 0 ] && [ "$out13a" = STACK_OK ] && [ "$(tr '\n' ' ' < "$H13/calls")" = "check " ] && echo true || echo false)" \
+    "rc=$rc13a out=$out13a calls=$(tr '\n' ' ' < "$H13/calls")"
+out13b="$(restore 2 "$RB13" 2>/dev/null)"; rc13b=$?
+check "T13: down stack fixed by starting it -> STACK_RESTARTED, no rollback" \
+    "$([ "$rc13b" -eq 0 ] && [ "$out13b" = STACK_RESTARTED ] && [ "$(tr '\n' ' ' < "$H13/calls")" = "check start check " ] && echo true || echo false)" \
+    "rc=$rc13b out=$out13b calls=$(tr '\n' ' ' < "$H13/calls")"
+out13c="$(restore 3 "$RB13" 2>/dev/null)"; rc13c=$?
+check "T13: start does not fix it -> rolls back to the anchor -> STACK_ROLLED_BACK" \
+    "$([ "$rc13c" -eq 0 ] && [ "$out13c" = STACK_ROLLED_BACK ] && grep -qx "rollback $RB13" "$H13/calls" && echo true || echo false)" \
+    "rc=$rc13c out=$out13c calls=$(tr '\n' ' ' < "$H13/calls")"
+out13d="$(restore 0 "$RB13" 2>/dev/null)"; rc13d=$?
+check "T13: nothing works -> STACK_DEGRADED and a non-zero exit" \
+    "$([ "$rc13d" -ne 0 ] && [ "$out13d" = STACK_DEGRADED ] && echo true || echo false)" \
+    "rc=$rc13d out=$out13d"
+out13e="$(restore 0 "$H13/missing.sh" 2>/dev/null)"; rc13e=$?
+check "T13: no rollback anchor -> STACK_DEGRADED without calling a rollback" \
+    "$([ "$rc13e" -ne 0 ] && [ "$out13e" = STACK_DEGRADED ] && ! grep -q rollback "$H13/calls" && echo true || echo false)" \
+    "rc=$rc13e out=$out13e calls=$(tr '\n' ' ' < "$H13/calls")"
+set -e
+
+# ── T13b: a still-running apply is stopped before the restore touches the stack
+L13="$TMPROOT/t13b/apply-running.lock.d"; mkdir -p "$L13"
+sleep 300 & SLEEPER=$!
+echo "$SLEEPER" > "$L13/pid"
+env -i PATH="/usr/bin:/bin" SUNDAY_STOP_WAIT=5 "$BASH_BIN" -c '. "$1"; sunday_stop_apply "$2"' _ "$LIB" "$L13" 2>/dev/null
+sleep 1
+check "T13b: live apply pid in the lock is stopped" \
+    "$(kill -0 "$SLEEPER" 2>/dev/null && echo false || echo true)"
+kill "$SLEEPER" 2>/dev/null || true
+echo 999999 > "$L13/pid"
+set +e
+env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; sunday_stop_apply "$2"' _ "$LIB" "$L13" >/dev/null 2>&1; rc13b=$?
+set -e
+check "T13b: stale lock (dead pid) -> no-op, exit 0" "$([ "$rc13b" -eq 0 ] && echo true || echo false)"
+
+# ── T14: the wrapper and the deploy check are wired to the above ────────────
+WRAP_SH="$REPO/scripts/sunday-upgrade.sh"
+PDC_SH="$REPO/scripts/post-deploy-check.sh"
+check "T14: wrapper sources the Sunday lib" \
+    "$(grep -qE '^\. "\$REPO/scripts/lib/sunday-scan.sh"' "$WRAP_SH" && echo true || echo false)"
+check "T14: wrapper arms the wall-clock deadline" \
+    "$(grep -q 'sunday_deadline_epoch "\${SUNDAY_UPGRADE_DEADLINE:-07:20}"' "$WRAP_SH" && echo true || echo false)"
+wait_loop="$(awk '/^while tmux has-session/,/^done$/' "$WRAP_SH")"
+check "T14: the wait loop kills the session at the deadline" \
+    "$(printf '%s\n' "$wait_loop" | grep -q 'DEADLINE_EPOCH' && printf '%s\n' "$wait_loop" | grep -q 'CUT_OFF=1' && echo true || echo false)"
+wrap_tail="$(sed -n '/^done$/,$p' "$WRAP_SH")"
+check "T14: restore runs after the session ends and before the report is staged" \
+    "$(printf '%s\n' "$wrap_tail" | grep -n 'sunday_restore_stack\|docker cp "\$STAGED"' | head -1 | grep -q sunday_restore_stack && echo true || echo false)"
+check "T14: post-deploy-check has a --functional mode" \
+    "$(grep -q -- '--functional' "$PDC_SH" && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
