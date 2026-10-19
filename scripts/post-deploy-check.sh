@@ -222,12 +222,15 @@ check "No 'Pool overlaps' error in Docker network state" \
 # Validates docker/docker-compose.yml against NetworkValidator's rules
 # (isolated networks, exposed ports, privileged, etc.). Fails only on
 # `critical` findings — high/medium are surfaced as INFO.
+# The gateway is found by its compose service label, like the OpenClaw lookup
+# above: matching the literal agentshroud-gateway meant P5 never ran on dev
+# (agentshroud-dev-gateway).
 COMPOSE_FILE="${AGENTSHROUD_COMPOSE_FILE:-docker/docker-compose.yml}"
-if [[ -f "$COMPOSE_FILE" ]] && command -v docker >/dev/null 2>&1 \
-   && docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^agentshroud-gateway$'; then
+GATEWAY_CONTAINER=$(docker ps --filter 'label=com.docker.compose.service=gateway' --format '{{.Names}}' 2>/dev/null | head -1)
+if [[ -f "$COMPOSE_FILE" ]] && [[ -n "$GATEWAY_CONTAINER" ]]; then
     # Pipe the host's compose file into the gateway container; validator runs
     # there because that's where the gateway package + deps are already installed.
-    net_report=$(docker exec -i agentshroud-gateway python3 -c '
+    net_report=$(docker exec -i "$GATEWAY_CONTAINER" python3 -c '
 import json, sys, tempfile
 from gateway.security.network_validator import validate_network_security
 with tempfile.NamedTemporaryFile("w", suffix=".yml", delete=False) as f:
@@ -236,6 +239,12 @@ with tempfile.NamedTemporaryFile("w", suffix=".yml", delete=False) as f:
 report = validate_network_security(tmp).get_security_report()
 print(json.dumps(report))
 ' < "$COMPOSE_FILE" 2>/dev/null || echo '{}')
+
+    # A validator that never ran must not read as "0 critical": exec failing
+    # falls back to {} above, which has no by_severity at all.
+    check "Network validator ran in $GATEWAY_CONTAINER" \
+        "$([[ "$net_report" == *'"by_severity"'* ]] && echo true || echo false)" \
+        "no report (docker exec or the validator failed)"
 
     critical_count=$(printf '%s' "$net_report" | python3 -c \
         'import json,sys; d=json.loads(sys.stdin.read() or "{}"); print(d.get("by_severity",{}).get("critical",0))' 2>/dev/null || echo "0")
@@ -250,6 +259,8 @@ print(json.dumps(report))
     if [[ "$high_count" != "0" || "$medium_count" != "0" ]]; then
         echo "  [post-deploy-check] INFO: network validator: high=$high_count medium=$medium_count (non-fatal)"
     fi
+else
+    echo "  [post-deploy-check] SKIP: P5 network validator (no gateway container or no $COMPOSE_FILE)"
 fi
 
 # ── P6: Sandbox image present ─────────────────────────────────────────────
@@ -395,7 +406,7 @@ if [[ "$fail" -gt 0 ]]; then
     done
     echo ""
     echo "  Investigate with:" >&2
-    echo "    docker logs agentshroud-gateway 2>&1 | tail -50" >&2
+    echo "    docker logs ${GATEWAY_CONTAINER:-agentshroud-gateway} 2>&1 | tail -50" >&2
     echo "    docker logs ${BOT_CONTAINER:-agentshroud-openclaw} 2>&1 | tail -50" >&2
     echo "    docker logs ${HERMES_CONTAINER:-agentshroud-hermes-v2} 2>&1 | tail -50" >&2
     echo "    asb status" >&2

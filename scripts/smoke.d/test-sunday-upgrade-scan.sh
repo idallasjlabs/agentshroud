@@ -589,6 +589,35 @@ check "T15: a preflight failure still says what failed (exit 3: git fetch)" \
 
 check "T15: wrapper sends the notice from an EXIT trap (covers preflight exits too)" \
     "$(grep -qE '^trap _notify_on_exit EXIT' "$WRAP_SH" && echo true || echo false)"
+
+# ── T16: container names come from the running stack, not prod's literals ───
+# Dev's containers are agentshroud-dev-*, so prod's hardcoded names meant dev
+# never staged its report for Hermes, its rollback skipped Hermes, and P5
+# never ran. A fake docker answers the role-label query and the plain listing.
+B16="$TMPROOT/t16/bin"
+write_fake "$B16" docker '#!/bin/sh
+case "$*" in
+  *com.agentshroud.role=hermes*) printf "%s" "$LABELLED" ;;
+  ps*) printf "%s" "$NAMES" ;;
+esac'
+# shellcheck disable=SC2016  # expands in the child shell, by design
+hermes_name() {
+    env -i PATH="$B16:/usr/bin:/bin" LABELLED="$1" NAMES="$2" "$BASH_BIN" -c \
+        '. "$1"; sunday_hermes_container' _ "$LIB" 2>/dev/null
+}
+check "T16: Hermes found by its com.agentshroud.role label" \
+    "$([ "$(hermes_name $'agentshroud-dev-hermes-v2\n' '')" = agentshroud-dev-hermes-v2 ] && echo true || echo false)"
+check "T16: unlabelled Hermes found by name, dev or prod" \
+    "$([ "$(hermes_name '' $'agentshroud-dev-gateway\nagentshroud-dev-hermes-v2\n')" = agentshroud-dev-hermes-v2 ] \
+        && [ "$(hermes_name '' $'agentshroud-hermes-v2\n')" = agentshroud-hermes-v2 ] && echo true || echo false)"
+check "T16: no Hermes running -> empty, so the wrapper reports it not staged" \
+    "$([ -z "$(hermes_name '' $'agentshroud-dev-gateway\n')" ] && echo true || echo false)"
+check "T16: wrapper resolves Hermes at staging time, no hardcoded name" \
+    "$(! grep -q '^HERMES_CONTAINER="agentshroud-hermes-v2"' "$WRAP_SH" && grep -q 'HERMES_CONTAINER="$(sunday_hermes_container)"' "$WRAP_SH" && echo true || echo false)"
+check "T16: rollback script restores the Hermes snapshot under this host's name" \
+    "$(! grep -q 'agentshroud-rollback/agentshroud-hermes-v2' "$APPLY_SH" && grep -q 'agentshroud-rollback/${HERMES_C}' "$APPLY_SH" && echo true || echo false)"
+check "T16: P5 finds the gateway by compose service label, not prod's name" \
+    "$(! grep -q "grep -q '^agentshroud-gateway\$'" "$PDC_SH" && awk '/── P5/,/── P6|── F|Summary/' "$PDC_SH" | grep -q 'com.docker.compose.service=gateway' && echo true || echo false)"
 check "T15: the two 'nothing to do' skips do not send a notice" \
     "$(grep -A2 'already running — skipping' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' \
         && grep -A2 'run already completed today' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' && echo true || echo false)"

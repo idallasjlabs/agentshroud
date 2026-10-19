@@ -490,3 +490,16 @@ sunday_run_summary() {
   [ "$staged" = 1 ] || printf '\nReport not staged for Hermes: see reports/ on the host'
   printf '\n'
 }
+
+# sunday_hermes_container — prints the running Hermes container's name, or
+# nothing. Hermes is started with `docker run` (run-standalone.sh), so it has
+# no compose label; it carries com.agentshroud.role=hermes instead. Same lookup
+# as post-deploy-check.sh P3, including its fallback by name for containers
+# started before that label existed. Dev is agentshroud-dev-hermes-v2, prod
+# agentshroud-hermes-v2.
+sunday_hermes_container() {
+  local name
+  name="$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)"
+  [ -n "$name" ] || name="$(docker ps --format '{{.Names}}' 2>/dev/null | grep -E '^agentshroud-(dev-)?hermes' | head -1)"
+  printf '%s' "$name"
+}

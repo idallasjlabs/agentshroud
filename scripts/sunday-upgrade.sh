@@ -107,7 +107,6 @@ PROMPT_FILE="$REPO/prompts/sunday-upgrade.md"
 TODAY="$(date +%F)"
 LOG="$REPO/reports/upgrade-run-${TODAY}.log"
 REPORT_MD="$REPO/reports/upgrade-${TODAY}.md"
-HERMES_CONTAINER="agentshroud-hermes-v2"
 # Prompt's own budget is 90 min. The hard stop must end the watcher (20s boot
 # + this + report staging) BEFORE the next 3-hourly retry fires: at 180 the
 # 08:00 run was killed at 11:00:40, so the 11:00 fire saw it still alive and
@@ -492,7 +491,11 @@ echo "[sunday-upgrade] $(date '+%H:%M:%S') stack state after run: ${STACK_STATE:
 
 DELIVER_SRC="$REPORT_MD"
 [ -s "$DELIVER_SRC" ] || DELIVER_SRC="$LOG"
-if [ -s "$DELIVER_SRC" ] && docker ps --format '{{.Names}}' | grep -q "^${HERMES_CONTAINER}$"; then
+# Looked up now, not at launch: the restore above may have restarted Hermes,
+# and dev's is agentshroud-dev-hermes-v2 — the old hardcoded prod name meant
+# dev never staged a report at all.
+HERMES_CONTAINER="$(sunday_hermes_container)"
+if [ -s "$DELIVER_SRC" ] && [ -n "$HERMES_CONTAINER" ]; then
   docker exec "$HERMES_CONTAINER" mkdir -p /opt/data/reports
   STAGED="$(mktemp)"
   { cat "$DELIVER_SRC"; printf '\n\nStack state after run: %s%s\n' "${STACK_STATE:-UNKNOWN}" \
@@ -503,7 +506,7 @@ if [ -s "$DELIVER_SRC" ] && docker ps --format '{{.Names}}' | grep -q "^${HERMES
   echo "[sunday-upgrade] report staged for Hermes Telegram delivery"
   REPORT_STAGED=1
 else
-  echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
+  echo "[sunday-upgrade] WARN: no report staged (missing report/log, or no Hermes container running)"
 fi
 
 _return_to_main
