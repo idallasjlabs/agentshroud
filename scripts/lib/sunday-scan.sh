@@ -437,3 +437,56 @@ sunday_restore_stack() {
   echo STACK_DEGRADED
   return 1
 }
+
+# ── Direct owner notice (no Hermes) ─────────────────────────────────────────
+# The upgrade report reaches the owner through Hermes's 08:30 cron. When the
+# run ends DEGRADED, Hermes may be the thing that is down, so the one result
+# that needs a human would never arrive. This sends a short notice straight to
+# the Bot API from the host, the way docker/scripts/colima-health-check.sh
+# does. sendMessage does not poll, so it never conflicts with a running bot.
+
+# Seam: POSTs chat_id/text; reads a curl config line holding the URL (and so
+# the token) on stdin — this Mac is shared with prod, and ps shows every
+# user's argv. Tests redefine it after sourcing.
+sunday_telegram_post() {
+  curl -sS --max-time "${SUNDAY_NOTIFY_TIMEOUT:-15}" -K - \
+    --data-urlencode "chat_id=$1" --data-urlencode "text=$2"
+}
+
+# sunday_notify_direct <token_file> <chat_id> <text>
+#   Prints NOTIFY_SENT only when the Bot API answers ok with a message_id;
+#   NOTIFY_FAILED (rejected or no answer) and NOTIFY_NO_TOKEN return non-zero.
+sunday_notify_direct() {
+  local token resp
+  token="$(tr -d '[:space:]' < "$1" 2>/dev/null || true)"
+  if [ -z "$token" ]; then echo NOTIFY_NO_TOKEN; return 1; fi
+  resp="$(printf 'url = "https://api.telegram.org/bot%s/sendMessage"\n' "$token" \
+    | sunday_telegram_post "$2" "$3" 2>/dev/null || true)"
+  case "$resp" in
+    *'"ok":true'*'"message_id"'*) echo NOTIFY_SENT; return 0 ;;
+  esac
+  echo NOTIFY_FAILED
+  return 1
+}
+
+# sunday_run_summary <exit_code> <stack_state> <report_staged 0|1> <cut_off 0|1>
+#   One plain-text notice for the owner, naming what the exit code means.
+sunday_run_summary() {
+  local rc="$1" stack="${2:-}" staged="${3:-0}" cut="${4:-0}" what
+  case "$rc" in
+    0) what="run complete" ;;
+    1) what="FAILED (exit 1): the upgrade session died during boot" ;;
+    3) what="FAILED (exit 3): git fetch origin main failed" ;;
+    4) what="FAILED (exit 4): checkout not on main, or main diverged" ;;
+    5) what="DEFERRED (exit 5): host memory pressure critical, next fire retries" ;;
+    6) what="TIMED OUT (exit 6): no sentinel, next fire retries" ;;
+    7) what="STACK DEGRADED (exit 7): restart and rollback both failed, human required" ;;
+    *) what="FAILED (exit ${rc})" ;;
+  esac
+  printf 'AgentShroud Sunday upgrade %s on %s/%s: %s' \
+    "$(date +%F)" "$(hostname -s 2>/dev/null || echo host)" "${USER:-?}" "$what"
+  [ -n "$stack" ] && printf '\nStack: %s' "$stack"
+  [ "$cut" = 1 ] && printf '\nSession cut off at %s' "${SUNDAY_UPGRADE_DEADLINE:-07:20}"
+  [ "$staged" = 1 ] || printf '\nReport not staged for Hermes: see reports/ on the host'
+  printf '\n'
+}
