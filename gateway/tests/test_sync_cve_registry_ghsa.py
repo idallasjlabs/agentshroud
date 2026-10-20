@@ -170,6 +170,23 @@ class TestSerialization:
         assert parsed["defense_layers"] == []
         assert parsed["cvss"] == 7.5
 
+    @pytest.mark.parametrize(
+        "text, quote",
+        [
+            ("plain text", '"'),
+            ('a "remote" policy', "'"),  # more " than ': black uses single quotes
+            ("policy file's path", '"'),
+            ('it\'s "x" and "y"', "'"),
+            ("line\r\nbreak\tand \\ backslash — ünïcode", '"'),
+        ],
+    )
+    def test_string_literals_match_black_quote_preference(self, text, quote):
+        """CI runs black on gateway/; an appended registry block must already be clean."""
+        mod = _sync()
+        lit = mod._py_str(text)
+        assert lit[0] == quote and lit[-1] == quote
+        assert eval(lit) == text  # noqa: S307 — trusted, test-only
+
     def test_entry_to_py_handles_none_cvss(self):
         mod = _sync()
         out = mod.process_ghsa_advisories([_adv(cvss_score=None)], [], "ASH-OCLAW")

@@ -643,7 +643,8 @@ class TestUpstreamAlertDedup:
         import gateway.security.daily_cve_report as _mod
 
         advisory = {
-            "ghsa_id": "GHSA-cjf8-wjx6-hjw6",
+            # A synthetic id: real ones get registered and then (correctly) filtered.
+            "ghsa_id": "GHSA-test-test-test",
             "summary": "s",
             "severity": "critical",
             "cvss": {"score": 9.1},
