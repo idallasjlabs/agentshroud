@@ -548,8 +548,8 @@ idf.py -p /dev/cu.usbmodem* flash
   <div class="container">
     <div class="section-label">CVE Registry</div>
     <!-- CVE_HEADING_START -->
-    <h2>816 OpenClaw CVEs — all mitigated</h2>
-    <p class="section-sub">All CVEs disclosed in OpenClaw (January–June 2026) are documented and tracked by AgentShroud’s defense-in-depth architecture.</p>
+    <h2>891 OpenClaw CVEs — all mitigated</h2>
+    <p class="section-sub">All CVEs disclosed in OpenClaw (January–September 2026) are documented and tracked by AgentShroud’s defense-in-depth architecture.</p>
     <!-- CVE_HEADING_END -->
     <!-- CVE_TABLE_START -->
     <style>
@@ -801,6 +801,54 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-224w-vfr9-h35c" target="_blank" rel="noopener">ASH-OCLAW-817</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Google Meet node commands could skip exec approvals</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-58qx-6m8p-wh2j" target="_blank" rel="noopener">ASH-OCLAW-827</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Slack group DMs could skip sender allowlists</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-8xxh-v4vc-qvm4" target="_blank" rel="noopener">ASH-OCLAW-844</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Cron tool could accept mixed-case command payloads</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-9p6m-2872-xm7x" target="_blank" rel="noopener">ASH-OCLAW-847</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Codex bind could omit owner authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-pjjr-5qhr-5w6r" target="_blank" rel="noopener">ASH-OCLAW-873</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Codex computer-use install could omit owner authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-rrxp-5mx8-mvhh" target="_blank" rel="noopener">ASH-OCLAW-880</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Inbound voice calls could inherit owner tool authority</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-wwcw-jfpp-gpxw" target="_blank" rel="noopener">ASH-OCLAW-886</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Codex native tools could ignore per-chat policy</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-wwx7-573h-pqwc" target="_blank" rel="noopener">ASH-OCLAW-887</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>MCP configuration changes could omit owner authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-gw85-xp4q-5gp9" target="_blank" rel="noopener">ASH-OCLAW-051</a></td>
           <td class="badge-high">8.6 HIGH</td>
           <td>Versions 2026.2.22 and 2026.2.23 contain an authorization bypass vulnerability in the s...</td>
@@ -873,9 +921,45 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-7cp7-87pj-p32v" target="_blank" rel="noopener">ASH-OCLAW-840</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Skill tool dispatch could skip owner-only policy</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-9x88-f7rh-4c83" target="_blank" rel="noopener">ASH-OCLAW-848</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Browser node targets could bypass sandbox host control</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-hpg5-cq3m-phqp" target="_blank" rel="noopener">ASH-OCLAW-864</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Agent cron tool could reach operator command jobs</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-jghr-xp78-995p" target="_blank" rel="noopener">ASH-OCLAW-866</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Browser proxy could miss its admin scope</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-jjpc-p3xf-8g7p" target="_blank" rel="noopener">ASH-OCLAW-867</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>iOS Control UI did not enforce saved Gateway TLS pins</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-vj3g-5px3-gr46" target="_blank" rel="noopener">ASH-OCLAW-001</a></td>
           <td class="badge-high">8.2 HIGH</td>
           <td>Path Traversal in Feishu Media Download</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-p3h6-v2h4-36q2" target="_blank" rel="noopener">ASH-OCLAW-870</a></td>
+          <td class="badge-high">8.2 HIGH</td>
+          <td>Browser CDP connections could discard DNS pinning</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -945,6 +1029,12 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-9m4p-cqp4-jppq" target="_blank" rel="noopener">ASH-OCLAW-846</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>WhatsApp login tool could reach non-owner turns</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-qm2m-28pf-hgjw" target="_blank" rel="noopener">ASH-OCLAW-016</a></td>
           <td class="badge-high">8.0 HIGH</td>
           <td>Privilege Escalation via Plugin HTTP Auth Scope Minting</td>
@@ -960,6 +1050,24 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-qc36-x95h-7j53" target="_blank" rel="noopener">ASH-OCLAW-073</a></td>
           <td class="badge-high">8.0 HIGH</td>
           <td>Before 2026.3.11 contains an approval integrity vulnerability where system.run approval...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-9f86-pvv5-rxfw" target="_blank" rel="noopener">ASH-OCLAW-845</a></td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Escaped newlines could confuse exec allowlist parsing</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-ghpx-6xwq-2w4w" target="_blank" rel="noopener">ASH-OCLAW-860</a></td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Exec wrapper allowlists could trust arbitrary inner commands</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-p5g8-m35v-7m82" target="_blank" rel="noopener">ASH-OCLAW-871</a></td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Claude permission replies could omit owner authorization</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -984,6 +1092,18 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-m3mh-3mpg-37hw" target="_blank" rel="noopener">ASH-OCLAW-077</a></td>
           <td class="badge-high">7.8 HIGH</td>
           <td>Before 2026.3.24 contains an arbitrary code execution vulnerability in local plugin and...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5mrc-77hj-xjxv" target="_blank" rel="noopener">ASH-OCLAW-832</a></td>
+          <td class="badge-high">7.8 HIGH</td>
+          <td>Workspace Cloud SDK arguments could execute code during Gmail setup</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-crg9-c62w-j2p5" target="_blank" rel="noopener">ASH-OCLAW-851</a></td>
+          <td class="badge-high">7.8 HIGH</td>
+          <td>OpenShell filesystem mutations could race path validation</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -1044,6 +1164,18 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-98ch-45wp-ch47" target="_blank" rel="noopener">ASH-OCLAW-086</a></td>
           <td class="badge-high">7.6 HIGH</td>
           <td>Versions prior to commit b57b680 contain an approval bypass vulnerability due to incons...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-4wvr-f35r-f8w4" target="_blank" rel="noopener">ASH-OCLAW-826</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>message.action could trust spoofed requester provenance</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-qw7m-h363-33qw" target="_blank" rel="noopener">ASH-OCLAW-876</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>chat.send could expose owner-only infrastructure tools</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -1215,6 +1347,36 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-4r25-35qc-fr6j" target="_blank" rel="noopener">ASH-OCLAW-825</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Gateway upgrade-like requests could retain unauthenticated sockets</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-62qm-6fjj-6g23" target="_blank" rel="noopener">ASH-OCLAW-835</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Dreaming could widen restricted sender authority</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-74gc-hg2m-79p9" target="_blank" rel="noopener">ASH-OCLAW-839</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Reusable exec approvals could authorize changed arguments</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-hgv5-f2r3-6v9r" target="_blank" rel="noopener">ASH-OCLAW-863</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Matrix authorization could conflate case-distinct user IDs</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-qgj5-6x35-9g6f" target="_blank" rel="noopener">ASH-OCLAW-875</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Config revision hashes could expose password verifiers</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-g99v-8hwm-g76g" target="_blank" rel="noopener">ASH-OCLAW-111</a></td>
           <td class="badge-high">7.4 HIGH</td>
           <td>Versions prior to 2026.3.1 contain a server-side request forgery vulnerability in web_s...</td>
@@ -1260,6 +1422,12 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-vfg3-pqpq-93m4" target="_blank" rel="noopener">ASH-OCLAW-117</a></td>
           <td class="badge-high">7.3 HIGH</td>
           <td>Before 2026.3.22 performs cite expansion before completing channel and DM authorization...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-3mq7-q27j-mq7q" target="_blank" rel="noopener">ASH-OCLAW-822</a></td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>Exec approvals could outlive their reviewed working directory</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -1371,6 +1539,18 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-cf95-m4jv-59rc" target="_blank" rel="noopener">ASH-OCLAW-849</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Synology file delivery could lose DNS pinning</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-r88x-r7jj-f2cf" target="_blank" rel="noopener">ASH-OCLAW-877</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Signal reactions could bind to the wrong approval</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-f8mp-vj46-cq8v" target="_blank" rel="noopener">ASH-OCLAW-004</a></td>
           <td class="badge-high">7.0 HIGH</td>
           <td>Arbitrary Shell Execution via SHELL Environment Variable</td>
@@ -1401,6 +1581,12 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-h2qg-fxpv-82v6" target="_blank" rel="noopener">ASH-OCLAW-861</a></td>
+          <td class="badge-med">6.8 MEDIUM</td>
+          <td>Feishu tools could use disabled default accounts</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-xwjm-j929-xq7c" target="_blank" rel="noopener">ASH-OCLAW-140</a></td>
           <td class="badge-med">6.7 MEDIUM</td>
           <td>CVE-2026-26972</td>
@@ -1422,6 +1608,12 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-h3rm-6x7g-882f" target="_blank" rel="noopener">ASH-OCLAW-143</a></td>
           <td class="badge-med">6.7 MEDIUM</td>
           <td>2026.3.1 contains an approval integrity vulnerability in system.run node-host execution...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-rgjw-6v73-php6" target="_blank" rel="noopener">ASH-OCLAW-878</a></td>
+          <td class="badge-med">6.7 MEDIUM</td>
+          <td>Windows allowlist execution could use workspace shadows</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -1701,6 +1893,48 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-4hwv-rj92-h7rp" target="_blank" rel="noopener">ASH-OCLAW-824</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Diagnostics export could omit owner authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-89cw-7452-cfrf" target="_blank" rel="noopener">ASH-OCLAW-843</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Trajectory export could omit owner authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-fgwg-c3wv-8f45" target="_blank" rel="noopener">ASH-OCLAW-852</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>LINE group allowlist could inherit DM access</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-fphf-69cp-h5xw" target="_blank" rel="noopener">ASH-OCLAW-853</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Structured attachments could hide unvalidated host paths</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-g7fw-3gjp-g5hf" target="_blank" rel="noopener">ASH-OCLAW-858</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Channel read actions could skip target allowlists</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-v7hh-7676-rg67" target="_blank" rel="noopener">ASH-OCLAW-882</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Slack file downloads could miss conversation authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-w5x7-c87m-3jpc" target="_blank" rel="noopener">ASH-OCLAW-884</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Outbound attachments could ignore requester read denials</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-6j27-pc5c-m8w8" target="_blank" rel="noopener">ASH-OCLAW-003</a></td>
           <td class="badge-med">6.4 MEDIUM</td>
           <td>Allow-Always Wrapper Persistence Bypass</td>
@@ -1710,6 +1944,18 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-6rcp-vxwf-3mfp" target="_blank" rel="noopener">ASH-OCLAW-190</a></td>
           <td class="badge-med">6.4 MEDIUM</td>
           <td>Versions prior to 2026.2.24 contain a command injection vulnerability in the system.run...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5x6q-wg56-rxg8" target="_blank" rel="noopener">ASH-OCLAW-834</a></td>
+          <td class="badge-med">6.4 MEDIUM</td>
+          <td>Discord realtime transcripts could inherit another speaker's owner status</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-7jfq-rmfm-29wp" target="_blank" rel="noopener">ASH-OCLAW-841</a></td>
+          <td class="badge-med">6.4 MEDIUM</td>
+          <td>File-transfer approvals could widen durable authority</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -1746,6 +1992,36 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-xvx8-77m6-gwg6" target="_blank" rel="noopener">ASH-OCLAW-195</a></td>
           <td class="badge-med">6.3 MEDIUM</td>
           <td>Before 2026.3.11 contains a sandbox boundary bypass vulnerability in the fs-bridge writ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-22v4-33m3-8p7m" target="_blank" rel="noopener">ASH-OCLAW-818</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Memory dreaming changes could omit owner checks</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5j57-84cx-r295" target="_blank" rel="noopener">ASH-OCLAW-830</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>iOS deep-link logs could expose unattended credentials</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-fvxr-9g24-x3hf" target="_blank" rel="noopener">ASH-OCLAW-854</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Video asset downloads could reach private destinations</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-mm7m-wcgh-8mfq" target="_blank" rel="noopener">ASH-OCLAW-869</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>WhatsApp session resets could bypass command authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-xw9g-7xvv-gcjc" target="_blank" rel="noopener">ASH-OCLAW-890</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Active Memory global toggles could omit owner checks</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -1875,6 +2151,12 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-72p2-79fg-pvph" target="_blank" rel="noopener">ASH-OCLAW-838</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Trusted-host DNS checks could admit unspecified addresses</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-37gc-85xm-2ww6" target="_blank" rel="noopener">ASH-OCLAW-216</a></td>
           <td class="badge-med">5.8 MEDIUM</td>
           <td>CVE-2026-27009</td>
@@ -1935,6 +2217,24 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-356g-m7rx-7pm3" target="_blank" rel="noopener">ASH-OCLAW-819</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>ACP file URLs could skip out-of-cwd read approval</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-gcm4-fmcp-2f9r" target="_blank" rel="noopener">ASH-OCLAW-859</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>iOS Share Extension stored Gateway credentials outside Keychain</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-pfrw-r5vr-89hw" target="_blank" rel="noopener">ASH-OCLAW-872</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>Workspace endpoint override could expose Azure Speech credentials</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-rv2q-f2h5-6xmg" target="_blank" rel="noopener">ASH-OCLAW-226</a></td>
           <td class="badge-med">5.4 MEDIUM</td>
           <td>Versions prior to 2026.2.22 contain an authentication bypass vulnerability that allows ...</td>
@@ -1968,6 +2268,54 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-39mp-545q-w789" target="_blank" rel="noopener">ASH-OCLAW-231</a></td>
           <td class="badge-med">5.4 MEDIUM</td>
           <td>Before 2026.3.24 contains missing authorization vulnerabilities in the /send and /allow...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-39hf-qg99-f4qv" target="_blank" rel="noopener">ASH-OCLAW-821</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Google Meet attendance CSV could interpret names as formulas</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-4g58-43jr-6738" target="_blank" rel="noopener">ASH-OCLAW-823</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Browser wait predicates could reach blocked destinations</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-8938-r7c6-54vq" target="_blank" rel="noopener">ASH-OCLAW-842</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Microsoft Teams access-group failures could admit unlisted senders</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-j4mm-p864-vx7f" target="_blank" rel="noopener">ASH-OCLAW-865</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>sessions.create could miss admin scope for keyed reconfiguration</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-q9j5-4xr6-xqqw" target="_blank" rel="noopener">ASH-OCLAW-874</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Group activation changes could omit owner authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-rm45-4jx5-2927" target="_blank" rel="noopener">ASH-OCLAW-879</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>QQBot voice filenames could escape the staging directory</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-vhpg-cq3w-v8p9" target="_blank" rel="noopener">ASH-OCLAW-883</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>OpenAI-compatible transport could send provider credentials to the wrong endpoint</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-xx9p-hc9w-6p5h" target="_blank" rel="noopener">ASH-OCLAW-891</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Usage CSV export could interpret session labels as formulas</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -2094,6 +2442,48 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-9jpj-g8vv-j5mf" target="_blank" rel="noopener">ASH-OCLAW-252</a></td>
           <td class="badge-med">5.3 MEDIUM</td>
           <td>Client PKCE Verifier Information Disclosure Vulnerability</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5fwv-rrvp-8xvr" target="_blank" rel="noopener">ASH-OCLAW-828</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Session filename generation could regain denied tools</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5rx7-34fw-64qg" target="_blank" rel="noopener">ASH-OCLAW-833</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Unicode fallback could escape workspaceOnly roots</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-66hm-hxq3-5pfh" target="_blank" rel="noopener">ASH-OCLAW-836</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Embedding fallback could forward a provider key across vendors</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-fw6q-2frm-jxxr" target="_blank" rel="noopener">ASH-OCLAW-855</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Synology pre-auth limits could lock out valid webhooks</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-m78m-7h3q-q938" target="_blank" rel="noopener">ASH-OCLAW-868</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Browser relay authentication could exhaust shared pending capacity</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-xvwp-wmh2-fq48" target="_blank" rel="noopener">ASH-OCLAW-888</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Discord asset uploads could skip sender media policy</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-xw48-j584-r73h" target="_blank" rel="noopener">ASH-OCLAW-889</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Twilio pre-auth limits could lock out valid webhooks</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -2247,6 +2637,30 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-35wj-hm2r-ghgw" target="_blank" rel="noopener">ASH-OCLAW-820</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Discord guild reads could skip target allowlists</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5j27-v2pw-cj9m" target="_blank" rel="noopener">ASH-OCLAW-829</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Talk Voice changes could omit admin authorization</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-h9jh-75j7-7hhx" target="_blank" rel="noopener">ASH-OCLAW-862</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Feishu unpin could miss cross-context policy</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-rx8p-qcpv-c7vr" target="_blank" rel="noopener">ASH-OCLAW-881</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Prometheus diagnostics could omit operator.read enforcement</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-52q4-3xjc-6778" target="_blank" rel="noopener">ASH-OCLAW-278</a></td>
           <td class="badge-med">4.2 MEDIUM</td>
           <td>Before 2026.3.25 contains an authorization bypass vulnerability in Google Chat group po...</td>
@@ -2256,6 +2670,12 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-xhq5-45pm-2gjr" target="_blank" rel="noopener">ASH-OCLAW-279</a></td>
           <td class="badge-med">4.2 MEDIUM</td>
           <td>Before 2026.3.22 contains a policy confusion vulnerability in room authorization that m...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-g697-vv6h-r8hv" target="_blank" rel="noopener">ASH-OCLAW-857</a></td>
+          <td class="badge-med">4.2 MEDIUM</td>
+          <td>Revoked Canvas capability could remain active during disconnect</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -2325,15 +2745,45 @@ idf.py -p /dev/cu.usbmodem* flash
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-5m4g-88rg-69pj" target="_blank" rel="noopener">ASH-OCLAW-831</a></td>
+          <td class="badge-low">3.3 LOW</td>
+          <td>MCP loopback could omit sandbox tool deny policy</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-wm8r-w8pf-2v6w" target="_blank" rel="noopener">ASH-OCLAW-291</a></td>
           <td class="badge-low">3.1 LOW</td>
           <td>Versions prior to 2026.2.26 contain an authorization bypass vulnerability where DM pair...</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-6xpv-wwr5-265h" target="_blank" rel="noopener">ASH-OCLAW-837</a></td>
+          <td class="badge-low">3.1 LOW</td>
+          <td>Truncated tar listings could bypass extraction limits</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-g24w-m94m-59qc" target="_blank" rel="noopener">ASH-OCLAW-856</a></td>
+          <td class="badge-low">3.1 LOW</td>
+          <td>Webhook TaskFlow cancellation could target unrelated sessions</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-wjfv-5qch-m5vj" target="_blank" rel="noopener">ASH-OCLAW-885</a></td>
+          <td class="badge-low">3.1 LOW</td>
+          <td>Active Memory recall could ignore requester policy</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id"><a href="https://github.com/advisories/GHSA-hjvp-qhm6-wrh2" target="_blank" rel="noopener">ASH-OCLAW-292</a></td>
           <td class="badge-low">2.6 LOW</td>
           <td>Versions prior to 2026.2.26 contain an approval context-binding weakness in system.run ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://github.com/advisories/GHSA-chr6-w4m5-57fv" target="_blank" rel="noopener">ASH-OCLAW-850</a></td>
+          <td class="badge-low">2.6 LOW</td>
+          <td>Memory tools could retain revoked access</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
