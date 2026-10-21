@@ -68,9 +68,16 @@ nano ~/.copilot/config.json
 ```
 
 ### MCP Servers
-**Location:** `~/.copilot/mcp-config.json`
+**Repo-level (deployed by `llm-init`):** `.github/mcp.json` — committed to the repo,
+auto-loaded by Copilot CLI (same `mcpServers` JSON shape as Claude Code's `.mcp.json`).
+This is the primary mechanism; it takes precedence over user-level config for the
+same server name.
 
-Configure Model Context Protocol servers for extended functionality.
+**User-level (manual, optional override):** `~/.copilot/mcp-config.json`
+
+⚠️ Repo-level MCP servers are **silently skipped in untrusted folders** until you
+confirm folder trust on first `copilot` launch in a freshly-deployed repo — if `/mcp`
+reports no servers, check trust before assuming the config is broken.
 
 ---
 
@@ -361,18 +368,22 @@ copilot
 
 ## MCP Server Integration
 
-Configure MCP servers in `~/.copilot/mcp-config.json`:
+`llm-init` deploys the repo's selected MCP servers to `.github/mcp.json`
+(repo-committed, auto-loaded — same `mcpServers` shape as `.mcp.json`):
 
 ```json
 {
-  "servers": {
+  "mcpServers": {
     "github": {
-      "command": "node",
-      "args": ["/path/to/github-mcp-server.js"]
+      "command": ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh",
+      "args": []
     }
   }
 }
 ```
+
+To add servers manually instead (or override at user scope), use `~/.copilot/mcp-config.json`
+with the same `mcpServers` key, or `copilot mcp add` / `/mcp add` interactively.
 
 See `MCP_README.md` for OAuth setup.
 

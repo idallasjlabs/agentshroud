@@ -1,4 +1,5 @@
 ---
+name: i-mcpm
 description: "Guide MCP server usage for GitHub, Atlassian, and AWS API operations with tool-selection best practices"
 ---
 

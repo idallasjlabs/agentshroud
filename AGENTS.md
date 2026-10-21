@@ -225,4 +225,28 @@ When configured, you have access to MCP servers for external services:
 **Note:** MCP servers are configured in `.codex/config.toml` under `[mcp_servers]`.
 Use these for read-only queries during validation.
 
+**Teamwork Graph CLI (`twg`)** is a separate, non-MCP Atlassian capability — a
+global per-machine binary + skills install, not a `[mcp_servers]` entry. Run
+`twg doctor` to check status. See `.llm_settings/docs/MCP_README.md` §8 for
+setup instructions.
+
 See `.llm_settings/docs/MCP_README.md` for setup instructions.
+
+## Testing Agent Workflow
+
+| Stage | Agent(s) (skill `/i-…` and subagent of the same name) | Gate script |
+|---|---|---|
+| Plan | `i-test-architect` | — |
+| Implement | `i-unit-tdd` | `scripts/testing/run-unit.sh` |
+| Pre-commit | `i-code-reviewer` + `i-security-scanner` | `impact-map.sh`, `sec-scan.sh` |
+| PR / CI | `i-integration-qa` | `run-integration.sh`, `smoke.sh` |
+| Pre-release | `i-system-nfr` | — (staging runs) |
+| Release / post-deploy | `i-release-gate` | `release-check.sh`, `sbom-verify.sh`, `smoke.sh` |
+| SQL, pipeline, prompt, agent or OT/telemetry paths (any stage) | `i-data-ai-ot` | `sql-fixtures.sh`, `eval-run.sh`, `telemetry-check.sh` |
+
+Canonical source: `agents-src/i-<name>/`; `scripts/render-agents.sh` renders it into `.llm_settings/agents/` and
+`.llm_settings/skills/` (never hand-edit generated files); `llm-init` deploys them to every tool. Gate scripts honour
+`I_GATE=report|block` (default `report`: findings are printed, nothing is blocked). `i-code-reviewer` impact analysis is
+mandatory on every change; the push hook (`require_impact_analysis.sh`) checks for its section. Deprecated aliases:
+`i-tdd`→`i-unit-tdd`, `i-cr`→`i-code-reviewer`, `i-qa`→`i-integration-qa`+`i-system-nfr`, `i-prod-safety`→`i-release-gate`
+(`i-gg` GIT-GUARD is unchanged). Full mapping: `docs/testing/TAXONOMY.md`.

@@ -1,4 +1,5 @@
 ---
+name: i-tw
 description: "Write clear, structured technical documentation (READMEs, runbooks, ADRs) avoiding verbosity and common anti-patterns. Use when a new system, decision, or runbook needs documentation — after code is written and validated, not during development."
 ---
 

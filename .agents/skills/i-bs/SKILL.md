@@ -1,4 +1,5 @@
 ---
+name: i-bs
 description: "Establish brand systems with design tokens, typography scales, color palettes, and voice guidelines; audit UI and documentation outputs for visual consistency. Use when defining or enforcing the visual identity of a product, component library, or documentation system."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: i-crpr
 description: "Create a production-ready PR with mandatory merge regression pre-flight. Runs git merge --no-commit origin/main, audits the staged result with /i-ab --pending, offers to restore confirmed losses in-place before committing, then pushes and opens the PR with the audit summary embedded. Use instead of bare git merge + gh pr create — the primary guard against the GSDL-715/720 silent regression pattern."
 ---
 

@@ -44,7 +44,7 @@
     ]
   },
 
-  "_mcp_servers_note": "MCP servers are configured in ~/.copilot/mcp-config.json",
+  "_mcp_servers_note": "Repo-level MCP servers are deployed by llm-init to .github/mcp.json (committed, auto-loaded, same mcpServers shape as .mcp.json). ~/.copilot/mcp-config.json is a user-level, lower-precedence override. Repo-level servers are silently skipped until folder trust is confirmed on first launch.",
 
   "_role_definition": {
     "comment": "GitHub Copilot CLI in this repo is a SECONDARY/TERTIARY agent",

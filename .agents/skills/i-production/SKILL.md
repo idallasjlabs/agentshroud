@@ -1,4 +1,5 @@
 ---
+name: i-production
 description: "Incident response with severity matrix, step-by-step mitigation procedures, and post-incident rollback protocols. Use when a production system is degraded — provides structured triage, escalation paths, rollback decision tree, and post-mortem template."
 ---
 
