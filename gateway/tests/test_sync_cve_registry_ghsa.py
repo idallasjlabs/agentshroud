@@ -355,6 +355,46 @@ class TestNvdAppend:
         assert mod.append_to_hermes_registry([], False, "v0.22") == 0
 
 
+class TestNvdFetchRetry:
+    @staticmethod
+    def _page(total, n):
+        import io
+        import json
+
+        body = {"totalResults": total, "vulnerabilities": [{"cve": {"id": i}} for i in range(n)]}
+        return io.BytesIO(json.dumps(body).encode("utf-8"))
+
+    def test_transient_read_timeout_is_retried(self, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod.time, "sleep", lambda s: None)
+        calls = {"n": 0}
+
+        def _fake_urlopen(req, timeout=30):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise TimeoutError("The read operation timed out")
+            return self._page(2, 2)
+
+        monkeypatch.setattr(mod.urllib.request, "urlopen", _fake_urlopen)
+        assert len(mod.fetch_nvd_cves("x")) == 2
+        assert calls["n"] == 2
+
+    def test_persistent_failure_exits_non_zero(self, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod.time, "sleep", lambda s: None)
+        calls = {"n": 0}
+
+        def _fake_urlopen(req, timeout=30):
+            calls["n"] += 1
+            raise TimeoutError("The read operation timed out")
+
+        monkeypatch.setattr(mod.urllib.request, "urlopen", _fake_urlopen)
+        with pytest.raises(SystemExit) as exc:
+            mod.fetch_nvd_cves("x")
+        assert exc.value.code != 0
+        assert calls["n"] == mod.NVD_FETCH_ATTEMPTS
+
+
 class TestFailsLoudly:
     def test_edit_that_does_not_add_n_entries_is_rejected(self, tmp_path, monkeypatch):
         mod = _sync()
