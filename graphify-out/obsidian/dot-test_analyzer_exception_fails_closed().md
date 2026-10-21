@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "test_hermes_model_resolver.py (2)"
 location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_hermes_model_resolverpy_2
 ---
 
 # .test_analyzer_exception_fails_closed()
 
 ## Connections
-- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 - [[_tool_req()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2

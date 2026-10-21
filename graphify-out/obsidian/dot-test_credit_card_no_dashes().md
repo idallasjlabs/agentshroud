@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .test_credit_card_no_dashes()
@@ -15,4 +15,4 @@ tags:
 - [[Card without dashes 4111111111111111.]] - `rationale_for` [EXTRACTED]
 - [[TestPIIDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

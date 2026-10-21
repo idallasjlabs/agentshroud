@@ -1,19 +1,19 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Approval Queue (human-in-the-loop)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Flows Documentation
 
 ## Connections
-- [[Current Status_5]] - `contains` [EXTRACTED]
+- [[Current Status_4]] - `contains` [EXTRACTED]
 - [[Planned Documents_4]] - `contains` [EXTRACTED]
 - [[flowsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/document #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

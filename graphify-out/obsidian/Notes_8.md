@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/legal/USPTO-APPLICATION.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
-location: "L102"
+community: "notion"
+location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/notion
 ---
 
 # Notes
 
 ## Connections
-- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/notion

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "ApprovalQueueConfig"
 location: "L271"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig
 ---
 
 # .test_pipe_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

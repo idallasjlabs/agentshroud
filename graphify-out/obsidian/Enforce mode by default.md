@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "rationale"
-community: "main.py.md"
+community: "main.py.md (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/mainpymd_2
 ---
 
 # Enforce mode by default
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mainpymd
+#graphify/rationale #graphify/EXTRACTED #community/mainpymd_2

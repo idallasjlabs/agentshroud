@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L28"
+community: "MiddlewareManager"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - graphify/INFERRED
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_19]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

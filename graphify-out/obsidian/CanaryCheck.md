@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # CanaryCheck
@@ -16,4 +16,4 @@ tags:
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

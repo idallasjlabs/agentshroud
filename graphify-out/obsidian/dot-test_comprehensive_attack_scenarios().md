@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (34)"
 location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_34
 ---
 
 # .test_comprehensive_attack_scenarios()
@@ -15,4 +15,4 @@ tags:
 - [[Test against realistic attack scenarios.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_34

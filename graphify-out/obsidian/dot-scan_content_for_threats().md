@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (11)"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_11
 ---
 
 # .scan_content_for_threats()
@@ -18,4 +18,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[Scan memory file content for security threats.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_11

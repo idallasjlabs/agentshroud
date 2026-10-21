@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L218"
+community: "test_security_toolchain.py"
+location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_security_toolchainpy
 ---
 
 # generate_summary()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         alert]] - `rationale_for` [EXTRACTED]
-- [[clamav_scanner.py]] - `contains` [EXTRACTED]
+- [[categorize_alerts()]] - `calls` [EXTRACTED]
+- [[falco_monitor.py]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `shares_data_with` [EXTRACTED]
+- [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

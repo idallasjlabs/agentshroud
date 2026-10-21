@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "AlertDispatcher (2) (2)"
+community: "MiddlewareManager (4)"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/MiddlewareManager_4
 ---
 
 # Agent cannot write to /etc/ system configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_etc_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4

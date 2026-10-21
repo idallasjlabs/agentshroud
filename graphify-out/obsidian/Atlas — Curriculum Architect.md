@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-atlasREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_16]] - `contains` [EXTRACTED]
+- [[Purpose_18]] - `contains` [EXTRACTED]
 - [[Related Skills_3]] - `contains` [EXTRACTED]
 - [[Usage_7]] - `contains` [EXTRACTED]
 

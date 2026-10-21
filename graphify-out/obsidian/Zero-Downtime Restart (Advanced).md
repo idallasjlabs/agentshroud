@@ -12,6 +12,6 @@ tags:
 # Zero-Downtime Restart (Advanced)
 
 ## Connections
-- [[Restart Procedure]] - `contains` [EXTRACTED]
+- [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2

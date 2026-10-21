@@ -16,7 +16,7 @@ tags:
 - [[dot-test_parses_groups()]] - `method` [EXTRACTED]
 - [[dot-test_parses_projects()]] - `method` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupConfig

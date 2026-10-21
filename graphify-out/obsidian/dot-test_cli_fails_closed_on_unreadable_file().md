@@ -12,7 +12,7 @@ tags:
 # .test_cli_fails_closed_on_unreadable_file()
 
 ## Connections
-- [[Path_23]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[TestScanEntrypoint]] - `method` [EXTRACTED]
 - [[_run_scan_cli()]] - `calls` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]

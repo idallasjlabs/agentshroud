@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
-location: "L3"
+community: "AgentShroud Device Pairing Management"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

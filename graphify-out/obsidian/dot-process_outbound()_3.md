@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L421"
+community: "test_forward_stream.py"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/test_forward_streampy
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

@@ -12,7 +12,7 @@ tags:
 # TestApprovalHardening
 
 ## Connections
-- [[dot-config()_3]] - `method` [EXTRACTED]
+- [[dot-config()]] - `method` [EXTRACTED]
 - [[dot-hardening()]] - `method` [EXTRACTED]
 - [[dot-test_cleanup_old_denied_requests()]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_disabled_when_feature_disabled()]] - `method` [EXTRACTED]
@@ -28,8 +28,8 @@ tags:
 - [[dot-test_format_hardened_message_with_normalization()]] - `method` [EXTRACTED]
 - [[dot-test_format_hardened_message_with_security_concerns()]] - `method` [EXTRACTED]
 - [[dot-test_format_parameters_with_highlighting()]] - `method` [EXTRACTED]
-- [[dot-test_get_stats()_1]] - `method` [EXTRACTED]
-- [[dot-test_initialization()_4]] - `method` [EXTRACTED]
+- [[dot-test_get_stats()]] - `method` [EXTRACTED]
+- [[dot-test_initialization()]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_handles_empty()]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_removes_misleading_phrases()]] - `method` [EXTRACTED]
 - [[dot-test_parameter_fingerprinting_consistency()]] - `method` [EXTRACTED]

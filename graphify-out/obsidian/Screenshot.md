@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "CLI Reference"
+community: "SecureBrowser Skill"
 location: "L261"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLI_Reference
+  - community/SecureBrowser_Skill
 ---
 
 # Screenshot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLI Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

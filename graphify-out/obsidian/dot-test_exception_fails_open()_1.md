@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L866"
+community: "_req (2)"
+location: "L890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/_req_2
 ---
 
 # .test_exception_fails_open()
 
 ## Connections
-- [[TestScanToolResult]] - `method` [EXTRACTED]
+- [[TestFilterOutboundResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/_req_2

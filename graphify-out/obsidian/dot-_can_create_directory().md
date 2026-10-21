@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
+community: "TestFabricatedSecurityNotice"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # ._can_create_directory()
 
 ## Connections
-- [[dot-__init__()_149]] - `calls` [EXTRACTED]
+- [[dot-__init__()_147]] - `calls` [EXTRACTED]
 - [[Check if we can create the given directory path.]] - `rationale_for` [EXTRACTED]
-- [[Path_44]] - `references` [EXTRACTED]
+- [[Path_40]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

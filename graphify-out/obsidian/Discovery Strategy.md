@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill (3)"
+community: "Mac App Discovery Skill (4)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill_3
+  - community/Mac_App_Discovery_Skill_4
 ---
 
 # Discovery Strategy
@@ -20,4 +20,4 @@ tags:
 - [[Phase 4 — Enrichment]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_3
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_4

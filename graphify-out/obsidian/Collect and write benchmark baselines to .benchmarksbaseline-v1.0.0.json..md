@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ContextSegment"
+community: "PIIConfig"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/PIIConfig
 ---
 
 # Collect and write benchmark baselines to .benchmarks/baseline-v1.0.0.json.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBenchmarkBaseline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

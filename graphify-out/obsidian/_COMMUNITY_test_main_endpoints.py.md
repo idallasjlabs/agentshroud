@@ -1,11 +1,11 @@
 ---
 type: community
-members: 64
+members: 56
 ---
 
 # test_main_endpoints.py
 
-**Members:** 64 nodes
+**Members:** 56 nodes
 
 ## Members
 - [[dot-setup_method()]] - code - gateway/tests/test_main_endpoints.py
@@ -19,9 +19,6 @@ members: 64
 - [[dot-test_clamav_default_target_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
 - [[dot-test_clamav_invalid_target_returns_400()]] - code - gateway/tests/test_main_endpoints.py
 - [[dot-test_discard_blocked_message_not_found_returns_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_forward_middleware_allowed()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_forward_middleware_blocking()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_forward_middleware_error_handling()]] - code - gateway/tests/test_main_endpoints.py
 - [[dot-test_google_proxy_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
 - [[dot-test_google_proxy_non_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
 - [[dot-test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
@@ -43,7 +40,6 @@ members: 64
 - [[Plain-text upstream errors must not turn into gateway 500s.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[Receive structured security alerts from gateway-internal scripts. Called by…]] - rationale - gateway/ingest_api/main.py
 - [[Regression tests for v1beta proxy response handling.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test forward endpoint with middleware integration.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[Test 404 handling for non-existent endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
@@ -55,13 +51,9 @@ members: 64
 - [[Test listing pending approvals.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[Test making approval decisions.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[Test quarantine management endpoints in main.py.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware allows requests when they pass checks.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware can block requests with HTTP 403.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware errors cause requests to be blocked.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[TestAlertsLocalhostEnforcement]] - code - gateway/tests/test_main_endpoints.py
 - [[TestApprovalEndpoints]] - code - gateway/tests/test_main_endpoints.py
 - [[TestErrorHandling]] - code - gateway/tests/test_main_endpoints.py
-- [[TestForwardEndpoint]] - code - gateway/tests/test_main_endpoints.py
 - [[TestGoogleAPIProxy]] - code - gateway/tests/test_main_endpoints.py
 - [[TestHealthCheckDetailBotsInventory]] - code - gateway/tests/test_main_endpoints.py
 - [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
@@ -82,18 +74,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_test_main_endpoints.py (2)]]
-- 4 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 3 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 2 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
-- 2 edges to [[_COMMUNITY_create_auth_dependency (2)]]
+- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_Request]]
+- 2 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
 - 2 edges to [[_COMMUNITY__is_op_reference_allowed]]
 - 1 edge to [[_COMMUNITY_test_main_endpoints.py (3)]]
+- 1 edge to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_dot-_run_proxy()]]
 - 1 edge to [[_COMMUNITY_test_forward_stream.py]]
 - 1 edge to [[_COMMUNITY_GatewayEmailService]]
 
 ## Top bridge nodes
+- [[test_main_endpoints.py]] - degree 21, connects to 7 communities
 - [[auth_dep()]] - degree 14, connects to 6 communities
-- [[test_main_endpoints.py]] - degree 21, connects to 5 communities
 - [[receive_security_alert()]] - degree 6, connects to 2 communities
 - [[dot-test_alerts_accepted_from_localhost()]] - degree 4, connects to 1 community
 - [[dot-test_bots_inventory_matches_the_real_container_name()]] - degree 2, connects to 1 community

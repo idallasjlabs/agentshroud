@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "test_daily_cve_report.py (2)"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/test_daily_cve_reportpy_2
 ---
 
 # TestRunAndSendCveReport
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_trivy_error_still_sends_error_report()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_2

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L218"
+community: "DataExfilVolumeGuard"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/DataExfilVolumeGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

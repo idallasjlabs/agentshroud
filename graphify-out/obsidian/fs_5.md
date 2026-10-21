@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "test_wire_llm_settings.js"
-location: "L36"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # fs
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

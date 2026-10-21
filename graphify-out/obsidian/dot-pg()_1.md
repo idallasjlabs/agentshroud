@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "ContextSegment"
-location: "L246"
+community: "TestNewPatternsV080"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TestNewPatternsV080
 ---
 
 # .pg()
 
 ## Connections
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[TestToolResultScan]] - `method` [EXTRACTED]
+- [[TestNewPatternsV080]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080

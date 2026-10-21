@@ -11,7 +11,7 @@ members: 18
 - [[API Reference]] - document - docs/api/api-reference.md
 - [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
 - [[Audit  ledger]] - document - docs/api/api-reference.md
-- [[Authentication_1]] - document - docs/api/api-reference.md
+- [[Authentication]] - document - docs/api/api-reference.md
 - [[DNS]] - document - docs/api/api-reference.md
 - [[Egress control]] - document - docs/api/api-reference.md
 - [[Error responses]] - document - docs/api/api-reference.md

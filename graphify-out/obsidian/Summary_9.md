@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L339"
+community: "OpenClaw Workspace Usage Guide"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Summary
 
 ## Connections
-- [[Quick Start Commands]] - `contains` [EXTRACTED]
-- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
-- [[✅ Current Status]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

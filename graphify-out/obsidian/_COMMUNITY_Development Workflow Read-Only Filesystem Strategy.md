@@ -40,7 +40,7 @@ members: 37
 - [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Summary_8]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Summary_10]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -54,7 +54,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
+- 2 edges to [[_COMMUNITY_BotConfig (3)]]
 
 ## Top bridge nodes
 - [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community

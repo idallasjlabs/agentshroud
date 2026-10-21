@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L38"
+community: "AlertDispatcher"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestEncryptedStore]] - `method` [EXTRACTED]
+- [[ContainerSnapshot]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

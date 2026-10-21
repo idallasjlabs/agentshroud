@@ -12,6 +12,6 @@ tags:
 # Signal the run loop to exit.
 
 ## Connections
-- [[dot-stop()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

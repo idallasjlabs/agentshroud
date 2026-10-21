@@ -30,11 +30,11 @@ tags:
 - [[dot-test_security_approach()]] - `method` [EXTRACTED]
 - [[dot-test_security_model()]] - `method` [EXTRACTED]
 - [[dot-test_what_can_you_capability()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Static response builder for collaborator conceptual queries.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

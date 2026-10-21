@@ -12,7 +12,7 @@ tags:
 # .from_dict()
 
 ## Connections
-- [[Any_49]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[MCPPolicyAction]] - `calls` [EXTRACTED]
 - [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
 - [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]

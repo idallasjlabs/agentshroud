@@ -14,7 +14,7 @@ members: 9
 - [[switch_model.sh]] - code - scripts/switch_model.sh
 - [[switch_model.sh script]] - code - scripts/switch_model.sh
 - [[upsert_env_value()]] - code - scripts/switch_model.sh
-- [[usage()_8]] - code - scripts/switch_model.sh
+- [[usage()_1]] - code - scripts/switch_model.sh
 - [[verify_both_bots_healthy()]] - code - scripts/switch_model.sh
 - [[wait_for_local_model()]] - code - scripts/switch_model.sh
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "ServiceManager"
-location: "L34"
+community: "EgressFilterConfig (5)"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressFilterConfig_5
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResponse]] - `method` [EXTRACTED]
+- [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5

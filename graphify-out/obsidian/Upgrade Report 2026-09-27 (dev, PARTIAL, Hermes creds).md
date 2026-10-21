@@ -17,7 +17,6 @@ tags:
 - [[Soak status boot-proof is not work-proof]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-27 0800 (verify-only)]] - `cites` [EXTRACTED]
 - [[Upgrade Report 2026-09-27 1400 (verify-only)]] - `cites` [EXTRACTED]
-- [[Wazuh manager + agent sidecar (+ embedded agent in OpenClaw image)]] - `references` [EXTRACTED]
 - [[_sunday_warn_expiring_acceptances()]] - `references` [EXTRACTED]
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]

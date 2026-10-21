@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L22"
+community: "test-op-auth.sh"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test-op-authsh
 ---
 
 # pass()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test-op-authsh

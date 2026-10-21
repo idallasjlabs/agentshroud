@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "AgentShroud Security Value Proposition - Revised (2)"
+community: "BotConfig (3)"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised_2
+  - community/BotConfig_3
 ---
 
 # Phase A: Development Mode (Current)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Three-Phase Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised_2
+#graphify/document #graphify/EXTRACTED #community/BotConfig_3

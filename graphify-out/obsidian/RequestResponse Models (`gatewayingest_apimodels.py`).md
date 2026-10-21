@@ -12,6 +12,6 @@ tags:
 # Request/Response Models (`gateway/ingest_api/models.py`)
 
 ## Connections
-- [[Components_1]] - `contains` [EXTRACTED]
+- [[Components_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

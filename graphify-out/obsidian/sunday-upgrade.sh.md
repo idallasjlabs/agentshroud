@@ -14,11 +14,10 @@ tags:
 ## Connections
 - [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - `references` [EXTRACTED]
 - [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - `references` [EXTRACTED]
-- [[PATH_52]] - `defines` [EXTRACTED]
+- [[PATH_3]] - `defines` [EXTRACTED]
 - [[Same-day reinvocation verify-only, no rebuild]] - `conceptually_related_to` [EXTRACTED]
 - [[Shared working-tree collision between concurrent sessions]] - `conceptually_related_to` [EXTRACTED]
-- [[Startup smoke tests (static)]] - `references` [INFERRED]
-- [[Sunday upgrade session prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-26 (dev, ALL GREEN)]] - `references` [EXTRACTED]
 - [[Wrapper 180-min timeout vs session cannot self-terminate]] - `references` [EXTRACTED]

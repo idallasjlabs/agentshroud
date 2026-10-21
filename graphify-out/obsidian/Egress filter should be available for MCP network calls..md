@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "AlertDispatcher"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/AlertDispatcher
 ---
 
 # Egress filter should be available for MCP network calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_egress_filter_blocks_mcp_exfil()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

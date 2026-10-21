@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L231"
+community: "ResourceGuard (2)"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ResourceGuard_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()_2]] - `references` [EXTRACTED]
+- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

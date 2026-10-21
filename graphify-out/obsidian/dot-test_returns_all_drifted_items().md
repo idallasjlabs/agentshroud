@@ -12,7 +12,7 @@ tags:
 # .test_returns_all_drifted_items()
 
 ## Connections
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[TestValidateManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]

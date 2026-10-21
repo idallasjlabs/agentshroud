@@ -1,26 +1,24 @@
 ---
 type: community
-members: 51
+members: 48
 ---
 
 # test_forward_stream.py
 
-**Members:** 51 nodes
+**Members:** 48 nodes
 
 ## Members
-- [[dot-__init__()_46]] - code - gateway/tests/test_forward_stream.py
-- [[dot-process_inbound()_3]] - code - gateway/tests/test_forward_stream.py
-- [[dot-process_outbound()]] - code - gateway/tests/test_forward_stream.py
-- [[dot-process_outbound()_1]] - code - gateway/tests/test_forward_stream.py
+- [[dot-__init__()_62]] - code - gateway/tests/test_forward_stream.py
+- [[dot-process_inbound()_5]] - code - gateway/tests/test_forward_stream.py
+- [[dot-process_outbound()_2]] - code - gateway/tests/test_forward_stream.py
+- [[dot-process_outbound()_3]] - code - gateway/tests/test_forward_stream.py
 - [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
-- [[AgentTarget]] - code - gateway/ingest_api/routes/forward.py
 - [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - rationale - gateway/tests/test_forward_stream.py
 - [[ForwardError]] - code - gateway/ingest_api/router.py
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
 - [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
 - [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
-- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
 - [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
 - [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
@@ -30,7 +28,6 @@ members: 51
 - [[_parse_sse_events()]] - code - gateway/tests/test_forward_stream.py
 - [[_post_stream()]] - code - gateway/tests/test_forward_stream.py
 - [[_request()]] - code - gateway/tests/test_forward_stream.py
-- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
 - [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
 - [[_target()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
@@ -68,18 +65,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_AgentTarget (2)_1]]
-- 8 edges to [[_COMMUNITY_create_auth_dependency (2)]]
-- 5 edges to [[_COMMUNITY_AgentTarget (2)]]
+- 10 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
+- 9 edges to [[_COMMUNITY_AgentTarget]]
+- 5 edges to [[_COMMUNITY_test_security.py]]
 - 4 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_AgentTarget (7)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
 - 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[ForwardError]] - degree 16, connects to 6 communities
+- [[ForwardError]] - degree 16, connects to 7 communities
 - [[test_forward_stream.py]] - degree 41, connects to 4 communities
 - [[_make_stream_app_state()]] - degree 14, connects to 2 communities
 - [[_PassthroughPipeline]] - degree 12, connects to 2 communities

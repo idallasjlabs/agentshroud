@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "validate_network_security"
+community: "NetworkSecurityFinding"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/NetworkSecurityFinding
 ---
 
 # .test_validator_knows_the_two_real_networks()
@@ -15,4 +15,4 @@ tags:
 - [[NetworkValidator]] - `calls` [EXTRACTED]
 - [[TestExpectedNetworksAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L341"
+community: "ModuleStatsCollector"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ModuleStatsCollector
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
-- [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[TestEnforcementWiring]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

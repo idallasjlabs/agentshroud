@@ -12,9 +12,9 @@ tags:
 # full_pipeline_config()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[Config with all security modules enabled.]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]

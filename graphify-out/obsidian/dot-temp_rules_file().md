@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # .temp_rules_file()
@@ -15,4 +15,4 @@ tags:
 - [[Create temporary rules file for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # MCP Proxy
@@ -16,4 +16,4 @@ tags:
 - [[mcp-config.yml]] - `conceptually_related_to` [EXTRACTED]
 - [[mcp_proxy.py (MCP tool call gate)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .test_multi_turn_tracker_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[MultiTurnTracker]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

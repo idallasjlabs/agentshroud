@@ -1,20 +1,37 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: ""
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L33"
+community: "Request"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/Request
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_2]] - `references` [EXTRACTED]
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[auth_dep()]] - `references` [EXTRACTED]
+- [[cors_middleware()]] - `references` [EXTRACTED]
+- [[create_report()]] - `references` [EXTRACTED]
+- [[get_my_permissions()]] - `references` [EXTRACTED]
+- [[get_user_permissions()]] - `references` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[google_api_proxy]] - `references` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `references` [EXTRACTED]
+- [[limit_request_body()]] - `references` [EXTRACTED]
+- [[list_users_and_roles()]] - `references` [EXTRACTED]
+- [[llm_api_proxy()]] - `references` [EXTRACTED]
+- [[llm_api_v1_prefix_alias]] - `references` [EXTRACTED]
+- [[llm_openai_chat_alias]] - `references` [EXTRACTED]
+- [[log_requests()]] - `references` [EXTRACTED]
+- [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
+- [[mcp_result_endpoint()]] - `references` [EXTRACTED]
+- [[ollama_api_proxy]] - `references` [EXTRACTED]
+- [[receive_security_alert()]] - `references` [EXTRACTED]
+- [[security_headers_middleware()]] - `references` [EXTRACTED]
+- [[set_user_role()]] - `references` [EXTRACTED]
+- [[slack_api_proxy()]] - `references` [EXTRACTED]
+- [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/EXTRACTED #community/Request

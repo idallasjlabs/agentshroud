@@ -36,7 +36,7 @@ members: 74
 - [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
-- [[WebSocket_6]] - code - voice_gateway/server.py
+- [[WebSocket_5]] - code - voice_gateway/server.py
 - [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[_State]] - code - voice_gateway/server.py
 - [[__main__.py]] - code - voice_gateway/__main__.py
@@ -95,9 +95,9 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
 - 4 edges to [[_COMMUNITY_server.py]]
 - 3 edges to [[_COMMUNITY_server.py (2)]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_tts.py]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_stt.py]]
+- 1 edge to [[_COMMUNITY_tts.py]]
 
 ## Top bridge nodes
 - [[server.py]] - degree 29, connects to 5 communities

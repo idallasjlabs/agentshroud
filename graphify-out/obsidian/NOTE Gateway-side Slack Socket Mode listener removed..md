@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L1045"
+community: "lifespan()"
+location: "L1046"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/lifespan
 ---
 
 # # NOTE: Gateway-side Slack Socket Mode listener removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

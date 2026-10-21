@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "StdioConnection (2)"
-location: "L445"
+community: "ProxyDashboard"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

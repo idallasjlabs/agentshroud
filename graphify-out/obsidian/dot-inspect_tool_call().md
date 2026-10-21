@@ -15,7 +15,7 @@ tags:
 - [[dot-_redact_pii()]] - `calls` [EXTRACTED]
 - [[dot-_scan_value()]] - `calls` [EXTRACTED]
 - [[dot-_should_block()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
 - [[Inspect an outgoing tool call for security threats.]] - `rationale_for` [EXTRACTED]
 - [[InspectionResult]] - `references` [EXTRACTED]
 - [[MCPInspector_1]] - `method` [EXTRACTED]

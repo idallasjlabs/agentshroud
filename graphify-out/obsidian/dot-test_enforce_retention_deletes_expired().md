@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # .test_enforce_retention_deletes_expired()
@@ -15,4 +15,4 @@ tags:
 - [[Retention enforcement removes expired entries.]] - `rationale_for` [EXTRACTED]
 - [[TestRetention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

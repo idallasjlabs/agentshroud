@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "api.py (2)"
 location: "L350"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # Emergency kill switch: freeze, shutdown, or disconnect.
 
 ## Connections
-- [[killswitch()_1]] - `rationale_for` [EXTRACTED]
+- [[killswitch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

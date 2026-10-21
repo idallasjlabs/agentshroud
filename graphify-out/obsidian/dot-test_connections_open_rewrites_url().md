@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestSocketModeRelay]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[apps.connections.open real WSS URL is stored and relay URL returned.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

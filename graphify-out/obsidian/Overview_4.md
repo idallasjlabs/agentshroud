@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Common Queries"
-location: "L27"
+community: "The 8D Investigation Process"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

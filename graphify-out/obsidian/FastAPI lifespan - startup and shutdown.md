@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L108"
+community: "lifespan()"
+location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/lifespan
 ---
 
 # FastAPI lifespan - startup and shutdown
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

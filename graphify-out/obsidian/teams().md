@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_collaborator_responses.py"
+source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L29"
+community: "GroupConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/GroupConfig
 ---
 
 # teams()
 
 ## Connections
-- [[GroupConfig]] - `calls` [EXTRACTED]
-- [[ProjectConfig]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig]] - `references` [EXTRACTED]
+- [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

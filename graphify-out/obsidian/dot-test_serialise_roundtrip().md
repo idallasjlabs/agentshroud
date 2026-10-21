@@ -12,8 +12,8 @@ tags:
 # .test_serialise_roundtrip()
 
 ## Connections
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[TestManifestEntry]] - `method` [EXTRACTED]
-- [[_sha256()_3]] - `calls` [EXTRACTED]
+- [[_sha256()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

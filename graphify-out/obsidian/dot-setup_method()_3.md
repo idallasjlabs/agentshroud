@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestAppleContainerEngine"
-location: "L360"
+community: "MiddlewareManager"
+location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAppleContainerEngine
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestRBACIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

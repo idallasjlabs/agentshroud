@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "SCLClient"
-location: "L23"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/make_event
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()_1]] - `references` [EXTRACTED]
-- [[dot-get()_1]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_7]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/make_event

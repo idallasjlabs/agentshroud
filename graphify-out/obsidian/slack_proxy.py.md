@@ -12,8 +12,8 @@ tags:
 # slack_proxy.py
 
 ## Connections
-- [[SlackAPIProxy]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `imports` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

@@ -12,7 +12,7 @@ tags:
 # start_service()
 
 ## Connections
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

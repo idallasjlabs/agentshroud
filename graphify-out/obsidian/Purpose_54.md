@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "MCP Tools Usage (MCPM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

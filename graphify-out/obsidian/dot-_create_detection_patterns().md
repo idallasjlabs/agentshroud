@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (13)"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_13
 ---
 
 # ._create_detection_patterns()
@@ -15,6 +15,6 @@ tags:
 - [[dot-generate_canary()]] - `calls` [EXTRACTED]
 - [[Create regex patterns to detect the canary in responses.          Args]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
-- [[Pattern_2]] - `references` [EXTRACTED]
+- [[Pattern]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_13

@@ -12,7 +12,7 @@ tags:
 # test_differential_pii_detector.py
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `imports` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
 - [[PIIHit]] - `imports` [EXTRACTED]
 - [[PIIHitSeverity]] - `imports` [EXTRACTED]

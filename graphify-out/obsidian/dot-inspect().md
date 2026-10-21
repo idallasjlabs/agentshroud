@@ -12,7 +12,7 @@ tags:
 # .inspect()
 
 ## Connections
-- [[Any_30]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[ContainerEngine]] - `method` [EXTRACTED]
 - [[Return detailed container metadata.]] - `rationale_for` [EXTRACTED]
 

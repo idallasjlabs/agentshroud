@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_redaction_count_access_error_is_non_fatal()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

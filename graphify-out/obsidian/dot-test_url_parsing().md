@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L224"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # .test_url_parsing()
@@ -17,4 +17,4 @@ tags:
 - [[Test URL parsing for domains and ports.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

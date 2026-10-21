@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test handling of empty or whitespace-only content]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

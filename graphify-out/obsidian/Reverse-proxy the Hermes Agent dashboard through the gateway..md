@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L4872"
+community: "Request"
+location: "L4859"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Request
 ---
 
 # Reverse-proxy the Hermes Agent dashboard through the gateway.
 
 ## Connections
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `rationale_for` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/Request

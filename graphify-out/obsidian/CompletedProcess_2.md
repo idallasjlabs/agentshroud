@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "ContainerEngine"
-location: "L36"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[dot-_run()_1]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

@@ -1,20 +1,22 @@
 ---
 type: community
-members: 7
+members: 9
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents (3)
 
-**Members:** 7 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[11. Competitive Security Comparison Matrix]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.1 Complete 26-Module Security Matrix]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.2 Unique AgentShroud Modules (No Competitor Implementation)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.3 Competitor Analysis Details]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.4 Security Coverage Gap Analysis]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.5 Security Score Evolution]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,4 +29,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
 
 ## Top bridge nodes
-- [[11. Competitive Security Comparison Matrix]] - degree 7, connects to 1 community
+- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community

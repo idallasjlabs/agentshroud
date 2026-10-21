@@ -1,19 +1,22 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L218"
+community: "`SecurityPipeline`"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/SecurityPipeline
 ---
 
 # Network Topology
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
-- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
-- [[Three-Network Architecture]] - `contains` [EXTRACTED]
+- [[Container Network Diagram]] - `contains` [EXTRACTED]
+- [[Hostname Resolution]] - `contains` [EXTRACTED]
+- [[Network Security Notes]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Related Notes_54]] - `contains` [EXTRACTED]
+- [[Traffic Routing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

@@ -11,7 +11,7 @@ members: 6
 - [[ARM64 Support]] - document - docs/vault/05 - Dependencies/trivy.md
 - [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/trivy.md
 - [[Purpose_11]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Related Notes_14]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Related Notes_16]] - document - docs/vault/05 - Dependencies/trivy.md
 - [[Script Usage]] - document - docs/vault/05 - Dependencies/trivy.md
 - [[Trivy]] - document - docs/vault/05 - Dependencies/trivy.md
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "AgentShroud Audit Specification"
-location: "L3"
+community: "SecureBrowser Skill"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/SecureBrowser_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

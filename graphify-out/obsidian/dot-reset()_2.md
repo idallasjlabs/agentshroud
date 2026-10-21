@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L72"
+community: "ProgressiveLockdown"
+location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ProgressiveLockdown
 ---
 
 # .reset()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[Owner command reset lockdown state for a user. Returns True if existed.]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

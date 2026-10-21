@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "egress_filter.py"
+community: "AgentRegistry (2)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/AgentRegistry_2
 ---
 
 # Value
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2

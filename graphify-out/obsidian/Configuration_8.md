@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L51"
+community: "Canvas Skill"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Canvas_Skill
 ---
 
 # Configuration
 
 ## Connections
-- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Live Reload]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

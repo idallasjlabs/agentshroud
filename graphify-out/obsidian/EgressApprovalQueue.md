@@ -12,7 +12,7 @@ tags:
 # EgressApprovalQueue
 
 ## Connections
-- [[dot-__init__()_89]] - `method` [EXTRACTED]
+- [[dot-__init__()_37]] - `method` [EXTRACTED]
 - [[dot-_append_decision()]] - `method` [EXTRACTED]
 - [[dot-_assess_risk()]] - `method` [EXTRACTED]
 - [[dot-_check_existing_rule()]] - `method` [EXTRACTED]
@@ -39,13 +39,11 @@ tags:
 - [[dot-set_event_bus()]] - `method` [EXTRACTED]
 - [[DelegationManager_1]] - `semantically_similar_to` [INFERRED]
 - [[EgressRule]] - `shares_data_with` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `shares_data_with` [INFERRED]
+- [[TelegramAPIProxy_2]] - `shares_data_with` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
 - [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

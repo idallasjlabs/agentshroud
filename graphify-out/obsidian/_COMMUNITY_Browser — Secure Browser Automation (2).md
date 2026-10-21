@@ -28,15 +28,15 @@ members: 30
 - [[Extract Data_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Fetch JavaScript-Heavy Page (Node.js)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Fill Form_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Limitations_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Limitations_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Navigate to URL_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Risk Levels_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Security Architecture_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Security Configuration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Guarantees_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Security Guarantees_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Take Screenshot_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Troubleshooting_13]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Usage_65]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Troubleshooting_15]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Usage_63]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[openclawskillsi-browserSKILL]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

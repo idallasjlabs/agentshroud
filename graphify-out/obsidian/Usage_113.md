@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L9"
+community: "Technical Illustrator (i-ti)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

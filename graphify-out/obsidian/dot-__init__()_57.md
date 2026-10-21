@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "StdioConnection"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()]] - `calls` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

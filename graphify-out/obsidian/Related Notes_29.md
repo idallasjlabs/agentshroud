@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "02-infrastructure.md (2)"
-location: "L145"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Related Notes
 
 ## Connections
-- [[Restart Procedure]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

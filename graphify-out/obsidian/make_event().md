@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "make_event"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/make_event
 ---
 
 # make_event()
@@ -19,7 +19,7 @@ tags:
 - [[dot-check_async()]] - `calls` [EXTRACTED]
 - [[dot-deny()]] - `calls` [EXTRACTED]
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dashboard.py]] - `imports` [EXTRACTED]
 - [[decide_approval()]] - `calls` [EXTRACTED]
 - [[egress_approval.py]] - `imports` [EXTRACTED]
-- [[egress_filter.py]] - `imports` [EXTRACTED]
+- [[egress_filter.py_1]] - `imports` [EXTRACTED]
 - [[egress_websocket()]] - `calls` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `references` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[submit_approval_request()]] - `calls` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
 - [[test_async_subscriber()]] - `calls` [EXTRACTED]
 - [[test_auth_failure_escalation()]] - `calls` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/make_event

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L124"
+community: "EgressFilterConfig (5)"
+location: "L845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/EgressFilterConfig_5
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5

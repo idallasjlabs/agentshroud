@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # Test that pending items are restored after restart.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_restore_pending_items()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

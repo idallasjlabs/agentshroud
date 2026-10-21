@@ -28,14 +28,14 @@ members: 32
 - [[Option 1 Interactive Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Option 2 Manual Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Organization_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_5]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_6]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Related Skills_58]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_23]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_25]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_7]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_8]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_10]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_12]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Use SSO Profile with MCP_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Using AssumeRole for Cross-Account Access_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[What is an AWS Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md

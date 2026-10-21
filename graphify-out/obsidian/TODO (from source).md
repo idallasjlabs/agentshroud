@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "pytest.ini"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # TODO (from source)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (5)"
+community: "TelegramAPIProxy"
 location: "L6822"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_5
+  - community/TelegramAPIProxy
 ---
 
 # Persist blocked inbound messages for admin review.          Also records the blo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_quarantine_blocked_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_5
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

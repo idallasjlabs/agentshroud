@@ -30,7 +30,7 @@ tags:
 - [[TestTaskConcurrency]] - `contains` [EXTRACTED]
 - [[_msg()]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()_2]] - `contains` [EXTRACTED]
+- [[proxy()_3]] - `contains` [EXTRACTED]
 - [[trusted_peer()]] - `contains` [EXTRACTED]
 - [[untrusted_peer()]] - `contains` [EXTRACTED]
 

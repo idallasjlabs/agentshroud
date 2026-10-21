@@ -1,18 +1,20 @@
 ---
 type: community
-members: 5
+members: 7
 ---
 
 # Browser — Secure Browser Automation (4)
 
-**Members:** 5 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[dot-agentsskillsi-browserREADME]] - document - .agents/skills/i-browser/README.md
-- [[Browser — Secure Browser Automation]] - document - .agents/skills/i-browser/README.md
-- [[Purpose_17]] - document - .agents/skills/i-browser/README.md
-- [[Related Skills_4]] - document - .agents/skills/i-browser/README.md
-- [[Usage_8]] - document - .agents/skills/i-browser/README.md
+- [[Click Element]] - document - .agents/skills/i-browser/SKILL.md
+- [[Extract Data]] - document - .agents/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - document - .agents/skills/i-browser/SKILL.md
+- [[Fill Form]] - document - .agents/skills/i-browser/SKILL.md
+- [[Navigate to URL]] - document - .agents/skills/i-browser/SKILL.md
+- [[Take Screenshot]] - document - .agents/skills/i-browser/SKILL.md
+- [[Usage_2]] - document - .agents/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation_4
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (3)]]
+
+## Top bridge nodes
+- [[Usage_2]] - degree 7, connects to 1 community

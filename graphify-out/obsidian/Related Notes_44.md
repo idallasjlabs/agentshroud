@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "Docker Volumes"
-location: "L90"
+community: "telegram_proxy.py"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/telegram_proxypy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

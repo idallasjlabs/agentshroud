@@ -19,6 +19,6 @@ tags:
 - [[Group]] - `references` [EXTRACTED]
 - [[Write only custom groups to disk (auto-groups are derived at runtime).]] - `rationale_for` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3

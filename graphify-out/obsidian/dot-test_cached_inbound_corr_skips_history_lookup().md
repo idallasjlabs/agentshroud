@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Cached correlation for the channel → no Slack history call; outbound         is]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
-location: "L37"
+community: "TrustConfig (2)"
+location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TrustConfig_2
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_2

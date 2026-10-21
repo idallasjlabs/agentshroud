@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (5)"
 location: "L471"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_5
 ---
 
 # EgressFilter must NOT notify when domain is allowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_filter_no_notification_on_allow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_5

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

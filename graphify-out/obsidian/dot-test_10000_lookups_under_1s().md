@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # .test_10000_lookups_under_1s()
@@ -16,4 +16,4 @@ tags:
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
 - [[TrustManager_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

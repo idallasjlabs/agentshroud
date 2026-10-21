@@ -12,8 +12,8 @@ tags:
 # EgressFilter
 
 ## Connections
-- [[dot-__init__()_123]] - `references` [EXTRACTED]
+- [[dot-__init__()_109]] - `references` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/WebProxyConfig

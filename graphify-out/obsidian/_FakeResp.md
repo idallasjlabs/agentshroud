@@ -12,7 +12,7 @@ tags:
 # _FakeResp
 
 ## Connections
-- [[dot-__init__()_24]] - `method` [EXTRACTED]
+- [[dot-__init__()_27]] - `method` [EXTRACTED]
 - [[dot-_patch_http()]] - `calls` [EXTRACTED]
 - [[dot-read()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]

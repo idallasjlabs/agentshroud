@@ -12,7 +12,7 @@ tags:
 # test_drain_clears_playing_and_returns_idle()
 
 ## Connections
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[main()_12]] - `calls` [EXTRACTED]
 - [[playback_step()]] - `calls` [EXTRACTED]
 - [[reset_all()]] - `calls` [EXTRACTED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]

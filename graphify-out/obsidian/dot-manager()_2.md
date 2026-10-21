@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "UserSessionManager (4)"
-location: "L162"
+community: "SessionManager"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/SessionManager
 ---
 
 # .manager()
 
 ## Connections
-- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[TestKeyRotationManager]] - `method` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[TestInstructionNonce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/SessionManager

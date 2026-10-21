@@ -8,8 +8,8 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
+- [[dot-client()_2]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-client()_4]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
@@ -52,22 +52,23 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_RuntimeConfig]]
-- 7 edges to [[_COMMUNITY_PodmanEngine]]
 - 7 edges to [[_COMMUNITY_test_runtime_engines.py (2)]]
-- 7 edges to [[_COMMUNITY_TestSecurityFeatures]]
+- 7 edges to [[_COMMUNITY_PodmanEngine]]
 - 6 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 6 edges to [[_COMMUNITY_TestSecurityFeatures]]
 - 5 edges to [[_COMMUNITY_DockerEngine]]
 - 4 edges to [[_COMMUNITY_get_engine]]
-- 3 edges to [[_COMMUNITY_api.py]]
+- 3 edges to [[_COMMUNITY_api.py (2)]]
 - 2 edges to [[_COMMUNITY_TestAppleContainerEngine]]
 - 2 edges to [[_COMMUNITY_TestInstallerAPI]]
 - 2 edges to [[_COMMUNITY_TestDockerEngine]]
 - 2 edges to [[_COMMUNITY_TestWebAPI]]
+- 1 edge to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
 - [[test_runtime_engines.py]] - degree 33, connects to 13 communities
 - [[ServiceDef]] - degree 20, connects to 9 communities
 - [[TestComposeGenerator]] - degree 14, connects to 4 communities
+- [[detect_runtime()]] - degree 11, connects to 4 communities
 - [[TestDetectRuntime]] - degree 11, connects to 4 communities
-- [[TestConfigRoundTrip]] - degree 8, connects to 4 communities

@@ -1,24 +1,26 @@
 ---
 type: community
-members: 55
+members: 57
 ---
 
 # TrustConfig (2)
 
-**Members:** 55 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[dot-__init__()_36]] - code - gateway/security/subagent_monitor.py
+- [[dot-__init__()_33]] - code - gateway/security/subagent_monitor.py
 - [[dot-_log_event()]] - code - gateway/security/subagent_monitor.py
 - [[dot-check_tool_usage()]] - code - gateway/security/subagent_monitor.py
 - [[dot-deregister()]] - code - gateway/security/subagent_monitor.py
 - [[dot-get_active()]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_audit_log()]] - code - gateway/security/subagent_monitor.py
+- [[dot-get_flagged_events()]] - code - gateway/security/subagent_monitor.py
 - [[dot-kill_agent()]] - code - gateway/security/subagent_monitor.py
 - [[dot-kill_all()]] - code - gateway/security/subagent_monitor.py
 - [[dot-register_spawn()]] - code - gateway/security/subagent_monitor.py
 - [[dot-test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_default_mode_is_enforce()_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_default_mode_is_enforce()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
@@ -42,7 +44,7 @@ members: 55
 - [[dot-test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
 - [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
@@ -56,9 +58,9 @@ members: 55
 - [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
 - [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
 - [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
-- [[default_config()_1]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor()_1]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor_config()_1]] - code - gateway/tests/test_subagent_monitor.py
+- [[default_config()]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor()]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor_config()]] - code - gateway/tests/test_subagent_monitor.py
 - [[strict_config()]] - code - gateway/tests/test_subagent_monitor.py
 - [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
 - [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
@@ -72,19 +74,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 21 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher (2) (2)]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 27 edges to [[_COMMUNITY_AlertDispatcher]]
+- 24 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
 - 1 edge to [[_COMMUNITY_SessionManager]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (3)]]
 - 1 edge to [[_COMMUNITY_A2APolicyEngine]]
 
 ## Top bridge nodes
-- [[SubagentMonitor]] - degree 46, connects to 6 communities
 - [[subagent_monitor.py]] - degree 10, connects to 6 communities
+- [[SubagentMonitor]] - degree 46, connects to 3 communities
 - [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
 - [[TestTrustInheritance]] - degree 9, connects to 2 communities
 - [[TestAuditTrail_1]] - degree 8, connects to 2 communities

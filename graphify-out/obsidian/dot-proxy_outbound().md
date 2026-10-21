@@ -16,6 +16,6 @@ tags:
 - [[dot-_intercept_connections_open()]] - `calls` [EXTRACTED]
 - [[dot-_is_owner_channel()]] - `calls` [EXTRACTED]
 - [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

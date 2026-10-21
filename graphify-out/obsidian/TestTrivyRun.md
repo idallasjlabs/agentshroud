@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output (2)"
+community: "export-bot-conversations.py"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output_2
+  - community/export-bot-conversationspy
 ---
 
 # TestTrivyRun
@@ -23,4 +23,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output_2
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

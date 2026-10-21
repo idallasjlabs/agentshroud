@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "test_daily_cve_report.py (3)"
 location: "L1326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/test_daily_cve_reportpy_3
 ---
 
 # TestGhsaIngestScheduler
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_skips_when_already_ingested_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_3

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[SCLCaller_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

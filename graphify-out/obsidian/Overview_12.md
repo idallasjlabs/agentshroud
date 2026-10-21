@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L10"
+community: "Canvas Skill"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/Canvas_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[Data Flow]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

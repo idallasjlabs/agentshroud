@@ -18,7 +18,7 @@ members: 27
 - [[Initial Setup]] - document - docker/scripts/README.md
 - [[OpenClaw CLI]] - document - docker/scripts/README.md
 - [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
-- [[Quick Reference_6]] - document - docker/scripts/README.md
+- [[Quick Reference_7]] - document - docker/scripts/README.md
 - [[Security Notes_2]] - document - docker/scripts/README.md
 - [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
 - [[check-status.sh_1]] - document - docker/scripts/README.md

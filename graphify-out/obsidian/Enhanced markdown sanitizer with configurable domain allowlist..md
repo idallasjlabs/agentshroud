@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "MiddlewareManager"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # Enhanced markdown sanitizer with configurable domain allowlist.
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

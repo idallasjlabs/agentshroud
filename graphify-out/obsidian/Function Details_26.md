@@ -17,6 +17,6 @@ tags:
 - [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - `contains` [EXTRACTED]
 - [[TelegramAPIProxy.get_stats()]] - `contains` [EXTRACTED]
 - [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy_4

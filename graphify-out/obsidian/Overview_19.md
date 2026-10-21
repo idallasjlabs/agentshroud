@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L16"
+community: "Integration Guide"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Integration_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

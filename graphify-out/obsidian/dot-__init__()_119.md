@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L605"
+community: "dashboard_endpoints.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
-location: "L251"
+community: "_wrap_response()"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/_wrap_response
 ---
 
 # .__init__()
 
 ## Connections
-- [[LLMProxy]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

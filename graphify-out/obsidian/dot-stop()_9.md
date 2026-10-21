@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
-location: "L115"
+community: "PodmanEngine"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/PodmanEngine
 ---
 
 # .stop()
 
 ## Connections
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

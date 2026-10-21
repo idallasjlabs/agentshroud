@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # TestRotateGuardBranches
@@ -24,4 +24,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

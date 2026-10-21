@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/switch_model.sh"
+source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
 type: "code"
-community: "switch_model.sh"
-location: "L18"
+community: "openai-whisper-api/SKILL.md"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # usage()
 
 ## Connections
-- [[switch_model.sh]] - `defines` [EXTRACTED]
-- [[switch_model.sh script]] - `calls` [EXTRACTED]
+- [[transcribe.sh]] - `defines` [EXTRACTED]
+- [[transcribe.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

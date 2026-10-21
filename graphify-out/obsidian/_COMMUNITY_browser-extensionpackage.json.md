@@ -10,7 +10,7 @@ members: 14
 ## Members
 - [[browser-extensionpackage.json]] - code - browser-extension/package.json
 - [[collectCoverageFrom]] - code - browser-extension/package.json
-- [[description_10]] - code - browser-extension/package.json
+- [[description_7]] - code - browser-extension/package.json
 - [[devDependencies]] - code - browser-extension/package.json
 - [[jest]] - code - browser-extension/package.json
 - [[jest_1]] - code - browser-extension/package.json

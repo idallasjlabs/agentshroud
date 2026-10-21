@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "test_e2e_proxy.py (2)"
+community: "ForwardRequest"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy_2
+  - community/ForwardRequest
 ---
 
 # GET /status returns service info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_status_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

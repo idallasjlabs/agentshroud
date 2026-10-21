@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig
 ---
 
 # .test_ssh_exec_auto_approved()
@@ -15,4 +15,4 @@ tags:
 - [[SSHResult]] - `calls` [EXTRACTED]
 - [[TestSSHExec]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

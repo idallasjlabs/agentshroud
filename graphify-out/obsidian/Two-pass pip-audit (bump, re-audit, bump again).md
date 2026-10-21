@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "Sunday Upgrade prompt"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Two-pass pip-audit (bump, re-audit, bump again)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

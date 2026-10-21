@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # test_canary.py
@@ -15,7 +15,7 @@ tags:
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[TrustManager_3]] - `imports` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_e2e.py]] - `semantically_similar_to` [INFERRED]
 - [[unhealthy_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

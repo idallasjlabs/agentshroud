@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "SessionManager"
-location: "L127"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/MCPPolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-validate_event()]] - `references` [EXTRACTED]
+- [[dot-enforce()_1]] - `references` [EXTRACTED]
+- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

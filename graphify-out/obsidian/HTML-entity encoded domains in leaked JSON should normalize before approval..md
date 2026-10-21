@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval"
 location: "L3596"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval
 ---
 
 # HTML-entity encoded domains in leaked JSON should normalize before approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval

@@ -1,121 +1,150 @@
 ---
 type: community
-members: 108
+members: 137
 ---
 
 # EgressFilterConfig
 
-**Members:** 108 nodes
+**Members:** 137 nodes
 
 ## Members
-- [[dot-__init__()_105]] - code - gateway/security/egress_filter.py
-- [[dot-_matches_any_pattern()]] - code - gateway/security/egress_config.py
-- [[dot-from_environment()]] - code - gateway/security/egress_config.py
-- [[dot-get_effective_allowlist()]] - code - gateway/security/egress_config.py
-- [[dot-is_denylisted()]] - code - gateway/security/egress_config.py
-- [[dot-matches_allowlist()]] - code - gateway/security/egress_config.py
-- [[dot-test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_default_config()_3]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_denylist_monitor_mode()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_denylist_overrides_allowlist()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_denylist_wildcards()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_domains_in_default_allowlist()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_domains_not_denylisted()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_effective_allowlist_basic()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_effective_allowlist_with_denylist()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_egress_filter_allows_in_enforce_mode()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_egress_mode_override()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_enforce_mode_blocks_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_from_environment_enforce()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_from_environment_monitor()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_invalid_mode_handling()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_logging_differences_by_mode()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_monitor_mode_allows_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_port_filtering()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_private_ip_blocking()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_url_parsing()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_wildcard_allowlist_matching()]] - code - gateway/tests/test_egress_enforce.py
-- [[All four domains must be in EgressFilterConfig's default allowlist.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
-- [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
-- [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
-- [[Create config from environment variables and AGENTSHROUD_MODE.]] - rationale - gateway/security/egress_config.py
-- [[EgressAction]] - code - gateway/security/egress_filter.py
-- [[EgressAllowlistResponse]] - code - gateway/web/management.py
-- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
-- [[EgressFilter in enforce mode allows all four domains for openclaw.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilterConfig]] - code - gateway/security/egress_config.py
-- [[EgressFilterConfig_1]] - code - gateway/security/egress_filter.py
-- [[FEED_HOSTS]] - code - gateway/security/feed_hosts.py
-- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
-- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
-- [[Get the effective allowlist for a specific agent.]] - rationale - gateway/security/egress_config.py
-- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[None of the four domains should match the default denylist.]] - rationale - gateway/tests/test_egress_filter.py
-- [[PERMANENT_EGRESS_DOMAINS]] - code - gateway/security/egress_config.py
-- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - code - gateway/security/egress_config.py
-- [[Public does domain match any pattern in the effective default allowlist…]] - rationale - gateway/security/egress_config.py
-- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
-- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard). Single…]] - rationale - gateway/security/egress_config.py
-- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
-- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
-- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
-- [[Serve the audit log page.]] - rationale - gateway/web/management.py
-- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
-- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
-- [[Serve the main dashboard page.]] - rationale - gateway/web/management.py
-- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
-- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
-- [[Set the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[Test EgressFilter with enforcemonitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test EgressFilterConfig functionality.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test URL parsing for domains and ports.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test allowlist with denylist in strict mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test basic allowlist functionality.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test config creation from environment in enforce mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test config creation from environment in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test default configuration values._2]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test denylist behavior in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test denylist wildcard matching.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test handling of invalid modes.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test port-based filtering.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test specific egress mode environment variable.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test that config can be saved and retrieved.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test that denylist overrides allowlist in strict mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test that enforce mode blocks domains not in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test that logging differs between enforce and monitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test that monitor mode allows unknown domains but logs them.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test that private IPs are blocked regardless of mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test the management API endpoints (would need FastAPI test client).]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test wildcard matching in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[TestEgressFilterConfig]] - code - gateway/tests/test_egress_enforce.py
-- [[TestEgressFilterEnforcement]] - code - gateway/tests/test_egress_enforce.py
-- [[TestEgressManagementAPI]] - code - gateway/tests/test_egress_enforce.py
-- [[TestOpenClawResearchDomainsAllowlisted]] - code - gateway/tests/test_egress_filter.py
-- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
-- [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - rationale - gateway/tests/test_egress_filter.py
-- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
-- [[approvals()]] - code - gateway/web/management.py
-- [[audit()_1]] - code - gateway/web/management.py
-- [[collaborators()]] - code - gateway/web/management.py
-- [[dashboard()]] - code - gateway/web/management.py
-- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
-- [[dashboard_main()]] - code - gateway/web/management.py
-- [[domain_matches()]] - code - gateway/security/egress_config.py
-- [[egress_config.py]] - code - gateway/security/egress_config.py
-- [[falco_dashboard()]] - code - gateway/web/management.py
-- [[get_egress_allowlist()]] - code - gateway/web/management.py
-- [[get_egress_config()]] - code - gateway/security/egress_config.py
-- [[killswitch()]] - code - gateway/web/management.py
-- [[management.py]] - code - gateway/web/management.py
-- [[modules()]] - code - gateway/web/management.py
-- [[security_overview()]] - code - gateway/web/management.py
-- [[set_egress_config()]] - code - gateway/security/egress_config.py
-- [[ssh()]] - code - gateway/web/management.py
-- [[test_egress_enforce.py]] - code - gateway/tests/test_egress_enforce.py
-- [[update_egress_allowlist()]] - code - gateway/web/management.py
-- [[wazuh_dashboard()]] - code - gateway/web/management.py
+- [[dot-__init__()_69]] - code - gateway/proxy/forwarder.py
+- [[dot-__init__()_70]] - code - gateway/proxy/sidecar.py
+- [[dot-__init__()_71]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-__init__()_72]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-forward()_1]] - code - gateway/proxy/forwarder.py
+- [[dot-forward()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-get_stats()_4]] - code - gateway/proxy/forwarder.py
+- [[dot-get_stats()_5]] - code - gateway/proxy/sidecar.py
+- [[dot-health_check()]] - code - gateway/proxy/forwarder.py
+- [[dot-is_healthy()]] - code - gateway/proxy/forwarder.py
+- [[dot-last_forward_time()]] - code - gateway/proxy/forwarder.py
+- [[dot-process_inbound()_6]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-process_outbound()_4]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-scan()_2]] - code - gateway/proxy/sidecar.py
+- [[dot-set_response_handler()]] - code - gateway/proxy/forwarder.py
+- [[dot-to_dict()_3]] - code - gateway/security/canary.py
+- [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Any_18]] - code - gateway/proxy/forwarder.py
+- [[Any_19]] - code - gateway/proxy/sidecar.py
+- [[Any_20]] - code - gateway/security/canary.py
+- [[Canary result should serialize to dict properly.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should detect that fake PII was stripped.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should fail when no pipeline configured.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should pass proxy check with healthy forwarder.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should pass when pipeline is properly configured.]] - rationale - gateway/tests/test_canary.py
+- [[Canary should verify audit chain integrity.]] - rationale - gateway/tests/test_canary.py
+- [[CanaryCheck]] - code - gateway/security/canary.py
+- [[CanaryResult]] - code - gateway/security/canary.py
+- [[Check if the OpenClaw backend is healthy.]] - rationale - gateway/proxy/forwarder.py
+- [[Configuration for the HTTP forwarder.]] - rationale - gateway/proxy/forwarder.py
+- [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Forward a request to the OpenClaw backend.]] - rationale - gateway/proxy/forwarder.py
+- [[ForwardResult]] - code - gateway/proxy/forwarder.py
+- [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[ForwarderConfig]] - code - gateway/proxy/forwarder.py
+- [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - rationale - gateway/proxy/forwarder.py
+- [[HTTPForwarder]] - code - gateway/proxy/forwarder.py
+- [[If the outbound pipeline crashes, the bot response must be withheld.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Individual canary check result.]] - rationale - gateway/security/canary.py
+- [[Insert messages, modify a hash — verify chain integrity check fails.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Low-trust agent requests elevated action — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Request to scan a message.]] - rationale - gateway/proxy/sidecar.py
+- [[Response from sidecar scan.]] - rationale - gateway/proxy/sidecar.py
+- [[Result of forwarding a request.]] - rationale - gateway/proxy/forwarder.py
+- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
+- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - rationale - gateway/security/canary.py
+- [[Scan a message through the security pipeline.]] - rationale - gateway/proxy/sidecar.py
+- [[ScanRequest]] - code - gateway/proxy/sidecar.py
+- [[ScanResponse]] - code - gateway/proxy/sidecar.py
+- [[SecurityPipeline (external, referenced)]] - code - gateway/proxy/pipeline.py
+- [[SecurityPipeline.process_inbound]] - code - gateway/proxy/pipeline.py
+- [[Send 10 messages — verify all in ledger with valid SHA-256 chain.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send command requiring approval — verify queued, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send message with SSN — verify it's redacted before forwarding.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Send prompt injection — verify blocked, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Set a mock response handler for testing.]] - rationale - gateway/proxy/forwarder.py
+- [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - rationale - gateway/proxy/sidecar.py
+- [[SidecarScanner]] - code - gateway/proxy/sidecar.py
+- [[Trigger freeze mode — verify pipeline blocks all traffic.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify allowed domains pass egress check.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify both inbound and outbound are in audit chain.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify canary message contains the expected fake PII.]] - rationale - gateway/tests/test_canary.py
+- [[Verify clean messages pass through without blocking.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify empty audit chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify forwarder handles errors gracefully.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify forwarder mock works correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify multiple injection patterns are detected.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify pipeline statistics are tracked correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify processing time is tracked.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify sidecar scanner works.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify single-entry chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify that direct connection to OpenClaw internal port fails.      In Docker pr]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify webhook receiver blocks prompt injection.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify webhook receiver routes through pipeline.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Verify webhook receiver strips PII.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
+- [[_StubForwarder_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[fail()_3]] - code - scripts/verify-proxy.sh
+- [[forwarder()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[forwarder.py]] - code - gateway/proxy/forwarder.py
+- [[healthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[info()_1]] - code - scripts/verify-proxy.sh
+- [[pass()_2]] - code - scripts/verify-proxy.sh
+- [[pii_config()]] - code - gateway/tests/test_e2e_proxy.py
+- [[pipeline()]] - code - gateway/tests/test_e2e_proxy.py
+- [[prompt_guard()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[run_bypass()]] - code - scripts/verify-proxy.sh
+- [[run_canary()]] - code - scripts/verify-proxy.sh
+- [[run_canary()_1]] - code - gateway/security/canary.py
+- [[run_chain()]] - code - scripts/verify-proxy.sh
+- [[run_full()]] - code - scripts/verify-proxy.sh
+- [[run_quick()]] - code - scripts/verify-proxy.sh
+- [[sanitizer()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[sidecar.py]] - code - gateway/proxy/sidecar.py
+- [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_audit_chain_integrity()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_audit_chain_single_entry()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_canary.py]] - code - gateway/tests/test_canary.py
+- [[test_canary_fails_without_pipeline()]] - code - gateway/tests/test_canary.py
+- [[test_canary_message_contains_fake_pii()]] - code - gateway/tests/test_canary.py
+- [[test_canary_passes_with_pipeline()]] - code - gateway/tests/test_canary.py
+- [[test_canary_result_serialization()]] - code - gateway/tests/test_canary.py
+- [[test_canary_verifies_audit_chain()]] - code - gateway/tests/test_canary.py
+- [[test_canary_verifies_pii_stripping()]] - code - gateway/tests/test_canary.py
+- [[test_canary_with_healthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[test_canary_with_unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[test_clean_message_passes()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_direct_bypass_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_e2e_proxy.py]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_egress_allowed_domain()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_egress_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_forwarder_error_handling()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_forwarder_mock()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_inbound_outbound_both_audited()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_kill_switch_freezes()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_mixed_pii_and_injection()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_multiple_prompt_patterns()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_outbound_pii_stripped()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_pii_stripped_inbound()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_pipeline_processing_time()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_pipeline_stats()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_prompt_injection_blocked()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_sidecar_scanner()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_tampered_audit_detected()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_trust_level_enforced()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_blocks_injection()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_outbound_block_withheld()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_receiver_processes()]] - code - gateway/tests/test_e2e_proxy.py
+- [[test_webhook_strips_pii()]] - code - gateway/tests/test_e2e_proxy.py
+- [[unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
+- [[verify-proxy.sh]] - code - scripts/verify-proxy.sh
+- [[verify-proxy.sh script]] - code - scripts/verify-proxy.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -125,36 +154,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 46 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 34 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 10 edges to [[_COMMUNITY_AlertDispatcher (2) (2)]]
-- 6 edges to [[_COMMUNITY_KeyRotationManager (2)_1]]
-- 4 edges to [[_COMMUNITY_egress_filter.py]]
-- 4 edges to [[_COMMUNITY_TrustConfig]]
-- 4 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 3 edges to [[_COMMUNITY_PIIConfig]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)_1]]
-- 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
-- 3 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_WebProxy]]
-- 3 edges to [[_COMMUNITY_UserSessionManager]]
-- 3 edges to [[_COMMUNITY_api.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (4)]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_ContextSegment (2)]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_WebProxyConfig]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 20 edges to [[_COMMUNITY_SecurityPipeline]]
+- 15 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 8 edges to [[_COMMUNITY_TrustConfig]]
+- 8 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
+- 7 edges to [[_COMMUNITY_ContextSegment]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 3 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_egress_filter.py (5)]]
+- 1 edge to [[_COMMUNITY_ProxyDashboard]]
+- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
 
 ## Top bridge nodes
-- [[EgressAction]] - degree 45, connects to 14 communities
-- [[EgressFilterConfig]] - degree 103, connects to 12 communities
-- [[egress_config.py]] - degree 12, connects to 6 communities
-- [[management.py]] - degree 26, connects to 4 communities
-- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
+- [[test_e2e_proxy.py]] - degree 53, connects to 8 communities
+- [[_PassInboundPipeline]] - degree 23, connects to 8 communities
+- [[_StubForwarder_1]] - degree 22, connects to 8 communities
+- [[test_canary.py]] - degree 21, connects to 6 communities
+- [[run_canary()_1]] - degree 19, connects to 4 communities

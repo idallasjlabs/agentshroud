@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L27"
+community: "xurl — Agent Skill Reference"
+location: "L453"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Notes
 
 ## Connections
-- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

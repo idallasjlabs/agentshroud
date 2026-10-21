@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # soc/models.py
@@ -16,21 +16,21 @@ tags:
 - [[AlarmStatus]] - `contains` [EXTRACTED]
 - [[AuditLogEntry]] - `contains` [EXTRACTED]
 - [[AuditResult_1]] - `contains` [EXTRACTED]
-- [[ContributorRecord]] - `contains` [EXTRACTED]
-- [[EgressRequest]] - `contains` [EXTRACTED]
+- [[ContributorRecord_1]] - `contains` [EXTRACTED]
+- [[EgressRequest_1]] - `contains` [EXTRACTED]
 - [[EgressStatus]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[HealthStatus_1]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
-- [[ResourceUsage]] - `contains` [EXTRACTED]
-- [[RiskLevel_1]] - `contains` [EXTRACTED]
+- [[ResourceUsage_1]] - `contains` [EXTRACTED]
+- [[RiskLevel_6]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
 - [[SCLInterface_1]] - `contains` [EXTRACTED]
-- [[SecurityEvent_1]] - `contains` [EXTRACTED]
+- [[SecurityEvent]] - `contains` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `contains` [EXTRACTED]
 - [[ServiceStatus_1]] - `contains` [EXTRACTED]
-- [[Severity]] - `contains` [EXTRACTED]
+- [[Severity_2]] - `contains` [EXTRACTED]
 - [[UserRole]] - `contains` [EXTRACTED]
 - [[WSEvent]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

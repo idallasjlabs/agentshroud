@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # Store a known-good baseline configuration. Returns config hash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-set_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

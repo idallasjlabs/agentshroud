@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

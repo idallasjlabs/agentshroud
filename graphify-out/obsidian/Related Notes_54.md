@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "OpenSCAP"
-location: "L64"
+community: "`SecurityPipeline`"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/SecurityPipeline
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

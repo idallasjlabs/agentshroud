@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "TrustConfig"
-location: "L63"
+community: "ToolResultSanitizer"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ToolResultSanitizer
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

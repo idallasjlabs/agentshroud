@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_18]] - `references` [EXTRACTED]
+- [[dot-__init__()_95]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

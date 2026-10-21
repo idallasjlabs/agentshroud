@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "TelegramAPIProxy (31)"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TelegramAPIProxy_31
 ---
 
 # Obfuscated tool-call JSON should still be normalized and suppressed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_tool_call_json_with_zero_width_chars_is_suppressed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_31

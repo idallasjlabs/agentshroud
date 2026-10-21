@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig
 ---
 
 # Scan a message through the security pipeline.
 
 ## Connections
-- [[dot-scan()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller (5)"
+community: "Socrates — Dialogue Architect (6)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_5
+  - community/Socrates__Dialogue_Architect_6
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_5
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_6

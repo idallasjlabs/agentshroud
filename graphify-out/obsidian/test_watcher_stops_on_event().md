@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "ApprovalQueueConfig (2)"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/ApprovalQueueConfig_2
 ---
 
 # test_watcher_stops_on_event()
 
 ## Connections
 - [[_load()]] - `calls` [EXTRACTED]
-- [[_write()_1]] - `calls` [EXTRACTED]
+- [[_write()]] - `calls` [EXTRACTED]
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

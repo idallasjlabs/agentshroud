@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "agentshroud-blueteam/SKILL.md (5)"
 location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/agentshroud-blueteam/SKILLmd_5
 ---
 
 # Get summary of detected attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_attack_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_5

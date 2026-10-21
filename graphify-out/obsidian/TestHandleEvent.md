@@ -18,7 +18,7 @@ tags:
 - [[dot-test_no_tracker_does_not_raise()]] - `method` [EXTRACTED]
 - [[dot-test_non_message_event_ignored()]] - `method` [EXTRACTED]
 - [[dot-test_tracker_error_does_not_propagate()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]

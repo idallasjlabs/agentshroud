@@ -12,16 +12,16 @@ tags:
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_181]] - `method` [EXTRACTED]
-- [[dot-close()_16]] - `method` [EXTRACTED]
-- [[dot-drain()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_202]] - `method` [EXTRACTED]
+- [[dot-close()_20]] - `method` [EXTRACTED]
+- [[dot-drain()_3]] - `method` [EXTRACTED]
 - [[dot-get_extra_info()_1]] - `method` [EXTRACTED]
-- [[dot-write()_2]] - `method` [EXTRACTED]
+- [[dot-write()_3]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]

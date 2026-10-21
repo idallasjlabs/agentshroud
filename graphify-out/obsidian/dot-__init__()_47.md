@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L69"
+community: "FalcoAlertWatcher"
+location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/FalcoAlertWatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Path_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

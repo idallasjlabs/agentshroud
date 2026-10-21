@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard (2)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard_2
 ---
 
 # .test_scan_repository_default_enforce()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGitGuardDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

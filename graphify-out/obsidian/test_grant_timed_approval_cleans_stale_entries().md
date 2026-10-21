@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (4)"
 location: "L563"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_4
 ---
 
 # test_grant_timed_approval_cleans_stale_entries()
@@ -16,4 +16,4 @@ tags:
 - [[grant_timed_approval should purge expired entries on each call.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

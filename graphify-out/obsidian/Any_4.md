@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L62"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ReportStore
 ---
 
 # Any
 
 ## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_2]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ReportStore

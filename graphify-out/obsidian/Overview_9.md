@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L3"
+community: "Layer-by-Layer Breakdown"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

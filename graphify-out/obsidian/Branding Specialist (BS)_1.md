@@ -12,9 +12,9 @@ tags:
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_94]] - `contains` [EXTRACTED]
-- [[Related Skills_74]] - `contains` [EXTRACTED]
-- [[Usage_83]] - `contains` [EXTRACTED]
+- [[Purpose_88]] - `contains` [EXTRACTED]
+- [[Related Skills_67]] - `contains` [EXTRACTED]
+- [[Usage_77]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

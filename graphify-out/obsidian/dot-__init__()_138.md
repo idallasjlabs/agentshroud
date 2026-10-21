@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
-location: "L36"
+community: "AgentTarget (7)"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/AgentTarget_7
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvironmentGuard]] - `method` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_7

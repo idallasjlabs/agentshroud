@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "UserSessionManager"
+community: "UserSessionManager (2)"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/UserSessionManager
+  - community/UserSessionManager_2
 ---
 
 # CredentialRotationPolicy
@@ -18,7 +18,7 @@ tags:
 - [[dot-test_default_policy_values()]] - `calls` [EXTRACTED]
 - [[dot-test_should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-test_should_warn()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -32,9 +32,9 @@ tags:
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
-- [[datetime_2]] - `uses` [INFERRED]
+- [[datetime_3]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/UserSessionManager_2

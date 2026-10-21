@@ -30,7 +30,7 @@ tags:
 - [[TestPortResolution]] - `uses` [INFERRED]
 - [[TestResolveports]] - `uses` [INFERRED]
 - [[check_and_report()]] - `references` [EXTRACTED]
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PortManager

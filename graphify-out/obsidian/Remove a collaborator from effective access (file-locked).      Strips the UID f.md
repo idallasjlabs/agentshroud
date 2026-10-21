@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py (3)"
+community: "telegram_proxy.py (2)"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/telegram_proxypy_2
 ---
 
 # Remove a collaborator from effective access (file-locked).      Strips the UID f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[revoke_approved_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2

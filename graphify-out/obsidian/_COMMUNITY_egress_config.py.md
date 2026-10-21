@@ -17,9 +17,9 @@ members: 15
 - [[EgressFilterConfig.is_denylisted(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
-- [[Purpose_140]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Purpose_153]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
-- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Threat Model_20]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[egress_config.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[egress_config.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier"
+community: "Skill: Hermes Dev Workflow (HDEV)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

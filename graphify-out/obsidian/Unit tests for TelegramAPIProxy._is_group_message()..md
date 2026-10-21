@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Unit tests for TelegramAPIProxy._is_group_message()."
+community: "test_telegram_proxy_inbound.py"
 location: "L8914"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Unit_tests_for_TelegramAPIProxy_is_group_message
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # Unit tests for TelegramAPIProxy._is_group_message().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsGroupMessage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Unit_tests_for_TelegramAPIProxy_is_group_message
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

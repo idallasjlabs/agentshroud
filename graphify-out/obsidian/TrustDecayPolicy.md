@@ -12,8 +12,8 @@ tags:
 # TrustDecayPolicy
 
 ## Connections
-- [[dot-__init__()_161]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_149]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
 - [[dot-build_full_mesh()]] - `references` [EXTRACTED]
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]

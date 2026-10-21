@@ -1,19 +1,18 @@
 ---
 type: community
-members: 6
+members: 5
 ---
 
 # AgentShroud Brand Guidelines (2)
 
-**Members:** 6 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[8. Common Troubleshooting Scenarios]] - document - docs/operations/runbook.md
-- [[Database Locked Errors]] - document - docs/operations/runbook.md
-- [[High Memory Usage]] - document - docs/operations/runbook.md
-- [[Performance Issues]] - document - docs/operations/runbook.md
-- [[SSLTLS Certificate Issues]] - document - docs/operations/runbook.md
-- [[Service Won't Start]] - document - docs/operations/runbook.md
+- [[About AgentShroud™]] - document - branding/guidelines/brand-guidelines.md
+- [[Approved Logo Assets for Media]] - document - branding/guidelines/brand-guidelines.md
+- [[Key Facts]] - document - branding/guidelines/brand-guidelines.md
+- [[Media Contact]] - document - branding/guidelines/brand-guidelines.md
+- [[Press Kit]] - document - branding/guidelines/brand-guidelines.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines]]
 
 ## Top bridge nodes
-- [[8. Common Troubleshooting Scenarios]] - degree 6, connects to 1 community
+- [[Press Kit]] - degree 6, connects to 2 communities

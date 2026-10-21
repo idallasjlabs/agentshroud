@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "TelegramAPIProxy (5)"
 location: "L1054"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TelegramAPIProxy_5
 ---
 
 # Collaborator form payload with raw tool/file leakage markers should be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_form_high_risk_leakage_text_is_normalized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_5

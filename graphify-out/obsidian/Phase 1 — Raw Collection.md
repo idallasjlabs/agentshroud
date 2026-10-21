@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill (2)"
+community: "Mac App Discovery Skill (3)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill_2
+  - community/Mac_App_Discovery_Skill_3
 ---
 
 # Phase 1 — Raw Collection
@@ -24,4 +24,4 @@ tags:
 - [[9. Browser Extensions (optional but useful)]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_2
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_3

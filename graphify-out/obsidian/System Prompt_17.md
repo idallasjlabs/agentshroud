@@ -12,6 +12,6 @@ tags:
 # System Prompt
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ApprovalQueueConfig
 ---
 
 # test_security_fixes.py
 
 ## Connections
-- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `contains` [EXTRACTED]
@@ -26,9 +26,9 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_14]] - `contains` [EXTRACTED]
+- [[client()_18]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
-- [[telegram_api_proxy (telegram-api{path})]] - `imports` [EXTRACTED]
+- [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

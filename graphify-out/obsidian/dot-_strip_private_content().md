@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "TeamsConfig"
 location: "L372"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TeamsConfig
 ---
 
 # ._strip_private_content()
@@ -17,4 +17,4 @@ tags:
 - [[Remove private-looking content from shared memory before serving         to non-]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

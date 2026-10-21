@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "RBACConfig (3)"
+community: "TeamsConfig"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/TeamsConfig
 ---
 
 # Return deduplicated list of all user IDs across all groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_all_member_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

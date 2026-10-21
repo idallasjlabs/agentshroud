@@ -1,18 +1,20 @@
 ---
 type: community
-members: 5
+members: 7
 ---
 
 # AWS Cloud Management & FinOps
 
-**Members:** 5 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps_1]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Purpose_39]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Related Skills_26]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Usage_30]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[openclawskillsi-awsREADME]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[dot-test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
+- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY__req (2)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps_1]] - degree 5, connects to 1 community
+- [[TestSetConfig]] - degree 10, connects to 4 communities
+- [[_bot()]] - degree 3, connects to 1 community
+- [[dot-test_default_bot_and_sanitizer_configured()]] - degree 3, connects to 1 community

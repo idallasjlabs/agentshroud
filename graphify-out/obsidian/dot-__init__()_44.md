@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L46"
+community: "ServiceManager"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertStore]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_prompt_protection.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "TestPromptProtection"
-location: "L171"
+community: "PipelineAction"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/PipelineAction
 ---
 
 # .test_normal_content_passes()
 
 ## Connections
-- [[Test that normal content passes through without redaction.]] - `rationale_for` [EXTRACTED]
-- [[TestPromptProtection]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

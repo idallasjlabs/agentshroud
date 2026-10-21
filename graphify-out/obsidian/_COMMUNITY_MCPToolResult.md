@@ -27,12 +27,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_StdioConnection]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
 - 2 edges to [[_COMMUNITY_MCPInspector]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (4)]]
 
 ## Top bridge nodes
 - [[TestInjectionDetection]] - degree 22, connects to 7 communities

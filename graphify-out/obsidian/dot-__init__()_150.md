@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L630"
+community: "TestSSRFDetection"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/TestSSRFDetection
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

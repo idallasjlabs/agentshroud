@@ -12,10 +12,10 @@ tags:
 # main()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[dot-ok()_1]] - `calls` [EXTRACTED]
-- [[dot-post()_1]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[SclClient_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]

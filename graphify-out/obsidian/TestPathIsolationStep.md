@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "test_hermes_model_resolver.py (2)"
 location: "L625"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_hermes_model_resolverpy_2
 ---
 
 # TestPathIsolationStep
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2

@@ -12,7 +12,7 @@ tags:
 # Cli
 
 ## Connections
-- [[Commands_2]] - `references` [EXTRACTED]
+- [[Commands_1]] - `references` [EXTRACTED]
 - [[OutputFormat]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]

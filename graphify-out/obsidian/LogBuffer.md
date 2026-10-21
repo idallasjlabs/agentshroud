@@ -12,8 +12,8 @@ tags:
 # LogBuffer
 
 ## Connections
-- [[dot-__init__()_45]] - `method` [EXTRACTED]
-- [[dot-append()]] - `method` [EXTRACTED]
+- [[dot-__init__()_120]] - `method` [EXTRACTED]
+- [[dot-append()_1]] - `method` [EXTRACTED]
 - [[dot-tail()]] - `method` [EXTRACTED]
 - [[Ring buffer for recent logaudit entries.]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]

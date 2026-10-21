@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "test_security_toolchain.py (2)"
 location: "L673"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/test_security_toolchainpy_2
 ---
 
 # TestWazuhParser
@@ -21,4 +21,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

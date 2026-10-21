@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "TestSSRFDetection (3)"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestSSRFDetection_3
 ---
 
 # Scan response text for a specific canary.          Args:             session_id:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_for_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_3

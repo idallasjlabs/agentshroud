@@ -12,7 +12,7 @@ tags:
 # Model Details
 
 ## Connections
-- [[AgentTarget_3]] - `contains` [EXTRACTED]
+- [[AgentTarget_2]] - `contains` [EXTRACTED]
 - [[EmailSendRequest_2]] - `contains` [EXTRACTED]
 - [[ForwardRequest_3]] - `contains` [EXTRACTED]
 - [[ForwardResponse_1]] - `contains` [EXTRACTED]

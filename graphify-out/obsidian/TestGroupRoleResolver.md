@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (3)"
+community: "GroupRoleResolver"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_3
+  - community/GroupRoleResolver
 ---
 
 # TestGroupRoleResolver
@@ -25,10 +25,10 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[GroupRoleResolver correctly maps Telegram user IDs to per-group roles.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_3
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

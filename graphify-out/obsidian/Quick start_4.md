@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docker/README.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L49"
+community: "AgentShroud Docker Configuration"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Quick Start
 
 ## Connections
-- [[1. Build and Start OpenClaw]] - `contains` [EXTRACTED]
-- [[2. Access OpenClaw Control UI]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

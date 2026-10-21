@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "main.py.md"
-location: "L10"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_2]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "ApprovalHardening"
+community: "MiddlewareManager"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/MiddlewareManager
 ---
 
 # Test DeceptionDetection dataclass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDeceptionDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

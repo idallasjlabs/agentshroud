@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L155"
+community: "test_jira_dev_ticket.py"
+location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/test_jira_dev_ticketpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

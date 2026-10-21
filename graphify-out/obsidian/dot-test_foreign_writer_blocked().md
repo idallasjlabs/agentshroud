@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "TeamsConfig"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TeamsConfig
 ---
 
 # .test_foreign_writer_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[A non-owner author cannot write into another user's private memory.]] - `rationale_for` [EXTRACTED]
 - [[TestUserMemoryWriteACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

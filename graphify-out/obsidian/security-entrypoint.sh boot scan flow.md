@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "Sunday Upgrade prompt"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/Sunday_Upgrade_prompt
 ---
 
 # security-entrypoint.sh boot scan flow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gateway-start.sh entrypoint]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

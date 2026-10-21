@@ -1,19 +1,20 @@
 ---
-source_file: "docker/bots/hermes/resolve_model.py"
+source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
-location: "L183"
+community: "generate-job-schedule.py"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/generate-job-schedulepy
 ---
 
 # main()
 
 ## Connections
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
-- [[_resolve_from_env()]] - `calls` [EXTRACTED]
-- [[resolve_model.py]] - `contains` [EXTRACTED]
+- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
+- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
+- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
+- [[render_html()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy

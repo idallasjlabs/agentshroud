@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig"
+community: "BotConfig (2)"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/BotConfig_2
 ---
 
 # ._make_proxy()
@@ -22,4 +22,4 @@ tags:
 - [[dot-test_send_telegram_text_uses_inbound_token()]] - `calls` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/BotConfig_2

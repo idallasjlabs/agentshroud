@@ -8,7 +8,7 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_73]] - code - gateway/cli/client.py
+- [[dot-__init__()_81]] - code - gateway/cli/client.py
 - [[dot-_request()]] - code - gateway/cli/client.py
 - [[dot-add_collaborator()]] - code - gateway/cli/client.py
 - [[dot-add_group_member()]] - code - gateway/cli/client.py
@@ -41,8 +41,8 @@ members: 42
 - [[dot-test_init_strips_trailing_slash_and_builds_soc_base()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_post_serializes_body()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_put_and_delete_methods()]] - code - gateway/tests/test_cli_coverage.py
-- [[Any_27]] - code - gateway/cli/client.py
-- [[Exception]] - code - gateway/tests/test_cli_coverage.py
+- [[Any_25]] - code - gateway/cli/client.py
+- [[Exception_2]] - code - gateway/tests/test_cli_coverage.py
 - [[Minimal synchronous httpx-free client for the SCL API.]] - rationale - gateway/cli/client.py
 - [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - rationale - gateway/tests/test_cli_coverage.py
 - [[SCLClient]] - code - gateway/cli/client.py

@@ -12,9 +12,9 @@ tags:
 # .to_dict()
 
 ## Connections
-- [[Any_84]] - `references` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
 - [[RemediationPlan dataclass]] - `method` [EXTRACTED]
 - [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/plan_remediation

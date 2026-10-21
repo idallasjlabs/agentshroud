@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: ".validate_docker_compose_config"
+community: "NetworkSecurityFinding"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/NetworkSecurityFinding
 ---
 
 # ._validate_service_network_isolation()
@@ -18,4 +18,4 @@ tags:
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate service network isolation.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

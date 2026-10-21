@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L192"
+community: "TestAppleContainerEngine"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/TestAppleContainerEngine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `calls` [EXTRACTED]
+- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine

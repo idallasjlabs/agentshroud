@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Form message should keep healthcheck SKILL.md text unchanged when sandbox hint i]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

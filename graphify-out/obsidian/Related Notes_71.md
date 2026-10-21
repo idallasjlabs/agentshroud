@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "main.py.md"
-location: "L114"
+community: "agentshroud-blueteam/SKILL.md (4)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/agentshroud-blueteam/SKILLmd_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4

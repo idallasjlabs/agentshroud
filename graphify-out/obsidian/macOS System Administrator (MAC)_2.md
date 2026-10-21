@@ -12,9 +12,9 @@ tags:
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_98]] - `contains` [EXTRACTED]
-- [[Related Skills_78]] - `contains` [EXTRACTED]
-- [[Usage_87]] - `contains` [EXTRACTED]
+- [[Purpose_92]] - `contains` [EXTRACTED]
+- [[Related Skills_71]] - `contains` [EXTRACTED]
+- [[Usage_81]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-macREADME]] - `contains` [EXTRACTED]
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard
 ---
 
 # .get_usage_stats()
 
 ## Connections
-- [[Any_53]] - `references` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
 - [[Get current usage statistics.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceUsage_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -16,6 +16,6 @@ tags:
 - [[DataExfilVolumeGuard]] - `contains` [EXTRACTED]
 - [[VolumeVerdict]] - `contains` [EXTRACTED]
 - [[_SessionState]] - `contains` [EXTRACTED]
-- [[egress_filter.py]] - `conceptually_related_to` [EXTRACTED]
+- [[egress_filter.py_1]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

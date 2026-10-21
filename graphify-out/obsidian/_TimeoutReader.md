@@ -15,7 +15,7 @@ tags:
 - [[dot-readline()]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[readline() always raises TimeoutError — simulates a stalled client.]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 - [[test_request_line_timeout_returns_408()]] - `calls` [EXTRACTED]

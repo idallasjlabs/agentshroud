@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # gateway/security/file_sandbox.py (FileSandbox)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

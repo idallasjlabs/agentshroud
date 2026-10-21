@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "main.py.md"
-location: "L176"
+community: "Error Index"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/Error_Index
 ---
 
 # Related Notes
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/Error_Index

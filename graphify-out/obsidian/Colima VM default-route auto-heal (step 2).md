@@ -13,6 +13,5 @@ tags:
 
 ## Connections
 - [[check()_4]] - `references` [EXTRACTED]
-- [[gateway service (dev override)]] - `shares_data_with` [INFERRED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5

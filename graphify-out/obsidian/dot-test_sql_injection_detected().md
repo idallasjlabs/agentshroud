@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .test_sql_injection_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCommandInjectionScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

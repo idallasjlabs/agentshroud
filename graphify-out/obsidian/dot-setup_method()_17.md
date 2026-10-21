@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator.py"
+source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "TestNetworkValidator"
-location: "L19"
+community: "A2APolicyEngine (2)"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/A2APolicyEngine_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[TestNetworkValidator]] - `method` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
+- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_2

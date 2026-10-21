@@ -12,7 +12,7 @@ tags:
 # status_errors_when_gateway_down()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_status()]] - `calls` [EXTRACTED]

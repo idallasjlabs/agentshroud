@@ -12,7 +12,7 @@ tags:
 # run_scanner()
 
 ## Connections
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[ScanRequest_1]] - `references` [EXTRACTED]
 - [[_launch_scan_background()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

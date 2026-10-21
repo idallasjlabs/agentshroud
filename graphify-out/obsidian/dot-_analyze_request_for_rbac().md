@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "MiddlewareManager"
 location: "L925"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # ._analyze_request_for_rbac()
 
 ## Connections
 - [[dot-_check_rbac_permissions()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `references` [EXTRACTED]
+- [[Action]] - `references` [EXTRACTED]
 - [[Analyze request to determine RBAC action, resource, and tool tier.]] - `rationale_for` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Resource_2]] - `references` [EXTRACTED]
-- [[ToolTier_2]] - `references` [EXTRACTED]
+- [[Resource]] - `references` [EXTRACTED]
+- [[ToolTier]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

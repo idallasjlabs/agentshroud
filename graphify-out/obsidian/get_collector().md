@@ -12,8 +12,8 @@ tags:
 # get_collector()
 
 ## Connections
-- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_19]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_20]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_egress_counts_as_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_denied_egress_counts_as_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `calls` [EXTRACTED]

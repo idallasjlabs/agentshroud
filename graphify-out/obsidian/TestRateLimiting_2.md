@@ -12,7 +12,7 @@ tags:
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_exceeded()]] - `method` [EXTRACTED]
 - [[dot-test_within_rate_limit()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]

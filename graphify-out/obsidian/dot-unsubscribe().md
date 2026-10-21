@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L612"
+community: "make_event"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/make_event
 ---
 
 # .unsubscribe()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
+- [[Unsubscribe from events]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/make_event

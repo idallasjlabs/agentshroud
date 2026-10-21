@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "TestPromptProtection"
+community: ".test_structural_pattern_redaction"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/test_structural_pattern_redaction
 ---
 
 # Test redaction of system prompt structural patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_structural_pattern_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_structural_pattern_redaction

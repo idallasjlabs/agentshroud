@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L251"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # TestMCPProxyIntegration
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_critical_tool_requires_approval()]] - `method` [EXTRACTED]
 - [[dot-test_low_risk_tool_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_owner_bypass()_3]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

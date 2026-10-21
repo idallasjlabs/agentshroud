@@ -16,7 +16,7 @@ members: 9
 - [[op-wrapper.sh]] - code - docker/scripts/op-wrapper.sh
 - [[op-wrapper.sh script]] - code - docker/scripts/op-wrapper.sh
 - [[op_authenticate()]] - code - docker/scripts/op-auth-common.sh
-- [[usage()_7]] - code - docker/scripts/killswitch.sh
+- [[usage()]] - code - docker/scripts/killswitch.sh
 
 ## Live Query (requires Dataview plugin)
 

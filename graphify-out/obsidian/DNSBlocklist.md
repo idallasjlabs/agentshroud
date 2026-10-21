@@ -12,18 +12,18 @@ tags:
 # DNSBlocklist
 
 ## Connections
-- [[dot-__init__()_180]] - `method` [EXTRACTED]
+- [[dot-__init__()_186]] - `method` [EXTRACTED]
 - [[dot-_periodic_update_loop()]] - `method` [EXTRACTED]
 - [[dot-download_blocklist()]] - `method` [EXTRACTED]
 - [[dot-is_blocked()]] - `method` [EXTRACTED]
 - [[dot-load_from_text()]] - `method` [EXTRACTED]
 - [[dot-parse_hosts_line()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
 - [[dot-setup_method()_8]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_4]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_37]] - `calls` [EXTRACTED]
 - [[dot-start_periodic_updates()]] - `method` [EXTRACTED]
 - [[dot-stats()]] - `method` [EXTRACTED]
-- [[dot-stop()_3]] - `method` [EXTRACTED]
+- [[dot-stop()_5]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()]] - `calls` [EXTRACTED]
 - [[dot-test_download_failure_falls_back_to_cache()]] - `calls` [EXTRACTED]
 - [[dot-test_download_failure_no_cache_returns_none()]] - `calls` [EXTRACTED]
@@ -68,8 +68,6 @@ tags:
 - [[_FakeWSConnect]] - `uses` [INFERRED]
 - [[dns_blocklist.py]] - `contains` [EXTRACTED]
 - [[dns_forwarder.py]] - `imports` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_165]] - `method` [EXTRACTED]
+- [[dot-__init__()_169]] - `method` [EXTRACTED]
 - [[dot-close()_13]] - `method` [EXTRACTED]
 - [[dot-drain()]] - `method` [EXTRACTED]
 - [[dot-get_extra_info()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[Minimal StreamWriter stand-in that records written bytes.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_CloseRaisesWriter]] - `inherits` [EXTRACTED]
 - [[_SocketTransportWriter]] - `inherits` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]

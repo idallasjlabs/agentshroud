@@ -12,7 +12,7 @@ tags:
 # test_module_stats.py
 
 ## Connections
-- [[Decision_1]] - `imports` [EXTRACTED]
+- [[Decision_2]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
 - [[EgressFilter_2]] - `imports` [EXTRACTED]
 - [[ModuleStatsCollector]] - `imports` [EXTRACTED]

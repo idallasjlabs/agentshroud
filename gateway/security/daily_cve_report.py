@@ -61,6 +61,10 @@ _UPSTREAM_ALERT_MAX_ITEMS = 15
 _LAST_REPORT_PATH = Path("/var/log/security/trivy/.last_cve_report")
 _LAST_UPSTREAM_CHECK_PATH = Path("/var/log/security/trivy/.last_upstream_cve_check")
 _LAST_GHSA_INGEST_PATH = Path("/var/log/security/trivy/.last_ghsa_ingest")
+# GHSA ids already alerted per agent. The 06:05 upstream check and the 07:00
+# GHSA ingest run the same diff, and an advisory stays "new" until the registry
+# sync lands it, so without this every advisory alerted twice a day, every day.
+_ALERTED_GHSA_PATH = Path("/var/log/security/trivy/.alerted_upstream_ghsa.json")
 
 # In-memory guards: track dates already processed this process lifetime.
 # Prevents infinite send loops when the disk is full and the paths can't be written.
@@ -579,6 +583,11 @@ def check_upstream_cves(
             # Already tracked under its CVE id; not a new advisory.
             continue
         cvss_block: dict[str, Any] = adv.get("cvss") or {}
+        patched = {
+            v.get("patched_versions")
+            for v in adv.get("vulnerabilities") or []
+            if v.get("patched_versions")
+        }
         new_cves.append(
             {
                 # Report the GHSA id as the primary identifier (source of truth).
@@ -588,6 +597,7 @@ def check_upstream_cves(
                 "summary": adv.get("summary", ""),
                 "severity": (adv.get("severity") or "UNKNOWN").upper(),
                 "cvss": cvss_block.get("score"),
+                "fixed_in": ", ".join(sorted(patched)),
                 "published_at": adv.get("published_at", ""),
                 "html_url": adv.get("html_url", ""),
             }
@@ -629,14 +639,16 @@ def format_upstream_cve_alert(new_cves: list[dict[str, Any]], agent_label: str =
     for cve in shown:
         icon = _SEV_ICON.get(cve.get("severity", "UNKNOWN"), "⚪")
         cvss_str = f"CVSS {cve['cvss']}" if cve.get("cvss") else cve.get("severity", "UNKNOWN")
-        lines.append(f"{icon} `{cve['id']}` ({cvss_str})")
+        fix_str = f"fixed in {cve['fixed_in']}" if cve.get("fixed_in") else "no fix published"
+        lines.append(f"{icon} `{cve['id']}` ({cvss_str}) — {fix_str}")
 
     if remaining > 0:
         lines.append(f"\n…and {remaining} more (see dashboard / CVE report)")
 
+    # The gateway only compares and alerts; it never writes the registry. Say so.
     lines.append(
-        "\nℹ️ Auto-registered as *under_review* (honest — NOT claimed mitigated) "
-        "by the daily sync. Triage status at `/soc/v1/agent-cves`."
+        "\nℹ️ Not yet in the registry. The daily CVE sync (11:30 UTC) adds them as "
+        "*under_review* by PR. Triage status at `/soc/v1/agent-cves`."
     )
     message = "\n".join(lines)
 
@@ -731,16 +743,54 @@ async def run_upstream_cve_check(
         result["cve_ids"],
     )
 
+    alerted = _load_alerted_ghsa()
+    seen = set(alerted.get(agent_id, []))
+    to_alert = [c for c in new_cves if c["id"] not in seen]
+    if not to_alert:
+        logger.info(
+            "Upstream CVE check (%s): all %d unregistered advisories already alerted; "
+            "not re-sending until the registry sync lands them",
+            agent_id,
+            len(new_cves),
+        )
+        result.update(new_cves=0, cve_ids=[], already_alerted=len(new_cves))
+        return result
+    result.update(new_cves=len(to_alert), cve_ids=[c["id"] for c in to_alert])
+    result["already_alerted"] = len(new_cves) - len(to_alert)
+
     if bot_token and owner_chat_id:
         try:
-            message = format_upstream_cve_alert(new_cves, agent_label)
+            message = format_upstream_cve_alert(to_alert, agent_label)
             result["telegram_sent"] = await _send_telegram(
                 bot_token, owner_chat_id, message, base_url
             )
         except Exception as exc:
             logger.error("Failed to send %s upstream CVE alert via Telegram: %s", agent_id, exc)
 
+    # Record only what was delivered, so a failed send is retried next run.
+    if result["telegram_sent"]:
+        alerted[agent_id] = sorted(seen | set(result["cve_ids"]))
+        _save_alerted_ghsa(alerted)
+
     return result
+
+
+def _load_alerted_ghsa() -> dict[str, list[str]]:
+    """Per-agent GHSA ids already alerted. Unreadable state means alert again, never silence."""
+    try:
+        data = json.loads(_ALERTED_GHSA_PATH.read_text())
+        return {k: list(v) for k, v in data.items()} if isinstance(data, dict) else {}
+    except (OSError, ValueError, AttributeError, TypeError):
+        return {}
+
+
+def _save_alerted_ghsa(alerted: dict[str, list[str]]) -> None:
+    try:
+        _ALERTED_GHSA_PATH.parent.mkdir(parents=True, exist_ok=True)
+        _ALERTED_GHSA_PATH.write_text(json.dumps(alerted, indent=1, sort_keys=True))
+    except OSError as exc:
+        # Next run alerts again: a duplicate is better than a lost alert.
+        logger.error("Could not record alerted upstream advisories: %s", exc)
 
 
 # Agents whose report is sent even when they have zero new advisories.

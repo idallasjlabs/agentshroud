@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # Sanitize HTTP headers by removing sensitive information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-sanitize_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

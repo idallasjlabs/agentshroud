@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "ApprovalQueueConfig (4)"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/ApprovalQueueConfig_4
 ---
 
 # .test_concurrent_submit_and_decide()
@@ -16,4 +16,4 @@ tags:
 - [[Submit and decide requests concurrently.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

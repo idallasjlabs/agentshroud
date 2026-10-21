@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - `rationale_for` [EXTRACTED]
-- [[_handle()]] - `calls` [EXTRACTED]
+- [[_handle()_2]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

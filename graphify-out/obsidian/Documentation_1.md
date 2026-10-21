@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 - [[Development Resources]] - `contains` [EXTRACTED]
-- [[Quick Start_2]] - `contains` [EXTRACTED]
+- [[Quick Start_3]] - `contains` [EXTRACTED]
 - [[Technical Documentation]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_README

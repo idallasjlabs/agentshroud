@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "02-infrastructure.md (2)"
+community: "First Time Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/First_Time_Setup
 ---
 
 # Restart Procedure.md
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Crash Recovery]] - `references` [EXTRACTED]
 - [[First Time Setup]] - `references` [EXTRACTED]
-- [[Restart Procedure]] - `contains` [EXTRACTED]
+- [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

@@ -12,7 +12,7 @@ tags:
 # TestKillSwitchConfig
 
 ## Connections
-- [[dot-test_default_config()_2]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[Test kill switch configuration.]] - `rationale_for` [EXTRACTED]

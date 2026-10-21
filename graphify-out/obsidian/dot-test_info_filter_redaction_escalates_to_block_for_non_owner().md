@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "TestOutboundPipelineIntegration"
 location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_info_filter_redaction_escalates_to_block_for_non_owner()
 
 ## Connections
 - [[Any outbound info-filter redaction should be blocked for collaborators.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "FakeRBAC"
+community: "_wrap_response()"
 location: "L4341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # System prompt/instruction leakage probes should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

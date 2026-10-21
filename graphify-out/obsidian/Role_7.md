@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier (3)"
+community: "Skill: Hermes Dev Workflow (HDEV) (2)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier_3
+  - community/Skill_Hermes_Dev_Workflow_HDEV_2
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV_2

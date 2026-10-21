@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_jira_weekly_review.py"
-location: "L195"
+community: "GroupRoleResolver"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/GroupRoleResolver
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

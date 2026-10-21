@@ -18,7 +18,7 @@ members: 17
 - [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
 - [[List reactions]] - document - skills/openclaw/slack/SKILL.md
 - [[Member info]] - document - skills/openclaw/slack/SKILL.md
-- [[Overview_23]] - document - skills/openclaw/slack/SKILL.md
+- [[Overview_22]] - document - skills/openclaw/slack/SKILL.md
 - [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
 - [[React to a message]] - document - skills/openclaw/slack/SKILL.md
 - [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md

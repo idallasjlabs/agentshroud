@@ -24,7 +24,7 @@ members: 17
 - [[Risk Levels_3]] - document - .agents/skills/i-browser/SKILL.md
 - [[Security Architecture_5]] - document - .agents/skills/i-browser/SKILL.md
 - [[Security Configuration_3]] - document - .agents/skills/i-browser/SKILL.md
-- [[Security Guarantees_4]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Guarantees_5]] - document - .agents/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (3) (2)]]
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (4)]]
 - 1 edge to [[_COMMUNITY_10. Troubleshooting]]
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 

@@ -1,15 +1,14 @@
 ---
 type: community
-members: 42
+members: 44
 ---
 
 # StdioConnection (2)
 
-**Members:** 42 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_79]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-__init__()_80]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_77]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-get_item()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-submit_tool_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -45,11 +44,14 @@ members: 42
 - [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[make_proxy()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,19 +61,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 58 edges to [[_COMMUNITY_StdioConnection]]
-- 14 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 13 edges to [[_COMMUNITY_MCPInspector]]
-- 8 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 7 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 7 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 6 edges to [[_COMMUNITY_PermissionLevel]]
+- 41 edges to [[_COMMUNITY_StdioConnection]]
+- 20 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 19 edges to [[_COMMUNITY_PermissionLevel]]
+- 19 edges to [[_COMMUNITY_MCPInspector]]
+- 18 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 13 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
+- 10 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 10 edges to [[_COMMUNITY_MCPAuditTrail]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (4)]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 
 ## Top bridge nodes
-- [[FakeApprovalQueue]] - degree 27, connects to 8 communities
-- [[FakeConn]] - degree 30, connects to 7 communities
-- [[TestExecuteToolCall]] - degree 24, connects to 7 communities
-- [[TestApprovalQueue]] - degree 21, connects to 7 communities
-- [[TestResultProcessingAndLifecycle]] - degree 20, connects to 7 communities
+- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 10 communities
+- [[FakeApprovalQueue]] - degree 27, connects to 9 communities
+- [[FakeConn]] - degree 30, connects to 8 communities
+- [[TestExecuteToolCall]] - degree 24, connects to 8 communities
+- [[TestApprovalQueue]] - degree 21, connects to 8 communities

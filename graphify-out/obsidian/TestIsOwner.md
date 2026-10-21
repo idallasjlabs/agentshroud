@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "_req (3)"
 location: "L743"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/_req_3
 ---
 
 # TestIsOwner
@@ -20,4 +20,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/_req_3

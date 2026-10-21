@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_collaborator_greeter.py"
-location: "L36"
+community: "make_event"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/make_event
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_state()]] - `calls` [EXTRACTED]
-- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
-- [[AsyncClient]] - `references` [EXTRACTED]
-- [[CollaboratorGreeter]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/make_event

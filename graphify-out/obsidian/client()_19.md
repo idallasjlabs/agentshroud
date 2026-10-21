@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L92"
+community: "ForwardRequest (2)"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/ForwardRequest_2
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2

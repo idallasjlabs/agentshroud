@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "MiddlewareManager"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # .test_full_init_success_and_getters()
@@ -15,4 +15,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[TestInit]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L51"
+community: "TrustConfig"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TrustConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

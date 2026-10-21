@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L6"
+community: "proxy_status.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/proxy_statuspy
 ---
 
 # Purpose
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[proxy_status.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/proxy_statuspy

@@ -18,9 +18,9 @@ tags:
 - [[MCPProxyConfig Fields]] - `contains` [EXTRACTED]
 - [[MCPServerConfig Fields]] - `contains` [EXTRACTED]
 - [[PermissionLevel Ordering]] - `contains` [EXTRACTED]
-- [[Purpose_173]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
 - [[Related_50]] - `contains` [EXTRACTED]
-- [[Responsibilities_47]] - `contains` [EXTRACTED]
+- [[Responsibilities_48]] - `contains` [EXTRACTED]
 - [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_configpy

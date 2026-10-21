@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig (2)"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig_2
 ---
 
 # TestEnforceDefaults
@@ -23,10 +23,10 @@ tags:
 - [[dot-test_security_module_config_defaults()]] - `method` [EXTRACTED]
 - [[EgressFilter_2]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[SecurityConfig_4]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[Test that core security modules default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # A Gemma model that is NOT Turbo Fieldflare's exact ID still falls through to…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_failover_base_other_gemma_models_still_route_to_lmstudio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_performance.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L96"
+community: "AlertDispatcher"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AlertDispatcher
 ---
 
 # .guard()
 
 ## Connections
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

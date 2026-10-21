@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[dot-fmt()]] - `references` [EXTRACTED]
-- [[dot-get()_4]] - `references` [EXTRACTED]
 - [[dot-get()_3]] - `references` [EXTRACTED]
-- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
 - [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
 - [[dot-request()]] - `references` [EXTRACTED]
 - [[dot-request()_1]] - `references` [EXTRACTED]
 - [[main()_16]] - `references` [EXTRACTED]

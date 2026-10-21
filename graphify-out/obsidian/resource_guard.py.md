@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard
 ---
 
 # resource_guard.py
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[ResourceGuard]] - `contains` [EXTRACTED]
 - [[ResourceLimits]] - `contains` [EXTRACTED]
-- [[ResourceUsage_1]] - `contains` [EXTRACTED]
+- [[ResourceUsage]] - `contains` [EXTRACTED]
 - [[VRAMHeadroomError]] - `contains` [EXTRACTED]
 - [[egress_monitor.py]] - `references` [EXTRACTED]
 - [[get_resource_guard()]] - `contains` [EXTRACTED]
-- [[health_report.py_2]] - `references` [EXTRACTED]
+- [[health_report.py]] - `references` [EXTRACTED]
 - [[setup_resource_guard()]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

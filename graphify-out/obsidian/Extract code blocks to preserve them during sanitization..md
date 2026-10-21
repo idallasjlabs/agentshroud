@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "MiddlewareManager"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # Extract code blocks to preserve them during sanitization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_code_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

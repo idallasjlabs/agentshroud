@@ -1,21 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "Deployment Runbook — AgentShroud"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Prerequisites
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements_1]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

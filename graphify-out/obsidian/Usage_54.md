@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "egress_filter.py"
-location: "L22"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

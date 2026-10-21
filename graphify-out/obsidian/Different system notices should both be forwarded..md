@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_proxy_request_allows_distinct_system_notices"
 location: "L2255"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_proxy_request_allows_distinct_system_notices
 ---
 
 # Different system notices should both be forwarded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_request_allows_distinct_system_notices()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_proxy_request_allows_distinct_system_notices

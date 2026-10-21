@@ -18,6 +18,6 @@ tags:
 - [[Rule Privilege Escalation Attempt]] - `references` [EXTRACTED]
 - [[Rule Secret File Access]] - `references` [EXTRACTED]
 - [[Rule Unexpected Outbound Connection from AgentShroud]] - `references` [EXTRACTED]
-- [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - `references` [EXTRACTED]
+- [[gateway service (agentshroud-gateway)]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/start-agentshroudsh_2

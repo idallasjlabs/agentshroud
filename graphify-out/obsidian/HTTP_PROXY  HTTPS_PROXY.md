@@ -12,12 +12,12 @@ tags:
 # HTTP_PROXY / HTTPS_PROXY
 
 ## Connections
-- [[Current Status_4]] - `contains` [EXTRACTED]
-- [[Description_3]] - `contains` [EXTRACTED]
+- [[Current Status_11]] - `contains` [EXTRACTED]
+- [[Description_11]] - `contains` [EXTRACTED]
 - [[Gateway Proxy Port]] - `contains` [EXTRACTED]
 - [[HTTP_PROXY]] - `contains` [EXTRACTED]
-- [[Related Notes_21]] - `contains` [EXTRACTED]
-- [[Value_1]] - `contains` [EXTRACTED]
+- [[Related Notes_67]] - `contains` [EXTRACTED]
+- [[Value_5]] - `contains` [EXTRACTED]
 - [[When Enabled]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_filterpy

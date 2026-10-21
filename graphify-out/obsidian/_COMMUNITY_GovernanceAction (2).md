@@ -28,7 +28,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_TestPatternDetection]]
 - 3 edges to [[_COMMUNITY_GovernanceAction]]
 - 3 edges to [[_COMMUNITY_SubagentGovernance]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_ResourceUsage]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
 

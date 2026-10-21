@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "api.py (2)"
-location: "L33"
+community: "AlertTelegramRelay"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/AlertTelegramRelay
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome_1]] - `references` [EXTRACTED]
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[dot-_handle()]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_33]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

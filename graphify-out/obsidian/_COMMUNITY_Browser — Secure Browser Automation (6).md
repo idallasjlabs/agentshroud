@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Browser — Secure Browser Automation_2]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Purpose_40]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Related Skills_27]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Usage_31]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[openclawskillsi-browserREADME]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Browser — Secure Browser Automation_1]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Purpose_29]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Related Skills_14]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Usage_18]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[hermesskillsi-browserREADME]] - document - docker/config/hermes/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation_6
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Browser — Secure Browser Automation_2]] - degree 5, connects to 1 community

@@ -9,7 +9,7 @@ members: 12
 
 ## Members
 - [[Access OpenClaw Dashboard Remotely]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Current Status_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Current Status_10]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Next Steps_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 1 OpenClaw Control UI on Port 18790]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 2 Gateway Dashboard on Port 8080]] - document - docs/reference/TAILSCALE_COMMANDS.md

@@ -12,14 +12,13 @@ tags:
 # trust_manager.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `contains` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
 - [[TrustLevel_2]] - `contains` [EXTRACTED]
 - [[TrustManager_3]] - `contains` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

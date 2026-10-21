@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestEmailSend"
+community: "TestEmailSend (2)"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/TestEmailSend_2
 ---
 
 # Malformed body is handled defensively (empty dict fallback).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_json_body_returns_200()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend
+#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend_2

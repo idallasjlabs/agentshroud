@@ -19,10 +19,10 @@ tags:
 - [[dot-_finalize()]] - `references` [EXTRACTED]
 - [[dot-_process()]] - `references` [EXTRACTED]
 - [[dot-get_events()_2]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_8]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_7]] - `references` [EXTRACTED]
 - [[dot-process_outbound()_5]] - `references` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `shares_data_with` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[Governance decision for an A2A message.]] - `rationale_for` [EXTRACTED]
 - [[TestDisabledProxy]] - `uses` [INFERRED]
 - [[TestInboundProcessing]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
 - [[_AGENT_CVE_REGISTRIES]] - `semantically_similar_to` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

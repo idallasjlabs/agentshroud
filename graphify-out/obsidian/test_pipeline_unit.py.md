@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # test_pipeline_unit.py
@@ -24,7 +24,7 @@ tags:
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[ScanResult_4]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
-- [[TestAuditChain_1]] - `contains` [EXTRACTED]
+- [[TestAuditChain]] - `contains` [EXTRACTED]
 - [[TestAuditChainBounded]] - `contains` [EXTRACTED]
 - [[TestContextGuardInPipeline]] - `contains` [EXTRACTED]
 - [[TestContextIntegrityInPipeline]] - `contains` [EXTRACTED]
@@ -42,6 +42,6 @@ tags:
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pipeline()_3]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
-- [[pipeline.py_1]] - `references` [EXTRACTED]
+- [[pipeline.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

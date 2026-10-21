@@ -12,7 +12,7 @@ tags:
 # TestPickLatestHermesTag
 
 ## Connections
-- [[dot-test_empty_returns_none()]] - `method` [EXTRACTED]
+- [[dot-test_empty_returns_none()_1]] - `method` [EXTRACTED]
 - [[dot-test_handles_four_component_tags()]] - `method` [EXTRACTED]
 - [[dot-test_picks_newest_date_tag()]] - `method` [EXTRACTED]
 - [[dot-test_real_hermes_tail_picks_latest_date()]] - `method` [EXTRACTED]

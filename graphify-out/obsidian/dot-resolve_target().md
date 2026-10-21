@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget (7)"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget_7
 ---
 
 # .resolve_target()
@@ -19,4 +19,4 @@ tags:
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[RouterError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_7

@@ -8,7 +8,7 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[dot-__init__()_112]] - code - src/interfaces/text_control_center.py
+- [[dot-__init__()_121]] - code - src/interfaces/text_control_center.py
 - [[dot-clear_screen()]] - code - src/interfaces/text_control_center.py
 - [[dot-draw_approvals()]] - code - src/interfaces/text_control_center.py
 - [[dot-draw_box()]] - code - src/interfaces/text_control_center.py
@@ -20,7 +20,7 @@ members: 30
 - [[dot-get_auth()]] - code - src/interfaces/text_control_center.py
 - [[dot-get_key()]] - code - src/interfaces/text_control_center.py
 - [[dot-make_api_request()]] - code - src/interfaces/text_control_center.py
-- [[dot-run()_3]] - code - src/interfaces/text_control_center.py
+- [[dot-run()_4]] - code - src/interfaces/text_control_center.py
 - [[ANSI]] - code - src/interfaces/text_control_center.py
 - [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
 - [[ControlCenter]] - code - src/interfaces/text_control_center.py
@@ -35,7 +35,7 @@ members: 30
 - [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
 - [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
 - [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
-- [[main()_13]] - code - src/interfaces/text_control_center.py
+- [[main()_15]] - code - src/interfaces/text_control_center.py
 - [[start-control-center]] - code - scripts/start-control-center
 - [[text_control_center.py_1]] - code - src/interfaces/text_control_center.py
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MultiTurnTracker"
 location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MultiTurnTracker
 ---
 
 # Get statistics for a session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_session_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

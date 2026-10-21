@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L248-L2107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_6]] - `method` [EXTRACTED]
+- [[dot-__init__()_3]] - `method` [EXTRACTED]
 - [[dot-_apply_filters()]] - `method` [EXTRACTED]
 - [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
@@ -49,8 +49,6 @@ tags:
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `uses` [INFERRED]
@@ -124,4 +122,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `uses` [INFERRED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/INFERRED #community/LLMProxy

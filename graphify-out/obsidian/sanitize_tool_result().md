@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "MiddlewareManager"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # sanitize_tool_result()
 
 ## Connections
-- [[dot-sanitize()_4]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `calls` [EXTRACTED]
 - [[Convenience function to sanitize tool result content.      Args         content]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

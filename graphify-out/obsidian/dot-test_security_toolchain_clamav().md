@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L885"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .test_security_toolchain_clamav()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContainerSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

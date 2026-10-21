@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (5)"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # .end_user_session()
@@ -16,4 +16,4 @@ tags:
 - [[End a user session and optionally clean up their isolated directory.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

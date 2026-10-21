@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "02-infrastructure.md (2)"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/Error_Indexmd
 ---
 
 # Crash Recovery.md
@@ -19,4 +19,4 @@ tags:
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

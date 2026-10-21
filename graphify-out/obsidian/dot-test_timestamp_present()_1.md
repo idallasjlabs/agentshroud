@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "test_collaborator_greeter.py (2)"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/test_collaborator_greeterpy_2
 ---
 
 # .test_timestamp_present()
@@ -16,4 +16,4 @@ tags:
 - [[TestAggregateResults_1]] - `method` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

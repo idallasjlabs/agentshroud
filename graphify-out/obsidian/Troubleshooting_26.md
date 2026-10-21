@@ -16,7 +16,7 @@ tags:
 - [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
 - [[Container Unhealthy_1]] - `contains` [EXTRACTED]
 - [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Performance Issues]] - `contains` [EXTRACTED]
 - [[Port Already in Use_2]] - `contains` [EXTRACTED]
 - [[Tests Failing_1]] - `contains` [EXTRACTED]
 

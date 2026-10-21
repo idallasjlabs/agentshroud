@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L424"
+community: "DNSForwarderProtocol"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/DNSForwarderProtocol
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

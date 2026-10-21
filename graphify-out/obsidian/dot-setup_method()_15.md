@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L22"
+community: "ResourceGuard"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/ResourceGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

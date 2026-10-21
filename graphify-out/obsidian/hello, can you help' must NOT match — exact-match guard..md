@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 location: "L9204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # hello, can you help?' must NOT match — exact-match guard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_predicate_partial_match_does_not_fire()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

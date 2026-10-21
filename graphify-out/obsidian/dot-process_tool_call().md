@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (5)"
+community: "MCPPermissionManager"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_5
+  - community/MCPPermissionManager
 ---
 
 # .process_tool_call()
@@ -22,4 +22,4 @@ tags:
 - [[Process an MCP tool call through the security pipeline.          Args]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_5
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/AgentShroud_v070_Enforcement_Audit_Results_2
 ---
 
 # AgentShroud Session Issue Register — 2026-03-14
@@ -21,4 +21,4 @@ tags:
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[session-issue-register-2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2

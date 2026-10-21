@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "_FakeRBAC"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/_FakeRBAC
 ---
 
 # collect_recent_events()
 
 ## Connections
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - `rationale_for` [EXTRACTED]
-- [[SecurityEvent]] - `references` [EXTRACTED]
+- [[SecurityEvent_1]] - `references` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `calls` [EXTRACTED]
 - [[_map_severity()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[get_security_events()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

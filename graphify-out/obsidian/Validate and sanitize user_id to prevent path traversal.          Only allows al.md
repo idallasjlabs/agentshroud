@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "UserSessionManager"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager
 ---
 
 # Validate and sanitize user_id to prevent path traversal.          Only allows al
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_validate_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

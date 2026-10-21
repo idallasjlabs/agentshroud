@@ -12,6 +12,6 @@ tags:
 # Build a SecurityPipeline with only the guards needed to exercise the     RateLim
 
 ## Connections
-- [[_make_pipeline()_1]] - `rationale_for` [EXTRACTED]
+- [[_make_pipeline()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RateLimitGuard

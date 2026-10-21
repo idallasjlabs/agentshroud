@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L9"
+community: "apply-patches.js (2)"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/apply-patchesjs_2
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Vault_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs_2

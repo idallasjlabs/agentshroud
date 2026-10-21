@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[fail()_1]] - `calls` [EXTRACTED]
-- [[pass()_1]] - `calls` [EXTRACTED]
+- [[pass()]] - `calls` [EXTRACTED]
 - [[test-op-auth.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test-op-authsh

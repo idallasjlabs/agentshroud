@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 location: "L9216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # .test_predicate_trailing_punctuation_stripped()
@@ -16,4 +16,4 @@ tags:
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[hello!' and 'hello' should both match.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

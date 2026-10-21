@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Unknown/unapproved users have stricter rate limits than collaborators. After…"
+community: ".test_stranger_within_limit_triggers_approval_workflow()"
 location: "L7863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Unknown/unapproved_users_have_stricter_rate_limits_than_collaborators_After
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # After the rate-limit window expires, collaborator messages go through normally.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorRateLimitRecovery]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Unknown/unapproved_users_have_stricter_rate_limits_than_collaborators_After
+#graphify/rationale #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

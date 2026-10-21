@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Usage"
-location: "L78"
+community: "USPTO Trademark Application — AgentShroud™"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/USPTO_Trademark_Application__AgentShroud
 ---
 
 # Notes
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud

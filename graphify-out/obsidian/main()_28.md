@@ -1,34 +1,20 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "main (2)"
-location: "L312"
+community: "main"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main_2
+  - community/main
 ---
 
 # main()
 
 ## Connections
-- [[dot-render_summary()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_default_command()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_touches_nothing()]] - `calls` [EXTRACTED]
-- [[dot-test_main_all_pass_with_injected_runner()]] - `calls` [EXTRACTED]
-- [[dot-test_main_default_hosts()]] - `calls` [EXTRACTED]
-- [[dot-test_main_failure_nonzero_exit()]] - `calls` [EXTRACTED]
-- [[dot-test_main_unreachable_nonzero_exit()]] - `calls` [EXTRACTED]
-- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - `rationale_for` [EXTRACTED]
-- [[HostRunner]] - `references` [EXTRACTED]
-- [[_dry_run_report()]] - `calls` [EXTRACTED]
-- [[_resolve_command()]] - `calls` [EXTRACTED]
-- [[build_parser()]] - `calls` [EXTRACTED]
-- [[multi-host-test.sh]] - `calls` [EXTRACTED]
-- [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[parse_hosts()]] - `calls` [EXTRACTED]
-- [[run_multi_host()]] - `calls` [EXTRACTED]
-- [[ssh_runner()]] - `calls` [EXTRACTED]
-- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
+- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/main_2
+#graphify/code #graphify/EXTRACTED #community/main

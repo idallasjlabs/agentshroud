@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
-location: "L9342"
+community: "._make_proxy()"
+location: "L7541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # fake_send()
 
 ## Connections
-- [[dot-test_cooldown_suppresses_second_ack()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

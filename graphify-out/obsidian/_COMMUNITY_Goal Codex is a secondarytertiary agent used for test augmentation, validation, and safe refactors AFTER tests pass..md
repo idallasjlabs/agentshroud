@@ -14,7 +14,7 @@ members: 22
 - [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - document - AGENTS.md
 - [[3) DEFINITION OF DONE (DoD)]] - document - AGENTS.md
 - [[5) ENVIRONMENT SETUP]] - document - AGENTS.md
-- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - AGENTS.md
+- [[6) SECURITY & SAFETY REQUIREMENTS]] - document - AGENTS.md
 - [[7) CODEX CLI OPERATIONAL RULES]] - document - AGENTS.md
 - [[8) CODEX CLI CONFIGURATION]] - document - AGENTS.md
 - [[A) Test Augmenter (Primary Job)]] - document - AGENTS.md
@@ -39,10 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud (2)]]
 - 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
 - 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
-- 1 edge to [[_COMMUNITY_Test Augmentation Specialist]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Communication Templates]]
+- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud]]
 
 ## Top bridge nodes
 - [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 12, connects to 3 communities

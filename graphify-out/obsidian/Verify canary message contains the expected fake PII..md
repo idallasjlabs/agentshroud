@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # Verify canary message contains the expected fake PII.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_message_contains_fake_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

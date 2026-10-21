@@ -17,7 +17,7 @@ tags:
 - [[Prior Findings — Verification]] - `contains` [EXTRACTED]
 - [[R3 Findings (NEW — this round)]] - `contains` [EXTRACTED]
 - [[Release Recommendation]] - `contains` [EXTRACTED]
-- [[Summary_25]] - `contains` [EXTRACTED]
+- [[Summary_23]] - `contains` [EXTRACTED]
 - [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL

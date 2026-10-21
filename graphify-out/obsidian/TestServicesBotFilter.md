@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_filters_services_by_bot_image()]] - `method` [EXTRACTED]
 - [[dot-test_no_bot_id_returns_all_services()]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
 - [[list_bots()]] - `conceptually_related_to` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 

@@ -16,7 +16,7 @@ tags:
 - [[dot-test_no_scheme()]] - `method` [EXTRACTED]
 - [[dot-test_weird_scheme()]] - `method` [EXTRACTED]
 - [[Edge cases and malformed URLs.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 

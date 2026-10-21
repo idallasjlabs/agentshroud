@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "ssh_config.py"
-location: "L12"
+community: "egress_filter.py (4)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_configpy
+  - community/egress_filterpy_4
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_configpy
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy_4

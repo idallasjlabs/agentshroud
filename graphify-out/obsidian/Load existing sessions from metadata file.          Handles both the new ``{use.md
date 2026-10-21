@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "UserSessionManager"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager
 ---
 
 # Load existing sessions from metadata file.          Handles both the new ``"{use
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

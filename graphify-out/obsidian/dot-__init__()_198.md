@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "DelegationManager"
-location: "L103"
+community: "RBACConfig (2)"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/RBACConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

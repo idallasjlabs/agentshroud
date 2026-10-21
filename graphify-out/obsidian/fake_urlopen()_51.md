@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Owner /pending should return deterministic snapshot of…"
-location: "L1121"
+community: "TestInboundPipelineOnGetUpdates"
+location: "L4759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Owner_/pending_should_return_deterministic_snapshot_of
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - `contains` [EXTRACTED]
+- [[dot-test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Owner_/pending_should_return_deterministic_snapshot_of
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

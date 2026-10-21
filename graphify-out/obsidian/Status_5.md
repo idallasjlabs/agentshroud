@@ -1,17 +1,17 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
-location: "L324"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
 ---
 
 # Status
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2

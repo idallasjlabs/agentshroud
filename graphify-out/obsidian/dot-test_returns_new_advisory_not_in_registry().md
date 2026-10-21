@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "check_upstream_cves"
+community: "test_daily_cve_report.py"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_returns_new_advisory_not_in_registry()
@@ -17,4 +17,4 @@ tags:
 - [[_make_github_advisory()]] - `calls` [EXTRACTED]
 - [[check_upstream_cves()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
+community: "SecurityPipeline"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2_4
+  - community/SecurityPipeline
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[dot-__init__()_190]] - `references` [EXTRACTED]
+- [[dot-__init__()_155]] - `references` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -48,11 +48,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[config()_4]] - `calls` [EXTRACTED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_4
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

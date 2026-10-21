@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD) (2)"
+community: "10. Troubleshooting (2)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+  - community/10_Troubleshooting_2
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting_2

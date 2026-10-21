@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_soc_realtime_coverage.py"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_23]] - `method` [EXTRACTED]
+- [[dot-__init__()_112]] - `method` [EXTRACTED]
 - [[dot-_event_fan_out()]] - `method` [EXTRACTED]
 - [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
 - [[dot-_send_event()]] - `method` [EXTRACTED]
-- [[dot-run()_4]] - `method` [EXTRACTED]
-- [[Any_42]] - `uses` [INFERRED]
+- [[dot-run()_2]] - `method` [EXTRACTED]
+- [[Any_3]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEvent]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

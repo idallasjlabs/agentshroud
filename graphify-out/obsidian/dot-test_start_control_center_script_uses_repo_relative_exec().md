@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L546"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # .test_start_control_center_script_uses_repo_relative_exec()
@@ -15,4 +15,4 @@ tags:
 - [[Control center launcher should be robust to current working directory.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

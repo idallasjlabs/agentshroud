@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager
 ---
 
 # Manages memory file lifecycle and content security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryLifecycleManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

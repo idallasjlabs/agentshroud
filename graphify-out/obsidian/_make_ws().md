@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_soc_realtime_coverage.py"
 location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _make_ws()
@@ -21,4 +21,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

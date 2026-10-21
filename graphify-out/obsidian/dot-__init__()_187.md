@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "TrustConfig"
-location: "L97"
+community: "agentshroud-blueteam/SKILL.md (3)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `references` [EXTRACTED]
-- [[TrustLevel_2]] - `references` [EXTRACTED]
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
+- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

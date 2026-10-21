@@ -8,8 +8,8 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
+- [[check()_8]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[check()_9]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[check()_10]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[dev_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
 - [[handoff_status()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh

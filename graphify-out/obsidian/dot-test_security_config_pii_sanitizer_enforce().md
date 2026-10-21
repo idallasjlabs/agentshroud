@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .test_security_config_pii_sanitizer_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[SecurityConfig_4]] - `calls` [EXTRACTED]
 - [[TestSecurityConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

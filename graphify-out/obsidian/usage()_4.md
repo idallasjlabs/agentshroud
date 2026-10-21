@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/agentshroud-manage.sh"
+source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "agentshroud-manage.sh"
-location: "L11"
+community: "find-sessions.sh"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/find-sessionssh
 ---
 
 # usage()
 
 ## Connections
-- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
-- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
+- [[wait-for-text.sh]] - `defines` [EXTRACTED]
+- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/code #graphify/EXTRACTED #community/find-sessionssh

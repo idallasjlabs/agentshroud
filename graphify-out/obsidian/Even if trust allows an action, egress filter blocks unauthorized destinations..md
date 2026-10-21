@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "PIIConfig"
+community: "ApprovalQueueConfig"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Even if trust allows an action, egress filter blocks unauthorized destinations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

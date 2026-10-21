@@ -28,24 +28,24 @@ members: 73
 - [[dot-agentsskillsi-twREADME]] - document - .agents/skills/i-tw/README.md
 - [[dot-agentsskillsi-vulcanREADME]] - document - .agents/skills/i-vulcan/README.md
 - [[AWS Cloud Management & FinOps_2]] - document - .agents/skills/i-aws/README.md
-- [[Apollo — Audio Systems Producer_4]] - document - .agents/skills/i-apollo/README.md
+- [[Apollo — Audio Systems Producer_2]] - document - .agents/skills/i-apollo/README.md
 - [[Branding Specialist (BS)_2]] - document - .agents/skills/i-bs/README.md
 - [[Daedalus — Concept Illustrator_1]] - document - .agents/skills/i-daedalus/README.md
 - [[Git Workflow Guardian (GIT-GUARD)_2]] - document - .agents/skills/i-gg/README.md
 - [[MCP Tools Usage (MCPM)_2]] - document - .agents/skills/i-mcpm/README.md
 - [[Pull Request Generator (PR)_2]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_150]] - document - .agents/skills/i-apollo/README.md
-- [[Purpose_151]] - document - .agents/skills/i-aws/README.md
-- [[Purpose_152]] - document - .agents/skills/i-bs/README.md
-- [[Purpose_153]] - document - .agents/skills/i-daedalus/README.md
-- [[Purpose_154]] - document - .agents/skills/i-gg/README.md
-- [[Purpose_155]] - document - .agents/skills/i-mcpm/README.md
-- [[Purpose_156]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_157]] - document - .agents/skills/i-sav/README.md
-- [[Purpose_158]] - document - .agents/skills/i-vulcan/README.md
-- [[Purpose_159]] - document - .agents/skills/i-sec-offense/README.md
-- [[Purpose_160]] - document - .agents/skills/i-sad/README.md
-- [[Purpose_161]] - document - .agents/skills/i-tw/README.md
+- [[Purpose_133]] - document - .agents/skills/i-apollo/README.md
+- [[Purpose_134]] - document - .agents/skills/i-aws/README.md
+- [[Purpose_135]] - document - .agents/skills/i-bs/README.md
+- [[Purpose_136]] - document - .agents/skills/i-daedalus/README.md
+- [[Purpose_137]] - document - .agents/skills/i-gg/README.md
+- [[Purpose_138]] - document - .agents/skills/i-mcpm/README.md
+- [[Purpose_139]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_140]] - document - .agents/skills/i-sad/README.md
+- [[Purpose_141]] - document - .agents/skills/i-sav/README.md
+- [[Purpose_142]] - document - .agents/skills/i-sec-offense/README.md
+- [[Purpose_143]] - document - .agents/skills/i-tw/README.md
+- [[Purpose_144]] - document - .agents/skills/i-vulcan/README.md
 - [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - .agents/skills/i-sec-offense/README.md
 - [[Related Skills_93]] - document - .agents/skills/i-apollo/README.md
 - [[Related Skills_94]] - document - .agents/skills/i-aws/README.md
@@ -54,11 +54,11 @@ members: 73
 - [[Related Skills_97]] - document - .agents/skills/i-gg/README.md
 - [[Related Skills_98]] - document - .agents/skills/i-mcpm/README.md
 - [[Related Skills_99]] - document - .agents/skills/i-pr/README.md
-- [[Related Skills_100]] - document - .agents/skills/i-sav/README.md
-- [[Related Skills_101]] - document - .agents/skills/i-vulcan/README.md
+- [[Related Skills_100]] - document - .agents/skills/i-sad/README.md
+- [[Related Skills_101]] - document - .agents/skills/i-sav/README.md
 - [[Related Skills_102]] - document - .agents/skills/i-sec-offense/README.md
-- [[Related Skills_103]] - document - .agents/skills/i-sad/README.md
-- [[Related Skills_104]] - document - .agents/skills/i-tw/README.md
+- [[Related Skills_103]] - document - .agents/skills/i-tw/README.md
+- [[Related Skills_104]] - document - .agents/skills/i-vulcan/README.md
 - [[Skill bdd_1]] - document - .agents/skills/i-bdd/SKILL.md
 - [[Skill ci_1]] - document - .agents/skills/i-ci/SKILL.md
 - [[Skill gitops_1]] - document - .agents/skills/i-gitops/SKILL.md
@@ -68,18 +68,18 @@ members: 73
 - [[System Audit Documentation_1]] - document - .agents/skills/i-sad/README.md
 - [[System Audit Vault_1]] - document - .agents/skills/i-sav/README.md
 - [[Technical Writer (TW)_2]] - document - .agents/skills/i-tw/README.md
-- [[Usage_103]] - document - .agents/skills/i-apollo/README.md
-- [[Usage_104]] - document - .agents/skills/i-aws/README.md
-- [[Usage_105]] - document - .agents/skills/i-bs/README.md
-- [[Usage_106]] - document - .agents/skills/i-daedalus/README.md
-- [[Usage_107]] - document - .agents/skills/i-gg/README.md
-- [[Usage_108]] - document - .agents/skills/i-mcpm/README.md
-- [[Usage_109]] - document - .agents/skills/i-pr/README.md
-- [[Usage_110]] - document - .agents/skills/i-sav/README.md
+- [[Usage_100]] - document - .agents/skills/i-apollo/README.md
+- [[Usage_101]] - document - .agents/skills/i-aws/README.md
+- [[Usage_102]] - document - .agents/skills/i-bs/README.md
+- [[Usage_103]] - document - .agents/skills/i-daedalus/README.md
+- [[Usage_104]] - document - .agents/skills/i-gg/README.md
+- [[Usage_105]] - document - .agents/skills/i-mcpm/README.md
+- [[Usage_106]] - document - .agents/skills/i-pr/README.md
+- [[Usage_107]] - document - .agents/skills/i-sad/README.md
+- [[Usage_108]] - document - .agents/skills/i-sav/README.md
+- [[Usage_109]] - document - .agents/skills/i-sec-offense/README.md
+- [[Usage_110]] - document - .agents/skills/i-tw/README.md
 - [[Usage_111]] - document - .agents/skills/i-vulcan/README.md
-- [[Usage_112]] - document - .agents/skills/i-sec-offense/README.md
-- [[Usage_113]] - document - .agents/skills/i-sad/README.md
-- [[Usage_114]] - document - .agents/skills/i-tw/README.md
 - [[Vulcan — Subject Matter Auditor_1]] - document - .agents/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -104,13 +104,13 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (4)]]
 - 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA)]]
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (5)]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
 - 1 edge to [[_COMMUNITY_8D Root Cause Analysis — Data-Driven Control System Investigation]]
 - 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)]]
 - 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
 - 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
 - 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
-- 1 edge to [[_COMMUNITY_iCloud Services (3)]]
 - 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI)]]
 - 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
 - 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]]

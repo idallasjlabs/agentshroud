@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L37"
+community: "CrossBotTrustLedger"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
-- [[Path_44]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

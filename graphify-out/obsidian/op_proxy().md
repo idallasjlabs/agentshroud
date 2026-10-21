@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "_is_op_reference_allowed"
-location: "L542"
+location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED

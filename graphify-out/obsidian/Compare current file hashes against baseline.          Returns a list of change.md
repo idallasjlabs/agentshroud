@@ -12,6 +12,6 @@ tags:
 # Compare current file hashes against baseline.          Returns a list of change
 
 ## Connections
-- [[dot-check()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

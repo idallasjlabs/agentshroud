@@ -17,6 +17,5 @@ tags:
 - [[dot-get()]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 - [[_intel_store()]] - `calls` [INFERRED]
-- [[lifespan()]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ReportStore

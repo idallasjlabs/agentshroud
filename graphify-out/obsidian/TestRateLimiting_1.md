@@ -1,26 +1,26 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "SessionManager (2)"
-location: "L110"
+community: "WebProxyConfig"
+location: "L326"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SessionManager_2
+  - community/WebProxyConfig
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
-- [[EventInjectionError]] - `uses` [INFERRED]
-- [[RateLimitExceeded]] - `uses` [INFERRED]
-- [[SessionBindingError]] - `uses` [INFERRED]
-- [[SessionError]] - `uses` [INFERRED]
-- [[SessionExpired]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SessionManager_2
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

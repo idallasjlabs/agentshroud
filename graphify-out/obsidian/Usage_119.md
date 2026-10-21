@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (2)"
-location: "L10"
+community: "Usage"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_2
+  - community/Usage
 ---
 
 # Usage
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
+- [[Add a comment to a card]] - `contains` [EXTRACTED]
+- [[Archive a card]] - `contains` [EXTRACTED]
+- [[Create a card]] - `contains` [EXTRACTED]
+- [[List boards]] - `contains` [EXTRACTED]
+- [[List cards in a list]] - `contains` [EXTRACTED]
+- [[List lists in a board]] - `contains` [EXTRACTED]
+- [[Move a card to another list]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2
+#graphify/document #graphify/EXTRACTED #community/Usage

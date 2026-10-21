@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .register_screenshot_hook()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

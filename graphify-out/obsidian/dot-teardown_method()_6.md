@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
-location: "L28"
+community: "MiddlewareManager (9)"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/MiddlewareManager_9
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9

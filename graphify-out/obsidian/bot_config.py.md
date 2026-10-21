@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "BotConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/BotConfig
 ---
 
 # bot_config.py
@@ -15,4 +15,4 @@ tags:
 - [[BotConfig]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/BotConfig

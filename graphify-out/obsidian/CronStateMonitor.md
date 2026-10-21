@@ -12,7 +12,7 @@ tags:
 # CronStateMonitor
 
 ## Connections
-- [[dot-__init__()_33]] - `method` [EXTRACTED]
+- [[dot-__init__()_34]] - `method` [EXTRACTED]
 - [[dot-_dispatch_aggregate()]] - `method` [EXTRACTED]
 - [[dot-_episode_id()]] - `method` [EXTRACTED]
 - [[dot-_evaluate()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-check()_1]] - `method` [EXTRACTED]
 - [[dot-parse_store()]] - `method` [EXTRACTED]
 - [[dot-start()]] - `method` [EXTRACTED]
-- [[dot-stop()_1]] - `method` [EXTRACTED]
+- [[dot-stop()]] - `method` [EXTRACTED]
 - [[dot-test_alert_ids_stable_per_job_episode()]] - `calls` [EXTRACTED]
 - [[dot-test_dispatch_failure_does_not_raise()]] - `calls` [EXTRACTED]
 - [[dot-test_first_sight_failing_alerts_once()]] - `calls` [EXTRACTED]
@@ -44,8 +44,6 @@ tags:
 - [[_DedupDispatchFake]] - `uses` [INFERRED]
 - [[_DispatchSpy]] - `uses` [INFERRED]
 - [[cron_state_monitor.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_cron_state_monitor.py]] - `imports` [EXTRACTED]
 - [[test_poll_loop_runs_and_stops()]] - `calls` [EXTRACTED]
 

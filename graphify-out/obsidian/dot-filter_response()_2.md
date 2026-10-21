@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig (3)"
+community: "RBACConfig (2)"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/RBACConfig_2
 ---
 
 # .filter_response()
@@ -16,4 +16,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 - [[Strip admin-private content from a response before delivering to user.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

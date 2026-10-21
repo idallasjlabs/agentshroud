@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
-- [[TestAnomalyDetection_1]] - `method` [EXTRACTED]
+- [[TestAnomalyDetection]] - `method` [EXTRACTED]
 - [[_fake_stats()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

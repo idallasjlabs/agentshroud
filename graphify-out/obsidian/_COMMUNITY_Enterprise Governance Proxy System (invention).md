@@ -12,10 +12,10 @@ members: 16
 - [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
 - [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
-- [[Decision_5]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Decision_4]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
 - [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
 - [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md

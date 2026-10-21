@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services (2)"
 location: "L6"
@@ -19,8 +19,8 @@ tags:
 - [[Notes Operations_1]] - `contains` [EXTRACTED]
 - [[Security_9]] - `contains` [EXTRACTED]
 - [[Setup_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-icloudSKILL]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "TestSSRFDetection (3)"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestSSRFDetection_3
 ---
 
 # Return canary status for dashboard.          Args:             session_id: Sessi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_status()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_3

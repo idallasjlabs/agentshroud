@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # Initialize Microsoft Presidio engines          Falls back to regex if Presidio/s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_init_presidio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

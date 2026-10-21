@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Auto-start a stopped Colima VM (step 1a)]] - `references` [EXTRACTED]
 - [[Dead docker.sock forward repair (step 1a-bis)]] - `references` [EXTRACTED]
-- [[Dev container caps under the 4 CPU  9 GiB VM]] - `conceptually_related_to` [EXTRACTED]
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
 - [[colima-vm-flags behavioral check (2026-10-16)]] - `references` [EXTRACTED]

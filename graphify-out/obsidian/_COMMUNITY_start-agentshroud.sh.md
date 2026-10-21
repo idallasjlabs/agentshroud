@@ -41,10 +41,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY_start-agentshroud.sh (2)]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes) (2)]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh (3)]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
+- 1 edge to [[_COMMUNITY_security-entrypoint.sh]]
 - 1 edge to [[_COMMUNITY__is_op_reference_allowed]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
 - [[start-agentshroud.sh]] - degree 28, connects to 6 communities

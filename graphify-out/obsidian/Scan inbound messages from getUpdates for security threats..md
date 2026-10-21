@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy"
 location: "L4202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy
 ---
 
 # Scan inbound messages from getUpdates for security threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

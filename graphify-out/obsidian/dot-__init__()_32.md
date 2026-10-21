@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "MCPPermissionManager (2)"
-location: "L183"
+community: "ReportStore"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/ReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/ReportStore

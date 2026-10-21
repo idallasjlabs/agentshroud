@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Function Details (2)"
+community: "Function Details"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_2
+  - community/Function_Details
 ---
 
 # Responsibilities
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_2
+#graphify/document #graphify/EXTRACTED #community/Function_Details

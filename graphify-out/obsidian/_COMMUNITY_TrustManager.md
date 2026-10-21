@@ -1,43 +1,35 @@
 ---
 type: community
-members: 31
+members: 23
 ---
 
 # TrustManager
 
-**Members:** 31 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[ADR-008 Progressive Trust Level System]] - concept - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Approval DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
 - [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
 - [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[ApprovalRequest (data entity)]] - concept - docs/data/data-dictionary.md
 - [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
 - [[Database Schema]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Environment Variables_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Environment Variables_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Function Details_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Key Classes  Functions_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
 - [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_74]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[RateLimitBucket (data entity)]] - concept - docs/data/data-dictionary.md
-- [[Related]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Purpose_83]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Related_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Threat Model_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustLevel (data entity)]] - concept - docs/data/data-dictionary.md
 - [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
 - [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[agent_trust SQLite table]] - code - docs/data/schema-documentation.md
-- [[agentshroud.yaml (main config schema)]] - code - docs/data/schema-documentation.md
-- [[approval_requests SQLite table]] - code - docs/data/schema-documentation.md
 - [[trust_manager.py]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 
 ## Live Query (requires Dataview plugin)
@@ -48,11 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 - 1 edge to [[_COMMUNITY_hermesSOUL]]
 - 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
 - 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 3 communities
-- [[Approval DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community
+- [[TrustManager_5]] - degree 18, connects to 5 communities

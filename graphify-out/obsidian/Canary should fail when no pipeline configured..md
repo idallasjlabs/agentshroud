@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # Canary should fail when no pipeline configured.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_fails_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

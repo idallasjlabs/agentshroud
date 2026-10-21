@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "AlertDispatcher"
 location: "L1010"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/AlertDispatcher
 ---
 
 # .test_env_guard_scrub_output()
@@ -15,4 +15,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [EXTRACTED]
 - [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

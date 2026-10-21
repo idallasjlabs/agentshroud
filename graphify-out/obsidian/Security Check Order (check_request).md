@@ -12,6 +12,6 @@ tags:
 # Security Check Order (check_request)
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_proxypy

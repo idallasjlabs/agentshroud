@@ -12,6 +12,6 @@ tags:
 # .close()
 
 ## Connections
-- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

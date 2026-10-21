@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "alert_dispatcher.py"
-location: "L12"
+community: "Test-Driven Development README"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/Test-Driven_Development_README
 ---
 
 # Purpose
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

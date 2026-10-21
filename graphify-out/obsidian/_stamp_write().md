@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "FR3: System Integrity (2)"
+community: "FR3: System Integrity"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity_2
+  - community/FR3_System_Integrity
 ---
 
 # _stamp_write()
@@ -15,4 +15,4 @@ tags:
 - [[security-scheduler.sh]] - `defines` [EXTRACTED]
 - [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity_2
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

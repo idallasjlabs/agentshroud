@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TrustConfig"
-location: "L27"
+community: "TeamsConfig"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TeamsConfig
 ---
 
 # manager()
 
 ## Connections
-- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_3]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh"
+community: "setup-secrets.sh (2)"
 location: "L49-L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # PROJECT (compose project name)
@@ -16,4 +16,4 @@ tags:
 - [[_hermes_up()]] - `shares_data_with` [EXTRACTED]
 - [[asb clean-rebuild fullhermes]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

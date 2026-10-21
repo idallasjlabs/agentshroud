@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # Chain with many entries — verify integrity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainIntegrity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

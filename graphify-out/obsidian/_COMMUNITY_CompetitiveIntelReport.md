@@ -20,7 +20,7 @@ members: 78
 - [[dot-store_dir()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_content_hash_is_deterministic()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_different_content_different_hash()]] - code - gateway/tests/test_intel_pipeline.py
+- [[dot-test_different_content_different_hash()_1]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_empty_report_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_empty_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_full_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
@@ -47,7 +47,7 @@ members: 78
 - [[dot-test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_verify_integrity_fails_after_tampering()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_verify_integrity_passes_for_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-verify_chain()_1]] - code - gateway/security/intel_report.py
+- [[dot-verify_chain()_2]] - code - gateway/security/intel_report.py
 - [[dot-verify_entry()]] - code - gateway/security/citation_verifier.py
 - [[dot-verify_integrity()]] - code - gateway/security/intel_report.py
 - [[dot-verify_report()]] - code - gateway/security/citation_verifier.py
@@ -95,11 +95,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_api.py (2)_1]]
-- 14 edges to [[_COMMUNITY_api.py]]
+- 33 edges to [[_COMMUNITY_api.py]]
 - 8 edges to [[_COMMUNITY_FetchOutcome]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_CompetitiveIntelReport (2)]]
 - 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
 
 ## Top bridge nodes
@@ -107,4 +107,4 @@ SORT file.name ASC
 - [[CompetitorEntry_1]] - degree 22, connects to 3 communities
 - [[Citation_1]] - degree 11, connects to 3 communities
 - [[citation_verifier.py]] - degree 10, connects to 3 communities
-- [[dot-_verify_url()]] - degree 5, connects to 2 communities
+- [[dot-load_latest()]] - degree 6, connects to 2 communities

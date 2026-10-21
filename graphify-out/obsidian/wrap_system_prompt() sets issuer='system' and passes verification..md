@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "AuditChain (2)"
+community: "SecurityPipeline"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain_2
+  - community/SecurityPipeline
 ---
 
 # wrap_system_prompt() sets issuer='system' and passes verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_envelope_wraps_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain_2
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

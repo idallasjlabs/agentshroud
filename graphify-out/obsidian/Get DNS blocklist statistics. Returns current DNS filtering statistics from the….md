@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
-location: "L4060"
+community: "ingest_api/main.py"
+location: "L4047"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ingest_api/mainpy
 ---
 
 # Get DNS blocklist statistics. Returns current DNS filtering statistics from the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_dns_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

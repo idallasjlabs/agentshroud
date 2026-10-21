@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # HTTPForwarder
 
 ## Connections
-- [[dot-__init__()_26]] - `method` [EXTRACTED]
-- [[dot-forward()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_69]] - `method` [EXTRACTED]
+- [[dot-forward()_1]] - `method` [EXTRACTED]
+- [[dot-get_stats()_4]] - `method` [EXTRACTED]
 - [[dot-health_check()]] - `method` [EXTRACTED]
 - [[dot-is_healthy()]] - `method` [EXTRACTED]
 - [[dot-last_forward_time()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[SecurityPipeline_1]] - `references` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
-- [[forwarder()]] - `calls` [EXTRACTED]
+- [[forwarder()_1]] - `calls` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

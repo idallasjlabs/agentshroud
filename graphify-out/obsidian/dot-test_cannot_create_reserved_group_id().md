@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Action (2)"
 location: "L545"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Action_2
 ---
 
 # .test_cannot_create_reserved_group_id()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Action_2

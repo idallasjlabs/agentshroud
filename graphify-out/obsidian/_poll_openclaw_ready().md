@@ -2,7 +2,7 @@
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
 community: "start-agentshroud.sh"
-location: "L863"
+location: "L873"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,7 +15,7 @@ tags:
 - [[_model_runtime_ready()]] - `calls` [EXTRACTED]
 - [[_reconcile_security_critical_cron()]] - `calls` [EXTRACTED]
 - [[_telegram_get_me_ready()]] - `calls` [EXTRACTED]
-- [[start-agentshroud.sh]] - `references` [EXTRACTED]
+- [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

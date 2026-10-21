@@ -15,7 +15,7 @@ members: 17
 - [[5. Pre-Merge]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
 - [[Common Commands Quick Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
 - [[Emergency Contacts]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Procedures_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures_2]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
 - [[GSDE&G Skills Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
 - [[GitHub Workflow Integration]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
 - [[P1 Incident Response]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
@@ -35,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference (2)_1]]
+- 1 edge to [[_COMMUNITY_Skills by Category]]
 - 1 edge to [[_COMMUNITY_GSDE&G Skills Reference (2)]]
 
 ## Top bridge nodes

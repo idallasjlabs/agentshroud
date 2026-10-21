@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "MCP Auth Reset (MCPM-AUTH-RESET) (2)"
+community: "macOS System Administrator (MAC) (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET_2
+  - community/macOS_System_Administrator_MAC_2
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET_2
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "SessionManager (2)"
+community: "SessionManager"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager_2
+  - community/SessionManager
 ---
 
 # .rotate_session()
@@ -16,4 +16,4 @@ tags:
 - [[Session]] - `references` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

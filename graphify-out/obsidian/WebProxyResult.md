@@ -24,6 +24,6 @@ tags:
 - [[Result of proxying a web request.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyAction

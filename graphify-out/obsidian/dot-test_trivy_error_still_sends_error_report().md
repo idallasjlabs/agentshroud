@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "test_daily_cve_report.py (2)"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/test_daily_cve_reportpy_2
 ---
 
 # .test_trivy_error_still_sends_error_report()
@@ -16,4 +16,4 @@ tags:
 - [[_make_error_report()]] - `calls` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_2

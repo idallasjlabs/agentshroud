@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ContextSegment (3)"
+community: "PIIConfig"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment_3
+  - community/PIIConfig
 ---
 
 # TestSecurityPipelineChainLatency
@@ -21,11 +21,11 @@ tags:
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment_3
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

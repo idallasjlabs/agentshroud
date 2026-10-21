@@ -12,7 +12,7 @@ tags:
 # ws_updates()
 
 ## Connections
-- [[WebSocket_3]] - `references` [EXTRACTED]
+- [[WebSocket_2]] - `references` [EXTRACTED]
 - [[WebSocket for real-time update progress. Requires scoped WS token.]] - `rationale_for` [EXTRACTED]
 - [[_validate_mgmt_ws_token()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]

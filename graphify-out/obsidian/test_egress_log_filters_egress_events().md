@@ -12,7 +12,7 @@ tags:
 # test_egress_log_filters_egress_events()
 
 ## Connections
-- [[FakeAuditStore]] - `calls` [EXTRACTED]
+- [[FakeAuditStore_1]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

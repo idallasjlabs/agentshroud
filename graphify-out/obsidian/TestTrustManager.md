@@ -12,7 +12,7 @@ tags:
 # TestTrustManager
 
 ## Connections
-- [[dot-setup_method()_37]] - `method` [EXTRACTED]
+- [[dot-setup_method()_33]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_7]] - `method` [EXTRACTED]
 - [[dot-test_action_allowed_basic()]] - `method` [EXTRACTED]
 - [[dot-test_action_denied_high_trust()]] - `method` [EXTRACTED]

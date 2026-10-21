@@ -1,16 +1,13 @@
 ---
 type: community
-members: 26
+members: 21
 ---
 
 # SecureBrowser Security Policies
 
-**Members:** 26 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[ApprovalRequest_2]] - document - docs/data/data-dictionary.md
 - [[Audit Access]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Audit Retention]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Audit Trail Standards]] - document - skills/custom/securebrowser/references/security-policies.md
@@ -25,11 +22,9 @@ members: 26
 - [[Risk Elevation Factors]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[SecureBrowser Security Policies]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Security Management Entities]] - document - docs/data/data-dictionary.md
-- [[Security Testing]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Threat Model_2]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[TrustLevel]] - document - docs/data/data-dictionary.md
 - [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[What We Don't Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[What We Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
@@ -43,9 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
 - 1 edge to [[_COMMUNITY_Critical Findings]]
+- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
 
 ## Top bridge nodes
-- [[SecureBrowser Security Policies]] - degree 10, connects to 1 community
-- [[Security Management Entities]] - degree 3, connects to 1 community
+- [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities

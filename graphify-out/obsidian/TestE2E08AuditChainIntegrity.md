@@ -21,7 +21,7 @@ tags:
 - [[E2E-08 Every pipeline event — block or forward — produces an audit entry.]] - `rationale_for` [EXTRACTED]
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]

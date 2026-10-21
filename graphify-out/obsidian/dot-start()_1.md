@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPInspector"
+community: "StdioConnection"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/StdioConnection
 ---
 
 # .start()
 
 ## Connections
-- [[dot-send_request()_1]] - `calls` [EXTRACTED]
+- [[dot-send_request()]] - `calls` [EXTRACTED]
 - [[Start the MCP server process.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

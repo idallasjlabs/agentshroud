@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "Test-Driven Development README"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/Test-Driven_Development_README
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

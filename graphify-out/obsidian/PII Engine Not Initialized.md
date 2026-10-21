@@ -12,6 +12,6 @@ tags:
 # PII Engine Not Initialized
 
 ## Connections
-- [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

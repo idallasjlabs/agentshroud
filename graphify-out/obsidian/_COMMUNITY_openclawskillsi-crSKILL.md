@@ -11,19 +11,19 @@ members: 66
 - [[API  Function Reference_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Architecture Decision Record (ADR)_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Daedalus — Concept Illustrator_2]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 - [[Expected output_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Expected ok_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Expected INFO Re-queued 3 jobs_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Hermes — Podcast Production Orchestrator_2]] - document - docker/config/openclaw/skills/i-hermes/README.md
 - [[If not → escalate to field team via ops-alerts_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Purpose_184]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Purpose_185]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Purpose_186]] - document - docker/config/openclaw/skills/i-sad/README.md
-- [[Purpose_187]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Purpose_188]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Purpose_189]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Purpose_190]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Purpose_179]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Purpose_180]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Purpose_181]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Purpose_182]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Purpose_183]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Purpose_184]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Purpose_185]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Query the control DB_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[Related Skills_111]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 - [[Related Skills_112]] - document - docker/config/openclaw/skills/i-hermes/README.md
@@ -46,13 +46,13 @@ members: 66
 - [[System Audit Documentation_2]] - document - docker/config/openclaw/skills/i-sad/README.md
 - [[System Audit Vault_2]] - document - docker/config/openclaw/skills/i-sav/README.md
 - [[Technical Illustrator (TI)_1]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Usage_124]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Usage_125]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Usage_126]] - document - docker/config/openclaw/skills/i-sad/README.md
-- [[Usage_127]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Usage_128]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Usage_129]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Usage_130]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Usage_120]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Usage_121]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Usage_122]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Usage_123]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Usage_124]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Usage_125]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Usage_126]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[INFO Extracted 1,204 records → s3my-bucketlanding..._2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 - [[openclawskillsi-bddSKILL]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
@@ -92,9 +92,9 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Skill CICD Pipeline Advisor (CICD) (2)]]
 - 1 edge to [[_COMMUNITY_Skill Code Review (CR) (2)]]
 - 1 edge to [[_COMMUNITY_Apollo — Audio Systems Producer (2)]]
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (5)]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps]]
-- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (6)]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (4)]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps (2)]]
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (7)]]
 - 1 edge to [[_COMMUNITY_Branding Specialist (BS)]]
 - 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (CICD)]]
 - 1 edge to [[_COMMUNITY_Code Review (CR)]]
@@ -119,7 +119,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (3)]]
 - 1 edge to [[_COMMUNITY_Skill UX Expert (UX) (3)]]
 - 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (2)]]
-- 1 edge to [[_COMMUNITY_iCloud Services (2)]]
+- 1 edge to [[_COMMUNITY_iCloud Services (3)]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM) (3)]]
 - 1 edge to [[_COMMUNITY_Skill UI Expert (UI) (3)]]
 - 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (3)]]
@@ -138,10 +138,10 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Output Sections (ALL required)]]
 - 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (3)]]
 - 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (3)]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (3)]]
 - 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator (3)]]
 - 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL) (3)]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (3)]]
 - 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)]]
 - 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator (3)]]
 - 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor (3)]]

@@ -12,7 +12,7 @@ tags:
 # is_safe_a2a_callback_url()
 
 ## Connections
-- [[dot-_decide()]] - `calls` [EXTRACTED]
+- [[dot-_decide()_1]] - `calls` [EXTRACTED]
 - [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - `rationale_for` [EXTRACTED]
 - [[_address_is_public()]] - `calls` [EXTRACTED]
 - [[_canonicalize_ip_literal()]] - `calls` [EXTRACTED]

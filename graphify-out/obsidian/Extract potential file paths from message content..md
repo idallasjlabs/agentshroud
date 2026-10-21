@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "MiddlewareManager"
 location: "L1088"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # Extract potential file paths from message content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_file_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -12,8 +12,8 @@ tags:
 # GatewayEvent
 
 ## Connections
-- [[dot-emit()_1]] - `shares_data_with` [EXTRACTED]
-- [[dot-to_dict()_11]] - `method` [EXTRACTED]
+- [[dot-emit()]] - `shares_data_with` [EXTRACTED]
+- [[dot-to_dict()_4]] - `method` [EXTRACTED]
 - [[A single gateway event]] - `rationale_for` [EXTRACTED]
 - [[EventBus]] - `shares_data_with` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]

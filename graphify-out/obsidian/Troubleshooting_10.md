@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
-location: "L246"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_2]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
+- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
+- [[SSH Not Working]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

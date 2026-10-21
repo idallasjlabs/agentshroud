@@ -12,8 +12,8 @@ members: 69
 - [[dot-test_ws_activity_accepts_scoped_token()]] - code - gateway/tests/test_security_fixes.py
 - [[dot-test_ws_activity_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
 - [[dot-test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
-- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[AuthRequired_4]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[AuthRequired_3]] - code - gateway/ingest_api/routes/dashboard.py
 - [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
@@ -25,7 +25,7 @@ members: 69
 - [[GET dashboardstats without auth returns 401]] - rationale - gateway/tests/test_dashboard.py
 - [[JSON stats for dashboard]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[Path_56]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Path_57]] - code - gateway/ingest_api/routes/dashboard.py
 - [[Request_7]] - code - gateway/ingest_api/routes/dashboard.py
 - [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Return a short-lived WS-only auth token for cookie-authenticated sessions.]] - rationale - gateway/ingest_api/routes/dashboard.py
@@ -49,7 +49,7 @@ members: 69
 - [[_create_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_load_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_parse_collaborator_log_dirs()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[auth_dep()_4]] - code - gateway/ingest_api/routes/dashboard.py
+- [[auth_dep()_3]] - code - gateway/ingest_api/routes/dashboard.py
 - [[dashboard.py]] - code - gateway/ingest_api/routes/dashboard.py
 - [[dashboard_stats()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[dashboard_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
@@ -86,18 +86,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 5 edges to [[_COMMUNITY_create_auth_dependency (3)]]
+- 7 edges to [[_COMMUNITY_make_event]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 5 edges to [[_COMMUNITY_test_dashboard.py (2)]]
 - 4 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY_test_e2e_proxy.py (2)]]
-- 3 edges to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
-- 1 edge to [[_COMMUNITY_make_event]]
+- 2 edges to [[_COMMUNITY_create_auth_dependency]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 2 edges to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY_ForwardRequest (2)]]
 
 ## Top bridge nodes
-- [[dashboard.py]] - degree 22, connects to 7 communities
-- [[test_dashboard.py]] - degree 31, connects to 2 communities
+- [[dashboard.py]] - degree 22, connects to 6 communities
+- [[test_dashboard.py]] - degree 31, connects to 3 communities
 - [[_build_egress_live_snapshot()]] - degree 8, connects to 2 communities
 - [[_create_ws_token()]] - degree 15, connects to 1 community
 - [[dashboard_ws_token()]] - degree 5, connects to 1 community

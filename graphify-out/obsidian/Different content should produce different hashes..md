@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # Different content should produce different hashes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_content_hashes_are_unique()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

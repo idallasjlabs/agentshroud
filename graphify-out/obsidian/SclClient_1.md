@@ -12,9 +12,9 @@ tags:
 # SclClient
 
 ## Connections
-- [[dot-get()_3]] - `method` [EXTRACTED]
-- [[dot-new()_1]] - `method` [EXTRACTED]
-- [[dot-post()_1]] - `method` [EXTRACTED]
+- [[dot-get()_4]] - `method` [EXTRACTED]
+- [[dot-new()_2]] - `method` [EXTRACTED]
+- [[dot-post()_2]] - `method` [EXTRACTED]
 - [[Client]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[main()_16]] - `calls` [EXTRACTED]

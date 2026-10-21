@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (8)"
 location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_8
 ---
 
 # .get_lifecycle_status()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-get_recent_actions()]] - `calls` [EXTRACTED]
 - [[dot-get_recent_threats()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Get current lifecycle management status.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8

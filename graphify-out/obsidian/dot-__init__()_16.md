@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L61"
+community: "AlertDispatcher"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

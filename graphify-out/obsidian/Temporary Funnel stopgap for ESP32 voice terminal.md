@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "rationale"
-community: "SecureBrowser Skill (2) (2)"
+community: "cmd_start"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2_2
+  - community/cmd_start
 ---
 
 # Temporary Funnel stopgap for ESP32 voice terminal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cmd_start]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_Skill_2_2
+#graphify/rationale #graphify/EXTRACTED #community/cmd_start

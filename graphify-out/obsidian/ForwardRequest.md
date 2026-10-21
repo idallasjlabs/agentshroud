@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "test_security.py"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/test_securitypy
 ---
 
 # ForwardRequest
@@ -19,12 +19,12 @@ tags:
 - [[dot-test_valid_forward_request()]] - `calls` [EXTRACTED]
 - [[dot-validate_source()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_46]] - `uses` [INFERRED]
+- [[Any_49]] - `uses` [INFERRED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_2]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[Path_19]] - `uses` [INFERRED]
+- [[Path_17]] - `uses` [INFERRED]
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
@@ -70,4 +70,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/test_securitypy
