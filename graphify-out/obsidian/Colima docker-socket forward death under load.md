@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-20-dev.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Colima docker-socket forward death under load
@@ -21,4 +21,4 @@ tags:
 - [[colima-health-check.sh]] - `conceptually_related_to` [EXTRACTED]
 - [[dockerd self-DoS on unpruned dangling image backlog (782-1240 images)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "main"
+community: "AgentShroud Blue Team Security Auditor (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/AgentShroud_Blue_Team_Security_Auditor_2
 ---
 
 # Cron: Daily CVE Triage & Remediation Scan
 
 ## Connections
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `references` [EXTRACTED]
-- [[main()_28]] - `shares_data_with` [INFERRED]
+- [[main()_30]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2

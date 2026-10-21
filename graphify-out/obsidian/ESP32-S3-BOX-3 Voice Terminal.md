@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide (3)"
+community: "hermes/skills/i-icloud/scripts/calendar.js"
 location: "## [1.2.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3
+  - community/hermes/skills/i-icloud/scripts/calendarjs
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal
@@ -20,4 +20,4 @@ tags:
 - [[OTA Wireless Firmware Updates]] - `references` [EXTRACTED]
 - [[Voice Gateway]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3
+#graphify/concept #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs

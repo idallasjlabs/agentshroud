@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Blocklist stub that blocks nothing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockNone]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

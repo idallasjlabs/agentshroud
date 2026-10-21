@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2)"
+community: "Health Checks"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/Health_Checks
 ---
 
 # Boot Sequence (Numbered)
@@ -19,4 +19,4 @@ tags:
 - [[Stage 5 Fully Operational]] - `contains` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

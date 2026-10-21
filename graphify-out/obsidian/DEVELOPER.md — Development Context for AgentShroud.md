@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/DEVELOPER.md"
 type: "document"
-community: "DEVELOPER.md — Development Context for AgentShroud"
+community: "TestBenchmarkRegression"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShroud
+  - community/TestBenchmarkRegression
 ---
 
 # DEVELOPER.md — Development Context for AgentShroud
@@ -15,7 +15,6 @@ tags:
 - [[1. Owner & Governance Context]] - `contains` [EXTRACTED]
 - [[2. Project]] - `contains` [EXTRACTED]
 - [[3. Prime Directive]] - `contains` [EXTRACTED]
-- [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 - [[4. Development Rules (TDD)]] - `contains` [EXTRACTED]
 - [[5. Language & Tooling Standards]] - `contains` [EXTRACTED]
 - [[6. Runtime Environment (CRITICAL)]] - `contains` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[9. Skill Lookup]] - `contains` [EXTRACTED]
 - [[DEVELOPER]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression

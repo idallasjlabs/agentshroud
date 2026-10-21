@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "troubleshooting.md"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/troubleshootingmd
 ---
 
 # Build Stages
@@ -16,4 +16,4 @@ tags:
 - [[Stage 1 Builder (`python3.13-slim AS builder`)]] - `contains` [EXTRACTED]
 - [[Stage 2 Runtime (`python3.13-slim`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

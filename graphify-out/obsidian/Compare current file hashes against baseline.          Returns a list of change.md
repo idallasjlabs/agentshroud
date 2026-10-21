@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "ConfigIntegrityMonitor"
+community: "test_runtime_engines.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/test_runtime_enginespy
 ---
 
 # Compare current file hashes against baseline.          Returns a list of change
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy

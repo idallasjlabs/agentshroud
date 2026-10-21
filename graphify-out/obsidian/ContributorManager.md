@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # ContributorManager
 
 ## Connections
-- [[dot-__init__()_190]] - `method` [EXTRACTED]
+- [[dot-__init__()_162]] - `method` [EXTRACTED]
 - [[dot-_build_record()]] - `method` [EXTRACTED]
 - [[dot-_ensure_rbac()]] - `method` [EXTRACTED]
 - [[dot-_ensure_teams()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_75]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `references` [EXTRACTED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
@@ -62,7 +62,7 @@ tags:
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[UserRole]] - `uses` [INFERRED]
 - [[WebSocket_6]] - `uses` [INFERRED]
-- [[_FakeRBAC]] - `uses` [INFERRED]
+- [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
@@ -70,4 +70,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

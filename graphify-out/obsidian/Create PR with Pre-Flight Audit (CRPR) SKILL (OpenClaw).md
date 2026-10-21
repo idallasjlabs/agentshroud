@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "Implementation Status"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Implementation_Status
 ---
 
 # Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)
@@ -14,4 +14,4 @@ tags:
 - [[Code Review (CR) SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 - [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

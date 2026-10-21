@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "TestDomainValidationHelper"
+community: "AgentShroud Documentation"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/AgentShroud_Documentation
 ---
 
 # CredentialInfo
@@ -27,9 +27,9 @@ tags:
 - [[dot-test_not_due_without_force_is_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-test_should_warn()]] - `calls` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[Information about a managed credential.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
 - [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
 - [[TestCredentialInfo]] - `uses` [INFERRED]
@@ -48,4 +48,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation

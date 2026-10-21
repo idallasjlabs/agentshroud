@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (4)"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Create a fake contributor markdown file for the given uid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_md()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/rationale #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

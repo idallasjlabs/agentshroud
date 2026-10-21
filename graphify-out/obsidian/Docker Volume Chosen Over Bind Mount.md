@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "rationale"
-community: "OpenClaw Workspace Usage Guide"
+community: "test_jira_dev_ticket.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/test_jira_dev_ticketpy
 ---
 
 # Docker Volume Chosen Over Bind Mount
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WORKSPACE_DECISION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/rationale #graphify/EXTRACTED #community/test_jira_dev_ticketpy

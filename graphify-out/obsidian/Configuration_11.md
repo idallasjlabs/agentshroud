@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L223"
+community: "AgentShroud Color Palette"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/AgentShroud_Color_Palette
 ---
 
 # Configuration
 
 ## Connections
-- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
-- [[Key Thresholds]] - `contains` [EXTRACTED]
-- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
-- [[Owner Exemption]] - `contains` [EXTRACTED]
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

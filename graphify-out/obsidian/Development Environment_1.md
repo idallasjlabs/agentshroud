@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
 ---
 
 # Development Environment
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 - [[Communication & Tooling]] - `contains` [EXTRACTED]
-- [[Container Architecture_1]] - `contains` [EXTRACTED]
+- [[Container Architecture_2]] - `contains` [EXTRACTED]
 - [[Development Workflow_1]] - `contains` [EXTRACTED]
 - [[Hardware]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3

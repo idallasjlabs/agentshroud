@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (4)"
-location: "L123"
+community: "Skill: Security Review (SEC)"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_4
+  - community/Skill_Security_Review_SEC
 ---
 
 # Bot Container (`agentshroud-bot`)
 
 ## Connections
-- [[Container Architecture_2]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Loaded at Startup via 1Password op-proxy]] - `contains` [EXTRACTED]
+- [[Required Secrets (as Docker secret files)]] - `contains` [EXTRACTED]
+- [[Set in `docker-compose.yml`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

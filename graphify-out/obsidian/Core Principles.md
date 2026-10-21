@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Core Principles"
+community: "._check_budget"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Principles
+  - community/_check_budget
 ---
 
 # Core Principles
@@ -18,4 +18,4 @@ tags:
 - [[Set Appropriate Degrees of Freedom]] - `contains` [EXTRACTED]
 - [[Skill Creator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Principles
+#graphify/document #graphify/EXTRACTED #community/_check_budget

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "_wrap_response() (2)"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_2
 ---
 
 # Drift detector catches container config changes during operation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_drift_detection_in_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2

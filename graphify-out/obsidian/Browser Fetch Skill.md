@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Browser Fetch Skill"
+community: "SubagentMonitor._log_event"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/SubagentMonitor_log_event
 ---
 
 # Browser Fetch Skill
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Features]] - `contains` [EXTRACTED]
 - [[Security_3]] - `contains` [EXTRACTED]
-- [[Usage_5]] - `contains` [EXTRACTED]
+- [[Usage_10]] - `contains` [EXTRACTED]
 - [[Use Cases]] - `contains` [EXTRACTED]
 - [[browser-fetchSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event

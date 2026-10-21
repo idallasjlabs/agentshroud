@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "concept"
-community: "How to Fix (5 Minutes)"
+community: "Skill: Technical Illustrator (TI) (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/How_to_Fix_5_Minutes
+  - community/Skill_Technical_Illustrator_TI_2
 ---
 
 # BlueBubbles (native macOS iMessage relay)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[IMESSAGE_STATUS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/How_to_Fix_5_Minutes
+#graphify/concept #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2

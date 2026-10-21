@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "rationale"
-community: "PodmanEngine"
+community: "setup-secrets.sh"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/setup-secretssh
 ---
 
 # Detect podman compose or podman-compose.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_detect_compose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PodmanEngine
+#graphify/rationale #graphify/EXTRACTED #community/setup-secretssh

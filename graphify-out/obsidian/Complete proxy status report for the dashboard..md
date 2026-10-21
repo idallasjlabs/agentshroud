@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # Complete proxy status report for the dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProxyStatusReport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

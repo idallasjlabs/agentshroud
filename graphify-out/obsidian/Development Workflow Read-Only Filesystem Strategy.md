@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
+community: "triage-cve-mitigations.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/triage-cve-mitigationspy
 ---
 
 # Development Workflow: Read-Only Filesystem Strategy
@@ -27,4 +27,4 @@ tags:
 - [[Three-Phase Approach]] - `contains` [EXTRACTED]
 - [[Write Paths Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

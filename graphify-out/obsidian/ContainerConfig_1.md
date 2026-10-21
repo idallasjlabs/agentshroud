@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_a2a_policy.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/test_a2a_policypy
 ---
 
 # ContainerConfig
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[dot-get()_2]] - `references` [EXTRACTED]
 - [[dot-register()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_36]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_35]] - `calls` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `calls` [EXTRACTED]
 - [[dot-test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
 - [[dot-test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
@@ -38,7 +38,7 @@ tags:
 - [[TestGroupMemoryInvisibleFromDM]] - `uses` [INFERRED]
 - [[TestGroupMemoryNamespaceIsolation]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/test_a2a_policypy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "document"
-community: "Competitive Security Matrix — AgentShroud vs AI Agent Platforms"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Security_Matrix__AgentShroud_vs_AI_Agent_Platforms
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Competitive Security Matrix — AgentShroud vs AI Agent Platforms
@@ -19,4 +19,4 @@ tags:
 - [[Updated Magic Quadrant Position]] - `contains` [EXTRACTED]
 - [[competitive-security-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Security_Matrix__AgentShroud_vs_AI_Agent_Platforms
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

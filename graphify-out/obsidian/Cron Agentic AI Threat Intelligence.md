@@ -1,13 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Cron: Agentic AI Threat Intelligence"
+community: "/i-crpr skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cron_Agentic_AI_Threat_Intelligence
+  - community//i-crpr_skill
 ---
 
 # Cron: Agentic AI Threat Intelligence
 
-#graphify/document #graphify/EXTRACTED #community/Cron_Agentic_AI_Threat_Intelligence
+#graphify/document #graphify/EXTRACTED #community//i-crpr_skill

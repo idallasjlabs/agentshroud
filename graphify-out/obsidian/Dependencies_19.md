@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
+community: "mcp_inspector.py"
 location: "L177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/mcp_inspectorpy
 ---
 
 # Dependencies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

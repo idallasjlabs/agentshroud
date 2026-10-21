@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper (2)"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper_2
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # Create a manager with test configuration.
 
 ## Connections
-- [[dot-manager()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-manager()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper_2
+#graphify/rationale #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse

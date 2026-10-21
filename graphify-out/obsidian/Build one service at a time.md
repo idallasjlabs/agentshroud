@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "rationale"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L983-L1022"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # Build one service at a time
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[phase_apply()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

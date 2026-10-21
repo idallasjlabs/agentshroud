@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # DelegationManager
 
 ## Connections
-- [[dot-__init__()_193]] - `method` [EXTRACTED]
+- [[dot-__init__()_196]] - `method` [EXTRACTED]
 - [[dot-_load()]] - `method` [EXTRACTED]
 - [[dot-_require_owner()]] - `method` [EXTRACTED]
 - [[dot-_revoke_by_user_privilege()]] - `method` [EXTRACTED]
 - [[dot-_save()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()_2]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[dot-delegate()]] - `method` [EXTRACTED]
 - [[dot-get_active_delegations()]] - `method` [EXTRACTED]
 - [[dot-get_delegations_for_user()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

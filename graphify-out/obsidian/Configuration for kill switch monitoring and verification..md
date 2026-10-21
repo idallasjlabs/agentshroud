@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "EgressFilterConfig (4)"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressFilterConfig_4
 ---
 
 # Configuration for kill switch monitoring and verification.
 
 ## Connections
-- [[KillSwitchConfig_1]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4

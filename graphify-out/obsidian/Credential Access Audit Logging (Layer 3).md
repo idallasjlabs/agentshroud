@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "rationale"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Skill: UX Expert (UX) (3)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Skill_UX_Expert_UX_3
 ---
 
 # Credential Access Audit Logging (Layer 3)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3

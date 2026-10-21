@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "DataExfilVolumeGuard"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/DataExfilVolumeGuard
 ---
 
 # CI test job (pytest matrix, coverage gate 84%)
@@ -15,4 +15,4 @@ tags:
 - [[CI Workflow]] - `references` [EXTRACTED]
 - [[Leak gate fatal only on ubuntu+py3.11]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

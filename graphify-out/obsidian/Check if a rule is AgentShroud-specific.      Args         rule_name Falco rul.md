@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "FalcoAlertWatcher (2)"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Check if a rule is AgentShroud-specific.      Args:         rule_name: Falco rul
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_agentshroud_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

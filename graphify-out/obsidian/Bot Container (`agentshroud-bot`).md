@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw) (2)"
-location: "L46"
+community: "MiddlewareManager (4)"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw_2
+  - community/MiddlewareManager_4
 ---
 
 # Bot Container (`agentshroud-bot`)
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
-- [[Loaded at Startup via 1Password op-proxy]] - `contains` [EXTRACTED]
-- [[Required Secrets (as Docker secret files)]] - `contains` [EXTRACTED]
-- [[Set in `docker-compose.yml`]] - `contains` [EXTRACTED]
+- [[Container Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

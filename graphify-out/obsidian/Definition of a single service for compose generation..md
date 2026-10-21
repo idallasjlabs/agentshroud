@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "rationale"
-community: "test_runtime_engines.py"
+community: "jira_weekly_review.py"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/jira_weekly_reviewpy
 ---
 
 # Definition of a single service for compose generation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServiceDef]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/rationale #graphify/EXTRACTED #community/jira_weekly_reviewpy

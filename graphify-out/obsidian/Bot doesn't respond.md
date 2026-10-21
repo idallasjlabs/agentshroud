@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
+community: "TestDNSForwarderProtocol"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/TestDNSForwarderProtocol
 ---
 
 # Bot doesn't respond
 
 ## Connections
-- [[Troubleshooting_34]] - `contains` [EXTRACTED]
+- [[Troubleshooting_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol

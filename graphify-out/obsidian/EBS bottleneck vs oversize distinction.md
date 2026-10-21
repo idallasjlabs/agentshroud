@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AWS_AGENT_README.md"
 type: "rationale"
-community: "AWS Cloud Management & FinOps Agent (3)"
+community: "Skill: Technical Illustrator (TI) (3)"
 location: "Rightsizing Recommendations / Troubleshooting"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3
+  - community/Skill_Technical_Illustrator_TI_3
 ---
 
 # EBS bottleneck vs oversize distinction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_3

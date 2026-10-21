@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "03-data.md"
+community: "canvas_proxy_app"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/canvas_proxy_app
 ---
 
 # Data Flow Diagram
@@ -15,4 +15,4 @@ tags:
 - [[Data Lineage Diagram]] - `shares_data_with` [INFERRED]
 - [[Rendered Data Flow Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/03-datamd
+#graphify/concept #graphify/EXTRACTED #community/canvas_proxy_app

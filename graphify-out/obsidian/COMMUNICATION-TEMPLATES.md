@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "SecureBrowser Skill (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/SecureBrowser_Skill_4
 ---
 
 # COMMUNICATION-TEMPLATES.md
@@ -17,6 +17,6 @@ tags:
 - [[Option 2 — Compact Trademark Notice]] - `references` [EXTRACTED]
 - [[Option 3 — Full Collaborator Trademark Notice]] - `references` [EXTRACTED]
 - [[Option 4 — Documentation Footer Trademark Notice]] - `references` [EXTRACTED]
-- [[TRADEMARK_1]] - `conceptually_related_to` [INFERRED]
+- [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_4

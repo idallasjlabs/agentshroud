@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.svg"
 type: "image"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "Pre-Deployment Checklist"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Pre-Deployment_Checklist
 ---
 
 # Blocked by default (private RFC1918 ranges)
@@ -14,4 +14,4 @@ tags:
 - [[URLAnalysisResult (data entity)]] - `conceptually_related_to` [EXTRACTED]
 - [[egress-config.yml]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/image #graphify/EXTRACTED #community/Pre-Deployment_Checklist

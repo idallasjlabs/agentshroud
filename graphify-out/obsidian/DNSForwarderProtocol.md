@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "DNSForwarderProtocol"
+community: "TestOAuthInjection"
 location: "L160"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DNSForwarderProtocol
+  - community/TestOAuthInjection
 ---
 
 # DNSForwarderProtocol
 
 ## Connections
-- [[dot-__init__()_173]] - `method` [EXTRACTED]
+- [[dot-__init__()_163]] - `method` [EXTRACTED]
 - [[dot-_handle_query()]] - `method` [EXTRACTED]
 - [[dot-_make_protocol()]] - `calls` [EXTRACTED]
 - [[dot-connection_made()]] - `method` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DNSForwarderProtocol
+#graphify/code #graphify/INFERRED #community/TestOAuthInjection

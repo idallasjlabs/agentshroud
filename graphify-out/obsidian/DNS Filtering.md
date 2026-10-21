@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "AgentShroud Security Architecture"
+community: "MiddlewareManager (5)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/MiddlewareManager_5
 ---
 
 # DNS Filtering
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_5

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "notion"
+community: "LVGL KAWAII FACE"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Common Operations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

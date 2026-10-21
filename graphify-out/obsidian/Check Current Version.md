@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Implement gateway-level outbound information filtering module"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Check Current Version
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

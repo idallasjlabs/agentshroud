@@ -1,17 +1,25 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L642"
+community: "graphify reference: extra exports and benchmark (3)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/graphify_reference_extra_exports_and_benchmark_3
 ---
 
 # Common Issues
 
 ## Connections
-- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Bot Not Responding to Telegram Messages]] - `contains` [EXTRACTED]
+- [[Container Keeps Restarting]] - `contains` [EXTRACTED]
+- [[Dashboard Not Loading]] - `contains` [EXTRACTED]
+- [[Kill Switch Won't Deactivate]] - `contains` [EXTRACTED]
+- [[PII Sanitizer Blocking Legitimate Content]] - `contains` [EXTRACTED]
+- [[SSH Command Approval Stuck]] - `contains` [EXTRACTED]
+- [[Tailscale Serve Not Working]] - `contains` [EXTRACTED]
+- [[Tests Failing]] - `contains` [EXTRACTED]
+- [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "Red Team Assessment v1.2.0"
+community: "Socrates — Dialogue Architect (2) (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Socrates__Dialogue_Architect_2_2
 ---
 
 # ESP32-S3-BOX-3 Hermes Voice Terminal Planning Doc
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2_2

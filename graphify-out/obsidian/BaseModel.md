@@ -1,13 +1,13 @@
 ---
 source_file: ""
 type: "code"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "ToolACLEnforcer.get_allowed_tools"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ToolACLEnforcerget_allowed_tools
 ---
 
 # BaseModel
 
-#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcerget_allowed_tools

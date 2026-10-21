@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "colima-health-check.sh"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/colima-health-checksh
 ---
 
 # Build the system-prompt injection for project_scoped mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_project_context_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

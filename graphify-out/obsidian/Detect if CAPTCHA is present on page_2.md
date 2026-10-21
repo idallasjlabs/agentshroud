@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser (3)"
+community: "ProxyDashboard"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ProxyDashboard
 ---
 
 # Detect if CAPTCHA is present on page
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-detect_captcha()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/AgentTarget
 ---
 
 # Collaborator Tracker Tests
@@ -14,4 +14,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

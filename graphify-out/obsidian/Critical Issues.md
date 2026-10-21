@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "AgentShroud System Status Report"
+community: "apple_engine.py"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Status_Report
+  - community/apple_enginepy
 ---
 
 # Critical Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[⚠️ What's NOT Working]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "OutputSchemaEnforcer"
+community: "plan_remediation"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/plan_remediation
 ---
 
 # Definition for a named output schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SchemaRule]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

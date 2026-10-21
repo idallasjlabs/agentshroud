@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "ConfigurationSetting (data entity)"
+community: "--watch debounce avoids per-file rebuild storms"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ConfigurationSetting_data_entity
+  - community/--watch_debounce_avoids_per-file_rebuild_storms
 ---
 
 # ConfigurationSetting (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/ConfigurationSetting_data_entity
+#graphify/concept #graphify/EXTRACTED #community/--watch_debounce_avoids_per-file_rebuild_storms

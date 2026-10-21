@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # DNSBlocklist
 
 ## Connections
-- [[dot-__init__()_186]] - `method` [EXTRACTED]
+- [[dot-__init__()_177]] - `method` [EXTRACTED]
 - [[dot-_periodic_update_loop()]] - `method` [EXTRACTED]
 - [[dot-download_blocklist()]] - `method` [EXTRACTED]
 - [[dot-is_blocked()]] - `method` [EXTRACTED]
 - [[dot-load_from_text()]] - `method` [EXTRACTED]
 - [[dot-parse_hosts_line()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_37]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
 - [[dot-start_periodic_updates()]] - `method` [EXTRACTED]
 - [[dot-stats()]] - `method` [EXTRACTED]
-- [[dot-stop()_5]] - `method` [EXTRACTED]
+- [[dot-stop()_3]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()]] - `calls` [EXTRACTED]
 - [[dot-test_download_failure_falls_back_to_cache()]] - `calls` [EXTRACTED]
 - [[dot-test_download_failure_no_cache_returns_none()]] - `calls` [EXTRACTED]
@@ -71,4 +71,4 @@ tags:
 - [[test_dns_blocklist.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

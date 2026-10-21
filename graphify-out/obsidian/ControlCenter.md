@@ -1,18 +1,18 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "ControlCenter"
+community: "Path (2)"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/Path_2
 ---
 
 # ControlCenter
 
 ## Connections
-- [[dot-__init__()_121]] - `method` [EXTRACTED]
+- [[dot-__init__()_110]] - `method` [EXTRACTED]
 - [[dot-clear_screen()]] - `method` [EXTRACTED]
 - [[dot-draw_approvals()]] - `method` [EXTRACTED]
 - [[dot-draw_box()]] - `method` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[dot-get_auth()]] - `method` [EXTRACTED]
 - [[dot-get_key()]] - `method` [EXTRACTED]
 - [[dot-make_api_request()]] - `method` [EXTRACTED]
-- [[dot-run()_4]] - `method` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[dot-run()_3]] - `method` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 - [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/Path_2

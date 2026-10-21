@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "document"
-community: "Control Center"
+community: "TestIsFresh"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Control_Center
+  - community/TestIsFresh
 ---
 
 # Control Center
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Text Interfaces]] - `contains` [EXTRACTED]
 - [[Controls]] - `contains` [EXTRACTED]
-- [[Usage_3]] - `contains` [EXTRACTED]
+- [[Usage_2]] - `contains` [EXTRACTED]
 - [[What it Shows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Control_Center
+#graphify/document #graphify/EXTRACTED #community/TestIsFresh

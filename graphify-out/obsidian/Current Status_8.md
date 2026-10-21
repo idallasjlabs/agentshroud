@@ -1,17 +1,19 @@
 ---
-source_file: "docs/data/README.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "03-data.md"
-location: "L13"
+community: "Skill: Project Management (PM)"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/Skill_Project_Management_PM
 ---
 
 # Current Status
 
 ## Connections
-- [[Data Documentation]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Development Phases]] - `contains` [EXTRACTED]
+- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

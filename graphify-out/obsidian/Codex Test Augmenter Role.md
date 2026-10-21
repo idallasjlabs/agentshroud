@@ -1,17 +1,16 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "AgentShroud™ Communication Templates"
+community: "voice_task (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/voice_task_2
 ---
 
 # Codex Test Augmenter Role
 
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
-- [[test-augmenter.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/concept #graphify/EXTRACTED #community/voice_task_2

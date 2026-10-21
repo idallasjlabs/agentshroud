@@ -1,12 +1,12 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
 type: "concept"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "DataExfilVolumeGuard"
 location: "L957"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/DataExfilVolumeGuard
 ---
 
 # Drift PR (result gate, prod gate, wrapper, launchd install.sh)
@@ -17,4 +17,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/concept #graphify/EXTRACTED #community/DataExfilVolumeGuard

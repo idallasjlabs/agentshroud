@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_collaborator_access_not_configured_user_id_leakage_is_redacted_json"
+community: ".test_html_parse_mode_preserved_without_redaction_placeholders"
 location: "L1287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_access_not_configured_user_id_leakage_is_redacted_json
+  - community/test_html_parse_mode_preserved_without_redaction_placeholders
 ---
 
 # Collaborators should not receive telegram user-id enrollment leakage text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_access_not_configured_user_id_leakage_is_redacted_json
+#graphify/rationale #graphify/EXTRACTED #community/test_html_parse_mode_preserved_without_redaction_placeholders

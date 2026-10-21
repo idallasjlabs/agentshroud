@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "_FakeRBAC"
+community: "AlertDispatcher (2)"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/AlertDispatcher_2
 ---
 
 # Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields: e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_audit_chain_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

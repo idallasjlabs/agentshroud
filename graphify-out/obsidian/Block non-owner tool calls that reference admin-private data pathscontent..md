@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (3)"
+community: "test_collaborator_greeter.py"
 location: "L500"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/test_collaborator_greeterpy
 ---
 
 # Block non-owner tool calls that reference admin-private data paths/content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_tool_parameters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_greeterpy

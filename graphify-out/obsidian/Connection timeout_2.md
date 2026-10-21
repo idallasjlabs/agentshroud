@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "iCloud Services (3)"
+community: "AgentShroud Project Terminology"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/AgentShroud_Project_Terminology
 ---
 
 # "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

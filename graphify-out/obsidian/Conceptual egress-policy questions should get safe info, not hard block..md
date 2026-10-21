@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "SlackSocketClient"
 location: "L2031"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/SlackSocketClient
 ---
 
 # Conceptual egress-policy questions should get safe info, not hard block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient

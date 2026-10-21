@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Domain blocklist with Pi-hole-compatible list parsing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DNSBlocklist]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

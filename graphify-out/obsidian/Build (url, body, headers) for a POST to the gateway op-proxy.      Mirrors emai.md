@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "jira_weekly_review.py"
+community: "TestEgressTelegramNotify"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/TestEgressTelegramNotify
 ---
 
 # Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_op_proxy_request()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # ContextSegment
@@ -15,7 +15,7 @@ tags:
 - [[dot-get_segment_provenance()]] - `references` [EXTRACTED]
 - [[dot-record_segment()]] - `references` [EXTRACTED]
 - [[dot-tag_segment()]] - `references` [EXTRACTED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_48]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
 - [[Tagged provenance record for a context segment.]] - `rationale_for` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

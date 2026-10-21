@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Docker Volumes"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Docker_Volumes
 ---
 
 # Distributed OpenClaw Node Architecture — Raspberry Pi 4
@@ -16,7 +16,7 @@ tags:
 - [[Architecture Comparison]] - `contains` [EXTRACTED]
 - [[Comparison Matrix]] - `contains` [EXTRACTED]
 - [[Concept Overview]] - `contains` [EXTRACTED]
-- [[Conclusion_2]] - `contains` [EXTRACTED]
+- [[Conclusion_1]] - `contains` [EXTRACTED]
 - [[Cost-Benefit Analysis]] - `contains` [EXTRACTED]
 - [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - `contains` [EXTRACTED]
 - [[Key Benefits]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[Security Architecture_4]] - `contains` [EXTRACTED]
 - [[Use Cases_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

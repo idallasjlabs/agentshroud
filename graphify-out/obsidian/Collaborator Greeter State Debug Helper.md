@@ -1,13 +1,13 @@
 ---
 source_file: "scripts/verify-greeter-state.sh"
 type: "code"
-community: "Collaborator Greeter State Debug Helper"
+community: "apply-patches.js Behavioral Smoke Test Suite (Node.js)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Greeter_State_Debug_Helper
+  - community/apply-patchesjs_Behavioral_Smoke_Test_Suite_Nodejs
 ---
 
 # Collaborator Greeter State Debug Helper
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Greeter_State_Debug_Helper
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs_Behavioral_Smoke_Test_Suite_Nodejs

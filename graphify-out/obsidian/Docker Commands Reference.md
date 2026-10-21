@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Docker Commands Reference"
+community: "ssh_config.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/ssh_configpy
 ---
 
 # Docker Commands Reference
@@ -16,7 +16,7 @@ tags:
 - [[Container status_1]] - `contains` [EXTRACTED]
 - [[Debugging read-only filesystem errors]] - `contains` [EXTRACTED]
 - [[Exec into containers]] - `contains` [EXTRACTED]
-- [[Logs_3]] - `contains` [EXTRACTED]
+- [[Logs_4]] - `contains` [EXTRACTED]
 - [[Networking_1]] - `contains` [EXTRACTED]
 - [[OpenClaw CLI commands (run inside agentshroud-bot)]] - `contains` [EXTRACTED]
 - [[Reading files from containers]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Writing files to containers]] - `contains` [EXTRACTED]
 - [[docker-commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

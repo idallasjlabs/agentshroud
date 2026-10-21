@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # DataLedger
 
 ## Connections
-- [[dot-__init__()_82]] - `method` [EXTRACTED]
+- [[dot-__init__()_57]] - `method` [EXTRACTED]
 - [[dot-_hash_content()]] - `method` [EXTRACTED]
-- [[dot-close()_2]] - `method` [EXTRACTED]
+- [[dot-close()_9]] - `method` [EXTRACTED]
 - [[dot-delete_entry()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-enforce_retention()]] - `method` [EXTRACTED]
 - [[dot-get_entry()]] - `method` [EXTRACTED]
 - [[dot-get_stats()_6]] - `method` [EXTRACTED]
-- [[dot-initialize()]] - `method` [EXTRACTED]
+- [[dot-initialize()_1]] - `method` [EXTRACTED]
 - [[dot-ledger()]] - `calls` [EXTRACTED]
 - [[dot-ledger()_1]] - `calls` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
@@ -29,11 +29,11 @@ tags:
 - [[AppState]] - `uses` [INFERRED]
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
-- [[GatewayConfig]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -58,8 +58,8 @@ tags:
 - [[TestSecurityPipelineChainLatency]] - `uses` [INFERRED]
 - [[TestTamperDetection]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
-- [[client()_6]] - `calls` [EXTRACTED]
-- [[client()_7]] - `calls` [EXTRACTED]
+- [[client()_15]] - `calls` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[ledger()]] - `calls` [EXTRACTED]
 - [[ledger()_1]] - `calls` [EXTRACTED]
@@ -76,4 +76,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (CICD)"
+community: "_HeadFakeClient"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_CICD
+  - community/_HeadFakeClient
 ---
 
 # CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[Purpose_44]] - `contains` [EXTRACTED]
-- [[Related Skills_29]] - `contains` [EXTRACTED]
-- [[Usage_33]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
+- [[Related Skills_27]] - `contains` [EXTRACTED]
+- [[Usage_30]] - `contains` [EXTRACTED]
 - [[openclawskillsi-cicdREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/_HeadFakeClient

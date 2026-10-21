@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "GovernanceAction (2)"
+community: "v0.9.0 — Apple Messages Integration"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GovernanceAction_2
+  - community/v090__Apple_Messages_Integration
 ---
 
 # Configuration for subagent output trust scoring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputTrustConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction_2
+#graphify/rationale #graphify/EXTRACTED #community/v090__Apple_Messages_Integration

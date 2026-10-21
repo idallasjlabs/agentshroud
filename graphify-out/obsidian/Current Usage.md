@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "create_auth_dependency"
+community: "lifespan() (3)"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/lifespan_3
 ---
 
 # Current Usage
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/lifespan_3

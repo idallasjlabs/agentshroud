@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
+community: "`SecurityPipeline`"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/SecurityPipeline
 ---
 
 # Current Files Status
@@ -17,4 +17,4 @@ tags:
 - [[✅ Authoritative Files (Active)]] - `contains` [EXTRACTED]
 - [[❌ Removed Files (Outdated)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

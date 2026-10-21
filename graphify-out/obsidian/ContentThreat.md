@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (11)"
+community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_11
+  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
 ---
 
 # ContentThreat
 
 ## Connections
-- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
 - [[dot-get_recent_threats()]] - `references` [EXTRACTED]
 - [[dot-sanitize_content()]] - `references` [EXTRACTED]
 - [[dot-scan_content_for_threats()]] - `references` [EXTRACTED]
 - [[dot-test_threat_cleanup()]] - `calls` [EXTRACTED]
 - [[dot-validate_memory_write()]] - `references` [EXTRACTED]
 - [[Detected threat in memory file content.]] - `rationale_for` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_11
+#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "iCloud Services"
-location: "L191"
+community: "AgentShroud Brand Guidelines"
+location: "L495"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/AgentShroud_Brand_Guidelines
 ---
 
-# Configuration
+# Configuration:
 
 ## Connections
-- [[7. Deployment]] - `contains` [EXTRACTED]
-- [[Full Configuration Example]] - `contains` [EXTRACTED]
-- [[SSH Config]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

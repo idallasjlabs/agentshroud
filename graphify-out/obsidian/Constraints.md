@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Implement gateway-level outbound information filtering module"
+community: "Function Details (3)"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_filtering_module
+  - community/Function_Details_3
 ---
 
 # Constraints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module
+#graphify/document #graphify/EXTRACTED #community/Function_Details_3

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "ContainerEngine"
+community: "MiddlewareManager (6)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/MiddlewareManager_6
 ---
 
 # ContainerEngine
 
 ## Connections
-- [[dot-_run()_1]] - `method` [EXTRACTED]
+- [[dot-_run()_2]] - `method` [EXTRACTED]
 - [[dot-build()]] - `method` [EXTRACTED]
 - [[dot-compose_down()]] - `method` [EXTRACTED]
 - [[dot-compose_up()]] - `method` [EXTRACTED]
 - [[dot-exec()]] - `method` [EXTRACTED]
-- [[dot-health_check()_1]] - `method` [EXTRACTED]
+- [[dot-health_check()_2]] - `method` [EXTRACTED]
 - [[dot-inspect()]] - `method` [EXTRACTED]
 - [[dot-logs()]] - `method` [EXTRACTED]
 - [[dot-network_create()]] - `method` [EXTRACTED]
@@ -25,16 +25,16 @@ tags:
 - [[dot-pause()]] - `method` [EXTRACTED]
 - [[dot-ps()_2]] - `method` [EXTRACTED]
 - [[dot-pull()]] - `method` [EXTRACTED]
-- [[dot-push()]] - `method` [EXTRACTED]
+- [[dot-push()_1]] - `method` [EXTRACTED]
 - [[dot-rm()]] - `method` [EXTRACTED]
-- [[dot-stop()_8]] - `method` [EXTRACTED]
+- [[dot-stop()_7]] - `method` [EXTRACTED]
 - [[dot-unpause()]] - `method` [EXTRACTED]
 - [[dot-volume_create()]] - `method` [EXTRACTED]
 - [[dot-volume_rm()]] - `method` [EXTRACTED]
 - [[ABC]] - `inherits` [EXTRACTED]
-- [[Any_50]] - `uses` [INFERRED]
-- [[Any_48]] - `uses` [INFERRED]
-- [[Any_37]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
+- [[Any_33]] - `uses` [INFERRED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerEngine_2]] - `uses` [INFERRED]
 - [[ContainerInfo]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[podman_engine.py]] - `imports` [EXTRACTED]
 - [[runtime__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

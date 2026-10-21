@@ -1,17 +1,20 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "OpenSCAP"
-location: "L22"
+community: "Report Delivery Format Instructions"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Configuration
 
 ## Connections
-- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
+- [[7. Deployment]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

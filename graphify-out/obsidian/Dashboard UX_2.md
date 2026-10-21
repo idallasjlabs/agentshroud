@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX) (3)"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (3)"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_3
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_3
 ---
 
 # Dashboard UX
@@ -17,4 +17,4 @@ tags:
 - [[Drill-Down Pattern_2]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_3

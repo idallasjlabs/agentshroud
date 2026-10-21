@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "Mode A — Single task (2)"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Mode_A__Single_task_2
 ---
 
 # Calendar Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Event]] - `contains` [EXTRACTED]
 - [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2

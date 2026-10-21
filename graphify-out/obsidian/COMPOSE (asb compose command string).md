@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh (2)"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L60-L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # COMPOSE (asb compose command string)
@@ -19,4 +19,4 @@ tags:
 - [[setup_ephemeral_secrets()]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

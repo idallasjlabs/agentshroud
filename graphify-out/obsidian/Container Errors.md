@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Restart Procedure (2)"
+community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure_2
+  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
 ---
 
 # Container Errors
@@ -21,4 +21,4 @@ tags:
 - [[Related Notes_5]] - `contains` [EXTRACTED]
 - [[`no-new-privileges` Security Denial]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure_2
+#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud

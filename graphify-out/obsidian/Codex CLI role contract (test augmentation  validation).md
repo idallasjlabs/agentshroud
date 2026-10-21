@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/AGENTS.md"
 type: "concept"
-community: "awslabs.aws-api-mcp-server configuration (--readonly)"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2) (2)"
 location: "Section 0"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--readonly
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2_2
 ---
 
 # Codex CLI role contract (test augmentation / validation)
@@ -15,4 +15,4 @@ tags:
 - [[Codex CLI (TERTIARY agent, TOML config)]] - `implements` [INFERRED]
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2_2

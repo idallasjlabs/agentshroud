@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "Step-by-Step Installation"
 location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Step-by-Step_Installation
 ---
 
 # CRITICAL (Do First):
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 Plan Reality Check]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

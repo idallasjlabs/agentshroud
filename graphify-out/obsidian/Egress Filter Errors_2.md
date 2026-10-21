@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Egress Filter Errors"
+community: "Skill: Pull Request (PR) Generator"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Egress_Filter_Errors
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Egress Filter Errors
@@ -19,4 +19,4 @@ tags:
 - [[RFC1918 Blocked]] - `contains` [EXTRACTED]
 - [[Related Notes_73]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

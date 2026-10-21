@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
+community: "AgentShroud Blue Team Security Auditor (3)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/AgentShroud_Blue_Team_Security_Auditor_3
 ---
 
 # Data Flow
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Data Flow]] - `contains` [EXTRACTED]
 - [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
-- [[Overview_8]] - `contains` [EXTRACTED]
-- [[Related Notes_34]] - `contains` [EXTRACTED]
+- [[Overview_6]] - `contains` [EXTRACTED]
+- [[Related Notes_32]] - `contains` [EXTRACTED]
 - [[Request Flow Diagram]] - `contains` [EXTRACTED]
 - [[Response Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

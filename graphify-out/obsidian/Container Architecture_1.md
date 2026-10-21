@@ -1,17 +1,19 @@
 ---
-source_file: "docs/TEAM.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
-location: "L149"
+community: "MiddlewareManager (4)"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/MiddlewareManager_4
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Development Environment_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

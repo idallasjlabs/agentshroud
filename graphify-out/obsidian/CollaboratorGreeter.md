@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "test_collaborator_greeter.py"
+community: "export-bot-conversations.py (2)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/export-bot-conversationspy_2
 ---
 
 # CollaboratorGreeter
 
 ## Connections
-- [[dot-__init__()_91]] - `method` [EXTRACTED]
+- [[dot-__init__()_67]] - `method` [EXTRACTED]
 - [[dot-_get_client()]] - `method` [EXTRACTED]
 - [[dot-_load_state()]] - `method` [EXTRACTED]
 - [[dot-_load_taglines()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_persist_state_exception_is_swallowed()]] - `calls` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: ".proxy_messages()"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/proxy_messages
 ---
 
 # Click an element          Security: Risk classification for destructive actions
 
 ## Connections
-- [[dot-click()]] - `rationale_for` [EXTRACTED]
+- [[dot-click()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

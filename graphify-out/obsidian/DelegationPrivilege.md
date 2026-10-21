@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # DelegationPrivilege
@@ -17,11 +17,11 @@ tags:
 - [[dot-delegate()]] - `references` [EXTRACTED]
 - [[dot-is_delegated()]] - `references` [EXTRACTED]
 - [[dot-revoke()]] - `references` [EXTRACTED]
-- [[Any_42]] - `uses` [INFERRED]
+- [[Any_83]] - `uses` [INFERRED]
 - [[DelegationManager]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
 - [[TestDelegateBasic]] - `uses` [INFERRED]
 - [[TestIsDelegated]] - `uses` [INFERRED]
@@ -34,8 +34,8 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[revoke_delegation()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

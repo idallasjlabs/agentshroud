@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "TestSSRFDetection (3)"
-location: "L32"
+community: "AgentTarget (2)"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_3
+  - community/AgentTarget_2
 ---
 
 # CanaryResult
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-check_response()_1]] - `references` [EXTRACTED]
-- [[Result of checking a response for canary presence.]] - `rationale_for` [EXTRACTED]
-- [[output_canary.py]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_5]] - `method` [EXTRACTED]
+- [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
+- [[canary.py]] - `contains` [EXTRACTED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_3
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

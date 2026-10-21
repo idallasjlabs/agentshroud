@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "OpenClaw Host Hardening"
+community: "oracle — best use"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/oracle__best_use
 ---
 
 # Conditional memory writes (memory/YYYY-MM-DD.md, MEMORY.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[healthcheckSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/concept #graphify/EXTRACTED #community/oracle__best_use

@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "concept"
-community: "Atlas — Curriculum Architect (SKILL)"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_SKILL
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Bloom's Taxonomy
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `references` [EXTRACTED]
 - [[Atlas — Curriculum Architect (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_SKILL
+#graphify/concept #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

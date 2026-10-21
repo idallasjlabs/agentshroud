@@ -1,17 +1,17 @@
 ---
-source_file: "docs/flows/README.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Approval Queue (human-in-the-loop)"
-location: "L13"
+community: "DelegationManager (2)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/DelegationManager_2
 ---
 
 # Current Status
 
 ## Connections
-- [[Flows Documentation]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/document #graphify/EXTRACTED #community/DelegationManager_2

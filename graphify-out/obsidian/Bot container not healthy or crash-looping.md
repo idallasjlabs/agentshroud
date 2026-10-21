@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "What is the symptom?"
+community: "launchd/install.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/launchd/installsh
 ---
 
 # Bot container not healthy or crash-looping
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[What is the symptom]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/concept #graphify/EXTRACTED #community/launchd/installsh

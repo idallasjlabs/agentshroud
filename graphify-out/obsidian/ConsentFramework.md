@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "SecureBrowser (3)"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/SecureBrowser_3
 ---
 
 # ConsentFramework
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_48]] - `method` [EXTRACTED]
 - [[dot-add_to_blacklist()]] - `method` [EXTRACTED]
 - [[dot-add_to_whitelist()]] - `method` [EXTRACTED]
 - [[dot-get_blacklist()]] - `method` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
 - [[GitGuard]] - `semantically_similar_to` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - `cites` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_consent_framework.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

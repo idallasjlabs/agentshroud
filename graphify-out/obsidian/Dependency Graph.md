@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "create_auth_dependency (4)"
+community: "AgentShroud Sequence Diagrams"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_4
+  - community/AgentShroud_Sequence_Diagrams
 ---
 
 # Dependency Graph.md
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Startup Initialization Order]] - `conceptually_related_to` [EXTRACTED]
 - [[gatewayREADME]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_4
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams

@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/statusline.sh"
 type: "document"
-community: "statusline.sh"
+community: "MemoryIntegrityMonitor Tamper Detection"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/statuslinesh
+  - community/MemoryIntegrityMonitor_Tamper_Detection
 ---
 
 # Claude Code Statusline Documentation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[statusline.sh]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/statuslinesh
+#graphify/document #graphify/EXTRACTED #community/MemoryIntegrityMonitor_Tamper_Detection

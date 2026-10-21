@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "test_runtime_engines.py (2)"
+community: "egress_retry.py"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_runtime_enginespy_2
+  - community/egress_retrypy
 ---
 
 # ContainerInfo
@@ -16,4 +16,4 @@ tags:
 - [[ContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_runtime_enginespy_2
+#graphify/code #graphify/INFERRED #community/egress_retrypy

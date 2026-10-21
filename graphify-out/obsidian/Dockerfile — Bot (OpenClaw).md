@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "troubleshooting.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/troubleshootingmd
 ---
 
 # Dockerfile — Bot (OpenClaw)
@@ -20,9 +20,9 @@ tags:
 - [[Dockerfile.bot]] - `contains` [EXTRACTED]
 - [[Image Labels (OCI)]] - `contains` [EXTRACTED]
 - [[Pre-installed Tools]] - `contains` [EXTRACTED]
-- [[Related Notes_36]] - `contains` [EXTRACTED]
+- [[Related Notes_45]] - `contains` [EXTRACTED]
 - [[Scripts Copied to `usrlocalbin`]] - `contains` [EXTRACTED]
 - [[Security Patches Applied at Build Time]] - `contains` [EXTRACTED]
 - [[TODO (from source)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
