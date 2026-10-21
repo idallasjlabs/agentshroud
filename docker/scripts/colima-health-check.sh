@@ -128,6 +128,8 @@ _upgrade_in_progress() {
 
 BOT_CONTAINER="${AGENTSHROUD_OPENCLAW_CONTAINER:-agentshroud-dev-openclaw}"
 GATEWAY_CONTAINER="${AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-dev-gateway}"
+WAZUH_MANAGER_CONTAINER="${AGENTSHROUD_WAZUH_MANAGER_CONTAINER:-agentshroud-dev-wazuh-manager}"
+WAZUH_AGENT_CONTAINER="${AGENTSHROUD_WAZUH_AGENT_CONTAINER:-agentshroud-dev-wazuh-agent}"
 
 # ── Prevent overlapping runs ─────────────────────────────────────────────────
 # container-net-diag can take >5 min; skip if a previous run is still active.
@@ -191,6 +193,7 @@ write_state() {
 log "── Health check starting ──"
 
 HEALED=false
+COLIMA_STARTED=false  # set by steps 1a/1a-bis; read by 4b under set -u
 FAILURES=()
 NOW=$(date +%s)
 
@@ -461,6 +464,55 @@ for CONTAINER in "$BOT_CONTAINER" "$GATEWAY_CONTAINER"; do
     log "✅ $CONTAINER: healthy"
   elif [ "$STATUS" = "starting" ]; then
     log "⏳ $CONTAINER: starting (waiting)"
+  else
+    log "⚠️  $CONTAINER: $STATUS"
+    FAILURES+=("$CONTAINER is $STATUS")
+  fi
+done
+
+# 4b. Wazuh manager + agent: check, and restart when unhealthy.
+#
+# 2026-10-21: a VM bounce at 10:10 left dev's manager with no Wazuh daemon at
+# all. It was unhealthy for 395+ consecutive checks while this script logged
+# "0 failures" every 5 min, because step 4 never looked at Wazuh. Docker does
+# not restart a container for being unhealthy, so nothing else would either.
+# The in-container watchdog (docker/wazuh/services.d/wazuh-watchdog) is the
+# first line; this is the backstop for when that cannot recover it.
+#
+# Manager first: the agent cannot be healthy without it, so an agent that is
+# unhealthy only because the manager was down is re-checked, not bounced.
+# Skipped on a run that just (re)started Colima — every container is still
+# booting then, and the 2x150s wait would push the run past the 900s
+# stale-lock budget the step 1a-bis comment describes.
+_wait_healthy() {
+  local _c="$1" _i _s
+  for _i in $(seq 1 30); do
+    _s=$(docker inspect --format='{{.State.Health.Status}}' "$_c" 2>/dev/null || echo missing)
+    [ "$_s" = "healthy" ] && return 0
+    sleep 5
+  done
+  return 1
+}
+WAZUH_MANAGER_HEALED=false
+for CONTAINER in "$WAZUH_MANAGER_CONTAINER" "$WAZUH_AGENT_CONTAINER"; do
+  STATUS=$(docker inspect --format='{{.State.Health.Status}}' "$CONTAINER" 2>/dev/null || echo "missing")
+  if [ "$STATUS" = "healthy" ]; then
+    log "✅ $CONTAINER: healthy"
+  elif [ "$STATUS" = "starting" ]; then
+    log "⏳ $CONTAINER: starting (waiting)"
+  elif [ "$STATUS" = "unhealthy" ] && [ "$CONTAINER" = "$WAZUH_AGENT_CONTAINER" ] \
+       && $WAZUH_MANAGER_HEALED && _wait_healthy "$CONTAINER"; then
+    log "✅ $CONTAINER: recovered once the manager came back (no restart)"
+  elif [ "$STATUS" = "unhealthy" ] && ! $COLIMA_STARTED && ! _upgrade_in_progress; then
+    log "AUTO-HEAL: $CONTAINER is unhealthy — restarting"
+    if docker restart "$CONTAINER" >/dev/null 2>&1 && _wait_healthy "$CONTAINER"; then
+      HEALED=true
+      [ "$CONTAINER" = "$WAZUH_MANAGER_CONTAINER" ] && WAZUH_MANAGER_HEALED=true
+      log "AUTO-HEAL: ✅ $CONTAINER restarted and healthy"
+    else
+      FAILURES+=("$CONTAINER unhealthy; restart did not recover it")
+      log "AUTO-HEAL: ❌ $CONTAINER still not healthy after restart"
+    fi
   else
     log "⚠️  $CONTAINER: $STATUS"
     FAILURES+=("$CONTAINER is $STATUS")
