@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "ApprovalHardening"
+community: "MiddlewareManager"
 location: "L449"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalHardening
+  - community/MiddlewareManager
 ---
 
 # TestDeniedRequest
@@ -20,4 +20,4 @@ tags:
 - [[Test DeniedRequest dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalHardening
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

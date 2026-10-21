@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L552"
+community: "iCloud Services (4)"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/iCloud_Services_4
 ---
 
 # Configuration
 
 ## Connections
-- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_4

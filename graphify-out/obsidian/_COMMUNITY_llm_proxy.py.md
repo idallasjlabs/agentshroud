@@ -10,7 +10,7 @@ members: 23
 ## Members
 - [[Buffered streaming filter (`_filter_outbound_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Claude Opus intercept]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Configuration_9]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Configuration_10]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Constructor dependencies (dependency injection)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Environment variables_3]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Failover chain]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
@@ -20,7 +20,7 @@ members: 23
 - [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Overview_16]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Overview_14]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Related_5]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md

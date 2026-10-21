@@ -19,12 +19,12 @@ tags:
 - [[Action_1]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
 - [[Test RBAC error handling and edge cases.]] - `rationale_for` [EXTRACTED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/MiddlewareManager

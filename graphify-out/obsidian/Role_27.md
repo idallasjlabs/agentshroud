@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
-type: "code"
-community: "MiddlewareManager"
-location: "L76"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+type: "document"
+community: "Skill: UX Expert (UX) (2)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Skill_UX_Expert_UX_2
 ---
 
 # Role
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
-- [[dot-get_user_role()_3]] - `references` [EXTRACTED]
-- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_2

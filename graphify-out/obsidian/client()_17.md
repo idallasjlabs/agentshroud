@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ModeRequest"
-location: "L59"
+community: "ForwardRequest (2)"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/ForwardRequest_2
 ---
 
 # client()
 
 ## Connections
-- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2

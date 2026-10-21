@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/test-augmenter.agent.md"
+source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Test Augmentation Specialist"
+community: "Validation Runner Specialist"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/Validation_Runner_Specialist
 ---
 
 # Role Definition
 
 ## Connections
-- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
+- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

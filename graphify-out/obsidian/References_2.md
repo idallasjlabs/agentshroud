@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L419"
+community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
+location: "L329"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
 ---
 
 # References
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents

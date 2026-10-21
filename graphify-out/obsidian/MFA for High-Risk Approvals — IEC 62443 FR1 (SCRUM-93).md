@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[MFAGuard_1]] - `references` [EXTRACTED]
+- [[MFAGuard_2]] - `references` [EXTRACTED]
 - [[dockerREADME]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

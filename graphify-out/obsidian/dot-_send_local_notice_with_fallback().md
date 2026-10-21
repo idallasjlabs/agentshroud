@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy (4)"
+community: "TelegramAPIProxy"
 location: "L7259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/TelegramAPIProxy
 ---
 
 # ._send_local_notice_with_fallback()
@@ -24,6 +24,6 @@ tags:
 - [[dot-_send_owner_pending_notice()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_text()]] - `calls` [EXTRACTED]
 - [[Send local command response with deterministic fallback text.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-dataREADME]] - `contains` [EXTRACTED]
-- [[Purpose_18]] - `contains` [EXTRACTED]
+- [[Purpose_20]] - `contains` [EXTRACTED]
 - [[Related Skills_5]] - `contains` [EXTRACTED]
 - [[Usage_9]] - `contains` [EXTRACTED]
 

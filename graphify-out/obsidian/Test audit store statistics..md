@@ -12,6 +12,6 @@ tags:
 # Test audit store statistics.
 
 ## Connections
-- [[dot-test_stats()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stats()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditExporter_2

@@ -18,7 +18,7 @@ tags:
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[Sanitizer that always crashes — simulates module failure.]] - `rationale_for` [EXTRACTED]

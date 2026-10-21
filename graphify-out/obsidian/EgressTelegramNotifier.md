@@ -12,7 +12,7 @@ tags:
 # EgressTelegramNotifier
 
 ## Connections
-- [[dot-__init__()_136]] - `method` [EXTRACTED]
+- [[dot-__init__()_142]] - `method` [EXTRACTED]
 - [[dot-_api_url()]] - `method` [EXTRACTED]
 - [[dot-_async_send()]] - `method` [EXTRACTED]
 - [[dot-_send_request()]] - `method` [EXTRACTED]
@@ -28,8 +28,6 @@ tags:
 - [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - `rationale_for` [EXTRACTED]
 - [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[telegram_egress_notify.py]] - `contains` [EXTRACTED]
 - [[test_answer_callback_real_error_still_logs_error()]] - `calls` [EXTRACTED]
 - [[test_answer_callback_stale_logs_debug_not_error()]] - `calls` [EXTRACTED]

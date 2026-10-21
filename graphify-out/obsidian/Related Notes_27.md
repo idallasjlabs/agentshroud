@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "AgentRegistry (2)"
-location: "L44"
+community: "All Dependencies.md"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

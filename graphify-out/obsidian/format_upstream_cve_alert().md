@@ -22,7 +22,7 @@ tags:
 - [[dot-test_plural_header_for_multiple_cves()]] - `calls` [EXTRACTED]
 - [[dot-test_singular_header_for_one_cve()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_under_telegram_limit_for_100_cves()]] - `calls` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[Format a Telegram alert for newly detected upstream CVEs.      The alert is titl]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]

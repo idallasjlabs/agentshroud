@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCP-Specific_2]] - `contains` [EXTRACTED]
 - [[Organization_2]] - `contains` [EXTRACTED]
-- [[Security_7]] - `contains` [EXTRACTED]
+- [[Security_8]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3

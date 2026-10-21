@@ -1,17 +1,19 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "package_skill"
-location: "L22"
+community: "ProxyAction"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/ProxyAction
 ---
 
 # .setUp()
 
 ## Connections
-- [[TestPackageSkillSecurity]] - `method` [EXTRACTED]
+- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
+- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/package_skill
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

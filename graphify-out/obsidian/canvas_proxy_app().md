@@ -13,12 +13,11 @@ tags:
 
 ## Connections
 - [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - `rationale_for` [EXTRACTED]
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `conceptually_related_to` [INFERRED]
 - [[_handle_http()]] - `calls` [EXTRACTED]
 - [[_handle_websocket()]] - `calls` [EXTRACTED]
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

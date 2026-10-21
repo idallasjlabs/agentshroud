@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py (2)"
+community: "test_telegram_proxy_outbound.py"
 location: "L4347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy_2
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # ._make_owner_proxy()
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - `calls` [EXTRACTED]
 - [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - `calls` [EXTRACTED]
 - [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy_2
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

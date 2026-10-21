@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "test_prompt_guard.py"
+community: "KillSwitchMonitor"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/KillSwitchMonitor
 ---
 
 # set_mode()
@@ -20,4 +20,4 @@ tags:
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

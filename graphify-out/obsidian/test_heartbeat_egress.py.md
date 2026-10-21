@@ -12,7 +12,7 @@ tags:
 # test_heartbeat_egress.py
 
 ## Connections
-- [[WebProxyConfig_1]] - `imports` [EXTRACTED]
+- [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[test_hc_ping_allowed()]] - `contains` [EXTRACTED]
 - [[test_hc_ping_subdomain_not_blocked()]] - `contains` [EXTRACTED]
 

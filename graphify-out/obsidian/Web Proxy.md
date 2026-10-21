@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Web Proxy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[web_proxy.py (domain allowlist engine)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

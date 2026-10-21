@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "upgrade"
-location: "L68"
+community: "canvas_proxy_app"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/canvas_proxy_app
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

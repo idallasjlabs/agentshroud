@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L93"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/AlertTelegramRelay
 ---
 
 # Any
 
 ## Connections
-- [[dot-generate_report()]] - `references` [EXTRACTED]
-- [[dot-log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-__call__()_6]] - `references` [EXTRACTED]
+- [[dot-__init__()_102]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

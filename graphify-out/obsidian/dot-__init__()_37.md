@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "_FakeHTTPResponse"
-location: "L36"
+community: "TestEgressApprovalQueue"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeHTTPResponse
+  - community/TestEgressApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

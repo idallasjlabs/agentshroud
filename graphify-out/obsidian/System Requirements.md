@@ -12,6 +12,6 @@ tags:
 # System Requirements
 
 ## Connections
-- [[Prerequisites_4]] - `contains` [EXTRACTED]
+- [[Prerequisites_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

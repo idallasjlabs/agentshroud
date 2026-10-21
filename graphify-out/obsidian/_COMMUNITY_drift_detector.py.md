@@ -8,7 +8,7 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Configuration_12]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Configuration_13]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[ContainerSnapshot.config_hash()]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Database Schema_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Drift Categories and Severity]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
@@ -20,9 +20,9 @@ members: 18
 - [[Function Details_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Key Classes  Functions_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Purpose_108]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Purpose_109]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Related_9]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Responsibilities_6]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Responsibilities_7]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[drift_detector.py_2]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[drift_detector.py_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md

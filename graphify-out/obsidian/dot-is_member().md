@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "RBACConfig (3)"
+community: "GroupConfig"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/GroupConfig
 ---
 
 # .is_member()
@@ -16,4 +16,4 @@ tags:
 - [[dot-get_user_groups()]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-16-state-approval-queue.png"
 type: "image"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Approval Queue State Diagram (pending → approved/rejected/expired)
@@ -15,4 +15,4 @@ tags:
 - [[flowsREADME]] - `conceptually_related_to` [AMBIGUOUS]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

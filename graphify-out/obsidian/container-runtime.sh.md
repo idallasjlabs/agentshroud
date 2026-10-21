@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "setup-secrets.sh"
+community: "setup-secrets.sh (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # container-runtime.sh
@@ -17,4 +17,4 @@ tags:
 - [[container_runtime_engine()]] - `defines` [EXTRACTED]
 - [[detect_container_runtime()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

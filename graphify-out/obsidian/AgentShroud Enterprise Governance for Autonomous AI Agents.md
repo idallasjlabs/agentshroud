@@ -24,8 +24,8 @@ tags:
 - [[7. Deployment]] - `contains` [EXTRACTED]
 - [[8. Performance & Testing]] - `contains` [EXTRACTED]
 - [[9. Deep Security Hardening (v0.9.0)]] - `contains` [EXTRACTED]
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
-- [[Executive Summary_11]] - `contains` [EXTRACTED]
+- [[Architecture Overview_2]] - `contains` [EXTRACTED]
+- [[Executive Summary_4]] - `contains` [EXTRACTED]
 - [[agentshroud-whitepaper]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

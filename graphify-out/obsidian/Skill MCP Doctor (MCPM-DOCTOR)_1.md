@@ -16,7 +16,7 @@ tags:
 - [[Diagnostic Capabilities_1]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_1]] - `contains` [EXTRACTED]
 - [[Output Format_17]] - `contains` [EXTRACTED]
-- [[Related Skills_66]] - `contains` [EXTRACTED]
+- [[Related Skills_83]] - `contains` [EXTRACTED]
 - [[Role_53]] - `contains` [EXTRACTED]
 - [[When to Invoke_4]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]

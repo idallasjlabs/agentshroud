@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Ephemeral/Transient data (never persisted raw)
@@ -17,4 +17,4 @@ tags:
 - [[MCP inspection result (in-memory only, logged to gateway stdout)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII redaction result (hash only in ledger, never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/concept #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

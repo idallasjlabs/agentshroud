@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[Allowed Syscall Categories]] - `contains` [EXTRACTED]
-- [[Applied By]] - `contains` [EXTRACTED]
+- [[Applied By_1]] - `contains` [EXTRACTED]
 - [[Architecture Support]] - `contains` [EXTRACTED]
 - [[Blocked Syscalls (Notable)]] - `contains` [EXTRACTED]
 - [[Default Action]] - `contains` [EXTRACTED]
 - [[Gateway vs Bot Profile Differences]] - `contains` [EXTRACTED]
-- [[Purpose_86]] - `contains` [EXTRACTED]
+- [[Purpose_104]] - `contains` [EXTRACTED]
 - [[Related Notes_40]] - `contains` [EXTRACTED]
 - [[seccomp-profiles]] - `contains` [EXTRACTED]
 

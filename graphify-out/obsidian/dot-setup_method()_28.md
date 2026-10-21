@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "ContextSegment (2)"
-location: "L150"
+community: "TestMetadataGuard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment_2
+  - community/TestMetadataGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment_2
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

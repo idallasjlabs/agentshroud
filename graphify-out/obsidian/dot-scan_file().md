@@ -1,25 +1,24 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L206"
+community: "SkillGuard (2)"
+location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/SkillGuard_2
 ---
 
 # .scan_file()
 
 ## Connections
-- [[dot-_compute_file_hash()]] - `calls` [EXTRACTED]
-- [[dot-_detect_modification_source()]] - `calls` [EXTRACTED]
-- [[dot-_is_in_write_window()]] - `calls` [EXTRACTED]
-- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
-- [[FileIntegrityRecord]] - `references` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_14]] - `references` [EXTRACTED]
-- [[Scan a single file for integrity changes.]] - `rationale_for` [EXTRACTED]
+- [[dot-_line_at()]] - `calls` [EXTRACTED]
+- [[dot-_scan_opaque_blobs()]] - `calls` [EXTRACTED]
+- [[dot-scan_skill_tree()]] - `calls` [EXTRACTED]
+- [[Finding]] - `calls` [EXTRACTED]
+- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_3]] - `references` [EXTRACTED]
+- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[SkillScanError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/SkillGuard_2

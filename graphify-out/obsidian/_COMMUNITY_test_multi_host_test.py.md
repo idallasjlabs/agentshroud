@@ -12,7 +12,7 @@ members: 9
 - [[dot-test_wrapper_dry_run_never_calls_ssh()]] - code - gateway/tests/test_multi_host_test.py
 - [[dot-test_wrapper_env_host_override()]] - code - gateway/tests/test_multi_host_test.py
 - [[dot-test_wrapper_mixed_exit_codes_fail()]] - code - gateway/tests/test_multi_host_test.py
-- [[Path_62]] - code - gateway/tests/test_multi_host_test.py
+- [[Path_63]] - code - gateway/tests/test_multi_host_test.py
 - [[TestWrapperSubprocess]] - code - gateway/tests/test_multi_host_test.py
 - [[_run_wrapper()]] - code - gateway/tests/test_multi_host_test.py
 - [[_write_exec()]] - code - gateway/tests/test_multi_host_test.py
@@ -39,4 +39,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[test_multi_host_test.py]] - degree 26, connects to 9 communities
 - [[TestWrapperSubprocess]] - degree 8, connects to 2 communities
-- [[Path_62]] - degree 5, connects to 2 communities
+- [[Path_63]] - degree 5, connects to 2 communities

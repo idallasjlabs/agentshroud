@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown (2)"
+community: "ProgressiveLockdown"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown_2
+  - community/ProgressiveLockdown
 ---
 
 # .test_unlock_unknown_user_reports_no_state()
@@ -16,4 +16,4 @@ tags:
 - [[TestUnlockCommand]] - `method` [EXTRACTED]
 - [[_make_proxy()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

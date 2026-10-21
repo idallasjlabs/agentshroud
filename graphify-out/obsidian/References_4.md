@@ -1,17 +1,17 @@
 ---
-source_file: "docs/governance/AGENT_ROLES.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
-location: "L81"
+community: "Common Operations"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Common_Operations
 ---
 
 # References
 
 ## Connections
-- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

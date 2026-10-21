@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "export_bot"
 location: "L530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/export_bot
 ---
 
 # .test_store_error_returns_empty()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestCollectRecentEvents]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/export_bot

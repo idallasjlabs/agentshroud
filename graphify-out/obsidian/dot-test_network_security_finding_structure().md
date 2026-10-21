@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "TestNetworkValidator"
+community: "NetworkSecurityFinding"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/NetworkSecurityFinding
 ---
 
 # .test_network_security_finding_structure()
@@ -16,4 +16,4 @@ tags:
 - [[Test NetworkSecurityFinding dataclass structure.]] - `rationale_for` [EXTRACTED]
 - [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

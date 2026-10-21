@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Agent Files Location]] - `contains` [EXTRACTED]
-- [[Authentication]] - `contains` [EXTRACTED]
+- [[Authentication_1]] - `contains` [EXTRACTED]
 - [[Basic Usage]] - `contains` [EXTRACTED]
 - [[Built-in Default Agents]] - `contains` [EXTRACTED]
 - [[COPILOT_CLI_SETUP]] - `contains` [EXTRACTED]
@@ -23,12 +23,12 @@ tags:
 - [[Custom Agents]] - `contains` [EXTRACTED]
 - [[Installation_1]] - `contains` [EXTRACTED]
 - [[MCP Server Integration]] - `contains` [EXTRACTED]
-- [[Overview_15]] - `contains` [EXTRACTED]
+- [[Overview_18]] - `contains` [EXTRACTED]
 - [[Questions]] - `contains` [EXTRACTED]
-- [[References_2]] - `contains` [EXTRACTED]
+- [[References_5]] - `contains` [EXTRACTED]
 - [[Repository Context]] - `contains` [EXTRACTED]
 - [[Role & Restrictions]] - `contains` [EXTRACTED]
 - [[Security & Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L128"
+community: "test_soc_realtime_coverage.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
-- [[TestRBACManager]] - `method` [EXTRACTED]
+- [[TestSessionTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

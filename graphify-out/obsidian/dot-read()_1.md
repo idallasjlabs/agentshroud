@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_FakeHTTPResponse"
-location: "L39"
+community: "ServiceManager"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeHTTPResponse
+  - community/ServiceManager
 ---
 
 # .read()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[_FakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

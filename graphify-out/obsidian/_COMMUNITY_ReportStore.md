@@ -8,7 +8,7 @@ members: 58
 **Members:** 58 nodes
 
 ## Members
-- [[dot-__init__()_31]] - code - gateway/security/report_store.py
+- [[dot-__init__()_32]] - code - gateway/security/report_store.py
 - [[dot-_check_size()]] - code - gateway/security/report_store.py
 - [[dot-_enforce_count_cap()]] - code - gateway/security/report_store.py
 - [[dot-_path()]] - code - gateway/security/report_store.py
@@ -20,7 +20,7 @@ members: 58
 - [[dot-delete()]] - code - gateway/security/report_store.py
 - [[dot-get()]] - code - gateway/security/report_store.py
 - [[dot-list()]] - code - gateway/security/report_store.py
-- [[dot-save()_1]] - code - gateway/security/report_store.py
+- [[dot-save()]] - code - gateway/security/report_store.py
 - [[dot-save_async()]] - code - gateway/security/report_store.py
 - [[dot-test_async_sanitizer_refused_on_sync_save()]] - code - gateway/tests/test_report_store.py
 - [[dot-test_bot_and_title_length_capped()]] - code - gateway/tests/test_report_store.py
@@ -48,7 +48,7 @@ members: 58
 - [[dot-test_title_and_tags_sanitized_sync()]] - code - gateway/tests/test_report_store.py
 - [[dot-test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
 - [[dot-test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
-- [[Any_12]] - code - gateway/security/report_store.py
+- [[Any_4]] - code - gateway/security/report_store.py
 - [[Filesystem-backed shared report store on the gateway-data volume.]] - rationale - gateway/security/report_store.py
 - [[Metadata (no content) for all reports, newest first.          O(n) file reads pe]] - rationale - gateway/security/report_store.py
 - [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
@@ -75,11 +75,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[dot-_path()]] - degree 6, connects to 2 communities
-- [[ReportStore]] - degree 37, connects to 1 community
 - [[test_report_store.py]] - degree 10, connects to 1 community
+- [[dot-_path()]] - degree 5, connects to 1 community

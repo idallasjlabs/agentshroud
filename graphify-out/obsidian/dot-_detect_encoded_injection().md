@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "InjectionAction (2)"
+community: "InjectionAction"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction_2
+  - community/InjectionAction
 ---
 
 # ._detect_encoded_injection()
 
 ## Connections
-- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_3]] - `calls` [EXTRACTED]
 - [[Check for base64 or hex encoded injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[InjectionSeverity]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction_2
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

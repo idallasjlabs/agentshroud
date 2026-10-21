@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
+community: "SecurityPipeline"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/SecurityPipeline
 ---
 
 # .test_stored_key_value_redacted_from_outbound()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

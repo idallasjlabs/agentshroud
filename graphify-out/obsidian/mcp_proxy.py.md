@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "MCPPermissionManager (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/MCPPermissionManager_3
 ---
 
 # mcp_proxy.py
@@ -21,14 +21,13 @@ tags:
 - [[MCPPermissionManager]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `contains` [EXTRACTED]
 - [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
-- [[MCPServerConfig_1]] - `imports` [EXTRACTED]
+- [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `contains` [EXTRACTED]
 - [[MCPToolResult]] - `contains` [EXTRACTED]
 - [[MCPTransport]] - `imports` [EXTRACTED]
 - [[ProxyResult]] - `contains` [EXTRACTED]
 - [[StdioConnection]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[mcp_audit.py]] - `imports_from` [EXTRACTED]
 - [[mcp_config.py]] - `imports_from` [EXTRACTED]
@@ -39,4 +38,4 @@ tags:
 - [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3

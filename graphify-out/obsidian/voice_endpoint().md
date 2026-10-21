@@ -12,7 +12,7 @@ tags:
 # voice_endpoint()
 
 ## Connections
-- [[WebSocket_6]] - `references` [EXTRACTED]
+- [[WebSocket_5]] - `references` [EXTRACTED]
 - [[_answer_volume_query()]] - `calls` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[_call_llm_stream()]] - `calls` [EXTRACTED]

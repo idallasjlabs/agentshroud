@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # LedgerConfig
@@ -16,18 +16,18 @@ tags:
 - [[dot-ledger()]] - `calls` [EXTRACTED]
 - [[dot-ledger()_1]] - `calls` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `uses` [INFERRED]
+- [[Any_26]] - `uses` [INFERRED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Data ledger configuration]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
@@ -58,8 +58,8 @@ tags:
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[ledger()]] - `calls` [EXTRACTED]
 - [[ledger()_1]] - `calls` [EXTRACTED]
-- [[ledger.py]] - `imports` [EXTRACTED]
-- [[ledger.py_2]] - `references` [EXTRACTED]
+- [[ledger.py_1]] - `imports` [EXTRACTED]
+- [[ledger.py]] - `references` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_audit_chain.py]] - `references` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
@@ -75,4 +75,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/PIIConfig

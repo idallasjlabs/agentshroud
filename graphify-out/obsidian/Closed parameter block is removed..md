@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "ToolResultSanitizer (2)"
+community: "test_filter_xml_blocks.py"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/test_filter_xml_blockspy
 ---
 
 # Closed <parameter> block is removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_parameter_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy

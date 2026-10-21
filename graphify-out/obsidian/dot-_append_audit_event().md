@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "UserSessionManager (4)"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/UserSessionManager_4
 ---
 
 # ._append_audit_event()
 
 ## Connections
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
-- [[dot-decide()_1]] - `calls` [EXTRACTED]
-- [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[Any_80]] - `references` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[dot-decide()]] - `calls` [EXTRACTED]
+- [[dot-submit()]] - `calls` [EXTRACTED]
+- [[Any_54]] - `references` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Best-effort JSONL persistence for queue lifecycle events.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "GroupApprovalRouter"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/GroupApprovalRouter
 ---
 
 # TestDMApprovalOwnerOnly
@@ -19,4 +19,4 @@ tags:
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

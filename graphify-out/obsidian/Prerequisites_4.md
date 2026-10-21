@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L17"
+community: "Slack Channel Setup"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Slack_Channel_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Optional Requirements]] - `contains` [EXTRACTED]
-- [[Supported Platforms]] - `contains` [EXTRACTED]
-- [[System Requirements]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

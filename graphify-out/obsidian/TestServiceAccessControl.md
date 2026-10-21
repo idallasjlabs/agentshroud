@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "RBACConfig (3)"
+community: "RBACConfig (2)"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/RBACConfig_2
 ---
 
 # TestServiceAccessControl
@@ -21,10 +21,10 @@ tags:
 - [[dot-test_unknown_service_allowed_by_default()]] - `method` [EXTRACTED]
 - [[PrivacyPolicy]] - `uses` [INFERRED]
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
 - [[ServicePrivacy]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

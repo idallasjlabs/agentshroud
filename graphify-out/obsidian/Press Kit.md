@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Brand Guidelines (3)"
+community: "AgentShroud Brand Guidelines (2)"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines_3
+  - community/AgentShroud_Brand_Guidelines_2
 ---
 
 # Press Kit
@@ -19,4 +19,4 @@ tags:
 - [[Key Facts]] - `contains` [EXTRACTED]
 - [[Media Contact]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_2

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L396"
+community: "AgentShroud™ Brand Guidelines"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # License
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

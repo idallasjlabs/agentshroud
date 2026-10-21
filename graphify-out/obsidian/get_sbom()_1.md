@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

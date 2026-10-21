@@ -1,23 +1,18 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "dashboard_bridge.py"
-location: "L106"
+community: "lifespan()"
+location: "L2322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/lifespan
 ---
 
 # _handle()
 
 ## Connections
-- [[StreamReader_1]] - `references` [EXTRACTED]
-- [[StreamWriter]] - `references` [EXTRACTED]
 - [[_pipe()]] - `calls` [EXTRACTED]
-- [[_read_request_headers()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
-- [[main()_24]] - `calls` [EXTRACTED]
-- [[rewrite_request_headers()]] - `calls` [EXTRACTED]
+- [[_run_hermes_api_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/code #graphify/EXTRACTED #community/lifespan

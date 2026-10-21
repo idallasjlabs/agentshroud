@@ -20,7 +20,7 @@ tags:
 - [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
 - [[append_to_registry()]] - `calls` [EXTRACTED]
 - [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[main()_4]] - `calls` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L85"
+community: "PermissionLevel"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/PermissionLevel
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
-- [[ConversationMessage]] - `calls` [EXTRACTED]
-- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
-- [[Path_1]] - `calls` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `method` [EXTRACTED]
+- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[MCPTransport]] - `calls` [EXTRACTED]
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
+- [[PermissionLevel]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

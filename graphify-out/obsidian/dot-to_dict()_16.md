@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "ResourceUsage"
-location: "L147"
+community: "MiddlewareManager (10)"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceUsage
+  - community/MiddlewareManager_10
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-deregister()_1]] - `calls` [EXTRACTED]
-- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
-- [[ResourceUsage_2]] - `method` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_10

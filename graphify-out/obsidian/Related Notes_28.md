@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "AgentRegistry (2)"
-location: "L36"
+community: "All Dependencies.md"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -12,7 +12,7 @@ tags:
 # .test_event_without_user_ignored()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event ignores message events with no user field.]] - `rationale_for` [EXTRACTED]
 

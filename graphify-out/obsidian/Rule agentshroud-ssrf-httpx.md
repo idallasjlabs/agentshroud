@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/egress_filterpy

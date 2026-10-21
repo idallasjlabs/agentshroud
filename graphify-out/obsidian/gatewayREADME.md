@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "create_auth_dependency"
+community: "ApprovalQueueConfig (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/ApprovalQueueConfig_2
 ---
 
 # gateway/README.md
@@ -20,8 +20,8 @@ tags:
 - [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[ingest_apimodels.py]] - `references` [EXTRACTED]
 - [[ingest_apirouter.py]] - `references` [EXTRACTED]
-- [[ledger.py]] - `references` [EXTRACTED]
+- [[ledger.py_1]] - `references` [EXTRACTED]
 - [[queue.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_2

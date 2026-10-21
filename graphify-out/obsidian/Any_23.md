@@ -1,29 +1,19 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "KeyRotationManager (2)"
-location: "L110"
+community: "ResourceGuard"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - graphify/INFERRED
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
-- [[dot-_validate_credential()]] - `references` [EXTRACTED]
-- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
-- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
-- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
-- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
-- [[dot-get_credential_status()]] - `references` [EXTRACTED]
-- [[dot-get_health_score()]] - `references` [EXTRACTED]
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[dot-rotate_credential()]] - `references` [EXTRACTED]
-- [[dot-validate()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/INFERRED #community/ResourceGuard

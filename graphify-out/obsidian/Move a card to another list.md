@@ -12,6 +12,6 @@ tags:
 # Move a card to another list
 
 ## Connections
-- [[Usage_121]] - `contains` [EXTRACTED]
+- [[Usage_119]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Usage

@@ -12,7 +12,7 @@ tags:
 # .test_binds_and_returns_transport()
 
 ## Connections
-- [[dot-close()_14]] - `calls` [EXTRACTED]
+- [[dot-close()_15]] - `calls` [EXTRACTED]
 - [[TestStartDNSForwarder]] - `method` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 

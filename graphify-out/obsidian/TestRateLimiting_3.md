@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "StdioConnection"
-location: "L392"
+community: "DNSFilterConfig"
+location: "L161"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/StdioConnection
+  - graphify/EXTRACTED
+  - community/DNSFilterConfig
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_no_limit_always_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_enforced()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_per_agent()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[dot-test_burst_queries_flagged()]] - `method` [EXTRACTED]
+- [[dot-test_normal_rate_not_flagged()]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

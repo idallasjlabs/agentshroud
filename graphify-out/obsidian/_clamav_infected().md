@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_initial_when_infected()]] - `calls` [EXTRACTED]
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

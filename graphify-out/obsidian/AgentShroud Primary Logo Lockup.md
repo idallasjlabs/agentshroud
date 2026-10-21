@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo.png"
 type: "image"
-community: "egress_filter.py (3)"
+community: "egress_filter.py (2)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/egress_filterpy_3
+  - community/egress_filterpy_2
 ---
 
 # AgentShroud Primary Logo Lockup
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud Logo - GlowTransparent Variant]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/egress_filterpy_3
+#graphify/image #graphify/INFERRED #community/egress_filterpy_2

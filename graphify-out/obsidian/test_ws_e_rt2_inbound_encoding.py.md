@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "SecurityPipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/SecurityPipeline
 ---
 
 # test_ws_e_rt2_inbound_encoding.py
@@ -16,7 +16,7 @@ tags:
 - [[EncodingDetector]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[SecurityPipeline_1]] - `references` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `contains` [EXTRACTED]
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

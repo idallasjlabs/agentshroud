@@ -15,7 +15,7 @@ tags:
 - [[TODO Add actual script logic here]] - `rationale_for` [EXTRACTED]
 - [[create_resource_dirs()]] - `contains` [EXTRACTED]
 - [[init_skill()]] - `contains` [EXTRACTED]
-- [[main()_31]] - `contains` [EXTRACTED]
+- [[main()_34]] - `contains` [EXTRACTED]
 - [[normalize_skill_name()]] - `contains` [EXTRACTED]
 - [[package_skill()]] - `conceptually_related_to` [INFERRED]
 - [[parse_resources()]] - `contains` [EXTRACTED]

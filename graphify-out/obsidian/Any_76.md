@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "egress_retry.py"
-location: "L75"
+community: "cli/main.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/cli/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

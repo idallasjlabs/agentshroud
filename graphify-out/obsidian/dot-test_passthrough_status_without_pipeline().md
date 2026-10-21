@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestEmailSend"
+community: "TestEmailSend (2)"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/TestEmailSend_2
 ---
 
 # .test_passthrough_status_without_pipeline()
@@ -15,4 +15,4 @@ tags:
 - [[TestTelegramWebhook]] - `method` [EXTRACTED]
 - [[Without a pipeline configured, status is passthrough (not error).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend_2

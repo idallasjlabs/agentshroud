@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "env_guard.py"
-location: "L12"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Purpose
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

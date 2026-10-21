@@ -1,23 +1,26 @@
 ---
 type: community
-members: 10
+members: 13
 ---
 
 # Audit Ledger (SHA-256 hash only) (2)
 
-**Members:** 10 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Environment Variables Used_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Purpose_193]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Related Notes_67]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Responsibilities_56]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[WebSocket Notifications]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[dot-test_cross_group_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_legacy_no_rbac_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_member_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_non_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_owner_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_unknown_group_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[A legitimate group member's write lands.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A member of group B cannot write into group A's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A user who is NOT a member of the target group cannot poison its memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Back-compat with no RBAC context supplied, the namespace-isolation         call]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[TestGroupMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[The owner may write into any group's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Writing to a group that does not exist in the RBAC config is denied.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 3 edges to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
 
 ## Top bridge nodes
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - degree 10, connects to 1 community
+- [[TestGroupMemoryWriteACL]] - degree 11, connects to 3 communities

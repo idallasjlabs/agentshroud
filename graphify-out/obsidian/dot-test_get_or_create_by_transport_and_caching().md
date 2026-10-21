@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_1]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
 - [[TestConnectionPool]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection

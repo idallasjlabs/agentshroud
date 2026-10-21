@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "TestOutboundInfoFilter (4)"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TestOutboundInfoFilter_4
 ---
 
 # Filter log record, sanitizing sensitive content.
 
 ## Connections
-- [[dot-filter()]] - `rationale_for` [EXTRACTED]
+- [[dot-filter()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_4

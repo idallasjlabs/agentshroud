@@ -15,7 +15,6 @@ tags:
 - [[Background loop sends one CVE report per day at ``report_hour`` UTC.      Runs]] - `rationale_for` [EXTRACTED]
 - [[_already_sent_today()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig (3)"
+community: "RBACConfig (2)"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/RBACConfig_2
 ---
 
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[dot-__init__()_205]] - `method` [EXTRACTED]
+- [[dot-__init__()_198]] - `method` [EXTRACTED]
 - [[dot-_get_role_value()]] - `method` [EXTRACTED]
 - [[dot-_user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[dot-contains_private_data()]] - `method` [EXTRACTED]
@@ -29,15 +29,13 @@ tags:
 - [[Evaluates access control and filters responses per privacy policy.]] - `rationale_for` [EXTRACTED]
 - [[Privacy Policy Enforcement Tests]] - `references` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
 - [[enforcer()_3]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

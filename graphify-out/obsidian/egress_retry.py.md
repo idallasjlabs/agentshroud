@@ -17,6 +17,6 @@ tags:
 - [[calculate_delay()]] - `contains` [EXTRACTED]
 - [[retry_request()]] - `contains` [EXTRACTED]
 - [[retry_request_sync()]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `semantically_similar_to` [AMBIGUOUS]
+- [[telegram_proxy.py]] - `semantically_similar_to` [AMBIGUOUS]
 
 #graphify/code #graphify/EXTRACTED #community/egress_retrypy

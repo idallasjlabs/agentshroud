@@ -37,7 +37,7 @@ members: 35
 - [[Readability]] - document - branding/guidelines/brand-guidelines.md
 - [[Social Media]] - document - branding/guidelines/brand-guidelines.md
 - [[Typography in Practice]] - document - branding/guidelines/brand-guidelines.md
-- [[Values_2]] - document - branding/guidelines/brand-guidelines.md
+- [[Values]] - document - branding/guidelines/brand-guidelines.md
 - [[Vision]] - document - branding/guidelines/brand-guidelines.md
 - [[Voice & Tone_4]] - document - branding/guidelines/brand-guidelines.md
 - [[Website]] - document - branding/guidelines/brand-guidelines.md
@@ -54,7 +54,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
 - 2 edges to [[_COMMUNITY_Animation Guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines (3)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines (2)]]
 - 1 edge to [[_COMMUNITY_brandingREADME]]
 
 ## Top bridge nodes

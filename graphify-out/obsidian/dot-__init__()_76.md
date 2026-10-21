@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L107"
+community: "SecureBrowser (4)"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/SecureBrowser_4
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

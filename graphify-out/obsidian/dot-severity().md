@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Highest severity across all findings (``NONE`` when clean).]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_3]] - `method` [EXTRACTED]
-- [[Severity_1]] - `references` [EXTRACTED]
+- [[Severity]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard_2

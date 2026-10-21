@@ -12,6 +12,6 @@ tags:
 # Example 1: Simple Navigation
 
 ## Connections
-- [[Usage Examples_1]] - `contains` [EXTRACTED]
+- [[Usage Examples]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

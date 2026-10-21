@@ -5,14 +5,14 @@ community: "DifferentialPIIDetector"
 location: "L299"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/DifferentialPIIDetector
 ---
 
 # DifferentialPIIDetector
 
 ## Connections
-- [[dot-__init__()_167]] - `method` [EXTRACTED]
+- [[dot-__init__()_158]] - `method` [EXTRACTED]
 - [[dot-_deduplicate()]] - `method` [EXTRACTED]
 - [[dot-_detect_pii()]] - `method` [EXTRACTED]
 - [[dot-_detect_presidio()]] - `method` [EXTRACTED]
@@ -21,11 +21,11 @@ tags:
 - [[dot-_redact()]] - `method` [EXTRACTED]
 - [[dot-_scan()]] - `method` [EXTRACTED]
 - [[dot-scan_prompt()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `method` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - `rationale_for` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[PII Sanitizer Mitigation (Presidio + custom regex)]] - `semantically_similar_to` [INFERRED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
@@ -38,17 +38,15 @@ tags:
 - [[TestRedaction]] - `uses` [INFERRED]
 - [[TestStandardPIIAlwaysCaught]] - `uses` [INFERRED]
 - [[TestToolResultPIIReport]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `semantically_similar_to` [INFERRED]
+- [[ToolResultSanitizer_1]] - `semantically_similar_to` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_FakeRecognizerResult]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
 - [[_StubForwarder]] - `uses` [INFERRED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector

@@ -12,6 +12,6 @@ tags:
 # Change Default Model
 
 ## Connections
-- [[Quick Reference_9]] - `contains` [EXTRACTED]
+- [[Quick Reference_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Quick_Reference

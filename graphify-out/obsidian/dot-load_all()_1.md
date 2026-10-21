@@ -12,7 +12,7 @@ tags:
 # .load_all()
 
 ## Connections
-- [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
 - [[IntelReportStore]] - `method` [EXTRACTED]
 - [[Load all reports in chronological order (oldest first).]] - `rationale_for` [EXTRACTED]

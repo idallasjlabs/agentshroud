@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_tool_specific_floor_override()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_tool_uses_default_floor()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]

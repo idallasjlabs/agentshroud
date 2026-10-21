@@ -12,7 +12,7 @@ tags:
 # A2APeerTestDouble
 
 ## Connections
-- [[dot-__init__()_195]] - `method` [EXTRACTED]
+- [[dot-__init__()_179]] - `method` [EXTRACTED]
 - [[dot-_handle()_1]] - `method` [EXTRACTED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]

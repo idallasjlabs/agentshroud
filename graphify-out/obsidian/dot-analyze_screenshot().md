@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ConsentFramework (2)"
+community: "AlertDispatcher"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework_2
+  - community/AlertDispatcher
 ---
 
 # .analyze_screenshot()
@@ -15,4 +15,4 @@ tags:
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

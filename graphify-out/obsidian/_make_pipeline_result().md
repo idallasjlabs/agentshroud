@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction (2)"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction_2
 ---
 
 # _make_pipeline_result()
@@ -22,4 +22,4 @@ tags:
 - [[PipelineResult]] - `references` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

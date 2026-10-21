@@ -12,7 +12,7 @@ tags:
 # .test_tracker_error_does_not_propagate()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event swallows tracker exceptions (non-fatal).]] - `rationale_for` [EXTRACTED]
 

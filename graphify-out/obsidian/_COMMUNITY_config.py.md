@@ -12,9 +12,9 @@ members: 13
 - [[Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Function Details_47]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Purpose_176]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Purpose_177]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Related_53]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[RuntimeConfig.effective_rootless (property)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[RuntimeConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Runtime/config.py.md

@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L52"
+community: "EgressFilterConfig"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/EgressFilterConfig
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-check_write()]] - `calls` [EXTRACTED]
-- [[PIIFinding]] - `calls` [EXTRACTED]
-- [[PIIScanResult]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `method` [EXTRACTED]
+- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
+- [[ScanRequest]] - `references` [EXTRACTED]
+- [[ScanResponse]] - `references` [EXTRACTED]
+- [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

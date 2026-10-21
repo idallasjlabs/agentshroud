@@ -12,16 +12,16 @@ tags:
 # prompt_guard.py.md
 
 ## Connections
-- [[Configuration_17]] - `contains` [EXTRACTED]
+- [[Configuration_18]] - `contains` [EXTRACTED]
 - [[Dependencies_18]] - `contains` [EXTRACTED]
 - [[Environment Variables_11]] - `contains` [EXTRACTED]
 - [[Function Details_19]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_21]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_7]] - `contains` [EXTRACTED]
 - [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
-- [[Purpose_128]] - `contains` [EXTRACTED]
+- [[Purpose_129]] - `contains` [EXTRACTED]
 - [[Related_25]] - `contains` [EXTRACTED]
-- [[Responsibilities_22]] - `contains` [EXTRACTED]
+- [[Responsibilities_23]] - `contains` [EXTRACTED]
 - [[Threat Model_15]] - `contains` [EXTRACTED]
 - [[hermesSOUL]] - `references` [EXTRACTED]
 

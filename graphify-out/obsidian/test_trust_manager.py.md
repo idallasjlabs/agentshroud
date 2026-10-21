@@ -22,8 +22,8 @@ tags:
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_2]] - `imports` [EXTRACTED]
 - [[TrustManager_3]] - `imports` [EXTRACTED]
-- [[manager()_3]] - `contains` [EXTRACTED]
-- [[strict_config()_3]] - `contains` [EXTRACTED]
+- [[manager()_2]] - `contains` [EXTRACTED]
+- [[strict_config()_2]] - `contains` [EXTRACTED]
 - [[strict_manager()]] - `contains` [EXTRACTED]
 - [[trust_db()]] - `contains` [EXTRACTED]
 

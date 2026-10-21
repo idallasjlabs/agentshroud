@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "api.py (2)"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # Validate service name against allowlist to prevent injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_validate_service_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

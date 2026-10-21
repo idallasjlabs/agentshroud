@@ -1,22 +1,20 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
-location: "L1683"
+community: "API Keys Setup Guide"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+  - community/API_Keys_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[Docker Permission Denied]] - `contains` [EXTRACTED]
-- [[High Temperature]] - `contains` [EXTRACTED]
-- [[Out of Memory]] - `contains` [EXTRACTED]
-- [[SSH Connection Refused]] - `contains` [EXTRACTED]
-- [[Slow Builds]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
+- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

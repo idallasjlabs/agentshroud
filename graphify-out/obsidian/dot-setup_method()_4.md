@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestLoadFromText"
-location: "L101"
+community: "MiddlewareManager"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLoadFromText
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLoadFromText
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

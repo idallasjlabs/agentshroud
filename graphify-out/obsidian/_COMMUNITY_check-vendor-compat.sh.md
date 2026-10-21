@@ -1,11 +1,11 @@
 ---
 type: community
-members: 31
+members: 30
 ---
 
 # check-vendor-compat.sh
 
-**Members:** 31 nodes
+**Members:** 30 nodes
 
 ## Members
 - [[ColimaDocker VM Storage Exhaustion]] - concept - reports/upgrade-2026-09-06-prod.md
@@ -20,7 +20,6 @@ members: 31
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - document - reports/upgrade-2026-09-06-prod.md
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - document - reports/upgrade-2026-09-14.md
 - [[Sunday Upgrade Report Hermes-cron Delivery]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
-- [[Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)]] - document - reports/upgrade-2026-09-24.md
 - [[Wazuh-Agent Sidecar Split (SIDECAR-GAP-001 resolution)]] - concept - reports/upgrade-2026-09-06-prod.md
 - [[_rollback()]] - code - scripts/update-agentshroud.sh
 - [[_run_cleanup()]] - code - scripts/check-vendor-compat.sh
@@ -28,17 +27,17 @@ members: 31
 - [[check-vendor-compat.sh script]] - code - scripts/check-vendor-compat.sh
 - [[check_hermes()]] - code - scripts/check-vendor-compat.sh
 - [[check_openclaw()]] - code - scripts/check-vendor-compat.sh
-- [[fail()_2]] - code - scripts/check-vendor-compat.sh
+- [[fail()_4]] - code - scripts/check-vendor-compat.sh
 - [[op-to-keychain.sh]] - code - scripts/op-to-keychain.sh
 - [[op-to-keychain.sh script]] - code - scripts/op-to-keychain.sh
-- [[pass()_2]] - code - scripts/check-vendor-compat.sh
+- [[pass()_3]] - code - scripts/check-vendor-compat.sh
 - [[restore-backup.sh]] - code - scripts/restore-backup.sh
 - [[restore-backup.sh script]] - code - scripts/restore-backup.sh
 - [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
 - [[sunday-upgrade.sh (remote-control launcher)]] - code - scripts/sunday-upgrade.sh
 - [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
 - [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
-- [[warn()_2]] - code - scripts/check-vendor-compat.sh
+- [[warn()_3]] - code - scripts/check-vendor-compat.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,15 +48,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 5 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 2 edges to [[_COMMUNITY_triage-cve-mitigations.py]]
+- 3 edges to [[_COMMUNITY_colima-health-check.sh]]
+- 3 edges to [[_COMMUNITY_Sunday Upgrade prompt]]
 - 1 edge to [[_COMMUNITY_upgrade]]
 - 1 edge to [[_COMMUNITY_plan_remediation]]
-- 1 edge to [[_COMMUNITY_validate_network_security]]
 
 ## Top bridge nodes
-- [[check-vendor-compat.sh]] - degree 15, connects to 3 communities
-- [[Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)]] - degree 8, connects to 2 communities
+- [[check-vendor-compat.sh]] - degree 15, connects to 4 communities
+- [[update-agentshroud.sh]] - degree 5, connects to 2 communities
 - [[check_openclaw()]] - degree 8, connects to 1 community
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - degree 6, connects to 1 community
-- [[update-agentshroud.sh]] - degree 5, connects to 1 community
+- [[sunday-upgrade.sh (remote-control launcher)]] - degree 4, connects to 1 community

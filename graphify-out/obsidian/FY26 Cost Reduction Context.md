@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (2) (2)"
+community: "FY26 Cost Reduction Context"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2_2
+  - community/FY26_Cost_Reduction_Context
 ---
 
 # FY26 Cost Reduction Context
@@ -19,4 +19,4 @@ tags:
 - [[Savings Levers (Ranked by Impact)]] - `contains` [EXTRACTED]
 - [[Target 40% Full-Year Reduction on Global Services Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2_2
+#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context

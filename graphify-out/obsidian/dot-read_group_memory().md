@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # .read_group_memory()
@@ -17,4 +17,4 @@ tags:
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 - [[Read a group's shared memory, gated by member access (fail-closed).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

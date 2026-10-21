@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "telegram_proxy.py (2)"
+community: "TelegramAPIProxy"
 location: "L7725"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/TelegramAPIProxy
 ---
 
 # Send deterministic pending-approval notice to unknown/revoked users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_send_collaborator_pending_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

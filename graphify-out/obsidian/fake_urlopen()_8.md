@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L2944"
+community: "test_llm_proxy.py"
+location: "L416"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - graphify/INFERRED
+  - community/test_llm_proxypy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - `contains` [EXTRACTED]
+- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/INFERRED #community/test_llm_proxypy

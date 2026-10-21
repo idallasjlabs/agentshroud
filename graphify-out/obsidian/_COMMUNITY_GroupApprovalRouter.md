@@ -1,14 +1,14 @@
 ---
 type: community
-members: 47
+members: 53
 ---
 
 # GroupApprovalRouter
 
-**Members:** 47 nodes
+**Members:** 53 nodes
 
 ## Members
-- [[dot-__init__()_56]] - code - gateway/approval_queue/group_router.py
+- [[dot-__init__()_45]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_default_send()]] - code - gateway/approval_queue/group_router.py
@@ -16,6 +16,8 @@ members: 47
 - [[dot-is_group_context()]] - code - gateway/approval_queue/group_router.py
 - [[dot-route_approval()]] - code - gateway/approval_queue/group_router.py
 - [[dot-test_default_send_stub_returns_ok()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_extract_chat_id_from_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_extract_chat_id_returns_none_for_non_group()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_is_group_context_false_for_collab_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
@@ -23,11 +25,13 @@ members: 47
 - [[dot-test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
-- [[Any_20]] - code - gateway/approval_queue/group_router.py
+- [[Any_10]] - code - gateway/approval_queue/group_router.py
 - [[ApprovalRequest]] - code - gateway/approval_queue/group_router.py
 - [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Extract the raw chat_id from a group-{chat_id} agent_id.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i]] - rationale - gateway/approval_queue/group_router.py
 - [[GroupApprovalRouter]] - code - gateway/approval_queue/group_router.py
@@ -41,8 +45,10 @@ members: 47
 - [[Route an approval notification to the appropriate recipients.          Routing l]] - rationale - gateway/approval_queue/group_router.py
 - [[Router with no send_message_fn uses the default stub (no network calls).]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - rationale - gateway/approval_queue/group_router.py
+- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
 - [[TestGroupApprovalRouterContextDetection]] - code - gateway/tests/test_group_approval_routing.py
 - [[TestGroupApprovalRouterDefaultSend]] - code - gateway/tests/test_group_approval_routing.py
+- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[agent_id starting with 'collab-' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[agent_id starting with 'group-' is recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
@@ -64,12 +70,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 14 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
 - [[group_router.py]] - degree 3, connects to 2 communities
 - [[GroupApprovalRouter]] - degree 23, connects to 1 community
 - [[test_group_approval_routing.py]] - degree 11, connects to 1 community
 - [[TestGroupApprovalRouterContextDetection]] - degree 10, connects to 1 community
-- [[TestGroupApprovalRouterDefaultSend]] - degree 6, connects to 1 community
+- [[TestDMApprovalOwnerOnly]] - degree 6, connects to 1 community

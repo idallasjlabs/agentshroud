@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js (4)"
+community: "soc.js"
 location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs_4
+  - community/socjs
 ---
 
 # _applyAndRenderSbom()
@@ -15,4 +15,4 @@ tags:
 - [[_renderSbomPackageTable()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs_4
+#graphify/code #graphify/EXTRACTED #community/socjs

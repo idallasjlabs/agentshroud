@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "ContextSegment"
-location: "L219"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .guard()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

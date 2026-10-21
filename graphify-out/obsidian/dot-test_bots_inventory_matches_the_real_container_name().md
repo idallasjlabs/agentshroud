@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestHealthCheckDetailBotsInventory]] - `method` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

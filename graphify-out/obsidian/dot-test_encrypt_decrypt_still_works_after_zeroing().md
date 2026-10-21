@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TrustConfig"
 location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/TrustConfig
 ---
 
 # .test_encrypt_decrypt_still_works_after_zeroing()
@@ -16,4 +16,4 @@ tags:
 - [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - `rationale_for` [EXTRACTED]
 - [[TestSecureZero]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

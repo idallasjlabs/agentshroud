@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "AsyncMock (2)"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AsyncMock_2
 ---
 
 # .test_network_error_returns_synthetic_failure()
@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - `rationale_for` [EXTRACTED]
 - [[TestCallSlackApi]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

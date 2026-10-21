@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "FR3: System Integrity (2)"
+community: "FR3: System Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity_2
+  - community/FR3_System_Integrity
 ---
 
 # security-report-retention.sh script
 
 ## Connections
-- [[log()_9]] - `calls` [EXTRACTED]
+- [[log()_7]] - `calls` [EXTRACTED]
 - [[security-report-retention.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity_2
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

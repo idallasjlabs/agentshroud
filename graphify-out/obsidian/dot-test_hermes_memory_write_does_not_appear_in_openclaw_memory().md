@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "TestBotIdIsolationInSharedMemory"
+community: "test_security_regressions_v1_2.py"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBotIdIsolationInSharedMemory
+  - community/test_security_regressions_v1_2py
 ---
 
 # .test_hermes_memory_write_does_not_appear_in_openclaw_memory()
@@ -15,4 +15,4 @@ tags:
 - [[BT-H4 (reverse) Writing to Hermes workspace does not bleed into OpenClaw.]] - `rationale_for` [EXTRACTED]
 - [[TestBotIdIsolationInSharedMemory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

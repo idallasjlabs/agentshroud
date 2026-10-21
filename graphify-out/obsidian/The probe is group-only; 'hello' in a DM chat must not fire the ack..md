@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 location: "L9299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # The probe is group-only; 'hello' in a DM chat must not fire the ack.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dm_hello_does_not_trigger_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

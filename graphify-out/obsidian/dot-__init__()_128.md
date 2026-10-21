@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "api.py"
-location: "L205"
+community: "MCPPolicyEngine"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_33]] - `references` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

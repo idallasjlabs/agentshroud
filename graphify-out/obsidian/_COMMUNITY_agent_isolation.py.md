@@ -17,9 +17,9 @@ members: 15
 - [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_138]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md

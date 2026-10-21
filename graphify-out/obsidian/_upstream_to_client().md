@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "test_main_endpoints.py (2)"
-location: "L4961"
+location: "L4948"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # _upstream_to_client()
 
 ## Connections
-- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `contains` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2

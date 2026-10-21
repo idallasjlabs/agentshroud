@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "StdioConnection (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/StdioConnection_2
 ---
 
 # test_mcp_proxy_coverage.py
@@ -22,12 +22,12 @@ tags:
 - [[MCPPermissionManager]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
 - [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
-- [[MCPServerConfig_1]] - `imports` [EXTRACTED]
+- [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
 - [[MCPTransport]] - `imports` [EXTRACTED]
-- [[PermissionLevel_1]] - `imports` [EXTRACTED]
+- [[PermissionLevel]] - `imports` [EXTRACTED]
 - [[StdioConnection]] - `imports` [EXTRACTED]
 - [[TestApprovalQueue]] - `contains` [EXTRACTED]
 - [[TestConnectionPool]] - `contains` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/StdioConnection_2

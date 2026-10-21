@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh"
-location: "L475"
+community: "setup-secrets.sh (2)"
+location: "L485"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # _prune_docker()
@@ -22,4 +22,4 @@ tags:
 - [[asb script]] - `calls` [EXTRACTED]
 - [[asb up fullhermes]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

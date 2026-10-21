@@ -1,19 +1,31 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L23"
+community: "_FakeRBAC"
+location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SlackAPIProxy
+  - graphify/EXTRACTED
+  - community/_FakeRBAC
 ---
 
 # Severity
 
 ## Connections
+- [[Any_60]] - `uses` [INFERRED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[WSEvent_1]] - `uses` [INFERRED]
+- [[WebSocket_4]] - `uses` [INFERRED]
+- [[event_adapter.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

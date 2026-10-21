@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "AgentShroud (system, C4 context) (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/AgentShroud_system_C4_context_3
 ---
 
 # Audit Ledger (SHA-256 hash only)
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_5]] - `calls` [EXTRACTED]
 - [[ledger.db (90-day retention)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_system_C4_context_3

@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "ReportStore"
-location: "L182"
+community: "test_security_toolchain.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/test_security_toolchainpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-list()]] - `references` [EXTRACTED]
+- [[calculate_overall_score()]] - `references` [EXTRACTED]
+- [[calculate_tool_score()]] - `references` [EXTRACTED]
+- [[format_report()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

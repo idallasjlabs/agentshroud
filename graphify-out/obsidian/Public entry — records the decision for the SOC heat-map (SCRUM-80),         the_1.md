@@ -12,6 +12,6 @@ tags:
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
 
 ## Connections
-- [[dot-check()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_3

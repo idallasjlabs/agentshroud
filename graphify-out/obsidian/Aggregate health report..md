@@ -12,6 +12,6 @@ tags:
 # Aggregate health report.
 
 ## Connections
-- [[get_health()]] - `rationale_for` [EXTRACTED]
+- [[get_health()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

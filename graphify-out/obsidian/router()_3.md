@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_router_streaming.py"
+source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L23"
+community: "AgentTarget"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # router()
 
 ## Connections
+- [[Create a router instance for testing]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
-- [[test_router_streaming.py]] - `contains` [EXTRACTED]
+- [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

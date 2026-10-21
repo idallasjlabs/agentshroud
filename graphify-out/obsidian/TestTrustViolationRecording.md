@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L833"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # TestTrustViolationRecording
@@ -36,4 +36,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

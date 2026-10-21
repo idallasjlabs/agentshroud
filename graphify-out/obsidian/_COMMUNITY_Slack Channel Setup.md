@@ -11,7 +11,7 @@ members: 27
 - [[Architecture_5]] - document - docs/setup-slack.md
 - [[Collaborators]] - document - docs/setup-slack.md
 - [[Collaborators_1]] - document - docs/setup-telegram.md
-- [[Prerequisites_3]] - document - docs/setup-telegram.md
+- [[Prerequisites_4]] - document - docs/setup-telegram.md
 - [[Sending Messages to the Bot]] - document - docs/setup-slack.md
 - [[Slack Channel Setup]] - document - docs/setup-slack.md
 - [[Step 10 Verify]] - document - docs/setup-slack.md
@@ -31,8 +31,8 @@ members: 27
 - [[Step 8 Configure Environment]] - document - docs/setup-slack.md
 - [[Step 9 Rebuild and Start]] - document - docs/setup-slack.md
 - [[Telegram Channel Setup]] - document - docs/setup-telegram.md
-- [[Troubleshooting_18]] - document - docs/setup-slack.md
-- [[Troubleshooting_19]] - document - docs/setup-telegram.md
+- [[Troubleshooting_20]] - document - docs/setup-slack.md
+- [[Troubleshooting_21]] - document - docs/setup-telegram.md
 - [[setup-slack]] - document - docs/setup-slack.md
 - [[setup-telegram]] - document - docs/setup-telegram.md
 
@@ -44,8 +44,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_First Time Setup]]
 - 1 edge to [[_COMMUNITY_Slack Channel Setup (2)]]
-- 1 edge to [[_COMMUNITY_First Time Setup (3)]]
 
 ## Top bridge nodes
 - [[Collaborators]] - degree 3, connects to 1 community

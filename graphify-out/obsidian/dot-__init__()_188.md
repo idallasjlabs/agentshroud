@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
-location: "L154"
+community: "AgentRegistry"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyInjector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

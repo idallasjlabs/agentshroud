@@ -12,7 +12,7 @@ tags:
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_26]] - `contains` [EXTRACTED]
+- [[Purpose_28]] - `contains` [EXTRACTED]
 - [[Related Skills_13]] - `contains` [EXTRACTED]
 - [[Usage_17]] - `contains` [EXTRACTED]
 - [[hermesskillsi-awsREADME]] - `contains` [EXTRACTED]

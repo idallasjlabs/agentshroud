@@ -1,25 +1,19 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "SecureBrowser"
-location: "L431"
+community: "test_hermes_model_resolver.py"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/test_hermes_model_resolverpy
 ---
 
 # main()
 
 ## Connections
-- [[dot-_take_screenshot()]] - `calls` [EXTRACTED]
-- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
-- [[dot-click()]] - `calls` [EXTRACTED]
-- [[dot-close()_4]] - `calls` [EXTRACTED]
-- [[dot-extract()]] - `calls` [EXTRACTED]
-- [[dot-fill_field()]] - `calls` [EXTRACTED]
-- [[dot-navigate()]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
+- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
+- [[_resolve_from_env()]] - `calls` [EXTRACTED]
+- [[resolve_model.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

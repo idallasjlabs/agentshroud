@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "RBACConfig (3)"
+community: "telegram_proxy.py"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/telegram_proxypy
 ---
 
 # Return the first project accessible to a user (primary project).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_active_project_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "create_auth_dependency (2)"
+community: "test_forward_stream.py (2)"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/test_forward_streampy_2
 ---
 
 # bypass_auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (3)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_3
 ---
 
 # .verify_killswitch()
@@ -19,8 +19,8 @@ tags:
 - [[dot-_test_script_exists()]] - `calls` [EXTRACTED]
 - [[dot-_test_script_permissions()]] - `calls` [EXTRACTED]
 - [[dot-_test_script_syntax()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Verify that the kill switch mechanism works without actually killing.          A]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

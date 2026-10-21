@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L46"
+community: "_FakeRBAC"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/_FakeRBAC
 ---
 
 # EgressRequest
 
 ## Connections
-- [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[dot-test_cleanup_expired_requests()]] - `calls` [EXTRACTED]
-- [[Represents a pending egress approval request.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
-- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
-- [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[test_egress_approval.py]] - `imports` [EXTRACTED]
+- [[dot-test_approved_status()]] - `calls` [EXTRACTED]
+- [[dot-test_construction()_1]] - `calls` [EXTRACTED]
+- [[dot-test_pending_status_default()]] - `calls` [EXTRACTED]
+- [[dot-test_red_risk_high_threat()]] - `calls` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[_loadEgress()]] - `shares_data_with` [INFERRED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[test_soc_egress.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

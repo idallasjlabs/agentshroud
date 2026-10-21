@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard
 ---
 
 # Register a temporary file for tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_temp_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

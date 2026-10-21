@@ -12,12 +12,12 @@ tags:
 # DelegationManager
 
 ## Connections
-- [[dot-__init__()_198]] - `method` [EXTRACTED]
+- [[dot-__init__()_193]] - `method` [EXTRACTED]
 - [[dot-_load()]] - `method` [EXTRACTED]
 - [[dot-_require_owner()]] - `method` [EXTRACTED]
 - [[dot-_revoke_by_user_privilege()]] - `method` [EXTRACTED]
 - [[dot-_save()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()_2]] - `method` [EXTRACTED]
 - [[dot-delegate()]] - `method` [EXTRACTED]
 - [[dot-get_active_delegations()]] - `method` [EXTRACTED]
 - [[dot-get_delegations_for_user()]] - `method` [EXTRACTED]
@@ -35,8 +35,6 @@ tags:
 - [[TestRevoke]] - `uses` [INFERRED]
 - [[TestSerialization_2]] - `uses` [INFERRED]
 - [[delegation.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationManager

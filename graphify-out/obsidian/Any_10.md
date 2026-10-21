@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/GroupApprovalRouter
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-__init__()_45]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

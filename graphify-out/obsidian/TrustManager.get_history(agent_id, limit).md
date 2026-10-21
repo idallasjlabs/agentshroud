@@ -12,6 +12,6 @@ tags:
 # TrustManager.get_history(agent_id, limit)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TrustManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Security Verification Report"
-location: "L83"
+community: "Browser — Secure Browser Automation (3)"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report
+  - community/Browser__Secure_Browser_Automation_3
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3

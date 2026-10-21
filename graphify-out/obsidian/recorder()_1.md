@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
 community: "discover_upstream_versions.py"
-location: "L279"
+location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # recorder()
 
 ## Connections
-- [[dot-test_retry_attempts_force_ipv4()]] - `contains` [EXTRACTED]
+- [[dot-test_first_attempt_keeps_default_resolver()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[If the pipeline wants to redact inside blocks JSON, delivery is blocked]] - `rationale_for` [EXTRACTED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

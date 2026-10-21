@@ -9,7 +9,7 @@ members: 10
 
 ## Members
 - [[check()_12]] - code - scripts/preflight-check.sh
-- [[fail()_5]] - code - scripts/tailscale-check.sh
+- [[fail()_6]] - code - scripts/tailscale-check.sh
 - [[infra-check.sh]] - code - scripts/infra-check.sh
 - [[infra-check.sh script]] - code - scripts/infra-check.sh
 - [[ok()_2]] - code - scripts/tailscale-check.sh
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
 - [[preflight-check.sh]] - degree 4, connects to 1 community

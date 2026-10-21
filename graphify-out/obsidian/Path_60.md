@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "export-bot-conversations.py (3)"
-location: "L96"
+community: "plan_remediation"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_3
+  - community/plan_remediation
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_3
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

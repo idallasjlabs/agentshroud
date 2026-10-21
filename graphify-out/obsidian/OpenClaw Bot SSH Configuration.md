@@ -16,13 +16,13 @@ tags:
 - [[Backup and Recovery]] - `contains` [EXTRACTED]
 - [[Next Steps_1]] - `contains` [EXTRACTED]
 - [[OPENCLAW_SETUP]] - `contains` [EXTRACTED]
-- [[Quick Reference_3]] - `contains` [EXTRACTED]
+- [[Quick Reference_4]] - `contains` [EXTRACTED]
 - [[SSH Configuration Details]] - `contains` [EXTRACTED]
 - [[SSH Key Generated]] - `contains` [EXTRACTED]
 - [[Security Considerations]] - `contains` [EXTRACTED]
 - [[Setup Instructions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
-- [[Usage Examples]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
 - [[Verification Checklist]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

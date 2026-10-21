@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "_make_proxy()"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/_make_proxy
 ---
 
 # test_normalize_local_model_provider_prefix_stripped_before_normalize()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[_fake_forward()_24]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[ollama prefix is stripped during proxy_messages dispatch and normalization…]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

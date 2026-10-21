@@ -28,7 +28,7 @@ members: 23
 - [[Semantic Colors]] - document - branding/colors/palette.md
 - [[Steel Blue]] - document - branding/colors/palette.md
 - [[Text]] - document - branding/colors/palette.md
-- [[Usage Guidelines_1]] - document - branding/colors/palette.md
+- [[Usage Guidelines_2]] - document - branding/colors/palette.md
 - [[Variations]] - document - branding/colors/palette.md
 - [[palette]] - document - branding/colors/palette.md
 

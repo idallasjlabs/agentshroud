@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Unit tests for collaborator-facing prompt classification helpers."
+community: "._make_proxy()"
 location: "L7621"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+  - community/_make_proxy
 ---
 
 # .test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[fake_send()_20]] - `contains` [EXTRACTED]
-- [[fake_send()_7]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[fake_send()_3]] - `contains` [EXTRACTED]
+- [[fake_send()_11]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

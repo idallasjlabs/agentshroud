@@ -1,18 +1,17 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "colima-health-check.sh (3)"
+community: "sunday-scan.sh"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh_3
+  - community/sunday-scansh
 ---
 
 # sunday_handoff_status()
 
 ## Connections
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh_3
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L186"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/ConfigIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_27]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

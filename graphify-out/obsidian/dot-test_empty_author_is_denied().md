@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "TeamsConfig"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TeamsConfig
 ---
 
 # .test_empty_author_is_denied()
@@ -15,4 +15,4 @@ tags:
 - [[An emptyNone author is never authorized.]] - `rationale_for` [EXTRACTED]
 - [[TestAuthorizationHelper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

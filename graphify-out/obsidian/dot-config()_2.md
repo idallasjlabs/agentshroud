@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget"
-location: "L126"
+community: "AgentTarget (4)"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_4
 ---
 
 # .config()
 
 ## Connections
-- [[TestRecommendedConfig]] - `method` [EXTRACTED]
+- [[TestParanoidConfig]] - `method` [EXTRACTED]
 - [[_parse_env_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_4

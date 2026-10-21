@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L62"
+community: "AlertDispatcher"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

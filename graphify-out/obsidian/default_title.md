@@ -12,6 +12,6 @@ tags:
 # default_title
 
 ## Connections
-- [[action_2]] - `contains` [EXTRACTED]
+- [[action_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

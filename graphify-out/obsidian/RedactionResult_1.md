@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L71"
+community: "MiddlewareManager (2)"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - graphify/EXTRACTED
+  - community/MiddlewareManager_2
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[dot-scan_response()_2]] - `references` [EXTRACTED]
+- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
+- [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

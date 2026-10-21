@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Test Augmentation Specialist"
+community: "AgentShroud™ Communication Templates"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/AgentShroud_Communication_Templates
 ---
 
 # safe-refactor.agent.md
@@ -15,4 +15,4 @@ tags:
 - [[Codex Safe Refactor Role]] - `semantically_similar_to` [INFERRED]
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

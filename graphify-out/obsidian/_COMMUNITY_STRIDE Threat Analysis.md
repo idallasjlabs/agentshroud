@@ -26,10 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_I - Information Disclosure]]
-- 1 edge to [[_COMMUNITY_E - Elevation of Privilege]]
 - 1 edge to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
+- 1 edge to [[_COMMUNITY_I - Information Disclosure]]
 - 1 edge to [[_COMMUNITY_Threat Model]]
+- 1 edge to [[_COMMUNITY_E - Elevation of Privilege]]
 
 ## Top bridge nodes
 - [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities

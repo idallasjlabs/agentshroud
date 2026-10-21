@@ -12,7 +12,7 @@ tags:
 # .get_protection_stats()
 
 ## Connections
-- [[Any_6]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Get statistics about the protection system.]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 

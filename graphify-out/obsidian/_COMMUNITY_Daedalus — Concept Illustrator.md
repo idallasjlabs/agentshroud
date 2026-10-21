@@ -9,7 +9,7 @@ members: 11
 
 ## Members
 - [[dot-agentsskillsi-daedalusSKILL]] - document - .agents/skills/i-daedalus/SKILL.md
-- [[Daedalus — Concept Illustrator_2]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Daedalus — Concept Illustrator_3]] - document - .agents/skills/i-daedalus/SKILL.md
 - [[Input Requirements_23]] - document - .agents/skills/i-daedalus/SKILL.md
 - [[Output Format_38]] - document - .agents/skills/i-daedalus/SKILL.md
 - [[Persona_17]] - document - .agents/skills/i-daedalus/SKILL.md
@@ -31,4 +31,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Daedalus — Concept Illustrator_2]] - degree 8, connects to 1 community
+- [[Daedalus — Concept Illustrator_3]] - degree 8, connects to 1 community

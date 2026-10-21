@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "ToolResultSanitizer (2)"
+community: "test_filter_xml_blocks.py"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/test_filter_xml_blockspy
 ---
 
 # Empty string input returns empty string, not filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_empty_string_returns_unchanged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy

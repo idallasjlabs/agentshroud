@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (2)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_2
 ---
 
 # log_file()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

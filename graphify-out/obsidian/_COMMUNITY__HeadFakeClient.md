@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-__aenter__()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-__aexit__()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-stream()]] - code - gateway/tests/test_llm_proxy.py
 - [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "UserSessionManager"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager
 ---
 
 # Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_merged_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

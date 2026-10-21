@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

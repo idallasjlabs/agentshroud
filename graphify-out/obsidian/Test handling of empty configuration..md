@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "TestNetworkValidator"
+community: "NetworkSecurityFinding"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/NetworkSecurityFinding
 ---
 
 # Test handling of empty configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_validate_docker_compose_config_empty_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

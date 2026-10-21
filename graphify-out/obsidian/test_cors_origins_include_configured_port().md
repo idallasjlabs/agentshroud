@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # test_cors_origins_include_configured_port()
 
 ## Connections
-- [[GatewayConfig]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[load_config computes CORS origins from the configured port.]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

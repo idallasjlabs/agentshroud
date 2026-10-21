@@ -20,6 +20,6 @@ tags:
 - [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - `contains` [EXTRACTED]
 - [[OAuthSecurityValidator.validate_request(req)]] - `contains` [EXTRACTED]
 - [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details_4

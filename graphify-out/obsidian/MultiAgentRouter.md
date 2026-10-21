@@ -1,33 +1,31 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "ApprovalQueueConfig"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/ApprovalQueueConfig
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[dot-__init__()_125]] - `method` [EXTRACTED]
+- [[dot-__init__()_138]] - `method` [EXTRACTED]
 - [[dot-_build_forward_payload()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent()]] - `method` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `method` [EXTRACTED]
-- [[dot-health_check()_3]] - `method` [EXTRACTED]
+- [[dot-health_check()_4]] - `method` [EXTRACTED]
 - [[dot-list_targets()]] - `method` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-register_bots()]] - `method` [EXTRACTED]
 - [[dot-resolve_target()]] - `method` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
+- [[AgentTarget_3]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
-- [[LogRecord_1]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - `rationale_for` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
@@ -41,16 +39,13 @@ tags:
 - [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
-- [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()_2]] - `calls` [EXTRACTED]
-- [[client()_19]] - `calls` [EXTRACTED]
+- [[client()_6]] - `calls` [EXTRACTED]
+- [[client()_7]] - `calls` [EXTRACTED]
 - [[ingest_apirouter.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 - [[router()_1]] - `calls` [EXTRACTED]
-- [[router()_2]] - `calls` [EXTRACTED]
 - [[router()_3]] - `calls` [EXTRACTED]
+- [[router()_2]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
 - [[test_resolves_hermes_target()]] - `calls` [EXTRACTED]
@@ -60,4 +55,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # .test_different_encryptions_differ()
@@ -15,4 +15,4 @@ tags:
 - [[Same plaintext should produce different blobs (random saltnonce).]] - `rationale_for` [EXTRACTED]
 - [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

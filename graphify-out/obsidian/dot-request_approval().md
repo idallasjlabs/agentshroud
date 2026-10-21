@@ -16,7 +16,7 @@ tags:
 - [[dot-_check_existing_rule()]] - `calls` [EXTRACTED]
 - [[ApprovalResult]] - `references` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[EgressRequest_1]] - `calls` [EXTRACTED]
+- [[EgressRequest]] - `calls` [EXTRACTED]
 - [[Request approval for egress to a domainport.          Args             domain]] - `rationale_for` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 

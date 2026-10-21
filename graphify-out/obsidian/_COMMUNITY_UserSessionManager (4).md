@@ -1,27 +1,34 @@
 ---
 type: community
-members: 14
+members: 21
 ---
 
 # UserSessionManager (4)
 
-**Members:** 14 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[dot-manager()_2]] - code - gateway/tests/test_key_rotation.py
-- [[dot-sample_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_register_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
+- [[dot-_append_audit_event()]] - code - gateway/approval_queue/queue.py
+- [[dot-_expire_stale()]] - code - gateway/approval_queue/queue.py
+- [[dot-_persist_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[dot-broadcast()]] - code - gateway/approval_queue/queue.py
+- [[dot-cleanup_decided()]] - code - gateway/approval_queue/queue.py
+- [[dot-decide()]] - code - gateway/approval_queue/queue.py
+- [[dot-get_item()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-get_pending()]] - code - gateway/approval_queue/queue.py
+- [[dot-submit()]] - code - gateway/approval_queue/queue.py
+- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
+- [[Any_54]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/queue.py
+- [[ApprovalRequest_1]] - code - gateway/approval_queue/queue.py
+- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
+- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
+- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
+- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
+- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
+- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
+- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
+- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,16 +38,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_UserSessionManager (3)_1]]
-- 3 edges to [[_COMMUNITY_UserSessionManager]]
-- 2 edges to [[_COMMUNITY_KeyRotationManager (2)_1]]
-- 2 edges to [[_COMMUNITY_KeyRotationManager]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (5)]]
+- 9 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
-- [[TestKeyRotationManager]] - degree 15, connects to 6 communities
-- [[dot-manager()_2]] - degree 4, connects to 2 communities
-- [[dot-sample_credential()]] - degree 3, connects to 1 community
-- [[dot-test_get_health_score_all_healthy()]] - degree 3, connects to 1 community
-- [[dot-test_get_health_score_mixed_states()]] - degree 3, connects to 1 community
+- [[dot-decide()]] - degree 7, connects to 2 communities
+- [[dot-submit()]] - degree 7, connects to 1 community
+- [[dot-_append_audit_event()]] - degree 6, connects to 1 community
+- [[dot-broadcast()]] - degree 6, connects to 1 community
+- [[dot-_expire_stale()]] - degree 6, connects to 1 community

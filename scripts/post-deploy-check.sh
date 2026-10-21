@@ -9,9 +9,22 @@
 #
 # Usage:
 #   bash scripts/post-deploy-check.sh
+#   bash scripts/post-deploy-check.sh --functional
 #   Called automatically by: scripts/asb up | scripts/asb rebuild
+#
+# --functional adds F1-F4 (below): every service of the full stack must be
+# running and healthy, and answer a real request. The Sunday wrapper's restore
+# ladder (scripts/lib/sunday-scan.sh sunday_restore_stack) gates on it.
 
 set -euo pipefail
+
+FUNCTIONAL=0
+for _arg in "$@"; do
+    case "$_arg" in
+        --functional) FUNCTIONAL=1 ;;
+        *) echo "  [post-deploy-check] unknown argument: $_arg" >&2; exit 2 ;;
+    esac
+done
 
 if [[ "${AGENTSHROUD_SKIP_POST_DEPLOY_CHECK:-0}" == "1" ]]; then
     echo "  [post-deploy-check] SKIPPED (AGENTSHROUD_SKIP_POST_DEPLOY_CHECK=1)"
@@ -209,12 +222,15 @@ check "No 'Pool overlaps' error in Docker network state" \
 # Validates docker/docker-compose.yml against NetworkValidator's rules
 # (isolated networks, exposed ports, privileged, etc.). Fails only on
 # `critical` findings — high/medium are surfaced as INFO.
+# The gateway is found by its compose service label, like the OpenClaw lookup
+# above: matching the literal agentshroud-gateway meant P5 never ran on dev
+# (agentshroud-dev-gateway).
 COMPOSE_FILE="${AGENTSHROUD_COMPOSE_FILE:-docker/docker-compose.yml}"
-if [[ -f "$COMPOSE_FILE" ]] && command -v docker >/dev/null 2>&1 \
-   && docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^agentshroud-gateway$'; then
+GATEWAY_CONTAINER=$(docker ps --filter 'label=com.docker.compose.service=gateway' --format '{{.Names}}' 2>/dev/null | head -1)
+if [[ -f "$COMPOSE_FILE" ]] && [[ -n "$GATEWAY_CONTAINER" ]]; then
     # Pipe the host's compose file into the gateway container; validator runs
     # there because that's where the gateway package + deps are already installed.
-    net_report=$(docker exec -i agentshroud-gateway python3 -c '
+    net_report=$(docker exec -i "$GATEWAY_CONTAINER" python3 -c '
 import json, sys, tempfile
 from gateway.security.network_validator import validate_network_security
 with tempfile.NamedTemporaryFile("w", suffix=".yml", delete=False) as f:
@@ -223,6 +239,12 @@ with tempfile.NamedTemporaryFile("w", suffix=".yml", delete=False) as f:
 report = validate_network_security(tmp).get_security_report()
 print(json.dumps(report))
 ' < "$COMPOSE_FILE" 2>/dev/null || echo '{}')
+
+    # A validator that never ran must not read as "0 critical": exec failing
+    # falls back to {} above, which has no by_severity at all.
+    check "Network validator ran in $GATEWAY_CONTAINER" \
+        "$([[ "$net_report" == *'"by_severity"'* ]] && echo true || echo false)" \
+        "no report (docker exec or the validator failed)"
 
     critical_count=$(printf '%s' "$net_report" | python3 -c \
         'import json,sys; d=json.loads(sys.stdin.read() or "{}"); print(d.get("by_severity",{}).get("critical",0))' 2>/dev/null || echo "0")
@@ -237,6 +259,8 @@ print(json.dumps(report))
     if [[ "$high_count" != "0" || "$medium_count" != "0" ]]; then
         echo "  [post-deploy-check] INFO: network validator: high=$high_count medium=$medium_count (non-fatal)"
     fi
+else
+    echo "  [post-deploy-check] SKIP: P5 network validator (no gateway container or no $COMPOSE_FILE)"
 fi
 
 # ── P6: Sandbox image present ─────────────────────────────────────────────
@@ -290,6 +314,85 @@ if [[ -n "$BOT_CONTAINER" ]]; then
     fi
 fi
 
+# ── F1-F4: functional checks (--functional only) ─────────────────────────
+# The P-checks above prove the stack booted. These prove it works: the Sunday
+# restore after a cut-off or failed upgrade must not call a stack "up" because
+# containers exist. Each service answers a real request over the same path its
+# traffic takes. Only stack-internal paths are tested: an external outage (a
+# model server, Telegram) must not roll back a healthy upgrade.
+if [[ "$FUNCTIONAL" == "1" ]]; then
+    FUNC_WAIT_SECS="${AGENTSHROUD_FUNCTIONAL_WAIT:-180}"
+    _svc_container() {
+        docker ps --filter "label=com.docker.compose.service=$1" --format '{{.Names}}' 2>/dev/null | head -1
+    }
+    GW_CONTAINER=$(_svc_container gateway)
+
+    # F1: the full default stack (`asb up full`) is running, and every one of
+    # its containers that declares a healthcheck reports healthy. The compose
+    # healthchecks are real probes (gateway /status, wazuh-agent
+    # status='connected', wazuh-manager's four daemons, ...), not pgrep.
+    # One deadline shared by all six, not one each: the Sunday restore runs this
+    # up to three times before 08:00, so its worst case has to stay bounded.
+    deadline=$(( $(date +%s) + FUNC_WAIT_SECS ))
+    for _svc in gateway openclaw wazuh-manager wazuh-agent docker-socket-proxy voice-gateway; do
+        _c=$(_svc_container "$_svc")
+        if [[ -z "$_c" ]]; then
+            check "F1: $_svc running" false "no container with com.docker.compose.service=$_svc"
+            continue
+        fi
+        _health=""
+        while :; do
+            _health=$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$_c" 2>/dev/null || echo "gone")
+            [[ "$_health" == "healthy" || "$_health" == "none" ]] && break
+            [[ $(date +%s) -ge $deadline ]] && break
+            sleep 5
+        done
+        check "F1: $_svc ($_c) healthy" \
+            "$([[ "$_health" == "healthy" || "$_health" == "none" ]] && echo true || echo false)" \
+            "health=$_health within the ${FUNC_WAIT_SECS}s window"
+    done
+    check "F1: hermes running" \
+        "$([[ -n "$HERMES_CONTAINER" ]] && echo true || echo false)" \
+        "no container labelled com.agentshroud.role=hermes"
+
+    # F2: each agent reaches the gateway over the internal network — the path
+    # every model, Telegram and tool call of theirs goes through. Three tries:
+    # on 2026-10-19 both agents failed this request once during a restore drill
+    # (not reproducible; the gateway logged nothing), and one blip must not
+    # escalate the Sunday restore to a rollback.
+    for _c in "$BOT_CONTAINER" "$HERMES_CONTAINER"; do
+        [[ -n "$_c" ]] || continue
+        for _try in 1 2 3; do
+            _code=$(docker exec "$_c" curl -s -o /dev/null -w '%{http_code}' --max-time 10 http://gateway:8080/status 2>/dev/null || true)
+            [[ "$_code" == "200" ]] && break
+            [[ "$_try" -lt 3 ]] && sleep 5
+        done
+        _code="${_code:-000}"
+        check "F2: $_c -> gateway:8080/status 200" \
+            "$([[ "$_code" == "200" ]] && echo true || echo false)" "http=$_code"
+    done
+
+    # F3: the gateway's resident clamd answers. Without it every scan falls
+    # back to clamscan and a second ~1 GB signature DB (the 2026-10-17 OOMs).
+    if [[ -n "$GW_CONTAINER" ]]; then
+        _pong=$(docker exec "$GW_CONTAINER" clamdscan --ping 1 2>/dev/null || true)
+        check "F3: gateway clamd answers PING" \
+            "$([[ "$_pong" == *PONG* ]] && echo true || echo false)" "got='${_pong}'"
+    fi
+
+    # F4: OpenClaw's own clamd answers on its socket (no clamdscan in that
+    # image, so speak the clamd protocol directly).
+    if [[ -n "$BOT_CONTAINER" ]]; then
+        _pong=$(docker exec "$BOT_CONTAINER" node -e '
+          const s = require("net").createConnection("/tmp/clamd.ctl", () => s.write("zPING\0"));
+          s.on("data", d => { process.stdout.write(d.toString()); s.end(); });
+          s.on("error", () => process.exit(1));
+          s.setTimeout(5000, () => process.exit(2));' 2>/dev/null || true)
+        check "F4: openclaw clamd answers PING" \
+            "$([[ "$_pong" == *PONG* ]] && echo true || echo false)" "got='${_pong}'"
+    fi
+fi
+
 # ── Summary ───────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
@@ -303,7 +406,7 @@ if [[ "$fail" -gt 0 ]]; then
     done
     echo ""
     echo "  Investigate with:" >&2
-    echo "    docker logs agentshroud-gateway 2>&1 | tail -50" >&2
+    echo "    docker logs ${GATEWAY_CONTAINER:-agentshroud-gateway} 2>&1 | tail -50" >&2
     echo "    docker logs ${BOT_CONTAINER:-agentshroud-openclaw} 2>&1 | tail -50" >&2
     echo "    docker logs ${HERMES_CONTAINER:-agentshroud-hermes-v2} 2>&1 | tail -50" >&2
     echo "    asb status" >&2

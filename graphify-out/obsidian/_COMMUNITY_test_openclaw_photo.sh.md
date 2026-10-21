@@ -36,8 +36,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
 - 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 1 edge to [[_COMMUNITY_pytest.ini]]
-- 1 edge to [[_COMMUNITY_validate_network_security]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
 - [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities

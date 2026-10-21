@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "Request"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Request
 ---
 
 # put
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[set_user_role()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/Request

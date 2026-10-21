@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
-location: "L88"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
-- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceLimits]] - `references` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

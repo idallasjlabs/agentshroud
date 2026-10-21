@@ -12,8 +12,8 @@ tags:
 # AlertStore
 
 ## Connections
-- [[dot-__init__()_44]] - `method` [EXTRACTED]
-- [[dot-push()]] - `method` [EXTRACTED]
+- [[dot-__init__()_119]] - `method` [EXTRACTED]
+- [[dot-push()_4]] - `method` [EXTRACTED]
 - [[dot-recent()]] - `method` [EXTRACTED]
 - [[dot-summary()_1]] - `method` [EXTRACTED]
 - [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - `rationale_for` [EXTRACTED]

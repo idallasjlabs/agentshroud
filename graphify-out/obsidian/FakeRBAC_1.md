@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown (2)"
+community: "ProgressiveLockdown"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown_2
+  - community/ProgressiveLockdown
 ---
 
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()_109]] - `method` [EXTRACTED]
-- [[dot-is_owner()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_176]] - `method` [EXTRACTED]
+- [[dot-is_owner()_4]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

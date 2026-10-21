@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Path (3)"
+community: "_load_latest_json"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/_load_latest_json
 ---
 
 # .test_infected_report()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetClamavSummary]] - `method` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_3
+#graphify/code #graphify/EXTRACTED #community/_load_latest_json

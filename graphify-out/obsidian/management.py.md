@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # management.py
@@ -19,7 +19,7 @@ tags:
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
 - [[approvals()]] - `contains` [EXTRACTED]
-- [[audit()_1]] - `contains` [EXTRACTED]
+- [[audit()]] - `contains` [EXTRACTED]
 - [[collaborators()]] - `contains` [EXTRACTED]
 - [[credentials_health()]] - `contains` [EXTRACTED]
 - [[credentials_status()]] - `contains` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[falco_dashboard()]] - `contains` [EXTRACTED]
 - [[get_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[get_egress_config()]] - `imports` [EXTRACTED]
-- [[killswitch()]] - `contains` [EXTRACTED]
+- [[killswitch()_1]] - `contains` [EXTRACTED]
 - [[modules()]] - `contains` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `contains` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,30 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "AuditChain"
-location: "L88"
+community: "soc.js"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/socjs
 ---
 
 # Any
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-append()_1]] - `references` [EXTRACTED]
-- [[dot-append_block()]] - `references` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_19]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_10]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
-- [[dot-to_dict()_12]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult_1]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[dot-to_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/socjs

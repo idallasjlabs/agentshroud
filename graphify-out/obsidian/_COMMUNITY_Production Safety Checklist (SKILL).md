@@ -20,11 +20,11 @@ members: 36
 - [[Oracle Feedback Analyst (SKILL)]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/README.md
 - [[Production Safety Checklist (SKILL)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Purpose_65]] - document - .agents/skills/i-production/README.md
-- [[Purpose_66]] - document - .agents/skills/i-ps/README.md
-- [[Purpose_67]] - document - .agents/skills/i-qa/README.md
-- [[Purpose_68]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Purpose_69]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Purpose_68]] - document - .agents/skills/i-production/README.md
+- [[Purpose_69]] - document - .agents/skills/i-ps/README.md
+- [[Purpose_70]] - document - .agents/skills/i-qa/README.md
+- [[Purpose_71]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Purpose_72]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
 - [[Quality Assurance (SKILL)]] - document - .agents/skills/i-qa/SKILL.md
@@ -36,11 +36,11 @@ members: 36
 - [[Skills Guide (catalog)]] - document - .agents/skills/reference/SKILLS_GUIDE.md
 - [[System Audit Documentation (README)]] - document - .agents/skills/i-sad/README.md
 - [[System Audit Vault (i-sav)]] - document - .agents/skills/i-sav/SKILL.md
-- [[Usage_59]] - document - .agents/skills/i-production/README.md
-- [[Usage_60]] - document - .agents/skills/i-ps/README.md
-- [[Usage_61]] - document - .agents/skills/i-qa/README.md
-- [[Usage_62]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Usage_63]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Usage_56]] - document - .agents/skills/i-production/README.md
+- [[Usage_57]] - document - .agents/skills/i-ps/README.md
+- [[Usage_58]] - document - .agents/skills/i-qa/README.md
+- [[Usage_59]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Usage_60]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[hermesskillsi-psREADME]] - document - docker/config/hermes/skills/i-ps/README.md
 - [[hermesskillsi-qaREADME]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[operationsincident-response]] - document - docs/operations/incident-response.md

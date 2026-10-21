@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_6]] - `calls` [EXTRACTED]
 - [[Async egress check with interactive approval for unknown domains.]] - `rationale_for` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `method` [EXTRACTED]

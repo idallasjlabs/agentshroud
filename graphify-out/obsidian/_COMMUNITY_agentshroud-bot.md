@@ -14,9 +14,9 @@ members: 16
 - [[Key Intercepted Paths]] - document - docs/vault/05 - Dependencies/openclaw.md
 - [[Network Architecture]] - document - docs/vault/06 - Containers & Services/networks.md
 - [[OpenClaw_1]] - document - docs/vault/05 - Dependencies/openclaw.md
-- [[Purpose_118]] - document - docs/vault/05 - Dependencies/openclaw.md
-- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/openclaw.md
-- [[Related Notes_50]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Purpose_119]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_48]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_49]] - document - docs/vault/06 - Containers & Services/networks.md
 - [[Role in AgentShroud]] - document - docs/vault/05 - Dependencies/openclaw.md
 - [[Version Note]] - document - docs/vault/05 - Dependencies/openclaw.md
 - [[agentshroud-bot]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md

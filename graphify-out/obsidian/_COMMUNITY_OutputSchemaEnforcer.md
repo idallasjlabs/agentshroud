@@ -8,7 +8,7 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[dot-__init__()_107]] - code - gateway/security/output_schema.py
+- [[dot-__init__()_116]] - code - gateway/security/output_schema.py
 - [[dot-_register_default_schema()]] - code - gateway/security/output_schema.py
 - [[dot-register_schema()]] - code - gateway/security/output_schema.py
 - [[dot-test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
@@ -37,7 +37,7 @@ members: 32
 - [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
 - [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
 - [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
-- [[enforcer()]] - code - gateway/tests/test_output_schema.py
+- [[enforcer()_1]] - code - gateway/tests/test_output_schema.py
 - [[output_schema.py]] - code - gateway/security/output_schema.py
 - [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
 
@@ -47,9 +47,3 @@ members: 32
 TABLE source_file, type FROM #community/OutputSchemaEnforcer
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-
-## Top bridge nodes
-- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

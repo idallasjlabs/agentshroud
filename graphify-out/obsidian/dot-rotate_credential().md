@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "KeyRotationManager"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/KeyRotationManager
 ---
 
 # .rotate_credential()
@@ -19,8 +19,8 @@ tags:
 - [[dot-check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[dot-emergency_rotate_credential()]] - `calls` [EXTRACTED]
 - [[dot-should_rotate()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `references` [EXTRACTED]
+- [[Any_21]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Rotate a single credential with zero downtime.          Workflow generate new →]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

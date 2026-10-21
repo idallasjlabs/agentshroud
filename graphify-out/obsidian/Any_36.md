@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "PodmanEngine"
-location: "L159"
+community: "MCPAuditTrail"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PodmanEngine
+  - graphify/EXTRACTED
+  - community/MCPAuditTrail
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-generate_report()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

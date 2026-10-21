@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
 community: "ConsentFramework (2)"
-location: "L23"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/ConsentFramework_2
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[dot-check_url_reputation()]] - `references` [EXTRACTED]
-- [[IntEnum]] - `inherits` [EXTRACTED]
-- [[MockThreatLevel]] - `shares_data_with` [AMBIGUOUS]
-- [[TestCredentialProtection]] - `uses` [INFERRED]
-- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
-- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestURLReputation]] - `uses` [INFERRED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
 - [[ThreatLevel]] - `semantically_similar_to` [INFERRED]
-- [[browser_security.py]] - `contains` [EXTRACTED]
+- [[git_guard.py]] - `contains` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework_2
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

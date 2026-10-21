@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # .test_owner_help_uses_local_notice_and_includes_revoke()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[fake_urlopen()_34]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_20]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[fake_urlopen()_56]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_40]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

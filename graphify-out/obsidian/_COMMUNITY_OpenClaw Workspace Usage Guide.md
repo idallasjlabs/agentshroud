@@ -26,11 +26,11 @@ members: 40
 - [[Problem Container not running]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem File not found]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem Permission denied]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Quick Reference_2]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Quick Reference_3]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Recommended Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Restore Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Summary_7]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Troubleshooting_4]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Summary_9]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Troubleshooting_5]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Using the Helper Script]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Skills]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Telegram]] - document - docs/architecture/WORKSPACE_USAGE.md

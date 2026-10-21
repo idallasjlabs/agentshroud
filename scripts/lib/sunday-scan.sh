@@ -334,3 +334,172 @@ sunday_dev_handoff_gate() {
   fi
   return 0
 }
+
+# ── Wall-clock cutoff and stack restore (owner directive 2026-10-18) ─────────
+# "Everything is up and usable by 08:00 ET." The wrapper's 170-minute budget is
+# relative to launch, so a late or slow run could still be mid-apply at 08:00.
+# These give it an absolute stop and a guaranteed-working stack afterwards.
+
+SUNDAY_REPO="${SUNDAY_REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}"
+
+# sunday_deadline_epoch <HH:MM|off>
+#   Print the epoch of today's HH:MM local, or nothing when the cutoff is off,
+#   malformed, or already past (an 11:00 retry is not cut off at 07:20 — it
+#   started after the window and the prompt's own 07:00/07:30 rules stop it
+#   from touching prod). Computed as now + (deadline - now) in wall-clock
+#   seconds, so it needs no GNU/BSD-specific `date` parsing. SUNDAY_NOW
+#   ("<epoch> <HH> <MM> <SS>") pins the clock for tests.
+sunday_deadline_epoch() {
+  local spec="${1:-}" now h m s dh dm wall target
+  case "$spec" in
+    off|'') return 0 ;;
+    [0-2][0-9]:[0-5][0-9]) ;;
+    *) warn "cutoff: '$spec' is not HH:MM — wall-clock cutoff NOT armed"; return 0 ;;
+  esac
+  dh=$((10#${spec%%:*})); dm=$((10#${spec##*:}))
+  if [ "$dh" -gt 23 ]; then
+    warn "cutoff: '$spec' is not a time of day — wall-clock cutoff NOT armed"
+    return 0
+  fi
+  # shellcheck disable=SC2046,SC2086  # word-splitting the clock fields is the point
+  if [ -n "${SUNDAY_NOW:-}" ]; then set -- $SUNDAY_NOW; else set -- $(date '+%s %H %M %S'); fi
+  now="$1"; h=$((10#$2)); m=$((10#$3)); s=$((10#$4))
+  wall=$((h * 3600 + m * 60 + s))
+  target=$((dh * 3600 + dm * 60))
+  [ "$target" -gt "$wall" ] || return 0
+  printf '%s\n' $((now + target - wall))
+}
+
+# sunday_stop_apply <lock_dir>
+#   Killing the tmux session does not reliably take sunday-upgrade-apply.sh
+#   with it (it may be mid `docker compose`), and restoring the stack while an
+#   apply is still recreating containers corrupts both. Stop the pid recorded
+#   in the apply lock: TERM, up to SUNDAY_STOP_WAIT seconds (default 60), then
+#   KILL. A lock with no live pid is left for the next apply to reclaim.
+sunday_stop_apply() {
+  local lock="$1" pid i
+  pid="$(head -1 "$lock/pid" 2>/dev/null | tr -cd '0-9')"
+  [ -n "$pid" ] && kill -0 "$pid" 2>/dev/null || return 0
+  warn "restore: apply run (pid $pid) still alive after the session ended — stopping it"
+  kill -TERM "$pid" 2>/dev/null || true
+  i=0
+  while kill -0 "$pid" 2>/dev/null && [ "$i" -lt "${SUNDAY_STOP_WAIT:-60}" ]; do
+    sleep 1; i=$((i + 1))
+  done
+  if kill -0 "$pid" 2>/dev/null; then
+    warn "restore: apply pid $pid ignored TERM — killing it"
+    kill -KILL "$pid" 2>/dev/null || true
+  fi
+}
+
+# Seams for sunday_restore_stack. Tests redefine them after sourcing.
+# The check is the deploy gate's --functional mode: container health plus a
+# real request through each service (post-deploy-check.sh F1-F4).
+sunday_stack_check() {
+  bash "$SUNDAY_REPO/scripts/post-deploy-check.sh" --functional
+}
+# The default stack is `asb up full` on the checkout as it stands. Its own
+# post-deploy-check is skipped here because the ladder re-checks with
+# --functional right after. Dev must never start Hermes with prod's Telegram
+# token (409 conflict, eats owner messages).
+sunday_stack_start() {
+  local tg=0
+  [ "${USER:-}" = "agentshroud-bot" ] && tg=1
+  AGENTSHROUD_SKIP_POST_DEPLOY_CHECK=1 \
+  AGENTSHROUD_HERMES_DISABLE_TELEGRAM="${AGENTSHROUD_HERMES_DISABLE_TELEGRAM:-$tg}" \
+    bash "$SUNDAY_REPO/scripts/asb" up full
+}
+sunday_stack_rollback() {
+  bash "$1"
+}
+
+# sunday_restore_stack <rollback_script>
+#   Leave the stack working: check it; if that fails, start the default stack
+#   and check again; if that fails too, run today's rollback anchor (written by
+#   sunday-upgrade-apply.sh's baseline phase) and check once more. Prints one
+#   of STACK_OK | STACK_RESTARTED | STACK_ROLLED_BACK | STACK_DEGRADED and
+#   returns non-zero only for STACK_DEGRADED, which needs a human.
+sunday_restore_stack() {
+  local rollback="$1"
+  if sunday_stack_check >&2; then echo STACK_OK; return 0; fi
+  warn "restore: stack check failed — starting the default stack"
+  sunday_stack_start >&2 || warn "restore: starting the default stack exited non-zero"
+  if sunday_stack_check >&2; then echo STACK_RESTARTED; return 0; fi
+  if [ ! -f "$rollback" ]; then
+    warn "restore: no rollback anchor at $rollback — stack is DEGRADED, human required"
+    echo STACK_DEGRADED
+    return 1
+  fi
+  warn "restore: stack still failing — rolling back with $rollback"
+  sunday_stack_rollback "$rollback" >&2 || warn "restore: rollback script exited non-zero"
+  if sunday_stack_check >&2; then echo STACK_ROLLED_BACK; return 0; fi
+  warn "restore: stack failing after rollback — DEGRADED, human required"
+  echo STACK_DEGRADED
+  return 1
+}
+
+# ── Direct owner notice (no Hermes) ─────────────────────────────────────────
+# The upgrade report reaches the owner through Hermes's 08:30 cron. When the
+# run ends DEGRADED, Hermes may be the thing that is down, so the one result
+# that needs a human would never arrive. This sends a short notice straight to
+# the Bot API from the host, the way docker/scripts/colima-health-check.sh
+# does. sendMessage does not poll, so it never conflicts with a running bot.
+
+# Seam: POSTs chat_id/text; reads a curl config line holding the URL (and so
+# the token) on stdin — this Mac is shared with prod, and ps shows every
+# user's argv. Tests redefine it after sourcing.
+sunday_telegram_post() {
+  curl -sS --max-time "${SUNDAY_NOTIFY_TIMEOUT:-15}" -K - \
+    --data-urlencode "chat_id=$1" --data-urlencode "text=$2"
+}
+
+# sunday_notify_direct <token_file> <chat_id> <text>
+#   Prints NOTIFY_SENT only when the Bot API answers ok with a message_id;
+#   NOTIFY_FAILED (rejected or no answer) and NOTIFY_NO_TOKEN return non-zero.
+sunday_notify_direct() {
+  local token resp
+  token="$(tr -d '[:space:]' < "$1" 2>/dev/null || true)"
+  if [ -z "$token" ]; then echo NOTIFY_NO_TOKEN; return 1; fi
+  resp="$(printf 'url = "https://api.telegram.org/bot%s/sendMessage"\n' "$token" \
+    | sunday_telegram_post "$2" "$3" 2>/dev/null || true)"
+  case "$resp" in
+    *'"ok":true'*'"message_id"'*) echo NOTIFY_SENT; return 0 ;;
+  esac
+  echo NOTIFY_FAILED
+  return 1
+}
+
+# sunday_run_summary <exit_code> <stack_state> <report_staged 0|1> <cut_off 0|1>
+#   One plain-text notice for the owner, naming what the exit code means.
+sunday_run_summary() {
+  local rc="$1" stack="${2:-}" staged="${3:-0}" cut="${4:-0}" what
+  case "$rc" in
+    0) what="run complete" ;;
+    1) what="FAILED (exit 1): the upgrade session died during boot" ;;
+    3) what="FAILED (exit 3): git fetch origin main failed" ;;
+    4) what="FAILED (exit 4): checkout not on main, or main diverged" ;;
+    5) what="DEFERRED (exit 5): host memory pressure critical, next fire retries" ;;
+    6) what="TIMED OUT (exit 6): no sentinel, next fire retries" ;;
+    7) what="STACK DEGRADED (exit 7): restart and rollback both failed, human required" ;;
+    *) what="FAILED (exit ${rc})" ;;
+  esac
+  printf 'AgentShroud Sunday upgrade %s on %s/%s: %s' \
+    "$(date +%F)" "$(hostname -s 2>/dev/null || echo host)" "${USER:-?}" "$what"
+  [ -n "$stack" ] && printf '\nStack: %s' "$stack"
+  [ "$cut" = 1 ] && printf '\nSession cut off at %s' "${SUNDAY_UPGRADE_DEADLINE:-07:20}"
+  [ "$staged" = 1 ] || printf '\nReport not staged for Hermes: see reports/ on the host'
+  printf '\n'
+}
+
+# sunday_hermes_container — prints the running Hermes container's name, or
+# nothing. Hermes is started with `docker run` (run-standalone.sh), so it has
+# no compose label; it carries com.agentshroud.role=hermes instead. Same lookup
+# as post-deploy-check.sh P3, including its fallback by name for containers
+# started before that label existed. Dev is agentshroud-dev-hermes-v2, prod
+# agentshroud-hermes-v2.
+sunday_hermes_container() {
+  local name
+  name="$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)"
+  [ -n "$name" ] || name="$(docker ps --format '{{.Names}}' 2>/dev/null | grep -E '^agentshroud-(dev-)?hermes' | head -1)"
+  printf '%s' "$name"
+}

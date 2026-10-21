@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_default_config_has_correct_floors()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]

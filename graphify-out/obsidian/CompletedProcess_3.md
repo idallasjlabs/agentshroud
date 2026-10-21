@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Path (2)"
-location: "L458"
+community: "ContainerEngine"
+location: "L36"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Path_2
+  - graphify/EXTRACTED
+  - community/ContainerEngine
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[dot-_run()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

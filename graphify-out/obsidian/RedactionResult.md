@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L171"
+community: "ApprovalQueueConfig"
+location: "L71"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
-- [[dot-sanitize()_2]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

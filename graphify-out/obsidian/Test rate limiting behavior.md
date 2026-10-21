@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "test_security.py"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/test_securitypy
 ---
 
 # Test rate limiting behavior
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/test_securitypy

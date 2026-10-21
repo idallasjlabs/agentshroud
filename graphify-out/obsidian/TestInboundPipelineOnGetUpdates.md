@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # TestInboundPipelineOnGetUpdates
@@ -215,4 +215,4 @@ tags:
 - [[Verify that _filter_inbound_updates() calls pipeline.process_inbound().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "ApprovalHardening"
+community: "MiddlewareManager"
 location: "L289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/MiddlewareManager
 ---
 
 # Check for obfuscated or encoded parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_parameter_obfuscation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

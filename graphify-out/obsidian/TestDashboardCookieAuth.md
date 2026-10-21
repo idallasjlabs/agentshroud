@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "ApprovalQueueConfig"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ApprovalQueueConfig
 ---
 
 # TestDashboardCookieAuth
@@ -18,9 +18,9 @@ tags:
 - [[dot-test_dashboard_no_auth_returns_403()]] - `method` [EXTRACTED]
 - [[dot-test_dashboard_token_sets_cookie_and_redirects()]] - `method` [EXTRACTED]
 - [[Dashboard should set httpOnly cookie and redirect to clean URL]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

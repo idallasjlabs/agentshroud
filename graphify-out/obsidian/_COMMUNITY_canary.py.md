@@ -15,9 +15,9 @@ members: 14
 - [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Operational Notes_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Purpose_162]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Purpose_163]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[Threat Model_24]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[canary.py_2]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 - [[canary.py_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md

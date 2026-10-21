@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_prompt_guard.py"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/KillSwitchMonitor
 ---
 
 # test_observatory_mode.py
@@ -26,10 +26,10 @@ tags:
 - [[TestObservatoryModeAPI]] - `contains` [EXTRACTED]
 - [[TestSetMode]] - `contains` [EXTRACTED]
 - [[_make_app()]] - `contains` [EXTRACTED]
-- [[client()_4]] - `contains` [EXTRACTED]
+- [[client()_9]] - `contains` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

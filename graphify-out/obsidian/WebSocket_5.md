@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L561"
+community: "test_voice_latency_guard.py"
+location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/test_voice_latency_guardpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[activity_websocket()]] - `references` [EXTRACTED]
-- [[egress_websocket()]] - `references` [EXTRACTED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

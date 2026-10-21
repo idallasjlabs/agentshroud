@@ -22,7 +22,7 @@ tags:
 - [[Stop the Stack_1]] - `contains` [EXTRACTED]
 - [[Success Criteria]] - `contains` [EXTRACTED]
 - [[Test the System]] - `contains` [EXTRACTED]
-- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[Troubleshooting_13]] - `contains` [EXTRACTED]
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

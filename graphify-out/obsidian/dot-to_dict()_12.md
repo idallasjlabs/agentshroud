@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "AuditChain"
-location: "L88"
+community: "Path"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/Path
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `method` [EXTRACTED]
+- [[ManifestEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/Path

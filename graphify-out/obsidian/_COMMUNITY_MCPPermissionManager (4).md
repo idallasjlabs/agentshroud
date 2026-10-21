@@ -1,35 +1,37 @@
 ---
 type: community
-members: 22
+members: 24
 ---
 
 # MCPPermissionManager (4)
 
-**Members:** 22 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[dot-test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_agentshroud_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_gateway_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_nested_private_reference()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-__post_init__()_3]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_generate_report()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +41,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_StdioConnection]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
+- 33 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 15 edges to [[_COMMUNITY_StdioConnection]]
+- 13 edges to [[_COMMUNITY_StdioConnection (2)]]
+- 12 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 11 edges to [[_COMMUNITY_MCPInspector]]
+- 8 edges to [[_COMMUNITY_PermissionLevel]]
+- 6 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 5 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_MCPToolResult]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (5)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (6)]]
+- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (4)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (7)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_TestAuditTrail]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 27, connects to 3 communities
-- [[dot-test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
-- [[dot-test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community
+- [[MCPToolResult]] - degree 77, connects to 15 communities
+- [[TestDataclasses]] - degree 17, connects to 8 communities
+- [[MCPToolCall]] - degree 16, connects to 8 communities
+- [[TestProxyResultProcessing]] - degree 23, connects to 6 communities
+- [[TestAuditQueries]] - degree 20, connects to 6 communities

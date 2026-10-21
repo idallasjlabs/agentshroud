@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # Resolved workspace/context identity for a single inbound message.      Attribute
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WorkspaceContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "SubagentGovernance"
-location: "L209"
+community: "MiddlewareManager (3)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/MiddlewareManager_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

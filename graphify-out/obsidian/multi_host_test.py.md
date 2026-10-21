@@ -12,7 +12,7 @@ tags:
 # multi_host_test.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[HostResult]] - `contains` [EXTRACTED]
 - [[HostStatus]] - `contains` [EXTRACTED]
 - [[MultiHostResult]] - `contains` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[build_parser()]] - `contains` [EXTRACTED]
 - [[build_ssh_argv()]] - `contains` [EXTRACTED]
 - [[classify()_1]] - `contains` [EXTRACTED]
-- [[main()_28]] - `contains` [EXTRACTED]
+- [[main()_30]] - `contains` [EXTRACTED]
 - [[parse_hosts()]] - `contains` [EXTRACTED]
 - [[run_multi_host()]] - `contains` [EXTRACTED]
 - [[ssh_runner()]] - `contains` [EXTRACTED]

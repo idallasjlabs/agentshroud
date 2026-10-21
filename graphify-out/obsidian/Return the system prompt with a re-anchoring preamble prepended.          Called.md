@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "UserSessionManager"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager
 ---
 
 # Return the system prompt with a re-anchoring preamble prepended.          Called
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-reanchor_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

@@ -8,7 +8,7 @@ members: 25
 **Members:** 25 nodes
 
 ## Members
-- [[dot-setup_method()_24]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-setup_method()_28]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
@@ -32,7 +32,7 @@ members: 25
 - [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
 - [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
 - [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[TestMetadataGuard_1]] - code - gateway/tests/test_metadata_guard.py
+- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,9 +42,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 2 edges to [[_COMMUNITY_test_prompt_guard.py (2)]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_test_prompt_guard.py]]
 
 ## Top bridge nodes
-- [[TestMetadataGuard_1]] - degree 16, connects to 2 communities
-- [[dot-setup_method()_24]] - degree 2, connects to 1 community
+- [[TestMetadataGuard]] - degree 16, connects to 2 communities
+- [[dot-setup_method()_28]] - degree 2, connects to 1 community

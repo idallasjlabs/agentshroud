@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "MiddlewareManager (3)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/MiddlewareManager_3
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[dot-__init__()_183]] - `method` [EXTRACTED]
-- [[dot-analyze()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_148]] - `method` [EXTRACTED]
+- [[dot-analyze()]] - `method` [EXTRACTED]
 - [[dot-decode_base64_segments()]] - `method` [EXTRACTED]
 - [[dot-decode_hex()]] - `method` [EXTRACTED]
 - [[dot-decode_rot13()]] - `method` [EXTRACTED]
 - [[dot-decode_url()]] - `method` [EXTRACTED]
 - [[dot-replace_homoglyphs()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_35]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
 - [[dot-strip_zero_width()]] - `method` [EXTRACTED]
 - [[dot-test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
@@ -44,10 +44,8 @@ tags:
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector_decodes_rot13_injection()]] - `calls` [EXTRACTED]
@@ -58,4 +56,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

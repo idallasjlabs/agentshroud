@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "test_e2e_proxy.py (2)"
-location: "L16"
+community: "ForwardRequest (2)"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy_2
+  - community/ForwardRequest_2
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2

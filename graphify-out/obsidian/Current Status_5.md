@@ -1,17 +1,17 @@
 ---
-source_file: "docs/flows/README.md"
+source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
-location: "L13"
+community: "How to Fix (5 Minutes)"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Current Status
 
 ## Connections
-- [[Flows Documentation]] - `contains` [EXTRACTED]
+- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

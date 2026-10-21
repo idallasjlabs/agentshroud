@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Action (2)"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Action_2
 ---
 
 # GroupRegistry
@@ -30,21 +30,16 @@ tags:
 - [[dot-test_is_member_unknown_group_returns_false()]] - `calls` [EXTRACTED]
 - [[dot-test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
-- [[FastAPI]] - `uses` [INFERRED]
-- [[LogRecord_1]] - `uses` [INFERRED]
 - [[Manages user groups including auto-groups and custom groups.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
 - [[TestRBACConfig]] - `uses` [INFERRED]
 - [[TestRBACErrorHandling]] - `uses` [INFERRED]
 - [[TestRBACIntegration]] - `uses` [INFERRED]
 - [[TestRBACManager]] - `uses` [INFERRED]
-- [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Action_2

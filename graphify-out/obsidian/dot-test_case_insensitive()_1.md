@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L568"
+community: "WebProxyConfig"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/WebProxyConfig
 ---
 
 # .test_case_insensitive()
 
 ## Connections
-- [[dot-_has_fabricated_match()]] - `calls` [EXTRACTED]
-- [[Pattern is case-insensitive.]] - `rationale_for` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[TestIsDomainAllowed]] - `method` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

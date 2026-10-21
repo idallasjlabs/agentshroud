@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "`SecurityPipeline`"
+community: "Layer-by-Layer Breakdown"
 location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # `AuditChain`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Classes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

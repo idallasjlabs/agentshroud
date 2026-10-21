@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ArgumentParser_2]] - `references` [EXTRACTED]
 - [[hermesworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

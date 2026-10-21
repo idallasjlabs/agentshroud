@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "main.py"
-location: "L13"
+community: "llm_proxy.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/llm_proxypy
 ---
 
 # Overview
 
 ## Connections
-- [[main.py]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

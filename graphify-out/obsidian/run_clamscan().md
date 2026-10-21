@@ -2,7 +2,7 @@
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
 community: "parse_clamscan_output"
-location: "L52"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,10 +15,11 @@ tags:
 - [[dot-_clamav_scan_bytes()]] - `calls` [EXTRACTED]
 - [[dot-test_clamav_binary_not_found()]] - `calls` [EXTRACTED]
 - [[dot-test_run_not_found()]] - `calls` [EXTRACTED]
-- [[Any_39]] - `references` [EXTRACTED]
-- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - `rationale_for` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
+- [[Run ClamAV scan and return parsed results. Args target Directory or file to…]] - `rationale_for` [EXTRACTED]
+- [[_run_capture()]] - `calls` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
-- [[http_proxy.py]] - `imports` [EXTRACTED]
+- [[http_proxy.py_2]] - `imports` [EXTRACTED]
 - [[parse_clamscan_output()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]

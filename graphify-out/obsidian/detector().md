@@ -12,7 +12,7 @@ tags:
 # detector()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `references` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 

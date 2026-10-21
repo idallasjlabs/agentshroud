@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "telegram_proxy.py (3)"
-location: "L39"
+community: "OpenSCAP"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/OpenSCAP
 ---
 
 # Related Notes
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "AWS Cloud Management & FinOps"
 location: "L928"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # .test_no_bots_keeps_fallback_workspace()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSetConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

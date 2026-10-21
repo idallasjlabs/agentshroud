@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "create_auth_dependency (2)"
-location: "L38"
+community: "ApprovalQueueConfig"
+location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/ApprovalQueueConfig
 ---
 
 # client()
 
 ## Connections
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

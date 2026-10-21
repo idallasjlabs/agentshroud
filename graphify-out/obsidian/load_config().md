@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "ApprovalQueueConfig (2)"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/ApprovalQueueConfig_2
 ---
 
 # load_config()
@@ -23,19 +23,19 @@ tags:
 - [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
 - [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
 - [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[AuditExportConfig]] - `calls` [EXTRACTED]
 - [[BotConfig]] - `calls` [EXTRACTED]
 - [[ChannelsConfig]] - `calls` [EXTRACTED]
-- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[Path_39]] - `references` [EXTRACTED]
+- [[Path_18]] - `references` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
-- [[SSHConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[SecurityConfig_4]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
 - [[_build_image_targets()]] - `calls` [EXTRACTED]
@@ -49,8 +49,6 @@ tags:
 - [[api.py_2]] - `imports` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
 - [[reload_config()]] - `calls` [EXTRACTED]
 - [[require_auth()]] - `calls` [EXTRACTED]
@@ -64,4 +62,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -12,9 +12,9 @@ tags:
 # .evaluate()
 
 ## Connections
-- [[dot-_decide()_1]] - `calls` [EXTRACTED]
+- [[dot-_decide()]] - `calls` [EXTRACTED]
 - [[dot-enforce()_1]] - `calls` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[Evaluate a single MCP tool call. Pure — no IO, no side effects         beyond b]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyDecision]] - `references` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `method` [EXTRACTED]

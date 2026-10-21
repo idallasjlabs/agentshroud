@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "rationale"
-community: "LLMProxy (3)"
+community: "LLMProxy (2)"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy_3
+  - community/LLMProxy_2
 ---
 
 # If openai_to_gemini_request raises, the request must still be     forwarded (unm
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy_2

@@ -16,7 +16,7 @@ members: 12
 - [[chat-console launcher]] - code - scripts/chat-console
 - [[chat_console.py]] - code - src/interfaces/chat_console.py
 - [[check_status()]] - code - src/interfaces/chat_console.py
-- [[main()_29]] - code - src/interfaces/chat_console.py
+- [[main()_32]] - code - src/interfaces/chat_console.py
 - [[print_banner()]] - code - src/interfaces/chat_console.py
 - [[print_help()]] - code - src/interfaces/chat_console.py
 - [[send_message()]] - code - src/interfaces/chat_console.py

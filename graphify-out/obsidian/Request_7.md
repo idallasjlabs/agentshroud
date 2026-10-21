@@ -12,7 +12,7 @@ tags:
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[auth_dep()_3]] - `references` [EXTRACTED]
 - [[dashboard_stats()]] - `references` [EXTRACTED]
 - [[dashboard_ws_token()]] - `references` [EXTRACTED]
 - [[get_collaborators()]] - `references` [EXTRACTED]

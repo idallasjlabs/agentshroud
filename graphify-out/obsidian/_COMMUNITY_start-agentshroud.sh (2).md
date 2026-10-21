@@ -35,8 +35,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh (3)]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 1 edge to [[_COMMUNITY_security-entrypoint.sh]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 - 1 edge to [[_COMMUNITY_setup-https-proxy.js]]
 
 ## Top bridge nodes

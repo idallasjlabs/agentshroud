@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Test Augmentation Specialist"
+community: "AgentShroud™ Communication Templates"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/AgentShroud_Communication_Templates
 ---
 
 # Guidance for ChatGPT Codex CLI when working in this repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
+source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
-location: "L604"
+community: "cve-registry-manual-review.md"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/cve-registry-manual-reviewmd
 ---
 
 # Summary
 
 ## Connections
-- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
+- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd

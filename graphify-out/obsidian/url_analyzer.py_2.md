@@ -15,9 +15,9 @@ tags:
 - [[Configuration  Environment Variables_20]] - `contains` [EXTRACTED]
 - [[Function Details_37]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
-- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Purpose_161]] - `contains` [EXTRACTED]
 - [[Related_43]] - `contains` [EXTRACTED]
-- [[Responsibilities_40]] - `contains` [EXTRACTED]
+- [[Responsibilities_41]] - `contains` [EXTRACTED]
 - [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
 - [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 

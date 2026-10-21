@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig (4)"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig_4
 ---
 
 # ApprovalRequest
@@ -26,19 +26,19 @@ tags:
 - [[dot-test_route_approval_auto_detects_group_context()]] - `calls` [EXTRACTED]
 - [[dot-test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
 - [[dot-test_timeout_auto_deny()]] - `calls` [EXTRACTED]
-- [[Any_29]] - `uses` [INFERRED]
-- [[Any_20]] - `uses` [INFERRED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
-- [[MFAGuard]] - `uses` [INFERRED]
+- [[MFAGuard_1]] - `uses` [INFERRED]
 - [[Request for human approval of a sensitive action      Submitted by an agent when]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
@@ -54,9 +54,9 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
-- [[_HangingWebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_submit_enhanced_high_risk()]] - `calls` [EXTRACTED]
 - [[_submit_high_risk()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
@@ -90,6 +90,6 @@ tags:
 - [[test_request_expiration()]] - `calls` [EXTRACTED]
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_submit_approval_request()]] - `calls` [EXTRACTED]
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

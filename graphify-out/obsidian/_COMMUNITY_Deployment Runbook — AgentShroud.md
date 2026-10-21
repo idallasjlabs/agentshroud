@@ -17,7 +17,7 @@ members: 14
 - [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
 - [[Environment Variables_16]] - document - docs/runbooks/deployment.md
 - [[First-Time Setup]] - document - docs/runbooks/deployment.md
-- [[Prerequisites_11]] - document - docs/runbooks/deployment.md
+- [[Prerequisites_14]] - document - docs/runbooks/deployment.md
 - [[Quick Summary]] - document - docs/runbooks/deployment.md
 - [[Rolling Back]] - document - docs/runbooks/deployment.md
 - [[Standard Deployment]] - document - docs/runbooks/deployment.md
@@ -31,10 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_auth.py]]
-- 1 edge to [[_COMMUNITY_pytest.ini]]
-- 1 edge to [[_COMMUNITY_Update AgentShroud]]
 - 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_Update AgentShroud]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
 
 ## Top bridge nodes
 - [[Environment Variables_16]] - degree 4, connects to 3 communities

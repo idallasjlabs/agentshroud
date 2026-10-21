@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Collaborator approval-queue metadata probes should return safe guidance only."
-location: "L3542"
+community: "TestInboundPipelineOnGetUpdates"
+location: "L4679"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_approval-queue_metadata_probes_should_return_safe_guidance_only
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_approval_queue_probe_gets_safe_info()]] - `contains` [EXTRACTED]
+- [[dot-test_model_status_command_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_approval-queue_metadata_probes_should_return_safe_guidance_only
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

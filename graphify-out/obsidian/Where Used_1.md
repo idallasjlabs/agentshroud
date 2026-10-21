@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "All Dependencies.md (2)"
-location: "L22"
+community: "Restart Procedure (3)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/Restart_Procedure_3
 ---
 
 # Where Used
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure_3

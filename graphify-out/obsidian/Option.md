@@ -12,8 +12,8 @@ tags:
 # Option
 
 ## Connections
-- [[dot-post()_2]] - `references` [EXTRACTED]
 - [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
 - [[dot-request()]] - `references` [EXTRACTED]
 - [[dot-request()_1]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]

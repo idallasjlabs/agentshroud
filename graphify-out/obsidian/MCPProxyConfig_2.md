@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "StdioConnection"
+community: "MCPPermissionManager (3)"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/MCPPermissionManager_3
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[dot-from_dict()_7]] - `method` [EXTRACTED]
+- [[dot-from_dict()_1]] - `method` [EXTRACTED]
 - [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[Any_25]] - `uses` [INFERRED]
+- [[Any_35]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -30,16 +30,16 @@ tags:
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[PermissionCheck]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[PrivateAccessAttempt]] - `uses` [INFERRED]
 - [[PrivateRedactionEvent]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
@@ -76,7 +76,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -88,10 +88,8 @@ tags:
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
 - [[Top-level MCP proxy configuration.]] - `rationale_for` [EXTRACTED]
-- [[config()_3]] - `calls` [EXTRACTED]
-- [[config()_2]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[config()]] - `calls` [EXTRACTED]
+- [[config()_1]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports` [EXTRACTED]
@@ -101,4 +99,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager_3

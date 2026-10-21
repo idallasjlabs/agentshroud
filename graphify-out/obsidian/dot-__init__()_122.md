@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "_FakeUpstreamWS"
+location: "L718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/_FakeUpstreamWS
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_44]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

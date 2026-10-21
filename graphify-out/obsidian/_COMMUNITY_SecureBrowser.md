@@ -8,7 +8,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_57]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_73]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
@@ -43,7 +43,7 @@ members: 44
 - [[Raised when security policy is violated]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Return complete audit log]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Risk classification for browser actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[RiskLevel_2]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[RiskLevel_1]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
@@ -51,7 +51,7 @@ members: 44
 - [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[main()_5]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[main()_7]] - code - .agents/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,10 +61,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
 
 ## Top bridge nodes
 - [[SecurityError]] - degree 7, connects to 1 community
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
-- [[RiskLevel_2]] - degree 6, connects to 1 community
+- [[RiskLevel_1]] - degree 6, connects to 1 community

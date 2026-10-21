@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "MiddlewareManager"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # MiddlewareResult
@@ -50,7 +50,7 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
@@ -76,7 +76,7 @@ tags:
 - [[TestIsPathAllowedForUser]] - `uses` [INFERRED]
 - [[TestIsToolCallRequest]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityRegistration]] - `uses` [INFERRED]
-- [[TestMetadataGuard]] - `uses` [INFERRED]
+- [[TestMetadataGuard_1]] - `uses` [INFERRED]
 - [[TestMiddlewareResult]] - `uses` [INFERRED]
 - [[TestMultiTurnTracker]] - `uses` [INFERRED]
 - [[TestOwnerBypassContentPatternChecks]] - `uses` [INFERRED]
@@ -86,20 +86,20 @@ tags:
 - [[TestProcessToolResult]] - `uses` [INFERRED]
 - [[TestScanToolResult]] - `uses` [INFERRED]
 - [[TestSetConfig]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
-- [[_FakeRBAC]] - `uses` [INFERRED]
-- [[middleware.py_1]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `references` [EXTRACTED]
+- [[_FakeRBAC_1]] - `uses` [INFERRED]
+- [[middleware.py]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

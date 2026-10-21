@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (6)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_6
 ---
 
 # test_memory_lifecycle.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ContentThreat]] - `imports` [EXTRACTED]
 - [[ContentThreatType]] - `imports` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `imports` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleConfig_1]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `imports` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[TestMemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

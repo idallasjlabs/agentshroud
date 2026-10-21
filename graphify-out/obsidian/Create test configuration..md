@@ -12,6 +12,6 @@ tags:
 # Create test configuration.
 
 ## Connections
-- [[dot-config()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-config()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

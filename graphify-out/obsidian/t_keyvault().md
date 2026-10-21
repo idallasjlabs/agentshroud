@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "deep_security_test"
-location: "L3597"
+location: "L3584"
 tags:
   - graphify/code
   - graphify/INFERRED

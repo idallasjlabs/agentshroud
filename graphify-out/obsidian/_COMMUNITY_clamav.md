@@ -13,7 +13,7 @@ members: 6
 - [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
 - [[Installation]] - document - docs/vault/05 - Dependencies/clamav.md
 - [[Purpose_10]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_13]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Related Notes_15]] - document - docs/vault/05 - Dependencies/clamav.md
 
 ## Live Query (requires Dataview plugin)
 

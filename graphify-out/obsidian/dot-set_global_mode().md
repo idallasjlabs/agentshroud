@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L1668"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # .set_global_mode()
@@ -15,4 +15,4 @@ tags:
 - [[SecurityPipeline_1]] - `method` [EXTRACTED]
 - [[Set global observatory mode for all security modules.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

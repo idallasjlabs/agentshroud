@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide (4)"
+community: "GitHub Copilot CLI Setup Guide (5)"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_4
+  - community/GitHub_Copilot_CLI_Setup_Guide_5
 ---
 
 # Tool Approval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security & Permissions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_4
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_5

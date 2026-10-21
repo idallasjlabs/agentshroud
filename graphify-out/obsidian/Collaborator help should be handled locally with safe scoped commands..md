@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # Collaborator /help should be handled locally with safe scoped commands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_help_uses_local_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 1 edge to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
 
 ## Top bridge nodes
-- [[dot-test_raw_web_fetch_json_scheme_relative_url_queues_https_approval()]] - degree 4, connects to 1 community
+- [[dot-test_raw_web_fetch_json_scheme_relative_url_queues_https_approval()]] - degree 4, connects to 3 communities

@@ -12,7 +12,7 @@ tags:
 # .ok()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[FakeTransport]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
 - [[approvals_list_empty()]] - `calls` [EXTRACTED]

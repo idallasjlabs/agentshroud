@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
-location: "L72"
+community: "soc/router.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyVault]] - `method` [EXTRACTED]
-- [[KeyVaultConfig]] - `references` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L174"
+community: "parse_clamscan_output"
+location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/parse_clamscan_output
 ---
 
 # .test_summary_error()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestClamAVSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

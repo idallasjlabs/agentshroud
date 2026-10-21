@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "jira_weekly_review.py"
-location: "L140"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/FalcoAlertWatcher
 ---
 
 # datetime
 
 ## Connections
-- [[build_weekly_summary()]] - `references` [EXTRACTED]
-- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
+- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

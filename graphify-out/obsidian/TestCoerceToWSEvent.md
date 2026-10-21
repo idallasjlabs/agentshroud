@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_soc_realtime_coverage.py (2)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy_2
 ---
 
 # TestCoerceToWSEvent
@@ -20,4 +20,4 @@ tags:
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_2

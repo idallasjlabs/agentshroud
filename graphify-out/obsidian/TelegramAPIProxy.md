@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # TelegramAPIProxy
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_proxy()_1]] - `references` [EXTRACTED]
 - [[dot-_make_proxy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -12,7 +12,7 @@ tags:
 # tailscale-check.sh
 
 ## Connections
-- [[fail()_5]] - `defines` [EXTRACTED]
+- [[fail()_6]] - `defines` [EXTRACTED]
 - [[infra-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[ok()_2]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `contains` [EXTRACTED]

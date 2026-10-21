@@ -18,7 +18,7 @@ members: 13
 - [[R3-W3 — WARNING Dead code `_is_imessage_recipient_allowed` in forward.py]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[R3-W4 — WARNING Debug log leaking agent response content]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[Release Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
-- [[Summary_25]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Summary_23]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[Test Results_1]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
 - [[phase-review-2026-03-03]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 

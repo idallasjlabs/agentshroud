@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestSessionPathSeparation"
+community: "test_security_regressions_v1_2.py"
 location: "L538"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSessionPathSeparation
+  - community/test_security_regressions_v1_2py
 ---
 
 # Verifies per-bot session path layout is correctly separated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionPathSeparation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSessionPathSeparation
+#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py

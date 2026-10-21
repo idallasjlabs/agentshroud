@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (3) (2)"
+community: "Deliverables"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3_2
+  - community/Deliverables
 ---
 
 # Script Templates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deliverables_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3_2
+#graphify/document #graphify/EXTRACTED #community/Deliverables

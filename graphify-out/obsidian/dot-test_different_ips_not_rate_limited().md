@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionManager (2)"
+community: "SessionManager"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager_2
+  - community/SessionManager
 ---
 
 # .test_different_ips_not_rate_limited()
 
 ## Connections
 - [[SessionManager]] - `calls` [EXTRACTED]
-- [[TestRateLimiting_1]] - `method` [EXTRACTED]
+- [[TestRateLimiting_4]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

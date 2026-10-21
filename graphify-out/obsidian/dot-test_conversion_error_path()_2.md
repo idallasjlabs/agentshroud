@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L432"
+location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromEgressAttempt]] - `method` [EXTRACTED]
+- [[TestFromPipelineResult]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

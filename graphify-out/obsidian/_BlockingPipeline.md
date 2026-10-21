@@ -12,8 +12,8 @@ tags:
 # _BlockingPipeline
 
 ## Connections
-- [[dot-process_outbound()]] - `method` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
+- [[dot-process_outbound()_2]] - `method` [EXTRACTED]
+- [[AgentTarget_3]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - `rationale_for` [EXTRACTED]
