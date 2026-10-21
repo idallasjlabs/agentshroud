@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
+community: "tmux Session Control"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/tmux_Session_Control
 ---
 
 # 🎮 Option B: Using Google APIs (Better but requires OAuth)
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Get OAuth Token (One-Time)]] - `contains` [EXTRACTED]
 - [[Step 4 Use Google Calendar]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

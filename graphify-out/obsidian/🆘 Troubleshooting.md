@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "🆘 Troubleshooting"
+community: "TestPathIsolationManager"
 location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Troubleshooting
+  - community/TestPathIsolationManager
 ---
 
 # 🆘 Troubleshooting
@@ -18,4 +18,4 @@ tags:
 - [[clawhub command not found]] - `contains` [EXTRACTED]
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/TestPathIsolationManager

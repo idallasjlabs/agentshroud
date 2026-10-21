@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "stt.py"
+community: "proxy_status.py"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sttpy
+  - community/proxy_statuspy
 ---
 
 # transcribe()
@@ -17,4 +17,4 @@ tags:
 - [[record_transcription_latency()]] - `calls` [EXTRACTED]
 - [[stt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sttpy
+#graphify/code #graphify/EXTRACTED #community/proxy_statuspy

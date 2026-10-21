@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+type: "code"
+community: "The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_id/cve_id).… (2)"
+location: "L385"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/The_NVD_path_emits_the_pre-migration_schema_idCVE-_no_ghsa_id/cve_id_2
+---
+
+# .test_never_writes_and_says_so()
+
+## Connections
+- [[dot-_run()]] - `calls` [EXTRACTED]
+- [[TestNvdReportOnly]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/The_NVD_path_emits_the_pre-migration_schema_idCVE-_no_ghsa_id/cve_id_2

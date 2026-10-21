@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "ProxyAction"
+community: "scanner_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/scanner_integrationpy
 ---
 
 # test_web_proxy_security.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[MockDNSVerdict]] - `contains` [EXTRACTED]
 - [[MockEgressChannel]] - `contains` [EXTRACTED]
 - [[MockEgressEvent]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyResult]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

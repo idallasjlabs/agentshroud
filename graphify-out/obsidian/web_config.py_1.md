@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "web_config.py"
-location: "L1"
+community: "forwarder.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/forwarderpy
 ---
 
-# web_config.py.md
+# web_config.py
 
 ## Connections
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_29]] - `contains` [EXTRACTED]
+- [[Function Details_49]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_52]] - `contains` [EXTRACTED]
+- [[Purpose_160]] - `contains` [EXTRACTED]
+- [[Related_56]] - `contains` [EXTRACTED]
+- [[Responsibilities_54]] - `contains` [EXTRACTED]
+- [[WebProxyConfig Fields]] - `contains` [EXTRACTED]
+- [[web_config.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

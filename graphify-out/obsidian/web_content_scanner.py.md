@@ -1,17 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
-type: "document"
-community: "web_content_scanner.py"
+source_file: "gateway/proxy/web_content_scanner.py"
+type: "code"
+community: "test_main_endpoints.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/test_main_endpointspy
 ---
 
-# web_content_scanner.py.md
+# web_content_scanner.py
 
 ## Connections
-- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
+- [[ContentFinding]] - `contains` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
+- [[FindingSeverity]] - `contains` [EXTRACTED]
+- [[ScanResult]] - `contains` [EXTRACTED]
+- [[WebContentScanner]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py]] - `semantically_similar_to` [INFERRED]
+- [[test_xml_dtd_control.py]] - `imports_from` [EXTRACTED]
+- [[url_analyzer.py_2]] - `references` [EXTRACTED]
+- [[web_config.py_2]] - `references` [EXTRACTED]
+- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

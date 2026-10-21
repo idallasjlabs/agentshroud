@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "AgentShroud Security Verification (13-check driver)"
+community: "skill.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driver
+  - community/skilljson
 ---
 
 # verify-security.sh script
@@ -17,4 +17,4 @@ tags:
 - [[check_warn()]] - `calls` [EXTRACTED]
 - [[verify-security.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver
+#graphify/code #graphify/EXTRACTED #community/skilljson

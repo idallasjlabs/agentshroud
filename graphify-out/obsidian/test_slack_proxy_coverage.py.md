@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock (2)"
+community: "api.py (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/apipy_2
 ---
 
 # test_slack_proxy_coverage.py
 
 ## Connections
-- [[SlackAPIProxy_2]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `references` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
 - [[TestBodyParsing]] - `contains` [EXTRACTED]
 - [[TestCallSlackApi]] - `contains` [EXTRACTED]
 - [[TestInviteChannelMember]] - `contains` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[TestProvisionGroupChannel]] - `contains` [EXTRACTED]
 - [[TestRedactionCountErrorSwallow]] - `contains` [EXTRACTED]
 - [[_RaisingRedactionResult]] - `contains` [EXTRACTED]
-- [[_make_proxy()_4]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/code #graphify/EXTRACTED #community/apipy_2

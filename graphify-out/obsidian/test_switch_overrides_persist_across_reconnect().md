@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L3260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # test_switch_overrides_persist_across_reconnect()
@@ -17,4 +17,4 @@ tags:
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

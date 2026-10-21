@@ -1,22 +1,21 @@
 ---
-source_file: ".mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: ".mcp.json"
-location: "L1"
+community: "opencode.json"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/opencodejson
 ---
 
 # xmind
 
 ## Connections
-- [[dot-mcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx]] - `references` [EXTRACTED]
-- [[PATH_29]] - `requires_env` [EXTRACTED]
-- [[autoOpenFile]] - `requires_env` [EXTRACTED]
-- [[outputPath]] - `requires_env` [EXTRACTED]
-- [[xmind-generator-mcp]] - `references` [EXTRACTED]
+- [[command_8]] - `contains` [EXTRACTED]
+- [[enabled_8]] - `contains` [EXTRACTED]
+- [[environment_1]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_8]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcpjson
+#graphify/code #graphify/EXTRACTED #community/opencodejson

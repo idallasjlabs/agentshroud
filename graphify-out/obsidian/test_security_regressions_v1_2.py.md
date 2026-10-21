@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency
 ---
 
 # test_security_regressions_v1_2.py
@@ -26,4 +26,4 @@ tags:
 - [[trust_manager()]] - `contains` [EXTRACTED]
 - [[v1.2.0 Security Regression Tests Every test in this file corresponds to a…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "voice_task"
+community: "TestMetadataGuard"
 location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/TestMetadataGuard
 ---
 
 # wakeword_feed_bytes()
@@ -15,4 +15,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

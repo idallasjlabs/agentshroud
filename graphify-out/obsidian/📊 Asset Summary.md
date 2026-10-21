@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
+community: "dashboard_bridge.py"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/dashboard_bridgepy
 ---
 
 # 📊 Asset Summary
@@ -18,4 +18,4 @@ tags:
 - [[Logo Formats Available]] - `contains` [EXTRACTED]
 - [[Social Media_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy

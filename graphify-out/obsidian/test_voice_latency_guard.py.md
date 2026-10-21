@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # test_voice_latency_guard.py
@@ -32,4 +32,4 @@ tags:
 - [[test_voice_forward_metadata_module_default_is_off()]] - `contains` [EXTRACTED]
 - [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

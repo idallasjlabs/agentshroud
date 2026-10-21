@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "main.rs"
 location: "L2864"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mainrs
 ---
 
 # "<use|tell|ask|talk to|switch to|...> <model|agent>" -> ('model', gateway     mo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_parse_model_switch_command_forms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/mainrs

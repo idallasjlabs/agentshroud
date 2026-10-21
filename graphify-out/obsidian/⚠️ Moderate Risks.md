@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23 (4)"
+community: "ApprovalQueueConfig (5)"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_4
+  - community/ApprovalQueueConfig_5
 ---
 
 # **⚠️ Moderate Risks**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_4
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5

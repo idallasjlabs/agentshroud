@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "test_collaborator_greeter.py"
+community: "export-bot-conversations.py (2)"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/export-bot-conversationspy_2
 ---
 
 # test_state_file_corruption_recovers()
@@ -16,4 +16,4 @@ tags:
 - [[_ok_response()]] - `calls` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2

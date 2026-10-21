@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Skill: UX Expert (UX) (3)"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Skill_UX_Expert_UX_3
 ---
 
 # 🛡️ Protection Layers
@@ -17,4 +17,4 @@ tags:
 - [[Layer 2 Console Access Only (ACTIVE)]] - `contains` [EXTRACTED]
 - [[Layer 3 Audit Logging (ACTIVE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3

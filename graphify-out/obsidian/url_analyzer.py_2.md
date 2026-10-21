@@ -1,24 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
-type: "document"
-community: "url_analyzer.py"
-location: "L10"
+source_file: "gateway/proxy/url_analyzer.py"
+type: "code"
+community: "LLMProxy"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/LLMProxy
 ---
 
 # url_analyzer.py
 
 ## Connections
-- [[Configuration  Environment Variables_20]] - `contains` [EXTRACTED]
-- [[Function Details_37]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
-- [[Purpose_161]] - `contains` [EXTRACTED]
-- [[Related_43]] - `contains` [EXTRACTED]
-- [[Responsibilities_41]] - `contains` [EXTRACTED]
-- [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
+- [[URLAnalyzer_1]] - `contains` [EXTRACTED]
+- [[URLFinding]] - `contains` [EXTRACTED]
+- [[URLVerdict]] - `contains` [EXTRACTED]
+- [[_looks_like_base64()]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `references` [EXTRACTED]
+- [[web_content_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "._run_and_read"
 location: "L1103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/_run_and_read
 ---
 
 # triage_agent_full()
@@ -17,8 +17,8 @@ tags:
 - [[TestDriverIsolation]] - `calls` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)]] - `references` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

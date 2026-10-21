@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "app_main.c"
+community: "System Instructions: Credential Security (Ultra-Conservative)"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/System_Instructions_Credential_Security_Ultra-Conservative
 ---
 
 # vt_remote_log()
@@ -18,4 +18,4 @@ tags:
 - [[voice_task()]] - `calls` [EXTRACTED]
 - [[wifi_event_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative

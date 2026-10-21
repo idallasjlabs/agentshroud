@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # test_security_integration.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
@@ -22,20 +22,20 @@ tags:
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
-- [[GatewayConfig_4]] - `imports` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
-- [[TrustLevel_2]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[approval_queue()_1]] - `contains` [EXTRACTED]
-- [[egress_filter()_1]] - `contains` [EXTRACTED]
+- [[egress_filter()]] - `contains` [EXTRACTED]
 - [[encrypted_store()]] - `contains` [EXTRACTED]
 - [[full_pipeline_config()]] - `contains` [EXTRACTED]
 - [[ledger()_1]] - `contains` [EXTRACTED]
-- [[prompt_guard()_1]] - `contains` [EXTRACTED]
+- [[prompt_guard()_2]] - `contains` [EXTRACTED]
 - [[sanitizer()_3]] - `contains` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `contains` [EXTRACTED]
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - `contains` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
 - [[trust_manager()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

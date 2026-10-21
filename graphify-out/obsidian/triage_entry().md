@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "._run_and_read"
 location: "L835"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/_run_and_read
 ---
 
 # triage_entry()
 
 ## Connections
-- [[Any_14]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 - [[Produce an honest mitigation verdict for a single advisory entry. Combines the…]] - `rationale_for` [EXTRACTED]
 - [[TestTriageEntry]] - `calls` [EXTRACTED]
 - [[TriageResult]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[triage_agent()]] - `calls` [EXTRACTED]
 - [[triage_agent_full()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

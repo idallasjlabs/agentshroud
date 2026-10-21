@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "AlertTelegramRelay"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/AlertTelegramRelay
 ---
 
 # trillian (100.94.68.61, development node)
@@ -14,4 +14,4 @@ tags:
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 - [[Tailscale Overlay Network (tail240ea8.ts.net)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/image #graphify/EXTRACTED #community/AlertTelegramRelay

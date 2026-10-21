@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)"
+community: "Assess severity"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2__New_Multi-Bot_Attack_Scenarios_v11_Surface
+  - community/Assess_severity
 ---
 
 # §2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)
@@ -20,4 +20,4 @@ tags:
 - [[RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron]] - `contains` [EXTRACTED]
 - [[RT-MB6 — Cross-Bot Telegram Token Confusion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2__New_Multi-Bot_Attack_Scenarios_v11_Surface
+#graphify/document #graphify/EXTRACTED #community/Assess_severity

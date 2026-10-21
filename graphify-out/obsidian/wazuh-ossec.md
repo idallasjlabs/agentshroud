@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "FalcoAlertWatcher"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # wazuh-ossec.md
@@ -19,4 +19,4 @@ tags:
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/document #graphify/INFERRED #community/LLMProxyproxy_messages_non-streaming

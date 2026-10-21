@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
 ---
 
 # test_voice_stt_model_ab.py
@@ -28,4 +28,4 @@ tags:
 - [[test_transcribe_emits_latency_record()]] - `contains` [EXTRACTED]
 - [[test_valid_model_sizes_contains_documented_ab_set()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes

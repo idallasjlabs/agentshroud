@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # test_security_fixes.py
 
 ## Connections
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `contains` [EXTRACTED]
@@ -26,9 +26,9 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_18]] - `contains` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
-- [[sync_client()]] - `contains` [EXTRACTED]
+- [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # test_webhook_outbound_pipeline_crash_fails_closed()
@@ -18,4 +18,4 @@ tags:
 - [[_StubForwarder_1]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

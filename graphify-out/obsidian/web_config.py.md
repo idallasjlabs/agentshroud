@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/web_config.py"
-type: "code"
-community: "TestSSRFDetection"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+type: "document"
+community: "forwarder.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/forwarderpy
 ---
 
-# web_config.py
+# web_config.py.md
 
 ## Connections
-- [[DomainSettings]] - `contains` [EXTRACTED]
-- [[WebProxyConfig]] - `contains` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
-- [[url_analyzer.py]] - `references` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `references` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "1Password Vault Sharing Instructions"
+community: "`SecurityPipeline`"
 location: "L210"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_Vault_Sharing_Instructions
+  - community/SecurityPipeline
 ---
 
 # ❌ Removed Files (Outdated)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Files Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

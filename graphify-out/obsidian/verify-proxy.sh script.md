@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget_2
 ---
 
 # verify-proxy.sh script
@@ -19,4 +19,4 @@ tags:
 - [[run_quick()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "test_playback_state.c"
+community: "AgentShroud Device Pairing Management"
 location: "L511"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_playback_statec
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # wakeword_tts_stop_requested()
@@ -19,4 +19,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_playback_statec
+#graphify/code #graphify/INFERRED #community/AgentShroud_Device_Pairing_Management

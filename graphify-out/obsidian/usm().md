@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (2)"
+community: "export_bot"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_2
+  - community/export_bot
 ---
 
 # usm()
@@ -15,4 +15,4 @@ tags:
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_2
+#graphify/code #graphify/EXTRACTED #community/export_bot

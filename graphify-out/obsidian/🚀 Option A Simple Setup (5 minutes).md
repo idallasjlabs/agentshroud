@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
+community: "tmux Session Control"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/tmux_Session_Control
 ---
 
 # 🚀 Option A: Simple Setup (5 minutes)
@@ -17,4 +17,4 @@ tags:
 - [[Install Node CalDAV Client]] - `contains` [EXTRACTED]
 - [[Run Test]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "workspace.sh"
+community: "TestToolChainAnalyzer (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/TestToolChainAnalyzer_2
 ---
 
 # workspace.sh
@@ -24,4 +24,4 @@ tags:
 - [[usage()_7]] - `defines` [EXTRACTED]
 - [[workspace.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/workspacesh
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

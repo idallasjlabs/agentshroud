@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L1327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()
@@ -16,4 +16,4 @@ tags:
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

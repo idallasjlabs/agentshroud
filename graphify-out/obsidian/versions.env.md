@@ -1,11 +1,11 @@
 ---
 source_file: "docker/versions.env"
 type: "document"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # versions.env
@@ -18,4 +18,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/_make_sanitizer

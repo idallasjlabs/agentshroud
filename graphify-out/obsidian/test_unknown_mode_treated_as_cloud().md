@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "is_overloaded"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/is_overloaded
 ---
 
 # test_unknown_mode_treated_as_cloud()
@@ -16,4 +16,4 @@ tags:
 - [[resolve_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/is_overloaded

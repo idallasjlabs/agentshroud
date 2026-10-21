@@ -1,0 +1,20 @@
+---
+type: community
+members: 3
+---
+
+# MiddlewareManager (9) (2)
+
+**Members:** 3 nodes
+
+## Members
+- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/MiddlewareManager_9_2
+SORT file.name ASC
+```

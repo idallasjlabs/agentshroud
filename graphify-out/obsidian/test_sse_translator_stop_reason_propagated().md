@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py (3)"
+community: "mcp_config.py"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_3
+  - community/mcp_configpy
 ---
 
 # test_sse_translator_stop_reason_propagated()
@@ -15,4 +15,4 @@ tags:
 - [[_collect_sse()]] - `calls` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_3
+#graphify/code #graphify/EXTRACTED #community/mcp_configpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "test_telegram_executor.py"
+community: "AgentShroud Weekly Upgrade — 2026-09-06 (2)"
 location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_executorpy
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06_2
 ---
 
 # 🟡 Apple Messages Integration (4 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_executorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06_2

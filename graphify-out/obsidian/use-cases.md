@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "system-requirements.md"
+community: "ApprovalHardening"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/ApprovalHardening
 ---
 
 # use-cases.md
@@ -24,4 +24,4 @@ tags:
 - [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening

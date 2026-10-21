@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "test_playback_state.c"
+community: "AgentShroud Device Pairing Management"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # ws_vg_state_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_on_vg_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

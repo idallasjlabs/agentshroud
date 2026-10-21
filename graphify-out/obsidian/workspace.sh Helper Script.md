@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "concept"
-community: "OpenClaw Workspace Usage Guide"
+community: "test_jira_dev_ticket.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/test_jira_dev_ticketpy
 ---
 
 # workspace.sh Helper Script
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WORKSPACE_USAGE]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/concept #graphify/EXTRACTED #community/test_jira_dev_ticketpy

@@ -1,24 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "web_content_scanner.py"
-location: "L10"
+community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
 ---
 
-# web_content_scanner.py
+# web_content_scanner.py.md
 
 ## Connections
-- [[Configuration  Environment Variables_14]] - `contains` [EXTRACTED]
-- [[Function Details_27]] - `contains` [EXTRACTED]
-- [[Injection Pattern Weights]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
-- [[Purpose_149]] - `contains` [EXTRACTED]
-- [[Related_33]] - `contains` [EXTRACTED]
-- [[Responsibilities_31]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "All Dependencies.md"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/EgressFilter
 ---
 
 # trivy.md
@@ -17,4 +17,4 @@ tags:
 - [[clamav_1]] - `references` [EXTRACTED]
 - [[openscap]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

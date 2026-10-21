@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "agentshroud-bot (2)"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/agentshroud-bot_2
 ---
 
 # 📊 Multi-Layer Defense
@@ -17,4 +17,4 @@ tags:
 - [[Layer 3 Audit Logging (Monitoring)]] - `contains` [EXTRACTED]
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot_2

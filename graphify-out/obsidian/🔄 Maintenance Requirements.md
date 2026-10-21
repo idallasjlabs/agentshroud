@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Apple Services Setup Guide"
 location: "L618"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Apple_Services_Setup_Guide
 ---
 
 # 🔄 Maintenance Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Monthly]] - `contains` [EXTRACTED]
 - [[Quarterly]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

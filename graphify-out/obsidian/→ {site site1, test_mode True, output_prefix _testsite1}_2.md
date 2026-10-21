@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "hermes/SOUL.md"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/hermes/SOULmd
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
@@ -18,4 +18,4 @@ tags:
 - [[Validation Checklist_5]] - `contains` [EXTRACTED]
 - [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

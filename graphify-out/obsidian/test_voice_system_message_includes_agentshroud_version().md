@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "main.rs"
 location: "L802"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mainrs
 ---
 
 # test_voice_system_message_includes_agentshroud_version()
@@ -15,4 +15,4 @@ tags:
 - [[Regression 2026-08-08 the voice assistant answered what version is     AgentSh]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mainrs

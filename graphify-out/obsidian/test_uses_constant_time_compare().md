@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "test_voice_latency_guard.py"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_voice_latency_guardpy
 ---
 
 # test_uses_constant_time_compare()
@@ -16,4 +16,4 @@ tags:
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "test_v1_models_synthetic.py"
+community: "Apple Platform Integration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/Apple_Platform_Integration
 ---
 
 # test_v1_models_synthetic.py
@@ -17,4 +17,4 @@ tags:
 - [[test_v1_models_get_returns_synthetic_200()]] - `contains` [EXTRACTED]
 - [[test_v1_models_post_still_goes_through_proxy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/Apple_Platform_Integration
