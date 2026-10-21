@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "setup-secrets.sh (2)"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/setup-secretssh_2
 ---
 
 # Fetch JavaScript-Heavy Page (Node.js)
 
 ## Connections
-- [[Usage_62]] - `contains` [EXTRACTED]
+- [[Usage_64]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

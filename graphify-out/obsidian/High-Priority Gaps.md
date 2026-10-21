@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # High-Priority Gaps
@@ -18,4 +18,4 @@ tags:
 - [[HIGH-3 Credential generation in key rotation is a placeholder]] - `contains` [EXTRACTED]
 - [[HIGH-4 In-memory audit chain not persisted]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "test_agent_cve_registry.py (2)"
+community: "A2APolicyEngine"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/A2APolicyEngine
 ---
 
 # Every `id` must be a zero-padded ASH-OCLAW-NNN / ASH-HERMES-NNN ref.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_every_entry_id_is_synthetic_ash_ref()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

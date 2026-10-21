@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-22.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Jira MCP writes blocked in unattended sessions (don't-ask mode / allowedTools)
@@ -18,4 +18,4 @@ tags:
 - [[Upgrade Report 2026-09-26 (dev, ALL GREEN)]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer

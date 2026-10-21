@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "test_soc_bots.py"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_soc_botspy
 ---
 
 # GroupRoleResolver
 
 ## Connections
-- [[dot-__init__()_117]] - `method` [EXTRACTED]
+- [[dot-__init__()_116]] - `method` [EXTRACTED]
 - [[dot-get_all_roles()]] - `method` [EXTRACTED]
 - [[dot-get_role()]] - `method` [EXTRACTED]
 - [[dot-is_high_risk_tool()]] - `method` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

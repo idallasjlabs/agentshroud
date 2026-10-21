@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "ModeRequest"
 location: "L248-L2107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLMProxy
+  - community/ModeRequest
 ---
 
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_8]] - `method` [EXTRACTED]
 - [[dot-_apply_filters()]] - `method` [EXTRACTED]
 - [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
@@ -122,4 +122,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `uses` [INFERRED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/ModeRequest

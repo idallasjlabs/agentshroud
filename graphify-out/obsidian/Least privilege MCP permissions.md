@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "rationale"
-community: "main.py.md (2)"
+community: "MiddlewareManager (4)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mainpymd_2
+  - community/MiddlewareManager_4
 ---
 
 # Least privilege MCP permissions
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mainpymd_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "cve-registry-manual-review.md"
+community: "TestScoreNetworkSegmentation"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cve-registry-manual-reviewmd
+  - community/TestScoreNetworkSegmentation
 ---
 
 # Hermes — 7 entries
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cve-registry-manual-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd
+#graphify/document #graphify/EXTRACTED #community/TestScoreNetworkSegmentation

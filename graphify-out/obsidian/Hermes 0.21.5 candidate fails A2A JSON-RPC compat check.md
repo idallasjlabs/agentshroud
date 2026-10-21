@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "concept"
-community: "check-vendor-compat.sh"
+community: "One Shroud Over Every Wire (founding mantra)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Hermes 0.21.5 candidate fails A2A JSON-RPC compat check
@@ -15,4 +15,4 @@ tags:
 - [[Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)]] - `references` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/concept #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

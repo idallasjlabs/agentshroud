@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "InjectionAction"
+community: "test_soc_router_coverage.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/test_soc_router_coveragepy
 ---
 
 # InjectionSeverity
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_detect_encoded_injection()]] - `references` [EXTRACTED]
 - [[dot-_detect_unicode_obfuscation()]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestCleanContent]] - `uses` [INFERRED]
 - [[TestEncodedInjection]] - `uses` [INFERRED]
 - [[TestHighSeverity]] - `uses` [INFERRED]
@@ -22,9 +22,9 @@ tags:
 - [[TestSanitization]] - `uses` [INFERRED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[TestUnicodeObfuscation]] - `uses` [INFERRED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_tool_injection_scan.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Claude Code (PRIMARY agent)"
+community: "vTaskDelay"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_PRIMARY_agent
+  - community/vTaskDelay
 ---
 
 # Gemini CLI (SECONDARY agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (PRIMARY agent)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_PRIMARY_agent
+#graphify/concept #graphify/EXTRACTED #community/vTaskDelay

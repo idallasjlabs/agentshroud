@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "concept"
-community: "AgentShroud Sequence Diagrams (doc)"
+community: "browser-fetch.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams_doc
+  - community/browser-fetchjs
 ---
 
 # Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Sequence Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/browser-fetchjs

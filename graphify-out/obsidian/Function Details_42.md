@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "trivy_report.py"
-location: "L37"
+community: "test_gemini_openai_translator.py"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/test_gemini_openai_translatorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
-- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
-- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
-- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[RateLimiter.check(client_id)]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[create_auth_dependency(config)]] - `contains` [EXTRACTED]
+- [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
+- [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

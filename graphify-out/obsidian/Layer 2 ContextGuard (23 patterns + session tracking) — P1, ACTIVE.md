@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "Critical Findings"
+community: "TestDockerEngine"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Critical_Findings
+  - community/TestDockerEngine
 ---
 
 # Layer 2: ContextGuard (23 patterns + session tracking) — P1, ACTIVE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Defenses (3 Layers)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Critical_Findings
+#graphify/document #graphify/EXTRACTED #community/TestDockerEngine

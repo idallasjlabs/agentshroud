@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup - Calendar, Contacts, Keep"
+community: "Development Workflow: Read-Only Filesystem Strategy"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/Development_Workflow_Read-Only_Filesystem_Strategy
 ---
 
 # For Production: OAuth2 + Google APIs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy

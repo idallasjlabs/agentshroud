@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "document"
-community: "AgentShroud Data Flow Diagrams"
+community: "LLMProxy (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Flow_Diagrams
+  - community/LLMProxy_2
 ---
 
 # Level 0: Context Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Flow Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams
+#graphify/document #graphify/EXTRACTED #community/LLMProxy_2

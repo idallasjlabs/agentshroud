@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPInspector"
+community: "CrossBotTrustLedger"
 location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/CrossBotTrustLedger
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[dot-get_stats()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPInspector
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

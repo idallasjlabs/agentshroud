@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "main.rs"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mainrs
 ---
 
 # If the Kokoro pipeline can't be constructed, synthesize() raises RuntimeError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_kokoro_pipeline_load_failure_raises()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/mainrs

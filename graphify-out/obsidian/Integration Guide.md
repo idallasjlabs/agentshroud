@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Integration Guide"
+community: "Path (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/Path_4
 ---
 
 # Integration Guide
@@ -16,9 +16,9 @@ tags:
 - [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Integration]] - `contains` [EXTRACTED]
 - [[Generic AI Agent Integration]] - `contains` [EXTRACTED]
-- [[MCP Server Integration_1]] - `contains` [EXTRACTED]
+- [[MCP Server Integration]] - `contains` [EXTRACTED]
 - [[Monitoring System Integration]] - `contains` [EXTRACTED]
 - [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 - [[integration-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Path_4

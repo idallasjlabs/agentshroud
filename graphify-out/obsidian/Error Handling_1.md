@@ -1,19 +1,18 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Validation Runner Specialist"
-location: "L177"
+community: "How to Fix (5 Minutes)"
+location: "L344"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Error Handling
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
-- [[When Environment Issues]] - `contains` [EXTRACTED]
-- [[When Validation Fails]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

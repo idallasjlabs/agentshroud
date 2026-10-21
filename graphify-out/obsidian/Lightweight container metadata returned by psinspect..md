@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "test_runtime_engines.py (2)"
+community: "egress_retry.py"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy_2
+  - community/egress_retrypy
 ---
 
 # Lightweight container metadata returned by ps/inspect.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContainerInfo_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy_2
+#graphify/rationale #graphify/EXTRACTED #community/egress_retrypy

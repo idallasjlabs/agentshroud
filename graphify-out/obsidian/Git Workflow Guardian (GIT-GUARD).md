@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (4)"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_4
+  - community/AgentTarget_2
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_31]] - `contains` [EXTRACTED]
-- [[Related Skills_16]] - `contains` [EXTRACTED]
-- [[Usage_20]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-ggREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-ggREADME]] - `contains` [EXTRACTED]
+- [[Purpose_15]] - `contains` [EXTRACTED]
+- [[Related Skills_3]] - `contains` [EXTRACTED]
+- [[Usage_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_4
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

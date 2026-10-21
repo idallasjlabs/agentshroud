@@ -1,19 +1,18 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
+community: "Skill: Git Workflow Guardian (GIT-GUARD) (3)"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
 ---
 
 # F. Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
-- [[Architecture_13]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_3

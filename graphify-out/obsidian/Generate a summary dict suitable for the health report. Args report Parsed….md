@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "parse_clamscan_output"
+community: "Common Queries"
 location: "L260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Common_Queries
 ---
 
 # Generate a summary dict suitable for the health report. Args: report: Parsed…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/rationale #graphify/EXTRACTED #community/Common_Queries

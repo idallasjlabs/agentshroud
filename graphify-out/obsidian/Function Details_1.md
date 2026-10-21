@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "TrustManager"
+community: ".cursor/mcp.json"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/cursor/mcpjson
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
 - [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/cursor/mcpjson

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # GroupAccessDenied
@@ -17,7 +17,7 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestConfigGate]] - `uses` [INFERRED]
 - [[TestCrossGroupIsolation]] - `uses` [INFERRED]
 - [[TestDefensiveGuards]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer

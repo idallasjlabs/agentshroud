@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "TestOutboundInfoFilter (7)"
+community: "TestOutboundInfoFilter (16)"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_7
+  - community/TestOutboundInfoFilter_16
 ---
 
 # IV-A. Transparent Proxy Design
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IV. System Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_16

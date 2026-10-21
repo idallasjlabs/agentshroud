@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "AgentTarget (5)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/AgentTarget_5
 ---
 
 # HTML version (for email)
@@ -17,4 +17,4 @@ tags:
 - [[Report Delivery Format Instructions]] - `contains` [EXTRACTED]
 - [[Sending via email]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_5

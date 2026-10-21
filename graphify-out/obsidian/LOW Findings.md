@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
+community: "TeamsConfig (3)"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+  - community/TeamsConfig_3
 ---
 
 # LOW Findings
@@ -17,4 +17,4 @@ tags:
 - [[R2-L2 WebSocket Connection Leak in `webapi.py`]] - `contains` [EXTRACTED]
 - [[R2-L3 OCI Image Version Labels Outdated]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3

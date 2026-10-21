@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "test_jira_weekly_review.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/test_jira_weekly_reviewpy
 ---
 
 # Execute Action (tool call / reply)
@@ -14,4 +14,4 @@ tags:
 - [[LLM Inference (OpenAI  Anthropic)]] - `calls` [EXTRACTED]
 - [[PII Sanitizer (Presidio  regex)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

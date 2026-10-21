@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "First Time Setup (2)"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Get dispatcher statistics.
 
 ## Connections
-- [[dot-get_stats()_17]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

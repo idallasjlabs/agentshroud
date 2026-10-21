@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (3)"
+community: "First iteration ingests + records; second sees dedup and skips. (2)"
 location: "L637"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
 ---
 
 # Get egress attempt log, optionally filtered by agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2

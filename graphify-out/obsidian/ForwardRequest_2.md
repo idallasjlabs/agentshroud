@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "AgentTarget (7)"
-location: "L116"
+community: "SCLClient"
+location: "L332"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentTarget_7
+  - graphify/EXTRACTED
+  - community/SCLClient
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[dot-resolve_target()]] - `references` [EXTRACTED]
-- [[AgentTarget_3]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[_process_inbound()]] - `references` [EXTRACTED]
+- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget_7
+#graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "compose_generator.py"
+community: "lib.sh"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/libsh
 ---
 
 # Function Details
@@ -16,4 +16,4 @@ tags:
 - [[generate_apple_script(services)]] - `contains` [EXTRACTED]
 - [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/libsh

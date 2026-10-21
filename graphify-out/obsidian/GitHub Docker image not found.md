@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "First Time Setup"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/First_Time_Setup
 ---
 
 # GitHub: "Docker image not found"
@@ -15,4 +15,4 @@ tags:
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Troubleshooting_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

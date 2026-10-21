@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Skill: UX Expert (UX) (3)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Skill_UX_Expert_UX_3
 ---
 
 # Layer 1: Gateway Credential Filter (ACTIVE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ Protection Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3

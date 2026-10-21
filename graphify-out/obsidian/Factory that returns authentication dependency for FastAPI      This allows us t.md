@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "lifespan()"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/lifespan
 ---
 
 # Factory that returns authentication dependency for FastAPI      This allows us t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_auth_dependency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

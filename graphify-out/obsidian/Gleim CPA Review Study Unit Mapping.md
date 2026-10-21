@@ -1,16 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "concept"
-community: "OKE Channel — CPA Exam Context"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OKE_Channel__CPA_Exam_Context
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Gleim CPA Review Study Unit Mapping
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_2]] - `references` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context
+#graphify/concept #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

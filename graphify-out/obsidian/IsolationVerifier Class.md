@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "concept"
-community: "Per-Agent Container Isolation Architecture"
+community: "Skill: Security Review (SEC) (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Skill_Security_Review_SEC_2
 ---
 
 # IsolationVerifier Class
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[per-agent-isolation]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/concept #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "concept"
-community: "02-infrastructure.md"
+community: "AgentShroud™ — Project Knowledge Base"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # Infrastructure Diagram — Hosting & Servers
@@ -15,4 +15,4 @@ tags:
 - [[Network Topology Diagram]] - `references` [INFERRED]
 - [[Rendered Infrastructure Hosting Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

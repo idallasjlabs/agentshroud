@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "HostStatus"
+community: "Docker Compose (infra diagram)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HostStatus
+  - community/Docker_Compose_infra_diagram
 ---
 
 # HostStatus
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_63]] - `uses` [INFERRED]
+- [[Path_69]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify_1]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[TestWrapperSubprocess]] - `uses` [INFERRED]
 - [[classify()_1]] - `references` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HostStatus
+#graphify/code #graphify/INFERRED #community/Docker_Compose_infra_diagram

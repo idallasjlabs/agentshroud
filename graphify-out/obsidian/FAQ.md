@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: ".test_stranger_within_limit_triggers_approval_workflow()"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # FAQ
@@ -21,4 +21,4 @@ tags:
 - [[Q What happens if I accidentally send a password]] - `contains` [EXTRACTED]
 - [[Q What's the kill switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

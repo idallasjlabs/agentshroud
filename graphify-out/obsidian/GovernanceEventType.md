@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "GovernanceAction"
+community: "TestCanvasAuthHelpers"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/TestCanvasAuthHelpers
 ---
 
 # GovernanceEventType
@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[dot-_log_event()_1]] - `references` [EXTRACTED]
 - [[dot-get_governance_events()]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestLifecycle_1]] - `uses` [INFERRED]
 - [[TestOutputTrustScoring]] - `uses` [INFERRED]
 - [[TestPatternDetection]] - `uses` [INFERRED]
 - [[TestResourceBudgets]] - `uses` [INFERRED]
 - [[TestSpawnAuthorization]] - `uses` [INFERRED]
 - [[TestToolAuthorization]] - `uses` [INFERRED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GovernanceAction
+#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers

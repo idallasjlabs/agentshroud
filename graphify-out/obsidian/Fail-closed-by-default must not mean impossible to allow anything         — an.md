@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "A2APolicyEngine (3)"
+community: "UserSessionManager"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/UserSessionManager
 ---
 
 # Fail-closed-by-default must not mean "impossible to allow anything"         — an
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_configured_allowlist_still_works_alongside_fail_closed_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

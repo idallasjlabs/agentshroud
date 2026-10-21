@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # Even blocked paths are allowed in monitor mode (just flagged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_monitor_mode_allows_everything()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer()"
+community: "_req"
 location: "L2558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/_req
 ---
 
 # If tool-call JSON is embedded in prose, strip JSON block before delivery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_embedded_tool_call_json_is_removed_from_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/_req

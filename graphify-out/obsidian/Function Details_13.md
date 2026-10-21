@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Function Details (6)"
+community: "TestOpenAPIContract"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_6
+  - community/TestOpenAPIContract
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_6
+#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract

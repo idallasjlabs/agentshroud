@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-512x512.png"
 type: "image"
-community: "Favicon 512x512 (AgentShroud logo mark)"
+community: "AgentShroud trademark notice (USPTO 99728633)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Favicon_512x512_AgentShroud_logo_mark
+  - community/AgentShroud_trademark_notice_USPTO_99728633
 ---
 
 # Favicon 512x512 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Favicon_512x512_AgentShroud_logo_mark
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_trademark_notice_USPTO_99728633

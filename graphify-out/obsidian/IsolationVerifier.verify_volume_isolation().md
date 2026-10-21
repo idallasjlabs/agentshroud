@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "agent_isolation.py"
+community: "egress_config.py"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/egress_configpy
 ---
 
 # IsolationVerifier.verify_volume_isolation()
 
 ## Connections
-- [[Function Details_29]] - `contains` [EXTRACTED]
+- [[Function Details_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

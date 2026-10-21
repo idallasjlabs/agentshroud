@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "ResourceGuard"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ResourceGuard
 ---
 
 # FakeCaller
 
 ## Connections
-- [[dot-__init__()_86]] - `method` [EXTRACTED]
+- [[dot-__init__()_84]] - `method` [EXTRACTED]
 - [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
-- [[dot-is_owner()_1]] - `method` [EXTRACTED]
+- [[dot-is_owner()_2]] - `method` [EXTRACTED]
 - [[dot-require()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - `rationale_for` [EXTRACTED]
 - [[holder()]] - `calls` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_set_user_role_owner_success()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

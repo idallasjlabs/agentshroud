@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[dot-__init__()_140]] - `method` [EXTRACTED]
+- [[dot-__init__()_189]] - `method` [EXTRACTED]
 - [[dot-_notify_telegram()]] - `method` [EXTRACTED]
 - [[dot-_schedule_timeout()]] - `method` [EXTRACTED]
 - [[dot-_timeout_request()]] - `method` [EXTRACTED]
 - [[dot-broadcast()_1]] - `method` [EXTRACTED]
-- [[dot-close()_10]] - `method` [EXTRACTED]
+- [[dot-close()_16]] - `method` [EXTRACTED]
 - [[dot-connect()_2]] - `method` [EXTRACTED]
 - [[dot-decide()_1]] - `method` [EXTRACTED]
 - [[dot-disconnect()_1]] - `method` [EXTRACTED]
@@ -25,18 +25,18 @@ tags:
 - [[dot-get_pending()_1]] - `method` [EXTRACTED]
 - [[dot-get_policy_for_tier()]] - `method` [EXTRACTED]
 - [[dot-get_tool_risk_tier()]] - `method` [EXTRACTED]
-- [[dot-initialize()_3]] - `method` [EXTRACTED]
+- [[dot-initialize()_2]] - `method` [EXTRACTED]
 - [[dot-requires_approval()]] - `method` [EXTRACTED]
 - [[dot-submit()_1]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()_3]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_4]] - `method` [EXTRACTED]
 - [[dot-test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
 - [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[dot-wait_for_decision()_3]] - `method` [EXTRACTED]
+- [[dot-wait_for_decision()_4]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - `rationale_for` [EXTRACTED]
@@ -51,7 +51,7 @@ tags:
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
-- [[TestPersistence_1]] - `uses` [INFERRED]
+- [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
@@ -70,4 +70,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

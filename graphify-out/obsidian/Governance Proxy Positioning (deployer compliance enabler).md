@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "rationale"
-community: "EU AI Act & NIST Alignment Matrix"
+community: "TrustManager._update_score"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix
+  - community/TrustManager_update_score
 ---
 
 # Governance Proxy Positioning (deployer compliance enabler)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EU AI Act & NIST Alignment Matrix]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager_update_score

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2) (2)"
 location: "L7607"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # Exception in safe-info response should still deliver unavailable notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_safe_info_response_exception_sends_unavailable_fallback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

@@ -12,6 +12,6 @@ tags:
 # Get global tracking statistics.
 
 ## Connections
-- [[dot-get_global_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_global_stats()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

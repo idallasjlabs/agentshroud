@@ -1,11 +1,11 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "concept"
-community: "branding/README.md"
+community: "run-standalone.sh (Hermes docker run launcher) (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/run-standalonesh_Hermes_docker_run_launcher_2
 ---
 
 # Inter Typeface (Primary)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[typography_2]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L389"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # Fake CredentialInjector that records inject_headers calls and applies Anthropic…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_TrackingInjector]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
+community: "agentshroud-blueteam/SKILL.md (3)"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

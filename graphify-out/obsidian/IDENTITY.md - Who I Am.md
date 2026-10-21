@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "auth.py"
+community: "test_gemini_openai_translator.py (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/test_gemini_openai_translatorpy_2
 ---
 
 # IDENTITY.md - Who I Am
@@ -16,7 +16,7 @@ tags:
 - [[Competitive Intelligence Protocol_1]] - `contains` [EXTRACTED]
 - [[My Owner]] - `contains` [EXTRACTED]
 - [[My Role]] - `contains` [EXTRACTED]
-- [[Responsibilities_2]] - `contains` [EXTRACTED]
+- [[Responsibilities_51]] - `contains` [EXTRACTED]
 - [[hermesagentsopenclaw-identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy_2

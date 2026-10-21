@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
-location: "L46"
+community: "Skill: Data Validation (DATA-VAL) (3)"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Input Requirements
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

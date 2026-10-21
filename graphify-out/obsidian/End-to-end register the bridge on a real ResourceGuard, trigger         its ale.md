@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # End-to-end: register the bridge on a real ResourceGuard, trigger         its ale
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

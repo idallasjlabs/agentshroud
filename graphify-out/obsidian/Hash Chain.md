@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "system-requirements.md"
+community: "ApprovalHardening"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/ApprovalHardening
 ---
 
 # Hash Chain
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # FileSandbox
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_15]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_26]] - `method` [EXTRACTED]
 - [[dot-_check()]] - `method` [EXTRACTED]
 - [[dot-_detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[dot-_is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-check_read()]] - `method` [EXTRACTED]
 - [[dot-check_write()]] - `method` [EXTRACTED]
 - [[dot-detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_5]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_2]] - `method` [EXTRACTED]
 - [[dot-get_security_violations()]] - `method` [EXTRACTED]
 - [[dot-get_temp_files()]] - `method` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
 - [[Large-write-then-network-activity stagingexfiltration pattern detection]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Privilege Separation File Sandbox Tests]] - `references` [EXTRACTED]
@@ -45,12 +45,12 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[Round 2 Security Hardening Tests]] - `references` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -68,11 +68,11 @@ tags:
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNormalFileOperations]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPIIScanning]] - `uses` [INFERRED]
 - [[TestPatternMatching]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestReadAccess]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
@@ -80,7 +80,7 @@ tags:
 - [[TestSecurityViolationLogging]] - `uses` [INFERRED]
 - [[TestSensitivePathBlocking]] - `uses` [INFERRED]
 - [[TestStagingPatternDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestSystemPathProtection]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
@@ -98,4 +98,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

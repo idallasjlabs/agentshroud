@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "TrustManager"
+community: ".cursor/mcp.json"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/cursor/mcpjson
 ---
 
 # Kill Switch (Monitor/Block/Isolate)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Dashboard (WebSocket)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TrustManager
+#graphify/concept #graphify/EXTRACTED #community/cursor/mcpjson

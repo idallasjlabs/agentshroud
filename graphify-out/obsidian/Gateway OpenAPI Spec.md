@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/openapi.json"
 type: "document"
-community: "agentshroud-gateway pyproject config"
+community: "AgentShroud Incident Response Plan (11)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/agentshroud-gateway_pyproject_config
+  - community/AgentShroud_Incident_Response_Plan_11
 ---
 
 # Gateway OpenAPI Spec
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway pyproject config]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/agentshroud-gateway_pyproject_config
+#graphify/document #graphify/INFERRED #community/AgentShroud_Incident_Response_Plan_11

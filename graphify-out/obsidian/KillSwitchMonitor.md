@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "AgentTarget (3)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AgentTarget_3
 ---
 
 # KillSwitchMonitor
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_55]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_161]] - `method` [EXTRACTED]
 - [[dot-_check_request_rate()]] - `method` [EXTRACTED]
-- [[dot-_check_system_resources()]] - `method` [EXTRACTED]
+- [[dot-_check_system_resources()_1]] - `method` [EXTRACTED]
 - [[dot-_check_token_usage()]] - `method` [EXTRACTED]
 - [[dot-_check_tool_call_rate()]] - `method` [EXTRACTED]
 - [[dot-_clean_old_metrics()]] - `method` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[dot-_test_script_permissions()]] - `method` [EXTRACTED]
 - [[dot-_test_script_syntax()]] - `method` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `method` [EXTRACTED]
-- [[dot-get_status()]] - `method` [EXTRACTED]
+- [[dot-get_status()_1]] - `method` [EXTRACTED]
 - [[dot-heartbeat_check()]] - `method` [EXTRACTED]
 - [[dot-test_all_pass_when_script_valid()]] - `calls` [EXTRACTED]
 - [[dot-test_anomaly_detection_excessive_tool_calls()]] - `calls` [EXTRACTED]
@@ -61,13 +61,13 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - `rationale_for` [EXTRACTED]
-- [[Path_30]] - `uses` [INFERRED]
+- [[Path_65]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
@@ -75,7 +75,7 @@ tags:
 - [[TestCriticalLogging]] - `uses` [INFERRED]
 - [[TestGetMode]] - `uses` [INFERRED]
 - [[TestHeartbeat]] - `uses` [INFERRED]
-- [[TestKillSwitchConfig]] - `uses` [INFERRED]
+- [[TestKillSwitchConfig_1]] - `uses` [INFERRED]
 - [[TestKillSwitchMonitor]] - `uses` [INFERRED]
 - [[TestKillSwitchVerification]] - `uses` [INFERRED]
 - [[TestModeRequestModel]] - `uses` [INFERRED]
@@ -91,4 +91,4 @@ tags:
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

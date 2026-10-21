@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "rationale"
-community: "egress_retry.py"
+community: "KillSwitchMonitor (2) (2)"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/KillSwitchMonitor_2_2
 ---
 
 # Execute a request with exponential backoff retry on transient failures.      Arg
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[retry_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_retrypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_2_2

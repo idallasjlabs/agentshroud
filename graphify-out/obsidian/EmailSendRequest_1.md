@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_forward_stream.py (2)"
-location: "L329"
+community: "SCLClient"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/SCLClient
 ---
 
 # EmailSendRequest
 
 ## Connections
-- [[dot-body_not_empty()]] - `method` [EXTRACTED]
-- [[dot-subject_not_empty()]] - `method` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - `rationale_for` [EXTRACTED]
-- [[forward.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/code #graphify/EXTRACTED #community/SCLClient

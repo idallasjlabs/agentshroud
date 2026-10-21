@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Function Details (3)"
+community: "Google Calendar & Contacts - Quick Setup"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_3
+  - community/Google_Calendar__Contacts_-_Quick_Setup
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[save_to_history(score, grade, details, db_path)]] - `contains` [EXTRACTED]
 - [[score_to_grade(score)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_3
+#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup

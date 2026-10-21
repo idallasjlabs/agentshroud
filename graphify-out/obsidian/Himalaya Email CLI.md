@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Common Operations"
+community: "iMessage Integration Fix - Using imsg + imessage-exporter"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
 ---
 
 # Himalaya Email CLI
@@ -18,9 +18,9 @@ tags:
 - [[Debugging_1]] - `contains` [EXTRACTED]
 - [[Multiple Accounts]] - `contains` [EXTRACTED]
 - [[Output Formats]] - `contains` [EXTRACTED]
-- [[Prerequisites_10]] - `contains` [EXTRACTED]
+- [[Prerequisites_11]] - `contains` [EXTRACTED]
 - [[References_4]] - `contains` [EXTRACTED]
 - [[Tips_4]] - `contains` [EXTRACTED]
 - [[himalayaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Operations
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

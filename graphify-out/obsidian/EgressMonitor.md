@@ -12,16 +12,16 @@ tags:
 # EgressMonitor
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_21]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_16]] - `method` [EXTRACTED]
 - [[dot-check_anomalies()]] - `method` [EXTRACTED]
 - [[dot-daily_summary()]] - `method` [EXTRACTED]
-- [[dot-get_events()]] - `method` [EXTRACTED]
-- [[dot-record()]] - `method` [EXTRACTED]
+- [[dot-get_events()_2]] - `method` [EXTRACTED]
+- [[dot-record()_2]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]

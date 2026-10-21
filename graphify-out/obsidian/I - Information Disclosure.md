@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "I - Information Disclosure"
+community: "Resources"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/I_-_Information_Disclosure
+  - community/Resources
 ---
 
 # I - Information Disclosure
@@ -18,4 +18,4 @@ tags:
 - [[Threat PII Leakage in Logs]] - `contains` [EXTRACTED]
 - [[Threat SSRF (Server-Side Request Forgery)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/I_-_Information_Disclosure
+#graphify/document #graphify/EXTRACTED #community/Resources

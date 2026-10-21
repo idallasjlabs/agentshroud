@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Health Checks"
+community: "GSDE&G Development Master Checklist"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Full Health Report (Auth Required)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Health Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "KillSwitchMonitor (2)"
+community: "PortManager"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/PortManager
 ---
 
 # Encrypt and return as base64-encoded string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-encrypt_b64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

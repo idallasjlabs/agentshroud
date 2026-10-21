@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # EgressRequest
 
 ## Connections
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[dot-test_cleanup_expired_requests()]] - `calls` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()_1]] - `calls` [EXTRACTED]
 - [[Represents a pending egress approval request.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

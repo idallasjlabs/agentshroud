@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "test_security_toolchain.py"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Generate a summary dict suitable for the health report.      Args:         alert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_summary()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw) (2)"
-location: "L17"
+community: "MiddlewareManager (4)"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw_2
+  - community/MiddlewareManager_4
 ---
 
 # Gateway Container (`agentshroud-gateway`)
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
-- [[Derived (set at runtime by `config.py`)]] - `contains` [EXTRACTED]
-- [[Optional  Runtime]] - `contains` [EXTRACTED]
-- [[Required]] - `contains` [EXTRACTED]
+- [[Container Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Browser Extension"
+community: "middleware.py"
 location: "gateway/ingest_api/routes/forward.py:326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/middlewarepy
 ---
 
 # ForwardRequest handler (/forward endpoint)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browser-extensionREADME]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser_Extension
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

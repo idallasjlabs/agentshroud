@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "AlertDispatcher (4)"
+community: "test_playback_state.c"
 location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/test_playback_statec
 ---
 
 # Export leakage findings to a report file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-export_leakage_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/rationale #graphify/EXTRACTED #community/test_playback_statec

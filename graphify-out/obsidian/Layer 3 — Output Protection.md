@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
+community: "agentshroud-ieee-paper.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/agentshroud-ieee-papermd
 ---
 
 # Layer 3 — Output Protection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Architecture_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

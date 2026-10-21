@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # IntEnum
@@ -17,6 +17,6 @@ tags:
 - [[Recommendation]] - `inherits` [EXTRACTED]
 - [[Severity]] - `inherits` [EXTRACTED]
 - [[ThreatLevel]] - `inherits` [EXTRACTED]
-- [[TrustLevel_2]] - `inherits` [EXTRACTED]
+- [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

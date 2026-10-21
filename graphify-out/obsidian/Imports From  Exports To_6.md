@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "router.py"
-location: "L75"
+community: "test_gemini_openai_translator.py"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/test_gemini_openai_translatorpy
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

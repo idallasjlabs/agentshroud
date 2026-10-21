@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (MC)"
+community: "Browser — Secure Browser Automation (SKILL) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_MC
+  - community/Browser__Secure_Browser_Automation_SKILL_2
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_51]] - `contains` [EXTRACTED]
-- [[Related Skills_36]] - `contains` [EXTRACTED]
-- [[Usage_40]] - `contains` [EXTRACTED]
+- [[Purpose_47]] - `contains` [EXTRACTED]
+- [[Related Skills_33]] - `contains` [EXTRACTED]
+- [[Usage_36]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mcREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL_2

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/SKILLS_REFERENCE.md"
 type: "concept"
-community: "Red-Green-Refactor TDD loop (playbook)"
+community: "MCPPermissionManager (2) (6)"
 location: "GitHub Workflow Integration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red-Green-Refactor_TDD_loop_playbook
+  - community/MCPPermissionManager_2_6
 ---
 
 # GitHub workflow integration (/gg → /tdd → /pr → /ps)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red-Green-Refactor TDD loop (playbook)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red-Green-Refactor_TDD_loop_playbook
+#graphify/concept #graphify/EXTRACTED #community/MCPPermissionManager_2_6

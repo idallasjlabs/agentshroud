@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "test_hermes_model_resolver.py"
 location: "L216"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/test_hermes_model_resolverpy
 ---
 
 # Internal Alert (Telegram)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Communication Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy

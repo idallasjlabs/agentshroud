@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_15]] - `references` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_26]] - `references` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[dot-sandbox()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_2]] - `calls` [EXTRACTED]
 - [[dot-test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
 - [[dot-test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
 - [[dot-test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
@@ -24,18 +24,18 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -61,11 +61,11 @@ tags:
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNormalFileOperations]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPIIScanning]] - `uses` [INFERRED]
 - [[TestPatternMatching]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestReadAccess]] - `uses` [INFERRED]
 - [[TestResourceGuardFailClosed]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
@@ -74,7 +74,7 @@ tags:
 - [[TestSecurityViolationLogging]] - `uses` [INFERRED]
 - [[TestSensitivePathBlocking]] - `uses` [INFERRED]
 - [[TestStagingPatternDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestSystemPathProtection]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
@@ -93,4 +93,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

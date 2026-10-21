@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "rationale"
-community: "_t"
+community: "Path (3)"
 location: "L373"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_t
+  - community/Path_3
 ---
 
 # Every name in _PROACTIVE_ONLY_LAYERS must be independently proven wired into…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proactive_only_layers_have_real_gateway_implementation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_t
+#graphify/rationale #graphify/EXTRACTED #community/Path_3

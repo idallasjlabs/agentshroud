@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "GSDE&G Skills Reference Guide (2)"
+community: "Unicode Bypass"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide_2
+  - community/Unicode_Bypass
 ---
 
 # GSDE&G Skills Reference Guide
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Unicode_Bypass

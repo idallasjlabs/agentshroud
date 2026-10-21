@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "test_soc_egress_endpoints.py"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/test_soc_egress_endpointspy
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-__init__()_151]] - `method` [EXTRACTED]
 - [[dot-_classify_heuristic()]] - `method` [EXTRACTED]
 - [[dot-_classify_ml()]] - `method` [EXTRACTED]
 - [[dot-_compute_unicode_anomaly()]] - `method` [EXTRACTED]
 - [[dot-_score_signal()]] - `method` [EXTRACTED]
 - [[dot-_try_load_model()]] - `method` [EXTRACTED]
 - [[dot-classify()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_17]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
 - [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[TestClassicOverride]] - `uses` [INFERRED]
 - [[TestContextInjection]] - `uses` [INFERRED]
 - [[TestEncodingBypass]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

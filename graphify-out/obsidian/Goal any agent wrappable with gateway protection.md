@@ -1,18 +1,18 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "concept"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 location: "L86"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Goal: any agent wrappable with gateway protection
 
 ## Connections
-- [[AgentShroud-side CVE remediation arm]] - `conceptually_related_to` [INFERRED]
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
+- [[Two-arm CVE remediation (vendor fix + gateway control)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/concept #graphify/EXTRACTED #community/_wrap_response_2

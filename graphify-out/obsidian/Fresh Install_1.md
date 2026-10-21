@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+community: "Himalaya Configuration Reference"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Fresh Install
@@ -20,4 +20,4 @@ tags:
 - [[6. Verify_1]] - `contains` [EXTRACTED]
 - [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

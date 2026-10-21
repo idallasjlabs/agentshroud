@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "create_auth_dependency (4)"
+community: "AgentShroud Sequence Diagrams"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_4
+  - community/AgentShroud_Sequence_Diagrams
 ---
 
 # Key Initialization Order (main.py lifespan)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_4
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_a2a_policy.py"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_a2a_policypy
 ---
 
 # IsolationVerifier
 
 ## Connections
-- [[dot-__init__()_189]] - `method` [EXTRACTED]
+- [[dot-__init__()_188]] - `method` [EXTRACTED]
 - [[dot-generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
@@ -49,7 +49,7 @@ tags:
 - [[TestEncryptedStore]] - `uses` [INFERRED]
 - [[TestGenerateCompose]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]
@@ -61,4 +61,4 @@ tags:
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

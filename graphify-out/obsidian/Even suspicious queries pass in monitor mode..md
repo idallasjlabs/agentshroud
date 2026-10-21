@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "DNSFilterConfig"
+community: "NetworkSecurityFinding"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/NetworkSecurityFinding
 ---
 
 # Even suspicious queries pass in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_monitor_mode_never_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "concept"
-community: "AWS Cloud Management & FinOps Agent (2)"
+community: ".agents/skills/i-tw/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # GSDL-715 (Merge Regression Ticket)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Audit Branch (Merge Regression Detection)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2
+#graphify/concept #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

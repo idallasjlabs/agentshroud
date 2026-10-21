@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "agentshroud-gateway service (proxy mode)"
 location: "Section 5"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/agentshroud-gateway_service_proxy_mode
 ---
 
 # Governance & risk doctrine (ITIL v4, ISO 20000/9001, NIST CSF)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLM Operating Context — Isaiah Jefferson]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode

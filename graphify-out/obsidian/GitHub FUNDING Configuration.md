@@ -1,13 +1,13 @@
 ---
 source_file: ".github/FUNDING.yml"
 type: "document"
-community: "GitHub FUNDING Configuration"
+community: "AWS Step Functions MCP server"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_FUNDING_Configuration
+  - community/AWS_Step_Functions_MCP_server
 ---
 
 # GitHub FUNDING Configuration
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_FUNDING_Configuration
+#graphify/document #graphify/EXTRACTED #community/AWS_Step_Functions_MCP_server

@@ -1,20 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "router.py"
-location: "L36"
+community: "Publish SecureBrowser to ClawHub - Step-by-Step Guide"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
 ---
 
 # Function Details
 
 ## Connections
-- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
-- [[health_check(target)]] - `contains` [EXTRACTED]
-- [[resolve_target(request)]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "Implementation Status"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Implementation_Status
 ---
 
 # Git Workflow Guardian (GIT-GUARD) README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/INFERRED #community/Implementation_Status

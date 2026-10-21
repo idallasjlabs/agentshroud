@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-128x128.png"
 type: "image"
-community: "Favicon 128x128 (AgentShroud logo mark)"
+community: "AgentShroud Open Graph Preview Image"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Favicon_128x128_AgentShroud_logo_mark
+  - community/AgentShroud_Open_Graph_Preview_Image
 ---
 
 # Favicon 128x128 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Favicon_128x128_AgentShroud_logo_mark
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Open_Graph_Preview_Image

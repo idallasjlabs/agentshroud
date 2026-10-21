@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/requirements.txt"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "Socrates — Dialogue Architect (2) (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Socrates__Dialogue_Architect_2_2
 ---
 
 # Kokoro TTS Engine
@@ -14,4 +14,4 @@ tags:
 - [[Voice Gateway Python Requirements (faster-whisper, kokoro)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2_2

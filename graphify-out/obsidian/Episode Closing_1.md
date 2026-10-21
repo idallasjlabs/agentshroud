@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "WebProxyConfig (2)"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/WebProxyConfig_2
 ---
 
 # Episode Closing
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2

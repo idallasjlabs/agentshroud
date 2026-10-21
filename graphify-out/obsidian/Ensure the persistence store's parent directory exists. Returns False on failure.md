@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager (2)"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager_2
 ---
 
 # Ensure the persistence store's parent directory exists. Returns False on failure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ensure_collab_dir()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

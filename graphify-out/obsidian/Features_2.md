@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 ---
 
 # Features
@@ -15,8 +15,8 @@ tags:
 - [[Action Feed]] - `contains` [EXTRACTED]
 - [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 - [[Data Ledger Viewer]] - `contains` [EXTRACTED]
-- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Kill Switch_1]] - `contains` [EXTRACTED]
 - [[Memory Browser]] - `contains` [EXTRACTED]
 - [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT

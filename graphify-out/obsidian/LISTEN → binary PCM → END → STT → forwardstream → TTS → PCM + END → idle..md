@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L925"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # LISTEN → binary PCM → END → STT → /forward/stream → TTS → PCM + END → idle.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_full_utterance_state_sequence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

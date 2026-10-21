@@ -1,17 +1,17 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "Daedalus — Concept Illustrator (3)"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/Daedalus__Concept_Illustrator_3
 ---
 
 # Key Components Referenced (v1.0.0)
 
 ## Connections
-- [[Summary_26]] - `contains` [EXTRACTED]
+- [[Summary_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_3

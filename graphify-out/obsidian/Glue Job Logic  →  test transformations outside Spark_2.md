@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (3)"
+community: "auth.py"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_3
+  - community/authpy
 ---
 
 # Glue Job Logic  →  test transformations outside Spark
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_3
+#graphify/document #graphify/EXTRACTED #community/authpy

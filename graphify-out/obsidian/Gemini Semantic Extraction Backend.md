@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Gemini Semantic Extraction Backend"
+community: "Diagram 20: Observability Map"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gemini_Semantic_Extraction_Backend
+  - community/Diagram_20_Observability_Map
 ---
 
 # Gemini Semantic Extraction Backend
 
-#graphify/concept #graphify/EXTRACTED #community/Gemini_Semantic_Extraction_Backend
+#graphify/concept #graphify/EXTRACTED #community/Diagram_20_Observability_Map

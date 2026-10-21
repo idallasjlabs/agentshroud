@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # FileSandbox in enforce mode with strict separation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[enforce_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

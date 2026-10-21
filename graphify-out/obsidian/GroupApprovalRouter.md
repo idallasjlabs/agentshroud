@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "test_a2a_proxy.py"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_a2a_proxypy
 ---
 
 # GroupApprovalRouter
 
 ## Connections
-- [[dot-__init__()_45]] - `method` [EXTRACTED]
+- [[dot-__init__()_37]] - `method` [EXTRACTED]
 - [[dot-_build_group_reply_text()]] - `method` [EXTRACTED]
 - [[dot-_build_owner_dm_text()]] - `method` [EXTRACTED]
 - [[dot-_default_send()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_is_group_context_false_for_default()]] - `calls` [EXTRACTED]
 - [[dot-test_is_group_context_true_for_group_agent_id()]] - `calls` [EXTRACTED]
 - [[dot-test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 - [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `uses` [INFERRED]
 - [[TestGroupApprovalOwnerDM]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[router_with_sent()]] - `calls` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

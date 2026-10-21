@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "test_forward_stream.py (2)"
-location: "L176"
+community: "_make_proxy()"
+location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/_make_proxy
 ---
 
 # EmailSendRequest
 
 ## Connections
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `calls` [EXTRACTED]
+- [[dot-body_not_empty()]] - `method` [EXTRACTED]
+- [[dot-subject_not_empty()]] - `method` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - `rationale_for` [EXTRACTED]
+- [[forward.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

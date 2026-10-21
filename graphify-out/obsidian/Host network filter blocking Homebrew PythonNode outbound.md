@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-20-dev.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Host network filter blocking Homebrew Python/Node outbound
@@ -17,4 +17,4 @@ tags:
 - [[discover_upstream_versions.py]] - `conceptually_related_to` [EXTRACTED]
 - [[sync-cve-registry.py]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer

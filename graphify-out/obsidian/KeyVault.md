@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_145]] - `references` [EXTRACTED]
-- [[dot-__init__()_154]] - `references` [EXTRACTED]
-- [[dot-__init__()_155]] - `method` [EXTRACTED]
+- [[dot-__init__()_183]] - `references` [EXTRACTED]
+- [[dot-__init__()_184]] - `references` [EXTRACTED]
+- [[dot-__init__()_185]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-check_value_match()]] - `method` [EXTRACTED]
 - [[dot-delete_key()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_6]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_7]] - `method` [EXTRACTED]
 - [[dot-get_key()_1]] - `method` [EXTRACTED]
 - [[dot-list_keys()]] - `method` [EXTRACTED]
 - [[dot-redact()]] - `method` [EXTRACTED]
@@ -31,10 +31,10 @@ tags:
 - [[Per-agent API key scoping, redaction, leak detection, and rotation]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -52,18 +52,18 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[key_vault.py]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[vault()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill"
-location: "L344"
+community: "SSH Capability Architecture Document"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Error Handling
 
 ## Connections
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

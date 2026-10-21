@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "SECTION 3: DRAWINGS"
+community: "Attack Teardowns: How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_3_DRAWINGS
+  - community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlast_and_Cross-Turn_Coordination_Attacks
 ---
 
 # FIGURE 1 — System Context Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 3 DRAWINGS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_3_DRAWINGS
+#graphify/document #graphify/EXTRACTED #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlast_and_Cross-Turn_Coordination_Attacks

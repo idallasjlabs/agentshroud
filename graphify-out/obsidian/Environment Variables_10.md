@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "dns_filter.py"
-location: "L84"
+community: "AgentShroud Branding Assets Index"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Environment Variables
 
 ## Connections
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

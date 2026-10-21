@@ -1,11 +1,11 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
 type: "document"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "DataExfilVolumeGuard"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/DataExfilVolumeGuard
 ---
 
 # Incident: Conduit/Hermes instability 2026-10-16
@@ -35,4 +35,4 @@ tags:
 - [[lazydocker docker.sock connection leak via Colima ssh forward]] - `references` [EXTRACTED]
 - [[patch_telegram_edit_message_date.py (KeyError 'date' on editMessageText)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/document #graphify/EXTRACTED #community/DataExfilVolumeGuard
