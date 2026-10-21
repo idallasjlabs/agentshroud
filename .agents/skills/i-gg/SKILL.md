@@ -1,4 +1,5 @@
 ---
+name: i-gg
 description: "Enforce GitHub workflow standards: branch naming conventions, branching from latest main, protected-branch rules, and mandatory PR review gates. Use when creating a new branch, setting up repo governance, or auditing branch protection settings. Prevents direct-to-main commits and stale-base merges."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: i-pca
 description: "Run a structured pre-change analysis before any implementation — scope, scalability, blast radius, alternatives. Produces a decision document without writing any code."
 ---
 
@@ -10,6 +11,37 @@ You are a Staff Engineer conducting a change impact assessment.
 Your job is to produce a comprehensive analysis of the proposed change
 BEFORE any implementation begins. You do not write code in this skill.
 You do not modify files.
+
+## Persisted Artifact Mode (opt-in repos only)
+
+Before producing output, check whether `.impact-analysis-required` exists
+at the repo root (`git rev-parse --show-toplevel`).
+
+- If it does **not** exist: behave exactly as described below — chat
+  output only, no files written.
+- If it **does** exist: after presenting the analysis in chat, ALSO write
+  the full analysis to `.impact-analysis/<sanitized-branch>.md`, where
+  `<sanitized-branch>` is `git branch --show-current` with every character
+  outside `[A-Za-z0-9._-]` replaced by `-`. Create the `.impact-analysis/`
+  directory if needed. Overwrite any existing file for this branch.
+
+  In the file (NOT in chat — chat keeps the `###` headings below), use
+  these exact `##`-level headings, in this order, each followed by real
+  content (not placeholder text) — a push-time hook checks this file
+  structurally before `git push` or `gh pr create` is allowed to run:
+  ```
+  ## 1. Scope of Change
+  ## 2. What Changes and Why
+  ## 3. Scalability Gate
+  ## 4. Blast Radius
+  ## 5. Known Limits and Assumptions
+  ## 6. Alternatives Considered
+  ## 7. Open Questions
+  ## 8. Verification Plan
+  ## 9. Current Production Status Reviewed
+  ```
+  Sections 1-8 mirror the "Output Sections" below. Section 9 is new — see
+  its definition after section 8.
 
 ## Output Sections (ALL required)
 
@@ -77,6 +109,17 @@ or production availability.
 Specific, runnable commands or checks a team member can execute to confirm
 the change works correctly after implementation.
 
+### 9. Current Production Status Reviewed
+
+State the current production status you actually checked before writing
+this analysis:
+- If `monitoring/latest.json` is reachable (locally, or via the status
+  board, e.g. `curl http://<host>:8080/latest.json`), fetch it and paste
+  its timestamp plus a 2-3 sentence summary of current fleet health.
+- If it is not reachable from this session, say so explicitly — "Not
+  reachable from this session — status not independently verified." Do
+  not fabricate a status.
+
 ## Output Format Rules
 
 - Use ✅ / ⚠️ / ❌ for scalability and blast radius ratings
@@ -92,3 +135,6 @@ After producing the analysis, end with:
 > Do you want to proceed with this approach, or explore a different option?
 
 Do not begin implementation until you receive explicit confirmation.
+
+If Persisted Artifact Mode was active, state the exact file path written
+(e.g. `.impact-analysis/feat-GSDE-42-athena-partition-pruning.md`).

@@ -1,4 +1,5 @@
 ---
+name: i-ui
 description: "Implement UI components using brand design tokens, CSS architecture patterns, and WCAG AA accessibility standards. Use for frontend component work requiring consistent styling, accessible markup, and design system compliance."
 ---
 

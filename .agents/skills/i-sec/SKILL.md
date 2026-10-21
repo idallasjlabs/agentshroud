@@ -1,4 +1,5 @@
 ---
+name: i-sec
 description: "Audit application, container, network, and data security: threat model verification, OWASP Top 10, IAM least-privilege checks, and automated security scans. Use during development of features touching authentication, authorization, data access, or network boundaries — before PR, not after."
 ---
 
