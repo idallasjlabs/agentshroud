@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (3)"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_3
 ---
 
 # ._test_script_syntax()
 
 ## Connections
 - [[dot-verify_killswitch()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Test if the kill switch script has valid syntax.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

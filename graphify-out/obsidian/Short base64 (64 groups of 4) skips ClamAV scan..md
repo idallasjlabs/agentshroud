@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "test_clamav_pipeline.py"
-location: "L183"
+community: "asyncio"
+location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/asyncio
 ---
 
 # Short base64 (<64 groups of 4) skips ClamAV scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_short_base64_not_scanned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

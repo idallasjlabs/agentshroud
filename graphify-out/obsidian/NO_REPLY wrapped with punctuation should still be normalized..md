@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "TelegramAPIProxy (33)"
 location: "L479"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TelegramAPIProxy_33
 ---
 
 # NO_REPLY wrapped with punctuation should still be normalized.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_plain_no_reply_token_with_punctuation_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_33

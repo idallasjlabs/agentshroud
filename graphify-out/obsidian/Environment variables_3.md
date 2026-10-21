@@ -12,6 +12,6 @@ tags:
 # Environment variables
 
 ## Connections
-- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Configuration_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/llm_proxypy

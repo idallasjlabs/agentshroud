@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L674"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # Union several object schemas into one (see _flatten_fieldflare_schema).…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_merge_object_schemas()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L1116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # test_fieldflare_shim_merges_multi_branch_object_union_into_one_object()
@@ -17,4 +17,4 @@ tags:
 - [[_skill_manage_like_request()]] - `calls` [INFERRED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/INFERRED #community/LLMProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "WebProxy"
+community: "ProxyAction"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/ProxyAction
 ---
 
 # HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

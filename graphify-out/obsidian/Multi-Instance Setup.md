@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Environment Variables_2]] - `contains` [EXTRACTED]
+- [[Environment Variables_1]] - `contains` [EXTRACTED]
 - [[Mac Studio Example]] - `contains` [EXTRACTED]
 - [[Port Auto-Detection]] - `contains` [EXTRACTED]
 - [[Step 5 Configure Ports]] - `contains` [EXTRACTED]

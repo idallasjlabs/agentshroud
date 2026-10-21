@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L215"
+community: "UserSessionManager (4)"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/UserSessionManager_4
 ---
 
 # .submit()
 
 ## Connections
-- [[dot-_notify_telegram()]] - `calls` [EXTRACTED]
-- [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
+- [[dot-_append_audit_event()]] - `calls` [EXTRACTED]
+- [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
-- [[dot-submit_tool_request()_1]] - `calls` [EXTRACTED]
-- [[Add an action to the approval queue with policy-based timeout.]] - `rationale_for` [EXTRACTED]
+- [[Add an action to the approval queue          Args             request Approval]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
 - [[ApprovalRequest_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

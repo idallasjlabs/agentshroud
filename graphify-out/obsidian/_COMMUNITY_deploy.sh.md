@@ -8,7 +8,7 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[PATH_11]] - code - scripts/deploy.sh
+- [[PATH_15]] - code - scripts/deploy.sh
 - [[deploy.sh]] - code - scripts/deploy.sh
 - [[deploy.sh script]] - code - scripts/deploy.sh
 

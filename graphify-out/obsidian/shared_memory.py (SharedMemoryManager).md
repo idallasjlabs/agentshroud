@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "TeamsConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TeamsConfig
 ---
 
 # shared_memory.py (SharedMemoryManager)
@@ -15,4 +15,4 @@ tags:
 - [[test_group_workspace_manager.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

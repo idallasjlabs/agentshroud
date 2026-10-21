@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # TestEncryptedStore
 
 ## Connections
-- [[dot-setup_method()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_7]] - `method` [EXTRACTED]
 - [[dot-test_b64_roundtrip()]] - `method` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `method` [EXTRACTED]
 - [[dot-test_different_encryptions_differ()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (2)"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_2
 ---
 
 # .get_audit_log()
@@ -16,4 +16,4 @@ tags:
 - [[FileOperation]] - `references` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

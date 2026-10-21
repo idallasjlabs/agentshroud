@@ -17,7 +17,7 @@ members: 15
 - [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
 - [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[Success Criteria_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Summary_23]] - document - docs/planning/RELEASE-PLAN.md
+- [[Summary_21]] - document - docs/planning/RELEASE-PLAN.md
 - [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
 - [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md

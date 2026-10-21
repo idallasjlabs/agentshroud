@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L28"
+community: "MiddlewareManager"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_3]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

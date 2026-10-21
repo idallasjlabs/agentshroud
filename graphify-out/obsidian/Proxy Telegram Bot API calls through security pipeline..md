@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
 community: "telegram_api_proxy (/telegram-api/{path})"
-location: "L4603"
+location: "L4590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Proxy Telegram Bot API calls through security pipeline.
 
 ## Connections
-- [[telegram_api_proxy (telegram-api{path})]] - `rationale_for` [EXTRACTED]
+- [[telegram_api_proxy()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

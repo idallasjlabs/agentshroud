@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig (2)"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_security_module_config_defaults()
@@ -16,4 +16,4 @@ tags:
 - [[Test that SecurityModuleConfig defaults to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

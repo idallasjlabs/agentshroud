@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L268"
+community: "test_collaborator_tracker.py"
+location: "L54"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - graphify/EXTRACTED
+  - community/test_collaborator_trackerpy
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[dot-__init__()_106]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

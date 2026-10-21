@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # .test_pending_status_default()
 
 ## Connections
-- [[EgressRequest]] - `calls` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
 - [[TestEgressRequestModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

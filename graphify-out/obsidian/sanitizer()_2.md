@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "PipelineAction"
-location: "L49"
+community: "ApprovalQueueConfig"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

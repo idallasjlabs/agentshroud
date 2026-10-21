@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test that all specified unicode control characters are stripped.]] - `rationale_for` [EXTRACTED]
-- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

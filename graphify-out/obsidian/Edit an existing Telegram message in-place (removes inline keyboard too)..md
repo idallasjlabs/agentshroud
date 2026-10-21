@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (4)"
+community: "TelegramAPIProxy"
 location: "L7199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/TelegramAPIProxy
 ---
 
 # Edit an existing Telegram message in-place (removes inline keyboard too).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_edit_telegram_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

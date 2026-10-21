@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig"
+community: "BotConfig (2)"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/BotConfig_2
 ---
 
 # .test_active_bot_id_falls_back_to_openclaw()
@@ -16,4 +16,4 @@ tags:
 - [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/BotConfig_2

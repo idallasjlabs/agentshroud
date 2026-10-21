@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "ClamAV (2)"
-location: "L43"
+community: "installer.py (2)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/installerpy_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV_2
+#graphify/document #graphify/EXTRACTED #community/installerpy_2

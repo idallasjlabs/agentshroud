@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # .last_forward_time()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

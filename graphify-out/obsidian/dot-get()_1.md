@@ -22,7 +22,7 @@ tags:
 - [[dot-get_risk()]] - `calls` [EXTRACTED]
 - [[dot-get_services()]] - `calls` [EXTRACTED]
 - [[dot-get_users()]] - `calls` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 - [[client_from_env()]] - `calls` [EXTRACTED]
 

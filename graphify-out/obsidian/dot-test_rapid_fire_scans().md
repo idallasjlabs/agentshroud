@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # .test_rapid_fire_scans()
@@ -15,4 +15,4 @@ tags:
 - [[Rapid scanning shouldn't degrade or crash.]] - `rationale_for` [EXTRACTED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-append_owner_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

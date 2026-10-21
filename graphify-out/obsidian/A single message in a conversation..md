@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "UserSessionManager"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager
 ---
 
 # A single message in a conversation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConversationMessage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # Decision log is capped at 500 entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_log_external_decision_cap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

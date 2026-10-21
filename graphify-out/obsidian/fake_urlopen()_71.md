@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
-location: "L672"
+community: "TestInboundPipelineOnGetUpdates"
+location: "L5450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_revoke_command_revokes_target_user()]] - `contains` [EXTRACTED]
+- [[dot-test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

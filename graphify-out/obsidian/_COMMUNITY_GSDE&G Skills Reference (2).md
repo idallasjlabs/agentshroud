@@ -15,7 +15,7 @@ members: 17
 - [[5. Pre-Merge_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 - [[Common Commands Quick Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 - [[Emergency Contacts_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Procedures_2]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures_3]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 - [[GSDE&G Skills Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 - [[GitHub Workflow Integration_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 - [[P1 Incident Response_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
@@ -35,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_GSDE&G Skills Reference]]
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference (2) (2)]]
+- 1 edge to [[_COMMUNITY_Skills by Category (2)]]
 
 ## Top bridge nodes
 - [[GSDE&G Skills Reference_1]] - degree 11, connects to 2 communities

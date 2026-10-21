@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_background.js (2)]]
+- 1 edge to [[_COMMUNITY_options.js]]
 - 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
 

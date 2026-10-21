@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # .close()
@@ -15,4 +15,4 @@ tags:
 - [[Close database connection]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

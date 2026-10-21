@@ -1,17 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
-location: "L5"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

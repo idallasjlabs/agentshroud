@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test approval system interface.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

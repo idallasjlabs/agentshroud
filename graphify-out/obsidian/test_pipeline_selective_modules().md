@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # test_pipeline_selective_modules()
 
 ## Connections
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[Pipeline with only PII enabled, prompt guard disabled.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "colima-health-check.sh (3)"
+community: "sunday-scan.sh"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh_3
+  - community/sunday-scansh
 ---
 
 # sunday_resolve_scan_image()
@@ -16,4 +16,4 @@ tags:
 - [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 - [[warn()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh_3
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

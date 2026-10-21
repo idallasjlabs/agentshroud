@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw) (2)"
+community: "Dockerfile — Bot (OpenClaw)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw_2
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Dockerfile.gateway vault note
@@ -15,4 +15,4 @@ tags:
 - [[OpenSCAP dependency note]] - `references` [EXTRACTED]
 - [[Security Hardening]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

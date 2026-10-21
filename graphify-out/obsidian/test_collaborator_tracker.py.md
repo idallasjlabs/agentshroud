@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_2
 ---
 
 # test_collaborator_tracker.py
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `imports` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[log_file()]] - `contains` [EXTRACTED]
 - [[test_collaborator_entry_has_is_owner_false()]] - `contains` [EXTRACTED]
@@ -53,4 +53,4 @@ tags:
 - [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - `contains` [EXTRACTED]
 - [[tracker()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

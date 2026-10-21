@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ServiceManager"
-location: "L45"
+community: "Git Workflow Guardian (GIT-GUARD)"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager (3)"
+community: "UserSessionManager"
 location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/UserSessionManager
 ---
 
 # .test_legacy_session_promoted_on_load()
@@ -16,4 +16,4 @@ tags:
 - [[TestMultiBotIsolation]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

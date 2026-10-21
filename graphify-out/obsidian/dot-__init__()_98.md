@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L73"
+community: "DataExfilVolumeGuard"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/DataExfilVolumeGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
-- [[InfoCategory]] - `calls` [EXTRACTED]
-- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

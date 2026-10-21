@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
-location: "L289"
+community: "SecurityPipeline"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/SecurityPipeline
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
-- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-__init__()_146]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

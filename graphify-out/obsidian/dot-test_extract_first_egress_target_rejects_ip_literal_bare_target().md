@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py (2) (2)"
+community: "test_collaborator_tracker.py (3)"
 location: "L3888"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2_2
+  - community/test_collaborator_trackerpy_3
 ---
 
 # .test_extract_first_egress_target_rejects_ip_literal_bare_target()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressTargetExtraction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_2
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

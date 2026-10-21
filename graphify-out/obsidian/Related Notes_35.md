@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "`SecurityPipeline`"
-location: "L106"
+community: "Layer-by-Layer Breakdown"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Related Notes
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

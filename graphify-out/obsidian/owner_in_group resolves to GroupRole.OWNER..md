@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "RBACConfig (2) (3)"
+community: "GroupRoleResolver"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2_3
+  - community/GroupRoleResolver
 ---
 
 # owner_in_group resolves to GroupRole.OWNER.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_resolves_to_owner_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2_3
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (5)"
+community: "hermes/skills/i-bs/README.md (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_5
+  - community/hermes/skills/i-bs/READMEmd_2
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_5
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_2

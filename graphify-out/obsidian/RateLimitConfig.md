@@ -12,11 +12,9 @@ tags:
 # RateLimitConfig
 
 ## Connections
-- [[dot-__init__()_87]] - `references` [EXTRACTED]
+- [[dot-__init__()_99]] - `references` [EXTRACTED]
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
 - [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]
 - [[test_burst_detection_blocks()]] - `calls` [EXTRACTED]

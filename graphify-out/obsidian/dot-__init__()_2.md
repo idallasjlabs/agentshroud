@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "_HeadFakeResponse"
-location: "L797"
+community: "WebProxyConfig"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_HeadFakeResponse
+  - community/WebProxyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeResponse]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_HeadFakeResponse
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

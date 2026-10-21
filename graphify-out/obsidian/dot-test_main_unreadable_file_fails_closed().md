@@ -12,7 +12,7 @@ tags:
 # .test_main_unreadable_file_fails_closed()
 
 ## Connections
-- [[Path_23]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 

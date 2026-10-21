@@ -12,6 +12,6 @@ tags:
 # TrustManager._update_score(agent_id, delta, event_type, details)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TrustManager

@@ -12,6 +12,6 @@ tags:
 # Emergency Contacts
 
 ## Connections
-- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2

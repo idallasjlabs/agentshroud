@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Check if a domain is on the allowlist (used when mode == 'allowlist').]] - `rationale_for` [EXTRACTED]
-- [[WebProxyConfig_1]] - `method` [EXTRACTED]
+- [[WebProxyConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

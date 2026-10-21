@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
-- [[Authentication_1]] - `contains` [EXTRACTED]
+- [[Authentication]] - `contains` [EXTRACTED]
 - [[Error responses]] - `contains` [EXTRACTED]
 - [[Example `GET managehealth`]] - `contains` [EXTRACTED]
 - [[Example `POST manageegress{request_id}approve`]] - `contains` [EXTRACTED]

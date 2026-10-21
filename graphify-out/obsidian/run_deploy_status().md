@@ -12,7 +12,7 @@ tags:
 # run_deploy_status()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-get()_4]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]

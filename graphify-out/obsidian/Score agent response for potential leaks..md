@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MultiTurnTracker"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MultiTurnTracker
 ---
 
 # Score agent response for potential leaks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_score_response_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

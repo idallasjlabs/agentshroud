@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L290"
+community: "TestPromptProtection"
+location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TestPromptProtection
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and malformed inputs.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[Test edge cases and error conditions._2]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

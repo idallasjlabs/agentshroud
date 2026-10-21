@@ -9,8 +9,8 @@ members: 19
 
 ## Members
 - [[Cosign signature verification of container images (fail-closed on missing binarytimeoutbad signature)]] - rationale - gateway/tests/test_image_verifier.py
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly._1]] - rationale - gateway/tests/test_image_verifier.py
-- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-_1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_image_verifier.py
 - [[Verify an image signature using cosign keyless OIDC verification.      Args]] - rationale - gateway/security/image_verifier.py
 - [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - rationale - gateway/security/image_verifier.py
 - [[_instant_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
@@ -37,9 +37,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 2 edges to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
-- [[verify_images()]] - degree 7, connects to 1 community
 - [[test_cosign_fails_bad_signature()]] - degree 3, connects to 1 community
 - [[test_cosign_success()]] - degree 3, connects to 1 community
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - degree 2, connects to 1 community
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - degree 2, connects to 1 community

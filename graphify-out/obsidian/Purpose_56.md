@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Production Safety Checklist (PROD-SAFETY)"
+community: "Project Management (PM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_PROD-SAFETY
+  - community/Project_Management_PM
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

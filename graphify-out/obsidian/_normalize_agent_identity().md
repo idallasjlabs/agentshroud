@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy) (2)"
-location: "L677"
+community: "test_prompt_guard.py (2)"
+location: "L678"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy_2
+  - community/test_prompt_guardpy_2
 ---
 
 # _normalize_agent_identity()
@@ -16,4 +16,4 @@ tags:
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy_2
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy_2

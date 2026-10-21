@@ -12,7 +12,7 @@ tags:
 # run_approvals_decide()
 
 ## Connections
-- [[dot-post()_1]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Change the root log level at runtime without restart (CC-44).]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[SetLogLevelRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

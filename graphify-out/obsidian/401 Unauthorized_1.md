@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services (2)"
 location: "L144"
@@ -12,6 +12,6 @@ tags:
 # "401 Unauthorized"
 
 ## Connections
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services_2

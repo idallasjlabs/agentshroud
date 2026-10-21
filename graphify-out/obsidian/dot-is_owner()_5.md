@@ -12,6 +12,6 @@ tags:
 # .is_owner()
 
 ## Connections
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[SCLCaller_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

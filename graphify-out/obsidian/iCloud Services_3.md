@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Calendar Operations_3]] - `contains` [EXTRACTED]
-- [[Configuration_5]] - `contains` [EXTRACTED]
+- [[Configuration_6]] - `contains` [EXTRACTED]
 - [[Contact Operations_3]] - `contains` [EXTRACTED]
 - [[Mail Operations_3]] - `contains` [EXTRACTED]
 - [[Notes Operations_3]] - `contains` [EXTRACTED]
 - [[Security_11]] - `contains` [EXTRACTED]
 - [[Setup_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_22]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
 - [[icloudSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services_4

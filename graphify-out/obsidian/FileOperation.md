@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (2)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_2
 ---
 
 # FileOperation
@@ -17,4 +17,4 @@ tags:
 - [[dot-get_security_violations()]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

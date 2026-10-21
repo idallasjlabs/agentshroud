@@ -38,6 +38,6 @@ tags:
 - [[_no_owner_mirror()]] - `contains` [EXTRACTED]
 - [[_no_real_telegram_network()]] - `contains` [EXTRACTED]
 - [[_wrap_response()]] - `contains` [EXTRACTED]
-- [[asyncio]] - `imports` [EXTRACTED]
+- [[asyncio_3]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

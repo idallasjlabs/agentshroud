@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "http_proxy.py"
-location: "L15"
+community: "TrustManager"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/TrustManager
 ---
 
 # Responsibilities
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/TrustManager

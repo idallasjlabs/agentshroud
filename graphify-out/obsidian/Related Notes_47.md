@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
-location: "L42"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[All Dependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

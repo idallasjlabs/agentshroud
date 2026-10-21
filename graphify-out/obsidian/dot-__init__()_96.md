@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "AsyncMock (2)"
-location: "L78"
+community: "ApprovalQueueConfig"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

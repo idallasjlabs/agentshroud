@@ -1,11 +1,11 @@
 ---
 type: community
-members: 62
+members: 68
 ---
 
 # _make_proxy
 
-**Members:** 62 nodes
+**Members:** 68 nodes
 
 ## Members
 - [[dot-test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
@@ -19,6 +19,11 @@ members: 62
 - [[dot-test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
@@ -58,7 +63,8 @@ members: 62
 - [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
 - [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
 - [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
-- [[_make_proxy()_1]] - code - gateway/tests/test_slack_proxy.py
+- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy.py
 - [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
 - [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
 - [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
@@ -81,12 +87,12 @@ SORT file.name ASC
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_AsyncMock]]
 - 7 edges to [[_COMMUNITY_AsyncMock (2)]]
-- 5 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 6 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
 - 2 edges to [[_COMMUNITY_TestHandleEvent]]
 
 ## Top bridge nodes
 - [[test_slack_proxy.py]] - degree 10, connects to 3 communities
-- [[_make_proxy()_1]] - degree 36, connects to 2 communities
+- [[_make_proxy()_3]] - degree 36, connects to 2 communities
 - [[TestOwnerChannelFiltering]] - degree 14, connects to 2 communities
 - [[TestProxyOutbound]] - degree 12, connects to 2 communities
 - [[TestMultiFieldOutboundScanning]] - degree 10, connects to 2 communities

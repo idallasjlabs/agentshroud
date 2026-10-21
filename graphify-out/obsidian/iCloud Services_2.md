@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services (3)"
 location: "L6"
@@ -12,16 +12,15 @@ tags:
 # iCloud Services
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 - [[Calendar Operations_2]] - `contains` [EXTRACTED]
-- [[Configuration_20]] - `contains` [EXTRACTED]
+- [[Configuration_5]] - `contains` [EXTRACTED]
 - [[Contact Operations_2]] - `contains` [EXTRACTED]
-- [[Key Configuration]] - `contains` [EXTRACTED]
 - [[Mail Operations_2]] - `contains` [EXTRACTED]
 - [[Notes Operations_2]] - `contains` [EXTRACTED]
 - [[Security_10]] - `contains` [EXTRACTED]
 - [[Setup_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_21]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services_3

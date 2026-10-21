@@ -2,16 +2,23 @@
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
 community: "web_proxy.py"
-location: "L1"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/web_proxypy
 ---
 
-# web_proxy.py.md
+# web_proxy.py
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_25]] - `contains` [EXTRACTED]
+- [[Function Details_45]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_47]] - `contains` [EXTRACTED]
+- [[Purpose_175]] - `contains` [EXTRACTED]
+- [[Related_51]] - `contains` [EXTRACTED]
+- [[Responsibilities_49]] - `contains` [EXTRACTED]
+- [[Security Check Order (check_request)]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_proxypy

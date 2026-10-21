@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Action_1]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_28]] - `imports` [EXTRACTED]
-- [[SCLCaller_1]] - `contains` [EXTRACTED]
+- [[Role_23]] - `imports` [EXTRACTED]
+- [[SCLCaller_2]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `contains` [EXTRACTED]
 - [[_get_rbac_manager()]] - `contains` [EXTRACTED]
 - [[_resolve_caller()]] - `contains` [EXTRACTED]

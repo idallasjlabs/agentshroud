@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MiddlewareManager (5)"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # Clean up abandoned user directories based on max age.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-cleanup_abandoned_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh"
-location: "L374"
+community: "setup-secrets.sh (2)"
+location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # _reset_device_store()
@@ -18,4 +18,4 @@ tags:
 - [[asb rebuild fullhermes]] - `calls` [EXTRACTED]
 - [[asb script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

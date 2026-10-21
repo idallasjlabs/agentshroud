@@ -1,17 +1,21 @@
 ---
-source_file: "README.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Quickstart"
-location: "L264"
+community: "AgentShroud Incident Response Plan"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Quickstart_1]] - `contains` [EXTRACTED]
+- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[Network Requirements]] - `contains` [EXTRACTED]
+- [[Software Dependencies]] - `contains` [EXTRACTED]
+- [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

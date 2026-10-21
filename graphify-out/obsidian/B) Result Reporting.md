@@ -12,6 +12,6 @@ tags:
 # B) Result Reporting
 
 ## Connections
-- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
+- [[Your Responsibilities]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

@@ -63,6 +63,20 @@ def _adv(
     }
 
 
+# A minimal registry file in the real file's layout: per-agent lists plus the
+# _AGENT_CVE_REGISTRIES dict the sync script resolves list names from.
+_FAKE_REGISTRY = (
+    "X = [\n]\n\n# ── Hermes Agent CVE Registry\nY = [\n]\n\n"
+    '_AGENT_CVE_REGISTRIES = {"openclaw": X, "hermes": Y}\n'
+)
+
+
+def _exec_registry(src: str) -> dict:
+    ns: dict = {}
+    exec(compile(src, "<registry>", "exec"), ns)  # noqa: S102 — trusted, test-only
+    return ns
+
+
 # ── process_ghsa_advisories ───────────────────────────────────────────────────
 
 
@@ -156,6 +170,23 @@ class TestSerialization:
         assert parsed["defense_layers"] == []
         assert parsed["cvss"] == 7.5
 
+    @pytest.mark.parametrize(
+        "text, quote",
+        [
+            ("plain text", '"'),
+            ('a "remote" policy', "'"),  # more " than ': black uses single quotes
+            ("policy file's path", '"'),
+            ('it\'s "x" and "y"', "'"),
+            ("line\r\nbreak\tand \\ backslash — ünïcode", '"'),
+        ],
+    )
+    def test_string_literals_match_black_quote_preference(self, text, quote):
+        """CI runs black on gateway/; an appended registry block must already be clean."""
+        mod = _sync()
+        lit = mod._py_str(text)
+        assert lit[0] == quote and lit[-1] == quote
+        assert eval(lit) == text  # noqa: S307 — trusted, test-only
+
     def test_entry_to_py_handles_none_cvss(self):
         mod = _sync()
         out = mod.process_ghsa_advisories([_adv(cvss_score=None)], [], "ASH-OCLAW")
@@ -163,41 +194,309 @@ class TestSerialization:
         parsed = eval(src.strip().rstrip(","))  # noqa: S307
         assert parsed["cvss"] is None
 
-    def test_append_targets_correct_agent_marker(self, tmp_path, monkeypatch):
+    def test_append_targets_correct_agent_list(self, tmp_path, monkeypatch):
         mod = _sync()
-        fake_registry = tmp_path / "agent_cve_registry.py"
-        fake_registry.write_text(
-            "X = [\n]\n\n# ── Hermes Agent CVE Registry\nY = [\n"
-            "]\n\n# ── Multi-agent registry lookup\n"
-        )
         monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
-        # Point the append at our fake file layout.
         (tmp_path / "gateway" / "security").mkdir(parents=True)
-        (tmp_path / "gateway" / "security" / "agent_cve_registry.py").write_text(
-            fake_registry.read_text()
-        )
+        target = tmp_path / "gateway" / "security" / "agent_cve_registry.py"
+        target.write_text(_FAKE_REGISTRY)
         out = mod.process_ghsa_advisories([_adv()], [], "ASH-OCLAW")
         n = mod.append_ghsa_entries(out, "openclaw", dry_run=False)
         assert n == 1
-        written = (tmp_path / "gateway" / "security" / "agent_cve_registry.py").read_text()
-        # The new entry lands before the OpenClaw list marker, not the Hermes one.
-        oc_idx = written.index("# ── Hermes Agent CVE Registry")
-        assert "under_review" in written[:oc_idx]
+        ns = _exec_registry(target.read_text())
+        # The new entry lands in the OpenClaw list only, never the Hermes one.
+        assert [e["ghsa_id"] for e in ns["X"]] == ["GHSA-aaaa-bbbb-cccc"]
+        assert ns["Y"] == []
 
     def test_dry_run_writes_nothing(self, tmp_path, monkeypatch):
         mod = _sync()
         monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
         (tmp_path / "gateway" / "security").mkdir(parents=True)
         target = tmp_path / "gateway" / "security" / "agent_cve_registry.py"
-        original = (
-            "X = [\n]\n\n# ── Hermes Agent CVE Registry\nY = [\n"
-            "]\n\n# ── Multi-agent registry lookup\n"
-        )
+        original = _FAKE_REGISTRY
         target.write_text(original)
         out = mod.process_ghsa_advisories([_adv()], [], "ASH-OCLAW")
         n = mod.append_ghsa_entries(out, "openclaw", dry_run=True)
         assert n == 1
         assert target.read_text() == original  # unchanged
+
+
+# ── list locator (syntax-tree based, survives reformatting) ───────────────────
+#
+# The previous implementation found each list's end by literal text such as
+# "]\n\n# ── Falco CVE Registry". A formatter wrapped the tool lists in
+# parentheses and the markers stopped matching; the script printed ERROR,
+# returned 0 and exited 0 for every run. These tests pin the replacement.
+
+
+_ONE = '    {"id": "A-1", "ghsa_id": "GHSA-0000-0000-0001"},\n'
+
+
+class TestListLocator:
+    @pytest.mark.parametrize(
+        "src",
+        [
+            # plain list
+            "R: list = [\n" + _ONE + "]\n",
+            # formatter-wrapped list, as the tool registries are today
+            "R: list = (\n    [\n    " + _ONE + "    ]\n)\n",
+            # concatenated batches: insert into the last literal
+            "R = [\n" + _ONE + '] + [\n    {"id": "A-2"},\n]\n',
+            # empty inline list (OpenSCAP / ClamAV / Semgrep)
+            "R: list = []\n",
+            # inline list whose last element has no trailing comma
+            'R = [{"id": "A-1"}]\n',
+        ],
+        ids=["plain", "parenthesised", "concatenated", "empty", "inline-no-comma"],
+    )
+    def test_insert_adds_exactly_n_entries_and_still_parses(self, src):
+        mod = _sync()
+        before = len(_exec_registry(src)["R"])
+        entries = [
+            {"id": "N-1", "ghsa_id": "GHSA-1111-1111-1111"},
+            {"id": "N-2", "ghsa_id": "GHSA-2222-2222-2222"},
+        ]
+        new = mod._insert_into_list(
+            src, "R", lambda indent: "\n".join(f"{' ' * indent}{e!r}," for e in entries)
+        )
+        after = _exec_registry(new)["R"]
+        assert len(after) == before + 2
+        assert after[-1]["id"] == "N-2"
+        assert mod._count_list_entries(new, "R") == before + 2
+
+    def test_missing_variable_raises(self):
+        mod = _sync()
+        with pytest.raises(mod.RegistryLayoutError):
+            mod._insert_into_list("Q = []\n", "R", lambda indent: "")
+
+    def test_non_list_value_raises(self):
+        mod = _sync()
+        with pytest.raises(mod.RegistryLayoutError):
+            mod._insert_into_list("R = make()\n", "R", lambda indent: "")
+
+    def test_agent_var_resolved_from_registry_dict(self):
+        mod = _sync()
+        assert mod._registry_var_for(_FAKE_REGISTRY, "hermes") == "Y"
+        with pytest.raises(mod.RegistryLayoutError):
+            mod._registry_var_for(_FAKE_REGISTRY, "nosuchagent")
+
+
+class TestLiveRegistryLayout:
+    """Runs against the REAL gateway/security/agent_cve_registry.py.
+
+    Every registered agent's list must be locatable, and an append into a copy
+    of the real file must add exactly N entries and still import. This is the
+    check that would have caught 200 silent "marker not found" runs.
+    """
+
+    def test_every_agent_list_accepts_an_append(self):
+        mod = _sync()
+        from gateway.security.agent_cve_registry import _AGENT_CVE_REGISTRIES
+
+        live = (REPO_ROOT / "gateway" / "security" / "agent_cve_registry.py").read_text()
+        for agent_id, entries in _AGENT_CVE_REGISTRIES.items():
+            var = mod._registry_var_for(live, agent_id)
+            assert mod._count_list_entries(live, var) == len(entries), agent_id
+            adv = _adv(ghsa_id=f"GHSA-test-{agent_id[:4]:x<4}-live")
+            new_entries = mod.process_ghsa_advisories([adv], [], "ASH-TEST")
+            new = mod._insert_into_list(
+                live,
+                var,
+                lambda indent: "\n".join(mod._ghsa_entry_to_py(e, indent) for e in new_entries),
+            )
+            assert mod._count_list_entries(new, var) == len(entries) + 1, agent_id
+            compile(new, "agent_cve_registry.py", "exec")
+
+
+class TestNvdAppend:
+    """The NVD source appends to the OpenClaw / Hermes lists through the same locator."""
+
+    def _nvd_entry(self, cid="CVE-2026-0001"):
+        return {
+            "id": cid,
+            "title": "t",
+            "cvss": 7.5,
+            "severity": "HIGH",
+            "disclosed": "2026-10-01",
+            "fixed_in": "1.2.3",
+            "description": "d",
+            "status": "under_review",
+            "mitigation": "",
+            "defense_layers": [],
+        }
+
+    @pytest.fixture
+    def registry(self, tmp_path, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
+        (tmp_path / "gateway" / "security").mkdir(parents=True)
+        target = tmp_path / "gateway" / "security" / "agent_cve_registry.py"
+        target.write_text(
+            "_OPENCLAW_CVE_REGISTRY = [\n]\n_HERMES_CVE_REGISTRY: list = (\n    [\n    ]\n)\n"
+        )
+        return target
+
+    def test_openclaw_and_hermes_lists_each_get_their_own_entry(self, registry):
+        mod = _sync()
+        assert mod.append_to_registry([self._nvd_entry("CVE-A")], False, "2026.10.4") == 1
+        assert mod.append_to_hermes_registry([self._nvd_entry("CVE-H")], False, "v0.22") == 1
+        ns = _exec_registry(registry.read_text())
+        assert [e["id"] for e in ns["_OPENCLAW_CVE_REGISTRY"]] == ["CVE-A"]
+        assert [e["id"] for e in ns["_HERMES_CVE_REGISTRY"]] == ["CVE-H"]
+
+    def test_dry_run_reports_count_and_writes_nothing(self, registry):
+        mod = _sync()
+        before = registry.read_text()
+        assert mod.append_to_registry([self._nvd_entry()], True, "2026.10.4") == 1
+        assert registry.read_text() == before
+
+    def test_empty_input_is_a_no_op(self, registry):
+        mod = _sync()
+        assert mod.append_to_hermes_registry([], False, "v0.22") == 0
+
+
+class TestNvdReportOnly:
+    """The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_id/cve_id).
+
+    2026-10-21 auto-PR #524 wrote 724 such entries and broke
+    test_agent_cve_registry.py on main. Until it emits the ASH-ref schema it
+    must report its backlog and write nothing.
+    """
+
+    def _run(self, monkeypatch, capsys, oc_ids, hermes_ids):
+        import argparse
+
+        mod = _sync()
+        feeds = {mod.NVD_KEYWORD: oc_ids, mod.NVD_KEYWORD_HERMES: hermes_ids}
+        monkeypatch.setattr(
+            mod, "fetch_nvd_cves", lambda kw: [{"cve": {"id": i}} for i in feeds[kw]]
+        )
+
+        def _no_write(*a, **k):
+            raise AssertionError("NVD path must not write the registry")
+
+        monkeypatch.setattr(mod, "append_to_registry", _no_write)
+        monkeypatch.setattr(mod, "append_to_hermes_registry", _no_write)
+        monkeypatch.setattr(mod, "_insert_into_list", _no_write)
+        args = argparse.Namespace(dry_run=False, openclaw_version="2026.10.4", hermes_version="v0")
+        mod._run_nvd_sync(args)
+        return mod, capsys.readouterr().out
+
+    def test_never_writes_and_says_so(self, monkeypatch, capsys):
+        _, out = self._run(monkeypatch, capsys, ["CVE-2099-0001"], ["CVE-2099-0002"])
+        assert "NOT written" in out
+
+    def test_known_cves_matched_by_cve_id_not_id(self, monkeypatch, capsys):
+        mod = _sync()
+        known = next(e["cve_id"] for e in mod.AGENT_CVE_REGISTRY if e.get("cve_id"))
+        _, out = self._run(monkeypatch, capsys, [known, "CVE-2099-0001"], [])
+        assert "OpenClaw: 1 NVD CVE(s) not in the registry" in out
+
+    @staticmethod
+    def _page(total, n):
+        import io
+        import json
+
+        body = {"totalResults": total, "vulnerabilities": [{"cve": {"id": i}} for i in range(n)]}
+        return io.BytesIO(json.dumps(body).encode("utf-8"))
+
+    def test_transient_read_timeout_is_retried(self, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod.time, "sleep", lambda s: None)
+        calls = {"n": 0}
+
+        def _fake_urlopen(req, timeout=30):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise TimeoutError("The read operation timed out")
+            return self._page(2, 2)
+
+        monkeypatch.setattr(mod.urllib.request, "urlopen", _fake_urlopen)
+        assert len(mod.fetch_nvd_cves("x")) == 2
+        assert calls["n"] == 2
+
+    def test_persistent_failure_exits_non_zero(self, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod.time, "sleep", lambda s: None)
+        calls = {"n": 0}
+
+        def _fake_urlopen(req, timeout=30):
+            calls["n"] += 1
+            raise TimeoutError("The read operation timed out")
+
+        monkeypatch.setattr(mod.urllib.request, "urlopen", _fake_urlopen)
+        with pytest.raises(SystemExit) as exc:
+            mod.fetch_nvd_cves("x")
+        assert exc.value.code != 0
+        assert calls["n"] == mod.NVD_FETCH_ATTEMPTS
+
+
+class TestFailsLoudly:
+    def test_edit_that_does_not_add_n_entries_is_rejected(self, tmp_path, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
+        (tmp_path / "gateway" / "security").mkdir(parents=True)
+        target = tmp_path / "gateway" / "security" / "agent_cve_registry.py"
+        target.write_text("R = [\n]\n")
+        # An insertion that silently produces nothing must not count as success.
+        monkeypatch.setattr(mod, "_insert_into_list", lambda content, var, render: content)
+        with pytest.raises(mod.RegistryLayoutError):
+            mod._append_verified("R", lambda indent: "", 1, dry_run=False)
+        assert target.read_text() == "R = [\n]\n"
+
+    def test_nvd_layout_failure_exits_nonzero(self, monkeypatch):
+        mod = _sync()
+
+        def _boom(args):
+            raise mod.RegistryLayoutError("list not found")
+
+        monkeypatch.setattr(mod, "_run_nvd_sync", _boom)
+        monkeypatch.setattr(sys, "argv", ["sync-cve-registry.py", "--source", "nvd"])
+        with pytest.raises(SystemExit) as exc:
+            mod.main()
+        assert exc.value.code == 2
+
+    def test_append_on_unlocatable_list_exits_nonzero(self, tmp_path, monkeypatch):
+        mod = _sync()
+        monkeypatch.setattr(mod, "REPO_ROOT", tmp_path)
+        (tmp_path / "gateway" / "security").mkdir(parents=True)
+        target = tmp_path / "gateway" / "security" / "agent_cve_registry.py"
+        # _AGENT_CVE_REGISTRIES names a list that does not exist.
+        target.write_text('_AGENT_CVE_REGISTRIES = {"openclaw": MISSING}\n')
+        out = mod.process_ghsa_advisories([_adv()], [], "ASH-OCLAW")
+        with pytest.raises(mod.RegistryLayoutError):
+            mod.append_ghsa_entries(out, "openclaw", dry_run=False)
+
+    def test_main_exits_nonzero_when_an_agent_fails(self, monkeypatch):
+        mod = _sync()
+
+        def _boom(*a, **k):
+            raise mod.RegistryLayoutError("list not found")
+
+        monkeypatch.setattr(mod, "sync_agent_ghsa", _boom)
+        monkeypatch.setattr(
+            "gateway.security.agent_cve_registry.list_cve_agents", lambda: ["openclaw"]
+        )
+        monkeypatch.setattr(sys, "argv", ["sync-cve-registry.py", "--source", "ghsa"])
+        with pytest.raises(SystemExit) as exc:
+            mod.main()
+        assert exc.value.code == 2
+
+    def test_feed_fetch_failure_is_not_reported_as_zero_new(self, monkeypatch):
+        """An unreachable feed must fail the run, not print '0 new' and exit 0."""
+        mod = _sync()
+
+        def _timeout(*a, **k):
+            raise mod.urllib.error.URLError("timed out")
+
+        monkeypatch.setattr(mod, "fetch_ghsa_advisories", _timeout)
+        monkeypatch.setattr(
+            "gateway.security.agent_cve_registry.list_cve_agents", lambda: ["wazuh"]
+        )
+        monkeypatch.setattr(sys, "argv", ["sync-cve-registry.py", "--source", "ghsa"])
+        with pytest.raises(SystemExit) as exc:
+            mod.main()
+        assert exc.value.code == 2
 
 
 # ── fetch (HTTP mocked) ───────────────────────────────────────────────────────
@@ -241,6 +540,62 @@ class TestFetch:
         ghsa_ids = {a["ghsa_id"] for a in out}
         assert ghsa_ids == {"GHSA-p1p1-p1p1-p1p1", "GHSA-p2p2-p2p2-p2p2"}
         assert calls["i"] == 2  # followed the cursor once
+
+    @staticmethod
+    def _json_resp(body):
+        import io
+        import json
+
+        class _Resp(io.BytesIO):
+            headers = {"Link": ""}
+
+        return _Resp(json.dumps(body).encode("utf-8"))
+
+    def test_token_refused_retries_public_endpoint_without_token(self):
+        """aquasecurity/trivy 403s the Actions token but serves the public feed."""
+        import urllib.error
+
+        mod = _sync()
+        sent_auth = []
+
+        def _fake_urlopen(req, timeout=30):
+            auth = req.get_header("Authorization")
+            sent_auth.append(auth)
+            if auth:
+                raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", {}, None)
+            return self._json_resp([_adv(ghsa_id="GHSA-t1t1-t1t1-t1t1")])
+
+        with patch.object(mod.urllib.request, "urlopen", _fake_urlopen):
+            out = mod.fetch_ghsa_advisories("aquasecurity/trivy", github_token="tok")
+        assert [a["ghsa_id"] for a in out] == ["GHSA-t1t1-t1t1-t1t1"]
+        assert sent_auth == ["Bearer tok", None]
+
+    def test_403_without_token_still_raises(self):
+        import urllib.error
+
+        mod = _sync()
+
+        def _fake_urlopen(req, timeout=30):
+            raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", {}, None)
+
+        with patch.object(mod.urllib.request, "urlopen", _fake_urlopen):
+            with pytest.raises(urllib.error.HTTPError):
+                mod.fetch_ghsa_advisories("aquasecurity/trivy")
+
+    def test_other_http_errors_are_not_retried(self):
+        import urllib.error
+
+        mod = _sync()
+        calls = []
+
+        def _fake_urlopen(req, timeout=30):
+            calls.append(req.get_header("Authorization"))
+            raise urllib.error.HTTPError(req.full_url, 500, "Server Error", {}, None)
+
+        with patch.object(mod.urllib.request, "urlopen", _fake_urlopen):
+            with pytest.raises(urllib.error.HTTPError):
+                mod.fetch_ghsa_advisories("aquasecurity/trivy", github_token="tok")
+        assert calls == ["Bearer tok"]
 
 
 # ── per-agent isolation ───────────────────────────────────────────────────────

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # Verify modules can instantiate and operate in enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModuleInstantiationInEnforceMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "test_collaborator_greeter.py (2)"
 location: "L881"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/test_collaborator_greeterpy_2
 ---
 
 # aggregate_results()
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_timestamp_present()_1]] - `calls` [EXTRACTED]
 - [[dot-test_totals_sum_across_scanners()]] - `calls` [EXTRACTED]
 - [[Aggregate results from all security scanners into a unified dict.      Returns]] - `rationale_for` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_47]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

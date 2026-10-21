@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "TelegramAPIProxy"
 location: "L848"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/TelegramAPIProxy
 ---
 
 # ._queue_collaborator_access_request()
@@ -17,6 +17,6 @@ tags:
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_with_keyboard()]] - `calls` [EXTRACTED]
 - [[Queue owner approval request for unknownrevoked users.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

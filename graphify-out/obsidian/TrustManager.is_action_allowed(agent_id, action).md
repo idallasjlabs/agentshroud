@@ -12,6 +12,6 @@ tags:
 # TrustManager.is_action_allowed(agent_id, action)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TrustManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_pipeline_receives_trust_level"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_pipeline_receives_trust_level
 ---
 
 # Proxy should pass owner/non-owner trust level into outbound pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pipeline_receives_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_pipeline_receives_trust_level

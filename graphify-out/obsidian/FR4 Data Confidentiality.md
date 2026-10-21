@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "TestOutboundInfoFilter"
+community: "KillSwitchMonitor (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/KillSwitchMonitor_2
 ---
 
 # FR4: Data Confidentiality
@@ -16,8 +16,8 @@ tags:
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 - [[encrypted_store.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[key_vault.py_2]] - `references` [EXTRACTED]
+- [[key_vault.py]] - `references` [EXTRACTED]
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/concept #graphify/EXTRACTED #community/KillSwitchMonitor_2

@@ -1,40 +1,19 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Path (2)"
-location: "L76"
+community: "_FakeRBAC"
+location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Path_2
+  - community/_FakeRBAC
 ---
 
 # Severity
 
 ## Connections
-- [[dot-severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_3]] - `uses` [INFERRED]
-- [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_23]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[TestAggregation]] - `uses` [INFERRED]
-- [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient]] - `uses` [INFERRED]
-- [[TestExecOfDownload]] - `uses` [INFERRED]
-- [[TestExfiltration]] - `uses` [INFERRED]
-- [[TestKnownMalicious]] - `uses` [INFERRED]
-- [[TestObfuscation]] - `uses` [INFERRED]
-- [[TestOversizedUnscannable]] - `uses` [INFERRED]
-- [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestReloadIntegration]] - `uses` [INFERRED]
-- [[TestScanEntrypoint]] - `uses` [INFERRED]
-- [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
-- [[TestSecretAccess]] - `uses` [INFERRED]
-- [[TestSyncScriptPreflight]] - `uses` [INFERRED]
-- [[skill_guard.py]] - `contains` [EXTRACTED]
-- [[test_skill_guard.py]] - `imports` [EXTRACTED]
+- [[SecurityEvent]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Path_2
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

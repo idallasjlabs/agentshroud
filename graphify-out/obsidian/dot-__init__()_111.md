@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L278"
+community: "SkillGuard (2)"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/SkillGuard_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[_Rule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard_2

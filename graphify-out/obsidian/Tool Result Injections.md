@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "Error Index.md"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Error_Indexmd
 ---
 
 # Tool Result Injections
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

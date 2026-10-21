@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "SlackAPIProxy"
+community: "_FakeRBAC"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/_FakeRBAC
 ---
 
 # Convert an AnomalyAlert (from EgressMonitor/SOCCorrelation) to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_anomaly_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "TelegramAPIProxy (39)"
 location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TelegramAPIProxy_39
 ---
 
 # When pipeline is set, process_outbound must be called on outbound messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_outbound_pipeline_called_when_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_39

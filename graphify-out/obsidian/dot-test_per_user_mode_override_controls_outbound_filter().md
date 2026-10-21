@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "full_access collaborators must pass through middleware and secondary pipeline…"
+community: "TestFullAccessMiddlewareBypass"
 location: "L9645"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/full_access_collaborators_must_pass_through_middleware_and_secondary_pipeline
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # .test_per_user_mode_override_controls_outbound_filter()
@@ -15,6 +15,6 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Per-user mode override is respected by the outbound filter. A collaborator…]] - `rationale_for` [EXTRACTED]
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/full_access_collaborators_must_pass_through_middleware_and_secondary_pipeline
+#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

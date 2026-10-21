@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[HTTPConnectProxy_1]] - `imports` [EXTRACTED]
 - [[WebProxy]] - `imports` [EXTRACTED]
-- [[WebProxyConfig_1]] - `imports` [EXTRACTED]
+- [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[_CloseRaisesTargetWriter]] - `contains` [EXTRACTED]
 - [[_CloseRaisesWriter]] - `contains` [EXTRACTED]
-- [[_DummyTargetWriter_1]] - `contains` [EXTRACTED]
+- [[_DummyTargetWriter]] - `contains` [EXTRACTED]
 - [[_HeaderTimeoutReader]] - `contains` [EXTRACTED]
 - [[_MockWriter]] - `contains` [EXTRACTED]
 - [[_SocketTransportWriter]] - `contains` [EXTRACTED]

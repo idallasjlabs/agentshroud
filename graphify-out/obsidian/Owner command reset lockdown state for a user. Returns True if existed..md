@@ -12,6 +12,6 @@ tags:
 # Owner command: reset lockdown state for a user. Returns True if existed.
 
 ## Connections
-- [[dot-reset()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-reset()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "WebContentScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/WebContentScanner
 ---
 
 # str
 
 ## Connections
-- [[Coverage]] - `inherits` [EXTRACTED]
-- [[VulnClass]] - `inherits` [EXTRACTED]
+- [[FindingSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

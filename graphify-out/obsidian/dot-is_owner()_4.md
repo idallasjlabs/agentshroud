@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "RBACConfig (2) (2)"
-location: "L113"
+community: "ProgressiveLockdown"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_2
+  - community/ProgressiveLockdown
 ---
 
 # .is_owner()
 
 ## Connections
-- [[dot-get_role()]] - `calls` [EXTRACTED]
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
-- [[Return True if user_id is the owner in group_chat_id.]] - `rationale_for` [EXTRACTED]
+- [[FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

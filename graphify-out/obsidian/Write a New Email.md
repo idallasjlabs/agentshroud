@@ -12,6 +12,6 @@ tags:
 # Write a New Email
 
 ## Connections
-- [[Common Operations_1]] - `contains` [EXTRACTED]
+- [[Common Operations]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Common_Operations

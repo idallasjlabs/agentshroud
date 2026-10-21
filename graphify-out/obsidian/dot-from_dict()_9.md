@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "DelegationManager"
-location: "L77"
+community: "MiddlewareManager (10)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/MiddlewareManager_10
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[ModificationSource]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_10

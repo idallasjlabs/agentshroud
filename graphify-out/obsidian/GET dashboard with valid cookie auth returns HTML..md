@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "test_e2e_proxy.py (2)"
+community: "ForwardRequest"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy_2
+  - community/ForwardRequest
 ---
 
 # GET /dashboard with valid cookie auth returns HTML.
@@ -16,4 +16,4 @@ tags:
 - [[test_dashboard_returns_html()]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard_serves_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

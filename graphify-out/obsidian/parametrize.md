@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "_make_proxy()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/_make_proxy
 ---
 
 # parametrize
@@ -15,4 +15,4 @@ tags:
 - [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - `references` [EXTRACTED]
 - [[test_model_ref_round_trip()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

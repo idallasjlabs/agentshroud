@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
-location: "L3"
+community: "OpenClaw Host Hardening"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/OpenClaw_Host_Hardening
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

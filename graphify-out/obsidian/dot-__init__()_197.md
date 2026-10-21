@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L41"
+community: "ProxyAction"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_2]] - `references` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

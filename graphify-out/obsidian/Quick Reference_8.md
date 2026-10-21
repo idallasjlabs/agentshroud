@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Browser-Fetch Skill for 1Password Share Links"
-location: "L381"
+community: "xurl — Agent Skill Reference"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser-Fetch_Skill_for_1Password_Share_Links
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Quick Reference
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

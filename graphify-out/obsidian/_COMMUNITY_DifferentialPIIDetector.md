@@ -1,16 +1,15 @@
 ---
 type: community
-members: 80
+members: 84
 ---
 
 # DifferentialPIIDetector
 
-**Members:** 80 nodes
+**Members:** 84 nodes
 
 ## Members
-- [[dot-__init__()_167]] - code - gateway/security/differential_pii_detector.py
-- [[dot-__init__()_168]] - code - gateway/tests/test_differential_pii_detector.py
-- [[dot-__post_init__()_6]] - code - gateway/security/differential_pii_detector.py
+- [[dot-__init__()_158]] - code - gateway/security/differential_pii_detector.py
+- [[dot-__init__()_159]] - code - gateway/tests/test_differential_pii_detector.py
 - [[dot-_deduplicate()]] - code - gateway/security/differential_pii_detector.py
 - [[dot-_detect_pii()]] - code - gateway/security/differential_pii_detector.py
 - [[dot-_detect_presidio()]] - code - gateway/security/differential_pii_detector.py
@@ -18,7 +17,10 @@ members: 80
 - [[dot-_detector_with_fake()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[dot-_init_presidio()_1]] - code - gateway/security/differential_pii_detector.py
 - [[dot-_redact()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_scan()]] - code - gateway/security/differential_pii_detector.py
 - [[dot-from_confidence()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_prompt()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_tool_result()_2]] - code - gateway/security/differential_pii_detector.py
 - [[dot-test_bare_city_name_not_flagged_but_street_address_is()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[dot-test_cannot_set_tool_floor_above_prompt_floor()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[dot-test_cannot_set_tool_floor_below_minimum()]] - code - gateway/tests/test_differential_pii_detector.py
@@ -46,19 +48,18 @@ members: 80
 - [[dot-test_us_ssn_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[dot-test_weak_hit_present_in_tool_result_only()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[dot-test_zero_width_space_injection_caught()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[A single PII detection result.]] - rationale - gateway/security/differential_pii_detector.py
 - [[A weak-confidence hit (0.75) must appear in tool results but not prompts.]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - rationale - gateway/security/differential_pii_detector.py
 - [[Attempt to initialise Presidio deterministically; else regex.          SECURITY]] - rationale - gateway/security/differential_pii_detector.py
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig]] - code - gateway/tests/test_differential_pii_detector.py
-- [[DifferentialPIIConfig_1]] - code - gateway/security/differential_pii_detector.py
+- [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
+- [[DifferentialPIIConfig_1]] - code - gateway/tests/test_differential_pii_detector.py
 - [[DifferentialPIIDetector]] - code - gateway/tests/test_differential_pii_detector.py
 - [[DifferentialPIIDetector_1]] - code - gateway/security/differential_pii_detector.py
 - [[Email with Unicode dot separators.]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[Email with spaces added to defeat naive regex a l i c e @ e x a m p l e . c o m]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[Exercise the Presidio detection path with an injected fake analyzer.      The re]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[Full scan result for a tool result or prompt.]] - rationale - gateway/security/differential_pii_detector.py
 - [[PII Sanitizer Mitigation (Presidio + custom regex)]] - rationale - docs/security/threat-model.md
 - [[PII split with zero-width space.]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[PIIHit]] - code - gateway/security/differential_pii_detector.py
@@ -69,6 +70,9 @@ members: 80
 - [[Remove overlapping hits, preferring higher confidence.]] - rationale - gateway/security/differential_pii_detector.py
 - [[Replace detected PII tokens with ENTITY_TYPE placeholders.]] - rationale - gateway/security/differential_pii_detector.py
 - [[Run PII detection, returning hits at or above floor.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Scan a prompt with the standard (higher) confidence floor.          Args]] - rationale - gateway/security/differential_pii_detector.py
+- [[Scan a tool result with the lower confidence floor.          Args             t]] - rationale - gateway/security/differential_pii_detector.py
+- [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - rationale - gateway/security/differential_pii_detector.py
 - [[TestAdversarialFormattingCaught]] - code - gateway/tests/test_differential_pii_detector.py
 - [[TestAsymmetricFloor]] - code - gateway/tests/test_differential_pii_detector.py
 - [[TestDeterministicPresidioInit]] - code - gateway/tests/test_differential_pii_detector.py
@@ -79,15 +83,15 @@ members: 80
 - [[TestStandardPIIAlwaysCaught]] - code - gateway/tests/test_differential_pii_detector.py
 - [[TestToolResultPIIReport]] - code - gateway/tests/test_differential_pii_detector.py
 - [[The default-model auto-download path must never be taken.          If Presidio i]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[ToolResultPIIReport]] - code - gateway/security/differential_pii_detector.py
 - [[Use Presidio (entity-restricted) unioned with the core regex.          Two guara]] - rationale - gateway/security/differential_pii_detector.py
 - [[When the pinned model loads, Presidio is built with an explicit         ``nlp_en]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[_FakeRecognizerResult]] - code - gateway/tests/test_differential_pii_detector.py
+- [[_normalize_adversarial()]] - code - gateway/security/differential_pii_detector.py
 - [[default_config()_3]] - code - gateway/tests/test_differential_pii_detector.py
 - [[detector()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[differential_pii_detector.py]] - code - gateway/security/differential_pii_detector.py
 - [[test_differential_pii_detector.py]] - code - gateway/tests/test_differential_pii_detector.py
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -97,20 +101,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_test_a2a_proxy.py]]
-- 7 edges to [[_COMMUNITY_DifferentialPIIDetector (2)]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 2 edges to [[_COMMUNITY_A2APolicyEngine (3)]]
+- 22 edges to [[_COMMUNITY_test_a2a_proxy.py]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (3)]]
+- 1 edge to [[_COMMUNITY_egress_filter.py (2)]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_A2AMethod]]
 - 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_SkillGuard (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-- 1 edge to [[_COMMUNITY_PipelineAction (2)]]
-- 1 edge to [[_COMMUNITY_A2AMethod (2)]]
 
 ## Top bridge nodes
-- [[DifferentialPIIDetector_1]] - degree 38, connects to 6 communities
+- [[DifferentialPIIDetector_1]] - degree 36, connects to 4 communities
 - [[differential_pii_detector.py]] - degree 9, connects to 4 communities
-- [[DifferentialPIIConfig_1]] - degree 25, connects to 2 communities
+- [[DifferentialPIIDetector]] - degree 31, connects to 1 community
 - [[PIIHitSeverity]] - degree 17, connects to 1 community
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - degree 8, connects to 1 community
+- [[test_differential_pii_detector.py]] - degree 16, connects to 1 community

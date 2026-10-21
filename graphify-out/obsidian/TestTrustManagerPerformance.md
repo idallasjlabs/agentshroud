@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # TestTrustManagerPerformance
@@ -17,11 +17,11 @@ tags:
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[Trust check 10000 lookups in  1s.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/PIIConfig

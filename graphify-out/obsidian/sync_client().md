@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "ApprovalQueueConfig"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ApprovalQueueConfig
 ---
 
 # sync_client()
@@ -15,4 +15,4 @@ tags:
 - [[Sync TestClient for WebSocket tests]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

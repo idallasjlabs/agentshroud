@@ -10,13 +10,13 @@ members: 21
 ## Members
 - [[128]] - code - browser-extension/manifest.json
 - [[48]] - code - browser-extension/manifest.json
-- [[action_2]] - code - browser-extension/manifest.json
+- [[action_3]] - code - browser-extension/manifest.json
 - [[background]] - code - browser-extension/manifest.json
 - [[browser-extensionmanifest.json]] - code - browser-extension/manifest.json
 - [[browser_specific_settings]] - code - browser-extension/manifest.json
 - [[default_popup]] - code - browser-extension/manifest.json
 - [[default_title]] - code - browser-extension/manifest.json
-- [[description_7]] - code - browser-extension/manifest.json
+- [[description_3]] - code - browser-extension/manifest.json
 - [[gecko]] - code - browser-extension/manifest.json
 - [[host_permissions]] - code - browser-extension/manifest.json
 - [[icons]] - code - browser-extension/manifest.json

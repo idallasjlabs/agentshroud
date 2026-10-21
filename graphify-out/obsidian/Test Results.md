@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "LOW — Informational"
+community: "LOW — Informational (2)"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/LOW__Informational_2
 ---
 
 # Test Results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fixes Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational_2

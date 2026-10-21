@@ -11,13 +11,13 @@ members: 22
 - [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
 - [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current Status_6]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Current Status_5]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 - [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 - [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 - [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Next Steps_6]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Next Steps_5]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md

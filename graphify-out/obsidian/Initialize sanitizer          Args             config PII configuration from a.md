@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # Initialize sanitizer          Args:             config: PII configuration from a
 
 ## Connections
-- [[dot-__init__()_18]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_95]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

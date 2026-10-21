@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard
 ---
 
 # Test request count per minute limiting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_request_count_limiting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

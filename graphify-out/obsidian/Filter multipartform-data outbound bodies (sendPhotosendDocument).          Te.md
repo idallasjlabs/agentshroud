@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L3490"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # Filter multipart/form-data outbound bodies (sendPhoto/sendDocument).          Te
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_filter_outbound_multipart()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

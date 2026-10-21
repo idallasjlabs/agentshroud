@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MultiTurnTracker"
 location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MultiTurnTracker
 ---
 
 # Remove old sessions to prevent memory bloat.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

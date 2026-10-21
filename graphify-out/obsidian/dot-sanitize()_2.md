@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L171"
+community: "MiddlewareManager"
+location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # .sanitize()
 
 ## Connections
-- [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
-- [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
-- [[Detect and redact PII from content          Args             content Text to s]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer]] - `method` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[dot-_extract_code_blocks()]] - `calls` [EXTRACTED]
+- [[dot-_restore_code_blocks()]] - `calls` [EXTRACTED]
+- [[dot-sanitize_images()]] - `calls` [EXTRACTED]
+- [[dot-sanitize_links()]] - `calls` [EXTRACTED]
+- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[sanitize_tool_result()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

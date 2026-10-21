@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Error Index.md (2)"
-location: "L97"
+community: "Error Index.md (4)"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_2
+  - community/Error_Indexmd_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4

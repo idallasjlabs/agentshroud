@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (4)"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_4
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_4
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

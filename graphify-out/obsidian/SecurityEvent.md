@@ -1,24 +1,36 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L41"
+community: "test_soc_bots.py"
+location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/test_soc_botspy
 ---
 
 # SecurityEvent
 
 ## Connections
+- [[dot-test_filters_egress_log_by_bot_id()]] - `calls` [EXTRACTED]
+- [[dot-test_filters_events_by_exact_bot_id()]] - `calls` [EXTRACTED]
+- [[dot-test_minimal_construction()]] - `calls` [EXTRACTED]
+- [[dot-test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
+- [[dot-test_optional_fields_default_none()]] - `calls` [EXTRACTED]
+- [[Any_60]] - `uses` [INFERRED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[_renderSecurityTable()]] - `shares_data_with` [INFERRED]
+- [[event_adapter.py]] - `imports` [EXTRACTED]
+- [[from_anomaly_alert()]] - `calls` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `calls` [EXTRACTED]
+- [[from_dict()]] - `calls` [EXTRACTED]
+- [[from_egress_attempt()]] - `calls` [EXTRACTED]
+- [[from_pipeline_result()]] - `calls` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

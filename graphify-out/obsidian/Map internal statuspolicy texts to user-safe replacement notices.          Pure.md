@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L3868"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # Map internal status/policy texts to user-safe replacement notices.          Pure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_apply_outbound_status_notices()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

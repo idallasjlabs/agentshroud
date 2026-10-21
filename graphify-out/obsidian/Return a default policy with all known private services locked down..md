@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "RBACConfig (3)"
+community: "RBACConfig (2)"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/RBACConfig_2
 ---
 
 # Return a default policy with all known private services locked down.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

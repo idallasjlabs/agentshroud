@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-mcpm-doctorREADME]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Purpose_23]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Purpose_25]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[Related Skills_10]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[Usage_14]] - document - .agents/skills/i-mcpm-doctor/README.md
 

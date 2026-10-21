@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # FilterResult
 
 ## Connections
-- [[dot-filter_response()_1]] - `references` [EXTRACTED]
+- [[dot-filter_response()]] - `references` [EXTRACTED]
 - [[dot-scan_command_injection()]] - `references` [EXTRACTED]
 - [[Result from XML leak filtering.]] - `rationale_for` [EXTRACTED]
 - [[TestCommandInjectionScan]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
 - [[xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

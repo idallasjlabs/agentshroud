@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L114"
+community: "ModuleStatsCollector"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/ModuleStatsCollector
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

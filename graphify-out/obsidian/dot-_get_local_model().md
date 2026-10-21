@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: ".proxy_messages()"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/proxy_messages
 ---
 
 # ._get_local_model()
@@ -18,4 +18,4 @@ tags:
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[_stream()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

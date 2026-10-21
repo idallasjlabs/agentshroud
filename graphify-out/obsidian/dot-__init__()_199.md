@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "soc/router.py"
-location: "L27"
+community: "TelegramGatewayRelay"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TelegramGatewayRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay

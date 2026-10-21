@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "AlertDispatcher"
+community: "TestToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestToolChainAnalyzer
 ---
 
 # ToolChainAnalyzer._load_custom_patterns
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

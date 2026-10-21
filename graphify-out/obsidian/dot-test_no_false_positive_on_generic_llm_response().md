@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestInternalBannerMatcher"
+community: "test_collaborator_tracker.py"
 location: "L4680"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInternalBannerMatcher
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_no_false_positive_on_generic_llm_response()
@@ -15,4 +15,4 @@ tags:
 - [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - `rationale_for` [EXTRACTED]
 - [[TestInternalBannerMatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInternalBannerMatcher
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

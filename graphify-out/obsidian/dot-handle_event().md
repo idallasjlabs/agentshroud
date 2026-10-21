@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Handle an inbound Slack event payload received via Socket Mode.          Called]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

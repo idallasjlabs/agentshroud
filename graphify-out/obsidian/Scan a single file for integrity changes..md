@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (7)"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_7
 ---
 
 # Scan a single file for integrity changes.
 
 ## Connections
-- [[dot-scan_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_file()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_7

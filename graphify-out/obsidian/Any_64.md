@@ -1,20 +1,25 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "parse_trivy_output (2)"
-location: "L27"
+community: "ApprovalQueueConfig (4)"
+location: "L141"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/parse_trivy_output_2
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig_4
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[dot-broadcast()_1]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()_3]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output_2
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_4

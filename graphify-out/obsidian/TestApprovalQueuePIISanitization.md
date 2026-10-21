@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig"
 location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig
 ---
 
 # TestApprovalQueuePIISanitization
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_ssh_approval_sanitizes_command_pii()]] - `method` [EXTRACTED]
 - [[Approval queue details must be PII-sanitized before storage]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

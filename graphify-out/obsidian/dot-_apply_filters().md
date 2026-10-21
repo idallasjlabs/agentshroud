@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: ".proxy_messages()"
 location: "L1968"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/proxy_messages
 ---
 
 # ._apply_filters()
@@ -17,4 +17,4 @@ tags:
 - [[Apply XML and credential filters to text.]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager"
 location: "L346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager
 ---
 
 # Clean up old threat records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_cleanup_old_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

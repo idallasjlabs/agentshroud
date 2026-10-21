@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "MiddlewareManager"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # Test that internal/relative links are preserved.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_internal_links_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

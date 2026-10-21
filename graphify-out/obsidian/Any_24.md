@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "MCPInspector"
-location: "L140"
+community: "test_telegram_replay.py"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_telegram_replaypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
+- [[dot-record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

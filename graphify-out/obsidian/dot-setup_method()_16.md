@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "PodmanEngine"
-location: "L317"
+community: "TestMultilingualInjection"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/TestMultilingualInjection
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PodmanEngine]] - `calls` [EXTRACTED]
-- [[TestPodmanEngine]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

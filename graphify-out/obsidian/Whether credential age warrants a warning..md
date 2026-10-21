@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager (2)"
+community: "KeyRotationManager"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/KeyRotationManager
 ---
 
 # Whether credential age warrants a warning.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-should_warn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

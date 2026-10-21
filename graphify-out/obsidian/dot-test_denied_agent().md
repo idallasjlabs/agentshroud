@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "StdioConnection"
+community: "PermissionLevel"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/PermissionLevel
 ---
 
 # .test_denied_agent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServerAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

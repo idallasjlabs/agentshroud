@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
+source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "ResourceGuard"
-location: "L53"
+community: "CompetitiveIntelReport (2)"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/CompetitiveIntelReport_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_8]] - `calls` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Path_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport_2

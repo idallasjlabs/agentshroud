@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "test_daily_cve_report.py (3)"
 location: "L1329"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/test_daily_cve_reportpy_3
 ---
 
 # First iteration ingests + records; second sees dedup and skips.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy_3

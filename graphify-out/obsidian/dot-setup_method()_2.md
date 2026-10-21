@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L509"
+community: "MiddlewareManager"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[ContainerSnapshot]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `calls` [EXTRACTED]
-- [[TestDriftDetector]] - `method` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
+- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

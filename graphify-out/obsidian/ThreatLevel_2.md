@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-highest_threat()]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]

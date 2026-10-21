@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (4)"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_4
 ---
 
 # Private IPs are blocked by default to prevent SSRF.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_private_ip_blocked_ssrf()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4

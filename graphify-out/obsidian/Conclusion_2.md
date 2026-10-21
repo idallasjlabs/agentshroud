@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Security Verification Report"
-location: "L112"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+location: "L652"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Conclusion
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

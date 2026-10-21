@@ -19,6 +19,5 @@ tags:
 - [[ServiceManager]] - `method` [EXTRACTED]
 - [[TestListServices]] - `calls` [EXTRACTED]
 - [[_known_services()]] - `calls` [EXTRACTED]
-- [[dockerscriptssecurity-scan.sh]] - `shares_data_with` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ServiceManager

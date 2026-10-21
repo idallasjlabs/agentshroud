@@ -16,6 +16,6 @@ tags:
 - [[LLMProxy.proxy_messages (non-streaming)]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[_telegram_send]] - `semantically_similar_to` [INFERRED]
-- [[telegram_api_proxy (telegram-api{path})]] - `references` [EXTRACTED]
+- [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

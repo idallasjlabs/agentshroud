@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # TestMembersShareGroupWorkspace
@@ -19,11 +19,11 @@ tags:
 - [[dot-test_two_members_of_same_group_share_one_workspace_id()]] - `method` [EXTRACTED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig_2
+#graphify/code #graphify/INFERRED #community/TeamsConfig

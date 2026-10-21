@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/crashwatch.sh"
+source_file: "docker/bots/hermes/heartbeat.sh"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
-location: "L26"
+community: "heartbeat.sh"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/heartbeatsh
 ---
 
 # _log()
 
 ## Connections
-- [[crashwatch.sh]] - `defines` [EXTRACTED]
-- [[crashwatch.sh script]] - `calls` [EXTRACTED]
+- [[heartbeat.sh]] - `defines` [EXTRACTED]
+- [[heartbeat.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/heartbeatsh

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[_release_telegram_lock]] - `conceptually_related_to` [INFERRED]
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - `implements` [EXTRACTED]
-- [[telegram_api_proxy (telegram-api{path})]] - `references` [EXTRACTED]
+- [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

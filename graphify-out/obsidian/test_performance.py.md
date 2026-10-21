@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # test_performance.py
@@ -15,7 +15,7 @@ tags:
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
 - [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

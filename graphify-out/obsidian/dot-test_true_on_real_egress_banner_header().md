@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestInternalBannerMatcher"
+community: "test_collaborator_tracker.py"
 location: "L4690"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInternalBannerMatcher
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_true_on_real_egress_banner_header()
@@ -15,4 +15,4 @@ tags:
 - [[TestInternalBannerMatcher]] - `method` [EXTRACTED]
 - [[The canonical 🌐 Egress Request header from TelegramEgressNotifier must match.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInternalBannerMatcher
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

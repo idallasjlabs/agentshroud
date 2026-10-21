@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig
 ---
 
 # Send prompt injection — verify blocked, not forwarded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_injection_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

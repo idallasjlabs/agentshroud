@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L18"
+community: "A2APolicyEngine"
+location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - graphify/INFERRED
+  - community/A2APolicyEngine
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_3]] - `references` [EXTRACTED]
+- [[dot-_handle()_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

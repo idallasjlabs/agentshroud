@@ -21,7 +21,7 @@ tags:
 - [[dot-test_sanitized_text_replaces_original()]] - `method` [EXTRACTED]
 - [[dot-test_system_notification_skips_pipeline()]] - `method` [EXTRACTED]
 - [[dot-test_urlencoded_body_parsed()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 

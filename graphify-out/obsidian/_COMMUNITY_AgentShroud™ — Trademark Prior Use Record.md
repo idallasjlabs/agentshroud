@@ -1,16 +1,17 @@
 ---
 type: community
-members: 20
+members: 25
 ---
 
 # AgentShroud™ — Trademark Prior Use Record
 
-**Members:** 20 nodes
+**Members:** 25 nodes
 
 ## Members
 - [[AgentShroud Mission Statement (Timestamped)]] - rationale - docs/project/legal/PRIOR-USE.md
 - [[AgentShroud™ — Trademark Prior Use Record]] - document - docs/project/legal/PRIOR-USE.md
 - [[Asset Creation Timeline]] - document - docs/project/legal/PRIOR-USE.md
+- [[COMMUNICATION-TEMPLATES]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
 - [[Contact_1]] - document - docs/project/legal/TRADEMARK.md
 - [[First Use in Commerce]] - document - docs/project/legal/PRIOR-USE.md
 - [[First Use in Commerce (Feb 20, 2026)]] - concept - docs/project/legal/PRIOR-USE.md
@@ -18,16 +19,20 @@ members: 20
 - [[How to Supplement This Record]] - document - docs/project/legal/PRIOR-USE.md
 - [[Mission Statement (Timestamped Record)]] - document - docs/project/legal/PRIOR-USE.md
 - [[Next Steps Federal Registration]] - document - docs/project/legal/PRIOR-USE.md
+- [[Option 1 — Clean & Professional Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 2 — Compact Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 3 — Full Collaborator Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 4 — Documentation Footer Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
 - [[PRIOR-USE]] - document - docs/project/legal/PRIOR-USE.md
 - [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
 - [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[TRADEMARK_2]] - document - docs/project/legal/TRADEMARK.md
+- [[TRADEMARK_1]] - document - docs/project/legal/TRADEMARK.md
 - [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
 - [[Trademark Notice_3]] - document - docs/project/legal/TRADEMARK.md
 - [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
 - [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Usage Guidelines_2]] - document - docs/project/legal/TRADEMARK.md
+- [[Usage Guidelines_1]] - document - docs/project/legal/TRADEMARK.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,5 +46,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_USPTO Trademark Application — AgentShroud™]]
 
 ## Top bridge nodes
+- [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 1 community
 - [[USPTO-APPLICATION]] - degree 6, connects to 1 community
-- [[TRADEMARK_2]] - degree 5, connects to 1 community

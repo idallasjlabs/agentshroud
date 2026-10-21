@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # TestContributorRecord
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_construction()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

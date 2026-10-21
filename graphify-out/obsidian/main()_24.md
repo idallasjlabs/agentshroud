@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "dashboard_bridge.py"
-location: "L134"
+community: "package_skill"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/package_skill
 ---
 
 # main()
 
 ## Connections
-- [[_handle()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
+- [[package_skill()]] - `calls` [EXTRACTED]
+- [[package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/code #graphify/EXTRACTED #community/package_skill

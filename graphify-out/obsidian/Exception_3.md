@@ -1,31 +1,32 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: ""
 type: "code"
-community: "StdioConnection"
-location: "L125"
+community: "ConsentFramework (2)"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/StdioConnection
+  - graphify/EXTRACTED
+  - community/ConsentFramework_2
 ---
 
 # Exception
 
 ## Connections
-- [[dot-__init__()_80]] - `references` [EXTRACTED]
-- [[ConnectionPool]] - `uses` [INFERRED]
-- [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[StdioConnection]] - `uses` [INFERRED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
+- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[ForwardError]] - `inherits` [EXTRACTED]
+- [[OAuthError]] - `inherits` [EXTRACTED]
+- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[RouterError]] - `inherits` [EXTRACTED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
+- [[SecurityError_2]] - `inherits` [EXTRACTED]
+- [[SecurityError_3]] - `inherits` [EXTRACTED]
+- [[SessionError]] - `inherits` [EXTRACTED]
+- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
+- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
+- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

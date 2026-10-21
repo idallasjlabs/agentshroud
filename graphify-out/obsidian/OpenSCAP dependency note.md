@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw) (2)"
+community: "Dockerfile — Bot (OpenClaw)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw_2
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # OpenSCAP dependency note
@@ -16,4 +16,4 @@ tags:
 - [[OpenSCAP & IEC 62443 compliance validation]] - `conceptually_related_to` [INFERRED]
 - [[OpenSCAP relationship to TrivyClamAVFalco]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

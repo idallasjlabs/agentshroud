@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "AlertDispatcher"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2_2
+  - community/AlertDispatcher
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[dot-__init__()_152]] - `calls` [EXTRACTED]
-- [[dot-__init__()_72]] - `references` [EXTRACTED]
+- [[dot-__init__()_18]] - `calls` [EXTRACTED]
+- [[dot-__init__()_15]] - `references` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[dot-sandbox()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
 - [[dot-test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
 - [[dot-test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
 - [[dot-test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[dot-test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -79,13 +79,13 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[TestWorkspaceAccessPreserved]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
-- [[default_config()_2]] - `calls` [EXTRACTED]
+- [[ToolTier]] - `uses` [INFERRED]
+- [[default_config()_1]] - `calls` [EXTRACTED]
 - [[enforce_config()]] - `calls` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[strict_config()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
@@ -93,4 +93,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

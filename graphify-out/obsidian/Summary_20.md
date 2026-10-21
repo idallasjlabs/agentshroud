@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "agentshroud-gateway"
+community: "agentshroud-bot (2)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/agentshroud-bot_2
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot_2

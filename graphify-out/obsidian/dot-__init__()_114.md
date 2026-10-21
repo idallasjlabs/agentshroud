@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L50"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

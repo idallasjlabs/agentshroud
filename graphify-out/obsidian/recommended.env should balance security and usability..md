@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "AgentTarget"
+community: "AgentTarget (4)"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_4
 ---
 
 # recommended.env should balance security and usability.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRecommendedConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_4

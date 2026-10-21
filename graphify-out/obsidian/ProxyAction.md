@@ -19,7 +19,7 @@ tags:
 - [[MockThreatLevel]] - `uses` [INFERRED]
 - [[MockURLResult]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
@@ -29,7 +29,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -39,6 +39,6 @@ tags:
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ProxyAction

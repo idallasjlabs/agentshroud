@@ -12,6 +12,6 @@ tags:
 # Test edge cases and error conditions.
 
 ## Connections
-- [[dot-test_edge_cases()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

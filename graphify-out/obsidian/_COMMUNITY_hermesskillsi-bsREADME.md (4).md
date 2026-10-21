@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Purpose_29]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Purpose_31]] - document - docker/config/hermes/skills/i-gg/README.md
 - [[Related Skills_16]] - document - docker/config/hermes/skills/i-gg/README.md
 - [[Usage_20]] - document - docker/config/hermes/skills/i-gg/README.md
 - [[hermesskillsi-ggREADME]] - document - docker/config/hermes/skills/i-gg/README.md

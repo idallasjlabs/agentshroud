@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (4)"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_4
 ---
 
 # _is_fixture_uid()
@@ -16,10 +16,9 @@ tags:
 - [[Return True when uid looks like a test fixture that should be silently dropped.]] - `rationale_for` [EXTRACTED]
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[collaborator_tracker.py]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_is_fixture_uid_blocks_short_numeric()]] - `calls` [EXTRACTED]
 - [[test_is_fixture_uid_blocks_test_user_prefix()]] - `calls` [EXTRACTED]
 - [[test_is_fixture_uid_passes_real_uids()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

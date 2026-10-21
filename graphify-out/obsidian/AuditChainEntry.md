@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # AuditChainEntry
 
 ## Connections
-- [[dot-append()_1]] - `references` [EXTRACTED]
+- [[dot-append()]] - `references` [EXTRACTED]
 - [[dot-append_block()]] - `references` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
 - [[dot-entries()_1]] - `references` [EXTRACTED]
@@ -20,8 +20,8 @@ tags:
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
-- [[pipeline.py_1]] - `contains` [EXTRACTED]
+- [[pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

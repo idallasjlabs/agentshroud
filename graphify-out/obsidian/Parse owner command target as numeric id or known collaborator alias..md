@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy"
 location: "L759"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy
 ---
 
 # Parse owner command target as numeric id or known collaborator alias.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_owner_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

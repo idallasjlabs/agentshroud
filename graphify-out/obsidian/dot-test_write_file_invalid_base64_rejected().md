@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "ApprovalQueueConfig"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig
 ---
 
 # .test_write_file_invalid_base64_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - `rationale_for` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

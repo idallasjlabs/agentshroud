@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy"
 location: "L1253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts asking to decode/deobfuscate and execute commands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_obfuscated_command_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

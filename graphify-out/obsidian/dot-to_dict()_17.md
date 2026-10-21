@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Path"
-location: "L68"
+community: "ResourceUsage"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/ResourceUsage
 ---
 
 # .to_dict()
 
 ## Connections
-- [[ManifestEntry]] - `method` [EXTRACTED]
+- [[dot-deregister()_1]] - `calls` [EXTRACTED]
+- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/ResourceUsage

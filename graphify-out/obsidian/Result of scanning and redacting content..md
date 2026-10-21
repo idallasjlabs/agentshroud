@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (3)"
+community: "MiddlewareManager (2)"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/MiddlewareManager_2
 ---
 
 # Result of scanning and redacting content.
 
 ## Connections
-- [[RedactionResult_3]] - `rationale_for` [EXTRACTED]
+- [[RedactionResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

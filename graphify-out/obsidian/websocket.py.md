@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "MiddlewareManager"
+community: "_FakeRBAC"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_FakeRBAC
 ---
 
 # websocket.py
 
 ## Connections
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `contains` [EXTRACTED]
-- [[Severity]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

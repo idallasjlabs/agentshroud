@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "ProxyAction"
 location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/ProxyAction
 ---
 
 # .scan_response()
@@ -17,4 +17,4 @@ tags:
 - [[WebProxy]] - `method` [EXTRACTED]
 - [[WebProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

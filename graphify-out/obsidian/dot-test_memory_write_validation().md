@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (9)"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_9
 ---
 
 # .test_memory_write_validation()
@@ -15,4 +15,4 @@ tags:
 - [[Test validation before writing to memory files.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9

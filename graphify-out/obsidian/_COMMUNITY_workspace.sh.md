@@ -18,7 +18,7 @@ members: 13
 - [[cmd_shell()]] - code - docker/scripts/workspace.sh
 - [[cmd_tree()]] - code - docker/scripts/workspace.sh
 - [[main command dispatcher (case $COMMAND)]] - code - docker/scripts/workspace.sh
-- [[usage()_5]] - code - docker/scripts/workspace.sh
+- [[usage()_7]] - code - docker/scripts/workspace.sh
 - [[workspace.sh]] - code - docker/scripts/workspace.sh
 - [[workspace.sh script]] - code - docker/scripts/workspace.sh
 

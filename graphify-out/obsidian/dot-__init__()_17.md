@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L58"
+community: "AlertDispatcher"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

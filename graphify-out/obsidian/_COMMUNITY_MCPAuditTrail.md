@@ -29,7 +29,7 @@ members: 34
 - [[dot-total_appended()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-verify_chain()]] - code - gateway/proxy/mcp_audit.py
 - [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Any_33]] - code - gateway/proxy/mcp_audit.py
+- [[Any_36]] - code - gateway/proxy/mcp_audit.py
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
 - [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
 - [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
@@ -41,7 +41,7 @@ members: 34
 - [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
 - [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
 - [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
-- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
+- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,21 +52,25 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 27 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 22 edges to [[_COMMUNITY_StdioConnection]]
+- 12 edges to [[_COMMUNITY_StdioConnection]]
+- 10 edges to [[_COMMUNITY_StdioConnection (2)]]
 - 9 edges to [[_COMMUNITY_MCPInspector]]
-- 7 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 7 edges to [[_COMMUNITY_StdioConnection (2)]]
-- 4 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 8 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 6 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_MCPToolResult]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (5)]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (6)]]
+- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (4)]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (7)]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 - 1 edge to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail_1]] - degree 90, connects to 12 communities
+- [[MCPAuditTrail_1]] - degree 90, connects to 15 communities
 - [[TestAuditTrailBounded]] - degree 20, connects to 6 communities
+- [[mcp_audit.py]] - degree 5, connects to 2 communities
 - [[MCPAuditEntry]] - degree 11, connects to 1 community
-- [[audit()]] - degree 2, connects to 1 community

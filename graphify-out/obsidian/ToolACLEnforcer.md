@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[dot-__init__()_137]] - `method` [EXTRACTED]
+- [[dot-__init__()_90]] - `method` [EXTRACTED]
 - [[dot-_can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[dot-_get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[dot-_get_role()]] - `method` [EXTRACTED]
@@ -45,10 +45,10 @@ tags:
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[PRIVATE_TOOLS]] - `shares_data_with` [EXTRACTED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `uses` [INFERRED]
@@ -81,13 +81,11 @@ tags:
 - [[TrustManager_2]] - `uses` [INFERRED]
 - [[can_use_tool_from_origin]] - `conceptually_related_to` [EXTRACTED]
 - [[enforcer()_2]] - `calls` [EXTRACTED]
-- [[enforcer()_1]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[enforcer()]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

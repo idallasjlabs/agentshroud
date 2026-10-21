@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Findings"
+community: "Findings (3)"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/Findings_3
 ---
 
 # HIGH — Should Fix
@@ -17,4 +17,4 @@ tags:
 - [[H2 FileSandbox _extract_file_paths Regex Too Broad]] - `contains` [EXTRACTED]
 - [[H3 Gateway Password Still in auth.token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/Findings_3

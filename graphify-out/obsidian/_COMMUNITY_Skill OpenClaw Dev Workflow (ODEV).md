@@ -13,7 +13,7 @@ members: 8
 - [[Invocation_1]] - document - .agents/skills/i-odev/SKILL.md
 - [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
 - [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Role_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Role_4]] - document - .agents/skills/i-odev/SKILL.md
 - [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
 - [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
 

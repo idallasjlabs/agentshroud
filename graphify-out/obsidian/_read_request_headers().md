@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Read up to the end of the request's header block (rnrn).      Returns (h]] - `rationale_for` [EXTRACTED]
 - [[StreamReader_1]] - `references` [EXTRACTED]
-- [[_handle()]] - `calls` [EXTRACTED]
+- [[_handle()_2]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

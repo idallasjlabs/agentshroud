@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Error Index.md"
+community: "Error Index"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Error_Index
 ---
 
 # Error Index
@@ -20,7 +20,7 @@ tags:
 - [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
 - [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
 - [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
-- [[Related Notes_66]] - `contains` [EXTRACTED]
+- [[Related Notes_69]] - `contains` [EXTRACTED]
 - [[Startup Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Error_Index

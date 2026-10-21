@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "RBACConfig (4)"
+community: "UserSessionManager"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_4
+  - community/UserSessionManager
 ---
 
 # A successful save leaves only the final registry file, no *.tmp.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_no_temp_files_left_behind()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

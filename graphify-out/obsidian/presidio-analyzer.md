@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "All Dependencies.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/All_Dependenciesmd
 ---
 
 # presidio-analyzer.md
 
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
 - [[Presidio Analyzer]] - `contains` [EXTRACTED]
-- [[spacy]] - `references` [EXTRACTED]
+- [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

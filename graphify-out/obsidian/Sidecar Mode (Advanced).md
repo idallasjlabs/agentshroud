@@ -12,6 +12,6 @@ tags:
 # Sidecar Mode (Advanced)
 
 ## Connections
-- [[Deployment Modes_1]] - `contains` [EXTRACTED]
+- [[Deployment Modes]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

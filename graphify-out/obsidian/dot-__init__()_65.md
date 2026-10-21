@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "ConsentFramework"
-location: "L71"
+community: "_FakeRBAC (3)"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/_FakeRBAC_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `references` [EXTRACTED]
+- [[Role_20]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_3

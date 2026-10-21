@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "_make_proxy()"
 location: "L665"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/_make_proxy
 ---
 
 # Hermes sends OpenAI-compat requests; local qwen3 model routes to LM Studio.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_openai_path_local_model_routed_correctly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

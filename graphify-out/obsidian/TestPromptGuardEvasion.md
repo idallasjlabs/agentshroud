@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "ContextSegment"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_4
+  - community/ContextSegment
 ---
 
 # TestPromptGuardEvasion
 
 ## Connections
-- [[dot-setup_method()_36]] - `method` [EXTRACTED]
+- [[dot-setup_method()_11]] - `method` [EXTRACTED]
 - [[dot-test_double_base64_injection()]] - `method` [EXTRACTED]
 - [[dot-test_fullwidth_detection()]] - `method` [EXTRACTED]
 - [[dot-test_homoglyph_detection()]] - `method` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_4
+#graphify/code #graphify/INFERRED #community/ContextSegment

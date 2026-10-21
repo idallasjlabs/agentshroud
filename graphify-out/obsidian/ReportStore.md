@@ -12,7 +12,7 @@ tags:
 # ReportStore
 
 ## Connections
-- [[dot-__init__()_31]] - `method` [EXTRACTED]
+- [[dot-__init__()_32]] - `method` [EXTRACTED]
 - [[dot-_check_size()]] - `method` [EXTRACTED]
 - [[dot-_enforce_count_cap()]] - `method` [EXTRACTED]
 - [[dot-_path()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-delete()]] - `method` [EXTRACTED]
 - [[dot-get()]] - `method` [EXTRACTED]
 - [[dot-list()]] - `method` [EXTRACTED]
-- [[dot-save()_1]] - `method` [EXTRACTED]
+- [[dot-save()]] - `method` [EXTRACTED]
 - [[dot-save_async()]] - `method` [EXTRACTED]
 - [[dot-test_async_sanitizer_refused_on_sync_save()]] - `calls` [EXTRACTED]
 - [[dot-test_content_cap_default_is_1mb()]] - `calls` [EXTRACTED]
@@ -44,8 +44,6 @@ tags:
 - [[TestReviewHardening]] - `uses` [INFERRED]
 - [[TestSaveAndGet]] - `uses` [INFERRED]
 - [[TestSecurity]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[report_store.py]] - `contains` [EXTRACTED]
 - [[store()]] - `calls` [EXTRACTED]
 - [[test_report_store.py]] - `imports` [EXTRACTED]

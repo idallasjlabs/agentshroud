@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "Error Index.md (5)"
+community: "Error Index.md (3)"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_5
+  - community/Error_Indexmd_3
 ---
 
 # HTTP 502 — MCP Server Unreachable
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_5
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3

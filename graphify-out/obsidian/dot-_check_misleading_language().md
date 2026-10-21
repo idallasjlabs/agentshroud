@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "ApprovalHardening"
+community: "MiddlewareManager"
 location: "L254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/MiddlewareManager
 ---
 
 # ._check_misleading_language()
@@ -17,4 +17,4 @@ tags:
 - [[Check for misleading language patterns in description.]] - `rationale_for` [EXTRACTED]
 - [[DeceptionDetection]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

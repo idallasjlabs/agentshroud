@@ -12,6 +12,6 @@ tags:
 # Test cases for ToolChainAnalyzer class.
 
 ## Connections
-- [[TestToolChainAnalyzer_1]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

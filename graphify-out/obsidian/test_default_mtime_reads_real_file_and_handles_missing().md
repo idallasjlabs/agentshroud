@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "ApprovalQueueConfig (2)"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/ApprovalQueueConfig_2
 ---
 
 # test_default_mtime_reads_real_file_and_handles_missing()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - `rationale_for` [EXTRACTED]
 - [[_default_mtime()]] - `calls` [EXTRACTED]
-- [[_write()_1]] - `calls` [EXTRACTED]
+- [[_write()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

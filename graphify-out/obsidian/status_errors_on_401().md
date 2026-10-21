@@ -12,7 +12,7 @@ tags:
 # status_errors_on_401()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_status()]] - `calls` [EXTRACTED]

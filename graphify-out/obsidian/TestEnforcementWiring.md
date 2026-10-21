@@ -12,11 +12,11 @@ tags:
 # TestEnforcementWiring
 
 ## Connections
-- [[dot-setup_method()_10]] - `method` [EXTRACTED]
+- [[dot-setup_method()_20]] - `method` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `method` [EXTRACTED]
 - [[dot-test_record_decision_never_raises()]] - `method` [EXTRACTED]
 - [[dot-test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]
-- [[Decision_1]] - `uses` [INFERRED]
+- [[Decision_2]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[ModuleStatsCollector]] - `uses` [INFERRED]

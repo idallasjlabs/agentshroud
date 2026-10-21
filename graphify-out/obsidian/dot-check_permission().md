@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L154"
+community: "MiddlewareManager"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # .check_permission()
 
 ## Connections
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[dot-get_user_role()]] - `calls` [EXTRACTED]
+- [[dot-list_users_and_roles()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `references` [EXTRACTED]
+- [[Any_2]] - `references` [EXTRACTED]
+- [[Check if a user has permission to perform an action on a resource.]] - `rationale_for` [EXTRACTED]
+- [[PermissionResult]] - `references` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[Resource_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

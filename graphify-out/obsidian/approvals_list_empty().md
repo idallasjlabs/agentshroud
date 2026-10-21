@@ -12,7 +12,7 @@ tags:
 # approvals_list_empty()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[dot-ok()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_list()]] - `calls` [EXTRACTED]

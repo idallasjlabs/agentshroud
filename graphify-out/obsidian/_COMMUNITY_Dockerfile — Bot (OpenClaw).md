@@ -1,26 +1,39 @@
 ---
 type: community
-members: 13
+members: 26
 ---
 
 # Dockerfile — Bot (OpenClaw)
 
-**Members:** 13 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[All Environment Variables (reference)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Related Notes_57]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Summary_24]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Directory Structure_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile.gateway vault note]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Gateway pre-installed security tools (ClamAV, Trivy, OpenSCAP, 1Password CLI, spaCy)]] - concept - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[OpenSCAP & IEC 62443 compliance validation]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP dependency note]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[OpenSCAP relationship to TrivyClamAVFalco]] - concept - docs/vault/05 - Dependencies/openscap.md
+- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Related Notes_36]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Related Notes_37]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Security Hardening]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,10 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_pytest.ini]]
+- 2 edges to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
+- 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
 
 ## Top bridge nodes
-- [[4. Environment Variables]] - degree 8, connects to 2 communities
-- [[All Environment Variables (reference)]] - degree 3, connects to 1 community
+- [[Dockerfile — Gateway]] - degree 11, connects to 3 communities
+- [[Dockerfile — Bot (OpenClaw)]] - degree 12, connects to 1 community
+- [[OpenSCAP & IEC 62443 compliance validation]] - degree 2, connects to 1 community

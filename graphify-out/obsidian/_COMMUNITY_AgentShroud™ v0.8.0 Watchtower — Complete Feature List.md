@@ -29,7 +29,7 @@ members: 24
 - [[K. Misc Quick Wins (11 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 - [[K. Misc Quick Wins (11) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Moved to v0.9.0 Sentinel]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[Summary_12]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Summary_14]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 - [[Updated v0.8.0 Feature List with Wiring Status]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[v0.8.0-feature-list-final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 

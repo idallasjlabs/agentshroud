@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "TrustConfig (2)"
-location: "L67"
+community: "CronStateMonitor"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[SubagentMonitor]] - `method` [EXTRACTED]
-- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
+- [[_DispatchSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

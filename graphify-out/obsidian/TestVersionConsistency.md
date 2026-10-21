@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "ApprovalQueueConfig"
 location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ApprovalQueueConfig
 ---
 
 # TestVersionConsistency
 
 ## Connections
 - [[dot-test_status_returns_current_version()]] - `method` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[Version strings should be consistent across the codebase.]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

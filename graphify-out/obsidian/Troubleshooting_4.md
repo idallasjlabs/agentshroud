@@ -1,20 +1,22 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L275"
+community: "SecureBrowser Skill"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/SecureBrowser_Skill
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

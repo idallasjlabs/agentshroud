@@ -50,8 +50,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)_1]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
+- 3 edges to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
 - [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities

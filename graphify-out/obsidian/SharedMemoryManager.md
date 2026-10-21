@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "TeamsConfig"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/TeamsConfig
 ---
 
 # SharedMemoryManager
 
 ## Connections
-- [[dot-__init__()_159]] - `method` [EXTRACTED]
+- [[dot-__init__()_183]] - `method` [EXTRACTED]
 - [[dot-_is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[dot-_strip_private_content()]] - `method` [EXTRACTED]
 - [[dot-append_to_group_memory()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[High-level shared-memory API wrapping UserSessionManager storage.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
 - [[TestAuthorizationHelper]] - `uses` [INFERRED]
 - [[TestConfigGate]] - `uses` [INFERRED]
@@ -50,8 +50,8 @@ tags:
 - [[get_group_memory()]] - `calls` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
 - [[shared_memory()]] - `calls` [EXTRACTED]
-- [[shared_memory()_2]] - `calls` [EXTRACTED]
 - [[shared_memory()_1]] - `calls` [EXTRACTED]
+- [[shared_memory()_2]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `contains` [EXTRACTED]
 - [[smm()_1]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/TeamsConfig

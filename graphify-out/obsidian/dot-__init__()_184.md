@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L37"
+community: "DNSFilterConfig"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

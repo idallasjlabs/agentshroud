@@ -30,7 +30,7 @@ members: 24
 - [[archive_old_events()]] - code - gateway/security/audit_archive.py
 - [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
 - [[audit_archive.py]] - code - gateway/security/audit_archive.py
-- [[datetime_3]] - code - gateway/security/audit_archive.py
+- [[datetime_4]] - code - gateway/security/audit_archive.py
 - [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
 
 ## Live Query (requires Dataview plugin)

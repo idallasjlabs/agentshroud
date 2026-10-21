@@ -12,9 +12,9 @@ tags:
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_106]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[Usage_95]] - `contains` [EXTRACTED]
+- [[Purpose_101]] - `contains` [EXTRACTED]
+- [[Related Skills_80]] - `contains` [EXTRACTED]
+- [[Usage_90]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-twREADME]] - `contains` [EXTRACTED]
 

@@ -16,9 +16,9 @@ tags:
 - [[Docker Security Options Used]] - `contains` [EXTRACTED]
 - [[Function Details_28]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_30]] - `contains` [EXTRACTED]
-- [[Purpose_137]] - `contains` [EXTRACTED]
+- [[Purpose_150]] - `contains` [EXTRACTED]
 - [[Related_34]] - `contains` [EXTRACTED]
-- [[Responsibilities_31]] - `contains` [EXTRACTED]
+- [[Responsibilities_32]] - `contains` [EXTRACTED]
 - [[docker_engine.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/docker_enginepy

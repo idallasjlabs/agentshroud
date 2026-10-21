@@ -1,21 +1,23 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L1"
+community: "Technical Specification (2)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Technical_Specification_2
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[dot-agentsskillsi-apolloREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_150]] - `contains` [EXTRACTED]
-- [[Related Skills_93]] - `contains` [EXTRACTED]
-- [[Usage_103]] - `contains` [EXTRACTED]
+- [[Input Requirements_15]] - `contains` [EXTRACTED]
+- [[Output_8]] - `contains` [EXTRACTED]
+- [[Quality Checklist_12]] - `contains` [EXTRACTED]
+- [[Role_75]] - `contains` [EXTRACTED]
+- [[Technical Specification_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-apolloSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification_2

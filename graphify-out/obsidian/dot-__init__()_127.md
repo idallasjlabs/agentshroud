@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "A2APolicyEngine (3)"
-location: "L446"
+community: "UserSessionManager (2)"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/UserSessionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Event]] - `method` [EXTRACTED]
+- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `references` [EXTRACTED]
+- [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

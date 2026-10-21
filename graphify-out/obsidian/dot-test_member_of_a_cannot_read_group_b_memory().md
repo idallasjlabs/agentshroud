@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # .test_member_of_a_cannot_read_group_b_memory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCrossGroupIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

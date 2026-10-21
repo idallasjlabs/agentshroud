@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "event_bus.py"
-location: "L12"
+community: "Oracle — Feedback Analyst (2)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/Oracle__Feedback_Analyst_2
 ---
 
 # Purpose
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_2

@@ -12,16 +12,16 @@ tags:
 # PromptProtection
 
 ## Connections
-- [[dot-__init__()_25]] - `method` [EXTRACTED]
+- [[dot-__init__()_187]] - `method` [EXTRACTED]
 - [[dot-_calculate_similarity()]] - `method` [EXTRACTED]
-- [[dot-_compile_detection_patterns()]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_load_protected_content()]] - `method` [EXTRACTED]
 - [[dot-_redact_fuzzy_match()]] - `method` [EXTRACTED]
 - [[dot-_redact_match()]] - `method` [EXTRACTED]
 - [[dot-add_protected_content()]] - `method` [EXTRACTED]
 - [[dot-get_protection_stats()]] - `method` [EXTRACTED]
 - [[dot-register_bot_hostnames()]] - `method` [EXTRACTED]
-- [[dot-scan_response()_1]] - `method` [EXTRACTED]
+- [[dot-scan_response()_2]] - `method` [EXTRACTED]
 - [[dot-test_disabled_protection()]] - `calls` [EXTRACTED]
 - [[dot-test_protected_content_loading()]] - `calls` [EXTRACTED]
 - [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - `rationale_for` [EXTRACTED]
@@ -29,11 +29,9 @@ tags:
 - [[System Prompt Protection Tests]] - `references` [EXTRACTED]
 - [[TestPromptProtection]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[prompt_protection()]] - `calls` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

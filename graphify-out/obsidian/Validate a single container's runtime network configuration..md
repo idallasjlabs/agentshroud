@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "TestNetworkValidator"
+community: "NetworkSecurityFinding"
 location: "L488"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/NetworkSecurityFinding
 ---
 
 # Validate a single container's runtime network configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_validate_container_runtime_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

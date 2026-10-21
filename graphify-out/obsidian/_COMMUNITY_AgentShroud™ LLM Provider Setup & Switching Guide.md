@@ -1,11 +1,11 @@
 ---
 type: community
-members: 10
+members: 9
 ---
 
 # AgentShroud™ LLM Provider Setup & Switching Guide
 
-**Members:** 10 nodes
+**Members:** 9 nodes
 
 ## Members
 - [[1. Provision Your Secrets (API Keys & Tokens)]] - document - docs/setup/LLM_PROVIDER_SETUP.md
@@ -15,7 +15,6 @@ members: 10
 - [[5. Verification & Troubleshooting]] - document - docs/setup/LLM_PROVIDER_SETUP.md
 - [[AgentShroud™ LLM Provider Setup & Switching Guide]] - document - docs/setup/LLM_PROVIDER_SETUP.md
 - [[How to Switch via Telegram]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[LLM_PROVIDER_SETUP]] - document - docs/setup/LLM_PROVIDER_SETUP.md
 - [[Provider Model Strings]] - document - docs/setup/LLM_PROVIDER_SETUP.md
 - [[Setup Commands]] - document - docs/setup/LLM_PROVIDER_SETUP.md
 
@@ -30,4 +29,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
 
 ## Top bridge nodes
-- [[LLM_PROVIDER_SETUP]] - degree 2, connects to 1 community
+- [[AgentShroud™ LLM Provider Setup & Switching Guide]] - degree 6, connects to 1 community

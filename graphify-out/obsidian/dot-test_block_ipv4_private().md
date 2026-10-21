@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TrustConfig"
 location: "L865"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/TrustConfig
 ---
 
 # .test_block_ipv4_private()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

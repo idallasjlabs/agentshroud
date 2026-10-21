@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .cleanup_expired_canaries()
@@ -15,4 +15,4 @@ tags:
 - [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

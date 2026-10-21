@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output (2)"
+community: "export-bot-conversations.py"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output_2
+  - community/export-bot-conversationspy
 ---
 
 # .test_run_parse_error()
@@ -15,4 +15,4 @@ tags:
 - [[TestTrivyRun]] - `method` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output_2
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

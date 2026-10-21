@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MultiTurnTracker"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MultiTurnTracker
 ---
 
 # .track_message()
@@ -20,4 +20,4 @@ tags:
 - [[SessionContext_1]] - `references` [EXTRACTED]
 - [[Track a message and response pair for disclosure analysis.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

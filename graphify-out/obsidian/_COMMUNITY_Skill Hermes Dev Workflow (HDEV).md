@@ -13,7 +13,7 @@ members: 8
 - [[Invocation]] - document - .agents/skills/i-hdev/SKILL.md
 - [[Jira ticket — every development batch gets one]] - document - .agents/skills/i-hdev/SKILL.md
 - [[Reviewers and fixer available to you]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Role_1]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Role_2]] - document - .agents/skills/i-hdev/SKILL.md
 - [[Skill Hermes Dev Workflow (HDEV)]] - document - .agents/skills/i-hdev/SKILL.md
 - [[Tools you have for this workflow]] - document - .agents/skills/i-hdev/SKILL.md
 

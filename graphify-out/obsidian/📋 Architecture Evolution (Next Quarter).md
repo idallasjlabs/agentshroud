@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "5. Strategic Recommendations"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/5_Strategic_Recommendations
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # 📋 **Architecture Evolution (Next Quarter)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Strategic Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/5_Strategic_Recommendations
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

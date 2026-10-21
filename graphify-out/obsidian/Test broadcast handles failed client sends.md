@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ConsentFramework (2)"
+community: "ApprovalQueueConfig (5)"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # Test broadcast handles failed client sends
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_broadcast_with_failed_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

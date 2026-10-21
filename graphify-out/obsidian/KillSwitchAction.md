@@ -33,11 +33,11 @@ tags:
 - [[TestResolveBotContainer]] - `uses` [INFERRED]
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
-- [[TestStatus]] - `uses` [INFERRED]
+- [[TestStatus_1]] - `uses` [INFERRED]
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
 - [[api.py_2]] - `contains` [EXTRACTED]
-- [[killswitch()_1]] - `references` [EXTRACTED]
+- [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ModeRequest

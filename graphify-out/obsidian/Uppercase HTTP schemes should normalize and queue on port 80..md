@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval"
 location: "L3526"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval
 ---
 
 # Uppercase HTTP schemes should normalize and queue on port 80.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval

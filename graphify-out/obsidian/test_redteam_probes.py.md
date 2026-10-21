@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "MiddlewareManager (4)"
+community: "MiddlewareManager (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/MiddlewareManager_3
 ---
 
 # test_redteam_probes.py
@@ -19,7 +19,7 @@ tags:
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[_make_approval_queue()]] - `contains` [EXTRACTED]
 - [[_make_full_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `contains` [EXTRACTED]
-- [[pipeline()]] - `contains` [EXTRACTED]
+- [[pipeline()_2]] - `contains` [EXTRACTED]
 - [[test_admin_action_requires_approval()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_records_all_events()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_tamper_detection()]] - `contains` [EXTRACTED]
@@ -53,4 +53,4 @@ tags:
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

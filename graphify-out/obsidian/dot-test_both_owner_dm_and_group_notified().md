@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig (4)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig_4
 ---
 
 # .test_both_owner_dm_and_group_notified()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalRequest_4]] - `calls` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

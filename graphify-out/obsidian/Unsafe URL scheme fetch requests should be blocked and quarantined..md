@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "FakeRBAC"
+community: "_wrap_response()"
 location: "L4401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # Unsafe URL scheme fetch requests should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

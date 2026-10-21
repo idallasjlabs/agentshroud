@@ -12,7 +12,7 @@ tags:
 # deploy_status_errors_when_version_unauthorized()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 

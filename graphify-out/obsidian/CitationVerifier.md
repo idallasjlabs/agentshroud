@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "api.py (2)"
+community: "api.py"
 location: "L123"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy_2
+  - community/apipy
 ---
 
 # CitationVerifier
@@ -30,7 +30,7 @@ tags:
 - [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
 - [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[TestVerifyReport]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_FakeFetcher_1]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
 - [[_FakeStreamResponse_1]] - `uses` [INFERRED]
@@ -56,4 +56,4 @@ tags:
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy_2
+#graphify/code #graphify/INFERRED #community/apipy

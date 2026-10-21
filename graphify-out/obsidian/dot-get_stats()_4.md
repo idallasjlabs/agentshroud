@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L347"
+community: "EgressFilterConfig"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_11]] - `references` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - `rationale_for` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -12,11 +12,11 @@ tags:
 # apply-patches.js
 
 ## Connections
-- [[Behavior_1]] - `contains` [EXTRACTED]
+- [[Behavior]] - `contains` [EXTRACTED]
 - [[Patches Applied]] - `contains` [EXTRACTED]
-- [[Purpose_179]] - `contains` [EXTRACTED]
-- [[Related Notes_63]] - `contains` [EXTRACTED]
-- [[Usage_122]] - `contains` [EXTRACTED]
+- [[Purpose_187]] - `contains` [EXTRACTED]
+- [[Related Notes_62]] - `contains` [EXTRACTED]
+- [[Usage_127]] - `contains` [EXTRACTED]
 - [[Why Required]] - `contains` [EXTRACTED]
 - [[apply-patches.js_1]] - `contains` [EXTRACTED]
 

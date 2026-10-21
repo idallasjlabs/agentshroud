@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig (8)"
 location: "L820"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig_8
 ---
 
 # .test_exception_fails_secure()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsPathAllowedForUser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_8

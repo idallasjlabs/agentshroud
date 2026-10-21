@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # .test_owner_over_verified_origin_keeps_full_authority()
@@ -15,4 +15,4 @@ tags:
 - [[TestOriginAwareAuthorization]] - `method` [EXTRACTED]
 - [[The legitimate path must not regress.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

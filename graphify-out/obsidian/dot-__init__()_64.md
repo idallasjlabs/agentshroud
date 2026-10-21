@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "ProxyAction"
-location: "L39"
+community: "ContextSegment"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockURLResult]] - `method` [EXTRACTED]
+- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

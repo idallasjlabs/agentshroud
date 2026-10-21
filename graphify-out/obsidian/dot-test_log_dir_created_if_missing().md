@@ -15,6 +15,6 @@ tags:
 - [[TestTrivySaveReport]] - `method` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]
 - [[save_report creates the log directory if it does not exist.]] - `rationale_for` [EXTRACTED]
-- [[save_report()]] - `calls` [EXTRACTED]
+- [[save_report()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

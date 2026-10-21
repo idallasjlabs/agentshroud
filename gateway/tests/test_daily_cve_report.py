@@ -18,6 +18,14 @@ from gateway.security.daily_cve_report import (
 # ── Fixtures ─────────────────────────────────────────────────────────────────
 
 
+@pytest.fixture(autouse=True)
+def _isolated_alert_state(tmp_path, monkeypatch):
+    """Keep the alerted-advisory state file out of /var/log in every test."""
+    import gateway.security.daily_cve_report as _mod
+
+    monkeypatch.setattr(_mod, "_ALERTED_GHSA_PATH", tmp_path / "alerted_ghsa.json", raising=False)
+
+
 def _make_report(critical=2, high=5, medium=10, low=3, total=20) -> dict:
     """Build a minimal parsed Trivy report."""
     return {
@@ -383,15 +391,33 @@ class TestFormatUpstreamCveAlert:
         msg = format_upstream_cve_alert([self._cve(sev="CRITICAL", score=9.9)])
         assert "🔴" in msg
 
-    def test_alert_states_auto_registered_under_review(self):
-        """The alert says CVEs are auto-registered under_review (honest, not 'add manually')."""
+    def test_alert_does_not_claim_registration(self):
+        """The gateway never writes the registry, so the alert must not say it did.
+
+        It used to print "Auto-registered as under_review … by the daily sync"
+        while the sync had failed on every run (CLAUDE.md §0.0, rule 3).
+        """
         from gateway.security.daily_cve_report import format_upstream_cve_alert
 
         msg = format_upstream_cve_alert([self._cve()])
+        assert "Auto-registered" not in msg
+        assert "Not yet in the registry" in msg
         assert "under_review" in msg
         assert "/soc/v1/agent-cves" in msg
         # No longer instructs a manual add-to-registry triage.
         assert "add to" not in msg
+
+    def test_alert_shows_fixed_in_version(self):
+        from gateway.security.daily_cve_report import format_upstream_cve_alert
+
+        cve = self._cve()
+        cve["fixed_in"] = "4.14.8"
+        assert "fixed in 4.14.8" in format_upstream_cve_alert([cve])
+
+    def test_alert_says_when_no_fix_is_published(self):
+        from gateway.security.daily_cve_report import format_upstream_cve_alert
+
+        assert "no fix published" in format_upstream_cve_alert([self._cve()])
 
     def test_alert_titled_for_agent_label(self):
         from gateway.security.daily_cve_report import format_upstream_cve_alert
@@ -518,6 +544,129 @@ class TestSendTelegramTruncation:
 
 
 # ── run_upstream_cve_check ────────────────────────────────────────────────────
+
+
+class TestUpstreamAlertDedup:
+    """The 06:05 check and the 07:00 GHSA ingest share one diff; an advisory
+    still missing from the registry must alert once, not once per scheduler per day."""
+
+    _ADV = {
+        "id": "GHSA-cjf8-wjx6-hjw6",
+        "ghsa_id": "GHSA-cjf8-wjx6-hjw6",
+        "summary": "remote-command validation bypass",
+        "severity": "CRITICAL",
+        "cvss": 9.1,
+        "fixed_in": "4.14.8",
+        "published_at": "2026-10-13T00:00:00Z",
+        "html_url": "https://example.com",
+    }
+
+    @pytest.mark.asyncio
+    async def test_second_check_does_not_resend(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod, "check_upstream_cves", lambda token=None, agent_id="wazuh": [dict(self._ADV)]
+        )
+        sent = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            sent.append(text)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        first = await _mod.run_upstream_cve_check("tok", "1", agent_id="wazuh")
+        second = await _mod.run_upstream_cve_check("tok", "1", agent_id="wazuh")
+
+        assert len(sent) == 1
+        assert first["telegram_sent"] is True
+        assert second["new_cves"] == 0
+        assert second["already_alerted"] == 1
+
+    @pytest.mark.asyncio
+    async def test_failed_send_is_retried(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod, "check_upstream_cves", lambda token=None, agent_id="wazuh": [dict(self._ADV)]
+        )
+        outcomes = iter([False, True])
+        sent = []
+
+        async def _flaky_send(token, chat_id, text, base_url):
+            ok = next(outcomes)
+            sent.append(ok)
+            return ok
+
+        monkeypatch.setattr(_mod, "_send_telegram", _flaky_send)
+        await _mod.run_upstream_cve_check("tok", "1", agent_id="wazuh")
+        retry = await _mod.run_upstream_cve_check("tok", "1", agent_id="wazuh")
+
+        assert sent == [False, True]
+        assert retry["telegram_sent"] is True
+
+    @pytest.mark.asyncio
+    async def test_dedup_is_per_agent(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod, "check_upstream_cves", lambda token=None, agent_id="x": [dict(self._ADV)]
+        )
+        sent = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            sent.append(text)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        await _mod.run_upstream_cve_check("tok", "1", agent_id="wazuh")
+        await _mod.run_upstream_cve_check("tok", "1", agent_id="falco")
+
+        assert len(sent) == 2
+
+    def test_unreadable_state_file_means_alert_again(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        _mod._ALERTED_GHSA_PATH.write_text("{not json")
+        assert _mod._load_alerted_ghsa() == {}
+
+    def test_unwritable_state_file_is_logged_not_raised(self, tmp_path, monkeypatch, caplog):
+        import gateway.security.daily_cve_report as _mod
+
+        blocker = tmp_path / "not_a_dir"
+        blocker.write_text("")
+        monkeypatch.setattr(_mod, "_ALERTED_GHSA_PATH", blocker / "alerted.json")
+        _mod._save_alerted_ghsa({"wazuh": ["GHSA-x"]})
+        assert "Could not record alerted upstream advisories" in caplog.text
+
+    def test_patched_versions_carried_into_result(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        advisory = {
+            # A synthetic id: real ones get registered and then (correctly) filtered.
+            "ghsa_id": "GHSA-test-test-test",
+            "summary": "s",
+            "severity": "critical",
+            "cvss": {"score": 9.1},
+            "vulnerabilities": [
+                {"patched_versions": "4.14.8"},
+                {"patched_versions": "4.14.8"},
+            ],
+        }
+
+        class _Resp:
+            def read(self):
+                return json.dumps([advisory]).encode()
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        monkeypatch.setattr(_mod.urllib.request, "urlopen", lambda req, timeout=30: _Resp())
+        out = _mod.check_upstream_cves(agent_id="wazuh")
+        assert out[0]["fixed_in"] == "4.14.8"
 
 
 class TestRunUpstreamCveCheck:

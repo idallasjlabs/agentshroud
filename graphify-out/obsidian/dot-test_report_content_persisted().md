@@ -15,6 +15,6 @@ tags:
 - [[Saved file is valid JSON containing the report keys.]] - `rationale_for` [EXTRACTED]
 - [[TestTrivySaveReport]] - `method` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]
-- [[save_report()]] - `calls` [EXTRACTED]
+- [[save_report()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

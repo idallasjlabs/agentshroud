@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "AgentTarget"
+community: "ApprovalQueueConfig (2)"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalQueueConfig_2
 ---
 
 # RouterConfig must accept the Hermes Docker service hostname.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_router_config_accepts_hermes_hostname()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

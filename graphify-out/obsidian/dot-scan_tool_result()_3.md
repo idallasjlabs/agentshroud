@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "DifferentialPIIDetector (2)"
-location: "L371"
+community: "telegram_proxy.py"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector_2
+  - community/telegram_proxypy
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-_scan()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
-- [[Scan a tool result with the lower confidence floor.          Args             t]] - `rationale_for` [EXTRACTED]
-- [[ToolResultPIIReport]] - `references` [EXTRACTED]
+- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
+- [[InjectionResult]] - `references` [EXTRACTED]
+- [[Scan tool result content for injection attempts.          Args             tool]] - `rationale_for` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector_2
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

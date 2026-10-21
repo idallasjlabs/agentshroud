@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "TelegramAPIProxy (35)"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TelegramAPIProxy_35
 ---
 
 # SSN in outbound messages must be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_ssn_redacted_on_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_35

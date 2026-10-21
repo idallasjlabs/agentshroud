@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Unit tests for TelegramAPIProxy._bot_is_mentioned()."
+community: "test_telegram_proxy_inbound.py"
 location: "L8893"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Unit_tests_for_TelegramAPIProxy_bot_is_mentioned
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # .test_no_entities_not_matched()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBotIsMentioned]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_TelegramAPIProxy_bot_is_mentioned
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig
 ---
 
 # Approval queue details must be PII-sanitized before storage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalQueuePIISanitization]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

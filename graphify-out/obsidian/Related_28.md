@@ -12,6 +12,6 @@ tags:
 # Related
 
 ## Connections
-- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ledgerpy

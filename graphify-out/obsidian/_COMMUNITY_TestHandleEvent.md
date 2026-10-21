@@ -14,7 +14,7 @@ members: 15
 - [[dot-test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
 - [[dot-test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy]] - code - gateway/tests/test_slack_proxy.py
 - [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
 - [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
 - [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
@@ -32,10 +32,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
 - 2 edges to [[_COMMUNITY__make_proxy]]
 - 2 edges to [[_COMMUNITY_AsyncMock (2)]]
-- 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
 
 ## Top bridge nodes
 - [[TestHandleEvent]] - degree 10, connects to 3 communities
-- [[SlackAPIProxy_2]] - degree 9, connects to 3 communities
+- [[SlackAPIProxy]] - degree 9, connects to 3 communities

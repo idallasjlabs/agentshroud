@@ -16,7 +16,7 @@ members: 12
 - [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
 - [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
 - [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Notes_8]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Notes_7]] - document - docs/project/legal/USPTO-APPLICATION.md
 - [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
 - [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
 - [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md

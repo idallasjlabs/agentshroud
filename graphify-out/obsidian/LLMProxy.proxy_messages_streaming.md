@@ -29,7 +29,7 @@ tags:
 - [[StreamHead]] - `shares_data_with` [EXTRACTED]
 - [[_LOCAL_BACKEND_HINTS]] - `references` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `calls` [EXTRACTED]
+- [[llm_api_proxy()]] - `calls` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `calls` [EXTRACTED]
 - [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - `calls` [EXTRACTED]
 

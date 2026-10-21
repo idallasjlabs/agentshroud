@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L347"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/FalcoAlertWatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_4]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

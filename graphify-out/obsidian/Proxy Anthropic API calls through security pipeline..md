@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L4325"
+community: "Request"
+location: "L4312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Request
 ---
 
 # Proxy Anthropic API calls through security pipeline.
 
 ## Connections
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `rationale_for` [EXTRACTED]
+- [[llm_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/Request

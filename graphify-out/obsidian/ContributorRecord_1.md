@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "telegram_proxy.py (3)"
-location: "L53"
+community: "_FakeRBAC"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/_FakeRBAC
 ---
 
 # ContributorRecord
 
 ## Connections
-- [[dot-_build_record()]] - `references` [EXTRACTED]
-- [[dot-get_contributor()]] - `references` [EXTRACTED]
-- [[dot-list_contributors()]] - `references` [EXTRACTED]
+- [[dot-test_construction()]] - `calls` [EXTRACTED]
+- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[ContributorManager]] - `uses` [INFERRED]
 - [[ContributorRecord]] - `uses` [INFERRED]
-- [[Platform]] - `uses` [INFERRED]
-- [[UserRole]] - `uses` [INFERRED]
+- [[Role_23]] - `conceptually_related_to` [AMBIGUOUS]
+- [[UserRole_1]] - `uses` [INFERRED]
+- [[_loadContributors()]] - `shares_data_with` [INFERRED]
+- [[contributors.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

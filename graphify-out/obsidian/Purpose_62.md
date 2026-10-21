@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-socrates/README.md"
 type: "document"
-community: "Technical Writer (TW)"
+community: "Socrates — Dialogue Architect (7)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/Socrates__Dialogue_Architect_7
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_7

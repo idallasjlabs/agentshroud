@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "_wrap_response()"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # .test_pipeline_error_fails_closed_for_non_owner()
@@ -17,7 +17,7 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[process_inbound()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

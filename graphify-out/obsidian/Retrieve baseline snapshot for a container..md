@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # Retrieve baseline snapshot for a container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

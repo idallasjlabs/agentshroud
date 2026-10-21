@@ -12,6 +12,6 @@ tags:
 # Record one request for (agent_id, tool) and decide allow/block.          Fail-cl
 
 ## Connections
-- [[dot-check()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RateLimitGuard

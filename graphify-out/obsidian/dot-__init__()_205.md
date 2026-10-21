@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "RBACConfig (3)"
-location: "L181"
+community: "SessionManager"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_3
+  - community/SessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_3
+#graphify/code #graphify/EXTRACTED #community/SessionManager

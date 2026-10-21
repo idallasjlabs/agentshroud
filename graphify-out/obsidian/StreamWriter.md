@@ -12,7 +12,7 @@ tags:
 # StreamWriter
 
 ## Connections
-- [[_handle()]] - `references` [EXTRACTED]
-- [[_pipe()]] - `references` [EXTRACTED]
+- [[_handle()_2]] - `references` [EXTRACTED]
+- [[_pipe()_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

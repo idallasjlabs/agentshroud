@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxy

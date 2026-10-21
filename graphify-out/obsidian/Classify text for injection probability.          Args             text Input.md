@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "HeuristicClassifier"
+community: "A2APolicyEngine (2)"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/A2APolicyEngine_2
 ---
 
 # Classify text for injection probability.          Args:             text: Input
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-classify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_2

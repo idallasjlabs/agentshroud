@@ -2,7 +2,7 @@
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
 community: "sunday-upgrade-apply.sh"
-location: "L763"
+location: "L773"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -16,6 +16,5 @@ tags:
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

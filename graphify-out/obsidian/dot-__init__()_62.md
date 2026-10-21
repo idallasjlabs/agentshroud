@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "ProxyAction"
-location: "L24"
+community: "test_forward_stream.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/test_forward_streampy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockDNSVerdict]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

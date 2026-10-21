@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L169"
+community: "MCPPermissionManager (4)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPermissionManager_4
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
-- [[_norm()_1]] - `calls` [EXTRACTED]
+- [[MCPToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_4

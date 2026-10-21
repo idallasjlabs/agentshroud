@@ -31,7 +31,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
 
 ## Top bridge nodes
 - [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities

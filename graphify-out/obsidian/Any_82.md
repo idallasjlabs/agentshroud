@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "soc/router.py"
-location: "L58"
+community: "test_agent_cve_registry.py"
+location: "L18530"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/soc/routerpy
+  - graphify/EXTRACTED
+  - community/test_agent_cve_registrypy
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (3)"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_3
 ---
 
 # .anomaly_detection()
@@ -20,8 +20,8 @@ tags:
 - [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
 - [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
 - [[dot-_send_anomaly_alert()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 - [[Detect unusual patterns that might indicate rogue behavior.          Args]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

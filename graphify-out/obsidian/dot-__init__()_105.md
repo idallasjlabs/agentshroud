@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L105"
+community: "MCPInspector"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `references` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[MCPAuditTrail]] - `references` [EXTRACTED]
+- [[MCPInspector]] - `references` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

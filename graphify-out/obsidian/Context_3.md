@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L8"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Context
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ToolResultSanitizer (2)"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ToolResultSanitizer_2
 ---
 
 # ._log_redaction_audit()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
 - [[Log PII redaction for audit trail without logging actual PII]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2

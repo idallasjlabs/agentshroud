@@ -12,7 +12,7 @@ tags:
 # .test_deploy_to_multiple_destinations()
 
 ## Connections
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[TestDeployManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]

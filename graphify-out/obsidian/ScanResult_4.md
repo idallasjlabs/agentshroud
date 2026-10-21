@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # ScanResult
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-scan()_4]] - `references` [EXTRACTED]
+- [[dot-scan()_1]] - `references` [EXTRACTED]
 - [[dot-scan_tool_result()_1]] - `references` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

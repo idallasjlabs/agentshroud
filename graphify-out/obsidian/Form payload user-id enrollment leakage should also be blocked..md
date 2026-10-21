@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "ApprovalQueueConfig (9)"
 location: "L1306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/ApprovalQueueConfig_9
 ---
 
 # Form payload user-id enrollment leakage should also be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_9

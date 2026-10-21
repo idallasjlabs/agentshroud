@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "gitleaks.toml"
+community: "Pydantic"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gitleakstoml
+  - community/Pydantic
 ---
 
 # Purpose
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gitleakstoml
+#graphify/document #graphify/EXTRACTED #community/Pydantic

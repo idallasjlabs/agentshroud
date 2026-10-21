@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "SecurityPipeline"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/SecurityPipeline
 ---
 
 # _make_pipeline()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_inbound_url_encoded_injection_blocked()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

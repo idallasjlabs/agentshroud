@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # .test_encrypted_store_error_no_key_leak()
@@ -16,4 +16,4 @@ tags:
 - [[EncryptedStore]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

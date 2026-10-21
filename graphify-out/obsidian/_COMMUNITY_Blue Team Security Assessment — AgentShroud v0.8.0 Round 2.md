@@ -30,7 +30,7 @@ members: 25
 - [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[Round 1 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Round 2 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Summary_11]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Summary_13]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Verification of ALL Prior Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Verification of Round 1 Fixes]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 
@@ -43,7 +43,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-- 1 edge to [[_COMMUNITY_Findings]]
+- 1 edge to [[_COMMUNITY_LOW — Informational (2)]]
 - 1 edge to [[_COMMUNITY_Recommendation]]
 - 1 edge to [[_COMMUNITY_LOW Findings]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]

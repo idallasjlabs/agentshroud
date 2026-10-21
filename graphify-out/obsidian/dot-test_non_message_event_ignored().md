@@ -12,7 +12,7 @@ tags:
 # .test_non_message_event_ignored()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event ignores non-message event types.]] - `rationale_for` [EXTRACTED]
 

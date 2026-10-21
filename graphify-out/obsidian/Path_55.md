@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L60"
+community: "NetworkSecurityFinding"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/NetworkSecurityFinding
 ---
 
 # Path
 
 ## Connections
-- [[_docker_read_file()]] - `references` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
-- [[main()_27]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

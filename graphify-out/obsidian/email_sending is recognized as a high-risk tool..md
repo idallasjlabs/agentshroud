@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "RBACConfig (2) (3)"
+community: "GroupRoleResolver"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2_3
+  - community/GroupRoleResolver
 ---
 
 # email_sending is recognized as a high-risk tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_is_high_risk_true_for_email_sending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2_3
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

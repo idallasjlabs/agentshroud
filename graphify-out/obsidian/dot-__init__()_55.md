@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "_FakeRBAC (2)"
-location: "L141"
+community: "KillSwitchMonitor (3)"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC_2
+  - community/KillSwitchMonitor_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager]] - `references` [EXTRACTED]
-- [[Role_19]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

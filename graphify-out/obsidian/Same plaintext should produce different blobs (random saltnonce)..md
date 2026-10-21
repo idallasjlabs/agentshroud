@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # Same plaintext should produce different blobs (random salt/nonce).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_different_encryptions_differ()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_2

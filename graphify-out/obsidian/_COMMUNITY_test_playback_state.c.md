@@ -14,7 +14,7 @@ members: 35
 - [[delivery_track_sent_ok()]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[face_set_state()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[face_state_t]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[main()_11]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[main()_12]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[playback_gate_should_open()]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[playback_logic.h]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - code - firmware/voice-terminal/main/playback_logic.h

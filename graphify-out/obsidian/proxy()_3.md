@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L47"
+community: "A2AGovernanceProxy"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/A2AGovernanceProxy
 ---
 
 # proxy()
 
 ## Connections
-- [[SSHConfig_2]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
+- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

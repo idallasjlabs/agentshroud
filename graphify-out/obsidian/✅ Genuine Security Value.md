@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "2. Security Value Audit"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # ✅ Genuine Security Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

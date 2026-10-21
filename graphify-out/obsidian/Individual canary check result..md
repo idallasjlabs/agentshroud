@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # Individual canary check result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryCheck]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

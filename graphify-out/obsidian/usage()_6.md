@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
+source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "openai-whisper-api/SKILL.md"
-location: "L4"
+community: "agentshroud-manage.sh"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/agentshroud-managesh
 ---
 
 # usage()
 
 ## Connections
-- [[transcribe.sh]] - `defines` [EXTRACTED]
-- [[transcribe.sh script]] - `calls` [EXTRACTED]
+- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
+- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/agentshroud-managesh

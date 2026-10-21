@@ -15,7 +15,7 @@ tags:
 - [[1Password Integration_1]] - `contains` [EXTRACTED]
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_4]] - `contains` [EXTRACTED]
+- [[Prerequisites_5]] - `contains` [EXTRACTED]
 - [[Quick Start (5 minutes)]] - `contains` [EXTRACTED]
 - [[Security Verification]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]

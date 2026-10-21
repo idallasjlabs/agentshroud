@@ -12,6 +12,6 @@ tags:
 # C) Quality Gate Checks
 
 ## Connections
-- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
+- [[Your Responsibilities]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

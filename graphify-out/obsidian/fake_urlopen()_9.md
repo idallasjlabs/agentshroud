@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L4531"
+community: "_wrap_response()"
+location: "L1728"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/_wrap_response
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_healthcheck_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

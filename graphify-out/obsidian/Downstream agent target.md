@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # Downstream agent target
 
 ## Connections
-- [[AgentTarget_2]] - `rationale_for` [EXTRACTED]
+- [[AgentTarget_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

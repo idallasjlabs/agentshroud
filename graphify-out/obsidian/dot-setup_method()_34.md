@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "TestParseHostsLine"
-location: "L16"
+community: "TestLogSanitizer"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/TestLogSanitizer
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestParseHostsLine]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

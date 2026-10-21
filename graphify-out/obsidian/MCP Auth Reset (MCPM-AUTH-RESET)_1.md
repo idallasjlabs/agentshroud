@@ -12,7 +12,7 @@ tags:
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Purpose_50]] - `contains` [EXTRACTED]
+- [[Purpose_52]] - `contains` [EXTRACTED]
 - [[Related Skills_37]] - `contains` [EXTRACTED]
 - [[Usage_41]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]

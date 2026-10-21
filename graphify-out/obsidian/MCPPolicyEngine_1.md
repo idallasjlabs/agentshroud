@@ -12,9 +12,9 @@ tags:
 # MCPPolicyEngine
 
 ## Connections
-- [[dot-__init__()_133]] - `method` [EXTRACTED]
-- [[dot-_decide()_1]] - `method` [EXTRACTED]
-- [[dot-_tier_for()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_128]] - `method` [EXTRACTED]
+- [[dot-_decide()]] - `method` [EXTRACTED]
+- [[dot-_tier_for()]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `method` [EXTRACTED]
 - [[dot-evaluate()_1]] - `method` [EXTRACTED]
 - [[dot-test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
@@ -26,13 +26,11 @@ tags:
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_36]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `calls` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `calls` [EXTRACTED]

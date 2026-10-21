@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MiddlewareManager (5)"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # Apply path rewriting rules to isolate paths per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_apply_path_rewriting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

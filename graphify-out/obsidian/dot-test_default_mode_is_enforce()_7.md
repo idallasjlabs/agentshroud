@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TrustConfig"
-location: "L345"
+community: "DNSFilterConfig"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/DNSFilterConfig
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[ProgressiveTrustConfig_1]] - `calls` [EXTRACTED]
-- [[TestEnforcementMode]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - `rationale_for` [EXTRACTED]
+- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

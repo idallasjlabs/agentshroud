@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "EgressFilterConfig (3)"
-location: "L644"
+community: "HTTPConnectProxy"
+location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/HTTPConnectProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-get_log()]] - `calls` [EXTRACTED]
-- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

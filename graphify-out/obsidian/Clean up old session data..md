@@ -12,6 +12,6 @@ tags:
 # Clean up old session data.
 
 ## Connections
-- [[dot-cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

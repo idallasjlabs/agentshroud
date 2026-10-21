@@ -19,7 +19,6 @@ tags:
 - [[get_risk_score()]] - `calls` [EXTRACTED]
 - [[get_risk_summary()]] - `calls` [EXTRACTED]
 - [[get_soc_correlation()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # approve_sends_correct_body_and_path()
 
 ## Connections
-- [[dot-new()_1]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[dot-ok()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]

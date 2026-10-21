@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "telegram_proxy.py (3)"
+community: "_FakeRBAC"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/_FakeRBAC
 ---
 
 # ._build_record()
@@ -15,7 +15,7 @@ tags:
 - [[dot-get_contributor()]] - `calls` [EXTRACTED]
 - [[dot-list_contributors()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `method` [EXTRACTED]
-- [[ContributorRecord_1]] - `references` [EXTRACTED]
+- [[ContributorRecord]] - `references` [EXTRACTED]
 - [[_role_enum()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

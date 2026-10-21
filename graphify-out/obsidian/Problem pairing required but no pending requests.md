@@ -12,6 +12,6 @@ tags:
 # Problem: "pairing required" but no pending requests
 
 ## Connections
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

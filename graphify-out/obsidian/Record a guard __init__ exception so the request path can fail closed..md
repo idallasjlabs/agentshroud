@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # Record a guard __init__ exception so the request path can fail closed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_record_guard_init_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

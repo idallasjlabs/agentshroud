@@ -513,7 +513,7 @@ phase_preflight() {
 phase_baseline() {
   log "baseline: capturing rollback anchor"
 
-  local git_rev git_desc
+  local git_rev git_desc HERMES_C
   git_rev="$(git -C "$REPO" rev-parse HEAD)"
   git_desc="$(git -C "$REPO" describe --tags --always 2>/dev/null || echo 'no-tag')"
 
@@ -635,8 +635,12 @@ phase_baseline() {
     # one path that must never fail closed. Same hazard already documented on
     # _dirty_build_files/_buildable_services/phase_apply.
     echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes' || true)"
-    echo 'if docker image inspect agentshroud-rollback/agentshroud-hermes-v2:'"$TODAY"' >/dev/null 2>&1; then'
-    echo "  docker tag agentshroud-rollback/agentshroud-hermes-v2:${TODAY} agentshroud/hermes:\${AGENTSHROUD_VERSION:-latest} 2>/dev/null || true"
+    # The snapshot is tagged under this host's container name (the retag loop
+    # in this phase uses $CONTAINERS): agentshroud-dev-hermes-v2 on dev. The
+    # literal prod name here meant dev's rollback never restored Hermes.
+    HERMES_C="$(printf '%s\n' $CONTAINERS | grep -m1 hermes || echo agentshroud-hermes-v2)"
+    echo "if docker image inspect agentshroud-rollback/${HERMES_C}:${TODAY} >/dev/null 2>&1; then"
+    echo "  docker tag agentshroud-rollback/${HERMES_C}:${TODAY} agentshroud/hermes:\${AGENTSHROUD_VERSION:-latest} 2>/dev/null || true"
     echo "  [ -x '$REPO/scripts/asb' ] && '$REPO/scripts/asb' up hermes || echo 'WARN: hermes image restored but not redeployed — run scripts/asb up hermes manually'"
     echo 'fi'
   } > "$ROLLBACK_SH"

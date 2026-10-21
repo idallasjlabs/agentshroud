@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "StdioConnection"
+community: "PermissionLevel"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/PermissionLevel
 ---
 
 # TestServerAccess
@@ -21,9 +21,9 @@ tags:
 - [[dot-test_unknown_server_default_allow()]] - `method` [EXTRACTED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

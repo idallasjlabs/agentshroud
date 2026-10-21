@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (2)"
+community: "GroupRoleResolver"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_2
+  - community/GroupRoleResolver
 ---
 
 # TestGroupRoleProperties
@@ -33,11 +33,11 @@ tags:
 - [[dot-test_set_role_updates_existing_entry()]] - `method` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[Test GroupRole.rank, can_use_high_risk, and GroupRoleResolver helpers.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

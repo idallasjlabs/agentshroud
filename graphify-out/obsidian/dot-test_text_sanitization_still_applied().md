@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Plain-text sanitization keeps working (redacted text forwarded).]] - `rationale_for` [EXTRACTED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[_pass_result()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

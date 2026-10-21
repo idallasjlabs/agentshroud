@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "ApprovalQueueConfig (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/ApprovalQueueConfig_2
 ---
 
 # ingest_api/config.py
@@ -14,19 +14,19 @@ tags:
 ## Connections
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - `rationale_for` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `contains` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `contains` [EXTRACTED]
 - [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[ChannelsConfig]] - `contains` [EXTRACTED]
-- [[GatewayConfig]] - `contains` [EXTRACTED]
+- [[GatewayConfig_4]] - `contains` [EXTRACTED]
 - [[LedgerConfig]] - `contains` [EXTRACTED]
 - [[PIIConfig_2]] - `contains` [EXTRACTED]
 - [[RouterConfig]] - `contains` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
-- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SecurityConfig_4]] - `contains` [EXTRACTED]
 - [[SecurityModuleConfig]] - `contains` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `contains` [EXTRACTED]
 - [[ToolRiskPolicy]] - `contains` [EXTRACTED]
 - [[_default_mtime()]] - `contains` [EXTRACTED]
@@ -42,8 +42,7 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
-- [[ledger.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[ledger.py_1]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `contains` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
 - [[reload_config()]] - `contains` [EXTRACTED]
@@ -56,4 +55,4 @@ tags:
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

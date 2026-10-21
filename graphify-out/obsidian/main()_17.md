@@ -1,24 +1,19 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "gen.py"
-location: "L164"
+community: "TestClassify"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/TestClassify
 ---
 
 # main()
 
 ## Connections
-- [[Path_38]] - `calls` [EXTRACTED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/TestClassify

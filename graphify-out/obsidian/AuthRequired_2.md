@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L49"
+community: "create_auth_dependency (2)"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/create_auth_dependency_2
 ---
 
 # AuthRequired
 
 ## Connections
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[health_check_detail()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

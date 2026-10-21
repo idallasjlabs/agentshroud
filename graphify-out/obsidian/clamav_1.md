@@ -1,0 +1,22 @@
+---
+source_file: "docs/vault/05 - Dependencies/clamav.md"
+type: "document"
+community: "All Dependencies.md"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/All_Dependenciesmd
+---
+
+# clamav.md
+
+## Connections
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[ClamAV]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [INFERRED]
+- [[clamav_scanner.py]] - `references` [INFERRED]
+- [[openscap]] - `conceptually_related_to` [EXTRACTED]
+- [[trivy_1]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

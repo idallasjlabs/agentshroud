@@ -8,7 +8,7 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Any_76]] - code - gateway/security/egress_retry.py
+- [[Any_77]] - code - gateway/security/egress_retry.py
 - [[Calculate delay with exponential backoff and jitter.]] - rationale - gateway/security/egress_retry.py
 - [[Configuration for egress retry behavior.]] - rationale - gateway/security/egress_retry.py
 - [[Execute a request with exponential backoff retry on transient failures.      Arg]] - rationale - gateway/security/egress_retry.py
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (3)]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
 - [[egress_retry.py]] - degree 6, connects to 1 community

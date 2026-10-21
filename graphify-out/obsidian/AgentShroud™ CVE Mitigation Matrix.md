@@ -18,7 +18,7 @@ tags:
 - [[CWE Coverage]] - `contains` [EXTRACTED]
 - [[Container-Image CVE Domain (our own images)]] - `references` [EXTRACTED]
 - [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - `contains` [EXTRACTED]
-- [[Executive Summary_4]] - `contains` [EXTRACTED]
+- [[Executive Summary_5]] - `contains` [EXTRACTED]
 - [[OWASP Agentic AI (ASI) Coverage]] - `contains` [EXTRACTED]
 - [[OWASP Agentic AI (ASI) Coverage Map]] - `references` [EXTRACTED]
 - [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - `cites` [EXTRACTED]

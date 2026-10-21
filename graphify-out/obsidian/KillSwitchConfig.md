@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (3)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_3
 ---
 
 # KillSwitchConfig
 
 ## Connections
-- [[dot-__init__()_103]] - `references` [EXTRACTED]
+- [[dot-__init__()_55]] - `references` [EXTRACTED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

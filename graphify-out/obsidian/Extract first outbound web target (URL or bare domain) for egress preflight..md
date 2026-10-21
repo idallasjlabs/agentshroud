@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy"
 location: "L2758"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy
 ---
 
 # Extract first outbound web target (URL or bare domain) for egress preflight.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_first_egress_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

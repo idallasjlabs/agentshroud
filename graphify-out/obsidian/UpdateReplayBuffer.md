@@ -12,7 +12,7 @@ tags:
 # UpdateReplayBuffer
 
 ## Connections
-- [[dot-__init__()_70]] - `method` [EXTRACTED]
+- [[dot-__init__()_80]] - `method` [EXTRACTED]
 - [[dot-_conn_ok()]] - `method` [EXTRACTED]
 - [[dot-_init_db()_1]] - `method` [EXTRACTED]
 - [[dot-cleanup_if_due()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-pull_undelivered()]] - `method` [EXTRACTED]
 - [[dot-record_inbound()]] - `method` [EXTRACTED]
 - [[SQLite-backed Telegram update store, safe for concurrent asyncio callers.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `conceptually_related_to` [INFERRED]
+- [[TelegramAPIProxy_2]] - `conceptually_related_to` [INFERRED]
 - [[buf()]] - `calls` [EXTRACTED]
 - [[telegram_replay.py]] - `contains` [EXTRACTED]
 - [[test_multibot_isolation()]] - `calls` [EXTRACTED]

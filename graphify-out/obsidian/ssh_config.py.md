@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/ApprovalQueueConfig
 ---
 
 # ssh_config.py
 
 ## Connections
-- [[SSHConfig]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `contains` [EXTRACTED]
 - [[SSHHostConfig]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

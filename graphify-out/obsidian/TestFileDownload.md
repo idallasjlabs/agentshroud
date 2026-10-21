@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Tests for _forward_file_download() and proxy_request() binary path. Regression…"
+community: "asyncio"
 location: "L8644"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
+  - community/asyncio
 ---
 
 # TestFileDownload
@@ -22,4 +22,4 @@ tags:
 - [[Tests for _forward_file_download() and proxy_request() binary path. Regression…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
+#graphify/code #graphify/EXTRACTED #community/asyncio

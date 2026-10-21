@@ -24,11 +24,11 @@ tags:
 - [[build_op_proxy_request()_2]] - `contains` [EXTRACTED]
 - [[build_tenant_info_url()_2]] - `contains` [EXTRACTED]
 - [[build_weekly_summary()]] - `contains` [EXTRACTED]
-- [[datetime_1]] - `imports_from` [EXTRACTED]
+- [[datetime_2]] - `imports_from` [EXTRACTED]
 - [[extract_scrum_items()]] - `contains` [EXTRACTED]
 - [[fetch_op_secret()_2]] - `contains` [EXTRACTED]
 - [[post_comment()]] - `contains` [EXTRACTED]
 - [[resolve_cloud_id()_2]] - `contains` [EXTRACTED]
-- [[run()_3]] - `contains` [EXTRACTED]
+- [[run()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

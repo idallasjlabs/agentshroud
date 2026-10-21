@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_credit_card_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_credit_card_redacted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPIIDetection_1]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +26,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_StdioConnection]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
 - 2 edges to [[_COMMUNITY_MCPInspector]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (3)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (4)]]
 
 ## Top bridge nodes
-- [[TestInspectorEdgeCases]] - degree 21, connects to 7 communities
+- [[TestPIIDetection_1]] - degree 21, connects to 7 communities

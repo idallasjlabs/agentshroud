@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # verify-proxy.sh
 
 ## Connections
-- [[fail()]] - `defines` [EXTRACTED]
-- [[info()]] - `defines` [EXTRACTED]
-- [[pass()]] - `defines` [EXTRACTED]
+- [[fail()_3]] - `defines` [EXTRACTED]
+- [[info()_1]] - `defines` [EXTRACTED]
+- [[pass()_2]] - `defines` [EXTRACTED]
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[run_bypass()]] - `defines` [EXTRACTED]
 - [[run_canary()]] - `defines` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[run_quick()]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "main.rs"
-location: "L57"
+source_file: "docs/user-guide.md"
+type: "document"
+community: "AgentShroud User Guide"
+location: "L38"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/AgentShroud_User_Guide
 ---
 
 # Commands
 
 ## Connections
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[Interacting via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

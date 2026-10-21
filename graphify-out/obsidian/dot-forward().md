@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L72"
+community: "test_a2a_proxy.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_a2a_proxypy
 ---
 
 # .forward()
 
 ## Connections
-- [[dot-health_check()]] - `calls` [EXTRACTED]
-- [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
-- [[ForwardResult]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

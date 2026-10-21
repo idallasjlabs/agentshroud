@@ -14,9 +14,9 @@ members: 14
 - [[ConsentFramework.validate_config(config)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Function Details_40]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Key Classes  Functions_42]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Purpose_163]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Purpose_164]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Responsibilities_44]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Shell Injection Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Threat Model_25]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md

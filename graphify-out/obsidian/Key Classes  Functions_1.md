@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "auth.py"
-location: "L21"
+community: "TrustManager"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/TrustManager
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/TrustManager

@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/peer-review.sh"
+source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "gemini-review.py"
-location: "L21"
+community: "colima-health-check.sh"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gemini-reviewpy
+  - community/colima-health-checksh
 ---
 
 # PATH
 
 ## Connections
-- [[peer-review.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

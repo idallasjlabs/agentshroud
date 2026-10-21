@@ -10,15 +10,15 @@ members: 16
 ## Members
 - [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Configuration_15]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Description_8]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Description_9]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Description_5]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Description_6]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[How It Works_3]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_46]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_47]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_45]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_46]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[Set In_4]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 - [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 - [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md

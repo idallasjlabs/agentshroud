@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PipelineAction"
-location: "L67"
+community: "ContextSegment"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ContextSegment
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

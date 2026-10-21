@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-daedalus/README.md
 
 ## Connections
-- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

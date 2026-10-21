@@ -12,7 +12,7 @@ tags:
 # .test_bot_id_filter_unknown_bot_returns_all()
 
 ## Connections
-- [[Path_31]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[Unknown bot_id with no config match falls through and returns all entries.]] - `rationale_for` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]

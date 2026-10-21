@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # .test_construction()
 
 ## Connections
-- [[EgressRequest]] - `calls` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
 - [[TestEgressRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

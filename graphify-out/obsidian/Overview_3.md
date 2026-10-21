@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
+community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation

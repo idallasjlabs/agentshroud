@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 
 ## Top bridge nodes
 - [[test_sanitizer.py]] - degree 12, connects to 1 community

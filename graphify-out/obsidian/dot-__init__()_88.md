@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L29"
+community: "test_soc_router_coverage.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

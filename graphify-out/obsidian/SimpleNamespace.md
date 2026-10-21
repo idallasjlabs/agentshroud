@@ -12,7 +12,7 @@ tags:
 # SimpleNamespace
 
 ## Connections
-- [[dot-__init__()_120]] - `calls` [EXTRACTED]
+- [[dot-__init__()_26]] - `calls` [EXTRACTED]
 - [[dot-test_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[dot-test_sanitized()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[_audit_entry()]] - `references` [EXTRACTED]
 

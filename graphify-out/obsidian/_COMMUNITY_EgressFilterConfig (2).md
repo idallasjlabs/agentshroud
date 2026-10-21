@@ -1,119 +1,111 @@
 ---
 type: community
-members: 106
+members: 98
 ---
 
 # EgressFilterConfig (2)
 
-**Members:** 106 nodes
+**Members:** 98 nodes
 
 ## Members
-- [[dot-__init__()_111]] - code - gateway/tests/test_egress_filter.py
-- [[dot-log_event()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_agent_specific_policy()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allow_is_not_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_cidr()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_connect_proxy_policy_allows_smtp_mail_me_587()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_default_policy_allows_imaps()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_default_policy_allows_smtp_submission()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_default_policy_allows_smtps()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_deny_is_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_egress_filter_blocks_mcp_exfil()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_egress_filter_loaded()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_full_url()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_host_port_format()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_localhost_hostname_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_log_filters_by_agent()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_log_records_attempts()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_log_size_limit()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_domain_exact()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_domain_wildcard()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_ip_cidr()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_ip_invalid()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_ip_single()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_port()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_matches_port_empty_allows_all()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_non_email_port_still_denied_for_unlisted_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_port_not_allowed()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_private_ip_blocked_ssrf()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_stats_counts()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
-- [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
-- [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
-- [[ApprovalResult]] - code - gateway/security/egress_approval.py
-- [[CIDR in policy allowlist should match.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Egress filter should be available for MCP network calls.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Egress policy for an agent or global default.]] - rationale - gateway/security/egress_filter.py
-- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter]] - code - gateway/tests/test_egress_filter.py
-- [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter must NOT notify when domain is allowed.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter must call notifier when blocking an unknown domain.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter records attempts and provides stats.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressPolicy]] - code - gateway/security/egress_filter.py
-- [[EgressPolicy default allows port 465 (SMTPS).]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressPolicy default allows port 587 (SMTP submissionSTARTTLS).]] - rationale - gateway/tests/test_egress_filter.py
-- [[FakeAuditStore_1]] - code - gateway/tests/test_egress_filter.py
-- [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
-- [[Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW]] - rationale - gateway/tests/test_egress_filter.py
-- [[Per-agent policies override the default.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Port 465 on an un-allowlisted domain is still denied in enforce mode.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed     by the]] - rationale - gateway/tests/test_egress_filter.py
-- [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - rationale - gateway/tests/test_egress_filter.py
-- [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
-- [[TestAuditStorePersistence]] - code - gateway/tests/test_egress_filter.py
-- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
-- [[TestEgressPolicy]] - code - gateway/tests/test_egress_filter.py
-- [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
-- [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
-- [[TestLogging]] - code - gateway/tests/test_egress_filter.py
-- [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestPerAgentPolicy]] - code - gateway/tests/test_egress_filter.py
-- [[TestSMTPIMAPPorts]] - code - gateway/tests/test_egress_filter.py
-- [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
-- [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Unit tests for EgressPolicy matching methods.]] - rationale - gateway/tests/test_egress_filter.py
-- [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
-- [[flush_notifications with no notifier set should not crash.]] - rationale - gateway/tests/test_egress_filter.py
-- [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
-- [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
-- [[http_connect_proxy policy allows CONNECT smtp.gmail.com465.]] - rationale - gateway/tests/test_egress_filter.py
-- [[test_egress_filter.py]] - code - gateway/tests/test_egress_filter.py
-- [[test_egress_filter_flush_without_notifier()]] - code - gateway/tests/test_egress_filter.py
-- [[test_egress_filter_no_notification_on_allow()]] - code - gateway/tests/test_egress_filter.py
-- [[test_egress_filter_notifies_on_deny()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_allows_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_cleans_stale_entries()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_does_not_affect_other_domains()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_expired_falls_back_to_deny()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_invalid_iso_is_ignored()]] - code - gateway/tests/test_egress_filter.py
-- [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - rationale - gateway/tests/test_egress_filter.py
+- [[dot-_matches_any_pattern()]] - code - gateway/security/egress_config.py
+- [[dot-from_environment()]] - code - gateway/security/egress_config.py
+- [[dot-get_effective_allowlist()]] - code - gateway/security/egress_config.py
+- [[dot-is_denylisted()]] - code - gateway/security/egress_config.py
+- [[dot-matches_allowlist()]] - code - gateway/security/egress_config.py
+- [[dot-test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_default_config()_4]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_denylist_monitor_mode()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_denylist_overrides_allowlist()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_denylist_wildcards()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_effective_allowlist_basic()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_effective_allowlist_with_denylist()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_egress_mode_override()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_enforce_mode_blocks_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_from_environment_enforce()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_from_environment_monitor()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_invalid_mode_handling()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_logging_differences_by_mode()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_monitor_mode_allows_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_port_filtering()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_private_ip_blocking()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_url_parsing()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_wildcard_allowlist_matching()]] - code - gateway/tests/test_egress_enforce.py
+- [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
+- [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
+- [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
+- [[Create config from environment variables and AGENTSHROUD_MODE.]] - rationale - gateway/security/egress_config.py
+- [[EgressAction]] - code - gateway/security/egress_filter.py
+- [[EgressAllowlistResponse]] - code - gateway/web/management.py
+- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
+- [[EgressFilterConfig]] - code - gateway/security/egress_config.py
+- [[FEED_HOSTS]] - code - gateway/security/feed_hosts.py
+- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
+- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
+- [[Get the effective allowlist for a specific agent.]] - rationale - gateway/security/egress_config.py
+- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
+- [[PERMANENT_EGRESS_DOMAINS]] - code - gateway/security/egress_config.py
+- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - code - gateway/security/egress_config.py
+- [[Public does domain match any pattern in the effective default allowlist…]] - rationale - gateway/security/egress_config.py
+- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
+- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
+- [[Return True if domain matches any pattern (exact or ``.`` wildcard). Single…]] - rationale - gateway/security/egress_config.py
+- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
+- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
+- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
+- [[Serve the audit log page.]] - rationale - gateway/web/management.py
+- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
+- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
+- [[Serve the main dashboard page.]] - rationale - gateway/web/management.py
+- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
+- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
+- [[Set the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
+- [[Test EgressFilter with enforcemonitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test EgressFilterConfig functionality.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test URL parsing for domains and ports.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test allowlist with denylist in strict mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test basic allowlist functionality.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test config creation from environment in enforce mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test config creation from environment in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test default configuration values._4]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test denylist behavior in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test denylist wildcard matching.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test handling of invalid modes.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test port-based filtering.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test specific egress mode environment variable.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that config can be saved and retrieved.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that denylist overrides allowlist in strict mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that enforce mode blocks domains not in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that logging differs between enforce and monitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that monitor mode allows unknown domains but logs them.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that private IPs are blocked regardless of mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test the management API endpoints (would need FastAPI test client).]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test wildcard matching in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[TestEgressFilterConfig]] - code - gateway/tests/test_egress_enforce.py
+- [[TestEgressFilterEnforcement]] - code - gateway/tests/test_egress_enforce.py
+- [[TestEgressManagementAPI]] - code - gateway/tests/test_egress_enforce.py
+- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
+- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
+- [[approvals()]] - code - gateway/web/management.py
+- [[audit()]] - code - gateway/web/management.py
+- [[collaborators()]] - code - gateway/web/management.py
+- [[dashboard()]] - code - gateway/web/management.py
+- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
+- [[dashboard_main()]] - code - gateway/web/management.py
+- [[domain_matches()]] - code - gateway/security/egress_config.py
+- [[egress_config.py]] - code - gateway/security/egress_config.py
+- [[falco_dashboard()]] - code - gateway/web/management.py
+- [[get_egress_allowlist()]] - code - gateway/web/management.py
+- [[get_egress_config()]] - code - gateway/security/egress_config.py
+- [[killswitch()_1]] - code - gateway/web/management.py
+- [[management.py]] - code - gateway/web/management.py
+- [[modules()]] - code - gateway/web/management.py
+- [[security_overview()]] - code - gateway/web/management.py
+- [[set_egress_config()]] - code - gateway/security/egress_config.py
+- [[ssh()]] - code - gateway/web/management.py
+- [[test_egress_enforce.py]] - code - gateway/tests/test_egress_enforce.py
+- [[update_egress_allowlist()]] - code - gateway/web/management.py
+- [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -123,27 +115,38 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 46 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 46 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 24 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 6 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig (2)_1]]
-- 3 edges to [[_COMMUNITY_StdioConnection (2)]]
-- 3 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (4)]]
-- 2 edges to [[_COMMUNITY_PIIConfig]]
-- 2 edges to [[_COMMUNITY_AlertDispatcher (2) (2)]]
+- 27 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
+- 21 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 21 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 14 edges to [[_COMMUNITY_TrustConfig]]
+- 9 edges to [[_COMMUNITY_ResourceGuard (2)]]
+- 6 edges to [[_COMMUNITY_egress_filter.py]]
+- 6 edges to [[_COMMUNITY_KeyRotationManager]]
+- 4 edges to [[_COMMUNITY_ContextSegment]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 3 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 3 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 3 edges to [[_COMMUNITY_WebProxy]]
+- 3 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_AgentTarget (4)]]
 - 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (3)]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_ContextSegment (2)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
 
 ## Top bridge nodes
-- [[EgressPolicy]] - degree 99, connects to 14 communities
-- [[ApprovalResult]] - degree 22, connects to 3 communities
-- [[TestEnforceMode]] - degree 16, connects to 3 communities
-- [[egress_filter()]] - degree 4, connects to 3 communities
-- [[_make_filter()]] - degree 33, connects to 2 communities
+- [[EgressFilterConfig]] - degree 103, connects to 15 communities
+- [[EgressAction]] - degree 45, connects to 15 communities
+- [[egress_config.py]] - degree 12, connects to 5 communities
+- [[management.py]] - degree 26, connects to 4 communities
+- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "AlertDispatcher"
+community: "TestSSRFDetection (3)"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestSSRFDetection_3
 ---
 
 # CanaryResult
@@ -17,4 +17,4 @@ tags:
 - [[Result of checking a response for canary presence.]] - `rationale_for` [EXTRACTED]
 - [[output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_3
