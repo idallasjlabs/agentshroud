@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[1. Accomplishments This Phase_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🎯 Binary Detection & Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[📊 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🔧 Security Module Constructor Fixes — Critical Infrastructure Repairs]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🚀 New Management Endpoints — Real-Time Security Visibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🛡️ Environment Resilience — TestProduction Compatibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[button_cb_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[button_event_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[button_handle_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[iot_button_delete()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[iot_button_register_cb()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[test_playback_statestubsiot_button.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/1_Accomplishments_This_Phase_3
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[1. Accomplishments This Phase_1]] - degree 6, connects to 1 community

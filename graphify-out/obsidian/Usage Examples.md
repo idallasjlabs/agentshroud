@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "SecureBrowser Skill"
+community: "test_security.py (4)"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/test_securitypy_4
 ---
 
 # Usage Examples
@@ -18,4 +18,4 @@ tags:
 - [[Example 4 Handle CAPTCHA]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/test_securitypy_4

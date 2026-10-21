@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AgentShroud™ README"
+community: "AuditExporter"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AuditExporter
 ---
 
 # What's New — v1.3.0 "Reliability" (July 2026)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

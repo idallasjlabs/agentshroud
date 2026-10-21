@@ -1,18 +1,25 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "test_dashboard.py (2)"
-location: "L561"
+community: "ContextSegment"
+location: "L498"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_dashboardpy_2
+  - graphify/INFERRED
+  - community/ContextSegment
 ---
 
 # WebSocket
 
 ## Connections
-- [[activity_websocket()]] - `references` [EXTRACTED]
-- [[egress_websocket()]] - `references` [EXTRACTED]
+- [[dot-connect()_2]] - `references` [EXTRACTED]
+- [[dot-disconnect()_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy_2
+#graphify/code #graphify/INFERRED #community/ContextSegment

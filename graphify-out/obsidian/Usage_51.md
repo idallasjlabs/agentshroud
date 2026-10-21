@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect (7)"
+community: "OpenClaw Bot SSH Configuration"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_7
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_7
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

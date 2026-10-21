@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "parse_clamscan_output"
 location: "L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/parse_clamscan_output
 ---
 
 # TestScoreRuntimeProtection
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_optimizing_when_clean_zero_findings()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

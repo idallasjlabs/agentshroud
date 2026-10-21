@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "CronStateMonitor"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # TestTransitions
@@ -22,4 +22,4 @@ tags:
 - [[CronStateMonitor]] - `uses` [INFERRED]
 - [[test_cron_state_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

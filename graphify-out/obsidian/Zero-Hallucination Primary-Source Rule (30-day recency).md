@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "rationale"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Atlas — Curriculum Architect (3)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Atlas__Curriculum_Architect_3
 ---
 
 # Zero-Hallucination Primary-Source Rule (30-day recency)
@@ -14,4 +14,4 @@ tags:
 - [[Silence-Over-Hallucination Principle]] - `semantically_similar_to` [INFERRED]
 - [[Strict Sequential 4-Query Search Protocol]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/rationale #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3

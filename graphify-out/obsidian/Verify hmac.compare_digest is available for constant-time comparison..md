@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "PortManager"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PortManager
 ---
 
 # Verify hmac.compare_digest is available for constant-time comparison.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hmac_comparison_for_secrets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

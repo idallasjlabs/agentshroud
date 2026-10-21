@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "TestOutboundInfoFilter"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/TestOutboundInfoFilter
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

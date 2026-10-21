@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "SecureBrowser Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/SecureBrowser_Skill
 ---
 
 # USPTO-APPLICATION.md
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `conceptually_related_to` [INFERRED]
 - [[TEAS Plus Filing Process]] - `references` [EXTRACTED]
-- [[TRADEMARK_1]] - `references` [EXTRACTED]
+- [[TRADEMARK]] - `references` [EXTRACTED]
 - [[USPTO Class 009 Filing (Downloadable Software)]] - `references` [EXTRACTED]
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `references` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

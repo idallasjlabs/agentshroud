@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "rationale"
-community: "InjectionAction"
+community: "ProxyAction"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction
 ---
 
 # Zero-width chars are stripped by normalize_input, so injection is still caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_zero_width_chars_dont_bypass_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

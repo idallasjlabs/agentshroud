@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer (2)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer_2
 ---
 
 # TestMergedMemory
@@ -20,8 +20,8 @@ tags:
 - [[dot-test_user_sees_their_group_memory()]] - `method` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

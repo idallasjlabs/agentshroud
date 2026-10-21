@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Remediation (2)"
-location: "L285"
+community: "telegram_proxy.py"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation_2
+  - community/telegram_proxypy
 ---
 
 # Verification
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation_2
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

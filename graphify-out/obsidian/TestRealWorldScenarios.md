@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L440"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # TestRealWorldScenarios
@@ -14,14 +14,14 @@ tags:
 ## Connections
 - [[dot-test_email_content_scanning()]] - `method` [EXTRACTED]
 - [[dot-test_icloud_contact_scanning()]] - `method` [EXTRACTED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 - [[Test realistic tool result scenarios]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/openclaw/skills/i-cr/SKILLmd

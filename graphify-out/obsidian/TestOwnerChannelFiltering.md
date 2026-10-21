@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # TestOwnerChannelFiltering
@@ -23,8 +23,8 @@ tags:
 - [[dot-test_owner_channel_uses_full_trust()]] - `method` [EXTRACTED]
 - [[dot-test_owner_pipeline_exception_fail_open()]] - `method` [EXTRACTED]
 - [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `uses` [INFERRED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

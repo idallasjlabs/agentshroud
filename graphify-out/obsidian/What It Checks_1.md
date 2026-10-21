@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "OpenSCAP"
+community: "AuditExporter (2)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/AuditExporter_2
 ---
 
 # What It Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/AuditExporter_2

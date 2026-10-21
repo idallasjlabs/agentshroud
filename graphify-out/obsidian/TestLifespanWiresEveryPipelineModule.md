@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_docs_accuracy.py"
+community: "test_forward_stream.py"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/test_forward_streampy
 ---
 
 # TestLifespanWiresEveryPipelineModule
@@ -18,4 +18,4 @@ tags:
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

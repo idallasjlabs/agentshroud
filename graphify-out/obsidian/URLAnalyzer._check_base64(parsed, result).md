@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "url_analyzer.py"
+community: "2. Security Analysis"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/2_Security_Analysis
 ---
 
 # URLAnalyzer._check_base64(parsed, result)
 
 ## Connections
-- [[Function Details_37]] - `contains` [EXTRACTED]
+- [[Function Details_36]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis

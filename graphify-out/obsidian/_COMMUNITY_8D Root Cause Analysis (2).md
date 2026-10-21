@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[8D Root Cause Analysis_1]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Purpose_47]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Related Skills_32]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Usage_36]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[openclawskillsi-eightdREADME]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Audio clicking fix — TTS resume dedup + dither + voice-gateway cpuset widen]] - rationale - CHANGELOG.md
+- [[ESP32 live model label fix — server-authoritative label push]] - rationale - CHANGELOG.md
+- [[Firmware TLS connect reliability — timeout 5s to 10s (DERP handshake race)]] - rationale - CHANGELOG.md
+- [[Streaming direct voice path (_call_llm_stream) — avoids blocking full-reply wait]] - rationale - CHANGELOG.md
+- [[v1.6.0 Release — Voice Terminal]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

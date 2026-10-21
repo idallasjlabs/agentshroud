@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "TestParserAndCommandResolution"
+community: "PermissionLevel (6)"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParserAndCommandResolution
+  - community/PermissionLevel_6
 ---
 
 # TestParserAndCommandResolution
@@ -19,4 +19,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParserAndCommandResolution
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel_6

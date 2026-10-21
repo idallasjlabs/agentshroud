@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)"
+community: "KillSwitchMonitor (5)"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+  - community/KillSwitchMonitor_5
 ---
 
 # TestGroupMemoryInvisibleFromDM
@@ -21,8 +21,8 @@ tags:
 - [[Group workspace content must not leak into any user's DM workspace.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5

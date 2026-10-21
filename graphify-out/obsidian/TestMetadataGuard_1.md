@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (2)"
+community: "TestProductionCompose"
 location: "L485"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_req_2
+  - community/TestProductionCompose
 ---
 
 # TestMetadataGuard
@@ -16,8 +16,8 @@ tags:
 - [[dot-test_metadata_exception_non_blocking()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_req_2
+#graphify/code #graphify/INFERRED #community/TestProductionCompose

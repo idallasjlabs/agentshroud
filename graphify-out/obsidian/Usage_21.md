@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD) (2)"
-location: "L10"
+community: "TestOutboundInfoFilter (6)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD_2
+  - community/TestOutboundInfoFilter_6
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD_2
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_6

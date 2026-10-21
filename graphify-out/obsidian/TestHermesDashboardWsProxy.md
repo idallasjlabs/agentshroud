@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 location: "L538-L659"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # TestHermesDashboardWsProxy
@@ -22,4 +22,4 @@ tags:
 - [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.…]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AgentShroud™ README"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/AgentShroud_README
 ---
 
 # ThreatAssessment
@@ -16,23 +16,23 @@ tags:
 - [[dot-analyze_screenshot()]] - `references` [EXTRACTED]
 - [[dot-test_hook_can_flag_threat()]] - `calls` [EXTRACTED]
 - [[dot-test_screenshot_hook_registered()]] - `calls` [EXTRACTED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/AgentShroud_README

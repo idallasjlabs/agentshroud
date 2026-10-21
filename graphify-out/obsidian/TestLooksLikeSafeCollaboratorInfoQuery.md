@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig (2)"
 location: "L4138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig_2
 ---
 
 # TestLooksLikeSafeCollaboratorInfoQuery
@@ -32,9 +32,9 @@ tags:
 - [[dot-test_what_can_you_question()]] - `method` [EXTRACTED]
 - [[Classifier for conceptual collaborator questions.]] - `rationale_for` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

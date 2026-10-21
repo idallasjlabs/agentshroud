@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+members: 11
 ---
 
 # 02-infrastructure.md (2)
 
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Related Notes_70]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[LOW Findings_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[MEDIUM Findings_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L1 No Global Security Headers Middleware (Reopened from R2-L1)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L2 WebSocket Connection Leak in ws_logs (Reopened from R2-L2)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L3 OCI Image Version Labels Still Outdated (Reopened from R2-L3)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L4 Dashboard WS Activity Endpoint Accepts Both Master and Scoped Tokens]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L5 Backup Files Contain Pre-Hardening Code]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-M1 Missing `aiohttp` Dependency in requirements.txt (Reopened from R2-M1)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-M2 Management WebSocket Endpoints Still Use Master Auth Token (Reopened from R2-M2)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-M3 Stale Version String in Root Dashboard HTML]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Round 3 New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_TeamsConfig (3)]]
 
 ## Top bridge nodes
-- [[Restart Procedure_2]] - degree 10, connects to 1 community
+- [[Round 3 New Findings]] - degree 3, connects to 1 community

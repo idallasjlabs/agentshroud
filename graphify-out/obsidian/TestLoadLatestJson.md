@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TelegramAPIProxy (4)"
+community: "shared network (sidecar mode bridge)"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/shared_network_sidecar_mode_bridge
 ---
 
 # TestLoadLatestJson
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_missing_dir_returns_none()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/code #graphify/EXTRACTED #community/shared_network_sidecar_mode_bridge

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller (2)"
-location: "L131"
+community: "Threat Model"
+location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/Threat_Model
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

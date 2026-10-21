@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "DNSForwarderProtocol"
+community: "TestOAuthInjection"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/TestOAuthInjection
 ---
 
 # UDP protocol handler for DNS forwarding with optional blocklist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DNSForwarderProtocol]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/rationale #graphify/EXTRACTED #community/TestOAuthInjection

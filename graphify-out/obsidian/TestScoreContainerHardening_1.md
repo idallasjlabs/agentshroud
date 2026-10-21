@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py (2)"
+community: "AgentShroud Security Assessment — v0.8.0"
 location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # TestScoreContainerHardening
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_four_when_openscap_running_with_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

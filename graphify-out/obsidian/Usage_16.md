@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (2)"
+community: "TestOutboundInfoFilter (4)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_2
+  - community/TestOutboundInfoFilter_4
 ---
 
 # Usage
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_2
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_4

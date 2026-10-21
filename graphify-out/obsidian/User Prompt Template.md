@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L112"
+community: "Skill: Data Validation (DATA-VAL) (3)"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

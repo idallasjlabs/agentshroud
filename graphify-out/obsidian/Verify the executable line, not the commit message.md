@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-21.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Verify the executable line, not the commit message
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

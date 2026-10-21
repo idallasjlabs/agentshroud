@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "TestOutboundPipelineIntegration"
 location: "L207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/TestOutboundPipelineIntegration
 ---
 
 # TestLogging
@@ -25,4 +25,4 @@ tags:
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

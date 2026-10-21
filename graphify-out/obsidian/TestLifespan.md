@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # TestLifespan
@@ -19,4 +19,4 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

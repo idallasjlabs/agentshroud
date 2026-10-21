@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "_FakeRBAC (2)"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC_2
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
 ---
 
 # TestPausedFieldWiring
@@ -19,8 +19,8 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `method` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

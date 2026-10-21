@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig (2)"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # TestMultiBotContextvarRouting
@@ -23,8 +23,8 @@ tags:
 - [[dot-test_send_telegram_text_uses_inbound_token()]] - `method` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Cross-bot reply misrouting fix via contextvar-scoped send token]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[Tests for per-request bot token routing via contextvars.      Regression suite f]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

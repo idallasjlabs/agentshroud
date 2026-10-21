@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "api.py"
+community: "MCPPolicyEngine (2)"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/MCPPolicyEngine_2
 ---
 
 # TestFetchOutcome
@@ -18,8 +18,8 @@ tags:
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2

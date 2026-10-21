@@ -1,17 +1,20 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
-location: "L295"
+community: "MCPAuditTrail"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - community/MCPAuditTrail
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[Container Won't Start_2]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
+- [[Slow Builds_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/document #graphify/EXTRACTED #community/MCPAuditTrail

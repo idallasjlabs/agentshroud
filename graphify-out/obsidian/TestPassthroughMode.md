@@ -1,26 +1,32 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L407"
+community: "CrossBotTrustLedger"
+location: "L645"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxyConfig
+  - community/CrossBotTrustLedger
 ---
 
 # TestPassthroughMode
 
 ## Connections
-- [[dot-test_passthrough_adds_header()]] - `method` [EXTRACTED]
 - [[dot-test_passthrough_allows_everything()]] - `method` [EXTRACTED]
-- [[dot-test_passthrough_skips_content_scan()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_passthrough_still_audits()]] - `method` [EXTRACTED]
+- [[FindingType]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxyConfig
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

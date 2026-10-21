@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "rationale"
-community: "AgentShroud Security Value Proposition - Revised"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L38-54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # Ultra-conservative credential policy (multi-user threat model)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Value Proposition - Revised]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised
+#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

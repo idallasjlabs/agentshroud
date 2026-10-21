@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "SkillGuard (2)"
+community: "AuditStore"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/AuditStore
 ---
 
 # What the caller should do with the scanned skill.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recommendation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/rationale #graphify/EXTRACTED #community/AuditStore

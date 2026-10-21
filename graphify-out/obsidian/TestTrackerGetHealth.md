@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig"
 location: "L4943"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig
 ---
 
 # TestTrackerGetHealth
@@ -16,9 +16,9 @@ tags:
 - [[dot-test_initial_state_healthy()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
 - [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

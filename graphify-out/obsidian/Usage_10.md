@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "8D Root Cause Analysis"
-location: "L10"
+community: "SubagentMonitor._log_event"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/SubagentMonitor_log_event
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event

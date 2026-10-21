@@ -1,47 +1,40 @@
 ---
 type: community
-members: 34
+members: 27
 ---
 
 # ADR-006: Multi-Runtime Container Support
 
-**Members:** 34 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[1. Pre-cache the Lima disk image]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[2. Start Colima]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[3. Apply the VPN networking fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[4. Verify]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[ADR-006-multi-runtime-support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[ADR-006 Multi-Runtime Container Support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Cisco AnyConnect VPN Networking Fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Colima (primary macOS runtime)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Colima Initial Setup Procedure]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Colima as primary macOS dev runtime]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Consequences]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Context_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Decision_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Docker Desktop (network topology diagram)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
-- [[Fix (Colima)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Fix (Docker Desktop)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Mitigation]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Multi-Runtime Support (DockerPodmanApple Containers)]] - concept - docs/architecture/deployment-diagram.md
-- [[Negative]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Per-Host Runtime Selection]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Positive]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Problem]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Roadmap]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Runtime Abstraction Layer]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Status_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Supported Runtimes]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Tailscale (encrypted overlay network)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Tailscale Overlay Network (tail240ea8.ts.net)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[VPN Networking Fix (Cisco AnyConnect) runbook]] - rationale - docs/runbooks/colima-docker-guide.md
-- [[macOS Host (Development Machine)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[marvin (100.90.175.83, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[trillian (100.94.68.61, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[dot-__init__()_123]] - code - gateway/security/module_stats.py
+- [[dot-record()]] - code - gateway/security/module_stats.py
+- [[dot-reset()_1]] - code - gateway/security/module_stats.py
+- [[dot-setup_method()_23]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_24]] - code - gateway/tests/test_module_stats.py
+- [[dot-snapshot()]] - code - gateway/security/module_stats.py
+- [[dot-test_record_decision_helper()]] - code - gateway/tests/test_module_stats.py
+- [[dot-test_record_decision_never_raises()]] - code - gateway/tests/test_module_stats.py
+- [[dot-test_tool_acl_can_use_tool_records()]] - code - gateway/tests/test_module_stats.py
+- [[Decision_2]] - code - gateway/security/module_stats.py
+- [[ModuleStatsCollector]] - code - gateway/security/module_stats.py
+- [[Record one enforcement decision for ``module``.          Never raises an unknow]] - rationale - gateway/security/module_stats.py
+- [[Return a per-module stats snapshot with totals and block rate.]] - rationale - gateway/security/module_stats.py
+- [[SCRUM-80 — the record helper + wrapped enforcement points feed real data.]] - rationale - gateway/tests/test_module_stats.py
+- [[TestEnforcementWiring]] - code - gateway/tests/test_module_stats.py
+- [[Thread-safe per-module allowblocksanitize counters.]] - rationale - gateway/security/module_stats.py
+- [[get_collector()]] - code - gateway/security/module_stats.py
+- [[module_stats.py]] - code - gateway/security/module_stats.py
+- [[test_block_rate_computed()]] - code - gateway/tests/test_module_stats.py
+- [[test_empty_module_zero_rate_not_division_error()]] - code - gateway/tests/test_module_stats.py
+- [[test_module_stats.py]] - code - gateway/tests/test_module_stats.py
+- [[test_record_and_snapshot()]] - code - gateway/tests/test_module_stats.py
+- [[test_record_ignores_invalid_decision_safely()]] - code - gateway/tests/test_module_stats.py
+- [[test_reset()]] - code - gateway/tests/test_module_stats.py
+- [[test_sanitize_decision()]] - code - gateway/tests/test_module_stats.py
+- [[test_thread_safe_under_concurrency()]] - code - gateway/tests/test_module_stats.py
+- [[test_unknown_module_created_on_demand()]] - code - gateway/tests/test_module_stats.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,11 +44,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_RuntimeConfig]]
-- 1 edge to [[_COMMUNITY_Quickstart]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
+- 8 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 5 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[ADR-006 Multi-Runtime Container Support]] - degree 19, connects to 1 community
-- [[VPN Networking Fix (Cisco AnyConnect) runbook]] - degree 2, connects to 1 community
-- [[Tailscale (encrypted overlay network)]] - degree 2, connects to 1 community
+- [[test_module_stats.py]] - degree 18, connects to 4 communities
+- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
+- [[get_collector()]] - degree 11, connects to 2 communities
+- [[Decision_2]] - degree 7, connects to 2 communities
+- [[module_stats.py]] - degree 6, connects to 2 communities

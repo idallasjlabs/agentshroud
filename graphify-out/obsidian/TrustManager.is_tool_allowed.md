@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "ModuleStatsCollector (2)"
+community: "test_hermes_model_resolver.py (2)"
 location: "289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector_2
+  - community/test_hermes_model_resolverpy_2
 ---
 
 # TrustManager.is_tool_allowed
@@ -15,4 +15,4 @@ tags:
 - [[ToolACLEnforcer._can_use_tool_impl]] - `calls` [EXTRACTED]
 - [[TrustManager.get_trust]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector_2
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2

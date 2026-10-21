@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "ConsentFramework (2)"
+community: "test_soc_router_coverage.py"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework_2
+  - community/test_soc_router_coveragepy
 ---
 
 # Threat levels for detected issues.
 
 ## Connections
-- [[ThreatLevel_1]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework_2
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

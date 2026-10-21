@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # TestRBACManager
 
 ## Connections
-- [[dot-setup_method()_4]] - `method` [EXTRACTED]
+- [[dot-setup_method()_5]] - `method` [EXTRACTED]
 - [[dot-test_list_users_and_roles()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_admin()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_collaborator()]] - `method` [EXTRACTED]
@@ -29,9 +29,9 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[Test RBAC manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

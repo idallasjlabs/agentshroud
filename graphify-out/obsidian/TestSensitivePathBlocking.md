@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "KillSwitchMonitor"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/KillSwitchMonitor
 ---
 
 # TestSensitivePathBlocking
@@ -24,4 +24,4 @@ tags:
 - [[PIIScanner]] - `uses` [INFERRED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

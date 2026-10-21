@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # Write file content to a remote host via structured (non-shell-string) transport.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

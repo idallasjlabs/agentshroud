@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # Verify the module uses AsyncOpenAI, not sync OpenAI.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_uses_async_openai_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "UserSessionManager (3)"
+community: "TELEGRAM_ISSUES.md"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # TestFileSandboxSkippedForPlainMessages
@@ -22,4 +22,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

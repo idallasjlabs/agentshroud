@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "TestParseHosts"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List (2)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHosts
+  - community/AgentShroud_v080_Watchtower__Complete_Feature_List_2
 ---
 
 # TestParseHosts
@@ -25,4 +25,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHosts
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List_2

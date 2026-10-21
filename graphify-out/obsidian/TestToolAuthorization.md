@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestToolAuthorization"
+community: "Tailscale mesh VPN (tail240ea8.ts.net)"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolAuthorization
+  - community/Tailscale_mesh_VPN_tail240ea8tsnet
 ---
 
 # TestToolAuthorization
@@ -25,4 +25,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolAuthorization
+#graphify/code #graphify/EXTRACTED #community/Tailscale_mesh_VPN_tail240ea8tsnet

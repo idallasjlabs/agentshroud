@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # TestPickLatestHermesTag
@@ -20,4 +20,4 @@ tags:
 - [[Hermes publishes date-based image tags (vYYYY.M.D).]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "_wrap_response() (4)"
 location: "L563"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_4
 ---
 
 # Writing outside allowed paths must be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_write_outside_allowed_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_4

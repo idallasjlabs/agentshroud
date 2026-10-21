@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # ViolationType
@@ -15,11 +15,11 @@ tags:
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_70]] - `uses` [INFERRED]
-- [[Any_51]] - `uses` [INFERRED]
+- [[Any_27]] - `uses` [INFERRED]
+- [[Any_4]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
@@ -37,11 +37,11 @@ tags:
 - [[TestToolGating]] - `uses` [INFERRED]
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustLevel_3]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[Types of security violations.]] - `rationale_for` [EXTRACTED]
 - [[ViolationType_1]] - `uses` [INFERRED]
 - [[_StubForwarder_2]] - `uses` [INFERRED]
@@ -50,6 +50,6 @@ tags:
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
-- [[trust_manager.py_1]] - `imports` [EXTRACTED]
+- [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/soc/routerpy

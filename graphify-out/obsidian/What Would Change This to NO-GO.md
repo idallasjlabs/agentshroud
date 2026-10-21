@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23 (2)"
+community: "ApprovalQueueConfig (5)"
 location: "L268"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # What Would Change This to NO-GO
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Go  No-Go Recommendation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_2
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5

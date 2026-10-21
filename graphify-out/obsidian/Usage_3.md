@@ -1,17 +1,17 @@
 ---
-source_file: "src/interfaces/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Control Center"
-location: "L7"
+community: "AgentTarget (2)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Control_Center
+  - community/AgentTarget_2
 ---
 
 # Usage
 
 ## Connections
-- [[Control Center]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Control_Center
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

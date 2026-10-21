@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "_run"
+community: "log_sanitizer.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run
+  - community/log_sanitizerpy
 ---
 
 # TestGuard
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_refuses_when_not_green_user()]] - `method` [EXTRACTED]
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run
+#graphify/code #graphify/EXTRACTED #community/log_sanitizerpy

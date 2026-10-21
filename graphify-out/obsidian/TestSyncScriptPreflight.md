@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Path (2)"
+community: "AuditStore"
 location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/AuditStore
 ---
 
 # TestSyncScriptPreflight
@@ -24,4 +24,4 @@ tags:
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - `rationale_for` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/AuditStore

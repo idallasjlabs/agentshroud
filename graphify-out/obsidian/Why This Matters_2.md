@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L522"
+community: "Findings"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Findings
 ---
 
-# Why This Matters:
+# Why This Matters
 
 ## Connections
-- [[XML Configuration File Parsing_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Hardening Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Findings

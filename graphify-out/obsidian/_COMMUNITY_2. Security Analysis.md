@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[2. Security Analysis]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2a. Owner Bypass (`OWNER_USER_IDS`) — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2b. Telegram SDK Patch Removal — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2c. Telegram Proxy Auth Added — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2d. Credential Reference Fixes — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[2e. Gateway Auth Simplification — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3a. Enforcement Mode Flip — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3b. ContextGuard Pipeline Integration — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3c. Observatory Mode API — ✅ GOOD with note]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3d. 20 New Prompt Injection Patterns — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[3e. Docker Hardening — ✅ GOOD (minus YAML bugs)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[4a. Blue Team Fixes — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[4b. Remaining Risk Tailscale Networking (E1)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[4c. Test Coverage Improvements]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[Configuration  Environment Variables_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Function Details_36]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Purpose_140]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Related_42]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._check_base64(parsed, result)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._is_private_ip(ip_str)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._is_ssrf(hostname)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer.analyze(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer.analyze_and_pin(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[url_analyzer.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[url_analyzer.py]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,3 @@ members: 14
 TABLE source_file, type FROM #community/2_Security_Analysis
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[2. Security Analysis]] - degree 14, connects to 1 community

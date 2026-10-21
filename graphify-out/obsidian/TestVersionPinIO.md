@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy
 ---
 
 # TestVersionPinIO
@@ -23,4 +23,4 @@ tags:
 - [[RemediationPlan dataclass]] - `uses` [INFERRED]
 - [[test_auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

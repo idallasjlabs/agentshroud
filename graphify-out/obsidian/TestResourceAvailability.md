@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestResourceAvailability"
+community: "Claude Code (PRIMARY agent)"
 location: "L747"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestResourceAvailability
+  - community/Claude_Code_PRIMARY_agent
 ---
 
 # TestResourceAvailability
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_unreadable_first_path_falls_through()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestResourceAvailability
+#graphify/code #graphify/EXTRACTED #community/Claude_Code_PRIMARY_agent

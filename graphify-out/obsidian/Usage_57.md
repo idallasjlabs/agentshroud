@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "OpenClaw Bot SSH Configuration"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

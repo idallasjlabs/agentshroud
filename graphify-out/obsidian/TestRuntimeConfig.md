@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "RuntimeConfig"
+community: "pipeline.py — Security Pipeline"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # TestRuntimeConfig
@@ -25,4 +25,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

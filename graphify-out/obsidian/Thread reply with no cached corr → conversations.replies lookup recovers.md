@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "AsyncMock"
+community: "api.py (2)"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/apipy_2
 ---
 
 # Thread reply with no cached corr → conversations.replies lookup recovers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_thread_reply_recovers_inbound_via_conversations_replies()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # Tool risk tier configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolRiskConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

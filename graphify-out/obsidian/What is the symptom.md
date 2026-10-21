@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "What is the symptom?"
+community: "launchd/install.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/launchd/installsh
 ---
 
 # What is the symptom?
@@ -17,4 +17,4 @@ tags:
 - [[Context limit exceeded, bot resets mid-conversation]] - `calls` [EXTRACTED]
 - [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/concept #graphify/EXTRACTED #community/launchd/installsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "env_guard.py"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/env_guardpy
 ---
 
 # TestKeyRotationWorkflow
@@ -19,12 +19,12 @@ tags:
 - [[dot-test_rotation_with_validation_failure()]] - `method` [EXTRACTED]
 - [[dot-test_successful_rotation_workflow()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[Test the complete rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L557"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # TestMultiFieldOutboundScanning
@@ -18,9 +18,9 @@ tags:
 - [[dot-test_post_ephemeral_scanned()]] - `method` [EXTRACTED]
 - [[dot-test_structured_field_sanitization_blocks_delivery()]] - `method` [EXTRACTED]
 - [[dot-test_text_sanitization_still_applied()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `uses` [INFERRED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - `rationale_for` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

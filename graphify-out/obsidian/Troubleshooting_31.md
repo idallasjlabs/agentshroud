@@ -1,22 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "shortcuts/README.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L160"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L291"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

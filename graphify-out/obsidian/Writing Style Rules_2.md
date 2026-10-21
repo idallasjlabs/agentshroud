@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "hermes/SOUL.md"
 location: "L199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/hermes/SOULmd
 ---
 
 # Writing Style Rules
@@ -17,4 +17,4 @@ tags:
 - [[What Belongs Where_2]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

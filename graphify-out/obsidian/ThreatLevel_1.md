@@ -1,21 +1,44 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "ConsentFramework (2)"
-location: "L27"
+community: "CrossBotTrustLedger"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ConsentFramework_2
+  - graphify/INFERRED
+  - community/CrossBotTrustLedger
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
-- [[ThreatLevel]] - `semantically_similar_to` [INFERRED]
-- [[git_guard.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[dot-highest_threat()]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestAllowDenyList]] - `uses` [INFERRED]
+- [[TestAuditQueries]] - `uses` [INFERRED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[TestAuditTrailBounded]] - `uses` [INFERRED]
+- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
+- [[TestConfigParsing]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
+- [[TestHashChainIntegration]] - `uses` [INFERRED]
+- [[TestInjectionDetection]] - `uses` [INFERRED]
+- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
+- [[TestProcessingTime]] - `uses` [INFERRED]
+- [[TestProxyInterception]] - `uses` [INFERRED]
+- [[TestProxyPermissions]] - `uses` [INFERRED]
+- [[TestProxyRateLimiting]] - `uses` [INFERRED]
+- [[TestProxyResultProcessing]] - `uses` [INFERRED]
+- [[TestProxyStats]] - `uses` [INFERRED]
+- [[TestSensitiveOps]] - `uses` [INFERRED]
+- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
+- [[TestThreatLevelCalc]] - `uses` [INFERRED]
+- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
+- [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # TestNetworkValidator
 
 ## Connections
-- [[dot-setup_method()_35]] - `method` [EXTRACTED]
+- [[dot-setup_method()_32]] - `method` [EXTRACTED]
 - [[dot-test_gateway_network_bridging_validation()]] - `method` [EXTRACTED]
 - [[dot-test_network_security_finding_structure()]] - `method` [EXTRACTED]
 - [[dot-test_network_validation_comprehensive_rules()]] - `method` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[test_network_validator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

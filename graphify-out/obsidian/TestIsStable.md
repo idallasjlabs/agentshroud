@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_stable"
+community: "TestFullAccessMiddlewareBypass"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # TestIsStable
@@ -19,4 +19,4 @@ tags:
 - [[Pre-release builds must never be shipped to production automatically.]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "InjectionAction"
+community: "ProxyAction"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction
 ---
 
 # TestHighSeverity
 
 ## Connections
-- [[dot-test_ignore_previous_instructions()_1]] - `method` [EXTRACTED]
+- [[dot-test_ignore_previous_instructions()]] - `method` [EXTRACTED]
 - [[dot-test_new_instructions_override()_1]] - `method` [EXTRACTED]
-- [[dot-test_role_reassignment()_2]] - `method` [EXTRACTED]
+- [[dot-test_role_reassignment()_1]] - `method` [EXTRACTED]
 - [[dot-test_social_engineering_admin()]] - `method` [EXTRACTED]
 - [[dot-test_system_delimiter_injection()]] - `method` [EXTRACTED]
 - [[dot-test_xml_function_injection()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

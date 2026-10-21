@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Threat Model"
+community: "_llm_init_agent_reference_paths()"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model
+  - community/_llm_init_agent_reference_paths
 ---
 
 # Threat: Resource Exhaustion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model
+#graphify/document #graphify/EXTRACTED #community/_llm_init_agent_reference_paths

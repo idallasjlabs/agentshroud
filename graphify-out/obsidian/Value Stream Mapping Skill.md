@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Value Stream Mapping Skill"
+community: "MCP Server: github-fluence"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Value_Stream_Mapping_Skill
+  - community/MCP_Server_github-fluence
 ---
 
 # Value Stream Mapping Skill
 
-#graphify/document #graphify/EXTRACTED #community/Value_Stream_Mapping_Skill
+#graphify/document #graphify/EXTRACTED #community/MCP_Server_github-fluence

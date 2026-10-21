@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy (2)"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy_2
 ---
 
 # TestSSRFDetection
@@ -31,8 +31,8 @@ tags:
 - [[dot-test_ipv6_ula_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_localhost_blocked()]] - `method` [EXTRACTED]
 - [[SSRF blocking — the one hard block.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[URLAnalyzer_1]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy_2

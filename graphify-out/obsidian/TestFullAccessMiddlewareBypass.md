@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestFullAccessMiddlewareBypass"
+community: "iCloud Services (4)"
 location: "L9395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/iCloud_Services_4
 ---
 
 # TestFullAccessMiddlewareBypass
@@ -23,4 +23,4 @@ tags:
 - [[full_access collaborators must pass through middleware and secondary pipeline…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services_4

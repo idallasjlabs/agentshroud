@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Path (2)"
+community: "AuditStore"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/AuditStore
 ---
 
 # TestScanEntrypointInProcess
@@ -26,4 +26,4 @@ tags:
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/AuditStore

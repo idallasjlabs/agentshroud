@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (2)"
-location: "L18"
+community: "TestFabricatedSecurityNotice (2) (2)"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
+  - community/TestFabricatedSecurityNotice_2_2
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Add a comment to a card]] - `contains` [EXTRACTED]
+- [[Archive a card]] - `contains` [EXTRACTED]
+- [[Create a card]] - `contains` [EXTRACTED]
+- [[List boards]] - `contains` [EXTRACTED]
+- [[List cards in a list]] - `contains` [EXTRACTED]
+- [[List lists in a board]] - `contains` [EXTRACTED]
+- [[Move a card to another list]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2

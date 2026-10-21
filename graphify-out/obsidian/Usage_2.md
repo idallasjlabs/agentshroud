@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "src/interfaces/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (4)"
-location: "L55"
+community: "TestIsFresh"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_4
+  - community/TestIsFresh
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
-- [[Click Element]] - `contains` [EXTRACTED]
-- [[Extract Data]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
-- [[Fill Form]] - `contains` [EXTRACTED]
-- [[Navigate to URL]] - `contains` [EXTRACTED]
-- [[Take Screenshot]] - `contains` [EXTRACTED]
+- [[Control Center]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_4
+#graphify/document #graphify/EXTRACTED #community/TestIsFresh

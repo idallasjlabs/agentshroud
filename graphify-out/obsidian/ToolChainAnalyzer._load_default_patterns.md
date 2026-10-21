@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MiddlewareManager
 ---
 
 # ToolChainAnalyzer._load_default_patterns
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Athena (data lakehouse)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[MCP Server atlassian-fluence]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

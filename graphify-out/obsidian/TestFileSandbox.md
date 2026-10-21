@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response() (4)"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/_wrap_response_4
 ---
 
 # TestFileSandbox
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_proc_self_environ_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_staging_detection()]] - `method` [EXTRACTED]
 - [[dot-test_symlink_traversal_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_tmp_read_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_tmp_read_allowed()_1]] - `method` [EXTRACTED]
 - [[dot-test_windows_traversal_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_write_outside_allowed_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_write_pii_detection()]] - `method` [EXTRACTED]
@@ -50,13 +50,13 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/_wrap_response_4

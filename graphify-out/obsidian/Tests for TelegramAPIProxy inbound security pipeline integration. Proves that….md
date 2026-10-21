@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "SecurityPipeline"
 location: "L3"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/SecurityPipeline
 ---
 
 # Tests for TelegramAPIProxy inbound security pipeline integration. Proves that…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_proxy_inbound.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

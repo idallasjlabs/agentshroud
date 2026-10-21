@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestStreamingProxyStatusPropagation"
+community: "TestLoadAllSecretFileValues"
 location: "L796-L862"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStreamingProxyStatusPropagation
+  - community/TestLoadAllSecretFileValues
 ---
 
 # TestStreamingProxyStatusPropagation
@@ -21,4 +21,4 @@ tags:
 - [[llm_api_proxy()]] - `calls` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation
+#graphify/code #graphify/EXTRACTED #community/TestLoadAllSecretFileValues

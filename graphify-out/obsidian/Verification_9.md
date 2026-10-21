@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Make gateway source code, config, and security policies read-only to the agent"
-location: "L250"
+community: "dns_filter.py"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
+  - community/dns_filterpy
 ---
 
 # Verification
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

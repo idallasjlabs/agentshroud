@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # TestGlobalSecurityHeaders
@@ -15,9 +15,9 @@ tags:
 - [[dot-test_json_api_has_cache_control()]] - `method` [EXTRACTED]
 - [[dot-test_status_has_security_headers()]] - `method` [EXTRACTED]
 - [[All API responses should include basic security headers.]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

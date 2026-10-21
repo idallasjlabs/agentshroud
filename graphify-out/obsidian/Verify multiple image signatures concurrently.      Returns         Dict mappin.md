@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/image_verifier.py"
 type: "rationale"
-community: "test_image_verifier.py"
+community: "cli/main.py"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/cli/mainpy
 ---
 
 # Verify multiple image signatures concurrently.      Returns:         Dict mappin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify_images()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

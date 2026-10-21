@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "._run_proxy()"
+community: "sidecar.py"
 location: "L431-L536"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/sidecarpy
 ---
 
 # TestHermesDashboardProxyHeaders
@@ -19,4 +19,4 @@ tags:
 - [[hermes_dashboard_proxy()]] - `calls` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_proxy
+#graphify/code #graphify/EXTRACTED #community/sidecarpy

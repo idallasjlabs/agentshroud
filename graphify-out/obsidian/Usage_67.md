@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Project Management (README)"
+community: "What You Must Do When Invoked (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/What_You_Must_Do_When_Invoked_2
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2

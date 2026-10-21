@@ -1,22 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Canvas Skill"
-location: "L86"
+community: "models.py"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/modelspy
 ---
 
 # Workflow
 
 ## Connections
-- [[1. Create HTML content]] - `contains` [EXTRACTED]
-- [[2. Find your canvas host URL]] - `contains` [EXTRACTED]
-- [[3. Find connected nodes]] - `contains` [EXTRACTED]
-- [[4. Present content]] - `contains` [EXTRACTED]
-- [[5. Navigate, snapshot, or hide]] - `contains` [EXTRACTED]
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/modelspy

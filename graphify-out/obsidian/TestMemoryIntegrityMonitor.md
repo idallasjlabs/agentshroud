@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (6)"
+community: "test_llm_proxy_failover.py"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/test_llm_proxy_failoverpy
 ---
 
 # TestMemoryIntegrityMonitor
 
 ## Connections
-- [[dot-setup_method()_24]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_5]] - `method` [EXTRACTED]
+- [[dot-setup_method()_16]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_expected_write_window()]] - `method` [EXTRACTED]
 - [[dot-test_file_monitoring_new_file()]] - `method` [EXTRACTED]
 - [[dot-test_hash_computation()]] - `method` [EXTRACTED]
@@ -21,13 +21,13 @@ tags:
 - [[dot-test_tampering_detection()]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]
 - [[Test memory integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

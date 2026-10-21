@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "sync-cve-registry.py (2)"
+community: "browser/scripts/browse.py"
 location: "18400-18473"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy_2
+  - community/browser/scripts/browsepy
 ---
 
 # _AGENT_CVE_SOURCES (per-agent CVE pipeline config)
@@ -17,4 +17,4 @@ tags:
 - [[get_agent_ghsa_repo()]] - `calls` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy_2
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
+community: "API Keys Setup Guide"
 location: "L595"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+  - community/API_Keys_Setup_Guide
 ---
 
 # Troubleshooting OTA
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

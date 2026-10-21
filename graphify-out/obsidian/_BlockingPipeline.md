@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "UserSessionManager (2) (2)"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/UserSessionManager_2_2
 ---
 
 # _BlockingPipeline
 
 ## Connections
-- [[dot-process_outbound()_2]] - `method` [EXTRACTED]
-- [[AgentTarget_3]] - `uses` [INFERRED]
+- [[dot-process_outbound()_1]] - `method` [EXTRACTED]
+- [[AgentTarget_2]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - `rationale_for` [EXTRACTED]
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - `calls` [EXTRACTED]
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

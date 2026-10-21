@@ -12,7 +12,7 @@ tags:
 # TestToolResultSanitizer
 
 ## Connections
-- [[dot-setup_method()_5]] - `method` [EXTRACTED]
+- [[dot-setup_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_blocked_pattern_detection()]] - `method` [EXTRACTED]
 - [[dot-test_code_blocks_preserved()]] - `method` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `method` [EXTRACTED]

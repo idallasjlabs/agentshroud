@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "TestScoreLoggingMonitoring"
+community: "A2APolicyEngine (gateway/security/a2a_policy.py)"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreLoggingMonitoring
+  - community/A2APolicyEngine_gateway/security/a2a_policypy
 ---
 
 # TestScoreLoggingMonitoring
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_two_with_wazuh()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreLoggingMonitoring
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_gateway/security/a2a_policypy

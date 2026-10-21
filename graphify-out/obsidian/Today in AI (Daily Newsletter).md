@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/today-in-ai.txt"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
+community: "1. GitHub MCP Authentication Reset (4)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/1_GitHub_MCP_Authentication_Reset_4
 ---
 
 # Today in AI (Daily Newsletter)
@@ -15,4 +15,4 @@ tags:
 - [[Turbo Fieldfare (MLX inference backend)]] - `references` [EXTRACTED]
 - [[oMLX (local model backend)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_4

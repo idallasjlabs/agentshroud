@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "parse_query"
+community: "web_proxy.py"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/web_proxypy
 ---
 
 # TestParseQuery
@@ -22,4 +22,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_query
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

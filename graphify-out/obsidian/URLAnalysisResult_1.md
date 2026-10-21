@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # URLAnalysisResult
@@ -17,6 +17,6 @@ tags:
 - [[dot-analyze_and_pin()]] - `references` [EXTRACTED]
 - [[dot-flagged()_2]] - `method` [EXTRACTED]
 - [[Result of analyzing a URL.]] - `rationale_for` [EXTRACTED]
-- [[url_analyzer.py]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

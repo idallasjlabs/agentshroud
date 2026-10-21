@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "8D Root Cause Analysis (2)"
+community: "Browser — Secure Browser Automation (SKILL) (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis_2
+  - community/Browser__Secure_Browser_Automation_SKILL_2
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis_2
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL_2

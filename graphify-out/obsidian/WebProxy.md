@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "_pcm_bytes"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProxyAction
+  - community/_pcm_bytes
 ---
 
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_11]] - `method` [EXTRACTED]
+- [[dot-__init__()_2]] - `method` [EXTRACTED]
 - [[dot-_audit()]] - `method` [EXTRACTED]
 - [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[dot-check_request()]] - `method` [EXTRACTED]
 - [[dot-get_stats()_1]] - `method` [EXTRACTED]
 - [[dot-scan_response()]] - `method` [EXTRACTED]
-- [[dot-setUp()_2]] - `calls` [EXTRACTED]
+- [[dot-setUp()_1]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
 - [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
 - [[dot-test_different_domains_independent()]] - `calls` [EXTRACTED]
 - [[dot-test_no_audit_chain_no_crash()]] - `calls` [EXTRACTED]
 - [[dot-test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
@@ -45,8 +45,8 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
 - [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
@@ -59,8 +59,8 @@ tags:
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
 - [[_CloseRaisesWriter]] - `uses` [INFERRED]
-- [[_DummyTargetWriter]] - `uses` [INFERRED]
 - [[_DummyTargetWriter_1]] - `uses` [INFERRED]
+- [[_DummyTargetWriter]] - `uses` [INFERRED]
 - [[_HeaderTimeoutReader]] - `uses` [INFERRED]
 - [[_MockWriter]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `uses` [INFERRED]
@@ -68,7 +68,7 @@ tags:
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[http_proxy.py_2]] - `imports` [EXTRACTED]
-- [[passthrough_proxy()]] - `calls` [EXTRACTED]
+- [[passthrough_proxy()_1]] - `calls` [EXTRACTED]
 - [[proxy()_2]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
@@ -81,6 +81,6 @@ tags:
 - [[test_telegram_api_blocked_in_connect_proxy()]] - `calls` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/_pcm_bytes

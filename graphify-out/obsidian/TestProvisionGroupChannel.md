@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock (2)"
+community: "api.py (2)"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/apipy_2
 ---
 
 # TestProvisionGroupChannel
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_no_token_returns_none()]] - `method` [EXTRACTED]
 - [[dot-test_slack_error_returns_none()]] - `method` [EXTRACTED]
 - [[dot-test_success_returns_channel_id_with_sanitized_name()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `uses` [INFERRED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/code #graphify/EXTRACTED #community/apipy_2

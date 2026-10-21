@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "Socrates — Dialogue Architect (2) (2)"
 location: "§2.1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Socrates__Dialogue_Architect_2_2
 ---
 
 # Voice Gateway Service (STT/TTS WebSocket Bridge to Governed Path)
@@ -17,4 +17,4 @@ tags:
 - [[MicroLink Native Tailscale Client for ESP32 (Requires PSRAM)]] - `shares_data_with` [EXTRACTED]
 - [[faster-whisper STT Engine (Local, CPU-friendly)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2_2

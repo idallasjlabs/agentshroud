@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "ModeRequest"
+community: "AsyncMock"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ModeRequest
+  - community/AsyncMock
 ---
 
 # UpdateRequest
 
 ## Connections
 - [[dot-test_update_request_defaults()]] - `calls` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[upgrade_bot()]] - `references` [EXTRACTED]
 - [[upgrade_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ModeRequest
+#graphify/code #graphify/INFERRED #community/AsyncMock

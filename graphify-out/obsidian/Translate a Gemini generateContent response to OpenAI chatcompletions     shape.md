@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "test_gemini_openai_translator.py (2)"
+community: "Post-v1.0.0 — Deferred"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy_2
+  - community/Post-v100__Deferred
 ---
 
 # Translate a Gemini generateContent response to OpenAI chat/completions     shape
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gemini_to_openai_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_gemini_openai_translatorpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Post-v100__Deferred

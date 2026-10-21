@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "AgentShroud™ README"
+community: "AuditExporter"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AuditExporter
 ---
 
 # V-D. Encrypted Container Communication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

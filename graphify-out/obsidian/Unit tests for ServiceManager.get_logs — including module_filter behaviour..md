@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "ServiceManager"
+community: "MiddlewareManager (2) (3)"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/MiddlewareManager_2_3
 ---
 
 # Unit tests for ServiceManager.get_logs — including module_filter behaviour.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceManagerGetLogs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2_3

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py (2)"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy_2
 ---
 
 # TestTrustManager
 
 ## Connections
-- [[dot-setup_method()_33]] - `method` [EXTRACTED]
+- [[dot-setup_method()_31]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_7]] - `method` [EXTRACTED]
 - [[dot-test_action_allowed_basic()]] - `method` [EXTRACTED]
 - [[dot-test_action_denied_high_trust()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_get_trust_unknown()]] - `method` [EXTRACTED]
 - [[dot-test_history()]] - `method` [EXTRACTED]
 - [[dot-test_register_agent()]] - `method` [EXTRACTED]
-- [[dot-test_register_idempotent()]] - `method` [EXTRACTED]
+- [[dot-test_register_idempotent()_1]] - `method` [EXTRACTED]
 - [[dot-test_score_never_negative()]] - `method` [EXTRACTED]
 - [[dot-test_sqlite_persistence()]] - `method` [EXTRACTED]
 - [[dot-test_success_increases_score()]] - `method` [EXTRACTED]
@@ -41,11 +41,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy_2

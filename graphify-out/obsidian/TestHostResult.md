@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "MultiHostResult"
+community: "parse_trivy_output"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MultiHostResult
+  - community/parse_trivy_output
 ---
 
 # TestHostResult
@@ -18,4 +18,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MultiHostResult
+#graphify/code #graphify/INFERRED #community/parse_trivy_output

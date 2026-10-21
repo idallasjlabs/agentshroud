@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # Verify allowed domains pass egress check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_allowed_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

@@ -1,17 +1,21 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
-location: "L18"
+community: "USPTO Trademark Application — AgentShroud™"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+  - community/USPTO_Trademark_Application__AgentShroud
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[1. Create a parent panel]] - `contains` [EXTRACTED]
+- [[2. Initialise]] - `contains` [EXTRACTED]
+- [[3. Set an emotion]] - `contains` [EXTRACTED]
+- [[4. Reposition]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud

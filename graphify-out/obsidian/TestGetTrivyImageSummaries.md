@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Path (3)"
+community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
 location: "L1070"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
 ---
 
 # TestGetTrivyImageSummaries
@@ -23,4 +23,4 @@ tags:
 - [[dot-test_returns_one_entry_per_report_file()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_3
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention

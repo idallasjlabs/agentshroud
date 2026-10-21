@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[2. Security Value Audit_2]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[PARTIAL PROTECTION (real logic, but gaps or dependencies)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[REAL PROTECTION (functional enforcement, would stop actual attacks)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[SECURITY THEATER RISK (looks good, limited real value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[bsp_iot_button_create()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[button_handle_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[esp_err_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[test_wakeword_statestubsbspesp-bsp.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/2_Security_Value_Audit
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[2. Security Value Audit_2]] - degree 4, connects to 1 community

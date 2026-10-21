@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_summary"
+community: "FalcoAlertWatcher (2)"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/FalcoAlertWatcher_2
 ---
 
 # TestGetTrivySummary
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_returns_generate_summary_output()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

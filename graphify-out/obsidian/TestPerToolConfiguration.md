@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_llm_proxy.py"
 location: "L425"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DifferentialPIIDetector
+  - community/test_llm_proxypy
 ---
 
 # TestPerToolConfiguration
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-test_tool_specific_floor_override()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_tool_uses_default_floor()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector
+#graphify/code #graphify/INFERRED #community/test_llm_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "FetchOutcome"
+community: "MCPPolicyEngine (2)"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/MCPPolicyEngine_2
 ---
 
 # TestSubmitEndpoint
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_too_many_candidate_urls_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_too_many_entries_rejected()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

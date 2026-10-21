@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "MiddlewareManager (2)"
 location: "L658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/MiddlewareManager_2
 ---
 
 # TestGetLogs
 
 ## Connections
-- [[dot-get_logs()]] - `calls` [EXTRACTED]
+- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
 - [[dot-test_bytes_payload_is_decoded()]] - `method` [EXTRACTED]
 - [[dot-test_engine_error_falls_back_to_socket()]] - `method` [EXTRACTED]
 - [[dot-test_no_engine_no_socket()]] - `method` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

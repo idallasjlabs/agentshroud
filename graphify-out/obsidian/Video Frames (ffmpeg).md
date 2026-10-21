@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "frame.sh"
+community: "ClamAV (2)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/framesh
+  - community/ClamAV_2
 ---
 
 # Video Frames (ffmpeg)
@@ -16,4 +16,4 @@ tags:
 - [[Quick start]] - `contains` [EXTRACTED]
 - [[video-framesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/framesh
+#graphify/document #graphify/EXTRACTED #community/ClamAV_2

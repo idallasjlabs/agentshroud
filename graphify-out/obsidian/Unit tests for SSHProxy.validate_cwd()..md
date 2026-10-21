@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # Unit tests for SSHProxy.validate_cwd().
@@ -15,4 +15,4 @@ tags:
 - [[TestSSHProxyValidateWriteFile]] - `rationale_for` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

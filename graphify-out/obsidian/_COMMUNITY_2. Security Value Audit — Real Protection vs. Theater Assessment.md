@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[⚠️ MEDIUM-VALUE COMPONENTS (Good Intent, Implementation Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ HIGH-VALUE SECURITY COMPONENTS (Real Protection)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ OVERALL ASSESSMENT GENUINE SECURITY FRAMEWORK]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔍 NEEDS STRENGTHENING (Risk of Security Theater)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[Production Safety Checklist (PROD-SAFETY)]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Purpose_52]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Related Skills_38]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Usage_41]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[openclawskillsi-psREADME]] - document - docker/config/openclaw/skills/i-ps/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - degree 5, connects to 1 community
+- [[Production Safety Checklist (PROD-SAFETY)]] - degree 5, connects to 1 community

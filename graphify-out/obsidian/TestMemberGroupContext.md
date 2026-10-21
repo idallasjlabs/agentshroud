@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "test_soc_bots.py"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_soc_botspy
 ---
 
 # TestMemberGroupContext
@@ -21,9 +21,9 @@ tags:
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Regular members can use medium-risk tools but not privateadmin tools.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

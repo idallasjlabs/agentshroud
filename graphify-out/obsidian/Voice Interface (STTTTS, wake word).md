@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 location: "L377-L397"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Voice Interface (STT/TTS, wake word)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[voice-gateway service]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Sunday_Upgrade_prompt
+#graphify/concept #graphify/INFERRED #community/_wrap_response_2

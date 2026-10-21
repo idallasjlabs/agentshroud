@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # TestModuleEnforcement
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-test_pii_sanitizer_default_enforcement()]] - `method` [EXTRACTED]
 - [[dot-test_pii_sanitizer_mode_param()]] - `method` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[SecurityConfig_4]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[Test that individual modules respect the enforcemonitor mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "concept"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "SecureBrowser Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/SecureBrowser_Skill
 ---
 
 # USPTO Class 009 Filing (Downloadable Software)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Skill

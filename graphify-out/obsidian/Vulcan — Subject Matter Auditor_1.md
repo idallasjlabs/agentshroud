@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "soc.js (6)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/socjs_6
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-vulcanREADME]] - `contains` [EXTRACTED]
-- [[Purpose_144]] - `contains` [EXTRACTED]
-- [[Related Skills_104]] - `contains` [EXTRACTED]
-- [[Usage_111]] - `contains` [EXTRACTED]
+- [[Purpose_60]] - `contains` [EXTRACTED]
+- [[Related Skills_46]] - `contains` [EXTRACTED]
+- [[Usage_49]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-vulcanREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/socjs_6

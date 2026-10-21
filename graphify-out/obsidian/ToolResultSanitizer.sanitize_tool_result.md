@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PIIConfig (2)"
+community: "EgressFilterConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig_2
+  - community/EgressFilterConfig
 ---
 
 # ToolResultSanitizer.sanitize_tool_result
@@ -17,4 +17,4 @@ tags:
 - [[ToolResultSanitizer._log_redaction_audit]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer._reconstruct_result]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

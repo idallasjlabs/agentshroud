@@ -1,21 +1,20 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide (4)"
-location: "L381"
+community: "iCloud Services Setup - Complete Guide (2)"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_4
+  - community/iCloud_Services_Setup_-_Complete_Guide_2
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Agent Not Found]] - `contains` [EXTRACTED]
-- [[Authentication Issues]] - `contains` [EXTRACTED]
-- [[Configuration Not Loading]] - `contains` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Path Permission Denied]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_4
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide_2

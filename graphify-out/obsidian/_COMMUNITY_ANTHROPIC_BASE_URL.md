@@ -1,29 +1,30 @@
 ---
 type: community
-members: 16
+members: 17
 ---
 
 # ANTHROPIC_BASE_URL
 
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[How It Works_3]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_45]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_46]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Action groups]] - document - skills/openclaw/slack/SKILL.md
+- [[Actions_1]] - document - skills/openclaw/slack/SKILL.md
+- [[Delete a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Edit a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Emoji list]] - document - skills/openclaw/slack/SKILL.md
+- [[Ideas to try]] - document - skills/openclaw/slack/SKILL.md
+- [[Inputs to collect]] - document - skills/openclaw/slack/SKILL.md
+- [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
+- [[List reactions]] - document - skills/openclaw/slack/SKILL.md
+- [[Member info]] - document - skills/openclaw/slack/SKILL.md
+- [[Overview_17]] - document - skills/openclaw/slack/SKILL.md
+- [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
+- [[React to a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md
+- [[Send a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Slack Actions]] - document - skills/openclaw/slack/SKILL.md
+- [[slackSKILL]] - document - skills/openclaw/slack/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +32,9 @@ members: 16
 TABLE source_file, type FROM #community/ANTHROPIC_BASE_URL
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
+
+## Top bridge nodes
+- [[slackSKILL]] - degree 2, connects to 1 community

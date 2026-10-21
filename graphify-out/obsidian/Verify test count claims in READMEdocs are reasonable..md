@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "test_docs_accuracy.py"
+community: "test_forward_stream.py"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/test_forward_streampy
 ---
 
 # Verify test count claims in README/docs are reasonable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTestCountAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy

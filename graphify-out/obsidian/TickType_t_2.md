@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h"
 type: "code"
-community: "xTaskGetTickCount (2)"
+community: "AgentShroud Incident Response Plan (9)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/xTaskGetTickCount_2
+  - community/AgentShroud_Incident_Response_Plan_9
 ---
 
 # TickType_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xTaskGetTickCount()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/xTaskGetTickCount_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_9

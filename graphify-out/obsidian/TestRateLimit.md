@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # TestRateLimit
@@ -16,4 +16,4 @@ tags:
 - [[_check_rate_limit()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

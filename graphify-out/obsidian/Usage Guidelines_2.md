@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "AgentShroud Color Palette"
+community: "SSH Configuration Guide"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/SSH_Configuration_Guide
 ---
 
 # Usage Guidelines
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
 - [[Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

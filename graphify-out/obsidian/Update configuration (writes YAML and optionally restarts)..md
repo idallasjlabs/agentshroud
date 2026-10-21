@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "MCPPolicyEngine"
 location: "L426"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine
 ---
 
 # Update configuration (writes YAML and optionally restarts).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

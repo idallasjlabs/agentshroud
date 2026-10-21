@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "_t"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/_t
 ---
 
 # TestSourceTagging
 
 ## Connections
-- [[dot-guard()_5]] - `method` [EXTRACTED]
+- [[dot-guard()]] - `method` [EXTRACTED]
 - [[dot-test_empty_provenance_for_unknown_session()]] - `method` [EXTRACTED]
 - [[dot-test_segment_hash_integrity()]] - `method` [EXTRACTED]
 - [[dot-test_segment_provenance_ordering()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[test_context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_t

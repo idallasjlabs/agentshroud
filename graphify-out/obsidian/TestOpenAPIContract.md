@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "TestOpenAPIContract"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # TestOpenAPIContract
@@ -22,4 +22,4 @@ tags:
 - [[OpenAPI schema and version consistency tests.]] - `rationale_for` [EXTRACTED]
 - [[test_api_contract.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/code #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

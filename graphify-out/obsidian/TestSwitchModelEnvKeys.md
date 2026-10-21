@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "._run_and_read"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # TestSwitchModelEnvKeys
@@ -22,4 +22,4 @@ tags:
 - [[Expected keys are present in docker.env after a switch.]] - `rationale_for` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

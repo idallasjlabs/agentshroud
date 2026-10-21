@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "api.py"
-location: "L882"
+community: "TestEgressApprovalQueue"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/TestEgressApprovalQueue
 ---
 
 # WebSocket
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[dot-__init__()_97]] - `references` [EXTRACTED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/TestEgressApprovalQueue

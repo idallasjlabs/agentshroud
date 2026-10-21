@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # Validate and govern an inbound A2A message from a remote peer.
 
 ## Connections
-- [[dot-process_inbound()_7]] - `rationale_for` [EXTRACTED]
-- [[dot-process_outbound()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/apipy

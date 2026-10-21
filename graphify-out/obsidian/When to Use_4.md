@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Weather Skill"
+community: "DEVELOPER.md — Development Context for AgentShroud"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/DEVELOPERmd__Development_Context_for_AgentShroud
 ---
 
 # When to Use
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud

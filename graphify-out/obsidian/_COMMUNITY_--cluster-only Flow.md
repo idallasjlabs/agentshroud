@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--cluster-only Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
+- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

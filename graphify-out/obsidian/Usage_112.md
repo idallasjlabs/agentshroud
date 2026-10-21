@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "mcp-proxy-wrapper.js (2)"
-location: "L34"
+community: "TestOutboundInfoFilter"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs_2
+  - community/TestOutboundInfoFilter
 ---
 
 # Usage
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs_2
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

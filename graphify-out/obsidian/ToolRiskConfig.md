@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L201"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # ToolRiskConfig
 
 ## Connections
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_77]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
@@ -27,15 +27,15 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MFAGuard_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
-- [[TestPersistence_1]] - `uses` [INFERRED]
+- [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[Tool risk tier configuration]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 - [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/INFERRED #community/ContextSegment

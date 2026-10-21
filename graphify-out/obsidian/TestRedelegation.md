@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # TestRedelegation
@@ -19,4 +19,4 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DelegationManager
+#graphify/code #graphify/INFERRED #community/_make_proxy

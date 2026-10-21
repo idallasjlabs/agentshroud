@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # TestMembersShareGroupWorkspace
@@ -21,9 +21,9 @@ tags:
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer

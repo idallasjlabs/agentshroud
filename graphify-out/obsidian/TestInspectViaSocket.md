@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "MiddlewareManager (2)"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/MiddlewareManager_2
 ---
 
 # TestInspectViaSocket
@@ -20,4 +20,4 @@ tags:
 - [[_inspect_via_socket]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

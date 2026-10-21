@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "paper"
-community: "ConsentFramework (2)"
+community: "AgentShroud™ README"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/ConsentFramework_2
+  - community/AgentShroud_README
 ---
 
 # Wu et al. 2026 (arXiv:2601.07263) — Browser-based agent social engineering attacks
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[browser_security.py]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/ConsentFramework_2
+#graphify/paper #graphify/EXTRACTED #community/AgentShroud_README

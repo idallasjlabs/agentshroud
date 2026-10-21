@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
 type: "document"
-community: "Weekly Hermes Stability Report"
+community: "i-gitops SKILL (stub)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weekly_Hermes_Stability_Report
+  - community/i-gitops_SKILL_stub
 ---
 
 # Weekly Hermes Stability Report
 
-#graphify/document #graphify/EXTRACTED #community/Weekly_Hermes_Stability_Report
+#graphify/document #graphify/EXTRACTED #community/i-gitops_SKILL_stub

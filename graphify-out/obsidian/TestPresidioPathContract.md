@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_llm_proxy.py"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_llm_proxypy
 ---
 
 # TestPresidioPathContract
@@ -18,11 +18,11 @@ tags:
 - [[dot-test_presidio_analyze_restricted_to_pii_entities()]] - `method` [EXTRACTED]
 - [[dot-test_presidio_exception_falls_back_to_regex()]] - `method` [EXTRACTED]
 - [[dot-test_presidio_result_becomes_pii_hit()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[Exercise the Presidio detection path with an injected fake analyzer.      The re]] - `rationale_for` [EXTRACTED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

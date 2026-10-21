@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # Verify resource check methods return False (deny) on exception.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardFailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

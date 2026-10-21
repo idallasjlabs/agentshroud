@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Function Details (5)"
+community: "Skill Creation Process"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Skill_Creation_Process
 ---
 
 # Threat Model
 
 ## Connections
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

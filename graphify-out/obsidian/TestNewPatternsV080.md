@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TestNewPatternsV080"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # TestNewPatternsV080
 
 ## Connections
 - [[dot-_hits()]] - `method` [EXTRACTED]
-- [[dot-pg()_1]] - `method` [EXTRACTED]
+- [[dot-pg()]] - `method` [EXTRACTED]
 - [[dot-test_ascii_art_injection()]] - `method` [EXTRACTED]
 - [[dot-test_authority_escalation()]] - `method` [EXTRACTED]
 - [[dot-test_benign_encoding_discussion()]] - `method` [EXTRACTED]
@@ -39,10 +39,10 @@ tags:
 - [[dot-test_tool_call_injection()]] - `method` [EXTRACTED]
 - [[dot-test_tool_result_injection_ref()]] - `method` [EXTRACTED]
 - [[dot-test_whitespace_obfuscation()]] - `method` [EXTRACTED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/code #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

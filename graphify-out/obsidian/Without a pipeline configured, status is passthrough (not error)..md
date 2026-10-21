@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestEmailSend (2)"
+community: "TestPatternDetection"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEmailSend_2
+  - community/TestPatternDetection
 ---
 
 # Without a pipeline configured, status is passthrough (not error).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_passthrough_status_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend_2
+#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection

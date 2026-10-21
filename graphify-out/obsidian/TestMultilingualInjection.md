@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "TestMultilingualInjection"
+community: "A2APolicyEngine (2)"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/A2APolicyEngine_2
 ---
 
 # TestMultilingualInjection
 
 ## Connections
-- [[dot-setup_method()_16]] - `method` [EXTRACTED]
+- [[dot-setup_method()_15]] - `method` [EXTRACTED]
 - [[dot-test_benign_multilingual_text()]] - `method` [EXTRACTED]
 - [[dot-test_case_insensitive_detection()]] - `method` [EXTRACTED]
 - [[dot-test_mixed_language_injection()]] - `method` [EXTRACTED]
@@ -29,8 +29,8 @@ tags:
 - [[dot-test_tier2_tagalog_injection()]] - `method` [EXTRACTED]
 - [[dot-test_tier2_tamil_injection()]] - `method` [EXTRACTED]
 - [[dot-test_tier2_ukrainian_injection()]] - `method` [EXTRACTED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - `rationale_for` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_2

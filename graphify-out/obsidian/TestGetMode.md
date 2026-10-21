@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "EgressFilterConfig (4)"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressFilterConfig_4
 ---
 
 # TestGetMode
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_1]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_4]] - `method` [EXTRACTED]
 - [[dot-test_response_includes_timestamp()]] - `method` [EXTRACTED]
 - [[dot-test_returns_monitor_when_set()]] - `method` [EXTRACTED]
 - [[dot-test_returns_observatory_when_set()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
+community: "BotConfig (3)"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/BotConfig_3
 ---
 
 # Typography
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/BotConfig_3

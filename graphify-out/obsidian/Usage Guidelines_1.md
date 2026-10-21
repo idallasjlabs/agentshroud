@@ -1,18 +1,20 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "branding/README.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L23"
+community: "test_hermes_model_resolver.py"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/test_hermes_model_resolverpy
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[TRADEMARK_1]] - `references` [EXTRACTED]
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[Do's]] - `contains` [EXTRACTED]
+- [[Don'ts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy

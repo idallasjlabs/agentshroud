@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Implement gateway-level outbound information filtering module"
-location: "L357"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_filtering_module
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
 ---
 
 # Verification
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3

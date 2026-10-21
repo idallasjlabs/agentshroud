@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "TrustManager"
+community: ".cursor/mcp.json"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/cursor/mcpjson
 ---
 
 # TrustManager
@@ -17,17 +17,17 @@ tags:
 - [[Configuration (TrustConfig)]] - `contains` [EXTRACTED]
 - [[Database Schema]] - `contains` [EXTRACTED]
 - [[Default Action Trust Requirements]] - `contains` [EXTRACTED]
-- [[Environment Variables_2]] - `contains` [EXTRACTED]
+- [[Environment Variables_3]] - `contains` [EXTRACTED]
 - [[Function Details_1]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_1]] - `contains` [EXTRACTED]
 - [[MCP Proxy]] - `calls` [EXTRACTED]
-- [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
-- [[Purpose_83]] - `contains` [EXTRACTED]
-- [[Related_2]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_1]] - `contains` [EXTRACTED]
+- [[Purpose_80]] - `contains` [EXTRACTED]
+- [[Related_1]] - `contains` [EXTRACTED]
 - [[Responsibilities_3]] - `contains` [EXTRACTED]
-- [[Threat Model_1]] - `contains` [EXTRACTED]
+- [[Threat Model_2]] - `contains` [EXTRACTED]
 - [[hermesSOUL]] - `references` [EXTRACTED]
 - [[trust_manager (trust levels)]] - `conceptually_related_to` [EXTRACTED]
-- [[trust_manager.py]] - `contains` [EXTRACTED]
+- [[trust_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TrustManager
+#graphify/concept #graphify/EXTRACTED #community/cursor/mcpjson

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ConsentFramework (2)"
+community: "AgentShroud™ README"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConsentFramework_2
+  - community/AgentShroud_README
 ---
 
 # ThreatLevel
@@ -19,7 +19,7 @@ tags:
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]
-- [[ThreatLevel_1]] - `semantically_similar_to` [INFERRED]
+- [[ThreatLevel_2]] - `semantically_similar_to` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework_2
+#graphify/code #graphify/INFERRED #community/AgentShroud_README

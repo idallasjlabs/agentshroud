@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_soc_router_coverage.py"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # TestServiceDescriptorDefaults
@@ -20,4 +20,4 @@ tags:
 - [[Validate ServiceDescriptor model defaults — no real container calls.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

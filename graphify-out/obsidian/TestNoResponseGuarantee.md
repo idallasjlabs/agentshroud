@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
+community: "test_telegram_proxy_inbound.py (2)"
 location: "L7945"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+  - community/test_telegram_proxy_inboundpy_2
 ---
 
 # TestNoResponseGuarantee
@@ -18,4 +18,4 @@ tags:
 - [[Every collaborator message must produce a response — never a silent drop.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_2

@@ -1,39 +1,38 @@
 ---
 type: community
-members: 26
+members: 25
 ---
 
 # API Keys Setup Guide
 
-**Members:** 26 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[Missing auth for API providers]] - document - docker/scripts/README.md
-- [[API Keys Setup Guide]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Container unhealthy]] - document - docker/scripts/README.md
-- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Create the Anthropic OAuth Token File]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Option 1 Use Anthropic Claude (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Overview_11]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Security Notes_3]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 3 Configure API Keys in OpenClaw]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 4 Set Default Model]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 5 Verify Configuration]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 6 Add Telegram Bot]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Step 7 Test the Bot]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Summary Checklist]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Telegram bot not responding]] - document - docker/scripts/README.md
-- [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Troubleshooting_24]] - document - docker/scripts/README.md
-- [[Troubleshooting_25]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
+- [[11. Current status (v1.2.0)]] - document - firmware/voice-terminal/SETUP.md
+- [[12. OTA Wireless Firmware Updates]] - document - firmware/voice-terminal/SETUP.md
+- [[2. Toolchain — install ESP-IDF v5.4]] - document - firmware/voice-terminal/SETUP.md
+- [[3. Get the firmware]] - document - firmware/voice-terminal/SETUP.md
+- [[4. Configure WiFi credentials]] - document - firmware/voice-terminal/SETUP.md
+- [[5. Build · flash · monitor]] - document - firmware/voice-terminal/SETUP.md
+- [[5a. IDF v5.4 auto-patches (applied automatically — for reference)]] - document - firmware/voice-terminal/SETUP.md
+- [[6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
+- [[6a. marvin is your tailnet host]] - document - firmware/voice-terminal/SETUP.md
+- [[6b. Generate an auth key for the device]] - document - firmware/voice-terminal/SETUP.md
+- [[6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client)]] - document - firmware/voice-terminal/SETUP.md
+- [[6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`)]] - document - firmware/voice-terminal/SETUP.md
+- [[6e. ACL lock-down (recommended)]] - document - firmware/voice-terminal/SETUP.md
+- [[7. Voice Gateway — server-side ✅ LIVE (installconfigOTA docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
+- [[8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent]] - document - firmware/voice-terminal/SETUP.md
+- [[Adding a future agent]] - document - firmware/voice-terminal/SETUP.md
+- [[Agent toggle — runtime button]] - document - firmware/voice-terminal/SETUP.md
+- [[Credentials file]] - document - firmware/voice-terminal/SETUP.md
+- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - document - firmware/voice-terminal/SETUP.md
+- [[How it works_1]] - document - firmware/voice-terminal/SETUP.md
+- [[One-time bootstrap (USB flash — do this when back at marvin)]] - document - firmware/voice-terminal/SETUP.md
+- [[Ongoing update workflow (no USB ever again)]] - document - firmware/voice-terminal/SETUP.md
+- [[SETUP_3]] - document - firmware/voice-terminal/SETUP.md
+- [[Troubleshooting OTA]] - document - firmware/voice-terminal/SETUP.md
+- [[What you're building]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,10 +42,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Management Scripts]]
-- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
-- 1 edge to [[_COMMUNITY_Quick Reference]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ Security Policy]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_What You Must Do When Invoked (3)]]
 
 ## Top bridge nodes
-- [[API Keys Setup Guide]] - degree 13, connects to 2 communities
-- [[Troubleshooting_24]] - degree 4, connects to 1 community
+- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - degree 16, connects to 3 communities

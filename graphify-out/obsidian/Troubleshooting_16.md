@@ -1,20 +1,22 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L333"
+community: "setup-secrets.sh (2)"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/setup-secretssh_2
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
+- [[Browser timeout_3]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

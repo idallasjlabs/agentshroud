@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller (6)"
+community: "AgentShroud™ — Trademark Prior Use Record (4)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_6
+  - community/AgentShroud__Trademark_Prior_Use_Record_4
 ---
 
 # Usage
 
 ## Connections
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_6
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_4

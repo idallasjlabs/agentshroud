@@ -1,28 +1,22 @@
 ---
 type: community
-members: 15
+members: 9
 ---
 
 # ADR-005: SHA-256 Hash Chain Audit Integrity (2)
 
-**Members:** 15 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[ADR-005-sha256-hash-chain-audit-integrity]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - concept - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[AuditEntry (data entity)]] - concept - docs/data/data-dictionary.md
-- [[Consequences_2]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Context_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Decision_5]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Hash Chain Structure_1]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Implementation Details]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Ledger DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[Negative Consequences_1]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Positive Consequences_1]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Status_5]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[audit_entries SQLite table]] - code - docs/data/schema-documentation.md
-- [[ledger.py (audit trail, SHA-256 hashing)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[mcp_audit_entries SQLite table]] - code - docs/data/schema-documentation.md
+- [[dot-agentsskillsi-ggSKILL]] - document - .agents/skills/i-gg/SKILL.md
+- [[Branch Naming]] - document - .agents/skills/i-gg/SKILL.md
+- [[Commit Messages  (Conventional Commits)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Emergency Hotfix_3]] - document - .agents/skills/i-gg/SKILL.md
+- [[Mandatory Workflow  (10 steps)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Protected Branch]] - document - .agents/skills/i-gg/SKILL.md
+- [[REFUSE These]] - document - .agents/skills/i-gg/SKILL.md
+- [[Role_95]] - document - .agents/skills/i-gg/SKILL.md
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,10 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities
-- [[Ledger DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - degree 9, connects to 1 community

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "SecurityPipeline"
+community: "TelegramAPIProxy"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/TelegramAPIProxy
 ---
 
 # ThreatAction
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestNewPatternsV080]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestReanchorDelimiters]] - `uses` [INFERRED]
@@ -40,10 +40,10 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

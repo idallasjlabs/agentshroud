@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "STRIDE Threat Analysis"
+community: "TestIsContainerRunning"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/STRIDE_Threat_Analysis
+  - community/TestIsContainerRunning
 ---
 
 # Threat: API Key Impersonation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[S - Spoofing Identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning

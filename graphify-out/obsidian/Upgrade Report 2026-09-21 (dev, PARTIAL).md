@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-21.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Upgrade Report 2026-09-21 (dev, PARTIAL)
@@ -28,4 +28,4 @@ tags:
 - [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 - [[sync-cve-registry.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/_make_sanitizer

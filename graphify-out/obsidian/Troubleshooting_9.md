@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
+community: "TestMultilingualInjection"
 location: "L370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/TestMultilingualInjection
 ---
 
 # Troubleshooting
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
