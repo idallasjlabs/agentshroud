@@ -1,34 +1,27 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
-type: "code"
-community: "upgrade"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+type: "document"
+community: "version_routes.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/version_routespy
 ---
 
 # version_routes.py
 
 ## Connections
-- [[RollbackRequest]] - `contains` [EXTRACTED]
-- [[VersionRequest]] - `contains` [EXTRACTED]
-- [[agentshroud_manager.py]] - `imports_from` [EXTRACTED]
-- [[check_current_version()]] - `imports` [EXTRACTED]
-- [[downgrade()]] - `imports` [EXTRACTED]
-- [[downgrade_version()]] - `contains` [EXTRACTED]
-- [[get_available_versions()]] - `contains` [EXTRACTED]
-- [[get_current_version()]] - `contains` [EXTRACTED]
-- [[get_version_history()_1]] - `contains` [EXTRACTED]
-- [[list_available_versions()]] - `imports` [EXTRACTED]
-- [[list_versions()]] - `imports` [EXTRACTED]
-- [[mask_credentials()]] - `imports` [EXTRACTED]
-- [[review_version()]] - `contains` [EXTRACTED]
-- [[rollback()]] - `imports` [EXTRACTED]
-- [[rollback_version()]] - `contains` [EXTRACTED]
-- [[security_review()]] - `imports` [EXTRACTED]
-- [[upgrade()]] - `imports` [EXTRACTED]
-- [[upgrade_version()]] - `contains` [EXTRACTED]
+- [[Config Keys Read_4]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_5]] - `contains` [EXTRACTED]
+- [[Function Details_15]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_17]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
+- [[Purpose_125]] - `contains` [EXTRACTED]
+- [[Related_21]] - `contains` [EXTRACTED]
+- [[Responsibilities_19]] - `contains` [EXTRACTED]
+- [[VersionRequest Fields]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/document #graphify/EXTRACTED #community/version_routespy

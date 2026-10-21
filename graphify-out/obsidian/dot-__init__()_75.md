@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L41"
+community: "SecureBrowser (3)"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/SecureBrowser_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

@@ -1,19 +1,18 @@
 ---
 type: community
-members: 6
+members: 5
 ---
 
 # UserSessionManager (7)
 
-**Members:** 6 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
-- [[Browser timeout]] - document - skills/custom/securebrowser/README.md
-- [[CAPTCHA detected]] - document - skills/custom/securebrowser/README.md
-- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
-- [[URL not in allowlist]] - document - skills/custom/securebrowser/README.md
-- [[Troubleshooting]] - document - skills/custom/securebrowser/README.md
+- [[dot-test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY__req (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
 
 ## Top bridge nodes
-- [[Troubleshooting]] - degree 6, connects to 1 community
+- [[TestExtractUserId]] - degree 9, connects to 4 communities

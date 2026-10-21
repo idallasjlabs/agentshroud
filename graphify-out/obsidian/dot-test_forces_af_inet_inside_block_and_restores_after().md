@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestIPv4Only]] - `method` [EXTRACTED]
 - [[_ipv4_only()]] - `calls` [INFERRED]
-- [[recorder()_2]] - `indirect_call` [INFERRED]
+- [[recorder()_3]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/discover_upstream_versionspy

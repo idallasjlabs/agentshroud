@@ -1,36 +1,29 @@
 ---
 type: community
-members: 23
+members: 16
 ---
 
 # egress_filter.py (2)
 
-**Members:** 23 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
-- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
-- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
-- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
-- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
-- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
-- [[Summary_14]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[assert-security-check rule (CWE-617)]] - rationale - .semgrep.yml
-- [[hardcoded-password rule (CWE-798)]] - rationale - .semgrep.yml
-- [[log-sensitive-key rule (CWE-532)]] - rationale - .semgrep.yml
-- [[path-traversal-open rule (CWE-22)]] - rationale - .semgrep.yml
-- [[pickle-load rule (CWE-502)]] - rationale - .semgrep.yml
-- [[sql-injection rule (CWE-89)]] - rationale - .semgrep.yml
-- [[ssrf-httpx rule (CWE-918)]] - rationale - .semgrep.yml
-- [[ssrf-requests rule (CWE-918)]] - rationale - .semgrep.yml
-- [[subprocess-shell-true rule (CWE-78)]] - rationale - .semgrep.yml
-- [[subprocess-unvalidated-input rule (CWE-78)]] - rationale - .semgrep.yml
+- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
+- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
+- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
+- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
+- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
+- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
+- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
+- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
+- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
+- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
+- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
+- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,11 +34,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_AuditEvent]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 1 edge to [[_COMMUNITY_AgentRegistry (2)]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py (2)]]
 
 ## Top bridge nodes
-- [[AgentShroud Semgrep SAST Configuration]] - degree 23, connects to 4 communities
-- [[Rule agentshroud-subprocess-shell-true]] - degree 2, connects to 1 community
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 4 communities
+- [[Approval Queue Module Badge Icon]] - degree 2, connects to 1 community
+- [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
+- [[Drift Detector Module Badge Icon]] - degree 2, connects to 1 community
+- [[Encrypted Store Module Badge Icon]] - degree 2, connects to 1 community

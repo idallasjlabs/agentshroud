@@ -28,23 +28,23 @@ members: 39
 - [[Extract Data_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[Gateway Integration]] - document - skills/custom/securebrowser/SKILL.md
 - [[Integration with AgentShroud]] - document - skills/custom/securebrowser/SKILL.md
-- [[Limitations]] - document - skills/custom/securebrowser/SKILL.md
+- [[Limitations_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[Navigate to URL_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[Risk Levels]] - document - skills/custom/securebrowser/SKILL.md
 - [[SecureBrowser - Enterprise Secure Browser Automation]] - document - skills/custom/securebrowser/SKILL.md
 - [[SecureBrowser SKILL_2]] - document - skills/custom/securebrowser/SKILL.md
 - [[Security Architecture]] - document - skills/custom/securebrowser/SKILL.md
 - [[Security Configuration]] - document - skills/custom/securebrowser/SKILL.md
-- [[Security Guarantees]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Guarantees_1]] - document - skills/custom/securebrowser/SKILL.md
 - [[See Also]] - document - skills/custom/securebrowser/SKILL.md
 - [[Take Screenshot_1]] - document - skills/custom/securebrowser/SKILL.md
-- [[Troubleshooting_5]] - document - skills/custom/securebrowser/SKILL.md
-- [[Usage_57]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_6]] - document - skills/custom/securebrowser/SKILL.md
+- [[Usage_55]] - document - skills/custom/securebrowser/SKILL.md
 - [[appendLog()_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browser-fetch.js_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browserFetch()_2]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[fs_3]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[path_18]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[fs_4]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[path_21]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 - [[{ chromium }_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 

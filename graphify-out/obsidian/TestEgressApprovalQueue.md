@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # TestEgressApprovalQueue
@@ -36,10 +36,10 @@ tags:
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressApprovalQueue]] - `uses` [INFERRED]
-- [[EgressRequest_1]] - `uses` [INFERRED]
-- [[RiskLevel_6]] - `uses` [INFERRED]
+- [[EgressRequest]] - `uses` [INFERRED]
+- [[RiskLevel]] - `uses` [INFERRED]
 - [[Test suite for EgressApprovalQueue functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceMode]] - `semantically_similar_to` [INFERRED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

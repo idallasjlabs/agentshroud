@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # Rewrite a tool-parameter JSON schema into the subset Fieldflare's Gemma…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_flatten_fieldflare_schema()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

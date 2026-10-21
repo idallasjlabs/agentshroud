@@ -10,12 +10,12 @@ members: 27
 ## Members
 - [[1. Accomplishments This Phase_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 - [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Basic Test Infrastructure (⚠️ PARTIAL)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Conclusion]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Conclusion_1]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Core Security Pipeline Integration (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md

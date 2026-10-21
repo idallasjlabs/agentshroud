@@ -1,11 +1,11 @@
 ---
 type: community
-members: 23
+members: 25
 ---
 
 # Kill Switch
 
-**Members:** 23 nodes
+**Members:** 25 nodes
 
 ## Members
 - [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -14,6 +14,7 @@ members: 23
 - [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Defense in Depth (Bot Instructions + Gateway + Audit Log)]] - rationale - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 - [[Kill Switch]] - document - dashboard/README.md
 - [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -21,6 +22,7 @@ members: 23
 - [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 - [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Troubleshooting_27]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -40,13 +42,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_BotConfig (3)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 1 edge to [[_COMMUNITY_Security Verification Report]]
 - 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_Security Implementation Verification]]
 - 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
-- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
 
 ## Top bridge nodes
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - degree 6, connects to 4 communities
 - [[Kill Switch]] - degree 9, connects to 3 communities
-- [[VERIFICATION_RESULTS]] - degree 5, connects to 3 communities
+- [[VERIFICATION_RESULTS]] - degree 5, connects to 2 communities

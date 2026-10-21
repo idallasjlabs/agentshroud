@@ -446,6 +446,182 @@ check "T11: phase_apply runs sunday_dev_handoff_gate before any build" \
 check "T11: EXIT trap leaves a deliberately written handoff alone" \
     "$(grep -E "^trap '.*HANDOFF_WRITTEN.*write_handoff FAIL" "$APPLY_SH" >/dev/null && echo true || echo false)"
 
+# ── T12: wall-clock cutoff (owner directive 2026-10-18: usable by 08:00) ────
+# SUNDAY_NOW="<epoch> <HH> <MM> <SS>" pins the clock. 1000000 at 03:00:00 local
+# means the 07:20 deadline is 4h20m later.
+# shellcheck disable=SC2016  # expands in the child shell, by design
+deadline() {
+    env -i PATH="/usr/bin:/bin" SUNDAY_NOW="$1" "$BASH_BIN" -c \
+        '. "$1"; shift; sunday_deadline_epoch "$@"' _ "$LIB" "$2" 2>/dev/null
+}
+check "T12: 03:00 launch, 07:20 deadline -> armed 4h20m out" \
+    "$([ "$(deadline '1000000 03 00 00' 07:20)" = "$((1000000 + 4*3600 + 20*60))" ] && echo true || echo false)" \
+    "got=$(deadline '1000000 03 00 00' 07:20)"
+check "T12: leading zeros parse as decimal (08/09 are not octal)" \
+    "$([ "$(deadline '1000000 03 08 09' 07:20)" = "$((1000000 + 4*3600 + 12*60 - 9))" ] && echo true || echo false)" \
+    "got=$(deadline '1000000 03 08 09' 07:20)"
+check "T12: launch after the deadline (an 11:00 retry) -> not armed" \
+    "$([ -z "$(deadline '1000000 11 00 00' 07:20)" ] && echo true || echo false)"
+check "T12: 'off' disables the cutoff" \
+    "$([ -z "$(deadline '1000000 03 00 00' off)" ] && echo true || echo false)"
+check "T12: malformed deadline -> not armed (never a cutoff at a guessed time)" \
+    "$([ -z "$(deadline '1000000 03 00 00' 7h20)" ] && [ -z "$(deadline '1000000 03 00 00' 25:00)" ] && echo true || echo false)"
+
+# ── T13: restore ladder — check, then start the default stack, then roll back ─
+# The hooks are the lib's seams: each stub records its call and passes or fails
+# on the Nth check, so every rung is exercised without a live stack.
+H13="$TMPROOT/t13"; mkdir -p "$H13"
+# shellcheck disable=SC2016  # expands in the child shell, by design
+restore() {
+    # $1 = which check attempt first passes (0 = never), $2 = rollback script path
+    : > "$H13/calls"
+    env -i PATH="/usr/bin:/bin" PASS_ON="$1" CALLS="$H13/calls" "$BASH_BIN" -c '
+        . "$1"
+        n=0
+        sunday_stack_check()    { n=$((n + 1)); echo check >> "$CALLS"; [ "$PASS_ON" -ne 0 ] && [ "$n" -ge "$PASS_ON" ]; }
+        sunday_stack_start()    { echo start >> "$CALLS"; }
+        sunday_stack_rollback() { echo "rollback $1" >> "$CALLS"; }
+        sunday_restore_stack "$2"' _ "$LIB" "$2"
+}
+RB13="$H13/rollback.sh"; printf '#!/bin/sh\n' > "$RB13"
+set +e
+out13a="$(restore 1 "$RB13" 2>/dev/null)"; rc13a=$?
+check "T13: healthy stack -> STACK_OK, nothing restarted or rolled back" \
+    "$([ "$rc13a" -eq 0 ] && [ "$out13a" = STACK_OK ] && [ "$(tr '\n' ' ' < "$H13/calls")" = "check " ] && echo true || echo false)" \
+    "rc=$rc13a out=$out13a calls=$(tr '\n' ' ' < "$H13/calls")"
+out13b="$(restore 2 "$RB13" 2>/dev/null)"; rc13b=$?
+check "T13: down stack fixed by starting it -> STACK_RESTARTED, no rollback" \
+    "$([ "$rc13b" -eq 0 ] && [ "$out13b" = STACK_RESTARTED ] && [ "$(tr '\n' ' ' < "$H13/calls")" = "check start check " ] && echo true || echo false)" \
+    "rc=$rc13b out=$out13b calls=$(tr '\n' ' ' < "$H13/calls")"
+out13c="$(restore 3 "$RB13" 2>/dev/null)"; rc13c=$?
+check "T13: start does not fix it -> rolls back to the anchor -> STACK_ROLLED_BACK" \
+    "$([ "$rc13c" -eq 0 ] && [ "$out13c" = STACK_ROLLED_BACK ] && grep -qx "rollback $RB13" "$H13/calls" && echo true || echo false)" \
+    "rc=$rc13c out=$out13c calls=$(tr '\n' ' ' < "$H13/calls")"
+out13d="$(restore 0 "$RB13" 2>/dev/null)"; rc13d=$?
+check "T13: nothing works -> STACK_DEGRADED and a non-zero exit" \
+    "$([ "$rc13d" -ne 0 ] && [ "$out13d" = STACK_DEGRADED ] && echo true || echo false)" \
+    "rc=$rc13d out=$out13d"
+out13e="$(restore 0 "$H13/missing.sh" 2>/dev/null)"; rc13e=$?
+check "T13: no rollback anchor -> STACK_DEGRADED without calling a rollback" \
+    "$([ "$rc13e" -ne 0 ] && [ "$out13e" = STACK_DEGRADED ] && ! grep -q rollback "$H13/calls" && echo true || echo false)" \
+    "rc=$rc13e out=$out13e calls=$(tr '\n' ' ' < "$H13/calls")"
+set -e
+
+# ── T13b: a still-running apply is stopped before the restore touches the stack
+L13="$TMPROOT/t13b/apply-running.lock.d"; mkdir -p "$L13"
+sleep 300 & SLEEPER=$!
+echo "$SLEEPER" > "$L13/pid"
+env -i PATH="/usr/bin:/bin" SUNDAY_STOP_WAIT=5 "$BASH_BIN" -c '. "$1"; sunday_stop_apply "$2"' _ "$LIB" "$L13" 2>/dev/null
+sleep 1
+check "T13b: live apply pid in the lock is stopped" \
+    "$(kill -0 "$SLEEPER" 2>/dev/null && echo false || echo true)"
+kill "$SLEEPER" 2>/dev/null || true
+echo 999999 > "$L13/pid"
+set +e
+env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; sunday_stop_apply "$2"' _ "$LIB" "$L13" >/dev/null 2>&1; rc13b=$?
+set -e
+check "T13b: stale lock (dead pid) -> no-op, exit 0" "$([ "$rc13b" -eq 0 ] && echo true || echo false)"
+
+# ── T14: the wrapper and the deploy check are wired to the above ────────────
+WRAP_SH="$REPO/scripts/sunday-upgrade.sh"
+PDC_SH="$REPO/scripts/post-deploy-check.sh"
+check "T14: wrapper sources the Sunday lib" \
+    "$(grep -qE '^\. "\$REPO/scripts/lib/sunday-scan.sh"' "$WRAP_SH" && echo true || echo false)"
+check "T14: wrapper arms the wall-clock deadline" \
+    "$(grep -q 'sunday_deadline_epoch "\${SUNDAY_UPGRADE_DEADLINE:-07:20}"' "$WRAP_SH" && echo true || echo false)"
+wait_loop="$(awk '/^while tmux has-session/,/^done$/' "$WRAP_SH")"
+check "T14: the wait loop kills the session at the deadline" \
+    "$(printf '%s\n' "$wait_loop" | grep -q 'DEADLINE_EPOCH' && printf '%s\n' "$wait_loop" | grep -q 'CUT_OFF=1' && echo true || echo false)"
+wrap_tail="$(sed -n '/^done$/,$p' "$WRAP_SH")"
+check "T14: restore runs after the session ends and before the report is staged" \
+    "$(printf '%s\n' "$wrap_tail" | grep -n 'sunday_restore_stack\|docker cp "\$STAGED"' | head -1 | grep -q sunday_restore_stack && echo true || echo false)"
+check "T14: post-deploy-check has a --functional mode" \
+    "$(grep -q -- '--functional' "$PDC_SH" && echo true || echo false)"
+
+# ── T15: direct Telegram notice — reaches the owner when Hermes cannot ──────
+# The post seam is stubbed: it records its argv and stdin and answers with a
+# canned Bot API response, so no request leaves the machine.
+H15="$TMPROOT/t15"; mkdir -p "$H15"
+printf 'tok-123:SECRET\n' > "$H15/token"
+# shellcheck disable=SC2016  # expands in the child shell, by design
+notify() {
+    # $1 = canned response, $2 = token file
+    : > "$H15/argv"; : > "$H15/stdin"
+    env -i PATH="/usr/bin:/bin" RESP="$1" H="$H15" "$BASH_BIN" -c '
+        . "$1"
+        sunday_telegram_post() { printf "%s\n" "$@" > "$H/argv"; cat > "$H/stdin"; printf "%s" "$RESP"; }
+        sunday_notify_direct "$2" 42 "hello owner"' _ "$LIB" "$2"
+}
+set +e
+out15a="$(notify '{"ok":true,"result":{"message_id":7}}' "$H15/token" 2>/dev/null)"; rc15a=$?
+check "T15: Bot API accepts the message -> NOTIFY_SENT" \
+    "$([ "$rc15a" -eq 0 ] && [ "$out15a" = NOTIFY_SENT ] && echo true || echo false)" "rc=$rc15a out=$out15a"
+check "T15: token goes over stdin, never argv (ps shows every user's argv)" \
+    "$(! grep -q SECRET "$H15/argv" && grep -q 'bottok-123:SECRET/sendMessage' "$H15/stdin" && grep -qx 'hello owner' "$H15/argv" && echo true || echo false)"
+check "T15: the real post reads its URL from stdin (curl -K -)" \
+    "$(awk '/^sunday_telegram_post\(\) \{/,/^\}/' "$LIB" | grep -q 'curl .*-K -' && echo true || echo false)"
+out15b="$(notify '{"ok":false,"error_code":401}' "$H15/token" 2>/dev/null)"; rc15b=$?
+check "T15: Bot API rejects it -> NOTIFY_FAILED, non-zero (a failed send is not a sent one)" \
+    "$([ "$rc15b" -ne 0 ] && [ "$out15b" = NOTIFY_FAILED ] && echo true || echo false)" "rc=$rc15b out=$out15b"
+out15c="$(notify '' "$H15/token" 2>/dev/null)"; rc15c=$?
+check "T15: no response (network down) -> NOTIFY_FAILED" \
+    "$([ "$rc15c" -ne 0 ] && [ "$out15c" = NOTIFY_FAILED ] && echo true || echo false)" "rc=$rc15c out=$out15c"
+out15d="$(notify '{"ok":true,"result":{"message_id":7}}' "$H15/missing" 2>/dev/null)"; rc15d=$?
+check "T15: missing token file -> NOTIFY_NO_TOKEN without calling the API" \
+    "$([ "$rc15d" -ne 0 ] && [ "$out15d" = NOTIFY_NO_TOKEN ] && [ ! -s "$H15/stdin" ] && echo true || echo false)" "rc=$rc15d out=$out15d"
+set -e
+
+# shellcheck disable=SC2016  # expands in the child shell, by design
+summary() {
+    env -i PATH="/usr/bin:/bin" "$BASH_BIN" -c '. "$1"; shift; sunday_run_summary "$@"' _ "$LIB" "$@" 2>/dev/null
+}
+s15="$(summary 7 STACK_DEGRADED 0 1)"
+check "T15: summary names the outcome, the stack state, the cutoff and a missing Hermes report" \
+    "$(printf '%s' "$s15" | grep -q 'DEGRADED' && printf '%s' "$s15" | grep -q 'STACK_DEGRADED' \
+        && printf '%s' "$s15" | grep -q 'cut off' && printf '%s' "$s15" | grep -qi 'not staged' && echo true || echo false)" "got=$s15"
+s15b="$(summary 0 STACK_OK 1 0)"
+check "T15: a completed run reads as complete, with no cutoff or missing-report line" \
+    "$(printf '%s' "$s15b" | grep -q 'complete' && ! printf '%s' "$s15b" | grep -q 'cut off' \
+        && ! printf '%s' "$s15b" | grep -qi 'not staged' && echo true || echo false)" "got=$s15b"
+s15c="$(summary 3 '' 0 0)"
+check "T15: a preflight failure still says what failed (exit 3: git fetch)" \
+    "$(printf '%s' "$s15c" | grep -q 'exit 3' && printf '%s' "$s15c" | grep -q 'fetch' && echo true || echo false)" "got=$s15c"
+
+check "T15: wrapper sends the notice from an EXIT trap (covers preflight exits too)" \
+    "$(grep -qE '^trap _notify_on_exit EXIT' "$WRAP_SH" && echo true || echo false)"
+
+# ── T16: container names come from the running stack, not prod's literals ───
+# Dev's containers are agentshroud-dev-*, so prod's hardcoded names meant dev
+# never staged its report for Hermes, its rollback skipped Hermes, and P5
+# never ran. A fake docker answers the role-label query and the plain listing.
+B16="$TMPROOT/t16/bin"
+write_fake "$B16" docker '#!/bin/sh
+case "$*" in
+  *com.agentshroud.role=hermes*) printf "%s" "$LABELLED" ;;
+  ps*) printf "%s" "$NAMES" ;;
+esac'
+# shellcheck disable=SC2016  # expands in the child shell, by design
+hermes_name() {
+    env -i PATH="$B16:/usr/bin:/bin" LABELLED="$1" NAMES="$2" "$BASH_BIN" -c \
+        '. "$1"; sunday_hermes_container' _ "$LIB" 2>/dev/null
+}
+check "T16: Hermes found by its com.agentshroud.role label" \
+    "$([ "$(hermes_name $'agentshroud-dev-hermes-v2\n' '')" = agentshroud-dev-hermes-v2 ] && echo true || echo false)"
+check "T16: unlabelled Hermes found by name, dev or prod" \
+    "$([ "$(hermes_name '' $'agentshroud-dev-gateway\nagentshroud-dev-hermes-v2\n')" = agentshroud-dev-hermes-v2 ] \
+        && [ "$(hermes_name '' $'agentshroud-hermes-v2\n')" = agentshroud-hermes-v2 ] && echo true || echo false)"
+check "T16: no Hermes running -> empty, so the wrapper reports it not staged" \
+    "$([ -z "$(hermes_name '' $'agentshroud-dev-gateway\n')" ] && echo true || echo false)"
+check "T16: wrapper resolves Hermes at staging time, no hardcoded name" \
+    "$(! grep -q '^HERMES_CONTAINER="agentshroud-hermes-v2"' "$WRAP_SH" && grep -q 'HERMES_CONTAINER="$(sunday_hermes_container)"' "$WRAP_SH" && echo true || echo false)"
+check "T16: rollback script restores the Hermes snapshot under this host's name" \
+    "$(! grep -q 'agentshroud-rollback/agentshroud-hermes-v2' "$APPLY_SH" && grep -q 'agentshroud-rollback/${HERMES_C}' "$APPLY_SH" && echo true || echo false)"
+check "T16: P5 finds the gateway by compose service label, not prod's name" \
+    "$(! grep -q "grep -q '^agentshroud-gateway\$'" "$PDC_SH" && awk '/── P5/,/── P6|── F|Summary/' "$PDC_SH" | grep -q 'com.docker.compose.service=gateway' && echo true || echo false)"
+check "T15: the two 'nothing to do' skips do not send a notice" \
+    "$(grep -A2 'already running — skipping' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' \
+        && grep -A2 'run already completed today' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' && echo true || echo false)"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestDockerEngine"
-location: "L126"
+community: "TestOutboundInfoFilter (2)"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/TestOutboundInfoFilter_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DockerEngine]] - `calls` [EXTRACTED]
-- [[TestDockerEngine]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

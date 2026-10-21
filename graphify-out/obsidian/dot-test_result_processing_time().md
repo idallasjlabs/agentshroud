@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "MCPPermissionManager"
 location: "L1207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/MCPPermissionManager
 ---
 
 # .test_result_processing_time()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 - [[TestProcessingTime]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

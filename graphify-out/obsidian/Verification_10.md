@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Flip core security modules from monitor to enforce mode"
-location: "L130"
+community: "OpenClaw Bot Container"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
+  - community/OpenClaw_Bot_Container
 ---
 
 # Verification
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

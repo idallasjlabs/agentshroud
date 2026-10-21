@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector (2)"
+community: "DifferentialPIIDetector"
 location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector_2
+  - community/DifferentialPIIDetector
 ---
 
 # Scan a tool result with the lower confidence floor.          Args:             t
 
 ## Connections
-- [[dot-scan_tool_result()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector_2
+#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector

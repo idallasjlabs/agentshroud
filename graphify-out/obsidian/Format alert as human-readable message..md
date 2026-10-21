@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "First Time Setup (2)"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/First_Time_Setup_2
 ---
 
 # Format alert as human-readable message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_format_alert_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup_2

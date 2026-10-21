@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "TestNetworkValidator"
+community: "NetworkSecurityFinding"
 location: "L258"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/NetworkSecurityFinding
 ---
 
 # Test that gateway service network bridging is validated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_gateway_network_bridging_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

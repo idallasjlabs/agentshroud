@@ -12,9 +12,9 @@ tags:
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_90]] - `contains` [EXTRACTED]
-- [[Related Skills_70]] - `contains` [EXTRACTED]
-- [[Usage_79]] - `contains` [EXTRACTED]
+- [[Purpose_96]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_85]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-prREADME]] - `contains` [EXTRACTED]
 

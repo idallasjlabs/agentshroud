@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # test_generic_target_returns_json_as_is()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[forward_to_agent passes response.json() through unchanged for chat targets.]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

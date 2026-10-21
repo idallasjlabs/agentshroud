@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # enforcement-audit-script.py
@@ -26,25 +26,25 @@ tags:
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
 - [[GitGuard]] - `imports` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
 - [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[PromptProtection]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_28]] - `imports` [EXTRACTED]
+- [[Role_23]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[TrustManager_3]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
-- [[fail()_3]] - `contains` [EXTRACTED]
+- [[fail()]] - `contains` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
-- [[ok()_1]] - `contains` [EXTRACTED]
-- [[run()_4]] - `contains` [EXTRACTED]
-- [[warn()_3]] - `contains` [EXTRACTED]
+- [[ok()]] - `contains` [EXTRACTED]
+- [[run()]] - `contains` [EXTRACTED]
+- [[warn()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

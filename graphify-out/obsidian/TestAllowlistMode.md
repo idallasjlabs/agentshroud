@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig (2)"
+community: "WebProxyConfig"
 location: "L528"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/WebProxyConfig
 ---
 
 # TestAllowlistMode
@@ -27,7 +27,7 @@ tags:
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

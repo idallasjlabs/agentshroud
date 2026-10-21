@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "_make_proxy()"
 location: "L212"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/_make_proxy
 ---
 
 # _fake_forward()
@@ -33,4 +33,4 @@ tags:
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `indirect_call` [INFERRED]
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/INFERRED #community/_make_proxy

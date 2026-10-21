@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dockerbotshermespatch_telegram_edit_message_date.py]] - code - docker/bots/hermes/patch_telegram_edit_message_date.py
+- [[patch_telegram_edit_message_date.py]] - code - docker/bots/hermes/patch_telegram_edit_message_date.py
 
 ## Live Query (requires Dataview plugin)
 

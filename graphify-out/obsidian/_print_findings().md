@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ScanResult_1]] - `references` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard_2

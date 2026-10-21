@@ -12,9 +12,9 @@ tags:
 # FakeConn
 
 ## Connections
-- [[dot-__init__()_80]] - `method` [EXTRACTED]
-- [[dot-send_request()_2]] - `method` [EXTRACTED]
-- [[dot-stop()_11]] - `method` [EXTRACTED]
+- [[dot-__init__()_59]] - `method` [EXTRACTED]
+- [[dot-send_request()_1]] - `method` [EXTRACTED]
+- [[dot-stop()_4]] - `method` [EXTRACTED]
 - [[dot-test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
 - [[dot-test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
 - [[dot-test_generic_exception()]] - `calls` [EXTRACTED]
@@ -33,12 +33,12 @@ tags:
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[Stand-in connection injected into the proxy's pool.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]

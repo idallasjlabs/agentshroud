@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ingest_api/mainpy
 ---
 
 # ingest_api/main.py
@@ -15,6 +15,7 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - `references` [EXTRACTED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
 - [[Ingest API (POST ingest)]] - `conceptually_related_to` [INFERRED]
@@ -31,8 +32,9 @@ tags:
 - [[_scanner_summary()]] - `contains` [EXTRACTED]
 - [[add_blocked_domain()]] - `contains` [EXTRACTED]
 - [[agent_cve_registry.py]] - `conceptually_related_to` [INFERRED]
-- [[asyncio]] - `imports` [EXTRACTED]
+- [[asyncio_3]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
 - [[container_security_profile()]] - `contains` [EXTRACTED]
 - [[cors_middleware()]] - `contains` [EXTRACTED]
 - [[create_report()]] - `contains` [EXTRACTED]
@@ -61,10 +63,12 @@ tags:
 - [[get_user_permissions()]] - `contains` [EXTRACTED]
 - [[global_exception_handler()]] - `contains` [EXTRACTED]
 - [[google_api_proxy]] - `contains` [EXTRACTED]
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `contains` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `contains` [EXTRACTED]
 - [[hermes_dashboard_root]] - `contains` [EXTRACTED]
-- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `contains` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy()]] - `contains` [EXTRACTED]
 - [[killswitch_status()]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `imports` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[limit_request_body()]] - `contains` [EXTRACTED]
 - [[list_agents()]] - `contains` [EXTRACTED]
 - [[list_blocked_domains()]] - `contains` [EXTRACTED]
@@ -73,7 +77,7 @@ tags:
 - [[list_reports()]] - `contains` [EXTRACTED]
 - [[list_security_modules()]] - `contains` [EXTRACTED]
 - [[list_users_and_roles()]] - `contains` [EXTRACTED]
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `contains` [EXTRACTED]
+- [[llm_api_proxy()]] - `contains` [EXTRACTED]
 - [[llm_api_v1_prefix_alias]] - `contains` [EXTRACTED]
 - [[llm_openai_chat_alias]] - `contains` [EXTRACTED]
 - [[llm_proxy_stats]] - `contains` [EXTRACTED]
@@ -82,6 +86,7 @@ tags:
 - [[mcp_result_endpoint()]] - `contains` [EXTRACTED]
 - [[ollama_api_proxy]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `contains` [EXTRACTED]
+- [[preferred_scan_binary()]] - `imports` [EXTRACTED]
 - [[privacy_audit()]] - `contains` [EXTRACTED]
 - [[privacy_policy_status()]] - `contains` [EXTRACTED]
 - [[proxy_status()]] - `contains` [EXTRACTED]
@@ -114,7 +119,7 @@ tags:
 - [[ssh_hosts()]] - `contains` [EXTRACTED]
 - [[ssh_write_file()]] - `contains` [EXTRACTED]
 - [[system_control()]] - `contains` [EXTRACTED]
-- [[telegram_api_proxy (telegram-api{path})]] - `contains` [EXTRACTED]
+- [[telegram_api_proxy()]] - `contains` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports_from` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports_from` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports_from` [EXTRACTED]
@@ -126,4 +131,4 @@ tags:
 - [[wazuh_alerts()]] - `contains` [EXTRACTED]
 - [[websockets=17.1,18.0 pin]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

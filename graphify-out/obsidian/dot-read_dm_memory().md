@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # .read_dm_memory()
@@ -16,4 +16,4 @@ tags:
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 - [[Read a user's private DM memory (isolated from every group).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

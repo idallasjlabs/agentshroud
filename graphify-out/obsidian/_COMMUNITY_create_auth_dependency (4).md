@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+members: 7
 ---
 
 # create_auth_dependency (4)
 
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[dot-path_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-validate_base64()]] - code - gateway/ingest_api/models.py
-- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
-- [[SSHWriteFileRequest]] - code - gateway/ingest_api/models.py
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Related Notes_13]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 
 ## Top bridge nodes
-- [[SSHWriteFileRequest]] - degree 5, connects to 2 communities
+- [[Dependency Graph]] - degree 3, connects to 1 community

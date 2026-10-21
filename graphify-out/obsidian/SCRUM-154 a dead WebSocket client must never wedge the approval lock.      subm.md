@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
-location: "L492"
+community: "ApprovalQueueConfig (5)"
+location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # SCRUM-154: a dead WebSocket client must never wedge the approval lock.      subm
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

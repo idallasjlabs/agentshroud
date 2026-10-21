@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Tests for _forward_file_download() and proxy_request() binary path. Regression…"
+community: "asyncio"
 location: "L8780"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
+  - community/asyncio
 ---
 
 # .test_forward_file_download_aborts_at_size_limit()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_forward_file_download must raise when streamed bytes exceed limit…]] - `rationale_for` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[read()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
+#graphify/code #graphify/EXTRACTED #community/asyncio

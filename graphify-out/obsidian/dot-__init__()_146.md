@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L138"
+community: "SecurityPipeline"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/SecurityPipeline
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig_1]] - `references` [EXTRACTED]
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

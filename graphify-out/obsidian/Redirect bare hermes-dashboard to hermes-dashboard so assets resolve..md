@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L4860"
+community: "Request"
+location: "L4847"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Request
 ---
 
 # Redirect bare /hermes-dashboard to /hermes-dashboard/ so assets resolve.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes_dashboard_root]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/Request

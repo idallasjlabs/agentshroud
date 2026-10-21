@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "create_auth_dependency"
+community: "create_auth_dependency (2)"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/create_auth_dependency_2
 ---
 
 # TestEnhancedStatus
@@ -19,4 +19,4 @@ tags:
 - [[Test enhanced status endpoint with observatory mode and egress info.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

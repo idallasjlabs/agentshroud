@@ -12,7 +12,7 @@ tags:
 # .get_summary()
 
 ## Connections
-- [[dot-to_dict()_16]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_17]] - `calls` [EXTRACTED]
 - [[Get a summary of all subagent governance state for a session.]] - `rationale_for` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 

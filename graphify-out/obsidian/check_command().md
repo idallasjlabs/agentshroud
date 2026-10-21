@@ -24,7 +24,7 @@ tags:
 - [[dot-test_blocks_proc_environ()]] - `calls` [EXTRACTED]
 - [[dot-test_blocks_proc_star_environ()]] - `calls` [EXTRACTED]
 - [[Check if command execution should be allowed.      Args         cmd Command to]] - `rationale_for` [EXTRACTED]
-- [[env_guard.py]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 - [[get_env_guard()]] - `calls` [EXTRACTED]
 - [[test_env_guard.py]] - `imports` [EXTRACTED]
 

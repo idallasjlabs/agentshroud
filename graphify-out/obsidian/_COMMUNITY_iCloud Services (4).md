@@ -13,7 +13,7 @@ members: 26
 - [[Connection timeout_3]] - document - skills/custom/icloud/SKILL.md
 - [[Add Contact_3]] - document - skills/custom/icloud/SKILL.md
 - [[Calendar Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Configuration_5]] - document - skills/custom/icloud/SKILL.md
+- [[Configuration_6]] - document - skills/custom/icloud/SKILL.md
 - [[Contact Operations_3]] - document - skills/custom/icloud/SKILL.md
 - [[Create Event_3]] - document - skills/custom/icloud/SKILL.md
 - [[Create Note_3]] - document - skills/custom/icloud/SKILL.md
@@ -30,7 +30,7 @@ members: 26
 - [[Security_11]] - document - skills/custom/icloud/SKILL.md
 - [[Send Email_3]] - document - skills/custom/icloud/SKILL.md
 - [[Setup_3]] - document - skills/custom/icloud/SKILL.md
-- [[Troubleshooting_22]] - document - skills/custom/icloud/SKILL.md
+- [[Troubleshooting_23]] - document - skills/custom/icloud/SKILL.md
 - [[Update Contact_3]] - document - skills/custom/icloud/SKILL.md
 - [[Update Event_3]] - document - skills/custom/icloud/SKILL.md
 - [[iCloud Services_3]] - document - skills/custom/icloud/SKILL.md

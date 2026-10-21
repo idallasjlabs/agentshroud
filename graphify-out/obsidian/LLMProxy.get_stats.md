@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "ingest_api/main.py"
 location: "L287-L288"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ingest_api/mainpy
 ---
 
 # LLMProxy.get_stats
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_proxy_stats]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

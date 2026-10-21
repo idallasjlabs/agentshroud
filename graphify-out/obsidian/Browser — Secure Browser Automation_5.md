@@ -24,7 +24,7 @@ tags:
 - [[Risk Levels_3]] - `contains` [EXTRACTED]
 - [[Security Architecture_5]] - `contains` [EXTRACTED]
 - [[Security Configuration_3]] - `contains` [EXTRACTED]
-- [[Security Guarantees_4]] - `contains` [EXTRACTED]
+- [[Security Guarantees_5]] - `contains` [EXTRACTED]
 - [[Usage_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3

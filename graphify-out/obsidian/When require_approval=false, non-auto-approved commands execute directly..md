@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig
 ---
 
 # When require_approval=false, non-auto-approved commands execute directly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_auto_approved_executes_directly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

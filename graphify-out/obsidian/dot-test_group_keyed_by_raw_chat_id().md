@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # .test_group_keyed_by_raw_chat_id()
 
 ## Connections
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[TestDefensiveGuards]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

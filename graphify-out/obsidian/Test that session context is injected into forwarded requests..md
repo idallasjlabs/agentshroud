@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "TestFabricatedSecurityNotice"
 location: "L325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Test that session context is injected into forwarded requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_webhook_session_context_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

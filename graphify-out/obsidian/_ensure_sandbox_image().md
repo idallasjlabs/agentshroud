@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh"
-location: "L457"
+community: "setup-secrets.sh (2)"
+location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/setup-secretssh_2
 ---
 
 # _ensure_sandbox_image()
@@ -18,4 +18,4 @@ tags:
 - [[asb script]] - `calls` [EXTRACTED]
 - [[asb up fullhermes]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2

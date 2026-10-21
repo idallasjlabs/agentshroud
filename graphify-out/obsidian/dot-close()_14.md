@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L726"
+community: "TrustConfig"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/TrustConfig
 ---
 
 # .close()
 
 ## Connections
-- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[TrustManager_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

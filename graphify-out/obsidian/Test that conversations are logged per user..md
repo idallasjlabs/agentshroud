@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "TestFabricatedSecurityNotice"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Test that conversations are logged per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_webhook_conversation_logging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

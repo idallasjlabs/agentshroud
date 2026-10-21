@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager"
+community: "RBACConfig"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/RBACConfig
 ---
 
 # .get_users_by_role()
 
 ## Connections
 - [[Get all users with a specific role.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `method` [EXTRACTED]
-- [[Role_28]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `method` [EXTRACTED]
+- [[Role_23]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

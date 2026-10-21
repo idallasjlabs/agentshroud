@@ -2,7 +2,7 @@
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
 community: "start-agentshroud.sh"
-location: "L565"
+location: "L575"
 tags:
   - graphify/code
   - graphify/EXTRACTED

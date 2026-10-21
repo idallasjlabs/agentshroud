@@ -16,7 +16,7 @@ tags:
 - [[Diagnostic Capabilities_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_2]] - `contains` [EXTRACTED]
 - [[Output Format_18]] - `contains` [EXTRACTED]
-- [[Related Skills_67]] - `contains` [EXTRACTED]
+- [[Related Skills_84]] - `contains` [EXTRACTED]
 - [[Role_56]] - `contains` [EXTRACTED]
 - [[When to Invoke_5]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]

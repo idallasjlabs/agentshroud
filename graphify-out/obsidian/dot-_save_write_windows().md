@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager (7)"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager_7
 ---
 
 # ._save_write_windows()
@@ -17,4 +17,4 @@ tags:
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Save active write windows to disk.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7

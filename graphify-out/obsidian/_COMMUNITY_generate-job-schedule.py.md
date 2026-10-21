@@ -15,7 +15,7 @@ members: 9
 - [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
 - [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
 - [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
-- [[main()_36]] - code - scripts/generate-job-schedule.py
+- [[main()_3]] - code - scripts/generate-job-schedule.py
 - [[render_html()]] - code - scripts/generate-job-schedule.py
 
 ## Live Query (requires Dataview plugin)

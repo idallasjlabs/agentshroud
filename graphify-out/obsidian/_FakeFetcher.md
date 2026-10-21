@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__call__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-__init__()_49]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]

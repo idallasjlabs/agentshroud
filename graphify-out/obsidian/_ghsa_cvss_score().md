@@ -12,7 +12,7 @@ tags:
 # _ghsa_cvss_score()
 
 ## Connections
-- [[Any_19]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[Extract a numeric CVSS base score from an advisory, else None.      GitHub advis]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

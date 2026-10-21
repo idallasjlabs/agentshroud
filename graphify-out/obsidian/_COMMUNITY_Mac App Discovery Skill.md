@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill (3)]]
+- 2 edges to [[_COMMUNITY_Mac App Discovery Skill (4)]]
 - 2 edges to [[_COMMUNITY_Phase 1 — Raw Collection (5)]]
 - 2 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 - 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]

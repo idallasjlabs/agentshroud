@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_152]] - `contains` [EXTRACTED]
+- [[Purpose_135]] - `contains` [EXTRACTED]
 - [[Related Skills_95]] - `contains` [EXTRACTED]
-- [[Usage_105]] - `contains` [EXTRACTED]
+- [[Usage_102]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "UserSessionManager (7)"
 location: "L692"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager_7
 ---
 
 # .test_missing_returns_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExtractUserId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_7

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_gateway_relay.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "TelegramGatewayRelay"
-location: "L53"
+community: "AsyncMock (2)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramGatewayRelay
+  - community/AsyncMock_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

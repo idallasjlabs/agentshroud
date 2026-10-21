@@ -15,7 +15,6 @@ tags:
 - [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - `rationale_for` [EXTRACTED]
 - [[_already_checked_upstream_today()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

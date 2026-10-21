@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_build_image_targets"
+community: "test_daily_cve_report.py"
 location: "L939"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_gateway_container_name_is_env_overridable()
@@ -15,4 +15,4 @@ tags:
 - [[Deployments that rename the gateway container (dev runs         agentshroud-marv]] - `rationale_for` [EXTRACTED]
 - [[TestBuildImageTargets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

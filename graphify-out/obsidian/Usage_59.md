@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
 community: "Production Safety Checklist (SKILL)"
 location: "L10"
@@ -12,6 +12,7 @@ tags:
 # Usage
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig (6)"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig_6
 ---
 
 # TestIsAutoApproved
@@ -15,10 +15,10 @@ tags:
 - [[dot-test_is_auto_approved_no()]] - `method` [EXTRACTED]
 - [[dot-test_is_auto_approved_unknown_host()]] - `method` [EXTRACTED]
 - [[dot-test_is_auto_approved_yes()]] - `method` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_6

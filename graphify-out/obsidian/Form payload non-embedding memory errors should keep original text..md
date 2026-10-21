@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: ".test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload"
 location: "L1629"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload
 ---
 
 # Form payload non-embedding memory errors should keep original text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload

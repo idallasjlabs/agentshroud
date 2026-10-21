@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "AlertDispatcher (2)"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/AlertDispatcher_2
 ---
 
 # ._contains_env_access_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[Check if command contains patterns that could access environment.]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

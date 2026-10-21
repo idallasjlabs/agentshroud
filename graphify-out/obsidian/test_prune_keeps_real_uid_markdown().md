@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (4)"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_4
 ---
 
 # test_prune_keeps_real_uid_markdown()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[Real-UID markdown files must never be deleted by the prune pass.]] - `rationale_for` [EXTRACTED]
 - [[_make_md()]] - `calls` [EXTRACTED]
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

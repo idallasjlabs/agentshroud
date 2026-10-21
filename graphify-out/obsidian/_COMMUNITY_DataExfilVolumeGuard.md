@@ -8,11 +8,11 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_86]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-__init__()_98]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_7]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_8]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-reset_session()_1]] - code - gateway/security/data_exfil_volume_guard.py
 - [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
 - [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
 - [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
@@ -26,7 +26,7 @@ members: 38
 - [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
 - [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
 - [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_make_pipeline()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[_make_pipeline()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
 - [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
@@ -55,15 +55,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_AuditChain]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_egress_filter.py]]
 - 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
 
 ## Top bridge nodes
-- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
-- [[_make_pipeline()]] - degree 6, connects to 2 communities
+- [[_make_pipeline()_1]] - degree 6, connects to 2 communities
 - [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
-- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
+- [[DataExfilVolumeGuard]] - degree 24, connects to 1 community
 - [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community
+- [[data_exfil_volume_guard.py]] - degree 5, connects to 1 community

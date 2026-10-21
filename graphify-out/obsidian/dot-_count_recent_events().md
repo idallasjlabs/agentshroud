@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "KillSwitchMonitor (3)"
 location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KillSwitchMonitor_3
 ---
 
 # ._count_recent_events()
@@ -15,9 +15,9 @@ tags:
 - [[dot-_check_request_rate()]] - `calls` [EXTRACTED]
 - [[dot-_check_tool_call_rate()]] - `calls` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[dot-get_status()_1]] - `calls` [EXTRACTED]
+- [[dot-get_status()]] - `calls` [EXTRACTED]
 - [[Count events in the last N seconds.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[deque]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

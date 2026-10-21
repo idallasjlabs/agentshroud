@@ -16,7 +16,7 @@ tags:
 - [[Application Fields]] - `contains` [EXTRACTED]
 - [[Filing Instructions (TEAS Plus)]] - `contains` [EXTRACTED]
 - [[International Classification]] - `contains` [EXTRACTED]
-- [[Notes_8]] - `contains` [EXTRACTED]
+- [[Notes_7]] - `contains` [EXTRACTED]
 - [[Specimen]] - `contains` [EXTRACTED]
 - [[USPTO-APPLICATION]] - `contains` [EXTRACTED]
 

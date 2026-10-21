@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig
 ---
 
 # SidecarScanner
 
 ## Connections
-- [[dot-__init__()_172]] - `method` [EXTRACTED]
-- [[dot-get_stats()_18]] - `method` [EXTRACTED]
-- [[dot-scan()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_70]] - `method` [EXTRACTED]
+- [[dot-get_stats()_5]] - `method` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `conceptually_related_to` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline (external, referenced)]] - `shares_data_with` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction (2)"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction_2
 ---
 
 # .test_send_message_draft_also_runs_outbound_filtering()
@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundPipelineWired]] - `method` [EXTRACTED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

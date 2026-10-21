@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Access OpenClaw Dashboard Remotely]] - `contains` [EXTRACTED]
-- [[Current Status_11]] - `contains` [EXTRACTED]
+- [[Current Status_10]] - `contains` [EXTRACTED]
 - [[Next Steps_11]] - `contains` [EXTRACTED]
 - [[Security Tailscale ACLs]] - `contains` [EXTRACTED]
 - [[Stop Tailscale Serve]] - `contains` [EXTRACTED]

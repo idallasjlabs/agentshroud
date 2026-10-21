@@ -15,7 +15,7 @@ tags:
 - [[EventBus]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[event_bus.py_2]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/make_event

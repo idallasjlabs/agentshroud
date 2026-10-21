@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "_make_proxy()"
 location: "L921"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/_make_proxy
 ---
 
 # test_stats_local_secondary_failover_succeeded_incremented()
@@ -15,8 +15,8 @@ tags:
 - [[_fake_forward()_25]] - `contains` [EXTRACTED]
 - [[_fake_forward()_24]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[failover_local_secondary_succeeded stat increments on successful secondary…]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

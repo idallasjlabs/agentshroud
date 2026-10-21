@@ -12,6 +12,6 @@ tags:
 # .test_get_status_structure()
 
 ## Connections
-- [[TestStatus_1]] - `method` [EXTRACTED]
+- [[TestStatus]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

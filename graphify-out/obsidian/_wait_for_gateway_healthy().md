@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[cmd_up()]] - `calls` [EXTRACTED]
-- [[gateway service (dev override)]] - `references` [EXTRACTED]
 - [[run-standalone.sh]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

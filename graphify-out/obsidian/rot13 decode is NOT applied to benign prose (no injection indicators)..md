@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "PipelineAction (2)"
+community: "MiddlewareManager (3)"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/MiddlewareManager_3
 ---
 
 # rot13 decode is NOT applied to benign prose (no injection indicators).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_rot13_ignores_benign_prose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

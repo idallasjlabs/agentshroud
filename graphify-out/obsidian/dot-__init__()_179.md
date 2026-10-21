@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L93"
+community: "A2APolicyEngine"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[A2APeerTestDouble]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

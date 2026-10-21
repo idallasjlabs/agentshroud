@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (5)"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # .register_user_session()
@@ -16,4 +16,4 @@ tags:
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 - [[Register a new user session and create their isolated directory.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

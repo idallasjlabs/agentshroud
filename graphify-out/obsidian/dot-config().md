@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "AgentTarget"
-location: "L103"
+community: "ApprovalHardening"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalHardening
 ---
 
 # .config()
 
 ## Connections
-- [[TestMinimalConfig]] - `method` [EXTRACTED]
-- [[_parse_env_file()]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Create test configuration.]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

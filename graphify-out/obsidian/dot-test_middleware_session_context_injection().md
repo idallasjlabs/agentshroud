@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
+community: "TestFabricatedSecurityNotice"
 location: "L402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_middleware_session_context_injection()
@@ -15,4 +15,4 @@ tags:
 - [[Test that middleware injects session context.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

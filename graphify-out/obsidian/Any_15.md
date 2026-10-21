@@ -1,17 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - graphify/INFERRED
+  - community/ContextSegment
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[dot-__init__()_63]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/INFERRED #community/ContextSegment

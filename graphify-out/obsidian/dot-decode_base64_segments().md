@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "MiddlewareManager (3)"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/MiddlewareManager_3
 ---
 
 # .decode_base64_segments()
 
 ## Connections
-- [[dot-analyze()_1]] - `calls` [EXTRACTED]
+- [[dot-analyze()]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

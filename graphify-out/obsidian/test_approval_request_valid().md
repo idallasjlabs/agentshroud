@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Request"
+community: "Request (2)"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/Request_2
 ---
 
 # test_approval_request_valid()
@@ -16,4 +16,4 @@ tags:
 - [[Test ApprovalRequest with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/Request_2

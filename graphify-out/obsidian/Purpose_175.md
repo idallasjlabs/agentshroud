@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "compose_generator.py"
+community: "web_proxy.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/web_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

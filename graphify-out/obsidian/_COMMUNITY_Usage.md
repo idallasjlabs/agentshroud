@@ -16,10 +16,10 @@ members: 13
 - [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
 - [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
 - [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
-- [[Notes_7]] - document - skills/openclaw/trello/SKILL.md
+- [[Notes_6]] - document - skills/openclaw/trello/SKILL.md
 - [[Setup_8]] - document - skills/openclaw/trello/SKILL.md
 - [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
-- [[Usage_121]] - document - skills/openclaw/trello/SKILL.md
+- [[Usage_119]] - document - skills/openclaw/trello/SKILL.md
 - [[trelloSKILL]] - document - skills/openclaw/trello/SKILL.md
 
 ## Live Query (requires Dataview plugin)

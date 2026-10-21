@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L85"
+community: "upgrade"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/upgrade

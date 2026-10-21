@@ -17,9 +17,9 @@ members: 15
 - [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Purpose_134]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Purpose_147]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Responsibilities_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md

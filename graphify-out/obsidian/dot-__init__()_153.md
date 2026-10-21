@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L104"
+community: "test_dns_canvas_coverage.py"
+location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

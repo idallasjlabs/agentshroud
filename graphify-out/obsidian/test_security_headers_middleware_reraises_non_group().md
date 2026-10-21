@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Request"
+community: "Request (2)"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/Request_2
 ---
 
 # test_security_headers_middleware_reraises_non_group()
@@ -16,4 +16,4 @@ tags:
 - [[security_headers_middleware()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/Request_2

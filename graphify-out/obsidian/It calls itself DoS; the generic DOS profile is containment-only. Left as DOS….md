@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "rationale"
-community: "WebContentScanner (2)"
+community: "WebContentScanner"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebContentScanner_2
+  - community/WebContentScanner
 ---
 
 # It calls itself DoS; the generic DOS profile is containment-only. Left as DOS…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner_2
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

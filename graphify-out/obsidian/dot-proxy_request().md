@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._proxy_request_impl"
+community: "TelegramAPIProxy"
 location: "L2898"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_proxy_request_impl
+  - community/TelegramAPIProxy
 ---
 
 # .proxy_request()
 
 ## Connections
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 - [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_proxy_request_impl
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

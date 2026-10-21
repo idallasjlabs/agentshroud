@@ -1,18 +1,18 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
 type: "document"
-community: "SecureBrowser Skill (2)"
+community: "Incident: Conduit/Hermes instability 2026-10-16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2
+  - community/Incident_Conduit/Hermes_instability_2026-10-16
 ---
 
 # Incident: Conduit/Hermes instability 2026-10-16
 
 ## Connections
 - [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM flag for dev Hermes]] - `references` [EXTRACTED]
-- [[CI workflow (ci.yml)]] - `references` [EXTRACTED]
+- [[CI Workflow]] - `references` [EXTRACTED]
 - [[Colima sizing (prod 8 CPU12 GiB, dev 4 CPU9 GiB, from colima.yaml)]] - `references` [EXTRACTED]
 - [[Compose version label mismatch forces network recreate + stale endpoints]] - `references` [EXTRACTED]
 - [[Conduit root-relative ws-ticket fetch vs hermes Funnel path]] - `references` [EXTRACTED]
@@ -29,10 +29,10 @@ tags:
 - [[Prod Colima VM egress loss (root cause of 7.5h Hermes outage)]] - `references` [EXTRACTED]
 - [[Security Scan workflow (security-scan.yml)]] - `references` [EXTRACTED]
 - [[StreamHead status propagation for streaming LLM proxy]] - `references` [EXTRACTED]
-- [[Sunday upgrade session prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 - [[asb setup_ephemeral_secrets clobber on killed extract (preserve-nonempty fix)]] - `references` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `references` [EXTRACTED]
 - [[lazydocker docker.sock connection leak via Colima ssh forward]] - `references` [EXTRACTED]
 - [[patch_telegram_edit_message_date.py (KeyError 'date' on editMessageText)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_2
+#graphify/document #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16

@@ -1,15 +1,16 @@
 ---
 type: community
-members: 83
+members: 86
 ---
 
 # CrossBotTrustLedger
 
-**Members:** 83 nodes
+**Members:** 86 nodes
 
 ## Members
-- [[dot-__init__()_161]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-__post_init__()_5]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-__init__()_149]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-__post_init__()_4]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-_missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_shared_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
@@ -55,6 +56,7 @@ members: 83
 - [[A single cross-bot incident recorded in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[An incident on openclaw should not re-apply to openclaw via the ledger.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[BotIncidentSeverity]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[CrossBotTrustLedger]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -64,6 +66,7 @@ members: 83
 - [[End-to-end a real incident on bot A decays trust on bots B and C         in a 3]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[IncidentRecord]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[Log an incident and propagate trust decay to registered peers.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Peer agent not registered in TrustManager should be auto-registered.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Propagation to a peer with no registered TrustManager must not raise.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
@@ -100,17 +103,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_TrustConfig]]
-- 26 edges to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 35 edges to [[_COMMUNITY_TrustConfig]]
+- 20 edges to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_PipelineAction (2)]]
 - 1 edge to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (4)]]
 
 ## Top bridge nodes
-- [[CrossBotTrustLedger_1]] - degree 37, connects to 4 communities
-- [[cross_bot_trust_ledger.py]] - degree 6, connects to 3 communities
-- [[CrossBotTrustLedger]] - degree 26, connects to 2 communities
-- [[TrustManager_1]] - degree 25, connects to 2 communities
-- [[test_cross_bot_trust_ledger.py]] - degree 17, connects to 2 communities
+- [[BotIncidentSeverity]] - degree 25, connects to 4 communities
+- [[CrossBotTrustLedger_1]] - degree 36, connects to 2 communities
+- [[cross_bot_trust_ledger.py]] - degree 6, connects to 2 communities
+- [[CrossBotTrustLedger]] - degree 26, connects to 1 community
+- [[TrustManager_1]] - degree 25, connects to 1 community

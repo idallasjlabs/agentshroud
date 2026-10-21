@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[ProjectConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `references` [EXTRACTED]
+- [[TeamsConfig_2]] - `references` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `contains` [EXTRACTED]
 - [[TestConstantMessages]] - `contains` [EXTRACTED]
 - [[TestErrorFormatters]] - `contains` [EXTRACTED]
@@ -34,6 +34,6 @@ tags:
 - [[format_setmode_success()]] - `imports` [EXTRACTED]
 - [[format_unknown_group()]] - `imports` [EXTRACTED]
 - [[project()]] - `contains` [EXTRACTED]
-- [[teams()]] - `contains` [EXTRACTED]
+- [[teams()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

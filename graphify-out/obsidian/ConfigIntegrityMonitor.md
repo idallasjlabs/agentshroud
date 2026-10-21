@@ -12,17 +12,15 @@ tags:
 # ConfigIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_99]] - `method` [EXTRACTED]
+- [[dot-__init__()_110]] - `method` [EXTRACTED]
 - [[dot-_hash_file()]] - `method` [EXTRACTED]
 - [[dot-_load_baseline()]] - `method` [EXTRACTED]
 - [[dot-_save_baseline()]] - `method` [EXTRACTED]
-- [[dot-check()_3]] - `method` [EXTRACTED]
+- [[dot-check()_4]] - `method` [EXTRACTED]
 - [[dot-format_alert_text()]] - `method` [EXTRACTED]
 - [[dot-reset_baseline()]] - `method` [EXTRACTED]
 - [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - `rationale_for` [EXTRACTED]
 - [[config_integrity.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_added_file_is_detected()]] - `calls` [EXTRACTED]
 - [[test_baseline_advances_only_when_clean()]] - `calls` [EXTRACTED]
 - [[test_config_integrity_monitor.py]] - `imports` [EXTRACTED]

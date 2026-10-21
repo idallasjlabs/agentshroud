@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (12)"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_12
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_120]] - `method` [EXTRACTED]
+- [[dot-__init__()_26]] - `method` [EXTRACTED]
 - [[dot-check_permission()_2]] - `method` [EXTRACTED]
 - [[dot-test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[dot-test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -24,10 +24,10 @@ tags:
 - [[Action_1]] - `uses` [INFERRED]
 - [[Minimal RBAC stand-in with controllable check_permission results.]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_12

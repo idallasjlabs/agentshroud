@@ -12,6 +12,6 @@ tags:
 # Related Notes
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/port_managerpy

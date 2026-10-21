@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L43"
+location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,19 +12,26 @@ tags:
 # ToolTier
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_41]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_27]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[Tool security tiers for RBAC permissions.]] - `rationale_for` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
+- [[dot-check_tool_permission()]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
+- [[TestGroupRegistry]] - `uses` [INFERRED]
+- [[TestRBACConfig]] - `uses` [INFERRED]
+- [[TestRBACErrorHandling]] - `uses` [INFERRED]
+- [[TestRBACIntegration]] - `uses` [INFERRED]
+- [[TestRBACManager]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[rbac.py]] - `imports` [EXTRACTED]
-- [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/MiddlewareManager

@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (3)
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[9) GOVERNANCE & DECISION-MAKING]] - document - CLAUDE.md
-- [[When to act]] - document - CLAUDE.md
-- [[When to clarify]] - document - CLAUDE.md
-- [[When to defer]] - document - CLAUDE.md
+- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - document - CLAUDE.md
+- [[75 Active Security Modules — No Stubs]] - document - CLAUDE.md
+- [[Development commands]] - document - CLAUDE.md
+- [[Hard constraints]] - document - CLAUDE.md
+- [[Key source directories]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]]
 
 ## Top bridge nodes
-- [[9) GOVERNANCE & DECISION-MAKING]] - degree 4, connects to 1 community
+- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - degree 5, connects to 1 community

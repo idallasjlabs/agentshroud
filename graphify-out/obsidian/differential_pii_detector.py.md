@@ -12,9 +12,9 @@ tags:
 # differential_pii_detector.py
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `contains` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `contains` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[PII Sanitizer Module Badge Icon]] - `conceptually_related_to` [AMBIGUOUS]
 - [[PIIHit]] - `contains` [EXTRACTED]
 - [[PIIHitSeverity]] - `contains` [EXTRACTED]

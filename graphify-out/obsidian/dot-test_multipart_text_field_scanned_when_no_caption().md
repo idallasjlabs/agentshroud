@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

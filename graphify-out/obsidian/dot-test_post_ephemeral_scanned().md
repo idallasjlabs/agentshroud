@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[_pass_result()]] - `calls` [EXTRACTED]
 - [[chat.postEphemeral text goes through the pipeline like postMessage.]] - `rationale_for` [EXTRACTED]
 

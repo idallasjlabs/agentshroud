@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L3937"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # ._check_collaborator_leakage()
@@ -17,8 +17,8 @@ tags:
 - [[dot-_contains_high_risk_collaborator_leakage()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_resolve_collaborator_mode()]] - `calls` [EXTRACTED]
-- [[Any_83]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Return a safe-notice replacement when protected content would leak.          Cri]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

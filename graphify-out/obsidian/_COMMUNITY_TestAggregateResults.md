@@ -13,7 +13,7 @@ members: 8
 - [[dot-test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Any_7]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Any_5]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "shortcuts/README.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L3"
+community: "iOS / macOS Shortcuts — Relay to AgentShroud"
+location: "L324"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
 ---
 
 # Status
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud

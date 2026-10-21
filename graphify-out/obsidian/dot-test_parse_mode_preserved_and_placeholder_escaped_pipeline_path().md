@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py (2)"
+community: "test_telegram_proxy_outbound.py"
 location: "L4432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy_2
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()
@@ -17,4 +17,4 @@ tags:
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy_2
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

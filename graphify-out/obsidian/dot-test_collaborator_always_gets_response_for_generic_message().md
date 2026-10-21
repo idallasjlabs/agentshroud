@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Every collaborator message must produce a response — never a silent drop."
+community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
 location: "L7949"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Every_collaborator_message_must_produce_a_response__never_a_silent_drop
+  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
 ---
 
 # .test_collaborator_always_gets_response_for_generic_message()
@@ -18,8 +18,8 @@ tags:
 - [[TestNoResponseGuarantee]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[fake_send()_22]] - `contains` [EXTRACTED]
-- [[fake_send()_7]] - `indirect_call` [INFERRED]
+- [[fake_send()_11]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Every_collaborator_message_must_produce_a_response__never_a_silent_drop
+#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice

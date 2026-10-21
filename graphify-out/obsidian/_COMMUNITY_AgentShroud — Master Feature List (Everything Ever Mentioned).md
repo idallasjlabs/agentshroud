@@ -22,7 +22,7 @@ members: 17
 - [[Infrastructure_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_19]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_18]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 

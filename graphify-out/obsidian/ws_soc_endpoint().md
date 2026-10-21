@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_soc_realtime_coverage.py"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # ws_soc_endpoint()
 
 ## Connections
-- [[dot-run()_4]] - `calls` [EXTRACTED]
+- [[dot-run()_2]] - `calls` [EXTRACTED]
 - [[dot-test_bearer_header_fallback()]] - `calls` [EXTRACTED]
 - [[dot-test_handler_exception_is_swallowed()]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_token_closes_4003()]] - `calls` [EXTRACTED]
@@ -20,10 +20,10 @@ tags:
 - [[dot-test_unauthorized_closes_4003()]] - `calls` [EXTRACTED]
 - [[dot-test_valid_ws_token_accepts()]] - `calls` [EXTRACTED]
 - [[FastAPI WebSocket route handler for wssoc.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestWSSOCEndpoint]] - `calls` [EXTRACTED]
-- [[WebSocket]] - `references` [EXTRACTED]
+- [[WebSocket_4]] - `references` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[redeem_ws_token()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

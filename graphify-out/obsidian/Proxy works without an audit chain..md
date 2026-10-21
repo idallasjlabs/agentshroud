@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "WebProxyConfig (3)"
+community: "ProxyAction"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig_3
+  - community/ProxyAction
 ---
 
 # Proxy works without an audit chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_no_audit_chain_no_crash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

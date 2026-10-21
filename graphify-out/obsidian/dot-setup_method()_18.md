@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "PipelineAction"
-location: "L15"
+community: "TestOutputCanary"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/TestOutputCanary
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[OutputCanary]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "First Time Setup (2)"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/First_Time_Setup_2
 ---
 
 # Check if we've exceeded the rate limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_rate_limited()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup_2

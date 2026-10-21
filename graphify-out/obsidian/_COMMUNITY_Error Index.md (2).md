@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Related Notes_7]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Architecture_1]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Confidence Threshold]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Configured Entities]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[NLP Backend]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Presidio Analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Purpose_2]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Related Notes_4]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Where Used]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
 
 ## Top bridge nodes
-- [[SSH Proxy Errors]] - degree 2, connects to 1 community
+- [[Presidio Analyzer]] - degree 8, connects to 1 community

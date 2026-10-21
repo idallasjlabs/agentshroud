@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
 community: "Project Management (README)"
 location: "L10"
@@ -12,6 +12,7 @@ tags:
 # Usage
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

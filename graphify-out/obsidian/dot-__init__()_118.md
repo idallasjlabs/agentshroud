@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L64"
+community: "migrate-cve-registry-ghsa.py"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
-- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "api.py (2)"
 location: "L1215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/apipy_2
 ---
 
 # _get_engine()
@@ -17,7 +17,7 @@ tags:
 - [[check_bot_updates()]] - `calls` [EXTRACTED]
 - [[get_engine()]] - `calls` [EXTRACTED]
 - [[get_logs()]] - `calls` [EXTRACTED]
-- [[killswitch()_1]] - `calls` [EXTRACTED]
+- [[killswitch()]] - `calls` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
 - [[restart_service()]] - `calls` [EXTRACTED]
 - [[rollback_agentshroud()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[upgrade_bot()]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
-location: "L43"
+community: "generate_branding_assets.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/generate_branding_assetspy
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

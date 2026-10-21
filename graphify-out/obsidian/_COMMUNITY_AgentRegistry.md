@@ -8,11 +8,11 @@ members: 69
 **Members:** 69 nodes
 
 ## Members
-- [[dot-__init__()_191]] - code - gateway/security/agent_isolation.py
-- [[dot-__init__()_192]] - code - gateway/security/agent_isolation.py
-- [[dot-from_dict()_8]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_188]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_189]] - code - gateway/security/agent_isolation.py
+- [[dot-from_dict()_7]] - code - gateway/security/agent_isolation.py
 - [[dot-register()]] - code - gateway/security/agent_isolation.py
-- [[dot-setup_method()_38]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_36]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
@@ -49,7 +49,7 @@ members: 69
 - [[dot-test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-to_dict()_13]] - code - gateway/security/agent_isolation.py
+- [[dot-to_dict()_10]] - code - gateway/security/agent_isolation.py
 - [[dot-unregister()]] - code - gateway/security/agent_isolation.py
 - [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
 - [[AgentRegistry]] - code - gateway/security/agent_isolation.py
@@ -86,26 +86,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 18 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 23 edges to [[_COMMUNITY_TrustConfig]]
+- 14 edges to [[_COMMUNITY_AlertDispatcher]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
 - 10 edges to [[_COMMUNITY_AgentRegistry (2)]]
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
-- 8 edges to [[_COMMUNITY_RBACConfig]]
-- 6 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 6 edges to [[_COMMUNITY_TrustConfig]]
-- 4 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 3 edges to [[_COMMUNITY_ContextSegment (2)]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_ContextSegment]]
-- 1 edge to [[_COMMUNITY_RBACConfig (3)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_ContextSegment]]
+- 5 edges to [[_COMMUNITY_TeamsConfig]]
+- 4 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)]]
+- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (5)]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_Path (4)]]
 
 ## Top bridge nodes
-- [[AgentRegistry]] - degree 71, connects to 10 communities
-- [[ContainerConfig_1]] - degree 40, connects to 8 communities
-- [[IsolationVerifier]] - degree 50, connects to 7 communities
-- [[TestAgentIsolation]] - degree 31, connects to 6 communities
-- [[TestAgentRegistryGroupIdentity]] - degree 12, connects to 4 communities
+- [[AgentRegistry]] - degree 69, connects to 10 communities
+- [[ContainerConfig_1]] - degree 38, connects to 9 communities
+- [[TestAgentIsolation]] - degree 31, connects to 8 communities
+- [[IsolationVerifier]] - degree 48, connects to 6 communities
+- [[TestAgentRegistryGroupIdentity]] - degree 12, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Git History Purge Plan"
+community: "Kill Switch"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_History_Purge_Plan
+  - community/Kill_Switch
 ---
 
 # SECURITY-IMPLEMENTATION-VERIFICATION.md
@@ -19,4 +19,4 @@ tags:
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [AMBIGUOUS]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

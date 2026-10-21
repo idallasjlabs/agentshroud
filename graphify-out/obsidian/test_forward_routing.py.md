@@ -12,7 +12,7 @@ tags:
 # test_forward_routing.py
 
 ## Connections
-- [[AgentTarget_2]] - `references` [EXTRACTED]
+- [[AgentTarget_3]] - `references` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `contains` [EXTRACTED]
 - [[TestOutboundBlockedNotDelivered]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Unit tests for collaborator-facing prompt classification helpers."
+community: ".test_dns_ping_probe_gets_network_probe_policy_notice()"
 location: "L7588"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+  - community/test_dns_ping_probe_gets_network_probe_policy_notice
 ---
 
 # .test_dns_ping_probe_gets_network_probe_policy_notice()
@@ -15,4 +15,4 @@ tags:
 - [[B3.2d DNSping probes should return network probe notice with banner.]] - `rationale_for` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+#graphify/code #graphify/EXTRACTED #community/test_dns_ping_probe_gets_network_probe_policy_notice

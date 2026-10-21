@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L82"
+community: "MiddlewareManager (3)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/MiddlewareManager_3
 ---
 
 # pipeline()
 
 ## Connections
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

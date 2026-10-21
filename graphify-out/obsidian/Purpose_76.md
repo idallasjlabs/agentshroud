@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Error Index.md (4)"
-location: "L16"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Purpose
 
 ## Connections
-- [[spaCy_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

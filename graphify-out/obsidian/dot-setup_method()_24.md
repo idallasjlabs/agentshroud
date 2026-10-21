@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestMetadataGuard"
-location: "L18"
+community: "MiddlewareManager (6)"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/MiddlewareManager_6
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

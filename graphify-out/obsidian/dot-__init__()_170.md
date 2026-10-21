@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "HTTPConnectProxy"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[_SocketTransportWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

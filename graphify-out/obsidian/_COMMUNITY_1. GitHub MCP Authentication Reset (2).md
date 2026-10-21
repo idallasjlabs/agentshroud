@@ -29,7 +29,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset]]
 - 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (3)]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2) (2)]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (4)]]
 
 ## Top bridge nodes
 - [[1. GitHub MCP Authentication Reset_2]] - degree 6, connects to 1 community

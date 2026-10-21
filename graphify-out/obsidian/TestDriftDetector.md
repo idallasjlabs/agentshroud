@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_1]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

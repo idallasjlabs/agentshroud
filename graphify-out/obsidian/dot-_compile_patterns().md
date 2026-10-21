@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L24"
+community: "SecurityPipeline"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/SecurityPipeline
 ---
 
 # ._compile_patterns()
 
 ## Connections
-- [[dot-__init__()_14]] - `calls` [EXTRACTED]
-- [[Compile regex patterns for sensitive data detection.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer]] - `method` [EXTRACTED]
-- [[Pattern]] - `references` [EXTRACTED]
-- [[get_sanitizer_stats()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_146]] - `calls` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
+- [[Compile all filter patterns into regex objects.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

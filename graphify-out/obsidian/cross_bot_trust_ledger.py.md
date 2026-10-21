@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `contains` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[IncidentRecord]] - `contains` [EXTRACTED]
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
 - [[TrustManager_3]] - `imports` [EXTRACTED]

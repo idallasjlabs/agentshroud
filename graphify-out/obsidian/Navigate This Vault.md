@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "main.py.md"
+community: "PIIConfig"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/PIIConfig
 ---
 
 # Navigate This Vault
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/PIIConfig

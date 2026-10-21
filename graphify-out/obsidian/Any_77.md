@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L56"
+community: "egress_retry.py"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/egress_retrypy
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/egress_retrypy

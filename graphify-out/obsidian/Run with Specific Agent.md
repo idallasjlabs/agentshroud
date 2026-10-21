@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "TestOutboundInfoFilter (5)"
 location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/TestOutboundInfoFilter_5
 ---
 
 # Run with Specific Agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Basic Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

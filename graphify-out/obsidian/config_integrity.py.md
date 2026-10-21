@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "FR3: System Integrity"
+community: "egress_filter.py (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/egress_filterpy_3
 ---
 
 # config_integrity.py
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy_3

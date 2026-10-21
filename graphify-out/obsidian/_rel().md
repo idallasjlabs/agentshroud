@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Best-effort repo-relative path string for display (falls back to str).]] - `rationale_for` [EXTRACTED]
-- [[Path_7]] - `references` [EXTRACTED]
+- [[Path_13]] - `references` [EXTRACTED]
 - [[main()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 

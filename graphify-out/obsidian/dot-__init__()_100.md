@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L62"
+community: "RateLimitGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

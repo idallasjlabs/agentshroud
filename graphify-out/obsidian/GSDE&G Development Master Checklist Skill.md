@@ -20,7 +20,7 @@ tags:
 - [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
 - [[Purpose_82]] - `contains` [EXTRACTED]
 - [[Related Skills_63]] - `contains` [EXTRACTED]
-- [[Usage_74]] - `contains` [EXTRACTED]
+- [[Usage_72]] - `contains` [EXTRACTED]
 - [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
 - [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 

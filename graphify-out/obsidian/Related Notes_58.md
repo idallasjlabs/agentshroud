@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "First Time Setup (2)"
-location: "L161"
+community: "Kill Switch Procedure"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Kill_Switch_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_1]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

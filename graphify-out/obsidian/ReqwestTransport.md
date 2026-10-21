@@ -12,7 +12,7 @@ tags:
 # ReqwestTransport
 
 ## Connections
-- [[dot-new()_2]] - `method` [EXTRACTED]
+- [[dot-new()_1]] - `method` [EXTRACTED]
 - [[dot-request()_1]] - `method` [EXTRACTED]
 - [[Client]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]

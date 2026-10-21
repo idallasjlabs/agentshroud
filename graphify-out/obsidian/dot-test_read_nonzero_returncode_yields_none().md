@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationManager (2)"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationManager_2
 ---
 
 # .test_read_nonzero_returncode_yields_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadFrom1Password]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

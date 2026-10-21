@@ -8,10 +8,10 @@ members: 135
 **Members:** 135 nodes
 
 ## Members
-- [[dot-__init__()_74]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_75]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_76]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_77]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_85]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_86]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_87]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_88]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-is_group_admin()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-is_owner()_1]] - code - gateway/tests/test_soc_router_coverage.py
@@ -19,7 +19,7 @@ members: 135
 - [[dot-model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-require()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[FakeAuditStore]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeAuditStore_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
 - [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - rationale - gateway/tests/test_soc_router_coverage.py
@@ -153,14 +153,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_MiddlewareManager]]
-- 5 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_test_e2e_proxy.py (2)]]
+- 5 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_ForwardRequest (2)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 151, connects to 5 communities
+- [[test_soc_router_coverage.py]] - degree 151, connects to 6 communities
 - [[FakeGroup]] - degree 13, connects to 2 communities
 - [[FakeCaller]] - degree 12, connects to 2 communities
-- [[FakeAuditStore]] - degree 7, connects to 2 communities
+- [[FakeAuditStore_1]] - degree 7, connects to 2 communities
 - [[_Svc]] - degree 7, connects to 2 communities

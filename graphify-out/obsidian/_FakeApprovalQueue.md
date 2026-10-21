@@ -12,10 +12,10 @@ tags:
 # _FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_134]] - `method` [EXTRACTED]
+- [[dot-__init__()_129]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()_2]] - `method` [EXTRACTED]
 - [[dot-wait_for_decision()_2]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -26,7 +26,7 @@ tags:
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[test_enforce_high_risk_denied_on_rejection()]] - `calls` [EXTRACTED]
 - [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - `calls` [EXTRACTED]

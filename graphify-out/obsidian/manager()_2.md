@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "SessionManager (2)"
-location: "L29"
+community: "TrustConfig"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager_2
+  - community/TrustConfig
 ---
 
 # manager()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

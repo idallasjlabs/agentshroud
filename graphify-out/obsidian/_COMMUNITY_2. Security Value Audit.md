@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[2. Security Value Audit_2]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[PARTIAL PROTECTION (real logic, but gaps or dependencies)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[REAL PROTECTION (functional enforcement, would stop actual attacks)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[SECURITY THEATER RISK (looks good, limited real value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit]] - degree 4, connects to 1 community
+- [[2. Security Value Audit_2]] - degree 4, connects to 1 community

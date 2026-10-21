@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig (2)"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_pii_sanitizer_default_action()
@@ -16,4 +16,4 @@ tags:
 - [[Test that PII sanitizer defaults to redact action.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

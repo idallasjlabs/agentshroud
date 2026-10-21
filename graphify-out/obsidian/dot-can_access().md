@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # .can_access()
@@ -18,4 +18,4 @@ tags:
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 - [[Return True if user_id may access the workspace for ``group_chat_id``.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

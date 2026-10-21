@@ -12,14 +12,14 @@ tags:
 # URLVerdict
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[TestBase64Heuristic]] - `uses` [INFERRED]
 - [[TestDataExfiltration_1]] - `uses` [INFERRED]
 - [[TestLegitimateURLsAllowed]] - `uses` [INFERRED]
 - [[TestMalformedURLs]] - `uses` [INFERRED]
 - [[TestPIIInURLs]] - `uses` [INFERRED]
 - [[TestSSRFDetection]] - `uses` [INFERRED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 

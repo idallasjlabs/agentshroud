@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/README.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Browser — Secure Browser Automation (4)"
-location: "L6"
+community: "FalcoAlertWatcher"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_4
+  - community/FalcoAlertWatcher
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_4
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

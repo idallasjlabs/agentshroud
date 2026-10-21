@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "awslabs.aws-api-mcp-server configuration (--readonly)"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "LLM Operating Context"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--readonly
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # LLM Operating Context — Isaiah Jefferson
@@ -17,4 +17,4 @@ tags:
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `references` [EXTRACTED]
 - [[llm-init.sh — project-level multi-tool config deployment]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly
+#graphify/concept #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse

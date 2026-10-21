@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L57"
+community: "MiddlewareManager"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

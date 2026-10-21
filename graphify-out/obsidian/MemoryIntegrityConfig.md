@@ -1,18 +1,32 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L65"
+community: "MiddlewareManager (6)"
+location: "L21"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - graphify/INFERRED
+  - community/MiddlewareManager_6
 ---
 
 # MemoryIntegrityConfig
 
 ## Connections
-- [[dot-__init__()_58]] - `references` [EXTRACTED]
+- [[dot-setup_method()_24]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_2]] - `calls` [EXTRACTED]
+- [[Any_79]] - `uses` [INFERRED]
+- [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[ModificationSource]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
+- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
+- [[memory_config.py]] - `contains` [EXTRACTED]
+- [[memory_integrity.py]] - `imports` [EXTRACTED]
+- [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_6

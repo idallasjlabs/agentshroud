@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "TestFabricatedSecurityNotice"
 location: "L561"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Test that owner/admin can access all user sessions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_admin_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

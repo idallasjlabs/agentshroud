@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "MCPPermissionManager (3)"
 location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/MCPPermissionManager_3
 ---
 
 # Check if an agent can access a server at all.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_agent_server_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_3

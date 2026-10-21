@@ -12,7 +12,7 @@ tags:
 # _skills_reload_paths()
 
 ## Connections
-- [[Path_34]] - `references` [EXTRACTED]
+- [[Path_35]] - `references` [EXTRACTED]
 - [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]

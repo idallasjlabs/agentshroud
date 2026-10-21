@@ -1,19 +1,24 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L94"
+community: "ToolResultSanitizer (2)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ToolResultSanitizer_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_155]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_167]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2

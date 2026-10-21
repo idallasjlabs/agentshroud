@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "StdioConnection"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_20]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

@@ -12,6 +12,6 @@ tags:
 # Take Screenshot
 
 ## Connections
-- [[Usage_65]] - `contains` [EXTRACTED]
+- [[Usage_63]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2

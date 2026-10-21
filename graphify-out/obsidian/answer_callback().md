@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Malformed callback payloads should not crash inbound processing."
-location: "L5719"
+community: ".test_egress_callback_from_collaborator_is_rejected()"
+location: "L5763"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Malformed_callback_payloads_should_not_crash_inbound_processing
+  - community/test_egress_callback_from_collaborator_is_rejected
 ---
 
 # answer_callback()
 
 ## Connections
-- [[dot-test_egress_callback_non_dict_result_is_handled()]] - `contains` [EXTRACTED]
+- [[dot-test_egress_callback_from_collaborator_is_rejected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Malformed_callback_payloads_should_not_crash_inbound_processing
+#graphify/code #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected

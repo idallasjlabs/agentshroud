@@ -21,7 +21,7 @@ members: 17
 - [[Security Best Practices_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Troubleshooting_31]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_96]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_94]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verification Checklist_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[When to Invoke_6]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[hermesskillsi-mcpm-auth-resetSKILL]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md

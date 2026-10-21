@@ -12,7 +12,7 @@ tags:
 # _is_fluent_bit_running()
 
 ## Connections
-- [[Path_32]] - `calls` [EXTRACTED]
+- [[Path_61]] - `calls` [EXTRACTED]
 - [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - `rationale_for` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

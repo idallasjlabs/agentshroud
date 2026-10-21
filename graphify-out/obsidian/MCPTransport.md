@@ -12,12 +12,12 @@ tags:
 # MCPTransport
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
-- [[Any_25]] - `uses` [INFERRED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[Any_35]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -27,9 +27,9 @@ tags:
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
@@ -72,7 +72,7 @@ tags:
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 

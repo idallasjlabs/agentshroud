@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "ContainerEngine"
-location: "L95"
+community: "DNSBlocklist"
+location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/DNSBlocklist
 ---
 
 # .stop()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

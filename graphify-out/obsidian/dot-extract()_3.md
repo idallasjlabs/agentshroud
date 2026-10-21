@@ -17,6 +17,6 @@ tags:
 - [[Extract data from page          Security No credential extraction allowed_3]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[SecurityError_3]] - `calls` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

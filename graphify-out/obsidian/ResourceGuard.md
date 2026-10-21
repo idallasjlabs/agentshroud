@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "ResourceGuard"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/ResourceGuard
 ---
 
 # ResourceGuard
 
 ## Connections
 - [[dot-__del__()]] - `method` [EXTRACTED]
-- [[dot-__init__()_152]] - `calls` [EXTRACTED]
-- [[dot-__init__()_139]] - `method` [EXTRACTED]
+- [[dot-__init__()_18]] - `calls` [EXTRACTED]
+- [[dot-__init__()_78]] - `method` [EXTRACTED]
 - [[dot-_alert_high_usage()]] - `method` [EXTRACTED]
 - [[dot-_check_system_resources()_1]] - `method` [EXTRACTED]
 - [[dot-_cleanup_expired_usage()]] - `method` [EXTRACTED]
 - [[dot-_get_disk_io_stats()]] - `method` [EXTRACTED]
 - [[dot-_monitor_resources()]] - `method` [EXTRACTED]
 - [[dot-_start_monitoring_task()]] - `method` [EXTRACTED]
-- [[dot-add_alert_callback()]] - `method` [EXTRACTED]
+- [[dot-add_alert_callback()_1]] - `method` [EXTRACTED]
 - [[dot-check_cpu_limit()]] - `method` [EXTRACTED]
 - [[dot-check_disk_write_limit()]] - `method` [EXTRACTED]
 - [[dot-check_memory_limit()]] - `method` [EXTRACTED]
@@ -30,9 +30,9 @@ tags:
 - [[dot-cleanup_temp_files()]] - `method` [EXTRACTED]
 - [[dot-get_usage_stats()]] - `method` [EXTRACTED]
 - [[dot-register_temp_file()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
 - [[dot-start_request_tracking()]] - `method` [EXTRACTED]
-- [[dot-stop()_9]] - `method` [EXTRACTED]
+- [[dot-stop()_6]] - `method` [EXTRACTED]
 - [[dot-stop_monitoring()]] - `method` [EXTRACTED]
 - [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - `calls` [EXTRACTED]
 - [[dot-test_check_cpu_limit_returns_false_on_exception()]] - `calls` [EXTRACTED]
@@ -45,16 +45,16 @@ tags:
 - [[dot-test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
 - [[dot-test_stop_cancels_monitor_task_and_idempotent()]] - `calls` [EXTRACTED]
 - [[dot-test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Any_54]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Any_23]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and limit resource usage per agentrequest.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_2]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -86,10 +86,10 @@ tags:
 - [[TestTempFiles]] - `uses` [INFERRED]
 - [[TestUsageStatsAndTracking]] - `uses` [INFERRED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[get_resource_guard()]] - `references` [EXTRACTED]
-- [[guard()_4]] - `calls` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[guard()_2]] - `calls` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `references` [EXTRACTED]
 - [[test_resource_guard.py]] - `imports` [EXTRACTED]
@@ -98,4 +98,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

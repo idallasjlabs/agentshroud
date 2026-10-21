@@ -1,19 +1,30 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: ".validate_docker_compose_config"
-location: "L124"
+community: "SecurityPipeline"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/SecurityPipeline
 ---
 
 # Any
 
 ## Connections
-- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
-- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
-- [[dot-get_security_report()]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_13]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_8]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `references` [EXTRACTED]
+- [[dot-to_dict()_9]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

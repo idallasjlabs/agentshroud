@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager (3)"
+community: "TestDomainValidationHelper"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/TestDomainValidationHelper
 ---
 
 # Test grace period status tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_grace_period_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper

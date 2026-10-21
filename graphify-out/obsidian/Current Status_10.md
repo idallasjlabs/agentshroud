@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "OpenClaw Bot Container"
-location: "L63"
+community: "Tailscale Remote Access Setup"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

@@ -1,22 +1,27 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L8"
+community: "PIIConfig"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/PIIConfig
 ---
 
-# Data Flow
+# Data Flow.md
 
 ## Connections
+- [[Architecture Overview]] - `references` [EXTRACTED]
 - [[Data Flow_1]] - `contains` [EXTRACTED]
-- [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
-- [[Overview_12]] - `contains` [EXTRACTED]
-- [[Related Notes_38]] - `contains` [EXTRACTED]
-- [[Request Flow Diagram]] - `contains` [EXTRACTED]
-- [[Response Path]] - `contains` [EXTRACTED]
+- [[DataLedger]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `references` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
+- [[ledger.py]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/PIIConfig

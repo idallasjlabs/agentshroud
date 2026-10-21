@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "AgentTarget"
-location: "L17"
+community: "ApprovalQueueConfig (2)"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentTarget
+  - graphify/EXTRACTED
+  - community/ApprovalQueueConfig_2
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: ""
 type: "code"
-community: "UserSessionManager (2)"
-location: "L369"
+community: "ProxyAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/ProxyAction
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

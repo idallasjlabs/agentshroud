@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L73"
+community: "test_a2a_proxy.py"
+location: "L449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
-- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

@@ -87,10 +87,10 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_WebContentScanner]]
 - 2 edges to [[_COMMUNITY_plan_remediation]]
 - 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 - 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
-- 1 edge to [[_COMMUNITY_check_upstream_cves]]
+- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
 
 ## Top bridge nodes
 - [[_AGENT_CVE_REGISTRIES]] - degree 8, connects to 5 communities

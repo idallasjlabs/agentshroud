@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "`SecurityPipeline`"
-location: "L129"
+community: "Layer-by-Layer Breakdown"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Related Notes
 
 ## Connections
-- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L49"
+community: "ApprovalQueueConfig (4)"
+location: "L215"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig_4
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()_3]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_4

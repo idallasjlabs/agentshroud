@@ -1,17 +1,14 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "code"
-community: "AgentTarget (5)"
+community: "run-standalone.sh (Hermes docker run launcher) (3)"
 location: "30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/run-standalonesh_Hermes_docker_run_launcher_3
 ---
 
 # pre-commit check-yaml hook (--unsafe)
 
-## Connections
-- [[gateway service (dev override)]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_3

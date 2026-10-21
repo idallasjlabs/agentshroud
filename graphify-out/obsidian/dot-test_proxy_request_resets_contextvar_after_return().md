@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig"
+community: "BotConfig (2)"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/BotConfig_2
 ---
 
 # .test_proxy_request_resets_contextvar_after_return()
@@ -16,4 +16,4 @@ tags:
 - [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/BotConfig_2

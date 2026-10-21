@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 - [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[RBACManager]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `references` [EXTRACTED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 - [[socauth.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]

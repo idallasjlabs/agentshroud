@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L41"
+community: "ResourceGuard"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
+- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[ResourceLimits]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

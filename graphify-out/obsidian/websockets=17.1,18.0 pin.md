@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "concept"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "ingest_api/main.py"
 location: "38"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ingest_api/mainpy
 ---
 
 # websockets>=17.1,<18.0 pin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ingest_apimain.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/concept #graphify/EXTRACTED #community/ingest_api/mainpy

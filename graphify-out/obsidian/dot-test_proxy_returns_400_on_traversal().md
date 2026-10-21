@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestHermesDashboardPathTraversal]] - `method` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `calls` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 - [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - `rationale_for` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2

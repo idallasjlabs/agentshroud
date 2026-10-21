@@ -1,31 +1,24 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection"
-location: "L48"
+community: "MCPInspector"
+location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/MCPInspector
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[ConnectionPool]] - `uses` [INFERRED]
-- [[HttpSseConnection]] - `uses` [INFERRED]
+- [[dot-__init__()_105]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[StdioConnection]] - `uses` [INFERRED]
-- [[make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/MCPInspector

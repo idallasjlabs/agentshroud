@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector (2)"
+community: "DifferentialPIIDetector"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector_2
+  - community/DifferentialPIIDetector
 ---
 
 # Strip common adversarial encoding tricks, return (normalized, count_removed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_normalize_adversarial()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector_2
+#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector

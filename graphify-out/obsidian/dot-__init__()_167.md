@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L314"
+community: "ToolResultSanitizer (2)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/ToolResultSanitizer_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2

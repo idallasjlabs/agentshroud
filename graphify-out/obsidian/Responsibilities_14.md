@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Function Details (5)"
+community: "Function Details (4)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Function_Details_4
 ---
 
 # Responsibilities
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/document #graphify/EXTRACTED #community/Function_Details_4

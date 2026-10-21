@@ -12,7 +12,7 @@ tags:
 # TestRBACManager
 
 ## Connections
-- [[dot-setup_method()_21]] - `method` [EXTRACTED]
+- [[dot-setup_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_list_users_and_roles()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_admin()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_collaborator()]] - `method` [EXTRACTED]
@@ -26,12 +26,12 @@ tags:
 - [[Action_1]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
 - [[Test RBAC manager functionality.]] - `rationale_for` [EXTRACTED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

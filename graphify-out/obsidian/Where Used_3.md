@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L19"
+community: "UserSessionManager (6)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/UserSessionManager_6
 ---
 
 # Where Used
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "installer.py (2)"
-location: "L42"
+community: "UserSessionManager (6)"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy_2
+  - community/UserSessionManager_6
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy_2
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6

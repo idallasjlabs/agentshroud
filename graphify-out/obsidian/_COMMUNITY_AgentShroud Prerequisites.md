@@ -14,14 +14,14 @@ members: 26
 - [[Annually]] - document - docs/reference/PREREQUISITES.md
 - [[Base Images]] - document - docs/reference/PREREQUISITES.md
 - [[Common Issues_1]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_6]] - document - docs/reference/PREREQUISITES.md
+- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
 - [[Monthly]] - document - docs/reference/PREREQUISITES.md
 - [[Network Security]] - document - docs/reference/PREREQUISITES.md
 - [[Overview_10]] - document - docs/reference/PREREQUISITES.md
 - [[Quarterly]] - document - docs/reference/PREREQUISITES.md
 - [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
 - [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_3]] - document - docs/reference/PREREQUISITES.md
+- [[Verification_2]] - document - docs/reference/PREREQUISITES.md
 - [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
 - [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
 - [[🆘 Troubleshooting_1]] - document - docs/reference/PREREQUISITES.md
@@ -43,9 +43,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_📱 Required Accounts & Services]]
 - 1 edge to [[_COMMUNITY_Quick Reference Commands]]
 - 1 edge to [[_COMMUNITY_Required Software]]
-- 1 edge to [[_COMMUNITY_📱 Required Accounts & Services]]
 
 ## Top bridge nodes
 - [[AgentShroud Prerequisites]] - degree 16, connects to 3 communities

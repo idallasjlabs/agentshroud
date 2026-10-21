@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test detection of rapid file enumeration.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

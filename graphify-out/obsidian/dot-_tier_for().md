@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "A2AMethod"
-location: "L555"
+community: "MCPPolicyEngine"
+location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/MCPPolicyEngine
 ---
 
 # ._tier_for()
 
 ## Connections
 - [[dot-_decide()]] - `calls` [EXTRACTED]
-- [[A2AMethod]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[Resolve the risk tier for a tool.          Explicit classification (qualified be]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

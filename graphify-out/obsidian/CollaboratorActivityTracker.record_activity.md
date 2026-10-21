@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy"
 location: "line 125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy
 ---
 
 # CollaboratorActivityTracker.record_activity
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [INFERRED]
+- [[TelegramAPIProxy_2]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_3
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

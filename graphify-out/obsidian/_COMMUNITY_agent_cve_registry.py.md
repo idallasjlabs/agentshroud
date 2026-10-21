@@ -29,9 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 2 edges to [[_COMMUNITY_sync-cve-registry.py (2)]]
+- 2 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
 - 1 edge to [[_COMMUNITY__make_cve]]
 
 ## Top bridge nodes
-- [[generate-cve-page.py]] - degree 9, connects to 2 communities
-- [[_resolve_registries()]] - degree 5, connects to 1 community
+- [[generate-cve-page.py]] - degree 9, connects to 3 communities
+- [[_resolve_registries()]] - degree 5, connects to 2 communities

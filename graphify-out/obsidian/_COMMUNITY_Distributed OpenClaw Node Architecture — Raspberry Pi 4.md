@@ -14,7 +14,7 @@ members: 20
 - [[Best Use Cases for Distributed Node Approach]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Comparison Matrix]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Concept Overview]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Conclusion_1]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Conclusion_2]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Cost-Benefit Analysis]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Current Approach (Option 1 Direct SSH)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
@@ -23,7 +23,7 @@ members: 20
 - [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Future Approach (Option 2 Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Implementation Timeline]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Next Steps_7]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Next Steps_6]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Not Ideal For]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Prerequisites (Before Implementation)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 - [[Security Architecture_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md

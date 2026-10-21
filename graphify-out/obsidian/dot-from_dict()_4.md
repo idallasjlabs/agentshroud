@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2APolicyAction]] - `calls` [EXTRACTED]
 - [[A2APolicyConfig]] - `method` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
 - [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 

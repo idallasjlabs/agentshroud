@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_scanner_integration.py (2)"
+community: "AgentTarget (8)"
 location: "L1207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/AgentTarget_8
 ---
 
 # Score domain 11: Secure Development (0-5).      1=Trivy in build, 2=semgrep conf
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_secure_development()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_8

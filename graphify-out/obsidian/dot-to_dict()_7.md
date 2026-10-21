@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L85"
+community: "AuditEvent"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/AuditEvent
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
-- [[dot-_save_rules()]] - `calls` [EXTRACTED]
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
+- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

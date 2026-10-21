@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 location: "L9226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hello_in_group_sends_openclaw_ack()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

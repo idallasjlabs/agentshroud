@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
-location: "L2044"
+community: "ingest_api/main.py"
+location: "L2038"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ingest_api/mainpy
 ---
 
 # Remove an egress rule by domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress_remove_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

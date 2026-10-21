@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L226"
+community: "EgressFilterConfig (3)"
+location: "L459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/EgressFilterConfig_3
 ---
 
 # ._is_private_ip()
 
 ## Connections
-- [[dot-check_rebinding()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[Return True if the IP address is in a private  loopback range.]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[Check if host is a private, loopback, link-local, or reserved IP.          Cover]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3

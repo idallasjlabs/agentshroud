@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `references` [EXTRACTED]
 - [[Colima (primary macOS runtime)]] - `conceptually_related_to` [EXTRACTED]
-- [[Decision_2]] - `references` [EXTRACTED]
+- [[Decision_1]] - `references` [EXTRACTED]
 - [[VPN Networking Fix (Cisco AnyConnect) runbook]] - `semantically_similar_to` [INFERRED]
 
 #graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

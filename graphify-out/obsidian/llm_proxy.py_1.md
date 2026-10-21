@@ -12,10 +12,10 @@ tags:
 # llm_proxy.py
 
 ## Connections
-- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Configuration_10]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_2]] - `contains` [EXTRACTED]
 - [[LLM Providers]] - `contains` [EXTRACTED]
-- [[Overview_16]] - `contains` [EXTRACTED]
+- [[Overview_14]] - `contains` [EXTRACTED]
 - [[Quota Failover]] - `contains` [EXTRACTED]
 - [[Related_5]] - `contains` [EXTRACTED]
 - [[Streaming]] - `contains` [EXTRACTED]

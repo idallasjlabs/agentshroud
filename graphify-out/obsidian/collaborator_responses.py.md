@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[ProjectConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[build_project_context_injection()]] - `contains` [EXTRACTED]
 - [[format_addtogroup_success()]] - `contains` [EXTRACTED]
 - [[format_already_member()]] - `contains` [EXTRACTED]

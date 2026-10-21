@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L43"
+community: "AlertDispatcher (3)"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/AlertDispatcher_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Path_21]] - `references` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

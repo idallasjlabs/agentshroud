@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/browse.js"
+source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "hermes/skills/i-browser/browse.js"
-location: "L7"
+community: "test_apply_patches.js"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/test_apply_patchesjs
 ---
 
 # fs
 
 ## Connections
-- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # conftest.py
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `contains` [EXTRACTED]
-- [[auth_headers()_1]] - `contains` [EXTRACTED]
+- [[auth_headers()]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
-- [[sanitizer()_1]] - `contains` [EXTRACTED]
+- [[sanitizer()]] - `contains` [EXTRACTED]
 - [[test_client()]] - `contains` [EXTRACTED]
 - [[test_config()]] - `contains` [EXTRACTED]
 - [[test_ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

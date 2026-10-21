@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "TestSSRFDetection (6)"
+community: "TestSSRFDetection (4)"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_6
+  - community/TestSSRFDetection_4
 ---
 
 # .load_pending()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_6
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_4

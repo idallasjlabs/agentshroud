@@ -1,19 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L35"
+community: "Route map (by router)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/Route_map_by_router
 ---
 
 # Authentication
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Option 1 GitHub Login]] - `contains` [EXTRACTED]
-- [[Option 2 Personal Access Token]] - `contains` [EXTRACTED]
+- [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

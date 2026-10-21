@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "concept"
-community: "ToolResultSanitizer"
+community: "ApprovalQueueConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # XML injection-block filtering (function_calls/thinking/system-reminder/invoke/parameter)
 
 ## Connections
-- [[PIISanitizer]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/concept #graphify/EXTRACTED #community/ApprovalQueueConfig

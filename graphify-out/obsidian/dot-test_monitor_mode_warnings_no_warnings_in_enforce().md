@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig (2)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_monitor_mode_warnings_no_warnings_in_enforce()
@@ -17,4 +17,4 @@ tags:
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # EgressEvent
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_unusual_destination_flagged()]] - `calls` [EXTRACTED]
 - [[MockEgressEvent]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection]] - `uses` [INFERRED]
+- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

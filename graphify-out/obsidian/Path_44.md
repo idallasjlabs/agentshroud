@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L89"
+community: "test_security_toolchain.py (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/test_security_toolchainpy_2
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_149]] - `calls` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

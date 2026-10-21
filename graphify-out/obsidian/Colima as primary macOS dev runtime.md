@@ -12,6 +12,6 @@ tags:
 # Colima as primary macOS dev runtime
 
 ## Connections
-- [[Decision_2]] - `references` [EXTRACTED]
+- [[Decision_1]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

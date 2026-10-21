@@ -15,12 +15,12 @@ members: 13
 - [[Mnemosyne — Retention Engineer_3]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[Output Format_29]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[Persona_11]] - document - .agents/skills/i-mnemosyne/SKILL.md
-- [[Purpose_168]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Purpose_169]] - document - .agents/skills/i-mnemosyne/README.md
 - [[Quality Checklist_14]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[Related Skills_107]] - document - .agents/skills/i-mnemosyne/README.md
 - [[Role_78]] - document - .agents/skills/i-mnemosyne/SKILL.md
 - [[System Prompt_11]] - document - .agents/skills/i-mnemosyne/SKILL.md
-- [[Usage_117]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Usage_115]] - document - .agents/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 

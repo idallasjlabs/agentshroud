@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L93"
+community: "StdioConnection"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[Signal the run loop to exit.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

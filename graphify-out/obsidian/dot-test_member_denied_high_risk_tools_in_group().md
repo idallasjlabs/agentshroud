@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (4)"
+community: "GroupRoleResolver"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_4
+  - community/GroupRoleResolver
 ---
 
 # .test_member_denied_high_risk_tools_in_group()
@@ -15,4 +15,4 @@ tags:
 - [[Regular member (non-owner group role) is denied high-risk tools that require app]] - `rationale_for` [EXTRACTED]
 - [[TestMemberGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_4
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

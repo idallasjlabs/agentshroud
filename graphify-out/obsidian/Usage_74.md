@@ -1,18 +1,23 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
-location: "L10"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Adding a future agent]] - `contains` [EXTRACTED]
+- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
+- [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
+- [[Tap to talk]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[Voice volume]] - `contains` [EXTRACTED]
+- [[Wake word]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

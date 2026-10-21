@@ -1,19 +1,26 @@
 ---
 type: community
-members: 6
+members: 13
 ---
 
 # Dockerfile — Bot (OpenClaw) (2)
 
-**Members:** 6 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Dockerfile.gateway vault note]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Gateway pre-installed security tools (ClamAV, Trivy, OpenSCAP, 1Password CLI, spaCy)]] - concept - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[OpenSCAP & IEC 62443 compliance validation]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[OpenSCAP dependency note]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[OpenSCAP relationship to TrivyClamAVFalco]] - concept - docs/vault/05 - Dependencies/openscap.md
-- [[Security Hardening]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[All Environment Variables (reference)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Related Notes_57]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Summary_22]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +30,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
-- 1 edge to [[_COMMUNITY_pytest.ini]]
+- 2 edges to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
 
 ## Top bridge nodes
-- [[OpenSCAP & IEC 62443 compliance validation]] - degree 2, connects to 1 community
-- [[Security Hardening]] - degree 2, connects to 1 community
+- [[4. Environment Variables]] - degree 8, connects to 2 communities
+- [[All Environment Variables (reference)]] - degree 3, connects to 1 community

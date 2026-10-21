@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "create_auth_dependency (3)"
+community: "test_dashboard.py (2)"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/test_dashboardpy_2
 ---
 
 # WebSocket endpoint for real-time approval notifications      Protocol:     1. Cl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approval_websocket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy_2

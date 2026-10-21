@@ -1,24 +1,30 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
-type: "document"
-community: "Function Details (5)"
-location: "L10"
+source_file: "gateway/security/session_security.py"
+type: "code"
+community: "SessionManager"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/SessionManager
 ---
 
 # session_security.py
 
 ## Connections
-- [[Configuration  Environment Variables_5]] - `contains` [EXTRACTED]
-- [[Function Details_12]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_13]] - `contains` [EXTRACTED]
-- [[Purpose_116]] - `contains` [EXTRACTED]
-- [[Related_17]] - `contains` [EXTRACTED]
-- [[Responsibilities_14]] - `contains` [EXTRACTED]
-- [[Threat Model_12]] - `contains` [EXTRACTED]
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - `cites` [EXTRACTED]
+- [[EventInjectionError]] - `contains` [EXTRACTED]
+- [[RateLimitExceeded]] - `contains` [EXTRACTED]
+- [[Session]] - `contains` [EXTRACTED]
+- [[SessionBindingError]] - `contains` [EXTRACTED]
+- [[SessionError]] - `contains` [EXTRACTED]
+- [[SessionExpired]] - `contains` [EXTRACTED]
+- [[SessionManager]] - `contains` [EXTRACTED]
+- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
+- [[browser_security.py]] - `references` [EXTRACTED]
+- [[log_sanitizer.py]] - `references` [EXTRACTED]
+- [[oauth_security.py]] - `references` [EXTRACTED]
+- [[subagent_monitor.py]] - `references` [EXTRACTED]
+- [[test_session_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/code #graphify/EXTRACTED #community/SessionManager

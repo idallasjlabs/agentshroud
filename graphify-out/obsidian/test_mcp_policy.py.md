@@ -12,7 +12,7 @@ tags:
 # test_mcp_policy.py
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MCPPolicyAction]] - `imports` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `contains` [EXTRACTED]
 - [[_base_config()]] - `contains` [EXTRACTED]

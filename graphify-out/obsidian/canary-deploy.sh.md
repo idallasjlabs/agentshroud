@@ -16,7 +16,7 @@ tags:
 - [[deploy_ref()]] - `defines` [EXTRACTED]
 - [[die()]] - `defines` [EXTRACTED]
 - [[log()_1]] - `defines` [EXTRACTED]
-- [[run()]] - `defines` [EXTRACTED]
+- [[run()_1]] - `defines` [EXTRACTED]
 - [[run_in_repo()]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/canary-deploysh

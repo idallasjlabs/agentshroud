@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # canary.py
@@ -18,4 +18,4 @@ tags:
 - [[encrypted_store.py]] - `references` [EXTRACTED]
 - [[run_canary()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

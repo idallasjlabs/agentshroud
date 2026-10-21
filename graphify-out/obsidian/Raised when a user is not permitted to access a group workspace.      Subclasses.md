@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "RBACConfig (2)"
+community: "TeamsConfig"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TeamsConfig
 ---
 
 # Raised when a user is not permitted to access a group workspace.      Subclasses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupAccessDenied]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

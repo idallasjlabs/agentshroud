@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L152"
+community: "MultiTurnTracker"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/MultiTurnTracker
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[dot-health_check()_3]] - `references` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_130]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

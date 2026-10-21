@@ -16,7 +16,7 @@ members: 13
 - [[Build troubleshooting (BuildKit stale overlay  disk full)]] - concept - docs/runbooks/colima-docker-guide.md
 - [[Colima & Docker Operations Guide]] - document - docs/runbooks/colima-docker-guide.md
 - [[Dual-stack bind race — Lima SSH port forwarder]] - rationale - docs/runbooks/colima-docker-guide.md
-- [[Prerequisites_12]] - document - README.md
+- [[Prerequisites_15]] - document - README.md
 - [[Quickstart_1]] - document - README.md
 - [[`asb` reference]] - document - README.md
 - [[asb Helper — Primary Interface]] - concept - docs/runbooks/colima-docker-guide.md

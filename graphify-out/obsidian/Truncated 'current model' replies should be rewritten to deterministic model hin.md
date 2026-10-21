@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "ApprovalQueueConfig (14)"
 location: "L948"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/ApprovalQueueConfig_14
 ---
 
 # Truncated 'current model' replies should be rewritten to deterministic model hin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_truncated_model_sentence_is_rewritten_to_active_model_hint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_14

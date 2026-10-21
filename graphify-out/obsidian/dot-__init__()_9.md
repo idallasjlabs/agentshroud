@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "FakeRBAC"
-location: "L157"
+community: "test_fieldflare_route_strips_unsupported_fields_streaming"
+location: "L1413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/test_fieldflare_route_strips_unsupported_fields_streaming
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming

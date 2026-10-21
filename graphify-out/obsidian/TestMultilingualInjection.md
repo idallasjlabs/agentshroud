@@ -12,7 +12,7 @@ tags:
 # TestMultilingualInjection
 
 ## Connections
-- [[dot-setup_method()_12]] - `method` [EXTRACTED]
+- [[dot-setup_method()_16]] - `method` [EXTRACTED]
 - [[dot-test_benign_multilingual_text()]] - `method` [EXTRACTED]
 - [[dot-test_case_insensitive_detection()]] - `method` [EXTRACTED]
 - [[dot-test_mixed_language_injection()]] - `method` [EXTRACTED]

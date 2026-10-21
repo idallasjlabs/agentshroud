@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "PipelineAction (2)"
-location: "L69"
+community: "TeamsConfig"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/TeamsConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager (3)"
+community: "UserSessionManager"
 location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/UserSessionManager
 ---
 
 # .test_lazy_migration_copies_legacy_memory()
@@ -16,4 +16,4 @@ tags:
 - [[TestMultiBotIsolation]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

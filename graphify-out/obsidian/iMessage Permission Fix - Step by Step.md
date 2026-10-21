@@ -12,7 +12,7 @@ tags:
 # iMessage Permission Fix - Step by Step
 
 ## Connections
-- [[Current Status_6]] - `contains` [EXTRACTED]
+- [[Current Status_5]] - `contains` [EXTRACTED]
 - [[How to Fix (5 Minutes)]] - `contains` [EXTRACTED]
 - [[IMESSAGE_PERMISSION_FIX]] - `contains` [EXTRACTED]
 - [[If It Still Doesn't Work]] - `contains` [EXTRACTED]

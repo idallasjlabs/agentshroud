@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js (2)"
+community: "soc.js"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs_2
+  - community/socjs
 ---
 
 # _loadOverview()
@@ -18,4 +18,4 @@ tags:
 - [[_setText()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs_2
+#graphify/code #graphify/EXTRACTED #community/socjs

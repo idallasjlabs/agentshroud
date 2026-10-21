@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "AlertDispatcher"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/AlertDispatcher
 ---
 
 # .test_egress_filter_blocks_mcp_exfil()
@@ -16,4 +16,4 @@ tags:
 - [[EgressPolicy]] - `calls` [INFERRED]
 - [[TestMCPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

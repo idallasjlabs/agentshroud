@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Agent Routing (P0)]] - `contains` [EXTRACTED]
-- [[Security_2]] - `contains` [EXTRACTED]
+- [[Security]] - `contains` [EXTRACTED]
 - [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 - [[0.6.0 - 2026-02-23]] - `contains` [EXTRACTED]
 - [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]

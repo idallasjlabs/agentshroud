@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (3)"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_3
 ---
 
 # TestEgressApprovalAPI
@@ -23,9 +23,9 @@ tags:
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressApprovalQueue]] - `uses` [INFERRED]
-- [[EgressRequest_1]] - `uses` [INFERRED]
-- [[RiskLevel_6]] - `uses` [INFERRED]
+- [[EgressRequest]] - `uses` [INFERRED]
+- [[RiskLevel]] - `uses` [INFERRED]
 - [[Test suite for egress approval API endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_3

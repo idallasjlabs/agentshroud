@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (2) (9)"
+community: "TelegramAPIProxy (36)"
 location: "L752"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2_9
+  - community/TelegramAPIProxy_36
 ---
 
 # .test_unknown_model_error_is_sanitized()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Unknown model errors should be rewritten without leaking raw stack text.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2_9
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_36

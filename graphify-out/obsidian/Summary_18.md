@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
-location: "L3"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

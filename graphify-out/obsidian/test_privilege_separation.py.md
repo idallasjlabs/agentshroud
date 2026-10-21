@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
+community: "MiddlewareManager (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/MiddlewareManager_4
 ---
 
 # test_privilege_separation.py
@@ -28,4 +28,4 @@ tags:
 - [[middleware_manager()]] - `contains` [EXTRACTED]
 - [[strict_sandbox()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4

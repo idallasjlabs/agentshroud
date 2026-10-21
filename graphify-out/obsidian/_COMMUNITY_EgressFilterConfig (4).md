@@ -1,26 +1,73 @@
 ---
 type: community
-members: 13
+members: 60
 ---
 
 # EgressFilterConfig (4)
 
-**Members:** 13 nodes
+**Members:** 60 nodes
 
 ## Members
-- [[dot-setup_method()_36]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
-- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
-- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
+- [[dot-test_agent_specific_policy()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_full_url()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_host_port_format()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_localhost_hostname_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_log_filters_by_agent()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_log_records_attempts()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_log_size_limit()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_port_not_allowed()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_private_ip_blocked_ssrf()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_stats_counts()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
+- [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
+- [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
+- [[ApprovalResult]] - code - gateway/security/egress_approval.py
+- [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter records attempts and provides stats.]] - rationale - gateway/tests/test_egress_filter.py
+- [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
+- [[Per-agent policies override the default.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
+- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
+- [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
+- [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
+- [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
+- [[TestLogging]] - code - gateway/tests/test_egress_filter.py
+- [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
+- [[TestPerAgentPolicy]] - code - gateway/tests/test_egress_filter.py
+- [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
+- [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
+- [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
+- [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
+- [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
+- [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
+- [[test_egress_filter.py]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_allows_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_cleans_stale_entries()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_does_not_affect_other_domains()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_expired_falls_back_to_deny()]] - code - gateway/tests/test_egress_filter.py
+- [[test_grant_timed_approval_invalid_iso_is_ignored()]] - code - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,14 +77,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 3 edges to [[_COMMUNITY_ContextSegment]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 3 edges to [[_COMMUNITY_AgentRegistry]]
-- 3 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 34 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
+- 21 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 20 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 4 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
+- 3 edges to [[_COMMUNITY_StdioConnection (2)]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (3)]]
 
 ## Top bridge nodes
-- [[TestPromptGuardEvasion]] - degree 26, connects to 7 communities
-- [[dot-setup_method()_36]] - degree 2, connects to 1 community
+- [[ApprovalResult]] - degree 22, connects to 5 communities
+- [[TestEnforceMode]] - degree 16, connects to 4 communities
+- [[_make_filter()]] - degree 33, connects to 3 communities
+- [[test_egress_filter.py]] - degree 29, connects to 3 communities
+- [[TestIPRules]] - degree 14, connects to 3 communities

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Startup Flow Diagram"
-location: "L83"
+community: "browser-fetch.js"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Flow_Diagram
+  - community/browser-fetchjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

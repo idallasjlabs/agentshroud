@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L32"
+community: "ServiceManager"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder]] - `method` [EXTRACTED]
+- [[_FakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

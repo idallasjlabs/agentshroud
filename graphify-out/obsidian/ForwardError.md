@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[AgentTarget_3]] - `uses` [INFERRED]
+- [[Exception_3]] - `inherits` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[Raised when forwarding to agent fails]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig]] - `uses` [INFERRED]

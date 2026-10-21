@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "Test Augmentation Specialist"
+community: "AgentShroud™ Communication Templates"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/AgentShroud_Communication_Templates
 ---
 
 # Data Lakehouse Platform (GSDL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

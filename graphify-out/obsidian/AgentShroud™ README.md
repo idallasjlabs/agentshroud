@@ -24,7 +24,7 @@ tags:
 - [[Media]] - `contains` [EXTRACTED]
 - [[OpenClaw Bot]] - `references` [EXTRACTED]
 - [[Quickstart_1]] - `contains` [EXTRACTED]
-- [[Trademark_1]] - `references` [INFERRED]
+- [[Trademark_2]] - `references` [INFERRED]
 - [[What's New — v1.2.2 (June 2026)]] - `contains` [EXTRACTED]
 - [[What's New — v1.3.0 Reliability (July 2026)]] - `contains` [EXTRACTED]
 - [[Who It's For]] - `contains` [EXTRACTED]

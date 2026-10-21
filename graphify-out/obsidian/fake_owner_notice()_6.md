@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Owner /approve should fail closed when target has no pending request."
+community: "fake_owner_notice()"
 location: "L830"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Owner_/approve_should_fail_closed_when_target_has_no_pending_request
+  - community/fake_owner_notice
 ---
 
 # fake_owner_notice()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_approve_command_resolves_pending_username_alias()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Owner_/approve_should_fail_closed_when_target_has_no_pending_request
+#graphify/code #graphify/EXTRACTED #community/fake_owner_notice

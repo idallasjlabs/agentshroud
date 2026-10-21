@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "MiddlewareManager"
+community: "_FakeRBAC"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_FakeRBAC
 ---
 
 # WSEvent
@@ -19,7 +19,7 @@ tags:
 - [[BaseModel_2]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
+- [[WebSocket_4]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 - [[_connectWS()]] - `shares_data_with` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test comprehensive internal IP pattern matching.]] - `rationale_for` [EXTRACTED]
-- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

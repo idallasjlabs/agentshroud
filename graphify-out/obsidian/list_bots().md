@@ -22,7 +22,7 @@ tags:
 - [[dot-test_returns_registered_bots()]] - `calls` [EXTRACTED]
 - [[dot-test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[TestListBots]] - `calls` [EXTRACTED]
 - [[TestServicesBotFilter]] - `conceptually_related_to` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]

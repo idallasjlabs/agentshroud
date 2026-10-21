@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[Credential Isolation Architecture]] - `semantically_similar_to` [INFERRED]
-- [[PREREQUISITES_13]] - `references` [EXTRACTED]
+- [[PREREQUISITES_16]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig_2

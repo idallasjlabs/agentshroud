@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "BlockingPipeline"
+community: "test_telegram_proxy_inbound.py"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # Normal messages must pass through the pipeline unmodified.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_clean_message_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

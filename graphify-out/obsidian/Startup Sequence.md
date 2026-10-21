@@ -1,23 +1,26 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "main.py.md"
-location: "L8"
+community: "PIIConfig"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/PIIConfig
 ---
 
-# Startup Sequence
+# Startup Sequence.md
 
 ## Connections
-- [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
-- [[Common Startup Failures]] - `contains` [EXTRACTED]
-- [[First-Boot Notes]] - `contains` [EXTRACTED]
-- [[Overview_29]] - `contains` [EXTRACTED]
-- [[Related Notes_68]] - `contains` [EXTRACTED]
-- [[Startup Indicators]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[DataLedger]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[MiddlewareManager]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
+- [[Shutdown & Recovery]] - `references` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/PIIConfig

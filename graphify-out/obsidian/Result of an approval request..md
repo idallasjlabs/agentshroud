@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (4)"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_4
 ---
 
 # Result of an approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4

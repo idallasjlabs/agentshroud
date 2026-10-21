@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[DNSBlocklist]] - `contains` [EXTRACTED]
 - [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

@@ -12,7 +12,7 @@ members: 8
 - [[Invocation_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 - [[Jira ticket — every development batch gets one_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 - [[Reviewers and fixer available to you_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Role_6]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Role_7]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 - [[Skill Hermes Dev Workflow (HDEV)_1]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 - [[Tools you have for this workflow_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 - [[openclawskillsi-hdevSKILL]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md

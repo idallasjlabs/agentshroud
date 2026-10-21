@@ -18,7 +18,7 @@ tags:
 - [[Primary Colors]] - `contains` [EXTRACTED]
 - [[Secondary Colors]] - `contains` [EXTRACTED]
 - [[Semantic Colors]] - `contains` [EXTRACTED]
-- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
 - [[palette]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

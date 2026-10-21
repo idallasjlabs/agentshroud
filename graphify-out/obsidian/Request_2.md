@@ -1,13 +1,24 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Request (2)"
+community: "test_forward_stream.py (2)"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/test_forward_streampy_2
 ---
 
 # Request
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+## Connections
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[_process_inbound()]] - `references` [EXTRACTED]
+- [[auth_dep()_2]] - `references` [EXTRACTED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2

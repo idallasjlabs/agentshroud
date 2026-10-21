@@ -42,9 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_system-requirements]]
-- 2 edges to [[_COMMUNITY_system-requirements.md (2)]]
+- 7 edges to [[_COMMUNITY_system-requirements]]
 - 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - degree 22, connects to 3 communities
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - degree 22, connects to 2 communities

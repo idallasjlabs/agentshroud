@@ -12,6 +12,6 @@ tags:
 # Fetch creds, build summary, post the comment. Returns a process exit code.
 
 ## Connections
-- [[run()_3]] - `rationale_for` [EXTRACTED]
+- [[run()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/jira_weekly_reviewpy

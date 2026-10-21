@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: ".proxy_messages()"
 location: "L970"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/proxy_messages
 ---
 
 # .proxy_messages()
@@ -36,4 +36,4 @@ tags:
 - [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `calls` [INFERRED]
 - [[test_non_fieldflare_local_route_keeps_fields]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

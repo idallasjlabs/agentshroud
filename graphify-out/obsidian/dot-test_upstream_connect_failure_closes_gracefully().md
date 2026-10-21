@@ -15,7 +15,7 @@ tags:
 - [[dot-_mock_websocket()]] - `calls` [EXTRACTED]
 - [[A deadunreachable bridge must not raise out of the route -- it closes the…]] - `rationale_for` [EXTRACTED]
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
-- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `calls` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (5)"
 location: "L583"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_5
 ---
 
 # Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed     by the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSMTPIMAPPorts]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_5

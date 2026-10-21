@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig (2)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_get_module_mode_enforce_override()
@@ -17,4 +17,4 @@ tags:
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

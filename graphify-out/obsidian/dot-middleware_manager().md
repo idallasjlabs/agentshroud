@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "TestFabricatedSecurityNotice"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .middleware_manager()
@@ -17,4 +17,4 @@ tags:
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

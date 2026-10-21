@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (5)"
+community: "TelegramAPIProxy"
 location: "L8083"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_5
+  - community/TelegramAPIProxy
 ---
 
 # Notify a collaborator that a privileged command is not available.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_notify_collaborator_command_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_5
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

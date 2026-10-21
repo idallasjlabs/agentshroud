@@ -18,7 +18,7 @@ tags:
 - [[dot-draw_modules()]] - `calls` [EXTRACTED]
 - [[dot-draw_ssh_hosts()]] - `calls` [EXTRACTED]
 - [[dot-get_auth()]] - `calls` [EXTRACTED]
-- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[dot-run()_4]] - `calls` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 - [[Make authenticated API request to gateway]] - `rationale_for` [EXTRACTED]
 

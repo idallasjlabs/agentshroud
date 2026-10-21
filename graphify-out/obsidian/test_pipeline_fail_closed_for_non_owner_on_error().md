@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - `rationale_for` [EXTRACTED]
-- [[_make_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

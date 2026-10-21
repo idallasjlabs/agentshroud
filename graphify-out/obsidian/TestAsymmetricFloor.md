@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_scan_produces_report_with_correct_floor_used()]] - `method` [EXTRACTED]
 - [[dot-test_weak_hit_present_in_tool_result_only()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]

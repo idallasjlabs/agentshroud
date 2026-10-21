@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "test_daily_cve_report.py (3)"
 location: "L1328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/test_daily_cve_reportpy_3
 ---
 
 # .test_runs_ingest_records_then_skips_next_iteration()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[First iteration ingests + records; second sees dedup and skips.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[datetime_4]] - `calls` [EXTRACTED]
+- [[datetime_6]] - `calls` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_3

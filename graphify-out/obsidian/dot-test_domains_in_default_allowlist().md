@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (5)"
 location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_5
 ---
 
 # .test_domains_in_default_allowlist()
@@ -16,4 +16,4 @@ tags:
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5

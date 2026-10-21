@@ -1,21 +1,27 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L76"
+community: "ControlCenter"
+location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ControlCenter
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
+- [[dot-draw_approvals()]] - `calls` [EXTRACTED]
+- [[dot-draw_dashboard()]] - `calls` [EXTRACTED]
+- [[dot-draw_kill_switch()]] - `calls` [EXTRACTED]
+- [[dot-draw_log()]] - `calls` [EXTRACTED]
+- [[dot-draw_modules()]] - `calls` [EXTRACTED]
+- [[dot-draw_ssh_hosts()]] - `calls` [EXTRACTED]
+- [[dot-get_key()]] - `calls` [EXTRACTED]
+- [[dot-make_api_request()]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
+- [[Main control center loop]] - `rationale_for` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

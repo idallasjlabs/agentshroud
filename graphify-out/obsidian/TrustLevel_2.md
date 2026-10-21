@@ -12,7 +12,7 @@ tags:
 # TrustLevel
 
 ## Connections
-- [[dot-__init__()_187]] - `references` [EXTRACTED]
+- [[dot-__init__()_172]] - `references` [EXTRACTED]
 - [[dot-_force_demotion()]] - `references` [EXTRACTED]
 - [[dot-_promotion_allowed()]] - `references` [EXTRACTED]
 - [[dot-_score_to_level()]] - `references` [EXTRACTED]
@@ -58,7 +58,6 @@ tags:
 - [[TrustLevel_3]] - `uses` [INFERRED]
 - [[TrustManager_2]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_e2e.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]

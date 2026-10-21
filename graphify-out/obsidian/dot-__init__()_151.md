@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L613"
+community: "MiddlewareManager (8)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/MiddlewareManager_8
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Path_43]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8

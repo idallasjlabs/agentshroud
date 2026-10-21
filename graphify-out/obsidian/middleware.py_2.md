@@ -13,16 +13,16 @@ tags:
 
 ## Connections
 - [[Config Keys Read_2]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_2]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_3]] - `contains` [EXTRACTED]
 - [[FileSandbox Configuration (hardcoded in __init__)]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To_2]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_15]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
-- [[Purpose_122]] - `contains` [EXTRACTED]
+- [[Purpose_123]] - `contains` [EXTRACTED]
 - [[Related_19]] - `contains` [EXTRACTED]
-- [[Responsibilities_16]] - `contains` [EXTRACTED]
+- [[Responsibilities_17]] - `contains` [EXTRACTED]
 - [[Security Modules Initialized]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `contains` [EXTRACTED]
 - [[process_request Flow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/middlewarepy

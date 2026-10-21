@@ -12,7 +12,7 @@ tags:
 # FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_79]] - `method` [EXTRACTED]
+- [[dot-__init__()_77]] - `method` [EXTRACTED]
 - [[dot-get_item()]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()]] - `method` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
@@ -31,12 +31,12 @@ tags:
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 

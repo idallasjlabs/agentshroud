@@ -33,13 +33,13 @@ members: 32
 - [[_one_frame_aiter()]] - code - gateway/tests/test_main_endpoints.py
 - [[_upstream_to_bot()]] - code - gateway/ingest_api/main.py
 - [[_upstream_to_client()]] - code - gateway/ingest_api/main.py
-- [[asyncio_2]] - code
+- [[asyncio_1]] - code
 - [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_ws_proxy()]] - code - gateway/ingest_api/main.py
 - [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.…]] - rationale - gateway/tests/test_main_endpoints.py
 - [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
-- [[websocket_2]] - code
+- [[websocket_1]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,12 +50,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 4 edges to [[_COMMUNITY_Request]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - degree 13, connects to 3 communities
+- [[hermes_dashboard_ws_proxy()]] - degree 13, connects to 3 communities
 - [[TestHermesDashboardPathTraversal]] - degree 10, connects to 2 communities
 - [[TestHermesDashboardWsProxy]] - degree 9, connects to 1 community
-- [[asyncio_2]] - degree 9, connects to 1 community
+- [[asyncio_1]] - degree 9, connects to 1 community
 - [[slack_ws_relay()]] - degree 5, connects to 1 community

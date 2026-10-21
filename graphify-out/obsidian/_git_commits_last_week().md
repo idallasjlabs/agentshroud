@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - `rationale_for` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

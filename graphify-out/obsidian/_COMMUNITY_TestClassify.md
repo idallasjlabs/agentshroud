@@ -33,7 +33,7 @@ members: 28
 - [[_is_benign_skip()]] - code - scripts/soak_status.py
 - [[_job()]] - code - gateway/tests/test_soak_status.py
 - [[classify()_2]] - code - scripts/soak_status.py
-- [[main()_14]] - code - scripts/soak_status.py
+- [[main()_17]] - code - scripts/soak_status.py
 - [[soak_status.py]] - code - scripts/soak_status.py
 - [[test_soak_status.py]] - code - gateway/tests/test_soak_status.py
 
@@ -45,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
-- [[main()_14]] - degree 3, connects to 1 community
+- [[main()_17]] - degree 3, connects to 1 community

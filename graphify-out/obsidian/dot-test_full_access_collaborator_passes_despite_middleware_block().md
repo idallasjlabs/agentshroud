@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "full_access collaborators must pass through middleware and secondary pipeline…"
+community: "TestFullAccessMiddlewareBypass"
 location: "L9410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/full_access_collaborators_must_pass_through_middleware_and_secondary_pipeline
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # .test_full_access_collaborator_passes_despite_middleware_block()
@@ -17,8 +17,8 @@ tags:
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[fake_notify_blocked()]] - `indirect_call` [INFERRED]
 - [[process_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/full_access_collaborators_must_pass_through_middleware_and_secondary_pipeline
+#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

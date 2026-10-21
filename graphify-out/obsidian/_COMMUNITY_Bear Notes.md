@@ -13,7 +13,7 @@ members: 11
 - [[Common Commands_3]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Configuration_21]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Notes_11]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Notes_10]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[apple-notesSKILL]] - document - skills/openclaw/apple-notes/SKILL.md
 - [[bear-notesSKILL]] - document - skills/openclaw/bear-notes/SKILL.md

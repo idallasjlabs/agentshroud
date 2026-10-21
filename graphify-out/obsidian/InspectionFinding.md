@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "MCPPermissionManager (3)"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/MCPPermissionManager_3
 ---
 
 # InspectionFinding
@@ -19,4 +19,4 @@ tags:
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3

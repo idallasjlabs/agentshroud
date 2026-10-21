@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalQueue (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalQueue_2
 ---
 
 # test_egress_approval.py
@@ -15,9 +15,9 @@ tags:
 - [[ApprovalMode]] - `imports` [EXTRACTED]
 - [[ApprovalResult]] - `imports` [EXTRACTED]
 - [[EgressApprovalQueue]] - `imports` [EXTRACTED]
-- [[EgressRequest_1]] - `imports` [EXTRACTED]
-- [[RiskLevel_6]] - `imports` [EXTRACTED]
+- [[EgressRequest]] - `imports` [EXTRACTED]
+- [[RiskLevel]] - `imports` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `contains` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2

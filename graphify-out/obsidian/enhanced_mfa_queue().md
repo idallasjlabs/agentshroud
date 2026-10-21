@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "ApprovalQueueConfig (3)"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # enhanced_mfa_queue()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
-- [[MFAGuard_1]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

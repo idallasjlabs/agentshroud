@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L65"
+community: "StdioConnection"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_14]] - `references` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

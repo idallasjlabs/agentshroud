@@ -12,6 +12,6 @@ tags:
 # P1 Incident Response
 
 ## Connections
-- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference

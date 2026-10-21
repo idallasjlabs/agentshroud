@@ -1,19 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "SecureBrowser Security Policies"
-location: "L236"
+community: "AgentShroud Setup Guide"
+location: "L986"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Security Testing
 
 ## Connections
-- [[Automated Tests]] - `contains` [EXTRACTED]
-- [[Manual Security Review]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Security Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "Dockerfile — Bot (OpenClaw) (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Dockerfile__Bot_OpenClaw_2
 ---
 
 # All Environment Variables (reference)
@@ -15,4 +15,4 @@ tags:
 - [[Dockerfile — Bot (OpenClaw)]] - `shares_data_with` [EXTRACTED]
 - [[Dockerfile — Gateway]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2

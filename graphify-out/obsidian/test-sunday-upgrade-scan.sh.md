@@ -12,7 +12,7 @@ tags:
 # test-sunday-upgrade-scan.sh
 
 ## Connections
-- [[check()_10]] - `defines` [EXTRACTED]
+- [[check()_8]] - `defines` [EXTRACTED]
 - [[dev_gate()]] - `defines` [EXTRACTED]
 - [[handoff_status()]] - `defines` [EXTRACTED]
 - [[make_apply_bin()]] - `defines` [EXTRACTED]

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "Approval Queue (human-in-the-loop)"
+community: "System Audit Vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/System_Audit_Vault
 ---
 
 # OpenClaw Volume (openclaw.json, cron/jobs.json, sessions)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Assets (root)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/concept #graphify/EXTRACTED #community/System_Audit_Vault

@@ -12,16 +12,14 @@ tags:
 # DataExfilVolumeGuard
 
 ## Connections
-- [[dot-__init__()_86]] - `method` [EXTRACTED]
+- [[dot-__init__()_98]] - `method` [EXTRACTED]
 - [[dot-_size()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_7]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
 - [[dot-observe()]] - `method` [EXTRACTED]
-- [[dot-reset_session()]] - `method` [EXTRACTED]
+- [[dot-reset_session()_1]] - `method` [EXTRACTED]
 - [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter_2]] - `conceptually_related_to` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `calls` [EXTRACTED]
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `calls` [EXTRACTED]
 - [[test_adaptive_needs_min_samples()]] - `calls` [EXTRACTED]

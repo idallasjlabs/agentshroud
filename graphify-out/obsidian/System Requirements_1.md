@@ -12,6 +12,6 @@ tags:
 # System Requirements
 
 ## Connections
-- [[Prerequisites_14]] - `contains` [EXTRACTED]
+- [[Prerequisites_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

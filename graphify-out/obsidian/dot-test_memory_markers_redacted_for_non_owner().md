@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "MCPPermissionManager (4)"
 location: "L754"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/MCPPermissionManager_4
 ---
 
 # .test_memory_markers_redacted_for_non_owner()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 - [[TestProxyResultProcessing]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_4

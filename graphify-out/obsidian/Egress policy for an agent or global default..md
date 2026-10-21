@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (5)"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_5
 ---
 
 # Egress policy for an agent or global default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_5

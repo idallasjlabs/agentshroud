@@ -12,6 +12,6 @@ tags:
 # .test_check_for_exif_detects_magic_bytes()
 
 ## Connections
-- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

@@ -12,6 +12,6 @@ tags:
 # TrustManager._apply_decay(score, last_action_time)
 
 ## Connections
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TrustManager

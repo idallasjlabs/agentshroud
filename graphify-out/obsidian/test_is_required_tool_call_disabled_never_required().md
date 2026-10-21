@@ -12,7 +12,7 @@ tags:
 # test_is_required_tool_call_disabled_never_required()
 
 ## Connections
-- [[MFAGuard_1]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

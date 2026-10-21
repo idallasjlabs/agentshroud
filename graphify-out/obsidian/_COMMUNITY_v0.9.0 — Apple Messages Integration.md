@@ -10,7 +10,7 @@ members: 8
 ## Members
 - [[Also in v0.9.0]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[Blocked By]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Components]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Components_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[Goal]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[Prerequisites]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[Secure Voice Conversations (ElevenLabs + Twilio)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md

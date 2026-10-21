@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "TestNetworkValidator"
+community: "NetworkSecurityFinding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/NetworkSecurityFinding
 ---
 
 # test_network_validator.py
@@ -16,4 +16,4 @@ tags:
 - [[NetworkValidator]] - `imports` [EXTRACTED]
 - [[TestNetworkValidator]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

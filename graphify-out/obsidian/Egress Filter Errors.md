@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Error_Indexmd
 ---
 
 # Egress Filter Errors.md
@@ -16,4 +16,4 @@ tags:
 - [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
 - [[Error Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

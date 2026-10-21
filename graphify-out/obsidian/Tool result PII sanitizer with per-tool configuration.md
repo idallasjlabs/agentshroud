@@ -12,6 +12,6 @@ tags:
 # Tool result PII sanitizer with per-tool configuration
 
 ## Connections
-- [[ToolResultSanitizer]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

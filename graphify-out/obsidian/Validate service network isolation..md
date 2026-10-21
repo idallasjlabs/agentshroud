@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: ".validate_docker_compose_config"
+community: "NetworkSecurityFinding"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/NetworkSecurityFinding
 ---
 
 # Validate service network isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_validate_service_network_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

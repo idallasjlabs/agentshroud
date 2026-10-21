@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestInternalBannerMatcher"
+community: "test_collaborator_tracker.py"
 location: "L4708"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInternalBannerMatcher
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_false_on_non_string()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInternalBannerMatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInternalBannerMatcher
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

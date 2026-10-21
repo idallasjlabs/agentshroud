@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "MiddlewareManager (5)"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # Check if path is trying to access another user's isolated namespace.          Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_cross_user_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5

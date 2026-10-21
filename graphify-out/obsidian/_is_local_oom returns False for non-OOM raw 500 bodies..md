@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L825"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # _is_local_oom returns False for non-OOM raw 500 bodies.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_is_local_oom_raw_body_false_on_normal_500()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy_2
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

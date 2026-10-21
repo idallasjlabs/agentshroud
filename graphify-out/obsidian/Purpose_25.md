@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (2)"
+community: ".agents/skills/i-cr/SKILL.md (4)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_2
+  - community/agents/skills/i-cr/SKILLmd_4
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_2
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_4

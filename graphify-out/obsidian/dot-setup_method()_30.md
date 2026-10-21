@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "EgressFilterConfig (3)"
-location: "L845"
+community: "MiddlewareManager (3)"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/MiddlewareManager_3
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressSSRF]] - `method` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/cve-registry-manual-review.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "cve-registry-manual-review.md"
-location: "L14"
+community: "LOW — Informational (2)"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cve-registry-manual-reviewmd
+  - community/LOW__Informational_2
 ---
 
 # Summary
 
 ## Connections
-- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational_2

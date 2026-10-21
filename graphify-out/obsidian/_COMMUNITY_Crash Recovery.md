@@ -25,7 +25,7 @@ members: 19
 - [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Related Notes_45]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Related Notes_43]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 
 ## Live Query (requires Dataview plugin)
@@ -36,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
 - [[Crash Recovery_1]] - degree 9, connects to 1 community

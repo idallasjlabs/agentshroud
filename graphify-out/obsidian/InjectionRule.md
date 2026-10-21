@@ -12,7 +12,7 @@ tags:
 # InjectionRule
 
 ## Connections
-- [[dot-__init__()_113]] - `references` [EXTRACTED]
+- [[dot-__init__()_66]] - `references` [EXTRACTED]
 - [[Rule for detecting injection patterns in tool results.]] - `rationale_for` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 

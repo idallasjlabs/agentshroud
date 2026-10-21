@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Tests for _forward_file_download() and proxy_request() binary path. Regression…"
+community: "_wrap_response()"
 location: "L8724"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
+  - community/_wrap_response
 ---
 
 # .test_oversized_document_update_is_dropped()
@@ -17,6 +17,6 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tests_for__forward_file_download_and_proxy_request_binary_path_Regression
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

@@ -12,8 +12,8 @@ tags:
 # _FakeResponse
 
 ## Connections
-- [[dot-__init__()_39]] - `method` [EXTRACTED]
-- [[dot-read()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_43]] - `method` [EXTRACTED]
+- [[dot-read()_1]] - `method` [EXTRACTED]
 - [[dot-test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[dot-test_404_returns_empty_dict()]] - `calls` [EXTRACTED]
 - [[dot-test_500_returns_none()]] - `calls` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_planned_action_is_immutable()]] - `calls` [EXTRACTED]
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - `rationale_for` [EXTRACTED]
-- [[Path_61]] - `uses` [INFERRED]
+- [[Path_58]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]

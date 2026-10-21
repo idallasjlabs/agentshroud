@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services (2)"
 location: "L97"

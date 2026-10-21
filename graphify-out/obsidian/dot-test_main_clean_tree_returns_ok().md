@@ -12,7 +12,7 @@ tags:
 # .test_main_clean_tree_returns_ok()
 
 ## Connections
-- [[Path_23]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 

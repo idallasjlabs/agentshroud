@@ -12,6 +12,6 @@ tags:
 # Initialize the tool chain analyzer.          Args:             config: Configura
 
 ## Connections
-- [[dot-__init__()_22]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_101]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

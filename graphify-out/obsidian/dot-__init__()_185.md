@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L88"
+community: "test_mfa_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

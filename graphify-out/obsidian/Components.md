@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "v0.9.0 — Apple Messages Integration"
-location: "L380"
+community: "main.py.md"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/mainpymd
 ---
 
 # Components
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/document #graphify/EXTRACTED #community/mainpymd

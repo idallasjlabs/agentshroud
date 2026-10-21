@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[bad()]] - code - tests/startup_smoke/test_launchd_install.sh
-- [[ok()]] - code - tests/startup_smoke/test_launchd_install.sh
+- [[ok()_1]] - code - tests/startup_smoke/test_launchd_install.sh
 - [[run_install()]] - code - tests/startup_smoke/test_launchd_install.sh
 - [[test_launchd_install.sh]] - code - tests/startup_smoke/test_launchd_install.sh
 - [[test_launchd_install.sh script]] - code - tests/startup_smoke/test_launchd_install.sh

@@ -41,7 +41,7 @@ members: 35
 - [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
 - [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
 - [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_2]] - code - gateway/tests/test_env_guard_class.py
+- [[guard()_4]] - code - gateway/tests/test_env_guard_class.py
 - [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
 
 ## Live Query (requires Dataview plugin)
@@ -52,7 +52,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AlertDispatcher (2) (2)]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
 - [[TestCheckCommandExecution]] - degree 9, connects to 1 community

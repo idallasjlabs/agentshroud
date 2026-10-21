@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
-location: "L287"
+community: "TeamsConfig"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/TeamsConfig
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig]] - `method` [EXTRACTED]
-- [[Path_39]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
+- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

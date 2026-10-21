@@ -44,7 +44,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_iCloud Services (4)]]
 - 1 edge to [[_COMMUNITY_Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]]
 - 1 edge to [[_COMMUNITY_Himalaya Configuration Reference]]
-- 1 edge to [[_COMMUNITY_Common Operations (2)]]
+- 1 edge to [[_COMMUNITY_Common Operations]]
 - 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
 - 1 edge to [[_COMMUNITY_Message Composition with MML (MIME Meta Language)]]
 

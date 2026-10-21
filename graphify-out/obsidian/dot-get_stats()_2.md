@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L220"
+community: "MiddlewareManager"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/MiddlewareManager
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
 - [[Any_1]] - `references` [EXTRACTED]
-- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

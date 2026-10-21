@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "tmux Session Control"
-location: "L148"
+community: "GitHub Skill"
+location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/GitHub_Skill
 ---
 
 # Notes
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

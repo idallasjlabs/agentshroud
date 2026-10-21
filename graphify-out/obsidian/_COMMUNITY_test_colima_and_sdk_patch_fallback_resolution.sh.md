@@ -21,9 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/test_colima_and_sdk_patch_fallback_resolutionsh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
-
-## Top bridge nodes
-- [[pre-commit-hook.sh]] - degree 3, connects to 1 community

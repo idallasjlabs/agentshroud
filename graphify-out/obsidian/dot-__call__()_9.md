@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "test_jira_weekly_review.py"
-location: "L203"
+community: "api.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/apipy
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[FetchOutcome_1]] - `references` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/apipy

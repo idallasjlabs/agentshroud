@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_33]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

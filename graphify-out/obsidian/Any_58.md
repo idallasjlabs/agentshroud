@@ -1,25 +1,25 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L121"
+community: "model_usage.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/model_usagepy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_extract_message()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
-- [[dot-_extract_username()]] - `references` [EXTRACTED]
-- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
-- [[dot-_replace_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_14]] - `references` [EXTRACTED]
-- [[dot-process_webhook()]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[aggregate_costs()]] - `references` [EXTRACTED]
+- [[build_json_all()]] - `references` [EXTRACTED]
+- [[build_json_current()]] - `references` [EXTRACTED]
+- [[filter_by_days()]] - `references` [EXTRACTED]
+- [[latest_day_cost()]] - `references` [EXTRACTED]
+- [[load_payload()]] - `references` [EXTRACTED]
+- [[parse_daily_entries()]] - `references` [EXTRACTED]
+- [[pick_current_model()]] - `references` [EXTRACTED]
+- [[run_codexbar_cost()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/model_usagepy
