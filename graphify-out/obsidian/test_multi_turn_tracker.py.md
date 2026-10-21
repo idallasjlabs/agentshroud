@@ -15,9 +15,9 @@ tags:
 - [[AlertLevel]] - `imports` [EXTRACTED]
 - [[DisclosureCategory]] - `imports` [EXTRACTED]
 - [[MultiTurnTracker]] - `imports` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `contains` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `contains` [EXTRACTED]
 - [[TestResponseConsistency]] - `contains` [EXTRACTED]
-- [[mock_alert_callback()_1]] - `contains` [EXTRACTED]
+- [[mock_alert_callback()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
 

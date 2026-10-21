@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Pre-Deployment Checklist (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Pre-Deployment_Checklist_3
 ---
 
 # prompt_guard module (observatory mode — too aggressive for enforce)
@@ -15,4 +15,4 @@ tags:
 - [[34 Security Modules Pipeline (P0-P3)]] - `conceptually_related_to` [EXTRACTED]
 - [[Steve Hay's External Reviewer Findings]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist_3

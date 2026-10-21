@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py (5)"
+community: "colima-health-check.sh"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_5
+  - community/colima-health-checksh
 ---
 
 # persist_group_member_add()
@@ -21,4 +21,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_5
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

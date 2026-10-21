@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "script.md (Vulcan-approved dialogue input)"
+community: "Redaction"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/scriptmd_Vulcan-approved_dialogue_input
+  - community/Redaction
 ---
 
 # script.md (Vulcan-approved dialogue input)
 
-#graphify/concept #graphify/EXTRACTED #community/scriptmd_Vulcan-approved_dialogue_input
+#graphify/concept #graphify/EXTRACTED #community/Redaction

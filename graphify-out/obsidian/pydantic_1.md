@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "All Dependencies.md"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/EgressFilter
 ---
 
 # pydantic.md
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[Pydantic]] - `contains` [EXTRACTED]
-- [[fastapi_2]] - `references` [EXTRACTED]
+- [[fastapi_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

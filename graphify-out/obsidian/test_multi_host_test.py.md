@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "test_multi_host_test.py"
+community: "VIII. Evaluation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/VIII_Evaluation
 ---
 
 # test_multi_host_test.py
@@ -32,11 +32,11 @@ tags:
 - [[build_parser()]] - `imports` [EXTRACTED]
 - [[build_ssh_argv()]] - `imports` [EXTRACTED]
 - [[classify()_1]] - `imports` [EXTRACTED]
-- [[main()_30]] - `imports` [EXTRACTED]
+- [[main()_31]] - `imports` [EXTRACTED]
 - [[multi_host_test.py]] - `references` [EXTRACTED]
 - [[parse_hosts()]] - `imports` [EXTRACTED]
 - [[run_multi_host()]] - `imports` [EXTRACTED]
 - [[ssh_runner()]] - `imports` [EXTRACTED]
 - [[tail()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/VIII_Evaluation

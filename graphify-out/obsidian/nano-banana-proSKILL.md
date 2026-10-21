@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "EgressTelegramNotifier"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/EgressTelegramNotifier
 ---
 
 # nano-banana-pro/SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[generate_image.py]] - `references` [EXTRACTED]
 - [[openai-image-genSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier

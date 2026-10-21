@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "concept"
-community: "Bear Notes"
+community: "Daedalus — Concept Illustrator (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Daedalus__Concept_Illustrator_2
 ---
 
 # memo CLI (antoniorodr/memo)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[apple-notesSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bear_Notes
+#graphify/concept #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2

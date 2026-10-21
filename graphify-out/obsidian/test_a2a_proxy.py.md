@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ReportStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ReportStore
 ---
 
 # test_a2a_proxy.py
 
 ## Connections
 - [[A2AMethod]] - `imports` [EXTRACTED]
-- [[A2APolicyConfig]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
 - [[A2AProxy_1]] - `imports` [EXTRACTED]
 - [[A2AProxyResult]] - `imports` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `imports` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
 - [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `references` [EXTRACTED]
 - [[_Event]] - `contains` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

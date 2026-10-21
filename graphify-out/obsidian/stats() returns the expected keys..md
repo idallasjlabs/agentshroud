@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # stats() returns the expected keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_stats_returns_counts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

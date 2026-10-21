@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "test_sanitizer.py"
+community: "MCPPermissionManager (2)"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/MCPPermissionManager_2
 ---
 
 # test_real_phone_still_redacted()
@@ -15,4 +15,4 @@ tags:
 - [[Phone number with separator must still be redacted.]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

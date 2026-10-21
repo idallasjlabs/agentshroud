@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Actions"
+community: "ANTHROPIC_BASE_URL"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # slack/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - `conceptually_related_to` [INFERRED]
 - [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

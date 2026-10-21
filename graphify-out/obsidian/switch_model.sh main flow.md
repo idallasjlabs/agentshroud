@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # switch_model.sh main flow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_parse_model_switch_command()]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_voice_latency_guardpy
+#graphify/code #graphify/INFERRED #community/ProgressiveLockdown

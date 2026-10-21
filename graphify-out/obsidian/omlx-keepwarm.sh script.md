@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/omlx-keepwarm.sh"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # omlx-keepwarm.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[omlx-keepwarm.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

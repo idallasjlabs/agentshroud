@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-ws-proxy.sh"
 type: "code"
-community: "patch-ws-proxy.sh"
+community: "eval-run.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch-ws-proxysh
+  - community/eval-runsh
 ---
 
 # patch-ws-proxy.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-ws-proxy.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch-ws-proxysh
+#graphify/code #graphify/EXTRACTED #community/eval-runsh

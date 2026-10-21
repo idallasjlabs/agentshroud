@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "test_alert_dispatcher_retry.py"
+community: "§1 — Re-run of Prior Scenarios"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_alert_dispatcher_retrypy
+  - community/1__Re-run_of_Prior_Scenarios
 ---
 
 # test_alert_dispatcher_retry.py
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `imports` [EXTRACTED]
 - [[_alert()]] - `contains` [EXTRACTED]
-- [[dispatcher()]] - `contains` [EXTRACTED]
+- [[dispatcher()_1]] - `contains` [EXTRACTED]
 - [[test_all_attempts_fail_logs_warning_not_error()]] - `contains` [EXTRACTED]
 - [[test_backoff_called_between_attempts()]] - `contains` [EXTRACTED]
 - [[test_dispatch_persists_alert_even_if_notification_fails()]] - `contains` [EXTRACTED]
 - [[test_succeeds_after_one_transient_failure()]] - `contains` [EXTRACTED]
 - [[test_succeeds_on_first_attempt()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy
+#graphify/code #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios

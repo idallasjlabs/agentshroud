@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # test_cron_jobs_prompts.py
@@ -22,4 +22,4 @@ tags:
 - [[test_ssh_config_routes_tailnet_fqdn()]] - `contains` [EXTRACTED]
 - [[test_ssh_tailnet_block_has_proxy_command()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

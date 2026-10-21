@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: "test_integration.py"
+community: "TrustConfig (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/TrustConfig_3
 ---
 
 # test_integration.py
@@ -18,4 +18,4 @@ tags:
 - [[test_ledger_query()]] - `contains` [EXTRACTED]
 - [[test_websocket_auth()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_3

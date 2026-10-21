@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "egress_filter.py (5)"
+community: "ResourceUsage"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy_5
+  - community/ResourceUsage
 ---
 
 # ok()
@@ -15,4 +15,4 @@ tags:
 - [[tailscale-check.sh]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy_5
+#graphify/code #graphify/EXTRACTED #community/ResourceUsage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "DNSForwarderProtocol"
+community: "TestOAuthInjection"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/TestOAuthInjection
 ---
 
 # start_dns_forwarder()
@@ -17,7 +17,7 @@ tags:
 - [[DatagramTransport]] - `references` [EXTRACTED]
 - [[Start the DNS forwarding server with optional blocklist.      Returns the transp]] - `rationale_for` [EXTRACTED]
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

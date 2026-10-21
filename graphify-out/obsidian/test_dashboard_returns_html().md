@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "ForwardRequest"
+community: "UserSessionManager (3)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/UserSessionManager_3
 ---
 
 # test_dashboard_returns_html()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard with valid cookie auth returns HTML.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

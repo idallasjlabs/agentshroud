@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/popup.js"
 type: "code"
-community: "background.js"
+community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
 ---
 
 # statusEl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[popup.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart

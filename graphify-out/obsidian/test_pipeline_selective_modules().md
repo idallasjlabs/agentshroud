@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "EgressFilterConfig"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # test_pipeline_selective_modules()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[Pipeline with only PII enabled, prompt guard disabled.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

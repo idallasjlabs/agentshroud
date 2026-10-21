@@ -1,21 +1,21 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
+community: "Recommendation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/Recommendation
 ---
 
 # test_hermes_chown_coverage.sh
 
 ## Connections
-- [[check()_5]] - `defines` [EXTRACTED]
-- [[smoke.sh]] - `references` [EXTRACTED]
+- [[check()_8]] - `defines` [EXTRACTED]
+- [[scriptssmoke.sh]] - `references` [EXTRACTED]
 - [[test_hermes_chown_coverage.sh script]] - `contains` [EXTRACTED]
 - [[test_hermes_cron_html_email.sh]] - `semantically_similar_to` [INFERRED]
 - [[test_openclaw_photo.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/Recommendation

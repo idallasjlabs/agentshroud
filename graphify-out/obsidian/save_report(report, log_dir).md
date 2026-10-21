@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "clamav_scanner.py"
+community: "Detailed Profiles"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/Detailed_Profiles
 ---
 
 # save_report(report, log_dir)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

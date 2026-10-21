@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/colima-health-checksh
 ---
 
 # test_collaborator_responses.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[ProjectConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig_2]] - `references` [EXTRACTED]
+- [[TeamsConfig_1]] - `references` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `contains` [EXTRACTED]
 - [[TestConstantMessages]] - `contains` [EXTRACTED]
 - [[TestErrorFormatters]] - `contains` [EXTRACTED]
@@ -34,6 +34,6 @@ tags:
 - [[format_setmode_success()]] - `imports` [EXTRACTED]
 - [[format_unknown_group()]] - `imports` [EXTRACTED]
 - [[project()]] - `contains` [EXTRACTED]
-- [[teams()_1]] - `contains` [EXTRACTED]
+- [[teams()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

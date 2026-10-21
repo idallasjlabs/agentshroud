@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "egress_filter.py (5)"
+community: "ResourceUsage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy_5
+  - community/ResourceUsage
 ---
 
 # preflight-check.sh
@@ -17,4 +17,4 @@ tags:
 - [[preflight-check.sh script]] - `contains` [EXTRACTED]
 - [[verify-proxy.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy_5
+#graphify/code #graphify/EXTRACTED #community/ResourceUsage

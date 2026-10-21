@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # test_callback_url_hostname_resolving_to_a_private_ip_is_rejected()
@@ -16,4 +16,4 @@ tags:
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

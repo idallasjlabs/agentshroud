@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/soc/templates/soc.html"
 type: "document"
-community: "soc.html — unified SOC web dashboard SPA template"
+community: "SharedMemoryManager User Private Memory Tests"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sochtml__unified_SOC_web_dashboard_SPA_template
+  - community/SharedMemoryManager_User_Private_Memory_Tests
 ---
 
 # soc.html — unified SOC web dashboard SPA template
 
-#graphify/document #graphify/EXTRACTED #community/sochtml__unified_SOC_web_dashboard_SPA_template
+#graphify/document #graphify/EXTRACTED #community/SharedMemoryManager_User_Private_Memory_Tests

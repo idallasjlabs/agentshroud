@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget (2)"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget_2
 ---
 
 # run_canary()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `conceptually_related_to` [INFERRED]
 - [[CanaryCheck]] - `calls` [EXTRACTED]
-- [[CanaryResult]] - `references` [EXTRACTED]
+- [[CanaryResult_2]] - `references` [EXTRACTED]
 - [[HTTPForwarder]] - `calls` [INFERRED]
 - [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

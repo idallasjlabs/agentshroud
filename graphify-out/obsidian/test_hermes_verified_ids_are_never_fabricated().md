@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "A2APolicyEngine"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/A2APolicyEngine
 ---
 
 # test_hermes_verified_ids_are_never_fabricated()
@@ -15,4 +15,4 @@ tags:
 - [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes]] - `rationale_for` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

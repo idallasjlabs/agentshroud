@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "switch_model.sh"
+community: "test_egress_callback_stale.py"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/test_egress_callback_stalepy
 ---
 
 # normalize_cloud_ref()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[switch_model.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy

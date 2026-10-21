@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "installer.py"
+community: "Implement per-user session isolation using Telegram user ID"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
 ---
 
 # start_install()
@@ -17,4 +17,4 @@ tags:
 - [[installer.py_2]] - `contains` [EXTRACTED]
 - [[post_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID

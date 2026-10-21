@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # plan_deploy()
@@ -19,11 +19,11 @@ tags:
 - [[dot-test_plan_is_pure_writes_nothing()]] - `calls` [EXTRACTED]
 - [[dot-test_plan_maps_canonical_to_each_bot_destination()]] - `calls` [EXTRACTED]
 - [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - `rationale_for` [EXTRACTED]
-- [[Path_45]] - `references` [EXTRACTED]
+- [[Path_48]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

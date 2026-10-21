@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-whisper/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
+community: "parse_query"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/parse_query
 ---
 
 # openai-whisper/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[Whisper (CLI)]] - `contains` [EXTRACTED]
 - [[openai-whisper-apiSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/parse_query

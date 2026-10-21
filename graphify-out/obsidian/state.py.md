@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # state.py
@@ -17,15 +17,15 @@ tags:
 - [[EgressFilter_2]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[GatewayConfig_4]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]
 - [[dashboard.py]] - `imports_from` [EXTRACTED]
@@ -40,11 +40,11 @@ tags:
 - [[ledger.py_1]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
 - [[pipeline.py]] - `imports_from` [EXTRACTED]
-- [[prompt_guard.py]] - `imports_from` [EXTRACTED]
+- [[prompt_guard.py_1]] - `imports_from` [EXTRACTED]
 - [[proxy.py]] - `imports_from` [EXTRACTED]
 - [[sanitizer.py]] - `imports_from` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports_from` [EXTRACTED]
-- [[trust_manager.py_1]] - `imports_from` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

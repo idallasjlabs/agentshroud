@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Recommendations for Production Deployment"
+community: "The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_id/cve_id).…"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendations_for_Production_Deployment
+  - community/The_NVD_path_emits_the_pre-migration_schema_idCVE-_no_ghsa_id/cve_id
 ---
 
 # ssh-security-review.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment
+#graphify/document #graphify/EXTRACTED #community/The_NVD_path_emits_the_pre-migration_schema_idCVE-_no_ghsa_id/cve_id

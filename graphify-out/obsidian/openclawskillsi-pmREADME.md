@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/socjs
 ---
 
 # openclaw/skills/i-pm/README.md
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/socjs

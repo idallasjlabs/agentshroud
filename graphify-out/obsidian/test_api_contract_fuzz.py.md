@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "test_api_contract_fuzz.py"
+community: "gitleaks.toml"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/gitleakstoml
 ---
 
 # test_api_contract_fuzz.py
@@ -19,4 +19,4 @@ tags:
 - [[test_endpoint_survives_adversarial_body()]] - `contains` [EXTRACTED]
 - [[test_fuzz_surface_is_nonempty()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/gitleakstoml

@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L568"
+community: "browser/scripts/browse.py"
+location: "L665"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # process_ghsa_advisories()
 
 ## Connections
-- [[Any_16]] - `references` [EXTRACTED]
-- [[Diff advisories against an agent's OWN registry and build under_review entri]] - `rationale_for` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
+- [[Diff advisories against an agent's OWN registry and build under_review…]] - `rationale_for` [EXTRACTED]
 - [[Prove the Outcome, Never the Steps]] - `rationale_for` [EXTRACTED]
 - [[_ghsa_cvss_score()]] - `calls` [EXTRACTED]
 - [[_ghsa_patched_version()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 - [[triage_agent()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

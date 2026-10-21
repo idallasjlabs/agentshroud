@@ -1,12 +1,12 @@
 ---
 source_file: "docker/setup-secrets.sh"
 type: "code"
-community: "setup-secrets.sh"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 location: "L127-L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # op_ref_for
@@ -18,4 +18,4 @@ tags:
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

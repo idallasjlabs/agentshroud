@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy
 ---
 
 # normalize_input()
@@ -74,7 +74,7 @@ tags:
 - [[dot-_trigger_web_search_log()]] - `calls` [EXTRACTED]
 - [[dot-analyze_message()]] - `calls` [EXTRACTED]
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
 - [[dot-scan_tool_result()_3]] - `calls` [EXTRACTED]
 - [[dot-test_base64_payload_normalized()]] - `calls` [EXTRACTED]
 - [[dot-test_detection_breakdown_by_category()]] - `calls` [EXTRACTED]
@@ -88,9 +88,9 @@ tags:
 - [[context_guard.py]] - `imports` [EXTRACTED]
 - [[input_normalizer.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[prompt_guard.py]] - `imports` [EXTRACTED]
+- [[prompt_guard.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

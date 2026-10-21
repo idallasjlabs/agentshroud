@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # test_e2e_proxy.py
@@ -18,23 +18,23 @@ tags:
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[ScanRequest]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
 - [[_StubForwarder_1]] - `contains` [EXTRACTED]
-- [[egress_filter()]] - `contains` [EXTRACTED]
+- [[egress_filter()_1]] - `contains` [EXTRACTED]
 - [[forwarder()_1]] - `contains` [EXTRACTED]
-- [[pii_config()]] - `contains` [EXTRACTED]
-- [[pipeline()]] - `contains` [EXTRACTED]
-- [[prompt_guard()_2]] - `contains` [EXTRACTED]
+- [[pii_config()_1]] - `contains` [EXTRACTED]
+- [[pipeline()_2]] - `contains` [EXTRACTED]
+- [[prompt_guard()]] - `contains` [EXTRACTED]
 - [[run_full()]] - `references` [EXTRACTED]
 - [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
@@ -66,4 +66,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
 - [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

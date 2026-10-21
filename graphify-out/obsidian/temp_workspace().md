@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "UserSessionManager (3)"
-location: "L36"
+community: "export_bot"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/export_bot
 ---
 
 # temp_workspace()
 
 ## Connections
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/export_bot

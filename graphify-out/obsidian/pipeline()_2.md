@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "MiddlewareManager (3)"
-location: "L69"
+community: "AgentTarget"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/AgentTarget
 ---
 
 # pipeline()
 
 ## Connections
-- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[test_redteam_probes.py]] - `contains` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

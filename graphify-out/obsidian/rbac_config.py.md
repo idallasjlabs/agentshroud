@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager_2
 ---
 
 # rbac_config.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[Group]] - `contains` [EXTRACTED]
 - [[GroupRegistry]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `contains` [EXTRACTED]
-- [[Role_23]] - `contains` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[Role_19]] - `contains` [EXTRACTED]
+- [[TeamsConfig_1]] - `imports` [EXTRACTED]
 - [[ToolTier_2]] - `contains` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `contains` [EXTRACTED]
 - [[_load_collab_store()]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[socauth.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

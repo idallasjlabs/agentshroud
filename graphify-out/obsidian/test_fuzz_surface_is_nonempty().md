@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "test_api_contract_fuzz.py"
+community: "gitleaks.toml"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/gitleakstoml
 ---
 
 # test_fuzz_surface_is_nonempty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/gitleakstoml

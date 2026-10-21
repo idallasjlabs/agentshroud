@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "TeamsConfig"
+community: "test_soc_bots.py"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/test_soc_botspy
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

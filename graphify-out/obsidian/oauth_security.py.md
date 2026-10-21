@@ -1,27 +1,17 @@
 ---
-source_file: "gateway/security/oauth_security.py"
-type: "code"
-community: "AlertDispatcher"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+type: "document"
+community: "Skill Creation Process"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/Skill_Creation_Process
 ---
 
-# oauth_security.py
+# oauth_security.py.md
 
 ## Connections
-- [[ConfusedDeputyError]] - `contains` [EXTRACTED]
-- [[OAuthError]] - `contains` [EXTRACTED]
-- [[OAuthRequest]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator]] - `contains` [EXTRACTED]
-- [[PKCEViolation]] - `contains` [EXTRACTED]
-- [[RedirectMismatch]] - `contains` [EXTRACTED]
-- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
-- [[consent_framework.py]] - `references` [EXTRACTED]
-- [[session_security.py_2]] - `references` [EXTRACTED]
-- [[test_oauth_security.py]] - `references` [EXTRACTED]
-- [[test_security_audit.py]] - `references` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

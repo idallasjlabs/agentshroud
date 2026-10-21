@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "run_multi_host"
+community: "LOW Findings"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/LOW_Findings
 ---
 
 # run_multi_host()
@@ -23,9 +23,9 @@ tags:
 - [[MultiHostResult]] - `references` [EXTRACTED]
 - [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - `rationale_for` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[main()_31]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[tail()]] - `calls` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/LOW_Findings

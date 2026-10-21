@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response() (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_2
 ---
 
 # test_security_audit_advanced.py
@@ -19,11 +19,11 @@ tags:
 - [[TestHTTPSecurity]] - `contains` [EXTRACTED]
 - [[TestInfoLeakage]] - `contains` [EXTRACTED]
 - [[TestMCPSecurity]] - `contains` [EXTRACTED]
-- [[TestPrivilegeEscalation]] - `contains` [EXTRACTED]
+- [[TestPrivilegeEscalation_1]] - `contains` [EXTRACTED]
 - [[TestTimingAttacks]] - `contains` [EXTRACTED]
 - [[TestWebSecurity]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [INFERRED]
 - [[test_security_audit.py]] - `conceptually_related_to` [INFERRED]
 - [[webapi.py (POST apiintelreports)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

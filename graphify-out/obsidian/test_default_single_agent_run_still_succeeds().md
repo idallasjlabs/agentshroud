@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py (3)"
+community: "A2APolicyEngine"
 location: "L654"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_3
+  - community/A2APolicyEngine
 ---
 
 # test_default_single_agent_run_still_succeeds()
@@ -16,4 +16,4 @@ tags:
 - [[_run_triage()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_3
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

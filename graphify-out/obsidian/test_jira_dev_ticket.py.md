@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "test_jira_dev_ticket.py"
+community: "AgentShroud™ Brand Guidelines"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # test_jira_dev_ticket.py
@@ -51,4 +51,4 @@ tags:
 - [[test_transitions_url_rejects_empty_issue_key()]] - `contains` [EXTRACTED]
 - [[test_transitions_url_targets_arbitrary_issue()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

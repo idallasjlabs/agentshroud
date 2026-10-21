@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "parse_trivy_output"
+community: "TestClassify"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/TestClassify
 ---
 
 # parse_trivy_output()
@@ -30,10 +30,10 @@ tags:
 - [[dot-test_summary_critical()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_top_cves_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_warning_high_only()]] - `calls` [EXTRACTED]
-- [[Any_59]] - `references` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
 - [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - `rationale_for` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/TestClassify

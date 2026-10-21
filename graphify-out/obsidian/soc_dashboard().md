@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L2717"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # soc_dashboard()
 
 ## Connections
-- [[Request_8]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[Serve the unified SOC web dashboard.]] - `rationale_for` [EXTRACTED]
 - [[_minimal_dashboard_html()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

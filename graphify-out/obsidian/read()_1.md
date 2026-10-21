@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
-location: "L8792"
+community: "OpenClaw and Hermes are processed on fully separate paths; one failing never… (2)"
+location: "L658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
 ---
 
 # read()
 
 ## Connections
-- [[dot-test_forward_file_download_aborts_at_size_limit()]] - `contains` [EXTRACTED]
+- [[dot-test_patched_versions_carried_into_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2

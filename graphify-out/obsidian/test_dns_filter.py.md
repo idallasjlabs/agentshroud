@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "NetworkSecurityFinding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/NetworkSecurityFinding
 ---
 
 # test_dns_filter.py
@@ -22,13 +22,13 @@ tags:
 - [[TestDNSTunnelingDetection]] - `contains` [EXTRACTED]
 - [[TestEntropyCalculator]] - `contains` [EXTRACTED]
 - [[TestNormalDNSResolution]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_3]] - `contains` [EXTRACTED]
-- [[default_config()_4]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_4]] - `contains` [EXTRACTED]
+- [[default_config()_3]] - `contains` [EXTRACTED]
 - [[dns_filter()]] - `contains` [EXTRACTED]
-- [[monitor_config()_2]] - `contains` [EXTRACTED]
+- [[monitor_config()_1]] - `contains` [EXTRACTED]
 - [[monitor_filter()]] - `contains` [EXTRACTED]
 - [[strict_config()_3]] - `contains` [EXTRACTED]
 - [[strict_filter()]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

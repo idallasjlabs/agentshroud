@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # test_network_validator_gate.py
@@ -20,4 +20,4 @@ tags:
 - [[tmp_compose()]] - `contains` [EXTRACTED]
 - [[validate_network_security()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

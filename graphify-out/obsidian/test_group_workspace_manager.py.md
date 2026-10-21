@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # test_group_workspace_manager.py
@@ -16,8 +16,8 @@ tags:
 - [[GroupWorkspaceManager]] - `imports` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig_1]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
 - [[TestConfigGate]] - `contains` [EXTRACTED]
 - [[TestCrossGroupIsolation]] - `contains` [EXTRACTED]
 - [[TestDefensiveGuards]] - `contains` [EXTRACTED]
@@ -28,11 +28,11 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[group_workspace.py (GroupWorkspaceManager)]] - `implements` [EXTRACTED]
 - [[manager()_3]] - `contains` [EXTRACTED]
-- [[rbac()_3]] - `contains` [EXTRACTED]
+- [[rbac()_4]] - `contains` [EXTRACTED]
 - [[session_manager()_3]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()_1]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 - [[teams()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

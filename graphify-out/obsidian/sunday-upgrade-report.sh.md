@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/hermes-cron/sunday-upgrade-report.sh"
 type: "code"
-community: "sunday-upgrade-report.sh"
+community: "freertos/FreeRTOS.h stub (playback state test)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-reportsh
+  - community/freertos/FreeRTOSh_stub_playback_state_test
 ---
 
 # sunday-upgrade-report.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-upgrade-report.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-reportsh
+#graphify/code #graphify/EXTRACTED #community/freertos/FreeRTOSh_stub_playback_state_test

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Kill Switch"
+community: "test_anthropic_openai_translator.py"
 location: "L289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # scan.sh reports missing OpenSCAP
 
 ## Connections
-- [[Troubleshooting_27]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

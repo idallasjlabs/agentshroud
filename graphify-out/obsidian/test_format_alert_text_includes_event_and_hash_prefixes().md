@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_integrity_monitor.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "test_runtime_engines.py"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/test_runtime_enginespy
 ---
 
 # test_format_alert_text_includes_event_and_hash_prefixes()
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `calls` [EXTRACTED]
 - [[test_config_integrity_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # test_dns_canvas_coverage.py
@@ -48,4 +48,4 @@ tags:
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
 - [[test_dns_filter.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_callback_stale.py"
 type: "code"
-community: "test_egress_callback_stale.py"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # test_egress_callback_stale.py
@@ -24,4 +24,4 @@ tags:
 - [[test_edit_decision_message_stale_logs_debug_not_error()]] - `contains` [EXTRACTED]
 - [[test_stale_detectors()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/code #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

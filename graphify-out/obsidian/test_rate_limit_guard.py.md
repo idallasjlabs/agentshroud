@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "RateLimitGuard"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # test_rate_limit_guard.py
@@ -16,7 +16,7 @@ tags:
 - [[RateLimitConfig]] - `imports` [EXTRACTED]
 - [[RateLimitGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
-- [[_make_pipeline()_2]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_3]] - `contains` [EXTRACTED]
 - [[clock()]] - `contains` [EXTRACTED]
 - [[rate_limit_guard.py]] - `references` [EXTRACTED]
 - [[test_burst_clears_after_burst_window()]] - `contains` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_under_limit_allows()]] - `contains` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

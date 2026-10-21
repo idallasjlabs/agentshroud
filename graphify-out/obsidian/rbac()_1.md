@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L79"
+community: "TestToolChainAnalyzer (2)"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestToolChainAnalyzer_2
 ---
 
 # rbac()
 
 ## Connections
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

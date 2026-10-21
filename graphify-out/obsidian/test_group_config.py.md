@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # test_group_config.py
 
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig_1]] - `imports` [EXTRACTED]
 - [[TestAdminChecks]] - `contains` [EXTRACTED]
 - [[TestCollabMode]] - `contains` [EXTRACTED]
 - [[TestGroupSafeResponsePrefix]] - `contains` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[TestTeamsConfigParsing]] - `contains` [EXTRACTED]
 - [[TestUserCollabModeOverride]] - `contains` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
-- [[teams()]] - `contains` [EXTRACTED]
+- [[teams()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

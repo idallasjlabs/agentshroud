@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
+community: "Recommendation"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/Recommendation
 ---
 
 # run_test()
 
 ## Connections
 - [[post-deploy-check.sh]] - `semantically_similar_to` [INFERRED]
-- [[smoke.sh]] - `defines` [EXTRACTED]
-- [[smoke.sh script]] - `calls` [EXTRACTED]
+- [[scriptssmoke.sh]] - `defines` [EXTRACTED]
+- [[smoke.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/Recommendation

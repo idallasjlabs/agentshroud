@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "test_filter_xml_blocks.py"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_filter_xml_blockspy
+  - community/EgressFilterConfig
 ---
 
 # test_filter_xml_blocks.py
 
 ## Connections
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[sanitizer()_2]] - `contains` [EXTRACTED]
 - [[test_collapses_excessive_newlines()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_was_filtered_false_when_no_blocks()]] - `contains` [EXTRACTED]
 - [[test_was_filtered_true_when_block_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

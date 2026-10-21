@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-approve.sh"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # sunday-upgrade-approve.sh
@@ -17,4 +17,4 @@ tags:
 - [[sunday-rollback.sh]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-approve.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

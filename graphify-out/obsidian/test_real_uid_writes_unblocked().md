@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (14)"
+community: "DELIVERABLE 1 — Domain-by-Domain Assessment"
 location: "L416"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_14
+  - community/DELIVERABLE_1__Domain-by-Domain_Assessment
 ---
 
 # test_real_uid_writes_unblocked()
@@ -16,4 +16,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_14
+#graphify/code #graphify/EXTRACTED #community/DELIVERABLE_1__Domain-by-Domain_Assessment

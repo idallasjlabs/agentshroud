@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "OpenClaw Management Scripts"
+community: "iCloud Services (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/iCloud_Services_2
 ---
 
 # test-pii-sanitization.sh (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/concept #graphify/EXTRACTED #community/iCloud_Services_2

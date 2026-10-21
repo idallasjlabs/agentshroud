@@ -1,13 +1,13 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "scripts/check-vendor-compat.sh — A2A JSON-RPC smoke check"
+community: "MCP Server: home-assistant"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/check-vendor-compatsh__A2A_JSON-RPC_smoke_check
+  - community/MCP_Server_home-assistant
 ---
 
 # scripts/check-vendor-compat.sh — A2A JSON-RPC smoke check
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/check-vendor-compatsh__A2A_JSON-RPC_smoke_check
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Server_home-assistant

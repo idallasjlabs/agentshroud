@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/skills/__init__.py"
 type: "code"
-community: "skills/__init__.py"
+community: "utils/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/__init__py
+  - community/utils/__init__py
 ---
 
 # skills/__init__.py
 
-#graphify/code #graphify/EXTRACTED #community/skills/__init__py
+#graphify/code #graphify/EXTRACTED #community/utils/__init__py

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "ContextSegment"
-location: "L17"
+community: "TelegramAPIProxy"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[test_prompt_guard.py]] - `contains` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

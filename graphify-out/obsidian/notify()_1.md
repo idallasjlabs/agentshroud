@@ -1,20 +1,18 @@
 ---
-source_file: "browser-extension/background.js"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "background.js"
-location: "L45"
+community: "Function Details (5)"
+location: "L547"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/Function_Details_5
 ---
 
 # notify()
 
 ## Connections
-- [[background.js]] - `references` [EXTRACTED]
-- [[clipPage()]] - `calls` [EXTRACTED]
-- [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[reportResult()]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/Function_Details_5

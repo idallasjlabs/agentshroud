@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/colima-health-checksh
 ---
 
 # telegram_proxy.py
@@ -20,7 +20,7 @@ tags:
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RateLimiter_1]] - `imports` [EXTRACTED]
 - [[TELEGRAM_API_BASE_URL]] - `references` [INFERRED]
-- [[TelegramAPIProxy_2]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `contains` [EXTRACTED]
 - [[_OutboundScan]] - `contains` [EXTRACTED]
 - [[_ipv4_first_getaddrinfo()]] - `contains` [EXTRACTED]
 - [[_persist_groups()]] - `imports` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

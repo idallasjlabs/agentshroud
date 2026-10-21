@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Test-Driven Development (TDD)"
+community: "SecureBrowser Skill (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_TDD
+  - community/SecureBrowser_Skill_4
 ---
 
 # openclaw/skills/i-tdd/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_4

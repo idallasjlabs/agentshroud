@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # test_rbac.py
@@ -18,7 +18,7 @@ tags:
 - [[RBACConfig_3]] - `tests` [EXTRACTED]
 - [[RBACManager_1]] - `tests` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_23]] - `imports` [EXTRACTED]
+- [[Role_19]] - `imports` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `contains` [EXTRACTED]
 - [[TestGroupRegistry]] - `contains` [EXTRACTED]
 - [[TestRBACConfig]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[TestRBACIntegration]] - `contains` [EXTRACTED]
 - [[TestRBACManager]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

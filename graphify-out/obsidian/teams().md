@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_group_config.py"
+source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "GroupConfig"
-location: "L68"
+community: "colima-health-check.sh"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig]] - `references` [EXTRACTED]
-- [[test_group_config.py]] - `contains` [EXTRACTED]
+- [[GroupConfig]] - `calls` [EXTRACTED]
+- [[ProjectConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "_wrap_response() (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/_wrap_response_4
 ---
 
 # test_log_sanitizer.py
 
 ## Connections
-- [[LogSanitizer]] - `imports` [EXTRACTED]
+- [[LogSanitizer_1]] - `imports` [EXTRACTED]
 - [[TestLogSanitizer]] - `contains` [EXTRACTED]
-- [[install_log_sanitizer()]] - `imports` [EXTRACTED]
+- [[install_log_sanitizer()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

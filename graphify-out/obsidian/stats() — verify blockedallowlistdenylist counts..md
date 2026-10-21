@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # stats() — verify blocked/allowlist/denylist counts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStats]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

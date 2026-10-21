@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "GroupConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/GroupConfig
 ---
 
 # test_config_hot_reload.py
 
 ## Connections
-- [[GatewayConfig_4]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
 - [[_default_mtime()]] - `imports` [EXTRACTED]
 - [[_load()]] - `contains` [EXTRACTED]
-- [[_write()]] - `contains` [EXTRACTED]
+- [[_write()_1]] - `contains` [EXTRACTED]
 - [[apply_reloadable_config()]] - `imports` [EXTRACTED]
 - [[config_watcher()]] - `imports` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `contains` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

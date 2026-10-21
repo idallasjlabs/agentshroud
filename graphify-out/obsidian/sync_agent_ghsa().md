@@ -1,19 +1,20 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L704"
+community: "browser/scripts/browse.py"
+location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # sync_agent_ghsa()
 
 ## Connections
-- [[Path_14]] - `references` [EXTRACTED]
-- [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.]] - `rationale_for` [EXTRACTED]
+- [[Path_50]] - `references` [EXTRACTED]
+- [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.…]] - `rationale_for` [EXTRACTED]
+- [[SyncError]] - `calls` [EXTRACTED]
 - [[_print_summary()]] - `calls` [EXTRACTED]
 - [[append_ghsa_entries()]] - `calls` [EXTRACTED]
 - [[fetch_ghsa_advisories()]] - `calls` [EXTRACTED]
@@ -23,4 +24,4 @@ tags:
 - [[run_ghsa_sync()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
