@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "DataExfilVolumeGuard"
+community: "TestMultipartOutboundPipeline"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/TestMultipartOutboundPipeline
 ---
 
 # .observe()
@@ -17,4 +17,4 @@ tags:
 - [[Observe one outbound response and decide allowblock.          A blocked respons]] - `rationale_for` [EXTRACTED]
 - [[VolumeVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

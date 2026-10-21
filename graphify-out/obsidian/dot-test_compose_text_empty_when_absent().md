@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter (16)"
+community: "bsp_iot_button_create (2)"
 location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_16
+  - community/bsp_iot_button_create_2
 ---
 
 # .test_compose_text_empty_when_absent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTextReaders]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_16
+#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create_2

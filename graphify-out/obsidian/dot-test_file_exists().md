@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (4)"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L798"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # .test_file_exists()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllExampleConfigsExist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

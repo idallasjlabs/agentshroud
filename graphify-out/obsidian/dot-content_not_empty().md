@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "test_security.py"
+community: "_make_proxy()"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/_make_proxy
 ---
 
 # .content_not_empty()
 
 ## Connections
-- [[ForwardRequest]] - `method` [EXTRACTED]
+- [[ForwardRequest_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_securitypy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

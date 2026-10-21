@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L350"
+community: "MiddlewareManager (2)"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MiddlewareManager_2
 ---
 
 # .connect()
 
 ## Connections
-- [[Accept a WebSocket connection and add to connected set          Args]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket]] - `references` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

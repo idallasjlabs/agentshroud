@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "TestLoadFromText"
+community: "Pydantic"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLoadFromText
+  - community/Pydantic
 ---
 
 # .test_allowlist_skip()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLoadFromText
+#graphify/code #graphify/EXTRACTED #community/Pydantic

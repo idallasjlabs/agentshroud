@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # .set_response_handler()
@@ -15,4 +15,4 @@ tags:
 - [[HTTPForwarder]] - `method` [EXTRACTED]
 - [[Set a mock response handler for testing.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

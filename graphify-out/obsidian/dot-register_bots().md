@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (7)"
+community: "_make_proxy()"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_7
+  - community/_make_proxy
 ---
 
 # .register_bots()
@@ -16,4 +16,4 @@ tags:
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_7
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

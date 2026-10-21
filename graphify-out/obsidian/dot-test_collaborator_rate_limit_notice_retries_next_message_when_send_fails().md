@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (3)"
 location: "L3821"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_3
 ---
 
 # .test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()
@@ -22,4 +22,4 @@ tags:
 - [[fake_rate_notice()_1]] - `contains` [EXTRACTED]
 - [[fake_rate_notice()_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_3

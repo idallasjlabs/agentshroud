@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "All Dependencies.md (4)"
+community: "_make_proxy()"
 location: "L288"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_4
+  - community/_make_proxy
 ---
 
 # .path_not_empty()
 
 ## Connections
-- [[SSHWriteFileRequest_1]] - `method` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_4
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

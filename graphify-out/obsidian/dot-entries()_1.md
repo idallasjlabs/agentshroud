@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L302"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # .entries()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[AuditChainEntry]] - `references` [EXTRACTED]
+- [[MCPAuditEntry]] - `references` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "test_runtime_engines.py (2)"
+community: "egress_retry.py"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy_2
+  - community/egress_retrypy
 ---
 
 # .ps()
@@ -15,4 +15,4 @@ tags:
 - [[ContainerInfo_1]] - `references` [EXTRACTED]
 - [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy_2
+#graphify/code #graphify/EXTRACTED #community/egress_retrypy

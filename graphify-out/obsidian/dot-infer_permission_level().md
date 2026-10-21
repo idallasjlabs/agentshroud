@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "CrossBotTrustLedger"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/CrossBotTrustLedger
 ---
 
 # .infer_permission_level()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-check_tool_permission()_1]] - `calls` [EXTRACTED]
 - [[Infer the permission level needed for a tool based on its name.          Checks]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPServerConfig_1]] - `references` [EXTRACTED]
-- [[PermissionLevel_1]] - `references` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[PermissionLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

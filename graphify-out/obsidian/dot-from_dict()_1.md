@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "PermissionLevel"
-location: "L98"
+community: "test_llm_proxy_failover.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/test_llm_proxy_failoverpy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_6]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `method` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel]] - `calls` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
+- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[ModificationSource]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

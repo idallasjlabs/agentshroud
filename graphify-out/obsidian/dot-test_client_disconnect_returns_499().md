@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "api.py (2)"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/apipy_2
 ---
 
 # .test_client_disconnect_returns_499()
@@ -17,4 +17,4 @@ tags:
 - [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - `rationale_for` [EXTRACTED]
 - [[telegram_api_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/apipy_2

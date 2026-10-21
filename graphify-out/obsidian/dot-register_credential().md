@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # .register_credential()
 
 ## Connections
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Register a credential for rotation management.]] - `rationale_for` [EXTRACTED]
-- [[datetime_3]] - `references` [EXTRACTED]
+- [[datetime_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

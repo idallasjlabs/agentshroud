@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestLoadFromText"
-location: "L112"
+community: "sync-cve-registry.py"
+location: "L1153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLoadFromText
+  - community/sync-cve-registrypy
 ---
 
 # .test_deduplication()
 
 ## Connections
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[TestBuildImageTargets]] - `method` [EXTRACTED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLoadFromText
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

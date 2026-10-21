@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L23"
+community: "EgressFilterConfig (2)"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/EgressFilterConfig_2
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._5]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

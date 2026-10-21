@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "EgressFilterConfig"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # .get_mode()
@@ -15,4 +15,4 @@ tags:
 - [[PIISanitizer_2]] - `method` [EXTRACTED]
 - [[Return current enforcement mode          Returns             enforce or moni]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

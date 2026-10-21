@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L446"
+community: "AgentTarget"
+location: "L415"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AgentTarget
 ---
 
 # .forward()
 
 ## Connections
-- [[dot-process_agent_card_request()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
+- [[test_forwarder_mock()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

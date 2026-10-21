@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection (2)"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # .submit_tool_request()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

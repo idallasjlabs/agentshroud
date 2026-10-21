@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "MiddlewareManager"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/MiddlewareManager
 ---
 
 # .test_blocked_result()
@@ -16,4 +16,4 @@ tags:
 - [[Test blocked result creation.]] - `rationale_for` [EXTRACTED]
 - [[TestPathRewriteResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

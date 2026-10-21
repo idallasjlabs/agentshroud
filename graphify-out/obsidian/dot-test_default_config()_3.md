@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "soc/router.py"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/soc/routerpy
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
-- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
-- [[TestKillSwitchConfig]] - `method` [EXTRACTED]
+- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

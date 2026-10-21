@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
-location: "L229"
+community: "ApprovalQueueConfig (2) (4)"
+location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/ApprovalQueueConfig_2_4
 ---
 
 # .temp_workspace()
 
 ## Connections
-- [[Create a temporary workspace for testing.]] - `rationale_for` [EXTRACTED]
-- [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
+- [[Create a temporary workspace.]] - `rationale_for` [EXTRACTED]
+- [[TestSessionIsolationEndToEnd]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4

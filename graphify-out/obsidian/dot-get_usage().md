@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "ResourceUsage"
+community: "icloud/scripts/calendar.js"
 location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceUsage
+  - community/icloud/scripts/calendarjs
 ---
 
 # .get_usage()
@@ -16,4 +16,4 @@ tags:
 - [[ResourceUsage_2]] - `references` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/EXTRACTED #community/icloud/scripts/calendarjs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "PortManager"
+community: "TrustConfig (2)"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TrustConfig_2
 ---
 
 # .resolve_ports()
@@ -22,4 +22,4 @@ tags:
 - [[Resolve all ports, detecting conflicts and auto-assigning if needed.          Ar]] - `rationale_for` [EXTRACTED]
 - [[check_and_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

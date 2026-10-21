@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "test_runtime_engines.py"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/test_runtime_enginespy
 ---
 
 # .format_alert_text()
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Format Telegram alert text for detected config changes.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Path (4)"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_4
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # .from_env()
@@ -16,4 +16,4 @@ tags:
 - [[MemorySecurityConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_4
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

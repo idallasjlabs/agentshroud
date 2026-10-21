@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .record_failure()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[Record a failedblocked action, decreasing trust.]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_2]] - `references` [EXTRACTED]
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

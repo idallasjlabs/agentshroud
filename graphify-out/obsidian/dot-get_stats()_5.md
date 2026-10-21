@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L93"
+community: "test_collaborator_tracker.py"
+location: "L1002"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/test_collaborator_trackerpy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_19]] - `references` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

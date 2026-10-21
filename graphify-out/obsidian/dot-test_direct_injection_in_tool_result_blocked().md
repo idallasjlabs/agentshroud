@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # .test_direct_injection_in_tool_result_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Explicit ignore-instructions payload embedded in a tool result.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

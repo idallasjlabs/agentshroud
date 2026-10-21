@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "WebContentScanner"
+community: "test_main_endpoints.py"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/test_main_endpointspy
 ---
 
 # .scan()
@@ -22,4 +22,4 @@ tags:
 - [[ScanResult]] - `calls` [EXTRACTED]
 - [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

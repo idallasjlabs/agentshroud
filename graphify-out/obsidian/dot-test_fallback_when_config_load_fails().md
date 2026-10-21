@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "AsyncMock"
 location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/AsyncMock
 ---
 
 # .test_fallback_when_config_load_fails()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDefaultBotDockerfile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

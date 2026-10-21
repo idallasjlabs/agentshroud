@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "PIIConfig"
-location: "L84"
+community: "AlertDispatcher (5)"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/AlertDispatcher_5
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
-- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Open the database, create the schema, and run column migrations.          Initia]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # .test_empty_context_scores_clean()
@@ -15,4 +15,4 @@ tags:
 - [[Empty segment list should not penalize the score.]] - `rationale_for` [EXTRACTED]
 - [[TestContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

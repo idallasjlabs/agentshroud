@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestDNSForwarderProtocol"
+community: "test_scorecard_scoring.py"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSForwarderProtocol
+  - community/test_scorecard_scoringpy
 ---
 
 # .test_blocked_other_qtype_returns_nxdomain()
@@ -17,4 +17,4 @@ tags:
 - [[_BlockAll]] - `calls` [EXTRACTED]
 - [[build_dns_query()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

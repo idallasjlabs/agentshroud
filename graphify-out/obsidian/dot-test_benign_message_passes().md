@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PipelineAction"
+community: "ApprovalQueueConfig"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # .test_benign_message_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E01PromptGuardBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

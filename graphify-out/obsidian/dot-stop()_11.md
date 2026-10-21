@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L97"
+community: "LLMProxy.proxy_messages (non-streaming) (2)"
+location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/LLMProxyproxy_messages_non-streaming_2
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
-- [[dot-pause()_3]] - `calls` [EXTRACTED]
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2

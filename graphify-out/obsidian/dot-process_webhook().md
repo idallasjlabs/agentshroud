@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "AgentTarget"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/AgentTarget
 ---
 
 # .process_webhook()
@@ -17,8 +17,8 @@ tags:
 - [[dot-_extract_username()]] - `calls` [EXTRACTED]
 - [[dot-_prepare_session_payload()]] - `calls` [EXTRACTED]
 - [[dot-_replace_message()]] - `calls` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[Process an incoming webhook through the security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

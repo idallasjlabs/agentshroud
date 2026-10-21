@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "First Time Setup (2)"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # .dispatch()
@@ -17,7 +17,7 @@ tags:
 - [[dot-_log_alert()]] - `calls` [EXTRACTED]
 - [[dot-_send_notification()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Dispatch an alert based on severity.          Args             alert Alert dic]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

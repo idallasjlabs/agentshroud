@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
-location: "L192"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-stop_all()]] - `calls` [EXTRACTED]
-- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

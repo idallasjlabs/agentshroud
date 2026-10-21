@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py (2)"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy_2
 ---
 
 # .test_downstream_build_suffix_on_the_pin_is_ignored()
@@ -17,4 +17,4 @@ tags:
 - [[_entry()_1]] - `calls` [EXTRACTED]
 - [[plan_remediation()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_2

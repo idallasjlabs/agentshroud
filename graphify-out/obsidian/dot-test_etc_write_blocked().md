@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # .test_etc_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot write to etc system configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPathProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

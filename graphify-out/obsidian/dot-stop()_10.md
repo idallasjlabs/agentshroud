@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "DockerEngine"
-location: "L96"
+community: "AppleContainerEngine"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/AppleContainerEngine
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
+- [[dot-pause()_3]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

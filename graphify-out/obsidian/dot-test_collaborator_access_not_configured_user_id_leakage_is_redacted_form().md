@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ApprovalQueueConfig (9)"
+community: "TestOutboundPipelineIntegration (4)"
 location: "L1305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_9
+  - community/TestOutboundPipelineIntegration_4
 ---
 
 # .test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()
 
 ## Connections
 - [[Form payload user-id enrollment leakage should also be blocked.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_9
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration_4

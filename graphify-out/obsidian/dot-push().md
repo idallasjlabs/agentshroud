@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "ContainerEngine"
-location: "L70"
+community: "main.py (2)"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/mainpy_2
 ---
 
 # .push()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Push an image to a registry.]] - `rationale_for` [EXTRACTED]
+- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[Alert]] - `calls` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/mainpy_2

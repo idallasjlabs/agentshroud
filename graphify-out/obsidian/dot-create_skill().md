@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
 type: "code"
-community: "package_skill"
+community: "Function Details (4)"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Function_Details_4
 ---
 
 # .create_skill()
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_rejects_symlink_to_external_file()]] - `calls` [EXTRACTED]
 - [[TestPackageSkillSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/package_skill
+#graphify/code #graphify/EXTRACTED #community/Function_Details_4

@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L228"
+community: "TelegramAPIProxy (2)"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_dan_jailbreak()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

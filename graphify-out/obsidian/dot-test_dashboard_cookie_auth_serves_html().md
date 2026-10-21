@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ForwardRequest"
+community: "UserSessionManager (3)"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/UserSessionManager_3
 ---
 
 # .test_dashboard_cookie_auth_serves_html()
@@ -16,4 +16,4 @@ tags:
 - [[GET dashboard with valid cookie serves HTML]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

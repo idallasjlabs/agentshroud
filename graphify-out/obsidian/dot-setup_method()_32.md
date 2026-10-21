@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_benchmark_regression.py"
+source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "TestBenchmarkRegression"
-location: "L44"
+community: "WebProxy"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/WebProxy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
-- [[load_baseline()]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `calls` [EXTRACTED]
+- [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/code #graphify/EXTRACTED #community/WebProxy

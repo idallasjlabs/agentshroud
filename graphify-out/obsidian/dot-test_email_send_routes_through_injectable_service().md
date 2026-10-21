@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "GatewayEmailService"
+community: "AgentShroud Access Control Matrix"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # .test_email_send_routes_through_injectable_service()
@@ -15,4 +15,4 @@ tags:
 - [[POST emailsend to the owner sends via forward._email_service — proving]] - `rationale_for` [EXTRACTED]
 - [[TestEndpointUsesService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

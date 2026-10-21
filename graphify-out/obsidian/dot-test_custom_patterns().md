@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (32)"
+community: "FetchOutcome"
 location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_32
+  - community/FetchOutcome
 ---
 
 # .test_custom_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[Test adding custom filter patterns.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_32
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

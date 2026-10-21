@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "PipelineAction"
-location: "L136"
+community: "AgentTarget"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AgentTarget
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-_record()]] - `calls` [EXTRACTED]
-- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
+- [[ScanRequest]] - `references` [EXTRACTED]
+- [[ScanResponse]] - `references` [EXTRACTED]
+- [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

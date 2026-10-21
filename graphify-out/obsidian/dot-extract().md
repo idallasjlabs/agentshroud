@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "browser/scripts/browse.py (2)"
 location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/browser/scripts/browsepy_2
 ---
 
 # .extract()
@@ -14,9 +14,8 @@ tags:
 ## Connections
 - [[dot-_log_action()]] - `calls` [EXTRACTED]
 - [[dot-_log_security_event()]] - `calls` [EXTRACTED]
-- [[Extract data from page          Security No credential extraction allowed]] - `rationale_for` [EXTRACTED]
+- [[Extract data from page Security No credential extraction allowed]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 - [[SecurityError]] - `calls` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2

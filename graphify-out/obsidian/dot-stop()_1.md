@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L217"
+community: "test_hermes_model_resolver.py (2) (2)"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/test_hermes_model_resolverpy_2_2
 ---
 
 # .stop()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[dot-stop_all()]] - `calls` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2_2

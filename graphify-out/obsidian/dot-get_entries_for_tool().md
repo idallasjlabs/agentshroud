@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "MCPAuditTrail"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # .get_entries_for_tool()
@@ -15,4 +15,4 @@ tags:
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
 - [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

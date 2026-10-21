@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "EgressFilterConfig (5)"
-location: "L281"
+community: "UserSessionManager (2)"
+location: "L452"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_5
+  - community/UserSessionManager_2
 ---
 
 # .log_event()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[_Event]] - `calls` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

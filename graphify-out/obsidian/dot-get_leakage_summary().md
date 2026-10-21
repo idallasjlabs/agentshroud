@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher (4)"
+community: "test_playback_state.c"
 location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/test_playback_statec
 ---
 
 # .get_leakage_summary()
 
 ## Connections
 - [[dot-export_leakage_report()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Get summary of all detected leakages.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

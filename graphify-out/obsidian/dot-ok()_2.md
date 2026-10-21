@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "MultiHostResult"
-location: "L78"
+community: "MCPPolicyEngine (2)"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/MCPPolicyEngine_2
 ---
 
 # .ok()
 
 ## Connections
-- [[HostResult]] - `method` [EXTRACTED]
-- [[True only when the host ran the command and it exited 0.]] - `rationale_for` [EXTRACTED]
+- [[A source counts as proven only on a 2xx with non-empty content.]] - `rationale_for` [EXTRACTED]
+- [[FetchOutcome_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiHostResult
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

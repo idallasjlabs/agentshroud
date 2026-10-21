@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # .test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate()
@@ -16,4 +16,4 @@ tags:
 - [[Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once.]] - `rationale_for` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig (3)"
+community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig_3
+  - community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap
 ---
 
 # .test_10_x_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSRFBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_3
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap

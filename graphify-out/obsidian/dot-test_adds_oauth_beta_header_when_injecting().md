@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # .test_adds_oauth_beta_header_when_injecting()
@@ -16,4 +16,4 @@ tags:
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 - [[inject_headers sets anthropic-beta oauth-2025-04-20 when Bearer is injected.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestAppleContainerEngine"
-location: "L360"
+community: "TelegramAPIProxy (2)"
+location: "L845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAppleContainerEngine
+  - community/TelegramAPIProxy_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L19"
+community: "agentshroud-blueteam/SKILL.md (2)"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
-- [[TestWSTokens]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

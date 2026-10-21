@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ServiceManager"
-location: "L51"
+community: "MCPPermissionManager"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/MCPPermissionManager
 ---
 
 # .connect()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[Accept a WebSocket connection and add to connected set          Args]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[WebSocket_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # .should_rotate()
@@ -17,7 +17,7 @@ tags:
 - [[dot-get_health_score()]] - `calls` [EXTRACTED]
 - [[dot-rotate_credential()]] - `calls` [EXTRACTED]
 - [[CredentialInfo]] - `method` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
 - [[Whether credential needs rotation based on age.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

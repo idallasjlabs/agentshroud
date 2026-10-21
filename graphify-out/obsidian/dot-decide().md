@@ -16,7 +16,7 @@ tags:
 - [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[PermissionError]] - `calls` [INFERRED]
 - [[Process an approval decision          Args             request_id Request UUID]] - `rationale_for` [EXTRACTED]
 

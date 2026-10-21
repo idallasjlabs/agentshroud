@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L966"
+community: "sync-cve-registry.py"
+location: "L1115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/sync-cve-registrypy
 ---
 
 # .test_env_var_adds_extra_targets()
@@ -15,4 +15,4 @@ tags:
 - [[TestBuildImageTargets]] - `method` [EXTRACTED]
 - [[_build_image_targets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

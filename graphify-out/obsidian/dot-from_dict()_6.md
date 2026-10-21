@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/runtime/config.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Path (4)"
-location: "L57"
+community: "RBACConfig"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_4
+  - community/RBACConfig
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
-- [[RuntimeConfig]] - `method` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
+- [[ConversationMessage]] - `calls` [EXTRACTED]
+- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
+- [[Path_54]] - `calls` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_4
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

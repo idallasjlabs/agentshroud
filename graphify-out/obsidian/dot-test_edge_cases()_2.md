@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L334"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
+location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and boundary conditions.]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Test edge cases and error conditions._1]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

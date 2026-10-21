@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "GovernanceAction"
+community: "TestCanvasAuthHelpers"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/TestCanvasAuthHelpers
 ---
 
 # .test_deregister_returns_usage()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifecycle_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GovernanceAction
+#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers

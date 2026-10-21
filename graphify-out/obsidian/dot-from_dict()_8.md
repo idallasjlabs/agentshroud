@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "DelegationManager"
-location: "L77"
+community: "test_a2a_policy.py"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/test_a2a_policypy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[dot-register()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

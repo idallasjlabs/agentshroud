@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L592"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .test_category_is_operational()
@@ -15,4 +15,4 @@ tags:
 - [[Pattern is in the OPERATIONAL category.]] - `rationale_for` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

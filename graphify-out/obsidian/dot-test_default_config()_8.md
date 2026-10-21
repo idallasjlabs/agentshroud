@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "TrustConfig"
-location: "L63"
+community: "ApprovalQueueConfig (3)"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

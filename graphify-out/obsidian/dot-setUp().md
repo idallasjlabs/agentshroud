@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "WebContentScanner"
+community: "test_main_endpoints.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/test_main_endpointspy
 ---
 
 # .setUp()
@@ -15,4 +15,4 @@ tags:
 - [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
 - [[WebContentScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

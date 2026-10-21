@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (7)"
+community: "TelegramAPIProxy (17)"
 location: "L1252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_7
+  - community/TelegramAPIProxy_17
 ---
 
 # .test_collaborator_pairing_code_leakage_is_redacted_json()
 
 ## Connections
 - [[Collaborators should never receive pairing codes or pairing approval commands.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_7
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_17

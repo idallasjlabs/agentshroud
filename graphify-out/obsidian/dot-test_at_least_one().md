@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget (8)"
+community: "API Documentation"
 location: "L816"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_8
+  - community/API_Documentation
 ---
 
 # .test_at_least_one()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreSecureDevelopment]] - `method` [EXTRACTED]
 - [[_score_secure_development()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_8
+#graphify/code #graphify/EXTRACTED #community/API_Documentation

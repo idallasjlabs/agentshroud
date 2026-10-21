@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # .test_deploy_to_multiple_destinations()
 
 ## Connections
-- [[Path_58]] - `references` [EXTRACTED]
+- [[Path_64]] - `references` [EXTRACTED]
 - [[TestDeployManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

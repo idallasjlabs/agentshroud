@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # .should_warn()
@@ -16,7 +16,7 @@ tags:
 - [[dot-get_credential_status()]] - `calls` [EXTRACTED]
 - [[dot-get_health_score()]] - `calls` [EXTRACTED]
 - [[CredentialInfo]] - `method` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
 - [[Whether credential age warrants a warning.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

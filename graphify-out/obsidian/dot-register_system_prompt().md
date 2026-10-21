@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # .register_system_prompt()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_get_hmac_key()]] - `calls` [EXTRACTED]
 - [[Compute and return an HMAC-SHA256 fingerprint for the system prompt.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

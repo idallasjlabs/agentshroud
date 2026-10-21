@@ -1,34 +1,18 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "main.rs"
-location: "L911"
+community: "parse_trivy_output"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/parse_trivy_output
 ---
 
 # .ok()
 
 ## Connections
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[FakeTransport]] - `method` [EXTRACTED]
-- [[Self]] - `references` [EXTRACTED]
-- [[approvals_list_empty()]] - `calls` [EXTRACTED]
-- [[approvals_list_formats_rows()]] - `calls` [EXTRACTED]
-- [[approve_sends_correct_body_and_path()]] - `calls` [EXTRACTED]
-- [[cves_counts_array_when_no_total()]] - `calls` [EXTRACTED]
-- [[cves_formats_summary()]] - `calls` [EXTRACTED]
-- [[cves_reads_nested_summary()]] - `calls` [EXTRACTED]
-- [[cves_reads_summary_total_fallback()]] - `calls` [EXTRACTED]
-- [[cves_reports_unknown_bot_error()]] - `calls` [EXTRACTED]
-- [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
-- [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
-- [[deploy_status_reads_version_endpoint()]] - `calls` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
-- [[status_hits_correct_path()]] - `calls` [EXTRACTED]
-- [[status_parses_and_formats()]] - `calls` [EXTRACTED]
+- [[HostResult]] - `method` [EXTRACTED]
+- [[True only when the host ran the command and it exited 0.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestFullAccessMiddlewareBypass"
+community: "iCloud Services (4)"
 location: "L9567"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/iCloud_Services_4
 ---
 
 # .test_default_collab_outbound_still_blocked_by_leakage_filter()
@@ -17,4 +17,4 @@ tags:
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[local_only collaborators must still be blocked by the leakage filter.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services_4

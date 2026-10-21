@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L312"
+community: "_t"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_t
 ---
 
 # .guard()
 
 ## Connections
 - [[ContextGuard]] - `calls` [EXTRACTED]
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/_t

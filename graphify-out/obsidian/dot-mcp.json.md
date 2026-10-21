@@ -1,28 +1,25 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: ".mcp.json"
+community: "Mac App Discovery Skill"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Mac_App_Discovery_Skill
 ---
 
 # .mcp.json
 
 ## Connections
-- [[atlassian-agentshroud]] - `contains` [EXTRACTED]
-- [[atlassian-fluence]] - `contains` [EXTRACTED]
-- [[atlassian-idallasj]] - `contains` [EXTRACTED]
-- [[awslabs.aws-api-mcp-server]] - `contains` [EXTRACTED]
-- [[devonthink]] - `contains` [EXTRACTED]
-- [[github]] - `contains` [EXTRACTED]
-- [[github-agentshroud]] - `contains` [EXTRACTED]
-- [[github-fluence]] - `contains` [EXTRACTED]
-- [[github-idallasj]] - `contains` [EXTRACTED]
-- [[home-assistant]] - `contains` [EXTRACTED]
-- [[safari]] - `contains` [EXTRACTED]
-- [[xmind]] - `contains` [EXTRACTED]
+- [[atlassian-agentshroud_3]] - `contains` [EXTRACTED]
+- [[atlassian-idallasj_3]] - `contains` [EXTRACTED]
+- [[devonthink_3]] - `contains` [EXTRACTED]
+- [[github_3]] - `contains` [EXTRACTED]
+- [[github-agentshroud_3]] - `contains` [EXTRACTED]
+- [[github-idallasj_3]] - `contains` [EXTRACTED]
+- [[home-assistant_3]] - `contains` [EXTRACTED]
+- [[safari_3]] - `contains` [EXTRACTED]
+- [[xmind_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcpjson
+#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

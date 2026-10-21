@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
-location: "L187"
+community: "TestCollaboratorPromptClassifiers (2)"
+location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/TestCollaboratorPromptClassifiers_2
 ---
 
 # .test_dry_run_writes_nothing()
 
 ## Connections
-- [[TestSerialization_1]] - `method` [EXTRACTED]
+- [[TestSerialization]] - `method` [EXTRACTED]
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers_2

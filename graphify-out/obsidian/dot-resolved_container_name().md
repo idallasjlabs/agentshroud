@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "BotConfig"
+community: "GroupConfig"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/GroupConfig
 ---
 
 # .resolved_container_name()
@@ -15,4 +15,4 @@ tags:
 - [[BotConfig]] - `method` [EXTRACTED]
 - [[The real docker container name for this bot — see container_name field.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

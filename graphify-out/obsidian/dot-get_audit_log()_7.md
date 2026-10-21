@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L174"
+community: "ApprovalQueueConfig (3)"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `references` [EXTRACTED]
+- [[KeyAuditEvent]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

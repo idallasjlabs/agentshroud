@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L28"
+community: "ApprovalQueueConfig"
+location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/ApprovalQueueConfig
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `references` [EXTRACTED]
+- [[Process an inbound message through the full security pipeline.          Thin wra]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

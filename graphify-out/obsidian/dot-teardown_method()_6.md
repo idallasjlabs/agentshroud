@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "MiddlewareManager (9)"
-location: "L199"
+community: "_wrap_response() (2)"
+location: "L523"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9
+  - community/_wrap_response_2
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

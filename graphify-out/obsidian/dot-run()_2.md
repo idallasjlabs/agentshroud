@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L76"
+community: "setup-secrets.sh"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/setup-secretssh
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

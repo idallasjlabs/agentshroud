@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L1004"
+community: "Pydantic"
+location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Pydantic
 ---
 
 # .test_deduplication()
 
 ## Connections
-- [[TestBuildImageTargets]] - `method` [EXTRACTED]
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
+- [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Pydantic

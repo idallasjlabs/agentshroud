@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .get_next_trust_level()
@@ -15,6 +15,6 @@ tags:
 - [[dot-get_trust_level_order()]] - `calls` [EXTRACTED]
 - [[Get the next trust level for promotion, or None if already at max.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `method` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

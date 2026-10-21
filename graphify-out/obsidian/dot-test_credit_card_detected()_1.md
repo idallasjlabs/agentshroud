@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L123"
+community: "CrossBotTrustLedger"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/CrossBotTrustLedger
 ---
 
 # .test_credit_card_detected()
 
 ## Connections
-- [[PIIScanner]] - `calls` [EXTRACTED]
-- [[TestPIIScanning]] - `method` [EXTRACTED]
+- [[TestPIIDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
