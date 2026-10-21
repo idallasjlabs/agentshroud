@@ -465,6 +465,62 @@ class TestFetch:
         assert ghsa_ids == {"GHSA-p1p1-p1p1-p1p1", "GHSA-p2p2-p2p2-p2p2"}
         assert calls["i"] == 2  # followed the cursor once
 
+    @staticmethod
+    def _json_resp(body):
+        import io
+        import json
+
+        class _Resp(io.BytesIO):
+            headers = {"Link": ""}
+
+        return _Resp(json.dumps(body).encode("utf-8"))
+
+    def test_token_refused_retries_public_endpoint_without_token(self):
+        """aquasecurity/trivy 403s the Actions token but serves the public feed."""
+        import urllib.error
+
+        mod = _sync()
+        sent_auth = []
+
+        def _fake_urlopen(req, timeout=30):
+            auth = req.get_header("Authorization")
+            sent_auth.append(auth)
+            if auth:
+                raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", {}, None)
+            return self._json_resp([_adv(ghsa_id="GHSA-t1t1-t1t1-t1t1")])
+
+        with patch.object(mod.urllib.request, "urlopen", _fake_urlopen):
+            out = mod.fetch_ghsa_advisories("aquasecurity/trivy", github_token="tok")
+        assert [a["ghsa_id"] for a in out] == ["GHSA-t1t1-t1t1-t1t1"]
+        assert sent_auth == ["Bearer tok", None]
+
+    def test_403_without_token_still_raises(self):
+        import urllib.error
+
+        mod = _sync()
+
+        def _fake_urlopen(req, timeout=30):
+            raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", {}, None)
+
+        with patch.object(mod.urllib.request, "urlopen", _fake_urlopen):
+            with pytest.raises(urllib.error.HTTPError):
+                mod.fetch_ghsa_advisories("aquasecurity/trivy")
+
+    def test_other_http_errors_are_not_retried(self):
+        import urllib.error
+
+        mod = _sync()
+        calls = []
+
+        def _fake_urlopen(req, timeout=30):
+            calls.append(req.get_header("Authorization"))
+            raise urllib.error.HTTPError(req.full_url, 500, "Server Error", {}, None)
+
+        with patch.object(mod.urllib.request, "urlopen", _fake_urlopen):
+            with pytest.raises(urllib.error.HTTPError):
+                mod.fetch_ghsa_advisories("aquasecurity/trivy", github_token="tok")
+        assert calls == ["Bearer tok"]
+
 
 # ── per-agent isolation ───────────────────────────────────────────────────────
 
