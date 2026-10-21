@@ -1,0 +1,46 @@
+# >>> llm-init mcp >>>
+# Generated from .mcp.json by llm-init (change with: llm-init --mcp ...). Do not edit inside this block.
+[mcp_servers.github]
+command = ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh"
+args = []
+
+[mcp_servers.github-idallasj]
+command = ".llm_settings/mcp-servers/github/idallasj/github-mcp-wrapper.sh"
+args = []
+
+[mcp_servers.github-agentshroud]
+command = ".llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh"
+args = []
+
+[mcp_servers.atlassian-agentshroud]
+command = ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh"
+args = []
+
+[mcp_servers.atlassian-idallasj]
+command = ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh"
+args = []
+
+[mcp_servers.xmind]
+command = "/opt/homebrew/bin/npx"
+args = ["-y","xmind-generator-mcp"]
+
+[mcp_servers.xmind.env]
+PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+outputPath = "${HOME}/Desktop"
+autoOpenFile = "true"
+
+[mcp_servers.safari]
+command = "/opt/homebrew/bin/npx"
+args = ["-y","safari-mcp"]
+
+[mcp_servers.safari.env]
+PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+[mcp_servers.home-assistant]
+command = ".llm_settings/mcp-servers/home-assistant/mcp-ha.sh"
+args = []
+
+[mcp_servers.devonthink]
+command = ".llm_settings/mcp-servers/devonthink/mcp-devonthink.sh"
+args = []
+# <<< llm-init mcp <<<

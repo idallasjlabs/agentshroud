@@ -1,4 +1,5 @@
 ---
+name: i-mcpm-aws-profile
 description: "Configure and switch AWS profiles for MCP operations including SSO and multi-account access"
 ---
 
@@ -158,7 +159,7 @@ Update `.mcp.json` to set profile for MCP server:
 }
 ```
 
-**Restart Codex** after modifying `.mcp.json`.
+**Restart Claude Code** after modifying `.mcp.json`.
 
 ---
 
@@ -286,9 +287,9 @@ aws iam simulate-principal-policy \
 # Option 1: Set in .mcp.json (recommended)
 # Add "env": {"AWS_PROFILE": "your-profile"} to server config
 
-# Option 2: Restart Codex with profile set
+# Option 2: Restart Claude Code with profile set
 export AWS_PROFILE=your-profile
-Codex
+claude code
 ```
 
 ---
@@ -312,7 +313,7 @@ Codex
 - Set `AWS_PROFILE` in `.mcp.json` for consistency
 - Use `--readonly` flag for safe MCP operations
 - Test profile before using with MCP: `aws sts get-caller-identity`
-- Restart Codex after changing profiles
+- Restart Claude Code after changing profiles
 
 ---
 

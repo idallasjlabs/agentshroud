@@ -363,6 +363,199 @@ claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp --sco
 
 ---
 
+## 8. Teamwork Graph CLI (Atlassian, non-MCP)
+
+[TWG CLI](https://teamworkgraph.com/cli) ([developer docs](https://developer.atlassian.com/platform/teamwork-graph/twg-cli/)) is
+Atlassian's own official agent-integration tool. It is **not an MCP server** —
+do not add it to `.mcp.json` / `.gemini/settings.json` / `.codex/config.toml` /
+`.github/mcp.json`. It complements, and does not replace, the `atlassian-*`
+`mcp-atlassian` servers documented above (broader graph across Jira +
+Confluence + Bitbucket + code + Teams + Drive vs. direct Jira/Confluence API
+access).
+
+### Install (once per machine)
+
+```bash
+curl -fsSL --retry 2 https://teamwork-graph.atlassian.com/cli/install | bash
+```
+
+First-time setup requires a controlling terminal (interactive OAuth 2.1
+browser login). To repair/verify later: `twg setup` / `twg doctor`.
+
+`llm-init --mcp twg .` never runs the installer — it only detects `twg` on
+`PATH` and runs `twg doctor` to report status (see `_llm_init_check_twg` in
+`llm-init.sh`).
+
+### Account separation (Fluence vs personal) and auth checks
+
+twg keeps **one** OAuth login per machine (`~/.config/twg`) with no profile
+switching, and the Fluence and personal Atlassian accounts must never be mixed.
+`llm-init` therefore detects rather than switches:
+
+| `--mcp` selection | Repo scope | twg check | sf check |
+|---|---|---|---|
+| `fluence` | fluence | `twg whoami` email domain must be Fluence, else **MISMATCH** warning | org `fluence` must be `Connected` |
+| `personal` | personal | email domain must NOT be Fluence, else **MISMATCH** warning | skipped (org is Fluence-only) |
+| `all` / both | mixed | informational — reports the active scope (one login can't serve both) | org `fluence` check |
+| neither (e.g. `aws` only) | none | only if `--mcp twg` was given | skipped |
+
+- Scope is derived from the selection (or the sticky `.llm_settings/repo-mcp-servers`
+  marker); no new marker values.
+- Checks are **warn-only and read-only**: they never log in, never switch
+  accounts, and never fail `llm-init`. On a mismatch or missing login they print
+  the fix (`twg setup`; `sf org login web -a fluence --instance-url <url>`) for
+  you to run in your own terminal.
+- Fluence domain defaults to `fluenceenergy.com`; override with
+  `LLM_INIT_FLUENCE_EMAIL_DOMAIN`. Salesforce org alias/URL: `SFQ_ORG`,
+  `SFQ_INSTANCE_URL`.
+- **Agent rule:** before any twg work, run `twg whoami` and confirm the email
+  domain matches the repo scope; on a mismatch stop and ask the user to
+  re-authenticate. The `i-sf` skill applies the same guard to Salesforce.
+
+### Skills install globally, not per-repo
+
+The installer drops its own "skills" (context files) into **home-directory**
+locations:
+- `~/.agents/skills` — universal layout read by Codex, Gemini CLI, GitHub
+  Copilot, Cursor, Rovo Dev
+- `~/.claude/skills` — Claude Code
+
+These are distinct from the **per-repo** `.claude/skills/` (and per-CLI
+equivalents) that `llm-init.sh` deploys from `.llm_settings/skills/` — nothing
+here needs conversion or rsync-ing.
+
+### Permissions
+
+Configured org-wide in Atlassian Administration → Rovo → Teamwork Graph CLI,
+across three categories: Read, Write and manage, Delete. Enforced
+server-side by Atlassian (not bypassable via the local binary/config).
+
+### Network allowlist (only if Claude Code sandboxing is enabled)
+
+This repo's `.claude/settings.json` does not currently set
+`network.allowedDomains`. If that setting is ever enabled, TWG's whiteboard/
+attachment tools additionally need:
+
+```
+api.media.atlassian.com
+*.frontend.public.atl-paas.net
+```
+
+---
+
+## 9. Gmail (workspace-mcp, many accounts)
+
+[`workspace-mcp`](https://github.com/taylorwilsdon/google_workspace_mcp) runs as one
+**stdio** MCP server **per Gmail account** (`gmail-<alias>`), so it works unchanged in
+every client that can launch a stdio command (Claude Code, Gemini CLI, Codex, GitHub
+Copilot, Hermes, OpenClaw, …). Each account has its own token store, so tokens cannot
+collide. The claude.ai Gmail connector is not used (one Google account per connector).
+
+```bash
+llm-init --mcp gmail .       # standalone
+llm-init --mcp personal .    # included in the personal group
+llm-init --mcp all .         # included in all (never in --mcp fluence)
+```
+
+### One-time setup
+
+1. **OAuth client (shared by all accounts):** Google Cloud Console → enable the Gmail API →
+   Credentials → Create OAuth client ID → *Desktop app*. Add each Gmail address as a test
+   user, or publish the app — in "Testing" status tokens expire after 7 days.
+2. **Store the client** (never in a repo or config file):
+   ```bash
+   security add-generic-password -U -T "" -s "Google Workspace MCP" -a "client-id"     -w "<id>"
+   security add-generic-password -U -T "" -s "Google Workspace MCP" -a "client-secret" -w "<secret>"
+   ```
+   (or `GOOGLE_OAUTH_CLIENT_ID` / `GOOGLE_OAUTH_CLIENT_SECRET` env vars, or 1Password
+   `op://Personal/Google Workspace MCP/client-id|client-secret`; resolution is handled by
+   `scripts/security/resolve-cred.sh`).
+3. **List your accounts** — one alias per line (lowercase letters, digits, `-`), non-secret:
+   `~/.config/llm-settings/gmail-accounts` (override with `LLM_INIT_GMAIL_ACCOUNTS`).
+4. Run `llm-init --mcp gmail .`. It renders `gmail-<alias>` into `.mcp.json`,
+   `.gemini/settings.json`, `.github/mcp.json` and `.codex/config.toml`. Re-running is
+   idempotent; deleting an alias removes its entry. Missing/empty accounts file → a
+   warning, no entries.
+5. **First use of each account:** call a Gmail tool; the server returns a Google consent
+   URL — open it and pick the matching address. Tokens land in
+   `~/.config/llm-settings/gmail/<alias>/` (mode 700).
+
+### Safety: send is off by default
+
+`GMAIL_MCP_LEVEL` sets the cumulative access level passed as `--permissions gmail:<level>`:
+
+| Level | Allows |
+|---|---|
+| `readonly` | read / search |
+| `organize` (**default**) | + labels, filters, archive |
+| `drafts` | + create drafts |
+| `send`, `full` | + send — **refused unless `GMAIL_MCP_ALLOW_SEND=1` is also set** |
+
+Email, docs and events can contain hidden instructions aimed at the agent; keep send
+disabled unless you need it.
+
+### Hermes and OpenClaw
+
+`llm-init` does not manage their config, so it **prints** the per-account command to add
+(`gmail-<alias> → <abs path>/mcp-gmail.sh <alias>`). Hermes runs in a container and OpenClaw
+under the `agentshroud-bot` account: each needs its own accounts, `uvx`, OAuth client
+credentials and consent run — this Mac's Keychain is not visible there. Their MCP key names
+are not verified in this repo; confirm them against each tool's docs.
+
+### Verify
+
+```bash
+bash tests/test-gmail-mcp.sh      # wrapper, renderer, group integration (stubbed, no Google calls)
+```
+
+## 10. Additional CLIs: OpenCode, Crush, Antigravity, Grok Build, Pi, Oh My Pi
+
+`llm-init` deploys the same skills, agents and MCP servers to six more CLIs, **per repo**
+(nothing is written to your home directory). Select them with `--tools` (default `all`):
+
+```bash
+llm-init --mcp personal .                       # all 10 tools
+llm-init --mcp fluence --tools opencode,pi .    # Claude (always) + OpenCode + Pi only
+llm-init --mcp fluence .                        # sticky: keeps the previous --tools selection
+```
+
+`--tools` accepts `claude codex gemini copilot opencode crush agy grok pi omp cursor` (or `all`).
+Claude is always deployed because its `.mcp.json` and skills feed the others. The selection is
+stored in `.llm_settings/repo-tools`; deselecting a tool never deletes its existing files.
+
+**One source of truth:** each tool's MCP file is *derived* from the final `.mcp.json` (after
+`--mcp` filtering and `gmail-<alias>` rendering), so every tool always has the same servers.
+Claude-only keys (`timeout`, `trust`) are dropped.
+
+| Tool | Skills | Agents | MCP file | Schema notes |
+|---|---|---|---|---|
+| OpenCode | `.agents/skills` (also reads `.claude/skills`) | `.opencode/agents/` | `opencode.json` → `mcp` | `type: local`, `command` is an array incl. args, `environment`, `${VAR}`→`{env:VAR}`; other keys preserved |
+| Crush | `.agents/skills` | — (none documented) | `.crush.json` → `mcp` | `type: stdio`, `command`, `args`, `env`, `${VAR}`→`$VAR`; sets `options.context_paths`; other keys preserved |
+| Antigravity (`agy`) | `.agents/skills` | `.agents/agents/` | `.agents/plugins/llm-settings/mcp_config.json` → `mcpServers` (workspace plugin; agy ignores `.agents/mcp_config.json`; tools appear as `llm-settings_<server>`) | `command` (repo-relative made plugin-relative `../../../…`: agy starts plugin servers in the plugin folder), `args`, `env` |
+| Grok Build | `.claude/skills` (native) | `.claude/agents` (native) | `.grok/config.toml` → `[mcp_servers.<n>]` | only the block between `# >>> llm-init mcp >>>` / `# <<< llm-init mcp <<<` is managed |
+| Pi | `.agents/skills` | — (no sub-agents) | `.pi/mcp.json` → `mcpServers` | `.pi/` needs a one-time project trust prompt |
+| Oh My Pi (`omp`) | `.agents/skills` (also `.claude/skills`) | `.omp/agents/` | `.omp/mcp.json` → `mcpServers` | |
+| Cursor CLI (`cursor-agent`) | `.agents/skills` (also `.claude/skills`) | `.cursor/agents/` | `.cursor/mcp.json` → `mcpServers` | `${VAR}`→`${env:VAR}` |
+
+All of them read `AGENTS.md`, which `llm-init` already syncs.
+
+**Skills:** `.agents/skills/<name>/` is copied with the same profile filter as `.claude/skills`, with
+the same folder names (see below). Directories other tools placed in `.agents/skills` are never removed.
+
+**Known caveats (verify on first use):**
+- Several tools also scan `.claude/skills` and require the folder to be named after the skill. Every
+  managed skill is therefore deployed under its effective **name** (frontmatter `name`, else the source
+  folder) in both `.claude/skills/<name>/` and `.agents/skills/<name>/` (`i-aws` → `aws`). Claude Code's
+  commands are unchanged (it already uses the frontmatter name), the two trees are identical, and
+  nothing is hidden. A name that is invalid or already taken falls back to the source folder with a
+  warning. Legacy `.agents/skills/i-*` folders are removed on the next run; unmanaged skills are kept.
+  Still possible: duplicates from user-level skills (`~/.claude/skills`, `~/.config/crush/skills`).
+- MCP `command` paths are relative to the repo root (`.llm_settings/mcp-servers/...`); start each
+  tool from the repo root.
+- OpenCode agent frontmatter is minimal (`description`, `mode: subagent`); Crush's JSON config
+  format is marked deprecated upstream in favor of `crushrc`.
+- Pi and Grok ask you to trust project-level config/hooks once.
+
 ## Summary
 
 - `.env` contains all OAuth preflight configuration

@@ -1,4 +1,5 @@
 ---
+name: i-mcpm-auth-reset
 description: "Reset authentication for GitHub, Atlassian, and AWS MCP servers with step-by-step procedures"
 ---
 
@@ -33,7 +34,7 @@ Use this skill when:
 1. Go to https://github.com/settings/tokens
 2. Click "Generate new token" → "Generate new token (classic)"
 3. Configure the token:
-   - **Note:** `Codex MCP - <your-name> - <date>`
+   - **Note:** `Claude Code MCP - <your-name> - <date>`
    - **Expiration:** 90 days (recommended) or No expiration
    - **Scopes:** Select:
      - `repo` (Full control of private repositories)
@@ -67,13 +68,13 @@ Save and exit (Ctrl+O, Enter, Ctrl+X)
 # Expected output: "✓ GitHub MCP server is working"
 ```
 
-#### Step 4: Restart Codex
+#### Step 4: Restart Claude Code
 ```bash
-# Exit and restart Codex for changes to take effect
+# Exit and restart Claude Code for changes to take effect
 exit
 
 # Start new session
-Codex
+claude code
 ```
 
 ---
@@ -86,14 +87,14 @@ Codex
 The first MCP request after token expiry will:
 1. Open your browser automatically
 2. Redirect to Atlassian login page
-3. Prompt you to authorize Codex
+3. Prompt you to authorize Claude Code
 4. Save new token automatically
 
 #### Manual Re-authentication
 If automatic flow fails:
 ```bash
 # Remove cached OAuth token
-rm ~/.Codex/mcp/atlassian-oauth-token.json 2>/dev/null
+rm ~/.claude/mcp/atlassian-oauth-token.json 2>/dev/null
 
 # Next MCP request will trigger re-authentication
 ```
@@ -176,7 +177,7 @@ docker pull ghcr.io/github/github-mcp-server:latest
 ### Atlassian: "OAuth flow failed"
 **Cause:** Browser didn't complete authorization
 **Fix:**
-1. Remove cached token: `rm ~/.Codex/mcp/atlassian-oauth-token.json`
+1. Remove cached token: `rm ~/.claude/mcp/atlassian-oauth-token.json`
 2. Ensure browser can open (not in SSH session)
 3. Try again
 
@@ -227,5 +228,5 @@ aws sso login --profile your-sso-profile
 After re-authentication:
 - [ ] Test connection: `./.llm_settings/mcp-servers/github/test-mcp.sh` (GitHub)
 - [ ] Verify credentials: `aws sts get-caller-identity` (AWS)
-- [ ] Restart Codex session
+- [ ] Restart Claude Code session
 - [ ] Confirm MCP operations work (search code, query Jira, etc.)

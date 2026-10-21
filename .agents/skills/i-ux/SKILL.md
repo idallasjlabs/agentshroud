@@ -1,4 +1,5 @@
 ---
+name: i-ux
 description: "Define information architecture, user flows, and interaction patterns validated against Nielsen heuristics. Use before implementing UI features — produces wireframes and flow diagrams that can be reviewed and approved before any code is written."
 ---
 

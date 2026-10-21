@@ -115,10 +115,10 @@ AWS_PROFILE = "default"
 AWS_REGION = "us-east-1"
 ```
 
-#### GitHub Copilot CLI (`~/.copilot/mcp-config.json`)
+#### GitHub Copilot CLI (`.github/mcp.json` — repo-level, deployed by `llm-init`)
 ```json
 {
-  "servers": {
+  "mcpServers": {
     "awslabs.aws-api-mcp-server": {
       "command": "/opt/homebrew/bin/uvx",
       "args": ["awslabs.aws-api-mcp-server@latest", "--readonly"],
@@ -130,6 +130,7 @@ AWS_REGION = "us-east-1"
   }
 }
 ```
+User-level override: `~/.copilot/mcp-config.json` (same `mcpServers` key, lower precedence).
 
 ### Available Tools
 
@@ -550,10 +551,10 @@ ATHENA_OUTPUT_LOCATION = "s3://your-bucket/athena-results/"
 ATHENA_WORKGROUP = "primary"
 ```
 
-#### GitHub Copilot CLI (`~/.copilot/mcp-config.json`)
+#### GitHub Copilot CLI (`.github/mcp.json` — repo-level, deployed by `llm-init`)
 ```json
 {
-  "servers": {
+  "mcpServers": {
     "aws-athena": {
       "command": "python3",
       "args": ["/Users/username/.mcp-servers/aws-athena/server.py"],
@@ -567,6 +568,7 @@ ATHENA_WORKGROUP = "primary"
   }
 }
 ```
+User-level override: `~/.copilot/mcp-config.json` (same `mcpServers` key, lower precedence).
 
 ### Usage Examples
 

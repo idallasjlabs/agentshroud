@@ -405,15 +405,13 @@ firmware/voice-terminal/main/wifi_credentials.h
 firmware/voice-terminal/ota-release/
 # Local LLM model exports
 local-llms/exports/
-
 # Sunday upgrade run artifacts (reports are records, logs/backups are not)
 reports/upgrade-run-*.log
 backups/
-
 # Sunday upgrade run artifacts (baseline/scan JSON, generated rollback.sh, run logs).
 # Regenerated every run by scripts/sunday-upgrade-apply.sh — records, not source.
 reports/sunday/
-
 # Session continuation notes — transient state for picking up work across a
 # reboot or session handoff, not source. Never commit.
-CONTINUE.md
+package-lock.json
+yarn.lock

@@ -2,5 +2,67 @@
   "model": {
     "name": "gemini-2.5-pro"
   },
-  "mcpServers": {}
+  "systemInstruction": "PRE-CHANGE ANALYSIS PROTOCOL (NON-NEGOTIABLE): Before modifying ANY file, output a ## CHANGE PROPOSAL block with ALL of the following sections: (1) Scope — every file and line range affected; (2) What Changes and Why — rationale for this approach, not a description of the code; (3) Scalability Assessment — behavior at current load, 10×, and 100× data volume with all hard limits named (query timeouts, row limits, memory ceilings, API rate limits); (4) Blast Radius — direct failures, indirect downstream impact, and exact rollback steps within 5 minutes; (5) Known Limits and Assumptions — every unverified assumption, marked UNKNOWN if it cannot be assessed; (6) Alternatives Considered — minimum 2 alternatives with explicit tradeoffs; (7) Verification Plan — runnable commands to confirm the change works. After producing the proposal, wait for explicit acknowledgment before proceeding with any file edits. Use /i-pca for a full interactive pre-change analysis session.",
+  "mcpServers": {
+    "github": {
+      "command": ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh",
+      "args": []
+    },
+    "github-idallasj": {
+      "command": ".llm_settings/mcp-servers/github/idallasj/github-mcp-wrapper.sh",
+      "args": [],
+      "timeout": 60000,
+      "trust": false
+    },
+    "github-agentshroud": {
+      "command": ".llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh",
+      "args": [],
+      "timeout": 60000,
+      "trust": false
+    },
+    "atlassian-agentshroud": {
+      "command": ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "atlassian-idallasj": {
+      "command": ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "xmind": {
+      "command": "/opt/homebrew/bin/npx",
+      "args": [
+        "-y",
+        "xmind-generator-mcp"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "outputPath": "${HOME}/Desktop",
+        "autoOpenFile": "true"
+      },
+      "timeout": 60000,
+      "trust": false
+    },
+    "safari": {
+      "command": "/opt/homebrew/bin/npx",
+      "args": [
+        "-y",
+        "safari-mcp"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+      },
+      "timeout": 60000,
+      "trust": false
+    },
+    "home-assistant": {
+      "command": ".llm_settings/mcp-servers/home-assistant/mcp-ha.sh",
+      "args": [],
+      "timeout": 300000,
+      "trust": false
+    }
+  }
 }

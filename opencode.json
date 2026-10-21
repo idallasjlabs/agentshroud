@@ -1,0 +1,80 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "github": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh"
+      ],
+      "enabled": true
+    },
+    "github-idallasj": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/github/idallasj/github-mcp-wrapper.sh"
+      ],
+      "enabled": true
+    },
+    "github-agentshroud": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh"
+      ],
+      "enabled": true
+    },
+    "atlassian-agentshroud": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh"
+      ],
+      "enabled": true
+    },
+    "atlassian-idallasj": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh"
+      ],
+      "enabled": true
+    },
+    "xmind": {
+      "type": "local",
+      "command": [
+        "/opt/homebrew/bin/npx",
+        "-y",
+        "xmind-generator-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "outputPath": "{env:HOME}/Desktop",
+        "autoOpenFile": "true"
+      }
+    },
+    "safari": {
+      "type": "local",
+      "command": [
+        "/opt/homebrew/bin/npx",
+        "-y",
+        "safari-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+      }
+    },
+    "home-assistant": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/home-assistant/mcp-ha.sh"
+      ],
+      "enabled": true
+    },
+    "devonthink": {
+      "type": "local",
+      "command": [
+        ".llm_settings/mcp-servers/devonthink/mcp-devonthink.sh"
+      ],
+      "enabled": true
+    }
+  }
+}

@@ -1,78 +1,63 @@
 # Codex CLI MCP Server Configuration
 # Generated from .llm_settings/.mcp.json
+# NOTE: single-table [mcp_servers.X] form — codex >= 0.154 rejects the
+# array-of-tables [[mcp_servers.X]] form ("invalid type: map, expected a string").
 
-[[mcp_servers.github]]
+[mcp_servers.github]
 command = ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh"
 args = []
 
-[[mcp_servers.github-idallasj]]
+[mcp_servers.github-idallasj]
 command = ".llm_settings/mcp-servers/github/idallasj/github-mcp-wrapper.sh"
 args = []
 timeout = 60000
 trust = false
 
-[[mcp_servers.github-fluence]]
-command = ".llm_settings/mcp-servers/github/fluence/github-mcp-wrapper.sh"
-args = []
-timeout = 60000
-trust = false
-
-[[mcp_servers.github-agentshroud]]
+[mcp_servers.github-agentshroud]
 command = ".llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh"
 args = []
 timeout = 60000
 trust = false
 
-[[mcp_servers.atlassian-fluence]]
-command = ".llm_settings/mcp-servers/atlassian/fluence/mcp-atlassian.sh"
-args = []
-timeout = 1800000
-trust = false
-
-[[mcp_servers.atlassian-agentshroud]]
+[mcp_servers.atlassian-agentshroud]
 command = ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh"
 args = []
 timeout = 1800000
 trust = false
 
-[[mcp_servers.atlassian-idallasj]]
+[mcp_servers.atlassian-idallasj]
 command = ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh"
 args = []
 timeout = 1800000
 trust = false
 
-[[mcp_servers."awslabs.aws-api-mcp-server"]]
-command = "/opt/homebrew/bin/uvx"
-args = ["awslabs.aws-api-mcp-server@latest", "--readonly"]
-timeout = 600000
-trust = false
-
-[mcp_servers."awslabs.aws-api-mcp-server".env]
-PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-AWS_PROFILE = "default"
-AWS_REGION = "us-east-1"
-FASTMCP_LOG_LEVEL = "CRITICAL"
-FASTMCP_NO_BANNER = "1"
-
-[[mcp_servers.xmind]]
-command = "/Users/ijefferson.admin/.nvm/versions/node/v20.20.2/bin/npx"
+[mcp_servers.xmind]
+command = "/opt/homebrew/bin/npx"
 args = ["-y", "xmind-generator-mcp"]
 timeout = 60000
 trust = false
 
-[[mcp_servers.safari]]
-command = "/Users/ijefferson.admin/.nvm/versions/node/v20.20.2/bin/npx"
+[mcp_servers.xmind.env]
+PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+outputPath = "${HOME}/Desktop"
+autoOpenFile = "true"
+
+[mcp_servers.safari]
+command = "/opt/homebrew/bin/npx"
 args = ["-y", "safari-mcp"]
 timeout = 60000
 trust = false
 
-[[mcp_servers.home-assistant]]
+[mcp_servers.safari.env]
+PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+[mcp_servers.home-assistant]
 command = ".llm_settings/mcp-servers/home-assistant/mcp-ha.sh"
 args = []
 timeout = 300000
 trust = false
 
-[[mcp_servers.devonthink]]
+[mcp_servers.devonthink]
 command = ".llm_settings/mcp-servers/devonthink/mcp-devonthink.sh"
 args = []
 timeout = 30000
