@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "_wrap_response()"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_6]] - `method` [EXTRACTED]
 - [[dot-_make_proxy()]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
@@ -232,4 +232,4 @@ tags:
 - [[dot-test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

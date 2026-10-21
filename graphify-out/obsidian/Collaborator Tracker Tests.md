@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
+community: "TestFabricatedSecurityNotice"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Collaborator Tracker Tests
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

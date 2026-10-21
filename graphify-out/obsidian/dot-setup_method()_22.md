@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L56"
+community: "test_soc_realtime_coverage.py"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestSessionTokens]] - `method` [EXTRACTED]
+- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
+- [[TestWSTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

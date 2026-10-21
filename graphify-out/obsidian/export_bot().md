@@ -12,12 +12,12 @@ tags:
 # export_bot()
 
 ## Connections
-- [[Path_60]] - `references` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
 - [[Why report .md source files stand in for a missing sent-mail ledger]] - `rationale_for` [EXTRACTED]
 - [[_list_report_files()]] - `calls` [EXTRACTED]
 - [[_report_date()]] - `calls` [EXTRACTED]
-- [[datetime_7]] - `references` [EXTRACTED]
+- [[datetime_8]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_35]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_3

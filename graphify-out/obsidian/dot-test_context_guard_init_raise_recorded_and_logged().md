@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "_req (4)"
 location: "L1033"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/_req_4
 ---
 
 # .test_context_guard_init_raise_recorded_and_logged()
@@ -15,4 +15,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[TestCriticalGuardInitFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/_req_4

@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Athena — Knowledge Distiller_1]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Purpose_25]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Purpose_27]] - document - docker/config/hermes/skills/i-athena/README.md
 - [[Related Skills_12]] - document - docker/config/hermes/skills/i-athena/README.md
 - [[Usage_16]] - document - docker/config/hermes/skills/i-athena/README.md
 - [[hermesskillsi-athenaREADME]] - document - docker/config/hermes/skills/i-athena/README.md

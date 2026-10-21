@@ -45,7 +45,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--readonly)]]
+- 1 edge to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
 - 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
 
 ## Top bridge nodes

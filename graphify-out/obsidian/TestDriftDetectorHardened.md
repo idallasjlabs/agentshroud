@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TrustConfig"
 location: "L919"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_3
+  - community/TrustConfig
 ---
 
 # TestDriftDetectorHardened
@@ -33,4 +33,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_3
+#graphify/code #graphify/INFERRED #community/TrustConfig

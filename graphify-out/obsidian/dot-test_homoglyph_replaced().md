@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "MiddlewareManager (3)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/MiddlewareManager_3
 ---
 
 # .test_homoglyph_replaced()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

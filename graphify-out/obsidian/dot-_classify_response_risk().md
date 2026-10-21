@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: "SecurityPipeline"
 location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/SecurityPipeline
 ---
 
 # ._classify_response_risk()
 
 ## Connections
-- [[dot-filter_response()]] - `calls` [EXTRACTED]
+- [[dot-filter_response()_1]] - `calls` [EXTRACTED]
 - [[Classify the risk level of a response based on info disclosure density.]] - `rationale_for` [EXTRACTED]
 - [[FilterMatch]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

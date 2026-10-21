@@ -20,14 +20,14 @@ members: 21
 - [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Mode Enforce vs Monitor_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Purpose_85]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Purpose_103]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Related_6]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Threat Model_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 
 ## Live Query (requires Dataview plugin)

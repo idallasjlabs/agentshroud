@@ -12,11 +12,9 @@ tags:
 # DataExfilVolumeConfig
 
 ## Connections
-- [[dot-__init__()_86]] - `references` [EXTRACTED]
+- [[dot-__init__()_98]] - `references` [EXTRACTED]
 - [[Configuration for class`DataExfilVolumeGuard`.]] - `rationale_for` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `calls` [EXTRACTED]
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `calls` [EXTRACTED]
 - [[test_adaptive_needs_min_samples()]] - `calls` [EXTRACTED]

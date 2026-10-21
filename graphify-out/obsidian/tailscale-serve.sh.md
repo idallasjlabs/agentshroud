@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "SecureBrowser Skill (2) (2)"
+community: "cmd_start"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2_2
+  - community/cmd_start
 ---
 
 # tailscale-serve.sh
@@ -19,4 +19,4 @@ tags:
 - [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - `references` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_Skill_2_2
+#graphify/code #graphify/EXTRACTED #community/cmd_start

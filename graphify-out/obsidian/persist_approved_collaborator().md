@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (3)"
+community: "telegram_proxy.py (2)"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/telegram_proxypy_2
 ---
 
 # persist_approved_collaborator()
@@ -17,10 +17,10 @@ tags:
 - [[_ensure_collab_dir()]] - `calls` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[_write_collab_store()]] - `calls` [EXTRACTED]
-- [[add_collaborator()_1]] - `calls` [EXTRACTED]
+- [[add_collaborator()]] - `calls` [EXTRACTED]
 - [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2

@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[error()]] - `defines` [EXTRACTED]
-- [[info()_1]] - `defines` [EXTRACTED]
+- [[info()]] - `defines` [EXTRACTED]
 - [[require_tool()]] - `defines` [EXTRACTED]
 - [[security-scan.sh script]] - `contains` [EXTRACTED]
 - [[success()]] - `defines` [EXTRACTED]
-- [[warn()]] - `defines` [EXTRACTED]
+- [[warn()_1]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

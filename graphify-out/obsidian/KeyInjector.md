@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
+community: "SecurityPipeline"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/SecurityPipeline
 ---
 
 # KeyInjector
 
 ## Connections
-- [[dot-__init__()_188]] - `method` [EXTRACTED]
+- [[dot-__init__()_145]] - `method` [EXTRACTED]
 - [[dot-inject_for_request()]] - `method` [EXTRACTED]
 - [[dot-test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[dot-test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestKeyScoping]] - `uses` [INFERRED]
 - [[TestKeyStorage]] - `uses` [INFERRED]
 - [[TestKeyVaultConfig]] - `uses` [INFERRED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

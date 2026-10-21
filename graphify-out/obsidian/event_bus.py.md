@@ -17,7 +17,6 @@ tags:
 - [[approval.py]] - `imports_from` [EXTRACTED]
 - [[dashboard.py]] - `imports_from` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 

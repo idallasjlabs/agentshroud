@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "TestOutboundInfoFilter (8)"
 location: "L523"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/TestOutboundInfoFilter_8
 ---
 
 # TestRunUpstreamCveCheck
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_sends_alert_when_new_cves_found()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_8

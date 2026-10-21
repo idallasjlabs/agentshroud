@@ -12,7 +12,7 @@ tags:
 # .test_redact_on_hit_false_preserves_original()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `calls` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `calls` [EXTRACTED]
 - [[TestRedaction]] - `method` [EXTRACTED]
 

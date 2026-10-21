@@ -12,6 +12,6 @@ tags:
 # Resolve the risk tier for a tool.          Explicit classification (qualified be
 
 ## Connections
-- [[dot-_tier_for()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_tier_for()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

@@ -12,7 +12,7 @@ tags:
 # PortManager
 
 ## Connections
-- [[dot-__init__()_27]] - `method` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-find_available_port()]] - `method` [EXTRACTED]
 - [[dot-generate_compose_ports()]] - `method` [EXTRACTED]
 - [[dot-is_port_available()]] - `method` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[TestResolveports]] - `uses` [INFERRED]
 - [[check_and_report()]] - `calls` [EXTRACTED]
 - [[find-ports.sh]] - `semantically_similar_to` [INFERRED]
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PortManager

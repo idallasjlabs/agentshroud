@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_soc_realtime_coverage.py"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # ._handler()
@@ -18,9 +18,9 @@ tags:
 - [[dot-test_initial_subscribe_message_sets_filter()]] - `calls` [EXTRACTED]
 - [[dot-test_initial_timeout_subscribes_to_all()]] - `calls` [EXTRACTED]
 - [[dot-test_inner_timeout_continues_loop()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[SOCWebSocketHandler]] - `references` [EXTRACTED]
 - [[TestHandlerRun]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

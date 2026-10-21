@@ -12,8 +12,8 @@ tags:
 # A2APolicyConfig
 
 ## Connections
-- [[dot-__init__()_126]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_125]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
 - [[dot-from_dict()_4]] - `method` [EXTRACTED]
 - [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
@@ -23,7 +23,7 @@ tags:
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - `rationale_for` [EXTRACTED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]

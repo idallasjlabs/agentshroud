@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "AlertDispatcher"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/AlertDispatcher
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[dot-__init__()_14]] - `method` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
+- [[dot-__init__()_156]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_sanitize_text()]] - `method` [EXTRACTED]
-- [[dot-filter()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_3]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_31]] - `calls` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[dot-filter()_1]] - `method` [EXTRACTED]
+- [[dot-sanitizer()]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -50,12 +50,12 @@ tags:
 - [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[get_sanitizer_stats()]] - `calls` [EXTRACTED]
 - [[install_log_sanitizer()]] - `calls` [EXTRACTED]
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

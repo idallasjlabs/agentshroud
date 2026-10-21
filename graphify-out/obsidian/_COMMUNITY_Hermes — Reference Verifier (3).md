@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_3]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[Persona_3]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[Quality Checklist_4]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Role_7]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Role_8]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[System Prompt_3]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[openclawskillsi-hermesSKILL]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 

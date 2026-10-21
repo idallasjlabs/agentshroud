@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SkillGuard (2)"
-location: "L68"
+community: "SecureBrowser (4)"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/SecureBrowser_4
 ---
 
 # main()
 
 ## Connections
-- [[Path_16]] - `calls` [EXTRACTED]
-- [[SkillGuard_1]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[dot-_take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[dot-click()_3]] - `calls` [EXTRACTED]
+- [[dot-close()_7]] - `calls` [EXTRACTED]
+- [[dot-extract()_3]] - `calls` [EXTRACTED]
+- [[dot-fill_field()_3]] - `calls` [EXTRACTED]
+- [[dot-navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

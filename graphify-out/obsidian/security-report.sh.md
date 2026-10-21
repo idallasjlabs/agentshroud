@@ -15,7 +15,6 @@ tags:
 - [[dockerscriptssecurity-scan.sh]] - `shares_data_with` [EXTRACTED]
 - [[log()_6]] - `defines` [EXTRACTED]
 - [[security-report.sh script]] - `contains` [EXTRACTED]
-- [[security-scan.sh (unified scan dispatcher)]] - `shares_data_with` [EXTRACTED]
 - [[security-scheduler.sh]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

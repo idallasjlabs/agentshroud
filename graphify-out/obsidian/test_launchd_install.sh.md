@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[bad()]] - `defines` [EXTRACTED]
-- [[ok()]] - `defines` [EXTRACTED]
+- [[ok()_1]] - `defines` [EXTRACTED]
 - [[run_install()]] - `defines` [EXTRACTED]
 - [[test_launchd_install.sh script]] - `contains` [EXTRACTED]
 

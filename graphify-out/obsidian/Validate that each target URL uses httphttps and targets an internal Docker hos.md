@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "AgentTarget"
+community: "ApprovalQueueConfig"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalQueueConfig
 ---
 
 # Validate that each target URL uses http/https and targets an internal Docker hos
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-validate_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

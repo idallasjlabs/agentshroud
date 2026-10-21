@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
+community: "SecurityPipeline"
 location: "L573"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2_4
+  - community/SecurityPipeline
 ---
 
 # TestKeyLeakDetection
 
 ## Connections
 - [[dot-_make_vault_pipeline()]] - `method` [EXTRACTED]
-- [[dot-_passthrough_pii()]] - `method` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `method` [EXTRACTED]
 - [[dot-test_clean_response_passes_unchanged()_1]] - `method` [EXTRACTED]
 - [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `method` [EXTRACTED]
 - [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2_4
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
 community: "upgrade"
-location: "L51"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,11 @@ tags:
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()_1]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

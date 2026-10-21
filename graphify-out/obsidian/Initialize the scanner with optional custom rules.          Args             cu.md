@@ -12,6 +12,6 @@ tags:
 # Initialize the scanner with optional custom rules.          Args:             cu
 
 ## Connections
-- [[dot-__init__()_113]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_66]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

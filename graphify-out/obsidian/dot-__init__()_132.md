@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "DockerEngine"
-location: "L24"
+community: "AuditEvent"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "SecurityPipeline"
 location: "L651"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/SecurityPipeline
 ---
 
 # TestPromptGuardToolResultTrustGate
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `method` [EXTRACTED]
-- [[dot-_passthrough_pii()_1]] - `method` [EXTRACTED]
+- [[dot-_passthrough_pii()]] - `method` [EXTRACTED]
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_standard_trust_tool_result_injection_is_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_untrusted_tool_result_injection_is_blocked()]] - `method` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[TrustManager_3]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

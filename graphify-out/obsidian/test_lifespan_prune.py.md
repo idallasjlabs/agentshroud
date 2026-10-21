@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
+community: "test_collaborator_tracker.py (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/test_collaborator_trackerpy_4
 ---
 
 # test_lifespan_prune.py
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `imports` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `imports` [EXTRACTED]
 - [[_is_fixture_uid()]] - `imports` [EXTRACTED]
 - [[_make_md()]] - `contains` [EXTRACTED]
 - [[_prune_fixture_markdown()]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_prune_keeps_real_uid_markdown()]] - `contains` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

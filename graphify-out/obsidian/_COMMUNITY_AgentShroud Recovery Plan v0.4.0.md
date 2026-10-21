@@ -18,7 +18,7 @@ members: 16
 - [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 - [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 - [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[EXECUTIVE SUMMARY_12]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[EXECUTIVE SUMMARY_11]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 - [[NEXT STEPS_8]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 - [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 - [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L2892"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # Blocked internal-network probes should return deterministic Protect egress…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

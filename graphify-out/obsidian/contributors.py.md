@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # contributors.py
 
 ## Connections
 - [[ContributorManager]] - `contains` [EXTRACTED]
-- [[ContributorRecord]] - `imports` [EXTRACTED]
+- [[ContributorRecord_1]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
-- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[UserRole]] - `imports` [EXTRACTED]
 - [[_role_enum()]] - `contains` [EXTRACTED]
 - [[load_paused_collaborator_ids()]] - `imports` [EXTRACTED]
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

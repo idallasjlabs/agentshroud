@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager (5)"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager_5
 ---
 
 # .test_basic_result()
@@ -16,4 +16,4 @@ tags:
 - [[Test basic result creation.]] - `rationale_for` [EXTRACTED]
 - [[TestPathRewriteResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

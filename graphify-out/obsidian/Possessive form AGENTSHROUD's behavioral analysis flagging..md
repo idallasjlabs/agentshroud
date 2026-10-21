@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter"
+community: "TestOutboundInfoFilter (2)"
 location: "L555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestOutboundInfoFilter_2
 ---
 
 # Possessive form: AGENTSHROUD's behavioral analysis flagging.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_possessive_flagging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

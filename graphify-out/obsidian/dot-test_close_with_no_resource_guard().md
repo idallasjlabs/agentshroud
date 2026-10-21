@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "AsyncMock"
 location: "L1001"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/AsyncMock
 ---
 
 # .test_close_with_no_resource_guard()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestClose]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

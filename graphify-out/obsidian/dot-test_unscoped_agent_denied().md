@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AlertDispatcher (2) (4)"
+community: "SecurityPipeline"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_4
+  - community/SecurityPipeline
 ---
 
 # .test_unscoped_agent_denied()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyScoping]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_4
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

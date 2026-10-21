@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_format_report_string()]] - `method` [EXTRACTED]
-- [[dot-test_generate_report()_1]] - `method` [EXTRACTED]
+- [[dot-test_generate_report()]] - `method` [EXTRACTED]
 - [[dot-test_history_persistence()]] - `method` [EXTRACTED]
 - [[dot-test_trend_empty_db()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]

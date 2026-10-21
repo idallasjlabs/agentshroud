@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PYTHONPATH]] - `defines` [EXTRACTED]
 - [[SKILLGUARD_TEST_DEST_ROOT]] - `defines` [EXTRACTED]
-- [[check()_11]] - `defines` [EXTRACTED]
+- [[check()_10]] - `defines` [EXTRACTED]
 - [[sync-llm-settings.sh]] - `calls` [EXTRACTED]
 - [[test-skills-sync.sh script]] - `contains` [EXTRACTED]
 - [[validate-skills-manifest.sh]] - `calls` [EXTRACTED]

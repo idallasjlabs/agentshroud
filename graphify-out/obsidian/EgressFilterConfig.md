@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "EgressFilterConfig (2)"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/EgressFilterConfig_2
 ---
 
 # EgressFilterConfig
@@ -17,13 +17,13 @@ tags:
 - [[dot-get_effective_allowlist()]] - `method` [EXTRACTED]
 - [[dot-is_denylisted()]] - `method` [EXTRACTED]
 - [[dot-matches_allowlist()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
 - [[dot-test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]
 - [[dot-test_config_roundtrip()]] - `calls` [EXTRACTED]
 - [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
 - [[dot-test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_3]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_4]] - `calls` [EXTRACTED]
 - [[dot-test_deny_all_false()]] - `calls` [EXTRACTED]
 - [[dot-test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[dot-test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
@@ -51,7 +51,7 @@ tags:
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig_1]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
-- [[FakeAuditStore_1]] - `uses` [INFERRED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[PERMANENT_EGRESS_DOMAINS]] - `shares_data_with` [EXTRACTED]
 - [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - `shares_data_with` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
@@ -100,7 +100,7 @@ tags:
 - [[egress_config.py]] - `contains` [EXTRACTED]
 - [[egress_filter()]] - `calls` [EXTRACTED]
 - [[egress_filter()_1]] - `calls` [EXTRACTED]
-- [[egress_filter.py]] - `imports` [EXTRACTED]
+- [[egress_filter.py_1]] - `imports` [EXTRACTED]
 - [[get_egress_config()]] - `shares_data_with` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
 - [[set_egress_config()]] - `references` [EXTRACTED]
@@ -116,4 +116,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "StdioConnection"
-location: "L98"
+community: "First Time Setup (2)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/First_Time_Setup_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_7]] - `references` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/First_Time_Setup_2

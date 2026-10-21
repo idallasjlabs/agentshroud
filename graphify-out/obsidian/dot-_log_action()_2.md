@@ -17,7 +17,7 @@ tags:
 - [[dot-fill_field()_2]] - `calls` [EXTRACTED]
 - [[dot-navigate()_2]] - `calls` [EXTRACTED]
 - [[Log browser action to audit trail_2]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_4]] - `references` [EXTRACTED]
+- [[RiskLevel_3]] - `references` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

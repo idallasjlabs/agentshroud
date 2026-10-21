@@ -1,11 +1,11 @@
 ---
 type: community
-members: 40
+members: 41
 ---
 
 # test_scorecard_integrity.py
 
-**Members:** 40 nodes
+**Members:** 41 nodes
 
 ## Members
 - [[dot-test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
@@ -32,6 +32,7 @@ members: 40
 - [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
 - [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
+- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
 - [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
@@ -57,12 +58,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 7 edges to [[_COMMUNITY_scanner_integration.py]]
+- 11 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 2 edges to [[_COMMUNITY_AgentTarget (6)]]
+- 1 edge to [[_COMMUNITY_get_trivy_summary]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration.py (2)]]
 
 ## Top bridge nodes
-- [[_score_vulnerability_management()]] - degree 17, connects to 2 communities
-- [[_score_malware_defense()]] - degree 15, connects to 2 communities
-- [[_is_fresh()]] - degree 8, connects to 2 communities
+- [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
+- [[_score_malware_defense()]] - degree 15, connects to 4 communities
+- [[_is_fresh()]] - degree 8, connects to 4 communities
+- [[_trivy_critical()]] - degree 4, connects to 2 communities
 - [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community
-- [[TestScoreMalwareDefense_1]] - degree 5, connects to 1 community

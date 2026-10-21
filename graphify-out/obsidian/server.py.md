@@ -12,7 +12,7 @@ tags:
 # server.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[FastAPI_4]] - `imports_from` [EXTRACTED]
 - [[_State]] - `contains` [EXTRACTED]
 - [[__main__.py]] - `imports_from` [EXTRACTED]

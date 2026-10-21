@@ -1,37 +1,29 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L37"
+community: "MCPInspector"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - graphify/INFERRED
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_103]] - `references` [EXTRACTED]
-- [[dot-_check_request_rate()]] - `references` [EXTRACTED]
-- [[dot-_check_system_resources()]] - `references` [EXTRACTED]
-- [[dot-_check_token_usage()]] - `references` [EXTRACTED]
-- [[dot-_check_tool_call_rate()]] - `references` [EXTRACTED]
-- [[dot-_get_system_stats()]] - `references` [EXTRACTED]
-- [[dot-_log_heartbeat_result()]] - `references` [EXTRACTED]
-- [[dot-_log_verification_result()]] - `references` [EXTRACTED]
-- [[dot-_send_anomaly_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_heartbeat_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_verification_alert()]] - `references` [EXTRACTED]
-- [[dot-_test_docker_available()]] - `references` [EXTRACTED]
-- [[dot-_test_killswitch_mode()]] - `references` [EXTRACTED]
-- [[dot-_test_script_exists()]] - `references` [EXTRACTED]
-- [[dot-_test_script_permissions()]] - `references` [EXTRACTED]
-- [[dot-_test_script_syntax()]] - `references` [EXTRACTED]
-- [[dot-anomaly_detection()]] - `references` [EXTRACTED]
-- [[dot-get_status()_1]] - `references` [EXTRACTED]
-- [[dot-heartbeat_check()]] - `references` [EXTRACTED]
-- [[dot-verify_killswitch()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_10]] - `references` [EXTRACTED]
+- [[dot-send_request()_2]] - `references` [EXTRACTED]
+- [[dot-send_request()]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/MCPInspector

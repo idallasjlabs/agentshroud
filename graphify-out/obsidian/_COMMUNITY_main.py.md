@@ -1,46 +1,31 @@
 ---
 type: community
-members: 23
+members: 8
 ---
 
-# main.py
+# main.py.md
 
-**Members:** 23 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Approval Router — `gatewayingest_apiroutesapproval.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Core  Root — main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Dashboard API Router — `gatewaywebdashboard_endpoints.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Dashboard Router — `gatewayingest_apiroutesdashboard.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Environment Variables Used]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Forward Router — `gatewayingest_apiroutesforward.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Health Router — `gatewayingest_apirouteshealth.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Key Dependencies — Modules Wired at Init]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Known Issues  Notes_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Lifespan  Startup]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Management API Router — `gatewaywebapi.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Middleware (applied to all requests, outermost first)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Overview_14]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[POST forward — 5-Step Security Pipeline]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Related_3]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Security Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Static Mounts]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[WebSocket Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Components]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/mainpy
+TABLE source_file, type FROM #community/mainpymd
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_main.py_1]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 
 ## Top bridge nodes
-- [[main.py]] - degree 13, connects to 1 community
+- [[AgentShroud — System Overview]] - degree 8, connects to 1 community

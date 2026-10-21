@@ -1,14 +1,14 @@
 ---
 type: community
-members: 44
+members: 45
 ---
 
 # ConsentFramework
 
-**Members:** 44 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_65]] - code - gateway/security/consent_framework.py
+- [[dot-__init__()_67]] - code - gateway/security/consent_framework.py
 - [[dot-add_to_blacklist()]] - code - gateway/security/consent_framework.py
 - [[dot-add_to_whitelist()]] - code - gateway/security/consent_framework.py
 - [[dot-get_blacklist()]] - code - gateway/security/consent_framework.py
@@ -38,6 +38,7 @@ members: 44
 - [[dot-validate_config()]] - code - gateway/security/consent_framework.py
 - [[dot-validate_configs()]] - code - gateway/security/consent_framework.py
 - [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - paper - gateway/security/consent_framework.py
 - [[ConfigValidationError]] - code - gateway/security/consent_framework.py
 - [[ConsentFramework]] - code - gateway/security/consent_framework.py
 - [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
@@ -61,17 +62,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 11 edges to [[_COMMUNITY_AlertDispatcher]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_ConsentFramework (2)]]
-- 2 edges to [[_COMMUNITY_SessionManager (2)]]
-- 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2) (3)]]
+- 2 edges to [[_COMMUNITY_SessionManager]]
+- 1 edge to [[_COMMUNITY_ResourceGuard (2)]]
 
 ## Top bridge nodes
-- [[ConsentFramework]] - degree 31, connects to 4 communities
-- [[consent_framework.py]] - degree 10, connects to 3 communities
+- [[ConsentFramework]] - degree 31, connects to 3 communities
+- [[consent_framework.py]] - degree 10, connects to 2 communities
 - [[TestServerConfigValidation]] - degree 13, connects to 1 community
 - [[TestEnvironmentValidation]] - degree 10, connects to 1 community
 - [[TestWhitelistBlacklist]] - degree 9, connects to 1 community

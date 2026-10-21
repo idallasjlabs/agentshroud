@@ -12,7 +12,7 @@ members: 7
 - [[GitHub Actions Best Practices]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 - [[Quality Gates  (execution order)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 - [[Review Flags  (block the merge)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Role_13]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Role_14]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 - [[Skill CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 - [[openclawskillsi-cicdSKILL]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 

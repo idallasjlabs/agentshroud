@@ -19,9 +19,9 @@ tags:
 - [[Function Details_18]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_20]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_6]] - `contains` [EXTRACTED]
-- [[Purpose_127]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
 - [[Related_24]] - `contains` [EXTRACTED]
-- [[Responsibilities_21]] - `contains` [EXTRACTED]
+- [[Responsibilities_22]] - `contains` [EXTRACTED]
 - [[Threat Model_14]] - `contains` [EXTRACTED]
 - [[dns_filter.py]] - `contains` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "AsyncMock (2)"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AsyncMock_2
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[SlackAPIProxy]] - `uses` [INFERRED]
-- [[_make_proxy()_3]] - `references` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
+- [[_make_proxy()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AsyncMock_2

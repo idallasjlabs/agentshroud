@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-close()_17]] - `calls` [EXTRACTED]
-- [[dot-drain()_3]] - `calls` [EXTRACTED]
+- [[dot-drain()_1]] - `calls` [EXTRACTED]
 - [[dot-readline()_1]] - `calls` [EXTRACTED]
-- [[dot-write()_3]] - `calls` [EXTRACTED]
+- [[dot-write()_1]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[start() binds a real loopback server; a client gets a parsed response;     stop(]] - `rationale_for` [EXTRACTED]

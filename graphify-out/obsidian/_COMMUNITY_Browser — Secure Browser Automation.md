@@ -28,15 +28,15 @@ members: 30
 - [[Extract Data_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Fetch JavaScript-Heavy Page (Node.js)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Fill Form_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Limitations_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Limitations_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Navigate to URL_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Risk Levels_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Security Architecture_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Guarantees_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Take Screenshot_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Troubleshooting_12]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_64]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Troubleshooting_14]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_62]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

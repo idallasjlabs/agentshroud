@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "SkillGuard (2)"
-location: "L125"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/KillSwitchMonitor
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-to_json()]] - `calls` [EXTRACTED]
-- [[SkillsManifest]] - `method` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
+- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

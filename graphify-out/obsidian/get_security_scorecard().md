@@ -15,7 +15,7 @@ tags:
 - [[dot-test_bot_id_calls_compute_bot_scorecard()]] - `calls` [EXTRACTED]
 - [[dot-test_no_bot_id_calls_global_scorecard()]] - `calls` [EXTRACTED]
 - [[Container Security Scorecard — 12-domain maturity assessment.      Standards bas]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[TestScorecardBotId]] - `calls` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]

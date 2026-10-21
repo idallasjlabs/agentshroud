@@ -13,11 +13,10 @@ tags:
 
 ## Connections
 - [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[generate_summary()_2]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[generate_summary()_3]] - `contains` [EXTRACTED]
 - [[parse_trivy_output()]] - `contains` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `contains` [EXTRACTED]
-- [[save_report()]] - `contains` [EXTRACTED]
+- [[save_report()_1]] - `contains` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 

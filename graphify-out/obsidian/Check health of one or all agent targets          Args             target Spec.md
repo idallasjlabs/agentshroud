@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "AgentTarget (7)"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget_7
 ---
 
 # Check health of one or all agent targets          Args:             target: Spec
 
 ## Connections
-- [[dot-health_check()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_7

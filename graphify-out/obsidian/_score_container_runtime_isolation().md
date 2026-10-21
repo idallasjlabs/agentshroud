@@ -12,7 +12,7 @@ tags:
 # _score_container_runtime_isolation()
 
 ## Connections
-- [[Path_32]] - `calls` [EXTRACTED]
+- [[Path_61]] - `calls` [EXTRACTED]
 - [[Score domain 21 Container Runtime Isolation (0-5). CIS Section 5.      0=privil]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

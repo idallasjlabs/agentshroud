@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # callable
 
 ## Connections
-- [[dot-add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

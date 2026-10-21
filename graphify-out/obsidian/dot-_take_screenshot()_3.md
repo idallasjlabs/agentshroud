@@ -15,6 +15,6 @@ tags:
 - [[dot-navigate()_3]] - `calls` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[Take screenshot and save to audit directory_3]] - `rationale_for` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

@@ -1,17 +1,17 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide (3)"
+community: "GitHub Copilot CLI Setup Guide (4)"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_3
+  - community/GitHub_Copilot_CLI_Setup_Guide_4
 ---
 
 # Authentication Issues
 
 ## Connections
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_3
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "MiddlewareManager (4)"
+community: "MiddlewareManager (3)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/MiddlewareManager_3
 ---
 
 # _make_full_pipeline()
@@ -25,7 +25,7 @@ tags:
 - [[TrustManager_3]] - `calls` [EXTRACTED]
 - [[_make_approval_queue()]] - `calls` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
-- [[pipeline()]] - `calls` [EXTRACTED]
+- [[pipeline()_2]] - `calls` [EXTRACTED]
 - [[test_context_poisoning_blocked()]] - `calls` [EXTRACTED]
 - [[test_encoding_detector_base64_outbound()]] - `calls` [EXTRACTED]
 - [[test_encoding_detector_catches_base64_inbound()]] - `calls` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_session_isolation()]] - `calls` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

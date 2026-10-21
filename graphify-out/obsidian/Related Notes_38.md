@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L221"
+community: "troubleshooting.md"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/troubleshootingmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Data Flow]] - `contains` [EXTRACTED]
+- [[troubleshooting_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L449"
+community: "ServiceManager"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

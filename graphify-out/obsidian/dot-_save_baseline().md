@@ -12,7 +12,7 @@ tags:
 # ._save_baseline()
 
 ## Connections
-- [[dot-check()_3]] - `calls` [EXTRACTED]
+- [[dot-check()_4]] - `calls` [EXTRACTED]
 - [[dot-reset_baseline()]] - `calls` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Persist the current hashes as the new baseline.]] - `rationale_for` [EXTRACTED]

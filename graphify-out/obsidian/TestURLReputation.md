@@ -22,7 +22,7 @@ tags:
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[CredentialEntryBlocked]] - `uses` [INFERRED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[ThreatLevel_1]] - `uses` [INFERRED]
+- [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

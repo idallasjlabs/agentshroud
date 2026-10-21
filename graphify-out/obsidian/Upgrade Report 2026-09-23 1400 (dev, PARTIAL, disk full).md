@@ -19,7 +19,7 @@ tags:
 - [[SUNDAY_BUILD_VIA_VM=1 detached in-VM build]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-23 0300 (dev, ABORTED)]] - `cites` [EXTRACTED]
 - [[_build_one_service()]] - `references` [EXTRACTED]
-- [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - `references` [EXTRACTED]
+- [[docker-socket-proxy service (tecnativa, digest-pinned)]] - `references` [EXTRACTED]
 - [[dockerd self-DoS on unpruned dangling image backlog (782-1240 images)]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/colima-health-checksh

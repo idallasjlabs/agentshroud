@@ -1,12 +1,12 @@
 ---
 source_file: "docker/setup-secrets.sh"
 type: "code"
-community: "setup-secrets.sh (2)"
+community: "setup-secrets.sh"
 location: "L520-L574"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/setup-secretssh
 ---
 
 # cmd_interactive
@@ -19,4 +19,4 @@ tags:
 - [[setup-secrets.sh script]] - `calls` [EXTRACTED]
 - [[write_secret_file]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

@@ -12,7 +12,7 @@ members: 12
 - [[dot-test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_log_event()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_stats()_2]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_stats()_1]] - code - gateway/tests/test_audit_export.py
 - [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py

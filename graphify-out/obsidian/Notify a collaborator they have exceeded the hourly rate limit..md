@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy (4)"
+community: "TelegramAPIProxy"
 location: "L6984"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/TelegramAPIProxy
 ---
 
 # Notify a collaborator they have exceeded the hourly rate limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_send_rate_limit_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

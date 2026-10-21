@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "_FakeRBAC (2)"
-location: "L141"
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+type: "document"
+community: "Skill: Pre-Change Analysis (PCA) (2)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC_2
+  - community/Skill_Pre-Change_Analysis_PCA_2
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_55]] - `references` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA_2

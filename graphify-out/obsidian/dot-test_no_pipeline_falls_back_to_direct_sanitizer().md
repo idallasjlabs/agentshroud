@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction (2)"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction_2
 ---
 
 # .test_no_pipeline_falls_back_to_direct_sanitizer()
@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestInboundFallbackToDirectSanitizer]] - `method` [EXTRACTED]
 - [[_getUpdates_response()]] - `calls` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
-- [[_make_update()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

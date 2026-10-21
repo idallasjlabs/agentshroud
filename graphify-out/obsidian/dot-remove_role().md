@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (2)"
+community: "GroupRoleResolver"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_2
+  - community/GroupRoleResolver
 ---
 
 # .remove_role()
@@ -15,4 +15,4 @@ tags:
 - [[GroupRoleResolver]] - `method` [EXTRACTED]
 - [[Remove a user's role entry from a group (falls back to READ_ONLY).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

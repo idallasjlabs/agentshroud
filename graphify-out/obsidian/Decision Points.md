@@ -12,6 +12,6 @@ tags:
 # Decision Points
 
 ## Connections
-- [[Next Steps_7]] - `contains` [EXTRACTED]
+- [[Next Steps_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

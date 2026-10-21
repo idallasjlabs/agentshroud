@@ -1,31 +1,41 @@
 ---
 type: community
-members: 18
+members: 28
 ---
 
 # UserSessionManager (3)
 
-**Members:** 18 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[dot-test_conversation_histories_are_bot_scoped()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_default_bot_id_is_openclaw()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_different_bots_get_different_memory_files()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_different_bots_get_different_workspace_dirs()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_invalid_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_lazy_migration_copies_legacy_memory()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_legacy_session_promoted_on_load()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_long_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_same_bot_same_user_returns_same_session()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_session_bot_id_stored_correctly()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_session_context_includes_bot_id()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_session_registry_uses_compound_key()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_workspace_paths_under_bot_namespace()]] - code - gateway/tests/test_session_manager.py
-- [[Existing plain user_id keys (no separator) are promoted to useropenclaw.]] - rationale - gateway/tests/test_session_manager.py
-- [[If legacy users{uid}MEMORY.md exists, first openclaw session copies it.]] - rationale - gateway/tests/test_session_manager.py
-- [[TestMultiBotIsolation]] - code - gateway/tests/test_session_manager.py
-- [[Verify that different bots get independent workspaces per user.]] - rationale - gateway/tests/test_session_manager.py
-- [[openclaw and hermes sessions for the same user must not share a directory.]] - rationale - gateway/tests/test_session_manager.py
+- [[dot-test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[manager()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[session_manager()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,10 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 2 edges to [[_COMMUNITY_RBACConfig (4)]]
+- 8 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_UserSessionManager]]
 
 ## Top bridge nodes
-- [[TestMultiBotIsolation]] - degree 17, connects to 2 communities
-- [[dot-test_lazy_migration_copies_legacy_memory()]] - degree 3, connects to 1 community
-- [[dot-test_legacy_session_promoted_on_load()]] - degree 3, connects to 1 community
+- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 2 communities
+- [[TestIsToolCallRequest]] - degree 12, connects to 2 communities
+- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 2 communities
+- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 2 communities
+- [[session_manager()_1]] - degree 2, connects to 1 community

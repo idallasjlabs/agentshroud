@@ -12,7 +12,7 @@ tags:
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[Purpose_52]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
 - [[Related Skills_39]] - `contains` [EXTRACTED]
 - [[Usage_43]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]

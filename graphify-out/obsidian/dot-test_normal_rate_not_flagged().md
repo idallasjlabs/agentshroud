@@ -12,6 +12,6 @@ tags:
 # .test_normal_rate_not_flagged()
 
 ## Connections
-- [[TestRateLimiting_4]] - `method` [EXTRACTED]
+- [[TestRateLimiting_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -16,7 +16,7 @@ tags:
 - [[Check if a Trivy report was already sent today (disk-based, secondary to _sent_d]] - `rationale_for` [EXTRACTED]
 - [[cve_report_scheduler()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[datetime_4]] - `references` [EXTRACTED]
+- [[datetime_6]] - `references` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

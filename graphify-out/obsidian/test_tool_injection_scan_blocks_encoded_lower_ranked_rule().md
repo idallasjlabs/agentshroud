@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "SecurityPipeline"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/SecurityPipeline
 ---
 
 # test_tool_injection_scan_blocks_encoded_lower_ranked_rule()
@@ -16,4 +16,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

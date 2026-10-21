@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_57]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Purpose_59]] - document - docker/config/openclaw/skills/i-qa/README.md
 - [[Quality Assurance (QA)]] - document - docker/config/openclaw/skills/i-qa/README.md
 - [[Related Skills_44]] - document - docker/config/openclaw/skills/i-qa/README.md
 - [[Usage_48]] - document - docker/config/openclaw/skills/i-qa/README.md

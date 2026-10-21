@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig (2) (2)"
+community: "GroupRoleResolver"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2_2
+  - community/GroupRoleResolver
 ---
 
 # .test_rank_owner_highest()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRoleProperties]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
-location: "L647"
+community: "EgressFilterConfig (3)"
+location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/EgressFilterConfig_3
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AgentRegistry]] - `calls` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[TestAgentIsolation]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3

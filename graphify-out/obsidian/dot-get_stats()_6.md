@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L1002"
+community: "ApprovalQueueConfig (2)"
+location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/ApprovalQueueConfig_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

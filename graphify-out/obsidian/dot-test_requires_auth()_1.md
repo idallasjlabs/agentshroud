@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "TestEmailSend"
-location: "L121"
+community: "_is_op_reference_allowed"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/_is_op_reference_allowed
 ---
 
 # .test_requires_auth()
 
 ## Connections
 - [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
-- [[TestEmailSend]] - `method` [EXTRACTED]
+- [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

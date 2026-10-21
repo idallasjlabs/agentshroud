@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "TestSSRFDetection (6)"
+community: "TestSSRFDetection (4)"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_6
+  - community/TestSSRFDetection_4
 ---
 
 # Insert or replace an approval item.
 
 ## Connections
-- [[dot-save()]] - `rationale_for` [EXTRACTED]
+- [[dot-save()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_6
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_4

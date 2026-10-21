@@ -12,7 +12,7 @@ tags:
 # tailscale-check.sh script
 
 ## Connections
-- [[fail()_5]] - `calls` [EXTRACTED]
+- [[fail()_6]] - `calls` [EXTRACTED]
 - [[ok()_2]] - `calls` [EXTRACTED]
 - [[tailscale-check.sh]] - `contains` [EXTRACTED]
 - [[warn()_6]] - `calls` [EXTRACTED]

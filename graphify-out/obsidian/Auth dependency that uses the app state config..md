@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "create_auth_dependency (2)"
-location: "L127"
+community: "create_auth_dependency"
+location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/create_auth_dependency
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

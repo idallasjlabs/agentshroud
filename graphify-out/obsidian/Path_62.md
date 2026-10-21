@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "test_multi_host_test.py"
-location: "L324"
+community: "export-bot-conversations.py (3)"
+location: "L96"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_multi_host_testpy
+  - graphify/EXTRACTED
+  - community/export-bot-conversationspy_3
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_35]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_3

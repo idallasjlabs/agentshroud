@@ -1,11 +1,11 @@
 ---
 type: community
-members: 16
+members: 21
 ---
 
 # test_daily_cve_report.py (2)
 
-**Members:** 16 nodes
+**Members:** 21 nodes
 
 ## Members
 - [[dot-test_affected_packages_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
@@ -15,13 +15,18 @@ members: 16
 - [[dot-test_contains_severity_counts()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_error_report_shows_error_message()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_fixed_version_shown()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_summary_without_token()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_sends_telegram_on_success()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_status_clean_when_no_critical_high()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_status_critical_when_critical_present()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_total_vulnerability_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_trivy_error_still_sends_error_report()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_zero_count_severity_omitted()]] - code - gateway/tests/test_daily_cve_report.py
 - [[Build a minimal parsed Trivy report.]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - rationale - gateway/security/daily_cve_report.py
 - [[TestFormatCveReport]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestRunAndSendCveReport]] - code - gateway/tests/test_daily_cve_report.py
+- [[_make_error_report()]] - code - gateway/tests/test_daily_cve_report.py
 - [[_make_report()]] - code - gateway/tests/test_daily_cve_report.py
 - [[format_cve_report()]] - code - gateway/security/daily_cve_report.py
 
@@ -33,11 +38,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output (2)]]
+- 12 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
 
 ## Top bridge nodes
 - [[format_cve_report()]] - degree 17, connects to 2 communities
 - [[_make_report()]] - degree 15, connects to 1 community
 - [[TestFormatCveReport]] - degree 12, connects to 1 community
-- [[dot-test_error_report_shows_error_message()]] - degree 3, connects to 1 community
+- [[TestRunAndSendCveReport]] - degree 4, connects to 1 community
+- [[_make_error_report()]] - degree 3, connects to 1 community

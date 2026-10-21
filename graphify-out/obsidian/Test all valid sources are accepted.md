@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "test_security.py"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/test_securitypy
 ---
 
 # Test all valid sources are accepted
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_valid_sources()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/test_securitypy

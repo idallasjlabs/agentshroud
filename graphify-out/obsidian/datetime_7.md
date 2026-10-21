@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "export-bot-conversations.py (3)"
-location: "L41"
+community: "export-bot-conversations.py (2)"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_3
+  - community/export-bot-conversationspy_2
 ---
 
 # datetime
 
 ## Connections
 - [[_parse_since()_1]] - `references` [EXTRACTED]
-- [[_report_date()]] - `references` [EXTRACTED]
-- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
+- [[export-bot-conversations.py]] - `imports_from` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_3
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2

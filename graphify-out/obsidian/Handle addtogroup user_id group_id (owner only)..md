@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TelegramAPIProxy"
 location: "L7906"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # Handle /addtogroup <user_id> <group_id> (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_handle_addtogroup_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

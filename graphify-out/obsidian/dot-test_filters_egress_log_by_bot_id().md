@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityEvent_1]] - `calls` [EXTRACTED]
+- [[SecurityEvent]] - `calls` [EXTRACTED]
 - [[TestEgressLogBotFilter]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]

@@ -8,7 +8,7 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration_17]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Configuration_18]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Dependencies_18]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Function Details_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
@@ -19,9 +19,9 @@ members: 16
 - [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Purpose_128]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Purpose_129]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Related_25]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Responsibilities_23]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Threat Model_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[prompt_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 

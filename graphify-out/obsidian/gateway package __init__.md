@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/__init__.py"
 type: "code"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/ingest_api/mainpy
 ---
 
 # gateway package __init__
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ingest_apimain.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

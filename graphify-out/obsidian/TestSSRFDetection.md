@@ -31,7 +31,7 @@ tags:
 - [[dot-test_ipv6_ula_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_localhost_blocked()]] - `method` [EXTRACTED]
 - [[SSRF blocking — the one hard block.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 

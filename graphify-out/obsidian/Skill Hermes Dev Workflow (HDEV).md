@@ -19,7 +19,7 @@ tags:
 - [[Mode A — Single task_2]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you]] - `contains` [EXTRACTED]
-- [[Role_1]] - `contains` [EXTRACTED]
+- [[Role_2]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

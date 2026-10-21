@@ -12,6 +12,6 @@ tags:
 # Accessibility
 
 ## Connections
-- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

@@ -12,16 +12,16 @@ tags:
 # drift_detector.py
 
 ## Connections
-- [[Configuration_12]] - `contains` [EXTRACTED]
+- [[Configuration_13]] - `contains` [EXTRACTED]
 - [[Database Schema_1]] - `contains` [EXTRACTED]
 - [[Drift Categories and Severity]] - `contains` [EXTRACTED]
 - [[Environment Variables_6]] - `contains` [EXTRACTED]
 - [[Function Details_5]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_5]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
-- [[Purpose_108]] - `contains` [EXTRACTED]
+- [[Purpose_109]] - `contains` [EXTRACTED]
 - [[Related_9]] - `contains` [EXTRACTED]
-- [[Responsibilities_6]] - `contains` [EXTRACTED]
+- [[Responsibilities_7]] - `contains` [EXTRACTED]
 - [[Threat Model_5]] - `contains` [EXTRACTED]
 - [[drift_detector.py_1]] - `contains` [EXTRACTED]
 

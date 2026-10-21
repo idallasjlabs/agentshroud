@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (2) (3)"
+community: "AlertDispatcher"
 location: "L522"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_3
+  - community/AlertDispatcher
 ---
 
 # .test_absolute_path_to_sensitive_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

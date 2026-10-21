@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py (2)"
+community: "LLMProxy"
 location: "L1144"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxy_local_paritypy_2
+  - community/LLMProxy
 ---
 
 # test_fieldflare_shim_keeps_two_branch_nullable_union_unchanged()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxy_local_paritypy_2
+#graphify/code #graphify/INFERRED #community/LLMProxy

@@ -12,6 +12,6 @@ tags:
 # Test that normal content passes through without redaction.
 
 ## Connections
-- [[dot-test_normal_content_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_normal_content_passes()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # ServiceStatus
@@ -17,4 +17,4 @@ tags:
 - [[ServiceStatus_1]] - `uses` [INFERRED]
 - [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

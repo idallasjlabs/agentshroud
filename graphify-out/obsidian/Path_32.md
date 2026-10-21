@@ -1,50 +1,40 @@
 ---
-source_file: "gateway/security/scanner_integration.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "scanner_integration.py"
-location: "L321"
+community: "Path (2)"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/Path_2
 ---
 
 # Path
 
 ## Connections
-- [[_evaluate_mandatory_gates()]] - `calls` [EXTRACTED]
-- [[_is_containerized()]] - `calls` [EXTRACTED]
-- [[_is_falco_running()]] - `calls` [EXTRACTED]
-- [[_is_fluent_bit_running()]] - `calls` [EXTRACTED]
-- [[_is_fresh()]] - `references` [EXTRACTED]
-- [[_is_wazuh_agent_running()]] - `calls` [EXTRACTED]
-- [[_load_latest_json()]] - `references` [EXTRACTED]
-- [[_read_compose_text()]] - `calls` [EXTRACTED]
-- [[_read_docker_daemon_config()]] - `calls` [EXTRACTED]
-- [[_score_access_control_authorization()]] - `calls` [EXTRACTED]
-- [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]
-- [[_score_ai_observability()]] - `calls` [EXTRACTED]
-- [[_score_container_runtime_isolation()]] - `calls` [EXTRACTED]
-- [[_score_data_confidentiality_encryption()]] - `calls` [EXTRACTED]
-- [[_score_data_exfiltration_prevention()]] - `calls` [EXTRACTED]
-- [[_score_host_os_hardening()]] - `calls` [EXTRACTED]
-- [[_score_identity_authentication()]] - `calls` [EXTRACTED]
-- [[_score_image_signing_provenance()]] - `calls` [EXTRACTED]
-- [[_score_incident_response()]] - `calls` [EXTRACTED]
-- [[_score_least_agency()]] - `calls` [EXTRACTED]
-- [[_score_logging_monitoring()]] - `calls` [EXTRACTED]
-- [[_score_memory_integrity()]] - `calls` [EXTRACTED]
-- [[_score_prompt_injection_defense()]] - `calls` [EXTRACTED]
-- [[_score_registry_security()]] - `calls` [EXTRACTED]
-- [[_score_resource_availability()]] - `calls` [EXTRACTED]
-- [[_score_rogue_agent_containment()]] - `calls` [EXTRACTED]
-- [[_score_secrets_management()]] - `calls` [EXTRACTED]
-- [[_score_secure_development()]] - `calls` [EXTRACTED]
-- [[_score_tool_use_safety()]] - `calls` [EXTRACTED]
-- [[_security_scan_sh_text()]] - `calls` [EXTRACTED]
-- [[get_clamav_summary()]] - `calls` [EXTRACTED]
-- [[get_falco_summary()]] - `calls` [EXTRACTED]
-- [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[dot-_run_sync()]] - `references` [EXTRACTED]
+- [[dot-test_cli_allows_clean_tree_zero()]] - `references` [EXTRACTED]
+- [[dot-test_cli_blocks_dangerous_tree_nonzero()]] - `references` [EXTRACTED]
+- [[dot-test_cli_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
+- [[dot-test_cli_missing_source_nonzero()]] - `references` [EXTRACTED]
+- [[dot-test_main_clean_tree_returns_ok()]] - `references` [EXTRACTED]
+- [[dot-test_main_dangerous_tree_returns_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_main_empty_source_returns_usage()]] - `references` [EXTRACTED]
+- [[dot-test_main_flag_only_tree_returns_ok()]] - `references` [EXTRACTED]
+- [[dot-test_main_missing_source_returns_usage()]] - `references` [EXTRACTED]
+- [[dot-test_main_unreadable_file_fails_closed()]] - `references` [EXTRACTED]
+- [[dot-test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
+- [[dot-test_sync_aborts_on_dangerous_tree()]] - `references` [EXTRACTED]
+- [[dot-test_sync_allows_clean_tree()]] - `references` [EXTRACTED]
+- [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[_write_tree()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Path_2

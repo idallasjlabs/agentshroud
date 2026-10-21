@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy()"
 location: "L8175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # .test_collab_gets_alert_notice_at_3_blocks()
@@ -15,8 +15,8 @@ tags:
 - [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[Collaborator must receive warning text when they reach 3 security blocks.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[fake_send()_8]] - `contains` [EXTRACTED]
-- [[fake_send()_7]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[fake_send()_13]] - `contains` [EXTRACTED]
+- [[fake_send()_11]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

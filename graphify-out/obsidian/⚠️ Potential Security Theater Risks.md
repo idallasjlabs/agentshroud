@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "2. Security Value Audit — Genuine Protection vs. Security Theater"
+community: "AgentShroud Phase Review — 2026-02-23"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit__Genuine_Protection_vs_Security_Theater
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # ⚠️ **Potential Security Theater Risks**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit__Genuine_Protection_vs_Security_Theater
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

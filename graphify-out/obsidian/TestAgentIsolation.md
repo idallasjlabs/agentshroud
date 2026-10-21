@@ -12,7 +12,7 @@ tags:
 # TestAgentIsolation
 
 ## Connections
-- [[dot-setup_method()_38]] - `method` [EXTRACTED]
+- [[dot-setup_method()_36]] - `method` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `method` [EXTRACTED]
 - [[dot-test_generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_list_agents()_1]] - `method` [EXTRACTED]

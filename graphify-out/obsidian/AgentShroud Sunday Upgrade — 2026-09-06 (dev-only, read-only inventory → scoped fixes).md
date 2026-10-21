@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[0. Pre-existing session context worth recording]] - `contains` [EXTRACTED]
-- [[1. Environment mapping_1]] - `contains` [EXTRACTED]
+- [[1. Environment mapping]] - `contains` [EXTRACTED]
 - [[11. Verification evidence]] - `contains` [EXTRACTED]
 - [[13. Rollback instructions]] - `contains` [EXTRACTED]
 - [[14. Time spent]] - `contains` [EXTRACTED]

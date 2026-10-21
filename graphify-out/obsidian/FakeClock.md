@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__call__()_5]] - `method` [EXTRACTED]
-- [[dot-__init__()_88]] - `method` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
 - [[dot-advance()]] - `method` [EXTRACTED]
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]

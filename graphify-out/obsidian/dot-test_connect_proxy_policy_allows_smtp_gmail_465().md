@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (5)"
 location: "L602"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_5
 ---
 
 # .test_connect_proxy_policy_allows_smtp_gmail_465()
@@ -18,4 +18,4 @@ tags:
 - [[TestSMTPIMAPPorts]] - `method` [EXTRACTED]
 - [[http_connect_proxy policy allows CONNECT smtp.gmail.com465.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5

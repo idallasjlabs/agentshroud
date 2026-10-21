@@ -1,19 +1,17 @@
 ---
 type: community
-members: 6
+members: 4
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report (2)
 
-**Members:** 6 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
-- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[2. Steve Hay Heat Map Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_SessionManager]]
-- 2 edges to [[_COMMUNITY_SessionManager (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 
 ## Top bridge nodes
-- [[TestSessionValidation]] - degree 12, connects to 2 communities
-- [[dot-test_expired_session_rejected()]] - degree 2, connects to 1 community
+- [[2. Steve Hay Heat Map Assessment]] - degree 4, connects to 1 community

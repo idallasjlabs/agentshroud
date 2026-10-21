@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py (2)_1]]
+- 2 edges to [[_COMMUNITY_LLMProxy]]
 - 1 edge to [[_COMMUNITY_is_overloaded]]
 
 ## Top bridge nodes

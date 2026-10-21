@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "export-bot-conversations.py (4)"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/export-bot-conversationspy_4
 ---
 
 # datetime
 
 ## Connections
-- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[_parse_since()]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[export-telegram-history.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_4

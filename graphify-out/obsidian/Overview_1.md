@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/SKILL.md"
+source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
-location: "L16"
+community: "AgentShroud Access Control Matrix"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
+- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

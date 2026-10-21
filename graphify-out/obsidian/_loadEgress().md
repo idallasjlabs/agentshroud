@@ -12,7 +12,7 @@ tags:
 # _loadEgress()
 
 ## Connections
-- [[EgressRequest]] - `shares_data_with` [INFERRED]
+- [[EgressRequest_1]] - `shares_data_with` [INFERRED]
 - [[_botParam()]] - `calls` [EXTRACTED]
 - [[_get()]] - `calls` [EXTRACTED]
 - [[_renderEgressHistory()]] - `calls` [EXTRACTED]

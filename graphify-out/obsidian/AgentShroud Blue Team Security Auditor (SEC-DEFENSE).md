@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "MiddlewareManager (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/MiddlewareManager_2
 ---
 
 # AgentShroud Blue Team Security Auditor (SEC-DEFENSE)
@@ -28,7 +28,7 @@ tags:
 - [[key_rotation.py]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py]] - `references` [EXTRACTED]
 - [[memory_integrity.py]] - `references` [EXTRACTED]
-- [[middleware.py_1]] - `references` [EXTRACTED]
+- [[middleware.py]] - `references` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2

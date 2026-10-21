@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "AlertDispatcher (2) (2)"
-location: "L102"
+community: "MiddlewareManager"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2_2
+  - community/MiddlewareManager
 ---
 
 # .add_alert_callback()
 
 ## Connections
-- [[Add a callback function to be called when resource alerts are triggered.]] - `rationale_for` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[Add a callback function for alerts.]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[callable]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

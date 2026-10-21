@@ -12,7 +12,7 @@ tags:
 # .get_global_stats()
 
 ## Connections
-- [[Any_5]] - `references` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 - [[Get global analyzer statistics.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 

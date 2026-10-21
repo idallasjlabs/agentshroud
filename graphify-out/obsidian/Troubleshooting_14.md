@@ -1,20 +1,22 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L333"
+community: "Browser — Secure Browser Automation"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
+- [[Browser timeout_2]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

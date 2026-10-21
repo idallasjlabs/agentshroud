@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_check_encoded()]] - `references` [EXTRACTED]
 - [[dot-_check_plain()]] - `references` [EXTRACTED]
-- [[dot-scan()_1]] - `references` [EXTRACTED]
+- [[dot-scan()_3]] - `references` [EXTRACTED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

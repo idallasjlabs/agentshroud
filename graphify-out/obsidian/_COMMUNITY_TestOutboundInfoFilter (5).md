@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Install Script]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Installation_1]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Windows]] - document - .github/COPILOT_CLI_SETUP.md
-- [[macOS  Linux]] - document - .github/COPILOT_CLI_SETUP.md
-- [[npm (Cross-platform)]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Basic Usage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Check Context Usage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Run with Specific Agent]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Select Model]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Start Interactive Session]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[Installation_1]] - degree 5, connects to 1 community
+- [[Basic Usage]] - degree 5, connects to 1 community

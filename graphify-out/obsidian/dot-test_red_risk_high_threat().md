@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "_FakeRBAC"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/_FakeRBAC
 ---
 
 # .test_red_risk_high_threat()
 
 ## Connections
-- [[EgressRequest]] - `calls` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
 - [[TestEgressRequestModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

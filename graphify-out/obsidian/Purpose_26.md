@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (3)"
+community: ".agents/skills/i-cr/SKILL.md (5)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_3
+  - community/agents/skills/i-cr/SKILLmd_5
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_3
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_5

@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "iCloud Services"
-location: "L142"
+community: "AgentShroud Device Pairing Management"
+location: "L333"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found]] - `contains` [EXTRACTED]
-- [[Connection timeout]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
+- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
+- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

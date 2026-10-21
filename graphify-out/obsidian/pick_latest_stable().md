@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "pick_latest_stable"
 location: "L124"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/discover_upstream_versionspy
+  - community/pick_latest_stable
 ---
 
 # pick_latest_stable()
 
 ## Connections
 - [[dot-test_downstream_counter_sorts_above_its_base_release()]] - `calls` [INFERRED]
-- [[dot-test_empty_returns_none()_1]] - `calls` [INFERRED]
+- [[dot-test_empty_returns_none()]] - `calls` [INFERRED]
 - [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - `calls` [INFERRED]
 - [[dot-test_no_stable_versions_returns_none()]] - `calls` [INFERRED]
 - [[dot-test_numeric_ordering_not_lexicographic()]] - `calls` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 - [[is_stable()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy
+#graphify/code #graphify/INFERRED #community/pick_latest_stable

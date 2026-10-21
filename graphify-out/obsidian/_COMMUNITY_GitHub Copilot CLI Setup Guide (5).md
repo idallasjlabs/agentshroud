@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # GitHub Copilot CLI Setup Guide (5)
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Environment]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Key Testing Requirements]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Primary Focus]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Repository Context]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Path Permissions]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Security & Permissions]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Tool Approval]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Trusted Folders]] - document - .github/COPILOT_CLI_SETUP.md
+- [[URL Access Control]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +25,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[Repository Context]] - degree 4, connects to 1 community
+- [[Security & Permissions]] - degree 5, connects to 1 community

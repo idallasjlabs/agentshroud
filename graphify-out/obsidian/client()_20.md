@@ -1,17 +1,18 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L33"
+community: "ForwardRequest (2)"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/ForwardRequest_2
 ---
 
 # client()
 
 ## Connections
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2

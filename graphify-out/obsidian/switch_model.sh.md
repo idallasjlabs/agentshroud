@@ -17,7 +17,7 @@ tags:
 - [[preflight_local()]] - `defines` [EXTRACTED]
 - [[switch_model.sh script]] - `contains` [EXTRACTED]
 - [[upsert_env_value()]] - `defines` [EXTRACTED]
-- [[usage()_8]] - `defines` [EXTRACTED]
+- [[usage()_1]] - `defines` [EXTRACTED]
 - [[verify_both_bots_healthy()]] - `defines` [EXTRACTED]
 - [[wait_for_local_model()]] - `defines` [EXTRACTED]
 

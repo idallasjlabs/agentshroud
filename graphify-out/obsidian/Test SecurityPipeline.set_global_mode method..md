@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "KillSwitchMonitor (4)"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/KillSwitchMonitor_4
 ---
 
 # Test SecurityPipeline.set_global_mode method.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_security_pipeline_set_global_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_4

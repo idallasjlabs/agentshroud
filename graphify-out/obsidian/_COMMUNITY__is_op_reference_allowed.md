@@ -21,10 +21,10 @@ members: 32
 - [[dot-test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_path_traversal_blocked()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_requires_auth()_3]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_requires_auth()_1]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
 - [[1Password credential proxy (P2 credential isolation). Reads a secret from…]] - rationale - gateway/ingest_api/main.py
-- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
+- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_op_proxy.py
 - [[OpProxyRequest]] - code - gateway/ingest_api/main.py
 - [[Real functional check, not a boot-time smoke test every op reference     doc]] - rationale - gateway/tests/test_op_proxy.py
 - [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
@@ -49,12 +49,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 6 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
 - 1 edge to [[_COMMUNITY_setup-secrets.sh (2)]]
+- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
 
 ## Top bridge nodes
 - [[TestIsOpReferenceAllowed]] - degree 12, connects to 2 communities

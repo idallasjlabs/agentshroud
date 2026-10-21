@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
+community: "test_collaborator_tracker.py"
 location: "L3943"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/test_collaborator_trackerpy
 ---
 
 # TestDomainValidationHelper
@@ -29,11 +29,11 @@ tags:
 - [[dot-test_is_valid_domain_name_rejects_underscore_label()]] - `method` [EXTRACTED]
 - [[dot-test_is_valid_domain_name_rejects_whitespace_inside_label()]] - `method` [EXTRACTED]
 - [[dot-test_is_valid_domain_name_strips_surrounding_whitespace()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[Unit tests for domain validator used by egress approval flow.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

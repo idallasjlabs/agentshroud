@@ -1,27 +1,22 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "Layer-by-Layer Breakdown"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/Layer-by-Layer_Breakdown
 ---
 
-# Data Flow.md
+# Data Flow
 
 ## Connections
-- [[Architecture Overview_3]] - `references` [EXTRACTED]
 - [[Data Flow]] - `contains` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
-- [[Home_1]] - `references` [EXTRACTED]
-- [[PromptGuard_1]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[ledger.py_2]] - `references` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
+- [[Overview_8]] - `contains` [EXTRACTED]
+- [[Related Notes_34]] - `contains` [EXTRACTED]
+- [[Request Flow Diagram]] - `contains` [EXTRACTED]
+- [[Response Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

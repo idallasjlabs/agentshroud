@@ -12,7 +12,7 @@ members: 8
 - [[Invocation_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 - [[Jira ticket — every development batch gets one_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 - [[Reviewers and fixer available to you_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Role_9]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Role_10]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 - [[Skill OpenClaw Dev Workflow (ODEV)_1]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 - [[Tools you have for this workflow_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 - [[openclawskillsi-odevSKILL]] - document - docker/config/openclaw/skills/i-odev/SKILL.md

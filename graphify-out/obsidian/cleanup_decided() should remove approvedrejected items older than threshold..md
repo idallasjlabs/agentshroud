@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ApprovalQueueConfig (5)"
 location: "L382"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig_5
 ---
 
 # cleanup_decided() should remove approved/rejected items older than threshold.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cleanup_decided_removes_old_decided_items()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

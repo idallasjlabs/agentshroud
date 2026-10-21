@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "TelegramAPIProxy"
 location: "L7802"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TelegramAPIProxy
 ---
 
 # ._resolve_collaborator_mode()
@@ -17,6 +17,6 @@ tags:
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
 - [[dot-_send_disclosure()]] - `calls` [EXTRACTED]
 - [[Resolve effective collaboration mode for a user.          Resolution order]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

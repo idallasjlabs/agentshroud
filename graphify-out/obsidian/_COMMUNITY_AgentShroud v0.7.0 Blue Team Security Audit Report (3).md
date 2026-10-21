@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[2. Steve Hay Heat Map Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3. Critical Findings & Risks]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.1 HIGH Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.2 MEDIUM Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.3 LOW Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 
 ## Top bridge nodes
-- [[2. Steve Hay Heat Map Assessment]] - degree 4, connects to 1 community
+- [[3. Critical Findings & Risks]] - degree 4, connects to 1 community

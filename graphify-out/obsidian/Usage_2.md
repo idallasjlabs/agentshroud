@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (3) (2)"
+community: "Browser — Secure Browser Automation (4)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_3_2
+  - community/Browser__Secure_Browser_Automation_4
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Navigate to URL]] - `contains` [EXTRACTED]
 - [[Take Screenshot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_3_2
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_4

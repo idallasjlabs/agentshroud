@@ -21,9 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/Commit_list_2026-10-10_through_2026-10-16_on_main
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-
-## Top bridge nodes
-- [[sync-version.sh]] - degree 4, connects to 1 community

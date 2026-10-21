@@ -18,7 +18,7 @@ tags:
 - [[dot-test_post_ephemeral_scanned()]] - `method` [EXTRACTED]
 - [[dot-test_structured_field_sanitization_blocks_delivery()]] - `method` [EXTRACTED]
 - [[dot-test_text_sanitization_still_applied()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - `rationale_for` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]

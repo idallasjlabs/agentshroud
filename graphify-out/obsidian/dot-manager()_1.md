@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L69"
+community: "TestDomainValidationHelper (2)"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestDomainValidationHelper_2
 ---
 
 # .manager()
 
 ## Connections
-- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `calls` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
+- [[KeyRotationManager]] - `calls` [EXTRACTED]
+- [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper_2

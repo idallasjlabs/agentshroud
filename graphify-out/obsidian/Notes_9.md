@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "notion"
-location: "L167"
+community: "Weather Skill"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/Weather_Skill
 ---
 
 # Notes
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

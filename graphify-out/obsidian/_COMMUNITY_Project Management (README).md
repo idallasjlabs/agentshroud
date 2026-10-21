@@ -29,10 +29,10 @@ members: 27
 - [[Related Skills_61]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Related Skills_62]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_67]] - document - .agents/skills/i-cr/README.md
-- [[Usage_68]] - document - .agents/skills/i-pm/README.md
-- [[Usage_69]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Usage_70]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Usage_64]] - document - .agents/skills/i-cr/README.md
+- [[Usage_65]] - document - .agents/skills/i-pm/README.md
+- [[Usage_66]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_67]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md
 

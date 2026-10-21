@@ -19,7 +19,7 @@ tags:
 - [[dot-test_consume_relay_token_one_time()]] - `method` [EXTRACTED]
 - [[dot-test_consume_relay_token_unknown()]] - `method` [EXTRACTED]
 - [[dot-test_each_reconnect_issues_unique_token()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 

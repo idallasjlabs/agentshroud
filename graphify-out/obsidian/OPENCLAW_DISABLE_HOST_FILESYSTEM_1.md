@@ -12,11 +12,11 @@ tags:
 # OPENCLAW_DISABLE_HOST_FILESYSTEM
 
 ## Connections
-- [[Description_6]] - `contains` [EXTRACTED]
+- [[Description_1]] - `contains` [EXTRACTED]
 - [[Effect]] - `contains` [EXTRACTED]
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
-- [[Related Notes_28]] - `contains` [EXTRACTED]
-- [[Set In_3]] - `contains` [EXTRACTED]
-- [[Value_2]] - `contains` [EXTRACTED]
+- [[Related Notes_24]] - `contains` [EXTRACTED]
+- [[Set In_1]] - `contains` [EXTRACTED]
+- [[Value_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentRegistry_2

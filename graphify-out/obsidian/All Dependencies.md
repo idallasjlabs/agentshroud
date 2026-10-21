@@ -24,7 +24,7 @@ tags:
 - [[pydantic_1]] - `references` [EXTRACTED]
 - [[pytest.ini_1]] - `references` [EXTRACTED]
 - [[python-jose]] - `references` [EXTRACTED]
-- [[spacy]] - `references` [EXTRACTED]
+- [[spacy_1]] - `references` [EXTRACTED]
 - [[trivy_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

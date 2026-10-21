@@ -1,11 +1,11 @@
 ---
 type: community
-members: 90
+members: 101
 ---
 
 # test_soc_bots.py
 
-**Members:** 90 nodes
+**Members:** 101 nodes
 
 ## Members
 - [[dot-_make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
@@ -33,6 +33,7 @@ members: 90
 - [[dot-test_formula_high_penalty()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_formula_medium_penalty()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_known_bot_returns_cve_summary()]] - code - gateway/tests/test_soc_bots.py
+- [[dot-test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_missing_bot_returns_empty_image()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_no_bot_id_calls_global_scorecard()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_no_bot_id_defaults_to_openclaw()]] - code - gateway/tests/test_soc_bots.py
@@ -43,6 +44,7 @@ members: 90
 - [[dot-test_no_bot_id_returns_full_history()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_no_bot_id_returns_global_config()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_no_scan_data_defaults_zeros()]] - code - gateway/tests/test_soc_bots.py
+- [[dot-test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_result_structure_has_required_keys()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_returns_default_when_config_is_none()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_returns_default_when_no_bots_config()]] - code - gateway/tests/test_soc_bots.py
@@ -53,6 +55,7 @@ members: 90
 - [[dot-test_score_clamped_to_zero()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_security_events_filters_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_security_events_nonexistent_bot_returns_empty_not_404()]] - code - gateway/tests/test_soc_bots.py
+- [[dot-test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
 - [[dot-test_single_bot_returns_list_of_one()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_unknown_bot_id_returns_error()]] - code - gateway/tests/test_soc_bots.py
 - [[dot-test_unknown_bot_returns_error()]] - code - gateway/tests/test_soc_bots.py
@@ -65,8 +68,10 @@ members: 90
 - [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - rationale - gateway/tests/test_soc_bots.py
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - rationale - gateway/security/scanner_integration.py
 - [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
+- [[Return full collaborator activity log. limit=0 returns all entries.      Returns]] - rationale - gateway/soc/router.py
 - [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - rationale - gateway/soc/router.py
 - [[Return the tracked advisory registry for the wrapped AI agent.      When bot_id]] - rationale - gateway/soc/router.py
+- [[SecurityEvent]] - code - gateway/soc/models.py
 - [[TestAgentCvesBotId]] - code - gateway/tests/test_soc_bots.py
 - [[TestBotSelectorFrontend]] - code - gateway/tests/test_soc_bots.py
 - [[TestCollaboratorActivityBotFilter]] - code - gateway/tests/test_soc_bots.py
@@ -78,8 +83,10 @@ members: 90
 - [[TestListBots]] - code - gateway/tests/test_soc_bots.py
 - [[TestScannersBotId]] - code - gateway/tests/test_soc_bots.py
 - [[TestScorecardBotId]] - code - gateway/tests/test_soc_bots.py
+- [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
 - [[TestSecurityEventsBotFilter]] - code - gateway/tests/test_soc_bots.py
 - [[TestServicesBotFilter]] - code - gateway/tests/test_soc_bots.py
+- [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns]] - rationale - gateway/soc/router.py
 - [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - rationale - gateway/tests/test_soc_bots.py
 - [[When app_state.config is None, return empty dict (backward-compat).]] - rationale - gateway/tests/test_soc_bots.py
 - [[When bot_id is given, services whose image matches the bot's image are returned.]] - rationale - gateway/tests/test_soc_bots.py
@@ -91,12 +98,16 @@ members: 90
 - [[_make_owner_caller()]] - code - gateway/tests/test_soc_bots.py
 - [[compute_bot_scorecard()]] - code - gateway/security/scanner_integration.py
 - [[get_agent_cves()]] - code - gateway/soc/router.py
-- [[get_config()_1]] - code - gateway/soc/router.py
+- [[get_collaborator_activity()]] - code - gateway/soc/router.py
+- [[get_config()]] - code - gateway/soc/router.py
 - [[get_egress_history()]] - code - gateway/soc/router.py
+- [[get_egress_log()]] - code - gateway/soc/router.py
 - [[get_egress_pending()]] - code - gateway/soc/router.py
+- [[get_scanner_results()]] - code - gateway/soc/router.py
 - [[get_security_events()]] - code - gateway/soc/router.py
 - [[get_security_scorecard()]] - code - gateway/soc/router.py
 - [[list_bots()]] - code - gateway/soc/router.py
+- [[list_services()]] - code - gateway/soc/router.py
 - [[test_soc_bots.py]] - code - gateway/tests/test_soc_bots.py
 
 ## Live Query (requires Dataview plugin)
@@ -107,20 +118,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_socrouter.py]]
-- 30 edges to [[_COMMUNITY_MiddlewareManager]]
+- 38 edges to [[_COMMUNITY_socrouter.py]]
+- 30 edges to [[_COMMUNITY_RBACConfig]]
+- 19 edges to [[_COMMUNITY__FakeRBAC]]
 - 9 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 3 edges to [[_COMMUNITY_ServiceManager]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_AgentTarget (6)]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
 - 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 - 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
 
 ## Top bridge nodes
-- [[test_soc_bots.py]] - degree 38, connects to 5 communities
 - [[compute_bot_scorecard()]] - degree 23, connects to 4 communities
-- [[dot-test_filters_egress_log_by_bot_id()]] - degree 6, connects to 3 communities
+- [[SecurityEvent]] - degree 20, connects to 4 communities
+- [[test_soc_bots.py]] - degree 38, connects to 3 communities
 - [[_make_owner_caller()]] - degree 29, connects to 2 communities
 - [[get_security_events()]] - degree 10, connects to 2 communities

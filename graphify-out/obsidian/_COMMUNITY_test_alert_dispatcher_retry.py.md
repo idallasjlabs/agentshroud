@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
 - [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community

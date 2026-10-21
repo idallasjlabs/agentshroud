@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "test_agent_cve_registry.py (2)"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/test_agent_cve_registrypy_2
 ---
 
 # test_no_entry_id_looks_like_a_cve()
@@ -16,4 +16,4 @@ tags:
 - [[_all_entries()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

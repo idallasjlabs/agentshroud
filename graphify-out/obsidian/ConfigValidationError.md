@@ -12,7 +12,7 @@ tags:
 # ConfigValidationError
 
 ## Connections
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception_3]] - `inherits` [EXTRACTED]
 - [[ShellInjectionDetected]] - `inherits` [EXTRACTED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 

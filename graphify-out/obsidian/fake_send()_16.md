@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Unknown/unapproved users have stricter rate limits than collaborators. After…"
-location: "L7925"
+community: "._make_proxy()"
+location: "L8299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Unknown/unapproved_users_have_stricter_rate_limits_than_collaborators_After
+  - community/_make_proxy
 ---
 
 # fake_send()
 
 ## Connections
-- [[dot-test_owner_unaffected_by_collaborator_rate_limiter()]] - `contains` [EXTRACTED]
+- [[dot-test_collab_threshold_notices_fire_only_once_per_level()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Unknown/unapproved_users_have_stricter_rate_limits_than_collaborators_After
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

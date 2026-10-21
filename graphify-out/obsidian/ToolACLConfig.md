@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "RBACConfig"
 location: "L170"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig_2
+  - community/RBACConfig
 ---
 
 # ToolACLConfig
 
 ## Connections
-- [[dot-__init__()_137]] - `references` [EXTRACTED]
+- [[dot-__init__()_90]] - `references` [EXTRACTED]
 - [[dot-effective_admin()]] - `method` [EXTRACTED]
 - [[dot-effective_collaborator_allowed()]] - `method` [EXTRACTED]
 - [[dot-effective_private()]] - `method` [EXTRACTED]
@@ -24,10 +24,10 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Role_28]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_23]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `uses` [INFERRED]
 - [[TestClassificationSets]] - `uses` [INFERRED]
@@ -46,9 +46,9 @@ tags:
 - [[TestViewerAccess]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `shares_data_with` [EXTRACTED]
 - [[acl_config()]] - `calls` [EXTRACTED]
-- [[enforcer()_1]] - `calls` [EXTRACTED]
+- [[enforcer()]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig_2
+#graphify/code #graphify/INFERRED #community/RBACConfig

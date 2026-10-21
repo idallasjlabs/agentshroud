@@ -1,19 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L28"
+community: "Enterprise Governance Proxy System (invention)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
-- [[Configuration_8]] - `contains` [EXTRACTED]
-- [[Policy Table]] - `contains` [EXTRACTED]
+- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

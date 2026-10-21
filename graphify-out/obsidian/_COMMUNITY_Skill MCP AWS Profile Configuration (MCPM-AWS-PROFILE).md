@@ -31,17 +31,17 @@ members: 41
 - [[Option 1 Interactive Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Option 2 Manual Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Organization]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Purpose_64]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Quick Reference_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Purpose_66]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Quick Reference_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Related Skills_50]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
 - [[Related Skills_51]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_21]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_22]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Security_5]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Troubleshooting_3]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Usage_56]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Usage_54]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
 - [[Use SSO Profile with MCP]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Using AssumeRole for Cross-Account Access]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[View Configured Profiles]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md

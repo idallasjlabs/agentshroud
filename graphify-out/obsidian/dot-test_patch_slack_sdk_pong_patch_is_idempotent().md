@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget"
+community: "AgentTarget (2)"
 location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AgentTarget_2
 ---
 
 # .test_patch_slack_sdk_pong_patch_is_idempotent()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

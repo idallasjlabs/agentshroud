@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "02-infrastructure.md (2)"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/Error_Indexmd
 ---
 
 # Troubleshooting Matrix.md
@@ -19,6 +19,6 @@ tags:
 - [[Startup Errors]] - `references` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
-- [[troubleshooting_20]] - `contains` [EXTRACTED]
+- [[troubleshooting_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

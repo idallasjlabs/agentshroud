@@ -20,7 +20,7 @@ tags:
 - [[dot-test_public_ip_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_stackoverflow_allowed()]] - `method` [EXTRACTED]
 - [[Ensure normal browsing URLs pass through.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 

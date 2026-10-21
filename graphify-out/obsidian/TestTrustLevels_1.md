@@ -12,7 +12,7 @@ tags:
 # TestTrustLevels
 
 ## Connections
-- [[dot-test_default_config()_7]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_8]] - `method` [EXTRACTED]
 - [[dot-test_trust_level_ordering()]] - `method` [EXTRACTED]
 - [[Test trust level hierarchy and thresholds.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]

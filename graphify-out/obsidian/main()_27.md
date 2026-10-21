@@ -1,21 +1,17 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L232"
+community: "dashboard_bridge.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/dashboard_bridgepy
 ---
 
 # main()
 
 ## Connections
-- [[Path_55]] - `calls` [EXTRACTED]
-- [[_parse_since()]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

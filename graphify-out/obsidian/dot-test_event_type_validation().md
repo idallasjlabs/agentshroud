@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TrustConfig"
 location: "L908"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/TrustConfig
 ---
 
 # .test_event_type_validation()
@@ -16,4 +16,4 @@ tags:
 - [[TrustManager_3]] - `calls` [EXTRACTED]
 - [[Unknown event types should not inject SQL.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

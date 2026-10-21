@@ -16,7 +16,7 @@ tags:
 - [[Output Format_4]] - `contains` [EXTRACTED]
 - [[Persona_4]] - `contains` [EXTRACTED]
 - [[Quality Checklist_5]] - `contains` [EXTRACTED]
-- [[Role_8]] - `contains` [EXTRACTED]
+- [[Role_9]] - `contains` [EXTRACTED]
 - [[System Prompt_4]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]

@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "AsyncMock (2)"
-location: "L69"
+community: "ApprovalQueueConfig"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
+- [[Initialize sanitizer          Args             config PII configuration from a]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[PIISanitizer_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

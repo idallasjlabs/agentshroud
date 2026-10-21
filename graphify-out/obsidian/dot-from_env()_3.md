@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_1]] - `method` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 - [[_truthy()]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 

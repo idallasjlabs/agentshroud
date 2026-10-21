@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L10"
+community: "LVGL KAWAII FACE"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
+- [[1. Create a parent panel]] - `contains` [EXTRACTED]
+- [[2. Initialise]] - `contains` [EXTRACTED]
+- [[3. Set an emotion]] - `contains` [EXTRACTED]
+- [[4. Reposition]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

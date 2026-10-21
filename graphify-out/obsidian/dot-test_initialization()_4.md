@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L60"
+community: "MiddlewareManager (5)"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/MiddlewareManager_5
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test hardening initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[Test manager initialization.]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5

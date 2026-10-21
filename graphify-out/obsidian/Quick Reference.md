@@ -1,19 +1,19 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L528"
+community: "PIIConfig"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/PIIConfig
 ---
 
-# Quick Reference
+# Quick Reference.md
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
-- [[Emergency Procedures]] - `contains` [EXTRACTED]
-- [[Security Checklist]] - `contains` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/PIIConfig

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "RBACConfig (2)"
-location: "L197"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # .test_group_a_write_invisible_from_group_b()
 
 ## Connections
-- [[TestCrossGroupIsolation]] - `method` [EXTRACTED]
+- [[Content appended to group-A memory must not appear in group-B memory.]] - `rationale_for` [EXTRACTED]
+- [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

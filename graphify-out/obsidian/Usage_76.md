@@ -1,23 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
-location: "L226"
+community: "hermes/skills/i-bs/README.md"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
 
 ## Connections
-- [[Adding a future agent]] - `contains` [EXTRACTED]
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
-- [[Tap to talk]] - `contains` [EXTRACTED]
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
-- [[Voice volume]] - `contains` [EXTRACTED]
-- [[Wake word]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

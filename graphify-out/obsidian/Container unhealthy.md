@@ -12,6 +12,6 @@ tags:
 # Container unhealthy
 
 ## Connections
-- [[Troubleshooting_23]] - `contains` [EXTRACTED]
+- [[Troubleshooting_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

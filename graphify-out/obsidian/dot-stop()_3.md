@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "DNSBlocklist"
-location: "L273"
+community: "StdioConnection"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
+- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

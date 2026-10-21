@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (12)"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_12
 ---
 
 # .check_permission()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
 - [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_12

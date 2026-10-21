@@ -18,6 +18,6 @@ tags:
 - [[WebContentScanner._scan_prompt_injection(content, result)]] - `contains` [EXTRACTED]
 - [[WebContentScanner._scan_zero_width(content, result)]] - `contains` [EXTRACTED]
 - [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[EgressChannel]] - `shares_data_with` [AMBIGUOUS]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]

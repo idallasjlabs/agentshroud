@@ -24,7 +24,7 @@ members: 23
 - [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
 - [[Purpose_82]] - document - .agents/skills/i-mc/README.md
 - [[Related Skills_63]] - document - .agents/skills/i-mc/README.md
-- [[Usage_74]] - document - .agents/skills/i-mc/README.md
+- [[Usage_72]] - document - .agents/skills/i-mc/README.md
 - [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
 - [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
 - [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md

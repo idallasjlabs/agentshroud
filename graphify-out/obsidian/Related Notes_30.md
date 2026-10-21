@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "02-infrastructure.md (2)"
-location: "L42"
+community: "Error Index.md"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd_2
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd_2
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

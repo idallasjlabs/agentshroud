@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (3)"
+community: "AWS Cloud Management & FinOps Agent (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3
+  - community/AWS_Cloud_Management__FinOps_Agent_2
 ---
 
 # AWS Cloud Management & FinOps Agent
@@ -30,4 +30,4 @@ tags:
 - [[Tagging Standard_1]] - `contains` [EXTRACTED]
 - [[Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2

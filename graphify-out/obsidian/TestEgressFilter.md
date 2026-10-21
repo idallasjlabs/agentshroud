@@ -12,7 +12,7 @@ tags:
 # TestEgressFilter
 
 ## Connections
-- [[dot-setup_method()_29]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `method` [EXTRACTED]
 - [[dot-test_allowed_domain()]] - `method` [EXTRACTED]
 - [[dot-test_allowed_ip()_1]] - `method` [EXTRACTED]
 - [[dot-test_allowed_specific_ip()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_empty_ports_allows_all()]] - `method` [EXTRACTED]
 - [[dot-test_log()]] - `method` [EXTRACTED]
 - [[dot-test_per_agent_policy()]] - `method` [EXTRACTED]
-- [[dot-test_stats()_1]] - `method` [EXTRACTED]
+- [[dot-test_stats()_2]] - `method` [EXTRACTED]
 - [[dot-test_url_parsing()_1]] - `method` [EXTRACTED]
 - [[dot-test_url_port_extraction()]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_base_domain()]] - `method` [EXTRACTED]

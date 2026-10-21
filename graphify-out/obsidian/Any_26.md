@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L82"
+community: "ApprovalQueueConfig (2)"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
-- [[dot-record_inbound()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_6]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2

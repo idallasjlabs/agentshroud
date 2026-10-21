@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[RemediationPlan dataclass]] - `contains` [EXTRACTED]
-- [[Sunday upgrade session prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 - [[_print_plan()]] - `contains` [EXTRACTED]
 - [[_run()_2]] - `contains` [EXTRACTED]
 - [[apply_remediation()]] - `contains` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `semantically_similar_to` [INFERRED]
 - [[discover_upstream_versions.py]] - `semantically_similar_to` [INFERRED]
 - [[load_registry()_1]] - `contains` [EXTRACTED]
-- [[main()_32]] - `contains` [EXTRACTED]
+- [[main()_33]] - `contains` [EXTRACTED]
 - [[parse_version()_1]] - `contains` [EXTRACTED]
 - [[plan_remediation()]] - `contains` [EXTRACTED]
 - [[read_pin()]] - `contains` [EXTRACTED]

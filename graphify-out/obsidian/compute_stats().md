@@ -12,8 +12,8 @@ tags:
 # compute_stats()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
-- [[main()_12]] - `calls` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

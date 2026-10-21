@@ -1,17 +1,18 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "test_soc_realtime_coverage.py"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
+- [[WebSocket_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

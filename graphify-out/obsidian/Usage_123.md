@@ -1,21 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "LVGL KAWAII FACE"
-location: "L58"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[1. Create a parent panel]] - `contains` [EXTRACTED]
-- [[2. Initialise]] - `contains` [EXTRACTED]
-- [[3. Set an emotion]] - `contains` [EXTRACTED]
-- [[4. Reposition]] - `contains` [EXTRACTED]
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[System Audit Vault_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

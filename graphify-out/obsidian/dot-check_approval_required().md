@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (5)"
+community: "MCPPermissionManager"
 location: "L859"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_5
+  - community/MCPPermissionManager
 ---
 
 # .check_approval_required()
@@ -16,4 +16,4 @@ tags:
 - [[Check if a tool call requires approval and wait for it if needed.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_5
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

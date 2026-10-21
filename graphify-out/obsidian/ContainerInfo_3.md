@@ -12,12 +12,12 @@ tags:
 # ContainerInfo
 
 ## Connections
-- [[dot-ps()_3]] - `references` [EXTRACTED]
+- [[dot-ps()_2]] - `references` [EXTRACTED]
 - [[dot-test_defaults()_2]] - `calls` [EXTRACTED]
 - [[dot-test_with_data()]] - `calls` [EXTRACTED]
 - [[Any_50]] - `uses` [INFERRED]
 - [[Any_48]] - `uses` [INFERRED]
-- [[Any_36]] - `uses` [INFERRED]
+- [[Any_37]] - `uses` [INFERRED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo]] - `uses` [INFERRED]
 - [[ContainerInfo_1]] - `uses` [INFERRED]

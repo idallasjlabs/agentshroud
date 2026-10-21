@@ -12,6 +12,6 @@ tags:
 # Bot not responding on Telegram
 
 ## Connections
-- [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

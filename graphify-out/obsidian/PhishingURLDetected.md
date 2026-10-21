@@ -12,7 +12,7 @@ tags:
 # PhishingURLDetected
 
 ## Connections
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception_3]] - `inherits` [EXTRACTED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

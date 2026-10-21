@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "test_security.py"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/test_securitypy
 ---
 
 # Every content_type an iOS Shortcut can emit is accepted with source=shortcut.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shortcut_content_types_accepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/test_securitypy

@@ -28,8 +28,8 @@ members: 39
 - [[File Formats]] - document - branding/README.md
 - [[Internal Alert (Telegram)]] - document - docs/security/incident-response.md
 - [[Key Messaging_1]] - document - BRAND.md
-- [[License]] - document - BRAND.md
-- [[License_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[License_1]] - document - BRAND.md
+- [[License_2]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[Logo Usage]] - document - BRAND.md
 - [[Logo Usage_1]] - document - branding/README.md
 - [[Logo Usage_2]] - document - docker/config/openclaw/workspace/BRAND.md
@@ -60,7 +60,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_AgentShroud™ Security Policy]]
 - 2 edges to [[_COMMUNITY_Animation Guidelines]]
 - 2 edges to [[_COMMUNITY_brandingREADME]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines (3)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines (2)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines (2)]]
 - 1 edge to [[_COMMUNITY_Incident Response Playbook — AgentShroud]]
 - 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]

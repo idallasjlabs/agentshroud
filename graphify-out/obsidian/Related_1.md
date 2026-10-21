@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "auth.py"
-location: "L80"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Related
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

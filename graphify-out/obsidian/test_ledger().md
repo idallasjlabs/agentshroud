@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "PIIConfig"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # test_ledger()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

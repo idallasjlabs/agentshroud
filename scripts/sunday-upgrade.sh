@@ -107,7 +107,6 @@ PROMPT_FILE="$REPO/prompts/sunday-upgrade.md"
 TODAY="$(date +%F)"
 LOG="$REPO/reports/upgrade-run-${TODAY}.log"
 REPORT_MD="$REPO/reports/upgrade-${TODAY}.md"
-HERMES_CONTAINER="agentshroud-hermes-v2"
 # Prompt's own budget is 90 min. The hard stop must end the watcher (20s boot
 # + this + report staging) BEFORE the next 3-hourly retry fires: at 180 the
 # 08:00 run was killed at 11:00:40, so the 11:00 fire saw it still alive and
@@ -172,6 +171,25 @@ _return_to_main() {
 
 cd "$REPO"
 mkdir -p reports
+# sunday_deadline_epoch / sunday_stop_apply / sunday_restore_stack.
+. "$REPO/scripts/lib/sunday-scan.sh"
+
+# Owner notice that does not depend on Hermes: every exit from here on — the
+# preflight FATALs, a timeout, a DEGRADED stack — sends one line straight to
+# the Bot API (sunday_notify_direct). Hermes's 08:30 report still carries the
+# full write-up; this is how a failure reaches the owner when Hermes is down.
+# The two "nothing to do" skips set NOTIFY_ON_EXIT=0.
+NOTIFY_ON_EXIT=1
+_notify_on_exit() {
+  local rc=$? note
+  [ "${NOTIFY_ON_EXIT:-0}" = 1 ] || return 0
+  note="$(sunday_notify_direct \
+    "${SUNDAY_NOTIFY_TOKEN_FILE:-$REPO/docker/secrets/telegram_bot_token_production.txt}" \
+    "${SUNDAY_NOTIFY_CHAT_ID:-8096968754}" \
+    "$(sunday_run_summary "$rc" "${STACK_STATE:-}" "${REPORT_STAGED:-0}" "${CUT_OFF:-0}")")" || true
+  echo "[sunday-upgrade] direct owner notice: ${note}"
+}
+trap _notify_on_exit EXIT
 
 # Idempotency FIRST, before the branch guard: an overlapping fire must skip,
 # not FATAL on the live run's chore branch (2026-10-11 05:00). Guards against
@@ -179,6 +197,7 @@ mkdir -p reports
 case "$(_session_guard "$SESSION" $((WATCH_TIMEOUT_MIN + 10)))" in
   running)
     echo "[sunday-upgrade] tmux session ${SESSION} already running — skipping."
+    NOTIFY_ON_EXIT=0
     exit 0 ;;
   reaped)
     echo "[sunday-upgrade] WARN: tmux session ${SESSION} outlived its ${WATCH_TIMEOUT_MIN}m budget with no watcher — killed it." >&2
@@ -339,6 +358,7 @@ if [ "$FORCE" -eq 1 ]; then
   echo "[sunday-upgrade] --force: all safety gates in sunday-upgrade-apply.sh still apply."
 elif [ -f "$DONE_MARKER" ]; then
   echo "[sunday-upgrade] run already completed today (${DONE_MARKER}) — skipping."
+  NOTIFY_ON_EXIT=0
   exit 0
 fi
 if [ -s "$REPORT_MD" ]; then
@@ -428,6 +448,14 @@ echo "[sunday-upgrade] mission submitted at launch — watch/steer from the phon
 # Wait for the session to finish, then stage the report for Hermes delivery.
 elapsed=0
 TIMED_OUT=0
+# Wall-clock cutoff (owner directive 2026-10-18: everything up and usable by
+# 08:00). The minute budget above is relative to launch, so a 05:00 retry could
+# still be applying at 07:50. 07:20 leaves the restore below its worst case:
+# three functional checks with the 600 s cold-boot wait each. Only armed when
+# the run starts before it; SUNDAY_UPGRADE_DEADLINE=off disables it.
+DEADLINE_EPOCH="$(sunday_deadline_epoch "${SUNDAY_UPGRADE_DEADLINE:-07:20}")"
+CUT_OFF=0
+[ -n "$DEADLINE_EPOCH" ] && echo "[sunday-upgrade] wall-clock cutoff armed for ${SUNDAY_UPGRADE_DEADLINE:-07:20}"
 while tmux has-session -t "$SESSION" 2>/dev/null; do
   sleep 60
   elapsed=$((elapsed + 1))
@@ -442,17 +470,43 @@ while tmux has-session -t "$SESSION" 2>/dev/null; do
     TIMED_OUT=1
     break
   fi
+  if [ -n "$DEADLINE_EPOCH" ] && [ "$(date +%s)" -ge "$DEADLINE_EPOCH" ]; then
+    echo "[sunday-upgrade] WARN: wall-clock cutoff ${SUNDAY_UPGRADE_DEADLINE:-07:20} reached — terminating the session now." >&2
+    tmux kill-session -t "$SESSION" 2>/dev/null || true
+    CUT_OFF=1
+    TIMED_OUT=1
+    break
+  fi
 done
+
+# Leave the stack working, however the session ended (finished, timed out or
+# cut off): stop any apply still running, then check every service with a real
+# request, starting the default stack and finally rolling back to today's
+# anchor if the check fails. Runs on the checkout as the session left it — a
+# cut-off apply normally has the old containers still serving (it recreates
+# only after building), so the first check passes and nothing is touched.
+sunday_stop_apply "${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}/apply-running.lock.d"
+STACK_STATE="$(sunday_restore_stack "$REPO/reports/sunday/${TODAY}/rollback.sh")" || true
+echo "[sunday-upgrade] $(date '+%H:%M:%S') stack state after run: ${STACK_STATE:-UNKNOWN}"
 
 DELIVER_SRC="$REPORT_MD"
 [ -s "$DELIVER_SRC" ] || DELIVER_SRC="$LOG"
-if [ -s "$DELIVER_SRC" ] && docker ps --format '{{.Names}}' | grep -q "^${HERMES_CONTAINER}$"; then
+# Looked up now, not at launch: the restore above may have restarted Hermes,
+# and dev's is agentshroud-dev-hermes-v2 — the old hardcoded prod name meant
+# dev never staged a report at all.
+HERMES_CONTAINER="$(sunday_hermes_container)"
+if [ -s "$DELIVER_SRC" ] && [ -n "$HERMES_CONTAINER" ]; then
   docker exec "$HERMES_CONTAINER" mkdir -p /opt/data/reports
-  docker cp "$DELIVER_SRC" "${HERMES_CONTAINER}:/opt/data/reports/sunday-upgrade-latest.md"
+  STAGED="$(mktemp)"
+  { cat "$DELIVER_SRC"; printf '\n\nStack state after run: %s%s\n' "${STACK_STATE:-UNKNOWN}" \
+      "$([ "$CUT_OFF" = 1 ] && echo " (session cut off at ${SUNDAY_UPGRADE_DEADLINE:-07:20})")"; } > "$STAGED"
+  docker cp "$STAGED" "${HERMES_CONTAINER}:/opt/data/reports/sunday-upgrade-latest.md"
+  rm -f "$STAGED"
   docker exec -u root "$HERMES_CONTAINER" chown -R hermes:hermes /opt/data/reports
   echo "[sunday-upgrade] report staged for Hermes Telegram delivery"
+  REPORT_STAGED=1
 else
-  echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
+  echo "[sunday-upgrade] WARN: no report staged (missing report/log, or no Hermes container running)"
 fi
 
 _return_to_main
@@ -461,6 +515,10 @@ _return_to_main
 # a timeout marked the day done while the agent was still working (2026-09-20:
 # sentinel at 14:00, report actually written at 19:53), which then made every
 # remaining retry that day skip. A timed-out run must stay retryable.
+if [ "${STACK_STATE:-}" = "STACK_DEGRADED" ]; then
+  echo "[sunday-upgrade] $(date '+%H:%M:%S') STACK DEGRADED after the run — restart and rollback both failed, human required." >&2
+  exit 7
+fi
 if [ "${TIMED_OUT:-0}" = "1" ]; then
   echo "[sunday-upgrade] $(date '+%H:%M:%S') run TIMED OUT after ${WATCH_TIMEOUT_MIN}m — no sentinel written, the next scheduled fire will retry." >&2
   exit 6

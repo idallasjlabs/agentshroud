@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # .test_encrypted_store_constant_time()
@@ -16,4 +16,4 @@ tags:
 - [[Encryptiondecryption time should not leak plaintext length.]] - `rationale_for` [EXTRACTED]
 - [[TestTimingAttacks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2

@@ -1,26 +1,16 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: ""
 type: "code"
-community: "ToolResultSanitizer"
-location: "L64"
+community: "lifespan()"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - graphify/EXTRACTED
+  - community/lifespan
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/lifespan

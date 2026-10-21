@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "AgentTarget"
+community: "ApprovalQueueConfig (2)"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ApprovalQueueConfig_2
 ---
 
 # test_router_config_accepts_hermes_hostname()
@@ -16,4 +16,4 @@ tags:
 - [[RouterConfig must accept the Hermes Docker service hostname.]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,21 +1,17 @@
 ---
 type: community
-members: 8
+members: 4
 ---
 
 # All Dependencies.md (3)
 
-**Members:** 8 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Coverage Requirements]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Purpose_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Related Notes_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[dot-require()]] - code - gateway/soc/auth.py
+- [[Action_2]] - code - gateway/soc/auth.py
+- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
+- [[Resource_2]] - code - gateway/soc/auth.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[pytest.ini]] - degree 8, connects to 1 community
+- [[dot-require()]] - degree 4, connects to 1 community

@@ -17,7 +17,7 @@ tags:
 - [[License_4]] - `contains` [EXTRACTED]
 - [[Requirements_1]] - `contains` [EXTRACTED]
 - [[Thread safety]] - `contains` [EXTRACTED]
-- [[Usage_123]] - `contains` [EXTRACTED]
+- [[Usage_128]] - `contains` [EXTRACTED]
 - [[lvgl_kawaii_faceREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

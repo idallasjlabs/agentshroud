@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L138"
+community: "export-bot-conversations.py (4)"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/export-bot-conversationspy_4
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_20]] - `references` [EXTRACTED]
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_4

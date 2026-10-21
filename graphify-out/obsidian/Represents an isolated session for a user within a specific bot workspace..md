@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "RBACConfig (4)"
+community: "UserSessionManager"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig_4
+  - community/UserSessionManager
 ---
 
 # Represents an isolated session for a user within a specific bot workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UserSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy (4)"
+community: "TelegramAPIProxy"
 location: "L7370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_4
+  - community/TelegramAPIProxy
 ---
 
 # ._send_local_whoami_notice()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_send_local_notice_with_fallback()]] - `calls` [EXTRACTED]
 - [[Send deterministic identityrole notice to simplify approval workflows.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_4
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

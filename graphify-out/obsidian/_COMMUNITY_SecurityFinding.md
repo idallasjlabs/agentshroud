@@ -29,8 +29,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
 - 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06 (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
 
 ## Top bridge nodes
 - [[SecurityFinding_1]] - degree 15, connects to 3 communities

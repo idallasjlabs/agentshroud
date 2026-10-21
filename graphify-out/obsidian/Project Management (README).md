@@ -19,8 +19,8 @@ tags:
 - [[Related Skills_60]] - `contains` [EXTRACTED]
 - [[Related Skills_62]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_68]] - `contains` [EXTRACTED]
-- [[Usage_70]] - `contains` [EXTRACTED]
+- [[Usage_65]] - `contains` [EXTRACTED]
+- [[Usage_67]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

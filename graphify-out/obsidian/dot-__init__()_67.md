@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L83"
+community: "ConsentFramework"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/ConsentFramework
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

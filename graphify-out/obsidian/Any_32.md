@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L73"
+community: "ContainerEngine"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/ContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_98]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_10]] - `references` [EXTRACTED]
+- [[dot-inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

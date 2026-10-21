@@ -10,9 +10,9 @@ members: 44
 ## Members
 - [[dot-is_blocked()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-setup_method()_8]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-setup_method()_13]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-stats()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-stop()_3]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-stop()_5]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
@@ -69,13 +69,12 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_TestLoadFromText]]
 - 3 edges to [[_COMMUNITY_TestParseHostsLine]]
 - 3 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
 - 1 edge to [[_COMMUNITY_forward_query]]
 - 1 edge to [[_COMMUNITY_TestCanvasAuthHelpers]]
 - 1 edge to [[_COMMUNITY_parse_query]]
 
 ## Top bridge nodes
-- [[DNSBlocklist]] - degree 60, connects to 11 communities
+- [[DNSBlocklist]] - degree 58, connects to 10 communities
 - [[_BlockNone]] - degree 6, connects to 3 communities
 - [[test_dns_blocklist.py]] - degree 6, connects to 2 communities
 - [[TestBlocklistDownload]] - degree 6, connects to 2 communities

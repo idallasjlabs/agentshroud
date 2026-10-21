@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "apply-patches.js (2)"
-location: "L21"
+community: "egress_filter.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs_2
+  - community/egress_filterpy
 ---
 
 # Behavior
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs_2
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

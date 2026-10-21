@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "UserSessionManager (3)"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/UserSessionManager_3
 ---
 
 # .test_owner_plain_message_with_path_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestOwnerBypassContentPatternChecks]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

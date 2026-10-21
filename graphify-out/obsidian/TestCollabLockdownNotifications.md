@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown (2)"
+community: "ProgressiveLockdown"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown_2
+  - community/ProgressiveLockdown
 ---
 
 # TestCollabLockdownNotifications
@@ -21,8 +21,8 @@ tags:
 - [[dot-test_owner_also_notified_on_threshold()]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown_2
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

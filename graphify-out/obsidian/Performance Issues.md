@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/runbook.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "AgentShroud Brand Guidelines (2)"
-location: "L711"
+community: "AgentShroud Setup Guide"
+location: "L892"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines_2
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Performance Issues
 
 ## Connections
-- [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

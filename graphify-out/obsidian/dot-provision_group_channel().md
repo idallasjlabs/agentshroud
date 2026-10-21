@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_call_slack_api()]] - `calls` [EXTRACTED]
 - [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

@@ -12,6 +12,6 @@ tags:
 # Unsubscribe from events
 
 ## Connections
-- [[dot-unsubscribe()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-unsubscribe()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/make_event

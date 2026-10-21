@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_compute_chain_hash()]] - `calls` [EXTRACTED]
 - [[dot-start_call()]] - `calls` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
 - [[Log an outgoing MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
 - [[MCPAuditTrail_1]] - `method` [EXTRACTED]

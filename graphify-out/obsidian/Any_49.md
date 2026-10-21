@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L200"
+community: "AgentTarget (7)"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/AgentTarget_7
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[dot-from_dict()_5]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_4]] - `references` [EXTRACTED]
+- [[AgentTarget_3]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_7

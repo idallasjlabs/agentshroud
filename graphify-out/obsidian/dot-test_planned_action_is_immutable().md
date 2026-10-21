@@ -12,7 +12,7 @@ tags:
 # .test_planned_action_is_immutable()
 
 ## Connections
-- [[Path_61]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `calls` [EXTRACTED]
 - [[TestDeployDryRun]] - `method` [EXTRACTED]
 

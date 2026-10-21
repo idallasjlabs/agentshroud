@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Unit tests for collaborator-facing prompt classification helpers."
+community: "TestCollaboratorPromptClassifiers"
 location: "L7414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .test_looks_like_service_control_request_detects_restart_prompt()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Unit_tests_for_collaborator-facing_prompt_classification_helpers
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

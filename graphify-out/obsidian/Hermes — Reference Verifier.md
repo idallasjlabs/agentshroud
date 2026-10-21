@@ -17,7 +17,7 @@ tags:
 - [[Output Format]] - `contains` [EXTRACTED]
 - [[Persona]] - `contains` [EXTRACTED]
 - [[Quality Checklist_1]] - `contains` [EXTRACTED]
-- [[Role_2]] - `contains` [EXTRACTED]
+- [[Role_3]] - `contains` [EXTRACTED]
 - [[System Prompt]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

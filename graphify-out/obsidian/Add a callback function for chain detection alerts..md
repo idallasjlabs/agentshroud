@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "TestToolChainAnalyzer"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestToolChainAnalyzer
 ---
 
 # Add a callback function for chain detection alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-add_alert_callback()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

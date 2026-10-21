@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Error_Indexmd
 ---
 
 # Auth Errors.md
@@ -15,6 +15,6 @@ tags:
 - [[Auth Errors_2]] - `contains` [EXTRACTED]
 - [[Egress Filter Errors]] - `semantically_similar_to` [INFERRED]
 - [[Error Index]] - `references` [EXTRACTED]
-- [[auth.py_1]] - `references` [INFERRED]
+- [[auth.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

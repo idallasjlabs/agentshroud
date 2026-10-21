@@ -1,20 +1,21 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "SecureBrowser Skill (2)"
+community: "Sunday Upgrade prompt"
 location: "L9"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Run judged on state change, not steps completed
 
 ## Connections
-- [[Anti-security-theater value]] - `conceptually_related_to` [INFERRED]
-- [[Dev 2026-10-11 handoff false green (PASS with 0 images scanned)]] - `conceptually_related_to` [EXTRACTED]
-- [[Semgrep --baseline-commit fail only on new findings]] - `conceptually_related_to` [INFERRED]
-- [[Seven-week no-op upgrade failure (2026-07-29 to 2026-09-15)]] - `rationale_for` [EXTRACTED]
+- [[CI lint job (pinned blackisortflake8)]] - `semantically_similar_to` [INFERRED]
+- [[NOTHING_UPGRADED status]] - `conceptually_related_to` [EXTRACTED]
+- [[Non-agent components not inventoried]] - `conceptually_related_to` [INFERRED]
+- [[Seven-week PASS-while-upgrading-nothing failure (2026-07-29..09-15)]] - `rationale_for` [EXTRACTED]
+- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_Skill_2
+#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

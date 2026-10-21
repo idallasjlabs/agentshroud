@@ -12,6 +12,6 @@ tags:
 # Get proxy statistics.
 
 ## Connections
-- [[dot-get_stats()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPInspector

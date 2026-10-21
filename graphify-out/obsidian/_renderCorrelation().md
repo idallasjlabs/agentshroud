@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js (3)"
+community: "soc.js"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs_3
+  - community/socjs
 ---
 
 # _renderCorrelation()
@@ -16,4 +16,4 @@ tags:
 - [[_loadSecurity()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs_3
+#graphify/code #graphify/EXTRACTED #community/socjs

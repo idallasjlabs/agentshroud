@@ -48,10 +48,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_GSDE&G Skills Reference]]
 - 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
+- 1 edge to [[_COMMUNITY_BotConfig (3)]]
 
 ## Top bridge nodes
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 4 communities

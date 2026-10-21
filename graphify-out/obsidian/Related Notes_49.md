@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
 community: "agentshroud-bot"
-location: "L56"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Related Notes
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[Docker Networks]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agentshroud-bot

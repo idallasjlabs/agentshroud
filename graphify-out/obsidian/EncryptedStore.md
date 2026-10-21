@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "KillSwitchMonitor (2)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - community/KillSwitchMonitor_2
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[dot-__init__()_16]] - `method` [EXTRACTED]
+- [[dot-__init__()_28]] - `method` [EXTRACTED]
 - [[dot-_derive_key()]] - `method` [EXTRACTED]
 - [[dot-_resolve_secret()]] - `method` [EXTRACTED]
 - [[dot-decrypt()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-encrypt_b64()]] - `method` [EXTRACTED]
 - [[dot-get_blob_key_id()]] - `method` [EXTRACTED]
 - [[dot-rotate()]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_1]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_7]] - `calls` [EXTRACTED]
 - [[dot-store()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `calls` [EXTRACTED]
 - [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
@@ -72,10 +72,8 @@ tags:
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[encrypted_store()]] - `calls` [EXTRACTED]
 - [[encrypted_store.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_2

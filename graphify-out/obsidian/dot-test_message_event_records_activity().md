@@ -12,7 +12,7 @@ tags:
 # .test_message_event_records_activity()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event records inbound activity for message events.]] - `rationale_for` [EXTRACTED]
 

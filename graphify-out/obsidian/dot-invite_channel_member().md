@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_call_slack_api()]] - `calls` [EXTRACTED]
 - [[Invite a Slack user to a channel. Returns True on success.]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock_2

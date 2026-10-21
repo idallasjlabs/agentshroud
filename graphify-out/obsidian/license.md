@@ -1,18 +1,17 @@
 ---
-source_file: "BRAND.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
-location: "L77"
+community: "SecureBrowser Skill"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/SecureBrowser_Skill
 ---
 
 # License
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

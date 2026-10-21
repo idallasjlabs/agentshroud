@@ -9,7 +9,7 @@ members: 12
 
 ## Members
 - [[0. Pre-existing session context worth recording_1]] - document - reports/upgrade-2026-09-06.md
-- [[1. Environment mapping]] - document - reports/upgrade-2026-09-06.md
+- [[1. Environment mapping_1]] - document - reports/upgrade-2026-09-06.md
 - [[2. Upgrade table]] - document - reports/upgrade-2026-09-06.md
 - [[3. Security findings]] - document - reports/upgrade-2026-09-06.md
 - [[4. Verification evidence]] - document - reports/upgrade-2026-09-06.md

@@ -1,21 +1,24 @@
 ---
 type: community
-members: 8
+members: 11
 ---
 
 # Restart Procedure
 
-**Members:** 8 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[Container Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Container Won't Stop (Stuck in Stopping)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Exit Code Reference]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Port Already in Use]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Related Notes_5]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[dot-test_default_policy_values()]] - code - gateway/tests/test_key_rotation.py
+- [[Test Gmail Credential Retrieval]] - code - gateway/tests/test_gmail_credential_retrieval.py
+- [[Test credential rotation policy configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test default policy has reasonable values.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the managecredentialsstatus endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestCredentialRotationPolicy]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_health_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_credentials_status_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[test_key_rotation.py]] - code - gateway/tests/test_key_rotation.py
+- [[test_rotate_credential_endpoint()]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +28,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
+- 6 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 5 edges to [[_COMMUNITY_KeyRotationManager (2)]]
+- 3 edges to [[_COMMUNITY_TestDomainValidationHelper]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager]]
+- 2 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_TestDomainValidationHelper (2)]]
 
 ## Top bridge nodes
-- [[Container Errors]] - degree 8, connects to 1 community
+- [[test_key_rotation.py]] - degree 18, connects to 7 communities
+- [[TestCredentialRotationPolicy]] - degree 9, connects to 4 communities
+- [[dot-test_default_policy_values()]] - degree 3, connects to 1 community

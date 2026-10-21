@@ -12,13 +12,13 @@ tags:
 # HttpSseConnection
 
 ## Connections
-- [[dot-__init__()_163]] - `method` [EXTRACTED]
+- [[dot-__init__()_57]] - `method` [EXTRACTED]
 - [[dot-get_or_create()]] - `references` [EXTRACTED]
-- [[dot-send_request()]] - `method` [EXTRACTED]
+- [[dot-send_request()_2]] - `method` [EXTRACTED]
 - [[dot-stop()_2]] - `method` [EXTRACTED]
 - [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
 - [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -27,9 +27,9 @@ tags:
 - [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Manages an HTTPSSE connection to an MCP server.]] - `rationale_for` [EXTRACTED]

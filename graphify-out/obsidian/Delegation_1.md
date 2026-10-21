@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-delegate()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_9]] - `method` [EXTRACTED]
+- [[dot-from_dict()_8]] - `method` [EXTRACTED]
 - [[dot-get_active_delegations()]] - `references` [EXTRACTED]
 - [[dot-get_delegations_for_user()]] - `references` [EXTRACTED]
 - [[dot-is_active()]] - `method` [EXTRACTED]

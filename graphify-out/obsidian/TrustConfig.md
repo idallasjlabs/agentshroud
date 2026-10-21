@@ -12,12 +12,12 @@ tags:
 # TrustConfig
 
 ## Connections
-- [[dot-__init__()_187]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_172]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_shared_tm()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_points()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_7]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_8]] - `calls` [EXTRACTED]
 - [[dot-test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
@@ -34,7 +34,7 @@ tags:
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
@@ -101,7 +101,7 @@ tags:
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[hermes_tm()]] - `calls` [EXTRACTED]
 - [[openclaw_tm()]] - `calls` [EXTRACTED]
-- [[strict_config()_3]] - `calls` [EXTRACTED]
+- [[strict_config()_2]] - `calls` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -110,8 +110,8 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
+- [[trust_manager()_2]] - `calls` [EXTRACTED]
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
-- [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/TrustConfig

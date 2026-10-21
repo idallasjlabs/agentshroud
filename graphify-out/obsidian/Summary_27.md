@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06 (2)"
-location: "L3"
+community: "agentshroud-blueteam/SKILL.md (4)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06_2
+  - community/agentshroud-blueteam/SKILLmd_4
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06_2
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4

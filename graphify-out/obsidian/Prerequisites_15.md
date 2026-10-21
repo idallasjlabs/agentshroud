@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "README.md"
 type: "document"
-community: "First Time Setup (3)"
-location: "L11"
+community: "Quickstart"
+location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup_3
+  - community/Quickstart
 ---
 
 # Prerequisites
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Quickstart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_3
+#graphify/document #graphify/EXTRACTED #community/Quickstart

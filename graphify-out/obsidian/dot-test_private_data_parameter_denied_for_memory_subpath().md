@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (4)"
+community: "MCPPermissionManager (2)"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_4
+  - community/MCPPermissionManager_2
 ---
 
 # .test_private_data_parameter_denied_for_memory_subpath()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_4
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

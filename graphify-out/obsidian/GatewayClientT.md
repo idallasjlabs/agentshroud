@@ -12,8 +12,8 @@ tags:
 # GatewayClient<T>
 
 ## Connections
-- [[dot-get()_4]] - `method` [EXTRACTED]
+- [[dot-get()_3]] - `method` [EXTRACTED]
 - [[dot-new()]] - `method` [EXTRACTED]
-- [[dot-post()_2]] - `method` [EXTRACTED]
+- [[dot-post()_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mainrs

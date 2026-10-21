@@ -1,11 +1,11 @@
 ---
 type: community
-members: 50
+members: 51
 ---
 
 # FetchOutcome
 
-**Members:** 50 nodes
+**Members:** 51 nodes
 
 ## Members
 - [[dot-__call__()_3]] - code - gateway/tests/test_intel_endpoint.py
@@ -13,9 +13,9 @@ members: 50
 - [[dot-__enter__()_2]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-__exit__()_1]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-__exit__()_2]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__init__()_50]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__init__()_51]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__init__()_52]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__init__()_48]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__init__()_49]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__init__()_50]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-_patch_stream()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-iter_bytes()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-iter_bytes()_1]] - code - gateway/tests/test_intel_endpoint.py
@@ -55,9 +55,10 @@ members: 50
 - [[_StreamResp]] - code - gateway/tests/test_intel_endpoint.py
 - [[_draft()]] - code - gateway/tests/test_intel_endpoint.py
 - [[_inject_fetcher()]] - code - gateway/tests/test_intel_endpoint.py
-- [[client()_5]] - code - gateway/tests/test_intel_endpoint.py
+- [[client()_3]] - code - gateway/tests/test_intel_endpoint.py
 - [[make_httpx_fetcher()]] - code - gateway/security/citation_verifier.py
 - [[test_intel_endpoint.py]] - code - gateway/tests/test_intel_endpoint.py
+- [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,14 +68,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_api.py (2)_1]]
+- 25 edges to [[_COMMUNITY_api.py]]
 - 8 edges to [[_COMMUNITY_CompetitiveIntelReport]]
-- 4 edges to [[_COMMUNITY_api.py]]
 - 2 edges to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_Path]]
 
 ## Top bridge nodes
-- [[make_httpx_fetcher()]] - degree 18, connects to 3 communities
-- [[_FakeStreamResponse_1]] - degree 16, connects to 3 communities
-- [[TestMakeHttpxFetcher]] - degree 13, connects to 3 communities
+- [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
 - [[FetchOutcome]] - degree 21, connects to 2 communities
+- [[make_httpx_fetcher()]] - degree 18, connects to 2 communities
+- [[_FakeStreamResponse_1]] - degree 16, connects to 2 communities
 - [[test_intel_endpoint.py]] - degree 14, connects to 2 communities

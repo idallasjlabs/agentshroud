@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - `rationale_for` [EXTRACTED]
 - [[image_verifier.py]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_image_verifier.py]] - `imports` [EXTRACTED]
 - [[test_verify_images_exception_handled()]] - `calls` [EXTRACTED]
 - [[test_verify_images_mixed()]] - `calls` [EXTRACTED]

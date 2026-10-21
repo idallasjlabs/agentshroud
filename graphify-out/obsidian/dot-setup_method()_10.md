@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L83"
+community: "ContextSegment"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ContextSegment
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEnforcementWiring]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ContextSegment
