@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "run_multi_host"
+community: "LOW Findings"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/LOW_Findings
 ---
 
 # .test_mixed_pass_fail_unreachable()
@@ -16,4 +16,4 @@ tags:
 - [[_fake_runner()]] - `calls` [EXTRACTED]
 - [[run_multi_host()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/LOW_Findings

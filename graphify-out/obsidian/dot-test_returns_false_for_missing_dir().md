@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "TestIsFresh"
+community: "hermes/skills/i-cr/SKILL.md (2)"
 location: "L563"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsFresh
+  - community/hermes/skills/i-cr/SKILLmd_2
 ---
 
 # .test_returns_false_for_missing_dir()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsFresh]] - `method` [EXTRACTED]
 - [[_mock_missing_dir()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsFresh
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd_2

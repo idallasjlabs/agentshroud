@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
+community: "ApprovalQueueConfig (2)"
 location: "L5282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_healthcheck_local_notice_dedupe_handles_missing_update_id()
@@ -19,7 +19,7 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_45]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_40]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_30]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

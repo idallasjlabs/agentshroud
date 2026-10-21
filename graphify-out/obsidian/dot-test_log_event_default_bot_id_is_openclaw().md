@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AuditStore"
+community: "AlertDispatcher (5)"
 location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AlertDispatcher_5
 ---
 
 # .test_log_event_default_bot_id_is_openclaw()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

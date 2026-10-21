@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: "Request (2)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/Request_2
 ---
 
 # .test_jitter_stays_within_half_to_full_ceiling()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeBackoff]] - `method` [EXTRACTED]
 - [[compute_backoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/Request_2

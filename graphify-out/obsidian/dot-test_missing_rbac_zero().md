@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (7)"
+community: "UserSessionManager (3) (2)"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/UserSessionManager_3_2
 ---
 
 # .test_missing_rbac_zero()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAccessControl_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2

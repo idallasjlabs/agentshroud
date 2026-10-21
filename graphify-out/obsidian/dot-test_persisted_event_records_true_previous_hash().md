@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig
 ---
 
 # .test_persisted_event_records_true_previous_hash()
@@ -17,4 +17,4 @@ tags:
 - [[TestAuditChainBounded]] - `method` [EXTRACTED]
 - [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

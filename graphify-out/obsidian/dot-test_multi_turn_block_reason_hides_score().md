@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "ApprovalQueueConfig (2) (4)"
 location: "L477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/ApprovalQueueConfig_2_4
 ---
 
 # .test_multi_turn_block_reason_hides_score()
@@ -15,4 +15,4 @@ tags:
 - [[Blocked multi-turn sessions should not disclose scoring details.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4

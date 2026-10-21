@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ServiceManager"
-location: "L152"
+community: "TestAlreadyIngestedGhsaToday"
+location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/TestAlreadyIngestedGhsaToday
 ---
 
 # .test_not_installed()
 
 ## Connections
-- [[TestCheckClamd]] - `method` [EXTRACTED]
-- [[_patch_exists()]] - `calls` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/TestAlreadyIngestedGhsaToday

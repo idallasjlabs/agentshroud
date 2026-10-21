@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2) (2)"
 location: "L5601"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # .test_non_owner_activity_is_tracked_for_unknown_user()
@@ -16,10 +16,10 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Unknown non-owner users should still be tracked at gateway level.]] - `rationale_for` [EXTRACTED]
-- [[__init__()]] - `contains` [EXTRACTED]
+- [[__init__()_2]] - `contains` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[record_activity()]] - `contains` [EXTRACTED]
+- [[record_activity()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

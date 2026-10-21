@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L699"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # .test_hermes_soul_has_no_refuse_directive()
@@ -15,4 +15,4 @@ tags:
 - [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect']] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

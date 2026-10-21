@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
-location: "L111"
+community: "_adv()"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/_adv
 ---
 
 # .test_never_fabricates_ids_skips_advisory_without_ghsa()
@@ -16,4 +16,4 @@ tags:
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/_adv

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "RuntimeConfig"
+community: "pipeline.py — Security Pipeline"
 location: "L455"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # .test_from_dict()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRuntimeConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

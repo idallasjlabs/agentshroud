@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "A2AGovernanceProxy"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/A2AGovernanceProxy
 ---
 
 # .test_from_string()
@@ -15,4 +15,4 @@ tags:
 - [[BotIncidentSeverity]] - `calls` [EXTRACTED]
 - [[TestBotIncidentSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

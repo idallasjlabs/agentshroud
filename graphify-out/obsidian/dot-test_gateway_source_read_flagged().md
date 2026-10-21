@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # .test_gateway_source_read_flagged()
@@ -15,4 +15,4 @@ tags:
 - [[Reading gateway source should be flaggedblocked.]] - `rationale_for` [EXTRACTED]
 - [[TestReadAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

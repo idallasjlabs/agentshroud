@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (3)"
+community: "TestProductionCompose"
 location: "L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_3
+  - community/TestProductionCompose
 ---
 
 # .test_rbac_pass_logs_role_and_allows()
 
 ## Connections
 - [[TestProcessRequestRBAC]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_3
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

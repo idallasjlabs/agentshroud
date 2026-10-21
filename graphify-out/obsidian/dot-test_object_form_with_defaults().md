@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L453"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # .test_object_form_with_defaults()
@@ -15,4 +15,4 @@ tags:
 - [[SimpleNamespace]] - `calls` [EXTRACTED]
 - [[TestFromAnomalyAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (3)"
+community: "SkillGuard"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_3
+  - community/SkillGuard
 ---
 
 # .test_get_egress_rules_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[Test GET manageegressrules endpoint.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_3
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

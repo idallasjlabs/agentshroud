@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: "Request (2)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/Request_2
 ---
 
 # .test_grows_exponentially_with_attempt()
@@ -16,4 +16,4 @@ tags:
 - [[With jitter pinned to max, backoff doubles per attempt until the cap.]] - `rationale_for` [EXTRACTED]
 - [[compute_backoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/Request_2

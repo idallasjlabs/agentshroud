@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AuditStore"
+community: "AlertDispatcher (5)"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AlertDispatcher_5
 ---
 
 # .test_query_events_bot_filter_combined_with_severity()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

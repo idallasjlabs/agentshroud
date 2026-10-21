@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "AsyncMock"
 location: "L656"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/AsyncMock
 ---
 
 # .test_rollback_openclaw_alias()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpenclawAliases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

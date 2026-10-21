@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # .test_restores_even_when_block_raises()
@@ -17,4 +17,4 @@ tags:
 - [[recorder()_4]] - `contains` [EXTRACTED]
 - [[recorder()_3]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

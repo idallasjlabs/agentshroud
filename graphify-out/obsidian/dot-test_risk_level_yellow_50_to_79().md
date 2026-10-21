@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "AlertDispatcher (2)"
 location: "L728"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/AlertDispatcher_2
 ---
 
 # .test_risk_level_yellow_50_to_79()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

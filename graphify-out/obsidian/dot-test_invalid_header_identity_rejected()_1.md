@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "TestMCPResultEndpoint"
-location: "L235"
+community: "AgentShroud Security Value Proposition"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPResultEndpoint
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # .test_invalid_header_identity_rejected()
 
 ## Connections
-- [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
+- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

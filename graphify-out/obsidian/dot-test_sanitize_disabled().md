@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .test_sanitize_disabled()
@@ -17,4 +17,4 @@ tags:
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

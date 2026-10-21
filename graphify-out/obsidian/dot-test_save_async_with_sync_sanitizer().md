@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "ReportStore"
+community: "test_dashboard.py"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/test_dashboardpy
 ---
 
 # .test_save_async_with_sync_sanitizer()
@@ -15,4 +15,4 @@ tags:
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestAsyncSave]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

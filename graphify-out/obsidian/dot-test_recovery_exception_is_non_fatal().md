@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "api.py (2)"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/apipy_2
 ---
 
 # .test_recovery_exception_is_non_fatal()
@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Exception during inbound recovery → swallowed; outbound still recorded.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/apipy_2

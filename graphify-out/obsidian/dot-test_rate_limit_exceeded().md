@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # .test_rate_limit_exceeded()
@@ -17,4 +17,4 @@ tags:
 - [[TestRateLimiting_2]] - `method` [EXTRACTED]
 - [[_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/apipy

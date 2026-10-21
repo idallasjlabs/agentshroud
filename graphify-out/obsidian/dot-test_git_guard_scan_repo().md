@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L1017"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # .test_git_guard_scan_repo()
@@ -15,4 +15,4 @@ tags:
 - [[GitGuard]] - `calls` [EXTRACTED]
 - [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

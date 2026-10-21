@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_session_manager.py"
+source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "UserSessionManager"
-location: "L103"
+community: "_wrap_response()"
+location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/_wrap_response
 ---
 
 # .test_path_traversal_rejected()
 
 ## Connections
-- [[TestInputValidation]] - `method` [EXTRACTED]
+- [[TestRedirectURI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

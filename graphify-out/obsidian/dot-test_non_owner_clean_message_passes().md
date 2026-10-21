@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # .test_non_owner_clean_message_passes()
@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Non-owner channel clean message with no leakage passes through.]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

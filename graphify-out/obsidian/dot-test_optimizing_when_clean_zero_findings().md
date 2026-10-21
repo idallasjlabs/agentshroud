@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "parse_clamscan_output"
 location: "L720"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/parse_clamscan_output
 ---
 
 # .test_optimizing_when_clean_zero_findings()
@@ -16,4 +16,4 @@ tags:
 - [[_falco_clean()]] - `calls` [EXTRACTED]
 - [[_score_runtime_protection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

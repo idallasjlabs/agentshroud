@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # .test_injected_untrusted_segment_lowers_score()
@@ -16,4 +16,4 @@ tags:
 - [[Untrusted segment injected after system segment reduces score.]] - `rationale_for` [EXTRACTED]
 - [[_make_segment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestRunAndSendCveReportImageScans"
-location: "L1191"
+community: "format_cve_report() (2)"
+location: "L1340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRunAndSendCveReportImageScans
+  - community/format_cve_report_2
 ---
 
 # .test_image_scan_summary_appended_to_message()
@@ -14,5 +14,10 @@ tags:
 ## Connections
 - [[Message sent via Telegram includes a Container Image Scans section.]] - `rationale_for` [EXTRACTED]
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
+- [[_fake_send()_3]] - `contains` [EXTRACTED]
+- [[_fake_send()_14]] - `indirect_call` [INFERRED]
+- [[_fake_trivy_scan()_3]] - `contains` [EXTRACTED]
+- [[_fake_trivy_scan()_5]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRunAndSendCveReportImageScans
+#graphify/code #graphify/EXTRACTED #community/format_cve_report_2

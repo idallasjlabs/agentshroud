@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "MiddlewareManager (5)"
-location: "L73"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test manager initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[Test proper initialization of PromptProtection.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

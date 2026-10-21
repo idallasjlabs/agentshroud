@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L9318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # .test_partial_phrase_does_not_trigger_probe()
@@ -21,4 +21,4 @@ tags:
 - [[fake_send()_11]] - `indirect_call` [INFERRED]
 - [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

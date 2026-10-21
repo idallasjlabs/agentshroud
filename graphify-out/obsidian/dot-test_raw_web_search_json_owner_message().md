@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestWebSearchLog"
+community: "_fw_client"
 location: "L3752"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSearchLog
+  - community/_fw_client
 ---
 
 # .test_raw_web_search_json_owner_message()
 
 ## Connections
 - [[Owner chat raw web_search JSON produces 'Switch to tool-capable model' message.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog
+#graphify/code #graphify/EXTRACTED #community/_fw_client

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_llm_proxy.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_llm_proxypy
 ---
 
 # .test_init_does_not_construct_bare_analyzer_engine()
@@ -16,4 +16,4 @@ tags:
 - [[TestDeterministicPresidioInit]] - `method` [EXTRACTED]
 - [[The default-model auto-download path must never be taken.          If Presidio i]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

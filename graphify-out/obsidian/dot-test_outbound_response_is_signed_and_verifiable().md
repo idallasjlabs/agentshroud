@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (2)"
 location: "L506"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_outbound_response_is_signed_and_verifiable()
@@ -17,4 +17,4 @@ tags:
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

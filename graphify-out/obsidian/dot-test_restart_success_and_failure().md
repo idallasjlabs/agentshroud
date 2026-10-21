@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "ApprovalQueueConfig (3)"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ApprovalQueueConfig_3
 ---
 
 # .test_restart_success_and_failure()
@@ -15,4 +15,4 @@ tags:
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestLifecycleActions]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig (2)"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig_2
 ---
 
 # .test_save_uses_atomic_replace()
@@ -15,4 +15,4 @@ tags:
 - [[TestAtomicRegistryWrites]] - `method` [EXTRACTED]
 - [[_save_sessions must go through os.replace(tmp, final), never a         partial i]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

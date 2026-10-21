@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "TestHandleEvent"
+community: "test_anthropic_openai_translator.py (2)"
 location: "L479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/test_anthropic_openai_translatorpy_2
 ---
 
 # .test_message_event_records_activity()
 
 ## Connections
-- [[SlackAPIProxy]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event records inbound activity for message events.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_2

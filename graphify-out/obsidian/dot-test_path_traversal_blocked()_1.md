@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "MiddlewareManager (4)"
-location: "L316"
+community: "export-bot-conversations.py"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/export-bot-conversationspy
 ---
 
 # .test_path_traversal_blocked()
 
 ## Connections
-- [[Path traversal attempts should be blocked.]] - `rationale_for` [EXTRACTED]
-- [[TestEdgeCases]] - `method` [EXTRACTED]
+- [[TestIsOpReferenceAllowed]] - `method` [EXTRACTED]
+- [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

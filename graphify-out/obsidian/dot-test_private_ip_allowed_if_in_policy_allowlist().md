@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (5)"
+community: "TestOutboundPipelineIntegration"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_5
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_private_ip_allowed_if_in_policy_allowlist()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - `rationale_for` [EXTRACTED]
 - [[TestIPRules]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "SecurityPipeline (2)"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/SecurityPipeline_2
 ---
 
 # .test_path_rewriting_nested_paths()
@@ -15,4 +15,4 @@ tags:
 - [[Test path rewriting for nested tmp paths.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
-location: "L137"
+community: "_adv()"
+location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/_adv
 ---
 
 # .test_per_agent_prefix_applied()
@@ -16,4 +16,4 @@ tags:
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/_adv

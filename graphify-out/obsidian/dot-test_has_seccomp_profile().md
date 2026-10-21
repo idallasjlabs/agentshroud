@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (4)"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # .test_has_seccomp_profile()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParanoidConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

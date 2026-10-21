@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "PipelineAction"
+community: "WebProxyConfig"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/WebProxyConfig
 ---
 
 # .test_plain_canary_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

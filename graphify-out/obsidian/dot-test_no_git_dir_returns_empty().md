@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # .test_no_git_dir_returns_empty()
 
 ## Connections
 - [[GitGuard]] - `calls` [EXTRACTED]
-- [[TestGitGuard_1]] - `method` [EXTRACTED]
+- [[TestGitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

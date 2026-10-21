@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "colima-health-check.sh"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # .test_persist_user_collab_mode_update()
@@ -16,4 +16,4 @@ tags:
 - [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

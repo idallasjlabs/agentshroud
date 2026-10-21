@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_proxy_request_returns_ack_only_updates_when_all_dropped()"
+community: "ApprovalQueueConfig (2)"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_proxy_request_returns_ack_only_updates_when_all_dropped
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_proxy_request_tracks_getupdates_stats_for_dropped_message()
@@ -20,4 +20,4 @@ tags:
 - [[fake_forward()_2]] - `indirect_call` [INFERRED]
 - [[proxy_request should track dropped updates (e.g. collaborator blocked command).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_proxy_request_returns_ack_only_updates_when_all_dropped
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "A2AGovernanceProxy"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/A2AGovernanceProxy
 ---
 
 # .test_register_peer_is_bidirectional_by_default()
@@ -15,4 +15,4 @@ tags:
 - [[CrossBotTrustLedger]] - `references` [EXTRACTED]
 - [[TestCrossBotTrustLedgerConstruction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

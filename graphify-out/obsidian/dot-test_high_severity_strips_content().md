@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "InjectionAction"
+community: "ProxyAction"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction
 ---
 
 # .test_high_severity_strips_content()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

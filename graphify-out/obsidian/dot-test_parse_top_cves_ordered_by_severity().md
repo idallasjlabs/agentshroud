@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output"
+community: "TestClassify"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/TestClassify
 ---
 
 # .test_parse_top_cves_ordered_by_severity()
@@ -15,4 +15,4 @@ tags:
 - [[TestTrivyParser]] - `method` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/TestClassify

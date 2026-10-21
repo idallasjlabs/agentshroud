@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "colima-health-check.sh"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/colima-health-checksh
 ---
 
 # .test_not_member()
@@ -15,4 +15,4 @@ tags:
 - [[TestErrorFormatters]] - `method` [EXTRACTED]
 - [[format_not_member()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

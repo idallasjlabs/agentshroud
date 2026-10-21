@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestEgressApprovalQueue"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestEgressApprovalQueue
 ---
 
 # .test_issue_returns_hex_string()
@@ -15,4 +15,4 @@ tags:
 - [[TestSessionTokens]] - `method` [EXTRACTED]
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

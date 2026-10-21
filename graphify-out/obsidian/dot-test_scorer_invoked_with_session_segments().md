@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (2)"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_scorer_invoked_with_session_segments()
@@ -15,4 +15,4 @@ tags:
 - [[TestContextIntegrityInPipeline]] - `method` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

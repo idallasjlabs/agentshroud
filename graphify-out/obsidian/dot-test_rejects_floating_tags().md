@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # .test_rejects_floating_tags()
@@ -16,4 +16,4 @@ tags:
 - [[latest''main' float and would defeat the whole point of pinning.]] - `rationale_for` [EXTRACTED]
 - [[pick_latest_hermes_tag()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

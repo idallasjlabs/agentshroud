@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestStartupScannerKeying"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # .test_image_key_summary_severity_computed()
@@ -18,4 +18,4 @@ tags:
 - [[Summary status is derived correctly for compound 'trivyimage...' keys.]] - `rationale_for` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/code #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

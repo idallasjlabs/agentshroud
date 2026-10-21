@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # .test_lifespan_without_api_key_leaves_client_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifespan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # .test_hung_hub_fetch_is_cut_by_deadline_and_retried()
@@ -18,4 +18,4 @@ tags:
 - [[hub()_2]] - `contains` [EXTRACTED]
 - [[hub()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

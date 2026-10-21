@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "ApprovalHardening"
+community: "StdioConnection (2)"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/StdioConnection_2
 ---
 
 # .test_normalize_description_removes_misleading_phrases()
@@ -15,4 +15,4 @@ tags:
 - [[Test description normalization removes misleading language.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/StdioConnection_2

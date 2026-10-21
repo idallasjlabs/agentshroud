@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "ConsentFramework (2)"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/ConsentFramework_2
 ---
 
 # .test_private_data_parameter_denied_for_session_store_path()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

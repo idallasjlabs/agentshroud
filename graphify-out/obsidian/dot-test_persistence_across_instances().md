@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .test_persistence_across_instances()
 
 ## Connections
-- [[TestPersistence_2]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[TestPersistence_1]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

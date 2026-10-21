@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "AgentShroud Documentation"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/AgentShroud_Documentation
 ---
 
 # .test_retire_clears_old_reference_when_grace_expired()
@@ -15,4 +15,4 @@ tags:
 - [[TestEmergencyAndRetire]] - `method` [EXTRACTED]
 - [[_old_cred()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation

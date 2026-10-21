@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
-location: "L70"
+community: "_adv()"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/_adv
 ---
 
 # .test_new_advisory_becomes_under_review()
@@ -16,4 +16,4 @@ tags:
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/_adv

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "test_soc_bots.py"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_soc_botspy
 ---
 
 # .test_owner_resolves_to_owner_role()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupRoleResolver]] - `method` [EXTRACTED]
 - [[owner_in_group resolves to GroupRole.OWNER.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

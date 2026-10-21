@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # .test_privileged_service_is_critical()
@@ -17,4 +17,4 @@ tags:
 - [[tmp_compose()]] - `calls` [EXTRACTED]
 - [[validate_network_security()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

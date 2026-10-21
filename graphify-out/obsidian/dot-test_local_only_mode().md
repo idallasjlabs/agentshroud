@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "colima-health-check.sh"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # .test_local_only_mode()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollabMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

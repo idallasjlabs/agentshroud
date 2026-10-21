@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "ContextSegment"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ContextSegment
 ---
 
 # .test_get_pending_expires_stale()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[TestApprovalTimeout]] - `method` [EXTRACTED]
 - [[get_pending should expire stale items.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

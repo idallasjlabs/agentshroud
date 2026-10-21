@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "is_overloaded"
+community: "ConsentFramework"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/ConsentFramework
 ---
 
 # .test_gemini_resource_exhausted_stays_quota_territory()
@@ -15,4 +15,4 @@ tags:
 - [[TestOverloadedMultiProvider]] - `method` [EXTRACTED]
 - [[is_overloaded()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_overloaded
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

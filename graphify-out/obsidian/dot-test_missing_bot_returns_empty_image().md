@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "AlertDispatcher (2)"
 location: "L748"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/AlertDispatcher_2
 ---
 
 # .test_missing_bot_returns_empty_image()
@@ -17,4 +17,4 @@ tags:
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

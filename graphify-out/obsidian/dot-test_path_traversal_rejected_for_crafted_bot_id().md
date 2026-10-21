@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (4)"
 location: "L552"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_4
 ---
 
 # .test_path_traversal_rejected_for_crafted_bot_id()
@@ -15,4 +15,4 @@ tags:
 - [[Session manager must reject bot_id with path traversal characters.]] - `rationale_for` [EXTRACTED]
 - [[TestSessionPathSeparation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_4

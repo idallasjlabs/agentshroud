@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .test_process_tool_result_no_sanitizer()
@@ -16,4 +16,4 @@ tags:
 - [[Test tool result processing when sanitizer not configured]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

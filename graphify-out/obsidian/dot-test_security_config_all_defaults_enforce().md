@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # .test_security_config_all_defaults_enforce()
@@ -16,4 +16,4 @@ tags:
 - [[Test that all core modules default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

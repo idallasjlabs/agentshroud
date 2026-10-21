@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L8476"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # .test_grant_immunity_bypasses_suspension()
@@ -21,4 +21,4 @@ tags:
 - [[fake_notice()]] - `contains` [EXTRACTED]
 - [[fake_notice()_10]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Audit Ledger (SHA-256 hash only) (2)"
+community: "Local LLM Support — Implementation Review"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only_2
+  - community/Local_LLM_Support__Implementation_Review
 ---
 
 # .test_member_write_succeeds()
@@ -15,4 +15,4 @@ tags:
 - [[A legitimate group member's write lands.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMemoryWriteACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only_2
+#graphify/code #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review

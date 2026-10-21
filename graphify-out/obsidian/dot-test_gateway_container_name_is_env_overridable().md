@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L939"
+community: "sync-cve-registry.py"
+location: "L1088"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/sync-cve-registrypy
 ---
 
 # .test_gateway_container_name_is_env_overridable()
 
 ## Connections
-- [[Deployments that rename the gateway container (dev runs         agentshroud-marv]] - `rationale_for` [EXTRACTED]
+- [[Deployments that rename the gateway container (dev runs agentshroud-marvin-…]] - `rationale_for` [EXTRACTED]
 - [[TestBuildImageTargets]] - `method` [EXTRACTED]
+- [[_fake_running()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

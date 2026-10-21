@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (21)"
+community: "FetchOutcome"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_21
+  - community/FetchOutcome
 ---
 
 # .test_security_architecture_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test that security module references are filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_21
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_no_teams_config_fails_closed()
@@ -15,4 +15,4 @@ tags:
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
 - [[TestNonMemberDenied]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

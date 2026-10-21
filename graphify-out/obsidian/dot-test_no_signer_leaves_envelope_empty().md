@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (2)"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_no_signer_leaves_envelope_empty()
 
 ## Connections
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

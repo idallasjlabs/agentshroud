@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L714"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # .test_openclaw_soul_has_no_refuse_directive()
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' direc]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

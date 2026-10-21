@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig"
 location: "L3801"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig
 ---
 
 # .test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRuntimeRewriteHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py (3)"
-location: "L1328"
+community: "First iteration ingests + records; second sees dedup and skips."
+location: "L1477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy_3
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
 ---
 
 # .test_runs_ingest_records_then_skips_next_iteration()
@@ -14,7 +14,10 @@ tags:
 ## Connections
 - [[First iteration ingests + records; second sees dedup and skips.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[datetime_6]] - `calls` [EXTRACTED]
+- [[_fake_ingest()_1]] - `indirect_call` [INFERRED]
+- [[_sleep()_5]] - `indirect_call` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
+- [[now()_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_3
+#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # .test_non_message_method_not_scanned()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestProxyOutbound]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

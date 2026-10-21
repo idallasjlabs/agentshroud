@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TrustConfig (2)"
+community: "asyncio"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/asyncio
 ---
 
 # .test_monitor_mode_allows_over_limit()
@@ -15,4 +15,4 @@ tags:
 - [[Monitor mode flags but allows.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentLimits]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

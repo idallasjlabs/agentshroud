@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L955"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # .test_nist_csf_domain_map_valid()
@@ -15,4 +15,4 @@ tags:
 - [[NIST CSF domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
 - [[TestComputeScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

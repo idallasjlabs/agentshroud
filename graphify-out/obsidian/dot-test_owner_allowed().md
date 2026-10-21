@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (5)"
+community: "TestProductionCompose"
 location: "L658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_5
+  - community/TestProductionCompose
 ---
 
 # .test_owner_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCrossSessionAccess]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_5
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

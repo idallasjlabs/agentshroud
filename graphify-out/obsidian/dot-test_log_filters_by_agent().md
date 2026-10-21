@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "TestOutboundPipelineIntegration"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_log_filters_by_agent()
@@ -15,4 +15,4 @@ tags:
 - [[TestLogging]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

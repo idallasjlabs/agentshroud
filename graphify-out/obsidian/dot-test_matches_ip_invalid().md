@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (5)"
+community: "TestOutboundPipelineIntegration"
 location: "L436"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_5
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_matches_ip_invalid()
@@ -15,4 +15,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestEgressPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

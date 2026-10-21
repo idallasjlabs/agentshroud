@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # .test_llm_stats_endpoint_is_defined()
@@ -15,4 +15,4 @@ tags:
 - [[TestLLMProxyEndpoints]] - `method` [EXTRACTED]
 - [[The llm-proxystats endpoint must exist.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

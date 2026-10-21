@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig (2)"
 location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig_2
 ---
 
 # .test_reanchor_contains_security_notice()
@@ -15,4 +15,4 @@ tags:
 - [[Preamble contains a security notice keyword.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPromptReanchoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

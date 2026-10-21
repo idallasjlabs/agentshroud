@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestRunningImageResolution"
-location: "L1031"
+community: "Regression guard (2026-08-30): the report scanned :latest tags while deploys… (2)"
+location: "L1180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRunningImageResolution
+  - community/Regression_guard_2026-08-30_the_report_scanned_latest_tags_while_deploys_2
 ---
 
 # .test_prefers_running_image_over_configured_tag()
 
 ## Connections
-- [[Regression guard (2026-08-30) the report scanned latest tags         while dep]] - `rationale_for` [EXTRACTED]
+- [[Regression guard (2026-08-30) the report scanned latest tags while deploys…]] - `rationale_for` [EXTRACTED]
 - [[TestRunningImageResolution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRunningImageResolution
+#graphify/code #graphify/EXTRACTED #community/Regression_guard_2026-08-30_the_report_scanned_latest_tags_while_deploys_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # .test_network_validation_comprehensive_rules()
@@ -15,4 +15,4 @@ tags:
 - [[Test comprehensive network validation rules.]] - `rationale_for` [EXTRACTED]
 - [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

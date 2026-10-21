@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # .test_log_external_decision_different_agent_same_domain()
@@ -15,4 +15,4 @@ tags:
 - [[Different agent_ids for the same domain each produce their own log entry.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestForwardToTelegramTimeouts"
+community: "hermes/skills/i-bs/README.md (5)"
 location: "L4509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestForwardToTelegramTimeouts
+  - community/hermes/skills/i-bs/READMEmd_5
 ---
 
 # .test_long_poll_timeout_remains_60s()
 
 ## Connections
 - [[dot-_fake_urlopen_factory()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5

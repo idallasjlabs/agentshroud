@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "chatbot/main.py"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/chatbot/mainpy
 ---
 
 # .test_non_group_member_blocked_from_group_only_service()
@@ -16,4 +16,4 @@ tags:
 - [[TestServiceAccessControl]] - `method` [EXTRACTED]
 - [[_make_rbac()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

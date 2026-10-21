@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (28)"
+community: "FetchOutcome"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_28
+  - community/FetchOutcome
 ---
 
 # .test_initialization_default()
@@ -15,4 +15,4 @@ tags:
 - [[Test filter initializes with default configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_28
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

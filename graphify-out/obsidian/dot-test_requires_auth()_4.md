@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TestEmailSend (2)"
-location: "L79"
+community: "MCPPolicyEngine (2)"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend_2
+  - community/MCPPolicyEngine_2
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[Endpoint returns 401 without auth override._1]] - `rationale_for` [EXTRACTED]
-- [[TestTelegramWebhook]] - `method` [EXTRACTED]
+- [[TestSubmitAuth]] - `method` [EXTRACTED]
+- [[_draft()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend_2
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
